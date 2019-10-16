@@ -1,4 +1,5 @@
 import nltk
+import operator
 import os
 import numpy as np
 import csv
@@ -15,8 +16,7 @@ files = list(set([x.split('.')[0] for x in os.listdir(dire) if
                   re.match('protocol_[\d]*.(ann|txt)', x) ]))
 
 def process_file(protocol, entities):
-    lastindex = 0
-    newstring = ''
+    entity_list = []
     with open(entities, 'r') as f:
         reader = csv.reader(f, delimiter = '\t')
         for line in reader:
@@ -29,9 +29,14 @@ def process_file(protocol, entities):
                     start = int(split[0])
                     end = int(split[1])
                     term = line[2]
-                    newstring += protocol[lastindex:start] + ' ' + tag+' '
-                    lastindex = end + 1
-        newstring += protocol[lastindex:]
+                    entity_list.append((start, end, tag))
+    entity_list = sorted(entity_list, key = operator.itemgetter(0)) # sort by starting index 
+    lastindex = 0
+    newstring = ''
+    for start, end, tag in entity_list:
+            newstring += protocol[lastindex:start] + ' ' + tag+' '
+            lastindex = end + 1
+    newstring += protocol[lastindex:]
     return zip(newstring.splitlines(), protocol.splitlines())
 
 sentences = []
