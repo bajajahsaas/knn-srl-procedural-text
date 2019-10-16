@@ -59,7 +59,7 @@ print('Finished Preprocessing')
 def build_annoy_tfidf(sentences):
     print('Getting tfidf vectors')
     # Get TF IDF representation for each sentence
-    vectorizer = TfidfVectorizer(ngram_range = (1, 3))
+    vectorizer = TfidfVectorizer(ngram_range = (1, 4), min_df = 2)
     vectorizer.fit(sentences)
     X = vectorizer.transform(sentences)
     
