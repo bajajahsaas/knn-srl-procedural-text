@@ -33,6 +33,8 @@ def process_file(protocol, entities):
     entity_list = sorted(entity_list, key = operator.itemgetter(0)) # sort by starting index 
     lastindex = 0
     newstring = ''
+
+    # Removing entities from protocols data
     for start, end, tag in entity_list:
             newstring += protocol[lastindex:start] + ' ' + tag+' '
             lastindex = end + 1
@@ -75,7 +77,7 @@ def build_annoy_tfidf(sentences):
     t.build(10)
     return vectorizer, t
 
-
+# Optimised Nearest Neighbor Search: https://github.com/spotify/annoy
 print('Building annoy index for replaced sentences')
 # Representations of replaced sentences
 v_rep, ann_rep = build_annoy_tfidf(replaced)
