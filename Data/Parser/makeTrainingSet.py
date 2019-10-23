@@ -18,11 +18,18 @@ titles = []
 for i, fil in enumerate(wetlabsfiles):
     with open(os.path.join(wetlabsdir, '%s.txt'%fil), 'r') as f:
         protocol = f.read()
-        titles.append(protocol.split("\n")[0])
+        titles.append(protocol.split("\n")[0].lower())
 
 
 print('Found', len(protocolsfiles),'protocols files')
+print('Size of titles list', len(titles))
 
-# for i, fil in enumerate(protocolsfiles):
-#     with open(os.path.join(protocolsdir, fil), "r") as read_file:
-#         data = json.load(read_file)
+# Try removing using jaccard similarity
+c = 0
+for i, fil in enumerate(protocolsfiles):
+    with open(os.path.join(protocolsdir, fil), "r") as read_file:
+        data = json.load(read_file)
+        if data['title'].lower() in titles:
+            c += 1
+
+print(c)
