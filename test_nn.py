@@ -36,5 +36,5 @@ for i in np.random.choice(list(range(len(sent_data))), size=N, replace=False):
     print('Orig_sentence: %s'%orig_sents[i])
 
     print('Nearest Neighbors:')
-    pp.pprint([orig_sents[x] for x in nns[0][1:]])
+    pp.pprint([orig_sents[x] for x in nns[1:]])
 
