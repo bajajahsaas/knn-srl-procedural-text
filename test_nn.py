@@ -24,14 +24,17 @@ num_features = len(vect.get_feature_names())
 t = AnnoyIndex(num_features, 'angular')
 t.load(annoy_file)
 
+# 10967 line number
 N = 5
-for i in np.random.choice(list(range(len(sent_data))), size=5, replace = False): 
+k = 5
+for i in np.random.choice(list(range(len(sent_data))), size=N, replace=False):
     s = sent_data[i]
-    nns = t.get_nns_by_item(i, 10)
-    
+
+    nns = t.get_nns_by_item(i, k)
+    print('Sentence index: %s' % i)
     print('Sentence: %s'%s)
     print('Orig_sentence: %s'%orig_sents[i])
-    
+
     print('Nearest Neighbors:')
-    pp.pprint([orig_sents[x] for x in nns[1:]])
+    pp.pprint([orig_sents[x] for x in nns[0][1:]])
 
