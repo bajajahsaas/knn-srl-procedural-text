@@ -1,0 +1,120 @@
+# sent_id = s1
+# text = Cryopreservation
+1	Dilute	_	Action	_	_	0	_	_	Offset=17-23
+2	100%	_	Concentration	_	_	3	Measure	_	Offset=24-28
+3	Glycerol	_	Reagent	_	_	0	_	_	Offset=29-37
+4	50%	_	Concentration	_	_	5	Measure	_	Offset=41-44
+5	Glycerol	_	Reagent	_	_	0	_	_	Offset=45-53
+
+# sent_id = s2
+# text = Dilute 100% Glycerol to 50% Glycerol.
+1	sterile	_	Modifier	_	_	3	Mod-Link	_	Offset=60-67
+2	50ml	_	Amount	_	_	3	Measure	_	Offset=68-72
+3	Falcon	_	Location	_	_	0	_	_	Offset=73-84
+4	pour	_	Action	_	_	0	_	_	Offset=85-89
+5	25ml	_	Amount	_	_	7	Measure	_	Offset=90-94
+6	100%	_	Concentration	_	_	7	Measure	_	Offset=95-99
+7	glycerol	_	Reagent	_	_	0	_	_	Offset=100-108
+
+# sent_id = s3
+# text = In a sterile 50ml Falcon tube pour 25ml 100% glycerol.
+1	Add	_	Action	_	_	0	_	_	Offset=110-113
+2	25ml	_	Amount	_	_	4	Measure	_	Offset=114-118
+3	autoclaved	_	Modifier	_	_	4	Mod-Link	_	Offset=119-129
+4	MilliQ	_	Reagent	_	_	0	_	_	Offset=130-136
+5	mix	_	Action	_	_	0	_	_	Offset=141-144
+6	thoroughly	_	Modifier	_	_	0	_	_	Offset=145-155
+
+# sent_id = s4
+# text = Add 25ml autoclaved MilliQ and mix thoroughly.
+1	Pour	_	Action	_	_	0	_	_	Offset=157-161
+2	sterile	_	Modifier	_	_	3	Mod-Link	_	Offset=167-174
+3	reservoir	_	Location	_	_	0	_	_	Offset=175-184
+
+# sent_id = s5
+# text = Pour into sterile reservoir.
+1	sterile	_	Modifier	_	_	4	Mod-Link	_	Offset=189-196
+2	500ml	_	Amount	_	_	4	Measure	_	Offset=197-202
+3	deep	_	Modifier	_	_	4	Mod-Link	_	Offset=203-207
+4	96	_	Location	_	_	10	Meronym	_	Offset=208-221
+5	add	_	Action	_	_	0	_	_	Offset=222-225
+6	240μl	_	Amount	_	_	8	Measure	_	Offset=226-231
+7	50%	_	Concentration	_	_	8	Measure	_	Offset=235-238
+8	glycerol	_	Reagent	_	_	0	_	_	Offset=239-247
+9	each	_	Modifier	_	_	10	Mod-Link	_	Offset=251-255
+10	well	_	Location	_	_	0	_	_	Offset=256-260
+11	8	_	Generic-Measure	_	_	12	Setting	_	Offset=270-279
+12	pipet	_	Device	_	_	0	_	_	Offset=280-285
+
+# sent_id = s6
+# text = In sterile 500ml deep 96 well plate add 240μl of 50% glycerol to each well using an 8 channel pipet. 
+1	Take	_	Action	_	_	0	_	_	Offset=288-292
+2	pore	_	Reagent	_	_	0	_	_	Offset=293-302
+3	2ml	_	Amount	_	_	5	Measure	_	Offset=310-313
+4	deep	_	Modifier	_	_	5	Mod-Link	_	Offset=314-318
+5	96	_	Location	_	_	0	_	_	Offset=319-332
+
+# sent_id = s7
+# text = Take pore film off of 2ml deep 96 well plate.
+1	12	_	Generic-Measure	_	_	3	Setting	_	Offset=342-352
+2	200μl	_	Amount	_	_	3	Setting	_	Offset=353-358
+3	pipet	_	Device	_	_	0	_	_	Offset=359-364
+4	pipet	_	Action	_	_	0	_	_	Offset=366-371
+5	up	_	Method	_	_	0	_	_	Offset=372-383
+6	bottom	_	Location	_	_	0	_	_	Offset=389-395
+7	wells	_	Location	_	_	6	Meronym	_	Offset=399-404
+8	3	_	Numerical	_	_	0	_	_	Offset=405-406
+9	transfer	_	Action	_	_	0	_	_	Offset=419-427
+10	160μl	_	Amount	_	_	0	_	_	Offset=428-433
+11	each	_	Modifier	_	_	12	Mod-Link	_	Offset=439-443
+12	well	_	Location	_	_	0	_	_	Offset=444-448
+13	plate	_	Location	_	_	14	Meronym	_	Offset=456-461
+14	glycerol	_	Reagent	_	_	0	_	_	Offset=467-475
+
+# sent_id = s8
+# text = Using a 12 channel 200μl pipet, pipet up and down from bottom of wells 3 times, then transfer 160μl from each well to the plate with glycerol.
+1	Pipet	_	Action	_	_	0	_	_	Offset=477-482
+2	up	_	Method	_	_	0	_	_	Offset=483-494
+3	glycerol	_	Reagent	_	_	0	_	_	Offset=498-506
+4	5	_	Numerical	_	_	0	_	_	Offset=507-508
+
+# sent_id = s9
+# text = Pipet up and down in glycerol 5 times.
+1	Repeat	_	Action	_	_	0	_	_	Offset=516-522
+2	step	_	Method	_	_	0	_	_	Offset=523-529
+3	all	_	Modifier	_	_	4	Mod-Link	_	Offset=534-537
+4	rows/wells	_	Location	_	_	0	_	_	Offset=538-548
+
+# sent_id = s10
+# text = Repeat step 4 for all rows/wells. 
+1	Seal	_	Action	_	_	0	_	_	Offset=551-555
+2	500ml	_	Amount	_	_	4	Measure	_	Offset=556-561
+3	deep	_	Modifier	_	_	4	Mod-Link	_	Offset=562-566
+4	96	_	Location	_	_	0	_	_	Offset=567-580
+5	foil	_	Seal	_	_	0	_	_	Offset=603-607
+
+# sent_id = s11
+# text = Seal 500ml deep 96 well plate (glycerol plate) with foil.
+1	Place	_	Action	_	_	0	_	_	Offset=609-614
+2	shaker	_	Device	_	_	0	_	_	Offset=618-624
+3	30	_	Time	_	_	0	_	_	Offset=629-639
+
+# sent_id = s12
+# text = Place in shaker for 30 minutes.
+1	Re-seal	_	Action	_	_	0	_	_	Offset=641-648
+2	2ml	_	Amount	_	_	4	Measure	_	Offset=649-652
+3	deep	_	Modifier	_	_	4	Mod-Link	_	Offset=653-657
+4	96	_	Location	_	_	0	_	_	Offset=658-671
+5	pore	_	Seal	_	_	0	_	_	Offset=677-686
+6	place	_	Action	_	_	0	_	_	Offset=691-696
+7	refrigerator	_	Device	_	_	0	_	_	Offset=700-712
+
+# sent_id = s13
+# text = Re-seal 2ml deep 96 well plate with pore film and place in refrigerator.
+1	place	_	Action	_	_	0	_	_	Offset=742-747
+2	500ml	_	Amount	_	_	4	Measure	_	Offset=748-753
+3	deep	_	Modifier	_	_	4	Mod-Link	_	Offset=754-758
+4	plate	_	Location	_	_	0	_	_	Offset=759-764
+5	-80ºC	_	Temperature	_	_	6	Setting	_	Offset=768-773
+6	freezer	_	Device	_	_	0	_	_	Offset=774-781
+

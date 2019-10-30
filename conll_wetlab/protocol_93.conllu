@@ -1,0 +1,249 @@
+# sent_id = s1
+# text = HERP: Haploid Engineering and Replacement Protocol for Saccharomyces
+1	Autoclave	_	Action	_	_	0	_	_	Offset=215-224
+2	no	_	Modifier	_	_	3	Mod-Link	_	Offset=229-241
+3	20	_	Time	_	_	0	_	_	Offset=242-252
+4	liquid	_	Device	_	_	0	_	_	Offset=258-270
+
+# sent_id = s2
+# text = Add the following components to a 2‐L Erlenmeyer flask: Mix to dissolve as much as possible (agar and sulfanilamide won't dissolve until heated).
+1	cool	_	Action	_	_	0	_	_	Offset=289-293
+2	50°	_	Temperature	_	_	3	Setting	_	Offset=297-300
+3	water	_	Device	_	_	0	_	_	Offset=306-316
+4	add	_	Action	_	_	0	_	_	Offset=323-326
+5	following	_	Reagent	_	_	0	_	_	Offset=331-340
+6	mix	_	Action	_	_	0	_	_	Offset=345-348
+7	5	_	Amount	_	_	8	Measure	_	Offset=351-354
+8	thymidine	_	Reagent	_	_	0	_	_	Offset=355-364
+9	200	_	Amount	_	_	10	Measure	_	Offset=366-372
+10	methotrexate	_	Reagent	_	_	0	_	_	Offset=373-385
+11	100	_	Amount	_	_	13	Measure	_	Offset=387-393
+12	50%	_	Generic-Measure	_	_	13	Measure	_	Offset=394-403
+13	glycerol	_	Reagent	_	_	0	_	_	Offset=404-412
+14	sterilized	_	Modifier	_	_	13	Mod-Link	_	Offset=414-424
+15	Pour	_	Action	_	_	0	_	_	Offset=425-429
+16	~20	_	Amount	_	_	0	_	_	Offset=430-436
+17	plastic	_	Location	_	_	0	_	_	Offset=442-462
+18	set	_	Action	_	_	0	_	_	Offset=476-479
+
+# sent_id = s3
+# text = Autoclave for no more than 20 minutes on a liquid cycle.
+1	2‐L	_	Amount	_	_	2	Measure	_	Offset=521-524
+2	Erlenmeyer	_	Location	_	_	0	_	_	Offset=525-541
+3	make	_	Action	_	_	0	_	_	Offset=543-547
+4	1	_	Amount	_	_	5	Measure	_	Offset=548-551
+5	Synthetic	_	Reagent	_	_	0	_	_	Offset=555-578
+6	favorite	_	Method	_	_	0	_	_	Offset=590-621
+
+# sent_id = s4
+# text = Once autoclaved, cool to 50° in a water bath, then add the following and mix: ‐5 g thymidine ‐200 mg methotrexate ‐100 mL 50% (v/v) glycerol, sterilized Pour ~20 mL into plastic petri dishes and allow to set.
+1	Autoclave	_	Action	_	_	0	_	_	Offset=623-632
+2	cool	_	Action	_	_	0	_	_	Offset=638-642
+3	50°	_	Temperature	_	_	4	Setting	_	Offset=646-649
+4	water	_	Device	_	_	0	_	_	Offset=655-665
+
+# sent_id = s5
+# text = You have now made YPGly +AF media.
+1	Dissolve	_	Action	_	_	0	_	_	Offset=667-675
+2	55	_	Amount	_	_	3	Measure	_	Offset=676-681
+3	FUdR	_	Reagent	_	_	0	_	_	Offset=685-689
+4	1.1	_	Amount	_	_	5	Measure	_	Offset=695-701
+5	ddH2O	_	Reagent	_	_	0	_	_	Offset=705-710
+6	filter	_	Action	_	_	0	_	_	Offset=715-731
+7	Add	_	Action	_	_	0	_	_	Offset=732-735
+8	1	_	Amount	_	_	9	Measure	_	Offset=736-740
+9	FUdR	_	Reagent	_	_	0	_	_	Offset=744-757
+10	cooled	_	Modifier	_	_	11	Mod-Link	_	Offset=761-767
+11	SC	_	Reagent	_	_	0	_	_	Offset=768-775
+12	mix	_	Action	_	_	0	_	_	Offset=780-783
+
+# sent_id = s6
+# text = In a 2‐L Erlenmeyer flask, make 1 L of Synthetic Complete agar using your favorite provider's formulation.
+1	Pour	_	Action	_	_	0	_	_	Offset=785-789
+2	~20	_	Amount	_	_	3	Measure	_	Offset=790-796
+3	plastic	_	Location	_	_	0	_	_	Offset=802-822
+4	set	_	Action	_	_	0	_	_	Offset=836-839
+
+# sent_id = s7
+# text = Autoclave then cool to 50° in a water bath.
+1	Amplify	_	Action	_	_	0	_	_	Offset=986-993
+
+# sent_id = s8
+# text = Dissolve 55 mg of FUdR into 1.1 mL of ddH2O and filter sterilize Add 1 mL of FUdR solution to cooled SC agar and mix.
+1	clean	_	Action	_	_	0	_	_	Offset=1188-1193
+2	PCR	_	Reagent	_	_	0	_	_	Offset=1199-1210
+
+# sent_id = s9
+# text = Pour ~20 mL into plastic petri dishes and allow to set.
+1	Culture	_	Action	_	_	0	_	_	Offset=1244-1251
+2	your	_	Reagent	_	_	0	_	_	Offset=1252-1273
+3	inoculating	_	Action	_	_	0	_	_	Offset=1277-1288
+4	50	_	Amount	_	_	5	Measure	_	Offset=1289-1294
+5	YPD	_	Reagent	_	_	0	_	_	Offset=1298-1307
+6	enough	_	Modifier	_	_	8	Mod-Link	_	Offset=1313-1319
+7	overnight	_	Modifier	_	_	8	Mod-Link	_	Offset=1320-1329
+8	culture	_	Reagent	_	_	0	_	_	Offset=1330-1337
+9	your	_	Reagent	_	_	8	Meronym	_	Offset=1341-1352
+10	bring	_	Action	_	_	0	_	_	Offset=1356-1361
+11	OD600	_	Measure-Type	_	_	12	Or	_	Offset=1366-1371
+12	0.2‐0.25	_	Generic-Measure	_	_	0	_	_	Offset=1375-1383
+
+# sent_id = s10
+# text = You have now made SC +FUdR agar.
+1	Shake	_	Action	_	_	0	_	_	Offset=1385-1390
+2	optimal	_	Temperature	_	_	0	_	_	Offset=1398-1417
+3	your	_	Reagent	_	_	0	_	_	Offset=1422-1433
+4	species	_	Reagent	_	_	3	Or	_	Offset=1437-1444
+5	OD600	_	Measure-Type	_	_	6	Or	_	Offset=1465-1470
+6	0.85‐1.0	_	Generic-Measure	_	_	0	_	_	Offset=1479-1487
+
+# sent_id = s11
+# text = Design primers with overhangs that target the cassette to your desired locus.
+1	Shake	_	Action	_	_	0	_	_	Offset=1489-1494
+2	optimal	_	Temperature	_	_	0	_	_	Offset=1502-1521
+3	your	_	Reagent	_	_	0	_	_	Offset=1526-1537
+4	species	_	Reagent	_	_	3	Or	_	Offset=1541-1548
+5	OD600	_	Measure-Type	_	_	6	Or	_	Offset=1569-1574
+6	0.85‐1.0	_	Generic-Measure	_	_	0	_	_	Offset=1583-1591
+
+# sent_id = s12
+# text = (See the guidelines for details.)
+1	Harvest	_	Action	_	_	0	_	_	Offset=1593-1600
+2	cells	_	Reagent	_	_	0	_	_	Offset=1605-1610
+3	centrifugation	_	Action	_	_	0	_	_	Offset=1614-1628
+4	50‐mL	_	Amount	_	_	5	Measure	_	Offset=1634-1639
+5	conical	_	Location	_	_	0	_	_	Offset=1640-1652
+6	3000	_	Speed	_	_	0	_	_	Offset=1656-1664
+7	5	_	Time	_	_	0	_	_	Offset=1669-1678
+
+# sent_id = s13
+# text = Amplify the HERP cassette of choice using your targeting primers and a high‐fidelity polymerase such as New England Biolab's Phusion system.
+1	Remove	_	Action	_	_	0	_	_	Offset=1680-1686
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1687-1698
+3	wash	_	Action	_	_	0	_	_	Offset=1700-1704
+4	25	_	Amount	_	_	5	Measure	_	Offset=1710-1715
+5	water	_	Reagent	_	_	0	_	_	Offset=1716-1721
+6	spin	_	Action	_	_	0	_	_	Offset=1727-1731
+7	3000	_	Speed	_	_	0	_	_	Offset=1735-1743
+8	5	_	Time	_	_	0	_	_	Offset=1748-1757
+
+# sent_id = s14
+# text = If your reaction makes use of DMSO or other harsh chemicals, clean your PCR product with a column before proceeding.
+1	Remove	_	Action	_	_	0	_	_	Offset=1759-1765
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1766-1777
+3	suspend	_	Action	_	_	0	_	_	Offset=1782-1789
+4	cells	_	Reagent	_	_	0	_	_	Offset=1790-1795
+5	1	_	Amount	_	_	6	Measure	_	Offset=1799-1803
+6	water	_	Reagent	_	_	0	_	_	Offset=1807-1812
+
+# sent_id = s15
+# text = Culture your strain of choice by inoculating 50 mL of YPD media with enough overnight culture of your strain to bring the OD600 to 0.2‐0.25.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=1814-1821
+2	100	_	Amount	_	_	3	Measure	_	Offset=1822-1828
+3	cell	_	Reagent	_	_	0	_	_	Offset=1829-1844
+4	microcentrifuge	_	Location	_	_	0	_	_	Offset=1848-1869
+5	spin	_	Action	_	_	0	_	_	Offset=1871-1875
+6	30	_	Time	_	_	8	Setting	_	Offset=1880-1890
+7	max	_	Speed	_	_	8	Setting	_	Offset=1894-1903
+8	microcentrifuge	_	Device	_	_	0	_	_	Offset=1909-1924
+9	remove	_	Action	_	_	0	_	_	Offset=1930-1936
+10	supernatant	_	Reagent	_	_	0	_	_	Offset=1937-1948
+
+# sent_id = s16
+# text = Shake at the optimal temperature for your strain or species until the culture's OD600 reaches 0.85‐1.0.
+1	Suspend	_	Action	_	_	0	_	_	Offset=2007-2014
+2	cell	_	Reagent	_	_	0	_	_	Offset=2015-2026
+3	transformation	_	Reagent	_	_	0	_	_	Offset=2030-2052
+4	heat	_	Action	_	_	0	_	_	Offset=2057-2067
+
+# sent_id = s17
+# text = Shake at the optimal temperature for your strain or species until the culture's OD600 reaches 0.85‐1.0.
+1	spin	_	Action	_	_	0	_	_	Offset=2108-2112
+2	reactions	_	Reagent	_	_	0	_	_	Offset=2117-2126
+3	30	_	Time	_	_	0	_	_	Offset=2131-2141
+4	max	_	Speed	_	_	0	_	_	Offset=2145-2154
+5	remove	_	Action	_	_	0	_	_	Offset=2156-2162
+6	supernatant	_	Reagent	_	_	0	_	_	Offset=2167-2178
+7	suspend	_	Action	_	_	0	_	_	Offset=2184-2191
+8	cells	_	Reagent	_	_	0	_	_	Offset=2196-2201
+9	600	_	Amount	_	_	10	Measure	_	Offset=2205-2211
+10	YPD	_	Reagent	_	_	0	_	_	Offset=2215-2218
+
+# sent_id = s18
+# text = Harvest the cells by centrifugation in a 50‐mL conical vial at 3000 RPM for 5 minutes.
+1	Transfer	_	Action	_	_	0	_	_	Offset=2220-2228
+2	glass	_	Location	_	_	0	_	_	Offset=2232-2251
+3	spin	_	Action	_	_	0	_	_	Offset=2256-2260
+4	culture	_	Device	_	_	0	_	_	Offset=2266-2279
+5	3	_	Time	_	_	4	Setting	_	Offset=2284-2291
+6	strain's	_	Temperature	_	_	4	Setting	_	Offset=2299-2339
+
+# sent_id = s19
+# text = Remove supernatant, wash with 25 mL water, and spin at 3000 RPM for 5 minutes.
+1	Spread	_	Action	_	_	0	_	_	Offset=2341-2347
+2	200	_	Amount	_	_	4	Measure	_	Offset=2348-2354
+3	recovered	_	Modifier	_	_	4	Mod-Link	_	Offset=2358-2367
+4	cells	_	Reagent	_	_	0	_	_	Offset=2368-2373
+5	each	_	Modifier	_	_	7	Mod-Link	_	Offset=2377-2381
+6	three	_	Numerical	_	_	5	Setting	_	Offset=2385-2390
+7	YPGly	_	Location	_	_	0	_	_	Offset=2391-2407
+
+# sent_id = s20
+# text = Remove supernatant and suspend cells in 1 mL of water.
+1	store	_	Action	_	_	0	_	_	Offset=2521-2526
+2	agar	_	Reagent	_	_	0	_	_	Offset=2527-2531
+3	optimal	_	Temperature	_	_	0	_	_	Offset=2542-2561
+
+# sent_id = s21
+# text = Aliquot 100 μL cell suspension to microcentrifuge tubes, spin for 30 seconds at max speed in a microcentrifuge, and remove supernatant.
+1	Streak	_	Action	_	_	0	_	_	Offset=2598-2604
+2	colonies	_	Reagent	_	_	0	_	_	Offset=2605-2613
+3	out	_	Modifier	_	_	0	_	_	Offset=2614-2617
+4	fresh	_	Modifier	_	_	5	Mod-Link	_	Offset=2621-2626
+5	YPGly	_	Location	_	_	0	_	_	Offset=2627-2643
+
+# sent_id = s22
+# text = Add the following reagents to each cell pellet IN ORDER: Suspend cell pellet in transformation mixture and heat shock.
+1	Analyze	_	Action	_	_	0	_	_	Offset=2645-2652
+2	amplifying	_	Method	_	_	0	_	_	Offset=2656-2687
+3	sequencing	_	Method	_	_	2	Or	_	Offset=2695-2735
+
+# sent_id = s23
+# text = Once heat‐shocking has been completed, spin the reactions for 30 seconds at max speed, remove the supernatant, and suspend the cells in 600 μL of YPD.
+1	phenotypically	_	Modifier	_	_	0	_	_	Offset=2809-2823
+2	confirm	_	Action	_	_	0	_	_	Offset=2824-2831
+
+# sent_id = s24
+# text = Transfer to glass culture tubes and spin in a culture wheel for 3 hours at the strain's or species' optimal temperature.
+1	begin	_	Action	_	_	0	_	_	Offset=3088-3093
+
+# sent_id = s25
+# text = Spread 200 μL of recovered cells to each of three YPGly +AF plates.
+1	repeat	_	Action	_	_	0	_	_	Offset=3274-3280
+2	replace	_	Action	_	_	0	_	_	Offset=3304-3311
+
+# sent_id = s26
+# text = Only one 200 μL volume of control reaction, however, needs to be plated.
+1	remove	_	Action	_	_	0	_	_	Offset=3425-3431
+2	suspend	_	Action	_	_	0	_	_	Offset=3452-3459
+
+# sent_id = s27
+# text = Once all the liquid has been absorbed, store agar up at the optimal temperature.
+1	Spread	_	Action	_	_	0	_	_	Offset=3477-3483
+
+# sent_id = s28
+# text = Colonies will appear in 3‐10 days.
+1	Incubate	_	Action	_	_	0	_	_	Offset=3521-3529
+
+# sent_id = s29
+# text = Streak colonies out to fresh YPGly +AF plates.
+1	incubate	_	Action	_	_	0	_	_	Offset=3583-3591
+
+# sent_id = s30
+# text = Analyze by amplifying target locus via PCR and/or sequencing across the insertion junction.
+1	replicate	_	Action	_	_	0	_	_	Offset=3627-3636
+
+# sent_id = s31
+# text = Once you have molecularly confirmed the insertion of the HERP cassette, phenotypically confirm its sensitivity to FUdR by spotting ~1,000 cells onto SC +FUdR plates multiple times.
+1	Re‐replicate	_	Action	_	_	0	_	_	Offset=3664-3676
+

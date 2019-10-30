@@ -1,0 +1,113 @@
+# sent_id = s1
+# text = Electroporation Protocol
+1	Turn	_	Action	_	_	0	_	_	Offset=25-32
+2	electroporator	_	Device	_	_	0	_	_	Offset=33-47
+3	set	_	Action	_	_	0	_	_	Offset=52-55
+4	1.7-2.5	_	Generic-Measure	_	_	0	_	_	Offset=59-69
+5	200	_	Generic-Measure	_	_	0	_	_	Offset=93-101
+6	25	_	Generic-Measure	_	_	0	_	_	Offset=106-111
+
+# sent_id = s2
+# text = Turn on electroporator and set to 1.7-2.5 kv (optimize for strain), 200 ohms and 25 µF. 
+1	Place	_	Action	_	_	0	_	_	Offset=114-119
+2	recovery	_	Reagent	_	_	0	_	_	Offset=120-132
+3	37°C	_	Temperature	_	_	0	_	_	Offset=136-140
+4	water	_	Device	_	_	0	_	_	Offset=141-151
+
+# sent_id = s3
+# text = Place recovery SOC in 37°C water bath. 
+1	Pre-warm	_	Action	_	_	0	_	_	Offset=154-162
+2	LB-antibiotic	_	Location	_	_	0	_	_	Offset=163-183
+3	37°C	_	Temperature	_	_	0	_	_	Offset=187-191
+
+# sent_id = s4
+# text = Pre-warm LB-antibiotic plates at 37°C. 
+1	Thaw	_	Action	_	_	0	_	_	Offset=194-198
+2	cells	_	Reagent	_	_	0	_	_	Offset=199-204
+3	ice	_	Location	_	_	0	_	_	Offset=208-211
+4	10	_	Time	_	_	0	_	_	Offset=216-222
+5	use	_	Action	_	_	0	_	_	Offset=226-229
+6	freshly	_	Modifier	_	_	7	Mod-Link	_	Offset=230-242
+7	cells	_	Reagent	_	_	0	_	_	Offset=243-248
+
+# sent_id = s5
+# text = Thaw cells on ice for 10 min or use freshly made cells. 
+1	Place	_	Action	_	_	0	_	_	Offset=251-256
+2	appropriate	_	Modifier	_	_	3	Mod-Link	_	Offset=257-268
+3	number	_	Amount	_	_	4	Measure	_	Offset=269-275
+4	microcentrifuge	_	Location	_	_	0	_	_	Offset=279-300
+5	1	_	Generic-Measure	_	_	6	Setting	_	Offset=305-325
+6	cuvettes	_	Location	_	_	0	_	_	Offset=326-334
+7	ice	_	Location	_	_	0	_	_	Offset=338-341
+
+# sent_id = s6
+# text = Place appropriate number of microcentrifuge tubes and 1 mm-electroporation cuvettes on ice. 
+1	Flick	_	Action	_	_	0	_	_	Offset=344-349
+2	tube	_	Location	_	_	3	Meronym	_	Offset=354-358
+3	cells	_	Reagent	_	_	0	_	_	Offset=370-375
+4	few	_	Numerical	_	_	0	_	_	Offset=378-381
+5	mix	_	Action	_	_	0	_	_	Offset=391-394
+6	add	_	Action	_	_	0	_	_	Offset=399-402
+7	25	_	Amount	_	_	8	Measure	_	Offset=403-408
+8	microcentrifuge	_	Location	_	_	0	_	_	Offset=416-437
+
+# sent_id = s7
+# text = Flick the tube containing cells a few times to mix and add 25 µl to the microcentrifuge tubes. 
+1	Add	_	Action	_	_	0	_	_	Offset=440-443
+2	1	_	Amount	_	_	4	Measure	_	Offset=444-448
+3	10	_	Concentration	_	_	4	Measure	_	Offset=454-462
+4	DNA	_	Reagent	_	_	0	_	_	Offset=463-475
+5	cells	_	Reagent	_	_	0	_	_	Offset=497-502
+6	microcentrifuge	_	Location	_	_	5	Meronym	_	Offset=510-530
+
+# sent_id = s8
+# text = Add 1 µl of a 10 pg/µl DNA solution (in DI water) to the cells in the microcentrifuge tube. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=533-541
+2	DNA-cell	_	Reagent	_	_	0	_	_	Offset=546-562
+3	cold	_	Modifier	_	_	4	Mod-Link	_	Offset=570-574
+4	cuvette	_	Location	_	_	0	_	_	Offset=575-582
+5	tap	_	Action	_	_	0	_	_	Offset=584-587
+6	countertop	_	Location	_	_	0	_	_	Offset=591-601
+7	2X	_	Numerical	_	_	0	_	_	Offset=602-604
+8	wipe	_	Action	_	_	0	_	_	Offset=606-610
+9	water	_	Reagent	_	_	0	_	_	Offset=611-616
+10	exterior	_	Location	_	_	0	_	_	Offset=622-630
+11	cuvette	_	Location	_	_	10	Meronym	_	Offset=634-641
+12	place	_	Action	_	_	0	_	_	Offset=646-651
+13	electroporation	_	Device	_	_	0	_	_	Offset=659-681
+14	press	_	Action	_	_	0	_	_	Offset=686-697
+
+# sent_id = s9
+# text = Transfer the DNA-cell mixture to the cold cuvette, tap on countertop 2X, wipe water from exterior of cuvette and place in the electroporation module and press pulse (don’t hold the button down). 
+1	Immediately	_	Modifier	_	_	0	_	_	Offset=729-740
+2	add	_	Action	_	_	0	_	_	Offset=741-744
+3	975	_	Amount	_	_	5	Measure	_	Offset=745-751
+4	37°C	_	Temperature	_	_	0	_	_	Offset=755-759
+5	SOC	_	Reagent	_	_	0	_	_	Offset=760-763
+6	mix	_	Action	_	_	0	_	_	Offset=765-768
+7	pipetting	_	Action	_	_	0	_	_	Offset=772-781
+8	up	_	Method	_	_	0	_	_	Offset=782-793
+9	once	_	Numerical	_	_	0	_	_	Offset=794-798
+10	transfer	_	Action	_	_	0	_	_	Offset=803-811
+11	15	_	Amount	_	_	12	Measure	_	Offset=817-822
+12	falcon	_	Location	_	_	0	_	_	Offset=823-834
+
+# sent_id = s10
+# text = Immediately add 975 µl of 37°C SOC, mix by pipetting up and down once and transfer to a 15 ml-falcon tube. 
+1	Rotate	_	Action	_	_	0	_	_	Offset=837-843
+2	37°C	_	Temperature	_	_	0	_	_	Offset=851-855
+3	incubator	_	Device	_	_	0	_	_	Offset=856-865
+4	1	_	Time	_	_	0	_	_	Offset=870-873
+
+# sent_id = s11
+# text = Rotate in the 37°C incubator for 1 h. 
+1	Make	_	Action	_	_	0	_	_	Offset=876-880
+2	appropriate	_	Modifier	_	_	3	Mod-Link	_	Offset=881-892
+3	dilutions	_	Reagent	_	_	0	_	_	Offset=893-902
+
+# sent_id = s12
+# text = Make appropriate dilutions. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=905-913
+2	overnight	_	Time	_	_	0	_	_	Offset=914-923
+3	37°C	_	Temperature	_	_	0	_	_	Offset=927-931
+

@@ -1,0 +1,79 @@
+# sent_id = s1
+# text = Fractionation of Light and Heavy Mitochondria by Gradient Cushion using the FOCUS™ Mitochondria Kit
+1	Suspend	_	Action	_	_	0	_	_	Offset=100-107
+2	mitochondrial	_	Reagent	_	_	0	_	_	Offset=112-132
+3	100µl	_	Amount	_	_	5	Measure	_	Offset=136-141
+4	1X	_	Concentration	_	_	5	Measure	_	Offset=142-144
+5	SubCell	_	Reagent	_	_	0	_	_	Offset=145-162
+
+# sent_id = s2
+# text = Suspend the mitochondrial pellet in 100µl 1X SubCell Buffer-II.
+1	Make	_	Action	_	_	0	_	_	Offset=164-168
+2	step	_	Reagent	_	_	5	Meronym	9:Meronym	Offset=171-184
+3	adding	_	Action	_	_	0	_	_	Offset=188-194
+4	200µl	_	Amount	_	_	5	Measure	_	Offset=195-200
+5	SubCell	_	Reagent	_	_	0	_	_	Offset=201-217
+6	centrifuge	_	Location	_	_	0	_	_	Offset=223-238
+7	overlaying	_	Action	_	_	0	_	_	Offset=248-258
+8	200µl	_	Amount	_	_	9	Measure	_	Offset=264-269
+9	SubCell	_	Reagent	_	_	0	_	_	Offset=270-287
+
+# sent_id = s3
+# text = Make a step gradient by adding 200µl SubCell Buffer-V to a centrifuge tube and then overlaying with 200µl SubCell Buffer-IV.
+1	float	_	Action	_	_	0	_	_	Offset=296-301
+2	mitochondrial	_	Reagent	_	_	0	_	_	Offset=306-330
+3	surface	_	Location	_	_	0	_	_	Offset=338-345
+4	step	_	Reagent	_	_	3	Meronym	_	Offset=353-366
+
+# sent_id = s4
+# text = Gently float the mitochondrial suspension on the surface of the step gradient.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=368-378
+2	gradient	_	Reagent	_	_	0	_	_	Offset=383-391
+3	20,000x	_	Speed	_	_	0	_	_	Offset=395-404
+4	20	_	Time	_	_	0	_	_	Offset=409-419
+
+# sent_id = s5
+# text = Centrifuge the gradient at 20,000x g for 20 minutes.
+1	Observe	_	Action	_	_	0	_	_	Offset=421-428
+2	two	_	Numerical	_	_	3	Measure	_	Offset=433-436
+3	white	_	Reagent	_	_	0	_	_	Offset=437-448
+
+# sent_id = s6
+# text = Observe the two white bands.
+1	remove	_	Action	_	_	0	_	_	Offset=460-466
+2	band	_	Reagent	_	_	0	_	_	Offset=472-476
+3	tube	_	Location	_	_	0	_	_	Offset=491-495
+
+# sent_id = s7
+# text = Carefully remove each band to a separate tube.
+1	Dilute	_	Action	_	_	0	_	_	Offset=497-503
+2	mitochondrial	_	Reagent	_	_	0	_	_	Offset=508-533
+3	equal	_	Generic-Measure	_	_	5	Measure	_	Offset=539-551
+4	1X	_	Concentration	_	_	5	Measure	_	Offset=555-557
+5	SubCell	_	Reagent	_	_	0	_	_	Offset=558-575
+
+# sent_id = s8
+# text = Dilute the mitochondrial suspensions with equal volume of 1X SubCell Buffer-II.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=577-587
+2	tubes	_	Location	_	_	0	_	_	Offset=592-597
+3	12,000x	_	Speed	_	_	0	_	_	Offset=601-610
+4	15	_	Time	_	_	0	_	_	Offset=615-625
+5	discard	_	Action	_	_	0	_	_	Offset=630-637
+6	supernatant	_	Reagent	_	_	0	_	_	Offset=642-653
+
+# sent_id = s9
+# text = Centrifuge the tubes at 12,000x g for 15 minutes and discard the supernatant.
+1	Suspend	_	Action	_	_	0	_	_	Offset=655-662
+2	mitochondrial	_	Reagent	_	_	0	_	_	Offset=667-688
+3	30-50µl	_	Amount	_	_	4	Measure	_	Offset=692-699
+4	Working	_	Reagent	_	_	0	_	_	Offset=700-735
+5	keep	_	Action	_	_	0	_	_	Offset=740-744
+6	suspensions	_	Reagent	_	_	0	_	_	Offset=749-760
+7	ice	_	Temperature	_	_	0	_	_	Offset=764-767
+
+# sent_id = s10
+# text = Suspend the mitochondrial pellets in 30-50µl Working Mitochondria Storage Buffer and keep the suspensions on ice before downstream processing.
+1	stored	_	Action	_	_	0	_	_	Offset=821-827
+2	ice	_	Temperature	_	_	0	_	_	Offset=831-834
+3	48	_	Time	_	_	0	_	_	Offset=841-849
+

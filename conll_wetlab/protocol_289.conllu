@@ -1,0 +1,167 @@
+# sent_id = s1
+# text = Cesium Chloride Gradients
+1	Prepare	_	Action	_	_	0	_	_	Offset=26-33
+2	cesium	_	Reagent	_	_	0	_	_	Offset=34-49
+3	densities	_	Measure-Type	_	_	4	Of-Type	_	Offset=50-59
+4	p1.2,	_	Generic-Measure	_	_	2	Measure	_	Offset=63-89
+5	seawater	_	Reagent	_	_	0	_	_	Offset=93-101
+6	0.02μm	_	Size	_	_	7	Or	_	Offset=121-127
+7	0.2μm	_	Size	_	_	0	_	_	Offset=132-137
+8	filtered	_	Action	_	_	0	_	_	Offset=139-147
+9	autoclaved	_	Action	_	_	0	_	_	Offset=152-162
+
+# sent_id = s2
+# text = Prepare cesium chloride densities of p1.2, p1.4, p1.5 and p1.65 in seawater (sw) that has been 0.02μm (or 0.2μm) filtered and autoclaved.
+1	Place	_	Action	_	_	0	_	_	Offset=164-169
+2	tube	_	Location	_	_	4	Meronym	_	Offset=170-174
+3	prepared	_	Modifier	_	_	4	Mod-Link	_	Offset=178-186
+4	cesium	_	Reagent	_	_	0	_	_	Offset=187-193
+5	balance	_	Device	_	_	0	_	_	Offset=197-204
+
+# sent_id = s3
+# text = Place tube of prepared cesium on balance.  
+1	Tare	_	Action	_	_	0	_	_	Offset=208-212
+2	balance	_	Device	_	_	0	_	_	Offset=213-220
+3	0	_	Numerical	_	_	0	_	_	Offset=224-225
+
+# sent_id = s4
+# text = Tare balance to 0. 
+1	Remove	_	Action	_	_	0	_	_	Offset=228-234
+2	1ml	_	Amount	_	_	0	_	_	Offset=235-238
+3	sterile	_	Modifier	_	_	4	Mod-Link	_	Offset=244-251
+4	pipet	_	Device	_	_	0	_	_	Offset=252-261
+
+# sent_id = s5
+# text = Remove 1ml with sterile pipet tip.
+1	Layer	_	Action	_	_	0	_	_	Offset=263-268
+2	CsCl	_	Reagent	_	_	0	_	_	Offset=269-273
+3	bottom	_	Location	_	_	0	_	_	Offset=283-289
+4	gradient	_	Device	_	_	0	_	_	Offset=298-319
+
+# sent_id = s6
+# text = Layer CsCl from the bottom using a gradient fractionator if you have one or by hand. 
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=349-358
+2	layer	_	Action	_	_	0	_	_	Offset=359-364
+3	sample	_	Reagent	_	_	0	_	_	Offset=368-374
+4	~5ml	_	Amount	_	_	3	Measure	_	Offset=376-380
+5	SW40	_	Device	_	_	0	_	_	Offset=401-405
+6	~15ml	_	Amount	_	_	4	Or	_	Offset=406-411
+7	SW28	_	Device	_	_	5	Or	_	Offset=417-421
+
+# sent_id = s7
+# text = Carefully layer on sample (~5ml can be layered with SW40 ~15ml with SW28).
+1	Weigh	_	Action	_	_	0	_	_	Offset=424-429
+2	tubes	_	Location	_	_	0	_	_	Offset=442-447
+
+# sent_id = s8
+# text = Weigh and balance tubes.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=449-459
+2	SW40	_	Device	_	_	0	_	_	Offset=466-470
+3	SW28	_	Device	_	_	2	Or	_	Offset=474-492
+4	24,000rpm	_	Speed	_	_	0	_	_	Offset=495-504
+5	4hr	_	Time	_	_	0	_	_	Offset=509-512
+6	4°C	_	Temperature	_	_	0	_	_	Offset=516-519
+
+# sent_id = s9
+# text = Centrifuge using SW40 or SW28 Beckman rotor @ 24,000rpm for 4hr at 4°C. 
+1	sterile	_	Modifier	_	_	3	Mod-Link	_	Offset=527-534
+2	0.5ml	_	Amount	_	_	3	Measure	_	Offset=535-540
+3	tubes	_	Location	_	_	0	_	_	Offset=541-546
+4	1.5ml	_	Amount	_	_	5	Measure	_	Offset=557-562
+5	tubes	_	Location	_	_	0	_	_	Offset=563-568
+6	labeled	_	Action	_	_	0	_	_	Offset=576-583
+7	Open	_	Action	_	_	0	_	_	Offset=589-593
+8	tubes	_	Location	_	_	0	_	_	Offset=594-599
+9	rack	_	Location	_	_	0	_	_	Offset=605-609
+
+# sent_id = s10
+# text = Have sterile 0.5ml tubes (SW40) or 1.5ml tubes (SW28) labeled 1-24 Open tubes in a rack.
+1	Place	_	Action	_	_	0	_	_	Offset=611-616
+2	tube	_	Location	_	_	0	_	_	Offset=617-621
+3	ring	_	Device	_	_	0	_	_	Offset=625-635
+
+# sent_id = s11
+# text = Place tube on ring stand. 
+1	Puncture	_	Action	_	_	0	_	_	Offset=638-646
+2	2mm	_	Size	_	_	0	_	_	Offset=653-656
+3	bottom	_	Location	_	_	0	_	_	Offset=666-677
+4	tube	_	Location	_	_	3	Meronym	_	Offset=685-689
+5	sterile	_	Modifier	_	_	6	Mod-Link	_	Offset=698-705
+6	20	_	Device	_	_	0	_	_	Offset=706-721
+
+# sent_id = s12
+# text = Puncture about 2mm from the bottom side of the tube using a sterile 20 guage needle, bevel up.
+1	Collect	_	Action	_	_	0	_	_	Offset=733-740
+2	droplets	_	Reagent	_	_	0	_	_	Offset=741-749
+3	tube	_	Location	_	_	0	_	_	Offset=763-767
+
+# sent_id = s13
+# text = Collect droplets to fill each tube in order.
+1	Place	_	Action	_	_	0	_	_	Offset=778-783
+2	tube	_	Location	_	_	3	Meronym	_	Offset=784-788
+3	sample	_	Reagent	_	_	0	_	_	Offset=794-800
+4	4-place	_	Device	_	_	0	_	_	Offset=804-819
+
+# sent_id = s14
+# text = Place tube with sample on 4-place balance in holder.
+1	Tare	_	Action	_	_	0	_	_	Offset=831-835
+2	0	_	Numerical	_	_	0	_	_	Offset=839-840
+
+# sent_id = s15
+# text = Tare to 0.
+1	sterile	_	Modifier	_	_	2	Mod-Link	_	Offset=847-854
+2	pipet	_	Device	_	_	0	_	_	Offset=855-864
+3	remove	_	Action	_	_	0	_	_	Offset=866-872
+4	100µl	_	Amount	_	_	0	_	_	Offset=873-878
+
+# sent_id = s16
+# text = With sterile pipet tip, remove 100µl.
+1	Return	_	Action	_	_	0	_	_	Offset=898-904
+
+# sent_id = s17
+# text = Take measurement.
+1	Remove	_	Action	_	_	0	_	_	Offset=921-927
+2	100µl	_	Amount	_	_	0	_	_	Offset=936-941
+3	take	_	Action	_	_	0	_	_	Offset=943-959
+4	return	_	Action	_	_	0	_	_	Offset=961-967
+5	sample	_	Reagent	_	_	0	_	_	Offset=968-974
+6	tube	_	Location	_	_	0	_	_	Offset=978-982
+
+# sent_id = s18
+# text = Return sample to tube.
+1	Remove	_	Action	_	_	0	_	_	Offset=984-990
+2	100µl	_	Amount	_	_	0	_	_	Offset=1003-1008
+3	take	_	Action	_	_	0	_	_	Offset=1010-1026
+4	return	_	Action	_	_	0	_	_	Offset=1032-1038
+5	sample	_	Reagent	_	_	0	_	_	Offset=1039-1045
+6	tube	_	Location	_	_	0	_	_	Offset=1049-1053
+
+# sent_id = s19
+# text = Remove another 100µl, take measurement, return sample to tube.
+1	take	_	Action	_	_	0	_	_	Offset=1091-1095
+
+# sent_id = s20
+# text = Remove yet another 100µl, take measurement, and return sample to tube.
+1	Multiply	_	Action	_	_	0	_	_	Offset=1135-1143
+2	10	_	Numerical	_	_	0	_	_	Offset=1147-1149
+
+# sent_id = s21
+# text = After all tubes have been measured, take average of the 3 values for each tube.
+1	Pool	_	Action	_	_	0	_	_	Offset=1151-1155
+2	extract	_	Action	_	_	0	_	_	Offset=1160-1167
+3	DNA	_	Reagent	_	_	0	_	_	Offset=1168-1171
+4	staining	_	Action	_	_	0	_	_	Offset=1214-1222
+5	10µl	_	Amount	_	_	6	Measure	_	Offset=1223-1227
+6	SYBR	_	Reagent	_	_	0	_	_	Offset=1233-1242
+
+# sent_id = s22
+# text = Multiply by 10.
+1	Count	_	Action	_	_	0	_	_	Offset=1245-1250
+2	fluorescent	_	Device	_	_	0	_	_	Offset=1257-1274
+
+# sent_id = s23
+# text = Pool and extract DNA or can confirm presence of virus first by staining 10µl with SYBR gold. 
+1	Pool	_	Action	_	_	0	_	_	Offset=1276-1280
+2	samples	_	Reagent	_	_	0	_	_	Offset=1285-1292
+3	virus	_	Reagent	_	_	0	_	_	Offset=1298-1303
+

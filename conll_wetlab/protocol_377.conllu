@@ -1,0 +1,58 @@
+# sent_id = s1
+# text = Capped RNA Synthesis (E2050)
+1	Prepare	_	Action	_	_	0	_	_	Offset=29-36
+2	40	_	Concentration	_	_	3	Measure	_	Offset=37-42
+3	cap	_	Reagent	_	_	0	_	_	Offset=43-53
+
+# sent_id = s2
+# text = Prepare 40 mM cap analog. 
+1	Thaw	_	Action	_	_	0	_	_	Offset=56-60
+2	necessary	_	Modifier	_	_	3	Mod-Link	_	Offset=65-74
+3	kit	_	Reagent	_	_	0	_	_	Offset=75-89
+4	mix	_	Action	_	_	0	_	_	Offset=91-94
+5	pulse-spin	_	Action	_	_	0	_	_	Offset=99-109
+6	microfuge	_	Device	_	_	0	_	_	Offset=115-124
+7	collect	_	Action	_	_	0	_	_	Offset=128-135
+8	solutions	_	Reagent	_	_	0	_	_	Offset=136-145
+9	bottoms	_	Location	_	_	0	_	_	Offset=153-160
+10	tubes	_	Location	_	_	9	Meronym	_	Offset=164-169
+
+# sent_id = s3
+# text = Thaw the necessary kit components, mix and pulse-spin in a microfuge to collect solutions to the bottoms of tubes. 
+1	Assemble	_	Action	_	_	0	_	_	Offset=172-180
+2	reaction	_	Reagent	_	_	0	_	_	Offset=185-193
+3	room	_	Temperature	_	_	0	_	_	Offset=197-213
+
+# sent_id = s4
+# text = Assemble the reaction at room temperature in the following order. 
+1	Mix	_	Action	_	_	0	_	_	Offset=239-242
+2	thoroughly	_	Modifier	_	_	0	_	_	Offset=243-253
+3	pulse-spin	_	Action	_	_	0	_	_	Offset=258-268
+
+# sent_id = s5
+# text = Mix thoroughly and pulse-spin.  
+1	Incubate	_	Action	_	_	0	_	_	Offset=272-280
+2	37°C	_	Temperature	_	_	0	_	_	Offset=284-288
+3	2	_	Time	_	_	0	_	_	Offset=293-300
+
+# sent_id = s6
+# text = Incubate at 37°C for 2 hours. 
+1	remove	_	Action	_	_	0	_	_	Offset=321-327
+2	template	_	Reagent	_	_	0	_	_	Offset=328-340
+3	add	_	Action	_	_	0	_	_	Offset=342-345
+4	2	_	Amount	_	_	5	Measure	_	Offset=346-350
+5	DNase	_	Reagent	_	_	0	_	_	Offset=354-361
+6	mix	_	Action	_	_	0	_	_	Offset=376-379
+7	incubate	_	Action	_	_	0	_	_	Offset=384-392
+8	37°C	_	Temperature	_	_	0	_	_	Offset=396-400
+9	15	_	Time	_	_	0	_	_	Offset=405-415
+
+# sent_id = s7
+# text = Optional step: To remove template DNA, add 2 μl of DNase I (RNase-free), mix and incubate at 37°C for 15 minutes.
+1	Proceed	_	Action	_	_	0	_	_	Offset=417-424
+2	purification	_	Action	_	_	0	_	_	Offset=430-442
+3	synthesized	_	Reagent	_	_	0	_	_	Offset=446-461
+4	analysis	_	Action	_	_	0	_	_	Offset=465-473
+5	transcription	_	Reagent	_	_	0	_	_	Offset=477-499
+6	gel	_	Method	_	_	0	_	_	Offset=503-522
+

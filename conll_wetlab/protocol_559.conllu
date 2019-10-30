@@ -1,0 +1,60 @@
+# sent_id = s1
+# text = Red Blood Cell Lysis Protocol: Method II
+1	Dilute	_	Action	_	_	0	_	_	Offset=41-47
+2	10X	_	Concentration	_	_	3	Measure	_	Offset=52-55
+3	RBC	_	Reagent	_	_	0	_	_	Offset=56-72
+4	1X	_	Concentration	_	_	0	_	_	Offset=76-78
+5	deionized	_	Reagent	_	_	0	_	_	Offset=106-122
+
+# sent_id = s2
+# text = Dilute the 10X RBC Lysis Buffer to 1X working concentration with deionized water.
+1	Warm	_	Action	_	_	0	_	_	Offset=123-127
+2	1X	_	Concentration	_	_	3	Measure	_	Offset=132-134
+3	solution	_	Reagent	_	_	0	_	_	Offset=135-143
+4	room	_	Temperature	_	_	0	_	_	Offset=147-163
+
+# sent_id = s3
+# text = Warm the 1X solution to room temperature prior to use.
+1	Add	_	Action	_	_	0	_	_	Offset=178-181
+2	2.0	_	Amount	_	_	4	Measure	_	Offset=182-188
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=192-194
+4	RBC	_	Reagent	_	_	0	_	_	Offset=195-211
+5	each	_	Modifier	_	_	6	Mod-Link	_	Offset=215-219
+6	tube	_	Location	_	_	8	Meronym	_	Offset=220-224
+7	100	_	Amount	_	_	8	Measure	_	Offset=242-248
+8	whole	_	Reagent	_	_	0	_	_	Offset=252-263
+
+# sent_id = s4
+# text = Add 2.0 ml of 1X RBC Lysis Buffer to each tube containing up to 100 μl of whole blood.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=265-271
+2	vortex	_	Action	_	_	0	_	_	Offset=272-278
+3	each	_	Modifier	_	_	4	Mod-Link	_	Offset=279-283
+4	tube	_	Location	_	_	0	_	_	Offset=284-288
+5	immediately	_	Modifier	_	_	0	_	_	Offset=289-300
+6	adding	_	Action	_	_	0	_	_	Offset=307-313
+7	lysing	_	Reagent	_	_	0	_	_	Offset=318-333
+
+# sent_id = s5
+# text = Gently vortex each tube immediately after adding the lysing solution.
+1	Incubate	_	Action	_	_	0	_	_	Offset=335-343
+2	room	_	Temperature	_	_	0	_	_	Offset=347-363
+3	protected	_	Method	_	_	0	_	_	Offset=365-385
+4	10-15	_	Time	_	_	0	_	_	Offset=391-404
+
+# sent_id = s6
+# text = Incubate at room temperature, protected from light, for 10-15 minutes.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=406-416
+2	350	_	Speed	_	_	0	_	_	Offset=417-424
+3	5	_	Time	_	_	0	_	_	Offset=429-438
+
+# sent_id = s7
+# text = Centrifuge 350 x g for 5 minutes.
+1	Aspirate	_	Action	_	_	0	_	_	Offset=440-448
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=449-460
+3	without	_	Method	_	_	0	_	_	Offset=461-486
+4	resuspend	_	Action	_	_	0	_	_	Offset=492-501
+5	pellet	_	Reagent	_	_	0	_	_	Offset=506-512
+6	appropriate	_	Modifier	_	_	7	Mod-Link	_	Offset=520-531
+7	buffer	_	Reagent	_	_	0	_	_	Offset=532-538
+8	BioLegendCell	_	Reagent	_	_	7	Or	_	Offset=546-575
+

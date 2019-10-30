@@ -1,0 +1,586 @@
+# sent_id = s1
+# text = Embedding yeast colonies for light and electron microscopy
+1	Incubate	_	Action	_	_	0	_	_	Offset=59-67
+2	approximately	_	Modifier	_	_	4	Mod-Link	_	Offset=68-81
+3	300	_	Numerical	_	_	4	Measure	_	Offset=82-85
+4	colonies	_	Reagent	_	_	0	_	_	Offset=86-94
+5	agar	_	Reagent	_	_	0	_	_	Offset=98-109
+6	indicated	_	Time	_	_	0	_	_	Offset=118-132
+
+# sent_id = s2
+# text = Incubate approximately 300 colonies on agar medium for the indicated time.
+1	Remove	_	Action	_	_	0	_	_	Offset=134-140
+2	isolated	_	Modifier	_	_	3	Mod-Link	_	Offset=144-152
+3	colony	_	Reagent	_	_	0	_	_	Offset=153-159
+4	1-2	_	Size	_	_	3	Measure	_	Offset=161-167
+5	small	_	Amount	_	_	7	Measure	_	Offset=187-199
+6	underlying	_	Modifier	_	_	7	Mod-Link	_	Offset=207-217
+7	agar	_	Reagent	_	_	0	_	_	Offset=218-229
+8	place	_	Action	_	_	0	_	_	Offset=235-240
+9	microscope	_	Location	_	_	0	_	_	Offset=246-262
+
+# sent_id = s3
+# text = Remove an isolated colony (1-2 mm in diameter) and a small amount of the underlying agar medium, and place on a microscope slide. 
+1	Place	_	Action	_	_	0	_	_	Offset=265-270
+2	several	_	Amount	_	_	4	Measure	_	Offset=271-284
+3	2%	_	Concentration	_	_	4	Measure	_	Offset=288-290
+4	agar	_	Reagent	_	_	0	_	_	Offset=291-295
+5	42°C	_	Temperature	_	_	0	_	_	Offset=297-301
+6	microscope	_	Location	_	_	0	_	_	Offset=309-325
+7	immediately	_	Modifier	_	_	0	_	_	Offset=331-342
+8	place	_	Action	_	_	0	_	_	Offset=343-348
+9	colony	_	Reagent	_	_	0	_	_	Offset=353-359
+10	agar	_	Reagent	_	_	0	_	_	Offset=367-371
+11	place	_	Action	_	_	0	_	_	Offset=381-386
+12	several	_	Amount	_	_	13	Measure	_	Offset=387-400
+13	agar	_	Reagent	_	_	0	_	_	Offset=404-408
+14	top	_	Location	_	_	0	_	_	Offset=412-415
+15	colony	_	Reagent	_	_	14	Meronym	_	Offset=423-429
+16	solidify	_	Action	_	_	0	_	_	Offset=443-451
+
+# sent_id = s4
+# text = Place several drops of 2% agar (42°C)  on a microscope slide, and immediately place the colony on the agar and then place several drops of agar on top of the colony and allow to solidify.
+1	Trim	_	Action	_	_	0	_	_	Offset=453-457
+2	resulting	_	Modifier	_	_	3	Mod-Link	_	Offset=462-471
+3	agar	_	Reagent	_	_	0	_	_	Offset=472-482
+4	razor	_	Device	_	_	0	_	_	Offset=490-501
+5	place	_	Action	_	_	0	_	_	Offset=507-512
+6	3.5	_	Amount	_	_	7	Measure	_	Offset=518-524
+7	borosilicate	_	Location	_	_	10	Meronym	_	Offset=525-552
+8	1.5ml	_	Amount	_	_	10	Measure	_	Offset=584-589
+9	2%	_	Concentration	_	_	10	Measure	_	Offset=591-593
+10	paraformaldehyde	_	Reagent	_	_	0	_	_	Offset=595-611
+11	2%	_	Concentration	_	_	12	Measure	_	Offset=612-614
+12	glutaraldehyde	_	Reagent	_	_	10	Or	_	Offset=616-630
+
+# sent_id = s5
+# text = Trim the resulting agar block with a razor blade, and place in a 3.5 ml borosilicate screw-cap vial (Fisher 03-339-21B) containing 1.5ml, 2%, paraformaldehyde/2%, glutaraldehyde.
+1	Fix	_	Action	_	_	0	_	_	Offset=632-635
+2	colonies	_	Reagent	_	_	0	_	_	Offset=636-644
+3	incubating	_	Action	_	_	0	_	_	Offset=648-658
+4	7	_	Time	_	_	0	_	_	Offset=663-669
+5	4°C	_	Temperature	_	_	0	_	_	Offset=673-676
+
+# sent_id = s6
+# text = Fix colonies by incubating for 7 days at 4°C.
+1	Wash	_	Action	_	_	0	_	_	Offset=687-691
+2	agar	_	Reagent	_	_	0	_	_	Offset=692-703
+3	ice	_	Location	_	_	0	_	_	Offset=707-710
+4	incubating	_	Action	_	_	0	_	_	Offset=714-724
+5	15	_	Time	_	_	0	_	_	Offset=729-739
+6	1.5	_	Amount	_	_	8	Measure	_	Offset=745-751
+7	0.15M	_	Concentration	_	_	8	Measure	_	Offset=755-760
+8	sodium	_	Reagent	_	_	0	_	_	Offset=761-778
+9	pH	_	pH	_	_	8	Measure	_	Offset=780-786
+
+# sent_id = s7
+# text = Wash #1: Wash agar blocks on ice by incubating for 15 minutes with 1.5 ml of 0.15M sodium cacodylate (pH 7.2). 
+1	Wash	_	Action	_	_	0	_	_	Offset=799-803
+2	agar	_	Reagent	_	_	0	_	_	Offset=804-815
+3	ice	_	Location	_	_	0	_	_	Offset=819-822
+4	incubating	_	Action	_	_	0	_	_	Offset=826-836
+5	15	_	Time	_	_	0	_	_	Offset=841-851
+6	1.5	_	Amount	_	_	8	Measure	_	Offset=857-863
+7	0.15M	_	Concentration	_	_	8	Measure	_	Offset=867-872
+8	sodium	_	Reagent	_	_	0	_	_	Offset=873-890
+9	pH	_	pH	_	_	8	Measure	_	Offset=892-898
+
+# sent_id = s8
+# text = Wash #2: Wash agar blocks on ice by incubating for 15 minutes with 1.5 ml of 0.15M sodium cacodylate (pH 7.2). 
+1	Wash	_	Action	_	_	0	_	_	Offset=911-915
+2	agar	_	Reagent	_	_	0	_	_	Offset=916-927
+3	ice	_	Location	_	_	0	_	_	Offset=931-934
+4	incubating	_	Action	_	_	0	_	_	Offset=938-948
+5	5	_	Time	_	_	0	_	_	Offset=953-962
+6	1.5ml	_	Amount	_	_	7	Measure	_	Offset=968-973
+7	OS	_	Reagent	_	_	9	Meronym	11:Meronym	Offset=974-983
+8	100	_	Concentration	_	_	9	Measure	_	Offset=985-991
+9	KH2PO4	_	Reagent	_	_	0	_	_	Offset=992-998
+10	10	_	Concentration	_	_	11	Measure	_	Offset=1000-1005
+11	MgCl2	_	Reagent	_	_	0	_	_	Offset=1006-1011
+12	pH	_	pH	_	_	7	Measure	_	Offset=1013-1019
+
+# sent_id = s9
+# text = Wash #3: Wash agar blocks on ice by incubating for 5 minutes with 1.5ml OS buffer (100 mM KH2PO4, 10 mM MgCl2, pH 6.0).
+1	Wash	_	Action	_	_	0	_	_	Offset=1031-1035
+2	agar	_	Reagent	_	_	0	_	_	Offset=1036-1047
+3	ice	_	Location	_	_	0	_	_	Offset=1051-1054
+4	incubating	_	Action	_	_	0	_	_	Offset=1058-1068
+5	5	_	Time	_	_	0	_	_	Offset=1073-1082
+6	1.5ml	_	Amount	_	_	7	Measure	_	Offset=1088-1093
+7	OS	_	Reagent	_	_	9	Meronym	11:Meronym	Offset=1094-1103
+8	100	_	Concentration	_	_	9	Measure	_	Offset=1105-1111
+9	KH2PO4	_	Reagent	_	_	0	_	_	Offset=1112-1118
+10	10	_	Concentration	_	_	11	Measure	_	Offset=1120-1125
+11	MgCl2	_	Reagent	_	_	0	_	_	Offset=1126-1131
+12	pH	_	pH	_	_	7	Measure	_	Offset=1133-1139
+
+# sent_id = s10
+# text = Wash #4: Wash agar blocks on ice by incubating for 5 minutes with 1.5ml OS buffer (100 mM KH2PO4, 10 mM MgCl2, pH 6.0).
+1	add	_	Action	_	_	0	_	_	Offset=1192-1195
+2	1%	_	Concentration	_	_	3	Measure	_	Offset=1196-1198
+3	OsO4	_	Reagent	_	_	0	_	_	Offset=1199-1203
+4	OS	_	Reagent	_	_	3	Meronym	_	Offset=1207-1209
+5	vials	_	Location	_	_	0	_	_	Offset=1213-1218
+6	cover	_	Action	_	_	0	_	_	Offset=1222-1227
+7	agar	_	Reagent	_	_	0	_	_	Offset=1232-1243
+8	incubate	_	Action	_	_	0	_	_	Offset=1248-1256
+9	ice	_	Location	_	_	0	_	_	Offset=1260-1263
+10	chemical	_	Device	_	_	0	_	_	Offset=1269-1287
+11	1	_	Time	_	_	10	Setting	_	Offset=1292-1296
+
+# sent_id = s11
+# text = If sections will be used for electron microscopy, add 1% OsO4 in OS to vials to cover the agar blocks and incubate on ice in a chemical fume hood for 1 hr.
+1	Dispose	_	Action	_	_	0	_	_	Offset=1325-1332
+2	1%	_	Concentration	_	_	3	Measure	_	Offset=1336-1338
+3	OsO4	_	Reagent	_	_	0	_	_	Offset=1339-1343
+4	hazardous	_	Reagent	_	_	0	_	_	Offset=1347-1362
+
+# sent_id = s12
+# text = Otherwise skip to step 13.
+1	Wash	_	Action	_	_	0	_	_	Offset=1371-1375
+2	1.5ml	_	Amount	_	_	3	Measure	_	Offset=1381-1386
+3	OS	_	Reagent	_	_	0	_	_	Offset=1387-1396
+4	incubating	_	Action	_	_	0	_	_	Offset=1400-1410
+5	ice	_	Location	_	_	0	_	_	Offset=1414-1417
+6	10	_	Time	_	_	0	_	_	Offset=1422-1432
+
+# sent_id = s13
+# text = Dispose of 1% OsO4 in hazardous waste.
+1	Wash	_	Action	_	_	0	_	_	Offset=1441-1445
+2	1.5ml	_	Amount	_	_	3	Measure	_	Offset=1451-1456
+3	OS	_	Reagent	_	_	0	_	_	Offset=1457-1466
+4	incubating	_	Action	_	_	0	_	_	Offset=1470-1480
+5	ice	_	Location	_	_	0	_	_	Offset=1484-1487
+6	10	_	Time	_	_	0	_	_	Offset=1492-1502
+
+# sent_id = s14
+# text = WashA: Wash with 1.5ml OS buffer by incubating on ice for 10 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=1504-1507
+2	1.5	_	Amount	_	_	3	Measure	_	Offset=1508-1514
+3	OS	_	Reagent	_	_	0	_	_	Offset=1515-1517
+4	incubate	_	Action	_	_	0	_	_	Offset=1522-1530
+5	overnight	_	Time	_	_	0	_	_	Offset=1531-1540
+6	4°C	_	Temperature	_	_	0	_	_	Offset=1544-1547
+
+# sent_id = s15
+# text = WashB: Wash with 1.5ml OS buffer by incubating on ice for 10 minutes.
+1	Wash	_	Action	_	_	0	_	_	Offset=1556-1560
+2	blocks	_	Reagent	_	_	0	_	_	Offset=1561-1567
+3	1.5ml	_	Amount	_	_	5	Measure	_	Offset=1573-1578
+4	cold	_	Modifier	_	_	5	Mod-Link	_	Offset=1579-1583
+5	water	_	Reagent	_	_	0	_	_	Offset=1584-1589
+6	incubating	_	Action	_	_	0	_	_	Offset=1593-1603
+7	ice	_	Location	_	_	0	_	_	Offset=1607-1610
+8	10	_	Time	_	_	0	_	_	Offset=1615-1625
+
+# sent_id = s16
+# text = Add 1.5 ml OS and incubate overnight at 4°C.
+1	Wash	_	Action	_	_	0	_	_	Offset=1634-1638
+2	blocks	_	Reagent	_	_	0	_	_	Offset=1639-1645
+3	1.5ml	_	Amount	_	_	0	_	_	Offset=1651-1656
+4	cold	_	Modifier	_	_	5	Mod-Link	_	Offset=1657-1661
+5	water	_	Reagent	_	_	0	_	_	Offset=1662-1667
+6	incubating	_	Action	_	_	0	_	_	Offset=1671-1681
+7	ice	_	Location	_	_	0	_	_	Offset=1685-1688
+8	10	_	Time	_	_	0	_	_	Offset=1693-1703
+
+# sent_id = s17
+# text = WashA: Wash blocks with 1.5ml cold water by incubating on ice for 10 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=1715-1718
+2	1.5ml	_	Amount	_	_	5	Measure	_	Offset=1719-1724
+3	cold	_	Modifier	_	_	5	Mod-Link	_	Offset=1725-1729
+4	25%	_	Concentration	_	_	5	Measure	_	Offset=1730-1733
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=1734-1741
+6	incubate	_	Action	_	_	0	_	_	Offset=1746-1754
+7	ice	_	Location	_	_	0	_	_	Offset=1758-1761
+8	10	_	Time	_	_	0	_	_	Offset=1766-1776
+
+# sent_id = s18
+# text = WashB: Wash blocks with 1.5ml cold water by incubating on ice for 10 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=1787-1790
+2	1.5ml	_	Amount	_	_	5	Measure	_	Offset=1791-1796
+3	cold	_	Modifier	_	_	5	Mod-Link	_	Offset=1797-1801
+4	50%	_	Concentration	_	_	5	Measure	_	Offset=1802-1805
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=1806-1813
+6	incubate	_	Action	_	_	0	_	_	Offset=1818-1826
+7	ice	_	Location	_	_	0	_	_	Offset=1830-1833
+8	10	_	Time	_	_	0	_	_	Offset=1838-1848
+
+# sent_id = s19
+# text = Wash #1:  Add 1.5ml cold 25% ethanol and incubate on ice for 10 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=1859-1862
+2	1.5ml	_	Amount	_	_	5	Measure	_	Offset=1863-1868
+3	cold	_	Modifier	_	_	5	Mod-Link	_	Offset=1869-1873
+4	75%	_	Concentration	_	_	5	Measure	_	Offset=1874-1877
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=1878-1885
+6	incubate	_	Action	_	_	0	_	_	Offset=1890-1898
+7	ice	_	Location	_	_	0	_	_	Offset=1902-1905
+8	10	_	Time	_	_	0	_	_	Offset=1910-1920
+
+# sent_id = s20
+# text = Wash #2: Add 1.5ml cold 50% ethanol and incubate on ice for 10 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=1931-1934
+2	1.5ml	_	Amount	_	_	5	Measure	_	Offset=1935-1940
+3	cold	_	Modifier	_	_	5	Mod-Link	_	Offset=1941-1945
+4	95%	_	Concentration	_	_	5	Measure	_	Offset=1946-1949
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=1950-1957
+6	incubate	_	Action	_	_	0	_	_	Offset=1962-1970
+7	ice	_	Location	_	_	0	_	_	Offset=1974-1977
+8	10	_	Time	_	_	0	_	_	Offset=1982-1992
+
+# sent_id = s21
+# text = Wash #3: Add 1.5ml cold 75% ethanol and incubate on ice for 10 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=2003-2006
+2	1.5ml	_	Amount	_	_	5	Measure	_	Offset=2007-2012
+3	cold	_	Modifier	_	_	5	Mod-Link	_	Offset=2013-2017
+4	100%	_	Concentration	_	_	5	Measure	_	Offset=2018-2022
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=2023-2030
+6	incubate	_	Action	_	_	0	_	_	Offset=2035-2043
+7	ice	_	Location	_	_	0	_	_	Offset=2047-2050
+8	10	_	Time	_	_	0	_	_	Offset=2055-2065
+
+# sent_id = s22
+# text = Wash #4: Add 1.5ml cold 95% ethanol and incubate on ice for 10 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=2077-2080
+2	1.5ml	_	Amount	_	_	5	Measure	_	Offset=2081-2086
+3	cold	_	Modifier	_	_	5	Mod-Link	_	Offset=2087-2091
+4	100%	_	Concentration	_	_	5	Measure	_	Offset=2092-2096
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=2097-2104
+6	incubate	_	Action	_	_	0	_	_	Offset=2109-2117
+7	ice	_	Location	_	_	0	_	_	Offset=2121-2124
+8	10	_	Time	_	_	0	_	_	Offset=2129-2139
+
+# sent_id = s23
+# text = Wash #5: Add 1.5ml cold 100% ethanol and incubate on ice for 10 minutes.
+1	Remove	_	Action	_	_	0	_	_	Offset=2141-2147
+2	ethanol	_	Reagent	_	_	0	_	_	Offset=2148-2155
+3	resuspend	_	Action	_	_	0	_	_	Offset=2160-2169
+4	1.5ml	_	Amount	_	_	7	Measure	_	Offset=2173-2178
+5	cold	_	Modifier	_	_	7	Mod-Link	_	Offset=2179-2183
+6	100%	_	Concentration	_	_	7	Measure	_	Offset=2184-2188
+7	ethanol	_	Reagent	_	_	0	_	_	Offset=2189-2196
+
+# sent_id = s24
+# text = Wash #6:  Add 1.5ml cold 100% ethanol and incubate on ice for 10 minutes.
+1	Leave	_	Action	_	_	0	_	_	Offset=2198-2203
+2	blocks	_	Reagent	_	_	0	_	_	Offset=2208-2214
+3	overnight	_	Time	_	_	0	_	_	Offset=2215-2224
+4	4°C	_	Temperature	_	_	0	_	_	Offset=2228-2231
+5	100%	_	Concentration	_	_	6	Measure	_	Offset=2235-2239
+6	ethanol	_	Reagent	_	_	0	_	_	Offset=2240-2247
+
+# sent_id = s25
+# text = Remove ethanol and resuspend in 1.5ml cold 100% ethanol.
+1	Make	_	Action	_	_	0	_	_	Offset=2249-2253
+2	Spurr's	_	Reagent	_	_	0	_	_	Offset=2254-2269
+3	stirring	_	Action	_	_	0	_	_	Offset=2273-2281
+4	slowly	_	Modifier	_	_	0	_	_	Offset=2282-2288
+5	chemical	_	Device	_	_	0	_	_	Offset=2295-2313
+6	5	_	Amount	_	_	7	Measure	_	Offset=2314-2321
+7	ERL4221	_	Reagent	_	_	0	_	_	Offset=2322-2329
+8	4	_	Amount	_	_	9	Measure	_	Offset=2331-2338
+9	DER736	_	Reagent	_	_	0	_	_	Offset=2339-2345
+10	13	_	Amount	_	_	11	Measure	_	Offset=2350-2358
+11	NSA	_	Reagent	_	_	0	_	_	Offset=2359-2362
+12	20	_	Time	_	_	0	_	_	Offset=2367-2377
+
+# sent_id = s26
+# text = Leave the blocks overnight at 4°C in 100% ethanol.
+1	Add	_	Action	_	_	0	_	_	Offset=2409-2412
+2	0.15	_	Amount	_	_	3	Measure	_	Offset=2413-2423
+3	DMAE	_	Reagent	_	_	0	_	_	Offset=2424-2428
+4	stir	_	Action	_	_	0	_	_	Offset=2463-2467
+5	20	_	Time	_	_	0	_	_	Offset=2472-2482
+
+# sent_id = s27
+# text = Make Spurr's reagent by stirring slowly under chemical fume hood 5 grams ERL4221, 4 grams DER736 and 13 grams NSA for 20 minutes(Electron Microscopy Sciences).
+1	De-gas	_	Action	_	_	0	_	_	Offset=2484-2490
+2	1-2	_	Time	_	_	0	_	_	Offset=2495-2502
+
+# sent_id = s28
+# text = Add 0.15 grams DMAE(Electron Microscopy Sciences) and stir for 20 minutes.
+1	Wash	_	Action	_	_	0	_	_	Offset=2504-2508
+2	blocks	_	Reagent	_	_	0	_	_	Offset=2509-2515
+3	1.5ml	_	Amount	_	_	7	Measure	_	Offset=2521-2526
+4	unopened	_	Modifier	_	_	7	Mod-Link	_	Offset=2527-2535
+5	room	_	Temperature	_	_	0	_	_	Offset=2536-2545
+6	100%	_	Concentration	_	_	7	Measure	_	Offset=2546-2550
+7	ethanol	_	Reagent	_	_	0	_	_	Offset=2551-2558
+8	incubating	_	Action	_	_	0	_	_	Offset=2562-2572
+9	room	_	Temperature	_	_	0	_	_	Offset=2576-2585
+10	10	_	Time	_	_	0	_	_	Offset=2590-2600
+
+# sent_id = s29
+# text = De-gas for 1-2 hrs.
+1	Repeat	_	Action	_	_	0	_	_	Offset=2602-2608
+2	4	_	Numerical	_	_	0	_	_	Offset=2609-2610
+
+# sent_id = s30
+# text = Wash blocks with 1.5ml unopened room temp 100% ethanol by incubating at room temp for 10 minutes.
+1	Remove	_	Action	_	_	0	_	_	Offset=2636-2642
+2	ethanol	_	Reagent	_	_	0	_	_	Offset=2643-2650
+3	add	_	Action	_	_	0	_	_	Offset=2655-2658
+4	1.5ml	_	Amount	_	_	7	Measure	_	Offset=2659-2664
+5	2:1	_	Generic-Measure	_	_	7	Measure	_	Offset=2670-2679
+6	100%	_	Concentration	_	_	7	Measure	_	Offset=2683-2687
+7	ethanol:Spurr's	_	Reagent	_	_	0	_	_	Offset=2688-2711
+
+# sent_id = s31
+# text = Repeat 4 more times.
+1	Rotate	_	Action	_	_	0	_	_	Offset=2726-2732
+2	vial	_	Location	_	_	0	_	_	Offset=2733-2737
+3	15	_	Time	_	_	0	_	_	Offset=2742-2752
+4	wheel	_	Device	_	_	0	_	_	Offset=2756-2761
+5	room	_	Temperature	_	_	0	_	_	Offset=2765-2781
+
+# sent_id = s32
+# text = Treatment#1: Remove ethanol and add 1.5ml of a 2:1 ratio of 100% ethanol:Spurr's reagent.
+1	stand	_	Action	_	_	0	_	_	Offset=2805-2810
+2	30	_	Time	_	_	0	_	_	Offset=2815-2825
+3	room	_	Temperature	_	_	0	_	_	Offset=2829-2845
+
+# sent_id = s33
+# text = Treatment#1: Rotate vial for 15 minutes on wheel at room temperature.
+1	Remove	_	Action	_	_	0	_	_	Offset=2860-2866
+2	100%	_	Concentration	_	_	3	Measure	_	Offset=2867-2871
+3	ethanol:Spurr's	_	Reagent	_	_	0	_	_	Offset=2872-2895
+4	add	_	Action	_	_	0	_	_	Offset=2900-2903
+5	1.5ml	_	Amount	_	_	8	Measure	_	Offset=2904-2909
+6	2:1	_	Generic-Measure	_	_	8	Measure	_	Offset=2915-2924
+7	100%	_	Concentration	_	_	8	Measure	_	Offset=2928-2932
+8	ethanol:Spurr's	_	Reagent	_	_	0	_	_	Offset=2933-2956
+
+# sent_id = s34
+# text = Treatment#1: Allow to stand for 30 minutes at room temperature.
+1	Rotate	_	Action	_	_	0	_	_	Offset=2958-2964
+2	vial	_	Location	_	_	0	_	_	Offset=2965-2969
+3	15	_	Time	_	_	0	_	_	Offset=2974-2984
+4	wheel	_	Device	_	_	0	_	_	Offset=2988-2993
+5	room	_	Temperature	_	_	0	_	_	Offset=2997-3013
+
+# sent_id = s35
+# text = Treatment#2: Remove 100% ethanol:Spurr's reagent and add 1.5ml of a 2:1 ratio of 100% ethanol:Spurr's reagent.
+1	stand	_	Action	_	_	0	_	_	Offset=3037-3042
+2	30	_	Time	_	_	0	_	_	Offset=3047-3057
+3	room	_	Temperature	_	_	0	_	_	Offset=3061-3077
+
+# sent_id = s36
+# text = Rotate vial for 15 minutes on wheel at room temperature.
+1	Remove	_	Action	_	_	0	_	_	Offset=3093-3099
+2	100%	_	Concentration	_	_	3	Measure	_	Offset=3100-3104
+3	ethanol:Spurr's	_	Reagent	_	_	0	_	_	Offset=3105-3128
+4	add	_	Action	_	_	0	_	_	Offset=3133-3136
+5	1.5ml	_	Amount	_	_	8	Measure	_	Offset=3137-3142
+6	2:1	_	Generic-Measure	_	_	8	Measure	_	Offset=3148-3157
+7	100%	_	Concentration	_	_	8	Measure	_	Offset=3161-3165
+8	ethanol:	_	Reagent	_	_	0	_	_	Offset=3166-3190
+
+# sent_id = s37
+# text = Treatment#2: Allow to stand for 30 minutes at room temperature.
+1	Rotate	_	Action	_	_	0	_	_	Offset=3192-3198
+2	vial	_	Location	_	_	0	_	_	Offset=3199-3203
+3	15	_	Time	_	_	0	_	_	Offset=3208-3218
+4	wheel	_	Device	_	_	0	_	_	Offset=3222-3227
+5	room	_	Temperature	_	_	0	_	_	Offset=3231-3247
+
+# sent_id = s38
+# text = Treatment #3: Remove 100% ethanol:Spurr's reagent and add 1.5ml of a 2:1 ratio of 100% ethanol: Spurr's reagent.
+1	stand	_	Action	_	_	0	_	_	Offset=3272-3277
+2	30	_	Time	_	_	0	_	_	Offset=3282-3292
+3	room	_	Temperature	_	_	0	_	_	Offset=3296-3312
+
+# sent_id = s39
+# text = Rotate vial for 15 minutes on wheel at room temperature.
+1	Remove	_	Action	_	_	0	_	_	Offset=3328-3334
+2	100%	_	Concentration	_	_	3	Measure	_	Offset=3335-3339
+3	ethanol:	_	Reagent	_	_	0	_	_	Offset=3340-3364
+4	add	_	Action	_	_	0	_	_	Offset=3369-3372
+5	1.5ml	_	Amount	_	_	8	Measure	_	Offset=3373-3378
+6	1:1	_	Generic-Measure	_	_	8	Measure	_	Offset=3384-3393
+7	100%	_	Concentration	_	_	8	Measure	_	Offset=3397-3401
+8	ethanol:Spurr's	_	Reagent	_	_	0	_	_	Offset=3402-3425
+
+# sent_id = s40
+# text = Treatment #3: Allow to stand for 30 minutes at room temperature.
+1	Rotate	_	Action	_	_	0	_	_	Offset=3427-3433
+2	vials	_	Location	_	_	0	_	_	Offset=3434-3439
+3	15	_	Time	_	_	0	_	_	Offset=3444-3454
+4	wheel	_	Device	_	_	0	_	_	Offset=3458-3463
+5	room	_	Temperature	_	_	0	_	_	Offset=3467-3483
+
+# sent_id = s41
+# text = Treatment #4: Remove 100% ethanol: Spurr's reagent and add 1.5ml of a 1:1 ratio of 100% ethanol:Spurr's reagent.
+1	stand	_	Action	_	_	0	_	_	Offset=3508-3513
+2	30	_	Time	_	_	0	_	_	Offset=3518-3528
+3	room	_	Temperature	_	_	0	_	_	Offset=3532-3548
+
+# sent_id = s42
+# text = Rotate vials for 15 minutes on wheel at room temperature.
+1	Remove	_	Action	_	_	0	_	_	Offset=3563-3569
+2	100%	_	Concentration	_	_	3	Measure	_	Offset=3570-3574
+3	ethanol:Spurr's	_	Reagent	_	_	0	_	_	Offset=3575-3598
+4	add	_	Action	_	_	0	_	_	Offset=3603-3606
+5	1.5ml	_	Amount	_	_	8	Measure	_	Offset=3607-3612
+6	1:1	_	Generic-Measure	_	_	8	Measure	_	Offset=3618-3627
+7	100%	_	Concentration	_	_	8	Measure	_	Offset=3631-3635
+8	ethanol:	_	Reagent	_	_	0	_	_	Offset=3636-3660
+
+# sent_id = s43
+# text = Treatment #4: Allow to stand for 30 minutes at room temperature.
+1	Rotate	_	Action	_	_	0	_	_	Offset=3662-3668
+2	vials	_	Location	_	_	0	_	_	Offset=3669-3674
+3	15	_	Time	_	_	0	_	_	Offset=3679-3689
+4	wheel	_	Device	_	_	0	_	_	Offset=3693-3698
+5	room	_	Temperature	_	_	0	_	_	Offset=3702-3718
+
+# sent_id = s44
+# text = Treatment#5: Remove 100% ethanol:Spurr's reagent and add 1.5ml of a 1:1 ratio of 100% ethanol: Spurr's reagent.
+1	stand	_	Action	_	_	0	_	_	Offset=3742-3747
+2	30	_	Time	_	_	0	_	_	Offset=3752-3762
+3	room	_	Temperature	_	_	0	_	_	Offset=3766-3782
+
+# sent_id = s45
+# text = Rotate vials for 15 minutes on wheel at room temperature.
+1	Remove	_	Action	_	_	0	_	_	Offset=3784-3790
+2	100%	_	Concentration	_	_	3	Measure	_	Offset=3791-3795
+3	ethanol:Spurr's	_	Reagent	_	_	0	_	_	Offset=3796-3819
+4	add	_	Action	_	_	0	_	_	Offset=3824-3827
+5	1.5ml	_	Amount	_	_	6	Measure	_	Offset=3828-3833
+6	Spurr's	_	Reagent	_	_	0	_	_	Offset=3835-3850
+7	vial	_	Location	_	_	0	_	_	Offset=3854-3858
+
+# sent_id = s46
+# text = Treatment#5: Allow to stand for 30 minutes at room temperature.
+1	Incubate	_	Action	_	_	0	_	_	Offset=3860-3868
+2	4hrs	_	Time	_	_	0	_	_	Offset=3873-3877
+3	room	_	Temperature	_	_	0	_	_	Offset=3881-3897
+
+# sent_id = s47
+# text = Remove 100% ethanol:Spurr's reagent and add 1.5ml  Spurr's reagent to vial.
+1	Replace	_	Action	_	_	0	_	_	Offset=3899-3906
+2	1.5ml	_	Amount	_	_	3	Measure	_	Offset=3912-3917
+3	Spurr's	_	Reagent	_	_	0	_	_	Offset=3918-3933
+4	rotate	_	Action	_	_	0	_	_	Offset=3938-3944
+5	vial	_	Location	_	_	0	_	_	Offset=3949-3953
+6	overnight	_	Time	_	_	0	_	_	Offset=3954-3963
+7	wheel	_	Device	_	_	0	_	_	Offset=3971-3976
+8	room	_	Temperature	_	_	0	_	_	Offset=3980-3996
+
+# sent_id = s48
+# text = Incubate for 4hrs at room temperature.
+1	Replace	_	Action	_	_	0	_	_	Offset=3998-4005
+2	1.5ml	_	Amount	_	_	3	Measure	_	Offset=4011-4016
+3	Spurr's	_	Reagent	_	_	0	_	_	Offset=4017-4032
+4	rotate	_	Action	_	_	0	_	_	Offset=4037-4043
+5	vial	_	Location	_	_	0	_	_	Offset=4048-4052
+6	until	_	Time	_	_	0	_	_	Offset=4053-4073
+7	wheel	_	Device	_	_	0	_	_	Offset=4081-4086
+8	room	_	Temperature	_	_	0	_	_	Offset=4090-4106
+
+# sent_id = s49
+# text = Replace with 1.5ml Spurr's reagent and rotate the vial overnight on the wheel at room temperature.
+1	Remove	_	Action	_	_	0	_	_	Offset=4108-4114
+2	Spurr's	_	Reagent	_	_	0	_	_	Offset=4119-4134
+3	replace	_	Action	_	_	0	_	_	Offset=4139-4146
+4	1.5ml	_	Amount	_	_	6	Measure	_	Offset=4152-4157
+5	freshly	_	Modifier	_	_	6	Mod-Link	_	Offset=4158-4170
+6	Spurr's	_	Reagent	_	_	0	_	_	Offset=4171-4186
+
+# sent_id = s50
+# text = Replace with 1.5ml Spurr's reagent and rotate the vial until late afternoon on the wheel at room temperature.
+1	Rotate	_	Action	_	_	0	_	_	Offset=4188-4194
+2	vial	_	Location	_	_	0	_	_	Offset=4199-4203
+3	overnight	_	Time	_	_	0	_	_	Offset=4204-4213
+4	wheel	_	Device	_	_	0	_	_	Offset=4221-4226
+5	room	_	Temperature	_	_	0	_	_	Offset=4230-4246
+
+# sent_id = s51
+# text = Remove the Spurr's reagent and replace with 1.5ml freshly made Spurr's reagent.
+1	replace	_	Action	_	_	0	_	_	Offset=4261-4268
+2	1.5ml	_	Amount	_	_	3	Measure	_	Offset=4274-4279
+3	Spurr's	_	Reagent	_	_	0	_	_	Offset=4280-4295
+4	rotate	_	Action	_	_	0	_	_	Offset=4300-4306
+5	until	_	Time	_	_	0	_	_	Offset=4307-4330
+6	wheel	_	Device	_	_	0	_	_	Offset=4338-4343
+7	room	_	Temperature	_	_	0	_	_	Offset=4347-4363
+
+# sent_id = s52
+# text = Rotate the vial overnight on the wheel at room temperature.
+1	replace	_	Action	_	_	0	_	_	Offset=4378-4385
+2	1.5ml	_	Amount	_	_	3	Measure	_	Offset=4391-4396
+3	Spurr's	_	Reagent	_	_	0	_	_	Offset=4397-4412
+4	rotate	_	Action	_	_	0	_	_	Offset=4417-4423
+5	until	_	Time	_	_	0	_	_	Offset=4424-4447
+6	wheel	_	Device	_	_	0	_	_	Offset=4455-4460
+7	room	_	Temperature	_	_	0	_	_	Offset=4464-4480
+
+# sent_id = s53
+# text = The next day replace with 1.5ml Spurr's reagent and rotate until the following day on the wheel at room temperature.
+1	Place	_	Action	_	_	0	_	_	Offset=4482-4487
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=4488-4492
+3	agar	_	Reagent	_	_	0	_	_	Offset=4493-4503
+4	mold	_	Reagent	_	_	6	Meronym	_	Offset=4509-4513
+5	0.2ml	_	Amount	_	_	6	Measure	_	Offset=4519-4524
+6	Spurr's	_	Reagent	_	_	0	_	_	Offset=4525-4540
+7	incubate	_	Action	_	_	0	_	_	Offset=4545-4553
+8	60°C	_	Temperature	_	_	0	_	_	Offset=4557-4561
+9	four	_	Time	_	_	0	_	_	Offset=4566-4576
+
+# sent_id = s54
+# text = The next day replace with 1.5ml Spurr's reagent and rotate until the following day on the wheel at room temperature.
+1	Top	_	Action	_	_	0	_	_	Offset=4578-4585
+2	molds	_	Reagent	_	_	3	Meronym	_	Offset=4590-4595
+3	Spurr's	_	Reagent	_	_	0	_	_	Offset=4601-4616
+4	incubate	_	Action	_	_	0	_	_	Offset=4621-4629
+5	60°C	_	Temperature	_	_	0	_	_	Offset=4633-4637
+6	3	_	Time	_	_	0	_	_	Offset=4642-4648
+
+# sent_id = s55
+# text = Place each agar block in a mold with 0.2ml Spurr's reagent and incubate at 60°C for four hours.
+1	Collect	_	Action	_	_	0	_	_	Offset=4650-4657
+2	sections(0.5u)	_	Reagent	_	_	0	_	_	Offset=4658-4672
+3	central	_	Location	_	_	0	_	_	Offset=4682-4696
+4	colony	_	Reagent	_	_	3	Meronym	_	Offset=4704-4710
+5	drop	_	Amount	_	_	6	Measure	_	Offset=4716-4720
+6	dH20	_	Reagent	_	_	0	_	_	Offset=4724-4728
+7	glass	_	Location	_	_	0	_	_	Offset=4734-4745
+
+# sent_id = s56
+# text = Top off the molds with Spurr's reagent and incubate at 60°C for 3 days.
+1	Dry	_	Action	_	_	0	_	_	Offset=4747-4750
+2	slide	_	Location	_	_	0	_	_	Offset=4751-4756
+3	52°C	_	Temperature	_	_	0	_	_	Offset=4762-4766
+4	heat	_	Reagent	_	_	0	_	_	Offset=4767-4777
+
+# sent_id = s57
+# text = Collect sections(0.5u) from the central region of the colony in a drop of dH20 on a glass slide.
+1	Stain	_	Action	_	_	0	_	_	Offset=4779-4784
+2	sections	_	Reagent	_	_	0	_	_	Offset=4785-4793
+3	1%	_	Concentration	_	_	4	Measure	_	Offset=4799-4801
+4	toluidine	_	Reagent	_	_	0	_	_	Offset=4802-4816
+5	1%	_	Concentration	_	_	6	Measure	_	Offset=4818-4820
+6	Sodium	_	Reagent	_	_	0	_	_	Offset=4821-4834
+7	5-15	_	Time	_	_	0	_	_	Offset=4839-4851
+
+# sent_id = s58
+# text = Dry slide on a 52°C heat block.
+1	Wash	_	Action	_	_	0	_	_	Offset=4853-4857
+2	slide	_	Location	_	_	0	_	_	Offset=4858-4863
+3	dH20	_	Reagent	_	_	0	_	_	Offset=4882-4886
+
+# sent_id = s59
+# text = Stain sections with 1% toluidine blue, 1% Sodium Borate for 5-15 seconds.
+1	Dry	_	Action	_	_	0	_	_	Offset=4888-4891
+2	heat	_	Reagent	_	_	0	_	_	Offset=4895-4905
+
+# sent_id = s60
+# text = Wash slide under a stream of dH20.
+1	Cover	_	Action	_	_	0	_	_	Offset=4907-4912
+2	Permount(Fisher	_	Device	_	_	0	_	_	Offset=4916-4941
+
+# sent_id = s61
+# text = Dry on heat block.
+1	Examine	_	Action	_	_	0	_	_	Offset=4943-4950
+2	light	_	Device	_	_	0	_	_	Offset=4954-4970
+

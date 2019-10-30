@@ -1,0 +1,110 @@
+# sent_id = s1
+# text = Extracting DNA from viruses embedded in agarose
+1	Add	_	Action	_	_	0	_	_	Offset=48-51
+2	agarose	_	Reagent	_	_	0	_	_	Offset=52-59
+3	SE	_	Reagent	_	_	0	_	_	Offset=63-72
+
+# sent_id = s2
+# text = Add agarose to SE buffer for a final concentration of 1.5% (wt/vol).
+1	Melt	_	Action	_	_	0	_	_	Offset=117-121
+2	agarose	_	Reagent	_	_	0	_	_	Offset=126-133
+3	microwave	_	Device	_	_	0	_	_	Offset=139-153
+4	cool	_	Action	_	_	0	_	_	Offset=160-164
+5	maintain	_	Action	_	_	0	_	_	Offset=169-177
+6	37°C	_	Temperature	_	_	0	_	_	Offset=181-185
+7	water	_	Device	_	_	0	_	_	Offset=191-201
+
+# sent_id = s3
+# text = Melt the agarose in a microwave oven, then cool and maintain at 37°C in a water bath.
+1	Warm	_	Action	_	_	0	_	_	Offset=203-207
+2	viral	_	Reagent	_	_	0	_	_	Offset=212-229
+3	37°C	_	Temperature	_	_	0	_	_	Offset=233-237
+4	water	_	Device	_	_	0	_	_	Offset=245-255
+5	immediately	_	Modifier	_	_	0	_	_	Offset=262-273
+6	mix	_	Action	_	_	0	_	_	Offset=274-277
+7	equal	_	Amount	_	_	8	Measure	_	Offset=286-298
+8	molten	_	Reagent	_	_	0	_	_	Offset=302-316
+9	quickly	_	Modifier	_	_	0	_	_	Offset=321-328
+10	transfer	_	Action	_	_	0	_	_	Offset=329-337
+11	mixture	_	Reagent	_	_	0	_	_	Offset=342-349
+12	casting	_	Location	_	_	0	_	_	Offset=353-366
+
+# sent_id = s4
+# text = Warm the viral concentrate to 37°C in the water bath, then immediately mix with an equal volume of molten agarose and quickly transfer the mixture to casting molds.
+1	transfer	_	Action	_	_	0	_	_	Offset=397-405
+2	plug	_	Reagent	_	_	0	_	_	Offset=410-414
+3	tube	_	Location	_	_	0	_	_	Offset=482-486
+4	5	_	Amount	_	_	5	Measure	_	Offset=498-507
+5	lysis	_	Reagent	_	_	3	Meronym	_	Offset=511-523
+6	amended	_	Action	_	_	0	_	_	Offset=524-531
+7	proteinase	_	Reagent	_	_	0	_	_	Offset=537-549
+
+# sent_id = s5
+# text = Once the agarose has gelled, transfer the plug (or noodle from the syringe, or buttons from the parafilm), into a tube containing 5 volumes of lysis buffer amended with proteinase K (1 mg mL–1 final concentration).
+1	Incubate	_	Action	_	_	0	_	_	Offset=583-591
+2	room	_	Temperature	_	_	0	_	_	Offset=595-611
+3	overnight	_	Time	_	_	0	_	_	Offset=612-621
+
+# sent_id = s6
+# text = Incubate at room temperature overnight.
+1	Decant	_	Action	_	_	0	_	_	Offset=623-629
+2	lysis	_	Reagent	_	_	0	_	_	Offset=634-646
+
+# sent_id = s7
+# text = Decant the lysis buffer, being careful not to lose the plugs.
+1	Rinse	_	Action	_	_	0	_	_	Offset=695-700
+2	plugs	_	Reagent	_	_	0	_	_	Offset=705-710
+3	twice	_	Numerical	_	_	0	_	_	Offset=711-716
+4	adding	_	Action	_	_	0	_	_	Offset=728-734
+5	25	_	Amount	_	_	7	Measure	_	Offset=735-745
+6	fresh	_	Modifier	_	_	7	Mod-Link	_	Offset=749-754
+7	TE	_	Reagent	_	_	9	Meronym	_	Offset=755-757
+8	1	_	Concentration	_	_	9	Measure	_	Offset=769-773
+9	PMSF	_	Reagent	_	_	0	_	_	Offset=774-778
+10	incubating	_	Action	_	_	0	_	_	Offset=780-790
+11	1	_	Time	_	_	0	_	_	Offset=795-798
+12	gentle	_	Modifier	_	_	13	Or	_	Offset=804-810
+13	agitation	_	Method	_	_	0	_	_	Offset=811-820
+14	decanting	_	Action	_	_	0	_	_	Offset=827-836
+15	rinse	_	Reagent	_	_	0	_	_	Offset=841-852
+
+# sent_id = s8
+# text = Optional: Rinse the plugs twice, each time adding 25 volumes of fresh TE containing 1 mM PMSF, incubating for 1 h with gentle agitation, then decanting the rinse fluid.
+1	Rinse	_	Action	_	_	0	_	_	Offset=854-859
+2	plugs	_	Reagent	_	_	0	_	_	Offset=864-869
+3	add	_	Action	_	_	0	_	_	Offset=871-874
+4	50	_	Amount	_	_	6	Measure	_	Offset=875-885
+5	fresh	_	Modifier	_	_	6	Mod-Link	_	Offset=889-894
+6	TE	_	Reagent	_	_	0	_	_	Offset=895-910
+7	incubate	_	Action	_	_	0	_	_	Offset=912-920
+8	30	_	Time	_	_	0	_	_	Offset=925-931
+
+# sent_id = s9
+# text = Rinse the plugs, add 50 volumes of fresh TE with no PMSF, incubate for 30 min.
+1	decant	_	Action	_	_	0	_	_	Offset=961-967
+2	rinse	_	Reagent	_	_	0	_	_	Offset=972-983
+
+# sent_id = s10
+# text = with gentle agitation, then decant the rinse fluid.
+1	rinse	_	Action	_	_	0	_	_	Offset=996-1001
+2	plugs	_	Reagent	_	_	0	_	_	Offset=1006-1011
+3	add	_	Action	_	_	0	_	_	Offset=1013-1016
+4	50	_	Amount	_	_	6	Measure	_	Offset=1017-1027
+5	fresh	_	Modifier	_	_	6	Mod-Link	_	Offset=1031-1036
+6	TE	_	Reagent	_	_	0	_	_	Offset=1037-1052
+7	incubate	_	Action	_	_	0	_	_	Offset=1054-1062
+8	30	_	Time	_	_	0	_	_	Offset=1067-1073
+
+# sent_id = s11
+# text = Once more, rinse the plugs, add 50 volumes of fresh TE with no PMSF, incubate for 30 min.
+1	decant	_	Action	_	_	0	_	_	Offset=1103-1109
+2	rinse	_	Reagent	_	_	0	_	_	Offset=1114-1125
+
+# sent_id = s12
+# text = with gentle agitation, then decant the rinse fluid.
+1	Store	_	Action	_	_	0	_	_	Offset=1127-1132
+2	plugs	_	Reagent	_	_	0	_	_	Offset=1137-1142
+3	4°C	_	Temperature	_	_	0	_	_	Offset=1146-1149
+4	submerged	_	Modifier	_	_	0	_	_	Offset=1150-1159
+5	TE	_	Reagent	_	_	0	_	_	Offset=1163-1165
+

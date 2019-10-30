@@ -1,0 +1,52 @@
+# sent_id = s1
+# text = Preparation of deionized glyoxal
+1	Mix	_	Action	_	_	0	_	_	Offset=33-36
+2	25	_	Amount	_	_	4	Measure	_	Offset=37-42
+3	40%	_	Generic-Measure	_	_	4	Measure	_	Offset=46-49
+4	glyoxal	_	Reagent	_	_	0	_	_	Offset=50-57
+
+# sent_id = s2
+# text = Mix 25 ml of 40% glyoxal to be deionized with 2.5 g of mixed bed resin.
+1	Mix	_	Action	_	_	0	_	_	Offset=105-108
+2	solution	_	Reagent	_	_	0	_	_	Offset=113-121
+3	magnetic	_	Device	_	_	0	_	_	Offset=125-141
+4	30	_	Time	_	_	0	_	_	Offset=146-156
+5	room	_	Temperature	_	_	0	_	_	Offset=160-176
+
+# sent_id = s3
+# text = Mix the solution by magnetic stirrer for 30 minutes at room temperature.
+1	Separate	_	Action	_	_	0	_	_	Offset=256-264
+2	deionized	_	Reagent	_	_	0	_	_	Offset=269-287
+3	resin	_	Reagent	_	_	0	_	_	Offset=297-302
+4	decanting	_	Method	_	_	0	_	_	Offset=306-315
+5	filtration	_	Method	_	_	0	_	_	Offset=329-339
+
+# sent_id = s4
+# text = The resin color will change from blue to amber, when its capacity is reached.
+1	Repeat	_	Action	_	_	0	_	_	Offset=341-347
+2	deionization	_	Method	_	_	0	_	_	Offset=352-372
+
+# sent_id = s5
+# text = Separate the deionized material from the resin by decanting or (sterile) filtration.
+1	Check	_	Action	_	_	0	_	_	Offset=551-556
+2	pH	_	Reagent	_	_	0	_	_	Offset=561-587
+3	mixing	_	Action	_	_	0	_	_	Offset=591-597
+4	200	_	Amount	_	_	5	Measure	_	Offset=598-604
+5	glyoxal	_	Reagent	_	_	0	_	_	Offset=608-615
+6	2	_	Amount	_	_	8	Measure	_	Offset=621-625
+7	10	_	Concentration	_	_	8	Measure	_	Offset=631-639
+8	aqueous	_	Reagent	_	_	0	_	_	Offset=640-656
+9	bromocresol	_	Reagent	_	_	8	Meronym	_	Offset=660-677
+
+# sent_id = s6
+# text = Repeat the deionization process (steps 2. and 3.)
+1	Repeat	_	Action	_	_	0	_	_	Offset=856-862
+2	deionization	_	Method	_	_	0	_	_	Offset=867-887
+
+# sent_id = s7
+# text = until the color of the resin does not change anymore.
+1	Use	_	Action	_	_	0	_	_	Offset=1227-1230
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=1231-1235
+3	aliquot	_	Reagent	_	_	0	_	_	Offset=1236-1243
+4	discard	_	Action	_	_	0	_	_	Offset=1260-1267
+

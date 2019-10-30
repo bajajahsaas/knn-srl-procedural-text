@@ -1,0 +1,32 @@
+# sent_id = s1
+# text = First Strand cDNA Synthesis (M0368)
+1	sterile	_	Modifier	_	_	2	Mod-Link	_	Offset=41-48
+2	microfuge	_	Location	_	_	0	_	_	Offset=49-63
+3	add	_	Action	_	_	0	_	_	Offset=64-67
+
+# sent_id = s2
+# text = In a sterile microfuge tube add: 
+1	Add	_	Action	_	_	0	_	_	Offset=70-73
+2	following	_	Reagent	_	_	0	_	_	Offset=78-87
+3	20	_	Amount	_	_	4	Measure	_	Offset=101-106
+4	final	_	Reagent	_	_	0	_	_	Offset=108-120
+
+# sent_id = s3
+# text = Add the following (bringing to 20 µL  final volume): 
+1	Incubate	_	Action	_	_	0	_	_	Offset=124-132
+2	42°C	_	Temperature	_	_	0	_	_	Offset=136-140
+3	30min-1hr	_	Time	_	_	0	_	_	Offset=145-154
+
+# sent_id = s4
+# text = Incubate at 42°C for 30min-1hr.
+1	Inactivate	_	Action	_	_	0	_	_	Offset=156-166
+2	enzyme	_	Reagent	_	_	0	_	_	Offset=167-173
+3	80°C	_	Temperature	_	_	0	_	_	Offset=177-181
+4	5	_	Time	_	_	0	_	_	Offset=186-195
+
+# sent_id = s5
+# text = Inactivate enzyme at 80°C for 5 minutes.
+1	Store	_	Action	_	_	0	_	_	Offset=197-202
+2	products	_	Reagent	_	_	0	_	_	Offset=203-211
+3	-20°C	_	Temperature	_	_	0	_	_	Offset=215-220
+

@@ -1,0 +1,175 @@
+# sent_id = s1
+# text = Immunoprecipitation
+1	Take	_	Action	_	_	0	_	_	Offset=20-24
+2	cell	_	Reagent	_	_	0	_	_	Offset=25-29
+3	dishes	_	Location	_	_	2	Meronym	_	Offset=30-36
+4	incubator	_	Device	_	_	0	_	_	Offset=44-53
+5	pre-cool	_	Action	_	_	0	_	_	Offset=58-66
+6	ice	_	Reagent	_	_	0	_	_	Offset=70-73
+
+# sent_id = s2
+# text = Take cell dishes out of incubator and pre-cool on ice.
+1	Rinse	_	Action	_	_	0	_	_	Offset=75-80
+2	cells	_	Reagent	_	_	0	_	_	Offset=81-86
+3	gently	_	Modifier	_	_	0	_	_	Offset=87-93
+4	ice-cold	_	Modifier	_	_	5	Mod-Link	_	Offset=99-107
+5	PBS	_	Reagent	_	_	0	_	_	Offset=108-111
+6	twice	_	Numerical	_	_	0	_	_	Offset=116-121
+
+# sent_id = s3
+# text = Rinse cells gently with ice-cold PBS for twice.
+1	Scrape	_	Action	_	_	0	_	_	Offset=123-129
+2	cells	_	Reagent	_	_	0	_	_	Offset=130-135
+3	spin	_	Action	_	_	0	_	_	Offset=140-149
+4	500	_	Speed	_	_	0	_	_	Offset=152-159
+5	10min	_	Time	_	_	0	_	_	Offset=161-166
+6	4	_	Time	_	_	0	_	_	Offset=168-172
+
+# sent_id = s4
+# text = Scrape cells and spin down @ 500 rpm, 10min, 4 °C.
+1	Add	_	Action	_	_	0	_	_	Offset=174-177
+2	500l	_	Amount	_	_	3	Measure	_	Offset=178-185
+3	IP	_	Reagent	_	_	0	_	_	Offset=186-201
+4	each	_	Location	_	_	0	_	_	Offset=205-222
+
+# sent_id = s5
+# text = Add 500l ul IP lysis buffer to each cell pellets (upto 2E+7 cells).
+1	Rotate	_	Action	_	_	0	_	_	Offset=242-248
+2	2h	_	Time	_	_	0	_	_	Offset=253-255
+3	4°C	_	Temperature	_	_	0	_	_	Offset=259-262
+
+# sent_id = s6
+# text = Rotate for 2h at 4°C.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=264-274
+2	14,000rpm	_	Speed	_	_	0	_	_	Offset=275-284
+3	30	_	Time	_	_	0	_	_	Offset=289-295
+
+# sent_id = s7
+# text = Centrifuge 14,000rpm for 30 min.
+1	Save	_	Action	_	_	0	_	_	Offset=297-301
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=302-313
+
+# sent_id = s8
+# text = Save supernatant.
+1	determine	_	Action	_	_	0	_	_	Offset=334-343
+2	protein	_	Reagent	_	_	0	_	_	Offset=344-351
+3	concentration	_	Measure-Type	_	_	0	_	_	Offset=352-365
+4	OD280	_	Reagent	_	_	0	_	_	Offset=371-376
+
+# sent_id = s9
+# text = (Optional) Roughly determine protein concentration with OD280.
+1	Adjust	_	Action	_	_	0	_	_	Offset=378-384
+2	samples	_	Reagent	_	_	0	_	_	Offset=389-396
+3	same	_	Measure-Type	_	_	0	_	_	Offset=404-422
+
+# sent_id = s10
+# text = Adjust all samples to the same concentration.
+1	Wash	_	Action	_	_	0	_	_	Offset=518-522
+2	beads	_	Reagent	_	_	0	_	_	Offset=523-528
+3	1ml	_	Amount	_	_	4	Measure	_	Offset=532-535
+4	lysis	_	Reagent	_	_	0	_	_	Offset=536-548
+5	twice	_	Numerical	_	_	0	_	_	Offset=553-558
+
+# sent_id = s11
+# text = Determine amount of beads needed (Rockland True Blot IP beads; 20 ul beads per 500ul sample).
+1	Spin	_	Action	_	_	0	_	_	Offset=560-569
+2	500g	_	Speed	_	_	0	_	_	Offset=571-575
+3	30s	_	Time	_	_	0	_	_	Offset=577-580
+
+# sent_id = s12
+# text = Wash beads in 1ml lysis buffer for twice.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=582-591
+2	pelleted	_	Modifier	_	_	3	Mod-Link	_	Offset=592-600
+3	beads	_	Reagent	_	_	0	_	_	Offset=601-606
+4	1mg/ml	_	Concentration	_	_	5	Measure	_	Offset=610-616
+5	BSA	_	Reagent	_	_	0	_	_	Offset=617-620
+6	rotate	_	Action	_	_	0	_	_	Offset=623-629
+7	RT	_	Temperature	_	_	0	_	_	Offset=632-634
+8	10min	_	Time	_	_	0	_	_	Offset=636-641
+
+# sent_id = s13
+# text = Spin down @500g, 30s.
+1	Remove	_	Action	_	_	0	_	_	Offset=643-649
+2	BSA	_	Reagent	_	_	0	_	_	Offset=650-653
+3	wash	_	Action	_	_	0	_	_	Offset=658-662
+4	beads	_	Reagent	_	_	0	_	_	Offset=663-668
+5	lysis	_	Reagent	_	_	0	_	_	Offset=672-684
+6	3	_	Numerical	_	_	0	_	_	Offset=689-690
+
+# sent_id = s14
+# text = Resuspend pelleted beads in 1mg/ml BSA , rotate @ RT, 10min.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=698-707
+2	pelleted	_	Modifier	_	_	3	Mod-Link	_	Offset=708-716
+3	beads	_	Reagent	_	_	0	_	_	Offset=717-722
+4	1:1	_	Concentration	_	_	0	_	_	Offset=723-726
+5	lysis	_	Reagent	_	_	0	_	_	Offset=732-744
+
+# sent_id = s15
+# text = Remove BSA and wash beads in lysis buffer for 3 times.
+1	Save	_	Action	_	_	0	_	_	Offset=746-750
+2	40ul	_	Amount	_	_	3	Measure	_	Offset=751-755
+3	IP	_	Reagent	_	_	0	_	_	Offset=759-768
+4	sample	_	Reagent	_	_	3	Meronym	_	Offset=773-779
+
+# sent_id = s16
+# text = Resuspend pelleted beads 1:1 with lysis buffer.
+1	Add	_	Action	_	_	0	_	_	Offset=790-793
+2	primary	_	Reagent	_	_	0	_	_	Offset=794-804
+3	beads	_	Reagent	_	_	0	_	_	Offset=809-814
+4	IP	_	Reagent	_	_	0	_	_	Offset=818-827
+
+# sent_id = s17
+# text = Save 40ul of IP lysate per sample as input.
+1	Rotate	_	Action	_	_	0	_	_	Offset=829-835
+2	4	_	Temperature	_	_	0	_	_	Offset=837-845
+3	overnight	_	Time	_	_	0	_	_	Offset=850-859
+
+# sent_id = s18
+# text = Add primary Ab and beads to IP lysate.
+1	Pellet	_	Action	_	_	0	_	_	Offset=861-867
+2	beads	_	Reagent	_	_	0	_	_	Offset=868-873
+3	500g	_	Speed	_	_	0	_	_	Offset=876-880
+4	30sec	_	Time	_	_	0	_	_	Offset=885-890
+5	RT	_	Temperature	_	_	0	_	_	Offset=892-894
+6	discard	_	Action	_	_	0	_	_	Offset=899-906
+7	supernatant	_	Reagent	_	_	0	_	_	Offset=911-922
+
+# sent_id = s19
+# text = Rotate @4 degree for overnight.
+1	Wash	_	Action	_	_	0	_	_	Offset=924-928
+2	beads	_	Reagent	_	_	0	_	_	Offset=929-934
+3	1ml	_	Amount	_	_	5	Measure	_	Offset=938-941
+4	ice-cold	_	Modifier	_	_	5	Mod-Link	_	Offset=942-950
+5	lysis	_	Reagent	_	_	0	_	_	Offset=951-963
+
+# sent_id = s20
+# text = Pellet beads @ 500g for 30sec @RT and discard the supernatant.
+1	Repeat	_	Action	_	_	0	_	_	Offset=965-971
+2	3	_	Numerical	_	_	0	_	_	Offset=972-973
+
+# sent_id = s21
+# text = Wash beads in 1ml ice-cold lysis buffer.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=981-990
+2	beads	_	Reagent	_	_	0	_	_	Offset=991-996
+3	30ul	_	Amount	_	_	5	Measure	_	Offset=1000-1004
+4	2×	_	Concentration	_	_	5	Measure	_	Offset=1008-1010
+5	loading	_	Reagent	_	_	0	_	_	Offset=1011-1025
+
+# sent_id = s22
+# text = Repeat 3 times.
+1	Boil	_	Action	_	_	0	_	_	Offset=1027-1031
+2	beads	_	Reagent	_	_	0	_	_	Offset=1036-1041
+3	5min	_	Time	_	_	0	_	_	Offset=1046-1050
+
+# sent_id = s23
+# text = Resuspend beads in 30ul of 2× loading buffer.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1052-1062
+2	RT	_	Temperature	_	_	0	_	_	Offset=1065-1067
+3	1min	_	Time	_	_	0	_	_	Offset=1072-1076
+
+# sent_id = s24
+# text = Boil the beads for 5min.
+1	Save	_	Action	_	_	0	_	_	Offset=1078-1082
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1083-1094
+3	perform	_	Action	_	_	0	_	_	Offset=1099-1115
+

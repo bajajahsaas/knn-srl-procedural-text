@@ -1,0 +1,97 @@
+# sent_id = s1
+# text = Quick Protocol for Monarch® DNA Gel Extraction Kit (NEB #T1020) Excise the DNA fragment from the agarose gel, taking care to trim excess agarose.
+1	Transfer	_	Action	_	_	0	_	_	Offset=146-154
+2	1.5	_	Amount	_	_	3	Measure	_	Offset=160-166
+3	microfuge	_	Location	_	_	0	_	_	Offset=167-181
+4	weigh	_	Action	_	_	0	_	_	Offset=186-191
+5	gel	_	Reagent	_	_	0	_	_	Offset=196-205
+
+# sent_id = s2
+# text = Transfer to a 1.5 ml microfuge tube and weigh the gel slice.
+1	Add	_	Action	_	_	0	_	_	Offset=238-241
+2	4	_	Numerical	_	_	3	Measure	_	Offset=242-243
+3	volumes	_	Reagent	_	_	0	_	_	Offset=244-251
+4	Gel	_	Reagent	_	_	3	Meronym	_	Offset=255-276
+5	gel	_	Reagent	_	_	0	_	_	Offset=284-293
+
+# sent_id = s3
+# text = Minimize exposure to UV light.
+1	Incubate	_	Action	_	_	0	_	_	Offset=346-354
+2	sample	_	Reagent	_	_	0	_	_	Offset=359-365
+3	50°C	_	Temperature	_	_	0	_	_	Offset=393-397
+4	5–10	_	Time	_	_	0	_	_	Offset=455-467
+
+# sent_id = s4
+# text = Add 4 volumes of Gel Dissolving Buffer to the gel slice (e.g., 400 μl buffer per 100 μl or 100 mg agarose).
+1	Insert	_	Action	_	_	0	_	_	Offset=694-700
+2	column	_	Location	_	_	0	_	_	Offset=701-707
+3	collection	_	Location	_	_	0	_	_	Offset=713-728
+4	load	_	Action	_	_	0	_	_	Offset=733-737
+5	sample	_	Reagent	_	_	0	_	_	Offset=738-744
+6	column	_	Location	_	_	0	_	_	Offset=754-760
+
+# sent_id = s5
+# text = Incubate the sample between 37–55°C (typically 50°C), until the gel slice is completely dissolved (generally 5–10 minutes).
+1	Spin	_	Action	_	_	0	_	_	Offset=762-766
+2	1	_	Time	_	_	0	_	_	Offset=771-779
+3	16,000	_	Speed	_	_	0	_	_	Offset=783-793
+4	discard	_	Action	_	_	0	_	_	Offset=800-807
+5	flow-through	_	Reagent	_	_	0	_	_	Offset=808-820
+
+# sent_id = s6
+# text = The time that takes a gel slice to melt depends on the size of the slice, the temperature used in the incubation as well as the percent agarose used in the gel.
+1	Re-insert	_	Action	_	_	0	_	_	Offset=822-831
+2	column	_	Location	_	_	0	_	_	Offset=832-838
+3	collection	_	Location	_	_	0	_	_	Offset=844-859
+
+# sent_id = s7
+# text = The time recommended above should be used just as a guideline.
+1	Add	_	Action	_	_	0	_	_	Offset=861-864
+2	200	_	Amount	_	_	3	Measure	_	Offset=865-871
+3	DNA	_	Reagent	_	_	4	Meronym	_	Offset=872-887
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=894-901
+5	spin	_	Action	_	_	0	_	_	Offset=913-917
+6	1	_	Time	_	_	0	_	_	Offset=922-930
+7	16,000	_	Speed	_	_	0	_	_	Offset=934-944
+
+# sent_id = s8
+# text = Insert column into collection tube and load sample onto the column.
+1	Re-insert	_	Action	_	_	0	_	_	Offset=1007-1016
+2	column	_	Location	_	_	0	_	_	Offset=1017-1023
+3	collection	_	Location	_	_	0	_	_	Offset=1029-1044
+
+# sent_id = s9
+# text = Spin for 1 minute at 16,000 x g, then discard flow-through.
+1	Add	_	Action	_	_	0	_	_	Offset=1046-1049
+2	200	_	Amount	_	_	3	Measure	_	Offset=1050-1056
+3	DNA	_	Reagent	_	_	0	_	_	Offset=1057-1072
+4	spin	_	Action	_	_	0	_	_	Offset=1077-1081
+5	1	_	Time	_	_	0	_	_	Offset=1086-1094
+6	16,000	_	Speed	_	_	0	_	_	Offset=1098-1108
+
+# sent_id = s10
+# text = Re-insert column into collection tube.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1149-1157
+2	column	_	Location	_	_	0	_	_	Offset=1158-1164
+3	clean	_	Modifier	_	_	5	Mod-Link	_	Offset=1170-1175
+4	1.5	_	Amount	_	_	5	Measure	_	Offset=1176-1182
+5	microfuge	_	Location	_	_	0	_	_	Offset=1183-1197
+
+# sent_id = s11
+# text = Add 200 μl DNA Wash Buffer (with ethanol added) and spin for 1 minute at 16,000 x g. 
+1	Add	_	Action	_	_	0	_	_	Offset=1330-1333
+2	≥	_	Amount	_	_	3	Measure	_	Offset=1334-1340
+3	DNA	_	Reagent	_	_	0	_	_	Offset=1344-1362
+4	center	_	Location	_	_	0	_	_	Offset=1370-1376
+5	matrix	_	Location	_	_	4	Meronym	_	Offset=1384-1390
+
+# sent_id = s12
+# text = Discarding flow-through is optional.
+1	Wait	_	Action	_	_	0	_	_	Offset=1392-1396
+2	1	_	Time	_	_	0	_	_	Offset=1401-1409
+3	spin	_	Action	_	_	0	_	_	Offset=1415-1419
+4	1	_	Time	_	_	0	_	_	Offset=1424-1432
+5	16,000	_	Speed	_	_	0	_	_	Offset=1436-1446
+6	elute	_	Action	_	_	0	_	_	Offset=1450-1455
+7	DNA	_	Reagent	_	_	0	_	_	Offset=1460-1463
+

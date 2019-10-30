@@ -1,0 +1,482 @@
+# sent_id = s1
+# text = Preparation of Custom Synthesized RNA Transcript Standard
+1	Briefly	_	Modifier	_	_	0	_	_	Offset=58-65
+2	spin	_	Action	_	_	0	_	_	Offset=66-70
+3	tube	_	Location	_	_	0	_	_	Offset=75-79
+
+# sent_id = s2
+# text = Briefly spin the tube to ensure the contents are on the bottom.  
+1	Resuspend	_	Action	_	_	0	_	_	Offset=124-133
+2	sample	_	Reagent	_	_	0	_	_	Offset=138-144
+3	volume	_	Amount	_	_	4	Measure	_	Offset=150-156
+4	TE	_	Reagent	_	_	0	_	_	Offset=160-169
+5	stock	_	Reagent	_	_	0	_	_	Offset=185-190
+6	0.1	_	Concentration	_	_	5	Measure	_	Offset=208-217
+
+# sent_id = s3
+# text = Resuspend the sample in a volume of TE Buffer resulting in a stock concentration of 0.1 ug/uL.  
+1	working	_	Reagent	_	_	0	_	_	Offset=234-250
+2	add	_	Action	_	_	0	_	_	Offset=251-254
+3	1	_	Amount	_	_	4	Measure	_	Offset=255-259
+4	stock	_	Reagent	_	_	0	_	_	Offset=267-281
+5	99	_	Amount	_	_	6	Measure	_	Offset=285-290
+6	water	_	Reagent	_	_	0	_	_	Offset=294-299
+7	1.0	_	Concentration	_	_	1	Measure	_	Offset=328-337
+
+# sent_id = s4
+# text = To prepare a working solution add 1 uL of the stock solution to 99 uL of water to reach a concentration of 1.0 ng/uL.  
+1	Store	_	Action	_	_	0	_	_	Offset=341-346
+2	resuspended	_	Modifier	_	_	3	Mod-Link	_	Offset=347-358
+3	DNA	_	Reagent	_	_	0	_	_	Offset=359-362
+4	-20	_	Temperature	_	_	0	_	_	Offset=366-372
+
+# sent_id = s5
+# text = Store resuspended DNA at -20 °C. 
+1	Place	_	Action	_	_	0	_	_	Offset=375-380
+2	frozen	_	Modifier	_	_	3	Mod-Link	_	Offset=381-387
+3	competent	_	Reagent	_	_	0	_	_	Offset=388-403
+4	pre-labeled	_	Modifier	_	_	5	Mod-Link	_	Offset=408-419
+5	tubes	_	Location	_	_	0	_	_	Offset=420-425
+6	ice	_	Location	_	_	0	_	_	Offset=429-432
+
+# sent_id = s6
+# text = Place frozen competent cells and pre-labeled tubes on ice. 
+1	Pre-warm	_	Action	_	_	0	_	_	Offset=435-443
+2	hot	_	Modifier	_	_	3	Mod-Link	_	Offset=446-449
+3	water	_	Device	_	_	0	_	_	Offset=450-460
+4	42	_	Temperature	_	_	3	Setting	_	Offset=464-470
+
+# sent_id = s7
+# text = Pre-warm a hot water bath to 42 °C. 
+1	tube	_	Location	_	_	0	_	_	Offset=477-481
+2	ice	_	Location	_	_	1	Meronym	_	Offset=485-488
+3	add	_	Action	_	_	0	_	_	Offset=489-492
+4	2	_	Amount	_	_	6	Measure	_	Offset=493-497
+5	~2	_	Generic-Measure	_	_	6	Measure	_	Offset=499-504
+6	plasmid	_	Reagent	_	_	0	_	_	Offset=509-533
+7	100	_	Amount	_	_	9	Measure	_	Offset=537-543
+8	thawed	_	Modifier	_	_	9	Mod-Link	_	Offset=547-553
+9	competent	_	Reagent	_	_	0	_	_	Offset=554-569
+10	flick	_	Action	_	_	0	_	_	Offset=571-576
+11	tubes	_	Location	_	_	0	_	_	Offset=581-586
+12	gently	_	Modifier	_	_	0	_	_	Offset=590-596
+13	mix	_	Action	_	_	0	_	_	Offset=597-600
+
+# sent_id = s8
+# text = In a tube on ice add 2 uL (~2 ng) of plasmid working solution to 100 uL of thawed competent cells, flick the tubes to gently mix.  
+1	Incubate	_	Action	_	_	0	_	_	Offset=604-612
+2	mixture	_	Reagent	_	_	0	_	_	Offset=617-624
+3	ice	_	Location	_	_	0	_	_	Offset=628-631
+4	30	_	Time	_	_	0	_	_	Offset=636-646
+
+# sent_id = s9
+# text = Incubate the mixture on ice for 30 minutes.  
+1	Heat	_	Action	_	_	0	_	_	Offset=650-660
+2	tubes	_	Location	_	_	0	_	_	Offset=665-670
+3	45	_	Time	_	_	5	Setting	_	Offset=675-685
+4	42	_	Temperature	_	_	5	Setting	_	Offset=693-698
+5	bath	_	Device	_	_	0	_	_	Offset=699-703
+
+# sent_id = s10
+# text = Heat shock the tubes for 45 seconds in the 42 °C bath. 
+1	Immediately	_	Modifier	_	_	0	_	_	Offset=706-717
+2	place	_	Action	_	_	0	_	_	Offset=718-723
+3	tubes	_	Location	_	_	0	_	_	Offset=728-733
+4	ice	_	Location	_	_	0	_	_	Offset=737-740
+5	2	_	Time	_	_	0	_	_	Offset=745-754
+
+# sent_id = s11
+# text = Immediately place the tubes on ice for 2 minutes.  
+1	Add	_	Action	_	_	0	_	_	Offset=758-761
+2	500	_	Amount	_	_	3	Measure	_	Offset=762-768
+3	SOC	_	Reagent	_	_	0	_	_	Offset=772-775
+4	LB	_	Reagent	_	_	3	Or	_	Offset=779-781
+5	each	_	Modifier	_	_	6	Mod-Link	_	Offset=785-789
+6	tube	_	Location	_	_	0	_	_	Offset=790-794
+7	incubate	_	Action	_	_	0	_	_	Offset=799-807
+8	tubes	_	Location	_	_	0	_	_	Offset=812-817
+9	37°C	_	Temperature	_	_	0	_	_	Offset=821-825
+10	1	_	Time	_	_	0	_	_	Offset=830-836
+11	shaking	_	Action	_	_	0	_	_	Offset=842-849
+12	~225	_	Speed	_	_	0	_	_	Offset=851-859
+
+# sent_id = s12
+# text = Add 500 uL of SOC or LB to each tube and incubate the tubes at 37°C for 1 hour with shaking (~225 rpm).  
+1	Pre-warm	_	Action	_	_	0	_	_	Offset=864-872
+2	agar	_	Location	_	_	0	_	_	Offset=873-884
+3	37°C	_	Temperature	_	_	4	Setting	_	Offset=888-892
+4	incubator	_	Device	_	_	0	_	_	Offset=896-905
+
+# sent_id = s13
+# text = Pre-warm agar plates to 37°C in incubator.  
+1	Take	_	Action	_	_	0	_	_	Offset=909-913
+2	10	_	Amount	_	_	0	_	_	Offset=914-919
+3	100	_	Amount	_	_	0	_	_	Offset=921-927
+4	200	_	Amount	_	_	0	_	_	Offset=933-939
+5	spread	_	Action	_	_	0	_	_	Offset=944-950
+6	LB-Amp	_	Location	_	_	0	_	_	Offset=954-972
+
+# sent_id = s14
+# text = Take 10 uL, 100 uL, and 200 uL and spread on LB-Amp agar plates.  
+1	Place	_	Action	_	_	0	_	_	Offset=976-981
+2	plates	_	Location	_	_	0	_	_	Offset=986-992
+3	upside	_	Method	_	_	0	_	_	Offset=993-1004
+4	37°C	_	Temperature	_	_	5	Setting	_	Offset=1008-1012
+5	incubator	_	Device	_	_	0	_	_	Offset=1013-1022
+6	12-24	_	Time	_	_	5	Setting	_	Offset=1027-1038
+
+# sent_id = s15
+# text = Place the plates upside down in 37°C incubator for 12-24 hours.  
+1	Inoculate	_	Action	_	_	0	_	_	Offset=1042-1051
+2	5	_	Amount	_	_	3	Measure	_	Offset=1054-1058
+3	liquid	_	Reagent	_	_	0	_	_	Offset=1059-1080
+4	picking	_	Action	_	_	0	_	_	Offset=1084-1091
+5	single	_	Numerical	_	_	7	Measure	_	Offset=1094-1100
+6	well-isolated	_	Modifier	_	_	7	Mod-Link	_	Offset=1101-1114
+7	colony	_	Reagent	_	_	0	_	_	Offset=1115-1121
+8	LB-Amp	_	Location	_	_	0	_	_	Offset=1131-1143
+
+# sent_id = s16
+# text = Inoculate a 5 uL liquid LB-Amp culture by picking a single well-isolated colony from the LB-Amp plate grown overnight.  
+1	Grow	_	Action	_	_	0	_	_	Offset=1163-1167
+2	liquid	_	Reagent	_	_	0	_	_	Offset=1168-1182
+3	37°C	_	Temperature	_	_	0	_	_	Offset=1186-1190
+4	~8	_	Time	_	_	0	_	_	Offset=1195-1203
+5	vigorous	_	Modifier	_	_	0	_	_	Offset=1209-1217
+6	shaking	_	Action	_	_	0	_	_	Offset=1218-1225
+7	~300	_	Speed	_	_	0	_	_	Offset=1227-1235
+8	Remove	_	Action	_	_	0	_	_	Offset=1239-1245
+9	850	_	Amount	_	_	10	Measure	_	Offset=1246-1252
+10	starter	_	Reagent	_	_	0	_	_	Offset=1256-1271
+11	place	_	Action	_	_	0	_	_	Offset=1276-1281
+12	2	_	Amount	_	_	13	Measure	_	Offset=1289-1293
+13	freezer	_	Location	_	_	17	Meronym	_	Offset=1294-1306
+14	150	_	Amount	_	_	17	Measure	_	Offset=1312-1318
+15	sterilized	_	Modifier	_	_	17	Mod-Link	_	Offset=1322-1332
+16	100%	_	Concentration	_	_	17	Measure	_	Offset=1333-1337
+17	glycerol	_	Reagent	_	_	0	_	_	Offset=1338-1346
+18	mix	_	Action	_	_	0	_	_	Offset=1348-1351
+19	thoroughly	_	Modifier	_	_	0	_	_	Offset=1352-1362
+20	store	_	Action	_	_	0	_	_	Offset=1368-1373
+21	-80	_	Temperature	_	_	0	_	_	Offset=1377-1383
+
+# sent_id = s17
+# text = Grow liquid culture at 37°C for ~8 hours with vigorous shaking (~300 rpm).  Remove 850 uL of starter culture and place into a 2 mL freezer vial with 150 uL of sterilized 100% glycerol, mix thoroughly, and store at -80 °C.  
+1	Dilute	_	Action	_	_	0	_	_	Offset=1387-1393
+2	starter	_	Reagent	_	_	0	_	_	Offset=1398-1413
+3	1/500	_	Generic-Measure	_	_	0	_	_	Offset=1414-1429
+4	larger	_	Amount	_	_	5	Measure	_	Offset=1437-1450
+5	LB-Amp	_	Reagent	_	_	0	_	_	Offset=1454-1460
+
+# sent_id = s18
+# text = Dilute the starter culture 1/500 to 1/1000 into a larger volume of LB-Amp.  
+1	Grow	_	Action	_	_	0	_	_	Offset=1464-1468
+2	culture	_	Reagent	_	_	0	_	_	Offset=1473-1480
+3	37°C	_	Temperature	_	_	0	_	_	Offset=1484-1488
+4	vigorous	_	Modifier	_	_	0	_	_	Offset=1494-1502
+5	shaking	_	Action	_	_	0	_	_	Offset=1503-1510
+6	~300	_	Speed	_	_	0	_	_	Offset=1512-1520
+7	12-16	_	Time	_	_	0	_	_	Offset=1526-1537
+
+# sent_id = s19
+# text = Grow the culture at 37°C with vigorous shaking (~300 rpm) for 12-16 hours.  
+1	Harvest	_	Action	_	_	0	_	_	Offset=1541-1548
+2	culture	_	Reagent	_	_	0	_	_	Offset=1553-1560
+3	centrifugation	_	Action	_	_	0	_	_	Offset=1564-1578
+4	6000	_	Speed	_	_	0	_	_	Offset=1582-1590
+5	15	_	Time	_	_	0	_	_	Offset=1595-1601
+6	4°C	_	Temperature	_	_	0	_	_	Offset=1605-1608
+
+# sent_id = s20
+# text = Harvest the culture by centrifugation at 6000 x g for 15 min at 4°C.  
+1	Discard	_	Action	_	_	0	_	_	Offset=1612-1619
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1620-1631
+
+# sent_id = s21
+# text = Discard supernatant.  
+1	Recover	_	Action	_	_	0	_	_	Offset=1635-1642
+2	plasmid	_	Reagent	_	_	0	_	_	Offset=1643-1654
+3	commercial	_	Method	_	_	0	_	_	Offset=1663-1691
+4	corresponding	_	Method	_	_	0	_	_	Offset=1700-1722
+
+# sent_id = s22
+# text = Recover plasmid DNA using a commercial plasmid mini-prep and the corresponding protocol. 
+1	thermocycler	_	Device	_	_	0	_	_	Offset=1879-1891
+2	incubate	_	Action	_	_	0	_	_	Offset=1892-1900
+3	mixture	_	Reagent	_	_	0	_	_	Offset=1905-1912
+4	1	_	Time	_	_	0	_	_	Offset=1917-1923
+5	37	_	Temperature	_	_	0	_	_	Offset=1927-1932
+
+# sent_id = s23
+# text = In a PCR tube combine in the order listed:
+1	Inactivate	_	Action	_	_	0	_	_	Offset=1935-1945
+2	enzyme	_	Reagent	_	_	0	_	_	Offset=1950-1956
+3	incubating	_	Action	_	_	0	_	_	Offset=1960-1970
+4	65	_	Temperature	_	_	0	_	_	Offset=1974-1979
+5	20	_	Time	_	_	0	_	_	Offset=1984-1994
+
+# sent_id = s24
+# text = 12.8 uL Nuclease-free water
+1	Bring	_	Action	_	_	0	_	_	Offset=1997-2002
+2	reaction	_	Reagent	_	_	0	_	_	Offset=2007-2015
+3	100	_	Amount	_	_	2	Measure	_	Offset=2019-2025
+4	adding	_	Action	_	_	0	_	_	Offset=2029-2035
+5	TE	_	Reagent	_	_	0	_	_	Offset=2036-2045
+
+# sent_id = s25
+# text = 2.00 uL NEBuffer 4 
+1	Add	_	Action	_	_	0	_	_	Offset=2049-2052
+2	100	_	Amount	_	_	3	Measure	_	Offset=2053-2059
+3	Phenol:Chloroform:Isoamyl	_	Reagent	_	_	0	_	_	Offset=2063-2096
+4	25:24:1	_	Generic-Measure	_	_	3	Measure	_	Offset=2098-2105
+
+# sent_id = s26
+# text = (10X)0.20 uL BSA 
+1	Vortex	_	Action	_	_	0	_	_	Offset=2110-2127
+2	5	_	Time	_	_	0	_	_	Offset=2132-2141
+3	11,000	_	Speed	_	_	0	_	_	Offset=2145-2155
+
+# sent_id = s27
+# text = (100X)4.00 uL Plasmid DNA (0.5 ug/uL). 
+1	Transfer	_	Action	_	_	0	_	_	Offset=2159-2167
+2	aqueous	_	Reagent	_	_	0	_	_	Offset=2172-2185
+3	new	_	Modifier	_	_	4	Mod-Link	_	Offset=2191-2194
+4	tube	_	Location	_	_	0	_	_	Offset=2195-2199
+
+# sent_id = s28
+# text = In a thermocycler incubate the mixture for 1 hour at 37 °C. 
+1	Add	_	Action	_	_	0	_	_	Offset=2203-2206
+2	10	_	Amount	_	_	4	Measure	_	Offset=2220-2225
+3	3M	_	Concentration	_	_	4	Measure	_	Offset=2230-2232
+4	Sodium	_	Reagent	_	_	0	_	_	Offset=2233-2247
+5	70	_	Amount	_	_	6	Measure	_	Offset=2265-2270
+6	Isopropanol	_	Reagent	_	_	0	_	_	Offset=2275-2286
+7	aqueous	_	Reagent	_	_	0	_	_	Offset=2294-2307
+
+# sent_id = s29
+# text = Inactivate the enzyme by incubating at 65 °C for 20 minutes. 
+1	Mix	_	Action	_	_	0	_	_	Offset=2311-2314
+2	incubate	_	Action	_	_	0	_	_	Offset=2319-2327
+3	10	_	Time	_	_	0	_	_	Offset=2332-2342
+4	room	_	Temperature	_	_	0	_	_	Offset=2346-2362
+
+# sent_id = s30
+# text = Bring the reaction to 100 uL by adding TE buffer.  
+1	Spin	_	Action	_	_	0	_	_	Offset=2365-2369
+2	30	_	Time	_	_	0	_	_	Offset=2374-2384
+3	11,000	_	Speed	_	_	0	_	_	Offset=2388-2398
+4	4	_	Temperature	_	_	0	_	_	Offset=2402-2419
+
+# sent_id = s31
+# text = Add 100 uL of Phenol:Chloroform:Isoamyl alcohol (25:24:1).  
+1	Discard	_	Action	_	_	0	_	_	Offset=2423-2430
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=2435-2446
+
+# sent_id = s32
+# text = Vortex Centrifuge for 5 minutes at 11,000 rpm.  
+1	Wash	_	Action	_	_	0	_	_	Offset=2450-2454
+2	pellet	_	Reagent	_	_	0	_	_	Offset=2459-2465
+3	200	_	Amount	_	_	6	Measure	_	Offset=2471-2477
+4	ice	_	Modifier	_	_	6	Mod-Link	_	Offset=2481-2489
+5	70%	_	Concentration	_	_	6	Measure	_	Offset=2490-2493
+6	ethanol	_	Reagent	_	_	0	_	_	Offset=2494-2501
+
+# sent_id = s33
+# text = Transfer the aqueous phase to a new tube.  
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2505-2515
+2	5	_	Time	_	_	0	_	_	Offset=2520-2529
+
+# sent_id = s34
+# text = Add 0.1 volumes (10 uL) of 3M Sodium Acetate and 0.7 volumes (70 uL) of Isopropanol to the aqueous phase.  
+1	Air	_	Action	_	_	0	_	_	Offset=2533-2540
+2	pellet	_	Reagent	_	_	0	_	_	Offset=2545-2551
+
+# sent_id = s35
+# text = Mix and incubate for 10 minutes at room temperature. 
+1	Resuspend	_	Action	_	_	0	_	_	Offset=2555-2564
+2	5	_	Amount	_	_	3	Measure	_	Offset=2568-2572
+3	nuclease-free	_	Reagent	_	_	0	_	_	Offset=2576-2595
+
+# sent_id = s36
+# text = Spin for 30 minutes at 11,000 rpm at 4 degrees Celsius.  
+1	Transfer	_	Action	_	_	0	_	_	Offset=2599-2607
+2	2	_	Amount	_	_	4	Measure	_	Offset=2608-2612
+3	linearized	_	Modifier	_	_	4	Mod-Link	_	Offset=2616-2626
+4	plasmid	_	Reagent	_	_	0	_	_	Offset=2627-2639
+5	new	_	Modifier	_	_	6	Mod-Link	_	Offset=2647-2650
+6	tube	_	Location	_	_	0	_	_	Offset=2651-2655
+
+# sent_id = s37
+# text = Discard the supernatant.  
+1	Add	_	Action	_	_	0	_	_	Offset=2659-2662
+2	2	_	Amount	_	_	4	Measure	_	Offset=2663-2667
+3	sterile	_	Modifier	_	_	4	Mod-Link	_	Offset=2668-2675
+4	water	_	Reagent	_	_	0	_	_	Offset=2676-2681
+5	2uL	_	Amount	_	_	6	Measure	_	Offset=2689-2692
+6	sample	_	Reagent	_	_	0	_	_	Offset=2693-2699
+
+# sent_id = s38
+# text = Wash the pellet with 200 uL of ice cold 70% ethanol.  
+1	1	_	Amount	_	_	3	Measure	_	Offset=2707-2711
+2	diluted	_	Modifier	_	_	3	Mod-Link	_	Offset=2719-2726
+3	sample	_	Reagent	_	_	0	_	_	Offset=2727-2733
+4	check	_	Action	_	_	0	_	_	Offset=2737-2742
+5	concentration	_	Measure-Type	_	_	0	_	_	Offset=2747-2760
+6	plasmid	_	Reagent	_	_	0	_	_	Offset=2768-2780
+
+# sent_id = s39
+# text = Centrifuge for 5 minutes.  
+1	Run	_	Action	_	_	0	_	_	Offset=2784-2787
+2	remaining	_	Modifier	_	_	3	Mod-Link	_	Offset=2788-2797
+3	3	_	Amount	_	_	5	Measure	_	Offset=2798-2802
+4	diluted	_	Modifier	_	_	5	Mod-Link	_	Offset=2806-2813
+5	plasmid	_	Reagent	_	_	0	_	_	Offset=2814-2826
+6	1%	_	Concentration	_	_	7	Measure	_	Offset=2832-2834
+7	agarose	_	Reagent	_	_	0	_	_	Offset=2835-2846
+
+# sent_id = s40
+# text = Air dry the pellet.  
+1	tube	_	Location	_	_	0	_	_	Offset=2886-2890
+2	combine	_	Action	_	_	0	_	_	Offset=2891-2898
+3	room	_	Temperature	_	_	0	_	_	Offset=2916-2932
+4	Mix	_	Action	_	_	0	_	_	Offset=2961-2964
+5	Thoroughly	_	Modifier	_	_	0	_	_	Offset=2965-2975
+6	flicking	_	Method	_	_	0	_	_	Offset=2979-2987
+
+# sent_id = s41
+# text = Resuspend in 5 uL of nuclease-free water.  
+1	Incubate	_	Action	_	_	0	_	_	Offset=2990-2998
+2	mixture	_	Reagent	_	_	0	_	_	Offset=2999-3006
+3	37	_	Temperature	_	_	0	_	_	Offset=3010-3028
+4	16	_	Time	_	_	0	_	_	Offset=3033-3041
+
+# sent_id = s42
+# text = Transfer 2 uL of linearized plasmid prep into a new tube.  
+1	Add	_	Action	_	_	0	_	_	Offset=3044-3047
+2	1	_	Amount	_	_	3	Measure	_	Offset=3048-3052
+3	Turbo	_	Reagent	_	_	0	_	_	Offset=3053-3064
+
+# sent_id = s43
+# text = Add 2 uL sterile water to the 2uL sample.  
+1	Incubate	_	Action	_	_	0	_	_	Offset=3087-3095
+2	15	_	Time	_	_	0	_	_	Offset=3100-3110
+3	37°	_	Temperature	_	_	0	_	_	Offset=3114-3125
+
+# sent_id = s44
+# text = Use 1 uL of the diluted sample to check the concentration of the plasmid prep.  
+1	Extract	_	Action	_	_	0	_	_	Offset=3129-3136
+2	1	_	Amount	_	_	5	Measure	_	Offset=3142-3150
+3	citrate-saturated	_	Modifier	_	_	5	Mod-Link	_	Offset=3154-3171
+4	(pH	_	pH	_	_	5	Measure	_	Offset=3172-3180
+5	phenol:chloroform:isoamyl	_	Reagent	_	_	0	_	_	Offset=3181-3214
+6	25:24:1	_	Generic-Measure	_	_	5	Measure	_	Offset=3216-3223
+
+# sent_id = s45
+# text = Run remaining 3 uL of diluted plasmid prep on a 1% agarose gel to check for complete digestion. 
+1	Vortex	_	Action	_	_	0	_	_	Offset=3228-3234
+2	1	_	Time	_	_	0	_	_	Offset=3239-3247
+
+# sent_id = s46
+# text = In a tube combine the following at room temperature (Ambion MEGAscript T7 kit): Mix Thoroughly by flicking. 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=3250-3260
+2	2	_	Time	_	_	0	_	_	Offset=3265-3274
+3	12,000	_	Speed	_	_	0	_	_	Offset=3278-3288
+
+# sent_id = s47
+# text = Incubate mixture at 37 degrees Celsius for 16 hours. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=3291-3299
+2	upper,	_	Reagent	_	_	0	_	_	Offset=3304-3324
+3	fresh	_	Modifier	_	_	4	Mod-Link	_	Offset=3330-3335
+4	tube	_	Location	_	_	0	_	_	Offset=3336-3340
+
+# sent_id = s48
+# text = Add 1 uL Turbo DNase to a concentration.  
+1	Add	_	Action	_	_	0	_	_	Offset=3344-3347
+2	1	_	Amount	_	_	3	Measure	_	Offset=3348-3356
+3	chloroform:isoamyl	_	Reagent	_	_	0	_	_	Offset=3357-3383
+4	24:1	_	Generic-Measure	_	_	3	Measure	_	Offset=3385-3389
+
+# sent_id = s49
+# text = Incubate for 15 minutes at 37° Celsius.  
+1	Vortex	_	Action	_	_	0	_	_	Offset=3394-3400
+2	1	_	Time	_	_	0	_	_	Offset=3405-3413
+
+# sent_id = s50
+# text = Extract with 1 volume of citrate-saturated (pH 4.7) phenol:chloroform:isoamyl alcohol (25:24:1).  
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=3416-3426
+2	2	_	Time	_	_	0	_	_	Offset=3431-3440
+3	12,000	_	Speed	_	_	0	_	_	Offset=3444-3454
+
+# sent_id = s51
+# text = Vortex for 1 minute. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=3457-3465
+2	upper	_	Reagent	_	_	0	_	_	Offset=3470-3489
+3	fresh	_	Modifier	_	_	4	Mod-Link	_	Offset=3495-3500
+4	tube	_	Location	_	_	0	_	_	Offset=3501-3505
+
+# sent_id = s52
+# text = Centrifuge for 2 minutes at 12,000 x g. 
+1	Add	_	Action	_	_	0	_	_	Offset=3509-3512
+2	0.1	_	Amount	_	_	4	Measure	_	Offset=3513-3524
+3	3.0	_	Concentration	_	_	4	Measure	_	Offset=3528-3533
+4	sodium	_	Reagent	_	_	0	_	_	Offset=3534-3548
+5	0.7	_	Amount	_	_	6	Measure	_	Offset=3553-3564
+6	isopropanol	_	Reagent	_	_	0	_	_	Offset=3568-3579
+
+# sent_id = s53
+# text = Transfer the upper, aqueous phase to a fresh tube.  
+1	Mix	_	Action	_	_	0	_	_	Offset=3583-3586
+2	incubate	_	Action	_	_	0	_	_	Offset=3591-3599
+3	room	_	Temperature	_	_	0	_	_	Offset=3603-3619
+4	10	_	Time	_	_	0	_	_	Offset=3624-3634
+
+# sent_id = s54
+# text = Add 1 volume chloroform:isoamyl alcohol (24:1).  
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=3638-3648
+2	30	_	Time	_	_	0	_	_	Offset=3653-3663
+3	4	_	Temperature	_	_	0	_	_	Offset=3667-3671
+
+# sent_id = s55
+# text = Vortex for 1 minute. 
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=3674-3683
+2	discard	_	Action	_	_	0	_	_	Offset=3684-3691
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=3692-3703
+
+# sent_id = s56
+# text = Centrifuge for 2 minutes at 12,000 x g. 
+1	Wash	_	Action	_	_	0	_	_	Offset=3707-3711
+2	pellet	_	Reagent	_	_	0	_	_	Offset=3712-3718
+3	200	_	Amount	_	_	5	Measure	_	Offset=3724-3730
+4	70%	_	Concentration	_	_	5	Measure	_	Offset=3734-3737
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=3738-3745
+
+# sent_id = s57
+# text = Transfer the upper aqueous phase to a fresh tube.  
+1	Dry	_	Action	_	_	0	_	_	Offset=3749-3752
+2	pellet	_	Reagent	_	_	0	_	_	Offset=3757-3763
+3	vacuum	_	Device	_	_	0	_	_	Offset=3770-3776
+
+# sent_id = s58
+# text = Add 0.1 volumes of 3.0 M sodium acetate and 0.7 volumes of isopropanol.  
+1	Resuspend	_	Action	_	_	0	_	_	Offset=3780-3789
+2	RNA	_	Reagent	_	_	0	_	_	Offset=3794-3804
+3	50	_	Amount	_	_	4	Measure	_	Offset=3808-3813
+4	water	_	Reagent	_	_	0	_	_	Offset=3817-3822
+
+# sent_id = s59
+# text = Mix and incubate at room temperature for 10 minutes.  
+1	Store	_	Action	_	_	0	_	_	Offset=3826-3831
+2	-70°	_	Temperature	_	_	0	_	_	Offset=3835-3847
+
+# sent_id = s60
+# text = Centrifuge for 30 minutes at 4 °C. 
+1	Quantify	_	Action	_	_	0	_	_	Offset=3851-3859
+2	RNA	_	Reagent	_	_	0	_	_	Offset=3860-3863
+3	nanodrop	_	Device	_	_	0	_	_	Offset=3870-3878
+
+# sent_id = s61
+# text = Carefully discard supernatant.  
+1	Check	_	Action	_	_	0	_	_	Offset=3882-3887
+2	transcript	_	Measure-Type	_	_	0	_	_	Offset=3888-3903
+3	Experion/Bioanalyzer	_	Device	_	_	0	_	_	Offset=3910-3930
+

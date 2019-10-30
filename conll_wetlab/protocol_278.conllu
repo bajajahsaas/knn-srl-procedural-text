@@ -1,0 +1,149 @@
+# sent_id = s1
+# text = Charcoal treatment of seawater to remove organics (esp. vitamins).
+1	Collect	_	Action	_	_	0	_	_	Offset=67-74
+2	seawater	_	Reagent	_	_	0	_	_	Offset=75-83
+3	medium	_	Reagent	_	_	0	_	_	Offset=88-94
+4	filter	_	Action	_	_	0	_	_	Offset=96-102
+5	0.22	_	Size	_	_	6	Measure	_	Offset=113-120
+6	filter	_	Device	_	_	0	_	_	Offset=121-127
+7	remove	_	Action	_	_	0	_	_	Offset=131-137
+8	cells	_	Reagent	_	_	0	_	_	Offset=138-143
+9	particles	_	Reagent	_	_	0	_	_	Offset=148-157
+
+# sent_id = s2
+# text = Collect seawater for medium, filter through a 0.22 μm filter to remove cells and particles.
+1	Autoclave	_	Action	_	_	0	_	_	Offset=159-168
+2	microwave	_	Action	_	_	0	_	_	Offset=172-181
+3	filtered	_	Modifier	_	_	4	Mod-Link	_	Offset=186-194
+4	water	_	Reagent	_	_	0	_	_	Offset=195-200
+5	sterilze	_	Action	_	_	0	_	_	Offset=204-212
+
+# sent_id = s3
+# text = Autoclave or microwave the filtered water to sterilze.
+1	water	_	Reagent	_	_	0	_	_	Offset=220-225
+2	cool	_	Action	_	_	0	_	_	Offset=229-233
+3	treating	_	Action	_	_	0	_	_	Offset=241-249
+4	charcoal	_	Reagent	_	_	0	_	_	Offset=255-263
+
+# sent_id = s4
+# text = Allow water to cool before treating with charcoal.
+1	Pour	_	Action	_	_	0	_	_	Offset=265-269
+2	sterilzed	_	Modifier	_	_	3	Mod-Link	_	Offset=274-283
+3	water	_	Reagent	_	_	0	_	_	Offset=284-289
+4	designated	_	Modifier	_	_	5	Mod-Link	_	Offset=297-307
+5	flask	_	Location	_	_	9	Meronym	_	Offset=308-313
+6	stir	_	Device	_	_	0	_	_	Offset=319-327
+7	at	_	Modifier	_	_	8	Mod-Link	_	Offset=345-353
+8	1L	_	Amount	_	_	9	Measure	_	Offset=354-356
+9	liquid	_	Reagent	_	_	0	_	_	Offset=360-366
+
+# sent_id = s5
+# text = Pour the sterilzed water into a designated flask with stir bar that can contain at least 1L of liquid.
+1	Wash	_	Action	_	_	0	_	_	Offset=368-372
+2	activated	_	Modifier	_	_	3	Mod-Link	_	Offset=373-382
+3	charcoal	_	Reagent	_	_	0	_	_	Offset=383-391
+
+# sent_id = s6
+# text = Wash activated charcoal.
+1	Add	_	Action	_	_	0	_	_	Offset=393-396
+2	2.5g	_	Amount	_	_	3	Measure	_	Offset=397-401
+3	NaCl	_	Reagent	_	_	0	_	_	Offset=402-406
+4	500mL	_	Amount	_	_	5	Measure	_	Offset=410-415
+5	Milli	_	Reagent	_	_	0	_	_	Offset=419-432
+6	designated	_	Modifier	_	_	8	Mod-Link	_	Offset=440-450
+7	clean	_	Modifier	_	_	8	Mod-Link	_	Offset=451-456
+8	flask	_	Location	_	_	0	_	_	Offset=457-462
+9	charcoal	_	Method	_	_	0	_	_	Offset=467-483
+
+# sent_id = s7
+# text = Add 2.5g NaCl to 500mL of Milli Q water into a designated clean flask for charcoal washing.
+1	Add	_	Action	_	_	0	_	_	Offset=580-583
+2	10g	_	Amount	_	_	4	Measure	_	Offset=584-587
+3	activated	_	Modifier	_	_	4	Mod-Link	_	Offset=591-600
+4	charcoal	_	Reagent	_	_	0	_	_	Offset=601-609
+5	NaCl2	_	Reagent	_	_	0	_	_	Offset=617-631
+
+# sent_id = s8
+# text = The charcoal sticks so it is best to dedicate a flask for washing (and other treatment steps).
+1	Add	_	Action	_	_	0	_	_	Offset=633-636
+2	stir	_	Device	_	_	0	_	_	Offset=637-645
+
+# sent_id = s9
+# text = Add 10g of activated charcoal to the NaCl2 solution.
+1	Stir	_	Action	_	_	0	_	_	Offset=647-651
+2	at	_	Modifier	_	_	3	Mod-Link	_	Offset=656-664
+3	10min	_	Time	_	_	0	_	_	Offset=665-670
+
+# sent_id = s10
+# text = Add stir bar.
+1	Recover	_	Action	_	_	0	_	_	Offset=672-679
+2	charcoal	_	Reagent	_	_	0	_	_	Offset=684-692
+3	filtration	_	Method	_	_	0	_	_	Offset=696-706
+4	glass	_	Location	_	_	0	_	_	Offset=714-739
+5	designated	_	Modifier	_	_	6	Mod-Link	_	Offset=748-758
+6	filter	_	Device	_	_	0	_	_	Offset=759-769
+
+# sent_id = s11
+# text = Stir for at least 10min.
+1	scoopula	_	Device	_	_	0	_	_	Offset=777-785
+2	add	_	Action	_	_	0	_	_	Offset=789-792
+3	washed	_	Modifier	_	_	4	Mod-Link	_	Offset=793-799
+4	charcoal	_	Reagent	_	_	0	_	_	Offset=800-808
+5	sterilized	_	Modifier	_	_	6	Mod-Link	_	Offset=816-826
+6	seawater	_	Reagent	_	_	0	_	_	Offset=827-835
+
+# sent_id = s12
+# text = Recover the charcoal by filtration upon a glass fiber (GF/F) filter using a designated filter rig.
+1	Obtain	_	Action	_	_	0	_	_	Offset=889-895
+2	remaining	_	Modifier	_	_	3	Mod-Link	_	Offset=900-909
+3	charcoal	_	Reagent	_	_	0	_	_	Offset=910-918
+4	rig	_	Device	_	_	0	_	_	Offset=926-929
+5	swirling	_	Action	_	_	0	_	_	Offset=933-941
+6	sterilzed	_	Modifier	_	_	7	Mod-Link	_	Offset=942-951
+7	water	_	Reagent	_	_	10	Coreference-Link	_	Offset=952-957
+8	filtration	_	Device	_	_	0	_	_	Offset=965-979
+9	pouring	_	Action	_	_	0	_	_	Offset=984-991
+10	that	_	Mention	_	_	0	_	_	Offset=992-996
+11	flask	_	Location	_	_	13	Meronym	_	Offset=1011-1016
+12	sterilzed	_	Modifier	_	_	13	Mod-Link	_	Offset=1026-1035
+13	seawater	_	Reagent	_	_	0	_	_	Offset=1036-1044
+
+# sent_id = s13
+# text = Use a scoopula to add washed charcoal to the sterilized seawater made in Step1.
+1	Stir	_	Action	_	_	0	_	_	Offset=1072-1076
+2	washed	_	Modifier	_	_	3	Mod-Link	_	Offset=1081-1087
+3	charcoal	_	Reagent	_	_	0	_	_	Offset=1088-1096
+4	sterilzed	_	Modifier	_	_	5	Mod-Link	_	Offset=1102-1111
+5	seawater	_	Reagent	_	_	0	_	_	Offset=1112-1120
+6	at	_	Modifier	_	_	7	Mod-Link	_	Offset=1125-1133
+7	30min	_	Time	_	_	0	_	_	Offset=1134-1139
+8	stir	_	Location	_	_	0	_	_	Offset=1149-1159
+
+# sent_id = s14
+# text = Take care not to rip the GF/F filter.
+1	Remove	_	Action	_	_	0	_	_	Offset=1161-1167
+2	charcoal	_	Reagent	_	_	0	_	_	Offset=1168-1176
+3	seawater	_	Reagent	_	_	0	_	_	Offset=1186-1194
+4	filtering	_	Action	_	_	0	_	_	Offset=1198-1207
+5	mixture	_	Reagent	_	_	0	_	_	Offset=1212-1219
+6	disposable	_	Modifier	_	_	7	Mod-Link	_	Offset=1228-1238
+7	filtration	_	Device	_	_	9	Meronym	_	Offset=1239-1253
+8	0.2	_	Size	_	_	9	Setting	_	Offset=1261-1267
+9	filter	_	Device	_	_	0	_	_	Offset=1268-1274
+
+# sent_id = s15
+# text = Obtain the remaining charcoal in the rig by swirling sterilzed water in the filtration rig and pouring that out into your flask with the sterilzed seawater (and now washed charcoal).
+1	removing	_	Action	_	_	0	_	_	Offset=1282-1290
+2	charcoal	_	Reagent	_	_	0	_	_	Offset=1295-1303
+3	any	_	Modifier	_	_	6	Mod-Link	_	Offset=1308-1311
+4	larger	_	Modifier	_	_	5	Mod-Link	_	Offset=1312-1323
+5	0.2	_	Size	_	_	6	Measure	_	Offset=1324-1330
+6	particles	_	Reagent	_	_	0	_	_	Offset=1331-1340
+7	sterile	_	Location	_	_	0	_	_	Offset=1352-1371
+8	aseptically	_	Modifier	_	_	0	_	_	Offset=1408-1419
+9	add	_	Action	_	_	0	_	_	Offset=1420-1423
+10	desired	_	Modifier	_	_	11	Mod-Link	_	Offset=1424-1431
+11	nutrient	_	Reagent	_	_	0	_	_	Offset=1432-1453
+12	seawater	_	Reagent	_	_	0	_	_	Offset=1462-1470
+13	medium	_	Reagent	_	_	0	_	_	Offset=1488-1494
+

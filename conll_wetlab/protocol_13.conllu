@@ -1,0 +1,423 @@
+# sent_id = s1
+# text = NEBNext® Ultra™ DNA Library Prep Protocol for Illumina® With Size Selection (E7370)
+1	Mix	_	Action	_	_	0	_	_	Offset=84-87
+2	sterile	_	Location	_	_	0	_	_	Offset=118-144
+3	End	_	Reagent	_	_	0	_	_	Offset=167-186
+4	3.0	_	Amount	_	_	3	Measure	_	Offset=189-195
+5	End	_	Reagent	_	_	0	_	_	Offset=197-223
+6	10X	_	Concentration	_	_	5	Measure	_	Offset=225-228
+7	6.5	_	Amount	_	_	5	Measure	_	Offset=230-236
+8	Fragmented	_	Reagent	_	_	0	_	_	Offset=238-252
+9	55.5	_	Amount	_	_	8	Measure	_	Offset=255-262
+
+# sent_id = s2
+# text = Mix the following components in a sterile nuclease-free tube (Total volume 65 μl): End Prep Enzyme Mix   3.0 μl; End Repair Reaction Buffer (10X) 6.5 μl; Fragmented DNA   55.5 μl.
+1	Mix	_	Action	_	_	0	_	_	Offset=264-267
+2	pipetting	_	Method	_	_	0	_	_	Offset=271-280
+
+# sent_id = s3
+# text = Mix by pipetting.
+1	spin	_	Action	_	_	0	_	_	Offset=288-292
+2	collect	_	Misc	_	_	0	_	_	Offset=296-341
+
+# sent_id = s4
+# text = Quick spin to collect all liquid from the sides of the tube.
+1	Place	_	Action	_	_	0	_	_	Offset=343-348
+2	thermocycler	_	Device	_	_	3	Misc-Link	_	Offset=354-366
+3	heated	_	Misc	_	_	0	_	_	Offset=377-387
+4	run	_	Action	_	_	0	_	_	Offset=396-399
+5	following	_	Method	_	_	0	_	_	Offset=404-421
+
+# sent_id = s5
+# text = Place in a thermocycler, with the heated lid on, and run the following program:TimeTemperature30 minutes20°C30 minutes65°CHold4°C.
+1	Add	_	Action	_	_	0	_	_	Offset=474-477
+2	End	_	Reagent	_	_	0	_	_	Offset=519-544
+3	mix	_	Action	_	_	0	_	_	Offset=549-552
+4	well	_	Modifier	_	_	0	_	_	Offset=553-557
+5	Blunt/TA	_	Reagent	_	_	0	_	_	Offset=582-608
+6	15	_	Amount	_	_	5	Measure	_	Offset=611-616
+7	NEBNext	_	Reagent	_	_	0	_	_	Offset=618-646
+8	2.5	_	Amount	_	_	7	Measure	_	Offset=649-655
+9	Ligation	_	Reagent	_	_	0	_	_	Offset=657-674
+10	1	_	Amount	_	_	9	Measure	_	Offset=677-682
+
+# sent_id = s6
+# text = Add the following components directly to the End Prep reaction mixture and mix well (Total volume 83.5 μl): Blunt/TA Ligase Master Mix   15 μl; NEBNext Adaptor for Illumina   2.5 μl; Ligation Enhancer   1 μl.
+1	Mix	_	Action	_	_	0	_	_	Offset=683-686
+2	pipetting	_	Method	_	_	0	_	_	Offset=690-699
+
+# sent_id = s7
+# text = Mix by pipetting.
+1	Quick	_	Modifier	_	_	0	_	_	Offset=701-706
+2	spin	_	Action	_	_	0	_	_	Offset=707-711
+3	collect	_	Misc	_	_	0	_	_	Offset=715-760
+
+# sent_id = s8
+# text = Quick spin to collect all liquid from the sides of the tube.
+1	Incubate	_	Action	_	_	0	_	_	Offset=762-770
+2	20°C	_	Temperature	_	_	0	_	_	Offset=774-778
+3	15	_	Time	_	_	0	_	_	Offset=783-793
+4	thermal	_	Device	_	_	0	_	_	Offset=799-813
+
+# sent_id = s9
+# text = Incubate at 20°C for 15 minutes in a thermal cycler.
+1	Add	_	Action	_	_	0	_	_	Offset=815-818
+2	3	_	Amount	_	_	3	Measure	_	Offset=819-823
+3	USER™	_	Reagent	_	_	0	_	_	Offset=827-839
+4	ligation	_	Reagent	_	_	0	_	_	Offset=847-863
+
+# sent_id = s10
+# text = Add 3 μl of USER™ enzyme to the ligation mixture from step 8.
+1	Mix	_	Action	_	_	0	_	_	Offset=877-880
+2	well	_	Modifier	_	_	0	_	_	Offset=881-885
+3	incubate	_	Action	_	_	0	_	_	Offset=890-898
+4	37°C	_	Temperature	_	_	0	_	_	Offset=902-906
+5	15	_	Time	_	_	0	_	_	Offset=911-921
+
+# sent_id = s11
+# text = Mix well and incubate at 37°C for 15 minutes.
+1	Vortex	_	Action	_	_	0	_	_	Offset=923-929
+2	AMPure	_	Reagent	_	_	0	_	_	Offset=930-945
+3	resuspend	_	Misc	_	_	0	_	_	Offset=949-958
+
+# sent_id = s12
+# text = Vortex AMPure XP beads to resuspend.
+1	Add	_	Action	_	_	0	_	_	Offset=960-963
+2	13.5	_	Amount	_	_	3	Measure	_	Offset=964-971
+3	dH2O	_	Reagent	_	_	0	_	_	Offset=972-976
+4	ligation	_	Reagent	_	_	0	_	_	Offset=984-1001
+
+# sent_id = s13
+# text = Add 13.5 μl dH2O to the ligation reaction for a 100 μl total volume.
+1	Add	_	Action	_	_	0	_	_	Offset=1029-1032
+2	55	_	Amount	_	_	3	Measure	_	Offset=1033-1038
+3	resuspended	_	Reagent	_	_	0	_	_	Offset=1042-1069
+4	100	_	Amount	_	_	5	Measure	_	Offset=1077-1083
+5	ligation	_	Reagent	_	_	0	_	_	Offset=1084-1101
+
+# sent_id = s14
+# text = Add 55 μl of resuspended AMPure XP beads to the 100 μl ligation reaction.
+1	Mix	_	Action	_	_	0	_	_	Offset=1103-1106
+2	well	_	Modifier	_	_	0	_	_	Offset=1107-1111
+3	pipetting	_	Method	_	_	0	_	_	Offset=1115-1136
+
+# sent_id = s15
+# text = Mix well by pipetting up and down at least 10 times.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1156-1164
+2	5	_	Time	_	_	0	_	_	Offset=1169-1178
+3	room	_	Temperature	_	_	0	_	_	Offset=1182-1198
+
+# sent_id = s16
+# text = Incubate for 5 minutes at room temperature.
+1	Quickly	_	Modifier	_	_	0	_	_	Offset=1200-1207
+2	spin	_	Action	_	_	0	_	_	Offset=1208-1212
+3	tube	_	Location	_	_	0	_	_	Offset=1217-1221
+
+# sent_id = s17
+# text = Quickly spin the tube.
+1	Place	_	Action	_	_	0	_	_	Offset=1223-1228
+2	tube	_	Location	_	_	0	_	_	Offset=1233-1237
+3	magnetic	_	Device	_	_	0	_	_	Offset=1256-1270
+4	separate	_	Misc	_	_	0	_	_	Offset=1274-1313
+
+# sent_id = s18
+# text = Place the tube on an appropriate magnetic stand to separate the beads from the supernatant.
+1	After	_	Misc	_	_	0	_	_	Offset=1315-1360
+2	transfer	_	Action	_	_	0	_	_	Offset=1372-1380
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=1385-1396
+4	new	_	Location	_	_	0	_	_	Offset=1422-1430
+
+# sent_id = s19
+# text = After the solution is clear (about 5 minutes), carefully transfer the supernatant containing your DNA to a new tube (Caution: do not discard the supernatant).
+1	Discard	_	Action	_	_	0	_	_	Offset=1474-1481
+2	beads	_	Reagent	_	_	0	_	_	Offset=1486-1491
+3	unwanted	_	Reagent	_	_	0	_	_	Offset=1509-1533
+
+# sent_id = s20
+# text = Discard the beads that contain the unwanted large fragments.
+1	Add	_	Action	_	_	0	_	_	Offset=1535-1538
+2	25	_	Amount	_	_	3	Measure	_	Offset=1539-1544
+3	resuspended	_	Reagent	_	_	0	_	_	Offset=1545-1572
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=1580-1591
+
+# sent_id = s21
+# text = Add 25 μl resuspended AMPure XP beads to the supernatant.
+1	Mix	_	Action	_	_	0	_	_	Offset=1593-1596
+2	incubate	_	Action	_	_	0	_	_	Offset=1606-1614
+3	5	_	Time	_	_	0	_	_	Offset=1619-1628
+4	room	_	Temperature	_	_	0	_	_	Offset=1632-1648
+
+# sent_id = s22
+# text = Mix well and incubate for 5 minutes at room temperature.
+1	spin	_	Action	_	_	0	_	_	Offset=1658-1662
+2	tube	_	Location	_	_	2	Coreference-Link	_	Offset=1667-1671
+
+# sent_id = s23
+# text = Quickly spin the tube.
+1	Place	_	Action	_	_	0	_	_	Offset=1673-1678
+2	it	_	Mention	_	_	0	_	_	Offset=1679-1681
+3	magnetic	_	Device	_	_	0	_	_	Offset=1700-1714
+4	separate	_	Misc	_	_	0	_	_	Offset=1718-1757
+
+# sent_id = s24
+# text = Place it on an appropriate magnetic stand to separate the beads from the supernatant.
+1	After	_	Misc	_	_	0	_	_	Offset=1759-1804
+2	remove	_	Action	_	_	0	_	_	Offset=1816-1822
+3	discard	_	Action	_	_	0	_	_	Offset=1827-1834
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=1839-1850
+5	unwanted	_	Reagent	_	_	0	_	_	Offset=1865-1877
+
+# sent_id = s25
+# text = After the solution is clear (about 5 minutes), carefully remove and discard the supernatant that contains unwanted DNA.
+1	Add	_	Action	_	_	0	_	_	Offset=1994-1997
+2	200	_	Amount	_	_	4	Measure	_	Offset=1998-2004
+3	80%	_	Concentration	_	_	4	Measure	_	Offset=2008-2011
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=2029-2036
+5	tube	_	Location	_	_	0	_	_	Offset=2044-2048
+6	magnetic	_	Device	_	_	0	_	_	Offset=2062-2076
+
+# sent_id = s26
+# text = Be careful not to disturb the beads that contain the desired DNA targets (Caution: do not discard beads).
+1	Incubate	_	Action	_	_	0	_	_	Offset=2087-2095
+2	room	_	Temperature	_	_	0	_	_	Offset=2099-2115
+3	30	_	Time	_	_	0	_	_	Offset=2120-2130
+
+# sent_id = s27
+# text = Wash #1: Add 200 μl of 80% freshly prepared ethanol to the tube while in the magnetic stand.
+1	remove	_	Action	_	_	0	_	_	Offset=2151-2157
+2	discard	_	Action	_	_	0	_	_	Offset=2162-2169
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=2174-2185
+
+# sent_id = s28
+# text = Wash #1: Incubate at room temperature for 30 seconds.
+1	Add	_	Action	_	_	0	_	_	Offset=2196-2199
+2	200	_	Amount	_	_	4	Measure	_	Offset=2200-2206
+3	80%	_	Concentration	_	_	4	Measure	_	Offset=2210-2213
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=2231-2238
+5	tube	_	Location	_	_	0	_	_	Offset=2246-2250
+6	magnetic	_	Device	_	_	0	_	_	Offset=2264-2278
+
+# sent_id = s29
+# text = Wash #1: Carefully remove and discard the supernatant.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2289-2297
+2	room	_	Temperature	_	_	0	_	_	Offset=2301-2317
+3	30	_	Time	_	_	0	_	_	Offset=2322-2332
+
+# sent_id = s30
+# text = Wash #2: Add 200 μl of 80% freshly prepared ethanol to the tube while in the magnetic stand.
+1	remove	_	Action	_	_	0	_	_	Offset=2353-2359
+2	discard	_	Action	_	_	0	_	_	Offset=2364-2371
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=2376-2387
+
+# sent_id = s31
+# text = Wash #2: Incubate at room temperature for 30 seconds.
+1	Add	_	Action	_	_	0	_	_	Offset=2398-2401
+2	200	_	Amount	_	_	4	Measure	_	Offset=2402-2408
+3	80%	_	Concentration	_	_	4	Measure	_	Offset=2412-2415
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=2433-2440
+5	tube	_	Location	_	_	0	_	_	Offset=2448-2452
+6	magnetic	_	Device	_	_	0	_	_	Offset=2466-2480
+
+# sent_id = s32
+# text = Wash #2: Carefully remove and discard the supernatant.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2491-2499
+2	room	_	Temperature	_	_	0	_	_	Offset=2503-2519
+3	30	_	Time	_	_	0	_	_	Offset=2524-2534
+
+# sent_id = s33
+# text = Wash #3: Add 200 μl of 80% freshly prepared ethanol to the tube while in the magnetic stand.
+1	remove	_	Action	_	_	0	_	_	Offset=2555-2561
+2	discard	_	Action	_	_	0	_	_	Offset=2566-2573
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=2578-2589
+
+# sent_id = s34
+# text = Wash #3: Incubate at room temperature for 30 seconds.
+1	Air	_	Action	_	_	0	_	_	Offset=2591-2594
+2	dry	_	Reagent	_	_	0	_	_	Offset=2599-2608
+3	10	_	Time	_	_	0	_	_	Offset=2613-2623
+4	tube	_	Location	_	_	0	_	_	Offset=2634-2638
+5	magnetic	_	Device	_	_	0	_	_	Offset=2649-2663
+6	lid	_	Misc	_	_	0	_	_	Offset=2673-2676
+
+# sent_id = s35
+# text = Wash #3: Carefully remove and discard the supernatant.
+1	Elute	_	Action	_	_	0	_	_	Offset=2683-2688
+2	DNA	_	Reagent	_	_	0	_	_	Offset=2693-2703
+3	beads	_	Reagent	_	_	0	_	_	Offset=2713-2718
+4	28	_	Amount	_	_	6	Measure	_	Offset=2724-2729
+5	10	_	Concentration	_	_	6	Measure	_	Offset=2733-2738
+6	Tris-HCl	_	Reagent	_	_	0	_	_	Offset=2739-2747
+7	0.1	_	Concentration	_	_	8	Measure	_	Offset=2751-2756
+8	TE	_	Reagent	_	_	0	_	_	Offset=2757-2759
+9	pH	_	pH	_	_	8	Measure	_	Offset=2761-2767
+
+# sent_id = s36
+# text = Air the dry beads for 10 minutes while the tube is on the magnetic stand with the lid open.
+1	Mix	_	Action	_	_	0	_	_	Offset=2769-2772
+2	vortex	_	Device	_	_	0	_	_	Offset=2783-2795
+3	pipetting	_	Method	_	_	0	_	_	Offset=2802-2823
+
+# sent_id = s37
+# text = Elute the DNA target from the beads into 28 μl of 10 mM Tris-HCl or 0.1 X TE, pH 8.0.
+1	spin	_	Action	_	_	0	_	_	Offset=2833-2837
+2	tube	_	Location	_	_	4	Coreference-Link	_	Offset=2842-2846
+3	place	_	Action	_	_	0	_	_	Offset=2851-2856
+4	it	_	Mention	_	_	0	_	_	Offset=2857-2859
+5	magnetic	_	Device	_	_	0	_	_	Offset=2865-2879
+
+# sent_id = s38
+# text = Mix well on a vortex mixer or by pipetting up and down.
+1	After	_	Misc	_	_	0	_	_	Offset=2881-2926
+2	transfer	_	Action	_	_	0	_	_	Offset=2928-2936
+3	23	_	Amount	_	_	0	_	_	Offset=2937-2942
+4	PCR	_	Location	_	_	0	_	_	Offset=2952-2960
+5	amplification	_	Misc	_	_	0	_	_	Offset=2965-2978
+
+# sent_id = s39
+# text = Quickly spin the tube and place it on a magnetic stand.
+1	Mix	_	Action	_	_	0	_	_	Offset=2980-2983
+2	sterile	_	Location	_	_	0	_	_	Offset=3012-3031
+3	Adaptor	_	Reagent	_	_	0	_	_	Offset=3056-3085
+4	23	_	Amount	_	_	3	Measure	_	Offset=3088-3093
+5	NEBNext	_	Reagent	_	_	0	_	_	Offset=3095-3134
+6	25	_	Amount	_	_	5	Measure	_	Offset=3137-3142
+7	Index	_	Reagent	_	_	0	_	_	Offset=3144-3156
+8	1	_	Amount	_	_	7	Measure	_	Offset=3159-3163
+9	Universal	_	Reagent	_	_	0	_	_	Offset=3165-3185
+10	1	_	Amount	_	_	9	Measure	_	Offset=3187-3191
+
+# sent_id = s40
+# text = After the solution is clear (about 5 minutes), transfer 23 μl to a new PCR tube for amplification.
+1	Vortex	_	Action	_	_	0	_	_	Offset=3412-3418
+2	AMPure	_	Reagent	_	_	0	_	_	Offset=3419-3434
+3	resuspend	_	Misc	_	_	0	_	_	Offset=3438-3447
+
+# sent_id = s41
+# text = Mix the following components in sterile strip tubes (Total volume   50 μl): Adaptor Ligated DNA Fragments   23 μl; NEBNext High Fidelity 2X PCR Master Mix   25 μl; Index Primer   1 μl; Universal PCR Primer  1 μl.
+1	Add	_	Action	_	_	0	_	_	Offset=3449-3452
+2	50	_	Amount	_	_	3	Measure	_	Offset=3453-3458
+3	resuspended	_	Reagent	_	_	0	_	_	Offset=3462-3489
+4	PCR	_	Reagent	_	_	0	_	_	Offset=3497-3510
+
+# sent_id = s42
+# text = PCR using the following cycling conditions: CYCLE STEPTEMPTIMECYCLESInitial Denaturation98°C30 seconds1Denaturation98°C10 seconds6-15*Annealing65°C30 secondsExtension72°C30 secondsFinal Extension72°C5 minutes1Hold4°C∞.
+1	Mix	_	Action	_	_	0	_	_	Offset=3523-3526
+2	pipetting	_	Method	_	_	0	_	_	Offset=3535-3556
+3	10	_	Numerical	_	_	0	_	_	Offset=3566-3568
+
+# sent_id = s43
+# text = Vortex AMPure XP beads to resuspend.
+1	Incubate	_	Action	_	_	0	_	_	Offset=3576-3584
+2	5	_	Time	_	_	0	_	_	Offset=3589-3598
+3	room	_	Temperature	_	_	0	_	_	Offset=3602-3618
+
+# sent_id = s44
+# text = Add 50 μl of resuspended AMPure XP beads to the PCR reactions (~ 50 μ l).
+1	spin	_	Action	_	_	0	_	_	Offset=3628-3632
+2	tube	_	Location	_	_	4	Coreference-Link	_	Offset=3637-3641
+3	place	_	Action	_	_	0	_	_	Offset=3646-3651
+4	it	_	Mention	_	_	0	_	_	Offset=3652-3654
+5	magnetic	_	Device	_	_	0	_	_	Offset=3673-3687
+6	separate	_	Misc	_	_	0	_	_	Offset=3691-3722
+
+# sent_id = s45
+# text = Mix well by pipetting up and down at least 10 times.
+1	After	_	Misc	_	_	0	_	_	Offset=3724-3769
+2	remove	_	Action	_	_	0	_	_	Offset=3781-3787
+3	discard	_	Action	_	_	0	_	_	Offset=3792-3799
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=3804-3815
+
+# sent_id = s46
+# text = Incubate for 5 minutes at room temperature.
+1	Add	_	Action	_	_	0	_	_	Offset=3919-3922
+2	200	_	Amount	_	_	4	Measure	_	Offset=3923-3929
+3	80%	_	Concentration	_	_	4	Measure	_	Offset=3933-3936
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=3937-3944
+5	PCR	_	Location	_	_	0	_	_	Offset=3952-3961
+6	magnetic	_	Device	_	_	0	_	_	Offset=3975-3989
+
+# sent_id = s47
+# text = Quickly spin the tube and place it on an appropriate magnetic stand to separate beads from supernatant.
+1	Incubate	_	Action	_	_	0	_	_	Offset=4001-4009
+2	room	_	Temperature	_	_	0	_	_	Offset=4013-4029
+3	30	_	Time	_	_	0	_	_	Offset=4034-4044
+
+# sent_id = s48
+# text = After the solution is clear (about 5 minutes), carefully remove and discard the supernatant.
+1	remove	_	Action	_	_	0	_	_	Offset=4065-4071
+2	discard	_	Action	_	_	0	_	_	Offset=4076-4083
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=4088-4099
+
+# sent_id = s49
+# text = Be careful not to disturb the beads that contain DNA targets (Caution do not discard beads).
+1	Add	_	Action	_	_	0	_	_	Offset=4110-4113
+2	200	_	Amount	_	_	4	Measure	_	Offset=4114-4120
+3	80%	_	Concentration	_	_	4	Measure	_	Offset=4124-4127
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=4128-4135
+5	PCR	_	Location	_	_	0	_	_	Offset=4143-4152
+6	magnetic	_	Device	_	_	0	_	_	Offset=4166-4180
+
+# sent_id = s50
+# text = Wash #1: Add 200 μl of 80% ethanol to the PCR plate while in the magnetic stand.
+1	Incubate	_	Action	_	_	0	_	_	Offset=4192-4200
+2	room	_	Temperature	_	_	0	_	_	Offset=4204-4220
+3	30	_	Time	_	_	0	_	_	Offset=4225-4235
+
+# sent_id = s51
+# text = Wash #1:  Incubate at room temperature for 30 seconds.
+1	remove	_	Action	_	_	0	_	_	Offset=4256-4262
+2	discard	_	Action	_	_	0	_	_	Offset=4267-4274
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=4279-4290
+
+# sent_id = s52
+# text = Wash #1: Carefully remove and discard the supernatant.
+1	Air	_	Action	_	_	0	_	_	Offset=4292-4299
+2	beads	_	Reagent	_	_	0	_	_	Offset=4304-4309
+3	10	_	Time	_	_	0	_	_	Offset=4314-4324
+4	PCR	_	Location	_	_	0	_	_	Offset=4335-4344
+5	magnetic	_	Device	_	_	0	_	_	Offset=4355-4369
+6	lid	_	Misc	_	_	0	_	_	Offset=4379-4382
+
+# sent_id = s53
+# text = Wash #2: Add 200 μl of 80% ethanol to the PCR plate while in the magnetic stand.
+1	Elute	_	Action	_	_	0	_	_	Offset=4389-4394
+2	DNA	_	Reagent	_	_	0	_	_	Offset=4395-4405
+3	beads	_	Reagent	_	_	0	_	_	Offset=4411-4416
+4	33	_	Amount	_	_	6	Measure	_	Offset=4422-4427
+5	10	_	Concentration	_	_	6	Measure	_	Offset=4428-4433
+6	Tris-HCl	_	Reagent	_	_	7	Misc-Link	_	Offset=4434-4442
+7	pH	_	Misc	_	_	0	_	_	Offset=4444-4450
+8	0.1X	_	Concentration	_	_	0	_	_	Offset=4454-4458
+9	TE	_	Reagent	_	_	8	Or	_	Offset=4459-4461
+
+# sent_id = s54
+# text = Wash #2:  Incubate at room temperature for 30 seconds.
+1	Mix	_	Action	_	_	0	_	_	Offset=4463-4466
+2	pipetting	_	Method	_	_	0	_	_	Offset=4475-4496
+3	10	_	Amount	_	_	0	_	_	Offset=4506-4514
+
+# sent_id = s55
+# text = Wash #2: Carefully remove and discard the supernatant.
+1	spin	_	Action	_	_	0	_	_	Offset=4524-4528
+2	tube	_	Location	_	_	4	Coreference-Link	_	Offset=4533-4537
+3	place	_	Action	_	_	0	_	_	Offset=4542-4547
+4	it	_	Mention	_	_	0	_	_	Offset=4548-4550
+5	magnetic	_	Device	_	_	0	_	_	Offset=4569-4583
+6	separate	_	Misc	_	_	0	_	_	Offset=4587-4618
+
+# sent_id = s56
+# text = Air dry the beads for 10 minutes while the PCR plate is on the magnetic stand with the lid open.
+1	After	_	Misc	_	_	0	_	_	Offset=4620-4665
+2	transfer	_	Action	_	_	0	_	_	Offset=4677-4685
+3	28	_	Amount	_	_	4	Measure	_	Offset=4686-4691
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=4692-4703
+5	PCR	_	Location	_	_	0	_	_	Offset=4713-4721
+
+# sent_id = s57
+# text = Elute DNA target from beads into 33 μl 10 mM Tris-HCl, pH 8.0 or 0.1X TE.
+1	Dilute	_	Action	_	_	0	_	_	Offset=4723-4729
+2	library	_	Reagent	_	_	0	_	_	Offset=4734-4741
+3	5	_	Amount	_	_	4	Measure	_	Offset=4742-4748
+4	water	_	Reagent	_	_	0	_	_	Offset=4754-4759
+5	check	_	Misc	_	_	0	_	_	Offset=4765-4828
+

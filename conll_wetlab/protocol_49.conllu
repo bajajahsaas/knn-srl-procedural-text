@@ -1,0 +1,120 @@
+# sent_id = s1
+# text = Bacteriophage isolation by spotting on target host cells
+1	host	_	Reagent	_	_	0	_	_	Offset=61-71
+2	grown	_	Action	_	_	0	_	_	Offset=76-81
+3	overnight	_	Time	_	_	0	_	_	Offset=82-91
+4	liquid	_	Reagent	_	_	6	Meronym	_	Offset=95-110
+5	appropriate	_	Modifier	_	_	6	Mod-Link	_	Offset=125-136
+6	growth	_	Reagent	_	_	0	_	_	Offset=137-150
+
+# sent_id = s2
+# text = The host cells are grown overnight in liquid cultures containing an appropriate growth medium for the organism.
+1	Measure	_	Action	_	_	0	_	_	Offset=169-176
+2	optical	_	Measure-Type	_	_	0	_	_	Offset=177-192
+3	spectrophotometrically	_	Method	_	_	0	_	_	Offset=193-215
+4	525	_	Generic-Measure	_	_	0	_	_	Offset=219-225
+5	adjust	_	Action	_	_	0	_	_	Offset=238-244
+6	OD	_	Measure-Type	_	_	0	_	_	Offset=245-247
+7	0.3–0.5	_	Numerical	_	_	0	_	_	Offset=251-258
+8	growth	_	Reagent	_	_	0	_	_	Offset=264-277
+
+# sent_id = s3
+# text = Measure optical density spectrophotometrically at 525 nm (OD525) and adjust OD to 0.3–0.5 with growth medium.
+1	Soft	_	Reagent	_	_	4	Or	_	Offset=279-288
+2	0.5	_	Concentration	_	_	3	Measure	_	Offset=290-301
+3	agar	_	Reagent	_	_	0	_	_	Offset=302-306
+4	media	_	Reagent	_	_	3	Meronym	_	Offset=310-315
+5	of	_	Modifier	_	_	4	Mod-Link	_	Offset=316-325
+6	melted	_	Action	_	_	0	_	_	Offset=330-336
+7	water	_	Device	_	_	0	_	_	Offset=342-352
+8	microwave	_	Device	_	_	7	Or	_	Offset=358-371
+
+# sent_id = s4
+# text = Soft agar (0.5 to 0.6% agar in media of choice) is melted in a water bath or a microwave oven.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=374-381
+2	4mL	_	Amount	_	_	3	Measure	_	Offset=382-385
+3	soft	_	Reagent	_	_	0	_	_	Offset=389-398
+4	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=404-411
+5	tubes	_	Location	_	_	0	_	_	Offset=412-417
+6	keep	_	Action	_	_	0	_	_	Offset=422-426
+7	just	_	Modifier	_	_	0	_	_	Offset=427-437
+8	solidification	_	Temperature	_	_	0	_	_	Offset=438-464
+
+# sent_id = s5
+# text = Aliquot 4mL of soft agar into sterile tubes and keep just above solidification temperature until use.
+1	200–300	_	Amount	_	_	2	Measure	_	Offset=476-486
+2	bacterial	_	Reagent	_	_	0	_	_	Offset=487-504
+3	added	_	Action	_	_	0	_	_	Offset=508-513
+4	4	_	Amount	_	_	5	Measure	_	Offset=521-525
+5	tubes	_	Location	_	_	7	Meronym	_	Offset=526-531
+6	melted	_	Modifier	_	_	7	Mod-Link	_	Offset=537-543
+7	soft	_	Reagent	_	_	0	_	_	Offset=544-553
+
+# sent_id = s6
+# text = 200–300 µL bacterial culture is added to the 4 mL tubes with melted soft agar.
+1	bacteria-soft	_	Reagent	_	_	0	_	_	Offset=559-585
+2	vortexed	_	Action	_	_	0	_	_	Offset=594-602
+3	immediately	_	Modifier	_	_	0	_	_	Offset=607-618
+4	poured	_	Action	_	_	0	_	_	Offset=619-625
+5	agar	_	Location	_	_	6	Meronym	_	Offset=634-644
+6	agar	_	Reagent	_	_	0	_	_	Offset=653-657
+
+# sent_id = s7
+# text = The bacteria-soft agar mixture is then vortexed and immediately poured onto an agar plate with an agar that supports growth of the host bacterium.
+1	Distribute	_	Action	_	_	0	_	_	Offset=702-712
+2	bacteria-soft	_	Reagent	_	_	0	_	_	Offset=713-739
+3	evenly	_	Modifier	_	_	0	_	_	Offset=740-746
+4	plate	_	Location	_	_	0	_	_	Offset=754-759
+5	placed	_	Action	_	_	0	_	_	Offset=770-776
+6	flat	_	Location	_	_	0	_	_	Offset=782-794
+
+# sent_id = s8
+# text = Distribute bacteria-soft agar mixture evenly on the plate, which is placed on a flat surface.
+1	soft	_	Reagent	_	_	2	Meronym	_	Offset=805-814
+2	target	_	Reagent	_	_	0	_	_	Offset=830-845
+3	solidified	_	Action	_	_	0	_	_	Offset=850-860
+4	triplicate	_	Action	_	_	0	_	_	Offset=862-872
+5	aliquots	_	Reagent	_	_	0	_	_	Offset=873-881
+6	5–10	_	Amount	_	_	5	Measure	_	Offset=885-892
+7	environmental	_	Reagent	_	_	5	Meronym	_	Offset=908-935
+8	phages	_	Reagent	_	_	0	_	_	Offset=947-953
+9	isolated	_	Action	_	_	0	_	_	Offset=964-972
+10	spotted	_	Action	_	_	0	_	_	Offset=977-984
+11	top	_	Location	_	_	0	_	_	Offset=988-991
+12	soft	_	Reagent	_	_	11	Meronym	_	Offset=999-1008
+
+# sent_id = s9
+# text = When the soft agar containing the target bacteria has solidified, triplicate aliquots of 5–10 µL of each of the environmental water samples from which phages should be isolated are spotted on top of the soft agar.
+1	negative	_	Modifier	_	_	3	Mod-Link	_	Offset=1015-1031
+2	5–10	_	Amount	_	_	3	Measure	_	Offset=1032-1039
+3	phage	_	Reagent	_	_	4	Meronym	_	Offset=1040-1052
+4	SM	_	Reagent	_	_	6	Meronym	8:Meronym|10:Meronym|12:Meronym	Offset=1060-1069
+5	450	_	Concentration	_	_	6	Measure	_	Offset=1071-1077
+6	NaCl	_	Reagent	_	_	0	_	_	Offset=1078-1082
+7	50	_	Concentration	_	_	8	Measure	_	Offset=1084-1089
+8	MgSO4	_	Reagent	_	_	0	_	_	Offset=1090-1095
+9	50	_	Concentration	_	_	10	Measure	_	Offset=1097-1102
+10	Tris	_	Reagent	_	_	0	_	_	Offset=1103-1107
+11	0.01	_	Concentration	_	_	12	Measure	_	Offset=1109-1115
+12	Gelatin	_	Reagent	_	_	0	_	_	Offset=1116-1123
+13	pH	_	pH	_	_	12	Measure	_	Offset=1125-1131
+14	0.02	_	Amount	_	_	16	Measure	_	Offset=1136-1143
+15	filtered	_	Modifier	_	_	16	Mod-Link	_	Offset=1144-1152
+16	sample	_	Reagent	_	_	3	Or	_	Offset=1153-1165
+17	spotted	_	Action	_	_	0	_	_	Offset=1169-1176
+18	triplicate	_	Location	_	_	0	_	_	Offset=1180-1190
+19	soft	_	Reagent	_	_	18	Meronym	_	Offset=1198-1207
+
+# sent_id = s10
+# text = As a negative control 5–10 µL phage buffer (e.g., SM buffer: 450 mM NaCl, 50 mM MgSO4, 50 mM Tris, 0.01 % Gelatin, pH = 8) or 0.02 µm filtered sample water is spotted in triplicate on the soft agar.
+1	plates	_	Location	_	_	0	_	_	Offset=1213-1219
+2	incubated	_	Action	_	_	0	_	_	Offset=1224-1233
+3	1–3	_	Time	_	_	0	_	_	Offset=1238-1243
+
+# sent_id = s11
+# text = The plates are incubated for 1–3 d depending on the growth rate of the bacteria, and the presence of lytic phages in the sample is detected as a clearing zone (plaque) in the spotted area of the lawn of bacteria that develops over time on the plate.
+1	phages	_	Reagent	_	_	0	_	_	Offset=1635-1641
+2	isolated	_	Action	_	_	0	_	_	Offset=1654-1662
+3	purified	_	Action	_	_	0	_	_	Offset=1667-1675
+4	plates	_	Location	_	_	0	_	_	Offset=1685-1691
+

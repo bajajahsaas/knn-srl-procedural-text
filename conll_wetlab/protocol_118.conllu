@@ -1,0 +1,36 @@
+# sent_id = s1
+# text = THP1 cell line differentiation
+1	Grow	_	Action	_	_	0	_	_	Offset=31-35
+2	cells	_	Reagent	_	_	0	_	_	Offset=36-41
+3	grow	_	Action	_	_	0	_	_	Offset=73-77
+4	clumps	_	Reagent	_	_	0	_	_	Offset=81-87
+
+# sent_id = s2
+# text = Grow cells till confluent - cells like to grow in clumps. 
+1	Plate	_	Action	_	_	0	_	_	Offset=138-143
+2	50,000	_	Amount	_	_	3	Measure	_	Offset=144-153
+3	well	_	Device	_	_	0	_	_	Offset=154-158
+4	24	_	Modifier	_	_	5	Mod-Link	_	Offset=164-171
+5	plate	_	Device	_	_	0	_	_	Offset=172-177
+6	500	_	Amount	_	_	0	_	_	Offset=181-187
+
+# sent_id = s3
+# text = Media used - RPMI + 10% FBS + b-mercaptoethanol
+1	Add	_	Action	_	_	0	_	_	Offset=190-193
+2	10-50ng/ml	_	Amount	_	_	3	Measure	_	Offset=194-204
+3	PMA	_	Reagent	_	_	0	_	_	Offset=208-211
+4	72	_	Time	_	_	0	_	_	Offset=216-224
+
+# sent_id = s4
+# text = Plate 50,000 c/ well in a 24 well plate in 500 ul. 
+1	rest	_	Action	_	_	0	_	_	Offset=242-246
+2	cells	_	Reagent	_	_	0	_	_	Offset=247-252
+3	16hours	_	Time	_	_	0	_	_	Offset=257-264
+
+# sent_id = s5
+# text = Add 10-50ng/ml of PMA for 72 hours. 
+1	Gamma	_	Modifier	_	_	0	_	_	Offset=267-272
+2	stimulate	_	Action	_	_	0	_	_	Offset=273-282
+3	10-50U	_	Amount	_	_	4	Measure	_	Offset=288-294
+4	IFNg	_	Reagent	_	_	0	_	_	Offset=295-299
+

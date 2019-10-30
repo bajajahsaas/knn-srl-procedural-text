@@ -1,0 +1,98 @@
+# sent_id = s1
+# text = Transcriptomics During One-Step Growth Curves for Cellulophaga Phages
+1	Do	_	Action	_	_	0	_	_	Offset=70-72
+2	plaque	_	Method	_	_	0	_	_	Offset=75-87
+
+# sent_id = s2
+# text = Do a plaque assay to determine the PFU/ml of the lysate you plan to use Inoculate a new culture; i.e., pick a colony into a 125 ml flask containing MLB media. 
+1	transfer	_	Action	_	_	0	_	_	Offset=244-252
+2	10	_	Amount	_	_	3	Measure	_	Offset=253-258
+3	culture	_	Reagent	_	_	0	_	_	Offset=267-274
+4	500	_	Amount	_	_	5	Measure	_	Offset=278-284
+5	new	_	Reagent	_	_	0	_	_	Offset=288-297
+6	Fernbach	_	Location	_	_	0	_	_	Offset=303-317
+
+# sent_id = s3
+# text = The next day, transfer 10 ml of this culture to 500 ml of new media in a Fernbach flask (short and fat 2800 ml). 
+1	Inoculate	_	Action	_	_	0	_	_	Offset=344-353
+2	enough	_	Modifier	_	_	0	_	_	Offset=354-360
+3	500	_	Amount	_	_	0	_	_	Offset=361-367
+
+# sent_id = s4
+# text = Inoculate enough 500 ml cultures for your experiment. 
+1	Graph	_	Action	_	_	0	_	_	Offset=517-522
+2	results	_	Device	_	_	0	_	_	Offset=527-534
+
+# sent_id = s5
+# text = Immediately after the transfer, take a 'time 0' growth reading. 
+1	Determine	_	Action	_	_	0	_	_	Offset=546-555
+2	concentration	_	Device	_	_	0	_	_	Offset=560-573
+
+# sent_id = s6
+# text = Continue taking readings in this way periodically.  
+1	Calculate	_	Action	_	_	0	_	_	Offset=636-645
+2	total	_	Generic-Measure	_	_	3	Measure	_	Offset=650-662
+3	cells	_	Reagent	_	_	0	_	_	Offset=666-671
+4	500	_	Amount	_	_	5	Measure	_	Offset=688-694
+5	cultures	_	Location	_	_	0	_	_	Offset=695-703
+
+# sent_id = s7
+# text = Graph the results as you go!
+1	Add	_	Action	_	_	0	_	_	Offset=760-763
+2	phages	_	Reagent	_	_	0	_	_	Offset=764-770
+3	experimental	_	Location	_	_	0	_	_	Offset=778-796
+
+# sent_id = s8
+# text = Determine the concentration of your culture at the time you want to start the infection. 
+1	Immediately	_	Modifier	_	_	0	_	_	Offset=868-879
+2	dilute	_	Action	_	_	0	_	_	Offset=881-887
+3	infection	_	Reagent	_	_	0	_	_	Offset=892-901
+4	1:1	_	Concentration	_	_	0	_	_	Offset=902-905
+5	MLB	_	Location	_	_	0	_	_	Offset=909-918
+6	add	_	Action	_	_	0	_	_	Offset=926-929
+7	500	_	Amount	_	_	9	Measure	_	Offset=930-936
+8	fresh	_	Modifier	_	_	9	Mod-Link	_	Offset=937-942
+9	media	_	Reagent	_	_	0	_	_	Offset=943-948
+10	each	_	Modifier	_	_	11	Mod-Link	_	Offset=952-956
+11	flask	_	Location	_	_	0	_	_	Offset=957-962
+12	swirl	_	Action	_	_	0	_	_	Offset=967-972
+
+# sent_id = s9
+# text = Calculate the total number of cells in each of your 500 ml cultures. 
+1	Take	_	Action	_	_	0	_	_	Offset=983-987
+2	sample	_	Reagent	_	_	0	_	_	Offset=990-996
+3	immediately	_	Modifier	_	_	0	_	_	Offset=997-1008
+
+# sent_id = s10
+# text = Calculate how many phages you should add for MOI 3.  
+1	The	_	Time	_	_	0	_	_	Offset=1128-1140
+2	count	_	Action	_	_	0	_	_	Offset=1142-1147
+3	plaques	_	Reagent	_	_	0	_	_	Offset=1152-1159
+4	all	_	Modifier	_	_	5	Mod-Link	_	Offset=1163-1166
+5	plates	_	Location	_	_	0	_	_	Offset=1167-1173
+6	The	_	Time	_	_	0	_	_	Offset=1212-1224
+7	count	_	Action	_	_	0	_	_	Offset=1226-1231
+8	new	_	Modifier	_	_	9	Mod-Link	_	Offset=1236-1239
+9	plaques	_	Reagent	_	_	0	_	_	Offset=1240-1247
+
+# sent_id = s11
+# text = Add phages to the experimental flask and an equal volume of MSM to the control flask and start your timer. 
+1	Continue	_	Action	_	_	0	_	_	Offset=1335-1343
+2	sampling	_	Method	_	_	0	_	_	Offset=1344-1352
+3	8	_	Time	_	_	0	_	_	Offset=1369-1376
+
+# sent_id = s12
+# text = Immediately, dilute the infection 1:1 in MLB media; i.e., add 500 ml fresh media to each flask and swirl to mix.  
+1	Calculate	_	Action	_	_	0	_	_	Offset=1379-1388
+2	PFU/ml	_	Device	_	_	0	_	_	Offset=1389-1395
+
+# sent_id = s13
+# text = Take a sample immediately after dilution Steps for centrifuged plaque assay:  
+1	Graph	_	Action	_	_	0	_	_	Offset=1503-1508
+2	results	_	Device	_	_	0	_	_	Offset=1513-1520
+
+# sent_id = s14
+# text = Steps for non-centrifuged plaque assay:  
+1	Calculate	_	Action	_	_	0	_	_	Offset=1523-1532
+2	burst	_	Device	_	_	0	_	_	Offset=1533-1543
+

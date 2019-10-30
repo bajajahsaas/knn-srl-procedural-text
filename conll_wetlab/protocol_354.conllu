@@ -1,0 +1,241 @@
+# sent_id = s1
+# text = Mojosort™ Mouse Neutrophil Isolation Kit Protocol
+1	Pour	_	Action	_	_	0	_	_	Offset=50-58
+2	collect	_	Action	_	_	0	_	_	Offset=63-70
+3	liquid	_	Reagent	_	_	0	_	_	Offset=75-81
+
+# sent_id = s2
+# text = Pour out and collect the liquid.
+1	cells	_	Reagent	_	_	0	_	_	Offset=97-102
+2	DO	_	Action	_	_	0	_	_	Offset=116-130
+
+# sent_id = s3
+# text = These are the cells of interest; DO NOT DISCARD.
+1	Prepare	_	Action	_	_	0	_	_	Offset=132-139
+2	cells	_	Reagent	_	_	0	_	_	Offset=140-145
+3	tissue	_	Reagent	_	_	0	_	_	Offset=156-162
+4	without	_	Action	_	_	0	_	_	Offset=175-189
+5	erythrocytes	_	Reagent	_	_	0	_	_	Offset=190-202
+
+# sent_id = s4
+# text = Prepare cells from your tissue of interest without lysing erythrocytes.
+1	wash	_	Action	_	_	0	_	_	Offset=217-221
+2	sample	_	Reagent	_	_	0	_	_	Offset=230-248
+3	resuspend	_	Action	_	_	0	_	_	Offset=250-259
+4	cells	_	Reagent	_	_	0	_	_	Offset=264-269
+5	MojoSort™	_	Reagent	_	_	0	_	_	Offset=273-289
+6	filling	_	Action	_	_	0	_	_	Offset=293-300
+7	4	_	Amount	_	_	5	Measure	_	Offset=307-311
+8	5	_	Size	_	_	9	Measure	_	Offset=317-321
+9	polystyrene	_	Location	_	_	0	_	_	Offset=335-351
+
+# sent_id = s5
+# text = In the final wash of your sample preparation, resuspend the cells in MojoSort™ Buffer by filling up to 4 mL in a 5 mL (12 x 75 mm) polystyrene tube.
+1	Keep	_	Action	_	_	0	_	_	Offset=359-363
+2	MojoSort™	_	Reagent	_	_	0	_	_	Offset=364-380
+3	ice	_	Reagent	_	_	0	_	_	Offset=384-387
+4	throughout	_	Time	_	_	0	_	_	Offset=388-412
+
+# sent_id = s6
+# text = Note: Keep MojoSort™ Buffer on ice throughout the procedure.
+1	Filter	_	Action	_	_	0	_	_	Offset=414-420
+2	cells	_	Reagent	_	_	0	_	_	Offset=425-430
+3	70	_	Size	_	_	4	Setting	_	Offset=438-443
+4	cell	_	Device	_	_	0	_	_	Offset=444-457
+5	centrifuge	_	Action	_	_	0	_	_	Offset=459-469
+6	300	_	Speed	_	_	0	_	_	Offset=473-480
+7	5	_	Time	_	_	0	_	_	Offset=485-494
+8	resuspend	_	Action	_	_	0	_	_	Offset=500-509
+9	appropriate	_	Amount	_	_	10	Measure	_	Offset=516-534
+10	MojoSort™	_	Reagent	_	_	0	_	_	Offset=538-554
+
+# sent_id = s7
+# text = Filter the cells with a 70 μm cell strainer, centrifuge at 300 x g for 5 minutes, and resuspend in an appropriate volume of MojoSort™ Buffer.
+1	Count	_	Action	_	_	0	_	_	Offset=556-561
+2	adjust	_	Action	_	_	0	_	_	Offset=566-572
+3	cell	_	Reagent	_	_	0	_	_	Offset=577-581
+4	concentration	_	Measure-Type	_	_	0	_	_	Offset=582-595
+5	1	_	Concentration	_	_	0	_	_	Offset=599-615
+
+# sent_id = s8
+# text = Count and adjust the cell concentration to 1 x 108 cells/mL.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=617-624
+2	100	_	Amount	_	_	3	Measure	_	Offset=625-631
+3	cell	_	Reagent	_	_	0	_	_	Offset=635-650
+4	new	_	Location	_	_	0	_	_	Offset=670-678
+
+# sent_id = s9
+# text = Aliquot 100 μL of cell suspension (107 cells) into a new tube.
+1	Add	_	Action	_	_	0	_	_	Offset=680-683
+2	10	_	Amount	_	_	3	Measure	_	Offset=684-689
+3	Biotin-Antibody	_	Reagent	_	_	0	_	_	Offset=697-721
+4	mix	_	Action	_	_	0	_	_	Offset=723-726
+5	well	_	Modifier	_	_	0	_	_	Offset=727-731
+6	incubate	_	Action	_	_	0	_	_	Offset=736-744
+7	ice	_	Reagent	_	_	0	_	_	Offset=748-751
+8	15	_	Time	_	_	0	_	_	Offset=756-766
+
+# sent_id = s10
+# text = Add 10 μL of the Biotin-Antibody Cocktail, mix well and incubate on ice for 15 minutes.
+1	Scale	_	Action	_	_	0	_	_	Offset=768-776
+2	volume	_	Measure-Type	_	_	0	_	_	Offset=781-787
+
+# sent_id = s11
+# text = Scale up the volume accordingly if separating more cells.
+1	100	_	Amount	_	_	0	_	_	Offset=843-849
+2	1	_	Amount	_	_	3	Measure	_	Offset=854-861
+3	cells	_	Reagent	_	_	0	_	_	Offset=862-867
+
+# sent_id = s12
+# text = For example, add 100 μL for 1 x 108 cells.
+1	Keep	_	Action	_	_	0	_	_	Offset=955-959
+2	unused	_	Reagent	_	_	0	_	_	Offset=960-972
+3	take	_	Action	_	_	0	_	_	Offset=977-992
+4	adding	_	Action	_	_	0	_	_	Offset=1000-1006
+5	cocktail	_	Reagent	_	_	0	_	_	Offset=1011-1019
+6	monitor	_	Action	_	_	0	_	_	Offset=1023-1030
+7	purity	_	Measure-Type	_	_	0	_	_	Offset=1031-1037
+8	yield	_	Measure-Type	_	_	0	_	_	Offset=1042-1047
+
+# sent_id = s13
+# text = When working with less than 107 cells, use indicated volumes for 107 cells.
+1	Wash	_	Action	_	_	0	_	_	Offset=1049-1053
+2	cells	_	Reagent	_	_	0	_	_	Offset=1058-1063
+3	adding	_	Action	_	_	0	_	_	Offset=1067-1073
+4	MojoSort™	_	Reagent	_	_	0	_	_	Offset=1074-1090
+5	4	_	Amount	_	_	4	Measure	_	Offset=1097-1101
+6	centrifuge	_	Action	_	_	0	_	_	Offset=1103-1113
+7	cells	_	Reagent	_	_	0	_	_	Offset=1118-1123
+8	300	_	Speed	_	_	0	_	_	Offset=1127-1134
+9	5	_	Time	_	_	0	_	_	Offset=1139-1148
+
+# sent_id = s14
+# text = Optional: Keep unused cells, or take an aliquot before adding the cocktail to monitor purity and yield.
+1	Discard	_	Action	_	_	0	_	_	Offset=1150-1157
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1158-1169
+3	resuspend	_	Action	_	_	0	_	_	Offset=1174-1183
+4	100	_	Amount	_	_	5	Measure	_	Offset=1187-1193
+5	MojoSort™	_	Reagent	_	_	0	_	_	Offset=1197-1213
+6	volume	_	Amount	_	_	4	Or	_	Offset=1218-1231
+7	keep	_	Action	_	_	0	_	_	Offset=1235-1239
+8	cells	_	Reagent	_	_	0	_	_	Offset=1244-1249
+9	1	_	Concentration	_	_	0	_	_	Offset=1253-1269
+
+# sent_id = s15
+# text = Wash the cells by adding MojoSort™ Buffer up to 4 mL; centrifuge the cells at 300 x g for 5 minutes.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1271-1280
+2	beads	_	Reagent	_	_	0	_	_	Offset=1285-1290
+3	vortexing	_	Action	_	_	0	_	_	Offset=1294-1303
+4	maximum	_	Speed	_	_	0	_	_	Offset=1305-1318
+5	5	_	Generic-Measure	_	_	0	_	_	Offset=1320-1329
+
+# sent_id = s16
+# text = Discard supernatant and resuspend in 100 μL of MojoSort™ Buffer, or volume needed to keep the cells at 1 x 108 cells/mL.
+1	Add	_	Action	_	_	0	_	_	Offset=1331-1334
+2	10	_	Amount	_	_	3	Measure	_	Offset=1335-1340
+3	Streptavidin	_	Reagent	_	_	0	_	_	Offset=1344-1366
+
+# sent_id = s17
+# text = Resuspend the beads by vortexing, maximum speed, 5 touches.
+1	Mix	_	Action	_	_	0	_	_	Offset=1368-1371
+2	well	_	Modifier	_	_	0	_	_	Offset=1372-1376
+3	incubate	_	Action	_	_	0	_	_	Offset=1381-1389
+4	ice	_	Reagent	_	_	0	_	_	Offset=1393-1396
+5	15	_	Time	_	_	0	_	_	Offset=1401-1411
+
+# sent_id = s18
+# text = Add 10 μL of Streptavidin Nanobeads.
+1	Scale	_	Action	_	_	0	_	_	Offset=1413-1421
+2	volume	_	Measure-Type	_	_	0	_	_	Offset=1426-1432
+
+# sent_id = s19
+# text = Mix well and incubate on ice for 15 minutes.
+1	100	_	Amount	_	_	0	_	_	Offset=1488-1494
+2	1	_	Amount	_	_	3	Measure	_	Offset=1499-1506
+3	cells	_	Reagent	_	_	0	_	_	Offset=1507-1512
+
+# sent_id = s20
+# text = Scale up the volume accordingly if separating more cells.
+1	Add	_	Action	_	_	0	_	_	Offset=1590-1593
+2	MojoSort™	_	Reagent	_	_	0	_	_	Offset=1594-1610
+3	2	_	Amount	_	_	2	Measure	_	Offset=1617-1621
+4	place	_	Action	_	_	0	_	_	Offset=1626-1631
+5	tube	_	Location	_	_	0	_	_	Offset=1636-1640
+6	magnet	_	Device	_	_	0	_	_	Offset=1648-1654
+7	5	_	Time	_	_	0	_	_	Offset=1659-1668
+8	place	_	Action	_	_	0	_	_	Offset=1669-1674
+9	tube	_	Location	_	_	0	_	_	Offset=1679-1683
+10	magnet	_	Device	_	_	0	_	_	Offset=1700-1706
+11	5	_	Time	_	_	0	_	_	Offset=1711-1720
+
+# sent_id = s21
+# text = For example, add 100 μL for 1 x 108 cells.
+1	Collect	_	Action	_	_	0	_	_	Offset=1722-1729
+2	liquid	_	Reagent	_	_	0	_	_	Offset=1734-1740
+3	clean	_	Modifier	_	_	4	Mod-Link	_	Offset=1746-1751
+4	tube	_	Location	_	_	0	_	_	Offset=1752-1756
+
+# sent_id = s22
+# text = When working with less than 107 cells, use indicated volumes for 107 cells.
+1	DO	_	Action	_	_	0	_	_	Offset=1758-1772
+
+# sent_id = s23
+# text = Add MojoSort™ Buffer up to 2 mL and place the tube in the magnet for 5 minutes place the tube directly in the magnet for 5 minutes.
+1	Take	_	Action	_	_	0	_	_	Offset=1784-1799
+2	placing	_	Action	_	_	0	_	_	Offset=1807-1814
+3	tube	_	Location	_	_	0	_	_	Offset=1819-1823
+4	magnet	_	Device	_	_	0	_	_	Offset=1831-1837
+5	monitor	_	Action	_	_	0	_	_	Offset=1841-1848
+6	purity	_	Measure-Type	_	_	0	_	_	Offset=1849-1855
+7	yield	_	Measure-Type	_	_	0	_	_	Offset=1860-1865
+
+# sent_id = s24
+# text = Collect the liquid in a clean tube.
+1	Remove	_	Action	_	_	0	_	_	Offset=1867-1873
+2	tube	_	Location	_	_	0	_	_	Offset=1878-1882
+3	magnet	_	Device	_	_	0	_	_	Offset=1892-1898
+4	resuspend	_	Action	_	_	0	_	_	Offset=1903-1912
+5	cells	_	Reagent	_	_	0	_	_	Offset=1917-1922
+6	2	_	Amount	_	_	7	Measure	_	Offset=1926-1930
+7	MojoSort™	_	Reagent	_	_	0	_	_	Offset=1934-1950
+
+# sent_id = s25
+# text = DO NOT DISCARD.
+1	Place	_	Action	_	_	0	_	_	Offset=1952-1957
+2	it	_	Mention	_	_	0	_	_	Offset=1958-1960
+3	magnet	_	Device	_	_	0	_	_	Offset=1975-1981
+4	5	_	Time	_	_	0	_	_	Offset=1986-1995
+
+# sent_id = s26
+# text = Optional: Take an aliquot before placing the tube in the magnet to monitor purity and yield.
+1	Collect	_	Action	_	_	0	_	_	Offset=1997-2004
+2	liquid	_	Reagent	_	_	0	_	_	Offset=2009-2015
+3	tube	_	Location	_	_	0	_	_	Offset=2028-2032
+
+# sent_id = s27
+# text = Remove the tube from the magnet and resuspend the cells in 2 mL of MojoSort™ Buffer.
+1	DO	_	Action	_	_	0	_	_	Offset=2047-2061
+
+# sent_id = s28
+# text = Place it back into the magnet for 5 minutes.
+1	filter	_	Action	_	_	0	_	_	Offset=2096-2102
+2	suspension	_	Reagent	_	_	0	_	_	Offset=2107-2117
+
+# sent_id = s29
+# text = Collect the liquid in the same tube as in step 8.
+1	disrupt	_	Action	_	_	0	_	_	Offset=2146-2153
+2	aggregates	_	Reagent	_	_	0	_	_	Offset=2158-2168
+3	pipetting	_	Action	_	_	0	_	_	Offset=2172-2181
+4	solution	_	Reagent	_	_	2	Meronym	_	Offset=2186-2194
+
+# sent_id = s30
+# text = DO NOT DISCARD.
+1	pooled	_	Modifier	_	_	2	Mod-Link	_	Offset=2217-2223
+2	negative	_	Reagent	_	_	0	_	_	Offset=2224-2241
+3	tube	_	Location	_	_	2	Meronym	6:Coreference-Link	Offset=2242-2246
+4	4	_	Amount	_	_	2	Measure	_	Offset=2263-2267
+5	place	_	Action	_	_	0	_	_	Offset=2327-2332
+6	tube	_	Mention	_	_	0	_	_	Offset=2337-2341
+7	magnet	_	Device	_	_	0	_	_	Offset=2349-2355
+8	5	_	Time	_	_	0	_	_	Offset=2360-2369
+

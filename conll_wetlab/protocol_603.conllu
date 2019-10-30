@@ -1,0 +1,25 @@
+# sent_id = s1
+# text = Obtaining pure cyanophage stocks (plaque purification). 
+1	Make	_	Action	_	_	0	_	_	Offset=57-61
+2	dilution	_	Modifier	_	_	3	Mod-Link	_	Offset=64-79
+3	lysate	_	Reagent	_	_	0	_	_	Offset=87-93
+
+# sent_id = s2
+# text = Make a dilution series of the lysate (assume 104 to 105 PFU per mL in the plaque lysate). 
+1	Repeat	_	Action	_	_	0	_	_	Offset=148-154
+2	plaque	_	Method	_	_	0	_	_	Offset=159-188
+3	2	_	Numerical	_	_	0	_	_	Offset=189-190
+
+# sent_id = s3
+# text = Repeat the plaque purification procedure 2 more times to ensure that the cyanophage isolated is clonal.
+1	Repeat	_	Action	_	_	0	_	_	Offset=252-258
+2	plaque	_	Method	_	_	0	_	_	Offset=263-298
+
+# sent_id = s4
+# text = Repeat the plaque purification procedure again.
+1	prepare	_	Action	_	_	0	_	_	Offset=309-316
+2	primary	_	Reagent	_	_	0	_	_	Offset=319-343
+3	lysate	_	Reagent	_	_	0	_	_	Offset=350-356
+4	method	_	Method	_	_	0	_	_	Offset=389-420
+5	method	_	Method	_	_	4	Or	_	Offset=424-454
+

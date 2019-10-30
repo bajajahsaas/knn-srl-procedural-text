@@ -1,0 +1,121 @@
+# sent_id = s1
+# text = Subcellular Fractionation from Animal Cells (FOCUS™ SubCell Kit)
+1	Use	_	Action	_	_	0	_	_	Offset=218-221
+2	fresh	_	Modifier	_	_	3	Mod-Link	_	Offset=222-227
+3	cells	_	Reagent	_	_	0	_	_	Offset=228-233
+4	only	_	Modifier	_	_	0	_	_	Offset=234-238
+
+# sent_id = s2
+# text = OPTIONAL: Add appropriate protease inhibitor cocktail (e.g.
+1	Pellet	_	Action	_	_	0	_	_	Offset=240-246
+2	harvested	_	Modifier	_	_	3	Mod-Link	_	Offset=251-260
+3	cells	_	Reagent	_	_	0	_	_	Offset=261-266
+4	centrifugation	_	Action	_	_	0	_	_	Offset=270-284
+5	~800	_	Speed	_	_	0	_	_	Offset=288-296
+6	1	_	Time	_	_	0	_	_	Offset=301-309
+
+# sent_id = s3
+# text = G‐Biosciences’ ProteaseArrest, Cat. # 786‐108) to SubCell Buffer‐I immediately prior to use.
+1	remove	_	Action	_	_	0	_	_	Offset=321-327
+2	discard	_	Action	_	_	0	_	_	Offset=332-339
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=344-355
+
+# sent_id = s4
+# text = Use fresh cells only.
+1	vortex	_	Action	_	_	0	_	_	Offset=364-370
+2	suspend	_	Action	_	_	0	_	_	Offset=374-381
+3	cells	_	Reagent	_	_	0	_	_	Offset=386-391
+4	incubate	_	Action	_	_	0	_	_	Offset=396-404
+5	ice	_	Location	_	_	0	_	_	Offset=408-411
+6	10	_	Time	_	_	0	_	_	Offset=416-426
+
+# sent_id = s5
+# text = Pellet the harvested cells by centrifugation at ~800 x g for 1 minute.
+1	Add	_	Action	_	_	0	_	_	Offset=428-431
+2	500µl	_	Amount	_	_	4	Measure	_	Offset=432-437
+3	ice	_	Modifier	_	_	4	Mod-Link	_	Offset=441-449
+4	SubCell	_	Reagent	_	_	0	_	_	Offset=450-466
+
+# sent_id = s6
+# text = Carefully remove and discard the supernatant.
+1	Perform	_	Action	_	_	0	_	_	Offset=468-475
+2	lysis	_	Method	_	_	0	_	_	Offset=481-491
+3	ice	_	Location	_	_	0	_	_	Offset=495-498
+
+# sent_id = s7
+# text = Gently vortex to suspend the cells and incubate on ice for 10 minutes.
+1	narrow	_	Modifier	_	_	3	Mod-Link	_	Offset=508-522
+2	20	_	Generic-Measure	_	_	1	Setting	_	Offset=524-532
+3	syringe	_	Device	_	_	0	_	_	Offset=534-548
+4	gently	_	Modifier	_	_	0	_	_	Offset=550-556
+5	pull	_	Action	_	_	0	_	_	Offset=557-561
+6	suspension	_	Reagent	_	_	0	_	_	Offset=566-576
+7	up	_	Method	_	_	0	_	_	Offset=577-588
+8	10‐30	_	Numerical	_	_	0	_	_	Offset=589-594
+
+# sent_id = s8
+# text = Add 500µl of ice cold SubCell Buffer‐I.
+1	Add	_	Action	_	_	0	_	_	Offset=602-605
+2	250µl	_	Amount	_	_	4	Measure	_	Offset=606-611
+3	3X	_	Concentration	_	_	4	Measure	_	Offset=612-614
+4	SubCell	_	Reagent	_	_	0	_	_	Offset=615-632
+5	mix	_	Action	_	_	0	_	_	Offset=675-678
+6	inverting	_	Action	_	_	0	_	_	Offset=682-691
+
+# sent_id = s9
+# text = Perform this lysis step on ice.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=693-703
+2	tube	_	Location	_	_	0	_	_	Offset=708-712
+3	700x	_	Speed	_	_	0	_	_	Offset=716-722
+4	10	_	Time	_	_	0	_	_	Offset=727-737
+5	pellet	_	Action	_	_	0	_	_	Offset=741-747
+6	nuclei	_	Reagent	_	_	0	_	_	Offset=752-758
+
+# sent_id = s10
+# text = Using a narrow opening (20 gauge) syringe needle, gently pull the suspension up and down 10‐30 times.
+1	Transfer	_	Action	_	_	0	_	_	Offset=760-768
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=773-784
+3	new	_	Modifier	_	_	4	Mod-Link	_	Offset=790-793
+4	tube	_	Location	_	_	0	_	_	Offset=794-798
+
+# sent_id = s11
+# text = Add 250µl 3X SubCell Buffer‐II (350µl if Dounce homogenizer is used) and mix by inverting.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=800-810
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=811-822
+3	12,000x	_	Speed	_	_	0	_	_	Offset=826-835
+4	15	_	Time	_	_	0	_	_	Offset=840-850
+
+# sent_id = s12
+# text = Centrifuge the tube at 700x g for 10 minutes to pellet the nuclei.
+1	Transfer	_	Action	_	_	0	_	_	Offset=852-860
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=865-876
+3	new	_	Modifier	_	_	4	Mod-Link	_	Offset=902-905
+4	tube	_	Location	_	_	0	_	_	Offset=906-910
+
+# sent_id = s13
+# text = Transfer the supernatant to a new tube.
+1	Add	_	Action	_	_	0	_	_	Offset=969-972
+2	500µl	_	Amount	_	_	4	Measure	_	Offset=973-978
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=979-981
+4	SubCell	_	Reagent	_	_	0	_	_	Offset=982-999
+5	pellet	_	Reagent	_	_	0	_	_	Offset=1007-1013
+6	centrifuge	_	Action	_	_	0	_	_	Offset=1019-1029
+7	12,000	_	Speed	_	_	0	_	_	Offset=1039-1049
+8	5	_	Time	_	_	0	_	_	Offset=1054-1063
+
+# sent_id = s14
+# text = Centrifuge supernatant at 12,000x g for 15 minutes.
+1	Discard	_	Action	_	_	0	_	_	Offset=1065-1072
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1077-1088
+
+# sent_id = s15
+# text = Transfer the supernatant (post mitochondria) to a new tube for further processing.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1090-1099
+2	mitochondrial	_	Reagent	_	_	0	_	_	Offset=1104-1124
+3	50‐100µl	_	Amount	_	_	5	Measure	_	Offset=1130-1138
+4	Working	_	Modifier	_	_	5	Mod-Link	_	Offset=1139-1146
+5	Mitochondria	_	Reagent	_	_	0	_	_	Offset=1147-1174
+6	keep	_	Action	_	_	0	_	_	Offset=1179-1183
+7	suspension	_	Reagent	_	_	0	_	_	Offset=1188-1198
+8	ice	_	Location	_	_	0	_	_	Offset=1202-1205
+

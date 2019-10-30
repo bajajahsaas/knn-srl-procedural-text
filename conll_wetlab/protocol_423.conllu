@@ -1,0 +1,188 @@
+# sent_id = s1
+# text = Isolation of DNA from phage lysate
+1	Put	_	Action	_	_	0	_	_	Offset=35-38
+2	phage	_	Reagent	_	_	0	_	_	Offset=39-51
+3	plastic	_	Location	_	_	0	_	_	Offset=55-80
+4	add	_	Action	_	_	0	_	_	Offset=85-88
+5	RNase	_	Reagent	_	_	0	_	_	Offset=89-94
+
+# sent_id = s2
+# text = Put phage lysate in plastic centrifuge bottle and add RNase (for 100 ml add 10 µl, for 150 ml add 15 µl, etc.)
+1	Incubate	_	Action	_	_	0	_	_	Offset=146-154
+2	30	_	Time	_	_	0	_	_	Offset=155-161
+3	room	_	Temperature	_	_	0	_	_	Offset=166-182
+
+# sent_id = s3
+# text = Incubate 30 min. at room temperature. 
+1	Add	_	Action	_	_	0	_	_	Offset=185-188
+2	NaCl	_	Reagent	_	_	0	_	_	Offset=189-193
+3	1M	_	Concentration	_	_	2	Measure	_	Offset=222-224
+4	100	_	Amount	_	_	0	_	_	Offset=230-236
+5	add	_	Action	_	_	0	_	_	Offset=237-240
+6	6.5	_	Amount	_	_	7	Measure	_	Offset=241-246
+7	NaCl	_	Reagent	_	_	0	_	_	Offset=247-251
+
+# sent_id = s4
+# text = Add NaCl to a final concentration of 1M (for 100 ml add 6.5 g NaCl). 
+1	Incubate	_	Action	_	_	0	_	_	Offset=255-263
+2	1	_	Time	_	_	0	_	_	Offset=268-274
+3	ice	_	Location	_	_	0	_	_	Offset=278-281
+4	Centrifuge	_	Action	_	_	0	_	_	Offset=282-292
+5	10	_	Time	_	_	8	Setting	_	Offset=297-303
+6	11,000xg	_	Speed	_	_	8	Setting	_	Offset=308-316
+7	8,300	_	Speed	_	_	8	Setting	_	Offset=318-327
+8	GSA	_	Device	_	_	0	_	_	Offset=331-340
+
+# sent_id = s5
+# text = Incubate for 1 hour on ice Centrifuge for 10 min. at 11,000xg (8,300 rpm on GSA rotor). 
+1	Transfer	_	Action	_	_	0	_	_	Offset=344-352
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=353-364
+3	new	_	Modifier	_	_	4	Mod-Link	_	Offset=370-373
+4	bottle	_	Location	_	_	0	_	_	Offset=374-380
+
+# sent_id = s6
+# text = Transfer supernatant to a new bottle. 
+1	Add	_	Action	_	_	0	_	_	Offset=383-386
+2	PEG	_	Reagent	_	_	0	_	_	Offset=387-395
+3	100g/l	_	Concentration	_	_	2	Measure	_	Offset=399-405
+4	100	_	Amount	_	_	0	_	_	Offset=411-417
+5	add	_	Action	_	_	0	_	_	Offset=418-421
+6	10	_	Amount	_	_	7	Measure	_	Offset=422-426
+7	PEG	_	Reagent	_	_	0	_	_	Offset=427-430
+8	shake	_	Action	_	_	0	_	_	Offset=436-441
+9	mix	_	Action	_	_	0	_	_	Offset=445-448
+
+# sent_id = s7
+# text = Add PEG 8000 at 100g/l (for 100 ml add 10 g PEG) and shake to mix. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=451-459
+2	1	_	Time	_	_	0	_	_	Offset=460-466
+3	ice	_	Location	_	_	0	_	_	Offset=470-473
+4	Centrifuge	_	Action	_	_	0	_	_	Offset=474-484
+5	10	_	Time	_	_	8	Setting	_	Offset=489-495
+6	10,000xg	_	Speed	_	_	8	Setting	_	Offset=500-508
+7	7,835	_	Speed	_	_	8	Setting	_	Offset=510-519
+8	GSA	_	Device	_	_	0	_	_	Offset=523-532
+
+# sent_id = s8
+# text = Incubate 1 hour on ice Centrifuge for 10 min. at 10,000xg (7,835 rpm on GSA rotor). 
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=536-545
+2	pour	_	Action	_	_	0	_	_	Offset=546-550
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=559-570
+4	discard	_	Action	_	_	0	_	_	Offset=574-581
+
+# sent_id = s9
+# text = Carefully pour out the supernatant to discard. 
+1	Set	_	Action	_	_	0	_	_	Offset=584-587
+2	bottle	_	Location	_	_	0	_	_	Offset=592-598
+3	upside	_	Method	_	_	0	_	_	Offset=599-610
+4	paper	_	Location	_	_	0	_	_	Offset=614-635
+5	drain	_	Action	_	_	0	_	_	Offset=639-644
+6	remaining	_	Modifier	_	_	7	Mod-Link	_	Offset=645-654
+7	liquid	_	Reagent	_	_	0	_	_	Offset=655-661
+
+# sent_id = s10
+# text = Set the bottle upside down on paper towels/Kimwipes to drain remaining liquid. 
+1	Rinse	_	Action	_	_	0	_	_	Offset=664-669
+2	inside	_	Location	_	_	0	_	_	Offset=674-680
+3	bottle	_	Location	_	_	2	Meronym	_	Offset=688-694
+4	twice	_	Numerical	_	_	0	_	_	Offset=695-700
+5	SM	_	Reagent	_	_	0	_	_	Offset=706-715
+6	1-2	_	Amount	_	_	5	Measure	_	Offset=733-739
+
+# sent_id = s11
+# text = Rinse the inside of the bottle twice with SM buffer (total volume of 1-2 ml). 
+1	Collect	_	Action	_	_	0	_	_	Offset=743-750
+2	2	_	Amount	_	_	3	Measure	_	Offset=754-758
+3	microcentrifuge	_	Location	_	_	0	_	_	Offset=759-780
+
+# sent_id = s12
+# text = Collect in 2 ml microcentrifuge tubes (1 ml per bottle). 
+1	Shake	_	Action	_	_	0	_	_	Offset=801-806
+2	resin	_	Reagent	_	_	0	_	_	Offset=807-812
+3	resuspend	_	Action	_	_	0	_	_	Offset=816-825
+4	heat	_	Action	_	_	0	_	_	Offset=830-834
+5	TE	_	Reagent	_	_	0	_	_	Offset=835-837
+6	80°C	_	Temperature	_	_	0	_	_	Offset=841-845
+
+# sent_id = s13
+# text = Shake resin to resuspend and heat TE to 80°C. 
+1	Add	_	Action	_	_	0	_	_	Offset=848-851
+2	1	_	Amount	_	_	3	Measure	_	Offset=852-856
+3	resin	_	Reagent	_	_	0	_	_	Offset=857-862
+4	each	_	Modifier	_	_	6	Mod-Link	_	Offset=866-870
+5	2	_	Amount	_	_	6	Measure	_	Offset=871-875
+6	tube	_	Location	_	_	0	_	_	Offset=876-880
+
+# sent_id = s14
+# text = Add 1 ml resin to each 2 ml tube.  
+1	Mix	_	Action	_	_	0	_	_	Offset=884-887
+2	inversion	_	Method	_	_	0	_	_	Offset=891-900
+
+# sent_id = s15
+# text = Mix by inversion. 
+1	Attach	_	Action	_	_	0	_	_	Offset=903-909
+2	column	_	Location	_	_	0	_	_	Offset=910-916
+3	3	_	Amount	_	_	4	Setting	_	Offset=920-924
+4	syringe	_	Device	_	_	0	_	_	Offset=925-932
+5	push	_	Action	_	_	0	_	_	Offset=937-941
+6	sample	_	Reagent	_	_	0	_	_	Offset=942-948
+7	through	_	Modifier	_	_	0	_	_	Offset=949-956
+8	1	_	Amount	_	_	0	_	_	Offset=957-961
+
+# sent_id = s16
+# text = Attach column to 3 ml syringe and push sample through 1 ml at a time.  
+1	Push	_	Action	_	_	0	_	_	Offset=975-979
+2	2	_	Amount	_	_	4	Measure	_	Offset=980-984
+3	80%	_	Concentration	_	_	4	Measure	_	Offset=988-991
+4	isopropanol	_	Reagent	_	_	0	_	_	Offset=992-1003
+5	through	_	Modifier	_	_	0	_	_	Offset=1004-1011
+6	each	_	Modifier	_	_	7	Mod-Link	_	Offset=1012-1016
+7	column	_	Location	_	_	0	_	_	Offset=1017-1023
+8	1	_	Amount	_	_	0	_	_	Offset=1024-1028
+
+# sent_id = s17
+# text = Push 2 ml of 80% isopropanol through each column 1 ml at a time. 
+1	Place	_	Action	_	_	0	_	_	Offset=1041-1046
+2	column	_	Location	_	_	0	_	_	Offset=1047-1053
+3	original	_	Modifier	_	_	5	Mod-Link	_	Offset=1057-1065
+4	2	_	Amount	_	_	5	Measure	_	Offset=1066-1070
+5	tube	_	Location	_	_	0	_	_	Offset=1071-1075
+
+# sent_id = s18
+# text = Place column in original 2 ml tube. 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1078-1088
+2	2	_	Time	_	_	0	_	_	Offset=1089-1094
+3	10,000xg	_	Speed	_	_	0	_	_	Offset=1098-1106
+4	remove	_	Action	_	_	0	_	_	Offset=1110-1116
+5	excess	_	Modifier	_	_	6	Mod-Link	_	Offset=1117-1123
+6	isopropanol	_	Reagent	_	_	0	_	_	Offset=1124-1135
+
+# sent_id = s19
+# text = Centrifuge 2 min at 10,000xg to remove excess isopropanol. 
+1	a	_	Action	_	_	0	_	_	Offset=1140-1141
+2	column	_	Location	_	_	0	_	_	Offset=1144-1150
+3	new	_	Modifier	_	_	5	Mod-Link	_	Offset=1154-1157
+4	1.5	_	Amount	_	_	5	Measure	_	Offset=1158-1164
+5	microcentrifuge	_	Location	_	_	0	_	_	Offset=1165-1185
+
+# sent_id = s20
+# text = Place column in new 1.5 ml microcentrifuge tube. 
+1	Add	_	Action	_	_	0	_	_	Offset=1188-1191
+2	100	_	Amount	_	_	4	Measure	_	Offset=1192-1198
+3	warm	_	Modifier	_	_	4	Mod-Link	_	Offset=1199-1203
+4	TE	_	Reagent	_	_	0	_	_	Offset=1204-1206
+5	elute	_	Action	_	_	0	_	_	Offset=1210-1215
+
+# sent_id = s21
+# text = Add 100 µl warm TE to elute. 
+1	Briefly	_	Modifier	_	_	0	_	_	Offset=1218-1225
+2	vortex	_	Action	_	_	0	_	_	Offset=1226-1232
+3	Centrifuge	_	Action	_	_	0	_	_	Offset=1233-1243
+4	30	_	Time	_	_	0	_	_	Offset=1248-1255
+5	10,000xg	_	Speed	_	_	0	_	_	Offset=1259-1267
+
+# sent_id = s22
+# text = Briefly vortex Centrifuge for 30 sec. at 10,000xg.  
+1	Quant	_	Method	_	_	0	_	_	Offset=1327-1354
+2	validate	_	Action	_	_	0	_	_	Offset=1358-1366
+

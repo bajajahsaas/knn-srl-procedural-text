@@ -1,0 +1,182 @@
+# sent_id = s1
+# text = One-step Phage Infection of Cyanobacteria (large-scale)
+1	flow	_	Device	_	_	0	_	_	Offset=71-85
+2	measure	_	Action	_	_	0	_	_	Offset=89-96
+3	cell	_	Measure-Type	_	_	0	_	_	Offset=97-116
+4	cyanobacterial	_	Reagent	_	_	0	_	_	Offset=120-143
+5	Step	_	Method	_	_	0	_	_	Offset=149-155
+
+# sent_id = s2
+# text = Before T0, use flow cytometry to measure cell concentrations of cyanobacterial cultures from Step 2.
+1	SYBR	_	Reagent	_	_	0	_	_	Offset=161-174
+2	determine	_	Action	_	_	0	_	_	Offset=208-217
+3	concentration	_	Measure-Type	_	_	0	_	_	Offset=218-231
+4	your	_	Modifier	_	_	5	Mod-Link	_	Offset=235-252
+5	viral	_	Reagent	_	_	0	_	_	Offset=253-265
+6	Step	_	Method	_	_	0	_	_	Offset=271-278
+
+# sent_id = s3
+# text = Use SYBR staining (e.g. SYBR counts of viruses) to determine concentration of your concentrated viral lysate from Step 1.
+1	Calculate	_	Action	_	_	0	_	_	Offset=279-288
+2	volumes	_	Measure-Type	_	_	0	_	_	Offset=289-296
+3	cells	_	Reagent	_	_	0	_	_	Offset=300-305
+4	phage	_	Reagent	_	_	0	_	_	Offset=307-312
+5	media	_	Reagent	_	_	0	_	_	Offset=317-322
+6	add	_	Action	_	_	0	_	_	Offset=326-329
+7	each	_	Modifier	_	_	8	Mod-Link	_	Offset=333-337
+8	experimental	_	Location	_	_	0	_	_	Offset=338-362
+
+# sent_id = s4
+# text = Calculate volumes of cells, phage and media to add to each experimental bottle/tube.
+1	quickly	_	Modifier	_	_	0	_	_	Offset=744-751
+2	sterile	_	Modifier	_	_	0	_	_	Offset=762-769
+3	technique	_	Method	_	_	0	_	_	Offset=770-779
+4	mixing	_	Action	_	_	0	_	_	Offset=806-812
+5	volumes	_	Amount	_	_	6	Measure	7:Measure|8:Measure	Offset=813-820
+6	media	_	Reagent	_	_	0	_	_	Offset=847-852
+7	cells	_	Reagent	_	_	0	_	_	Offset=854-859
+8	phage	_	Reagent	_	_	0	_	_	Offset=865-870
+
+# sent_id = s5
+# text = We have an Excel template to do this calculation, based on the desired MOI, cell concentration, and final experimental culture volume.
+1	add	_	Action	_	_	0	_	_	Offset=878-881
+2	appropriate	_	Modifier	_	_	3	Mod-Link	_	Offset=882-893
+3	volume	_	Amount	_	_	5	Measure	_	Offset=894-900
+4	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=904-911
+5	medium	_	Reagent	_	_	0	_	_	Offset=912-918
+6	experimental	_	Location	_	_	0	_	_	Offset=927-954
+7	sterile	_	Modifier	_	_	9	Mod-Link	_	Offset=961-968
+8	250ml	_	Amount	_	_	9	Measure	_	Offset=969-974
+9	polycarbonate	_	Location	_	_	6	Or	_	Offset=975-996
+10	200ml	_	Amount	_	_	11	Measure	_	Offset=1001-1006
+11	cultures	_	Reagent	_	_	0	_	_	Offset=1007-1015
+
+# sent_id = s6
+# text = For gene expression experiments, we use an MOI of 3, final cell density of 5e7/ml, and volume of 200ml for each replicate -- this scale allows us to sample for RNA, protein, and phage & cell concentration, over a 12-14 hour time course.
+1	add	_	Action	_	_	0	_	_	Offset=1023-1026
+2	cells	_	Reagent	_	_	0	_	_	Offset=1027-1032
+
+# sent_id = s7
+# text = Working quickly, and with sterile technique, initialize experiment by mixing volumes (calculated in Step 3) of media, cells, and phage.
+1	uninfected	_	Modifier	_	_	2	Mod-Link	_	Offset=1064-1074
+2	control	_	Location	_	_	0	_	_	Offset=1075-1090
+3	add	_	Action	_	_	0	_	_	Offset=1092-1095
+4	lysate	_	Reagent	_	_	0	_	_	Offset=1096-1102
+5	filtered	_	Modifier	_	_	4	Mod-Link	_	Offset=1117-1125
+6	remove	_	Action	_	_	0	_	_	Offset=1129-1135
+7	phage	_	Reagent	_	_	0	_	_	Offset=1136-1151
+
+# sent_id = s8
+# text = First add appropriate volume of sterile medium to your experimental culture vessel (e.g. sterile 250ml polycarbonate bottles for 200ml cultures).
+1	add	_	Action	_	_	0	_	_	Offset=1483-1486
+2	phage	_	Reagent	_	_	0	_	_	Offset=1487-1492
+3	respective	_	Location	_	_	0	_	_	Offset=1502-1520
+
+# sent_id = s9
+# text = Then add cells (prepared in Step 2).
+1	Mix	_	Action	_	_	0	_	_	Offset=1558-1561
+2	bottles	_	Location	_	_	0	_	_	Offset=1562-1569
+3	gentle	_	Modifier	_	_	0	_	_	Offset=1573-1579
+4	vortexing	_	Action	_	_	0	_	_	Offset=1580-1589
+
+# sent_id = s10
+# text = Then, to uninfected control bottles, add lysate that has been filtered to remove phage particles (e.g. the filtrate that goes through an Amicon centrifugal device).
+1	Place	_	Action	_	_	0	_	_	Offset=1711-1716
+2	bottles	_	Location	_	_	0	_	_	Offset=1717-1724
+3	incubator	_	Device	_	_	0	_	_	Offset=1728-1737
+
+# sent_id = s11
+# text = [This is important to control for small molecules that may be added with the phage particles in infected treatments; however keep in mind that other large molecules will get retained, along with phage particles, in the Amicon reservoir.]
+1	Repeat	_	Action	_	_	0	_	_	Offset=1761-1767
+2	sampling	_	Reagent	_	_	0	_	_	Offset=1768-1776
+3	Step	_	Method	_	_	0	_	_	Offset=1780-1786
+4	1-2	_	Time	_	_	0	_	_	Offset=1818-1827
+5	lysis	_	Reagent	_	_	0	_	_	Offset=1835-1840
+6	complete	_	Action	_	_	0	_	_	Offset=1844-1852
+
+# sent_id = s12
+# text = Finally, just before T0, add phage to their respective bottles.
+1	Prepare	_	Action	_	_	0	_	_	Offset=1854-1861
+2	cells	_	Reagent	_	_	0	_	_	Offset=1862-1867
+3	Grow	_	Action	_	_	0	_	_	Offset=1883-1890
+4	sufficiently	_	Amount	_	_	5	Measure	_	Offset=1891-1917
+5	cells	_	Reagent	_	_	0	_	_	Offset=1921-1926
+6	infected	_	Action	_	_	0	_	_	Offset=1933-1941
+
+# sent_id = s13
+# text = This begins the one-step infection.
+1	bubble	_	Action	_	_	0	_	_	Offset=2065-2071
+2	your	_	Reagent	_	_	0	_	_	Offset=2072-2084
+3	aquarium	_	Device	_	_	0	_	_	Offset=2093-2106
+4	diffuser	_	Device	_	_	3	Meronym	_	Offset=2136-2150
+5	prevent	_	Action	_	_	0	_	_	Offset=2155-2162
+6	CO2	_	Reagent	_	_	0	_	_	Offset=2163-2166
+7	limitation	_	Method	_	_	0	_	_	Offset=2167-2177
+
+# sent_id = s14
+# text = Mix bottles by gentle vortexing.
+1	Prepare	_	Action	_	_	0	_	_	Offset=2179-2186
+2	phage	_	Reagent	_	_	0	_	_	Offset=2187-2202
+3	day	_	Time	_	_	0	_	_	Offset=2207-2218
+4	add	_	Action	_	_	0	_	_	Offset=2220-2223
+5	phage	_	Reagent	_	_	0	_	_	Offset=2224-2235
+6	4L	_	Amount	_	_	7	Measure	_	Offset=2239-2241
+7	mid-log	_	Reagent	_	_	0	_	_	Offset=2245-2258
+8	start	_	Action	_	_	0	_	_	Offset=2262-2267
+9	infection	_	Method	_	_	0	_	_	Offset=2272-2281
+10	monitor	_	Action	_	_	0	_	_	Offset=2329-2336
+11	a	_	Time	_	_	0	_	_	Offset=2347-2353
+12	culture	_	Reagent	_	_	0	_	_	Offset=2364-2371
+13	clears	_	Action	_	_	0	_	_	Offset=2372-2378
+
+# sent_id = s15
+# text = Sample immediately for time 0.
+1	centrifuge	_	Action	_	_	0	_	_	Offset=2448-2458
+2	cleared	_	Modifier	_	_	3	Mod-Link	_	Offset=2463-2470
+3	culture	_	Reagent	_	_	0	_	_	Offset=2471-2478
+4	max	_	Speed	_	_	0	_	_	Offset=2480-2489
+5	10	_	Time	_	_	0	_	_	Offset=2491-2497
+6	remove	_	Action	_	_	0	_	_	Offset=2502-2508
+7	large	_	Reagent	_	_	0	_	_	Offset=2509-2526
+8	unlysed	_	Reagent	_	_	0	_	_	Offset=2531-2544
+
+# sent_id = s16
+# text = Suggested sampling: FCM for cell counts, Fluorescence, extracellular phage, RNA-protein.
+1	Pour	_	Action	_	_	0	_	_	Offset=2546-2550
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=2551-2562
+3	disposable	_	Modifier	_	_	5	Mod-Link	_	Offset=2587-2597
+4	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=2598-2605
+5	vacuum	_	Device	_	_	7	Meronym	_	Offset=2606-2629
+6	0.2µm	_	Size	_	_	7	Setting	_	Offset=2643-2648
+7	PES	_	Device	_	_	0	_	_	Offset=2649-2659
+8	discard	_	Action	_	_	0	_	_	Offset=2661-2668
+9	pellet	_	Reagent	_	_	10	Meronym	_	Offset=2673-2679
+10	cell	_	Reagent	_	_	0	_	_	Offset=2691-2702
+
+# sent_id = s17
+# text = Place bottles in incubator until next time point.
+1	Connect	_	Action	_	_	0	_	_	Offset=2704-2711
+2	vacuum	_	Reagent	_	_	0	_	_	Offset=2715-2728
+3	filter	_	Action	_	_	0	_	_	Offset=2733-2739
+4	lysate	_	Reagent	_	_	0	_	_	Offset=2744-2750
+5	save	_	Action	_	_	0	_	_	Offset=2752-2756
+6	filtrate	_	Device	_	_	7	Meronym	_	Offset=2757-2765
+7	phage	_	Reagent	_	_	0	_	_	Offset=2782-2797
+
+# sent_id = s18
+# text = Repeat sampling in Step 5 at each time point (e.g. every 1-2 hours) until lysis is complete.
+1	Concentrate	_	Action	_	_	0	_	_	Offset=2812-2823
+2	clarified	_	Modifier	_	_	3	Mod-Link	_	Offset=2829-2838
+3	phage	_	Reagent	_	_	0	_	_	Offset=2839-2851
+4	VivaFlow	_	Concentration	_	_	5	Measure	_	Offset=2858-2880
+5	Phage	_	Reagent	_	_	0	_	_	Offset=2884-2896
+
+# sent_id = s19
+# text = Prepare cells for infection: Grow up sufficiently large volumes of cells to be infected.
+1	concentrate	_	Action	_	_	0	_	_	Offset=2906-2917
+2	phage	_	Reagent	_	_	0	_	_	Offset=2922-2933
+3	exchange	_	Action	_	_	0	_	_	Offset=2939-2947
+4	buffers/media	_	Reagent	_	_	0	_	_	Offset=2948-2961
+5	Amicon	_	Concentration	_	_	6	Measure	_	Offset=3045-3065
+6	Viruses	_	Reagent	_	_	0	_	_	Offset=3069-3076
+

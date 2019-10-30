@@ -1,0 +1,411 @@
+# sent_id = s1
+# text = BetaMark™ x-40 ELISA Kit (Colorimetric) Protocol
+1	Label	_	Action	_	_	0	_	_	Offset=49-54
+2	1.5mL	_	Amount	_	_	3	Measure	_	Offset=59-64
+3	microcentrifuge	_	Location	_	_	0	_	_	Offset=65-86
+4	intermediate	_	Method	_	_	0	_	_	Offset=90-109
+
+# sent_id = s2
+# text = Label (2) 1.5mL microcentrifuge tubes as intermediate #1 & 2.
+1	Add	_	Action	_	_	0	_	_	Offset=132-135
+2	990uL	_	Amount	_	_	3	Measure	_	Offset=136-141
+3	standard	_	Reagent	_	_	0	_	_	Offset=145-161
+4	intermediate	_	Location	_	_	0	_	_	Offset=165-190
+
+# sent_id = s3
+# text = (use enclosed tubes) Add 990uL of standard diluent to intermediate tubes #1 & 2.
+1	Reconstitute	_	Action	_	_	0	_	_	Offset=192-204
+2	one	_	Numerical	_	_	4	Measure	_	Offset=205-208
+3	20ug	_	Amount	_	_	4	Measure	_	Offset=209-213
+4	vial	_	Location	_	_	6	Meronym	_	Offset=214-218
+5	1-40	_	Numerical	_	_	6	Measure	_	Offset=222-226
+6	standard	_	Reagent	_	_	0	_	_	Offset=227-235
+7	80uL	_	Amount	_	_	8	Measure	_	Offset=241-245
+8	Standard	_	Reagent	_	_	0	_	_	Offset=249-265
+
+# sent_id = s4
+# text = Reconstitute one 20ug vial of 1-40 standard with 80uL of Standard Diluent.
+1	Mix	_	Action	_	_	0	_	_	Offset=267-270
+2	well	_	Modifier	_	_	0	_	_	Offset=271-275
+3	inversion	_	Method	_	_	0	_	_	Offset=279-288
+4	do	_	Action	_	_	0	_	_	Offset=290-303
+
+# sent_id = s5
+# text = Mix well by inversion, do not vortex.Concentration will be 250ug/mL.
+1	Incubate	_	Action	_	_	0	_	_	Offset=336-344
+2	30	_	Time	_	_	0	_	_	Offset=345-355
+3	room	_	Temperature	_	_	0	_	_	Offset=359-375
+
+# sent_id = s6
+# text = Incubate 30 minutes at room temperature Note: During 30 minute incubation; proceed thru appropriate sections below (e.g. sections 2, 3 and 4).
+1	mix	_	Action	_	_	0	_	_	Offset=508-511
+2	well	_	Modifier	_	_	0	_	_	Offset=512-516
+3	inversion	_	Method	_	_	0	_	_	Offset=520-529
+4	do	_	Action	_	_	0	_	_	Offset=531-544
+
+# sent_id = s7
+# text = After 30 minutes incubation, mix well by inversion, do not vortex.
+1	Add	_	Action	_	_	0	_	_	Offset=609-612
+2	10uL	_	Amount	_	_	6	Measure	_	Offset=613-617
+3	vial	_	Location	_	_	0	_	_	Offset=627-631
+4	reconstituted	_	Modifier	_	_	6	Mod-Link	_	Offset=635-648
+5	1-40	_	Numerical	_	_	6	Measure	_	Offset=649-653
+6	standard	_	Reagent	_	_	0	_	_	Offset=654-662
+7	990uL	_	Amount	_	_	8	Measure	_	Offset=666-671
+8	standard	_	Reagent	_	_	0	_	_	Offset=675-691
+9	intermediate	_	Location	_	_	8	Meronym	_	Offset=695-715
+
+# sent_id = s8
+# text = Once reconstituted, standard must be used within the same day.
+1	Mix	_	Action	_	_	0	_	_	Offset=717-720
+2	well	_	Modifier	_	_	0	_	_	Offset=721-725
+3	inversion	_	Method	_	_	0	_	_	Offset=729-738
+4	do	_	Action	_	_	0	_	_	Offset=740-753
+
+# sent_id = s9
+# text = Add 10uL from the vial of reconstituted 1-40 standard to 990uL of standard diluent in intermediate tube #1.
+1	Remove	_	Action	_	_	0	_	_	Offset=755-761
+2	10uL	_	Amount	_	_	0	_	_	Offset=762-766
+3	intermediate	_	Location	_	_	0	_	_	Offset=772-792
+4	add	_	Action	_	_	0	_	_	Offset=797-800
+5	990uL	_	Amount	_	_	6	Measure	_	Offset=804-809
+6	standard	_	Reagent	_	_	0	_	_	Offset=813-829
+7	intermediate	_	Location	_	_	6	Meronym	_	Offset=833-853
+
+# sent_id = s10
+# text = Mix well by inversion, do not vortex.
+1	Mix	_	Action	_	_	0	_	_	Offset=855-858
+2	well	_	Modifier	_	_	0	_	_	Offset=859-863
+3	inversion	_	Method	_	_	0	_	_	Offset=867-876
+4	do	_	Action	_	_	0	_	_	Offset=878-891
+
+# sent_id = s11
+# text = Remove 10uL from intermediate #1 tube and add to 990uL of standard diluent in intermediate #2 tube.
+1	Label	_	Action	_	_	0	_	_	Offset=969-974
+2	50mL	_	Amount	_	_	3	Measure	_	Offset=977-981
+3	centrifuge	_	Location	_	_	0	_	_	Offset=982-997
+4	1X	_	Method	_	_	0	_	_	Offset=1002-1022
+
+# sent_id = s12
+# text = Mix well by inversion, do not vortex The final concentration of standard in intermediate tube #2 will be 25ng/mL.
+1	Dilute	_	Action	_	_	0	_	_	Offset=1025-1031
+2	2X	_	Concentration	_	_	3	Measure	_	Offset=1032-1034
+3	Incubation	_	Reagent	_	_	0	_	_	Offset=1035-1052
+4	1X	_	Concentration	_	_	0	_	_	Offset=1056-1058
+5	adding	_	Action	_	_	0	_	_	Offset=1062-1068
+6	10mL	_	Amount	_	_	8	Measure	_	Offset=1069-1073
+7	2X	_	Concentration	_	_	8	Measure	_	Offset=1077-1079
+8	incubation	_	Reagent	_	_	0	_	_	Offset=1080-1097
+9	10mL	_	Amount	_	_	10	Measure	_	Offset=1101-1105
+10	lab	_	Reagent	_	_	0	_	_	Offset=1109-1124
+11	50mL	_	Amount	_	_	12	Measure	_	Offset=1133-1137
+12	tube	_	Location	_	_	10	Meronym	_	Offset=1138-1142
+13	labeled	_	Action	_	_	0	_	_	Offset=1143-1150
+14	1X	_	Method	_	_	0	_	_	Offset=1152-1172
+
+# sent_id = s13
+# text = Label a 50mL centrifuge tube as “1X Incubation Buffer”.
+1	Mix	_	Action	_	_	0	_	_	Offset=1290-1293
+2	well	_	Modifier	_	_	0	_	_	Offset=1294-1298
+3	vortexing	_	Method	_	_	0	_	_	Offset=1302-1311
+
+# sent_id = s14
+# text = Dilute 2X Incubation buffer to 1X by adding 10mL of 2X incubation buffer to 10mL of lab grade water* in the 50mL tube labeled “1X Incubation Buffer”.
+1	Label	_	Action	_	_	0	_	_	Offset=1370-1375
+2	1L	_	Amount	_	_	3	Measure	_	Offset=1378-1380
+3	container	_	Location	_	_	0	_	_	Offset=1381-1390
+4	1X	_	Method	_	_	0	_	_	Offset=1392-1406
+
+# sent_id = s15
+# text = *Note: Lab grade filtered water such as injection grade, cell culture grade, Reverse Osmosis De-Ionization (RODI).
+1	Dilute	_	Action	_	_	0	_	_	Offset=1409-1415
+2	5X	_	Concentration	_	_	3	Measure	_	Offset=1416-1418
+3	wash	_	Reagent	_	_	0	_	_	Offset=1419-1430
+4	1X	_	Concentration	_	_	0	_	_	Offset=1434-1436
+
+# sent_id = s16
+# text = Mix well by vortexing.
+1	Mix	_	Action	_	_	0	_	_	Offset=1446-1449
+2	125mL	_	Amount	_	_	4	Measure	_	Offset=1450-1455
+3	5X	_	Concentration	_	_	4	Measure	_	Offset=1459-1461
+4	Wash	_	Reagent	_	_	0	_	_	Offset=1462-1473
+5	500mL	_	Amount	_	_	6	Measure	_	Offset=1479-1484
+6	lab	_	Reagent	_	_	0	_	_	Offset=1488-1503
+
+# sent_id = s17
+# text = This will be diluent for the standard curve and samples.
+1	Label	_	Action	_	_	0	_	_	Offset=1533-1538
+2	1.5mL	_	Amount	_	_	3	Measure	_	Offset=1543-1548
+3	microcentrifuge	_	Location	_	_	0	_	_	Offset=1549-1570
+4	#1-8	_	Method	_	_	0	_	_	Offset=1574-1578
+
+# sent_id = s18
+# text = Label a 1L container “1X Wash buffer”.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=1601-1608
+2	240uL	_	Amount	_	_	4	Measure	_	Offset=1609-1614
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=1622-1624
+4	incubation	_	Reagent	_	_	0	_	_	Offset=1625-1642
+5	each	_	Modifier	_	_	6	Mod-Link	_	Offset=1675-1679
+6	standard	_	Location	_	_	0	_	_	Offset=1687-1707
+7	490uL	_	Amount	_	_	8	Measure	_	Offset=1719-1724
+8	tube	_	Location	_	_	0	_	_	Offset=1728-1735
+
+# sent_id = s19
+# text = Dilute 5X wash buffer to 1X for use.
+1	Remove	_	Action	_	_	0	_	_	Offset=1764-1770
+2	10uL	_	Amount	_	_	0	_	_	Offset=1771-1775
+3	intermediate	_	Location	_	_	0	_	_	Offset=1781-1796
+4	add	_	Action	_	_	0	_	_	Offset=1801-1804
+5	490uL	_	Amount	_	_	7	Measure	_	Offset=1808-1813
+6	1X	_	Concentration	_	_	7	Measure	_	Offset=1814-1816
+7	incubation	_	Reagent	_	_	0	_	_	Offset=1817-1834
+8	tube	_	Location	_	_	7	Meronym	_	Offset=1838-1845
+
+# sent_id = s20
+# text = Mix 125mL of 5X Wash buffer with 500mL of lab grade water for a total volume of 625mL.
+1	Mix	_	Action	_	_	0	_	_	Offset=1935-1938
+2	well	_	Modifier	_	_	0	_	_	Offset=1939-1943
+3	inversion	_	Method	_	_	0	_	_	Offset=1947-1956
+4	do	_	Action	_	_	0	_	_	Offset=1958-1971
+
+# sent_id = s21
+# text = Label (8) 1.5mL microcentrifuge tubes as #1-8 (use enclosed tubes).
+1	Continue	_	Modifier	_	_	0	_	_	Offset=1973-1981
+2	making	_	Action	_	_	0	_	_	Offset=1982-1988
+3	1.8	_	Method	_	_	0	_	_	Offset=1989-2014
+4	adding	_	Action	_	_	0	_	_	Offset=2018-2024
+5	300uL	_	Amount	_	_	7	Measure	_	Offset=2025-2030
+6	previous	_	Modifier	_	_	7	Mod-Link	_	Offset=2038-2046
+7	dilution	_	Reagent	_	_	0	_	_	Offset=2047-2055
+8	240uL	_	Amount	_	_	10	Measure	_	Offset=2059-2064
+9	1X	_	Concentration	_	_	10	Measure	_	Offset=2068-2070
+10	incubation	_	Reagent	_	_	0	_	_	Offset=2071-2088
+11	tubes	_	Location	_	_	10	Meronym	_	Offset=2092-2102
+
+# sent_id = s22
+# text = Aliquot 240uL of the 1X incubation buffer (made previously in step II) to each of the standard curve tubes (#2-8) and 490uL to tube #1 (standard curve top point).
+1	Mix	_	Action	_	_	0	_	_	Offset=2104-2107
+2	well	_	Modifier	_	_	0	_	_	Offset=2108-2112
+3	inversion	_	Method	_	_	0	_	_	Offset=2116-2125
+
+# sent_id = s23
+# text = Remove 10uL from intermediate #2 and add to 490uL 1X incubation buffer in tube #1 (this will be the top point of the standard curve, final concentration will be 250pg/mL.
+1	Dilute	_	Action	_	_	0	_	_	Offset=2149-2155
+2	samples	_	Reagent	_	_	0	_	_	Offset=2156-2163
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=2167-2169
+4	incubation	_	Reagent	_	_	0	_	_	Offset=2170-2187
+5	2X	_	Concentration	_	_	0	_	_	Offset=2191-2193
+
+# sent_id = s24
+# text = Mix well by inversion, do not vortex.
+1	Mix	_	Action	_	_	0	_	_	Offset=2209-2212
+2	well	_	Modifier	_	_	0	_	_	Offset=2213-2217
+3	inversion	_	Method	_	_	0	_	_	Offset=2221-2230
+
+# sent_id = s25
+# text = Continue making 1.8 fold serial dilutions by adding 300uL of the previous dilution to 240uL of 1X incubation buffer in tubes #2-7.
+1	dilute	_	Action	_	_	0	_	_	Offset=2290-2296
+2	sample	_	Reagent	_	_	0	_	_	Offset=2301-2307
+3	1:5	_	Generic-Measure	_	_	0	_	_	Offset=2308-2311
+4	1X	_	Concentration	_	_	5	Measure	_	Offset=2315-2317
+5	incubation	_	Reagent	_	_	0	_	_	Offset=2318-2335
+
+# sent_id = s26
+# text = Mix well by inversion between each dilution.
+1	sample	_	Reagent	_	_	0	_	_	Offset=2341-2347
+2	diluted	_	Action	_	_	0	_	_	Offset=2361-2368
+3	1:2	_	Generic-Measure	_	_	0	_	_	Offset=2369-2372
+4	step	_	Method	_	_	0	_	_	Offset=2376-2384
+5	final	_	Measure-Type	_	_	6	Of-Type	_	Offset=2391-2412
+6	1:10	_	Generic-Measure	_	_	0	_	_	Offset=2416-2420
+
+# sent_id = s27
+# text = Dilute samples in 1X incubation buffer to 2X concentration.
+1	Run	_	Action	_	_	0	_	_	Offset=2422-2425
+2	samples	_	Reagent	_	_	0	_	_	Offset=2426-2433
+3	duplicate	_	Numerical	_	_	0	_	_	Offset=2437-2446
+4	triplicate	_	Numerical	_	_	3	Or	_	Offset=2450-2460
+
+# sent_id = s28
+# text = Mix well by inversion.
+1	run	_	Action	_	_	0	_	_	Offset=2635-2638
+2	2-3	_	Numerical	_	_	0	_	_	Offset=2639-2642
+3	dilutions	_	Action	_	_	0	_	_	Offset=2643-2652
+4	sample	_	Reagent	_	_	0	_	_	Offset=2657-2663
+5	at	_	Modifier	_	_	6	Or	_	Offset=2674-2682
+6	1	_	Numerical	_	_	0	_	_	Offset=2683-2684
+
+# sent_id = s29
+# text = For example, if the final sample dilution should be 1:10, dilute the sample 1:5 in 1X incubation buffer.
+1	Label	_	Action	_	_	0	_	_	Offset=2872-2877
+2	15mL	_	Amount	_	_	3	Measure	_	Offset=2880-2884
+3	tube	_	Location	_	_	0	_	_	Offset=2885-2889
+4	Diluted	_	Method	_	_	0	_	_	Offset=2894-2924
+
+# sent_id = s30
+# text = The sample will then be diluted 1:2 in step VII for a final dilution factor of 1:10.
+1	Add	_	Action	_	_	0	_	_	Offset=2927-2930
+2	6mL	_	Amount	_	_	4	Measure	_	Offset=2931-2934
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=2938-2940
+4	Incubation	_	Reagent	_	_	0	_	_	Offset=2941-2958
+5	tube	_	Location	_	_	0	_	_	Offset=2966-2970
+6	labeled	_	Action	_	_	0	_	_	Offset=2971-2978
+7	Diluted	_	Method	_	_	0	_	_	Offset=2980-3010
+
+# sent_id = s31
+# text = Run samples in duplicate or triplicate.
+1	Add	_	Action	_	_	0	_	_	Offset=3013-3016
+2	6uL	_	Amount	_	_	3	Measure	_	Offset=3017-3020
+3	HRP	_	Reagent	_	_	0	_	_	Offset=3024-3046
+4	mix	_	Action	_	_	0	_	_	Offset=3051-3054
+5	well	_	Modifier	_	_	0	_	_	Offset=3055-3059
+6	vortexing	_	Method	_	_	0	_	_	Offset=3063-3072
+7	Remove	_	Action	_	_	0	_	_	Offset=3073-3079
+8	plate	_	Location	_	_	0	_	_	Offset=3080-3085
+9	foil	_	Seal	_	_	0	_	_	Offset=3091-3101
+
+# sent_id = s32
+# text = Note: All sample matrices will perform differently in the kit.
+1	Remove	_	Action	_	_	0	_	_	Offset=3103-3109
+2	extra	_	Modifier	_	_	3	Mod-Link	_	Offset=3110-3115
+3	strip	_	Location	_	_	0	_	_	Offset=3116-3127
+4	store	_	Action	_	_	0	_	_	Offset=3145-3150
+5	resealable	_	Modifier	_	_	6	Mod-Link	_	Offset=3154-3164
+6	foil	_	Seal	_	_	0	_	_	Offset=3165-3175
+7	2-8°C	_	Temperature	_	_	0	_	_	Offset=3179-3184
+
+# sent_id = s33
+# text = It is important that you determine the ideal dilution for your particular sample type.
+1	Add	_	Action	_	_	0	_	_	Offset=3196-3199
+2	300uL	_	Amount	_	_	0	_	_	Offset=3200-3205
+3	well	_	Location	_	_	5	Meronym	_	Offset=3210-3214
+4	1X	_	Concentration	_	_	5	Measure	_	Offset=3218-3220
+5	Wash	_	Reagent	_	_	0	_	_	Offset=3221-3232
+
+# sent_id = s34
+# text = It is good practice to run 2-3 dilutions per sample to ensure at least 1 dilution falls within the range of the standard curve.
+1	Dump	_	Action	_	_	0	_	_	Offset=3263-3271
+2	wash	_	Reagent	_	_	0	_	_	Offset=3272-3283
+3	pat	_	Action	_	_	0	_	_	Offset=3288-3295
+4	paper	_	Device	_	_	0	_	_	Offset=3299-3311
+
+# sent_id = s35
+# text = For most sample types, a good starting dilution would be 1:5-1:10.Due to the format of the assay, samples are not able to run neat.
+1	Add	_	Action	_	_	0	_	_	Offset=3313-3316
+2	50uL	_	Amount	_	_	5	Measure	_	Offset=3317-3321
+3	each	_	Modifier	_	_	5	Mod-Link	_	Offset=3325-3329
+4	prepared	_	Modifier	_	_	5	Mod-Link	_	Offset=3330-3338
+5	standard	_	Reagent	_	_	0	_	_	Offset=3339-3347
+6	plate	_	Location	_	_	0	_	_	Offset=3355-3360
+7	duplicate	_	Numerical	_	_	0	_	_	Offset=3364-3373
+8	triplicate	_	Numerical	_	_	7	Or	_	Offset=3377-3387
+
+# sent_id = s36
+# text = Label a 15mL tube as "Diluted HRP Detection Antibody".
+1	Add	_	Action	_	_	0	_	_	Offset=3500-3503
+2	50uL	_	Amount	_	_	4	Measure	_	Offset=3504-3508
+3	each	_	Modifier	_	_	4	Mod-Link	_	Offset=3512-3516
+4	sample	_	Reagent	_	_	0	_	_	Offset=3517-3523
+5	plate	_	Location	_	_	0	_	_	Offset=3531-3536
+6	duplicate	_	Numerical	_	_	0	_	_	Offset=3540-3549
+7	triplicate	_	Numerical	_	_	6	Or	_	Offset=3553-3563
+
+# sent_id = s37
+# text = Add 6mL of 1X Incubation buffer to the tube labeled "Diluted HRP Detection Antibody".
+1	Add	_	Action	_	_	0	_	_	Offset=3565-3568
+2	50uL	_	Amount	_	_	4	Measure	_	Offset=3569-3573
+3	per	_	Modifier	_	_	4	Mod-Link	_	Offset=3574-3577
+4	well	_	Location	_	_	6	Meronym	_	Offset=3578-3582
+5	diluted	_	Modifier	_	_	6	Mod-Link	_	Offset=3586-3593
+6	HRP	_	Reagent	_	_	0	_	_	Offset=3594-3616
+7	all	_	Modifier	_	_	8	Mod-Link	_	Offset=3620-3623
+8	wells	_	Location	_	_	0	_	_	Offset=3624-3629
+
+# sent_id = s38
+# text = Add 6uL of HRP Detection Antibody and mix well by vortexing Remove plate from foil pouch.
+1	Cover	_	Action	_	_	0	_	_	Offset=3631-3636
+2	plate	_	Location	_	_	0	_	_	Offset=3637-3642
+3	plate	_	Seal	_	_	0	_	_	Offset=3648-3660
+
+# sent_id = s39
+# text = Remove extra strip wells if necessary and store in resealable foil pouch at 2-8°C until use.
+1	Mix	_	Action	_	_	0	_	_	Offset=3662-3665
+2	plate	_	Reagent	_	_	0	_	_	Offset=3670-3675
+3	gently	_	Modifier	_	_	0	_	_	Offset=3676-3682
+4	plate	_	Device	_	_	0	_	_	Offset=3688-3700
+
+# sent_id = s40
+# text = Add 300uL per well of 1X Wash Buffer (Prepared in step III above).
+1	Incubate	_	Action	_	_	0	_	_	Offset=3702-3710
+2	overnight	_	Time	_	_	0	_	_	Offset=3711-3720
+3	2-8°C	_	Temperature	_	_	0	_	_	Offset=3724-3729
+
+# sent_id = s41
+# text = Dump out wash buffer and pat dry on paper towels.
+1	50uL	_	Amount	_	_	3	Measure	_	Offset=3755-3759
+2	diluted	_	Modifier	_	_	3	Mod-Link	_	Offset=3763-3770
+3	HRP	_	Reagent	_	_	0	_	_	Offset=3771-3793
+
+# sent_id = s42
+# text = Add 50uL of each prepared standard to the plate in duplicate or triplicate.
+1	generate	_	Action	_	_	0	_	_	Offset=3898-3906
+
+# sent_id = s43
+# text = Follow the plate layout outlined inTable 3 below.
+1	Remove	_	Action	_	_	0	_	_	Offset=3928-3934
+2	plate	_	Location	_	_	0	_	_	Offset=3935-3940
+3	refrigerator	_	Device	_	_	0	_	_	Offset=3946-3958
+4	dump	_	Action	_	_	0	_	_	Offset=3963-3967
+5	contents	_	Reagent	_	_	0	_	_	Offset=3968-3976
+
+# sent_id = s44
+# text = Note: Wells E1-E3 contain the zero or blank sample (Std #8).
+1	Wash	_	Action	_	_	0	_	_	Offset=3978-3982
+2	plate	_	Location	_	_	0	_	_	Offset=3983-3988
+3	adding	_	Action	_	_	0	_	_	Offset=3992-3998
+4	300uL	_	Amount	_	_	6	Measure	_	Offset=3999-4004
+5	1X	_	Concentration	_	_	6	Measure	_	Offset=4008-4010
+6	Wash	_	Reagent	_	_	0	_	_	Offset=4011-4022
+7	per	_	Modifier	_	_	8	Mod-Link	_	Offset=4023-4026
+8	well	_	Location	_	_	0	_	_	Offset=4027-4031
+
+# sent_id = s45
+# text = Add 50uL of each sample to the plate in duplicate or triplicate.
+1	Dump	_	Action	_	_	0	_	_	Offset=4033-4041
+2	1X	_	Concentration	_	_	3	Measure	_	Offset=4042-4044
+3	Wash	_	Reagent	_	_	0	_	_	Offset=4045-4056
+4	pat	_	Action	_	_	0	_	_	Offset=4061-4068
+
+# sent_id = s46
+# text = Add 50uL per well of diluted HRP detection antibody to all wells.
+1	Repeat	_	Action	_	_	0	_	_	Offset=4070-4076
+2	steps	_	Method	_	_	0	_	_	Offset=4077-4086
+3	4	_	Numerical	_	_	0	_	_	Offset=4087-4088
+
+# sent_id = s47
+# text = Cover plate with plate sealer.
+1	Add	_	Action	_	_	0	_	_	Offset=4125-4128
+2	200uL	_	Amount	_	_	3	Measure	_	Offset=4129-4134
+3	TMB	_	Reagent	_	_	0	_	_	Offset=4135-4146
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=4150-4154
+5	well	_	Location	_	_	0	_	_	Offset=4155-4159
+
+# sent_id = s48
+# text = Mix the plate gently on a plate shaker.
+1	Read	_	Action	_	_	0	_	_	Offset=4161-4165
+2	Plate	_	Location	_	_	0	_	_	Offset=4166-4171
+3	620nm	_	Generic-Measure	_	_	0	_	_	Offset=4175-4180
+
+# sent_id = s49
+# text = Incubate overnight at 2-8°C.
+1	preparation	_	Action	_	_	0	_	_	Offset=4206-4217
+2	brain	_	Reagent	_	_	0	_	_	Offset=4221-4234
+3	BetaMark™	_	Reagent	_	_	2	Meronym	_	Offset=4239-4267
+
+# sent_id = s50
+# text = NOTE: Once diluted with 50uL of diluted HRP detection antibody, the final standard cuve concentrations will be outlined in Table 4.
+1	Incubate	_	Action	_	_	0	_	_	Offset=4269-4277
+2	40-50	_	Time	_	_	0	_	_	Offset=4278-4291
+3	room	_	Temperature	_	_	0	_	_	Offset=4295-4311
+4	dark	_	Location	_	_	0	_	_	Offset=4319-4323
+

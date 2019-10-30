@@ -1,0 +1,153 @@
+# sent_id = s1
+# text = Making your own electrocompetent cells
+1	Innoculate	_	Action	_	_	0	_	_	Offset=39-49
+2	1	_	Numerical	_	_	0	_	_	Offset=50-51
+3	colony	_	Reagent	_	_	0	_	_	Offset=52-58
+4	plate	_	Location	_	_	0	_	_	Offset=72-77
+5	10	_	Amount	_	_	6	Measure	_	Offset=125-130
+6	SOB	_	Reagent	_	_	0	_	_	Offset=134-137
+7	125	_	Size	_	_	8	Measure	_	Offset=143-149
+8	flask	_	Location	_	_	0	_	_	Offset=150-155
+
+# sent_id = s2
+# text = Innoculate 1 colony from a fresh plate of the strain to be made electrocompetent into 10 ml of SOB in a 125 ml flask. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=158-166
+2	16-18	_	Time	_	_	0	_	_	Offset=171-182
+3	37°C	_	Temperature	_	_	0	_	_	Offset=186-190
+4	250	_	Speed	_	_	0	_	_	Offset=195-202
+
+# sent_id = s3
+# text = Incubate for 16-18 hours at 37°C and 250 rpm. 
+1	Pre-warm	_	Action	_	_	0	_	_	Offset=205-213
+2	2	_	Numerical	_	_	0	_	_	Offset=214-215
+3	1	_	Size	_	_	4	Measure	_	Offset=217-220
+4	flasks	_	Location	_	_	6	Meronym	_	Offset=221-227
+5	250	_	Amount	_	_	6	Measure	_	Offset=239-245
+6	SOB	_	Reagent	_	_	0	_	_	Offset=254-257
+
+# sent_id = s4
+# text = Pre-warm 2, 1 L flasks containing 250 ml each of SOB. 
+1	Add	_	Action	_	_	0	_	_	Offset=260-263
+2	two	_	Numerical	_	_	0	_	_	Offset=264-267
+3	drops	_	Generic-Measure	_	_	4	Measure	_	Offset=268-273
+4	overnight	_	Reagent	_	_	0	_	_	Offset=281-298
+5	250	_	Size	_	_	6	Measure	_	Offset=325-331
+6	flasks	_	Location	_	_	0	_	_	Offset=332-338
+
+# sent_id = s5
+# text = Add two drops of the overnight culture to each of the pre-warmed 250 ml flasks. 
+1	372	_	Action	_	_	0	_	_	Offset=341-346;367
+2	37°C	_	Temperature	_	_	0	_	_	Offset=350-354
+3	250	_	Speed	_	_	0	_	_	Offset=359-366
+4	OD600	_	Measure-Type	_	_	5	Of-Type	_	Offset=395-400
+5	0.5-0.7	_	Numerical	_	_	0	_	_	Offset=404-411
+
+# sent_id = s6
+# text = Shake at 37°C and 250 rpm until the cultures reach an OD600 of 0.5-0.7. 
+1	Turn	_	Action	_	_	0	_	_	Offset=414-421
+2	centrifuge	_	Device	_	_	0	_	_	Offset=422-432
+3	cool	_	Action	_	_	0	_	_	Offset=437-441
+4	rotor	_	Device	_	_	0	_	_	Offset=442-447
+5	4°C	_	Temperature	_	_	0	_	_	Offset=451-454
+
+# sent_id = s7
+# text = Turn on centrifuge and cool rotor to 4°C well in advance of harvesting cells. 
+1	Place	_	Action	_	_	0	_	_	Offset=493-498
+2	1	_	Amount	_	_	4	Measure	_	Offset=499-502
+3	10%	_	Concentration	_	_	4	Measure	_	Offset=506-509
+4	glycerol	_	Reagent	_	_	0	_	_	Offset=510-518
+5	ice	_	Temperature	_	_	0	_	_	Offset=522-525
+
+# sent_id = s8
+# text = Place 1 L of 10% glycerol on ice well in advance of harvesting cells. 
+1	Place	_	Action	_	_	0	_	_	Offset=564-569
+2	cultures	_	Reagent	_	_	0	_	_	Offset=570-578
+3	ice	_	Temperature	_	_	0	_	_	Offset=582-585
+4	15	_	Time	_	_	0	_	_	Offset=590-600
+
+# sent_id = s9
+# text = Place cultures on ice for 15 minutes.
+1	Pour	_	Action	_	_	0	_	_	Offset=658-662
+2	250	_	Amount	_	_	3	Measure	_	Offset=668-674
+3	culture	_	Reagent	_	_	0	_	_	Offset=675-682
+4	chilled	_	Temperature	_	_	0	_	_	Offset=688-695
+5	500	_	Size	_	_	7	Measure	_	Offset=696-702
+6	1000	_	Size	_	_	5	Or	_	Offset=707-714
+7	centrifuge	_	Location	_	_	0	_	_	Offset=716-734
+
+# sent_id = s10
+# text = From this point on the cultures must be kept ice cold. 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=737-747
+2	5000	_	Speed	_	_	0	_	_	Offset=751-759
+3	10	_	Time	_	_	0	_	_	Offset=764-770
+
+# sent_id = s11
+# text = Pour each 250 ml culture into chilled 500 ml (or 1000 ml) centrifuge bottles. 
+1	Pour	_	Action	_	_	0	_	_	Offset=774-782
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=787-798
+3	aspirate	_	Action	_	_	0	_	_	Offset=803-811
+4	residual	_	Reagent	_	_	0	_	_	Offset=816-830
+
+# sent_id = s12
+# text = Centrifuge at 5000 rpm for 10 min.  
+1	Add	_	Action	_	_	0	_	_	Offset=833-836
+2	250	_	Amount	_	_	3	Measure	_	Offset=837-843
+3	glycerol	_	Reagent	_	_	0	_	_	Offset=847-855
+4	centrifuge	_	Location	_	_	0	_	_	Offset=871-889
+5	suspend	_	Action	_	_	0	_	_	Offset=905-912
+6	cells	_	Reagent	_	_	0	_	_	Offset=917-922
+7	pipetting	_	Method	_	_	0	_	_	Offset=926-947
+
+# sent_id = s13
+# text = Pour off the supernatant and aspirate any residual broth. 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=950-960
+2	5000	_	Speed	_	_	0	_	_	Offset=964-972
+3	10	_	Time	_	_	0	_	_	Offset=977-983
+
+# sent_id = s14
+# text = Add 250 ml of glycerol to each of the centrifuge bottles and completely suspend the cells by pipetting up and down. 
+1	Pour	_	Action	_	_	0	_	_	Offset=987-995
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1000-1011
+
+# sent_id = s15
+# text = Centrifuge at 5000 rpm for 10 min.  
+1	Add	_	Action	_	_	0	_	_	Offset=1047-1050
+2	250	_	Amount	_	_	3	Measure	_	Offset=1051-1057
+3	glycerol	_	Reagent	_	_	0	_	_	Offset=1061-1069
+4	centrifuge	_	Location	_	_	0	_	_	Offset=1085-1103
+5	suspend	_	Action	_	_	0	_	_	Offset=1119-1126
+6	cells	_	Reagent	_	_	0	_	_	Offset=1131-1136
+7	pipetting	_	Method	_	_	0	_	_	Offset=1140-1161
+
+# sent_id = s16
+# text = Pour off the supernatant, it is not necessary to aspirate. 
+1	Pour	_	Action	_	_	0	_	_	Offset=1164-1172
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1177-1188
+3	suspend	_	Action	_	_	0	_	_	Offset=1193-1200
+4	cells	_	Reagent	_	_	0	_	_	Offset=1205-1210
+5	glycerol	_	Reagent	_	_	0	_	_	Offset=1227-1235
+6	pipetting	_	Method	_	_	0	_	_	Offset=1239-1260
+
+# sent_id = s17
+# text = Add 250 ml of glycerol to each of the centrifuge bottles and completely suspend the cells by pipetting up and down. 
+1	add	_	Action	_	_	0	_	_	Offset=1274-1277
+2	100	_	Amount	_	_	3	Measure	_	Offset=1278-1284
+3	culture	_	Reagent	_	_	0	_	_	Offset=1292-1299
+4	microcentrifuge	_	Location	_	_	0	_	_	Offset=1303-1324
+5	ice	_	Temperature	_	_	0	_	_	Offset=1328-1331
+
+# sent_id = s18
+# text = Pour off the supernatant and suspend the cells in the residual glycerol by pipetting up and down. 
+1	transfer	_	Action	_	_	0	_	_	Offset=1373-1381
+2	tubes	_	Location	_	_	0	_	_	Offset=1386-1391
+3	dry	_	Reagent	_	_	0	_	_	Offset=1395-1402
+4	10	_	Time	_	_	0	_	_	Offset=1407-1417
+
+# sent_id = s19
+# text = To freeze, add 100 µl of the culture to microcentrifuge tubes on ice. 
+1	cultures	_	Reagent	_	_	3	Coreference-Link	_	Offset=1429-1437
+2	transfer	_	Action	_	_	0	_	_	Offset=1450-1458
+3	them	_	Mention	_	_	0	_	_	Offset=1459-1463
+4	-80°C	_	Temperature	_	_	5	Setting	_	Offset=1469-1474
+5	freezer	_	Device	_	_	0	_	_	Offset=1475-1482
+

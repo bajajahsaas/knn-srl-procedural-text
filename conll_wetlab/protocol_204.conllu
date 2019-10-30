@@ -1,0 +1,25 @@
+# sent_id = s1
+# text = 1M Tris-HCl
+1	Dissolve	_	Action	_	_	0	_	_	Offset=12-20
+2	30.275g	_	Amount	_	_	3	Measure	_	Offset=21-28
+3	Trizma	_	Reagent	_	_	0	_	_	Offset=29-40
+4	200ml	_	Amount	_	_	5	Measure	_	Offset=44-49
+5	MilliQ	_	Reagent	_	_	0	_	_	Offset=50-56
+
+# sent_id = s2
+# text = Dissolve 30.275g Trizma base in 200ml MilliQ. 
+1	Adjust	_	Action	_	_	0	_	_	Offset=59-65
+2	pH	_	pH	_	_	0	_	_	Offset=69-75
+3	HCl	_	Reagent	_	_	0	_	_	Offset=81-84
+4	~35ml	_	Amount	_	_	3	Measure	_	Offset=86-91
+
+# sent_id = s3
+# text = Adjust to pH 7.5 with HCl (~35ml). 
+1	Adjust	_	Action	_	_	0	_	_	Offset=95-114
+2	250ml	_	Amount	_	_	0	_	_	Offset=118-123
+3	MilliQ	_	Reagent	_	_	0	_	_	Offset=129-135
+
+# sent_id = s4
+# text = Adjust total volume to 250ml with MilliQ. 
+1	Autoclave	_	Action	_	_	0	_	_	Offset=138-147
+

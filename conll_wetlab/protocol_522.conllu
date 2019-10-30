@@ -1,0 +1,145 @@
+# sent_id = s1
+# text = Megabase DNA Extraction from Animal Blood
+1	Collect	_	Action	_	_	0	_	_	Offset=42-49
+2	3mL	_	Amount	_	_	3	Measure	_	Offset=50-53
+3	animal's	_	Reagent	_	_	0	_	_	Offset=54-68
+4	5	_	Size	_	_	5	Measure	_	Offset=72-76
+5	EDTA	_	Location	_	_	0	_	_	Offset=77-102
+6	store	_	Action	_	_	0	_	_	Offset=108-113
+7	4	_	Temperature	_	_	0	_	_	Offset=117-121
+
+# sent_id = s2
+# text = Collect 3mL animal's blood in 5 mL EDTA anticoagulative tube, and store at 4 °C. 
+1	blood	_	Reagent	_	_	0	_	_	Offset=128-133
+2	gently	_	Modifier	_	_	0	_	_	Offset=137-143
+3	rocking	_	Action	_	_	0	_	_	Offset=144-151
+4	10min	_	Time	_	_	0	_	_	Offset=156-161
+5	room	_	Temperature	_	_	0	_	_	Offset=165-181
+
+# sent_id = s3
+# text = Mix blood by gently rocking for 10min at room temperature to ensure a homogenous WBC distribution.
+1	Transfer	_	Action	_	_	0	_	_	Offset=223-231
+2	3ml	_	Amount	_	_	3	Measure	_	Offset=232-235
+3	blood	_	Reagent	_	_	0	_	_	Offset=236-241
+4	15ml	_	Size	_	_	5	Measure	_	Offset=245-249
+5	screw	_	Location	_	_	7	Meronym	_	Offset=250-264
+6	9ml	_	Amount	_	_	7	Measure	_	Offset=276-279
+7	RBC	_	Reagent	_	_	0	_	_	Offset=280-298
+8	inverting	_	Action	_	_	0	_	_	Offset=330-339
+9	10x	_	Numerical	_	_	0	_	_	Offset=340-343
+
+# sent_id = s4
+# text = Transfer 3ml blood to 15ml screw cap tube containing 9ml RBC lysis solution (3 volumes), and mix by gently inverting 10x.
+1	Incubate	_	Action	_	_	0	_	_	Offset=345-353
+2	5	_	Time	_	_	0	_	_	Offset=354-359
+3	room	_	Temperature	_	_	0	_	_	Offset=363-379
+
+# sent_id = s5
+# text = Incubate 5 min at room temperature.
+1	inverting	_	Action	_	_	0	_	_	Offset=395-404
+
+# sent_id = s6
+# text = Gently mix by inverting at least once during incubation.
+1	Spin	_	Action	_	_	0	_	_	Offset=438-442
+2	5	_	Time	_	_	0	_	_	Offset=443-448
+3	2000xg	_	Speed	_	_	0	_	_	Offset=452-458
+4	4⁰C	_	Temperature	_	_	0	_	_	Offset=462-465
+5	pipet	_	Action	_	_	0	_	_	Offset=480-489
+6	supernatant	_	Reagent	_	_	0	_	_	Offset=490-501
+
+# sent_id = s7
+# text = Spin 5 min at 2000xg at 4⁰C and carefully pipet out supernatant while not disturbing the pellet.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=535-544
+2	cell	_	Reagent	_	_	0	_	_	Offset=545-556
+3	3ml	_	Amount	_	_	4	Measure	_	Offset=560-563
+4	PBS	_	Reagent	_	_	0	_	_	Offset=564-567
+
+# sent_id = s8
+# text = Resuspend cell pellet in 3ml PBS (1 blood volume): 
+1	Add	_	Action	_	_	0	_	_	Offset=587-590
+2	9ml	_	Amount	_	_	3	Measure	_	Offset=591-594
+3	rbc	_	Reagent	_	_	0	_	_	Offset=595-608
+4	invert	_	Action	_	_	0	_	_	Offset=622-628
+5	incubate	_	Action	_	_	0	_	_	Offset=640-648
+6	5	_	Time	_	_	0	_	_	Offset=649-654
+7	room	_	Temperature	_	_	0	_	_	Offset=658-674
+
+# sent_id = s9
+# text = Add 9ml rbc lysis sol (3 volumes), invert to mix and incubate 5 min at room temperature.
+1	Spin	_	Action	_	_	0	_	_	Offset=676-680
+2	cell	_	Reagent	_	_	0	_	_	Offset=681-696
+3	5	_	Time	_	_	0	_	_	Offset=701-706
+4	2000xg	_	Speed	_	_	0	_	_	Offset=710-716
+5	4⁰C	_	Temperature	_	_	0	_	_	Offset=720-723
+6	pipet	_	Action	_	_	0	_	_	Offset=738-747
+7	supernatant	_	Reagent	_	_	0	_	_	Offset=748-759
+
+# sent_id = s10
+# text = Spin cell suspension for 5 min at 2000xg at 4⁰C and carefully pipet out supernatant while not disturbing the pellet.
+1	tilting	_	Action	_	_	0	_	_	Offset=827-834
+2	tube	_	Location	_	_	0	_	_	Offset=839-843
+3	removing	_	Action	_	_	0	_	_	Offset=848-856
+4	liquid	_	Reagent	_	_	0	_	_	Offset=857-863
+5	pipet	_	Device	_	_	0	_	_	Offset=869-878
+
+# sent_id = s11
+# text = Remove the last drop of liquid by tilting the tube and removing liquid with pipet tip.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=880-889
+2	cell	_	Reagent	_	_	0	_	_	Offset=890-901
+3	580ul	_	Amount	_	_	4	Measure	_	Offset=905-910
+4	cell	_	Reagent	_	_	0	_	_	Offset=911-933
+
+# sent_id = s12
+# text = Resuspend cell pellet in 580ul cell suspension buffer (Bio Rad plug lysis kit) until homogenous suspension.
+1	Transfer	_	Action	_	_	0	_	_	Offset=988-996
+2	375ul	_	Amount	_	_	0	_	_	Offset=997-1002
+3	microfuge	_	Location	_	_	0	_	_	Offset=1012-1026
+4	label	_	Action	_	_	0	_	_	Offset=1031-1036
+
+# sent_id = s13
+# text = Transfer 375ul to a new microfuge tube and label (400).
+1	Transfer	_	Action	_	_	0	_	_	Offset=1044-1052
+2	187.5ul	_	Amount	_	_	0	_	_	Offset=1053-1060
+3	another	_	Location	_	_	0	_	_	Offset=1064-1076
+4	add	_	Action	_	_	0	_	_	Offset=1092-1095
+5	187.5ul	_	Amount	_	_	6	Measure	_	Offset=1096-1103
+6	cell	_	Reagent	_	_	0	_	_	Offset=1104-1126
+7	mix	_	Action	_	_	0	_	_	Offset=1138-1141
+8	5x	_	Time	_	_	0	_	_	Offset=1149-1151
+
+# sent_id = s14
+# text = Transfer 187.5ul to another tube labeled (200); add 187.5ul cell suspension buffer, and pipet mix gently 5x.
+1	Keep	_	Action	_	_	0	_	_	Offset=1153-1157
+2	tubes	_	Location	_	_	0	_	_	Offset=1163-1168
+3	ice	_	Temperature	_	_	0	_	_	Offset=1172-1175
+
+# sent_id = s15
+# text = Keep both tubes on ice until ready to embed in agarose (section II).
+1	2%	_	Concentration	_	_	2	Measure	_	Offset=1227-1229
+2	agarose	_	Reagent	_	_	0	_	_	Offset=1230-1237
+3	immersing	_	Action	_	_	0	_	_	Offset=1255-1264
+4	microwave-boiled	_	Temperature	_	_	0	_	_	Offset=1268-1284
+5	water	_	Reagent	_	_	0	_	_	Offset=1285-1290
+6	10-15min	_	Time	_	_	0	_	_	Offset=1295-1303
+
+# sent_id = s16
+# text = Melt 2% agarose (Bio Rad kit) by immersing in microwave-boiled water for 10-15min until agarose is completely melted.
+1	Equilibrate	_	Action	_	_	0	_	_	Offset=1340-1351
+2	tubes	_	Location	_	_	0	_	_	Offset=1357-1362
+3	43°C	_	Temperature	_	_	4	Setting	_	Offset=1389-1393
+4	water	_	Device	_	_	0	_	_	Offset=1394-1415
+5	5	_	Time	_	_	0	_	_	Offset=1429-1434
+
+# sent_id = s17
+# text = Equilibrate both tubes from step 11 section I in 43°C water bath/heat block for at least 5 min before use.
+1	Place	_	Action	_	_	0	_	_	Offset=1612-1617
+2	plug	_	Device	_	_	0	_	_	Offset=1618-1627
+3	ice	_	Temperature	_	_	0	_	_	Offset=1631-1634
+4	45min	_	Time	_	_	0	_	_	Offset=1648-1653
+
+# sent_id = s18
+# text = After 5 min, prepare 5 plugs from one tube by performing the next steps rapidly to avoid solidification of the cell-agarose mixture before pipeting into plug mold: 
+1	Wash	_	Action	_	_	0	_	_	Offset=1827-1831
+2	Proteinase	_	Reagent	_	_	0	_	_	Offset=1875-1887
+3	Wash	_	Reagent	_	_	0	_	_	Offset=1892-1903
+

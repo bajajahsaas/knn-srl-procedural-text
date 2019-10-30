@@ -25,7 +25,7 @@ t = AnnoyIndex(num_features, 'angular')
 t.load(annoy_file)
 
 N = 5
-for i in np.random.choice(list(range(len(sent_data))), size=5, replace = False): 
+for i in np.random.choice(list(range(len(sent_data))), size=N, replace = False): 
     s = sent_data[i]
     nns = t.get_nns_by_item(i, 10)
     
@@ -34,4 +34,6 @@ for i in np.random.choice(list(range(len(sent_data))), size=5, replace = False):
     
     print('Nearest Neighbors:')
     pp.pprint([sent_data[x] for x in nns[1:]])
+    print('Original sentences:')
+    pp.pprint([orig_sents[x] for x in nns[1:]])
 

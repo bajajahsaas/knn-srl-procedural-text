@@ -1,0 +1,482 @@
+# sent_id = s1
+# text = Isolation and Purification of Plasmid DNA from E. coli
+1	Inoculate	_	Action	_	_	0	_	_	Offset=55-64
+2	1000	_	Amount	_	_	3	Measure	_	Offset=65-72
+3	L	_	Reagent	_	_	5	Meronym	_	Offset=76-83
+4	appropriate	_	Modifier	_	_	5	Mod-Link	_	Offset=99-110
+5	antibiotic	_	Reagent	_	_	0	_	_	Offset=111-121
+6	10	_	Amount	_	_	7	Measure	_	Offset=127-132
+7	overnight	_	Reagent	_	_	8	Meronym	_	Offset=139-178
+8	plasmid	_	Reagent	_	_	0	_	_	Offset=194-201
+
+# sent_id = s2
+# text = Inoculate 1000 mL of L broth containing the appropriate antibiotic with 10 mL of an overnight culture of the E. coli strain containing the plasmid to be purified.
+1	Incubate	_	Action	_	_	0	_	_	Offset=218-226
+2	37°C	_	Temperature	_	_	0	_	_	Offset=230-234
+3	overnight	_	Time	_	_	0	_	_	Offset=235-244
+
+# sent_id = s3
+# text = Incubate at 37°C overnight.
+1	add	_	Action	_	_	0	_	_	Offset=392-395
+2	chloramphenicol	_	Reagent	_	_	0	_	_	Offset=396-411
+3	34	_	Concentration	_	_	2	Measure	_	Offset=413-421
+4	final	_	Reagent	_	_	0	_	_	Offset=428-447
+5	170	_	Concentration	_	_	4	Measure	_	Offset=452-461
+6	spectinomycin	_	Reagent	_	_	2	Or	_	Offset=465-478
+7	10	_	Concentration	_	_	6	Measure	_	Offset=480-488
+8	final	_	Reagent	_	_	0	_	_	Offset=495-514
+9	50	_	Concentration	_	_	8	Measure	_	Offset=518-526
+
+# sent_id = s4
+# text = If amplification of the plasmid DNA is necessary (because of low copy  number of the plasmid under normal conditions), after 4-8 hours of growth, add chloramphenicol (34 mg/mL) to a final concentration  of 170 ug/mL or spectinomycin (10 mg/mL) to a final concentration of 50 ug/mL (if the bacteria carries chloramphenicol resistance).
+1	Incubate	_	Action	_	_	0	_	_	Offset=581-589
+2	37°C	_	Temperature	_	_	0	_	_	Offset=593-597
+3	overnight	_	Time	_	_	0	_	_	Offset=598-607
+
+# sent_id = s5
+# text = Incubate at 37°C overnight.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=609-619
+2	bacterial	_	Reagent	_	_	0	_	_	Offset=624-639
+3	Sorvall	_	Device	_	_	0	_	_	Offset=647-664
+4	5,000	_	Speed	_	_	0	_	_	Offset=668-677
+5	5	_	Time	_	_	0	_	_	Offset=679-684
+6	4°C	_	Temperature	_	_	0	_	_	Offset=686-689
+
+# sent_id = s6
+# text = Centrifuge the bacterial cells in the Sorvall GSA rotor at 5,000 rpm, 5 min, 4°C.
+1	Use	_	Action	_	_	0	_	_	Offset=691-694
+2	3-250	_	Amount	_	_	3	Measure	_	Offset=695-703
+3	GSA	_	Location	_	_	0	_	_	Offset=704-715
+
+# sent_id = s7
+# text = Use 3-250 mL GSA bottles per liter of bacteria.
+1	Discard	_	Action	_	_	0	_	_	Offset=739-746
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=751-763
+
+# sent_id = s8
+# text = Discard the supernatants.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=765-774
+2	cells	_	Reagent	_	_	0	_	_	Offset=779-784
+3	60	_	Amount	_	_	4	Measure	_	Offset=790-795
+4	lysozyme	_	Reagent	_	_	0	_	_	Offset=821-838
+
+# sent_id = s9
+# text = Resuspend the cells with 60 mL (total, 20 mL/bottle) of lysozyme solution.
+1	Incubate	_	Action	_	_	0	_	_	Offset=840-848
+2	ice	_	Location	_	_	0	_	_	Offset=852-855
+3	30	_	Time	_	_	0	_	_	Offset=860-866
+
+# sent_id = s10
+# text = Incubate on ice for 30 min.
+1	Add	_	Action	_	_	0	_	_	Offset=868-871
+2	120	_	Amount	_	_	3	Measure	_	Offset=872-878
+3	alkaline	_	Reagent	_	_	0	_	_	Offset=908-929
+
+# sent_id = s11
+# text = Add 120 mL (total, 40 mL/bottle) of the alkaline SDS solution.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=931-937
+2	mix	_	Action	_	_	0	_	_	Offset=938-941
+3	inversion	_	Method	_	_	0	_	_	Offset=946-955
+
+# sent_id = s12
+# text = Gently mix (by inversion) until the solution clears.
+1	Incubate	_	Action	_	_	0	_	_	Offset=984-992
+2	ice	_	Location	_	_	0	_	_	Offset=996-999
+3	5	_	Time	_	_	0	_	_	Offset=1004-1009
+
+# sent_id = s13
+# text = Incubate on ice for 5 min.
+1	Add	_	Action	_	_	0	_	_	Offset=1011-1014
+2	90	_	Amount	_	_	3	Measure	_	Offset=1015-1020
+3	high	_	Reagent	_	_	0	_	_	Offset=1050-1068
+
+# sent_id = s14
+# text = Add 90 mL (total, 30 mL/bottle) of the high salt solution.
+1	Mix	_	Action	_	_	0	_	_	Offset=1070-1073
+2	well	_	Modifier	_	_	0	_	_	Offset=1074-1078
+3	incubate	_	Action	_	_	0	_	_	Offset=1083-1091
+4	ice	_	Location	_	_	0	_	_	Offset=1095-1098
+5	30-60	_	Time	_	_	0	_	_	Offset=1103-1112
+
+# sent_id = s15
+# text = Mix well and incubate on ice for 30-60 min.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1114-1124
+2	bottles	_	Location	_	_	0	_	_	Offset=1129-1136
+3	Sorvall	_	Device	_	_	0	_	_	Offset=1144-1161
+4	10,000	_	Speed	_	_	0	_	_	Offset=1165-1175
+5	10	_	Time	_	_	0	_	_	Offset=1177-1183
+6	4°C	_	Temperature	_	_	0	_	_	Offset=1185-1188
+
+# sent_id = s16
+# text = Centrifuge the bottles in the Sorvall GSA rotor at 10,000 rpm, 10 min, 4°C.
+1	Decant	_	Action	_	_	0	_	_	Offset=1190-1196
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=1201-1213
+3	clean	_	Modifier	_	_	4	Mod-Link	_	Offset=1217-1222
+4	bottles	_	Location	_	_	0	_	_	Offset=1223-1230
+
+# sent_id = s17
+# text = Decant the supernatants to clean bottles.
+1	Precipitate	_	Action	_	_	0	_	_	Offset=1232-1243
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1248-1251
+3	2X	_	Mention	_	_	0	_	_	Offset=1257-1267
+4	approximately	_	Modifier	_	_	5	Mod-Link	_	Offset=1269-1282
+5	170-180	_	Amount	_	_	7	Measure	3:Coreference-Link	Offset=1283-1293
+6	100%	_	Concentration	_	_	7	Measure	_	Offset=1298-1302
+7	EtOH	_	Reagent	_	_	0	_	_	Offset=1303-1307
+
+# sent_id = s18
+# text = Precipitate the DNA with 2X volumes (approximately 170-180 mL) of 100% EtOH.
+1	Hold	_	Action	_	_	0	_	_	Offset=1309-1313
+2	-80°C	_	Temperature	_	_	0	_	_	Offset=1317-1322
+3	60	_	Time	_	_	0	_	_	Offset=1327-1333
+
+# sent_id = s19
+# text = Hold at -80°C for 60 min.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1335-1345
+2	bottles	_	Location	_	_	0	_	_	Offset=1350-1357
+3	Sorvall	_	Device	_	_	0	_	_	Offset=1365-1382
+4	10,000	_	Speed	_	_	0	_	_	Offset=1386-1396
+5	10	_	Time	_	_	0	_	_	Offset=1398-1404
+6	4°C	_	Temperature	_	_	0	_	_	Offset=1406-1409
+
+# sent_id = s20
+# text = Centrifuge the bottles in the Sorvall GSA rotor at 10,000 rpm, 10 min, 4°C.
+1	Discard	_	Action	_	_	0	_	_	Offset=1411-1418
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=1423-1435
+
+# sent_id = s21
+# text = Discard the supernatants.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1437-1446
+2	pellets	_	Reagent	_	_	0	_	_	Offset=1451-1458
+3	10	_	Amount	_	_	5	Measure	_	Offset=1464-1469
+4	50	_	Concentration	_	_	5	Measure	_	Offset=1478-1483
+5	Tris-HCl	_	Reagent	_	_	0	_	_	Offset=1484-1492
+6	pH	_	pH	_	_	5	Measure	_	Offset=1494-1500
+7	100	_	Concentration	_	_	8	Measure	_	Offset=1502-1508
+8	NaOAc	_	Reagent	_	_	0	_	_	Offset=1509-1514
+
+# sent_id = s22
+# text = Resuspend the pellets with 10 mL each of 50 mM Tris-HCl, pH 8.0, 100 mM NaOAc.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1516-1524
+2	material	_	Reagent	_	_	0	_	_	Offset=1529-1537
+3	30	_	Amount	_	_	4	Measure	_	Offset=1541-1546
+4	corex	_	Location	_	_	0	_	_	Offset=1547-1558
+
+# sent_id = s23
+# text = Transfer the material to 30 mL corex tubes.
+1	Add	_	Action	_	_	0	_	_	Offset=1560-1563
+2	equal	_	Amount	_	_	3	Measure	_	Offset=1567-1579
+3	buffer-saturated	_	Reagent	_	_	0	_	_	Offset=1583-1606
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=1610-1614
+5	tube	_	Location	_	_	0	_	_	Offset=1615-1619
+
+# sent_id = s24
+# text = Add an equal volume of buffer-saturated phenol to each tube.
+1	Mix	_	Action	_	_	0	_	_	Offset=1621-1624
+2	well	_	Modifier	_	_	0	_	_	Offset=1625-1629
+3	centrifuge	_	Action	_	_	0	_	_	Offset=1634-1644
+4	Sorvall	_	Device	_	_	0	_	_	Offset=1652-1670
+5	10,000	_	Speed	_	_	0	_	_	Offset=1674-1684
+6	10	_	Time	_	_	0	_	_	Offset=1686-1692
+7	room	_	Temperature	_	_	0	_	_	Offset=1694-1710
+
+# sent_id = s25
+# text = Mix well and centrifuge in the Sorvall SS34 rotor at 10,000 rpm, 10 min, room temperature.
+1	Remove	_	Action	_	_	0	_	_	Offset=1712-1718
+2	upper	_	Reagent	_	_	0	_	_	Offset=1723-1743
+3	clean	_	Action	_	_	0	_	_	Offset=1747-1752
+4	30	_	Amount	_	_	5	Measure	_	Offset=1753-1758
+5	corex	_	Location	_	_	0	_	_	Offset=1759-1770
+
+# sent_id = s26
+# text = Remove the upper aqueous layers to clean 30 mL corex tubes.
+1	Precipitate	_	Action	_	_	0	_	_	Offset=1772-1783
+2	DNAs	_	Reagent	_	_	0	_	_	Offset=1788-1792
+3	2X	_	Amount	_	_	5	Measure	_	Offset=1798-1808
+4	100%	_	Concentration	_	_	5	Measure	_	Offset=1812-1816
+5	EtOH	_	Reagent	_	_	0	_	_	Offset=1817-1821
+
+# sent_id = s27
+# text = Precipitate the DNAs with 2X volumes of 100% EtOH.
+1	Hold	_	Action	_	_	0	_	_	Offset=1823-1827
+2	-80°C	_	Temperature	_	_	0	_	_	Offset=1831-1836
+3	45	_	Time	_	_	0	_	_	Offset=1841-1847
+
+# sent_id = s28
+# text = Hold at -80°C for 45 min.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1849-1859
+2	tubes	_	Location	_	_	0	_	_	Offset=1864-1869
+3	Sorvall	_	Device	_	_	0	_	_	Offset=1877-1895
+4	10,000	_	Speed	_	_	0	_	_	Offset=1899-1909
+5	10	_	Time	_	_	0	_	_	Offset=1911-1917
+6	4°C	_	Temperature	_	_	0	_	_	Offset=1919-1922
+
+# sent_id = s29
+# text = Centrifuge the tubes in the Sorvall HB-4 rotor at 10,000 rpm, 10 min, 4°C.
+1	Discard	_	Action	_	_	0	_	_	Offset=1924-1931
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=1936-1948
+
+# sent_id = s30
+# text = Discard the supernatants.
+1	Dry	_	Action	_	_	0	_	_	Offset=1950-1953
+2	pellets	_	Reagent	_	_	0	_	_	Offset=1958-1965
+3	briefly	_	Modifier	_	_	0	_	_	Offset=1966-1973
+4	10-15	_	Time	_	_	0	_	_	Offset=1975-1984
+5	vacuum	_	Device	_	_	0	_	_	Offset=1993-2011
+6	remove	_	Action	_	_	0	_	_	Offset=2015-2021
+7	EtOH	_	Reagent	_	_	0	_	_	Offset=2026-2030
+
+# sent_id = s31
+# text = Dry the pellets briefly (10-15 min) in the vacuum  desiccator to remove the EtOH.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=2032-2041
+2	plasmid	_	Reagent	_	_	0	_	_	Offset=2047-2058
+3	10	_	Amount	_	_	5	Measure	_	Offset=2075-2080
+4	1X	_	Concentration	_	_	5	Measure	_	Offset=2084-2086
+5	TE	_	Reagent	_	_	0	_	_	Offset=2087-2096
+
+# sent_id = s32
+# text = Resuspend each plasmid DNA with a total of 10 mL of 1X TE buffer.
+1	Weigh	_	Action	_	_	0	_	_	Offset=2098-2107
+2	exactly	_	Modifier	_	_	3	Mod-Link	_	Offset=2108-2115
+3	6.8	_	Amount	_	_	4	Measure	_	Offset=2116-2122
+4	CsCl	_	Reagent	_	_	0	_	_	Offset=2126-2130
+5	each	_	Modifier	_	_	7	Mod-Link	_	Offset=2136-2140
+6	2-30	_	Amount	_	_	7	Measure	_	Offset=2144-2151
+7	corex	_	Location	_	_	0	_	_	Offset=2152-2163
+8	each	_	Modifier	_	_	9	Mod-Link	_	Offset=2168-2172
+9	plasmid	_	Reagent	_	_	0	_	_	Offset=2173-2184
+
+# sent_id = s33
+# text = Weigh out exactly 6.8 gm of CsCl into each of 2-30 mL corex tubes for each plasmid DNA.
+1	Divide	_	Action	_	_	0	_	_	Offset=2186-2192
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=2193-2197
+3	plasmid	_	Reagent	_	_	0	_	_	Offset=2198-2218
+4	2	_	Numerical	_	_	5	Measure	_	Offset=2231-2232
+5	tubes	_	Location	_	_	6	Meronym	_	Offset=2233-2238
+6	CsCl	_	Reagent	_	_	0	_	_	Offset=2242-2246
+
+# sent_id = s34
+# text = Divide each plasmid DNA solution between the 2 tubes of CsCl, measuring the volume.
+1	Add	_	Action	_	_	0	_	_	Offset=2270-2273
+2	1X	_	Concentration	_	_	3	Measure	_	Offset=2274-2276
+3	TE	_	Reagent	_	_	0	_	_	Offset=2277-2286
+4	tubes	_	Location	_	_	5	Meronym	_	Offset=2294-2299
+5	CsCl	_	Reagent	_	_	0	_	_	Offset=2303-2307
+6	final	_	Reagent	_	_	0	_	_	Offset=2313-2325
+7	6.4	_	Amount	_	_	6	Measure	_	Offset=2329-2335
+8	added	_	Action	_	_	0	_	_	Offset=2336-2341
+9	each	_	Modifier	_	_	10	Mod-Link	_	Offset=2345-2349
+10	tube	_	Location	_	_	0	_	_	Offset=2351-2355
+
+# sent_id = s35
+# text = Add 1X TE buffer to the tubes of CsCl to a final volume of 6.4 mL added to each  tube.
+1	Mix	_	Action	_	_	0	_	_	Offset=2357-2360
+2	well	_	Modifier	_	_	0	_	_	Offset=2361-2365
+
+# sent_id = s36
+# text = Mix well, until all the CsCl is in solution.
+1	Add	_	Action	_	_	0	_	_	Offset=2402-2405
+2	512	_	Amount	_	_	3	Measure	_	Offset=2406-2412
+3	ethidium	_	Reagent	_	_	0	_	_	Offset=2416-2432
+4	10	_	Concentration	_	_	3	Measure	_	Offset=2434-2442
+5	each	_	Modifier	_	_	6	Mod-Link	_	Offset=2447-2451
+6	tube	_	Location	_	_	0	_	_	Offset=2452-2456
+
+# sent_id = s37
+# text = Add 512 µL of ethidium bromide (10 mg/mL) to each tube.
+1	Mix	_	Action	_	_	0	_	_	Offset=2458-2461
+2	well	_	Modifier	_	_	0	_	_	Offset=2462-2466
+
+# sent_id = s38
+# text = Mix well.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2468-2478
+2	tubes	_	Location	_	_	0	_	_	Offset=2483-2488
+3	Sorvall	_	Device	_	_	0	_	_	Offset=2496-2514
+4	10,000	_	Speed	_	_	0	_	_	Offset=2518-2528
+5	15	_	Time	_	_	0	_	_	Offset=2530-2536
+6	4°C	_	Temperature	_	_	0	_	_	Offset=2538-2541
+
+# sent_id = s39
+# text = Centrifuge the tubes in the Sorvall SS34 rotor at 10,000 rpm, 15 min, 4°C.
+1	Transfer	_	Action	_	_	0	_	_	Offset=2543-2551
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=2556-2568
+3	Beckman	_	Location	_	_	0	_	_	Offset=2572-2619
+4	syringe	_	Device	_	_	0	_	_	Offset=2628-2635
+5	needle	_	Device	_	_	0	_	_	Offset=2640-2646
+6	18g	_	Generic-Measure	_	_	5	Setting	_	Offset=2648-2651
+
+# sent_id = s40
+# text = Transfer the supernatants to Beckman polyallomar Ti50 rotor quick-seal tubes using a syringe and needle (18g).
+1	Fill	_	Action	_	_	0	_	_	Offset=2654-2658
+2	tubes	_	Location	_	_	0	_	_	Offset=2663-2668
+3	CsCl/ethidium	_	Reagent	_	_	0	_	_	Offset=2689-2719
+4	6.8	_	Amount	_	_	5	Measure	_	Offset=2721-2727
+5	CsCl	_	Reagent	_	_	0	_	_	Offset=2728-2732
+6	6.4	_	Amount	_	_	8	Measure	_	Offset=2734-2740
+7	1X	_	Concentration	_	_	8	Measure	_	Offset=2741-2743
+8	TE	_	Reagent	_	_	0	_	_	Offset=2744-2753
+9	512	_	Amount	_	_	11	Measure	_	Offset=2755-2761
+10	10	_	Concentration	_	_	11	Measure	_	Offset=2762-2770
+11	ethidium	_	Reagent	_	_	0	_	_	Offset=2771-2787
+
+# sent_id = s41
+# text = Fill the tubes to capacity with  a CsCl/ethidium bromide solution (6.8 gm CsCl, 6.4 mL 1X TE buffer, 512 µL 10 mg/ml ethidium bromide).
+1	Seal	_	Action	_	_	0	_	_	Offset=2790-2794
+2	tubes	_	Location	_	_	0	_	_	Offset=2799-2804
+3	Beckman	_	Seal	_	_	0	_	_	Offset=2814-2833
+
+# sent_id = s42
+# text = Seal the tubes with the Beckman tube sealer.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2835-2845
+2	gradients	_	Reagent	_	_	0	_	_	Offset=2850-2859
+3	Beckamn	_	Device	_	_	0	_	_	Offset=2867-2885
+4	35,000	_	Speed	_	_	0	_	_	Offset=2889-2899
+5	72	_	Time	_	_	0	_	_	Offset=2901-2909
+6	25°C	_	Temperature	_	_	0	_	_	Offset=2911-2915
+
+# sent_id = s43
+# text = Centrifuge the gradients in the Beckamn Ti50 rotor at 35,000 rpm, 72 hours, 25°C.
+1	Visualize	_	Action	_	_	0	_	_	Offset=2917-2926
+2	DNA	_	Reagent	_	_	0	_	_	Offset=2931-2934
+3	UV	_	Device	_	_	0	_	_	Offset=2943-2958
+
+# sent_id = s44
+# text = Visualize the DNA using a UV light source.
+1	Remove	_	Action	_	_	0	_	_	Offset=2960-2966
+2	plasmid	_	Reagent	_	_	0	_	_	Offset=2971-2982
+3	gradients	_	Reagent	_	_	0	_	_	Offset=2992-3001
+4	puncturing	_	Action	_	_	0	_	_	Offset=3005-3015
+5	side	_	Location	_	_	0	_	_	Offset=3020-3024
+6	tube	_	Location	_	_	5	Meronym	_	Offset=3032-3036
+7	18g	_	Generic-Measure	_	_	8	Setting	_	Offset=3045-3048
+8	needle	_	Device	_	_	0	_	_	Offset=3049-3067
+
+# sent_id = s45
+# text = Remove the plasmid DNA from the gradients by puncturing the side of the tube with an 18g needle and syringe.
+1	Place	_	Action	_	_	0	_	_	Offset=3069-3074
+2	small	_	Amount	_	_	3	Measure	_	Offset=3077-3089
+3	Vaseline	_	Reagent	_	_	0	_	_	Offset=3093-3101
+4	side	_	Location	_	_	0	_	_	Offset=3109-3113
+5	tube	_	Location	_	_	4	Meronym	_	Offset=3121-3125
+6	puncture	_	Action	_	_	0	_	_	Offset=3130-3138
+7	through	_	Modifier	_	_	0	_	_	Offset=3139-3146
+8	Vaseline	_	Reagent	_	_	0	_	_	Offset=3151-3159
+
+# sent_id = s46
+# text = Place a small amount of Vaseline on the side of the tube and puncture through the Vaseline.
+1	Smear	_	Action	_	_	0	_	_	Offset=3161-3166
+2	Vaseline	_	Reagent	_	_	0	_	_	Offset=3171-3179
+3	puncture	_	Location	_	_	0	_	_	Offset=3189-3202
+4	syringe	_	Device	_	_	0	_	_	Offset=3212-3219
+5	removed	_	Action	_	_	0	_	_	Offset=3223-3230
+6	seal	_	Action	_	_	0	_	_	Offset=3234-3238
+7	hole	_	Location	_	_	0	_	_	Offset=3243-3247
+
+# sent_id = s47
+# text = Smear the Vaseline over the puncture hole when the syringe is removed to seal the hole.
+1	Place	_	Action	_	_	0	_	_	Offset=3383-3388
+2	DNA	_	Reagent	_	_	0	_	_	Offset=3393-3405
+3	30	_	Amount	_	_	4	Measure	_	Offset=3411-3416
+4	corex	_	Location	_	_	0	_	_	Offset=3417-3428
+
+# sent_id = s48
+# text = Circular plasmid DNA is the lower band in the gradient.
+1	Extract	_	Action	_	_	0	_	_	Offset=3430-3437
+2	ethidium	_	Reagent	_	_	0	_	_	Offset=3442-3458
+3	DNA	_	Reagent	_	_	0	_	_	Offset=3468-3480
+4	adding	_	Action	_	_	0	_	_	Offset=3484-3490
+5	equal	_	Amount	_	_	6	Measure	_	Offset=3494-3507
+6	CsCl/TE	_	Reagent	_	_	0	_	_	Offset=3511-3548
+
+# sent_id = s49
+# text = Chromosomal DNA and nicked circular DNA is in the upper band in the gradient.
+1	Mix	_	Action	_	_	0	_	_	Offset=3549-3552
+2	gently	_	Modifier	_	_	0	_	_	Offset=3553-3559
+3	centrifuge	_	Action	_	_	0	_	_	Offset=3564-3574
+4	Sorvall	_	Device	_	_	0	_	_	Offset=3582-3600
+5	3,000	_	Speed	_	_	0	_	_	Offset=3604-3613
+6	1	_	Time	_	_	0	_	_	Offset=3615-3620
+7	4°C	_	Temperature	_	_	0	_	_	Offset=3622-3625
+
+# sent_id = s50
+# text = Place the DNA solution into 30 mL corex tubes.
+1	Pipet	_	Action	_	_	0	_	_	Offset=3627-3636
+2	upper	_	Reagent	_	_	0	_	_	Offset=3641-3664
+
+# sent_id = s51
+# text = Extract the ethidium bromide from the DNA solution by adding an equal  volume of CsCl/TE buffer saturated isopropanol.
+1	Repeat	_	Action	_	_	0	_	_	Offset=3666-3672
+2	isopropanol	_	Method	_	_	0	_	_	Offset=3677-3702
+
+# sent_id = s52
+# text = Mix gently and centrifuge in the Sorvall SS34 rotor at 3,000 rpm, 1 min, 4°C.
+1	Add	_	Action	_	_	0	_	_	Offset=3704-3707
+2	1.0	_	Amount	_	_	4	Measure	_	Offset=3708-3714
+3	3	_	Concentration	_	_	4	Measure	_	Offset=3718-3721
+4	NaOAc	_	Reagent	_	_	0	_	_	Offset=3722-3727
+5	tube	_	Location	_	_	6	Meronym	_	Offset=3736-3740
+6	DNA	_	Reagent	_	_	0	_	_	Offset=3744-3747
+7	adjust	_	Action	_	_	0	_	_	Offset=3752-3758
+8	volume	_	Measure-Type	_	_	0	_	_	Offset=3763-3769
+9	each	_	Modifier	_	_	10	Mod-Link	_	Offset=3773-3777
+10	tube	_	Location	_	_	0	_	_	Offset=3778-3782
+11	10.0	_	Amount	_	_	13	Measure	_	Offset=3786-3793
+12	1X	_	Concentration	_	_	13	Measure	_	Offset=3799-3801
+13	TE	_	Reagent	_	_	0	_	_	Offset=3802-3811
+
+# sent_id = s53
+# text = Pipet off the upper isopropanol layer.
+1	Precipitate	_	Action	_	_	0	_	_	Offset=3813-3824
+2	DNAs	_	Reagent	_	_	0	_	_	Offset=3829-3833
+3	2X	_	Amount	_	_	5	Measure	_	Offset=3839-3849
+4	100%	_	Concentration	_	_	5	Measure	_	Offset=3853-3857
+5	EtOH	_	Reagent	_	_	0	_	_	Offset=3858-3862
+
+# sent_id = s54
+# text = Repeat the isopropanol extraction 1X.
+1	Hold	_	Action	_	_	0	_	_	Offset=3864-3868
+2	-20°C	_	Temperature	_	_	0	_	_	Offset=3872-3877
+3	overnight	_	Time	_	_	0	_	_	Offset=3878-3887
+
+# sent_id = s55
+# text = Add 1.0 mL of 3 M NaOAc to each tube of DNA and adjust the volume in each tube to 10.0 mL with 1X TE buffer.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=3889-3899
+2	tubes	_	Location	_	_	0	_	_	Offset=3904-3909
+3	Sorvall	_	Device	_	_	0	_	_	Offset=3917-3935
+4	10,000	_	Speed	_	_	0	_	_	Offset=3939-3949
+5	10	_	Time	_	_	0	_	_	Offset=3951-3957
+6	4°C	_	Temperature	_	_	0	_	_	Offset=3959-3962
+
+# sent_id = s56
+# text = Precipitate the DNAs with 2X volumes of 100% EtOH.
+1	Discard	_	Action	_	_	0	_	_	Offset=3964-3971
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=3976-3988
+
+# sent_id = s57
+# text = Hold at -20°C overnight.
+1	Dry	_	Action	_	_	0	_	_	Offset=3990-3993
+2	pellets	_	Reagent	_	_	0	_	_	Offset=3998-4005
+3	briefly	_	Modifier	_	_	0	_	_	Offset=4006-4013
+4	10-15	_	Time	_	_	3	Setting	_	Offset=4015-4024
+5	vacuum	_	Device	_	_	0	_	_	Offset=4033-4050
+6	remove	_	Action	_	_	0	_	_	Offset=4054-4060
+7	EtOH	_	Reagent	_	_	0	_	_	Offset=4065-4069
+
+# sent_id = s58
+# text = Centrifuge the tubes in the Sorvall HB-4 rotor at 10,000 rpm, 10 min, 4°C.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=4071-4080
+2	plasmid	_	Reagent	_	_	0	_	_	Offset=4085-4097
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=4103-4105
+4	TE	_	Reagent	_	_	0	_	_	Offset=4106-4115
+
+# sent_id = s59
+# text = Discard the supernatants.
+1	Determine	_	Action	_	_	0	_	_	Offset=4117-4126
+2	DNA	_	Reagent	_	_	0	_	_	Offset=4131-4148
+
+# sent_id = s60
+# text = Dry the pellets briefly (10-15 min) in the vacuum desiccator to remove the EtOH.
+1	Store	_	Action	_	_	0	_	_	Offset=4150-4155
+2	DNAs	_	Reagent	_	_	0	_	_	Offset=4160-4164
+3	4°C	_	Temperature	_	_	0	_	_	Offset=4168-4171
+

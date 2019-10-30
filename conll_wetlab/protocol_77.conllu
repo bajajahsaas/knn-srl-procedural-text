@@ -1,0 +1,62 @@
+# sent_id = s1
+# text = Spore production for Phytophthora infestans
+1	Take	_	Action	_	_	0	_	_	Offset=44-48
+2	agar	_	Reagent	_	_	0	_	_	Offset=49-67
+3	glycerol	_	Reagent	_	_	0	_	_	Offset=73-87
+4	place	_	Action	_	_	0	_	_	Offset=92-97
+5	3-4	_	Modifier	_	_	0	_	_	Offset=98-108
+6	agar	_	Location	_	_	0	_	_	Offset=112-123
+
+# sent_id = s2
+# text = Take agar cubes / rains from glycerol stock and place 3-4 pieces on agar plates.
+1	cut	_	Action	_	_	0	_	_	Offset=151-154
+2	small	_	Method	_	_	0	_	_	Offset=155-166
+3	place	_	Action	_	_	0	_	_	Offset=191-196
+4	3-4	_	Method	_	_	0	_	_	Offset=197-212
+5	agar	_	Location	_	_	0	_	_	Offset=220-230
+
+# sent_id = s3
+# text = When using another plate, cut small cubes (approx 0.5x0.5 cm) and place 3-4 upside down on the agar plate For longer term cultivation use RyeA agar.
+1	Grow	_	Action	_	_	0	_	_	Offset=305-309
+2	plates	_	Device	_	_	0	_	_	Offset=310-316
+3	7	_	Time	_	_	0	_	_	Offset=327-333
+4	dark	_	Location	_	_	0	_	_	Offset=341-345
+
+# sent_id = s4
+# text = For sporulation use RyeB agar.
+1	Move	_	Action	_	_	0	_	_	Offset=418-422
+2	plates	_	Device	_	_	0	_	_	Offset=423-429
+3	16/8	_	Method	_	_	0	_	_	Offset=436-458
+4	2-3	_	Time	_	_	0	_	_	Offset=469-477
+5	induce	_	Action	_	_	0	_	_	Offset=481-487
+6	sporulation	_	Method	_	_	0	_	_	Offset=488-499
+
+# sent_id = s5
+# text = Grow plates for about 7 days in the dark, until the plate is fully covered Optimum temperature is about 18-20°C.
+1	Harvest	_	Action	_	_	0	_	_	Offset=501-508
+2	sporangia	_	Reagent	_	_	0	_	_	Offset=509-518
+3	adding	_	Action	_	_	0	_	_	Offset=522-528
+4	several	_	Amount	_	_	5	Measure	_	Offset=529-539
+5	ice	_	Reagent	_	_	0	_	_	Offset=540-554
+6	plates	_	Location	_	_	0	_	_	Offset=562-568
+7	scraping	_	Action	_	_	0	_	_	Offset=573-581
+8	sporangia	_	Reagent	_	_	0	_	_	Offset=589-598
+9	pipette	_	Device	_	_	0	_	_	Offset=606-617
+
+# sent_id = s6
+# text = Move plates to at 16/8 light/dark cycles for about 2-3 days to induce sporulation.
+1	Aspirate	_	Action	_	_	0	_	_	Offset=619-627
+2	all	_	Modifier	_	_	3	Mod-Link	_	Offset=628-631
+3	liquid	_	Reagent	_	_	0	_	_	Offset=632-638
+4	store	_	Action	_	_	0	_	_	Offset=643-648
+5	fridge	_	Location	_	_	0	_	_	Offset=652-658
+6	3-6	_	Time	_	_	0	_	_	Offset=663-672
+
+# sent_id = s7
+# text = Harvest sporangia by adding several ml ice cold water to the plates and scraping of the sporangia with a pipette tip.
+1	Pipette	_	Action	_	_	0	_	_	Offset=707-718
+2	upper	_	Reagent	_	_	0	_	_	Offset=723-735
+3	check	_	Action	_	_	0	_	_	Offset=770-775
+4	spore	_	Reagent	_	_	0	_	_	Offset=776-789
+5	microsope	_	Location	_	_	0	_	_	Offset=796-805
+

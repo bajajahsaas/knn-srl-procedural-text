@@ -1,0 +1,96 @@
+# sent_id = s1
+# text = PhosphoSerine Western Blotting
+1	Run	_	Action	_	_	0	_	_	Offset=31-34
+2	40%	_	Concentration	_	_	3	Measure	_	Offset=35-38
+3	IP	_	Reagent	_	_	0	_	_	Offset=42-51
+4	10%	_	Concentration	_	_	5	Measure	_	Offset=55-58
+5	gel	_	Reagent	_	_	0	_	_	Offset=59-62
+
+# sent_id = s2
+# text = Run 40% of IP eluate on 10% gel.
+1	Transfer	_	Action	_	_	0	_	_	Offset=64-72
+2	protein	_	Reagent	_	_	0	_	_	Offset=73-80
+3	PVDF	_	Reagent	_	_	0	_	_	Offset=84-97
+4	1hr	_	Time	_	_	0	_	_	Offset=102-105
+5	RT	_	Temperature	_	_	0	_	_	Offset=109-111
+6	ice	_	Device	_	_	0	_	_	Offset=117-125
+7	100V	_	Generic-Measure	_	_	6	Setting	_	Offset=127-131
+
+# sent_id = s3
+# text = Transfer protein to PVDF membrane for 1hr at RT with ice pack (100V).
+1	Cut	_	Action	_	_	0	_	_	Offset=134-137
+2	membrane	_	Reagent	_	_	0	_	_	Offset=138-146
+3	just	_	Modifier	_	_	4	Mod-Link	_	Offset=147-157
+4	180kD	_	Generic-Measure	_	_	0	_	_	Offset=158-163
+
+# sent_id = s4
+# text = Cut membrane just below 180kD (top MW marker on benchmark prestained ladder).
+1	Cut	_	Action	_	_	0	_	_	Offset=212-215
+2	Membrane	_	Reagent	_	_	0	_	_	Offset=216-224
+3	~82kD	_	Generic-Measure	_	_	0	_	_	Offset=228-233
+
+# sent_id = s5
+# text = Cut Membrane at ~82kD (the blue band above the pink band using benchmark prestained ladder).
+1	Block	_	Action	_	_	0	_	_	Offset=596-601
+2	membrane	_	Reagent	_	_	0	_	_	Offset=602-610
+3	5%	_	Concentration	_	_	4	Measure	_	Offset=616-618
+4	BSA	_	Reagent	_	_	5	Meronym	6:Meronym	Offset=619-622
+5	IgG	_	Reagent	_	_	0	_	_	Offset=624-627
+6	Protease-Free	_	Reagent	_	_	0	_	_	Offset=632-645
+7	TBST	_	Reagent	_	_	4	Or	_	Offset=647-651
+8	2hrs	_	Time	_	_	0	_	_	Offset=656-660
+9	RT	_	Temperature	_	_	0	_	_	Offset=664-666
+10	Probe	_	Action	_	_	0	_	_	Offset=667-672
+11	membrane	_	Reagent	_	_	0	_	_	Offset=673-681
+12	rabbit-anti-phosphoserine	_	Reagent	_	_	0	_	_	Offset=687-721
+13	millipore	_	Reagent	_	_	14	Meronym	_	Offset=727-736
+14	IgG-Free/Protease-Free	_	Reagent	_	_	0	_	_	Offset=740-771
+15	1:2000	_	Generic-Measure	_	_	14	Measure	_	Offset=773-779
+16	1:1000	_	Generic-Measure	_	_	15	Or	_	Offset=793-799
+
+# sent_id = s6
+# text = **Note, the GST-tagged protein is ~115 kD.
+1	Probe	_	Action	_	_	0	_	_	Offset=835-840
+2	overnight	_	Time	_	_	0	_	_	Offset=841-850
+3	4C	_	Temperature	_	_	0	_	_	Offset=854-856
+4	cold	_	Location	_	_	5	Meronym	_	Offset=860-869
+5	tilting	_	Location	_	_	0	_	_	Offset=873-885
+
+# sent_id = s7
+# text = Cutting the membrane in the places will help reduce non-specific binding.
+1	Rinse	_	Action	_	_	0	_	_	Offset=887-892
+2	membrane	_	Reagent	_	_	0	_	_	Offset=893-901
+3	8x	_	Numerical	_	_	0	_	_	Offset=902-904
+4	2hrs	_	Time	_	_	0	_	_	Offset=924-928
+5	1x	_	Concentration	_	_	6	Measure	_	Offset=934-936
+6	TBST	_	Reagent	_	_	0	_	_	Offset=937-941
+7	Block	_	Action	_	_	0	_	_	Offset=942-947
+8	membrane	_	Reagent	_	_	0	_	_	Offset=948-956
+9	5%	_	Concentration	_	_	10	Measure	_	Offset=960-962
+10	milk/TBST	_	Reagent	_	_	0	_	_	Offset=963-972
+11	1hr	_	Time	_	_	0	_	_	Offset=977-980
+12	Probe	_	Action	_	_	0	_	_	Offset=981-986
+13	mouse-anti-rabbit	_	Reagent	_	_	0	_	_	Offset=992-1049
+14	1:2000	_	Generic-Measure	_	_	13	Measure	_	Offset=1053-1059
+15	2hrs	_	Time	_	_	0	_	_	Offset=1064-1068
+16	RT	_	Temperature	_	_	0	_	_	Offset=1072-1074
+
+# sent_id = s8
+# text = Also, running a ladder in the middle of the gel will help you cut straight across the membrane in the event that the gel is transferred at an angle relative to the membrane.
+1	Rinse	_	Action	_	_	0	_	_	Offset=1076-1081
+2	6x	_	Numerical	_	_	0	_	_	Offset=1082-1084
+3	TBST	_	Reagent	_	_	0	_	_	Offset=1090-1094
+4	1hr	_	Time	_	_	0	_	_	Offset=1100-1103
+5	RT	_	Temperature	_	_	0	_	_	Offset=1107-1109
+
+# sent_id = s9
+# text = Block membrane with 5% BSA (IgG and Protease-Free)/TBST for 2hrs at RT Probe membrane with rabbit-anti-phosphoserine antibody from millipore in IgG-Free/Protease-Free BSA/TBST (1:2000, you can try 1:1000 if signal is not great at 1:2000).
+1	Activate	_	Action	_	_	0	_	_	Offset=1111-1119
+2	membrane	_	Reagent	_	_	0	_	_	Offset=1120-1128
+3	pico	_	Reagent	_	_	0	_	_	Offset=1134-1142
+
+# sent_id = s10
+# text = Probe overnight at 4C in cold room on tilting tray.
+1	Visualize	_	Action	_	_	0	_	_	Offset=1144-1153
+2	Amersham	_	Reagent	_	_	0	_	_	Offset=1159-1172
+

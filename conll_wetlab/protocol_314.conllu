@@ -1,0 +1,35 @@
+# sent_id = s1
+# text = Kane Lab Lyophilized Coffee
+1	Place	_	Action	_	_	0	_	_	Offset=28-33
+2	1	_	Numerical	_	_	3	Measure	_	Offset=34-35
+3	cup	_	Reagent	_	_	0	_	_	Offset=36-49
+4	clean	_	Modifier	_	_	5	Mod-Link	_	Offset=73-78
+5	lyophilization	_	Location	_	_	0	_	_	Offset=80-100
+
+# sent_id = s2
+# text = Place 1 cup of coffee (cream&sugar ok) in a (clean) lyophilization flask. 
+1	Flash	_	Action	_	_	0	_	_	Offset=103-115
+2	bathing	_	Action	_	_	0	_	_	Offset=119-126
+3	flask	_	Location	_	_	0	_	_	Offset=127-132
+4	hand	_	Method	_	_	0	_	_	Offset=139-152
+5	bath	_	Location	_	_	6	Meronym	_	Offset=159-163
+6	liquid	_	Reagent	_	_	0	_	_	Offset=167-182
+
+# sent_id = s3
+# text = Flash freeze by bathing flask, with hand rotation, in a bath of liquid nitrogen, until all liquid frozen. 
+1	Attach	_	Action	_	_	0	_	_	Offset=210-216
+2	vacuum	_	Device	_	_	0	_	_	Offset=220-248
+3	overnight	_	Time	_	_	0	_	_	Offset=249-258
+
+# sent_id = s4
+# text = Attach to vacuum lyophilization system overnight. 
+1	Scrape	_	Action	_	_	0	_	_	Offset=261-267
+2	lyophilized	_	Reagent	_	_	0	_	_	Offset=268-288
+3	clean	_	Modifier	_	_	4	Mod-Link	_	Offset=296-301
+4	coffee	_	Location	_	_	0	_	_	Offset=302-312
+
+# sent_id = s5
+# text = Scrape lyophilized crystals into a clean coffee cup. 
+1	Add	_	Action	_	_	0	_	_	Offset=315-318
+2	hot	_	Reagent	_	_	0	_	_	Offset=319-328
+

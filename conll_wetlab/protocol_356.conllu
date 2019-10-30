@@ -1,0 +1,45 @@
+# sent_id = s1
+# text = How to make a 50 mg/ml Kanamycin Stock Solution
+1	Weigh	_	Action	_	_	0	_	_	Offset=48-53
+2	0.5	_	Amount	_	_	3	Measure	_	Offset=54-59
+3	Kanamycin	_	Reagent	_	_	0	_	_	Offset=63-84
+
+# sent_id = s2
+# text = Weigh 0.5 g of Kanamycin Monosulfate. 
+1	Add	_	Action	_	_	0	_	_	Offset=87-90
+2	10	_	Amount	_	_	4	Measure	_	Offset=91-96
+3	sterile	_	Modifier	_	_	4	Mod-Link	_	Offset=100-107
+4	H2O	_	Reagent	_	_	0	_	_	Offset=108-111
+
+# sent_id = s3
+# text = Add 10 ml of sterile H2O.
+1	Disolve	_	Action	_	_	0	_	_	Offset=113-120
+2	completely	_	Modifier	_	_	0	_	_	Offset=121-131
+
+# sent_id = s4
+# text = Disolve completely.
+1	Prewet	_	Action	_	_	0	_	_	Offset=133-139
+2	0.2	_	Size	_	_	3	Setting	_	Offset=142-148
+3	syringe	_	Device	_	_	0	_	_	Offset=149-163
+4	drawing	_	Action	_	_	0	_	_	Offset=167-174
+5	5-10	_	Amount	_	_	7	Measure	_	Offset=183-190
+6	sterile	_	Modifier	_	_	7	Mod-Link	_	Offset=194-201
+7	H2O	_	Reagent	_	_	9	Coreference-Link	_	Offset=202-205
+8	discard	_	Action	_	_	0	_	_	Offset=210-217
+9	water	_	Mention	_	_	0	_	_	Offset=218-223
+
+# sent_id = s5
+# text = Prewet a 0.2 µm syringe filter by drawing through 5-10 ml of sterile H2O and discard water.
+1	Sterilize	_	Action	_	_	0	_	_	Offset=225-234
+2	Kanamycin	_	Reagent	_	_	0	_	_	Offset=235-250
+3	prepared	_	Modifier	_	_	5	Mod-Link	_	Offset=263-271
+4	0.2	_	Size	_	_	5	Setting	_	Offset=272-278
+5	syringe	_	Device	_	_	0	_	_	Offset=279-293
+
+# sent_id = s6
+# text = Sterilize Kanamycin Stock through the prepared 0.2 µm syringe filter.
+1	Stock	_	Reagent	_	_	0	_	_	Offset=295-300
+2	kept	_	Action	_	_	0	_	_	Offset=308-312
+3	-20°C	_	Temperature	_	_	0	_	_	Offset=316-321
+4	1	_	Time	_	_	0	_	_	Offset=326-332
+

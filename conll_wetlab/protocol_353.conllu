@@ -1,0 +1,33 @@
+# sent_id = s1
+# text = Fixing Cells with Paraformaldehyde (PFA)
+1	Prepare	_	Action	_	_	0	_	_	Offset=41-48
+2	PFA	_	Reagent	_	_	0	_	_	Offset=49-52
+3	powder	_	Reagent	_	_	0	_	_	Offset=58-71
+4	PBS	_	Reagent	_	_	0	_	_	Offset=77-80
+
+# sent_id = s2
+# text = Prepare PFA from powder Dilute with PBS.
+1	Store	_	Action	_	_	0	_	_	Offset=82-87
+2	undiluted	_	Modifier	_	_	3	Mod-Link	_	Offset=92-101
+3	stock	_	Reagent	_	_	0	_	_	Offset=102-107
+4	-20°C	_	Temperature	_	_	0	_	_	Offset=111-116
+
+# sent_id = s3
+# text = Store the undiluted stock at -20°C until needed.
+1	Add	_	Action	_	_	0	_	_	Offset=131-134
+2	equal	_	Amount	_	_	4	Measure	_	Offset=139-151
+3	4%	_	Concentration	_	_	4	Measure	_	Offset=159-161
+4	stock	_	Reagent	_	_	0	_	_	Offset=162-167
+5	samples	_	Reagent	_	_	0	_	_	Offset=171-178
+6	2%	_	Concentration	_	_	4	Measure	_	Offset=227-229
+
+# sent_id = s4
+# text = Add and equal volume of the 4% stock to samples to end up with a final concentration of at most 2% PFA.
+1	Fix	_	Action	_	_	0	_	_	Offset=235-238
+2	cells	_	Reagent	_	_	0	_	_	Offset=239-244
+3	ice	_	Reagent	_	_	0	_	_	Offset=248-251
+4	15-30	_	Time	_	_	0	_	_	Offset=256-269
+5	Wash	_	Action	_	_	0	_	_	Offset=279-283
+6	2	_	Numerical	_	_	0	_	_	Offset=284-285
+7	PBS	_	Reagent	_	_	0	_	_	Offset=292-295
+

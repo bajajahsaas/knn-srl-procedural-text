@@ -1,0 +1,131 @@
+# sent_id = s1
+# text = Determining Genome Targeting Efficiency using T7 Endonuclease I (M0302)
+1	Set	_	Action	_	_	0	_	_	Offset=72-78
+2	50	_	Amount	_	_	3	Measure	_	Offset=81-86
+3	PCR	_	Reagent	_	_	0	_	_	Offset=87-99
+4	~100	_	Amount	_	_	5	Measure	_	Offset=106-113
+5	genomic	_	Reagent	_	_	0	_	_	Offset=117-128
+
+# sent_id = s2
+# text = Set up a 50 µl PCR reaction using ~100 ng of genomic DNA as a template.
+1	For	_	Amount	_	_	0	_	_	Offset=144-161
+2	set	_	Action	_	_	0	_	_	Offset=162-168
+3	3	_	Amount	_	_	4	Measure	_	Offset=169-170
+4	PCR	_	Reagent	_	_	0	_	_	Offset=171-184
+5	positive	_	Reagent	_	_	4	Meronym	_	Offset=186-194
+6	negative	_	Reagent	_	_	4	Meronym	_	Offset=196-204
+7	no-template	_	Reagent	_	_	4	Meronym	_	Offset=206-225
+
+# sent_id = s3
+# text = For each amplicon set up 3 PCR reactions (positive, negative, no-template control). 
+1	Gently	_	Modifier	_	_	0	_	_	Offset=229-235
+2	mix	_	Action	_	_	0	_	_	Offset=236-239
+3	reaction	_	Reagent	_	_	0	_	_	Offset=244-252
+
+# sent_id = s4
+# text = Gently mix the reaction.
+1	Collect	_	Action	_	_	0	_	_	Offset=254-261
+2	liquid	_	Reagent	_	_	0	_	_	Offset=266-272
+3	bottom	_	Location	_	_	0	_	_	Offset=280-286
+4	tube	_	Location	_	_	3	Meronym	_	Offset=294-298
+5	quick	_	Modifier	_	_	0	_	_	Offset=304-309
+6	spin	_	Action	_	_	0	_	_	Offset=310-314
+
+# sent_id = s5
+# text = Collect all liquid to the bottom of the tube by a quick spin if necessary.
+1	Transfer	_	Action	_	_	0	_	_	Offset=329-337
+2	PCR	_	Reagent	_	_	0	_	_	Offset=338-341
+3	tubes	_	Location	_	_	2	Meronym	_	Offset=342-347
+4	PCR	_	Device	_	_	0	_	_	Offset=353-364
+5	thermocycling	_	Action	_	_	0	_	_	Offset=375-388
+
+# sent_id = s6
+# text = Transfer PCR tubes to a PCR machine and begin thermocycling.
+1	Analyze	_	Action	_	_	0	_	_	Offset=390-397
+2	small	_	Amount	_	_	3	Measure	_	Offset=400-412
+3	PCR	_	Reagent	_	_	0	_	_	Offset=427-438
+4	verify	_	Action	_	_	0	_	_	Offset=442-453
+5	appropriate	_	Action	_	_	0	_	_	Offset=458-483
+
+# sent_id = s7
+# text = Analyze a small amount of the of the PCR product to verify size and appropriate amplification.
+1	Purify	_	Action	_	_	0	_	_	Offset=485-491
+2	PCR	_	Reagent	_	_	0	_	_	Offset=496-508
+3	90	_	Amount	_	_	4	Measure	_	Offset=515-520
+4	Ampure	_	Reagent	_	_	0	_	_	Offset=524-539
+
+# sent_id = s8
+# text = Purify the PCR reaction using 90 µl of Ampure XP beads following the manufacturer’s recommendations.
+1	Elute	_	Action	_	_	0	_	_	Offset=586-591
+2	PCR	_	Reagent	_	_	0	_	_	Offset=592-604
+3	30	_	Amount	_	_	4	Measure	_	Offset=608-613
+4	water	_	Reagent	_	_	0	_	_	Offset=617-622
+5	recovering	_	Action	_	_	0	_	_	Offset=624-634
+6	25	_	Amount	_	_	0	_	_	Offset=635-640
+
+# sent_id = s9
+# text = Elute PCR products in 30 µl of water, recovering 25 µl.
+1	Measure	_	Action	_	_	0	_	_	Offset=642-667
+2	f	_	Modifier	_	_	3	Mod-Link	_	Offset=679-680
+3	PCR	_	Reagent	_	_	0	_	_	Offset=684-696
+
+# sent_id = s10
+# text = Measure the concentration of the purified PCR products.
+1	Assemble	_	Action	_	_	0	_	_	Offset=698-706
+2	reactions	_	Reagent	_	_	0	_	_	Offset=707-716
+3	Anneal	_	Action	_	_	0	_	_	Offset=729-735
+4	PCR	_	Reagent	_	_	0	_	_	Offset=740-752
+5	thermocycler	_	Device	_	_	0	_	_	Offset=758-770
+
+# sent_id = s11
+# text = Assemble reactions as follows: Anneal the PCR products in a thermocycler (see guidelines for conditions). 
+1	Add	_	Action	_	_	0	_	_	Offset=805-808
+2	1	_	Amount	_	_	3	Measure	_	Offset=809-813
+3	T7	_	Reagent	_	_	0	_	_	Offset=821-838
+4	annealed	_	Modifier	_	_	5	Mod-Link	_	Offset=846-854
+5	PCR	_	Reagent	_	_	0	_	_	Offset=855-867
+
+# sent_id = s12
+# text = Add 1 µl of the T7 Endonuclease I to the annealed PCR products. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=870-878
+2	37°C	_	Temperature	_	_	0	_	_	Offset=882-886
+3	15	_	Time	_	_	0	_	_	Offset=891-901
+
+# sent_id = s13
+# text = Incubate at 37°C for 15 minutes. 
+1	Stop	_	Action	_	_	0	_	_	Offset=904-908
+2	reaction	_	Reagent	_	_	0	_	_	Offset=913-921
+3	adding	_	Action	_	_	0	_	_	Offset=925-931
+4	1.5	_	Amount	_	_	6	Measure	_	Offset=932-938
+5	0.25	_	Concentration	_	_	6	Measure	_	Offset=942-948
+6	EDTA	_	Reagent	_	_	0	_	_	Offset=949-953
+
+# sent_id = s14
+# text = Stop the reaction by adding 1.5 µl of 0.25 M EDTA.
+1	Purify	_	Action	_	_	0	_	_	Offset=955-961
+2	reaction	_	Reagent	_	_	0	_	_	Offset=966-974
+3	36	_	Amount	_	_	4	Measure	_	Offset=981-986
+4	Ampure	_	Reagent	_	_	0	_	_	Offset=990-1005
+
+# sent_id = s15
+# text = Purify the reaction using 36 µl of Ampure XP beads according to the manufacturer’s suggestion.
+1	Elute	_	Action	_	_	0	_	_	Offset=1050-1055
+2	DNA	_	Reagent	_	_	6	Coreference-Link	_	Offset=1060-1073
+3	20	_	Amount	_	_	4	Measure	_	Offset=1077-1082
+4	water	_	Reagent	_	_	0	_	_	Offset=1086-1091
+5	recovering	_	Action	_	_	0	_	_	Offset=1093-1103
+6	15	_	Mention	_	_	0	_	_	Offset=1104-1109
+
+# sent_id = s16
+# text = Elute the DNA fragments in 20 µl of water, recovering 15 µl.
+1	Analyze	_	Action	_	_	0	_	_	Offset=1111-1118
+2	fragmented	_	Modifier	_	_	3	Mod-Link	_	Offset=1123-1133
+3	PCR	_	Reagent	_	_	0	_	_	Offset=1134-1146
+4	determine	_	Action	_	_	0	_	_	Offset=1151-1172
+5	nuclease-specific	_	Reagent	_	_	0	_	_	Offset=1176-1211
+
+# sent_id = s17
+# text = Analyze the fragmented PCR products and determine the percent of nuclease-specific cleavage products (fraction cleaved). 
+1	Calculate	_	Action	_	_	0	_	_	Offset=1233-1274
+2	formula:	_	Method	_	_	0	_	_	Offset=1295-1362
+

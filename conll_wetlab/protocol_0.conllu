@@ -1,0 +1,167 @@
+# sent_id = s1
+# text = SpinSmart Plasmid Purification Protocol: High-copy plasmid DNA from E. coli
+1	Start	_	Action	_	_	0	_	_	Offset=76-81
+2	1-5	_	Amount	_	_	3	Measure	_	Offset=87-93
+3	E.	_	Reagent	_	_	0	_	_	Offset=94-113
+4	pellet	_	Action	_	_	0	_	_	Offset=115-121
+5	cells	_	Reagent	_	_	0	_	_	Offset=122-127
+6	microcentrifuge	_	Device	_	_	0	_	_	Offset=133-148
+7	30	_	Time	_	_	0	_	_	Offset=153-159
+8	11,000	_	Speed	_	_	0	_	_	Offset=163-173
+9	Discard	_	Action	_	_	0	_	_	Offset=175-182
+10	supernatant	_	Reagent	_	_	12	Coreference-Link	_	Offset=187-198
+11	remove	_	Action	_	_	0	_	_	Offset=203-209
+12	liquid	_	Mention	_	_	0	_	_	Offset=225-231
+
+# sent_id = s2
+# text = Start with 1-5 ml E. coli LB culture*, pellet cells in a microcentrifuge for 30 sec at 11,000 x g. Discard the supernatant and remove as much of the liquid as possible.
+1	Add	_	Action	_	_	0	_	_	Offset=245-248
+2	250	_	Amount	_	_	3	Measure	_	Offset=249-255
+3	PB1	_	Reagent	_	_	0	_	_	Offset=256-279
+
+# sent_id = s3
+# text = Add 250 µl PB1 Resuspension Buffer.
+1	Vortex	_	Action	_	_	0	_	_	Offset=281-287
+2	pipet	_	Action	_	_	0	_	_	Offset=291-296
+3	up	_	Method	_	_	0	_	_	Offset=297-308
+4	resuspend	_	Action	_	_	0	_	_	Offset=312-321
+5	cell	_	Reagent	_	_	0	_	_	Offset=326-337
+6	completely	_	Modifier	_	_	0	_	_	Offset=338-348
+
+# sent_id = s4
+# text = Vortex or pipet up and down to resuspend the cell pellet completely.
+1	Add	_	Action	_	_	0	_	_	Offset=384-387
+2	250	_	Amount	_	_	3	Measure	_	Offset=388-394
+3	PB2	_	Reagent	_	_	0	_	_	Offset=395-411
+
+# sent_id = s5
+# text = No cell clumps should be visible.
+1	Invert	_	Action	_	_	0	_	_	Offset=413-419
+2	tube	_	Location	_	_	0	_	_	Offset=424-428
+3	6-8	_	Numerical	_	_	0	_	_	Offset=429-432
+4	mix	_	Action	_	_	0	_	_	Offset=442-445
+5	completely	_	Modifier	_	_	0	_	_	Offset=446-456
+
+# sent_id = s6
+# text = Add 250 µl PB2 Lysis Buffer.
+1	Incubate	_	Action	_	_	0	_	_	Offset=474-482
+2	room	_	Temperature	_	_	0	_	_	Offset=486-502
+3	5	_	Time	_	_	0	_	_	Offset=513-518
+4	lysate	_	Reagent	_	_	0	_	_	Offset=528-534
+5	appears	_	Modifier	_	_	0	_	_	Offset=535-542
+6	clear	_	Action	_	_	0	_	_	Offset=543-548
+
+# sent_id = s7
+# text = Invert the tube 6-8 times to mix completely.
+1	Add	_	Action	_	_	0	_	_	Offset=550-553
+2	300	_	Amount	_	_	3	Measure	_	Offset=554-560
+3	PB3	_	Reagent	_	_	0	_	_	Offset=561-585
+
+# sent_id = s8
+# text = Do not vortex!.
+1	Invert	_	Action	_	_	0	_	_	Offset=588-594
+2	tube	_	Location	_	_	0	_	_	Offset=599-603
+3	6-8	_	Numerical	_	_	0	_	_	Offset=604-607
+4	mix	_	Method	_	_	0	_	_	Offset=617-620
+5	completely	_	Modifier	_	_	0	_	_	Offset=621-631
+
+# sent_id = s9
+# text = Incubate at room temperature for up to 5 min or until lysate appears clear.
+1	Do	_	Action	_	_	0	_	_	Offset=633-646
+
+# sent_id = s10
+# text = Add 300 µl PB3 Neutralization Buffer.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=649-659
+2	5	_	Time	_	_	0	_	_	Offset=664-669
+3	11,000	_	Speed	_	_	0	_	_	Offset=673-683
+4	room	_	Temperature	_	_	0	_	_	Offset=687-703
+
+# sent_id = s11
+# text = Invert the tube 6-8 times to mix completely.
+1	Place	_	Action	_	_	0	_	_	Offset=823-828
+2	SpinSmart	_	Location	_	_	0	_	_	Offset=831-863
+3	Collection	_	Location	_	_	0	_	_	Offset=869-884
+4	2	_	Amount	_	_	3	Measure	_	Offset=886-890
+5	load	_	Action	_	_	0	_	_	Offset=896-900
+6	maximum	_	Modifier	_	_	7	Mod-Link	_	Offset=903-910
+7	750	_	Amount	_	_	8	Measure	_	Offset=914-920
+8	supernatant	_	Reagent	_	_	0	_	_	Offset=928-939
+9	column	_	Reagent	_	_	0	_	_	Offset=997-1003
+
+# sent_id = s12
+# text = Do not vortex!.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1005-1015
+2	1	_	Time	_	_	0	_	_	Offset=1020-1025
+3	11,000	_	Speed	_	_	0	_	_	Offset=1029-1039
+4	Discard	_	Action	_	_	0	_	_	Offset=1041-1048
+5	flow-through	_	Reagent	_	_	0	_	_	Offset=1049-1061
+6	place	_	Action	_	_	0	_	_	Offset=1066-1071
+7	SpinSmart	_	Location	_	_	0	_	_	Offset=1076-1108
+8	Collection	_	Location	_	_	0	_	_	Offset=1118-1133
+9	2	_	Amount	_	_	8	Measure	_	Offset=1135-1139
+
+# sent_id = s13
+# text = Centrifuge for 5 min at 11,000 x g at room temperature.
+1	perform	_	Action	_	_	0	_	_	Offset=1247-1254
+2	wash	_	Method	_	_	0	_	_	Offset=1257-1266
+3	500	_	Amount	_	_	4	Measure	_	Offset=1272-1278
+4	PB4	_	Reagent	_	_	0	_	_	Offset=1279-1294
+5	pre-warmed	_	Action	_	_	0	_	_	Offset=1295-1305
+6	50°C	_	Temperature	_	_	0	_	_	Offset=1309-1313
+
+# sent_id = s14
+# text = If precipitate is not completely clear from the lysate, centrifuge again for 5 min at 11,000 x g at room temperature.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1315-1325
+2	1	_	Time	_	_	0	_	_	Offset=1330-1335
+3	11,000	_	Speed	_	_	0	_	_	Offset=1339-1349
+
+# sent_id = s15
+# text = Place a SpinSmart Plasmid Binding Column in a Collection Tube (2 ml) and load a maximum of 750 µl of the supernatant (from the "Lysate Clarification" section above) onto the column.
+1	Add	_	Action	_	_	0	_	_	Offset=1385-1388
+2	600	_	Amount	_	_	3	Measure	_	Offset=1389-1395
+3	PB5	_	Reagent	_	_	0	_	_	Offset=1396-1411
+
+# sent_id = s16
+# text = Centrifuge for 1 min at 11,000 x g. Discard flow-through and place the SpinSmart Plasmid Binding Column into the Collection Tube (2 ml).
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1445-1455
+2	1	_	Time	_	_	0	_	_	Offset=1460-1465
+3	11,000	_	Speed	_	_	0	_	_	Offset=1469-1479
+4	Discard	_	Action	_	_	0	_	_	Offset=1481-1488
+5	flow-through	_	Reagent	_	_	0	_	_	Offset=1489-1501
+6	place	_	Action	_	_	0	_	_	Offset=1506-1511
+7	SpinSmart	_	Reagent	_	_	0	_	_	Offset=1516-1540
+8	empty	_	Modifier	_	_	9	Mod-Link	_	Offset=1555-1560
+9	Collection	_	Location	_	_	10	Or	_	Offset=1561-1576
+10	2	_	Amount	_	_	0	_	_	Offset=1578-1582
+
+# sent_id = s17
+# text = Optional: For host strains containing high levels of nucleases (e.g.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1585-1595
+2	2	_	Time	_	_	0	_	_	Offset=1600-1605
+3	11,000	_	Speed	_	_	0	_	_	Offset=1609-1619
+4	discard	_	Action	_	_	0	_	_	Offset=1624-1631
+5	Collection	_	Location	_	_	0	_	_	Offset=1636-1651
+6	2	_	Amount	_	_	5	Measure	_	Offset=1653-1657
+
+# sent_id = s18
+# text = HB101 or strains of the JM series), perform a wash step with 500 µl PB4 Wash Buffer pre-warmed to 50°C.
+1	Place	_	Action	_	_	0	_	_	Offset=1660-1665
+2	SpinSmart	_	Location	_	_	0	_	_	Offset=1670-1702
+3	1.5	_	Amount	_	_	4	Measure	_	Offset=1708-1714
+4	microcentrifuge	_	Location	_	_	0	_	_	Offset=1715-1735
+5	add	_	Action	_	_	0	_	_	Offset=1755-1758
+6	50	_	Amount	_	_	7	Measure	_	Offset=1759-1764
+7	PB6	_	Reagent	_	_	0	_	_	Offset=1765-1783
+
+# sent_id = s19
+# text = Centrifuge for 1 min at 11,000 x g before proceeding with Buffer PB5.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1785-1793
+2	1	_	Time	_	_	0	_	_	Offset=1798-1803
+3	room	_	Temperature	_	_	0	_	_	Offset=1807-1823
+
+# sent_id = s20
+# text = Add 600 µl PB5 Wash Buffer (make sure EtOH has been added).
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1825-1835
+2	1	_	Time	_	_	0	_	_	Offset=1840-1845
+3	11,000	_	Speed	_	_	0	_	_	Offset=1849-1859
+

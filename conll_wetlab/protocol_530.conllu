@@ -1,0 +1,87 @@
+# sent_id = s1
+# text = A Non-Interfering™ (NI) Protein Assay (high throughput 96-well)
+1	Add	_	Action	_	_	0	_	_	Offset=324-327
+2	1-50µl	_	Amount	_	_	3	Measure	_	Offset=328-334
+3	protein	_	Reagent	_	_	0	_	_	Offset=342-357
+4	2ml	_	Size	_	_	5	Measure	_	Offset=375-378
+5	tubes	_	Location	_	_	0	_	_	Offset=379-384
+
+# sent_id = s2
+# text = Perform assays at room temperature.
+1	Add	_	Action	_	_	0	_	_	Offset=386-389
+2	0.5ml	_	Amount	_	_	3	Measure	_	Offset=390-395
+3	UPPA™	_	Reagent	_	_	0	_	_	Offset=396-403
+4	tube	_	Location	_	_	0	_	_	Offset=412-416
+5	vortex	_	Action	_	_	0	_	_	Offset=421-427
+
+# sent_id = s3
+# text = Use 2ml tubes for assay.
+1	Add	_	Action	_	_	0	_	_	Offset=429-432
+2	0.5ml	_	Reagent	_	_	0	_	_	Offset=433-447
+3	tubes	_	Location	_	_	0	_	_	Offset=455-460
+4	vortex	_	Action	_	_	0	_	_	Offset=465-471
+
+# sent_id = s4
+# text = Prepare a set of protein standards using the supplied BSA or Non-Animal Protein Standard as indicated in the table below: 
+1	Incubate	_	Action	_	_	0	_	_	Offset=473-481
+2	2-3	_	Time	_	_	0	_	_	Offset=486-497
+3	room	_	Temperature	_	_	0	_	_	Offset=501-517
+
+# sent_id = s5
+# text = Tube #123456Protein Standard [2mg/ml] (µl)048122025Protein (µg)0816244050. 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=519-529
+2	titer	_	Location	_	_	0	_	_	Offset=534-545
+3	~5,000xg	_	Speed	_	_	0	_	_	Offset=549-557
+4	7	_	Time	_	_	0	_	_	Offset=562-571
+
+# sent_id = s6
+# text = Add 1-50µl of the protein samples to be assayed to 2ml tubes.
+1	Invert	_	Action	_	_	0	_	_	Offset=599-605
+2	titer	_	Location	_	_	0	_	_	Offset=610-621
+3	shake	_	Action	_	_	0	_	_	Offset=652-657
+
+# sent_id = s7
+# text = Add 0.5ml UPPA™ I to each tube and vortex.
+1	Add	_	Action	_	_	0	_	_	Offset=692-695
+2	100µl	_	Amount	_	_	3	Measure	_	Offset=696-701
+3	Copper	_	Reagent	_	_	0	_	_	Offset=702-717
+4	400µl	_	Amount	_	_	5	Measure	_	Offset=734-739
+5	deionized	_	Reagent	_	_	0	_	_	Offset=740-755
+6	tubes	_	Location	_	_	0	_	_	Offset=763-768
+7	vortex	_	Action	_	_	0	_	_	Offset=773-779
+
+# sent_id = s8
+# text = Add 0.5ml UPPA™ II to the tubes and vortex.
+1	1ml	_	Size	_	_	2	Measure	_	Offset=834-837
+2	pipette	_	Device	_	_	0	_	_	Offset=838-845
+3	shoot	_	Action	_	_	0	_	_	Offset=855-860
+4	1ml	_	Amount	_	_	5	Measure	_	Offset=861-864
+5	Reagent	_	Reagent	_	_	0	_	_	Offset=865-875
+6	tube	_	Location	_	_	7	Meronym	8:Meronym	Offset=895-899
+7	Reagent	_	Reagent	_	_	0	_	_	Offset=911-920
+8	DI	_	Reagent	_	_	0	_	_	Offset=926-934
+9	inverting	_	Action	_	_	0	_	_	Offset=961-970
+10	tubes	_	Location	_	_	0	_	_	Offset=975-980
+
+# sent_id = s9
+# text = Incubate for 2-3 minutes at room temperature.
+1	Incubate	_	Action	_	_	0	_	_	Offset=982-990
+2	room	_	Temperature	_	_	0	_	_	Offset=994-1010
+3	15-20	_	Time	_	_	0	_	_	Offset=1015-1028
+4	read	_	Action	_	_	0	_	_	Offset=1050-1054
+5	absorbances	_	Measure-Type	_	_	6	Of-Type	_	Offset=1055-1066
+6	480nm	_	Numerical	_	_	0	_	_	Offset=1070-1075
+7	DI	_	Reagent	_	_	0	_	_	Offset=1084-1092
+
+# sent_id = s10
+# text = Centrifuge the titer plate at ~5,000xg for 7 minutes to pellet the precipitate.
+1	transfer	_	Action	_	_	0	_	_	Offset=1112-1120
+2	200µl	_	Amount	_	_	3	Measure	_	Offset=1121-1126
+3	assay	_	Reagent	_	_	0	_	_	Offset=1127-1141
+4	96	_	Size	_	_	5	Measure	_	Offset=1159-1166
+5	micro	_	Location	_	_	0	_	_	Offset=1167-1184
+6	measure	_	Action	_	_	0	_	_	Offset=1189-1196
+7	absorbances	_	Measure-Type	_	_	8	Of-Type	_	Offset=1201-1212
+8	480nm	_	Numerical	_	_	0	_	_	Offset=1216-1221
+9	DI	_	Reagent	_	_	0	_	_	Offset=1230-1238
+

@@ -1,0 +1,32 @@
+# sent_id = s1
+# text = Digestion for BioBrick Assembly Kit (E0546)
+1	Digest	_	Action	_	_	0	_	_	Offset=44-50
+2	Upstream	_	Reagent	_	_	0	_	_	Offset=51-64
+3	EcoRI-HF™	_	Reagent	_	_	0	_	_	Offset=70-79
+4	SpeI	_	Reagent	_	_	0	_	_	Offset=84-88
+
+# sent_id = s2
+# text = Digest Upstream Part with EcoRI-HF™ and SpeI.
+1	Digest	_	Action	_	_	0	_	_	Offset=90-96
+2	Downstream	_	Reagent	_	_	0	_	_	Offset=97-112
+3	XbaI	_	Reagent	_	_	0	_	_	Offset=118-122
+4	PstI	_	Reagent	_	_	0	_	_	Offset=127-131
+
+# sent_id = s3
+# text = Digest Downstream Part with XbaI and PstI.
+1	Digest	_	Action	_	_	0	_	_	Offset=133-139
+2	Destination	_	Reagent	_	_	0	_	_	Offset=144-163
+3	EcoRI-HF™	_	Reagent	_	_	0	_	_	Offset=169-178
+4	PstI	_	Reagent	_	_	0	_	_	Offset=184-188
+
+# sent_id = s4
+# text = Digest the Destination Plasmid with EcoRI-HF™  and PstI.
+1	Incubate	_	Action	_	_	0	_	_	Offset=190-198
+2	three	_	Numerical	_	_	3	Measure	_	Offset=203-208
+3	restriction	_	Reagent	_	_	0	_	_	Offset=209-237
+4	37°C	_	Temperature	_	_	0	_	_	Offset=241-245
+5	10	_	Time	_	_	0	_	_	Offset=250-260
+6	Heat	_	Action	_	_	0	_	_	Offset=262-277
+7	80°C	_	Temperature	_	_	0	_	_	Offset=281-285
+8	20	_	Time	_	_	0	_	_	Offset=290-300
+

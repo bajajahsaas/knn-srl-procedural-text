@@ -1,0 +1,28 @@
+# sent_id = s1
+# text = EPPS recipe for dissolved cobalt analyses
+1	Weigh	_	Action	_	_	0	_	_	Offset=42-51
+2	22	_	Amount	_	_	3	Measure	_	Offset=52-56
+3	EPPS	_	Reagent	_	_	0	_	_	Offset=60-64
+4	200	_	Amount	_	_	8	Measure	_	Offset=81-87
+5	trace	_	Modifier	_	_	8	Mod-Link	_	Offset=88-93
+6	metal	_	Modifier	_	_	8	Mod-Link	_	Offset=94-99
+7	clean	_	Modifier	_	_	8	Mod-Link	_	Offset=100-105
+8	bottle	_	Location	_	_	0	_	_	Offset=106-112
+
+# sent_id = s2
+# text = Weigh out 22 g of EPPS directly into a 200 mL trace metal clean bottle.
+1	Add	_	Action	_	_	0	_	_	Offset=114-117
+2	173	_	Amount	_	_	3	Measure	_	Offset=118-124
+3	Milli-Q	_	Reagent	_	_	0	_	_	Offset=128-135
+4	bottle	_	Location	_	_	0	_	_	Offset=143-149
+5	analytical	_	Method	_	_	0	_	_	Offset=169-187
+
+# sent_id = s3
+# text = Add 173 mL of Milli-Q to the bottle by weight using an analytical balance.
+1	pass	_	Action	_	_	0	_	_	Offset=237-241
+2	EPPS	_	Reagent	_	_	0	_	_	Offset=246-259
+3	trace	_	Modifier	_	_	6	Mod-Link	_	Offset=319-324
+4	metal	_	Modifier	_	_	6	Mod-Link	_	Offset=325-330
+5	clean	_	Modifier	_	_	6	Mod-Link	_	Offset=331-336
+6	bottle	_	Location	_	_	0	_	_	Offset=337-343
+

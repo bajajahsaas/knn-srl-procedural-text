@@ -1,0 +1,153 @@
+# sent_id = s1
+# text = Can Crusher-Culley Protocol
+1	remove	_	Action	_	_	0	_	_	Offset=53-59
+2	plunger	_	Device	_	_	0	_	_	Offset=64-71
+3	60mL	_	Size	_	_	4	Measure	_	Offset=81-85
+4	syringe	_	Location	_	_	0	_	_	Offset=86-93
+
+# sent_id = s2
+# text = Using sterile technique, remove the plunger from the 60mL syringe.
+1	Attach	_	Action	_	_	0	_	_	Offset=95-101
+2	0.02	_	Size	_	_	3	Measure	_	Offset=106-113
+3	Anotop	_	Location	_	_	0	_	_	Offset=122-128
+4	end	_	Location	_	_	0	_	_	Offset=137-140
+5	syringe	_	Location	_	_	4	Meronym	_	Offset=148-155
+
+# sent_id = s3
+# text = Attach the 0.02 µm filter (Anotop) to the end of the syringe.
+1	Pour	_	Action	_	_	0	_	_	Offset=157-161
+2	50	_	Amount	_	_	4	Measure	_	Offset=162-167
+3	0.2	_	Size	_	_	4	Measure	_	Offset=171-177
+4	filtrate	_	Reagent	_	_	0	_	_	Offset=178-186
+5	60-mL	_	Size	_	_	6	Measure	_	Offset=196-201
+6	syringe	_	Location	_	_	0	_	_	Offset=202-209
+
+# sent_id = s4
+# text = Pour 50 mL of 0.2 µm filtrate into the 60-mL syringe.
+1	Replace	_	Action	_	_	0	_	_	Offset=211-218
+2	plunger	_	Device	_	_	0	_	_	Offset=219-226
+3	mount	_	Action	_	_	0	_	_	Offset=231-236
+4	syringe	_	Location	_	_	0	_	_	Offset=241-248
+5	filter	_	Location	_	_	0	_	_	Offset=253-259
+6	can	_	Device	_	_	0	_	_	Offset=269-280
+
+# sent_id = s5
+# text = Replace plunger and mount the syringe and filter into the can crusher.
+1	Push	_	Action	_	_	0	_	_	Offset=282-286
+2	0.2	_	Size	_	_	3	Measure	_	Offset=291-297
+3	filtrate	_	Reagent	_	_	0	_	_	Offset=298-306
+4	very	_	Modifier	_	_	0	_	_	Offset=307-318
+5	Anotop	_	Location	_	_	0	_	_	Offset=331-337
+6	can	_	Device	_	_	0	_	_	Offset=349-360
+7	applying	_	Action	_	_	0	_	_	Offset=365-397
+
+# sent_id = s6
+# text = Push the 0.2 µm filtrate very slowly through the Anotop, using the can crusher and applying gentle, steady pressure.
+1	stop	_	Action	_	_	0	_	_	Offset=474-486
+
+# sent_id = s7
+# text = Watch carefully for the last drop of water to go into the Anotop, and then stop pushing.
+1	remove	_	Action	_	_	0	_	_	Offset=513-519
+2	Anotop	_	Location	_	_	0	_	_	Offset=524-530
+3	syringe	_	Location	_	_	0	_	_	Offset=540-547
+
+# sent_id = s8
+# text = Using sterile technique, remove the Anotop from the syringe.
+1	Do	_	Action	_	_	0	_	_	Offset=549-561
+2	filter	_	Location	_	_	0	_	_	Offset=566-578
+3	outlet	_	Location	_	_	0	_	_	Offset=582-588
+
+# sent_id = s9
+# text = Do not touch the filter inlet or outlet.
+1	Suck	_	Action	_	_	0	_	_	Offset=590-597
+2	50mL	_	Amount	_	_	4	Measure	_	Offset=612-616
+3	0.2	_	Size	_	_	4	Measure	_	Offset=620-626
+4	filtrate	_	Reagent	_	_	0	_	_	Offset=627-635
+5	60-mL	_	Size	_	_	6	Measure	_	Offset=660-665
+6	syringe	_	Location	_	_	0	_	_	Offset=666-673
+
+# sent_id = s10
+# text = Suck up the remaining 50mL of 0.2 µm filtrate for this depth into the 60-mL syringe.
+1	Re-attach	_	Action	_	_	0	_	_	Offset=675-684
+2	Anotop	_	Location	_	_	0	_	_	Offset=689-695
+3	end	_	Location	_	_	0	_	_	Offset=703-706
+4	syringe	_	Location	_	_	3	Meronym	_	Offset=714-721
+
+# sent_id = s11
+# text = Re-attach the Anotop to the end of the syringe.
+1	Push	_	Action	_	_	0	_	_	Offset=738-742
+2	0.2	_	Size	_	_	3	Measure	_	Offset=747-753
+3	filtrate	_	Reagent	_	_	0	_	_	Offset=754-762
+4	slowly	_	Modifier	_	_	0	_	_	Offset=763-769
+5	Anotop	_	Location	_	_	0	_	_	Offset=782-788
+6	can	_	Device	_	_	0	_	_	Offset=800-811
+
+# sent_id = s12
+# text = Repeat Step 5: Push the 0.2 µm filtrate slowly through the Anotop, using the can crusher.
+1	Remove	_	Action	_	_	0	_	_	Offset=813-819
+2	Anotop	_	Location	_	_	0	_	_	Offset=824-830
+3	syringe	_	Location	_	_	0	_	_	Offset=840-847
+
+# sent_id = s13
+# text = Remove the Anotop from the syringe.
+1	Write	_	Action	_	_	0	_	_	Offset=849-854
+2	Anotop	_	Location	_	_	0	_	_	Offset=862-868
+3	waterproof	_	Device	_	_	0	_	_	Offset=884-902
+
+# sent_id = s14
+# text = Write on the Anotop itself using a waterproof Sharpie. 
+1	Wrap	_	Action	_	_	0	_	_	Offset=905-909
+2	Anotop	_	Location	_	_	0	_	_	Offset=914-920
+3	clean	_	Seal	_	_	0	_	_	Offset=924-938
+4	covering	_	Action	_	_	0	_	_	Offset=940-948
+5	inlet	_	Location	_	_	0	_	_	Offset=958-963
+6	outlet	_	Location	_	_	0	_	_	Offset=968-974
+
+# sent_id = s15
+# text = Wrap the Anotop in clean parafilm, covering both the inlet and outlet.
+1	Label	_	Action	_	_	0	_	_	Offset=976-981
+2	piece	_	Seal	_	_	0	_	_	Offset=984-1006
+
+# sent_id = s16
+# text = Label a piece of aluminum foil with date, depth, and location (using waterproof Sharpie).
+1	Wrap	_	Action	_	_	0	_	_	Offset=1066-1070
+2	parafilmed	_	Modifier	_	_	3	Mod-Link	_	Offset=1075-1085
+3	Anotop	_	Location	_	_	0	_	_	Offset=1086-1092
+4	labeled	_	Modifier	_	_	5	Mod-Link	_	Offset=1100-1107
+5	aluminum	_	Seal	_	_	0	_	_	Offset=1108-1121
+
+# sent_id = s17
+# text = Wrap the parafilmed Anotop in the labeled aluminum foil.
+1	Label	_	Action	_	_	0	_	_	Offset=1123-1128
+2	Ziploc	_	Location	_	_	0	_	_	Offset=1131-1141
+
+# sent_id = s18
+# text = Label a Ziploc bag with date, depths, and location.
+1	Collect	_	Action	_	_	0	_	_	Offset=1175-1182
+2	several	_	Amount	_	_	3	Measure	_	Offset=1183-1190
+3	Anotops	_	Location	_	_	0	_	_	Offset=1191-1198
+4	put	_	Action	_	_	0	_	_	Offset=1202-1205
+5	labeled	_	Modifier	_	_	6	Mod-Link	_	Offset=1215-1222
+6	Ziploc	_	Location	_	_	0	_	_	Offset=1223-1229
+
+# sent_id = s19
+# text = Collect several Anotops to put into one labeled Ziploc: one location/sample site per bag.
+1	Put	_	Action	_	_	0	_	_	Offset=1265-1268
+2	foil-wrapped	_	Modifier	_	_	3	Mod-Link	_	Offset=1273-1285
+3	Anotops	_	Location	_	_	0	_	_	Offset=1286-1293
+4	labeled	_	Modifier	_	_	5	Mod-Link	_	Offset=1303-1310
+5	Ziploc	_	Location	_	_	0	_	_	Offset=1311-1321
+
+# sent_id = s20
+# text = Put the foil-wrapped Anotops into the labeled Ziploc bag.
+1	Freeze	_	Action	_	_	0	_	_	Offset=1323-1329
+2	Ziploc	_	Location	_	_	0	_	_	Offset=1334-1340
+3	-80°C	_	Temperature	_	_	4	Setting	_	Offset=1344-1349
+4	freezer	_	Device	_	_	0	_	_	Offset=1350-1357
+
+# sent_id = s21
+# text = Freeze the Ziploc in -80°C freezer (if no -80°C freezer is available, use a -20°C freezer).
+1	Discard	_	Action	_	_	0	_	_	Offset=1415-1422
+2	syringe	_	Location	_	_	0	_	_	Offset=1427-1434
+3	filtrate	_	Action	_	_	0	_	_	Offset=1439-1447
+

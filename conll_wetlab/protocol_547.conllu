@@ -1,0 +1,191 @@
+# sent_id = s1
+# text = Roseobacter Screening Of Surface Waters For Viruses
+1	Pull	_	Action	_	_	0	_	_	Offset=52-56
+2	Roseobacter	_	Reagent	_	_	0	_	_	Offset=57-77
+3	grow	_	Action	_	_	0	_	_	Offset=94-98
+4	5	_	Amount	_	_	5	Measure	_	Offset=102-106
+5	broth	_	Reagent	_	_	0	_	_	Offset=107-121
+
+# sent_id = s2
+# text = Pull Roseobacter cultures from freeze and grow in 5 ml broth cultures. 
+1	Perform	_	Action	_	_	0	_	_	Offset=124-131
+2	virus	_	Method	_	_	0	_	_	Offset=132-147
+3	96	_	Size	_	_	4	Measure	_	Offset=159-166
+4	flat-bottom	_	Location	_	_	0	_	_	Offset=167-219
+
+# sent_id = s3
+# text = Perform virus screening in sterile 96 well flat-bottom tissue culture treated microtiter plates. 
+1	Store	_	Action	_	_	0	_	_	Offset=222-227
+2	seawater	_	Reagent	_	_	0	_	_	Offset=228-246
+3	4°C	_	Temperature	_	_	0	_	_	Offset=250-253
+
+# sent_id = s4
+# text = Store seawater filtrates at 4°C. 
+1	Absorb	_	Action	_	_	0	_	_	Offset=256-262
+2	viruses	_	Reagent	_	_	0	_	_	Offset=267-274
+3	bacteria	_	Reagent	_	_	0	_	_	Offset=282-290
+
+# sent_id = s5
+# text = Absorb the viruses to the bacteria. 
+1	Place	_	Action	_	_	0	_	_	Offset=293-298
+2	15	_	Amount	_	_	3	Measure	_	Offset=299-304
+3	log	_	Reagent	_	_	0	_	_	Offset=308-323
+4	15	_	Amount	_	_	5	Measure	_	Offset=328-333
+5	seawater	_	Reagent	_	_	0	_	_	Offset=337-354
+6	wells	_	Location	_	_	0	_	_	Offset=379-384
+7	96	_	Size	_	_	8	Measure	_	Offset=390-397
+8	plate	_	Location	_	_	6	Meronym	_	Offset=398-403
+
+# sent_id = s6
+# text = Place 15 µl of log phase cells and 15 µl of seawater filtrate (containing virus) into wells of a 96 well plate. 
+1	433	_	Action	_	_	0	_	_	Offset=406-411;427
+2	viruses	_	Reagent	_	_	0	_	_	Offset=416-423
+3	bacteria	_	Reagent	_	_	0	_	_	Offset=441-449
+4	1	_	Time	_	_	0	_	_	Offset=454-460
+
+# sent_id = s7
+# text = Allow the viruses to absorb to the bacteria for 1 hour. 
+1	Add	_	Action	_	_	0	_	_	Offset=463-466
+2	200	_	Amount	_	_	3	Measure	_	Offset=467-473
+3	growth	_	Reagent	_	_	0	_	_	Offset=474-486
+4	wells	_	Location	_	_	0	_	_	Offset=513-518
+
+# sent_id = s8
+# text = Add 200 µl growth media (1/2 or 1/10 YTSS) to the wells. 
+1	Seal	_	Action	_	_	0	_	_	Offset=521-525
+2	plate	_	Location	_	_	0	_	_	Offset=530-535
+3	parafilm	_	Reagent	_	_	0	_	_	Offset=541-549
+4	incubate	_	Action	_	_	0	_	_	Offset=554-562
+5	shaking	_	Method	_	_	0	_	_	Offset=568-575
+
+# sent_id = s9
+# text = Seal the plate with parafilm and incubate with shaking. 
+1	transferring	_	Action	_	_	0	_	_	Offset=680-692
+2	96	_	Size	_	_	3	Measure	_	Offset=706-713
+3	plate	_	Location	_	_	0	_	_	Offset=714-719
+4	96-well	_	Size	_	_	5	Measure	_	Offset=731-738
+5	plate	_	Location	_	_	6	Meronym	_	Offset=739-744
+6	fresh	_	Reagent	_	_	0	_	_	Offset=756-774
+
+# sent_id = s10
+# text = Look for infected wells that show lysis with respect to uninoculated controls. 
+1	filter	_	Action	_	_	0	_	_	Offset=833-843
+2	cells	_	Reagent	_	_	0	_	_	Offset=844-849
+3	0.2um	_	Amount	_	_	4	Measure	_	Offset=855-860
+4	filtration	_	Device	_	_	0	_	_	Offset=861-871
+5	1.5ml	_	Size	_	_	6	Measure	_	Offset=877-882
+6	microfuge	_	Location	_	_	0	_	_	Offset=883-898
+7	Spin	_	Action	_	_	0	_	_	Offset=899-903
+8	5	_	Time	_	_	0	_	_	Offset=908-914
+9	max	_	Speed	_	_	0	_	_	Offset=919-922
+
+# sent_id = s11
+# text = Enrich for viruses by transferring from initial 96 well plate to another 96-well plate containing fresh liquid media (“frogging” into new wells). 
+1	Transfer	_	Action	_	_	0	_	_	Offset=941-949
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=950-961
+3	fresh	_	Location	_	_	0	_	_	Offset=965-975
+
+# sent_id = s12
+# text = Once enriched sufficiently, filter out cells with 0.2um filtration into 1.5ml microfuge tubes Spin for 5 mins. at max to pellet cells. 
+1	Store	_	Action	_	_	0	_	_	Offset=991-996
+2	4°C	_	Temperature	_	_	0	_	_	Offset=1000-1003
+
+# sent_id = s13
+# text = Transfer supernatant to fresh tube for storage.  
+1	growing	_	Action	_	_	0	_	_	Offset=1047-1054
+2	cells	_	Reagent	_	_	0	_	_	Offset=1055-1060
+3	virus	_	Reagent	_	_	0	_	_	Offset=1066-1071
+4	solid	_	Reagent	_	_	0	_	_	Offset=1075-1086
+
+# sent_id = s14
+# text = Store at 4°C.  
+1	Prepare	_	Action	_	_	0	_	_	Offset=1091-1098
+2	solid	_	Reagent	_	_	0	_	_	Offset=1099-1115
+3	0.5%	_	Concentration	_	_	4	Measure	_	Offset=1120-1124
+4	overlay	_	Reagent	_	_	0	_	_	Offset=1125-1137
+
+# sent_id = s15
+# text = Plaque-purify wells containing virus by growing cells plus virus on solid media.   
+1	Absorb	_	Action	_	_	0	_	_	Offset=1140-1146
+2	25	_	Amount	_	_	3	Measure	_	Offset=1189-1194
+3	virus	_	Reagent	_	_	0	_	_	Offset=1195-1200
+4	96	_	Size	_	_	5	Measure	_	Offset=1206-1213
+5	plate	_	Location	_	_	0	_	_	Offset=1214-1219
+6	200	_	Amount	_	_	7	Measure	_	Offset=1236-1242
+7	log-phase	_	Reagent	_	_	0	_	_	Offset=1243-1266
+8	1hr	_	Time	_	_	0	_	_	Offset=1271-1274
+
+# sent_id = s16
+# text = Prepare solid agar media and 0.5% overlay agar. 
+1	Mix	_	Action	_	_	0	_	_	Offset=1277-1280
+2	virus-absorbed	_	Reagent	_	_	0	_	_	Offset=1285-1305
+3	5	_	Amount	_	_	4	Measure	_	Offset=1313-1317
+4	overlay	_	Reagent	_	_	0	_	_	Offset=1318-1330
+
+# sent_id = s17
+# text = Absorb virus to cells using as a starting point, 25 µl virus from 96 well plate enrichments and 200 µl log-phase host bacteria for 1hr. 
+1	Pour	_	Action	_	_	0	_	_	Offset=1333-1342
+2	solid	_	Reagent	_	_	0	_	_	Offset=1347-1358
+
+# sent_id = s18
+# text = Mix the virus-absorbed cells in the 5 ml overlay agar. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=1361-1369
+2	look	_	Action	_	_	0	_	_	Offset=1374-1378
+3	plaque	_	Reagent	_	_	0	_	_	Offset=1383-1389
+
+# sent_id = s19
+# text = Pour over the solid media. 
+1	Pick	_	Action	_	_	0	_	_	Offset=1402-1406
+2	representatives	_	Reagent	_	_	0	_	_	Offset=1407-1422
+3	plaque	_	Reagent	_	_	2	Meronym	_	Offset=1430-1442
+4	record	_	Action	_	_	0	_	_	Offset=1455-1461
+5	appearance	_	Generic-Measure	_	_	6	Measure	_	Offset=1462-1472
+6	plaques	_	Reagent	_	_	0	_	_	Offset=1480-1487
+
+# sent_id = s20
+# text = Incubate and look for plaque formation. 
+1	Store	_	Action	_	_	0	_	_	Offset=1490-1495
+2	broth	_	Reagent	_	_	3	Meronym	_	Offset=1500-1505
+3	agar	_	Reagent	_	_	0	_	_	Offset=1524-1534
+4	4°C	_	Temperature	_	_	0	_	_	Offset=1538-1541
+5	viruses	_	Reagent	_	_	0	_	_	Offset=1556-1563
+6	diffuse	_	Action	_	_	0	_	_	Offset=1567-1578
+7	agar	_	Reagent	_	_	0	_	_	Offset=1586-1590
+8	broth	_	Reagent	_	_	0	_	_	Offset=1600-1605
+
+# sent_id = s21
+# text = Pick representatives of all plaque types present and record appearance of the plaques. 
+1	Take	_	Action	_	_	0	_	_	Offset=1713-1717
+2	25	_	Amount	_	_	3	Measure	_	Offset=1718-1723
+3	plaque-purified	_	Reagent	_	_	0	_	_	Offset=1731-1752
+4	absorb	_	Action	_	_	0	_	_	Offset=1786-1792
+5	200	_	Amount	_	_	6	Measure	_	Offset=1796-1802
+6	log-phase	_	Reagent	_	_	0	_	_	Offset=1803-1821
+7	1	_	Time	_	_	0	_	_	Offset=1826-1830
+
+# sent_id = s22
+# text = Store the broth that contains the agar plugs at 4°C and allow the viruses to diffuse out of the agar into the broth. 
+1	Add	_	Action	_	_	0	_	_	Offset=1833-1836
+2	5	_	Amount	_	_	3	Measure	_	Offset=1840-1844
+3	broth	_	Reagent	_	_	0	_	_	Offset=1845-1850
+4	grow	_	Action	_	_	0	_	_	Offset=1855-1859
+5	shaking	_	Method	_	_	0	_	_	Offset=1865-1872
+
+# sent_id = s23
+# text = Once the viruses are plaque-purified they can be scaled-up in 5 ml broth cultures for DNA purification. 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1875-1885
+2	cells	_	Reagent	_	_	0	_	_	Offset=1890-1895
+3	filter	_	Action	_	_	0	_	_	Offset=1900-1906
+4	culture	_	Reagent	_	_	0	_	_	Offset=1907-1914
+5	0.2	_	Size	_	_	6	Measure	_	Offset=1923-1929
+6	filter	_	Device	_	_	0	_	_	Offset=1930-1936
+7	SYBR	_	Action	_	_	0	_	_	Offset=1937-1947
+8	portion	_	Reagent	_	_	0	_	_	Offset=1950-1957
+9	filtrate	_	Reagent	_	_	8	Meronym	_	Offset=1965-1973
+
+# sent_id = s24
+# text = Take 25 µl of the plaque-purified virus (agar plug in ~100 µl broth) and absorb to 200 µl log-phase bacteria for 1 hr. 
+1	Purify	_	Action	_	_	0	_	_	Offset=2016-2022
+2	DNA	_	Reagent	_	_	0	_	_	Offset=2023-2026
+3	Promega	_	Method	_	_	0	_	_	Offset=2037-2066
+

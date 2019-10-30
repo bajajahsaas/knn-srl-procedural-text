@@ -1,0 +1,89 @@
+# sent_id = s1
+# text = Plasmid Miniprep
+1	Pellet	_	Action	_	_	0	_	_	Offset=17-23
+2	culture	_	Reagent	_	_	0	_	_	Offset=24-31
+3	1.8mL	_	Amount	_	_	4	Measure	_	Offset=37-42
+4	centrifuge	_	Location	_	_	0	_	_	Offset=43-58
+5	8,000rpm	_	Speed	_	_	0	_	_	Offset=62-70
+6	1	_	Time	_	_	0	_	_	Offset=75-83
+
+# sent_id = s2
+# text = Pellet culture in a 1.8mL centrifuge tube at 8,000rpm for 1 minute.
+1	Decant	_	Action	_	_	0	_	_	Offset=85-91
+2	Media	_	Reagent	_	_	0	_	_	Offset=92-97
+
+# sent_id = s3
+# text = Decant Media. 
+1	Add	_	Action	_	_	0	_	_	Offset=100-103
+2	250uL	_	Amount	_	_	3	Measure	_	Offset=104-109
+3	Resuspension	_	Reagent	_	_	0	_	_	Offset=113-134
+4	vortex	_	Action	_	_	0	_	_	Offset=139-145
+
+# sent_id = s4
+# text = Add 250uL of Resuspension Solution and vortex. 
+1	Add	_	Action	_	_	0	_	_	Offset=148-151
+2	250uL	_	Amount	_	_	3	Measure	_	Offset=152-157
+3	lysis	_	Reagent	_	_	0	_	_	Offset=161-175
+4	invert	_	Action	_	_	0	_	_	Offset=180-186
+5	4-6	_	Numerical	_	_	0	_	_	Offset=187-190
+
+# sent_id = s5
+# text = Add 250uL of lysis solution and invert 4-6 times. 
+1	Add	_	Action	_	_	0	_	_	Offset=199-202
+2	350uL	_	Amount	_	_	3	Measure	_	Offset=203-208
+3	Neutralization	_	Reagent	_	_	0	_	_	Offset=212-235
+4	invert	_	Action	_	_	0	_	_	Offset=240-246
+5	tube	_	Location	_	_	0	_	_	Offset=251-255
+6	4-6	_	Numerical	_	_	0	_	_	Offset=256-259
+
+# sent_id = s6
+# text = Add 350uL of Neutralization Solution and invert the tube 4-6 times. 
+1	Bind	_	Action	_	_	0	_	_	Offset=268-272
+2	DNA	_	Reagent	_	_	0	_	_	Offset=277-280
+3	column	_	Location	_	_	0	_	_	Offset=288-294
+4	decanting	_	Action	_	_	0	_	_	Offset=298-307
+
+# sent_id = s7
+# text = Bind the DNA to the column by decanting. 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=310-320
+2	13,300	_	Speed	_	_	0	_	_	Offset=324-334
+3	1	_	Time	_	_	0	_	_	Offset=339-347
+
+# sent_id = s8
+# text = Centrifuge at 13,300 rpm for 1 minute. 
+1	Wash	_	Action	_	_	0	_	_	Offset=350-354
+2	column	_	Location	_	_	0	_	_	Offset=359-365
+3	500uL	_	Amount	_	_	4	Measure	_	Offset=371-376
+4	wash	_	Reagent	_	_	0	_	_	Offset=380-393
+5	centrifuge	_	Action	_	_	0	_	_	Offset=398-408
+6	1	_	Time	_	_	0	_	_	Offset=413-421
+
+# sent_id = s9
+# text = Wash the column with 500uL of wash solution and centrifuge for 1 minute.
+1	Discard	_	Action	_	_	0	_	_	Offset=423-430
+2	flow-thru	_	Reagent	_	_	0	_	_	Offset=435-444
+3	centrifuge	_	Action	_	_	0	_	_	Offset=449-459
+4	1	_	Time	_	_	0	_	_	Offset=464-473
+
+# sent_id = s10
+# text = Discard the flow-thru and centrifuge for 1 minute. 
+1	Elute	_	Action	_	_	0	_	_	Offset=475-480
+2	purified	_	Modifier	_	_	3	Mod-Link	_	Offset=485-493
+3	DNA	_	Reagent	_	_	0	_	_	Offset=494-497
+4	50uL	_	Amount	_	_	5	Measure	_	Offset=503-507
+5	Elution	_	Reagent	_	_	0	_	_	Offset=511-525
+
+# sent_id = s11
+# text = Elute the purified DNA with 50uL of Elution Buffer.
+1	incubate	_	Action	_	_	0	_	_	Offset=531-539
+2	two	_	Time	_	_	0	_	_	Offset=544-555
+3	centrifuge	_	Action	_	_	0	_	_	Offset=562-572
+4	2	_	Time	_	_	0	_	_	Offset=577-586
+
+# sent_id = s12
+# text = Let incubate for two minutes, then centrifuge for 2 minutes.
+1	Collect	_	Action	_	_	0	_	_	Offset=588-595
+2	flow-thru	_	Reagent	_	_	0	_	_	Offset=600-609
+3	new	_	Modifier	_	_	4	Mod-Link	_	Offset=615-618
+4	centrifuge	_	Location	_	_	0	_	_	Offset=619-634
+

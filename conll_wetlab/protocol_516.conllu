@@ -1,0 +1,49 @@
+# sent_id = s1
+# text = Estimation of Humus in Soil/Manure
+1	Take	_	Action	_	_	0	_	_	Offset=35-39
+2	20	_	Amount	_	_	3	Measure	_	Offset=40-44
+3	soil	_	Reagent	_	_	0	_	_	Offset=45-49
+4	manure	_	Reagent	_	_	3	Or	_	Offset=53-59
+5	conical	_	Location	_	_	0	_	_	Offset=65-78
+6	add	_	Action	_	_	0	_	_	Offset=83-86
+7	100	_	Amount	_	_	8	Measure	_	Offset=87-93
+8	extractant	_	Reagent	_	_	0	_	_	Offset=97-107
+9	1:5	_	Concentration	_	_	0	_	_	Offset=109-118
+
+# sent_id = s2
+# text = Take 20 g soil or manure in a conical flask and add 100 mL of extractant (1:5 ratio). 
+1	Shake	_	Action	_	_	0	_	_	Offset=122-127
+2	well	_	Modifier	_	_	0	_	_	Offset=128-132
+3	standing	_	Action	_	_	0	_	_	Offset=143-151
+4	18	_	Time	_	_	0	_	_	Offset=156-160
+
+# sent_id = s3
+# text = Shake well and allow standing for 18 h.   
+1	Filter	_	Action	_	_	0	_	_	Offset=165-171
+2	Whatman	_	Device	_	_	0	_	_	Offset=180-206
+
+# sent_id = s4
+# text = Filter through Whatman filter paper no. 1 (the residue portion on filter paper is called humin and the filtrate is humus.
+1	humus	_	Reagent	_	_	0	_	_	Offset=352-357
+2	dialyzed	_	Action	_	_	0	_	_	Offset=361-369
+3	dialysis	_	Device	_	_	0	_	_	Offset=373-387
+4	parchment	_	Device	_	_	3	Or	_	Offset=391-406
+5	running	_	Reagent	_	_	0	_	_	Offset=415-432
+6	24	_	Time	_	_	0	_	_	Offset=437-441
+
+# sent_id = s5
+# text = It is dark brown in color with pH 13).
+1	Measure	_	Action	_	_	0	_	_	Offset=467-474
+2	volume	_	Generic-Measure	_	_	0	_	_	Offset=479-485
+3	known	_	Generic-Measure	_	_	0	_	_	Offset=493-505
+4	weighed	_	Action	_	_	0	_	_	Offset=532-539
+5	100	_	Size	_	_	6	Measure	_	Offset=540-546
+6	beaker	_	Location	_	_	0	_	_	Offset=547-553
+
+# sent_id = s6
+# text = To get rid of sodium, the humus is dialyzed in dialysis tubes or parchment paper against running tap water for 24 h.  
+1	beaker	_	Location	_	_	0	_	_	Offset=559-565
+2	dried	_	Action	_	_	0	_	_	Offset=569-574
+3	oven	_	Device	_	_	0	_	_	Offset=581-585
+4	70°C	_	Temperature	_	_	0	_	_	Offset=589-593
+

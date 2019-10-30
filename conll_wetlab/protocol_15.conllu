@@ -1,0 +1,88 @@
+# sent_id = s1
+# text = Quanti-iT™ Pico Green dsDNA Assay (Invitrogen P7589)
+1	Warm	_	Action	_	_	0	_	_	Offset=53-57
+2	Quant-iT	_	Reagent	_	_	0	_	_	Offset=58-84
+3	room	_	Temperature	_	_	0	_	_	Offset=88-97
+4	dark	_	Location	_	_	0	_	_	Offset=105-109
+
+# sent_id = s2
+# text = Warm Quant-iT PicoGreen reagent to room temp in the dark.
+1	Prepare	_	Action	_	_	0	_	_	Offset=111-118
+2	1XTE	_	Reagent	_	_	0	_	_	Offset=119-130
+3	20X	_	Concentration	_	_	4	Measure	_	Offset=136-139
+4	stock	_	Reagent	_	_	0	_	_	Offset=140-154
+5	nuclease-free	_	Reagent	_	_	0	_	_	Offset=161-180
+
+# sent_id = s3
+# text = Prepare 1XTE buffer from 20X stock solution using nuclease-free water:  will need 200 μl/well (for diluting standards, samples and PicoGreen).
+1	Dilute	_	Action	_	_	0	_	_	Offset=254-260
+2	DNA	_	Reagent	_	_	0	_	_	Offset=261-273
+3	2	_	Concentration	_	_	5	Measure	_	Offset=291-298
+4	1:50	_	Concentration	_	_	5	Measure	_	Offset=300-304
+5	λ	_	Reagent	_	_	0	_	_	Offset=308-319
+6	50	_	Concentration	_	_	8	Measure	_	Offset=330-338
+7	1:1000	_	Generic-Measure	_	_	8	Measure	_	Offset=340-346
+8	λ	_	Reagent	_	_	0	_	_	Offset=350-361
+
+# sent_id = s4
+# text = Dilute DNA standard to either “High” 2 μg/mL (1:50 of λ DNA stock) or “Low” 50 ng/mL (1:1000 of λ DNA stock).
+1	Add	_	Action	_	_	0	_	_	Offset=446-449
+2	correct	_	Amount	_	_	3	Measure	_	Offset=450-464
+3	TE	_	Reagent	_	_	0	_	_	Offset=468-477
+4	all	_	Location	_	_	0	_	_	Offset=481-490
+
+# sent_id = s5
+# text = Determine amount of sample to assay (eg, 2μl sample in total of 100μl TE buffer).
+1	Add	_	Action	_	_	0	_	_	Offset=492-495
+2	standards	_	Reagent	_	_	0	_	_	Offset=496-505
+3	wells	_	Location	_	_	0	_	_	Offset=509-514
+
+# sent_id = s6
+# text = Add correct amount of TE buffer to all wells.
+1	add	_	Action	_	_	0	_	_	Offset=521-524
+2	samples	_	Reagent	_	_	0	_	_	Offset=525-532
+3	wells	_	Location	_	_	0	_	_	Offset=536-541
+
+# sent_id = s7
+# text = Add standards to wells.
+1	Dilute	_	Action	_	_	0	_	_	Offset=543-549
+2	PicoGreen	_	Reagent	_	_	3	Or	_	Offset=550-559
+3	1:200	_	Concentration	_	_	0	_	_	Offset=560-565
+4	TE	_	Reagent	_	_	0	_	_	Offset=569-578
+5	protect	_	Misc	_	_	0	_	_	Offset=583-629
+
+# sent_id = s8
+# text = Then add samples to wells.
+1	Add	_	Action	_	_	0	_	_	Offset=631-634
+2	equivalent	_	Mention	_	_	0	_	_	Offset=635-652
+3	100	_	Amount	_	_	2	Misc-Link	4:Measure	Offset=654-660
+4	diluted	_	Reagent	_	_	0	_	_	Offset=665-682
+5	every	_	Location	_	_	0	_	_	Offset=686-696
+
+# sent_id = s9
+# text = Dilute PicoGreen 1:200 in TE buffer and protect from light until ready to add to plate.
+1	Tap	_	Action	_	_	0	_	_	Offset=746-749
+2	plate	_	Location	_	_	0	_	_	Offset=750-755
+3	mix	_	Action	_	_	0	_	_	Offset=759-762
+
+# sent_id = s10
+# text = Add equivalent volume (100 μl) of diluted PicoGreen to every well (keeping plate in the dark as much as possible).
+1	Incubate	_	Action	_	_	0	_	_	Offset=764-772
+2	5	_	Time	_	_	0	_	_	Offset=773-782
+3	room	_	Temperature	_	_	0	_	_	Offset=786-802
+4	keeping	_	Action	_	_	0	_	_	Offset=803-810
+5	plate	_	Location	_	_	0	_	_	Offset=811-816
+6	dark	_	Location	_	_	0	_	_	Offset=824-828
+
+# sent_id = s11
+# text = Tap plate to mix.
+1	Take	_	Action	_	_	0	_	_	Offset=830-855
+2	485nm	_	Device	_	_	0	_	_	Offset=862-878
+3	535nm	_	Device	_	_	0	_	_	Offset=883-905
+
+# sent_id = s12
+# text = Incubate 5 minutes at room temperature keeping plate in the dark.
+1	Determine	_	Action	_	_	0	_	_	Offset=907-931
+2	calculate	_	Action	_	_	0	_	_	Offset=936-959
+3	DNA	_	Reagent	_	_	0	_	_	Offset=963-977
+

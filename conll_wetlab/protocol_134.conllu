@@ -1,0 +1,75 @@
+# sent_id = s1
+# text = Lysin purification protocol
+1	Pellet	_	Action	_	_	0	_	_	Offset=28-34
+2	500ml	_	Amount	_	_	3	Measure	_	Offset=35-40
+3	cells	_	Reagent	_	_	0	_	_	Offset=41-46
+
+# sent_id = s2
+# text = Pellet 500ml cells (5min x 5000RPM).
+1	Resuspend	_	Action	_	_	0	_	_	Offset=65-74
+2	20ml	_	Reagent	_	_	0	_	_	Offset=78-87
+3	add	_	Action	_	_	0	_	_	Offset=89-92
+4	20µl	_	Reagent	_	_	0	_	_	Offset=93-109
+
+# sent_id = s3
+# text = Resuspend in 20ml MBBM, add 20µl tetracyline.
+1	Add	_	Action	_	_	0	_	_	Offset=111-114
+2	150µl	_	Reagent	_	_	0	_	_	Offset=115-134
+3	incubate	_	Action	_	_	0	_	_	Offset=135-143
+4	16hrs	_	Time	_	_	0	_	_	Offset=144-149
+5	fluorescent	_	Location	_	_	0	_	_	Offset=156-180
+6	16	_	Method	_	_	0	_	_	Offset=188-215
+7	25°C	_	Temperature	_	_	0	_	_	Offset=219-223
+8	orbital	_	Location	_	_	0	_	_	Offset=230-244
+
+# sent_id = s4
+# text = Add 150µl purified PBCV incubate 16hrs under fluorescent illumination with a 16 hr light/8 hr dark cycle at 25°C on an orbital shaker (~95 rpm).
+1	Collect	_	Action	_	_	0	_	_	Offset=256-263
+2	cells	_	Reagent	_	_	0	_	_	Offset=264-269
+3	virus	_	Reagent	_	_	0	_	_	Offset=274-279
+4	centrifugation	_	Method	_	_	0	_	_	Offset=283-297
+5	25,000RPM	_	Speed	_	_	0	_	_	Offset=301-310
+6	17	_	Time	_	_	0	_	_	Offset=324-330
+7	20°C	_	Temperature	_	_	0	_	_	Offset=334-338
+
+# sent_id = s5
+# text = Collect cells and virus by centrifugation at 25,000RPM (50.2Ti) for 17 min at 20°C.
+1	Re-suspend	_	Action	_	_	0	_	_	Offset=340-350
+2	cells	_	Reagent	_	_	0	_	_	Offset=351-356
+3	20ml	_	Reagent	_	_	0	_	_	Offset=360-373
+4	50mM	_	Reagent	_	_	0	_	_	Offset=375-397
+5	0.1M	_	Reagent	_	_	0	_	_	Offset=399-408
+
+# sent_id = s6
+# text = Re-suspend cells in 20ml 25mM KOH, 50mM MOPS, 2mM Na2EGTA, 0.1M LiCl(pH 7) (wash).
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=423-433
+2	25,000RPM	_	Speed	_	_	0	_	_	Offset=434-443
+3	17	_	Time	_	_	0	_	_	Offset=448-454
+4	20°C	_	Temperature	_	_	0	_	_	Offset=458-462
+5	discard	_	Action	_	_	0	_	_	Offset=464-471
+6	supernatant	_	Reagent	_	_	0	_	_	Offset=472-483
+
+# sent_id = s7
+# text = Centrifuge 25,000RPM for 17 min at 20°C, discard supernatant.
+1	Suspend	_	Action	_	_	0	_	_	Offset=485-492
+2	pellet	_	Reagent	_	_	0	_	_	Offset=493-499
+3	1.5ml	_	Reagent	_	_	0	_	_	Offset=503-517
+4	50mM	_	Reagent	_	_	0	_	_	Offset=519-528
+5	60µl	_	Reagent	_	_	0	_	_	Offset=537-551
+6	30µl	_	Reagent	_	_	0	_	_	Offset=552-569
+7	incubate	_	Action	_	_	0	_	_	Offset=570-578
+8	50	_	Time	_	_	0	_	_	Offset=579-585
+9	37°C	_	Temperature	_	_	0	_	_	Offset=589-593
+
+# sent_id = s8
+# text = Suspend pellet in 1.5ml 25mM KOH, 50mM MOPS (pH 7), 60µl 10M LiCl, 30µl 0.1M Na2EGTA incubate 50 min at 37°C.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=595-605
+2	25,000RPM	_	Speed	_	_	0	_	_	Offset=606-615
+3	17	_	Time	_	_	0	_	_	Offset=620-626
+4	20°C	_	Temperature	_	_	0	_	_	Offset=630-634
+
+# sent_id = s9
+# text = Centrifuge 25,000RPM for 17 min at 20°C.
+1	Collect	_	Action	_	_	0	_	_	Offset=636-643
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=644-655
+

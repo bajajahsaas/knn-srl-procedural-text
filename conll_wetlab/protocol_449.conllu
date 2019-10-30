@@ -1,0 +1,203 @@
+# sent_id = s1
+# text = Isolation of Mitochondria from Hard Tissues (Skeletal or Heart Muscle) using the FOCUS™ Mitochondria Kit
+1	fresh	_	Modifier	_	_	2	Mod-Link	_	Offset=111-116
+2	tissue	_	Reagent	_	_	0	_	_	Offset=117-130
+3	kept	_	Action	_	_	0	_	_	Offset=171-175
+4	ice	_	Location	_	_	0	_	_	Offset=179-182
+
+# sent_id = s2
+# text = Use a fresh tissue sample (obtained within one hour of sacrifice) kept on ice.
+1	Do	_	Action	_	_	0	_	_	Offset=184-197
+
+# sent_id = s3
+# text = Do not freeze.
+1	Weigh	_	Action	_	_	0	_	_	Offset=199-204
+2	approximately	_	Modifier	_	_	4	Mod-Link	_	Offset=205-218
+3	50-100mg	_	Amount	_	_	4	Measure	_	Offset=219-227
+4	tissues	_	Reagent	_	_	0	_	_	Offset=228-235
+
+# sent_id = s4
+# text = Weigh approximately 50-100mg tissues.
+1	cooled	_	Modifier	_	_	2	Mod-Link	_	Offset=242-248
+2	glass	_	Location	_	_	0	_	_	Offset=249-260
+3	scalpel	_	Device	_	_	0	_	_	Offset=280-287
+4	mince	_	Action	_	_	0	_	_	Offset=289-294
+5	tissue	_	Reagent	_	_	0	_	_	Offset=299-305
+6	very	_	Modifier	_	_	7	Mod-Link	_	Offset=311-315
+7	small	_	Amount	_	_	0	_	_	Offset=316-328
+
+# sent_id = s5
+# text = On a cooled glass plate, with the aid of a scalpel, mince the tissue into very small pieces.
+1	Suspend	_	Action	_	_	0	_	_	Offset=330-337
+2	sample	_	Reagent	_	_	0	_	_	Offset=342-348
+3	8	_	Amount	_	_	5	Measure	_	Offset=354-363
+4	1X	_	Concentration	_	_	5	Measure	_	Offset=367-369
+5	SubCell	_	Reagent	_	_	7	Meronym	_	Offset=370-387
+6	0.25mg/ml	_	Concentration	_	_	7	Measure	_	Offset=399-408
+7	trypsin	_	Reagent	_	_	0	_	_	Offset=409-416
+8	2ml	_	Amount	_	_	9	Measure	_	Offset=422-425
+9	centrifuge	_	Location	_	_	0	_	_	Offset=426-441
+
+# sent_id = s6
+# text = Suspend the sample with 8 volumes of 1X SubCell Buffer-II containing 0.25mg/ml trypsin in a 2ml centrifuge tube.
+1	Incubate	_	Action	_	_	0	_	_	Offset=443-451
+2	ice	_	Location	_	_	0	_	_	Offset=455-458
+3	3	_	Time	_	_	0	_	_	Offset=463-472
+4	spin	_	Action	_	_	0	_	_	Offset=482-491
+5	tissue	_	Reagent	_	_	0	_	_	Offset=496-502
+6	few	_	Time	_	_	0	_	_	Offset=509-520
+7	centrifuge	_	Device	_	_	0	_	_	Offset=528-538
+
+# sent_id = s7
+# text = Incubate on ice for 3 minutes and then spin down the tissue for a few seconds in the centrifuge.
+1	Remove	_	Action	_	_	0	_	_	Offset=540-546
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=551-562
+3	aspiration	_	Method	_	_	0	_	_	Offset=566-576
+4	add	_	Action	_	_	0	_	_	Offset=581-584
+5	8	_	Amount	_	_	7	Measure	_	Offset=585-594
+6	1X	_	Concentration	_	_	7	Measure	_	Offset=598-600
+7	SubCell	_	Reagent	_	_	9	Meronym	_	Offset=601-618
+8	0.25mg/ml	_	Concentration	_	_	9	Measure	_	Offset=630-639
+9	Trypsin	_	Reagent	_	_	0	_	_	Offset=640-647
+
+# sent_id = s8
+# text = Remove the supernatant by aspiration and add 8 volumes of 1X SubCell Buffer-II containing 0.25mg/ml Trypsin.
+1	Incubate	_	Action	_	_	0	_	_	Offset=649-657
+2	ice	_	Location	_	_	0	_	_	Offset=661-664
+3	20	_	Time	_	_	0	_	_	Offset=669-679
+
+# sent_id = s9
+# text = Incubate on ice for 20 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=681-684
+2	BSA	_	Reagent	_	_	0	_	_	Offset=685-697
+3	final	_	Reagent	_	_	0	_	_	Offset=703-722
+4	10mg/ml	_	Concentration	_	_	3	Measure	_	Offset=726-733
+5	mix	_	Action	_	_	0	_	_	Offset=738-741
+
+# sent_id = s10
+# text = Add BSA Solution to a final concentration of 10mg/ml and mix.
+1	Spin	_	Action	_	_	0	_	_	Offset=743-752
+2	tissue	_	Reagent	_	_	0	_	_	Offset=757-763
+3	1,000	_	Speed	_	_	0	_	_	Offset=767-776
+4	5-10	_	Time	_	_	0	_	_	Offset=781-793
+5	centrifuge	_	Device	_	_	0	_	_	Offset=801-811
+
+# sent_id = s11
+# text = Spin down the tissue at 1,000 x g for 5-10 seconds in the centrifuge.
+1	Remove	_	Action	_	_	0	_	_	Offset=813-819
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=824-835
+3	aspiration	_	Method	_	_	0	_	_	Offset=839-849
+
+# sent_id = s12
+# text = Remove the supernatant by aspiration.
+1	Wash	_	Action	_	_	0	_	_	Offset=851-855
+2	pellet	_	Reagent	_	_	0	_	_	Offset=860-866
+3	8	_	Amount	_	_	5	Measure	_	Offset=872-881
+4	1X	_	Concentration	_	_	5	Measure	_	Offset=885-887
+5	SubCell	_	Reagent	_	_	0	_	_	Offset=888-905
+6	spin	_	Action	_	_	0	_	_	Offset=927-936
+7	tissue	_	Reagent	_	_	0	_	_	Offset=941-947
+8	few	_	Time	_	_	0	_	_	Offset=954-965
+9	centrifuge	_	Device	_	_	0	_	_	Offset=973-983
+
+# sent_id = s13
+# text = Wash the pellet with 8 volumes of 1X SubCell Buffer-II without Trypsin, and spin down the tissue for a few seconds in the centrifuge.
+1	Remove	_	Action	_	_	0	_	_	Offset=985-991
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=996-1007
+3	aspiration	_	Method	_	_	0	_	_	Offset=1011-1021
+4	add	_	Action	_	_	0	_	_	Offset=1026-1029
+5	8	_	Amount	_	_	7	Measure	_	Offset=1030-1039
+6	1X	_	Concentration	_	_	7	Measure	_	Offset=1047-1049
+7	SubCell	_	Reagent	_	_	0	_	_	Offset=1050-1066
+
+# sent_id = s14
+# text = Remove the supernatant by aspiration and add 8 volumes of the 1X SubCell BufferII without Trypsin.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1084-1092
+2	suspension	_	Reagent	_	_	0	_	_	Offset=1097-1107
+3	ice-cold	_	Modifier	_	_	4	Mod-Link	_	Offset=1114-1122
+4	Dounce	_	Device	_	_	0	_	_	Offset=1123-1148
+5	loose-fitting	_	Modifier	_	_	6	Mod-Link	_	Offset=1161-1174
+6	pestle	_	Device	_	_	0	_	_	Offset=1175-1181
+7	disaggregate	_	Action	_	_	0	_	_	Offset=1182-1194
+8	tissue	_	Reagent	_	_	0	_	_	Offset=1199-1205
+9	5-15	_	Generic-Measure	_	_	0	_	_	Offset=1211-1223
+10	tissue	_	Reagent	_	_	0	_	_	Offset=1237-1250
+11	completely	_	Modifier	_	_	0	_	_	Offset=1254-1264
+12	homogenized	_	Action	_	_	0	_	_	Offset=1265-1276
+
+# sent_id = s15
+# text = Transfer the suspension to an ice-cold Dounce tissue homogenizer and using a loose-fitting pestle disaggregate the tissue with 5-15 strokes or until the tissue sample is completely homogenized.
+1	tight-fitting	_	Modifier	_	_	2	Mod-Link	_	Offset=1286-1299
+2	pestle	_	Device	_	_	0	_	_	Offset=1300-1306
+3	release	_	Action	_	_	0	_	_	Offset=1308-1315
+4	nuclei	_	Reagent	_	_	0	_	_	Offset=1320-1326
+5	8-10	_	Generic-Measure	_	_	0	_	_	Offset=1332-1344
+
+# sent_id = s16
+# text = Using a tight-fitting pestle, release the nuclei with 8-10 strokes.
+1	Do	_	Action	_	_	0	_	_	Offset=1346-1358
+2	pestle	_	Device	_	_	0	_	_	Offset=1363-1369
+3	nuclei	_	Reagent	_	_	0	_	_	Offset=1373-1379
+4	shearing	_	Action	_	_	0	_	_	Offset=1380-1388
+
+# sent_id = s17
+# text = Do not twist the pestle as nuclei shearing may occur.
+1	Stand	_	Action	_	_	0	_	_	Offset=1400-1405
+2	ice	_	Location	_	_	0	_	_	Offset=1409-1412
+3	2	_	Time	_	_	0	_	_	Offset=1417-1426
+
+# sent_id = s18
+# text = Stand on ice for 2 minutes.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1428-1436
+2	homogenate	_	Reagent	_	_	0	_	_	Offset=1441-1451
+3	centrifuge	_	Location	_	_	0	_	_	Offset=1457-1472
+4	leave	_	Action	_	_	0	_	_	Offset=1477-1482
+5	large	_	Amount	_	_	6	Measure	_	Offset=1483-1495
+6	tissue	_	Reagent	_	_	0	_	_	Offset=1499-1505
+7	homogenizer	_	Device	_	_	0	_	_	Offset=1513-1524
+8	discarded	_	Action	_	_	0	_	_	Offset=1531-1540
+
+# sent_id = s19
+# text = Transfer the homogenate to a centrifuge tube and leave large chunks of tissue in the homogenizer to be discarded.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1542-1552
+2	lysate	_	Reagent	_	_	0	_	_	Offset=1557-1563
+3	700	_	Speed	_	_	0	_	_	Offset=1567-1574
+4	5	_	Time	_	_	0	_	_	Offset=1579-1588
+5	pellet	_	Action	_	_	0	_	_	Offset=1592-1598
+6	nuclei	_	Reagent	_	_	0	_	_	Offset=1599-1605
+
+# sent_id = s20
+# text = Centrifuge the lysate at 700 x g for 5 minutes to pellet nuclei.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1607-1615
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1620-1631
+3	new	_	Modifier	_	_	4	Mod-Link	_	Offset=1637-1640
+4	tube	_	Location	_	_	0	_	_	Offset=1641-1645
+
+# sent_id = s21
+# text = Transfer the supernatant to a new tube.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1647-1657
+2	12,000xg	_	Speed	_	_	0	_	_	Offset=1664-1672
+3	10	_	Time	_	_	0	_	_	Offset=1677-1687
+4	remove	_	Action	_	_	0	_	_	Offset=1692-1698
+5	supernatant	_	Reagent	_	_	0	_	_	Offset=1703-1714
+
+# sent_id = s22
+# text = Centrifuge it at 12,000xg for 10 minutes and remove the supernatant.
+1	Suspend	_	Action	_	_	0	_	_	Offset=1750-1757
+2	mitochondrial	_	Reagent	_	_	0	_	_	Offset=1762-1782
+3	Working	_	Modifier	_	_	4	Mod-Link	_	Offset=1786-1793
+4	Mitochondria	_	Reagent	_	_	0	_	_	Offset=1794-1821
+5	approximately	_	Modifier	_	_	6	Mod-Link	_	Offset=1823-1836
+6	50μl	_	Amount	_	_	0	_	_	Offset=1837-1841
+7	keep	_	Action	_	_	0	_	_	Offset=1877-1881
+8	suspension	_	Reagent	_	_	0	_	_	Offset=1886-1896
+9	ice	_	Location	_	_	0	_	_	Offset=1900-1904
+
+# sent_id = s23
+# text = The pellet contains mitochondria.
+1	suspension	_	Reagent	_	_	0	_	_	Offset=1938-1948
+2	stored	_	Action	_	_	0	_	_	Offset=1956-1962
+3	ice	_	Location	_	_	0	_	_	Offset=1966-1969
+4	up	_	Modifier	_	_	5	Mod-Link	_	Offset=1974-1979
+5	48	_	Time	_	_	0	_	_	Offset=1980-1988
+

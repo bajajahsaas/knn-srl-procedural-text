@@ -1,0 +1,17 @@
+# sent_id = s1
+# text = FLV tracer assays
+1	Collect	_	Action	_	_	0	_	_	Offset=50-57
+2	seawater	_	Reagent	_	_	0	_	_	Offset=58-74
+3	desired	_	Location	_	_	0	_	_	Offset=84-100
+
+# sent_id = s2
+# text = Prepare FLVs for tracer assays.
+1	Subsamples	_	Reagent	_	_	0	_	_	Offset=604-614
+2	fixed	_	Action	_	_	0	_	_	Offset=631-636
+3	1%	_	Concentration	_	_	6	Measure	_	Offset=642-650
+4	0.02-µm	_	Size	_	_	6	Measure	_	Offset=673-680
+5	filtered	_	Modifier	_	_	6	Mod-Link	_	Offset=681-689
+6	formalin	_	Reagent	_	_	0	_	_	Offset=690-698
+7	stored	_	Action	_	_	0	_	_	Offset=703-709
+8	4°C	_	Temperature	_	_	0	_	_	Offset=713-716
+

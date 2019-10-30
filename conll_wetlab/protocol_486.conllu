@@ -1,0 +1,175 @@
+# sent_id = s1
+# text = SAMfluoro™: SAM Methyltransferase Assay
+1	Label	_	Action	_	_	0	_	_	Offset=56-61
+2	8	_	Numerical	_	_	4	Measure	_	Offset=62-63
+3	clean	_	Modifier	_	_	4	Mod-Link	_	Offset=64-69
+4	glass	_	Location	_	_	0	_	_	Offset=70-86
+5	A-H	_	Reagent	_	_	0	_	_	Offset=92-95
+6	prepare	_	Action	_	_	0	_	_	Offset=100-107
+7	standards	_	Reagent	_	_	0	_	_	Offset=112-121
+
+# sent_id = s2
+# text = Standard Assay: Label 8 clean glass test tubes with A-H and prepare the standards as indicated below.
+1	Thaw	_	Action	_	_	0	_	_	Offset=371-375
+2	SAM	_	Reagent	_	_	0	_	_	Offset=376-410
+3	SAM	_	Reagent	_	_	0	_	_	Offset=415-467
+4	room	_	Temperature	_	_	0	_	_	Offset=471-487
+
+# sent_id = s3
+# text = The diluted standards are stable for 4 hours at room temperature.
+1	Add	_	Action	_	_	0	_	_	Offset=489-492
+2	entire	_	Amount	_	_	3	Measure	_	Offset=497-510
+3	SAM	_	Reagent	_	_	0	_	_	Offset=514-557
+4	SAM	_	Reagent	_	_	0	_	_	Offset=567-601
+5	mix	_	Action	_	_	0	_	_	Offset=606-609
+6	thoroughly	_	Modifier	_	_	0	_	_	Offset=613-623
+
+# sent_id = s4
+# text = Tube10µM Resorufin Stock (µl)1X Resorufin Buffer (µl)Final Concentration (µM)A1258751.25B2507502.5C3756253.75D5005005E6253756.25F7502507.5G8751258.75H1000010.    
+1	Store	_	Action	_	_	0	_	_	Offset=625-630
+2	SAM	_	Reagent	_	_	0	_	_	Offset=631-665
+3	room	_	Temperature	_	_	0	_	_	Offset=669-685
+4	do	_	Action	_	_	0	_	_	Offset=687-700
+5	addition	_	Action	_	_	0	_	_	Offset=707-715
+6	Additive	_	Reagent	_	_	0	_	_	Offset=719-727
+
+# sent_id = s5
+# text = Thaw SAM Methyltransferase Assay Buffer and SAM Methyltransferase Assay Buffer Additive solution at room temperature.
+1	Adenosylhomocysteine	_	Reagent	_	_	0	_	_	Offset=747-767
+2	vial	_	Location	_	_	0	_	_	Offset=773-777
+3	contains	_	Action	_	_	0	_	_	Offset=778-786
+4	200µl	_	Amount	_	_	6	Measure	_	Offset=787-792
+5	1mM	_	Concentration	_	_	6	Measure	_	Offset=798-801
+6	solution	_	Reagent	_	_	0	_	_	Offset=802-810
+7	adenosylhomocysteine	_	Reagent	_	_	6	Meronym	_	Offset=814-834
+
+# sent_id = s6
+# text = Add the entire volume of SAM Methyltransferase Assay Buffer Additive into the SAM Methyltransferase Assay Buffer and mix it thoroughly.
+1	Thaw	_	Action	_	_	0	_	_	Offset=845-849
+2	vial	_	Location	_	_	0	_	_	Offset=854-858
+3	ice	_	Location	_	_	0	_	_	Offset=862-865
+
+# sent_id = s7
+# text = Store SAM Methyltransferase Assay Buffer at room temperature, do not freeze after addition of Additive.
+1	dilute	_	Action	_	_	0	_	_	Offset=881-887
+2	10µl	_	Amount	_	_	0	_	_	Offset=888-892
+3	90µl	_	Amount	_	_	4	Measure	_	Offset=898-902
+4	SAM	_	Reagent	_	_	0	_	_	Offset=906-954
+
+# sent_id = s8
+# text = Positive Control: Adenosylhomocysteine: The vial contains 200µl of a 1mM solution of adenosylhomocysteine (AdoHcy).
+1	Thaw	_	Action	_	_	0	_	_	Offset=1040-1044
+2	ice	_	Location	_	_	0	_	_	Offset=1048-1051
+
+# sent_id = s9
+# text = Thaw the vial on ice.
+1	Reconstitute	_	Action	_	_	0	_	_	Offset=1155-1167
+2	contents	_	Reagent	_	_	0	_	_	Offset=1172-1180
+3	vial	_	Location	_	_	2	Meronym	_	Offset=1187-1191
+4	100µl	_	Amount	_	_	5	Measure	_	Offset=1197-1202
+5	HCl	_	Reagent	_	_	0	_	_	Offset=1203-1220
+6	20mM	_	Concentration	_	_	0	_	_	Offset=1222-1226
+7	yield	_	Action	_	_	0	_	_	Offset=1231-1236
+8	6.9mM	_	Concentration	_	_	9	Measure	_	Offset=1237-1242
+9	SAM	_	Reagent	_	_	0	_	_	Offset=1243-1246
+
+# sent_id = s10
+# text = Prior to use, dilute 10µl with 90µl of SAM Methyltransferase Assay Buffer with Additive.
+1	making	_	Action	_	_	0	_	_	Offset=1297-1303
+2	Master	_	Reagent	_	_	0	_	_	Offset=1308-1318
+3	add	_	Action	_	_	0	_	_	Offset=1320-1323
+4	100µl	_	Amount	_	_	5	Measure	_	Offset=1324-1329
+5	DMSO	_	Reagent	_	_	0	_	_	Offset=1330-1334
+6	vial	_	Location	_	_	0	_	_	Offset=1342-1346
+7	vortex	_	Action	_	_	0	_	_	Offset=1351-1357
+
+# sent_id = s11
+# text = SAMfluoro Enzyme Mix, supplied in 300µl vials.
+1	Add	_	Action	_	_	0	_	_	Offset=1359-1362
+2	400µl	_	Amount	_	_	3	Measure	5:Measure	Offset=1363-1368
+3	proteomic	_	Reagent	_	_	0	_	_	Offset=1369-1384
+4	ultra	_	Modifier	_	_	5	Mod-Link	_	Offset=1388-1398
+5	water	_	Reagent	_	_	3	Or	_	Offset=1399-1404
+6	vortex	_	Action	_	_	0	_	_	Offset=1409-1415
+
+# sent_id = s12
+# text = Each vial is suitable for 36 assays.
+1	Add	_	Action	_	_	0	_	_	Offset=1435-1438
+2	4ml	_	Amount	_	_	3	Measure	_	Offset=1439-1442
+3	Resorufin	_	Reagent	_	_	0	_	_	Offset=1443-1459
+4	10X	_	Concentration	_	_	3	Measure	_	Offset=1461-1464
+5	36ml	_	Amount	_	_	7	Measure	_	Offset=1469-1473
+6	ultra	_	Modifier	_	_	7	Mod-Link	_	Offset=1474-1484
+7	water	_	Reagent	_	_	0	_	_	Offset=1485-1490
+8	1X	_	Concentration	_	_	9	Measure	_	Offset=1503-1505
+9	Resorufin	_	Reagent	_	_	0	_	_	Offset=1506-1522
+
+# sent_id = s13
+# text = Thaw on ice only the number of vials you require for your assay.
+1	Prepare	_	Action	_	_	0	_	_	Offset=1544-1551
+2	test	_	Reagent	_	_	5	Meronym	_	Offset=1557-1568
+3	purified	_	Modifier	_	_	5	Mod-Link	_	Offset=1585-1593
+4	SAM	_	Modifier	_	_	5	Mod-Link	_	Offset=1594-1607
+5	methyltransferase	_	Reagent	_	_	0	_	_	Offset=1608-1625
+
+# sent_id = s14
+# text = S-Adenosylmethionine (SAM), supplied lyophilized.
+1	Prepare	_	Action	_	_	0	_	_	Offset=1682-1689
+
+# sent_id = s15
+# text = Reconstitute the contents ofthe vial with 100µl HCl Assay Reagent [20mM] to yield 6.9mM SAM.
+1	Add	_	Action	_	_	0	_	_	Offset=1848-1851
+2	115µl	_	Amount	_	_	0	_	_	Offset=1852-1857
+
+# sent_id = s16
+# text = SAMfluoro Fluorometric Mix.
+1	Perform	_	Action	_	_	0	_	_	Offset=1919-1926
+
+# sent_id = s17
+# text = Immediately prior to making the Master Mix, add 100µl DMSO to the vial and vortex.
+1	Blank	_	Action	_	_	0	_	_	Offset=1957-1962
+
+# sent_id = s18
+# text = Add 400µl proteomic grade or ultra pure water and vortex.
+1	Read	_	Action	_	_	0	_	_	Offset=2002-2006
+
+# sent_id = s19
+# text = Resorufin Buffer: Add 4ml Resorufin Buffer [10X] to 36ml ultra pure water to generate 1X Resorufin Buffer.
+1	Equilibrate	_	Action	_	_	0	_	_	Offset=2118-2129
+
+# sent_id = s20
+# text = Sample Preparation: Prepare your test sample, containing the purified SAM dependent methyltransferase to be assayed, according to your own standard protocol.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=2190-2197
+
+# sent_id = s21
+# text = Prepare the specific substrate for the methyltransferase to be assayed using the SAM Methyltransferase Assay Buffer or the buffer of your own choice.
+1	aliquot	_	Action	_	_	0	_	_	Offset=2482-2489
+
+# sent_id = s22
+# text = Standard Assay: Add 115µl of each standard per well of a fluorescent compatible plate.
+1	add	_	Action	_	_	0	_	_	Offset=2645-2648
+
+# sent_id = s23
+# text = Perform in duplicate.
+1	Add	_	Action	_	_	0	_	_	Offset=2797-2800
+
+# sent_id = s24
+# text = Standard Assay: Blank the plate against 1X Resorufin Buffer.
+1	prepare	_	Action	_	_	0	_	_	Offset=3009-3016
+
+# sent_id = s25
+# text = Read the plate after 5 minutes using an excitation wavelength of 530-540nm and an emission wavelength of 585-595nm.
+1	initiate	_	Action	_	_	0	_	_	Offset=3353-3361
+
+# sent_id = s26
+# text = Equilibrate the SAM Methyltransferase Assay Buffer + Additive to 37 °C.
+1	read	_	Action	_	_	0	_	_	Offset=3451-3455
+
+# sent_id = s27
+# text = Aliquot a total volume of 5μl of your SAM methyltransferase samples to at least two wells of a 96 well plate.
+1	Dilute	_	Action	_	_	0	_	_	Offset=3604-3610
+
+# sent_id = s28
+# text = Use the SAM Methyltransferase Assay Buffer or 0.1M Tris, pH8.0 as a diluent.
+1	Mix	_	Action	_	_	0	_	_	Offset=3683-3686
+

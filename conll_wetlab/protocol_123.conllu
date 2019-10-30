@@ -1,0 +1,180 @@
+# sent_id = s1
+# text = Pulse Field Gel Electrophoresis (PFGE) Protocol for separation of Chlorella chromosomal DNA and Chlorella virus DNA
+1	Harvest	_	Action	_	_	0	_	_	Offset=116-123
+2	Chlorella	_	Reagent	_	_	0	_	_	Offset=124-154
+3	4	_	Location	_	_	0	_	_	Offset=160-178
+4	(1.2	_	Size	_	_	0	_	_	Offset=179-205
+5	centrifugation	_	Action	_	_	0	_	_	Offset=209-223
+6	4000	_	Speed	_	_	0	_	_	Offset=227-235
+7	5	_	Time	_	_	0	_	_	Offset=240-249
+
+# sent_id = s2
+# text = Harvest Chlorella NC64A (or Pbi) cells from 4 day old cultures (1.2 - 2.0 x 107 cells/ml) by centrifugation at 4000 x g for 5 minutes.
+1	Re-suspend	_	Action	_	_	0	_	_	Offset=251-261
+2	MBBM	_	Reagent	_	_	0	_	_	Offset=265-283
+3	FES	_	Reagent	_	_	0	_	_	Offset=287-302
+4	8.6	_	Concentration	_	_	0	_	_	Offset=323-341
+
+# sent_id = s3
+# text = Re-suspend in MBBM (NC64A cells) or FES (Pbi cells) at concentration of 8.6 x 107 cells/mL.
+1	Add	_	Action	_	_	0	_	_	Offset=343-346
+2	chlorella	_	Reagent	_	_	0	_	_	Offset=347-362
+3	multiplicity	_	Location	_	_	0	_	_	Offset=368-393
+4	10	_	Numerical	_	_	0	_	_	Offset=402-404
+5	plaque-forming	_	Measure-Type	_	_	4	Of-Type	_	Offset=405-436
+
+# sent_id = s4
+# text = Add chlorella virus to a multiplicity of infection (MOI) = 10 plaque-forming units (pfu)/cell.
+1	Sample	_	Action	_	_	0	_	_	Offset=438-444
+2	infected	_	Modifier	_	_	3	Mod-Link	_	Offset=445-453
+3	chlorella	_	Reagent	_	_	0	_	_	Offset=454-469
+4	25	_	Amount	_	_	3	Measure	_	Offset=471-476
+5	prepared	_	Modifier	_	_	6	Mod-Link	_	Offset=483-491
+6	centrifuge	_	Location	_	_	0	_	_	Offset=492-508
+7	formaldehyde	_	Device	_	_	0	_	_	Offset=514-526
+8	place	_	Action	_	_	0	_	_	Offset=576-581
+9	ice	_	Location	_	_	0	_	_	Offset=585-588
+
+# sent_id = s5
+# text = Sample infected chlorella cells (25 mL) into prepared centrifuge tubes with formaldehyde (the final formaldehyde concentration is 4%) and place on ice.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=590-600
+2	4000	_	Speed	_	_	0	_	_	Offset=604-612
+3	5	_	Time	_	_	0	_	_	Offset=617-626
+
+# sent_id = s6
+# text = Centrifuge at 4000 x g for 5 minutes.
+1	Wash	_	Action	_	_	0	_	_	Offset=628-632
+2	samples	_	Reagent	_	_	0	_	_	Offset=633-640
+3	re-suspending	_	Action	_	_	0	_	_	Offset=644-657
+4	10	_	Amount	_	_	5	Measure	_	Offset=666-671
+5	MBBM	_	Location	_	_	0	_	_	Offset=675-679
+6	50	_	Amount	_	_	7	Measure	_	Offset=693-698
+7	EDTA	_	Reagent	_	_	0	_	_	Offset=699-703
+8	4000	_	Speed	_	_	0	_	_	Offset=736-744
+9	5	_	Time	_	_	0	_	_	Offset=749-758
+
+# sent_id = s7
+# text = Wash samples by re-suspending them in 10 mL of MBBM amended with 50 mM EDTA and following centrifugation at 4000 x g for 5 minutes.
+1	Repeat	_	Action	_	_	0	_	_	Offset=760-766
+2	wash	_	Method	_	_	0	_	_	Offset=767-771
+3	3	_	Numerical	_	_	0	_	_	Offset=777-778
+
+# sent_id = s8
+# text = Repeat wash step 3 times.
+1	Re-suspend	_	Action	_	_	0	_	_	Offset=786-796
+2	washed	_	Modifier	_	_	4	Mod-Link	_	Offset=797-803
+3	infected	_	Modifier	_	_	4	Mod-Link	_	Offset=804-812
+4	cells	_	Reagent	_	_	0	_	_	Offset=813-818
+5	0.5	_	Amount	_	_	6	Measure	_	Offset=822-828
+6	SB	_	Location	_	_	0	_	_	Offset=832-834
+
+# sent_id = s9
+# text = Re-suspend washed infected cells in 0.5 mL of SB.
+1	Add	_	Action	_	_	0	_	_	Offset=836-839
+2	cells	_	Reagent	_	_	0	_	_	Offset=847-852
+3	0.5	_	Amount	_	_	2	Measure	_	Offset=853-858
+4	2%	_	Reagent	_	_	0	_	_	Offset=863-890
+5	SB	_	Location	_	_	0	_	_	Offset=904-906
+6	45°	_	Temperature	_	_	0	_	_	Offset=916-919
+7	mix	_	Action	_	_	0	_	_	Offset=923-926
+8	pour	_	Action	_	_	0	_	_	Offset=989-993
+9	mix	_	Reagent	_	_	0	_	_	Offset=998-1001
+10	BioRad	_	Location	_	_	0	_	_	Offset=1007-1024
+
+# sent_id = s10
+# text = Add to the cells 0.5 mL of 2% low melting point agarose (BioRad) in SB (kept at 45°C), mix well (work quickly, try not to generate any air bubbles), and pour the mix into BioRad plug molds.
+1	Place	_	Action	_	_	0	_	_	Offset=1026-1031
+2	plug	_	Reagent	_	_	0	_	_	Offset=1032-1042
+3	refrigerator	_	Location	_	_	0	_	_	Offset=1046-1058
+4	15	_	Time	_	_	0	_	_	Offset=1063-1073
+
+# sent_id = s11
+# text = Place plug molds in refrigerator for 15 minutes to solidify.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=1087-1096
+2	remove	_	Action	_	_	0	_	_	Offset=1097-1103
+3	agarose	_	Reagent	_	_	0	_	_	Offset=1104-1118
+4	mold	_	Location	_	_	0	_	_	Offset=1124-1128
+5	place	_	Action	_	_	0	_	_	Offset=1133-1138
+6	2	_	Amount	_	_	7	Measure	_	Offset=1149-1153
+7	DB	_	Location	_	_	0	_	_	Offset=1157-1159
+8	1mg/mL	_	Amount	_	_	9	Measure	_	Offset=1173-1179
+9	Proteinase	_	Reagent	_	_	0	_	_	Offset=1180-1192
+
+# sent_id = s12
+# text = Carefully remove agarose blocks from mold and place them into 2 mL of DB amended with 1mg/mL Proteinase K.
+1	wash	_	Action	_	_	0	_	_	Offset=1212-1216
+2	agarose	_	Reagent	_	_	0	_	_	Offset=1217-1231
+3	30	_	Time	_	_	0	_	_	Offset=1236-1246
+4	DB	_	Reagent	_	_	0	_	_	Offset=1252-1254
+5	4	_	Numerical	_	_	0	_	_	Offset=1255-1256
+
+# sent_id = s13
+# text = After incubation, wash agarose blocks for 30 minutes with DB 4 times.
+1	Cut	_	Action	_	_	0	_	_	Offset=1264-1267
+2	blocks	_	Reagent	_	_	0	_	_	Offset=1268-1274
+3	small	_	Modifier	_	_	4	Mod-Link	_	Offset=1278-1283
+4	pieces	_	Size	_	_	0	_	_	Offset=1284-1290
+
+# sent_id = s14
+# text = Cut blocks in small pieces to fit gel wells.
+1	Load	_	Action	_	_	0	_	_	Offset=1309-1313
+2	agarose	_	Reagent	_	_	0	_	_	Offset=1314-1328
+3	gel	_	Location	_	_	0	_	_	Offset=1334-1343
+4	seal	_	Action	_	_	0	_	_	Offset=1348-1352
+5	melted	_	Modifier	_	_	7	Mod-Link	_	Offset=1363-1369
+6	1%	_	Modifier	_	_	7	Mod-Link	_	Offset=1378-1398
+7	agarose	_	Reagent	_	_	0	_	_	Offset=1399-1406
+8	running	_	Location	_	_	0	_	_	Offset=1410-1424
+
+# sent_id = s15
+# text = Load agarose blocks into gel wells and seal them with melted (~45°C) 1% low melting point agarose in running buffer.
+1	Separate	_	Action	_	_	0	_	_	Offset=1709-1717
+2	chromosomal	_	Reagent	_	_	0	_	_	Offset=1718-1733
+3	CHEF-DR	_	Location	_	_	0	_	_	Offset=1738-1790
+4	1X	_	Modifier	_	_	5	Mod-Link	_	Offset=1796-1802
+5	running	_	Reagent	_	_	0	_	_	Offset=1803-1817
+
+# sent_id = s16
+# text = The chromosomes of Hansenula wingei (1.05-3.13 Mbp), cat#170-3667; Schizosaccharomyces (3.5-5.7 Mbp), cat#170-3633 (Bio-Rad, Hercules, CA, USA), and Yeast Chromosome PFG Marker (225-1,900 Kbp), cat#N0345S (New England Biolabs, Beverly, MA, USA) are used as molecular weight markers.
+1	Run	_	Action	_	_	0	_	_	Offset=1819-1822
+2	electrophoresis	_	Method	_	_	0	_	_	Offset=1823-1838
+3	3	_	Speed	_	_	0	_	_	Offset=1842-1848
+4	ramping	_	Action	_	_	0	_	_	Offset=1873-1880
+5	250	_	Time	_	_	0	_	_	Offset=1886-1904
+6	60	_	Time	_	_	0	_	_	Offset=1909-1915
+
+# sent_id = s17
+# text = Separate chromosomal DNA  in CHEF-DR  (BioRad, Hercules, CA) electrophoresis unit with 1X TAE running buffer.
+1	Change	_	Action	_	_	0	_	_	Offset=1917-1923
+2	buffer	_	Reagent	_	_	0	_	_	Offset=1924-1930
+3	24	_	Time	_	_	0	_	_	Offset=1938-1944
+
+# sent_id = s18
+# text = Run electrophoresis at 3 V/cm (100 V) with pulse time ramping from 250 to 900 seconds for 60 hrs.
+1	Stain	_	Action	_	_	0	_	_	Offset=1946-1951
+2	gel	_	Reagent	_	_	0	_	_	Offset=1952-1955
+3	0.5	_	Amount	_	_	4	Measure	_	Offset=1961-1969
+4	ethidium	_	Reagent	_	_	0	_	_	Offset=1970-1986
+5	20	_	Numerical	_	_	0	_	_	Offset=1991-1993
+
+# sent_id = s19
+# text = Change buffer  every 24 hrs.
+1	Add	_	Action	_	_	0	_	_	Offset=1995-1998
+2	3.1	_	Amount	_	_	3	Measure	_	Offset=1999-2005
+3	37%	_	Reagent	_	_	0	_	_	Offset=2009-2025
+4	40	_	Amount	_	_	5	Measure	_	Offset=2031-2036
+5	centrifuge	_	Location	_	_	0	_	_	Offset=2037-2053
+6	place	_	Action	_	_	0	_	_	Offset=2058-2063
+7	ice	_	Location	_	_	0	_	_	Offset=2072-2075
+
+# sent_id = s20
+# text = Stain gel with 0.5 mg/L ethidium bromide for 20.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2077-2085
+2	agarose	_	Reagent	_	_	0	_	_	Offset=2086-2100
+3	24	_	Time	_	_	0	_	_	Offset=2105-2111
+4	50°C	_	Temperature	_	_	0	_	_	Offset=2115-2119
+5	Prepare	_	Action	_	_	0	_	_	Offset=2120-2127
+6	1%	_	Reagent	_	_	0	_	_	Offset=2128-2142
+7	1×	_	Location	_	_	0	_	_	Offset=2159-2172
+8	BioRad	_	Device	_	_	0	_	_	Offset=2179-2199
+

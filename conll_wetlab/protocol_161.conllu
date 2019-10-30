@@ -1,0 +1,64 @@
+# sent_id = s1
+# text = Electron microscopy for virus identification and virus assemblage characterization
+1	5µL	_	Amount	_	_	2	Measure	_	Offset=83-86
+2	enrichment	_	Reagent	_	_	0	_	_	Offset=93-111
+3	0.2	_	Amount	_	_	1	Or	_	Offset=116-122
+4	filter	_	Action	_	_	0	_	_	Offset=123-129
+5	centrifuge	_	Action	_	_	0	_	_	Offset=136-146
+6	10	_	Time	_	_	0	_	_	Offset=149-155
+7	3000g	_	Speed	_	_	0	_	_	Offset=159-164
+8	cell-free	_	Reagent	_	_	1	Coreference-Link	_	Offset=166-187
+9	spot	_	Action	_	_	0	_	_	Offset=192-196
+10	carbon/formvar-coated	_	Modifier	_	_	11	Mod-Link	_	Offset=205-226
+11	electron	_	Location	_	_	0	_	_	Offset=227-252
+
+# sent_id = s2
+# text = 5µL of an enrichment culture, or 0.2 µm filtered and centrifuged (10 min at 3000g) cell-free supernatant, is spotted onto carbon/formvar-coated electron microscope grids (Ted Pella or EM Sciences).
+1	It	_	Mention	_	_	0	_	_	Offset=281-283
+2	absorb	_	Action	_	_	0	_	_	Offset=303-309
+3	2	_	Time	_	_	0	_	_	Offset=314-319
+
+# sent_id = s3
+# text = It is then allowed to absorb for 2 min.
+1	Remove	_	Action	_	_	0	_	_	Offset=321-327
+2	sample	_	Reagent	_	_	0	_	_	Offset=328-334
+3	bring	_	Action	_	_	0	_	_	Offset=355-360
+4	small	_	Size	_	_	5	Setting	_	Offset=366-371
+5	piece	_	Device	_	_	0	_	_	Offset=383-404
+6	perpendicular	_	Modifier	_	_	7	Mod-Link	_	Offset=405-430
+7	side	_	Location	_	_	0	_	_	Offset=438-454
+
+# sent_id = s4
+# text = Remove sample from grid by slowly bringing a small (ca. 1cm2) piece of filter paper perpendicular to the grid to the side of the grid.
+1	sample	_	Reagent	_	_	0	_	_	Offset=460-466
+2	remove	_	Action	_	_	0	_	_	Offset=475-481
+3	wicking	_	Method	_	_	0	_	_	Offset=486-493
+
+# sent_id = s5
+# text = The sample will be removed by wicking.
+1	Stain	_	Action	_	_	0	_	_	Offset=495-500
+2	grid	_	Reagent	_	_	0	_	_	Offset=501-505
+3	placing	_	Action	_	_	0	_	_	Offset=509-516
+4	5μL	_	Amount	_	_	6	Measure	_	Offset=522-525
+5	2%	_	Concentration	_	_	6	Measure	_	Offset=534-536
+6	Uranyl	_	Reagent	_	_	0	_	_	Offset=537-551
+7	Phosphotungstate	_	Reagent	_	_	6	Meronym	_	Offset=556-572
+8	15-30	_	Time	_	_	0	_	_	Offset=578-591
+
+# sent_id = s6
+# text = Stain grid by placing on a 5μL drop of 2% Uranyl Acetate (or Phosphotungstate) for 15-30 seconds.
+1	Remove	_	Action	_	_	0	_	_	Offset=593-599
+2	stain	_	Reagent	_	_	0	_	_	Offset=600-605
+3	wicking	_	Method	_	_	0	_	_	Offset=609-616
+
+# sent_id = s7
+# text = Remove stain by wicking as above.
+1	Air	_	Action	_	_	0	_	_	Offset=627-634
+2	10	_	Time	_	_	0	_	_	Offset=648-658
+
+# sent_id = s8
+# text = Air dry for at least 10 minutes.
+1	Samples	_	Reagent	_	_	0	_	_	Offset=660-667
+2	examine	_	Action	_	_	0	_	_	Offset=672-679
+3	transmission	_	Method	_	_	0	_	_	Offset=684-716
+

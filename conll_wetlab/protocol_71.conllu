@@ -1,0 +1,135 @@
+# sent_id = s1
+# text = MojoSort™ Mouse NK Cell Isolation Kit Protocol
+1	Prepare	_	Action	_	_	0	_	_	Offset=47-54
+2	cells	_	Reagent	_	_	0	_	_	Offset=55-60
+3	tissue	_	Reagent	_	_	2	Meronym	_	Offset=71-89
+
+# sent_id = s2
+# text = Prepare cells from your tissue of interest without lysing erythrocytes.
+1	resuspend	_	Action	_	_	0	_	_	Offset=165-174
+2	cells	_	Reagent	_	_	0	_	_	Offset=179-184
+3	MojoSort™	_	Location	_	_	0	_	_	Offset=188-204
+4	adding	_	Action	_	_	0	_	_	Offset=208-214
+5	4mL	_	Amount	_	_	2	Measure	_	Offset=221-224
+6	5	_	Amount	_	_	7	Measure	_	Offset=230-234
+7	polystyrene	_	Location	_	_	0	_	_	Offset=248-264
+
+# sent_id = s3
+# text = In the final wash of your sample preparation, resuspend the cells in MojoSort™ Buffer by adding up to 4mL in a 5 mL (12 x 75 mm) polystyrene tube.
+1	Filter	_	Action	_	_	0	_	_	Offset=327-333
+2	cells	_	Reagent	_	_	0	_	_	Offset=338-343
+3	70	_	Size	_	_	4	Setting	_	Offset=351-356
+4	cell	_	Device	_	_	0	_	_	Offset=357-370
+5	centrifuge	_	Action	_	_	0	_	_	Offset=372-382
+6	300	_	Speed	_	_	0	_	_	Offset=386-393
+7	5	_	Time	_	_	0	_	_	Offset=398-407
+8	resuspend	_	Action	_	_	0	_	_	Offset=413-422
+9	anappropriate	_	Modifier	_	_	10	Mod-Link	_	Offset=426-446
+10	MojoSort™	_	Reagent	_	_	0	_	_	Offset=450-466
+
+# sent_id = s4
+# text = Note: Keep MojoSort™ Buffer on ice throughout the procedure.
+1	Count	_	Action	_	_	0	_	_	Offset=468-473
+2	adjust	_	Action	_	_	0	_	_	Offset=478-484
+3	cell	_	Reagent	_	_	0	_	_	Offset=489-507
+4	1	_	Concentration	_	_	0	_	_	Offset=511-527
+
+# sent_id = s5
+# text = Filter the cells with a 70 μm cell strainer, centrifuge at 300 x g for 5 minutes, and resuspend in anappropriate volume of MojoSort™ Buffer.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=529-536
+2	100	_	Amount	_	_	3	Measure	_	Offset=537-543
+3	cell	_	Reagent	_	_	0	_	_	Offset=547-562
+4	new	_	Modifier	_	_	5	Mod-Link	_	Offset=582-585
+5	tube	_	Location	_	_	0	_	_	Offset=586-590
+
+# sent_id = s6
+# text = Count and adjust the cell concentration to 1 x 108 cells/mL.
+1	Add	_	Action	_	_	0	_	_	Offset=592-595
+2	10	_	Amount	_	_	3	Measure	_	Offset=596-601
+3	Biotin-Antibody	_	Reagent	_	_	0	_	_	Offset=609-633
+4	mix	_	Action	_	_	0	_	_	Offset=635-638
+5	well	_	Modifier	_	_	0	_	_	Offset=639-643
+6	incubate	_	Action	_	_	0	_	_	Offset=648-656
+7	ice	_	Location	_	_	0	_	_	Offset=660-663
+8	15	_	Time	_	_	0	_	_	Offset=668-678
+
+# sent_id = s7
+# text = Aliquot 100 μL of cell suspension (107 cells) into a new tube.
+1	Scale	_	Action	_	_	0	_	_	Offset=680-685
+2	volume	_	Reagent	_	_	0	_	_	Offset=693-699
+3	accordingly	_	Modifier	_	_	0	_	_	Offset=700-711
+
+# sent_id = s8
+# text = Add 10 μL of the Biotin-Antibody Cocktail, mix well and incubate on ice for 15 minutes.
+1	add	_	Action	_	_	0	_	_	Offset=751-754
+2	100	_	Amount	_	_	3	Measure	_	Offset=755-761
+3	1	_	Reagent	_	_	0	_	_	Offset=766-779
+
+# sent_id = s9
+# text = Scale up the volume accordingly if separating more cells.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=961-970
+2	beads	_	Reagent	_	_	0	_	_	Offset=975-980
+3	vortexing	_	Action	_	_	0	_	_	Offset=984-993
+4	maximum	_	Speed	_	_	0	_	_	Offset=995-1019
+
+# sent_id = s10
+# text = For example, add 100 μL for 1 x 108 cells.
+1	Add	_	Action	_	_	0	_	_	Offset=1021-1024
+2	10	_	Amount	_	_	3	Measure	_	Offset=1025-1030
+3	Streptavidin	_	Reagent	_	_	0	_	_	Offset=1034-1056
+
+# sent_id = s11
+# text = When working with less than 107 cells, use indicated volumes for 107 cells.
+1	Mix	_	Action	_	_	0	_	_	Offset=1058-1061
+2	well	_	Modifier	_	_	0	_	_	Offset=1062-1066
+3	incubate	_	Action	_	_	0	_	_	Offset=1071-1079
+4	ice	_	Location	_	_	0	_	_	Offset=1083-1086
+5	15	_	Time	_	_	0	_	_	Offset=1091-1101
+
+# sent_id = s12
+# text = Optional: Keep unused cells, or take an aliquot before adding the cocktail to monitor purity and yield.
+1	Scale	_	Action	_	_	0	_	_	Offset=1103-1108
+2	volume	_	Reagent	_	_	0	_	_	Offset=1116-1122
+3	accordingly	_	Modifier	_	_	0	_	_	Offset=1123-1134
+
+# sent_id = s13
+# text = Resuspend the beads by vortexing, maximum speed, 5 touches.
+1	Wash	_	Action	_	_	0	_	_	Offset=1279-1283
+2	cells	_	Reagent	_	_	0	_	_	Offset=1288-1293
+3	adding	_	Action	_	_	0	_	_	Offset=1297-1303
+4	3	_	Amount	_	_	5	Measure	_	Offset=1304-1308
+5	MojoSort™	_	Reagent	_	_	0	_	_	Offset=1312-1328
+6	centrifuge	_	Action	_	_	0	_	_	Offset=1330-1340
+7	300	_	Speed	_	_	0	_	_	Offset=1344-1351
+8	5	_	Time	_	_	0	_	_	Offset=1356-1365
+9	discard	_	Action	_	_	0	_	_	Offset=1367-1374
+10	supernatant	_	Reagent	_	_	0	_	_	Offset=1375-1386
+
+# sent_id = s14
+# text = Add 10 μL of Streptavidin Nanobeads.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1481-1490
+2	cells	_	Reagent	_	_	0	_	_	Offset=1495-1500
+3	3	_	Amount	_	_	4	Measure	_	Offset=1504-1508
+4	MojoSort™	_	Location	_	_	0	_	_	Offset=1512-1528
+
+# sent_id = s15
+# text = Mix well and incubate on ice for 15 minutes.
+1	disrupt	_	Action	_	_	0	_	_	Offset=1613-1620
+2	aggregates	_	Reagent	_	_	0	_	_	Offset=1625-1635
+3	pipetting	_	Action	_	_	0	_	_	Offset=1639-1648
+4	solution	_	Reagent	_	_	0	_	_	Offset=1653-1661
+5	up	_	Method	_	_	0	_	_	Offset=1662-1673
+
+# sent_id = s16
+# text = Scale up the volume accordingly if separating more cells.
+1	Place	_	Action	_	_	0	_	_	Offset=1675-1680
+2	tube	_	Device	_	_	0	_	_	Offset=1685-1689
+3	magnet	_	Location	_	_	0	_	_	Offset=1697-1703
+4	5	_	Time	_	_	0	_	_	Offset=1708-1717
+
+# sent_id = s17
+# text = For example, add 100 μL for 1 x 108 cells.
+1	Pour	_	Action	_	_	0	_	_	Offset=1719-1723
+2	collect	_	Action	_	_	0	_	_	Offset=1732-1739
+3	liquid	_	Reagent	_	_	0	_	_	Offset=1744-1750
+

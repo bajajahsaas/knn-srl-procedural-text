@@ -1,0 +1,109 @@
+# sent_id = s1
+# text = Trypsin Digestion
+1	Make	_	Action	_	_	0	_	_	Offset=18-22
+2	6M	_	Reagent	_	_	0	_	_	Offset=23-39
+3	adding	_	Action	_	_	0	_	_	Offset=43-49
+4	108.11	_	Amount	_	_	5	Measure	_	Offset=50-59
+5	Urea	_	Reagent	_	_	0	_	_	Offset=63-67
+6	300	_	Amount	_	_	7	Measure	_	Offset=71-77
+7	50mM	_	Reagent	_	_	0	_	_	Offset=81-135
+
+# sent_id = s2
+# text = Make 6M Urea solution by adding 108.11 mg of Urea to 300 µL of 50mM ammonium bicarbonate (NH4HCO3) containing protein.
+1	Add	_	Action	_	_	0	_	_	Offset=137-140
+2	20	_	Amount	_	_	3	Measure	_	Offset=141-146
+3	1.5	_	Reagent	_	_	0	_	_	Offset=150-160
+4	8.8	_	pH	_	_	3	Measure	_	Offset=164-167
+
+# sent_id = s3
+# text = Add 20 µL of 1.5 M Tris pH 8.8.
+1	Add	_	Action	_	_	0	_	_	Offset=169-172
+2	7.5	_	Amount	_	_	3	Measure	_	Offset=173-179
+3	200mM	_	Reagent	_	_	0	_	_	Offset=183-193
+4	incubate	_	Action	_	_	0	_	_	Offset=198-206
+5	1	_	Time	_	_	0	_	_	Offset=211-217
+6	37°C	_	Temperature	_	_	0	_	_	Offset=221-225
+
+# sent_id = s4
+# text = Add 7.5 µL of 200mM TCEP and incubate for 1 hour at 37°C.
+1	Add	_	Action	_	_	0	_	_	Offset=227-230
+2	60	_	Amount	_	_	3	Measure	_	Offset=231-236
+3	200mM	_	Reagent	_	_	0	_	_	Offset=240-259
+4	vortex	_	Action	_	_	0	_	_	Offset=264-270
+
+# sent_id = s5
+# text = Add 60 µL of 200mM iodoacetamide and vortex.
+1	Incubate	_	Action	_	_	0	_	_	Offset=272-280
+2	one	_	Time	_	_	0	_	_	Offset=285-293
+3	room	_	Temperature	_	_	0	_	_	Offset=297-313
+4	dark	_	Location	_	_	0	_	_	Offset=319-328
+
+# sent_id = s6
+# text = Incubate for one hour at room temperature in a dark area.
+1	Add	_	Action	_	_	0	_	_	Offset=330-333
+2	60	_	Amount	_	_	3	Measure	_	Offset=334-339
+3	200mM	_	Reagent	_	_	0	_	_	Offset=343-352
+4	vortex.	_	Action	_	_	0	_	_	Offset=357-364
+
+# sent_id = s7
+# text = Add 60 µL of 200mM DTT and vortex.
+1	Incubate	_	Action	_	_	0	_	_	Offset=365-373
+2	one	_	Time	_	_	0	_	_	Offset=378-386
+3	room	_	Temperature	_	_	0	_	_	Offset=390-406
+
+# sent_id = s8
+# text = Incubate for one hour at room temperature.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=408-415
+2	150	_	Amount	_	_	0	_	_	Offset=416-422
+3	three	_	Modifier	_	_	4	Mod-Link	_	Offset=433-438
+4	1.5	_	Location	_	_	0	_	_	Offset=439-462
+
+# sent_id = s9
+# text = Aliquot 150 µL each into three 1.5 mL centrifuge tubes.
+1	Add	_	Action	_	_	0	_	_	Offset=464-467
+2	800	_	Amount	_	_	3	Measure	_	Offset=468-474
+3	25mM	_	Reagent	_	_	0	_	_	Offset=478-503
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=507-511
+5	tube	_	Location	_	_	0	_	_	Offset=512-516
+6	dilute	_	Action	_	_	0	_	_	Offset=520-526
+7	urea	_	Reagent	_	_	0	_	_	Offset=531-535
+
+# sent_id = s10
+# text = Add 800 µL of 25mM ammonium bicarbonate to each tube to dilute the urea.
+1	Add	_	Action	_	_	0	_	_	Offset=537-540
+2	200	_	Amount	_	_	3	Measure	_	Offset=541-547
+3	MeOH	_	Reagent	_	_	0	_	_	Offset=551-555
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=559-563
+5	tube	_	Location	_	_	0	_	_	Offset=564-568
+
+# sent_id = s11
+# text = Add 200 µL of MeOH to each tube.
+1	Add	_	Action	_	_	0	_	_	Offset=570-573
+2	Trypsin	_	Reagent	_	_	0	_	_	Offset=574-581
+3	protein	_	Reagent	_	_	0	_	_	Offset=585-592
+4	50	_	Amount	_	_	2	Measure	_	Offset=607-630
+5	incubate	_	Action	_	_	0	_	_	Offset=635-643
+6	overnight	_	Time	_	_	0	_	_	Offset=644-653
+7	room	_	Temperature	_	_	0	_	_	Offset=657-673
+
+# sent_id = s12
+# text = Add Trypsin to protein at a ratio of 50 protein to 1 trypsin and incubate overnight at room temperature.
+1	Speedvac	_	Action	_	_	0	_	_	Offset=675-683
+2	until	_	Time	_	_	0	_	_	Offset=684-693
+
+# sent_id = s13
+# text = Speedvac until dry.
+1	Add	_	Action	_	_	0	_	_	Offset=695-698
+2	200	_	Amount	_	_	3	Measure	_	Offset=699-705
+3	molecular	_	Reagent	_	_	0	_	_	Offset=709-738
+4	tubes	_	Location	_	_	0	_	_	Offset=742-747
+5	three	_	Numerical	_	_	0	_	_	Offset=748-753
+6	speedvac	_	Action	_	_	0	_	_	Offset=764-772
+7	reduce	_	Action	_	_	0	_	_	Offset=776-782
+8	ammonium	_	Reagent	_	_	0	_	_	Offset=787-807
+
+# sent_id = s14
+# text = Add 200 µL of molecular biology grade water to tubes three times and speedvac to reduce the ammonium bicarbonate.
+1	Store	_	Action	_	_	0	_	_	Offset=809-814
+2	-80°C	_	Temperature	_	_	0	_	_	Offset=818-823
+

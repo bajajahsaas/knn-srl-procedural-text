@@ -1,0 +1,177 @@
+# sent_id = s1
+# text = True-Nuclear™ Transcription Factor Staining Protocol for 96-Well, U-Bottom.
+1	discard	_	Action	_	_	0	_	_	Offset=212-219
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=224-235
+3	gently	_	Modifier	_	_	0	_	_	Offset=241-247
+4	vortex	_	Action	_	_	0	_	_	Offset=248-254
+5	samples	_	Reagent	_	_	0	_	_	Offset=259-266
+
+# sent_id = s2
+# text = Plate Perform cell surface staining as described in BioLegend's Cell Surface Immunofluorescence Staining Protocol.
+1	Add	_	Action	_	_	0	_	_	Offset=298-301
+2	200	_	Amount	_	_	3	Measure	_	Offset=302-308
+3	Transcription	_	Reagent	_	_	0	_	_	Offset=316-352
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=356-360
+5	well	_	Location	_	_	0	_	_	Offset=361-365
+
+# sent_id = s3
+# text = After the last wash, discard the supernatant, and gently vortex the samples to dissociate the cell pellet.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=367-373
+2	pipette	_	Action	_	_	0	_	_	Offset=374-381
+
+# sent_id = s4
+# text = Add 200 µL of the Transcription Factor 1X Fix solution to each well.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=421-431
+2	plate	_	Device	_	_	0	_	_	Offset=436-441
+3	300-400	_	Speed	_	_	0	_	_	Offset=445-456
+4	room	_	Temperature	_	_	0	_	_	Offset=460-476
+5	5	_	Time	_	_	0	_	_	Offset=481-490
+6	discard	_	Action	_	_	0	_	_	Offset=492-499
+7	supernatant	_	Reagent	_	_	0	_	_	Offset=504-515
+8	gently	_	Modifier	_	_	0	_	_	Offset=521-527
+9	vortex	_	Action	_	_	0	_	_	Offset=528-534
+
+# sent_id = s5
+# text = Gently pipette to ensure cells are fully resuspended.
+1	Add	_	Action	_	_	0	_	_	Offset=566-569
+2	200	_	Amount	_	_	3	Measure	_	Offset=570-576
+3	Transcription	_	Reagent	_	_	0	_	_	Offset=584-619
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=623-627
+5	well	_	Location	_	_	0	_	_	Offset=628-632
+
+# sent_id = s6
+# text = Centrifuge the plate at 300-400 x g at room temperature for 5 minutes, discard the supernatant, and gently vortex to dissociate the cell pellet.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=646-656
+2	plate	_	Device	_	_	0	_	_	Offset=661-666
+3	300-400	_	Speed	_	_	0	_	_	Offset=670-681
+4	room	_	Modifier	_	_	0	_	_	Offset=685-701
+5	5	_	Time	_	_	0	_	_	Offset=706-715
+6	discard	_	Action	_	_	0	_	_	Offset=717-724
+7	supernatant	_	Reagent	_	_	0	_	_	Offset=729-740
+8	gently	_	Modifier	_	_	0	_	_	Offset=746-752
+9	vortex	_	Action	_	_	0	_	_	Offset=753-759
+
+# sent_id = s7
+# text = Add 200 µL of the Transcription Factor 1X Perm Buffer to each well. (wash 1/3) 
+1	Add	_	Action	_	_	0	_	_	Offset=803-806
+2	200	_	Amount	_	_	3	Measure	_	Offset=807-813
+3	Transcription	_	Reagent	_	_	0	_	_	Offset=821-856
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=860-864
+5	well	_	Location	_	_	0	_	_	Offset=865-869
+
+# sent_id = s8
+# text = Centrifuge the plate at 300-400 x g at room temperature for 5 minutes, discard the supernatant, and gently vortex to dissociate the cell pellet. (wash 1/3) 
+1	Add	_	Action	_	_	0	_	_	Offset=883-886
+2	appropriate	_	Modifier	_	_	3	Mod-Link	_	Offset=891-909
+3	fluorochrome	_	Reagent	_	_	0	_	_	Offset=913-945
+4	incubate	_	Action	_	_	0	_	_	Offset=1005-1013
+
+# sent_id = s9
+# text = Add 200 µL of the Transcription Factor 1X Perm Buffer to each well. (wash 2/3) 
+1	Add	_	Action	_	_	0	_	_	Offset=1071-1074
+2	200	_	Amount	_	_	3	Measure	_	Offset=1075-1081
+3	Transcription	_	Reagent	_	_	0	_	_	Offset=1089-1124
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=1128-1132
+5	well	_	Location	_	_	0	_	_	Offset=1133-1137
+
+# sent_id = s10
+# text = Add the appropriate amount of fluorochrome conjugated antibody for detection of intracellular antigen(s) to each well and incubate in the dark at room temperature for at least 30 minutes.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1151-1161
+2	plate	_	Device	_	_	0	_	_	Offset=1166-1171
+3	300-400	_	Speed	_	_	0	_	_	Offset=1175-1186
+4	room	_	Temperature	_	_	0	_	_	Offset=1190-1206
+5	5	_	Time	_	_	0	_	_	Offset=1211-1220
+6	discard	_	Action	_	_	0	_	_	Offset=1222-1229
+7	supernatant	_	Reagent	_	_	0	_	_	Offset=1233-1244
+8	gently	_	Modifier	_	_	0	_	_	Offset=1250-1256
+9	vortex	_	Action	_	_	0	_	_	Offset=1257-1263
+
+# sent_id = s11
+# text = Add 200 µL of the Transcription Factor 1X Perm Buffer to each well. (wash 1/3) 
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1307-1316
+2	cells	_	Location	_	_	0	_	_	Offset=1320-1325
+3	appropriate	_	Modifier	_	_	4	Mod-Link	_	Offset=1329-1347
+4	cell	_	Reagent	_	_	0	_	_	Offset=1351-1371
+5	acquire	_	Action	_	_	0	_	_	Offset=1376-1383
+6	samples	_	Reagent	_	_	0	_	_	Offset=1384-1391
+7	flowcytometer	_	Device	_	_	0	_	_	Offset=1397-1410
+
+# sent_id = s12
+# text = Centrifuge the plate at 300-400 x g at room temperature for 5 minutes, discard thesupernatant, and gently vortex to dissociate the cell pellet. (wash 1/3) 
+1	Incubate	_	Action	_	_	0	_	_	Offset=1412-1420
+2	room	_	Modifier	_	_	0	_	_	Offset=1424-1440
+3	dark	_	Location	_	_	0	_	_	Offset=1448-1452
+4	30-60	_	Time	_	_	0	_	_	Offset=1457-1470
+
+# sent_id = s13
+# text = Resuspend in cells in appropriate volume of cell staining buffer and acquire samples on a flowcytometer.
+1	Add	_	Action	_	_	0	_	_	Offset=1472-1475
+2	200	_	Amount	_	_	3	Measure	_	Offset=1476-1482
+3	Transcription	_	Reagent	_	_	0	_	_	Offset=1490-1525
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=1529-1533
+5	well	_	Location	_	_	0	_	_	Offset=1534-1538
+
+# sent_id = s14
+# text = Incubate at room temperature in the dark for 30-60 minutes.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1552-1562
+2	plate	_	Device	_	_	0	_	_	Offset=1567-1572
+3	300-400	_	Speed	_	_	0	_	_	Offset=1576-1587
+4	room	_	Modifier	_	_	0	_	_	Offset=1591-1607
+5	5	_	Time	_	_	0	_	_	Offset=1612-1621
+6	discard	_	Action	_	_	0	_	_	Offset=1623-1630
+7	supernatant	_	Reagent	_	_	0	_	_	Offset=1635-1646
+8	gently	_	Modifier	_	_	0	_	_	Offset=1652-1658
+9	vortex	_	Action	_	_	0	_	_	Offset=1659-1665
+
+# sent_id = s15
+# text = Add 200 µL of the Transcription Factor 1X Perm Buffer to each well. (wash 3/3) 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1709-1719
+2	plate	_	Device	_	_	0	_	_	Offset=1724-1729
+3	300-400	_	Speed	_	_	0	_	_	Offset=1733-1744
+4	room	_	Modifier	_	_	0	_	_	Offset=1748-1764
+5	5	_	Time	_	_	0	_	_	Offset=1769-1778
+6	discard	_	Action	_	_	0	_	_	Offset=1780-1787
+7	supernatant	_	Reagent	_	_	0	_	_	Offset=1792-1803
+8	gently	_	Modifier	_	_	0	_	_	Offset=1809-1815
+9	vortex	_	Action	_	_	0	_	_	Offset=1816-1822
+
+# sent_id = s16
+# text = Centrifuge the plate at 300-400 x g at room temperature for 5 minutes, discard the supernatant, and gently vortex to dissociate the cell pellet. (wash 2/3) 
+1	Add	_	Action	_	_	0	_	_	Offset=1866-1869
+2	200	_	Amount	_	_	3	Measure	_	Offset=1870-1876
+3	Transcription	_	Reagent	_	_	0	_	_	Offset=1884-1919
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=1923-1927
+5	well	_	Location	_	_	0	_	_	Offset=1928-1932
+
+# sent_id = s17
+# text = Centrifuge the plate at 300-400 x g at room temperature for 5 minutes, discard the supernatant, and gently vortex to dissociate the cell pellet. (wash 3/3) 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1946-1956
+2	plate	_	Device	_	_	0	_	_	Offset=1961-1966
+3	300-400	_	Speed	_	_	0	_	_	Offset=1970-1981
+4	room	_	Modifier	_	_	0	_	_	Offset=1985-2001
+5	5	_	Time	_	_	0	_	_	Offset=2006-2015
+6	discard	_	Action	_	_	0	_	_	Offset=2017-2024
+7	supernatant	_	Reagent	_	_	0	_	_	Offset=2028-2039
+8	gently	_	Modifier	_	_	0	_	_	Offset=2045-2051
+9	vortex	_	Action	_	_	0	_	_	Offset=2052-2058
+
+# sent_id = s18
+# text = Add 200 µL of the Transcription Factor 1X Perm Buffer to each well. (wash 2/3) 
+1	Add	_	Action	_	_	0	_	_	Offset=2102-2105
+2	200	_	Amount	_	_	3	Measure	_	Offset=2106-2112
+3	Transcription	_	Reagent	_	_	0	_	_	Offset=2120-2155
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=2159-2163
+5	well	_	Location	_	_	0	_	_	Offset=2164-2168
+
+# sent_id = s19
+# text = Centrifuge the plate at 300-400 x g at room temperature for 5 minutes, discard thesupernatant, and gently vortex to dissociate the cell pellet. (wash 2/3) 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2182-2192
+2	plate	_	Device	_	_	0	_	_	Offset=2197-2202
+3	300-400	_	Speed	_	_	0	_	_	Offset=2206-2217
+4	room	_	Modifier	_	_	0	_	_	Offset=2221-2237
+5	5	_	Time	_	_	0	_	_	Offset=2242-2251
+6	discard	_	Action	_	_	0	_	_	Offset=2253-2260
+7	supernatant	_	Reagent	_	_	0	_	_	Offset=2264-2275
+8	gently	_	Modifier	_	_	0	_	_	Offset=2281-2287
+9	vortex	_	Action	_	_	0	_	_	Offset=2288-2294
+

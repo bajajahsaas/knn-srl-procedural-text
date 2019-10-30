@@ -1,0 +1,216 @@
+# sent_id = s1
+# text = MegaLong™ Protocol for Isolation of >100kb Genomic DNA (Tissue Sample)
+1	rapidly	_	Modifier	_	_	0	_	_	Offset=90-97
+2	dissect	_	Action	_	_	0	_	_	Offset=98-105
+3	tissue	_	Reagent	_	_	0	_	_	Offset=106-112
+4	DNA	_	Action	_	_	0	_	_	Offset=130-144
+5	immediately	_	Modifier	_	_	0	_	_	Offset=145-156
+6	keeping	_	Action	_	_	0	_	_	Offset=158-165
+7	samples	_	Reagent	_	_	0	_	_	Offset=166-173
+8	ice	_	Location	_	_	0	_	_	Offset=177-180
+9	promptly	_	Modifier	_	_	0	_	_	Offset=184-192
+10	freeze	_	Action	_	_	0	_	_	Offset=193-199
+11	liquid	_	Reagent	_	_	0	_	_	Offset=203-218
+12	store	_	Action	_	_	0	_	_	Offset=223-228
+13	-70°C	_	Temperature	_	_	0	_	_	Offset=232-237
+
+# sent_id = s2
+# text = For optimal yield, rapidly dissect tissue and proceed with DNA extraction immediately, keeping samples on ice or promptly freeze in liquid nitrogen and store at -70°C until required.
+1	ice	_	Location	_	_	0	_	_	Offset=257-260
+2	add	_	Action	_	_	0	_	_	Offset=262-265
+3	1-25mg	_	Amount	_	_	4	Measure	_	Offset=266-272
+4	ground	_	Reagent	_	_	0	_	_	Offset=273-293
+5	fresh	_	Modifier	_	_	6	Mod-Link	_	Offset=297-302
+6	diced	_	Reagent	_	_	4	Or	_	Offset=303-315
+7	microcentrifuge	_	Location	_	_	9	Meronym	_	Offset=321-341
+8	500µl	_	Amount	_	_	9	Measure	_	Offset=353-358
+9	Nuclei	_	Reagent	_	_	0	_	_	Offset=359-382
+
+# sent_id = s3
+# text = On ice, add 1-25mg ground frozen tissue or fresh diced tissue to a microcentrifuge tube containing 500µl Nuclei Isolation Buffer.
+1	Homogenize	_	Action	_	_	0	_	_	Offset=384-394
+2	sample	_	Reagent	_	_	0	_	_	Offset=399-405
+3	microfuge	_	Device	_	_	0	_	_	Offset=413-429
+
+# sent_id = s4
+# text = Homogenize the sample with a microfuge pestle until a homogenous suspension is acquired.
+1	Incubate	_	Action	_	_	0	_	_	Offset=473-481
+2	sample	_	Reagent	_	_	0	_	_	Offset=486-492
+3	4°C	_	Temperature	_	_	0	_	_	Offset=496-499
+4	>1	_	Time	_	_	0	_	_	Offset=504-513
+5	sediment	_	Action	_	_	0	_	_	Offset=517-525
+6	large	_	Reagent	_	_	0	_	_	Offset=526-548
+
+# sent_id = s5
+# text = Incubate the sample at 4°C for >1 minute to sediment large tissue fragments without sedimenting the nuclei.
+1	prepare	_	Action	_	_	0	_	_	Offset=603-610
+2	Tube-ODIALYZER™	_	Reagent	_	_	0	_	_	Offset=615-630
+
+# sent_id = s6
+# text = During the incubation prepare the Tube-ODIALYZER™.
+1	Place	_	Action	_	_	0	_	_	Offset=632-637
+2	Tube-O-DIALYZER™	_	Seal	_	_	0	_	_	Offset=642-662
+3	beaker	_	Location	_	_	4	Meronym	_	Offset=668-674
+4	TE	_	Reagent	_	_	0	_	_	Offset=678-687
+5	store	_	Action	_	_	0	_	_	Offset=692-697
+6	4°C	_	Temperature	_	_	0	_	_	Offset=701-704
+
+# sent_id = s7
+# text = Place the Tube-O-DIALYZER™ cap in a beaker of TE buffer and store at 4°C until required.
+1	Rinse	_	Action	_	_	0	_	_	Offset=721-726
+2	Tube-O-DIALYZER™	_	Location	_	_	0	_	_	Offset=731-752
+3	TE	_	Reagent	_	_	0	_	_	Offset=758-767
+
+# sent_id = s8
+# text = Rinse the Tube-O-DIALYZER™ tube with TE buffer.
+1	pipette	_	Device	_	_	0	_	_	Offset=776-783
+2	transfer	_	Action	_	_	0	_	_	Offset=784-792
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=797-808
+4	Tube-O-DIALYZER™	_	Location	_	_	0	_	_	Offset=816-832
+
+# sent_id = s9
+# text = With a pipette transfer the supernatant to the Tube-O-DIALYZER™, ensuring the settled cellular debris is left behind.
+1	Place	_	Action	_	_	0	_	_	Offset=887-892
+2	cap	_	Seal	_	_	0	_	_	Offset=904-907
+3	tube	_	Location	_	_	0	_	_	Offset=915-919
+4	centrifuge	_	Action	_	_	0	_	_	Offset=924-934
+5	16,000xg	_	Speed	_	_	0	_	_	Offset=938-946
+6	5	_	Time	_	_	0	_	_	Offset=951-960
+7	pellet	_	Action	_	_	0	_	_	Offset=964-970
+8	nuclei	_	Reagent	_	_	0	_	_	Offset=975-981
+
+# sent_id = s10
+# text = Place a supplied cap on the tube and centrifuge at 16,000xg for 5 minutes to pellet the nuclei.
+1	Vortex	_	Action	_	_	0	_	_	Offset=983-989
+2	LongLife™	_	Reagent	_	_	0	_	_	Offset=994-1016
+3	add	_	Action	_	_	0	_	_	Offset=1021-1024
+4	10µl	_	Amount	_	_	5	Measure	_	Offset=1025-1029
+5	nuclei	_	Reagent	_	_	0	_	_	Offset=1037-1043
+
+# sent_id = s11
+# text = Vortex the LongLife™ Proteinase K and add 10µl to the nuclei.
+1	Add	_	Action	_	_	0	_	_	Offset=1045-1048
+2	70µl	_	Amount	_	_	0	_	_	Offset=1049-1053
+3	Digestion	_	Reagent	_	_	0	_	_	Offset=1054-1070
+4	mix	_	Action	_	_	0	_	_	Offset=1075-1078
+5	gentle	_	Method	_	_	0	_	_	Offset=1084-1098
+
+# sent_id = s12
+# text = Add 70µl Digestion Buffer and mix with gentle rocking.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1100-1108
+2	55°C	_	Temperature	_	_	0	_	_	Offset=1112-1116
+3	2-4	_	Time	_	_	0	_	_	Offset=1121-1130
+4	periodic	_	Method	_	_	0	_	_	Offset=1136-1152
+
+# sent_id = s13
+# text = Incubate at 55°C for 2-4 hours with periodic rocking.
+1	Do	_	Action	_	_	0	_	_	Offset=1154-1167
+
+# sent_id = s14
+# text = Do not vortex.
+1	centrifuge	_	Action	_	_	0	_	_	Offset=1198-1208
+2	tube	_	Location	_	_	0	_	_	Offset=1213-1217
+3	20	_	Time	_	_	0	_	_	Offset=1222-1232
+4	1,000g	_	Speed	_	_	0	_	_	Offset=1236-1242
+
+# sent_id = s15
+# text = After digestion is complete, centrifuge the tube for 20 seconds at 1,000g.
+1	Replace	_	Action	_	_	0	_	_	Offset=1244-1251
+2	cap	_	Seal	_	_	0	_	_	Offset=1256-1259
+3	dialysis	_	Seal	_	_	0	_	_	Offset=1269-1281
+
+# sent_id = s16
+# text = Replace the cap with the dialysis cap.
+1	Do	_	Action	_	_	0	_	_	Offset=1283-1297
+2	storage	_	Seal	_	_	0	_	_	Offset=1302-1313
+
+# sent_id = s17
+# text = Do not discard the storage cap as this will be required for storage of DNA.
+1	Place	_	Action	_	_	0	_	_	Offset=1359-1364
+2	Tube-O-DIALYZER™	_	Location	_	_	0	_	_	Offset=1369-1385
+3	50ml	_	Location	_	_	0	_	_	Offset=1403-1423
+4	centrifuge	_	Action	_	_	0	_	_	Offset=1428-1438
+5	1000xg	_	Speed	_	_	0	_	_	Offset=1442-1448
+6	30	_	Time	_	_	0	_	_	Offset=1453-1463
+7	bring	_	Action	_	_	0	_	_	Offset=1467-1472
+8	sample	_	Reagent	_	_	0	_	_	Offset=1477-1483
+9	dialysis	_	Location	_	_	0	_	_	Offset=1493-1510
+
+# sent_id = s18
+# text = Place the Tube-O-DIALYZER™ upside down in a 50ml centrifuge tube and centrifuge at 1000xg for 30 seconds to bring the sample onto the dialysis membrane.
+1	Remove	_	Action	_	_	0	_	_	Offset=1512-1518
+2	Tube-O-DIALYZER™	_	Location	_	_	0	_	_	Offset=1523-1539
+3	50ml	_	Amount	_	_	4	Measure	_	Offset=1549-1553
+4	tube	_	Location	_	_	0	_	_	Offset=1554-1558
+5	forceps	_	Device	_	_	0	_	_	Offset=1564-1571
+6	dialyze	_	Action	_	_	0	_	_	Offset=1630-1637
+7	500ml	_	Amount	_	_	9	Measure	_	Offset=1641-1646
+8	1X	_	Concentration	_	_	9	Measure	_	Offset=1647-1649
+9	TE	_	Reagent	_	_	0	_	_	Offset=1650-1659
+10	room	_	Temperature	_	_	0	_	_	Offset=1663-1679
+11	18-24	_	Time	_	_	0	_	_	Offset=1684-1695
+
+# sent_id = s19
+# text = Remove the Tube-O-DIALYZER™ from the 50ml tube with forceps and keeping it inverted slide into the provided float and dialyze in 500ml 1X TE buffer at room temperature for 18-24 hours with 2-3 buffer changes.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=1721-1727
+2	swirl	_	Action	_	_	0	_	_	Offset=1728-1733
+3	tube	_	Location	_	_	0	_	_	Offset=1734-1738
+4	mix	_	Action	_	_	0	_	_	Offset=1742-1745
+5	contents	_	Reagent	_	_	0	_	_	Offset=1746-1754
+
+# sent_id = s20
+# text = Gently swirl tube to mix contents at each buffer change.
+1	genomic	_	Reagent	_	_	0	_	_	Offset=1801-1812
+2	concentrated	_	Action	_	_	0	_	_	Offset=1820-1832
+3	Tube-O-DIALYZER™	_	Location	_	_	0	_	_	Offset=1840-1856
+4	Tube-O-DIALYZER™	_	Reagent	_	_	0	_	_	Offset=1870-1899
+5	Concentrator	_	Reagent	_	_	4	Or	_	Offset=1920-1941
+
+# sent_id = s21
+# text = Following dialysis the genomic DNA may be concentrated in the Tube-O-DIALYZER™ using either Tube-O-DIALYZER™ Concentrator (Cat. # 786-144) or Concentrator Solution (Cat. # 786-143).
+1	prepare	_	Action	_	_	0	_	_	Offset=1967-1974
+2	Concentrator	_	Reagent	_	_	0	_	_	Offset=1979-1991
+3	per	_	Method	_	_	0	_	_	Offset=1995-2015
+4	invert	_	Action	_	_	0	_	_	Offset=2020-2026
+5	Tube-O-DIALYZER™	_	Location	_	_	6	Meronym	_	Offset=2031-2047
+6	DNA	_	Reagent	_	_	0	_	_	Offset=2064-2067
+7	solution	_	Reagent	_	_	0	_	_	Offset=2075-2083
+
+# sent_id = s22
+# text = Simply prepare the Concentrator as per the instructions and invert the Tube-O-DIALYZER™ containing your DNA in the solution.
+1	centrifuge	_	Action	_	_	0	_	_	Offset=2146-2156
+2	tube	_	Location	_	_	0	_	_	Offset=2161-2165
+3	1000xg	_	Speed	_	_	0	_	_	Offset=2169-2175
+4	1	_	Time	_	_	0	_	_	Offset=2180-2188
+
+# sent_id = s23
+# text = If concentration is not required or following concentration, centrifuge the tube at 1000xg for 1 minute.
+1	Replace	_	Action	_	_	0	_	_	Offset=2190-2197
+2	dialysis	_	Seal	_	_	0	_	_	Offset=2202-2214
+3	normal	_	Seal	_	_	0	_	_	Offset=2224-2234
+
+# sent_id = s24
+# text = Replace the dialysis cap with the normal cap.
+1	Add	_	Action	_	_	0	_	_	Offset=2274-2277
+2	70µl	_	Amount	_	_	3	Measure	_	Offset=2278-2282
+3	Suspension	_	Reagent	_	_	0	_	_	Offset=2283-2300
+4	nuclei	_	Reagent	_	_	0	_	_	Offset=2308-2314
+5	gently	_	Modifier	_	_	0	_	_	Offset=2319-2325
+6	rock	_	Action	_	_	0	_	_	Offset=2326-2330
+7	tap	_	Action	_	_	0	_	_	Offset=2334-2337
+8	tube	_	Location	_	_	0	_	_	Offset=2342-2346
+9	dislodge	_	Action	_	_	0	_	_	Offset=2350-2358
+10	nuclei	_	Reagent	_	_	0	_	_	Offset=2363-2369
+
+# sent_id = s25
+# text = The genomic DNA is now ready for use.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=2371-2380
+2	discard	_	Action	_	_	0	_	_	Offset=2381-2388
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=2393-2404
+4	invert	_	Action	_	_	0	_	_	Offset=2409-2415
+5	tube	_	Location	_	_	0	_	_	Offset=2420-2424
+6	paper	_	Location	_	_	0	_	_	Offset=2430-2441
+7	remove	_	Action	_	_	0	_	_	Offset=2445-2451
+8	excess	_	Modifier	_	_	9	Mod-Link	_	Offset=2452-2458
+9	supernatant	_	Reagent	_	_	0	_	_	Offset=2459-2470
+

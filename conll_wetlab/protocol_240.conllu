@@ -1,0 +1,38 @@
+# sent_id = s1
+# text = Glycerol Stock
+1	Add	_	Action	_	_	0	_	_	Offset=15-18
+2	600	_	Amount	_	_	3	Measure	_	Offset=19-25
+3	inoculated	_	Reagent	_	_	0	_	_	Offset=34-59
+4	2	_	Size	_	_	5	Measure	_	Offset=65-69
+5	screw	_	Location	_	_	0	_	_	Offset=70-84
+
+# sent_id = s2
+# text = Add 600 uL of your inoculated liquid culture to a 2 mL screw top tube.
+1	Add	_	Action	_	_	0	_	_	Offset=86-89
+2	200	_	Amount	_	_	3	Measure	_	Offset=90-96
+3	autoclaved	_	Reagent	_	_	0	_	_	Offset=97-113
+4	screw	_	Location	_	_	0	_	_	Offset=121-135
+
+# sent_id = s3
+# text = Add 200 uL autoclaved water to the screw top tube.
+1	Add	_	Action	_	_	0	_	_	Offset=137-140
+2	200	_	Amount	_	_	3	Measure	_	Offset=141-147
+3	glycerol	_	Reagent	_	_	0	_	_	Offset=148-156
+4	screw	_	Location	_	_	0	_	_	Offset=164-177
+
+# sent_id = s4
+# text = Add 200 uL glycerol to the screw top tube.
+1	Screw	_	Action	_	_	0	_	_	Offset=180-185
+2	top	_	Seal	_	_	0	_	_	Offset=190-193
+3	tube	_	Location	_	_	0	_	_	Offset=201-205
+4	mix	_	Action	_	_	0	_	_	Offset=210-213
+5	inversion	_	Method	_	_	0	_	_	Offset=217-226
+6	several	_	Numerical	_	_	0	_	_	Offset=227-240
+
+# sent_id = s5
+# text = Screw the top on the tube and mix by inversion several times so no layers are present in the mixture.
+1	Place	_	Action	_	_	0	_	_	Offset=282-287
+2	mixed	_	Location	_	_	0	_	_	Offset=288-308
+3	-80	_	Temperature	_	_	4	Setting	_	Offset=316-321
+4	Freezer	_	Device	_	_	0	_	_	Offset=322-329
+

@@ -1,0 +1,100 @@
+# sent_id = s1
+# text = Human T Cell Activation with anti-CD3 Anitbodies (clone UCHT1, OKT3 or HIT3a)
+1	Prepare	_	Action	_	_	0	_	_	Offset=78-85
+2	10	_	Concentration	_	_	3	Measure	_	Offset=88-96
+3	anti-CD3	_	Reagent	_	_	0	_	_	Offset=109-117
+4	UCHT1	_	Reagent	_	_	3	Meronym	_	Offset=125-130
+5	OKT3	_	Reagent	_	_	3	Meronym	_	Offset=132-136
+6	HIT3a	_	Reagent	_	_	3	Meronym	_	Offset=141-146
+7	sterile	_	Reagent	_	_	0	_	_	Offset=151-162
+
+# sent_id = s2
+# text = Prepare a 10 µg/ml solution of anti-CD3 (clone UCHT1, OKT3, or HIT3a) in sterile PBS.
+1	Dispense	_	Action	_	_	0	_	_	Offset=164-172
+2	50	_	Amount	_	_	3	Measure	_	Offset=173-178
+3	antibody	_	Reagent	_	_	0	_	_	Offset=186-203
+4	microwell	_	Location	_	_	6	Meronym	_	Offset=212-221
+5	96-well	_	Amount	_	_	6	Measure	_	Offset=229-236
+6	assay	_	Location	_	_	0	_	_	Offset=237-248
+
+# sent_id = s3
+# text = Dispense 50 µl of the antibody solution to each microwell of the 96-well assay plate.
+1	control	_	Location	_	_	0	_	_	Offset=271-284
+2	add	_	Action	_	_	0	_	_	Offset=286-289
+3	50	_	Amount	_	_	4	Measure	_	Offset=290-295
+4	sterile	_	Reagent	_	_	0	_	_	Offset=299-310
+
+# sent_id = s4
+# text = For the unstimulated control wells, add 50 µl of sterile PBS.
+1	Seal	_	Action	_	_	0	_	_	Offset=312-316
+2	plate	_	Location	_	_	0	_	_	Offset=317-322
+
+# sent_id = s5
+# text = Seal plate.
+1	Incubate	_	Action	_	_	0	_	_	Offset=324-332
+2	37°C	_	Temperature	_	_	0	_	_	Offset=336-340
+3	2	_	Time	_	_	0	_	_	Offset=345-352
+4	4°C	_	Temperature	_	_	2	Or	_	Offset=356-359
+5	overnight	_	Time	_	_	3	Or	_	Offset=360-369
+
+# sent_id = s6
+# text = Incubate at 37°C for 2 hours or 4°C overnight.
+1	Aseptically	_	Modifier	_	_	0	_	_	Offset=371-382
+2	decant	_	Action	_	_	0	_	_	Offset=383-389
+3	antibody	_	Reagent	_	_	0	_	_	Offset=390-407
+4	microwell	_	Location	_	_	0	_	_	Offset=417-432
+
+# sent_id = s7
+# text = Aseptically decant antibody solution from the microwell plate.
+1	Wash	_	Action	_	_	0	_	_	Offset=434-438
+2	plate	_	Location	_	_	0	_	_	Offset=439-455
+3	3	_	Numerical	_	_	0	_	_	Offset=456-463
+4	sterile	_	Reagent	_	_	0	_	_	Offset=469-480
+
+# sent_id = s8
+# text = Wash plate microwells 3 times with sterile PBS (was 1/3).
+1	Prepare	_	Action	_	_	0	_	_	Offset=492-499
+2	single	_	Reagent	_	_	0	_	_	Offset=500-522
+3	supplemented	_	Reagent	_	_	0	_	_	Offset=547-579
+4	1-2	_	Concentration	_	_	2	Measure	_	Offset=583-595
+
+# sent_id = s9
+# text = Prepare single cell suspension of cells of interest in supplemented cell culture medium to 1-2 x 106/ml.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=597-604
+2	200	_	Amount	_	_	3	Measure	_	Offset=605-611
+3	cell	_	Reagent	_	_	0	_	_	Offset=612-627
+4	plate	_	Location	_	_	0	_	_	Offset=633-649
+
+# sent_id = s10
+# text = Aliquot 200 µl cell suspension into plate microwells.
+1	Cover	_	Action	_	_	0	_	_	Offset=651-656
+2	lid	_	Seal	_	_	0	_	_	Offset=662-665
+
+# sent_id = s11
+# text = Cover with lid.
+1	Incubate	_	Action	_	_	0	_	_	Offset=667-675
+2	37°C	_	Temperature	_	_	0	_	_	Offset=679-683
+3	5%	_	Concentration	_	_	4	Measure	_	Offset=687-689
+4	CO2	_	Reagent	_	_	0	_	_	Offset=690-693
+5	100%	_	Method	_	_	0	_	_	Offset=698-711
+6	3	_	Time	_	_	0	_	_	Offset=716-722
+
+# sent_id = s12
+# text = Incubate at 37°C in 5% CO2 and 100% humidity for 3 days.
+1	Wash	_	Action	_	_	0	_	_	Offset=724-728
+2	plate	_	Location	_	_	0	_	_	Offset=729-745
+3	3	_	Numerical	_	_	0	_	_	Offset=746-753
+4	sterile	_	Reagent	_	_	0	_	_	Offset=759-770
+
+# sent_id = s13
+# text = Wash plate microwells 3 times with sterile PBS (was 2/3).
+1	Wash	_	Action	_	_	0	_	_	Offset=782-786
+2	plate	_	Location	_	_	0	_	_	Offset=787-803
+3	3	_	Numerical	_	_	0	_	_	Offset=804-811
+4	sterile	_	Reagent	_	_	0	_	_	Offset=817-828
+
+# sent_id = s14
+# text = Wash plate microwells 3 times with sterile PBS (was 3/3).
+1	Discard	_	Action	_	_	0	_	_	Offset=840-847
+2	liquid	_	Reagent	_	_	0	_	_	Offset=848-854
+

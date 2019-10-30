@@ -1,0 +1,366 @@
+# sent_id = s1
+# text = Agrobacterium mediated transformation of Marchantia spores
+1	Grind	_	Action	_	_	0	_	_	Offset=59-64
+2	sterilise	_	Action	_	_	0	_	_	Offset=69-78
+3	spore	_	Reagent	_	_	0	_	_	Offset=83-94
+4	flow	_	Device	_	_	0	_	_	Offset=114-123
+
+# sent_id = s2
+# text = Grind and sterilise the spore heads: Get ready: At the flow hood.
+1	Prepare	_	Action	_	_	0	_	_	Offset=125-132
+2	eppendorf	_	Location	_	_	0	_	_	Offset=133-148
+3	3	_	Size	_	_	4	Measure	_	Offset=154-162
+4	falcon	_	Location	_	_	6	Meronym	7:Meronym|14:Meronym	Offset=163-175
+5	sterile	_	Modifier	_	_	6	Mod-Link	_	Offset=184-191
+6	water	_	Reagent	_	_	0	_	_	Offset=192-197
+7	Milton	_	Reagent	_	_	0	_	_	Offset=206-221
+8	1	_	Numerical	_	_	9	Measure	_	Offset=223-224
+9	Milton	_	Reagent	_	_	0	_	_	Offset=225-238
+10	25ml	_	Amount	_	_	12	Measure	_	Offset=242-246
+11	sterile	_	Modifier	_	_	12	Mod-Link	_	Offset=247-254
+12	water	_	Reagent	_	_	9	Meronym	_	Offset=255-260
+13	washed	_	Modifier	_	_	14	Mod-Link	_	Offset=278-284
+14	spores	_	Reagent	_	_	0	_	_	Offset=285-297
+
+# sent_id = s3
+# text = Prepare eppendorf tubes, and 3 x 50mL falcon tubes: 1) for sterile water, 2) for Milton solution (1 Milton tablet in 25ml sterile water), and 3) for the washed spores heads.
+1	Use	_	Action	_	_	0	_	_	Offset=299-302
+2	two	_	Numerical	_	_	3	Measure	_	Offset=303-306
+3	sporangia	_	Reagent	_	_	0	_	_	Offset=307-316
+
+# sent_id = s4
+# text = Use two sporangia per transformation.
+1	Check	_	Action	_	_	0	_	_	Offset=337-342
+2	number	_	Measure-Type	_	_	0	_	_	Offset=343-349
+3	sporangia	_	Reagent	_	_	0	_	_	Offset=353-362
+4	spore	_	Reagent	_	_	0	_	_	Offset=370-380
+
+# sent_id = s5
+# text = Check number of sporangia in the spore head (this is variable, ex there may be only 1 sporangia in one spore head, and 5 sporangia in another spore head).
+1	Add	_	Action	_	_	0	_	_	Offset=492-495
+2	spores	_	Reagent	_	_	0	_	_	Offset=500-512
+3	eppendorf	_	Location	_	_	0	_	_	Offset=519-533
+
+# sent_id = s6
+# text = Add the spores heads to an eppendorf tube.
+1	Add	_	Action	_	_	0	_	_	Offset=643-646
+2	0.5ml	_	Amount	_	_	3	Measure	_	Offset=647-652
+3	Milton	_	Reagent	_	_	0	_	_	Offset=653-668
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=672-676
+5	eppendorf	_	Location	_	_	0	_	_	Offset=677-691
+
+# sent_id = s7
+# text = Depending on final number of spore heads needed, you may need to divide them into several eppendorfs tubes.
+1	plastic	_	Device	_	_	0	_	_	Offset=699-713
+2	crush	_	Action	_	_	0	_	_	Offset=717-722
+3	sporangia	_	Reagent	_	_	5	Coreference-Link	_	Offset=727-736
+4	vortex	_	Action	_	_	0	_	_	Offset=741-747
+5	them	_	Mention	_	_	0	_	_	Offset=748-752
+6	completely	_	Modifier	_	_	0	_	_	Offset=759-769
+7	re-suspended	_	Action	_	_	0	_	_	Offset=770-782
+
+# sent_id = s8
+# text = Add 0.5ml Milton solution to each eppendorf tube.
+1	Filter	_	Action	_	_	0	_	_	Offset=784-790
+2	crushed	_	Modifier	_	_	3	Mod-Link	_	Offset=791-798
+3	spore	_	Reagent	_	_	0	_	_	Offset=799-810
+4	Place	_	Action	_	_	0	_	_	Offset=812-817
+5	70	_	Size	_	_	6	Setting	_	Offset=822-827
+6	cell	_	Device	_	_	0	_	_	Offset=828-841
+7	50	_	Amount	_	_	8	Measure	_	Offset=847-852
+8	falcon	_	Location	_	_	0	_	_	Offset=853-864
+
+# sent_id = s9
+# text = Use a plastic pestle to crush the sporangia and vortex them until completely re-suspended.
+1	Pour	_	Action	_	_	0	_	_	Offset=866-870
+2	filter	_	Device	_	_	0	_	_	Offset=880-886
+3	solution	_	Reagent	_	_	4	Meronym	_	Offset=891-899
+4	ground	_	Reagent	_	_	0	_	_	Offset=905-921
+5	all	_	Modifier	_	_	6	Mod-Link	_	Offset=927-930
+6	eppendorfs	_	Location	_	_	3	Meronym	_	Offset=931-941
+7	pour	_	Action	_	_	0	_	_	Offset=943-947
+8	0.5	_	Amount	_	_	10	Measure	_	Offset=952-958
+9	each	_	Modifier	_	_	10	Mod-Link	_	Offset=964-968
+10	eppendorf	_	Location	_	_	0	_	_	Offset=969-978
+
+# sent_id = s10
+# text = Filter crushed spore heads: Place the 70 μm cell strainer on a 50 ml falcon tube.
+1	Rinse	_	Action	_	_	0	_	_	Offset=1043-1048
+2	Eppendorf(s)	_	Device	_	_	0	_	_	Offset=1053-1065
+3	strainer	_	Device	_	_	0	_	_	Offset=1070-1078
+4	0.5	_	Amount	_	_	5	Measure	_	Offset=1084-1090
+5	Milton	_	Reagent	_	_	0	_	_	Offset=1094-1109
+6	each	_	Modifier	_	_	8	Mod-Link	_	Offset=1114-1118
+7	two	_	Numerical	_	_	8	Measure	_	Offset=1119-1122
+8	sporangia	_	Reagent	_	_	0	_	_	Offset=1123-1132
+
+# sent_id = s11
+# text = Pour onto the filter the solution with ground sporangia from all eppendorfs, pour the 0.5 ml from each eppendorf.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=1167-1174
+2	solution	_	Reagent	_	_	0	_	_	Offset=1179-1187
+3	spores	_	Reagent	_	_	0	_	_	Offset=1193-1199
+4	eppendorf	_	Location	_	_	0	_	_	Offset=1203-1218
+5	them	_	Mention	_	_	0	_	_	Offset=1246-1250
+6	sit	_	Action	_	_	0	_	_	Offset=1251-1254
+7	5	_	Time	_	_	0	_	_	Offset=1259-1268
+8	spin	_	Action	_	_	0	_	_	Offset=1273-1277
+9	6-7	_	Time	_	_	0	_	_	Offset=1282-1293
+10	13000rpm	_	Speed	_	_	0	_	_	Offset=1297-1305
+
+# sent_id = s12
+# text = The solution with spores will flush through the cell strainer.
+1	Discard	_	Action	_	_	0	_	_	Offset=1307-1314
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1319-1330
+3	resuspend	_	Action	_	_	0	_	_	Offset=1335-1344
+4	spores	_	Reagent	_	_	0	_	_	Offset=1349-1355
+5	each	_	Modifier	_	_	0	_	_	Offset=1359-1363
+6	tube	_	Location	_	_	0	_	_	Offset=1364-1368
+7	150	_	Amount	_	_	0	_	_	Offset=1374-1380
+8	sterile	_	Modifier	_	_	0	_	_	Offset=1384-1391
+9	water	_	Reagent	_	_	0	_	_	Offset=1392-1397
+
+# sent_id = s13
+# text = Rinse the Eppendorf(s) and strainer with 0.5 ml of Milton solution for each two sporangia used (ex. 3 ml for 12 sporangia).
+1	Plate	_	Action	_	_	0	_	_	Offset=1415-1420
+2	150	_	Amount	_	_	0	_	_	Offset=1425-1431
+3	re-suspended	_	Action	_	_	0	_	_	Offset=1435-1447
+4	spores	_	Reagent	_	_	0	_	_	Offset=1448-1454
+5	1/2	_	Location	_	_	0	_	_	Offset=1460-1472
+
+# sent_id = s14
+# text = Aliquot the solution with spores in eppendorf tubes (0.5 or 1ml per tube), let them sit for 5 minutes and spin for 6-7 minutes at 13000rpm.
+1	Use	_	Action	_	_	0	_	_	Offset=1491-1494
+2	L-shaped	_	Device	_	_	0	_	_	Offset=1498-1515
+
+# sent_id = s15
+# text = Discard the supernatant and resuspend the spores in each tube with 150 μl of sterile water.  
+1	Grow	_	Action	_	_	0	_	_	Offset=1692-1696
+2	upside	_	Method	_	_	0	_	_	Offset=1697-1708
+3	5-6	_	Time	_	_	0	_	_	Offset=1754-1762
+4	21	_	Temperature	_	_	0	_	_	Offset=1766-1771
+5	150μE	_	Generic-Measure	_	_	0	_	_	Offset=1775-1780
+6	Sporelings	_	Reagent	_	_	0	_	_	Offset=1781-1791
+
+# sent_id = s16
+# text = Plate spores: Plate the 150 μl of re-suspended spores on a 1/2 GB plate (no antibiotics).
+1	Mix	_	Action	_	_	0	_	_	Offset=1905-1908
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1909-1912
+3	Agro	_	Reagent	_	_	0	_	_	Offset=1917-1921
+4	add	_	Action	_	_	0	_	_	Offset=1953-1956
+5	20-50ng	_	Amount	_	_	0	_	_	Offset=1957-1964
+6	plasmid	_	Reagent	_	_	0	_	_	Offset=1968-1975
+7	50	_	Amount	_	_	0	_	_	Offset=1979-1984
+8	thawed	_	Modifier	_	_	0	_	_	Offset=1988-1994
+9	electrocompetent	_	Reagent	_	_	0	_	_	Offset=1995-2031
+10	kept	_	Action	_	_	0	_	_	Offset=2033-2037
+11	ice	_	Location	_	_	0	_	_	Offset=2041-2044
+
+# sent_id = s17
+# text = Use an L-shaped spreader.
+1	Electroporate	_	Action	_	_	0	_	_	Offset=2047-2060
+2	chilled	_	Modifier	_	_	0	_	_	Offset=2066-2073
+3	2	_	Size	_	_	0	_	_	Offset=2074-2078
+4	cuvette	_	Device	_	_	0	_	_	Offset=2079-2086
+5	2.5	_	Generic-Measure	_	_	0	_	_	Offset=2094-2100
+
+# sent_id = s18
+# text = If 0.5 ml aliquots made (equivalent to 2 sporangia), use one plate per transformation.
+1	Recover	_	Action	_	_	0	_	_	Offset=2108-2115
+2	Immediately	_	Modifier	_	_	0	_	_	Offset=2122-2133
+3	add	_	Action	_	_	0	_	_	Offset=2134-2137
+4	1mL	_	Amount	_	_	0	_	_	Offset=2138-2141
+5	SOC	_	Reagent	_	_	0	_	_	Offset=2145-2148
+6	incubate	_	Action	_	_	0	_	_	Offset=2161-2169
+7	1-2h	_	Time	_	_	0	_	_	Offset=2170-2174
+8	28	_	Temperature	_	_	0	_	_	Offset=2178-2183
+9	150	_	Speed	_	_	0	_	_	Offset=2184-2191
+
+# sent_id = s19
+# text = If 1 ml aliquots made (equivalent to 4 sporangia), use half a plate per transformation.
+1	Streak	_	Action	_	_	0	_	_	Offset=2205-2211
+2	20-50μL	_	Amount	_	_	0	_	_	Offset=2212-2219
+3	LB	_	Reagent	_	_	0	_	_	Offset=2223-2246
+
+# sent_id = s20
+# text = Grow upside down (rhizoids will grow away from the media) for 5-6 days at 21 ºC CL 150μE Sporelings (germinated spores) have red fluoresence from chlorophyll autofluorescence after ~ 3 days. 
+1	Grow	_	Action	_	_	0	_	_	Offset=2345-2349
+2	3	_	Time	_	_	0	_	_	Offset=2354-2360
+3	28	_	Temperature	_	_	0	_	_	Offset=2364-2369
+4	30	_	Temperature	_	_	0	_	_	Offset=2373-2378
+5	incubator	_	Device	_	_	0	_	_	Offset=2380-2389
+
+# sent_id = s21
+# text = Agro transformation: Mix DNA and Agro: For each agro transformation, add 20-50ng of plasmid to 50 μL of thawed electrocompetent Agrobacterium cells (kept on ice).
+1	Grow	_	Action	_	_	0	_	_	Offset=2692-2696
+2	Agro	_	Reagent	_	_	0	_	_	Offset=2697-2709
+
+# sent_id = s22
+# text = Electroporate in a chilled 2 mm cuvette with a 2.5 kV pulse.
+1	pick	_	Action	_	_	0	_	_	Offset=2787-2791
+2	single	_	Reagent	_	_	0	_	_	Offset=2794-2807
+3	plate	_	Location	_	_	0	_	_	Offset=2813-2818
+4	inoculate	_	Action	_	_	0	_	_	Offset=2820-2829
+5	5	_	Amount	_	_	6	Measure	_	Offset=2830-2834
+6	LB	_	Reagent	_	_	0	_	_	Offset=2835-2857
+7	15	_	Amount	_	_	8	Measure	_	Offset=2912-2917
+8	falcon	_	Location	_	_	0	_	_	Offset=2918-2929
+
+# sent_id = s23
+# text = Recover Agro: Immediately add 1mL of SOC (or LB) and incubate 1-2h at 28 ºC 150 rpm.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2948-2956
+2	28	_	Temperature	_	_	0	_	_	Offset=2960-2965
+3	150	_	Speed	_	_	0	_	_	Offset=2968-2975
+4	grow	_	Action	_	_	0	_	_	Offset=3009-3013
+5	1.5	_	Time	_	_	0	_	_	Offset=3018-3026
+
+# sent_id = s24
+# text = Plate Agro: Streak 20-50μL on LB plates + antibiotics (Kan 50, Tet 5, for GV2260 with a pGreen plasmid).
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=3118-3128
+2	agrobacterium	_	Reagent	_	_	0	_	_	Offset=3133-3154
+3	3000g	_	Speed	_	_	0	_	_	Offset=3166-3171
+
+# sent_id = s25
+# text = Each Agro transformation in a different plate.
+1	discard	_	Action	_	_	0	_	_	Offset=3205-3212
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=3217-3228
+3	suspend	_	Action	_	_	0	_	_	Offset=3236-3243
+4	3	_	Amount	_	_	0	_	_	Offset=3247-3251
+5	1/2	_	Generic-Measure	_	_	0	_	_	Offset=3255-3261
+6	media	_	Reagent	_	_	0	_	_	Offset=3262-3271
+7	100	_	Concentration	_	_	0	_	_	Offset=3283-3289
+8	Acetosyringone	_	Reagent	_	_	0	_	_	Offset=3290-3304
+
+# sent_id = s26
+# text = Grow for 3 days at 28 ºC or 30 ºC, incubator. 
+1	Add	_	Action	_	_	0	_	_	Offset=3306-3309
+2	acetosyringone	_	Reagent	_	_	0	_	_	Offset=3310-3324
+3	final	_	Reagent	_	_	0	_	_	Offset=3330-3349
+4	100	_	Concentration	_	_	0	_	_	Offset=3353-3359
+5	3ml	_	Amount	_	_	0	_	_	Offset=3365-3368
+6	media	_	Reagent	_	_	0	_	_	Offset=3369-3374
+7	3	_	Amount	_	_	0	_	_	Offset=3379-3383
+8	100	_	Concentration	_	_	0	_	_	Offset=3384-3390
+9	stock	_	Reagent	_	_	0	_	_	Offset=3391-3405
+
+# sent_id = s27
+# text = Optional Agro colony PCR: all agrobacterium colonies on LB + antibiotics plates should be positive, however if there are some issues with the transformations it may be useful to do a quick screen to check if there are any false positives on the plate.
+1	Shake	_	Action	_	_	0	_	_	Offset=3408-3413
+2	6	_	Time	_	_	0	_	_	Offset=3418-3421
+3	28	_	Temperature	_	_	0	_	_	Offset=3425-3430
+4	150	_	Speed	_	_	0	_	_	Offset=3434-3441
+5	dark	_	Location	_	_	0	_	_	Offset=3449-3453
+
+# sent_id = s28
+# text = In that case, do a colony PCR of Agro colonies.
+1	Scrape	_	Action	_	_	0	_	_	Offset=3517-3523
+2	6	_	Time	_	_	0	_	_	Offset=3528-3534
+3	sporelings	_	Reagent	_	_	0	_	_	Offset=3539-3549
+4	plate	_	Location	_	_	0	_	_	Offset=3559-3564
+5	L	_	Device	_	_	0	_	_	Offset=3574-3591
+6	gather	_	Action	_	_	0	_	_	Offset=3593-3599
+7	sporelings	_	Reagent	_	_	0	_	_	Offset=3604-3614
+8	move	_	Action	_	_	0	_	_	Offset=3619-3623
+9	them	_	Mention	_	_	0	_	_	Offset=3624-3628
+10	100-250	_	Amount	_	_	0	_	_	Offset=3636-3646
+11	autoclaved	_	Modifier	_	_	0	_	_	Offset=3647-3657
+12	flask	_	Location	_	_	0	_	_	Offset=3658-3663
+
+# sent_id = s29
+# text = Grow Agro culture:   (~ 15'' – set up sometime in the afternoon).
+1	Use	_	Action	_	_	0	_	_	Offset=3665-3668
+2	one	_	Numerical	_	_	0	_	_	Offset=3669-3672
+3	plate	_	Location	_	_	0	_	_	Offset=3673-3678
+4	flask	_	Location	_	_	0	_	_	Offset=3683-3688
+
+# sent_id = s30
+# text = For each Agro transformation pick a single colony from plate, inoculate 5 ml LB media + antibiotics (Kan 50, Tet 5 for GV2260 with a pGreen plasmid) in a 15 ml falcon tube (unskirted tube).
+1	Add	_	Action	_	_	0	_	_	Offset=3796-3799
+2	each	_	Modifier	_	_	0	_	_	Offset=3803-3807
+3	flask	_	Location	_	_	0	_	_	Offset=3808-3813
+4	25	_	Amount	_	_	0	_	_	Offset=3814-3819
+5	1/2	_	Generic-Measure	_	_	0	_	_	Offset=3823-3829
+6	media	_	Reagent	_	_	0	_	_	Offset=3830-3839
+7	25	_	Amount	_	_	0	_	_	Offset=3844-3849
+8	100mM	_	Concentration	_	_	0	_	_	Offset=3853-3858
+9	Acetosyringone	_	Reagent	_	_	0	_	_	Offset=3859-3873
+10	final	_	Reagent	_	_	0	_	_	Offset=3881-3900
+11	100μM	_	Concentration	_	_	0	_	_	Offset=3904-3909
+
+# sent_id = s31
+# text = Incubate at 28 ºC - 150 rpm (wrap the tubes in foil) and let grow for 1.5 days.  
+1	each	_	Modifier	_	_	0	_	_	Offset=3914-3918
+2	flask	_	Location	_	_	0	_	_	Offset=3919-3924
+3	add	_	Action	_	_	0	_	_	Offset=3926-3929
+4	1ml	_	Amount	_	_	0	_	_	Offset=3930-3933
+5	appropiate	_	Modifier	_	_	0	_	_	Offset=3941-3951
+6	Agrobacterium	_	Reagent	_	_	0	_	_	Offset=3952-3973
+
+# sent_id = s32
+# text = Agro induction with Acetosyringone: (~20'' plus 6 h induction – set up in the morning): Centrifuge the agrobacterium culture(s) 10'' at 3000g.
+1	Co-cultivate	_	Action	_	_	0	_	_	Offset=3995-4007
+2	2	_	Time	_	_	0	_	_	Offset=4012-4018
+3	at	_	Modifier	_	_	0	_	_	Offset=4020-4028
+4	36	_	Time	_	_	0	_	_	Offset=4029-4033
+5	1.5	_	Time	_	_	0	_	_	Offset=4037-4045
+6	shaker	_	Device	_	_	0	_	_	Offset=4052-4058
+7	tissue	_	Location	_	_	0	_	_	Offset=4066-4085
+8	21	_	Temperature	_	_	0	_	_	Offset=4087-4092
+9	150-200	_	Generic-Measure	_	_	0	_	_	Offset=4097-4107
+10	Sporelings	_	Reagent	_	_	0	_	_	Offset=4109-4130
+
+# sent_id = s33
+# text = For each agrobacterium culture, discard the supernatant and re-suspend in 3 ml of 1/2 GB media sup containing 100 μM Acetosyringone.
+1	Add	_	Action	_	_	0	_	_	Offset=4132-4135
+2	cefotaxime	_	Reagent	_	_	0	_	_	Offset=4136-4146
+3	100mg/ml	_	Concentration	_	_	0	_	_	Offset=4147-4155
+4	sterile	_	Modifier	_	_	0	_	_	Offset=4174-4181
+5	water	_	Reagent	_	_	0	_	_	Offset=4182-4187
+6	final	_	Reagent	_	_	0	_	_	Offset=4194-4213
+7	100ug/ml	_	Concentration	_	_	0	_	_	Offset=4217-4225
+8	150-200	_	Amount	_	_	0	_	_	Offset=4227-4237
+9	per	_	Modifier	_	_	0	_	_	Offset=4249-4252
+10	flask	_	Location	_	_	0	_	_	Offset=4253-4258
+
+# sent_id = s34
+# text = Add acetosyringone to a final concentration of 100 μM (for 3ml media add 3 μl 100 mM stock solution).
+1	collect	_	Action	_	_	0	_	_	Offset=4326-4333
+2	sporelings	_	Reagent	_	_	0	_	_	Offset=4338-4348
+3	pouring	_	Action	_	_	0	_	_	Offset=4353-4360
+4	flask	_	Location	_	_	0	_	_	Offset=4365-4370
+5	70	_	Size	_	_	0	_	_	Offset=4385-4390
+6	cell	_	Device	_	_	0	_	_	Offset=4391-4404
+7	1L	_	Amount	_	_	0	_	_	Offset=4417-4419
+8	bottle	_	Location	_	_	0	_	_	Offset=4420-4426
+
+# sent_id = s35
+# text = Shake for 6 h at 28 ºC at 150 rpm in the dark (wrap the tubes in foil).
+1	Rinse	_	Action	_	_	0	_	_	Offset=4428-4433
+2	sporeling	_	Reagent	_	_	0	_	_	Offset=4438-4447
+3	pouring	_	Action	_	_	0	_	_	Offset=4451-4458
+4	150-200ml	_	Amount	_	_	0	_	_	Offset=4469-4478
+5	water	_	Reagent	_	_	0	_	_	Offset=4482-4494
+6	Sporelings	_	Location	_	_	0	_	_	Offset=4499-4517
+
+# sent_id = s36
+# text = Agro co-Cultivation with sporelings.
+1	each	_	Modifier	_	_	0	_	_	Offset=4523-4527
+2	co-cultivation	_	Location	_	_	0	_	_	Offset=4528-4548
+3	tip	_	Device	_	_	0	_	_	Offset=4586-4589
+4	few	_	Amount	_	_	0	_	_	Offset=4596-4602
+5	water	_	Reagent	_	_	0	_	_	Offset=4606-4618
+6	remove	_	Action	_	_	0	_	_	Offset=4619-4625
+7	sporelings	_	Reagent	_	_	0	_	_	Offset=4630-4640
+8	cell	_	Device	_	_	0	_	_	Offset=4650-4663
+9	spread	_	Action	_	_	0	_	_	Offset=4668-4674
+10	them	_	Mention	_	_	0	_	_	Offset=4675-4679
+11	at	_	Modifier	_	_	0	_	_	Offset=4683-4691
+12	3	_	Numerical	_	_	0	_	_	Offset=4692-4693
+13	plates	_	Location	_	_	0	_	_	Offset=4694-4700
+14	1/2	_	Generic-Measure	_	_	0	_	_	Offset=4702-4708
+15	plates	_	Location	_	_	0	_	_	Offset=4709-4715
+16	antibiotics	_	Reagent	_	_	0	_	_	Offset=4721-4732
+
+# sent_id = s37
+# text = Scrape the 6 days old sporelings from the plate using an L shaped spreader, gather the sporelings and move them into a 100-250 ml autoclaved flask.
+1	transferred	_	Action	_	_	0	_	_	Offset=5223-5234
+

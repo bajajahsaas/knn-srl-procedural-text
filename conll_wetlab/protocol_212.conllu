@@ -1,0 +1,75 @@
+# sent_id = s1
+# text = Nuclear Factor Fixation and Permeabilization Staining Protocol
+1	Prepare	_	Action	_	_	0	_	_	Offset=63-70
+2	target	_	Reagent	_	_	0	_	_	Offset=71-95
+3	perform	_	Action	_	_	0	_	_	Offset=100-124
+4	as	_	Modifier	_	_	0	_	_	Offset=125-202
+
+# sent_id = s2
+# text = Prepare target cells of interest and perform surface staining as described in BioLegend's Cell Surface Immunofluorescence Staining Protocol. 
+1	Fix	_	Action	_	_	0	_	_	Offset=205-208
+2	cells	_	Reagent	_	_	0	_	_	Offset=213-218
+3	1	_	Concentration	_	_	4	Measure	_	Offset=224-233
+4	BioLegend's	_	Reagent	_	_	0	_	_	Offset=234-276
+5	room	_	Temperature	_	_	0	_	_	Offset=281-297
+6	in	_	Modifier	_	_	0	_	_	Offset=298-309
+7	20	_	Time	_	_	0	_	_	Offset=314-324
+
+# sent_id = s3
+# text = Fix the cells with 1 ml/tube BioLegend's Nuclear Factor Fixation Buffer, at room temperature in the dark for 20 minutes.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=326-336
+2	250	_	Speed	_	_	0	_	_	Offset=340-347
+3	5	_	Temperature	_	_	0	_	_	Offset=352-361
+4	discard	_	Action	_	_	0	_	_	Offset=363-370
+5	supernatant	_	Reagent	_	_	0	_	_	Offset=371-382
+
+# sent_id = s4
+# text = Centrifuge at 250 x g for 5 minutes; discard supernatant.
+1	Wash	_	Action	_	_	0	_	_	Offset=384-388
+2	once	_	Numerical	_	_	0	_	_	Offset=389-393
+3	1	_	Amount	_	_	4	Measure	_	Offset=399-403
+4	Biolegend's	_	Reagent	_	_	0	_	_	Offset=404-454
+5	1x	_	Concentration	_	_	4	Measure	_	Offset=456-458
+
+# sent_id = s5
+# text = Wash once with 1 ml Biolegend's Nuclear Factor Permeabilization Buffer (1x).
+1	Resuspend	_	Action	_	_	0	_	_	Offset=461-470
+2	cells	_	Reagent	_	_	0	_	_	Offset=471-476
+3	1	_	Amount	_	_	4	Measure	_	Offset=480-484
+4	BioLegend's	_	Reagent	_	_	0	_	_	Offset=485-534
+5	1x	_	Concentration	_	_	4	Measure	_	Offset=536-538
+6	incubate	_	Action	_	_	0	_	_	Offset=541-549
+7	room	_	Temperature	_	_	0	_	_	Offset=553-569
+8	in	_	Modifier	_	_	0	_	_	Offset=570-581
+9	20	_	Time	_	_	0	_	_	Offset=586-596
+10	spin	_	Action	_	_	0	_	_	Offset=598-607
+11	cells	_	Reagent	_	_	0	_	_	Offset=608-613
+12	discard	_	Action	_	_	0	_	_	Offset=618-625
+13	supernatant	_	Reagent	_	_	0	_	_	Offset=630-641
+14	resuspend	_	Action	_	_	0	_	_	Offset=648-657
+15	pellet	_	Reagent	_	_	0	_	_	Offset=662-668
+16	100	_	Amount	_	_	17	Measure	_	Offset=672-678
+17	BioLegend's	_	Reagent	_	_	0	_	_	Offset=682-732
+18	1x	_	Concentration	_	_	17	Measure	_	Offset=734-736
+
+# sent_id = s6
+# text = Resuspend cells in 1 ml BioLegend's Nuclear Factor Permabilization Buffer (1x), incubate at room temperature in the dark for 20 minutes, spin down cells and discard the supernatant; then resuspend the pellet in 100 ul of BioLegend's Nucelar Factor Permeabilization Buffer (1x).
+1	Add	_	Action	_	_	0	_	_	Offset=739-742
+2	appropriate	_	Amount	_	_	3	Measure	_	Offset=743-761
+3	flurochrome-conjugated	_	Reagent	_	_	0	_	_	Offset=765-798
+4	incubate	_	Action	_	_	0	_	_	Offset=835-843
+5	room	_	Temperature	_	_	0	_	_	Offset=847-863
+6	in	_	Modifier	_	_	0	_	_	Offset=864-875
+7	30	_	Time	_	_	0	_	_	Offset=880-890
+
+# sent_id = s7
+# text = Add appropriate amount of flurochrome-conjugated antibodies for nuclear target of interest, and incubate at room temperature in the dark for 30 minutes.
+1	Wash	_	Action	_	_	0	_	_	Offset=892-896
+2	twice	_	Numerical	_	_	0	_	_	Offset=897-902
+3	Cell	_	Reagent	_	_	0	_	_	Offset=908-928
+4	resuspend	_	Action	_	_	0	_	_	Offset=934-943
+5	0.5	_	Amount	_	_	6	Measure	_	Offset=947-953
+6	Cell	_	Reagent	_	_	0	_	_	Offset=954-974
+7	analyze	_	Action	_	_	0	_	_	Offset=981-988
+8	flow	_	Device	_	_	0	_	_	Offset=994-1008
+

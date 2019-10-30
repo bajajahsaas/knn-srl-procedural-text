@@ -1,0 +1,42 @@
+# sent_id = s1
+# text = Blunting Protocol (M0203)
+1	Dissolve	_	Action	_	_	0	_	_	Offset=26-34
+2	DNA	_	Reagent	_	_	0	_	_	Offset=35-38
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=46-48
+4	NEBuffer	_	Reagent	_	_	0	_	_	Offset=49-57
+5	T4	_	Reagent	_	_	4	Or	_	Offset=61-90
+
+# sent_id = s2
+# text = Dissolve DNA in any 1X NEBuffer or T4 DNA Ligase Reaction Buffer.
+1	Supplement	_	Action	_	_	0	_	_	Offset=92-102
+2	100	_	Concentration	_	_	4	Measure	_	Offset=108-114
+3	each	_	Modifier	_	_	4	Mod-Link	_	Offset=118-122
+4	dNTP	_	Reagent	_	_	0	_	_	Offset=123-127
+
+# sent_id = s3
+# text = Supplement with 100 μM of each dNTP.
+1	Add	_	Action	_	_	0	_	_	Offset=129-132
+2	1	_	Amount	_	_	3	Measure	_	Offset=133-139
+3	T4	_	Reagent	_	_	0	_	_	Offset=143-160
+4	per	_	Modifier	_	_	2	Mod-Link	_	Offset=161-178
+
+# sent_id = s4
+# text = Add 1 unit of T4 DNA Polymerase per microgram DNA.
+1	Incubate	_	Action	_	_	0	_	_	Offset=180-188
+2	15	_	Time	_	_	0	_	_	Offset=189-199
+3	12°C	_	Temperature	_	_	0	_	_	Offset=203-207
+
+# sent_id = s5
+# text = Incubate 15 minutes at 12°C.
+1	Stop	_	Action	_	_	0	_	_	Offset=209-213
+2	reaction	_	Reagent	_	_	0	_	_	Offset=214-222
+3	adding	_	Action	_	_	0	_	_	Offset=226-232
+4	EDTA	_	Reagent	_	_	0	_	_	Offset=233-237
+5	10	_	Concentration	_	_	0	_	_	Offset=266-271
+
+# sent_id = s6
+# text = Stop reaction by adding EDTA to a final concentration of 10 mM.
+1	Heat	_	Action	_	_	0	_	_	Offset=273-277
+2	20	_	Time	_	_	0	_	_	Offset=282-292
+3	75°C	_	Temperature	_	_	0	_	_	Offset=296-300
+

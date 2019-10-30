@@ -1,0 +1,126 @@
+# sent_id = s1
+# text = Genomic DNA extraction from mosquitoes
+1	Freeze	_	Action	_	_	0	_	_	Offset=39-45
+2	mosquitoes	_	Reagent	_	_	0	_	_	Offset=46-56
+3	separate	_	Action	_	_	0	_	_	Offset=61-69
+4	1	_	Numerical	_	_	5	Measure	_	Offset=70-71
+5	mosquito	_	Reagent	_	_	0	_	_	Offset=72-80
+6	tube	_	Location	_	_	0	_	_	Offset=85-89
+
+# sent_id = s2
+# text = Freeze mosquitoes and separate 1 mosquito per tube.
+1	Add	_	Action	_	_	0	_	_	Offset=91-94
+2	25	_	Amount	_	_	3	Measure	_	Offset=95-100
+3	fly	_	Reagent	_	_	0	_	_	Offset=104-123
+
+# sent_id = s3
+# text = Add 25 uL of fly grinding buffer.
+1	Grind	_	Action	_	_	0	_	_	Offset=125-130
+2	mosquitoes	_	Reagent	_	_	0	_	_	Offset=131-141
+3	pestle	_	Device	_	_	0	_	_	Offset=149-155
+
+# sent_id = s4
+# text = Grind mosquitoes with a pestle.
+1	Rinse	_	Action	_	_	0	_	_	Offset=157-162
+2	pestle	_	Device	_	_	0	_	_	Offset=163-169
+3	25	_	Amount	_	_	4	Measure	_	Offset=175-180
+4	buffer	_	Reagent	_	_	0	_	_	Offset=184-190
+
+# sent_id = s5
+# text = Rinse pestle with 25 uL of buffer.
+1	Incubate	_	Action	_	_	0	_	_	Offset=192-200
+2	65o	_	Temperature	_	_	0	_	_	Offset=204-209
+3	30	_	Time	_	_	0	_	_	Offset=214-220
+
+# sent_id = s6
+# text = Incubate at 65o C for 30 min. 
+1	Add	_	Action	_	_	0	_	_	Offset=223-226
+2	7uL	_	Amount	_	_	4	Measure	_	Offset=227-230
+3	8M	_	Concentration	_	_	4	Measure	_	Offset=231-233
+4	KAc	_	Reagent	_	_	0	_	_	Offset=234-237
+
+# sent_id = s7
+# text = Add 7uL 8M KAc. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=240-248
+2	ice	_	Temperature	_	_	0	_	_	Offset=252-255
+3	30	_	Time	_	_	0	_	_	Offset=260-266
+
+# sent_id = s8
+# text = Incubate at ice for 30 min. 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=269-279
+2	max	_	Speed	_	_	0	_	_	Offset=283-292
+3	15	_	Time	_	_	0	_	_	Offset=297-303
+4	RT	_	Temperature	_	_	0	_	_	Offset=307-309
+
+# sent_id = s9
+# text = Centrifuge at max speed for 15 min at RT. 
+1	Collect	_	Action	_	_	0	_	_	Offset=312-319
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=320-331
+3	add	_	Action	_	_	0	_	_	Offset=336-339
+4	0.7	_	Amount	_	_	6	Measure	_	Offset=340-347
+5	room	_	Temperature	_	_	0	_	_	Offset=370-386
+6	isopropanol	_	Reagent	_	_	0	_	_	Offset=390-401
+7	1	_	Amount	_	_	10	Measure	_	Offset=406-411
+8	ice	_	Modifier	_	_	10	Mod-Link	_	Offset=415-423
+9	100%	_	Concentration	_	_	10	Measure	_	Offset=424-428
+10	EtOH	_	Reagent	_	_	6	Or	_	Offset=429-433
+11	incubate	_	Action	_	_	0	_	_	Offset=439-447
+12	5	_	Time	_	_	0	_	_	Offset=452-457
+13	room	_	Temperature	_	_	0	_	_	Offset=461-477
+
+# sent_id = s10
+# text = Collect supernatant and add 0.7 vol (28 uL over 40 uL) of room temperature of isopropanol (or 1 vol of ice cold 100% EtOH) and incubate for 5 min at room temperature.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=479-489
+2	RT	_	Temperature	_	_	0	_	_	Offset=493-495
+3	15	_	Time	_	_	0	_	_	Offset=500-506
+4	max	_	Speed	_	_	0	_	_	Offset=510-519
+
+# sent_id = s11
+# text = Centrifuge at RT for 15 min at max speed.
+1	Discard	_	Action	_	_	0	_	_	Offset=521-528
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=529-540
+3	add	_	Action	_	_	0	_	_	Offset=545-548
+4	100	_	Amount	_	_	6	Measure	_	Offset=549-555
+5	70%	_	Concentration	_	_	6	Measure	_	Offset=556-559
+6	EtOH	_	Reagent	_	_	0	_	_	Offset=560-564
+
+# sent_id = s12
+# text = Discard supernatant and add 100 uL 70% EtOH.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=566-576
+2	5min	_	Time	_	_	0	_	_	Offset=581-585
+3	max	_	Speed	_	_	0	_	_	Offset=589-598
+4	RT	_	Temperature	_	_	0	_	_	Offset=602-604
+
+# sent_id = s13
+# text = Centrifuge for 5min at max speed at RT.
+1	Discard	_	Action	_	_	0	_	_	Offset=606-613
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=614-625
+3	add	_	Action	_	_	0	_	_	Offset=630-633
+4	100	_	Amount	_	_	6	Measure	_	Offset=634-640
+5	100%	_	Concentration	_	_	6	Measure	_	Offset=641-645
+6	EtOH	_	Reagent	_	_	0	_	_	Offset=646-650
+
+# sent_id = s14
+# text = Discard supernatant and add 100 uL 100% EtOH.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=652-662
+2	5	_	Time	_	_	0	_	_	Offset=667-672
+3	max	_	Speed	_	_	0	_	_	Offset=676-685
+4	RT	_	Temperature	_	_	0	_	_	Offset=689-691
+
+# sent_id = s15
+# text = Centrifuge for 5 min at max speed at RT.
+1	Discard	_	Action	_	_	0	_	_	Offset=693-700
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=701-712
+3	aird	_	Action	_	_	0	_	_	Offset=717-725
+4	RT	_	Temperature	_	_	0	_	_	Offset=729-731
+5	1	_	Time	_	_	0	_	_	Offset=736-742
+
+# sent_id = s16
+# text = Discard supernatant and aird dry at RT for 1 hour. 
+1	Resuspend	_	Action	_	_	0	_	_	Offset=745-754
+2	TE	_	Reagent	_	_	0	_	_	Offset=758-760
+3	heat	_	Action	_	_	0	_	_	Offset=762-766
+4	10	_	Time	_	_	0	_	_	Offset=771-781
+5	quantify	_	Action	_	_	0	_	_	Offset=786-794
+6	nanodrop	_	Device	_	_	0	_	_	Offset=800-808
+

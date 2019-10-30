@@ -1,0 +1,244 @@
+# sent_id = s1
+# text = Dissecting and Immunostaining Drosophila melanogaster Egg Chambers
+1	Place	_	Action	_	_	0	_	_	Offset=107-112
+2	10	_	Amount	_	_	4	Measure	_	Offset=113-118
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=122-124
+4	PBS	_	Reagent	_	_	0	_	_	Offset=125-128
+5	microwave	_	Device	_	_	0	_	_	Offset=136-145
+6	boil	_	Action	_	_	0	_	_	Offset=154-158
+
+# sent_id = s2
+# text = The fix:  4% Paraformaldehyde,  1X PBS.
+1	Add	_	Action	_	_	0	_	_	Offset=160-163
+2	.4	_	Amount	_	_	3	Measure	_	Offset=168-170
+3	paraformaldehyde	_	Reagent	_	_	0	_	_	Offset=171-187
+
+# sent_id = s3
+# text = Place 10 ml of 1X PBS in the microwave just to boil.
+1	Add	_	Action	_	_	0	_	_	Offset=189-192
+2	4	_	Generic-Measure	_	_	4	Measure	_	Offset=193-200
+3	2M	_	Concentration	_	_	4	Measure	_	Offset=204-206
+4	NaCl	_	Reagent	_	_	0	_	_	Offset=207-211
+
+# sent_id = s4
+# text = Add the .4 paraformaldehyde.
+1	Add	_	Action	_	_	0	_	_	Offset=273-276
+2	one	_	Generic-Measure	_	_	4	Measure	_	Offset=277-285
+3	12ml	_	Amount	_	_	4	Measure	_	Offset=286-290
+4	HCL	_	Reagent	_	_	0	_	_	Offset=291-294
+5	adjust	_	Action	_	_	0	_	_	Offset=298-304
+6	PH	_	pH	_	_	0	_	_	Offset=309-319
+
+# sent_id = s5
+# text = Add 4 drops of 2M NaCl ( make sure that Paraphormaldehyde is completely dissolved).
+1	Set	_	Action	_	_	0	_	_	Offset=397-403
+2	dissection	_	Device	_	_	0	_	_	Offset=408-429
+
+# sent_id = s6
+# text = Add one drop 12ml HCL to adjust the PH (7.5-8).
+1	Put	_	Action	_	_	0	_	_	Offset=431-434
+2	depression	_	Location	_	_	0	_	_	Offset=439-455
+
+# sent_id = s7
+# text = The block :10 ml of 1X PBS 10µl/ml Normal Donkey Serum 10µl/ml 10X Triton. 
+1	Put	_	Action	_	_	0	_	_	Offset=464-467
+2	three	_	Generic-Measure	_	_	4	Measure	_	Offset=468-479
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=483-485
+4	PBS	_	Reagent	_	_	0	_	_	Offset=486-489
+5	slide	_	Location	_	_	0	_	_	Offset=497-502
+6	maintain	_	Action	_	_	0	_	_	Offset=506-514
+7	PH	_	Measure-Type	_	_	0	_	_	Offset=519-521
+8	egg	_	Reagent	_	_	0	_	_	Offset=535-547
+9	hydrated	_	Action	_	_	0	_	_	Offset=548-556
+
+# sent_id = s8
+# text = Set up the dissection microscopy.
+1	Anesthetize	_	Action	_	_	0	_	_	Offset=558-569
+2	flies	_	Reagent	_	_	0	_	_	Offset=574-579
+3	CO2	_	Location	_	_	0	_	_	Offset=589-596
+
+# sent_id = s9
+# text = Put the depression slide on it. 
+1	Hold	_	Action	_	_	0	_	_	Offset=598-602
+2	fly	_	Reagent	_	_	0	_	_	Offset=607-610
+3	size	_	Size	_	_	4	Measure	_	Offset=633-639
+4	tweezer	_	Device	_	_	0	_	_	Offset=640-647
+
+# sent_id = s10
+# text = Put three drops of 1X PBS on the slide to maintain the PH and keep the egg chambers hydrated.
+1	Place	_	Action	_	_	0	_	_	Offset=650-655
+2	it	_	Mention	_	_	0	_	_	Offset=656-658
+3	slide	_	Location	_	_	0	_	_	Offset=666-671
+
+# sent_id = s11
+# text = Anesthetize the flies by using CO2 bed.
+1	left	_	Device	_	_	0	_	_	Offset=683-692
+2	hold	_	Action	_	_	0	_	_	Offset=693-697
+3	fly	_	Reagent	_	_	4	Meronym	_	Offset=702-705
+4	thorax	_	Location	_	_	0	_	_	Offset=715-721
+5	right	_	Device	_	_	0	_	_	Offset=736-746
+6	gently	_	Modifier	_	_	0	_	_	Offset=747-753
+7	grap	_	Action	_	_	0	_	_	Offset=754-758
+8	tip	_	Location	_	_	0	_	_	Offset=763-766
+9	abdomen	_	Reagent	_	_	8	Meronym	11:Coreference-Link	Offset=774-781
+10	pull	_	Action	_	_	0	_	_	Offset=786-790
+11	it	_	Mention	_	_	0	_	_	Offset=791-793
+
+# sent_id = s12
+# text = Hold the fly from its wings with a size 5 tweezer. 
+1	Squeeze	_	Action	_	_	0	_	_	Offset=836-843
+2	abdomen	_	Reagent	_	_	0	_	_	Offset=848-855
+3	gently	_	Modifier	_	_	0	_	_	Offset=856-862
+4	pair	_	Reagent	_	_	0	_	_	Offset=873-892
+
+# sent_id = s13
+# text = Place it on the slide.
+1	Transfer	_	Action	_	_	0	_	_	Offset=904-912
+2	ovaries	_	Reagent	_	_	0	_	_	Offset=917-924
+3	depression	_	Location	_	_	0	_	_	Offset=934-950
+4	fix	_	Location	_	_	0	_	_	Offset=960-963
+5	transfer	_	Device	_	_	0	_	_	Offset=970-985
+
+# sent_id = s14
+# text = With your left hand hold the fly from its thorax and with your right hand gently grap the tip of the abdomen and pull it out ( be sure to not damage the ovaries).
+1	Wash	_	Action	_	_	0	_	_	Offset=987-991
+2	ovaries	_	Reagent	_	_	0	_	_	Offset=996-1003
+3	3X	_	Numerical	_	_	0	_	_	Offset=1004-1006
+4	1X	_	Concentration	_	_	5	Measure	_	Offset=1012-1014
+5	PBS	_	Reagent	_	_	0	_	_	Offset=1015-1018
+6	transfer	_	Device	_	_	0	_	_	Offset=1025-1040
+
+# sent_id = s15
+# text = Squeeze the abdomen gently until the pair of the ovaries comes out.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1042-1050
+2	ovaries	_	Reagent	_	_	0	_	_	Offset=1055-1062
+3	block	_	Reagent	_	_	0	_	_	Offset=1072-1077
+4	transfer	_	Device	_	_	0	_	_	Offset=1088-1103
+
+# sent_id = s16
+# text = Transfer the ovaries from the depression slide into the fix using transfer piptte.
+1	transfer	_	Action	_	_	0	_	_	Offset=1133-1141
+2	microtube	_	Location	_	_	3	Meronym	_	Offset=1154-1163
+3	fresh	_	Reagent	_	_	0	_	_	Offset=1184-1195
+4	add	_	Action	_	_	0	_	_	Offset=1196-1199
+5	primary	_	Reagent	_	_	0	_	_	Offset=1204-1220
+6	over	_	Time	_	_	0	_	_	Offset=1221-1231
+7	4C	_	Temperature	_	_	0	_	_	Offset=1235-1237
+
+# sent_id = s17
+# text = Wash the ovaries 3X with 1X PBS using transfer piptte.
+1	Remove	_	Action	_	_	0	_	_	Offset=1254-1260
+2	block	_	Reagent	_	_	0	_	_	Offset=1265-1270
+
+# sent_id = s18
+# text = Transfer the ovaries into the block using the transfer piptte.
+1	Wash	_	Action	_	_	0	_	_	Offset=1273-1277
+2	ovaries	_	Reagent	_	_	0	_	_	Offset=1282-1289
+3	3X	_	Numerical	_	_	0	_	_	Offset=1290-1292
+4	1X	_	Concentration	_	_	5	Measure	_	Offset=1293-1295
+5	PBS	_	Reagent	_	_	0	_	_	Offset=1296-1299
+
+# sent_id = s19
+# text = After blocking the ovaries, transfer them into a microtube that is filled with fresh block add the primary antibody over night at 4C.
+1	Add	_	Action	_	_	0	_	_	Offset=1302-1305
+2	block	_	Reagent	_	_	0	_	_	Offset=1306-1316
+3	RT	_	Temperature	_	_	0	_	_	Offset=1320-1322
+4	20	_	Time	_	_	0	_	_	Offset=1327-1334
+
+# sent_id = s20
+# text = Next morning: 
+1	Remove	_	Action	_	_	0	_	_	Offset=1353-1359
+2	block	_	Reagent	_	_	0	_	_	Offset=1364-1369
+
+# sent_id = s21
+# text = Remove the block. 
+1	s	_	Action	_	_	0	_	_	Offset=1374-1375
+2	one	_	Numerical	_	_	0	_	_	Offset=1377-1380
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=1391-1393
+4	PBS	_	Reagent	_	_	0	_	_	Offset=1394-1397
+
+# sent_id = s22
+# text = Wash the ovaries 3X 1X PBS. 
+1	Add	_	Action	_	_	0	_	_	Offset=1400-1403
+2	block	_	Reagent	_	_	0	_	_	Offset=1404-1409
+
+# sent_id = s23
+# text = Add block Rock at RT for 20 mins. 
+1	Add	_	Action	_	_	0	_	_	Offset=1411-1414
+2	secondry	_	Reagent	_	_	0	_	_	Offset=1415-1433
+
+# sent_id = s24
+# text = After 30 mins. 
+1	cover	_	Action	_	_	0	_	_	Offset=1446-1451
+2	tube	_	Location	_	_	0	_	_	Offset=1456-1460
+3	foil	_	Seal	_	_	0	_	_	Offset=1466-1470
+4	prevent	_	Action	_	_	0	_	_	Offset=1474-1497
+5	2nd	_	Reagent	_	_	0	_	_	Offset=1506-1518
+6	light	_	Reagent	_	_	0	_	_	Offset=1528-1533
+
+# sent_id = s25
+# text = Remove the block. 
+1	Rock	_	Action	_	_	0	_	_	Offset=1535-1539
+2	RT	_	Temperature	_	_	0	_	_	Offset=1543-1545
+3	2-4	_	Time	_	_	0	_	_	Offset=1550-1559
+
+# sent_id = s26
+# text = Wash one time with 1X PBS. 
+1	Remove	_	Action	_	_	0	_	_	Offset=1589-1595
+2	block	_	Reagent	_	_	0	_	_	Offset=1600-1605
+
+# sent_id = s27
+# text = Add block.
+1	Wash	_	Action	_	_	0	_	_	Offset=1608-1612
+2	3X	_	Numerical	_	_	0	_	_	Offset=1613-1615
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=1621-1623
+4	PBS	_	Reagent	_	_	0	_	_	Offset=1624-1627
+
+# sent_id = s28
+# text = Add secondry antibodiy.
+1	Add	_	Action	_	_	0	_	_	Offset=1630-1633
+2	block	_	Reagent	_	_	0	_	_	Offset=1634-1639
+
+# sent_id = s29
+# text = Be sure to cover the tube with foil to prevent the interaction between 2nd antibody with the light.
+1	Rock	_	Action	_	_	0	_	_	Offset=1641-1645
+2	30	_	Time	_	_	0	_	_	Offset=1650-1657
+3	RT	_	Temperature	_	_	0	_	_	Offset=1661-1663
+
+# sent_id = s30
+# text = Rock at RT for 2-4 hours. 
+1	Wash	_	Action	_	_	0	_	_	Offset=1715-1719
+2	one	_	Numerical	_	_	0	_	_	Offset=1720-1723
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=1734-1736
+4	PBS	_	Reagent	_	_	0	_	_	Offset=1737-1740
+
+# sent_id = s31
+# text = After secondray staining: 
+1	glass	_	Device	_	_	0	_	_	Offset=1752-1764
+2	transfer	_	Action	_	_	0	_	_	Offset=1766-1774
+3	ovaries	_	Reagent	_	_	0	_	_	Offset=1779-1786
+4	regular	_	Location	_	_	0	_	_	Offset=1794-1807
+
+# sent_id = s32
+# text = Remove the block. 
+1	remove	_	Action	_	_	0	_	_	Offset=1816-1822
+2	PBS	_	Reagent	_	_	0	_	_	Offset=1835-1838
+3	moisturized	_	Action	_	_	0	_	_	Offset=1882-1893
+
+# sent_id = s33
+# text = Wash 3X with 1X PBS. 
+1	Put	_	Action	_	_	0	_	_	Offset=1895-1898
+2	three	_	Generic-Measure	_	_	3	Measure	_	Offset=1899-1910
+3	mounting	_	Reagent	_	_	0	_	_	Offset=1914-1928
+4	place	_	Action	_	_	0	_	_	Offset=1933-1938
+5	cover	_	Seal	_	_	0	_	_	Offset=1943-1953
+6	top	_	Location	_	_	0	_	_	Offset=1957-1960
+7	ovaries	_	Reagent	_	_	6	Meronym	_	Offset=1968-1975
+
+# sent_id = s34
+# text = Add block.
+1	Heal	_	Action	_	_	0	_	_	Offset=1977-1981
+2	edges	_	Location	_	_	0	_	_	Offset=1986-1991
+3	cover	_	Seal	_	_	2	Meronym	_	Offset=1999-2009
+4	nail	_	Reagent	_	_	0	_	_	Offset=2017-2028
+

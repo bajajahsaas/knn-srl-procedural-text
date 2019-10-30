@@ -1,0 +1,236 @@
+# sent_id = s1
+# text = Transformation of supercompetent cells
+1	Inoculate	_	Action	_	_	0	_	_	Offset=39-48
+2	two	_	Numerical	_	_	0	_	_	Offset=49-52
+3	separate	_	Modifier	_	_	0	_	_	Offset=53-61
+4	1.5mls	_	Amount	_	_	5	Measure	_	Offset=62-68
+5	LB	_	Reagent	_	_	0	_	_	Offset=72-81
+6	Invitrogen	_	Reagent	_	_	0	_	_	Offset=87-112
+
+# sent_id = s2
+# text = Inoculate two separate 1.5mls of LB medium with Invitrogen (InvαF') cells.
+1	include	_	Action	_	_	0	_	_	Offset=119-126
+2	uninoculated	_	Modifier	_	_	3	Mod-Link	_	Offset=130-142
+3	negative	_	Location	_	_	0	_	_	Offset=143-164
+
+# sent_id = s3
+# text = Also include an uninoculated negative control tube.
+1	Shake	_	Action	_	_	0	_	_	Offset=166-171
+2	250	_	Speed	_	_	0	_	_	Offset=175-182
+3	overnight	_	Time	_	_	0	_	_	Offset=183-192
+4	37˚C	_	Temperature	_	_	0	_	_	Offset=196-200
+
+# sent_id = s4
+# text = Shake at 250 rpm overnight at 37˚C.
+1	Inoculate	_	Action	_	_	0	_	_	Offset=202-211
+2	500ul	_	Amount	_	_	4	Measure	_	Offset=217-222
+3	overnight	_	Modifier	_	_	4	Mod-Link	_	Offset=226-235
+4	E.	_	Reagent	_	_	0	_	_	Offset=236-251
+5	two	_	Numerical	_	_	0	_	_	Offset=252-255
+6	50ml	_	Amount	_	_	7	Measure	_	Offset=256-260
+7	tubes	_	Location	_	_	10	Meronym	_	Offset=261-266
+8	25mls	_	Amount	_	_	10	Measure	_	Offset=283-288
+9	sterile	_	Modifier	_	_	10	Mod-Link	_	Offset=292-299
+10	SOB	_	Reagent	_	_	0	_	_	Offset=300-309
+
+# sent_id = s5
+# text = Inoculate with 500ul of overnight E. coli culture two 50ml tubes each containing 25mls of sterile SOB media.
+1	Shake	_	Action	_	_	0	_	_	Offset=311-316
+2	250	_	Speed	_	_	0	_	_	Offset=320-327
+3	4	_	Time	_	_	0	_	_	Offset=332-339
+
+# sent_id = s6
+# text = Shake at 250 rpm for 4 hours. 
+1	Ice	_	Action	_	_	0	_	_	Offset=342-345
+2	tubes	_	Location	_	_	3	Meronym	_	Offset=350-355
+3	cells	_	Reagent	_	_	0	_	_	Offset=359-364
+4	15	_	Time	_	_	0	_	_	Offset=369-376
+
+# sent_id = s7
+# text = Ice the tubes of cells for 15 mins. 
+1	Pellet	_	Action	_	_	0	_	_	Offset=379-385
+2	cells	_	Reagent	_	_	0	_	_	Offset=386-391
+3	approx	_	Modifier	_	_	4	Mod-Link	_	Offset=393-399
+4	5	_	Time	_	_	0	_	_	Offset=400-405
+5	spin	_	Action	_	_	0	_	_	Offset=406-410
+6	approx	_	Modifier	_	_	7	Mod-Link	_	Offset=412-418
+7	3000	_	Speed	_	_	0	_	_	Offset=419-427
+8	discard	_	Action	_	_	0	_	_	Offset=433-440
+9	supernatant	_	Reagent	_	_	0	_	_	Offset=441-452
+
+# sent_id = s8
+# text = Pellet cells (approx 5 min spin, approx 3000 rpm) and discard supernatant. 
+1	Resuspend	_	Action	_	_	0	_	_	Offset=455-464
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=465-469
+3	pellet	_	Reagent	_	_	0	_	_	Offset=470-476
+4	cells	_	Reagent	_	_	3	Meronym	_	Offset=480-485
+5	8	_	Amount	_	_	7	Measure	_	Offset=489-494
+6	cold	_	Modifier	_	_	7	Mod-Link	_	Offset=498-502
+7	TFB	_	Reagent	_	_	0	_	_	Offset=503-506
+8	washing	_	Method	_	_	0	_	_	Offset=510-517
+9	gently	_	Modifier	_	_	0	_	_	Offset=518-524
+10	sucking	_	Action	_	_	0	_	_	Offset=531-538
+11	up	_	Method	_	_	0	_	_	Offset=539-550
+12	wide-bore	_	Modifier	_	_	14	Mod-Link	_	Offset=559-568
+13	10ml	_	Amount	_	_	14	Measure	_	Offset=569-573
+14	pipette	_	Device	_	_	0	_	_	Offset=574-585
+
+# sent_id = s9
+# text = Resuspend each pellet of cells in 8 mls of cold TFB by washing gently, then sucking up and down, with a wide-bore 10ml pipette tip. 
+1	Ice	_	Action	_	_	0	_	_	Offset=588-591
+2	tubes	_	Location	_	_	3	Meronym	_	Offset=596-601
+3	cells	_	Reagent	_	_	0	_	_	Offset=605-610
+4	15	_	Time	_	_	0	_	_	Offset=615-622
+
+# sent_id = s10
+# text = Ice the tubes of cells for 15 mins. 
+1	Pellet	_	Action	_	_	0	_	_	Offset=625-631
+2	cells	_	Reagent	_	_	0	_	_	Offset=632-637
+3	approx	_	Modifier	_	_	4	Mod-Link	_	Offset=639-645
+4	5	_	Time	_	_	0	_	_	Offset=646-651
+5	spin	_	Action	_	_	0	_	_	Offset=652-656
+6	approx	_	Modifier	_	_	7	Mod-Link	_	Offset=658-664
+7	3000	_	Speed	_	_	0	_	_	Offset=665-673
+8	discard	_	Action	_	_	0	_	_	Offset=679-686
+9	supernatant	_	Reagent	_	_	0	_	_	Offset=687-698
+
+# sent_id = s11
+# text = Pellet cells (approx 5 min spin, approx 3000 rpm) and discard supernatant. 
+1	Resuspend	_	Action	_	_	0	_	_	Offset=701-710
+2	one	_	Numerical	_	_	0	_	_	Offset=711-714
+3	pellet	_	Reagent	_	_	0	_	_	Offset=715-721
+4	cells	_	Reagent	_	_	3	Meronym	_	Offset=725-730
+5	2	_	Amount	_	_	7	Measure	_	Offset=734-739
+6	cold	_	Modifier	_	_	7	Mod-Link	_	Offset=743-747
+7	TFB	_	Reagent	_	_	0	_	_	Offset=748-751
+8	liquid	_	Reagent	_	_	0	_	_	Offset=765-771
+9	resuspend	_	Action	_	_	0	_	_	Offset=775-784
+10	second	_	Modifier	_	_	11	Mod-Link	_	Offset=789-795
+11	pellet	_	Reagent	_	_	0	_	_	Offset=796-802
+
+# sent_id = s12
+# text = Resuspend one pellet of cells in 2 mls of cold TFB and use this liquid to resuspend the second pellet.
+1	Add	_	Action	_	_	0	_	_	Offset=872-875
+2	105ul	_	Amount	_	_	3	Measure	_	Offset=876-881
+3	DMSO	_	Reagent	_	_	0	_	_	Offset=885-889
+4	swirl	_	Action	_	_	0	_	_	Offset=890-903
+5	5	_	Time	_	_	0	_	_	Offset=908-914
+
+# sent_id = s13
+# text = You should now have all cells in a single aliquot of 2mls cold TFB.
+1	Add	_	Action	_	_	0	_	_	Offset=916-919
+2	80ul	_	Amount	_	_	4	Measure	_	Offset=920-924
+3	100mM	_	Concentration	_	_	4	Measure	_	Offset=928-933
+4	DTT	_	Reagent	_	_	0	_	_	Offset=934-937
+5	swirl,	_	Action	_	_	0	_	_	Offset=939-953
+6	10	_	Time	_	_	0	_	_	Offset=958-965
+
+# sent_id = s14
+# text = Add 105ul of DMSO swirl and ice for 5 mins.
+1	Add	_	Action	_	_	0	_	_	Offset=967-970
+2	105ul	_	Amount	_	_	3	Measure	_	Offset=971-976
+3	DMSO	_	Reagent	_	_	0	_	_	Offset=980-984
+4	swirl	_	Action	_	_	0	_	_	Offset=985-998
+5	5	_	Time	_	_	0	_	_	Offset=1003-1009
+
+# sent_id = s15
+# text = Add 80ul of 100mM DTT, swirl, and ice for 10 mins.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=1011-1018
+2	180ul	_	Amount	_	_	3	Measure	_	Offset=1019-1024
+3	cells	_	Reagent	_	_	0	_	_	Offset=1028-1033
+4	pre-chilled	_	Modifier	_	_	7	Mod-Link	_	Offset=1039-1050
+5	labelled	_	Modifier	_	_	7	Mod-Link	_	Offset=1052-1060
+6	5ml	_	Amount	_	_	7	Measure	_	Offset=1061-1064
+7	polypropylene	_	Location	_	_	8	Meronym	_	Offset=1065-1091
+8	loose-cap	_	Seal	_	_	0	_	_	Offset=1097-1111
+
+# sent_id = s16
+# text = Add 105ul of DMSO swirl and ice for 5 mins.
+1	Include	_	Action	_	_	0	_	_	Offset=1113-1120
+
+# sent_id = s17
+# text = Aliquot 180ul of cells into pre-chilled, labelled 5ml polypropylene growth tubes with loose-cap lids.
+1	Add	_	Action	_	_	0	_	_	Offset=1153-1156
+2	ligation	_	Reagent	_	_	0	_	_	Offset=1157-1169
+3	each	_	Modifier	_	_	4	Mod-Link	_	Offset=1173-1177
+4	sample	_	Reagent	_	_	0	_	_	Offset=1178-1184
+5	~10ul	_	Amount	_	_	4	Measure	_	Offset=1189-1194
+6	ice	_	Action	_	_	0	_	_	Offset=1207-1210
+7	30	_	Time	_	_	0	_	_	Offset=1215-1222
+
+# sent_id = s18
+# text = Include positive and negative controls.
+1	Heat	_	Action	_	_	0	_	_	Offset=1225-1229
+2	pulse	_	Location	_	_	0	_	_	Offset=1230-1241
+3	exactly	_	Modifier	_	_	4	Mod-Link	_	Offset=1245-1252
+4	42˚C	_	Temperature	_	_	0	_	_	Offset=1253-1257
+5	exactly	_	Modifier	_	_	6	Mod-Link	_	Offset=1262-1269
+6	90	_	Time	_	_	0	_	_	Offset=1270-1277
+
+# sent_id = s19
+# text = Add ligation DNA to each sample (in ~10ul volume) and ice for 30 mins. 
+1	Ice	_	Action	_	_	0	_	_	Offset=1279-1282
+2	2	_	Time	_	_	0	_	_	Offset=1287-1293
+
+# sent_id = s20
+# text = Heat pulse tubes at exactly 42˚C for exactly 90 secs.
+1	Add	_	Action	_	_	0	_	_	Offset=1296-1299
+2	400ul	_	Amount	_	_	4	Measure	_	Offset=1300-1305
+3	37˚C	_	Temperature	_	_	0	_	_	Offset=1309-1313
+4	SOC	_	Reagent	_	_	0	_	_	Offset=1314-1317
+5	each	_	Modifier	_	_	6	Mod-Link	_	Offset=1321-1325
+6	tube	_	Location	_	_	0	_	_	Offset=1326-1330
+7	incubate	_	Action	_	_	0	_	_	Offset=1335-1343
+8	37˚C	_	Temperature	_	_	0	_	_	Offset=1347-1351
+9	10	_	Time	_	_	0	_	_	Offset=1356-1363
+
+# sent_id = s21
+# text = Ice for 2 mins. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=1366-1374
+2	further	_	Modifier	_	_	3	Mod-Link	_	Offset=1377-1384
+3	45	_	Time	_	_	0	_	_	Offset=1385-1392
+4	37˚C	_	Temperature	_	_	0	_	_	Offset=1396-1400
+5	shaking	_	Action	_	_	0	_	_	Offset=1401-1408
+6	225	_	Speed	_	_	0	_	_	Offset=1412-1419
+
+# sent_id = s22
+# text = Add 400ul of 37˚C SOC to each tube and incubate at 37˚C for 10 mins. 
+1	Place	_	Action	_	_	0	_	_	Offset=1422-1427
+2	tubes	_	Location	_	_	0	_	_	Offset=1428-1433
+3	ice	_	Location	_	_	0	_	_	Offset=1437-1440
+4	halt	_	Action	_	_	0	_	_	Offset=1444-1455
+
+# sent_id = s23
+# text = Incubate a further 45 mins at 37˚C shaking at 225 rpm. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=1458-1466
+2	cells	_	Reagent	_	_	0	_	_	Offset=1471-1476
+3	each	_	Modifier	_	_	4	Mod-Link	_	Offset=1482-1486
+4	tube	_	Location	_	_	0	_	_	Offset=1487-1491
+5	labelled	_	Modifier	_	_	8	Mod-Link	_	Offset=1497-1505
+6	individual	_	Modifier	_	_	8	Mod-Link	_	Offset=1506-1516
+7	1.5ml	_	Amount	_	_	8	Measure	_	Offset=1517-1522
+8	microfuge	_	Location	_	_	0	_	_	Offset=1523-1537
+
+# sent_id = s24
+# text = Place tubes in ice to halt growth. 
+1	microfuge	_	Location	_	_	0	_	_	Offset=1549-1564
+2	5	_	Time	_	_	0	_	_	Offset=1579-1584
+3	spin	_	Action	_	_	0	_	_	Offset=1586-1590
+4	very	_	Modifier	_	_	0	_	_	Offset=1594-1606
+5	pellet	_	Action	_	_	0	_	_	Offset=1607-1613
+6	cells	_	Reagent	_	_	0	_	_	Offset=1618-1623
+7	remove	_	Action	_	_	0	_	_	Offset=1633-1639
+8	discard	_	Action	_	_	0	_	_	Offset=1644-1651
+9	370ul	_	Amount	_	_	10	Measure	_	Offset=1652-1657
+10	supernatant	_	Reagent	_	_	0	_	_	Offset=1665-1676
+
+# sent_id = s25
+# text = Transfer the cells from each tube to a labelled individual 1.5ml microfuge tube. 
+1	Plate	_	Action	_	_	0	_	_	Offset=1679-1684
+2	40ul	_	Amount	_	_	3	Measure	_	Offset=1685-1689
+3	cell	_	Reagent	_	_	0	_	_	Offset=1697-1710
+4	LB/	_	Location	_	_	0	_	_	Offset=1716-1737
+5	grow	_	Action	_	_	0	_	_	Offset=1742-1746
+6	overnight	_	Time	_	_	0	_	_	Offset=1747-1757
+7	37˚C	_	Temperature	_	_	0	_	_	Offset=1760-1764
+

@@ -1,0 +1,103 @@
+# sent_id = s1
+# text = Transform Stratagene's XL-10 Gold Ultracompetent cells
+1	Pre-chill	_	Action	_	_	0	_	_	Offset=55-64
+2	14mL	_	Size	_	_	3	Measure	_	Offset=65-69
+3	sterile	_	Location	_	_	0	_	_	Offset=70-91
+4	ice	_	Temperature	_	_	0	_	_	Offset=95-98
+
+# sent_id = s2
+# text = Pre-chill 14mL sterile culture tubes on ice.
+1	Pre-heat	_	Action	_	_	0	_	_	Offset=100-108
+2	0.9mL	_	Amount	_	_	3	Measure	_	Offset=109-114
+3	NZY+	_	Reagent	_	_	0	_	_	Offset=118-128
+4	42°C	_	Temperature	_	_	0	_	_	Offset=132-136
+
+# sent_id = s3
+# text = Pre-heat 0.9mL of NZY+ broth to 42°C.
+1	Thaw	_	Action	_	_	0	_	_	Offset=138-142
+2	XL-10	_	Reagent	_	_	0	_	_	Offset=143-174
+3	ice	_	Temperature	_	_	0	_	_	Offset=178-181
+4	mix	_	Action	_	_	0	_	_	Offset=187-190
+5	gently	_	Modifier	_	_	0	_	_	Offset=191-197
+
+# sent_id = s4
+# text = Thaw XL-10 Gold Ultracompetent cells on ice then mix gently after completely thawed.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=223-230
+2	cells	_	Reagent	_	_	0	_	_	Offset=231-236
+3	sterile	_	Location	_	_	0	_	_	Offset=254-275
+
+# sent_id = s5
+# text = Aliquot cells into pre-chilled sterile culture tubes.
+1	Add	_	Action	_	_	0	_	_	Offset=277-280
+2	beta-mercaptoethanol	_	Reagent	_	_	0	_	_	Offset=281-301
+3	Swirl	_	Action	_	_	0	_	_	Offset=302-307
+4	tube	_	Location	_	_	0	_	_	Offset=308-312
+5	gently	_	Modifier	_	_	4	Mod-Link	_	Offset=313-319
+6	incubate	_	Action	_	_	0	_	_	Offset=325-333
+7	ice	_	Temperature	_	_	0	_	_	Offset=337-340
+8	10	_	Time	_	_	0	_	_	Offset=345-355
+9	swirling	_	Action	_	_	0	_	_	Offset=356-364
+10	gently	_	Modifier	_	_	0	_	_	Offset=365-371
+11	every	_	Modifier	_	_	12	Mod-Link	_	Offset=372-377
+12	2	_	Time	_	_	0	_	_	Offset=378-387
+
+# sent_id = s6
+# text = Add beta-mercaptoethanol Swirl tube gently then incubate on ice for 10 minutes swirling gently every 2 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=389-392
+2	0.1-50ng	_	Amount	_	_	3	Measure	_	Offset=393-401
+3	DNA	_	Reagent	_	_	0	_	_	Offset=405-408
+4	2uL	_	Amount	_	_	5	Measure	_	Offset=412-415
+5	ligation	_	Reagent	_	_	3	Or	_	Offset=419-435
+
+# sent_id = s7
+# text = Add 0.1-50ng of DNA or 2uL of ligation product.
+1	Swirl	_	Action	_	_	0	_	_	Offset=437-442
+2	gently	_	Modifier	_	_	0	_	_	Offset=443-449
+3	incubate	_	Action	_	_	0	_	_	Offset=455-463
+4	ice	_	Temperature	_	_	0	_	_	Offset=467-470
+5	30	_	Time	_	_	0	_	_	Offset=475-485
+
+# sent_id = s8
+# text = Swirl gently then incubate on ice for 30 minutes.
+1	Heat	_	Action	_	_	0	_	_	Offset=487-497
+2	tube	_	Location	_	_	0	_	_	Offset=498-502
+3	42°C	_	Temperature	_	_	0	_	_	Offset=506-510
+4	30	_	Time	_	_	0	_	_	Offset=523-533
+
+# sent_id = s9
+# text = Heat pulse tube at 42°C for exactly 30 seconds.
+1	Incubate	_	Action	_	_	0	_	_	Offset=579-587
+2	cells	_	Reagent	_	_	0	_	_	Offset=588-593
+3	ice	_	Temperature	_	_	0	_	_	Offset=597-600
+4	2	_	Time	_	_	0	_	_	Offset=605-614
+
+# sent_id = s10
+# text = The duration of the heat pulse is critical.
+1	Add	_	Action	_	_	0	_	_	Offset=616-619
+2	0.9mL	_	Amount	_	_	3	Measure	_	Offset=620-625
+3	pre-heated	_	Reagent	_	_	0	_	_	Offset=629-650
+4	tube	_	Location	_	_	0	_	_	Offset=659-663
+
+# sent_id = s11
+# text = Incubate cells on ice for 2 minutes.
+1	Incubate	_	Action	_	_	0	_	_	Offset=665-673
+2	37°C	_	Temperature	_	_	0	_	_	Offset=677-681
+3	1	_	Time	_	_	0	_	_	Offset=686-692
+4	shaking	_	Method	_	_	0	_	_	Offset=698-705
+5	225-250	_	Speed	_	_	0	_	_	Offset=709-720
+
+# sent_id = s12
+# text = Add 0.9mL of pre-heated NZY+ broth to each tube.
+1	Plate	_	Action	_	_	0	_	_	Offset=722-727
+2	200uL	_	Amount	_	_	3	Measure	_	Offset=741-746
+3	transformation	_	Reagent	_	_	0	_	_	Offset=750-772
+4	LB-agar	_	Location	_	_	5	Meronym	_	Offset=777-790
+5	antibiotic	_	Reagent	_	_	0	_	_	Offset=796-806
+
+# sent_id = s13
+# text = Incubate at 37°C for 1 hour with shaking at 225-250 rpm.
+1	Incubate	_	Action	_	_	0	_	_	Offset=818-826
+2	plates	_	Location	_	_	0	_	_	Offset=827-833
+3	37°C	_	Temperature	_	_	0	_	_	Offset=837-841
+4	overnight	_	Time	_	_	0	_	_	Offset=842-851
+

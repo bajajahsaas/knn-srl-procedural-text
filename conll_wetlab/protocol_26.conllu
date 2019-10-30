@@ -1,0 +1,107 @@
+# sent_id = s1
+# text = Concentrating Viruses with an Amicon or Nanosep Centrifugal Ultrafiltration Device
+1	Add	_	Action	_	_	0	_	_	Offset=83-86
+2	sample	_	Reagent	_	_	0	_	_	Offset=92-98
+3	upper	_	Location	_	_	0	_	_	Offset=106-121
+4	Amicon	_	Device	_	_	3	Meronym	_	Offset=129-135
+
+# sent_id = s2
+# text = Add your sample to the upper reservoir of the Amicon.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=137-147
+2	1000	_	Speed	_	_	0	_	_	Offset=151-159
+3	4ºC	_	Temperature	_	_	0	_	_	Offset=163-166
+4	swinging-bucket	_	Device	_	_	0	_	_	Offset=172-193
+
+# sent_id = s3
+# text = Centrifuge at 1000 x g at 4ºC in a swinging-bucket rotor.
+1	Remove	_	Action	_	_	0	_	_	Offset=362-368
+2	concentrated	_	Reagent	_	_	5	Coreference-Link	_	Offset=373-392
+3	upper	_	Location	_	_	0	_	_	Offset=402-417
+4	place	_	Action	_	_	0	_	_	Offset=422-427
+5	it	_	Mention	_	_	0	_	_	Offset=428-430
+6	tube	_	Location	_	_	0	_	_	Offset=436-440
+
+# sent_id = s4
+# text = Centrifuge time will depend on the volume of sample and the amount of material in the sample.
+1	Remove	_	Action	_	_	0	_	_	Offset=457-463
+2	upper	_	Location	_	_	0	_	_	Offset=468-483
+3	Amicon	_	Device	_	_	0	_	_	Offset=493-499
+
+# sent_id = s5
+# text = Continue centrifuging until the sample is reduced to the desired volume.
+1	Place	_	Action	_	_	0	_	_	Offset=508-513
+2	upper	_	Location	_	_	0	_	_	Offset=558-573
+
+# sent_id = s6
+# text = Remove the concentrated sample from the upper reservoir and place it in a tube of your choice.
+1	Add	_	Action	_	_	0	_	_	Offset=586-589
+2	liquid	_	Reagent	_	_	0	_	_	Offset=597-603
+3	1.5	_	Amount	_	_	2	Measure	_	Offset=626-632
+
+# sent_id = s7
+# text = Remove the upper reservoir from the Amicon device.
+1	Vortex	_	Action	_	_	0	_	_	Offset=635-641
+2	upper	_	Location	_	_	0	_	_	Offset=646-661
+3	1200	_	Speed	_	_	0	_	_	Offset=706-710
+4	~20s	_	Time	_	_	0	_	_	Offset=715-719
+
+# sent_id = s8
+# text = Place a square of parafilm over the bottom of the upper reservoir (Figure 1).
+1	Remove	_	Action	_	_	0	_	_	Offset=721-727
+2	liquid	_	Reagent	_	_	5	Coreference-Link	_	Offset=732-738
+3	upper	_	Location	_	_	0	_	_	Offset=748-763
+4	add	_	Action	_	_	0	_	_	Offset=768-771
+5	it	_	Mention	_	_	0	_	_	Offset=772-774
+6	recovered	_	Reagent	_	_	0	_	_	Offset=783-799
+
+# sent_id = s9
+# text = Add enough liquid to cover the filter (~1.5 ml).
+1	Add	_	Action	_	_	0	_	_	Offset=849-852
+2	sample	_	Reagent	_	_	0	_	_	Offset=858-864
+3	upper	_	Location	_	_	0	_	_	Offset=872-887
+4	Nanosep	_	Device	_	_	3	Meronym	_	Offset=895-902
+
+# sent_id = s10
+# text = Vortex the upper reservoir (filter/parafilm side down) at a setting of 1200 for ~20s.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=904-914
+2	1000	_	Speed	_	_	0	_	_	Offset=918-926
+3	4ºC	_	Temperature	_	_	0	_	_	Offset=930-933
+
+# sent_id = s11
+# text = Remove the liquid from the upper reservoir and add it to your recovered sample.
+1	pipettor	_	Device	_	_	0	_	_	Offset=1108-1116
+2	remove	_	Action	_	_	0	_	_	Offset=1120-1126
+3	concentrated	_	Reagent	_	_	6	Coreference-Link	_	Offset=1131-1150
+4	upper	_	Location	_	_	0	_	_	Offset=1160-1175
+5	place	_	Action	_	_	0	_	_	Offset=1180-1185
+6	it	_	Mention	_	_	0	_	_	Offset=1186-1188
+7	tube	_	Location	_	_	0	_	_	Offset=1194-1198
+
+# sent_id = s12
+# text = Repeat steps 8-10 to fully recover your sample.
+1	Add	_	Action	_	_	0	_	_	Offset=1215-1218
+2	enough	_	Modifier	_	_	3	Mod-Link	_	Offset=1219-1225
+3	liquid	_	Reagent	_	_	0	_	_	Offset=1226-1232
+4	cover	_	Action	_	_	0	_	_	Offset=1236-1241
+5	filter	_	Device	_	_	0	_	_	Offset=1246-1252
+6	~10	_	Amount	_	_	3	Measure	_	Offset=1254-1260
+
+# sent_id = s13
+# text = Add your sample to the upper reservoir of the Nanosep.
+1	Swirl	_	Action	_	_	0	_	_	Offset=1263-1268
+2	liquid	_	Reagent	_	_	0	_	_	Offset=1273-1279
+3	filter	_	Device	_	_	0	_	_	Offset=1289-1295
+4	stir	_	Action	_	_	0	_	_	Offset=1300-1304
+5	it	_	Mention	_	_	0	_	_	Offset=1305-1307
+6	gently	_	Modifier	_	_	0	_	_	Offset=1308-1314
+7	pipet	_	Device	_	_	0	_	_	Offset=1322-1331
+
+# sent_id = s14
+# text = Centrifuge at 1000 x g at 4ºC.
+1	Remove	_	Action	_	_	0	_	_	Offset=1333-1339
+2	liquid	_	Reagent	_	_	0	_	_	Offset=1344-1350
+3	upper	_	Location	_	_	0	_	_	Offset=1360-1375
+4	add	_	Action	_	_	0	_	_	Offset=1380-1383
+5	it	_	Mention	_	_	0	_	_	Offset=1384-1386
+6	recovered	_	Reagent	_	_	0	_	_	Offset=1395-1411
+

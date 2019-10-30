@@ -1,0 +1,75 @@
+# sent_id = s1
+# text = Plaque Assay Protocol for Pseudoalteromonas
+1	autoclave	_	Action	_	_	0	_	_	Offset=51-60
+2	top	_	Reagent	_	_	4	Coreference-Link	_	Offset=65-73
+3	melt	_	Action	_	_	0	_	_	Offset=77-81
+4	it	_	Mention	_	_	0	_	_	Offset=82-84
+
+# sent_id = s2
+# text = First, autoclave the top agar to melt it. 
+1	plates	_	Location	_	_	5	Coreference-Link	_	Offset=132-138
+2	warm	_	Action	_	_	0	_	_	Offset=139-143
+3	room	_	Temperature	_	_	0	_	_	Offset=147-163
+4	label	_	Action	_	_	0	_	_	Offset=168-173
+5	them	_	Mention	_	_	0	_	_	Offset=174-178
+
+# sent_id = s3
+# text = While the autoclave is running: 
+1	dilutions	_	Action	_	_	0	_	_	Offset=197-206
+2	your	_	Reagent	_	_	0	_	_	Offset=210-221
+3	plan	_	Method	_	_	0	_	_	Offset=226-239
+
+# sent_id = s4
+# text = a. Let your plates warm to room temperature and label them 
+1	Aliquot	_	Action	_	_	0	_	_	Offset=242-249
+2	agar	_	Reagent	_	_	0	_	_	Offset=254-258
+3	tubes	_	Location	_	_	0	_	_	Offset=264-269
+4	place	_	Action	_	_	0	_	_	Offset=274-279
+5	40°C	_	Temperature	_	_	0	_	_	Offset=283-287
+6	water	_	Device	_	_	0	_	_	Offset=288-298
+
+# sent_id = s5
+# text = b. Make whatever dilutions of your phages you plan to plate. 
+1	Pipet	_	Action	_	_	0	_	_	Offset=303-308
+2	100	_	Amount	_	_	3	Measure	_	Offset=309-315
+3	your	_	Reagent	_	_	0	_	_	Offset=319-336
+4	plate	_	Location	_	_	0	_	_	Offset=346-351
+
+# sent_id = s6
+# text = Aliquot the agar into tubes and place in 40°C water bath.   
+1	Remove	_	Action	_	_	0	_	_	Offset=356-362
+2	agar	_	Location	_	_	6	Coreference-Link	_	Offset=367-376
+3	water	_	Device	_	_	0	_	_	Offset=386-396
+4	add	_	Action	_	_	0	_	_	Offset=401-404
+5	host	_	Reagent	_	_	0	_	_	Offset=409-413
+6	it	_	Mention	_	_	0	_	_	Offset=417-419
+
+# sent_id = s7
+# text = Pipet 100 μl of your phage sample onto the plate.   
+1	Add	_	Action	_	_	0	_	_	Offset=424-427
+2	3.5	_	Amount	_	_	3	Measure	_	Offset=428-434
+3	agar/host	_	Reagent	_	_	0	_	_	Offset=442-459
+
+# sent_id = s8
+# text = Remove the agar tube from the water bath and add the host to it.   
+1	Swirl	_	Action	_	_	0	_	_	Offset=462-467
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=468-472
+3	plate	_	Location	_	_	0	_	_	Offset=473-478
+4	spread	_	Action	_	_	0	_	_	Offset=482-488
+5	agar	_	Reagent	_	_	0	_	_	Offset=493-497
+6	as	_	Method	_	_	0	_	_	Offset=498-507
+
+# sent_id = s9
+# text = Add 3.5 ml of the agar/host mixture. 
+1	Leave	_	Action	_	_	0	_	_	Offset=510-515
+2	plates	_	Location	_	_	0	_	_	Offset=520-526
+3	bench	_	Location	_	_	0	_	_	Offset=534-539
+4	overnight	_	Time	_	_	0	_	_	Offset=540-549
+
+# sent_id = s10
+# text = Swirl each plate to spread the agar as you go. 
+1	Count	_	Action	_	_	0	_	_	Offset=552-557
+2	pick	_	Action	_	_	0	_	_	Offset=561-565
+3	plaques	_	Reagent	_	_	0	_	_	Offset=566-573
+4	next	_	Time	_	_	0	_	_	Offset=578-586
+

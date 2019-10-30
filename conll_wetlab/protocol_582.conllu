@@ -1,0 +1,178 @@
+# sent_id = s1
+# text = Electroporation of Cas9 RNP (ribonucleoprotein) into adherent cells using the Neon® Electroporation
+1	Seed	_	Action	_	_	0	_	_	Offset=100-104
+2	cells	_	Reagent	_	_	0	_	_	Offset=109-114
+3	70-90%	_	Generic-Measure	_	_	0	_	_	Offset=143-149
+4	confluent	_	Measure-Type	_	_	3	Of-Type	_	Offset=150-159
+5	on	_	Modifier	_	_	0	_	_	Offset=160-186
+
+# sent_id = s2
+# text = Seed the cells so that they will be around 70-90% confluent on the day of transfection.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=339-345
+2	mix	_	Action	_	_	0	_	_	Offset=346-349
+3	reaction	_	Reagent	_	_	0	_	_	Offset=354-362
+4	incubate	_	Action	_	_	0	_	_	Offset=367-375
+5	room	_	Temperature	_	_	0	_	_	Offset=379-395
+6	20	_	Time	_	_	0	_	_	Offset=400-410
+
+# sent_id = s3
+# text = Set up the RNP formation reaction as follows below:
+1	During	_	Modifier	_	_	0	_	_	Offset=412-433
+2	trypsinize	_	Action	_	_	0	_	_	Offset=435-445
+3	cells	_	Reagent	_	_	0	_	_	Offset=450-455
+4	washing	_	Action	_	_	0	_	_	Offset=457-464
+5	once	_	Numerical	_	_	0	_	_	Offset=465-469
+6	remove	_	Action	_	_	0	_	_	Offset=473-479
+7	traces	_	Reagent	_	_	0	_	_	Offset=484-490
+8	trypsin	_	Reagent	_	_	7	Meronym	_	Offset=494-501
+
+# sent_id = s4
+# text = Component7 µl reactionResuspension Buffer R5.8 µlEnGen Cas9-NLS (20 µM)0.6 µlsgRNA (20 µM)0.6 µl. 
+1	Remove	_	Action	_	_	0	_	_	Offset=503-509
+2	1-2	_	Numerical	_	_	3	Measure	_	Offset=510-519
+3	cells	_	Reagent	_	_	0	_	_	Offset=520-525
+4	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=531-538
+5	microfuge	_	Location	_	_	0	_	_	Offset=539-553
+
+# sent_id = s5
+# text = Gently mix the reaction and incubate at room temperature for 20 minutes.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=614-623
+2	cells	_	Reagent	_	_	0	_	_	Offset=628-633
+3	10	_	Amount	_	_	4	Measure	_	Offset=637-642
+4	media	_	Reagent	_	_	0	_	_	Offset=646-651
+5	count	_	Action	_	_	0	_	_	Offset=656-661
+
+# sent_id = s6
+# text = During the incubation, trypsinize the cells, washing once to remove any traces of trypsin.
+1	Pellet	_	Action	_	_	0	_	_	Offset=663-669
+2	5	_	Time	_	_	0	_	_	Offset=674-679
+3	500	_	Speed	_	_	0	_	_	Offset=683-690
+
+# sent_id = s7
+# text = Remove 1-2 x 106 cells to a sterile microfuge tube.
+1	Wash	_	Action	_	_	0	_	_	Offset=695-699
+2	cells	_	Reagent	_	_	0	_	_	Offset=704-709
+3	once	_	Numerical	_	_	0	_	_	Offset=710-714
+4	1X	_	Concentration	_	_	5	Measure	_	Offset=720-722
+5	PBS	_	Reagent	_	_	0	_	_	Offset=723-726
+
+# sent_id = s8
+# text = (One tube of cells should be enough for 10 transfections).
+1	Resuspend	_	Action	_	_	0	_	_	Offset=728-737
+2	cells	_	Reagent	_	_	0	_	_	Offset=742-747
+3	50	_	Amount	_	_	4	Measure	_	Offset=751-756
+4	Resuspension	_	Reagent	_	_	0	_	_	Offset=760-781
+
+# sent_id = s9
+# text = Resuspend the cells in 10 ml of media and count.
+1	Prepare	_	Action	_	_	0	_	_	Offset=784-791
+2	24-well	_	Location	_	_	7	Meronym	_	Offset=794-807
+3	adding	_	Action	_	_	0	_	_	Offset=811-817
+4	500	_	Amount	_	_	5	Measure	_	Offset=818-824
+5	growth	_	Reagent	_	_	0	_	_	Offset=825-838
+6	appropriate	_	Numerical	_	_	7	Measure	_	Offset=846-864
+7	wells	_	Location	_	_	0	_	_	Offset=868-873
+
+# sent_id = s10
+# text = Pellet for 5 min at 500 x g.   
+1	Add	_	Action	_	_	0	_	_	Offset=875-878
+2	5	_	Amount	_	_	3	Measure	_	Offset=879-883
+3	cells	_	Reagent	_	_	0	_	_	Offset=887-892
+4	each	_	Numerical	_	_	6	Measure	_	Offset=896-900
+5	7	_	Amount	_	_	6	Measure	_	Offset=901-905
+6	RNP	_	Reagent	_	_	0	_	_	Offset=906-918
+
+# sent_id = s11
+# text = Wash the cells once with 1X PBS.
+1	Aspirate	_	Action	_	_	0	_	_	Offset=920-928
+2	10	_	Amount	_	_	3	Measure	_	Offset=929-934
+3	RNP/cells	_	Reagent	_	_	0	_	_	Offset=942-955
+4	10	_	Amount	_	_	5	Measure	_	Offset=963-968
+5	Neon	_	Location	_	_	0	_	_	Offset=969-976
+
+# sent_id = s12
+# text = Resuspend the cells in 50 µl of Resuspension Buffer R. 
+1	Electroporate	_	Action	_	_	0	_	_	Offset=979-992
+2	cells	_	Reagent	_	_	0	_	_	Offset=997-1002
+3	1700V	_	Generic-Measure	_	_	0	_	_	Offset=1035-1040
+4	20	_	Time	_	_	0	_	_	Offset=1042-1047
+5	1	_	Generic-Measure	_	_	0	_	_	Offset=1049-1056
+
+# sent_id = s13
+# text = Prepare a 24-well plate by adding 500 µl growth medium to the appropriate number of wells.
+1	Immediately	_	Modifier	_	_	0	_	_	Offset=1058-1069
+2	transfer	_	Action	_	_	0	_	_	Offset=1070-1078
+3	cells	_	Reagent	_	_	0	_	_	Offset=1083-1088
+4	prepared	_	Modifier	_	_	5	Mod-Link	_	Offset=1096-1104
+5	24-well	_	Location	_	_	0	_	_	Offset=1105-1118
+
+# sent_id = s14
+# text = Add 5 µl of cells to each 7 µl RNP reaction.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1120-1128
+2	cells	_	Reagent	_	_	0	_	_	Offset=1133-1138
+3	humidified	_	Modifier	_	_	6	Mod-Link	_	Offset=1144-1154
+4	37	_	Temperature	_	_	6	Setting	_	Offset=1155-1160
+5	5%	_	Concentration	_	_	6	Setting	_	Offset=1162-1168
+6	incubator	_	Device	_	_	0	_	_	Offset=1169-1178
+7	48-72	_	Time	_	_	0	_	_	Offset=1183-1194
+
+# sent_id = s15
+# text = Aspirate 10 µl of the RNP/cells mix into a 10 µl Neon tip.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=1196-1202
+2	aspirate	_	Action	_	_	0	_	_	Offset=1203-1211
+3	media	_	Reagent	_	_	0	_	_	Offset=1216-1221
+4	cells	_	Reagent	_	_	0	_	_	Offset=1231-1236
+
+# sent_id = s16
+# text = Electroporate the cells under the following conditions: 1700V, 20 ms, 1 pulse.
+1	Add	_	Action	_	_	0	_	_	Offset=1238-1241
+2	75	_	Amount	_	_	3	Measure	_	Offset=1242-1247
+3	Epicentre	_	Reagent	_	_	0	_	_	Offset=1251-1298
+4	shake/vortex	_	Action	_	_	0	_	_	Offset=1303-1315
+5	5	_	Time	_	_	0	_	_	Offset=1320-1329
+
+# sent_id = s17
+# text = Immediately transfer the cells to the prepared 24-well plate.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1331-1339
+2	solution	_	Reagent	_	_	0	_	_	Offset=1344-1352
+3	PCR	_	Location	_	_	0	_	_	Offset=1358-1367
+4	tubes	_	Location	_	_	3	Or	_	Offset=1371-1376
+5	place	_	Action	_	_	0	_	_	Offset=1381-1386
+6	thermocycler	_	Device	_	_	0	_	_	Offset=1392-1404
+
+# sent_id = s18
+# text = Incubate the cells in a humidified 37 °C, 5% C02 incubator for 48-72 hours.
+1	65°C	_	Temperature	_	_	6	Setting	_	Offset=1437-1441
+2	15	_	Time	_	_	6	Setting	_	Offset=1446-1452
+3	95°C	_	Temperature	_	_	6	Setting	_	Offset=1452-1456
+4	15	_	Time	_	_	6	Setting	_	Offset=1461-1467
+5	Hold	_	Action	_	_	0	_	_	Offset=1467-1471
+6	4°C	_	Temperature	_	_	0	_	_	Offset=1475-1478
+
+# sent_id = s19
+# text = Gently aspirate the media from the cells.
+1	Dilute	_	Action	_	_	0	_	_	Offset=1481-1487
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1492-1495
+3	1:10	_	Concentration	_	_	0	_	_	Offset=1496-1500
+4	nuclease-free	_	Reagent	_	_	0	_	_	Offset=1504-1523
+
+# sent_id = s20
+# text = Add 75 µl of Epicentre QuickExtract™ DNA Extraction Solution and shake/vortex for 5 minutes.
+1	Pellet	_	Action	_	_	0	_	_	Offset=1607-1613
+2	5	_	Time	_	_	0	_	_	Offset=1618-1623
+3	500	_	Speed	_	_	0	_	_	Offset=1627-1634
+
+# sent_id = s21
+# text = Transfer the solution to a PCR plate or tubes and place in a thermocycler, running the following program:
+1	Wash	_	Action	_	_	0	_	_	Offset=1639-1643
+2	100	_	Amount	_	_	4	Measure	_	Offset=1649-1655
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=1656-1658
+4	PBS	_	Reagent	_	_	0	_	_	Offset=1659-1662
+
+# sent_id = s22
+# text = 65°C for 15 min95°C for 15 minHold at 4°C. 
+1	Wash	_	Action	_	_	0	_	_	Offset=1671-1675
+2	100	_	Amount	_	_	4	Measure	_	Offset=1681-1687
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=1688-1690
+4	PBS	_	Reagent	_	_	0	_	_	Offset=1691-1694
+

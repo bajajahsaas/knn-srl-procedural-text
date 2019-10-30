@@ -1,0 +1,75 @@
+# sent_id = s1
+# text = Splenocyte Preperation
+1	Harvest	_	Action	_	_	0	_	_	Offset=23-30
+2	mouse	_	Reagent	_	_	0	_	_	Offset=31-43
+3	prepare	_	Action	_	_	0	_	_	Offset=48-55
+4	single	_	Numerical	_	_	5	Measure	_	Offset=58-64
+5	cell	_	Reagent	_	_	0	_	_	Offset=65-80
+
+# sent_id = s2
+# text = Harvest mouse spleen and prepare a single cell suspension.
+1	slides	_	Location	_	_	0	_	_	Offset=86-92
+2	syrings	_	Device	_	_	1	Or	_	Offset=98-105
+3	push	_	Action	_	_	0	_	_	Offset=109-113
+4	spleen	_	Reagent	_	_	0	_	_	Offset=118-124
+5	cell	_	Device	_	_	0	_	_	Offset=135-148
+
+# sent_id = s3
+# text = Use slides or a syrings to push the spleen through a cell strainer.
+1	Pellet	_	Action	_	_	0	_	_	Offset=150-156
+2	cells	_	Reagent	_	_	0	_	_	Offset=161-166
+3	centrifugation	_	Action	_	_	0	_	_	Offset=170-184
+4	aspirate	_	Action	_	_	0	_	_	Offset=196-204
+5	supernatant	_	Reagent	_	_	0	_	_	Offset=209-220
+
+# sent_id = s4
+# text = Pellet the cells by centrifugation (350 x g); aspirate the supernatant.
+1	Dilute	_	Action	_	_	0	_	_	Offset=222-228
+2	10X	_	Concentration	_	_	3	Measure	_	Offset=233-236
+3	Red	_	Reagent	_	_	0	_	_	Offset=237-264
+4	1X	_	Concentration	_	_	0	_	_	Offset=268-270
+5	deionized	_	Modifier	_	_	6	Mod-Link	_	Offset=298-307
+6	water	_	Reagent	_	_	0	_	_	Offset=308-313
+7	resuspend	_	Action	_	_	0	_	_	Offset=318-327
+8	pellet	_	Reagent	_	_	0	_	_	Offset=332-338
+9	5	_	Amount	_	_	11	Measure	_	Offset=342-346
+10	1X	_	Concentration	_	_	11	Measure	_	Offset=350-352
+11	Lysis	_	Reagent	_	_	0	_	_	Offset=353-365
+
+# sent_id = s5
+# text = Dilute the 10X Red Blood Cell Lysis Buffer to 1X working concentration with deionized water and resuspend the pellet in 5 ml of 1X Lysis Buffer.
+1	Incubate	_	Action	_	_	0	_	_	Offset=367-375
+2	ice	_	Location	_	_	0	_	_	Offset=379-382
+3	4-5	_	Time	_	_	0	_	_	Offset=387-398
+4	occasional	_	Modifier	_	_	0	_	_	Offset=404-414
+5	shaking	_	Action	_	_	0	_	_	Offset=415-422
+
+# sent_id = s6
+# text = Incubate on ice for 4-5 minutes with occasional shaking.
+1	diluting	_	Action	_	_	0	_	_	Offset=445-453
+2	Lysis	_	Reagent	_	_	0	_	_	Offset=458-470
+3	20-30	_	Amount	_	_	5	Measure	_	Offset=476-484
+4	1X	_	Concentration	_	_	5	Measure	_	Offset=488-490
+5	PBS	_	Reagent	_	_	0	_	_	Offset=491-494
+
+# sent_id = s7
+# text = Stop the reaction by diluting the Lysis Buffer with 20-30 ml of 1X PBS.
+1	Spin	_	Action	_	_	0	_	_	Offset=496-500
+2	cells	_	Reagent	_	_	0	_	_	Offset=505-510
+3	350	_	Speed	_	_	0	_	_	Offset=512-519
+4	discard	_	Action	_	_	0	_	_	Offset=525-532
+5	supernatant	_	Reagent	_	_	0	_	_	Offset=537-548
+
+# sent_id = s8
+# text = Spin the cells (350 x g) and discard the supernatant.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=550-559
+2	pellet	_	Reagent	_	_	0	_	_	Offset=564-570
+3	appropriate	_	Modifier	_	_	4	Mod-Link	_	Offset=578-589
+4	buffer	_	Reagent	_	_	0	_	_	Offset=590-596
+5	Count	_	Action	_	_	0	_	_	Offset=597-602
+6	cells	_	Reagent	_	_	0	_	_	Offset=603-608
+7	adjust	_	Action	_	_	0	_	_	Offset=610-616
+8	density	_	Measure-Type	_	_	0	_	_	Offset=617-624
+9	proceed	_	Action	_	_	0	_	_	Offset=630-637
+10	cell	_	Method	_	_	0	_	_	Offset=643-667
+

@@ -1,0 +1,192 @@
+# sent_id = s1
+# text = Immunoblot Screening of Chlorella Virus Plaques
+1	Take	_	Action	_	_	0	_	_	Offset=48-52
+2	desired	_	Modifier	_	_	3	Mod-Link	_	Offset=57-64
+3	petri	_	Location	_	_	4	Meronym	_	Offset=65-77
+4	virus	_	Reagent	_	_	0	_	_	Offset=81-94
+5	chlorella	_	Location	_	_	0	_	_	Offset=98-113
+6	chill	_	Action	_	_	0	_	_	Offset=118-123
+7	cold	_	Modifier	_	_	8	Mod-Link	_	Offset=131-135
+8	room	_	Location	_	_	0	_	_	Offset=136-140
+9	30-60	_	Time	_	_	0	_	_	Offset=145-154
+
+# sent_id = s2
+# text = Take the desired petri plates of virus plaques on chlorella lawns and chill in the cold room for 30-60 min prior to use.
+1	Overlay	_	Action	_	_	0	_	_	Offset=169-176
+2	plates	_	Location	_	_	0	_	_	Offset=181-187
+3	nitrocellulose	_	Reagent	_	_	0	_	_	Offset=197-219
+
+# sent_id = s3
+# text = Overlay the plates with the nitrocellulose circles.
+1	nitrocellulose	_	Reagent	_	_	0	_	_	Offset=231-245
+2	lay	_	Action	_	_	0	_	_	Offset=249-252
+3	agar	_	Location	_	_	0	_	_	Offset=260-272
+4	15	_	Time	_	_	0	_	_	Offset=277-283
+
+# sent_id = s4
+# text = Allow the nitrocellulose to lay on the agar surface for 15 min.
+1	filters	_	Device	_	_	0	_	_	Offset=295-302
+2	air	_	Action	_	_	0	_	_	Offset=306-313
+
+# sent_id = s5
+# text = Allow the filters to air dry.
+1	Add	_	Action	_	_	0	_	_	Offset=315-318
+2	7.5-8.0	_	Amount	_	_	3	Measure	_	Offset=319-329
+3	blocking	_	Reagent	_	_	0	_	_	Offset=337-354
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=358-362
+5	filter	_	Device	_	_	0	_	_	Offset=363-369
+6	glass	_	Location	_	_	5	Meronym	_	Offset=375-392
+7	incubate	_	Action	_	_	0	_	_	Offset=397-405
+8	30	_	Time	_	_	0	_	_	Offset=410-416
+9	gentle	_	Method	_	_	0	_	_	Offset=422-436
+
+# sent_id = s6
+# text = Add 7.5-8.0 mL of the blocking solution to each filter in a glass petri plate and incubate for 30 min with gentle shaking (approximately 100 rpm on the rotary shaker).
+1	Decant	_	Action	_	_	0	_	_	Offset=483-489
+2	blocking	_	Reagent	_	_	0	_	_	Offset=494-511
+3	petri	_	Location	_	_	0	_	_	Offset=521-533
+
+# sent_id = s7
+# text = Decant the blocking solution from the petri plates.
+1	Add	_	Action	_	_	0	_	_	Offset=535-538
+2	7.5-8.0	_	Amount	_	_	4	Measure	_	Offset=539-549
+3	1/600	_	Generic-Measure	_	_	4	Measure	_	Offset=555-560
+4	dilution	_	Reagent	_	_	0	_	_	Offset=561-569
+5	1°	_	Generic-Measure	_	_	6	Measure	_	Offset=577-579
+6	antiserum	_	Reagent	_	_	4	Meronym	_	Offset=580-589
+7	1X	_	Concentration	_	_	8	Measure	_	Offset=593-595
+8	TBST	_	Reagent	_	_	6	Meronym	_	Offset=596-600
+9	each	_	Modifier	_	_	10	Mod-Link	_	Offset=604-608
+10	filter	_	Device	_	_	0	_	_	Offset=609-615
+11	incubate	_	Action	_	_	0	_	_	Offset=620-628
+12	30	_	Time	_	_	0	_	_	Offset=633-639
+13	gentle	_	Method	_	_	0	_	_	Offset=646-660
+
+# sent_id = s8
+# text = Add 7.5-8.0 mL of a 1/600 dilution of the 1° antiserum in 1X TBST to each filter and incubate for 30 min, with gentle shaking.
+1	Decant	_	Action	_	_	0	_	_	Offset=662-668
+2	antiserum	_	Reagent	_	_	0	_	_	Offset=673-682
+3	petri	_	Location	_	_	0	_	_	Offset=692-704
+
+# sent_id = s9
+# text = Decant the antiserum from the petri plates.
+1	Wash	_	Action	_	_	0	_	_	Offset=706-710
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=711-715
+3	filter	_	Device	_	_	0	_	_	Offset=716-722
+4	3X	_	Numerical	_	_	0	_	_	Offset=723-725
+5	8.0	_	Amount	_	_	7	Measure	_	Offset=731-737
+6	1X	_	Concentration	_	_	7	Measure	_	Offset=741-743
+7	TBST	_	Reagent	_	_	0	_	_	Offset=744-748
+8	10	_	Time	_	_	0	_	_	Offset=753-759
+9	gentle	_	Method	_	_	0	_	_	Offset=766-780
+
+# sent_id = s10
+# text = Wash each filter 3X with 8.0 mL of 1X TBST for 10 min, with gentle shaking.
+1	Decant	_	Action	_	_	0	_	_	Offset=782-788
+2	TBST	_	Reagent	_	_	0	_	_	Offset=793-806
+3	petri	_	Location	_	_	0	_	_	Offset=816-828
+
+# sent_id = s11
+# text = Decant the TBST solution from the petri plates.
+1	Add	_	Action	_	_	0	_	_	Offset=830-833
+2	7.5-8.0	_	Amount	_	_	4	Measure	_	Offset=834-844
+3	1/7500	_	Generic-Measure	_	_	4	Measure	_	Offset=850-856
+4	dilution	_	Reagent	_	_	0	_	_	Offset=857-865
+5	2°	_	Generic-Measure	_	_	6	Measure	_	Offset=873-875
+6	antiserum	_	Reagent	_	_	4	Meronym	_	Offset=876-885
+7	1X	_	Concentration	_	_	8	Measure	_	Offset=889-891
+8	TBST	_	Reagent	_	_	6	Meronym	_	Offset=892-896
+9	each	_	Modifier	_	_	10	Mod-Link	_	Offset=900-904
+10	filters	_	Device	_	_	0	_	_	Offset=912-919
+11	incubate	_	Action	_	_	0	_	_	Offset=924-932
+12	30	_	Time	_	_	0	_	_	Offset=937-943
+13	gentle	_	Method	_	_	0	_	_	Offset=950-964
+
+# sent_id = s12
+# text = Add 7.5-8.0 ml of a 1/7500 dilution of the 2° antiserum in 1X TBST to each of the filters and incubate for 30 min, with gentle shaking.
+1	Decant	_	Action	_	_	0	_	_	Offset=966-972
+2	antiserum	_	Reagent	_	_	0	_	_	Offset=977-995
+3	petri	_	Location	_	_	0	_	_	Offset=1005-1017
+
+# sent_id = s13
+# text = Decant the antiserum solution from the petri plates.
+1	Wash	_	Action	_	_	0	_	_	Offset=1019-1023
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=1024-1028
+3	filter	_	Device	_	_	0	_	_	Offset=1029-1035
+4	3X	_	Numerical	_	_	0	_	_	Offset=1036-1038
+5	8.0	_	Amount	_	_	7	Measure	_	Offset=1044-1050
+6	1X	_	Concentration	_	_	7	Measure	_	Offset=1054-1056
+7	TBST	_	Reagent	_	_	0	_	_	Offset=1057-1061
+8	10	_	Time	_	_	0	_	_	Offset=1066-1072
+9	gentle	_	Method	_	_	0	_	_	Offset=1079-1093
+
+# sent_id = s14
+# text = Wash each filter 3X with 8.0 mL of 1X TBST for 10 min, with gentle shaking.
+1	Decant	_	Action	_	_	0	_	_	Offset=1095-1101
+2	TBST	_	Reagent	_	_	0	_	_	Offset=1106-1119
+3	petri	_	Location	_	_	0	_	_	Offset=1129-1141
+
+# sent_id = s15
+# text = Decant the TBST solution from the petri plates.
+1	Add	_	Action	_	_	0	_	_	Offset=1143-1146
+2	7.5-8.0	_	Amount	_	_	3	Measure	_	Offset=1147-1157
+3	reaction	_	Reagent	_	_	0	_	_	Offset=1165-1181
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=1185-1189
+5	filters	_	Device	_	_	0	_	_	Offset=1197-1204
+6	cover	_	Action	_	_	0	_	_	Offset=1206-1211
+7	aluminum	_	Seal	_	_	0	_	_	Offset=1217-1230
+8	incubate	_	Action	_	_	0	_	_	Offset=1235-1243
+9	gentle	_	Method	_	_	0	_	_	Offset=1249-1263
+
+# sent_id = s16
+# text = Add 7.5-8.0 mL of the reaction mixture to each of the filters, cover with aluminum foil and incubate with gentle shaking.
+1	decant	_	Action	_	_	0	_	_	Offset=1307-1313
+2	reaction	_	Reagent	_	_	0	_	_	Offset=1318-1334
+3	petri	_	Location	_	_	0	_	_	Offset=1344-1356
+
+# sent_id = s17
+# text = When the color development is sufficient, decant the reaction mixture from the petri plates.
+1	Add	_	Action	_	_	0	_	_	Offset=1358-1361
+2	8.0	_	Amount	_	_	3	Measure	_	Offset=1362-1368
+3	stop/storage	_	Reagent	_	_	0	_	_	Offset=1376-1395
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=1399-1403
+5	filter	_	Device	_	_	0	_	_	Offset=1404-1410
+6	incubate	_	Action	_	_	0	_	_	Offset=1415-1423
+7	30	_	Time	_	_	0	_	_	Offset=1428-1434
+8	gentle	_	Method	_	_	0	_	_	Offset=1441-1455
+
+# sent_id = s18
+# text = Add 8.0 mL of the stop/storage buffer to each filter and incubate for 30 min, with gentle shaking.
+1	Place	_	Action	_	_	0	_	_	Offset=1457-1462
+2	filters	_	Device	_	_	0	_	_	Offset=1467-1474
+3	glass	_	Location	_	_	4	Meronym	_	Offset=1482-1505
+4	stop/storage	_	Reagent	_	_	0	_	_	Offset=1515-1534
+5	incubate	_	Action	_	_	0	_	_	Offset=1539-1547
+6	30	_	Time	_	_	0	_	_	Offset=1552-1558
+7	room	_	Temperature	_	_	0	_	_	Offset=1562-1578
+
+# sent_id = s19
+# text = Place the filters into a glass pyrex baking dish with the stop/storage buffer and incubate for 30 min at room temperature.
+1	Remove	_	Action	_	_	0	_	_	Offset=1580-1586
+2	filters	_	Device	_	_	0	_	_	Offset=1591-1598
+3	stop/storage	_	Reagent	_	_	0	_	_	Offset=1608-1627
+4	air	_	Action	_	_	0	_	_	Offset=1641-1648
+5	paper	_	Device	_	_	0	_	_	Offset=1652-1664
+6	filter	_	Device	_	_	5	Or	_	Offset=1668-1681
+
+# sent_id = s20
+# text = Remove the filters from the stop/storage buffer and allow to air dry on paper towels or filter papers.
+1	Store	_	Action	_	_	0	_	_	Offset=1683-1688
+2	filters	_	Device	_	_	0	_	_	Offset=1693-1700
+3	small	_	Modifier	_	_	6	Mod-Link	_	Offset=1704-1709
+4	plastic	_	Modifier	_	_	6	Mod-Link	_	Offset=1710-1717
+5	sealed	_	Modifier	_	_	6	Mod-Link	_	Offset=1718-1724
+6	bags	_	Location	_	_	0	_	_	Offset=1725-1729
+
+# sent_id = s21
+# text = Store the filters in small plastic sealed bags.
+1	Place	_	Action	_	_	0	_	_	Offset=1731-1736
+2	cold	_	Modifier	_	_	3	Mod-Link	_	Offset=1744-1748
+3	room	_	Location	_	_	0	_	_	Offset=1749-1753
+4	overnight	_	Time	_	_	0	_	_	Offset=1754-1763
+

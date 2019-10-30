@@ -1,0 +1,797 @@
+# sent_id = s1
+# text = TruSeq RNA kit protocol (with one-third reaction volumes and some minor changes)
+1	Mix	_	Action	_	_	0	_	_	Offset=148-151
+2	500	_	Amount	_	_	3	Measure	_	Offset=152-158
+3	RNA	_	Reagent	_	_	0	_	_	Offset=165-168
+4	dH2O	_	Reagent	_	_	0	_	_	Offset=173-177
+5	final	_	Measure-Type	_	_	0	_	_	Offset=183-195
+6	16.67	_	Amount	_	_	0	_	_	Offset=199-207
+
+# sent_id = s2
+# text = If not performing Poly A select mRNA, proceed directly to step 24.
+1	Vortex	_	Action	_	_	0	_	_	Offset=209-215
+2	RNA	_	Reagent	_	_	0	_	_	Offset=216-238
+3	add	_	Action	_	_	0	_	_	Offset=243-246
+4	16.67	_	Amount	_	_	2	Measure	_	Offset=247-255
+5	RNA	_	Reagent	_	_	0	_	_	Offset=259-269
+
+# sent_id = s3
+# text = Mix 500 ng total RNA and dH2O to a final volume of 16.67 uL.
+1	Mix	_	Action	_	_	0	_	_	Offset=271-274
+2	pipetting	_	Method	_	_	0	_	_	Offset=278-299
+3	beads	_	Reagent	_	_	0	_	_	Offset=306-311
+4	homogenous	_	Modifier	_	_	5	Mod-Link	_	Offset=321-331
+5	suspension	_	Reagent	_	_	3	Meronym	_	Offset=332-342
+
+# sent_id = s4
+# text = Vortex RNA purification Beads and add 16.67 uL to RNA sample.
+1	Incubate	_	Action	_	_	0	_	_	Offset=344-352
+2	thermocycler	_	Device	_	_	0	_	_	Offset=356-368
+3	65	_	Temperature	_	_	2	Setting	_	Offset=370-375
+4	5	_	Time	_	_	2	Setting	_	Offset=376-381
+5	4	_	Temperature	_	_	2	Setting	_	Offset=382-386
+
+# sent_id = s5
+# text = Mix by pipetting up and down until beads are in a homogenous suspension.
+1	remove	_	Action	_	_	0	_	_	Offset=425-431
+2	sample	_	Reagent	_	_	0	_	_	Offset=432-438
+3	place	_	Action	_	_	0	_	_	Offset=443-448
+4	bench	_	Location	_	_	0	_	_	Offset=452-457
+5	room	_	Temperature	_	_	0	_	_	Offset=461-477
+6	5	_	Time	_	_	0	_	_	Offset=482-487
+
+# sent_id = s6
+# text = Incubate in thermocycler: 65 °C 5 min 4 °C hold. 
+1	Place	_	Action	_	_	0	_	_	Offset=489-494
+2	sample	_	Reagent	_	_	0	_	_	Offset=495-501
+3	magnetic	_	Device	_	_	0	_	_	Offset=505-518
+4	5	_	Time	_	_	0	_	_	Offset=523-528
+
+# sent_id = s7
+# text = When thermocycler reaches 4 °C remove sample and place on bench at room temperature for 5 min.
+1	Remove	_	Action	_	_	0	_	_	Offset=530-536
+2	discard	_	Action	_	_	0	_	_	Offset=541-548
+3	all	_	Modifier	_	_	4	Mod-Link	_	Offset=549-552
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=557-568
+
+# sent_id = s8
+# text = Place sample in magnetic rack for 5 min.
+1	Remove	_	Action	_	_	0	_	_	Offset=570-576
+2	sample	_	Reagent	_	_	0	_	_	Offset=577-583
+3	rack	_	Device	_	_	0	_	_	Offset=589-593
+
+# sent_id = s9
+# text = Remove and discard all the supernatant.
+1	Add	_	Action	_	_	0	_	_	Offset=595-598
+2	66.7	_	Amount	_	_	3	Measure	_	Offset=599-606
+3	Bead	_	Reagent	_	_	0	_	_	Offset=610-629
+4	pipet	_	Action	_	_	0	_	_	Offset=634-639
+5	up	_	Method	_	_	0	_	_	Offset=640-651
+6	beads	_	Reagent	_	_	0	_	_	Offset=658-663
+7	homogenous	_	Modifier	_	_	8	Mod-Link	_	Offset=673-683
+8	suspension	_	Reagent	_	_	6	Meronym	_	Offset=684-694
+
+# sent_id = s10
+# text = Remove sample from rack.
+1	Place	_	Action	_	_	0	_	_	Offset=696-701
+2	sample	_	Reagent	_	_	0	_	_	Offset=706-712
+3	magnetic	_	Device	_	_	0	_	_	Offset=725-738
+4	5	_	Time	_	_	0	_	_	Offset=743-748
+
+# sent_id = s11
+# text = Add 66.7 uL of Bead Washing Buffer and pipet up and down until beads are in a homogenous suspension.
+1	Remove	_	Action	_	_	0	_	_	Offset=750-756
+2	discard	_	Action	_	_	0	_	_	Offset=761-768
+3	all	_	Modifier	_	_	4	Mod-Link	_	Offset=769-772
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=780-791
+
+# sent_id = s12
+# text = Place the sample back in the magnetic rack for 5 min.
+1	Add	_	Action	_	_	0	_	_	Offset=793-796
+2	16.67	_	Amount	_	_	3	Measure	_	Offset=797-805
+3	Elution	_	Reagent	_	_	0	_	_	Offset=809-823
+4	pipet	_	Action	_	_	0	_	_	Offset=828-833
+5	up	_	Method	_	_	0	_	_	Offset=834-845
+6	beads	_	Reagent	_	_	0	_	_	Offset=852-857
+7	homogenous	_	Modifier	_	_	8	Mod-Link	_	Offset=867-877
+8	suspension	_	Reagent	_	_	6	Meronym	_	Offset=878-888
+
+# sent_id = s13
+# text = Remove and discard all of the supernatant.
+1	Incubate	_	Action	_	_	0	_	_	Offset=890-898
+2	thermocycler	_	Device	_	_	0	_	_	Offset=902-914
+3	80	_	Temperature	_	_	0	_	_	Offset=916-921
+4	2	_	Time	_	_	0	_	_	Offset=922-927
+5	25	_	Temperature	_	_	0	_	_	Offset=928-934
+
+# sent_id = s14
+# text = Add 16.67 uL of Elution Buffer and pipet up and down until beads are in a homogenous suspension.
+1	Remove	_	Action	_	_	0	_	_	Offset=941-947
+2	sample	_	Reagent	_	_	0	_	_	Offset=948-954
+3	thermocycler	_	Device	_	_	0	_	_	Offset=960-972
+4	keep	_	Action	_	_	0	_	_	Offset=999-1003
+5	room	_	Temperature	_	_	0	_	_	Offset=1007-1016
+
+# sent_id = s15
+# text = Incubate in thermocycler: 80 °C 2 min 25 °C hold. 
+1	Add	_	Action	_	_	0	_	_	Offset=1018-1021
+2	16.67	_	Amount	_	_	3	Measure	_	Offset=1022-1030
+3	Bead	_	Reagent	_	_	0	_	_	Offset=1034-1053
+4	pipet	_	Action	_	_	0	_	_	Offset=1058-1063
+5	up	_	Method	_	_	0	_	_	Offset=1064-1075
+6	beads	_	Reagent	_	_	0	_	_	Offset=1082-1087
+7	homogenous	_	Modifier	_	_	8	Mod-Link	_	Offset=1097-1107
+8	suspension	_	Reagent	_	_	6	Meronym	_	Offset=1108-1118
+
+# sent_id = s16
+# text = Remove sample from thermocycler when it reaches 25 °C and keep at room temp.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1120-1128
+2	room	_	Temperature	_	_	0	_	_	Offset=1132-1148
+3	5	_	Time	_	_	0	_	_	Offset=1153-1158
+
+# sent_id = s17
+# text = Add 16.67 uL of Bead Binding Buffer and pipet up and down until beads are in a homogenous suspension.
+1	Place	_	Action	_	_	0	_	_	Offset=1160-1165
+2	sample	_	Reagent	_	_	0	_	_	Offset=1166-1172
+3	magnetic	_	Device	_	_	0	_	_	Offset=1176-1194
+4	5	_	Time	_	_	0	_	_	Offset=1199-1204
+
+# sent_id = s18
+# text = Incubate at room temperature for 5 min.
+1	Remove	_	Action	_	_	0	_	_	Offset=1206-1212
+2	discard	_	Action	_	_	0	_	_	Offset=1217-1224
+3	all	_	Modifier	_	_	4	Mod-Link	_	Offset=1225-1228
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=1229-1240
+
+# sent_id = s19
+# text = Place sample in magnetic separator for 5 min.
+1	Remove	_	Action	_	_	0	_	_	Offset=1242-1248
+2	sample	_	Reagent	_	_	0	_	_	Offset=1249-1255
+3	rack	_	Device	_	_	0	_	_	Offset=1261-1265
+
+# sent_id = s20
+# text = Remove and discard all supernatant.
+1	Add	_	Action	_	_	0	_	_	Offset=1267-1270
+2	66.7	_	Amount	_	_	3	Measure	_	Offset=1271-1278
+3	Bead	_	Reagent	_	_	0	_	_	Offset=1282-1301
+4	pipet	_	Action	_	_	0	_	_	Offset=1306-1311
+5	up	_	Method	_	_	0	_	_	Offset=1312-1323
+6	beads	_	Reagent	_	_	0	_	_	Offset=1330-1335
+7	homogenous	_	Modifier	_	_	8	Mod-Link	_	Offset=1345-1355
+8	suspension	_	Reagent	_	_	6	Meronym	_	Offset=1356-1366
+
+# sent_id = s21
+# text = Remove sample from rack.
+1	Place	_	Action	_	_	0	_	_	Offset=1368-1373
+2	sample	_	Reagent	_	_	0	_	_	Offset=1374-1380
+3	magnetic	_	Device	_	_	0	_	_	Offset=1384-1402
+4	5	_	Time	_	_	0	_	_	Offset=1407-1412
+
+# sent_id = s22
+# text = Add 66.7 uL of Bead Washing Buffer and pipet up and down until beads are in a homogenous suspension.
+1	Remove	_	Action	_	_	0	_	_	Offset=1414-1420
+2	discard	_	Action	_	_	0	_	_	Offset=1425-1432
+3	all	_	Modifier	_	_	4	Mod-Link	_	Offset=1433-1436
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=1437-1448
+
+# sent_id = s23
+# text = Place sample in magnetic separator for 5 min.
+1	Add	_	Action	_	_	0	_	_	Offset=1450-1453
+2	6.5	_	Amount	_	_	3	Measure	_	Offset=1454-1460
+3	Elute,	_	Reagent	_	_	0	_	_	Offset=1461-1483
+
+# sent_id = s24
+# text = Remove and discard all supernatant.
+1	Mix	_	Action	_	_	0	_	_	Offset=1486-1499
+2	up	_	Method	_	_	0	_	_	Offset=1500-1511
+3	beads	_	Reagent	_	_	0	_	_	Offset=1518-1523
+4	homogenous	_	Modifier	_	_	5	Mod-Link	_	Offset=1533-1543
+5	suspension	_	Reagent	_	_	3	Meronym	_	Offset=1544-1554
+
+# sent_id = s25
+# text = Add 6.5 uL Elute, Prime, Fragment. 
+1	add	_	Action	_	_	0	_	_	Offset=1592-1595
+2	total	_	Modifier	_	_	3	Mod-Link	_	Offset=1596-1601
+3	RNA	_	Reagent	_	_	0	_	_	Offset=1602-1605
+4	6.5	_	Amount	_	_	5	Measure	_	Offset=1609-1615
+5	Elute,	_	Reagent	_	_	0	_	_	Offset=1619-1649
+6	bring	_	Action	_	_	0	_	_	Offset=1655-1663
+7	total	_	Measure-Type	_	_	0	_	_	Offset=1668-1680
+8	10	_	Amount	_	_	0	_	_	Offset=1697-1702
+9	dH2O	_	Reagent	_	_	0	_	_	Offset=1708-1712
+
+# sent_id = s26
+# text = Mix and pipet up and down until beads are in a homogenous suspension.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1714-1722
+2	thermocycler	_	Device	_	_	0	_	_	Offset=1726-1738
+3	94	_	Temperature	_	_	2	Setting	_	Offset=1740-1745
+4	8	_	Time	_	_	2	Setting	_	Offset=1746-1751
+5	4	_	Temperature	_	_	2	Setting	_	Offset=1752-1756
+
+# sent_id = s27
+# text = If proceeding directly from step 1, add total RNA to 6.5 uL of Elute, Prime, and Fragment mix, and bring up the total volume to no more than 10 uL with dH2O.
+1	proceed	_	Action	_	_	0	_	_	Offset=1801-1808
+2	directly	_	Modifier	_	_	0	_	_	Offset=1809-1817
+3	step	_	Method	_	_	0	_	_	Offset=1821-1828
+
+# sent_id = s28
+# text = Incubate in thermocycler: 94 °C 8 min 4 °C hold.
+1	Place	_	Action	_	_	0	_	_	Offset=1830-1835
+2	sample	_	Reagent	_	_	0	_	_	Offset=1836-1842
+3	magnetic	_	Device	_	_	0	_	_	Offset=1848-1861
+4	5	_	Time	_	_	0	_	_	Offset=1866-1871
+
+# sent_id = s29
+# text = If not performing Poly A select mRNA, proceed directly to step 28.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1873-1881
+2	5.67	_	Amount	_	_	3	Measure	_	Offset=1882-1889
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=1897-1908
+4	new	_	Modifier	_	_	6	Mod-Link	_	Offset=1914-1917
+5	0.2	_	Amount	_	_	6	Measure	_	Offset=1918-1924
+6	PCR	_	Location	_	_	0	_	_	Offset=1925-1933
+
+# sent_id = s30
+# text = Place sample in a magnetic rack for 5 min.
+1	Add	_	Action	_	_	0	_	_	Offset=1935-1938
+2	2.67	_	Amount	_	_	3	Measure	_	Offset=1939-1946
+3	First	_	Reagent	_	_	0	_	_	Offset=1950-1973
+4	Super	_	Reagent	_	_	3	Or	_	Offset=1976-1995
+5	sample	_	Reagent	_	_	0	_	_	Offset=1999-2005
+
+# sent_id = s31
+# text = Transfer 5.67 uL of the supernatant to a new 0.2 mL PCR tube.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2007-2015
+2	thermocycler	_	Device	_	_	0	_	_	Offset=2019-2031
+3	25	_	Temperature	_	_	2	Setting	_	Offset=2033-2038
+4	10	_	Time	_	_	2	Setting	_	Offset=2039-2045
+5	42	_	Temperature	_	_	2	Setting	_	Offset=2046-2051
+6	50	_	Time	_	_	2	Setting	_	Offset=2052-2058
+7	70	_	Temperature	_	_	2	Setting	_	Offset=2059-2064
+8	15	_	Time	_	_	2	Setting	_	Offset=2065-2071
+9	4	_	Temperature	_	_	2	Setting	_	Offset=2072-2076
+
+# sent_id = s32
+# text = Add 2.67 uL of First Strand Master Mix / Super Script II mix to sample.
+1	Add	_	Action	_	_	0	_	_	Offset=2084-2087
+2	8.33	_	Amount	_	_	3	Measure	_	Offset=2088-2095
+3	Second	_	Reagent	_	_	0	_	_	Offset=2099-2123
+4	sample	_	Reagent	_	_	0	_	_	Offset=2127-2133
+
+# sent_id = s33
+# text = Incubate in thermocycler: 25 °C 10 min 42 °C 50 min 70 °C 15 min 4 °C hold. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=2135-2143
+2	thermocycler	_	Device	_	_	0	_	_	Offset=2147-2159
+3	16	_	Temperature	_	_	2	Setting	_	Offset=2163-2168
+4	1	_	Time	_	_	2	Setting	_	Offset=2173-2179
+
+# sent_id = s34
+# text = Add 8.33 uL of Second Strand Master Mix to sample.
+1	Remove	_	Action	_	_	0	_	_	Offset=2181-2187
+2	sample	_	Reagent	_	_	0	_	_	Offset=2188-2194
+3	thermocycler	_	Device	_	_	0	_	_	Offset=2200-2212
+4	let	_	Action	_	_	0	_	_	Offset=2217-2225
+5	room	_	Temperature	_	_	0	_	_	Offset=2229-2245
+
+# sent_id = s35
+# text = Incubate in thermocycler at 16 °C for 1 hour.
+1	Add	_	Action	_	_	0	_	_	Offset=2247-2250
+2	30	_	Amount	_	_	4	Measure	_	Offset=2251-2256
+3	well-mixed	_	Modifier	_	_	4	Mod-Link	_	Offset=2260-2270
+4	AMPure	_	Reagent	_	_	0	_	_	Offset=2271-2286
+5	mix	_	Action	_	_	0	_	_	Offset=2291-2294
+6	pipetting	_	Method	_	_	0	_	_	Offset=2298-2319
+7	beads	_	Reagent	_	_	0	_	_	Offset=2326-2331
+8	homogenous	_	Modifier	_	_	9	Mod-Link	_	Offset=2341-2351
+9	suspension	_	Reagent	_	_	7	Meronym	_	Offset=2352-2362
+
+# sent_id = s36
+# text = Remove sample from thermocycler and let warm to room temperature.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2364-2372
+2	room	_	Temperature	_	_	0	_	_	Offset=2376-2392
+3	15	_	Time	_	_	0	_	_	Offset=2397-2403
+
+# sent_id = s37
+# text = Add 30 uL of well-mixed AMPure XP beads and mix by pipetting up and down until beads are in a homogenous suspension.
+1	Place	_	Action	_	_	0	_	_	Offset=2405-2413
+2	magnetic	_	Device	_	_	0	_	_	Offset=2414-2427
+3	5	_	Time	_	_	0	_	_	Offset=2432-2437
+
+# sent_id = s38
+# text = Incubate at room temperature for 15 min.
+1	Remove	_	Action	_	_	0	_	_	Offset=2439-2457
+2	45	_	Amount	_	_	3	Measure	_	Offset=2458-2463
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=2471-2482
+
+# sent_id = s39
+# text = Place on magnetic rack for 5 min.
+1	Keep	_	Action	_	_	0	_	_	Offset=2484-2488
+2	sample	_	Reagent	_	_	0	_	_	Offset=2489-2495
+3	magnetic	_	Device	_	_	0	_	_	Offset=2499-2512
+4	add	_	Action	_	_	0	_	_	Offset=2517-2520
+5	200	_	Amount	_	_	7	Measure	_	Offset=2521-2527
+6	80%	_	Concentration	_	_	7	Measure	_	Offset=2531-2534
+7	ethanol	_	Reagent	_	_	0	_	_	Offset=2535-2542
+
+# sent_id = s40
+# text = Remove and discard 45 uL of the supernatant.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2544-2552
+2	30	_	Time	_	_	0	_	_	Offset=2557-2567
+
+# sent_id = s41
+# text = Keep sample in magnetic rack and add 200 uL of 80% ethanol.
+1	Remove	_	Action	_	_	0	_	_	Offset=2569-2587
+2	all	_	Modifier	_	_	3	Mod-Link	_	Offset=2588-2591
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=2592-2603
+
+# sent_id = s42
+# text = Incubate for 30 seconds.
+1	Repeat	_	Action	_	_	0	_	_	Offset=2605-2611
+2	steps	_	Method	_	_	0	_	_	Offset=2612-2627
+3	once	_	Numerical	_	_	0	_	_	Offset=2628-2632
+
+# sent_id = s43
+# text = Remove and discard all supernatant.
+1	Add	_	Action	_	_	0	_	_	Offset=2665-2668
+2	22	_	Amount	_	_	3	Measure	_	Offset=2669-2674
+3	Resuspension	_	Reagent	_	_	0	_	_	Offset=2675-2694
+4	pipet	_	Action	_	_	0	_	_	Offset=2699-2704
+5	up	_	Method	_	_	0	_	_	Offset=2705-2716
+6	beads	_	Reagent	_	_	0	_	_	Offset=2723-2728
+7	homogenous	_	Modifier	_	_	8	Mod-Link	_	Offset=2738-2748
+8	suspension	_	Reagent	_	_	6	Meronym	_	Offset=2749-2759
+
+# sent_id = s44
+# text = Repeat steps 37 and 38 once more for a total of two washes.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2761-2769
+2	room	_	Temperature	_	_	0	_	_	Offset=2773-2789
+3	5	_	Time	_	_	0	_	_	Offset=2794-2799
+
+# sent_id = s45
+# text = Add 22 uL Resuspension Buffer and pipet up and down until beads are in a homogenous suspension.
+1	Place	_	Action	_	_	0	_	_	Offset=2801-2806
+2	magnetic	_	Device	_	_	0	_	_	Offset=2810-2823
+3	5	_	Time	_	_	0	_	_	Offset=2828-2833
+
+# sent_id = s46
+# text = Incubate at room temperature for 5 min.
+1	Transfer	_	Action	_	_	0	_	_	Offset=2835-2843
+2	20	_	Amount	_	_	3	Measure	_	Offset=2844-2849
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=2857-2868
+4	new	_	Modifier	_	_	6	Mod-Link	_	Offset=2874-2877
+5	0.2	_	Amount	_	_	6	Measure	_	Offset=2878-2884
+6	PCR	_	Location	_	_	0	_	_	Offset=2885-2893
+
+# sent_id = s47
+# text = Place in magnetic rack for 5 min.
+1	Add	_	Action	_	_	0	_	_	Offset=2895-2898
+2	13.3	_	Amount	_	_	3	Measure	_	Offset=2899-2906
+3	End	_	Reagent	_	_	0	_	_	Offset=2910-2924
+4	sample	_	Reagent	_	_	0	_	_	Offset=2928-2934
+
+# sent_id = s48
+# text = Transfer 20 uL of the supernatant to a new 0.2 mL PCR tube.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2936-2944
+2	30	_	Temperature	_	_	0	_	_	Offset=2948-2953
+3	30	_	Time	_	_	0	_	_	Offset=2958-2964
+
+# sent_id = s49
+# text = Add 13.3 uL of End Repair Mix to sample.
+1	Add	_	Action	_	_	0	_	_	Offset=2966-2969
+2	53.5	_	Amount	_	_	4	Measure	_	Offset=2970-2977
+3	well-mixed	_	Modifier	_	_	4	Mod-Link	_	Offset=2981-2991
+4	AMPure	_	Reagent	_	_	0	_	_	Offset=2992-3007
+5	mix	_	Action	_	_	0	_	_	Offset=3012-3015
+6	pipetting	_	Method	_	_	0	_	_	Offset=3019-3040
+7	beads	_	Reagent	_	_	0	_	_	Offset=3047-3052
+8	homogenous	_	Modifier	_	_	9	Mod-Link	_	Offset=3062-3072
+9	suspension	_	Reagent	_	_	7	Meronym	_	Offset=3073-3083
+
+# sent_id = s50
+# text = Incubate at 30 °C for 30 min.
+1	Incubate	_	Action	_	_	0	_	_	Offset=3085-3093
+2	room	_	Temperature	_	_	0	_	_	Offset=3097-3113
+3	15	_	Time	_	_	0	_	_	Offset=3118-3124
+
+# sent_id = s51
+# text = Add 53.5 uL of well-mixed AMPure XP Beads and mix by pipetting up and down until beads are in a homogenous suspension.
+1	Place	_	Action	_	_	0	_	_	Offset=3126-3134
+2	magnetic	_	Device	_	_	0	_	_	Offset=3135-3148
+3	5	_	Time	_	_	0	_	_	Offset=3153-3158
+
+# sent_id = s52
+# text = Incubate at room temperature for 15 min.
+1	Remove	_	Action	_	_	0	_	_	Offset=3160-3178
+2	81.6	_	Amount	_	_	3	Measure	_	Offset=3179-3186
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=3194-3205
+
+# sent_id = s53
+# text = Place on magnetic rack for 5 min.
+1	e	_	Action	_	_	0	_	_	Offset=3209-3210
+2	sample	_	Reagent	_	_	0	_	_	Offset=3212-3218
+3	magnetic	_	Device	_	_	0	_	_	Offset=3222-3235
+4	add	_	Action	_	_	0	_	_	Offset=3240-3243
+5	200	_	Amount	_	_	7	Measure	_	Offset=3244-3250
+6	80%	_	Concentration	_	_	7	Measure	_	Offset=3254-3257
+7	ethanol	_	Reagent	_	_	0	_	_	Offset=3258-3265
+
+# sent_id = s54
+# text = Remove and discard 81.6 uL of the supernatant.
+1	Incubate	_	Action	_	_	0	_	_	Offset=3267-3275
+2	30	_	Time	_	_	0	_	_	Offset=3280-3290
+
+# sent_id = s55
+# text = Keep sample in magnetic rack and add 200 uL of 80% ethanol.
+1	Remove	_	Action	_	_	0	_	_	Offset=3292-3310
+2	all	_	Modifier	_	_	3	Mod-Link	_	Offset=3311-3314
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=3315-3326
+
+# sent_id = s56
+# text = Incubate for 30 seconds.
+1	Repeat	_	Action	_	_	0	_	_	Offset=3328-3334
+2	steps	_	Method	_	_	0	_	_	Offset=3335-3350
+
+# sent_id = s57
+# text = Remove and discard all supernatant.
+1	Add	_	Action	_	_	0	_	_	Offset=3388-3391
+2	7.83	_	Amount	_	_	3	Measure	_	Offset=3392-3399
+3	Resuspension	_	Reagent	_	_	0	_	_	Offset=3400-3419
+4	mix	_	Action	_	_	0	_	_	Offset=3424-3427
+5	pipetting	_	Method	_	_	0	_	_	Offset=3431-3452
+6	beads	_	Reagent	_	_	0	_	_	Offset=3459-3464
+7	homogenous	_	Modifier	_	_	8	Mod-Link	_	Offset=3474-3484
+8	suspension	_	Reagent	_	_	6	Meronym	_	Offset=3485-3495
+
+# sent_id = s58
+# text = Repeat steps 50 and 51 once more for a total of two washes.
+1	Incubate	_	Action	_	_	0	_	_	Offset=3497-3505
+2	room	_	Temperature	_	_	0	_	_	Offset=3509-3525
+3	5	_	Time	_	_	0	_	_	Offset=3530-3535
+
+# sent_id = s59
+# text = Add 7.83 uL Resuspension buffer and mix by pipetting up and down until beads are in a homogenous suspension.
+1	Place	_	Action	_	_	0	_	_	Offset=3537-3545
+2	magnetic	_	Device	_	_	0	_	_	Offset=3546-3559
+3	5	_	Time	_	_	0	_	_	Offset=3564-3569
+
+# sent_id = s60
+# text = Incubate at room temperature for 5 min.
+1	Transfer	_	Action	_	_	0	_	_	Offset=3571-3579
+2	5.83	_	Amount	_	_	3	Measure	_	Offset=3580-3587
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=3595-3606
+4	new	_	Modifier	_	_	6	Mod-Link	_	Offset=3612-3615
+5	0.2	_	Amount	_	_	6	Measure	_	Offset=3616-3622
+6	PCR	_	Location	_	_	0	_	_	Offset=3623-3631
+
+# sent_id = s61
+# text = Place in magnetic rack for 5 min.
+1	Add	_	Action	_	_	0	_	_	Offset=3633-3636
+2	4.17	_	Amount	_	_	3	Measure	_	Offset=3637-3644
+3	A-Tailing	_	Reagent	_	_	0	_	_	Offset=3645-3658
+4	sample	_	Reagent	_	_	0	_	_	Offset=3662-3668
+
+# sent_id = s62
+# text = Transfer 5.83 uL of the supernatant to a new 0.2 mL PCR tube.
+1	Incubate	_	Action	_	_	0	_	_	Offset=3670-3678
+2	37	_	Temperature	_	_	0	_	_	Offset=3682-3687
+3	30	_	Time	_	_	0	_	_	Offset=3692-3698
+
+# sent_id = s63
+# text = Add 4.17 uL A-Tailing Mix to sample.
+1	Add	_	Action	_	_	0	_	_	Offset=3700-3703
+2	0.83	_	Amount	_	_	3	Measure	_	Offset=3704-3711
+3	DNA	_	Reagent	_	_	0	_	_	Offset=3712-3722
+
+# sent_id = s64
+# text = Incubate at 37 °C for 30 min.
+1	Mix	_	Action	_	_	0	_	_	Offset=3725-3728
+2	0.83	_	Amount	_	_	3	Measure	_	Offset=3729-3736
+3	Resuspension	_	Reagent	_	_	0	_	_	Offset=3737-3756
+4	0.83	_	Amount	_	_	5	Measure	_	Offset=3757-3764
+5	RNA	_	Reagent	_	_	0	_	_	Offset=3765-3776
+
+# sent_id = s65
+# text = Add 0.83 uL DNA Ligase. 
+1	Index	_	Action	_	_	0	_	_	Offset=3779-3792
+2	pipet	_	Method	_	_	0	_	_	Offset=3796-3801
+3	flicking	_	Method	_	_	2	Or	_	Offset=3805-3813
+4	spin	_	Action	_	_	0	_	_	Offset=3819-3828
+
+# sent_id = s66
+# text = Mix 0.83 uL Resuspension Buffer 0.83 uL RNA Adapter. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=3830-3838
+2	30	_	Temperature	_	_	0	_	_	Offset=3842-3847
+3	10	_	Time	_	_	0	_	_	Offset=3852-3858
+
+# sent_id = s67
+# text = Index and mix by pipet or flicking, and spin down.
+1	Add	_	Action	_	_	0	_	_	Offset=3860-3863
+2	1.67	_	Amount	_	_	3	Measure	_	Offset=3864-3871
+3	Stop	_	Reagent	_	_	0	_	_	Offset=3872-3887
+
+# sent_id = s68
+# text = Incubate at 30 °C for 10 min.
+1	Add	_	Action	_	_	0	_	_	Offset=3889-3892
+2	14	_	Amount	_	_	4	Measure	_	Offset=3893-3898
+3	well-mixed	_	Modifier	_	_	4	Mod-Link	_	Offset=3899-3909
+4	AMPure	_	Reagent	_	_	0	_	_	Offset=3910-3925
+5	mix	_	Action	_	_	0	_	_	Offset=3930-3933
+6	pipetting	_	Method	_	_	0	_	_	Offset=3937-3958
+7	beads	_	Reagent	_	_	0	_	_	Offset=3965-3970
+8	homogenous	_	Modifier	_	_	9	Mod-Link	_	Offset=3980-3990
+9	suspension	_	Reagent	_	_	7	Meronym	_	Offset=3991-4001
+
+# sent_id = s69
+# text = Add 1.67 uL Stop Ligase Mix.
+1	Incubate	_	Action	_	_	0	_	_	Offset=4003-4011
+2	room	_	Temperature	_	_	0	_	_	Offset=4015-4031
+3	15	_	Time	_	_	0	_	_	Offset=4036-4042
+
+# sent_id = s70
+# text = Add 14 uL well-mixed AMPure XP Beads and mix by pipetting up and down until beads are in a homogenous suspension.
+1	Place	_	Action	_	_	0	_	_	Offset=4044-4052
+2	magnetic	_	Device	_	_	0	_	_	Offset=4053-4066
+3	at	_	Modifier	_	_	4	Mod-Link	_	Offset=4071-4079
+4	5	_	Time	_	_	0	_	_	Offset=4080-4085
+
+# sent_id = s71
+# text = Incubate at room temperature for 15 min.
+1	Remove	_	Action	_	_	0	_	_	Offset=4087-4105
+2	23.16	_	Amount	_	_	3	Measure	_	Offset=4106-4114
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=4122-4133
+
+# sent_id = s72
+# text = Place on magnetic rack for at least 5 min.
+1	Keep	_	Action	_	_	0	_	_	Offset=4135-4139
+2	sample	_	Reagent	_	_	0	_	_	Offset=4140-4146
+3	magnetic	_	Device	_	_	0	_	_	Offset=4150-4163
+4	add	_	Action	_	_	0	_	_	Offset=4168-4171
+5	200	_	Amount	_	_	7	Measure	_	Offset=4172-4178
+6	80%	_	Concentration	_	_	7	Measure	_	Offset=4182-4185
+7	ethanol	_	Reagent	_	_	0	_	_	Offset=4186-4193
+
+# sent_id = s73
+# text = Remove and discard 23.16 uL of the supernatant.
+1	Incubate	_	Action	_	_	0	_	_	Offset=4195-4203
+2	30	_	Time	_	_	0	_	_	Offset=4208-4218
+
+# sent_id = s74
+# text = Keep sample in magnetic rack and add 200 uL of 80% ethanol.
+1	Remove	_	Action	_	_	0	_	_	Offset=4220-4238
+2	all	_	Modifier	_	_	3	Mod-Link	_	Offset=4239-4242
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=4243-4254
+
+# sent_id = s75
+# text = Incubate for 30 seconds.
+1	Repeat	_	Action	_	_	0	_	_	Offset=4256-4262
+2	steps	_	Method	_	_	0	_	_	Offset=4263-4278
+
+# sent_id = s76
+# text = Remove and discard all supernatant.
+1	Add	_	Action	_	_	0	_	_	Offset=4294-4297
+2	18.67	_	Amount	_	_	3	Measure	_	Offset=4298-4306
+3	Resuspension	_	Reagent	_	_	0	_	_	Offset=4307-4326
+4	pipet	_	Action	_	_	0	_	_	Offset=4331-4336
+5	up	_	Method	_	_	0	_	_	Offset=4337-4348
+6	beads	_	Reagent	_	_	0	_	_	Offset=4355-4360
+7	homogenous	_	Modifier	_	_	8	Mod-Link	_	Offset=4370-4380
+8	suspension	_	Reagent	_	_	6	Meronym	_	Offset=4381-4391
+
+# sent_id = s77
+# text = Repeat steps 66 and 67 one more time.
+1	Incubate	_	Action	_	_	0	_	_	Offset=4393-4401
+2	room	_	Temperature	_	_	0	_	_	Offset=4405-4421
+3	5	_	Time	_	_	0	_	_	Offset=4426-4431
+
+# sent_id = s78
+# text = Add 18.67 uL Resuspension Buffer and pipet up and down until beads are in a homogenous suspension.
+1	Place	_	Action	_	_	0	_	_	Offset=4433-4441
+2	magnetic	_	Device	_	_	0	_	_	Offset=4442-4455
+3	5	_	Time	_	_	0	_	_	Offset=4460-4465
+
+# sent_id = s79
+# text = Incubate at room temperature for 5 min.
+1	Transfer	_	Action	_	_	0	_	_	Offset=4467-4475
+2	16.67	_	Amount	_	_	3	Measure	_	Offset=4476-4484
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=4492-4503
+4	new	_	Modifier	_	_	6	Mod-Link	_	Offset=4509-4512
+5	0.2	_	Amount	_	_	6	Measure	_	Offset=4513-4519
+6	PCR	_	Location	_	_	0	_	_	Offset=4520-4528
+
+# sent_id = s80
+# text = Place in magnetic rack for 5 min.
+1	Add	_	Action	_	_	0	_	_	Offset=4530-4533
+2	16.67	_	Amount	_	_	4	Measure	_	Offset=4534-4542
+3	well-mixed	_	Modifier	_	_	4	Mod-Link	_	Offset=4546-4556
+4	AMPure	_	Reagent	_	_	0	_	_	Offset=4557-4572
+
+# sent_id = s81
+# text = Transfer 16.67 uL of the supernatant to a new 0.2 mL PCR tube.
+1	Mix	_	Action	_	_	0	_	_	Offset=4574-4577
+2	pipetting	_	Method	_	_	0	_	_	Offset=4581-4602
+3	beads	_	Reagent	_	_	0	_	_	Offset=4613-4618
+4	homogenous	_	Modifier	_	_	5	Mod-Link	_	Offset=4628-4638
+5	suspension	_	Reagent	_	_	3	Meronym	_	Offset=4639-4649
+
+# sent_id = s82
+# text = Add 16.67 uL of well-mixed AMPure XP beads.
+1	Incubate	_	Action	_	_	0	_	_	Offset=4651-4659
+2	room	_	Temperature	_	_	0	_	_	Offset=4663-4679
+3	15	_	Time	_	_	0	_	_	Offset=4684-4690
+
+# sent_id = s83
+# text = Mix by pipetting up and down until the beads are in a homogenous suspension.
+1	Place	_	Action	_	_	0	_	_	Offset=4692-4697
+2	magnetic	_	Device	_	_	0	_	_	Offset=4701-4714
+3	at	_	Modifier	_	_	4	Mod-Link	_	Offset=4719-4727
+4	5	_	Time	_	_	0	_	_	Offset=4728-4733
+
+# sent_id = s84
+# text = Incubate at room temperature for 15 min.
+1	Remove	_	Action	_	_	0	_	_	Offset=4735-4753
+2	28.34	_	Amount	_	_	3	Measure	_	Offset=4754-4762
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=4770-4781
+
+# sent_id = s85
+# text = Place on magnetic rack for at least 5 min.
+1	Keep	_	Action	_	_	0	_	_	Offset=4783-4787
+2	sample	_	Reagent	_	_	0	_	_	Offset=4788-4794
+3	magnetic	_	Device	_	_	0	_	_	Offset=4798-4811
+4	add	_	Action	_	_	0	_	_	Offset=4816-4819
+5	200	_	Amount	_	_	7	Measure	_	Offset=4820-4826
+6	80%	_	Concentration	_	_	7	Measure	_	Offset=4830-4833
+7	ethanol	_	Reagent	_	_	0	_	_	Offset=4834-4841
+
+# sent_id = s86
+# text = Remove and discard 28.34 uL of the supernatant.
+1	Incubate	_	Action	_	_	0	_	_	Offset=4843-4851
+2	30	_	Time	_	_	0	_	_	Offset=4856-4866
+
+# sent_id = s87
+# text = Keep sample in magnetic rack and add 200 uL of 80% ethanol.
+1	Remove	_	Action	_	_	0	_	_	Offset=4868-4886
+2	all	_	Modifier	_	_	3	Mod-Link	_	Offset=4887-4890
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=4891-4902
+
+# sent_id = s88
+# text = Incubate for 30 seconds.
+1	Repeat	_	Action	_	_	0	_	_	Offset=4904-4910
+2	steps	_	Method	_	_	0	_	_	Offset=4911-4926
+
+# sent_id = s89
+# text = Remove and discard all supernatant.
+1	Add	_	Action	_	_	0	_	_	Offset=4942-4945
+2	9.67	_	Amount	_	_	3	Measure	_	Offset=4946-4953
+3	Resuspension	_	Reagent	_	_	0	_	_	Offset=4954-4973
+4	pipet	_	Action	_	_	0	_	_	Offset=4978-4983
+5	up	_	Method	_	_	0	_	_	Offset=4984-4995
+6	10	_	Numerical	_	_	0	_	_	Offset=4996-4998
+
+# sent_id = s90
+# text = Repeat steps 77 and 78 one more time.
+1	Incubate	_	Action	_	_	0	_	_	Offset=5006-5014
+2	room	_	Temperature	_	_	0	_	_	Offset=5018-5034
+3	5	_	Time	_	_	0	_	_	Offset=5039-5044
+
+# sent_id = s91
+# text = Add 9.67 uL Resuspension Buffer and pipet up and down 10 times.
+1	Place	_	Action	_	_	0	_	_	Offset=5046-5051
+2	magnetic	_	Device	_	_	0	_	_	Offset=5055-5068
+3	5	_	Time	_	_	0	_	_	Offset=5073-5078
+
+# sent_id = s92
+# text = Incubate at room temperature for 5 min.
+1	Transfer	_	Action	_	_	0	_	_	Offset=5080-5088
+2	7.67	_	Amount	_	_	3	Measure	_	Offset=5089-5096
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=5104-5115
+4	new	_	Modifier	_	_	6	Mod-Link	_	Offset=5121-5124
+5	0.2	_	Amount	_	_	6	Measure	_	Offset=5125-5131
+6	PCR	_	Location	_	_	0	_	_	Offset=5132-5140
+
+# sent_id = s93
+# text = Place in magnetic rack for 5 min.
+1	Mix	_	Action	_	_	0	_	_	Offset=5224-5227
+2	6.67	_	Amount	_	_	3	Measure	_	Offset=5228-5235
+3	Adapter	_	Reagent	_	_	0	_	_	Offset=5236-5255
+4	831.67	_	Amount	_	_	5	Measure	_	Offset=5266-5275
+5	PCR	_	Reagent	_	_	0	_	_	Offset=5276-5295
+6	8.33	_	Amount	_	_	7	Measure	_	Offset=5296-5303
+7	PCR	_	Reagent	_	_	0	_	_	Offset=5304-5318
+
+# sent_id = s94
+# text = Transfer 7.67 uL of the supernatant to a new 0.2 mL PCR tube.
+1	Add	_	Action	_	_	0	_	_	Offset=5476-5479
+2	16.67	_	Amount	_	_	4	Measure	_	Offset=5480-5488
+3	well-mixed	_	Modifier	_	_	4	Mod-Link	_	Offset=5492-5502
+4	AMPure	_	Reagent	_	_	0	_	_	Offset=5503-5518
+
+# sent_id = s95
+# text = Use 1 uL to determine number of cycles to perform in following PCR amplification.
+1	Incubate	_	Action	_	_	0	_	_	Offset=5520-5528
+2	room	_	Temperature	_	_	0	_	_	Offset=5532-5548
+3	15	_	Time	_	_	0	_	_	Offset=5553-5559
+
+# sent_id = s96
+# text = Mix 6.67 uL Adapter ligated DNA from step 831.67 uL PCR Primer Cocktail 8.33 uL PCR Master Mix. 
+1	Place	_	Action	_	_	0	_	_	Offset=5561-5566
+2	magnetic	_	Device	_	_	0	_	_	Offset=5570-5583
+3	at	_	Modifier	_	_	4	Mod-Link	_	Offset=5588-5596
+4	5	_	Time	_	_	0	_	_	Offset=5597-5602
+
+# sent_id = s97
+# text = Amplify with the following PCR procotol 98 °C - 30 seconds 5 - 18 cycles 98 °C - 10 seconds 60 °C - 30 seconds 72 °C - 30 seconds 72 °C - 5 hold at 4 °C. 
+1	Remove	_	Action	_	_	0	_	_	Offset=5604-5622
+2	28.3	_	Amount	_	_	3	Measure	_	Offset=5623-5630
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=5638-5649
+
+# sent_id = s98
+# text = Add 16.67 uL of well-mixed AMPure XP beads.
+1	Keep	_	Action	_	_	0	_	_	Offset=5651-5655
+2	sample	_	Reagent	_	_	0	_	_	Offset=5656-5662
+3	magnetic	_	Device	_	_	0	_	_	Offset=5666-5679
+4	add	_	Action	_	_	0	_	_	Offset=5684-5687
+5	200	_	Amount	_	_	7	Measure	_	Offset=5688-5694
+6	80%	_	Concentration	_	_	7	Measure	_	Offset=5695-5698
+7	ethanol	_	Reagent	_	_	0	_	_	Offset=5699-5706
+
+# sent_id = s99
+# text = Incubate at room temperature for 15 min.
+1	Incubate	_	Action	_	_	0	_	_	Offset=5708-5716
+2	30	_	Time	_	_	0	_	_	Offset=5717-5727
+
+# sent_id = s100
+# text = Place on magnetic rack for at least 5 min.
+1	Remove	_	Action	_	_	0	_	_	Offset=5729-5747
+2	all	_	Modifier	_	_	3	Mod-Link	_	Offset=5748-5751
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=5752-5763
+
+# sent_id = s101
+# text = Remove and discard 28.3 uL of the supernatant.
+1	Repeat	_	Action	_	_	0	_	_	Offset=5765-5771
+2	steps	_	Method	_	_	0	_	_	Offset=5772-5787
+
+# sent_id = s102
+# text = Keep sample in magnetic rack and add 200 uL 80% ethanol.
+1	beads	_	Reagent	_	_	0	_	_	Offset=5811-5816
+2	dry	_	Action	_	_	0	_	_	Offset=5817-5820
+3	room	_	Temperature	_	_	0	_	_	Offset=5824-5840
+4	2	_	Time	_	_	0	_	_	Offset=5845-5850
+
+# sent_id = s103
+# text = Incubate 30 seconds.
+1	Add	_	Action	_	_	0	_	_	Offset=5852-5855
+2	12	_	Amount	_	_	3	Measure	_	Offset=5856-5861
+3	Resuspension	_	Reagent	_	_	0	_	_	Offset=5862-5881
+4	pipet	_	Action	_	_	0	_	_	Offset=5886-5891
+5	up	_	Method	_	_	0	_	_	Offset=5892-5903
+6	10	_	Numerical	_	_	0	_	_	Offset=5904-5906
+
+# sent_id = s104
+# text = Remove and discard all supernatant.
+1	Incubate	_	Action	_	_	0	_	_	Offset=5914-5922
+2	room	_	Temperature	_	_	0	_	_	Offset=5926-5942
+3	2	_	Time	_	_	0	_	_	Offset=5947-5952
+
+# sent_id = s105
+# text = Repeat steps 91 and 92 one more time.
+1	Place	_	Action	_	_	0	_	_	Offset=5954-5959
+2	magnetic	_	Device	_	_	0	_	_	Offset=5963-5976
+3	5	_	Time	_	_	0	_	_	Offset=5981-5986
+
+# sent_id = s106
+# text = Let the beads dry at room temperature for 2 min.
+1	Transfer	_	Action	_	_	0	_	_	Offset=5988-5996
+2	10	_	Amount	_	_	3	Measure	_	Offset=5997-6002
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=6010-6021
+4	new	_	Modifier	_	_	6	Mod-Link	_	Offset=6027-6030
+5	1.5	_	Amount	_	_	6	Measure	_	Offset=6031-6037
+6	PCR	_	Location	_	_	0	_	_	Offset=6038-6046
+
+# sent_id = s107
+# text = Add 12 uL Resuspension Buffer and pipet up and down 10 times.
+1	Use	_	Action	_	_	0	_	_	Offset=6048-6051
+2	1	_	Amount	_	_	3	Measure	_	Offset=6052-6056
+3	qPCR	_	Reagent	_	_	0	_	_	Offset=6061-6077
+4	run	_	Action	_	_	0	_	_	Offset=6156-6159
+5	1	_	Amount	_	_	0	_	_	Offset=6160-6164
+6	Bioanalyzer	_	Device	_	_	0	_	_	Offset=6172-6183
+

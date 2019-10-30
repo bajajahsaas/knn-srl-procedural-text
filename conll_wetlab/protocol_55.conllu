@@ -1,0 +1,223 @@
+# sent_id = s1
+# text = Activation and Intracellular Staining of Whole Blood: For the Detection of Intracellular Cytokines and Other Intracellular Targets
+1	Dilute	_	Action	_	_	0	_	_	Offset=131-137
+2	heparinized	_	Modifier	_	_	3	Mod-Link	_	Offset=138-149
+3	whole	_	Reagent	_	_	0	_	_	Offset=150-161
+4	1:1	_	Generic-Measure	_	_	0	_	_	Offset=162-165
+5	sterile	_	Modifier	_	_	7	Mod-Link	_	Offset=171-178
+6	appropriate	_	Modifier	_	_	7	Mod-Link	_	Offset=179-190
+7	tissue	_	Reagent	_	_	0	_	_	Offset=191-212
+
+# sent_id = s2
+# text = Dilute heparinized whole blood 1:1 with sterile appropriate tissue culture medium.
+1	in	_	Method	_	_	0	_	_	Offset=229-258
+2	antigen	_	Reagent	_	_	3	Or	_	Offset=269-276
+3	mitogen	_	Reagent	_	_	0	_	_	Offset=280-287
+4	performed	_	Action	_	_	0	_	_	Offset=295-304
+
+# sent_id = s3
+# text = At this stage, in vitro cellular stimulation by either antigen or mitogen can be performed.
+1	stain	_	Action	_	_	0	_	_	Offset=322-327
+2	intracellular	_	Reagent	_	_	0	_	_	Offset=328-351
+3	chemokines	_	Reagent	_	_	2	Or	_	Offset=355-365
+
+# sent_id = s4
+# text = If intending to stain intracellular cytokines or chemokines (e.g.
+1	addition	_	Action	_	_	0	_	_	Offset=388-396
+2	brefeldin	_	Reagent	_	_	0	_	_	Offset=449-460
+
+# sent_id = s5
+# text = IFN-γ or IL-4), addition of an efficient protein transport inhibitor such as brefeldin A (BioLegend Cat.
+1	monensin	_	Reagent	_	_	0	_	_	Offset=492-500
+
+# sent_id = s6
+# text = No.
+1	aliquot	_	Action	_	_	0	_	_	Offset=591-598
+2	200	_	Amount	_	_	3	Measure	_	Offset=599-605
+3	whole	_	Reagent	_	_	0	_	_	Offset=613-640
+4	12	_	Numerical	_	_	6	Measure	_	Offset=646-653
+5	mm	_	Unit	_	_	0	_	_	Offset=654-656
+6	plastic	_	Location	_	_	0	_	_	Offset=657-670
+7	incubate	_	Action	_	_	0	_	_	Offset=675-683
+8	4-6	_	Time	_	_	0	_	_	Offset=688-697
+9	5%	_	Concentration	_	_	10	Measure	_	Offset=701-703
+10	CO2	_	Reagent	_	_	0	_	_	Offset=704-707
+11	37°C	_	Temperature	_	_	0	_	_	Offset=711-715
+
+# sent_id = s7
+# text = 420601) or monensin (BioLegend Cat.
+1	Add	_	Action	_	_	0	_	_	Offset=717-720
+2	2	_	Amount	_	_	4	Measure	_	Offset=721-725
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=729-731
+4	Red	_	Reagent	_	_	0	_	_	Offset=732-759
+
+# sent_id = s8
+# text = No.
+1	incubate	_	Action	_	_	0	_	_	Offset=782-790
+2	5-10	_	Time	_	_	0	_	_	Offset=795-807
+3	room	_	Temperature	_	_	0	_	_	Offset=811-827
+
+# sent_id = s9
+# text = 420701) is critical.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=829-839
+2	350	_	Speed	_	_	0	_	_	Offset=843-850
+3	5	_	Time	_	_	0	_	_	Offset=855-864
+4	discard	_	Action	_	_	0	_	_	Offset=869-876
+5	supernatant	_	Reagent	_	_	0	_	_	Offset=881-892
+
+# sent_id = s10
+# text = After addition of a suitable cellular activator, aliquot 200 μl of the whole blood cell suspension into 12 x 75 mm plastic tubes and incubate for 4-6 hours in 5% CO2 at 37°C.
+1	Wash	_	Action	_	_	0	_	_	Offset=894-898
+2	cells	_	Reagent	_	_	0	_	_	Offset=899-904
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=905-907
+4	Cell	_	Reagent	_	_	0	_	_	Offset=913-933
+
+# sent_id = s11
+# text = Add 2 ml of 1X Red Blood Cell Lysis Buffer (Cat.
+1	perform	_	Action	_	_	0	_	_	Offset=998-1005
+2	cell	_	Method	_	_	0	_	_	Offset=1006-1035
+3	BioLegend’s	_	Method	_	_	0	_	_	Offset=1052-1113
+4	fix	_	Action	_	_	0	_	_	Offset=1120-1123
+5	cells	_	Reagent	_	_	0	_	_	Offset=1124-1129
+6	0.5	_	Generic-Measure	_	_	7	Measure	_	Offset=1133-1144
+7	Fixation	_	Reagent	_	_	0	_	_	Offset=1145-1160
+
+# sent_id = s12
+# text = No.
+1	dark	_	Location	_	_	0	_	_	Offset=1196-1200
+2	20	_	Time	_	_	0	_	_	Offset=1205-1215
+3	room	_	Temperature	_	_	0	_	_	Offset=1219-1235
+
+# sent_id = s13
+# text = 420301) and incubate for 5-10 minutes at room temperature.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1237-1247
+2	350	_	Speed	_	_	0	_	_	Offset=1251-1258
+3	5	_	Time	_	_	0	_	_	Offset=1263-1272
+4	discard	_	Action	_	_	0	_	_	Offset=1274-1281
+5	supernatant	_	Reagent	_	_	0	_	_	Offset=1282-1293
+
+# sent_id = s14
+# text = Centrifuge at 350 x g for 5 minutes and discard the supernatant.
+1	wash	_	Action	_	_	0	_	_	Offset=1375-1379
+2	cells	_	Reagent	_	_	0	_	_	Offset=1380-1385
+3	1x	_	Concentration	_	_	2	Measure	_	Offset=1386-1388
+4	Cell	_	Reagent	_	_	0	_	_	Offset=1394-1413
+
+# sent_id = s15
+# text = Wash cells 1X with Cell Staining Buffer.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1443-1452
+2	cells	_	Reagent	_	_	0	_	_	Offset=1453-1458
+3	Cell	_	Reagent	_	_	0	_	_	Offset=1462-1482
+4	store	_	Action	_	_	0	_	_	Offset=1487-1492
+5	cells	_	Reagent	_	_	0	_	_	Offset=1493-1498
+6	4°C	_	Temperature	_	_	0	_	_	Offset=1502-1505
+7	short	_	Reagent	_	_	0	_	_	Offset=1507-1517
+8	90%	_	Concentration	_	_	9	Measure	_	Offset=1525-1528
+9	FCS	_	Reagent	_	_	0	_	_	Offset=1529-1532
+10	10%	_	Concentration	_	_	11	Measure	_	Offset=1533-1536
+11	DMSO	_	Reagent	_	_	0	_	_	Offset=1537-1541
+12	storage	_	Action	_	_	0	_	_	Offset=1546-1553
+13	-80°C	_	Temperature	_	_	0	_	_	Offset=1557-1562
+14	long	_	Reagent	_	_	0	_	_	Offset=1564-1573
+
+# sent_id = s16
+# text = If staining intracellular antigens (e.g.
+1	Dilute	_	Action	_	_	0	_	_	Offset=1626-1632
+2	10X	_	Concentration	_	_	3	Measure	_	Offset=1633-1636
+3	Intracellular	_	Reagent	_	_	0	_	_	Offset=1637-1676
+
+# sent_id = s17
+# text = IFN-γ or IL-4), first perform cell surface antigen staining as described in BioLegend’s Cell Surface Immunofluorescence Staining Protocol, then fix cells in 0.5 ml/tube Fixation Buffer (BioLegend Cat.
+1	1X	_	Concentration	_	_	2	Measure	_	Offset=1698-1700
+2	DI	_	Reagent	_	_	0	_	_	Offset=1704-1712
+
+# sent_id = s18
+# text = No.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1714-1723
+2	fixed	_	Reagent	_	_	0	_	_	Offset=1724-1735
+3	Intracellular	_	Reagent	_	_	0	_	_	Offset=1739-1778
+4	centrifuge	_	Action	_	_	0	_	_	Offset=1783-1793
+5	350	_	Speed	_	_	0	_	_	Offset=1797-1804
+6	5-10	_	Time	_	_	0	_	_	Offset=1809-1821
+
+# sent_id = s19
+# text = 420801) in the dark for 20 minutes at room temperature.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1830-1839
+2	fixed	_	Reagent	_	_	0	_	_	Offset=1840-1851
+3	Intracellular	_	Reagent	_	_	0	_	_	Offset=1855-1894
+4	centrifuge	_	Action	_	_	0	_	_	Offset=1899-1909
+5	350	_	Speed	_	_	0	_	_	Offset=1913-1920
+6	5-10	_	Time	_	_	0	_	_	Offset=1925-1937
+
+# sent_id = s20
+# text = Centrifuge at 350 x g for 5 minutes, discard supernatant.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1946-1955
+2	fixed	_	Reagent	_	_	0	_	_	Offset=1956-1967
+3	Intracellular	_	Reagent	_	_	0	_	_	Offset=1971-2010
+4	centrifuge	_	Action	_	_	0	_	_	Offset=2015-2025
+5	350	_	Speed	_	_	0	_	_	Offset=2029-2036
+6	5-10	_	Time	_	_	0	_	_	Offset=2041-2053
+
+# sent_id = s21
+# text = To put the experiment “on hold” at this point for future staining and analysis, wash cells 1x with Cell StainingBuffer (BioLegend Cat.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=2062-2071
+2	fixed/permeabilized	_	Reagent	_	_	0	_	_	Offset=2072-2097
+3	residual	_	Modifier	_	_	4	Mod-Link	_	Offset=2101-2109
+4	Intracellular	_	Reagent	_	_	0	_	_	Offset=2110-2149
+5	add	_	Action	_	_	0	_	_	Offset=2154-2157
+6	predetermined	_	Modifier	_	_	8	Mod-Link	_	Offset=2160-2173
+7	optimum	_	Modifier	_	_	8	Mod-Link	_	Offset=2174-2181
+8	concentration	_	Concentration	_	_	9	Measure	_	Offset=2182-2195
+9	fluorophore-conjugated	_	Reagent	_	_	0	_	_	Offset=2199-2230
+10	of	_	Modifier	_	_	9	Mod-Link	_	Offset=2231-2242
+
+# sent_id = s22
+# text = No.
+1	PE	_	Reagent	_	_	0	_	_	Offset=2249-2262
+2	20	_	Time	_	_	0	_	_	Offset=2303-2313
+3	dark	_	Location	_	_	0	_	_	Offset=2321-2325
+4	room	_	Temperature	_	_	0	_	_	Offset=2329-2345
+
+# sent_id = s23
+# text = 420201).
+1	Wash	_	Action	_	_	0	_	_	Offset=2347-2351
+2	2	_	Amount	_	_	3	Measure	_	Offset=2357-2361
+3	Intracellular	_	Reagent	_	_	0	_	_	Offset=2365-2404
+4	centrifuge	_	Action	_	_	0	_	_	Offset=2408-2418
+5	350	_	Speed	_	_	0	_	_	Offset=2422-2429
+6	5	_	Time	_	_	0	_	_	Offset=2434-2443
+
+# sent_id = s24
+# text = Resuspend cells in Cell Staining Buffer and store cells at 4°C (short term) or in 90% FCS/10% DMSO for storage at -80°C (long term, for fixed cells without surface antigen staining).
+1	Wash	_	Action	_	_	0	_	_	Offset=2452-2456
+2	2	_	Amount	_	_	3	Measure	_	Offset=2462-2466
+3	Intracellular	_	Reagent	_	_	0	_	_	Offset=2470-2509
+4	centrifuge	_	Action	_	_	0	_	_	Offset=2513-2523
+5	350	_	Speed	_	_	0	_	_	Offset=2527-2534
+6	5	_	Time	_	_	0	_	_	Offset=2539-2548
+
+# sent_id = s25
+# text = Dilute 10X Intracellular Staining Perm Wash Buffer (Cat.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=2753-2762
+2	fixed	_	Modifier	_	_	5	Mod-Link	_	Offset=2763-2768
+3	intracellularly	_	Modifier	_	_	5	Mod-Link	_	Offset=2773-2788
+4	labeled	_	Modifier	_	_	5	Mod-Link	_	Offset=2789-2796
+5	cells	_	Reagent	_	_	0	_	_	Offset=2797-2802
+6	0.5	_	Amount	_	_	7	Measure	_	Offset=2806-2812
+7	Cell	_	Reagent	_	_	0	_	_	Offset=2813-2833
+8	analyze	_	Action	_	_	0	_	_	Offset=2838-2845
+9	appropriate	_	Measure-Type	_	_	0	_	_	Offset=2851-2872
+
+# sent_id = s26
+# text = No.
+1	Set	_	Action	_	_	0	_	_	Offset=2873-2876
+2	PMT	_	Measure-Type	_	_	0	_	_	Offset=2877-2888
+3	compensation	_	Measure-Type	_	_	0	_	_	Offset=2893-2905
+4	cell	_	Device	_	_	0	_	_	Offset=2912-2942
+
+# sent_id = s27
+# text = 421002) to 1X in DI water.
+1	Set	_	Action	_	_	0	_	_	Offset=2944-2947
+2	quadrant	_	Measure-Type	_	_	0	_	_	Offset=2948-2964
+3	blocking	_	Device	_	_	0	_	_	Offset=2974-2991
+

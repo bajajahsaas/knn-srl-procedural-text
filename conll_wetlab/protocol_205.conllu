@@ -1,0 +1,97 @@
+# sent_id = s1
+# text = SWIFT™ Western Transfer Pads
+1	Soak	_	Action	_	_	0	_	_	Offset=29-33
+2	PVDF	_	Reagent	_	_	0	_	_	Offset=38-51
+3	100%	_	Concentration	_	_	4	Measure	_	Offset=55-59
+4	methanol	_	Reagent	_	_	0	_	_	Offset=60-68
+5	1‐2	_	Time	_	_	0	_	_	Offset=73-84
+6	rinse	_	Action	_	_	0	_	_	Offset=90-95
+7	2‐3	_	Numerical	_	_	0	_	_	Offset=96-105
+8	deionized	_	Reagent	_	_	0	_	_	Offset=111-126
+
+# sent_id = s2
+# text = Soak the PVDF membrane in 100% methanol for 1‐2 minutes then rinse 2‐3 times with deionized water.   
+1	Equilibrate	_	Action	_	_	0	_	_	Offset=131-142
+2	PVDF	_	Reagent	_	_	0	_	_	Offset=143-147
+3	nitrocellulose	_	Reagent	_	_	2	Or	_	Offset=151-174
+4	diluted	_	Reagent	_	_	0	_	_	Offset=178-207
+5	5‐10	_	Time	_	_	0	_	_	Offset=212-224
+
+# sent_id = s3
+# text = Equilibrate PVDF or nitrocellulose membrane in diluted SWIFT™ Western Buffer for 5‐10 minutes. 
+1	Place	_	Action	_	_	0	_	_	Offset=227-232
+2	supplied	_	Location	_	_	0	_	_	Offset=237-266
+3	flat	_	Location	_	_	0	_	_	Offset=272-284
+4	place	_	Action	_	_	0	_	_	Offset=289-294
+5	SWIFT™	_	Location	_	_	0	_	_	Offset=297-324
+6	Template	_	Location	_	_	0	_	_	Offset=332-345
+
+# sent_id = s4
+# text = Place the supplied SWIFT™ Template Card on a flat surface and place a SWIFT™ Western Transfer Pad on the Template Card.
+1	Add	_	Action	_	_	0	_	_	Offset=347-350
+2	diluted	_	Reagent	_	_	0	_	_	Offset=351-380
+3	top	_	Location	_	_	0	_	_	Offset=384-387
+4	pad	_	Location	_	_	3	Meronym	6:Coreference-Link	Offset=395-398
+5	soak	_	Action	_	_	0	_	_	Offset=402-406
+6	it	_	Mention	_	_	0	_	_	Offset=407-409
+
+# sent_id = s5
+# text = Add diluted SWIFT™ Western Buffer on top of the pad to soak it further.
+1	place	_	Action	_	_	0	_	_	Offset=505-510
+2	gel	_	Reagent	_	_	0	_	_	Offset=515-518
+3	top	_	Location	_	_	0	_	_	Offset=522-525
+4	SWIFT™	_	Location	_	_	3	Meronym	_	Offset=533-560
+5	ensure	_	Action	_	_	0	_	_	Offset=565-571
+
+# sent_id = s6
+# text = Use 2ml each for the 8.5 x 7.5cm and 5ml each for the 15 x 9.5cm size pads.
+1	Incubate	_	Action	_	_	0	_	_	Offset=599-607
+2	5	_	Time	_	_	0	_	_	Offset=612-621
+3	room	_	Temperature	_	_	0	_	_	Offset=625-641
+
+# sent_id = s7
+# text = Carefully place the gel on top of the SWIFT™ Western Transfer Pad and ensure no air bubbles are formed.
+1	Place	_	Action	_	_	0	_	_	Offset=701-706
+2	blotting	_	Reagent	_	_	0	_	_	Offset=711-728
+3	equilibrated	_	Action	_	_	0	_	_	Offset=729-741
+4	diluted	_	Reagent	_	_	0	_	_	Offset=745-774
+5	top	_	Location	_	_	0	_	_	Offset=778-781
+6	gel	_	Reagent	_	_	5	Meronym	_	Offset=789-792
+
+# sent_id = s8
+# text = Incubate for 5 minutes at room temperature.
+1	Place	_	Action	_	_	0	_	_	Offset=816-821
+2	piece	_	Location	_	_	0	_	_	Offset=830-835
+3	SWIFT™	_	Location	_	_	2	Meronym	_	Offset=839-866
+4	top	_	Location	_	_	0	_	_	Offset=870-873
+5	membrane	_	Reagent	_	_	4	Meronym	_	Offset=881-889
+
+# sent_id = s9
+# text = The incubation step improves protein transfer efficiency.
+1	Remove	_	Action	_	_	0	_	_	Offset=913-919
+2	air	_	Reagent	_	_	0	_	_	Offset=924-935
+3	rolling	_	Action	_	_	0	_	_	Offset=939-946
+4	tube	_	Device	_	_	0	_	_	Offset=949-953
+5	pipette	_	Device	_	_	0	_	_	Offset=957-964
+6	top	_	Location	_	_	0	_	_	Offset=974-977
+7	sandwich	_	Reagent	_	_	6	Meronym	_	Offset=985-993
+
+# sent_id = s10
+# text = Place the blotting membrane equilibrated in diluted SWIFT™ Western Buffer on top of the gel, avoiding air bubbles.
+1	Slide	_	Action	_	_	0	_	_	Offset=995-1000
+2	blot	_	Reagent	_	_	0	_	_	Offset=1005-1018
+3	transfer	_	Location	_	_	4	Meronym	_	Offset=1026-1043
+4	fiber	_	Location	_	_	0	_	_	Offset=1055-1065
+5	soaked	_	Action	_	_	0	_	_	Offset=1066-1072
+6	diluted	_	Reagent	_	_	0	_	_	Offset=1076-1105
+
+# sent_id = s11
+# text = Place another piece of SWIFT™ Western Transfer Pad on top of the membrane, avoiding air bubbles.
+1	Put	_	Action	_	_	0	_	_	Offset=1107-1110
+2	assembled	_	Location	_	_	0	_	_	Offset=1115-1142
+3	Western	_	Location	_	_	4	Meronym	_	Offset=1148-1171
+4	diluted	_	Reagent	_	_	0	_	_	Offset=1177-1206
+5	run	_	Action	_	_	0	_	_	Offset=1211-1214
+6	30‐60	_	Time	_	_	0	_	_	Offset=1222-1235
+7	200mA	_	Generic-Measure	_	_	0	_	_	Offset=1239-1259
+

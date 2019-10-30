@@ -1,0 +1,21 @@
+# sent_id = s1
+# text = A-Tailing with Taq Polymerase
+1	Clean-up	_	Action	_	_	0	_	_	Offset=30-38
+2	amplified	_	Modifier	_	_	3	Mod-Link	_	Offset=43-52
+3	DNA	_	Reagent	_	_	0	_	_	Offset=53-56
+4	PCR	_	Reagent	_	_	0	_	_	Offset=66-80
+
+# sent_id = s2
+# text = Clean-up the amplified DNA from the PCR components. 
+1	Set-up	_	Action	_	_	0	_	_	Offset=83-89
+2	reaction	_	Reagent	_	_	0	_	_	Offset=94-102
+3	adding	_	Action	_	_	0	_	_	Offset=106-112
+4	following	_	Reagent	_	_	0	_	_	Offset=117-137
+
+# sent_id = s3
+# text = Set-up the reaction by adding the following components: 
+1	Incubate	_	Action	_	_	0	_	_	Offset=140-148
+2	reaction	_	Reagent	_	_	0	_	_	Offset=153-161
+3	72	_	Temperature	_	_	0	_	_	Offset=165-170
+4	20	_	Time	_	_	0	_	_	Offset=175-185
+

@@ -1,0 +1,286 @@
+# sent_id = s1
+# text = CviJI Purification From IL-3A Virus Infected NC64A Chlorella
+1	Prepare	_	Action	_	_	0	_	_	Offset=61-68
+2	Buffer	_	Reagent	_	_	0	_	_	Offset=69-77
+
+# sent_id = s2
+# text = Prepare Buffer A: 
+1	Prepare	_	Action	_	_	0	_	_	Offset=80-87
+2	Buffer	_	Reagent	_	_	0	_	_	Offset=88-96
+
+# sent_id = s3
+# text = Prepare Buffer B: 
+1	Prepare	_	Action	_	_	0	_	_	Offset=99-106
+2	Buffer	_	Reagent	_	_	0	_	_	Offset=107-115
+3	pH	_	pH	_	_	2	Measure	_	Offset=117-123
+
+# sent_id = s4
+# text = Prepare Buffer B, pH 8.5: 
+1	Prepare	_	Action	_	_	0	_	_	Offset=126-133
+2	Storage	_	Reagent	_	_	0	_	_	Offset=134-148
+
+# sent_id = s5
+# text = Prepare Storage Buffer: 
+1	Prepare	_	Action	_	_	0	_	_	Offset=151-158
+2	1X	_	Concentration	_	_	3	Measure	_	Offset=159-161
+3	CviJI	_	Reagent	_	_	0	_	_	Offset=162-180
+
+# sent_id = s6
+# text = Prepare 1X CviJI Assay Buffer: 
+1	Store	_	Action	_	_	0	_	_	Offset=183-188
+2	enzyme	_	Reagent	_	_	0	_	_	Offset=193-199
+3	-20°C	_	Temperature	_	_	0	_	_	Offset=203-208
+
+# sent_id = s7
+# text = Store the enzyme at -20°C.
+1	Thaw	_	Action	_	_	0	_	_	Offset=210-214
+2	7	_	Modifier	_	_	3	Mod-Link	_	Offset=215-221
+3	IL-3A	_	Reagent	_	_	0	_	_	Offset=222-258
+4	suspend	_	Action	_	_	0	_	_	Offset=263-270
+5	MSK	_	Location	_	_	0	_	_	Offset=274-284
+6	Buffer	_	Reagent	_	_	0	_	_	Offset=290-299
+
+# sent_id = s8
+# text = Thaw 7 hour IL-3A virus infected NC64A chlorella and suspend in MSK flasks with Buffer A.
+1	Recover	_	Action	_	_	0	_	_	Offset=300-307
+2	homogenate	_	Reagent	_	_	0	_	_	Offset=312-322
+3	clean	_	Modifier	_	_	4	Mod-Link	_	Offset=326-331
+4	tubes	_	Location	_	_	0	_	_	Offset=332-337
+
+# sent_id = s9
+# text = Recover the homogenate to clean tubes.
+1	Adjust	_	Action	_	_	0	_	_	Offset=339-345
+2	homogenate	_	Reagent	_	_	0	_	_	Offset=350-372
+3	70%	_	Generic-Measure	_	_	0	_	_	Offset=376-390
+4	(NH4)2SO4	_	Reagent	_	_	0	_	_	Offset=396-405
+5	4°C	_	Temperature	_	_	0	_	_	Offset=409-412
+6	gentle	_	Modifier	_	_	0	_	_	Offset=418-424
+7	stirring	_	Action	_	_	0	_	_	Offset=425-433
+
+# sent_id = s10
+# text = Adjust the homogenate supernatant to 70% saturation with (NH4)2SO4 at 4°C with gentle stirring.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=435-445
+2	material	_	Reagent	_	_	0	_	_	Offset=450-458
+3	Sorvall	_	Device	_	_	0	_	_	Offset=466-484
+4	10,000	_	Speed	_	_	3	Setting	_	Offset=488-498
+5	10	_	Time	_	_	3	Setting	_	Offset=499-505
+6	4°C	_	Temperature	_	_	3	Setting	_	Offset=507-510
+
+# sent_id = s11
+# text = Centrifuge the material in the Sorvall SS34 rotor at 10,000 rpm 10 min, 4°C.
+1	Suspend	_	Action	_	_	0	_	_	Offset=512-519
+2	pellets	_	Reagent	_	_	0	_	_	Offset=524-531
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=537-545
+
+# sent_id = s12
+# text = Suspend the pellets with Buffer A.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=547-557
+2	material	_	Reagent	_	_	0	_	_	Offset=562-570
+3	Sorvall	_	Device	_	_	0	_	_	Offset=578-596
+4	10,000	_	Speed	_	_	3	Setting	_	Offset=600-610
+5	10	_	Time	_	_	3	Setting	_	Offset=612-618
+6	4°C	_	Temperature	_	_	3	Setting	_	Offset=620-623
+
+# sent_id = s13
+# text = Centrifuge the material in the Sorvall SS34 rotor at 10,000 rpm, 10 min, 4°C.
+1	Dilute	_	Action	_	_	0	_	_	Offset=625-631
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=636-647
+3	10-15	_	Amount	_	_	4	Measure	_	Offset=653-666
+4	Buffer	_	Reagent	_	_	0	_	_	Offset=670-678
+5	reduce	_	Action	_	_	0	_	_	Offset=682-688
+6	NaCl	_	Reagent	_	_	0	_	_	Offset=693-697
+7	concentration	_	Measure-Type	_	_	0	_	_	Offset=698-711
+
+# sent_id = s14
+# text = Dilute the supernatant with 10-15 volumes of Buffer B to reduce the NaCl concentration.
+1	Elute	_	Action	_	_	0	_	_	Offset=713-718
+2	Heparin-Sepharose	_	Reagent	_	_	0	_	_	Offset=723-747
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=753-761
+4	0-2.0	_	Generic-Measure	_	_	5	Measure	_	Offset=770-777
+5	KOAc	_	Reagent	_	_	0	_	_	Offset=778-791
+
+# sent_id = s15
+# text = Elute the Heparin-Sepharose column with Buffer B using a 0-2.0 M KOAc gradient.
+1	Elute	_	Action	_	_	0	_	_	Offset=793-798
+2	Blue-Sepharose	_	Reagent	_	_	0	_	_	Offset=803-824
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=830-838
+4	0-2.0	_	Generic-Measure	_	_	5	Measure	_	Offset=847-854
+5	KOAc	_	Reagent	_	_	0	_	_	Offset=855-868
+
+# sent_id = s16
+# text = Elute the Blue-Sepharose column with Buffer B using a 0-2.0 M KOAc gradient.
+1	Dilute	_	Action	_	_	0	_	_	Offset=870-876
+2	pooled	_	Reagent	_	_	0	_	_	Offset=881-897
+3	10-15	_	Amount	_	_	4	Measure	_	Offset=903-916
+4	Buffer	_	Reagent	_	_	0	_	_	Offset=920-928
+5	pH	_	pH	_	_	4	Measure	_	Offset=930-936
+6	reduce	_	Action	_	_	0	_	_	Offset=940-946
+7	salt	_	Reagent	_	_	0	_	_	Offset=951-955
+8	concentration	_	Measure-Type	_	_	0	_	_	Offset=956-969
+
+# sent_id = s17
+# text = Dilute the pooled fractions with 10-15 volumes of Buffer B, pH 8.5 to reduce the salt concentration.
+1	Elute	_	Action	_	_	0	_	_	Offset=971-976
+2	Q-Sepharose	_	Reagent	_	_	0	_	_	Offset=981-999
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=1005-1013
+4	pH	_	pH	_	_	3	Measure	_	Offset=1015-1021
+5	0-2.0	_	Concentration	_	_	6	Measure	_	Offset=1030-1037
+6	KOAc	_	Reagent	_	_	0	_	_	Offset=1038-1051
+
+# sent_id = s18
+# text = Elute the Q-Sepharose column with Buffer B, pH 8.5 using a 0-2.0 M KOAc gradient.
+1	Concentrate	_	Action	_	_	0	_	_	Offset=1053-1064
+2	pooled	_	Modifier	_	_	3	Mod-Link	_	Offset=1069-1075
+3	enzyme	_	Reagent	_	_	0	_	_	Offset=1076-1082
+4	dialysis	_	Method	_	_	0	_	_	Offset=1086-1094
+5	overnight	_	Time	_	_	0	_	_	Offset=1095-1104
+6	storage	_	Reagent	_	_	0	_	_	Offset=1110-1124
+7	4°C	_	Temperature	_	_	0	_	_	Offset=1128-1131
+
+# sent_id = s19
+# text = Concentrate the pooled enzyme by dialysis overnight into storage buffer at 4°C.
+1	Homogenize	_	Action	_	_	0	_	_	Offset=1133-1143
+2	cells	_	Reagent	_	_	0	_	_	Offset=1148-1153
+3	MSK	_	Device	_	_	0	_	_	Offset=1161-1187
+4	15	_	Generic-Measure	_	_	6	Measure	_	Offset=1193-1198
+5	0.3	_	Size	_	_	6	Measure	_	Offset=1202-1208
+6	glass	_	Reagent	_	_	0	_	_	Offset=1209-1220
+7	4,000	_	Speed	_	_	3	Setting	_	Offset=1224-1233
+8	90	_	Time	_	_	3	Setting	_	Offset=1238-1244
+9	CO2	_	Method	_	_	0	_	_	Offset=1263-1274
+
+# sent_id = s20
+# text = Homogenize the cells in the MSK mechanical homogenizer with 15 gm of 0.3 mm glass beads at 4,000 rpm for 90 sec (2 X 45 sec) with CO2 cooling.
+1	Wash	_	Action	_	_	0	_	_	Offset=1276-1280
+2	glass	_	Reagent	_	_	0	_	_	Offset=1285-1296
+3	3X	_	Numerical	_	_	0	_	_	Offset=1297-1299
+4	5	_	Amount	_	_	5	Measure	_	Offset=1305-1309
+5	Buffer	_	Reagent	_	_	0	_	_	Offset=1313-1321
+6	combine	_	Action	_	_	0	_	_	Offset=1326-1333
+7	homogenate	_	Reagent	_	_	0	_	_	Offset=1343-1353
+
+# sent_id = s21
+# text = Wash the glass beads 3X with 5 mL of Buffer A and combine with the homogenate.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1355-1365
+2	homogenate	_	Reagent	_	_	0	_	_	Offset=1370-1380
+3	Sorvall	_	Device	_	_	0	_	_	Offset=1388-1406
+4	10,000	_	Speed	_	_	0	_	_	Offset=1410-1420
+5	20	_	Time	_	_	0	_	_	Offset=1422-1428
+6	4°C	_	Temperature	_	_	0	_	_	Offset=1430-1433
+
+# sent_id = s22
+# text = Centrifuge the homogenate in the Sorvall SS34 rotor at 10,000 rpm, 20 min, 4°C.
+1	Save	_	Action	_	_	0	_	_	Offset=1435-1439
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1444-1455
+
+# sent_id = s23
+# text = Save the supernatant.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1457-1465
+2	4°C	_	Temperature	_	_	0	_	_	Offset=1469-1472
+3	60-90	_	Time	_	_	0	_	_	Offset=1477-1486
+4	without	_	Method	_	_	0	_	_	Offset=1487-1503
+
+# sent_id = s24
+# text = Incubate at 4°C for 60-90 min without stirring.
+1	Save	_	Action	_	_	0	_	_	Offset=1505-1509
+2	pellet	_	Reagent	_	_	0	_	_	Offset=1514-1520
+
+# sent_id = s25
+# text = Save the pellet.
+1	Per	_	Modifier	_	_	2	Mod-Link	_	Offset=1522-1525
+2	mL	_	Amount	_	_	3	Measure	_	Offset=1526-1528
+3	suspension	_	Reagent	_	_	0	_	_	Offset=1532-1542
+4	add	_	Action	_	_	0	_	_	Offset=1543-1546
+5	0.45	_	Amount	_	_	7	Measure	_	Offset=1548-1555
+6	4	_	Concentration	_	_	7	Measure	_	Offset=1559-1562
+7	NaCl	_	Reagent	_	_	0	_	_	Offset=1563-1567
+8	0.45	_	Amount	_	_	10	Measure	_	Offset=1572-1579
+9	28%	_	Concentration	_	_	10	Measure	_	Offset=1583-1586
+10	PEG	_	Reagent	_	_	0	_	_	Offset=1587-1595
+
+# sent_id = s26
+# text = Per mL of suspension add: 0.45 mL of 4 M NaCl and 0.45 mL of 28% PEG 8000 (heated to 65°C).
+1	Mix	_	Action	_	_	0	_	_	Offset=1614-1617
+2	gently	_	Modifier	_	_	0	_	_	Offset=1618-1624
+3	inversion	_	Action	_	_	0	_	_	Offset=1628-1637
+4	5-10	_	Time	_	_	0	_	_	Offset=1642-1650
+
+# sent_id = s27
+# text = Mix gently by inversion for 5-10 min.
+1	Save	_	Action	_	_	0	_	_	Offset=1652-1656
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1661-1672
+
+# sent_id = s28
+# text = Save the supernatant.
+1	Load	_	Action	_	_	0	_	_	Offset=1674-1678
+2	material	_	Reagent	_	_	0	_	_	Offset=1683-1691
+3	overnight	_	Time	_	_	0	_	_	Offset=1692-1701
+4	Heparin-Sepharose	_	Device	_	_	0	_	_	Offset=1709-1733
+5	equilibrated	_	Action	_	_	0	_	_	Offset=1734-1746
+6	Buffer	_	Reagent	_	_	0	_	_	Offset=1752-1760
+7	cold	_	Modifier	_	_	8	Mod-Link	_	Offset=1768-1772
+8	room	_	Location	_	_	0	_	_	Offset=1773-1777
+
+# sent_id = s29
+# text = Load the material overnight onto a Heparin-Sepharose column equilibrated with Buffer B in the cold room.
+1	Assay	_	Action	_	_	0	_	_	Offset=1779-1784
+2	column	_	Reagent	_	_	0	_	_	Offset=1789-1805
+3	pool	_	Action	_	_	0	_	_	Offset=1810-1814
+4	active	_	Reagent	_	_	0	_	_	Offset=1819-1835
+
+# sent_id = s30
+# text = Assay the column fractions and pool the active fractions.
+1	Dilute	_	Action	_	_	0	_	_	Offset=1837-1843
+2	pooled	_	Modifier	_	_	3	Mod-Link	_	Offset=1848-1854
+3	fractions	_	Reagent	_	_	0	_	_	Offset=1855-1864
+4	10-15	_	Amount	_	_	5	Measure	_	Offset=1870-1883
+5	Buffer	_	Reagent	_	_	0	_	_	Offset=1887-1895
+6	reduce	_	Action	_	_	0	_	_	Offset=1899-1905
+7	salt	_	Reagent	_	_	0	_	_	Offset=1910-1914
+8	concentration	_	Measure-Type	_	_	0	_	_	Offset=1915-1928
+
+# sent_id = s31
+# text = Dilute the pooled fractions with 10-15 volumes of Buffer B to reduce the salt concentration.
+1	Load	_	Action	_	_	0	_	_	Offset=1930-1934
+2	material	_	Reagent	_	_	0	_	_	Offset=1939-1947
+3	overnight	_	Time	_	_	0	_	_	Offset=1948-1957
+4	Blue-Sepharose	_	Device	_	_	0	_	_	Offset=1965-1986
+5	equilibrated	_	Action	_	_	0	_	_	Offset=1987-1999
+6	Buffer	_	Reagent	_	_	0	_	_	Offset=2005-2013
+7	cold	_	Modifier	_	_	8	Mod-Link	_	Offset=2021-2025
+8	room	_	Location	_	_	0	_	_	Offset=2026-2030
+
+# sent_id = s32
+# text = Load the material overnight onto a Blue-Sepharose column equilibrated with Buffer B in the cold room.
+1	Assay	_	Action	_	_	0	_	_	Offset=2032-2037
+2	column	_	Reagent	_	_	0	_	_	Offset=2042-2058
+3	pool	_	Action	_	_	0	_	_	Offset=2063-2067
+4	active	_	Reagent	_	_	0	_	_	Offset=2072-2088
+
+# sent_id = s33
+# text = Assay the column fractions and pool the active fractions.
+1	Load	_	Action	_	_	0	_	_	Offset=2090-2094
+2	material	_	Reagent	_	_	0	_	_	Offset=2099-2107
+3	overnight	_	Time	_	_	0	_	_	Offset=2108-2117
+4	Q-Sepharose	_	Device	_	_	0	_	_	Offset=2125-2143
+5	equilibrated	_	Action	_	_	0	_	_	Offset=2144-2156
+6	Buffer	_	Reagent	_	_	0	_	_	Offset=2162-2171
+7	pH	_	pH	_	_	6	Measure	_	Offset=2172-2178
+8	cold	_	Modifier	_	_	9	Mod-Link	_	Offset=2186-2190
+9	room	_	Location	_	_	0	_	_	Offset=2191-2195
+
+# sent_id = s34
+# text = Load the material overnight onto a Q-Sepharose column equilibrated with Buffer B, pH 8.5 in the cold room.
+1	Assay	_	Action	_	_	0	_	_	Offset=2197-2202
+2	column	_	Reagent	_	_	0	_	_	Offset=2207-2223
+3	pool	_	Action	_	_	0	_	_	Offset=2228-2232
+4	active	_	Reagent	_	_	0	_	_	Offset=2237-2253
+
+# sent_id = s35
+# text = Assay the column fractions and pool the active fractions.
+1	Add	_	Action	_	_	0	_	_	Offset=2255-2258
+2	BSA	_	Reagent	_	_	0	_	_	Offset=2259-2262
+3	10	_	Concentration	_	_	2	Measure	_	Offset=2264-2272
+4	final	_	Measure-Type	_	_	0	_	_	Offset=2279-2298
+5	100	_	Concentration	_	_	0	_	_	Offset=2302-2311
+

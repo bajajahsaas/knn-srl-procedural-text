@@ -1,0 +1,49 @@
+# sent_id = s1
+# text = Sampling for Flow Cytometry (FCM)
+1	aliquot	_	Action	_	_	0	_	_	Offset=88-95
+2	900	_	Amount	_	_	3	Measure	_	Offset=96-102
+3	seawater	_	Reagent	_	_	0	_	_	Offset=106-114
+4	1.2	_	Size	_	_	5	Measure	_	Offset=185-191
+5	cryovial	_	Location	_	_	0	_	_	Offset=192-200
+
+# sent_id = s2
+# text = Advance preparation: for each sample to be collected, aliquot 900 µl of seawater (artificial seawater salts or complete sterile medium) into a labeled 1.2 ml cryovial.
+1	add	_	Action	_	_	0	_	_	Offset=218-221
+2	100	_	Amount	_	_	3	Measure	_	Offset=222-228
+3	sample	_	Reagent	_	_	0	_	_	Offset=232-238
+4	cryovial	_	Location	_	_	0	_	_	Offset=244-252
+5	900	_	Amount	_	_	6	Measure	_	Offset=264-270
+6	seawater	_	Reagent	_	_	0	_	_	Offset=274-282
+
+# sent_id = s3
+# text = Collect sample: add 100 µl of sample into cryovial containing 900 µl of seawater.
+1	lay	_	Action	_	_	0	_	_	Offset=369-376
+2	cryovial	_	Location	_	_	3	Meronym	_	Offset=377-385
+3	caps	_	Seal	_	_	0	_	_	Offset=386-390
+4	repeator	_	Device	_	_	0	_	_	Offset=426-440
+5	add	_	Action	_	_	0	_	_	Offset=444-447
+6	5	_	Amount	_	_	7	Measure	_	Offset=448-452
+7	glutaraldehyde	_	Reagent	_	_	0	_	_	Offset=456-470
+8	25%	_	Concentration	_	_	7	Measure	_	Offset=472-475
+
+# sent_id = s4
+# text = Keep cryovial cap clean and sterile.
+1	Cap	_	Action	_	_	0	_	_	Offset=490-493
+2	tube	_	Location	_	_	0	_	_	Offset=499-503
+3	inverting	_	Action	_	_	0	_	_	Offset=520-529
+4	few	_	Generic-Measure	_	_	0	_	_	Offset=532-541
+
+# sent_id = s5
+# text = Preserve/fix sample: In the chemical fume hood, lay out cryovial caps (inside cap facing up) and use the repeator pipet to add 5 µl of glutaraldehyde (25%) to each cap.
+1	Incubate	_	Action	_	_	0	_	_	Offset=543-551
+2	10	_	Time	_	_	0	_	_	Offset=556-566
+3	dark	_	Method	_	_	0	_	_	Offset=574-578
+
+# sent_id = s6
+# text = Cap each tube and mix well by inverting a few times.
+1	Flash-freeze	_	Action	_	_	0	_	_	Offset=580-592
+2	tubes	_	Location	_	_	0	_	_	Offset=593-598
+3	liquid	_	Reagent	_	_	0	_	_	Offset=602-617
+4	store	_	Action	_	_	0	_	_	Offset=622-627
+5	-80°C	_	Temperature	_	_	0	_	_	Offset=631-636
+

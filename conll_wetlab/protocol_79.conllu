@@ -1,0 +1,18 @@
+# sent_id = s1
+# text = How to make a 50 mg/ml Rifampicin Stock Solution
+1	Weigh	_	Action	_	_	0	_	_	Offset=49-54
+2	0.5	_	Amount	_	_	3	Measure	_	Offset=55-60
+3	rifampicin	_	Reagent	_	_	0	_	_	Offset=64-74
+
+# sent_id = s2
+# text = Weigh 0.5 g of rifampicin.
+1	Add	_	Action	_	_	0	_	_	Offset=76-79
+2	10	_	Amount	_	_	4	Measure	_	Offset=80-85
+3	100%	_	Modifier	_	_	4	Mod-Link	_	Offset=89-93
+4	methanol	_	Reagent	_	_	0	_	_	Offset=94-102
+
+# sent_id = s3
+# text = Add 10 ml of 100% methanol.
+1	Dissolve	_	Action	_	_	0	_	_	Offset=104-112
+2	completely	_	Modifier	_	_	0	_	_	Offset=113-123
+

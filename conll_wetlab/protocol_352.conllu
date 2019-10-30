@@ -1,0 +1,123 @@
+# sent_id = s1
+# text = One-step growth experiments (cyanophages)
+1	Set	_	Action	_	_	0	_	_	Offset=42-48
+2	triplicate	_	Location	_	_	0	_	_	Offset=49-76
+3	1.5	_	Size	_	_	4	Measure	_	Offset=85-91
+4	microtubes	_	Location	_	_	0	_	_	Offset=92-102
+
+# sent_id = s2
+# text = Set up triplicate adsorption tubes (AT) in 1.5 mL microtubes.
+1	Add	_	Action	_	_	0	_	_	Offset=104-107
+2	phages	_	Reagent	_	_	0	_	_	Offset=108-114
+3	known	_	Modifier	_	_	2	Mod-Link	_	Offset=120-131
+4	cyanobacteria	_	Reagent	_	_	0	_	_	Offset=139-157
+5	exponential	_	Modifier	_	_	4	Mod-Link	_	Offset=161-179
+6	MOI	_	Measure-Type	_	_	7	Of-Type	_	Offset=244-247
+7	0.02	_	Numerical	_	_	4	Measure	_	Offset=265-269
+
+# sent_id = s3
+# text = Add phages of a known titer to the cyanobacteria host in exponential growth (cell concentration determined by microscopy; Cyanoinput) at an MOI of approximately 0.02.
+1	phages	_	Reagent	_	_	0	_	_	Offset=281-287
+2	adsorb	_	Action	_	_	0	_	_	Offset=291-297
+3	hosts	_	Reagent	_	_	0	_	_	Offset=305-310
+4	60	_	Time	_	_	0	_	_	Offset=315-321
+
+# sent_id = s4
+# text = Allow the phages to adsorb to the hosts for 60 min.
+1	room	_	Temperature	_	_	0	_	_	Offset=326-342
+2	25µmol	_	Generic-Measure	_	_	0	_	_	Offset=366-386
+
+# sent_id = s5
+# text = at room temperature and an illumination of 25µmol quanta m–2s–1.
+1	Set	_	Action	_	_	0	_	_	Offset=388-394
+2	control	_	Location	_	_	0	_	_	Offset=395-408
+
+# sent_id = s6
+# text = Set up control tubes (CT) as above, except: 
+1	replace	_	Action	_	_	0	_	_	Offset=455-462
+2	host	_	Reagent	_	_	0	_	_	Offset=463-473
+3	media	_	Reagent	_	_	0	_	_	Offset=479-484
+
+# sent_id = s7
+# text = a. positive controls: replace host cells with media (this gives input phage numbers).
+1	omit	_	Action	_	_	0	_	_	Offset=541-545
+2	virus	_	Reagent	_	_	0	_	_	Offset=546-551
+3	remove	_	Action	_	_	0	_	_	Offset=566-572
+4	unadsorbed	_	Modifier	_	_	0	_	_	Offset=573-583
+5	phages	_	Reagent	_	_	0	_	_	Offset=584-590
+
+# sent_id = s8
+# text = b. negative controls: omit virus After 60 min, remove unadsorbed phages (T = 0). 
+1	Prepare	_	Action	_	_	0	_	_	Offset=601-608
+2	nine	_	Amount	_	_	4	Measure	_	Offset=609-613
+3	15-mL	_	Size	_	_	4	Measure	_	Offset=614-619
+4	centrifuge	_	Location	_	_	6	Meronym	_	Offset=620-636
+5	10	_	Amount	_	_	6	Measure	_	Offset=648-653
+6	algal	_	Reagent	_	_	0	_	_	Offset=654-672
+
+# sent_id = s9
+# text = Prepare nine 15-mL centrifuge tubes containing 10 mL algal growth media. 
+1	Add	_	Action	_	_	0	_	_	Offset=675-678
+2	100	_	Amount	_	_	3	Measure	_	Offset=679-685
+3	AT	_	Reagent	_	_	0	_	_	Offset=691-693
+4	FGT	_	Reagent	_	_	0	_	_	Offset=697-700
+
+# sent_id = s10
+# text = Add 100 µL from AT to FGT (10–2 dilution).
+1	Mix	_	Action	_	_	0	_	_	Offset=718-721
+2	remove	_	Action	_	_	0	_	_	Offset=726-732
+3	0.1	_	Amount	_	_	4	Measure	_	Offset=733-739
+4	sample	_	Reagent	_	_	0	_	_	Offset=740-746
+5	T	_	Generic-Measure	_	_	0	_	_	Offset=751-756
+
+# sent_id = s11
+# text = Mix and remove 0.1 mL sample for T = 0.
+1	Perform	_	Action	_	_	0	_	_	Offset=758-778
+2	immediately	_	Modifier	_	_	0	_	_	Offset=779-790
+3	determine	_	Action	_	_	0	_	_	Offset=794-803
+4	total	_	Measure-Type	_	_	0	_	_	Offset=804-827
+
+# sent_id = s12
+# text = Perform plaque assay immediately to determine total infective centers (TICT=0).
+1	Add	_	Action	_	_	0	_	_	Offset=838-841
+2	100	_	Amount	_	_	3	Measure	_	Offset=842-848
+3	FGT	_	Reagent	_	_	0	_	_	Offset=854-857
+4	SGT	_	Reagent	_	_	0	_	_	Offset=861-864
+
+# sent_id = s13
+# text = Add 100 µL from FGT to SGT (10–4 dilution).
+1	Incubate	_	Action	_	_	0	_	_	Offset=882-890
+2	FGT	_	Reagent	_	_	0	_	_	Offset=891-894
+3	SGT	_	Reagent	_	_	0	_	_	Offset=899-902
+4	room	_	Temperature	_	_	0	_	_	Offset=912-928
+5	ca.	_	Generic-Measure	_	_	0	_	_	Offset=933-936
+
+# sent_id = s14
+# text = Incubate FGT and SGT tubes at room temperature and ca.
+1	25	_	Generic-Measure	_	_	0	_	_	Offset=937-958
+2	Remove	_	Action	_	_	0	_	_	Offset=959-965
+3	100	_	Amount	_	_	4	Measure	_	Offset=966-972
+4	samples	_	Reagent	_	_	0	_	_	Offset=973-980
+5	every	_	Time	_	_	0	_	_	Offset=981-990
+6	FGT	_	Reagent	_	_	0	_	_	Offset=996-999
+7	SGT	_	Reagent	_	_	0	_	_	Offset=1027-1030
+8	ca.	_	Generic-Measure	_	_	0	_	_	Offset=1055-1063
+
+# sent_id = s15
+# text = 25 µmol quanta m–2s–1 Remove 100 µL samples every 3 h from FGT (at 3, 6, 9, 12, 16 h) and SGT (from 12 h onwards) for ca. 30 h. 
+1	Determine	_	Action	_	_	0	_	_	Offset=1066-1075
+2	TIC	_	Measure-Type	_	_	0	_	_	Offset=1080-1083
+3	plaque	_	Method	_	_	0	_	_	Offset=1088-1100
+
+# sent_id = s16
+# text = Determine the TIC via plaque assay.
+1	Add	_	Action	_	_	0	_	_	Offset=1102-1105
+2	100	_	Amount	_	_	0	_	_	Offset=1106-1112
+3	positive	_	Location	_	_	0	_	_	Offset=1118-1139
+4	FGT-control	_	Location	_	_	0	_	_	Offset=1148-1159
+
+# sent_id = s17
+# text = Add 100 µL from positive control tube (CT) to FGT-control (10–2 dilution).
+1	Determine	_	Action	_	_	0	_	_	Offset=1177-1186
+2	total	_	Measure-Type	_	_	0	_	_	Offset=1191-1208
+

@@ -1,0 +1,97 @@
+# sent_id = s1
+# text = SYBR Green or Gold Staining
+1	Make	_	Action	_	_	0	_	_	Offset=28-32
+2	dilution	_	Reagent	_	_	0	_	_	Offset=33-41
+3	virus	_	Reagent	_	_	0	_	_	Offset=45-55
+4	0.02µm	_	Modifier	_	_	6	Mod-Link	_	Offset=59-65
+5	filtered	_	Modifier	_	_	6	Mod-Link	_	Offset=66-74
+6	seawater	_	Location	_	_	0	_	_	Offset=75-83
+
+# sent_id = s2
+# text = Make dilution of virus prep in 0.02µm filtered seawater (100 kDa permeate if available).
+1	Add	_	Action	_	_	0	_	_	Offset=117-120
+2	diluted	_	Modifier	_	_	3	Mod-Link	_	Offset=121-128
+3	virus	_	Reagent	_	_	0	_	_	Offset=129-134
+4	1	_	Amount	_	_	7	Measure	_	Offset=138-142
+5	0.02	_	Modifier	_	_	7	Mod-Link	_	Offset=143-150
+6	filtered	_	Modifier	_	_	7	Mod-Link	_	Offset=151-159
+7	seawater	_	Location	_	_	0	_	_	Offset=160-168
+8	add	_	Action	_	_	0	_	_	Offset=173-176
+9	1	_	Amount	_	_	10	Measure	11:Measure	Offset=177-181
+10	SYBR	_	Reagent	_	_	0	_	_	Offset=182-192
+11	gold	_	Reagent	_	_	0	_	_	Offset=196-200
+12	solution	_	Location	_	_	0	_	_	Offset=220-228
+
+# sent_id = s3
+# text = Add diluted virus to 1 ml 0.02 µm filtered seawater and add 1 µl SYBR green or gold (10,000x stock) to solution.
+1	Incubate	_	Action	_	_	0	_	_	Offset=230-238
+2	RT	_	Reagent	_	_	0	_	_	Offset=239-241
+3	dark	_	Location	_	_	0	_	_	Offset=250-254
+4	15	_	Time	_	_	0	_	_	Offset=259-265
+
+# sent_id = s4
+# text = Incubate RT, in the dark for 15 min.
+1	Prepare	_	Action	_	_	0	_	_	Offset=267-274
+2	25mm	_	Amount	_	_	3	Measure	_	Offset=275-279
+3	SYBR	_	Reagent	_	_	0	_	_	Offset=280-291
+4	use	_	Action	_	_	0	_	_	Offset=293-296
+5	0.02µm	_	Amount	_	_	6	Measure	_	Offset=297-303
+6	Anodiscs	_	Reagent	_	_	0	_	_	Offset=304-312
+7	careful	_	Action	_	_	0	_	_	Offset=314-334
+
+# sent_id = s5
+# text = Prepare 25mm SYBR towers: use 0.02µm Anodiscs, careful not to break membrane.
+1	Filter	_	Action	_	_	0	_	_	Offset=345-351
+2	sample	_	Reagent	_	_	0	_	_	Offset=352-358
+3	membrane	_	Location	_	_	0	_	_	Offset=364-372
+4	vacuum	_	Device	_	_	0	_	_	Offset=378-384
+
+# sent_id = s6
+# text = Filter sample onto membrane (use vacuum).
+1	Rinse	_	Action	_	_	0	_	_	Offset=387-392
+2	tower	_	Reagent	_	_	0	_	_	Offset=393-398
+3	1L	_	Location	_	_	0	_	_	Offset=402-412
+4	blot	_	Action	_	_	0	_	_	Offset=436-440
+5	paper	_	Location	_	_	0	_	_	Offset=446-457
+6	dry	_	Action	_	_	0	_	_	Offset=461-464
+
+# sent_id = s7
+# text = Rinse tower in 1L Q-water in between samples and blot onto paper towel to dry.
+1	Remove	_	Action	_	_	0	_	_	Offset=466-472
+2	membrane	_	Reagent	_	_	0	_	_	Offset=473-481
+3	place	_	Action	_	_	0	_	_	Offset=486-491
+4	cell	_	Reagent	_	_	0	_	_	Offset=492-496
+5	side	_	Modifier	_	_	4	Mod-Link	_	Offset=497-504
+6	microscope	_	Location	_	_	0	_	_	Offset=508-524
+
+# sent_id = s8
+# text = Remove membrane and place cell-side up on microscope slide.
+1	Pipet	_	Action	_	_	0	_	_	Offset=526-531
+2	32µl	_	Amount	_	_	3	Measure	_	Offset=532-536
+3	0.1%	_	Reagent	_	_	0	_	_	Offset=537-558
+4	22mm	_	Modifier	_	_	5	Mod-Link	_	Offset=589-593
+5	square	_	Location	_	_	0	_	_	Offset=594-610
+
+# sent_id = s9
+# text = Pipet 32µl 0.1% phenylenediamine (made in PBS/50% glycerol) on 22mm square coverslip.
+1	Invert	_	Action	_	_	0	_	_	Offset=612-618
+2	over	_	Location	_	_	0	_	_	Offset=619-630
+3	microscope	_	Location	_	_	2	Meronym	_	Offset=634-650
+4	press	_	Action	_	_	0	_	_	Offset=655-665
+5	spread	_	Action	_	_	0	_	_	Offset=669-675
+6	mounting	_	Reagent	_	_	0	_	_	Offset=676-691
+
+# sent_id = s10
+# text = Invert over filter on microscope slide and press down to spread mounting medium.
+1	Place	_	Action	_	_	0	_	_	Offset=693-698
+2	slide	_	Device	_	_	0	_	_	Offset=699-704
+3	–20°C	_	Temperature	_	_	0	_	_	Offset=708-713
+
+# sent_id = s11
+# text = Place slide at –20°C to enhance fluorescence.
+1	Read	_	Action	_	_	0	_	_	Offset=739-743
+2	slides	_	Device	_	_	0	_	_	Offset=744-750
+3	100x	_	Method	_	_	0	_	_	Offset=757-775
+4	inverted	_	Modifier	_	_	5	Mod-Link	_	Offset=790-798
+5	fluorescent	_	Device	_	_	0	_	_	Offset=799-821
+

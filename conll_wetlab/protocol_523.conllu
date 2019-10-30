@@ -1,0 +1,117 @@
+# sent_id = s1
+# text = Th1 Polarization of Mouse CD4+ Cells
+1	Harvest	_	Action	_	_	0	_	_	Offset=37-44
+2	lymph	_	Reagent	_	_	0	_	_	Offset=45-56
+3	mice	_	Reagent	_	_	0	_	_	Offset=133-137
+
+# sent_id = s2
+# text = Harvest lymph nodes (superficial cervical, mandibular, axillary, inguinal, and mesenteric) from mice.
+1	Tease	_	Action	_	_	0	_	_	Offset=139-144
+2	lymph	_	Reagent	_	_	0	_	_	Offset=145-156
+3	70-µm	_	Size	_	_	4	Measure	_	Offset=175-180
+4	nylon	_	Device	_	_	0	_	_	Offset=181-200
+
+# sent_id = s3
+# text = Tease lymph nodes through a sterile 70-µm nylon cell strainer to obtain single-cell suspensions incomplete RPMI containing 10% FCS (complete medium).
+1	Resuspend	_	Action	_	_	0	_	_	Offset=289-298
+2	cells	_	Reagent	_	_	0	_	_	Offset=299-304
+3	complete	_	Reagent	_	_	0	_	_	Offset=308-323
+4	isolate	_	Action	_	_	0	_	_	Offset=356-363
+5	CD4+cells	_	Reagent	_	_	0	_	_	Offset=364-373
+
+# sent_id = s4
+# text = Resuspend cells in complete medium and use your favorite method to isolate CD4+cells.
+1	coat	_	Action	_	_	0	_	_	Offset=431-435
+2	12-well	_	Size	_	_	3	Measure	_	Offset=436-443
+3	plate	_	Location	_	_	0	_	_	Offset=444-449
+4	anti-mouse	_	Reagent	_	_	0	_	_	Offset=455-470
+5	3	_	Concentration	_	_	4	Measure	_	Offset=488-495
+
+# sent_id = s5
+# text = Check out Biocompare.com to find useful kits.
+1	Incubate	_	Action	_	_	0	_	_	Offset=498-506
+2	37°C	_	Temperature	_	_	0	_	_	Offset=510-514
+3	2	_	Time	_	_	0	_	_	Offset=519-526
+
+# sent_id = s6
+# text = On day 0, coat 12-well plate with anti-mouse CD3ε, clone 145-2C11 (3 µg/ml).
+1	decant	_	Action	_	_	0	_	_	Offset=584-590
+2	antibody	_	Reagent	_	_	0	_	_	Offset=591-608
+3	plate	_	Location	_	_	0	_	_	Offset=618-623
+
+# sent_id = s7
+# text = Incubate at 37°C for 2 hours.
+1	Wash	_	Action	_	_	0	_	_	Offset=625-629
+2	plate	_	Location	_	_	0	_	_	Offset=630-635
+3	sterile	_	Reagent	_	_	0	_	_	Offset=641-652
+
+# sent_id = s8
+# text = (Alternatively, incubate at 4°C overnight.)
+1	Wash	_	Action	_	_	0	_	_	Offset=665-669
+2	plate	_	Location	_	_	0	_	_	Offset=670-675
+3	sterile	_	Reagent	_	_	0	_	_	Offset=681-692
+
+# sent_id = s9
+# text = Aseptically decant antibody solution from the plate.
+1	Wash	_	Action	_	_	0	_	_	Offset=705-709
+2	plate	_	Location	_	_	0	_	_	Offset=710-715
+3	sterile	_	Reagent	_	_	0	_	_	Offset=721-732
+
+# sent_id = s10
+# text = Wash plate with sterile PBS (wash 1/3).
+1	Discard	_	Action	_	_	0	_	_	Offset=745-752
+2	liquid	_	Reagent	_	_	0	_	_	Offset=753-759
+
+# sent_id = s11
+# text = Wash plate with sterile PBS (wash 2/3).
+1	Plate	_	Action	_	_	0	_	_	Offset=761-766
+2	CD4+	_	Reagent	_	_	0	_	_	Offset=767-777
+3	1.0	_	Concentration	_	_	2	Measure	_	Offset=781-795
+4	well	_	Location	_	_	0	_	_	Offset=796-800
+
+# sent_id = s12
+# text = Wash plate with sterile PBS (wash 3/3).
+1	Culture	_	Action	_	_	0	_	_	Offset=802-809
+2	cells	_	Reagent	_	_	7	Meronym	8:Meronym|10:Meronym|11:Meronym|13:Meronym|15:Meronym	Offset=810-815
+3	5	_	Time	_	_	0	_	_	Offset=820-826
+4	37°C	_	Temperature	_	_	0	_	_	Offset=830-834
+5	5%	_	Concentration	_	_	6	Measure	_	Offset=836-838
+6	CO2	_	Reagent	_	_	0	_	_	Offset=839-842
+7	anti-mouse	_	Reagent	_	_	0	_	_	Offset=863-878
+8	clone	_	Reagent	_	_	0	_	_	Offset=880-891
+9	3	_	Concentration	_	_	8	Measure	_	Offset=893-900
+10	anti-mouse	_	Reagent	_	_	0	_	_	Offset=903-918
+11	clone	_	Reagent	_	_	0	_	_	Offset=920-931
+12	10	_	Concentration	_	_	11	Measure	_	Offset=933-941
+13	recombinant	_	Reagent	_	_	0	_	_	Offset=944-966
+14	5	_	Concentration	_	_	13	Measure	_	Offset=968-975
+15	recombinant	_	Reagent	_	_	0	_	_	Offset=982-1005
+16	10	_	Concentration	_	_	15	Measure	_	Offset=1007-1015
+
+# sent_id = s13
+# text = Discard liquid.
+1	add	_	Action	_	_	0	_	_	Offset=1048-1051
+2	2	_	Amount	_	_	4	Measure	_	Offset=1052-1056
+3	well	_	Location	_	_	0	_	_	Offset=1057-1061
+4	fresh	_	Reagent	_	_	0	_	_	Offset=1065-1076
+
+# sent_id = s14
+# text = Plate CD4+ cells at 1.0 x 106 /1ml/well.
+1	wash	_	Action	_	_	0	_	_	Offset=1140-1144
+2	cells	_	Reagent	_	_	0	_	_	Offset=1145-1150
+3	once	_	Numerical	_	_	0	_	_	Offset=1151-1155
+4	restimulate	_	Action	_	_	0	_	_	Offset=1165-1176
+5	complete	_	Reagent	_	_	7	Meronym	9:Meronym|11:Meronym	Offset=1180-1194
+6	50	_	Concentration	_	_	7	Measure	_	Offset=1200-1208
+7	PMA	_	Reagent	_	_	0	_	_	Offset=1209-1212
+8	1	_	Concentration	_	_	9	Measure	_	Offset=1214-1221
+9	ionomycin	_	Reagent	_	_	0	_	_	Offset=1222-1231
+10	10	_	Amount	_	_	11	Measure	_	Offset=1236-1241
+11	monensin	_	Reagent	_	_	0	_	_	Offset=1242-1250
+12	1000x	_	Concentration	_	_	11	Measure	_	Offset=1252-1257
+13	6-well	_	Size	_	_	14	Measure	_	Offset=1265-1271
+14	plate	_	Location	_	_	0	_	_	Offset=1272-1277
+15	incubator	_	Location	_	_	0	_	_	Offset=1281-1290
+16	37°C	_	Temperature	_	_	0	_	_	Offset=1294-1298
+17	5	_	Time	_	_	0	_	_	Offset=1303-1310
+

@@ -1,0 +1,181 @@
+# sent_id = s1
+# text = Immunohistochemistry Protocol for Ultra Streptavidin Detection Kits (USA)
+1	come	_	Action	_	_	0	_	_	Offset=178-185
+2	room	_	Temperature	_	_	0	_	_	Offset=186-202
+3	15	_	Time	_	_	0	_	_	Offset=207-217
+4	proceed	_	Action	_	_	0	_	_	Offset=220-227
+
+# sent_id = s2
+# text = Clear Slides: Removes paraffin and hydrates the tissue.
+1	Heat	_	Action	_	_	0	_	_	Offset=971-975
+2	slides	_	Location	_	_	0	_	_	Offset=976-982
+3	microwave	_	Device	_	_	0	_	_	Offset=986-995
+4	high	_	Generic-Measure	_	_	3	Setting	_	Offset=999-1003
+5	1	_	Time	_	_	0	_	_	Offset=1008-1027
+6	appropriate	_	Modifier	_	_	7	Mod-Link	_	Offset=1035-1046
+7	retrieval	_	Reagent	_	_	0	_	_	Offset=1047-1065
+8	1X	_	Concentration	_	_	7	Measure	_	Offset=1069-1071
+
+# sent_id = s3
+# text = Note: If using frozen sections, allow slides to come to room temperature for 15 minutes & proceed to step (F) only 
+1	low	_	Generic-Measure	_	_	4	Setting	_	Offset=1084-1093
+2	simmer	_	Action	_	_	0	_	_	Offset=1098-1104
+3	10	_	Time	_	_	0	_	_	Offset=1105-1115
+4	microwave	_	Device	_	_	0	_	_	Offset=1123-1132
+
+# sent_id = s4
+# text = A. Xylene5 minutes in each of (3) different 250mL containers 
+1	cool	_	Action	_	_	0	_	_	Offset=1143-1147
+2	bench	_	Location	_	_	0	_	_	Offset=1155-1164
+3	10	_	Time	_	_	0	_	_	Offset=1169-1179
+
+# sent_id = s5
+# text = B. 100% alcohol 5 minutes in each of (3) different 250mL containers 
+1	Rinse	_	Action	_	_	0	_	_	Offset=1181-1186
+2	lab	_	Reagent	_	_	0	_	_	Offset=1192-1207
+
+# sent_id = s6
+# text = C. 95% alcohol3 minutes in (1) 250mL container 
+1	Rinse	_	Action	_	_	0	_	_	Offset=1209-1214
+2	Slides	_	Reagent	_	_	0	_	_	Offset=1215-1221
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=1227-1229
+4	PBS	_	Reagent	_	_	0	_	_	Offset=1230-1233
+
+# sent_id = s7
+# text = D. 70% alcohol3 minutes in (1) 250mL container 
+1	Apply	_	Action	_	_	0	_	_	Offset=1379-1384
+2	#2	_	Reagent	_	_	0	_	_	Offset=1385-1404
+3	at	_	Modifier	_	_	4	Mod-Link	_	Offset=1425-1433
+4	5	_	Time	_	_	0	_	_	Offset=1434-1443
+5	room	_	Temperature	_	_	0	_	_	Offset=1447-1463
+
+# sent_id = s8
+# text = E. water1 minutes in each of (3) different 250mL containers 
+1	Blot	_	Action	_	_	0	_	_	Offset=1494-1502
+2	serum	_	Reagent	_	_	0	_	_	Offset=1503-1514
+3	6	_	Amount	_	_	4	Measure	_	Offset=1515-1519
+4	predilute	_	Reagent	_	_	0	_	_	Offset=1520-1540
+5	do	_	Action	_	_	0	_	_	Offset=1559-1572
+6	1	_	Amount	_	_	8	Measure	_	Offset=1573-1577
+7	concentrate	_	Modifier	_	_	8	Mod-Link	_	Offset=1578-1589
+8	products	_	Reagent	_	_	0	_	_	Offset=1590-1598
+9	diluted	_	Action	_	_	0	_	_	Offset=1606-1613
+10	>1:40	_	Generic-Measure	_	_	0	_	_	Offset=1614-1619
+11	PBS	_	Reagent	_	_	0	_	_	Offset=1623-1626
+12	other	_	Modifier	_	_	13	Mod-Link	_	Offset=1630-1635
+13	antibody	_	Reagent	_	_	11	Or	_	Offset=1636-1652
+
+# sent_id = s9
+# text = F. H2O2 (3%)15 minutes using # 1 Blocking Reagent (included in 50 test kit only), or 927401/927402 (sold separately) for 150 and 500 test kit.
+1	dilute	_	Action	_	_	0	_	_	Offset=1690-1696
+2	manufacturer’s	_	Method	_	_	0	_	_	Offset=1714-1741
+
+# sent_id = s10
+# text = Rinse slides with lab grade water.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1743-1751
+2	primary	_	Reagent	_	_	0	_	_	Offset=1752-1768
+3	20-60	_	Time	_	_	0	_	_	Offset=1769-1782
+4	room	_	Temperature	_	_	0	_	_	Offset=1786-1802
+
+# sent_id = s11
+# text = Note: Lab grade filtered water such as injection grade, cell culture grade, Reverse Osmosis De-Ionization (RODI).
+1	Rinse	_	Action	_	_	0	_	_	Offset=1855-1860
+2	slides	_	Location	_	_	0	_	_	Offset=1861-1867
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=1873-1875
+4	PBS	_	Reagent	_	_	0	_	_	Offset=1876-1879
+
+# sent_id = s12
+# text = Antigen Retrieval (refer to product datasheet, not always required). 
+1	Apply	_	Action	_	_	0	_	_	Offset=1881-1886
+2	#4	_	Reagent	_	_	0	_	_	Offset=1887-1905
+3	incubate	_	Action	_	_	0	_	_	Offset=1930-1938
+4	slides	_	Location	_	_	0	_	_	Offset=1939-1945
+5	20	_	Time	_	_	0	_	_	Offset=1950-1960
+6	room	_	Temperature	_	_	0	_	_	Offset=1964-1981
+
+# sent_id = s13
+# text = Retrieve-ALL (927901, 928201, 927601) or Sodium Citrate (928501, 928601). 
+1	Rinse	_	Action	_	_	0	_	_	Offset=1982-1987
+2	slides	_	Location	_	_	0	_	_	Offset=1988-1994
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=2000-2002
+4	PBS	_	Reagent	_	_	0	_	_	Offset=2003-2006
+
+# sent_id = s14
+# text = Heat slides in microwave on high for 1 minute 40 seconds in the appropriate retrieval solution at 1X. 
+1	Apply	_	Action	_	_	0	_	_	Offset=2008-2013
+2	#5	_	Reagent	_	_	0	_	_	Offset=2014-2033
+3	incubate	_	Action	_	_	0	_	_	Offset=2058-2066
+4	slides	_	Location	_	_	0	_	_	Offset=2067-2073
+5	20	_	Time	_	_	0	_	_	Offset=2078-2088
+6	room	_	Temperature	_	_	0	_	_	Offset=2092-2108
+7	Rinse	_	Action	_	_	0	_	_	Offset=2109-2114
+8	1X	_	Concentration	_	_	9	Measure	_	Offset=2120-2122
+9	PBS	_	Reagent	_	_	0	_	_	Offset=2123-2126
+
+# sent_id = s15
+# text = Reduce to low power and simmer 10 minutes in the microwave.
+1	Apply	_	Action	_	_	0	_	_	Offset=2128-2133
+2	chromogen	_	Reagent	_	_	0	_	_	Offset=2134-2143
+3	incubate	_	Action	_	_	0	_	_	Offset=2148-2156
+4	slides	_	Location	_	_	0	_	_	Offset=2157-2163
+5	5	_	Time	_	_	0	_	_	Offset=2168-2177
+6	room	_	Temperature	_	_	0	_	_	Offset=2181-2197
+
+# sent_id = s16
+# text = Allow to cool on the bench top for 10 minutes.
+1	dilute	_	Action	_	_	0	_	_	Offset=2440-2446
+2	incubate	_	Action	_	_	0	_	_	Offset=2451-2459
+3	manufacturer’s	_	Method	_	_	0	_	_	Offset=2477-2504
+
+# sent_id = s17
+# text = Rinse with lab grade water.
+1	Rinse	_	Action	_	_	0	_	_	Offset=2506-2511
+2	slides	_	Location	_	_	0	_	_	Offset=2512-2518
+3	lab	_	Reagent	_	_	0	_	_	Offset=2524-2539
+
+# sent_id = s18
+# text = Rinse Slides with 1X PBS (926201). 
+1	Submerge	_	Action	_	_	0	_	_	Offset=2541-2549
+2	slides	_	Location	_	_	0	_	_	Offset=2550-2556
+3	Hematoxylin	_	Reagent	_	_	0	_	_	Offset=2560-2571
+4	30	_	Time	_	_	0	_	_	Offset=2576-2586
+
+# sent_id = s19
+# text = Note: Other antigen retrievals could include EDTA, Proteinase K, Pepsin, protease VIII – follow antibody manufacturer’s instructions.
+1	Rinse	_	Action	_	_	0	_	_	Offset=2603-2608
+2	running	_	Modifier	_	_	3	Mod-Link	_	Offset=2615-2622
+3	lab	_	Reagent	_	_	0	_	_	Offset=2623-2638
+4	1	_	Time	_	_	0	_	_	Offset=2643-2651
+
+# sent_id = s20
+# text = Apply #2 Blocking Reagent (blue in color) for at least 5 minutes at room temperature.
+1	Submerge	_	Action	_	_	0	_	_	Offset=2677-2685
+2	slides	_	Location	_	_	0	_	_	Offset=2686-2692
+3	Bluing	_	Reagent	_	_	0	_	_	Offset=2696-2710
+4	1	_	Time	_	_	0	_	_	Offset=2715-2723
+
+# sent_id = s21
+# text = Do NOT wash after this step.
+1	Rinse	_	Action	_	_	0	_	_	Offset=2740-2745
+2	running	_	Modifier	_	_	3	Mod-Link	_	Offset=2752-2759
+3	lab	_	Reagent	_	_	0	_	_	Offset=2760-2775
+4	1	_	Time	_	_	0	_	_	Offset=2780-2788
+
+# sent_id = s22
+# text = Blot off serum block 6 mL predilute antibodies are ready to use, do not dilute 1 mL concentrate products can be diluted >1:40 in PBS or other antibody diluent. 
+1	Dehydrate	_	Action	_	_	0	_	_	Offset=2804-2813
+2	tissue	_	Reagent	_	_	0	_	_	Offset=2818-2824
+
+# sent_id = s23
+# text = If using a non-BioLegend antibody, dilute according to the manufacturer’s instructions.
+1	Cover	_	Action	_	_	0	_	_	Offset=3005-3015
+2	slide	_	Location	_	_	0	_	_	Offset=3016-3021
+3	Permanent	_	Reagent	_	_	0	_	_	Offset=3028-3061
+4	Xylene	_	Reagent	_	_	3	Or	_	Offset=3065-3084
+
+# sent_id = s24
+# text = Incubate primary antibody 20-60 minutes at room temperature (refer to incubation time listed on the datasheet).
+1	Do	_	Action	_	_	0	_	_	Offset=3092-3102
+2	xylene	_	Reagent	_	_	0	_	_	Offset=3103-3121
+3	AEC	_	Reagent	_	_	0	_	_	Offset=3127-3140
+

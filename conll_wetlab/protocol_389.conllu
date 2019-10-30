@@ -1,0 +1,169 @@
+# sent_id = s1
+# text = Large Volume Marine Cyanophage Phage Purification
+1	Grow	_	Action	_	_	0	_	_	Offset=50-57
+2	cells	_	Reagent	_	_	0	_	_	Offset=58-63
+3	1-2L	_	Amount	_	_	2	Measure	_	Offset=82-86
+4	~1011	_	Numerical	_	_	5	Measure	_	Offset=97-109
+5	cells	_	Reagent	_	_	0	_	_	Offset=110-115
+6	'microbubbling'	_	Method	_	_	0	_	_	Offset=122-147
+
+# sent_id = s2
+# text = Grow up cells in large volumes (1-2L) to yield ~1011 - 1012 cells using 'microbubbling' technique.
+1	Add	_	Action	_	_	0	_	_	Offset=149-152
+2	Rnase	_	Reagent	_	_	5	Meronym	_	Offset=153-160
+3	10ug	_	Generic-Measure	_	_	2	Measure	_	Offset=162-171
+4	250µl	_	Amount	_	_	5	Measure	_	Offset=182-187
+5	Qiagen's	_	Reagent	_	_	0	_	_	Offset=191-199
+6	100mg/ml	_	Concentration	_	_	5	Measure	_	Offset=200-208
+7	DNase1	_	Reagent	_	_	10	Meronym	_	Offset=220-226
+8	0.25	_	Generic-Measure	_	_	7	Measure	_	Offset=228-240
+9	50µl	_	Amount	_	_	10	Measure	_	Offset=250-254
+10	stock	_	Reagent	_	_	0	_	_	Offset=258-263
+
+# sent_id = s3
+# text = Add Rnase A (10ug ml-1 = for 2L, 250µl of Qiagen's 100mg/ml stock) and DNase1 (0.25 SU ml-1 =2L, add 50µl of stock).
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=266-276
+2	12,500	_	Speed	_	_	4	Setting	_	Offset=277-287
+3	23,975xg	_	Speed	_	_	4	Setting	_	Offset=289-297
+4	Beckman	_	Device	_	_	0	_	_	Offset=302-315
+5	15	_	Time	_	_	4	Setting	_	Offset=320-330
+6	4°C	_	Temperature	_	_	4	Setting	_	Offset=334-337
+7	Filter	_	Action	_	_	0	_	_	Offset=338-344
+8	supernatant	_	Reagent	_	_	0	_	_	Offset=349-360
+9	Kim	_	Location	_	_	0	_	_	Offset=371-392
+
+# sent_id = s4
+# text = Centrifuge 12,500 rpm (23,975xg) in Beckman Ja-14 for 15 minutes at 4°C Filter the supernatant through a Kim Wipe tissue paper.
+1	Mix	_	Action	_	_	0	_	_	Offset=394-397
+2	polyethylene	_	Reagent	_	_	0	_	_	Offset=401-420
+3	gentle	_	Modifier	_	_	0	_	_	Offset=446-452
+4	stirring	_	Method	_	_	0	_	_	Offset=453-461
+
+# sent_id = s5
+# text = Mix in polyethylene glycol (PEG 8,000; 100g L-1) by gentle stirring.
+1	Incubate	_	Action	_	_	0	_	_	Offset=463-471
+2	overnight	_	Time	_	_	0	_	_	Offset=472-481
+3	4°C	_	Temperature	_	_	0	_	_	Offset=485-488
+
+# sent_id = s6
+# text = Incubate overnight at 4°C.
+1	PEG-phage	_	Reagent	_	_	0	_	_	Offset=498-519
+2	centrifuge	_	Action	_	_	0	_	_	Offset=523-533
+3	6	_	Numerical	_	_	4	Measure	_	Offset=535-536
+4	tubes	_	Location	_	_	0	_	_	Offset=537-542
+5	12,500rpm	_	Speed	_	_	7	Setting	_	Offset=576-585
+6	23,975xg	_	Speed	_	_	7	Setting	_	Offset=587-595
+7	Beckman	_	Device	_	_	0	_	_	Offset=600-613
+8	15	_	Time	_	_	7	Setting	_	Offset=618-628
+9	4°C	_	Temperature	_	_	7	Setting	_	Offset=632-635
+
+# sent_id = s7
+# text = Collect PEG-phage precipitate by centrifuge (6 tubes at a time for the 2L volumes) at 12,500rpm (23,975xg) in Beckman Ja-14 for 15 minutes at 4°C.
+1	Discard	_	Action	_	_	0	_	_	Offset=637-644
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=645-656
+
+# sent_id = s8
+# text = Discard supernatant.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=658-664
+2	resuspend	_	Action	_	_	0	_	_	Offset=665-674
+3	pellet	_	Reagent	_	_	0	_	_	Offset=675-681
+4	~1/150	_	Amount	_	_	5	Measure	_	Offset=687-700
+5	Pro99	_	Reagent	_	_	0	_	_	Offset=701-706
+
+# sent_id = s9
+# text = Gently resuspend pellet into ~1/150 volume Pro99 (~1-2 ml).
+1	Add	_	Action	_	_	0	_	_	Offset=718-721
+2	resuspension	_	Reagent	_	_	0	_	_	Offset=725-743
+3	place	_	Action	_	_	0	_	_	Offset=745-750
+4	tube	_	Location	_	_	5	Coreference-Link	_	Offset=755-759
+5	its	_	Mention	_	_	6	Meronym	_	Offset=763-766
+6	side	_	Location	_	_	0	_	_	Offset=767-771
+7	syrofoam	_	Location	_	_	0	_	_	Offset=775-792
+
+# sent_id = s10
+# text = Add in resuspension media -place the tube on its side in syrofoam cut-outs so that it rests at an angle.
+1	Put	_	Action	_	_	0	_	_	Offset=823-829
+2	orbital	_	Device	_	_	0	_	_	Offset=830-844
+3	150	_	Speed	_	_	2	Setting	_	Offset=846-853
+4	cold	_	Location	_	_	0	_	_	Offset=858-867
+5	overnight	_	Time	_	_	0	_	_	Offset=872-881
+6	re-suspension	_	Method	_	_	0	_	_	Offset=882-895
+
+# sent_id = s11
+# text = Put on orbital shaker (150 rpm) in cold room for overnight re-suspension.
+1	Combine	_	Action	_	_	0	_	_	Offset=897-904
+2	resuspended	_	Modifier	_	_	3	Mod-Link	_	Offset=905-916
+3	PEG	_	Reagent	_	_	0	_	_	Offset=917-939
+4	single	_	Numerical	_	_	5	Measure	_	Offset=947-953
+5	tube	_	Location	_	_	0	_	_	Offset=954-958
+
+# sent_id = s12
+# text = Combine resuspended PEG concentrated phage into a single tube (now ready for layering onto a CsCl gradient).
+1	Prepare	_	Action	_	_	0	_	_	Offset=1006-1013
+2	CsCl	_	Reagent	_	_	0	_	_	Offset=1016-1034
+3	1.3,	_	Generic-Measure	_	_	2	Measure	_	Offset=1036-1061
+4	ultracentrifuge	_	Location	_	_	0	_	_	Offset=1066-1087
+
+# sent_id = s13
+# text = Prepare a CsCl step gradient (1.3, 1.4, 1.5, 1.65 bands) in ultracentrifuge tubes.  
+1	Add	_	Action	_	_	0	_	_	Offset=1091-1094
+2	concentrated	_	Modifier	_	_	3	Mod-Link	_	Offset=1095-1107
+3	phage	_	Reagent	_	_	0	_	_	Offset=1108-1120
+4	top	_	Location	_	_	0	_	_	Offset=1124-1127
+
+# sent_id = s14
+# text = Add concentrated phage sample at top.
+1	Spin	_	Action	_	_	0	_	_	Offset=1129-1133
+2	28,000	_	Speed	_	_	5	Setting	_	Offset=1134-1144
+3	4	_	Time	_	_	5	Setting	_	Offset=1149-1156
+4	4°C	_	Temperature	_	_	5	Setting	_	Offset=1160-1163
+5	SW28	_	Device	_	_	0	_	_	Offset=1167-1193
+
+# sent_id = s15
+# text = Spin 28,000 rpm for 4 hours at 4°C in SW28 swinging bucket rotor.
+1	Remove	_	Action	_	_	0	_	_	Offset=1195-1201
+2	purified	_	Modifier	_	_	3	Mod-Link	_	Offset=1202-1210
+3	phage	_	Reagent	_	_	0	_	_	Offset=1211-1221
+
+# sent_id = s16
+# text = Remove purified phage band (interface of ρ = 1.4 and 1.5 bands on step gradient). 
+1	Step	_	Action	_	_	0	_	_	Offset=1278-1290
+2	Slide-A-Lyzer	_	Device	_	_	0	_	_	Offset=1294-1326
+3	30	_	Time	_	_	2	Setting	_	Offset=1374-1384
+4	5xNaCl	_	Reagent	_	_	0	_	_	Offset=1393-1399
+5	3xNaCl	_	Reagent	_	_	0	_	_	Offset=1406-1412
+6	1xNaCl	_	Reagent	_	_	8	Meronym	10:Meronym|13:Meronym	Offset=1436-1449
+7	600	_	Concentration	_	_	8	Measure	_	Offset=1460-1466
+8	NaCl	_	Reagent	_	_	0	_	_	Offset=1467-1471
+9	100	_	Concentration	_	_	10	Measure	_	Offset=1473-1479
+10	TrisHCL	_	Reagent	_	_	0	_	_	Offset=1480-1487
+11	pH	_	pH	_	_	10	Measure	_	Offset=1489-1497
+12	100	_	Concentration	_	_	13	Measure	_	Offset=1500-1506
+13	MgCl2	_	Reagent	_	_	0	_	_	Offset=1507-1512
+
+# sent_id = s17
+# text = Step dialyze in Slide-A-Lyzer dialysis cassettes (Pierce #66425; 10K MWCO, 0.5-3.0 ml volume) - 30 minutes against 5xNaCl (3M), 3xNaCl (1.8M), two changes of 1xNaCl buffer [MTM100 = 600 mM NaCl, 100 mM TrisHCL (pH = 7.5), 100 mM MgCl2].  
+1	Store	_	Action	_	_	0	_	_	Offset=1517-1522
+2	dialyzed	_	Modifier	_	_	3	Mod-Link	_	Offset=1523-1531
+3	particles	_	Reagent	_	_	0	_	_	Offset=1532-1541
+4	4°C	_	Temperature	_	_	0	_	_	Offset=1545-1548
+
+# sent_id = s18
+# text = Store dialyzed particles at 4°C until needed. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=1564-1572
+2	1	_	Time	_	_	0	_	_	Offset=1577-1583
+3	room	_	Temperature	_	_	0	_	_	Offset=1587-1603
+
+# sent_id = s19
+# text = Incubate for 1 hour at room temperature. 
+1	Add	_	Action	_	_	0	_	_	Offset=1606-1609
+2	116g	_	Amount	_	_	3	Measure	_	Offset=1610-1614
+3	NaCl	_	Reagent	_	_	0	_	_	Offset=1615-1619
+4	lysate	_	Reagent	_	_	0	_	_	Offset=1633-1639
+
+# sent_id = s20
+# text = Add 116g NaCl per Liter of lysate (thus 2M addition + seawater yields final concentration ~2.6M).
+1	Incubate	_	Action	_	_	0	_	_	Offset=1704-1712
+2	ice	_	Location	_	_	0	_	_	Offset=1716-1719
+3	30	_	Time	_	_	0	_	_	Offset=1720-1730
+

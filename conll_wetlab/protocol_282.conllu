@@ -1,0 +1,119 @@
+# sent_id = s1
+# text = 4% / 10% Stacking and Separating Protein Gel
+1	15	_	Amount	_	_	2	Measure	_	Offset=52-57
+2	centrifuge	_	Location	_	_	0	_	_	Offset=58-73
+3	add	_	Action	_	_	0	_	_	Offset=75-78
+4	5	_	Amount	_	_	6	Measure	_	Offset=79-83
+5	2x	_	Concentration	_	_	6	Measure	_	Offset=84-86
+6	Separating	_	Reagent	_	_	0	_	_	Offset=87-108
+
+# sent_id = s2
+# text = Into a 15 mL centrifuge tube, add 5 mL 2x Separating Gel Buffer. 
+1	Add	_	Action	_	_	0	_	_	Offset=111-114
+2	2.5	_	Amount	_	_	4	Measure	_	Offset=115-121
+3	40%	_	Concentration	_	_	4	Measure	_	Offset=122-125
+4	Acrylamide/bis-acrylamide	_	Reagent	_	_	0	_	_	Offset=126-151
+
+# sent_id = s3
+# text = Add 2.5 mL 40% Acrylamide/bis-acrylamide (29:1). 
+1	Add	_	Action	_	_	0	_	_	Offset=161-164
+2	2.5	_	Amount	_	_	3	Measure	_	Offset=165-171
+3	DI	_	Reagent	_	_	0	_	_	Offset=172-178
+4	50	_	Amount	_	_	6	Measure	_	Offset=179-184
+5	10%	_	Concentration	_	_	6	Measure	_	Offset=185-188
+6	Ammonium	_	Reagent	_	_	0	_	_	Offset=189-208
+
+# sent_id = s4
+# text = Add 2.5 mL DI H2O 50 uL 10% Ammonium persulfate. 
+1	Add	_	Action	_	_	0	_	_	Offset=211-214
+2	5	_	Amount	_	_	3	Measure	_	Offset=215-219
+3	TEMED	_	Reagent	_	_	0	_	_	Offset=220-225
+4	invert	_	Action	_	_	0	_	_	Offset=232-238
+5	tube	_	Location	_	_	0	_	_	Offset=239-243
+6	several	_	Numerical	_	_	0	_	_	Offset=244-251
+7	properly	_	Modifier	_	_	0	_	_	Offset=261-269
+8	mix	_	Action	_	_	0	_	_	Offset=270-273
+9	all	_	Reagent	_	_	0	_	_	Offset=274-288
+10	initiate	_	Action	_	_	0	_	_	Offset=293-301
+11	polymerization	_	Method	_	_	0	_	_	Offset=306-328
+
+# sent_id = s5
+# text = Add 5 uL TEMED, then invert tube several times to properly mix all components and initiate the polymerization process.
+1	Pipette	_	Action	_	_	0	_	_	Offset=330-337
+2	1	_	Amount	_	_	5	Measure	_	Offset=338-342
+3	at	_	Modifier	_	_	0	_	_	Offset=343-352
+4	10%	_	Concentration	_	_	5	Measure	_	Offset=360-363
+5	separating	_	Reagent	_	_	0	_	_	Offset=364-386
+
+# sent_id = s6
+# text = Pipette 1 mL at a time of the 10% separating gel mixture between the two pieces of glass until you are about 75% of the way full.
+1	Add	_	Action	_	_	0	_	_	Offset=460-463
+2	miniature	_	Amount	_	_	3	Measure	_	Offset=466-482
+3	isopropyl	_	Reagent	_	_	0	_	_	Offset=486-503
+4	top	_	Location	_	_	0	_	_	Offset=507-510
+5	separating	_	Reagent	_	_	4	Meronym	_	Offset=519-533
+
+# sent_id = s7
+# text = Add a miniature amount of isopropyl alcohol on top of your separating gel so that it levels off (less than 50 uL), then wait for the gel to polymerize.
+1	15	_	Amount	_	_	2	Measure	_	Offset=830-835
+2	centrifuge	_	Location	_	_	0	_	_	Offset=836-851
+3	add	_	Action	_	_	0	_	_	Offset=853-856
+4	2	_	Amount	_	_	6	Measure	_	Offset=857-861
+5	2x	_	Concentration	_	_	6	Measure	_	Offset=865-867
+6	stacking	_	Reagent	_	_	0	_	_	Offset=868-887
+
+# sent_id = s8
+# text = You will know it has polymerized as you should have some left in your centrifuge tube.
+1	Add	_	Action	_	_	0	_	_	Offset=889-892
+2	0.4	_	Amount	_	_	4	Measure	_	Offset=893-899
+3	40%	_	Concentration	_	_	4	Measure	_	Offset=900-903
+4	acrylamide/bis-acrylamide	_	Reagent	_	_	0	_	_	Offset=904-929
+
+# sent_id = s9
+# text = If you invert your centrifuge tube and the solution stays stuck on the bottom, then the gel has successfully polyermized.
+1	Add	_	Action	_	_	0	_	_	Offset=939-942
+2	1.6	_	Amount	_	_	3	Measure	_	Offset=943-949
+3	H2O	_	Reagent	_	_	0	_	_	Offset=950-953
+4	Add	_	Action	_	_	0	_	_	Offset=954-957
+5	20	_	Amount	_	_	7	Measure	_	Offset=958-963
+6	10%	_	Concentration	_	_	7	Measure	_	Offset=964-967
+7	Ammonium	_	Reagent	_	_	0	_	_	Offset=968-987
+
+# sent_id = s10
+# text = To a new 15 mL centrifuge tube, add 2 mL of 2x stacking gel buffer.
+1	Add	_	Action	_	_	0	_	_	Offset=990-993
+2	4	_	Amount	_	_	3	Measure	_	Offset=994-998
+3	TEMED	_	Reagent	_	_	0	_	_	Offset=999-1004
+4	invert	_	Action	_	_	0	_	_	Offset=1009-1015
+5	tube	_	Location	_	_	0	_	_	Offset=1016-1020
+6	properly	_	Modifier	_	_	0	_	_	Offset=1024-1032
+7	mix	_	Action	_	_	0	_	_	Offset=1033-1036
+8	initiate	_	Action	_	_	0	_	_	Offset=1041-1049
+9	polymerization	_	Method	_	_	0	_	_	Offset=1050-1064
+
+# sent_id = s11
+# text = Add 0.4 mL 40% acrylamide/bis-acrylamide (29:1). 
+1	paper	_	Device	_	_	0	_	_	Offset=1072-1083
+2	remove	_	Action	_	_	0	_	_	Offset=1087-1093
+3	any	_	Modifier	_	_	5	Mod-Link	_	Offset=1094-1097
+4	leftover	_	Modifier	_	_	5	Mod-Link	_	Offset=1098-1106
+5	isopropanol	_	Reagent	_	_	0	_	_	Offset=1107-1118
+6	fill	_	Action	_	_	0	_	_	Offset=1125-1129
+7	gel	_	Reagent	_	_	0	_	_	Offset=1134-1137
+8	pipetting	_	Action	_	_	0	_	_	Offset=1164-1173
+9	1	_	Amount	_	_	11	Measure	_	Offset=1177-1181
+10	4%	_	Concentration	_	_	11	Measure	_	Offset=1189-1191
+11	stacking	_	Reagent	_	_	0	_	_	Offset=1192-1204
+12	place	_	Action	_	_	0	_	_	Offset=1258-1263
+13	comb	_	Device	_	_	0	_	_	Offset=1268-1272
+
+# sent_id = s12
+# text = Add 1.6 mL H2O Add 20 uL 10% Ammonium Persulfate. 
+1	Let	_	Action	_	_	0	_	_	Offset=1319-1322
+2	polymerize	_	Method	_	_	0	_	_	Offset=1323-1333
+3	store	_	Action	_	_	0	_	_	Offset=1354-1367
+4	wet	_	Modifier	_	_	5	Mod-Link	_	Offset=1373-1376
+5	paper	_	Seal	_	_	0	_	_	Offset=1377-1388
+6	plastic	_	Seal	_	_	0	_	_	Offset=1393-1400
+7	4	_	Temperature	_	_	0	_	_	Offset=1404-1407
+

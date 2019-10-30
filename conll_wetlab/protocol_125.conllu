@@ -1,0 +1,55 @@
+# sent_id = s1
+# text = Whole protein extraction from tissues
+1	Pre-cool	_	Action	_	_	0	_	_	Offset=38-46
+2	ysis	_	Reagent	_	_	0	_	_	Offset=48-59
+3	ice	_	Location	_	_	0	_	_	Offset=63-66
+
+# sent_id = s2
+# text = Pre-cool lysis buffer on ice.
+1	Add	_	Action	_	_	0	_	_	Offset=68-71
+2	protease	_	Reagent	_	_	0	_	_	Offset=72-91
+
+# sent_id = s3
+# text = Add protease inhibitors just before using.
+1	Add	_	Action	_	_	0	_	_	Offset=111-114
+2	10	_	Reagent	_	_	0	_	_	Offset=115-135
+3	tissues	_	Location	_	_	0	_	_	Offset=139-146
+
+# sent_id = s4
+# text = Add 10 fold lysis buffer to tissues (1ml lysis buffer / 100mg tissue).
+1	Homogenize	_	Action	_	_	0	_	_	Offset=182-192
+2	tissues	_	Reagent	_	_	0	_	_	Offset=193-200
+3	dispenser	_	Device	_	_	0	_	_	Offset=206-215
+
+# sent_id = s5
+# text = Homogenize tissues with dispenser ( working time 10s / rest time 20s, repeat 5 times) until no visible tissue blocks.
+1	Mix	_	Action	_	_	0	_	_	Offset=300-303
+2	samples	_	Reagent	_	_	0	_	_	Offset=304-311
+3	rotating	_	Device	_	_	0	_	_	Offset=317-331
+4	4	_	Temperature	_	_	0	_	_	Offset=335-340
+5	2h	_	Time	_	_	0	_	_	Offset=344-346
+
+# sent_id = s6
+# text = Mix samples on a rotating mixer at 4 °C for 2h.
+1	Spin	_	Action	_	_	0	_	_	Offset=348-352
+2	16,000g	_	Speed	_	_	0	_	_	Offset=355-362
+3	10min	_	Time	_	_	0	_	_	Offset=364-369
+4	4°C	_	Temperature	_	_	0	_	_	Offset=371-374
+
+# sent_id = s7
+# text = Spin @ 16,000g, 10min, 4°C.
+1	Save	_	Action	_	_	0	_	_	Offset=408-412
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=413-424
+
+# sent_id = s8
+# text = If necessary, centrifuge again.
+1	Determine	_	Action	_	_	0	_	_	Offset=426-435
+2	protein	_	Reagent	_	_	0	_	_	Offset=436-448
+
+# sent_id = s9
+# text = Save supernatant.
+1	Make	_	Action	_	_	0	_	_	Offset=450-454
+2	aliquots	_	Reagent	_	_	0	_	_	Offset=455-463
+3	store	_	Action	_	_	0	_	_	Offset=468-473
+4	-80°C	_	Temperature	_	_	0	_	_	Offset=477-482
+

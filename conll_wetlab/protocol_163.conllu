@@ -1,0 +1,202 @@
+# sent_id = s1
+# text = XIT™ Genomic DNA Blood Kit Protocol for Isolation of Genomic DNA (for 5ml blood)
+1	Invert	_	Action	_	_	0	_	_	Offset=81-87
+2	tube	_	Location	_	_	0	_	_	Offset=92-96
+3	mix	_	Action	_	_	0	_	_	Offset=100-103
+4	incubate	_	Action	_	_	0	_	_	Offset=108-116
+5	2‐3	_	Time	_	_	0	_	_	Offset=117-128
+6	room	_	Temperature	_	_	0	_	_	Offset=132-148
+
+# sent_id = s2
+# text = Invert the tube to mix and incubate 2‐3 minutes at room temperature.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=150-160
+2	2,000xg	_	Speed	_	_	0	_	_	Offset=161-168
+3	5	_	Time	_	_	0	_	_	Offset=173-182
+4	remove	_	Action	_	_	0	_	_	Offset=188-194
+5	supernatant	_	Reagent	_	_	0	_	_	Offset=195-206
+6	carefully	_	Modifier	_	_	0	_	_	Offset=207-216
+7	without	_	Action	_	_	0	_	_	Offset=217-235
+8	pellet	_	Reagent	_	_	0	_	_	Offset=240-246
+
+# sent_id = s3
+# text = Centrifuge 2,000xg for 5 minutes then remove supernatant carefully without disturbing the pellet.
+1	Add	_	Action	_	_	0	_	_	Offset=248-251
+2	10ml	_	Amount	_	_	3	Measure	_	Offset=252-256
+3	RBC	_	Reagent	_	_	0	_	_	Offset=260-276
+4	pellet	_	Reagent	_	_	0	_	_	Offset=284-290
+5	mix	_	Action	_	_	0	_	_	Offset=295-298
+
+# sent_id = s4
+# text = Add 10ml of RBC Lysis Buffer to the pellet and mix.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=300-310
+2	2,000xg	_	Speed	_	_	0	_	_	Offset=311-318
+3	5	_	Time	_	_	0	_	_	Offset=323-332
+4	remove	_	Action	_	_	0	_	_	Offset=338-344
+5	supernatant	_	Reagent	_	_	0	_	_	Offset=345-356
+
+# sent_id = s5
+# text = Centrifuge 2,000xg for 5 minutes then remove supernatant.
+1	Repeat	_	Action	_	_	0	_	_	Offset=358-364
+2	steps	_	Method	_	_	0	_	_	Offset=365-378
+3	pellet	_	Reagent	_	_	0	_	_	Offset=382-388
+4	white	_	Action	_	_	0	_	_	Offset=396-401
+
+# sent_id = s6
+# text = Repeat steps 4 and 5 if pellet is not white.
+1	Vortex	_	Action	_	_	0	_	_	Offset=403-409
+2	tube	_	Location	_	_	4	Meronym	5:Meronym	Offset=414-418
+3	resuspend	_	Action	_	_	0	_	_	Offset=422-431
+4	cells	_	Reagent	_	_	0	_	_	Offset=436-441
+5	residual	_	Reagent	_	_	0	_	_	Offset=449-464
+
+# sent_id = s7
+# text = Vortex the tube to resuspend the cells in the residual liquid.
+1	Add	_	Action	_	_	0	_	_	Offset=466-469
+2	4ml	_	Amount	_	_	3	Measure	_	Offset=470-473
+3	XIT™	_	Reagent	_	_	0	_	_	Offset=477-494
+4	resuspended	_	Modifier	_	_	5	Mod-Link	_	Offset=502-513
+5	cells	_	Reagent	_	_	9	Coreference-Link	_	Offset=514-519
+6	vortex	_	Action	_	_	0	_	_	Offset=524-530
+7	vigorously	_	Modifier	_	_	0	_	_	Offset=531-541
+8	lyse	_	Action	_	_	0	_	_	Offset=545-549
+9	cells	_	Mention	_	_	0	_	_	Offset=554-559
+
+# sent_id = s8
+# text = Add 4ml of XIT™ Lysis Buffer to the resuspended cells and vortex vigorously to lyse the cells.
+1	incubate	_	Action	_	_	0	_	_	Offset=646-654
+2	37°C	_	Temperature	_	_	0	_	_	Offset=658-662
+3	5‐10	_	Time	_	_	0	_	_	Offset=667-679
+4	solution	_	Reagent	_	_	0	_	_	Offset=693-701
+5	homogenous	_	Action	_	_	0	_	_	Offset=705-715
+
+# sent_id = s9
+# text = Usually no incubation is required; however, if cell clumps are visible after mixing, incubate at 37°C for 5‐10 minutes or until the solution is homogenous.
+1	Add	_	Action	_	_	0	_	_	Offset=717-720
+2	900µl	_	Amount	_	_	3	Measure	_	Offset=721-726
+3	XIT™	_	Reagent	_	_	0	_	_	Offset=727-760
+4	sample	_	Reagent	_	_	0	_	_	Offset=768-774
+5	mix	_	Action	_	_	0	_	_	Offset=779-782
+6	inverting	_	Action	_	_	0	_	_	Offset=786-795
+7	tube	_	Location	_	_	0	_	_	Offset=800-804
+8	10‐20	_	Time	_	_	0	_	_	Offset=805-816
+
+# sent_id = s10
+# text = Add 900µl XIT™ Protein Precipitation Buffer to the sample and mix by inverting the tube 10‐20 times.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=818-828
+2	2,000g	_	Speed	_	_	0	_	_	Offset=832-838
+3	5	_	Time	_	_	0	_	_	Offset=843-852
+
+# sent_id = s11
+# text = Centrifuge at 2,000g for 5 minutes.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=854-863
+2	transfer	_	Action	_	_	0	_	_	Offset=865-873
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=878-889
+4	new	_	Modifier	_	_	5	Mod-Link	_	Offset=895-898
+5	tube	_	Location	_	_	0	_	_	Offset=899-903
+
+# sent_id = s12
+# text = Carefully, transfer the supernatant to a new tube.
+1	Add	_	Action	_	_	0	_	_	Offset=905-908
+2	4ml	_	Amount	_	_	3	Measure	_	Offset=909-912
+3	isopropanol	_	Reagent	_	_	0	_	_	Offset=913-924
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=932-943
+5	mix	_	Action	_	_	0	_	_	Offset=948-951
+6	gently	_	Modifier	_	_	0	_	_	Offset=955-961
+7	inverting	_	Action	_	_	0	_	_	Offset=962-971
+8	sample	_	Reagent	_	_	4	Meronym	_	Offset=976-982
+9	20‐25	_	Time	_	_	0	_	_	Offset=992-1003
+
+# sent_id = s13
+# text = Add 4ml isopropanol to the supernatant and mix by gently inverting the sample at least 20‐25 times.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1005-1015
+2	2,000g	_	Speed	_	_	0	_	_	Offset=1019-1025
+3	5	_	Time	_	_	0	_	_	Offset=1030-1039
+
+# sent_id = s14
+# text = Centrifuge at 2,000g for 5 minutes.
+1	Discard	_	Action	_	_	0	_	_	Offset=1041-1048
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1053-1064
+3	pipette	_	Device	_	_	0	_	_	Offset=1075-1082
+4	carefully	_	Modifier	_	_	0	_	_	Offset=1086-1095
+5	remove	_	Action	_	_	0	_	_	Offset=1096-1102
+6	remaining	_	Reagent	_	_	0	_	_	Offset=1103-1119
+7	without	_	Action	_	_	0	_	_	Offset=1120-1138
+8	DNA	_	Reagent	_	_	0	_	_	Offset=1143-1153
+
+# sent_id = s15
+# text = Discard the supernatant and use a pipette to carefully remove remaining liquid without disturbing the DNA pellet.
+1	Add	_	Action	_	_	0	_	_	Offset=1155-1158
+2	2ml	_	Amount	_	_	4	Measure	_	Offset=1159-1162
+3	70%	_	Concentration	_	_	4	Measure	_	Offset=1163-1166
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=1167-1174
+5	invert	_	Action	_	_	0	_	_	Offset=1179-1185
+6	tube	_	Location	_	_	0	_	_	Offset=1190-1194
+7	twice	_	Time	_	_	0	_	_	Offset=1195-1200
+8	wash	_	Action	_	_	0	_	_	Offset=1204-1208
+9	pellet	_	Reagent	_	_	0	_	_	Offset=1213-1219
+
+# sent_id = s16
+# text = Add 2ml 70% ethanol and invert the tube twice to wash the pellet.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1221-1231
+2	2,000g	_	Speed	_	_	0	_	_	Offset=1235-1241
+3	3	_	Time	_	_	0	_	_	Offset=1246-1255
+
+# sent_id = s17
+# text = Centrifuge at 2,000g for 3 minutes.
+1	Discard	_	Action	_	_	0	_	_	Offset=1257-1264
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1269-1280
+3	drain	_	Action	_	_	0	_	_	Offset=1285-1290
+4	tube	_	Location	_	_	0	_	_	Offset=1295-1299
+5	a	_	Amount	_	_	8	Measure	_	Offset=1303-1310
+6	clean	_	Modifier	_	_	8	Mod-Link	_	Offset=1314-1319
+7	absorbent	_	Modifier	_	_	8	Mod-Link	_	Offset=1320-1329
+8	paper	_	Reagent	_	_	0	_	_	Offset=1330-1335
+
+# sent_id = s18
+# text = Discard the supernatant and drain the tube on a piece of clean absorbent paper.
+1	air	_	Action	_	_	0	_	_	Offset=1346-1353
+2	15	_	Time	_	_	0	_	_	Offset=1358-1368
+
+# sent_id = s19
+# text = Allow to air dry for 15 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=1370-1373
+2	500µl	_	Amount	_	_	3	Measure	_	Offset=1374-1379
+3	TE	_	Reagent	_	_	0	_	_	Offset=1380-1389
+4	dissolve	_	Action	_	_	0	_	_	Offset=1393-1401
+5	DNA	_	Reagent	_	_	0	_	_	Offset=1406-1409
+
+# sent_id = s20
+# text = Add 500µl TE buffer to dissolve the DNA.
+1	Rehydrate	_	Action	_	_	0	_	_	Offset=1411-1420
+2	genomic	_	Reagent	_	_	0	_	_	Offset=1425-1436
+3	incubating	_	Action	_	_	0	_	_	Offset=1440-1450
+4	55‐65°C	_	Temperature	_	_	0	_	_	Offset=1454-1461
+5	one	_	Time	_	_	0	_	_	Offset=1466-1474
+
+# sent_id = s21
+# text = Rehydrate the genomic DNA by incubating at 55‐65°C for one hour.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1476-1484
+2	overnight	_	Time	_	_	0	_	_	Offset=1485-1494
+3	room	_	Temperature	_	_	0	_	_	Offset=1498-1514
+4	genomic	_	Reagent	_	_	0	_	_	Offset=1534-1545
+5	hydration	_	Action	_	_	0	_	_	Offset=1546-1555
+
+# sent_id = s22
+# text = Incubate overnight at room temperature to ensure complete genomic DNA hydration.
+1	Store	_	Action	_	_	0	_	_	Offset=1557-1562
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1563-1566
+3	4°C	_	Temperature	_	_	0	_	_	Offset=1570-1573
+4	store	_	Action	_	_	0	_	_	Offset=1597-1602
+5	‐20	_	Temperature	_	_	0	_	_	Offset=1606-1609
+6	‐80°C	_	Temperature	_	_	5	Or	_	Offset=1613-1618
+
+# sent_id = s23
+# text = Store DNA at 4°C, for long term storage store at ‐20 or ‐80°C.
+1	Add	_	Action	_	_	0	_	_	Offset=1620-1623
+2	5ml	_	Amount	_	_	3	Measure	_	Offset=1624-1627
+3	whole	_	Reagent	_	_	0	_	_	Offset=1628-1639
+4	15ml	_	Size	_	_	5	Measure	_	Offset=1645-1649
+5	centrifuge	_	Location	_	_	7	Meronym	_	Offset=1650-1665
+6	5ml	_	Amount	_	_	7	Measure	_	Offset=1677-1680
+7	RBC	_	Reagent	_	_	0	_	_	Offset=1681-1697
+

@@ -1,0 +1,91 @@
+# sent_id = s1
+# text = Protocol for  transfection of H4, (ATCC®: HTB-148) Cells by FuGENE HD in 96 well plates.
+1	Add	_	Action	_	_	0	_	_	Offset=625-628
+2	6	_	Amount	_	_	3	Measure	_	Offset=629-633
+3	reagent	_	Reagent	_	_	0	_	_	Offset=637-644
+4	100	_	Amount	_	_	5	Measure	_	Offset=648-654
+5	DNA	_	Reagent	_	_	0	_	_	Offset=658-670
+
+# sent_id = s2
+# text = Cell plating H4 (neuroglioma) cells were seeded from 90-100% confluent culture the day before transfection with the density 7,000 cells/well in 100μl complete growth medium (DMEM + 10% Fetal Bovine Serum).
+1	Mix	_	Action	_	_	0	_	_	Offset=672-675
+2	carefully	_	Modifier	_	_	0	_	_	Offset=676-685
+3	pipetting	_	Device	_	_	0	_	_	Offset=689-698
+4	15	_	Numerical	_	_	0	_	_	Offset=700-702
+
+# sent_id = s3
+# text = For transfection in 100% Fetal Bovine Serum the complete growth medium was replaced with Fetal Bovine Serum two hours before transfection.
+1	Incubate	_	Action	_	_	0	_	_	Offset=711-719
+2	10	_	Time	_	_	0	_	_	Offset=720-726
+3	room	_	Temperature	_	_	0	_	_	Offset=730-746
+
+# sent_id = s4
+# text = Complex preparation (per 20 wells).
+1	Add	_	Action	_	_	0	_	_	Offset=748-751
+2	5	_	Amount	_	_	3	Measure	_	Offset=752-756
+3	complex	_	Reagent	_	_	0	_	_	Offset=760-767
+4	well	_	Location	_	_	3	Meronym	_	Offset=772-776
+5	cells	_	Reagent	_	_	0	_	_	Offset=784-789
+6	mix	_	Action	_	_	0	_	_	Offset=795-798
+7	thoroughly	_	Modifier	_	_	0	_	_	Offset=799-809
+
+# sent_id = s5
+# text = Tissue culture 96-round bottom well plates were used for complex preparation: Prepare 0.02μg/μl pCMVβ DNA solution in OptiMEM® or sterile deionized water.
+1	Incubate	_	Action	_	_	0	_	_	Offset=823-831
+2	transfected	_	Reagent	_	_	0	_	_	Offset=832-849
+3	CO2	_	Device	_	_	0	_	_	Offset=853-866
+4	48	_	Time	_	_	0	_	_	Offset=871-879
+
+# sent_id = s6
+# text = Add 6 μl of reagent to 100 μl of DNA solution.
+1	Remove	_	Action	_	_	0	_	_	Offset=912-918
+2	medium	_	Reagent	_	_	0	_	_	Offset=923-929
+3	well	_	Location	_	_	0	_	_	Offset=939-943
+4	wash	_	Action	_	_	0	_	_	Offset=948-952
+5	cells	_	Reagent	_	_	0	_	_	Offset=957-962
+6	once	_	Numerical	_	_	0	_	_	Offset=963-967
+7	100μl	_	Amount	_	_	8	Measure	_	Offset=973-978
+8	well	_	Reagent	_	_	0	_	_	Offset=983-991
+
+# sent_id = s7
+# text = Mix carefully by pipetting (15 times).
+1	Fix	_	Action	_	_	0	_	_	Offset=993-996
+2	cells	_	Reagent	_	_	0	_	_	Offset=1001-1006
+3	well	_	Location	_	_	0	_	_	Offset=1014-1018
+4	50μl	_	Amount	_	_	5	Measure	_	Offset=1024-1028
+5	solution	_	Reagent	_	_	0	_	_	Offset=1029-1037
+6	4%	_	Concentration	_	_	7	Measure	_	Offset=1041-1043
+7	formaldehyde	_	Reagent	_	_	5	Meronym	_	Offset=1044-1056
+8	PBS	_	Reagent	_	_	7	Meronym	_	Offset=1060-1063
+9	5min	_	Time	_	_	0	_	_	Offset=1068-1072
+10	room	_	Temperature	_	_	0	_	_	Offset=1076-1092
+
+# sent_id = s8
+# text = Incubate 10 min at room temperature.
+1	Wash	_	Action	_	_	0	_	_	Offset=1094-1098
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=1099-1103
+3	well	_	Location	_	_	0	_	_	Offset=1104-1108
+4	twice	_	Numerical	_	_	0	_	_	Offset=1109-1114
+5	100μl	_	Amount	_	_	6	Measure	_	Offset=1120-1125
+6	PBS	_	Reagent	_	_	0	_	_	Offset=1126-1129
+
+# sent_id = s9
+# text = Add 5 μl of complex per well to the cells, and mix thoroughly.
+1	Add	_	Action	_	_	0	_	_	Offset=1131-1134
+2	50μl	_	Amount	_	_	0	_	_	Offset=1135-1139
+3	per	_	Modifier	_	_	4	Mod-Link	_	Offset=1140-1143
+4	well	_	Location	_	_	0	_	_	Offset=1144-1148
+5	substrate/stain	_	Reagent	_	_	4	Meronym	_	Offset=1152-1176
+6	incubate	_	Action	_	_	0	_	_	Offset=1181-1189
+7	plate	_	Location	_	_	0	_	_	Offset=1194-1199
+8	overnight	_	Time	_	_	0	_	_	Offset=1200-1209
+9	37°C	_	Temperature	_	_	0	_	_	Offset=1213-1217
+
+# sent_id = s10
+# text = Incubation.
+1	Observe	_	Action	_	_	0	_	_	Offset=1219-1226
+2	cells	_	Reagent	_	_	0	_	_	Offset=1231-1236
+3	microscope	_	Device	_	_	0	_	_	Offset=1243-1253
+4	evaluate	_	Action	_	_	0	_	_	Offset=1258-1266
+5	proportion	_	Reagent	_	_	0	_	_	Offset=1271-1312
+

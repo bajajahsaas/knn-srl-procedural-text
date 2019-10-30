@@ -1,0 +1,57 @@
+# sent_id = s1
+# text = Checking DNA Concentration with Agarose Gel
+1	Prepare	_	Action	_	_	0	_	_	Offset=44-51
+2	0.7%	_	Concentration	_	_	3	Measure	_	Offset=52-56
+3	agarose	_	Reagent	_	_	0	_	_	Offset=57-64
+
+# sent_id = s2
+# text = Prepare 0.7% agarose. 
+1	Post-stain	_	Action	_	_	0	_	_	Offset=67-77
+2	SYBR	_	Reagent	_	_	0	_	_	Offset=83-92
+
+# sent_id = s3
+# text = Post-stain with SYBR Gold. 
+1	prepare	_	Action	_	_	0	_	_	Offset=121-128
+2	samples	_	Reagent	_	_	0	_	_	Offset=129-136
+3	1µl	_	Amount	_	_	5	Measure	_	Offset=138-141
+4	10x	_	Concentration	_	_	5	Measure	_	Offset=145-148
+5	loading	_	Reagent	_	_	0	_	_	Offset=149-163
+6	10µl	_	Amount	_	_	7	Measure	_	Offset=168-172
+7	sample	_	Reagent	_	_	0	_	_	Offset=176-182
+
+# sent_id = s4
+# text = While the gel is cooling, prepare samples: 1µl of 10x loading buffer per 10µl of sample. 
+1	Prepare	_	Action	_	_	0	_	_	Offset=185-192
+2	appropriate	_	Modifier	_	_	3	Mod-Link	_	Offset=197-208
+3	dilutions	_	Reagent	_	_	0	_	_	Offset=209-218
+4	appropriate	_	Modifier	_	_	5	Mod-Link	_	Offset=226-237
+5	marker	_	Reagent	_	_	0	_	_	Offset=238-244
+
+# sent_id = s5
+# text = Prepare the appropriate dilutions of the appropriate marker (commonly 10ng of HINDIII [lambda] DNA). 
+1	Add	_	Action	_	_	0	_	_	Offset=287-290
+2	running	_	Reagent	_	_	0	_	_	Offset=291-305
+3	cover	_	Reagent	_	_	0	_	_	Offset=309-318
+
+# sent_id = s6
+# text = Add running buffer to cover gel. 
+1	Gently	_	Modifier	_	_	0	_	_	Offset=321-327
+2	rock	_	Action	_	_	0	_	_	Offset=328-332
+
+# sent_id = s7
+# text = Gently rock the comb before pulling it out. 
+1	Run	_	Action	_	_	0	_	_	Offset=366-369
+2	50V	_	Generic-Measure	_	_	0	_	_	Offset=373-376
+3	2-4	_	Time	_	_	0	_	_	Offset=383-392
+
+# sent_id = s8
+# text = Run at 50V about 2-4 hours to get clean band separations. 
+1	Post-stain	_	Action	_	_	0	_	_	Offset=425-435
+2	gel	_	Reagent	_	_	0	_	_	Offset=440-443
+3	SYBR	_	Reagent	_	_	5	Meronym	7:Meronym	Offset=447-463
+4	20ul	_	Amount	_	_	5	Measure	_	Offset=465-469
+5	SYBR	_	Reagent	_	_	0	_	_	Offset=470-474
+6	200ml	_	Amount	_	_	7	Measure	_	Offset=476-481
+7	TAE	_	Reagent	_	_	0	_	_	Offset=482-485
+8	30	_	Time	_	_	0	_	_	Offset=490-500
+

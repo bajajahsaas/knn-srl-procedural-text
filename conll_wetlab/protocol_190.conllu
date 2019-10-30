@@ -1,0 +1,88 @@
+# sent_id = s1
+# text = Prophage induction in marine Synechococcus
+1	Filter	_	Action	_	_	0	_	_	Offset=43-49
+2	sample	_	Reagent	_	_	0	_	_	Offset=55-61
+3	0.2-µm	_	Modifier	_	_	4	Mod-Link	_	Offset=72-78
+4	filter	_	Device	_	_	0	_	_	Offset=79-85
+5	remove	_	Action	_	_	0	_	_	Offset=123-129
+6	ambient	_	Reagent	_	_	0	_	_	Offset=142-157
+
+# sent_id = s2
+# text = Filter each sample through a 0.2-µm filter to a volume of approximately 5 mL to remove most of the ambient viruses.
+1	Add	_	Action	_	_	0	_	_	Offset=159-162
+2	0.02-µm	_	Modifier	_	_	3	Mod-Link	_	Offset=175-191
+3	water	_	Reagent	_	_	0	_	_	Offset=193-198
+4	reduce	_	Action	_	_	0	_	_	Offset=233-239
+
+# sent_id = s3
+# text = Add virus-free (0.02-µm filtered) water prepared from the same sample and reduce the volume a second time.
+1	adding	_	Action	_	_	0	_	_	Offset=313-319
+2	virus-free	_	Reagent	_	_	0	_	_	Offset=320-339
+3	dividing	_	Action	_	_	0	_	_	Offset=341-349
+4	incubating	_	Action	_	_	0	_	_	Offset=369-379
+
+# sent_id = s4
+# text = Return the retentate to its original volume by adding virus-free seawater, dividing into aliquots, and incubating with and without inducing agent.
+1	Amend	_	Action	_	_	0	_	_	Offset=413-418
+2	mitomycin	_	Reagent	_	_	0	_	_	Offset=459-470
+3	1	_	Concentration	_	_	2	Measure	_	Offset=493-500
+
+# sent_id = s5
+# text = Amend treated samples with the inducing agent mitomycin C at a concentration of 1 µg/mL or with the inducing agent of choice.
+1	Employ	_	Action	_	_	0	_	_	Offset=539-545
+2	(MPN)	_	Method	_	_	0	_	_	Offset=571-583
+3	enumerate	_	Action	_	_	0	_	_	Offset=587-596
+4	cyanophage	_	Reagent	_	_	0	_	_	Offset=601-622
+
+# sent_id = s6
+# text = Employ the most probable number (MPN) method to enumerate the cyanophage population (Suttle and Chan 1994).
+1	Prepare	_	Action	_	_	0	_	_	Offset=647-654
+2	one-	_	Amount	_	_	0	_	_	Offset=657-685
+3	induction	_	Reagent	_	_	0	_	_	Offset=719-745
+4	96-well	_	Modifier	_	_	5	Mod-Link	_	Offset=752-770
+5	plates	_	Device	_	_	0	_	_	Offset=771-777
+
+# sent_id = s7
+# text = Prepare a one- to five-dilution series of the environmental or prophage induction treatment sample using 96-well microtiter plates (Costar, Corning Inc.).
+1	dilute	_	Action	_	_	0	_	_	Offset=810-816
+2	Synechococcus	_	Reagent	_	_	0	_	_	Offset=831-849
+3	place	_	Action	_	_	0	_	_	Offset=859-864
+4	well	_	Location	_	_	0	_	_	Offset=873-877
+
+# sent_id = s8
+# text = Freshly dilute a susceptible Synechococcus host 1:10 and place in each well.
+1	Prepare	_	Action	_	_	0	_	_	Offset=879-886
+2	sterile	_	Reagent	_	_	0	_	_	Offset=918-934
+3	first	_	Location	_	_	0	_	_	Offset=942-963
+
+# sent_id = s9
+# text = Prepare control plates similarly using sterile SN media in the first column of wells.
+1	Prepare	_	Action	_	_	0	_	_	Offset=965-972
+2	three	_	Modifier	_	_	3	Mod-Link	_	Offset=973-978
+3	replicate	_	Reagent	_	_	0	_	_	Offset=979-998
+4	control	_	Device	_	_	0	_	_	Offset=1003-1017
+
+# sent_id = s10
+# text = Prepare three replicate treatment and control plates from each site.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1034-1042
+2	plates	_	Device	_	_	0	_	_	Offset=1047-1053
+
+# sent_id = s11
+# text = Incubate the plates until good growth of the host organism is evident (10–14 days).
+1	Score	_	Action	_	_	0	_	_	Offset=1118-1123
+
+# sent_id = s12
+# text = Score wells as positive for virus if lysis of the host organism is evident as a well clearing.
+1	Calculate	_	Action	_	_	0	_	_	Offset=1213-1222
+2	MPN	_	Method	_	_	0	_	_	Offset=1263-1274
+
+# sent_id = s13
+# text = Calculate viral abundance for each plate using an MPN program (Hurley and Roscoe 1983).
+1	Evaluate	_	Action	_	_	0	_	_	Offset=1301-1309
+2	paired	_	Method	_	_	0	_	_	Offset=1371-1384
+
+# sent_id = s14
+# text = Evaluate treatment and control cyanophage and Synechococcus counts by paired t test between samples using Minitab statistical software.
+1	Perform	_	Action	_	_	0	_	_	Offset=1437-1444
+2	linear	_	Method	_	_	0	_	_	Offset=1512-1529
+

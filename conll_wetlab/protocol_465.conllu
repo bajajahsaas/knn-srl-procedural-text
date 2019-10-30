@@ -1,0 +1,109 @@
+# sent_id = s1
+# text = Transform Stratagene's XL-10 Gold Ultracompetent cells (simplified)
+1	Pre-chill	_	Action	_	_	0	_	_	Offset=68-77
+2	14mL	_	Amount	_	_	4	Measure	_	Offset=78-82
+3	sterile	_	Modifier	_	_	4	Mod-Link	_	Offset=83-90
+4	culture	_	Location	_	_	0	_	_	Offset=91-104
+5	ice	_	Location	_	_	0	_	_	Offset=108-111
+
+# sent_id = s2
+# text = Pre-chill 14mL sterile culture tubes on ice. 
+1	Pre-heat	_	Action	_	_	0	_	_	Offset=114-122
+2	0.9mL	_	Amount	_	_	3	Measure	_	Offset=123-128
+3	LB	_	Reagent	_	_	0	_	_	Offset=132-140
+4	42°C	_	Temperature	_	_	0	_	_	Offset=144-148
+
+# sent_id = s3
+# text = Pre-heat 0.9mL of LB broth to 42°C. 
+1	Thaw	_	Action	_	_	0	_	_	Offset=151-155
+2	XL-10	_	Reagent	_	_	0	_	_	Offset=156-187
+3	ice	_	Location	_	_	0	_	_	Offset=191-194
+4	mix	_	Action	_	_	0	_	_	Offset=200-203
+5	gently	_	Modifier	_	_	0	_	_	Offset=204-210
+
+# sent_id = s4
+# text = Thaw XL-10 Gold Ultracompetent cells on ice then mix gently after completely thawed. 
+1	Aliquot	_	Action	_	_	0	_	_	Offset=237-244
+2	cells	_	Reagent	_	_	0	_	_	Offset=245-250
+3	pre-chilled	_	Modifier	_	_	5	Mod-Link	_	Offset=256-267
+4	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=268-275
+5	culture	_	Location	_	_	0	_	_	Offset=276-289
+
+# sent_id = s5
+# text = Aliquot cells into pre-chilled sterile culture tubes. 
+1	Swirl	_	Action	_	_	0	_	_	Offset=292-297
+2	tube	_	Location	_	_	0	_	_	Offset=298-302
+3	gently	_	Modifier	_	_	0	_	_	Offset=303-309
+4	incubate	_	Action	_	_	0	_	_	Offset=315-323
+5	ice	_	Location	_	_	0	_	_	Offset=327-330
+6	10	_	Time	_	_	0	_	_	Offset=335-345
+7	swirling	_	Action	_	_	0	_	_	Offset=346-354
+8	gently	_	Modifier	_	_	0	_	_	Offset=355-361
+9	every	_	Modifier	_	_	10	Mod-Link	_	Offset=362-367
+10	2	_	Time	_	_	0	_	_	Offset=368-377
+
+# sent_id = s6
+# text = Swirl tube gently then incubate on ice for 10 minutes swirling gently every 2 minutes. 
+1	Add	_	Action	_	_	0	_	_	Offset=380-383
+2	0.1-50ng	_	Generic-Measure	_	_	3	Measure	_	Offset=384-392
+3	DNA	_	Reagent	_	_	0	_	_	Offset=396-399
+4	2uL	_	Amount	_	_	5	Measure	_	Offset=403-406
+5	ligation	_	Reagent	_	_	3	Or	_	Offset=410-426
+
+# sent_id = s7
+# text = Add 0.1-50ng of DNA or 2uL of ligation product. 
+1	Swirl	_	Action	_	_	0	_	_	Offset=429-434
+2	gently	_	Modifier	_	_	0	_	_	Offset=435-441
+3	incubate	_	Action	_	_	0	_	_	Offset=447-455
+4	ice	_	Location	_	_	0	_	_	Offset=459-462
+5	30	_	Time	_	_	0	_	_	Offset=467-477
+
+# sent_id = s8
+# text = Swirl gently then incubate on ice for 30 minutes. 
+1	Heat	_	Action	_	_	0	_	_	Offset=480-484
+2	pulse	_	Location	_	_	0	_	_	Offset=485-495
+3	42°C	_	Temperature	_	_	0	_	_	Offset=499-503
+4	exactly	_	Modifier	_	_	5	Mod-Link	_	Offset=508-515
+5	30	_	Time	_	_	0	_	_	Offset=516-526
+
+# sent_id = s9
+# text = Heat pulse tube at 42°C for exactly 30 seconds.
+1	Incubate	_	Action	_	_	0	_	_	Offset=572-580
+2	cells	_	Reagent	_	_	0	_	_	Offset=581-586
+3	ice	_	Location	_	_	0	_	_	Offset=590-593
+4	2	_	Time	_	_	0	_	_	Offset=598-607
+
+# sent_id = s10
+# text = The duration of the heat pulse is critical.
+1	Add	_	Action	_	_	0	_	_	Offset=610-613
+2	0.9mL	_	Amount	_	_	4	Measure	_	Offset=614-619
+3	pre-heated	_	Modifier	_	_	4	Mod-Link	_	Offset=623-633
+4	LB	_	Reagent	_	_	0	_	_	Offset=634-636
+5	each	_	Modifier	_	_	6	Mod-Link	_	Offset=640-644
+6	tube	_	Location	_	_	0	_	_	Offset=645-649
+
+# sent_id = s11
+# text = Incubate cells on ice for 2 minutes. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=652-660
+2	37°C	_	Temperature	_	_	0	_	_	Offset=664-668
+3	1	_	Time	_	_	0	_	_	Offset=673-679
+4	shaking	_	Action	_	_	0	_	_	Offset=685-692
+5	225-250	_	Speed	_	_	0	_	_	Offset=696-707
+
+# sent_id = s12
+# text = Add 0.9mL of pre-heated LB to each tube. 
+1	Plate	_	Action	_	_	0	_	_	Offset=710-715
+2	no	_	Modifier	_	_	3	Mod-Link	_	Offset=716-728
+3	200uL	_	Amount	_	_	4	Measure	_	Offset=729-734
+4	transformation	_	Reagent	_	_	0	_	_	Offset=738-760
+5	per	_	Modifier	_	_	6	Mod-Link	_	Offset=761-764
+6	LB-agar	_	Location	_	_	7	Meronym	_	Offset=765-778
+7	antibiotic	_	Reagent	_	_	0	_	_	Offset=784-804
+
+# sent_id = s13
+# text = Incubate at 37°C for 1 hour with shaking at 225-250 rpm. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=807-815
+2	plates	_	Location	_	_	0	_	_	Offset=816-822
+3	37°C	_	Temperature	_	_	0	_	_	Offset=826-830
+4	overnight	_	Time	_	_	0	_	_	Offset=831-840
+

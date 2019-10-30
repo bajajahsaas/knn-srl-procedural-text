@@ -1,0 +1,51 @@
+# sent_id = s1
+# text = Dephosphorylation using CIP in Restriction Enzyme Reaction (M0290)
+1	Digest	_	Action	_	_	0	_	_	Offset=67-73
+2	1–5	_	Amount	_	_	3	Measure	_	Offset=74-80
+3	plasmid	_	Reagent	_	_	0	_	_	Offset=84-95
+4	20	_	Amount	_	_	5	Measure	_	Offset=101-106
+5	reaction	_	Reagent	_	_	0	_	_	Offset=107-115
+6	DNA	_	Reagent	_	_	0	_	_	Offset=128-131
+7	≥	_	Amount	_	_	6	Measure	_	Offset=132-138
+8	Restriction	_	Reagent	_	_	0	_	_	Offset=140-165
+9	10X	_	Concentration	_	_	8	Measure	_	Offset=167-170
+10	2	_	Amount	_	_	8	Measure	_	Offset=174-178
+11	Restriction	_	Reagent	_	_	0	_	_	Offset=180-204
+12	1	_	Amount	_	_	11	Measure	_	Offset=207-211
+13	H2O	_	Reagent	_	_	0	_	_	Offset=213-216
+14	20	_	Amount	_	_	13	Measure	_	Offset=231-236
+
+# sent_id = s2
+# text = Digest 1–5 μg of plasmid DNA in a 20 μl reaction as follows: DNA ≥ 1 μl; Restriction Enzyme Buffer (10X)   2 μl; Restriction Endonuclease   1 μl; H2O, purified  to 20 μl.
+1	Incubate	_	Action	_	_	0	_	_	Offset=238-246
+2	37°C	_	Temperature	_	_	0	_	_	Offset=250-254
+3	60	_	Time	_	_	0	_	_	Offset=259-269
+4	follow	_	Method	_	_	3	Or	_	Offset=273-310
+
+# sent_id = s3
+# text = Incubate at 37°C for 60 minutes or follow manufacturer’s recommendations.
+1	Add	_	Action	_	_	0	_	_	Offset=312-315
+2	1	_	Amount	_	_	3	Measure	_	Offset=316-322
+3	CIP	_	Reagent	_	_	0	_	_	Offset=326-329
+4	1	_	Amount	_	_	5	Measure	_	Offset=340-346
+5	DNA	_	Reagent	_	_	0	_	_	Offset=350-358
+
+# sent_id = s4
+# text = Add 1 unit of CIP for every 1 pmol of DNA ends (about 1 μg of a 3 kb plasmid).
+1	Incubate	_	Action	_	_	0	_	_	Offset=391-399
+2	37°C	_	Temperature	_	_	0	_	_	Offset=403-407
+3	30–60	_	Time	_	_	0	_	_	Offset=412-425
+
+# sent_id = s5
+# text = Incubate at 37°C for 30–60 minutes.
+1	Purify	_	Action	_	_	0	_	_	Offset=427-433
+2	DNA	_	Reagent	_	_	0	_	_	Offset=434-437
+3	gel	_	Method	_	_	0	_	_	Offset=441-457
+4	spin-column	_	Method	_	_	3	Or	_	Offset=459-470
+5	phenol	_	Method	_	_	4	Or	_	Offset=474-491
+
+# sent_id = s6
+# text = Purify DNA by gel purification, spin-column or phenol extraction.
+1	Proceed	_	Action	_	_	0	_	_	Offset=493-500
+2	ligation	_	Method	_	_	0	_	_	Offset=506-514
+

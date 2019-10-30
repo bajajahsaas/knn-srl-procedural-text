@@ -1,0 +1,20 @@
+# sent_id = s1
+# text = Binding Buffer (3M GuHCl, 3.75M NH4Ac pH 6)
+1	Add	_	Action	_	_	0	_	_	Offset=44-47
+2	57.318g	_	Amount	_	_	3	Measure	_	Offset=48-55
+3	Guanidine	_	Reagent	_	_	0	_	_	Offset=56-79
+4	autoclaved	_	Location	_	_	0	_	_	Offset=86-103
+
+# sent_id = s2
+# text = Add 57.318g Guanidine Hydrochloride to an autoclaved bottle. 
+1	Add	_	Action	_	_	0	_	_	Offset=106-109
+2	50ml	_	Amount	_	_	3	Measure	_	Offset=110-114
+3	MilliQ	_	Reagent	_	_	0	_	_	Offset=115-121
+
+# sent_id = s3
+# text = Add 50ml MilliQ. 
+1	Add	_	Action	_	_	0	_	_	Offset=124-127
+2	50ml	_	Amount	_	_	4	Measure	_	Offset=128-132
+3	7.5M	_	Concentration	_	_	4	Measure	_	Offset=133-137
+4	Ammonium	_	Reagent	_	_	0	_	_	Offset=138-154
+

@@ -1,0 +1,152 @@
+# sent_id = s1
+# text = FASP Kit Protocol-ORNL Developed for Bacteriophage
+1	Prepare	_	Action	_	_	0	_	_	Offset=51-58
+2	Urea/SDS	_	Reagent	_	_	0	_	_	Offset=59-76
+
+# sent_id = s2
+# text = Prepare Urea/SDS Solution.
+1	Transfer	_	Action	_	_	0	_	_	Offset=78-86
+2	Urea	_	Reagent	_	_	0	_	_	Offset=87-100
+3	sample	_	Reagent	_	_	0	_	_	Offset=103-109
+4	spin	_	Device	_	_	0	_	_	Offset=113-124
+
+# sent_id = s3
+# text = Transfer Urea solution + sample to spin filter.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=126-136
+2	14,000	_	Speed	_	_	0	_	_	Offset=140-150
+3	15	_	Time	_	_	0	_	_	Offset=155-161
+
+# sent_id = s4
+# text = Centrifuge at 14,000 x g for 15 min.
+1	Add	_	Action	_	_	0	_	_	Offset=163-166
+2	200µL	_	Amount	_	_	3	Measure	_	Offset=167-172
+3	Urea	_	Reagent	_	_	0	_	_	Offset=179-192
+
+# sent_id = s5
+# text = Add 200µL fresh Urea solution (no DTT, no SDS).
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=211-221
+2	14,000	_	Speed	_	_	0	_	_	Offset=225-235
+3	15	_	Time	_	_	0	_	_	Offset=240-246
+
+# sent_id = s6
+# text = Centrifuge at 14,000 x g for 15 min.
+1	Discard	_	Action	_	_	0	_	_	Offset=248-255
+2	flow­‐through	_	Reagent	_	_	0	_	_	Offset=256-269
+
+# sent_id = s7
+# text = Discard flow­‐through.
+1	Add	_	Action	_	_	0	_	_	Offset=271-274
+2	10µL	_	Amount	_	_	3	Measure	_	Offset=275-279
+3	iodoacetamide	_	Reagent	_	_	0	_	_	Offset=280-302
+4	90µL	_	Amount	_	_	5	Measure	_	Offset=307-311
+5	Urea	_	Reagent	_	_	0	_	_	Offset=312-325
+
+# sent_id = s8
+# text = Add 10µL iodoacetamide solution and 90µL Urea solution (no DTT, no SDS).
+1	Vortex	_	Action	_	_	0	_	_	Offset=344-350
+2	1	_	Time	_	_	0	_	_	Offset=355-360
+3	incubate	_	Action	_	_	0	_	_	Offset=367-375
+4	20	_	Time	_	_	0	_	_	Offset=395-401
+5	dark	_	Method	_	_	0	_	_	Offset=409-413
+
+# sent_id = s9
+# text = Vortex for 1 min, then incubate without mixing for 20 min in the dark.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=415-425
+2	14,000	_	Speed	_	_	0	_	_	Offset=429-439
+3	10	_	Time	_	_	0	_	_	Offset=444-450
+
+# sent_id = s10
+# text = Centrifuge at 14,000 x g for 10 min.
+1	Add	_	Action	_	_	0	_	_	Offset=452-455
+2	100µL	_	Amount	_	_	3	Measure	_	Offset=456-461
+3	Urea	_	Reagent	_	_	0	_	_	Offset=462-475
+
+# sent_id = s11
+# text = Add 100µL Urea solution (no DTT, no SDS).
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=494-504
+2	14,000	_	Speed	_	_	0	_	_	Offset=508-518
+3	15	_	Time	_	_	0	_	_	Offset=523-529
+
+# sent_id = s12
+# text = Centrifuge at 14,000 x g for 15 min.
+1	Discard	_	Action	_	_	0	_	_	Offset=555-562
+2	flow­‐through	_	Reagent	_	_	0	_	_	Offset=563-576
+
+# sent_id = s13
+# text = Repeat this step twice.
+1	Add	_	Action	_	_	0	_	_	Offset=578-581
+2	100µL	_	Amount	_	_	4	Measure	_	Offset=582-587
+3	50mM	_	Concentration	_	_	4	Measure	_	Offset=588-592
+4	ammonium	_	Reagent	_	_	0	_	_	Offset=593-622
+
+# sent_id = s14
+# text = Discard flow­‐through.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=649-659
+2	14,000	_	Speed	_	_	0	_	_	Offset=663-673
+3	15	_	Time	_	_	0	_	_	Offset=678-684
+
+# sent_id = s15
+# text = Add 100µL 50mM ammonium bicarbonate solution (provided with FASP kit).
+1	Transfer	_	Action	_	_	0	_	_	Offset=686-694
+2	filter	_	Device	_	_	0	_	_	Offset=695-701
+3	collection	_	Location	_	_	0	_	_	Offset=709-724
+
+# sent_id = s16
+# text = Centrifuge at 14,000 x g for 15 min.
+1	Add	_	Action	_	_	0	_	_	Offset=726-729
+2	75µL	_	Amount	_	_	3	Measure	_	Offset=730-734
+3	digestion	_	Reagent	_	_	0	_	_	Offset=735-753
+
+# sent_id = s17
+# text = Transfer filter to new collection tube.
+1	Vortex	_	Action	_	_	0	_	_	Offset=755-761
+2	briefly	_	Modifier	_	_	0	_	_	Offset=762-769
+
+# sent_id = s18
+# text = Add 75µL digestion solution.
+1	Incubate	_	Action	_	_	0	_	_	Offset=771-779
+2	37°C	_	Temperature	_	_	0	_	_	Offset=783-787
+3	4	_	Time	_	_	0	_	_	Offset=792-804
+
+# sent_id = s19
+# text = Vortex briefly.
+1	Add	_	Action	_	_	0	_	_	Offset=820-823
+2	40µL	_	Amount	_	_	4	Measure	_	Offset=824-828
+3	50mM	_	Concentration	_	_	4	Measure	_	Offset=829-833
+4	ammonium	_	Reagent	_	_	0	_	_	Offset=834-863
+
+# sent_id = s20
+# text = Incubate at 37°C for 4 – 18 hours (NO ROCKING). 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=865-875
+2	14,000	_	Speed	_	_	0	_	_	Offset=879-889
+3	10	_	Time	_	_	0	_	_	Offset=894-900
+
+# sent_id = s21
+# text = Add 40µL 50mM ammonium bicarbonate solution.
+1	Repeat	_	Action	_	_	0	_	_	Offset=902-908
+
+# sent_id = s22
+# text = Centrifuge at 14,000 x g for 10 min.
+1	Add	_	Action	_	_	0	_	_	Offset=925-928
+2	50µL	_	Amount	_	_	4	Measure	_	Offset=929-933
+3	0.5	_	Concentration	_	_	4	Measure	_	Offset=934-939
+4	sodium	_	Reagent	_	_	0	_	_	Offset=940-964
+
+# sent_id = s23
+# text = Repeat this step once.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=991-1001
+2	14,000	_	Speed	_	_	0	_	_	Offset=1005-1015
+3	10	_	Time	_	_	0	_	_	Offset=1020-1026
+
+# sent_id = s24
+# text = Add 50µL 0.5 M sodium chloride solution (provided with FASP kit).
+1	Add	_	Action	_	_	0	_	_	Offset=1065-1068
+2	170µL	_	Amount	_	_	3	Measure	4:Measure	Offset=1069-1074
+3	H₂O	_	Reagent	_	_	0	_	_	Offset=1076-1079
+4	formic	_	Reagent	_	_	0	_	_	Offset=1082-1093
+
+# sent_id = s25
+# text = Centrifuge at 14,000 x g for 10 min.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=1095-1102
+2	freeze	_	Action	_	_	0	_	_	Offset=1117-1123
+

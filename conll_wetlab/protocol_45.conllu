@@ -1,0 +1,121 @@
+# sent_id = s1
+# text = Fixation of Planktonic Samples
+1	Add	_	Action	_	_	0	_	_	Offset=31-34
+2	freshly	_	Modifier	_	_	3	Mod-Link	_	Offset=35-51
+3	PFA	_	Reagent	_	_	0	_	_	Offset=52-64
+4	water	_	Reagent	_	_	0	_	_	Offset=107-119
+5	final	_	Reagent	_	_	0	_	_	Offset=125-144
+6	1-2%	_	Concentration	_	_	5	Measure	_	Offset=148-152
+7	Formaldehyde	_	Reagent	_	_	4	Or	_	Offset=172-184
+8	fix	_	Action	_	_	0	_	_	Offset=190-193
+9	12-24	_	Time	_	_	0	_	_	Offset=198-209
+10	4°C	_	Temperature	_	_	0	_	_	Offset=213-216
+
+# sent_id = s2
+# text = Add freshly prepared PFA fixative (see 'Fixing Cells with PFA Protocol') to water sample to a final concentration of 1-2%.Alternatively, use Formaldehyde, and fix for 12-24 hours at 4°C.
+1	Place	_	Action	_	_	0	_	_	Offset=218-223
+2	moistened	_	Modifier	_	_	3	Mod-Link	_	Offset=226-235
+3	support	_	Device	_	_	5	Meronym	_	Offset=236-250
+4	0.45	_	Size	_	_	3	Measure	_	Offset=252-259
+5	cellulose	_	Reagent	_	_	0	_	_	Offset=271-288
+6	47	_	Generic-Measure	_	_	3	Measure	_	Offset=290-295
+7	diameter	_	Measure-Type	_	_	6	Of-Type	_	Offset=296-304
+8	membrane	_	Device	_	_	10	Meronym	_	Offset=312-327
+9	0.2	_	Size	_	_	8	Setting	_	Offset=329-335
+10	white	_	Reagent	_	_	0	_	_	Offset=347-366
+11	47	_	Generic-Measure	_	_	8	Setting	_	Offset=375-380
+12	diameter	_	Measure-Type	_	_	11	Of-Type	_	Offset=381-389
+13	filtration	_	Device	_	_	0	_	_	Offset=398-414
+
+# sent_id = s3
+# text = Place a moistened support filter (0.45 μm pore size, cellulose nitrate, 47 mm diameter) and a membrane filter (0.2 μm pore size, white polycarbonate (GTTP), 47 mm diameter) into a filtration tower.
+1	Filter	_	Action	_	_	0	_	_	Offset=416-422
+2	appropriate	_	Modifier	_	_	3	Mod-Link	_	Offset=426-437
+3	volume	_	Amount	_	_	4	Measure	_	Offset=438-444
+4	fixed	_	Reagent	_	_	0	_	_	Offset=452-464
+5	gentle	_	Modifier	_	_	0	_	_	Offset=477-483
+6	vacuum	_	Action	_	_	0	_	_	Offset=484-490
+7	5	_	Generic-Measure	_	_	0	_	_	Offset=494-500
+
+# sent_id = s4
+# text = Filter an appropriate volume of the fixed sample by applying gentle vacuum (~ 5 inch).
+1	Place	_	Action	_	_	0	_	_	Offset=503-508
+2	moistened	_	Modifier	_	_	3	Mod-Link	_	Offset=511-520
+3	support	_	Device	_	_	5	Meronym	_	Offset=521-535
+4	0.45	_	Size	_	_	3	Measure	_	Offset=537-544
+5	cellulose	_	Reagent	_	_	0	_	_	Offset=556-573
+6	25	_	Generic-Measure	_	_	3	Measure	_	Offset=575-580
+7	diameter	_	Measure-Type	_	_	6	Of-Type	_	Offset=581-589
+8	membrane	_	Device	_	_	10	Meronym	_	Offset=617-632
+9	0.2	_	Size	_	_	8	Setting	_	Offset=634-640
+10	white	_	Reagent	_	_	0	_	_	Offset=652-671
+11	25	_	Generic-Measure	_	_	8	Setting	_	Offset=680-685
+12	diameter	_	Measure-Type	_	_	11	Of-Type	_	Offset=686-694
+13	filtration	_	Device	_	_	0	_	_	Offset=733-749
+
+# sent_id = s5
+# text = Place a moistened support filter (0.45 μm pore size, cellulose nitrate, 25 mm diameter; Sartorius, Germany) and a membrane filter (0.2 μm pore size, white polycarbonate (GTTP), 25 mm diameter; Millipore, Eschborn, Germany) into a filtration tower.
+1	Filter	_	Action	_	_	0	_	_	Offset=751-757
+2	1	_	Amount	_	_	3	Measure	_	Offset=758-762
+3	fixed	_	Reagent	_	_	0	_	_	Offset=770-782
+4	gentle	_	Modifier	_	_	0	_	_	Offset=795-801
+5	vacuum	_	Action	_	_	0	_	_	Offset=802-808
+6	~5	_	Generic-Measure	_	_	0	_	_	Offset=810-817
+
+# sent_id = s6
+# text = Filter 1 ml of the fixed sample by applying gentle vacuum (~5 inch).
+1	Filter	_	Action	_	_	0	_	_	Offset=820-826
+2	2	_	Amount	_	_	3	Measure	_	Offset=827-831
+3	fixed	_	Reagent	_	_	0	_	_	Offset=839-851
+4	second	_	Modifier	_	_	5	Mod-Link	_	Offset=857-863
+5	filter.	_	Device	_	_	0	_	_	Offset=864-871
+
+# sent_id = s7
+# text = Filter 2 ml of the fixed sample on a second filter.
+1	wash	_	Action	_	_	0	_	_	Offset=906-910
+2	10-20	_	Amount	_	_	4	Measure	_	Offset=916-924
+3	sterile	_	Modifier	_	_	4	Mod-Link	_	Offset=928-935
+4	H2O	_	Reagent	_	_	0	_	_	Offset=936-939
+
+# sent_id = s8
+# text = After complete sample filtration, wash with 10-20 ml of sterile H2O.
+1	Remove	_	Action	_	_	0	_	_	Offset=941-947
+2	H2O	_	Reagent	_	_	0	_	_	Offset=948-951
+3	filtration	_	Method	_	_	0	_	_	Offset=955-965
+
+# sent_id = s9
+# text = Remove H2O by filtration.
+1	Put	_	Action	_	_	0	_	_	Offset=967-970
+2	membrane	_	Device	_	_	0	_	_	Offset=971-986
+3	blotting	_	Device	_	_	0	_	_	Offset=990-1004
+4	drying	_	Action	_	_	0	_	_	Offset=1009-1015
+5	cover	_	Action	_	_	0	_	_	Offset=1020-1025
+
+# sent_id = s10
+# text = Put membrane filter on blotting paper for drying and cover, e.g.
+1	lid	_	Seal	_	_	0	_	_	Offset=1041-1044
+
+# sent_id = s11
+# text = with the lid of a cryo box or a Petri dish.
+1	Store	_	Action	_	_	0	_	_	Offset=1094-1099
+2	each	_	Device	_	_	0	_	_	Offset=1100-1111
+3	separate	_	Modifier	_	_	4	Mod-Link	_	Offset=1117-1134
+4	Petri	_	Location	_	_	0	_	_	Offset=1135-1145
+
+# sent_id = s12
+# text = Allow air-drying.
+1	Place	_	Action	_	_	0	_	_	Offset=1147-1152
+2	membrane	_	Device	_	_	0	_	_	Offset=1153-1168
+3	between	_	Location	_	_	0	_	_	Offset=1169-1193
+
+# sent_id = s13
+# text = Store each filter in a separate labelled Petri dish.
+1	Seal	_	Action	_	_	0	_	_	Offset=1245-1249
+2	Petri	_	Location	_	_	0	_	_	Offset=1250-1260
+3	parafilm	_	Seal	_	_	0	_	_	Offset=1266-1274
+
+# sent_id = s14
+# text = Place membrane filter between separator sheets that the GTTP membrane filters were provided with.
+1	Store	_	Action	_	_	0	_	_	Offset=1276-1281
+2	-20°C	_	Temperature	_	_	0	_	_	Offset=1285-1290
+

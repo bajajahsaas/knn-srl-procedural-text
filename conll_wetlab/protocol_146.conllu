@@ -1,0 +1,248 @@
+# sent_id = s1
+# text = Immunohistochemistry Protocol for Beta Amyloid Products using USA Detection Kit
+1	Clear	_	Action	_	_	0	_	_	Offset=80-85
+2	Slides	_	Location	_	_	0	_	_	Offset=86-92
+
+# sent_id = s2
+# text = Clear Slides.
+1	Removes	_	Action	_	_	0	_	_	Offset=94-101
+2	paraffin	_	Reagent	_	_	0	_	_	Offset=102-110
+3	hydrates	_	Action	_	_	0	_	_	Offset=115-123
+4	tissue	_	Reagent	_	_	0	_	_	Offset=128-134
+
+# sent_id = s3
+# text = Removes paraffin and hydrates the tissue. 
+1	209	_	Action	_	_	0	_	_	Offset=169-174;182
+2	slides	_	Location	_	_	0	_	_	Offset=175-181
+3	15	_	Time	_	_	0	_	_	Offset=214-224
+4	proceed	_	Action	_	_	0	_	_	Offset=227-246
+
+# sent_id = s4
+# text = Note: If using frozen sections, allow slides to come to room temperature for 15 minutes & proceed to step (F) only 
+1	Xylene	_	Reagent	_	_	0	_	_	Offset=256-262
+2	5	_	Time	_	_	0	_	_	Offset=262-271
+3	each	_	Modifier	_	_	0	_	_	Offset=275-279
+4	3	_	Numerical	_	_	6	Measure	3:Setting	Offset=284-285
+5	250mL	_	Size	_	_	6	Measure	_	Offset=297-302
+6	containers	_	Location	_	_	0	_	_	Offset=303-313
+
+# sent_id = s5
+# text = A. Xylene5 minutes in each of (3) different 250mL containers
+1	100%	_	Concentration	_	_	2	Measure	_	Offset=317-321
+2	alcohol	_	Reagent	_	_	0	_	_	Offset=322-329
+3	5	_	Time	_	_	0	_	_	Offset=329-338
+4	each	_	Modifier	_	_	0	_	_	Offset=342-346
+5	3	_	Numerical	_	_	7	Measure	4:Setting	Offset=351-352
+6	250mL	_	Size	_	_	7	Measure	_	Offset=364-369
+7	containers	_	Location	_	_	0	_	_	Offset=370-380
+
+# sent_id = s6
+# text = B. 100% alcohol5 minutes in each of (3) different 250mL containers
+1	95%	_	Concentration	_	_	2	Measure	_	Offset=384-387
+2	alcohol	_	Reagent	_	_	0	_	_	Offset=388-395
+3	3	_	Time	_	_	0	_	_	Offset=395-404
+4	1	_	Numerical	_	_	6	Measure	_	Offset=409-410
+5	250mL	_	Size	_	_	6	Measure	_	Offset=412-417
+6	container	_	Location	_	_	0	_	_	Offset=418-427
+
+# sent_id = s7
+# text = C. 95% alcohol3 minutes in (1) 250mL container
+1	70%	_	Concentration	_	_	2	Measure	_	Offset=431-434
+2	alcohol	_	Reagent	_	_	0	_	_	Offset=435-442
+3	3	_	Time	_	_	0	_	_	Offset=442-451
+4	1	_	Numerical	_	_	6	Measure	_	Offset=456-457
+5	250mL	_	Size	_	_	6	Measure	_	Offset=459-464
+6	container	_	Location	_	_	0	_	_	Offset=465-474
+
+# sent_id = s8
+# text = D. 70% alcohol3 minutes in (1) 250mL container
+1	water	_	Reagent	_	_	0	_	_	Offset=478-483
+2	1	_	Time	_	_	0	_	_	Offset=483-492
+3	each	_	Modifier	_	_	0	_	_	Offset=496-500
+4	3	_	Numerical	_	_	6	Measure	3:Setting	Offset=505-506
+5	250mL	_	Size	_	_	6	Measure	_	Offset=518-523
+6	containers	_	Location	_	_	0	_	_	Offset=524-534
+
+# sent_id = s9
+# text = E. water1 minutes in each of (3) different 250mL containers
+1	H2O2	_	Reagent	_	_	0	_	_	Offset=538-542
+2	3%	_	Concentration	_	_	1	Measure	_	Offset=544-546
+3	15	_	Time	_	_	0	_	_	Offset=547-558
+4	1	_	Numerical	_	_	6	Measure	_	Offset=563-564
+5	250mL	_	Size	_	_	6	Measure	_	Offset=566-571
+6	container	_	Location	_	_	0	_	_	Offset=572-581
+
+# sent_id = s10
+# text = F. H2O2 (3%)15  minutes in (1) 250mL container. 
+1	Rinse	_	Action	_	_	0	_	_	Offset=584-589
+2	slides	_	Location	_	_	0	_	_	Offset=590-596
+3	lab	_	Reagent	_	_	0	_	_	Offset=602-617
+
+# sent_id = s11
+# text = Rinse slides with lab grade water.
+1	70%	_	Concentration	_	_	2	Measure	_	Offset=801-804
+2	Formic	_	Reagent	_	_	0	_	_	Offset=805-816
+3	incubate	_	Action	_	_	0	_	_	Offset=819-827
+4	slides	_	Location	_	_	0	_	_	Offset=832-838
+5	20	_	Time	_	_	0	_	_	Offset=843-853
+6	room	_	Temperature	_	_	0	_	_	Offset=857-873
+
+# sent_id = s12
+# text = Note: Lab grade filtered water such as injection grade, cell culture grade, Reverse Osmosis De-Ionization (RODI).
+1	5-10	_	Time	_	_	0	_	_	Offset=973-985
+
+# sent_id = s13
+# text = Antigen Retrieval (refer to product datasheet, not always required) 70% Formic Acid – incubate the slides for 20 minutes at room temperature.
+1	Rinse	_	Action	_	_	0	_	_	Offset=1026-1031
+2	Slides	_	Location	_	_	0	_	_	Offset=1032-1038
+3	1X	_	Reagent	_	_	0	_	_	Offset=1044-1050
+
+# sent_id = s14
+# text = Note: This antigen retrieval step is harsh on the tissue.
+1	Apply	_	Action	_	_	0	_	_	Offset=1052-1057
+2	serum	_	Reagent	_	_	0	_	_	Offset=1058-1069
+3	5	_	Time	_	_	0	_	_	Offset=1083-1092
+
+# sent_id = s15
+# text = If using frozen sections reduce time to 5-10 minutes or omit if tissue falls off the slide. 
+1	Blot	_	Action	_	_	0	_	_	Offset=1123-1131
+2	serum	_	Reagent	_	_	0	_	_	Offset=1132-1143
+
+# sent_id = s16
+# text = Rinse Slides with 1X PBS.
+1	Apply	_	Action	_	_	0	_	_	Offset=1145-1150
+2	primary	_	Reagent	_	_	0	_	_	Offset=1151-1167
+3	dilute	_	Action	_	_	0	_	_	Offset=1170-1176
+4	1	_	Concentration	_	_	0	_	_	Offset=1180-1187
+5	PBS	_	Reagent	_	_	0	_	_	Offset=1191-1194
+
+# sent_id = s17
+# text = Apply serum block for at least 5 minutes.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1196-1204
+2	primary	_	Reagent	_	_	0	_	_	Offset=1205-1221
+3	60	_	Time	_	_	0	_	_	Offset=1222-1232
+4	room	_	Temperature	_	_	0	_	_	Offset=1236-1252
+
+# sent_id = s18
+# text = Do NOT wash after this step.
+1	Rinse	_	Action	_	_	0	_	_	Offset=1254-1259
+2	slides	_	Location	_	_	0	_	_	Offset=1260-1266
+3	1X	_	Reagent	_	_	0	_	_	Offset=1272-1278
+
+# sent_id = s19
+# text = Blot off serum block.
+1	Apply	_	Action	_	_	0	_	_	Offset=1280-1285
+2	USA	_	Reagent	_	_	0	_	_	Offset=1286-1305
+3	20	_	Time	_	_	0	_	_	Offset=1308-1318
+4	incubation	_	Action	_	_	0	_	_	Offset=1319-1329
+
+# sent_id = s20
+# text = Apply primary antibody – dilute to 1 mg/mL in PBS.
+1	Rinse	_	Action	_	_	0	_	_	Offset=1331-1336
+2	slides	_	Location	_	_	0	_	_	Offset=1337-1343
+3	1X	_	Reagent	_	_	0	_	_	Offset=1349-1355
+
+# sent_id = s21
+# text = Incubate primary antibody 60 minutes at room temperature.
+1	Apply	_	Action	_	_	0	_	_	Offset=1357-1362
+2	Labeling	_	Reagent	_	_	0	_	_	Offset=1363-1379
+3	20	_	Time	_	_	0	_	_	Offset=1382-1392
+4	incubation	_	Action	_	_	0	_	_	Offset=1393-1403
+
+# sent_id = s22
+# text = Rinse slides with 1X PBS.
+1	Rinse	_	Action	_	_	0	_	_	Offset=1405-1410
+2	1X	_	Reagent	_	_	0	_	_	Offset=1416-1422
+
+# sent_id = s23
+# text = Apply USA Linking reagent - 20 minutes incubation.
+1	Apply	_	Action	_	_	0	_	_	Offset=1424-1429
+2	chromogen	_	Reagent	_	_	0	_	_	Offset=1430-1439
+3	5	_	Time	_	_	0	_	_	Offset=1442-1451
+4	incubation	_	Action	_	_	0	_	_	Offset=1452-1462
+
+# sent_id = s24
+# text = Rinse slides with 1X PBS.
+1	Dilute	_	Action	_	_	0	_	_	Offset=1464-1470
+2	according	_	Modifier	_	_	0	_	_	Offset=1471-1511
+
+# sent_id = s25
+# text = Apply Labeling Reagent – 20 minutes incubation.
+1	AEC	_	Reagent	_	_	0	_	_	Offset=1512-1525
+2	20mL	_	Amount	_	_	3	Measure	_	Offset=1527-1531
+3	AEC	_	Reagent	_	_	0	_	_	Offset=1532-1545
+4	1mL	_	Amount	_	_	5	Measure	_	Offset=1548-1551
+5	AEC	_	Reagent	_	_	0	_	_	Offset=1552-1572
+
+# sent_id = s26
+# text = Rinse with 1X PBS.
+1	DAB	_	Reagent	_	_	0	_	_	Offset=1574-1587
+2	40	_	Amount	_	_	3	Measure	_	Offset=1589-1594
+3	DAB	_	Reagent	_	_	0	_	_	Offset=1595-1608
+4	1mL	_	Amount	_	_	5	Measure	_	Offset=1611-1614
+5	DAB	_	Reagent	_	_	0	_	_	Offset=1615-1636
+
+# sent_id = s27
+# text = Apply chromogen – 5 minutes incubation.
+1	Rinse	_	Action	_	_	0	_	_	Offset=1637-1642
+2	slides	_	Location	_	_	0	_	_	Offset=1643-1649
+3	lab	_	Reagent	_	_	0	_	_	Offset=1655-1670
+
+# sent_id = s28
+# text = Dilute according to manufacturer’s instructions
+1	Submerge	_	Action	_	_	0	_	_	Offset=1672-1680
+2	slides	_	Location	_	_	0	_	_	Offset=1681-1687
+3	Mayer’s	_	Reagent	_	_	0	_	_	Offset=1691-1710
+4	30	_	Time	_	_	0	_	_	Offset=1715-1725
+
+# sent_id = s29
+# text = AEC Chromogen: 20mL AEC chromogen + 1mL AEC substrate buffer.
+1	Rinse	_	Action	_	_	0	_	_	Offset=1727-1732
+2	running	_	Modifier	_	_	3	Mod-Link	_	Offset=1739-1746
+3	lab	_	Reagent	_	_	0	_	_	Offset=1747-1762
+4	1	_	Time	_	_	0	_	_	Offset=1767-1775
+5	until	_	Time	_	_	4	Or	_	Offset=1779-1799
+
+# sent_id = s30
+# text = DAB Chromogen: 40 mL DAB chromogen + 1mL DAB substrate buffer.
+1	Submerge	_	Action	_	_	0	_	_	Offset=1801-1809
+2	slides	_	Location	_	_	0	_	_	Offset=1810-1816
+3	Bluing	_	Reagent	_	_	0	_	_	Offset=1820-1834
+4	1	_	Time	_	_	0	_	_	Offset=1839-1847
+
+# sent_id = s31
+# text = Rinse slides with lab grade water.
+1	Rinse	_	Action	_	_	0	_	_	Offset=1849-1854
+2	running	_	Modifier	_	_	3	Mod-Link	_	Offset=1861-1868
+3	lab	_	Reagent	_	_	0	_	_	Offset=1869-1884
+4	1	_	Time	_	_	0	_	_	Offset=1889-1897
+
+# sent_id = s32
+# text = Submerge slides in Mayer’s Hematoxylin for 30 seconds.
+1	Clear	_	Action	_	_	0	_	_	Offset=1899-1904
+2	slides	_	Location	_	_	0	_	_	Offset=1905-1911
+3	Dehydrate	_	Action	_	_	0	_	_	Offset=1913-1922
+4	tissue	_	Reagent	_	_	0	_	_	Offset=1927-1933
+
+# sent_id = s33
+# text = Rinse under running lab grade water for 1 minute or until water is clear.
+1	95%	_	Concentration	_	_	2	Measure	_	Offset=1935-1938
+2	alcohol	_	Reagent	_	_	0	_	_	Offset=1939-1946
+3	3	_	Time	_	_	0	_	_	Offset=1947-1956
+4	1	_	Numerical	_	_	6	Measure	_	Offset=1961-1962
+5	250mL	_	Size	_	_	6	Measure	_	Offset=1964-1969
+6	container	_	Location	_	_	0	_	_	Offset=1970-1979
+7	100%	_	Concentration	_	_	8	Measure	_	Offset=1980-1984
+8	alcohol	_	Reagent	_	_	0	_	_	Offset=1985-1992
+9	5	_	Time	_	_	0	_	_	Offset=1993-2002
+10	each	_	Modifier	_	_	0	_	_	Offset=2006-2010
+11	3	_	Numerical	_	_	10	Setting	13:Measure	Offset=2015-2016
+12	250mL	_	Size	_	_	13	Measure	_	Offset=2028-2033
+13	container	_	Location	_	_	0	_	_	Offset=2034-2043
+
+# sent_id = s34
+# text = Submerge slides in Bluing Reagent for 1 minute.
+1	Cover	_	Action	_	_	0	_	_	Offset=2104-2109
+2	slip	_	Location	_	_	0	_	_	Offset=2110-2120
+3	Permanent	_	Reagent	_	_	0	_	_	Offset=2127-2172
+

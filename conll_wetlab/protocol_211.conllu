@@ -1,0 +1,254 @@
+# sent_id = s1
+# text = DNEasy DNA Extraction - Vibrio Gram Negative Broth Bacteria
+1	Put	_	Action	_	_	0	_	_	Offset=60-63
+2	Buffer	_	Reagent	_	_	0	_	_	Offset=64-74
+3	AL	_	Reagent	_	_	0	_	_	Offset=79-81
+4	56	_	Temperature	_	_	0	_	_	Offset=85-89
+5	5	_	Time	_	_	0	_	_	Offset=94-103
+
+# sent_id = s2
+# text = Put Buffer ATL and AL at 56 C for 5 minutes before using.
+1	Transfer	_	Action	_	_	0	_	_	Offset=118-126
+2	250ul	_	Amount	_	_	3	Measure	_	Offset=127-132
+3	broth	_	Reagent	_	_	0	_	_	Offset=136-149
+4	2ml	_	Amount	_	_	5	Measure	_	Offset=153-156
+5	deep	_	Reagent	_	_	0	_	_	Offset=157-166
+
+# sent_id = s3
+# text = Transfer 250ul of broth culture to 2ml deep well (autoclaved). 
+1	Harvest	_	Action	_	_	0	_	_	Offset=182-189
+2	cells	_	Reagent	_	_	0	_	_	Offset=190-195
+3	centrifuging	_	Action	_	_	0	_	_	Offset=223-235
+4	plate	_	Location	_	_	0	_	_	Offset=236-241
+5	15	_	Time	_	_	0	_	_	Offset=246-252
+6	4063	_	Speed	_	_	0	_	_	Offset=256-264
+
+# sent_id = s4
+# text = Harvest cells (maximum 2 x 109 cells) by centrifuging plate for 15 min at 4063 x g. 
+1	Discard	_	Action	_	_	0	_	_	Offset=267-274
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=275-286
+
+# sent_id = s5
+# text = Discard supernatant.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=288-297
+2	pellet	_	Reagent	_	_	0	_	_	Offset=298-304
+3	200	_	Amount	_	_	4	Measure	_	Offset=308-314
+4	Buffer	_	Reagent	_	_	0	_	_	Offset=315-325
+5	pipetting	_	Action	_	_	0	_	_	Offset=329-338
+6	up	_	Modifier	_	_	0	_	_	Offset=339-350
+7	15	_	Numerical	_	_	0	_	_	Offset=351-359
+
+# sent_id = s6
+# text = Resuspend pellet in 200 µl Buffer ATL by pipetting up and down 15 times.
+1	Seal	_	Action	_	_	0	_	_	Offset=361-365
+2	foil	_	Seal	_	_	0	_	_	Offset=371-375
+3	place	_	Action	_	_	0	_	_	Offset=380-385
+4	oven	_	Device	_	_	0	_	_	Offset=389-393
+5	56	_	Temperature	_	_	0	_	_	Offset=397-401
+6	one	_	Time	_	_	0	_	_	Offset=406-414
+
+# sent_id = s7
+# text = Seal with foil and place in oven at 56 C for one hour.
+1	Place	_	Action	_	_	0	_	_	Offset=416-421
+2	plate	_	Location	_	_	0	_	_	Offset=428-433
+3	seal	_	Seal	_	_	0	_	_	Offset=437-441
+
+# sent_id = s8
+# text = Place extra plate on seal so foil doesn’t come off.
+1	Pipette	_	Action	_	_	0	_	_	Offset=468-475
+2	up	_	Modifier	_	_	0	_	_	Offset=476-487
+3	15	_	Numerical	_	_	0	_	_	Offset=488-496
+4	spin	_	Action	_	_	0	_	_	Offset=501-510
+
+# sent_id = s9
+# text = Pipette up and down 15 times and spin down.
+1	place	_	Action	_	_	0	_	_	Offset=517-522
+2	-80	_	Temperature	_	_	0	_	_	Offset=526-531
+3	continue	_	Action	_	_	0	_	_	Offset=536-553
+
+# sent_id = s10
+# text = (May place in -80 C and continue procedure later at this point.)
+1	let	_	Action	_	_	0	_	_	Offset=597-605
+2	spin	_	Action	_	_	0	_	_	Offset=610-619
+3	1000g	_	Speed	_	_	0	_	_	Offset=622-627
+4	1	_	Time	_	_	0	_	_	Offset=632-637
+
+# sent_id = s11
+# text = If placed in -80 C, let thaw and spin down @ 1000g for 1 min. 
+1	Add	_	Action	_	_	0	_	_	Offset=640-643
+2	205	_	Amount	_	_	3	Measure	_	Offset=644-650
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=651-660
+4	205	_	Amount	_	_	5	Measure	_	Offset=665-671
+5	molecular	_	Reagent	_	_	0	_	_	Offset=672-692
+
+# sent_id = s12
+# text = Add 205 uL Buffer AL and 205 uL molecular grade EtOH.
+1	Pipette	_	Action	_	_	0	_	_	Offset=694-701
+2	up	_	Modifier	_	_	0	_	_	Offset=702-713
+3	15	_	Numerical	_	_	0	_	_	Offset=714-722
+4	spin	_	Action	_	_	0	_	_	Offset=727-736
+
+# sent_id = s13
+# text = Pipette up and down 15 times and spin down.
+1	Place	_	Action	_	_	0	_	_	Offset=738-743
+2	DNeasy	_	Location	_	_	0	_	_	Offset=744-760
+3	top	_	Location	_	_	0	_	_	Offset=764-767
+4	2ml	_	Size	_	_	5	Measure	_	Offset=771-774
+5	deep	_	Location	_	_	3	Meronym	_	Offset=775-790
+
+# sent_id = s14
+# text = Place DNeasy 96 plates on top of 2ml deep well plate .
+1	Mark	_	Action	_	_	0	_	_	Offset=793-797
+2	DNeasy	_	Location	_	_	0	_	_	Offset=802-818
+
+# sent_id = s15
+# text = Mark the DNeasy 96 plates for later sample identification.
+1	transfer	_	Action	_	_	0	_	_	Offset=862-870
+2	lysate	_	Reagent	_	_	0	_	_	Offset=875-881
+3	600ul	_	Amount	_	_	2	Measure	_	Offset=897-902
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=907-911
+5	sample	_	Reagent	_	_	2	Meronym	_	Offset=912-918
+6	each	_	Modifier	_	_	7	Mod-Link	_	Offset=934-938
+7	well	_	Location	_	_	0	_	_	Offset=939-943
+8	DNeasy	_	Location	_	_	7	Meronym	_	Offset=951-967
+
+# sent_id = s16
+# text = Carefully transfer the lysate (approximately 600ul) of each sample from step 7 to each well of the DNeasy 96 plates.
+1	transfer	_	Action	_	_	0	_	_	Offset=976-984
+2	900	_	Amount	_	_	0	_	_	Offset=995-1001
+3	per	_	Modifier	_	_	2	Mod-Link	_	Offset=1002-1010
+
+# sent_id = s17
+# text = Do not transfer more than 900 µl per well.
+1	Seal	_	Action	_	_	0	_	_	Offset=1012-1016
+2	DNeasy	_	Location	_	_	0	_	_	Offset=1022-1037
+3	porous	_	Seal	_	_	0	_	_	Offset=1045-1056
+
+# sent_id = s18
+# text = Seal each DNeasy 96 plate with a porous film.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1058-1068
+2	15	_	Time	_	_	0	_	_	Offset=1073-1079
+3	4063g	_	Speed	_	_	0	_	_	Offset=1083-1088
+
+# sent_id = s19
+# text = Centrifuge for 15 min at 4063g.
+1	centrifuge	_	Action	_	_	0	_	_	Offset=1129-1139
+2	a	_	Time	_	_	0	_	_	Offset=1144-1160
+
+# sent_id = s20
+# text = If lysate remains in any of the wells, centrifuge for a further 10 min.
+1	Add	_	Action	_	_	0	_	_	Offset=1162-1165
+2	500	_	Amount	_	_	3	Measure	_	Offset=1166-1172
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=1173-1183
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=1187-1191
+5	sample	_	Reagent	_	_	0	_	_	Offset=1192-1198
+
+# sent_id = s21
+# text = Add 500 µl Buffer AW1 to each sample.
+1	Seal	_	Action	_	_	0	_	_	Offset=1200-1204
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=1205-1209
+3	DNeasy	_	Location	_	_	0	_	_	Offset=1210-1225
+4	a	_	Seal	_	_	0	_	_	Offset=1231-1255
+
+# sent_id = s22
+# text = Seal each DNeasy 96 plate with a new AirPore Tape Sheet (provided).
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1268-1278
+2	5	_	Time	_	_	0	_	_	Offset=1283-1288
+3	4063g	_	Speed	_	_	0	_	_	Offset=1292-1297
+
+# sent_id = s23
+# text = Centrifuge for 5 min at 4063g.
+1	Remove	_	Action	_	_	0	_	_	Offset=1299-1305
+2	tape	_	Seal	_	_	0	_	_	Offset=1310-1314
+
+# sent_id = s24
+# text = Remove the tape.
+1	add	_	Action	_	_	0	_	_	Offset=1326-1329
+2	500	_	Amount	_	_	3	Measure	_	Offset=1330-1336
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=1337-1347
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=1351-1355
+5	sample	_	Reagent	_	_	0	_	_	Offset=1356-1362
+
+# sent_id = s25
+# text = Carefully add 500 µl Buffer AW2 to each sample.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1364-1374
+2	15	_	Time	_	_	0	_	_	Offset=1379-1385
+3	4063g	_	Speed	_	_	0	_	_	Offset=1389-1394
+
+# sent_id = s26
+# text = Centrifuge for 15 min at 4063g.
+1	Place	_	Action	_	_	0	_	_	Offset=1601-1606
+2	new	_	Location	_	_	4	Meronym	_	Offset=1610-1629
+3	2ml	_	Size	_	_	4	Measure	_	Offset=1631-1634
+4	deep	_	Location	_	_	0	_	_	Offset=1635-1650
+5	spin	_	Action	_	_	0	_	_	Offset=1656-1660
+6	15	_	Time	_	_	0	_	_	Offset=1667-1677
+7	4063g	_	Speed	_	_	0	_	_	Offset=1681-1686
+
+# sent_id = s27
+# text = Do not seal the plate with AirPore Tape.
+1	Place	_	Action	_	_	0	_	_	Offset=1688-1693
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=1694-1698
+3	DNeasy	_	Location	_	_	0	_	_	Offset=1699-1714
+4	in	_	Modifier	_	_	3	Mod-Link	_	Offset=1715-1741
+5	rack	_	Location	_	_	0	_	_	Offset=1751-1755
+6	1774	_	Location	_	_	5	Meronym	_	Offset=1759-1762;1769
+7	500ul	_	Size	_	_	6	Measure	_	Offset=1763-1768
+
+# sent_id = s28
+# text = The heat generated during centrifugation ensures evaporation of residual ethanol in the sample (from Buffer AW2) that might otherwise inhibit downstream reactions.
+1	elute	_	Action	_	_	0	_	_	Offset=1779-1784
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1789-1792
+3	add	_	Action	_	_	0	_	_	Offset=1794-1797
+4	200	_	Amount	_	_	5	Measure	_	Offset=1798-1804
+5	Buffer	_	Reagent	_	_	0	_	_	Offset=1805-1814
+6	each	_	Modifier	_	_	7	Mod-Link	_	Offset=1818-1822
+7	sample	_	Reagent	_	_	0	_	_	Offset=1823-1829
+8	seal	_	Action	_	_	0	_	_	Offset=1831-1835
+9	incubate	_	Action	_	_	0	_	_	Offset=1840-1848
+10	1	_	Time	_	_	0	_	_	Offset=1853-1861
+11	room	_	Temperature	_	_	0	_	_	Offset=1865-1874
+
+# sent_id = s29
+# text = Place in new collection rack (2ml deep well plate) and spin again 15 minutes at 4063g.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1876-1886
+2	4	_	Time	_	_	0	_	_	Offset=1891-1896
+3	4063g	_	Speed	_	_	0	_	_	Offset=1900-1905
+
+# sent_id = s30
+# text = Place each DNeasy 96 plate in the correct orientation on a new rack of VWR 500ul plate.
+1	200	_	Amount	_	_	2	Measure	_	Offset=1907-1913
+2	Buffer	_	Reagent	_	_	0	_	_	Offset=1914-1923
+3	elute	_	Action	_	_	0	_	_	Offset=1941-1946
+4	1982	_	Amount	_	_	5	Measure	_	Offset=1953-1956;1968
+5	DNA	_	Reagent	_	_	0	_	_	Offset=1964-1967
+6	DNeasy	_	Location	_	_	5	Meronym	_	Offset=1990-2005
+
+# sent_id = s31
+# text = To elute the DNA, add 200 µl Buffer TE to each sample, seal and incubate for 1 minute at room temp.
+1	repeat	_	Action	_	_	0	_	_	Offset=2043-2057
+2	another	_	Amount	_	_	3	Measure	_	Offset=2063-2077
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=2078-2087
+
+# sent_id = s32
+# text = Centrifuge for 4 min at 4063g.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=2089-2096
+2	20ul	_	Amount	_	_	3	Measure	_	Offset=2097-2101
+3	extracted	_	Reagent	_	_	0	_	_	Offset=2105-2118
+4	green	_	Location	_	_	0	_	_	Offset=2122-2141
+
+# sent_id = s33
+# text = 200 µl Buffer TE is sufficient to elute up to 75% of the DNA from each well of the DNeasy 96 plate.
+1	Seal	_	Action	_	_	0	_	_	Offset=2143-2147
+2	DNeasy	_	Location	_	_	0	_	_	Offset=2148-2163
+3	96	_	Location	_	_	0	_	_	Offset=2168-2181
+4	non-sterile	_	Seal	_	_	0	_	_	Offset=2187-2203
+
+# sent_id = s34
+# text = Recommended: For maximum DNA yield, repeat step 16 with another 200 µl Buffer TE.
+1	Place	_	Action	_	_	0	_	_	Offset=2205-2210
+2	DNeasy	_	Location	_	_	0	_	_	Offset=2211-2226
+3	-80	_	Temperature	_	_	0	_	_	Offset=2230-2235
+4	96	_	Location	_	_	0	_	_	Offset=2240-2253
+5	-20	_	Temperature	_	_	0	_	_	Offset=2257-2262
+

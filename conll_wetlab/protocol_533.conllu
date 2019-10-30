@@ -1,0 +1,43 @@
+# sent_id = s1
+# text = From siRNA to shRNA
+1	Anchor	_	Action	_	_	0	_	_	Offset=20-26
+2	siRNA	_	Reagent	_	_	0	_	_	Offset=31-45
+3	target	_	Reagent	_	_	0	_	_	Offset=61-72
+
+# sent_id = s2
+# text = Anchor the siRNA sequence (19nt) on your target gene.
+1	Extract	_	Action	_	_	0	_	_	Offset=74-81
+2	2nt	_	Amount	_	_	3	Measure	_	Offset=82-85
+3	upstream	_	Reagent	_	_	0	_	_	Offset=89-97
+4	19nt	_	Amount	_	_	5	Measure	_	Offset=99-103
+5	siRNA	_	Reagent	_	_	0	_	_	Offset=104-109
+6	1nt	_	Amount	_	_	7	Measure	_	Offset=112-115
+7	downstream	_	Reagent	_	_	0	_	_	Offset=119-129
+
+# sent_id = s3
+# text = Extract 2nt of upstream +19nt siRNA + 1nt of downstream, which is totally 22nt of nucleotides.
+1	Insert	_	Action	_	_	0	_	_	Offset=186-192
+2	reverse	_	Reagent	_	_	0	_	_	Offset=197-215
+3	shRNA	_	Reagent	_	_	0	_	_	Offset=233-247
+
+# sent_id = s4
+# text = Antisense shRNA: Insert the reverse complement of the 22nt into shRNA backbone.
+1	Insert	_	Action	_	_	0	_	_	Offset=262-268
+2	22nt	_	Amount	_	_	3	Measure	_	Offset=273-277
+3	from	_	Reagent	_	_	0	_	_	Offset=279-290
+4	shRNA	_	Reagent	_	_	0	_	_	Offset=297-311
+
+# sent_id = s5
+# text = Sense shRNA: Insert the 22nt (from step 2) into shRNA backbone.
+1	Replace	_	Action	_	_	0	_	_	Offset=313-320
+2	1st	_	Reagent	_	_	0	_	_	Offset=325-331
+3	other	_	Reagent	_	_	0	_	_	Offset=337-353
+
+# sent_id = s6
+# text = Replace the 1st nt with other nucleotide (replace A with G and vice versa; replace C with T and vice versa).
+1	Synthesis	_	Action	_	_	0	_	_	Offset=485-494
+2	shRNA	_	Reagent	_	_	4	Coreference-Link	_	Offset=499-516
+3	insert	_	Action	_	_	0	_	_	Offset=521-527
+4	them	_	Mention	_	_	0	_	_	Offset=528-532
+5	pTRIPZ	_	Reagent	_	_	0	_	_	Offset=538-551
+

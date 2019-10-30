@@ -1,0 +1,128 @@
+# sent_id = s1
+# text = Electroporation Protocol (C2986)
+1	Prepare	_	Action	_	_	0	_	_	Offset=33-40
+2	17mm	_	Size	_	_	3	Measure	_	Offset=41-53
+3	round-bottom	_	Location	_	_	0	_	_	Offset=54-80
+4	room	_	Temperature	_	_	0	_	_	Offset=106-122
+
+# sent_id = s2
+# text = Prepare 17mm x 100mm round-bottom culture tubes (e.g. VWR #60818-667) at room temperature. 
+1	Place	_	Action	_	_	0	_	_	Offset=125-130
+2	SOC	_	Reagent	_	_	0	_	_	Offset=131-150
+3	37°C	_	Temperature	_	_	0	_	_	Offset=156-160
+4	water	_	Location	_	_	0	_	_	Offset=161-171
+
+# sent_id = s3
+# text = Place SOC recovery medium in a 37°C water bath. 
+1	Pre-warm	_	Action	_	_	0	_	_	Offset=174-182
+2	selective	_	Location	_	_	0	_	_	Offset=183-199
+3	37°C	_	Temperature	_	_	0	_	_	Offset=203-207
+4	1	_	Time	_	_	0	_	_	Offset=212-218
+
+# sent_id = s4
+# text = Pre-warm selective plates at 37°C for 1 hour. 
+1	Place	_	Action	_	_	0	_	_	Offset=221-226
+2	electroporation	_	Location	_	_	0	_	_	Offset=227-251
+3	1mm	_	Size	_	_	2	Measure	_	Offset=253-256
+4	microcentrifuge	_	Location	_	_	0	_	_	Offset=262-283
+5	ice	_	Location	_	_	0	_	_	Offset=287-290
+
+# sent_id = s5
+# text = Place electroporation cuvettes (1mm) and microcentrifuge tubes on ice. 
+1	dilute	_	Action	_	_	0	_	_	Offset=335-341
+2	control	_	Reagent	_	_	0	_	_	Offset=346-359
+3	10	_	Concentration	_	_	2	Measure	_	Offset=395-403
+4	sterile	_	Reagent	_	_	0	_	_	Offset=410-423
+
+# sent_id = s6
+# text = As a positive control for transformation, dilute the control pUC19 by 1:5 to a final concentration of 10 pg/μl using sterile water. 
+1	Thaw	_	Action	_	_	0	_	_	Offset=426-430
+2	NEB	_	Reagent	_	_	0	_	_	Offset=431-463
+3	ice	_	Location	_	_	0	_	_	Offset=467-470
+4	about	_	Modifier	_	_	5	Mod-Link	_	Offset=472-477
+5	10	_	Time	_	_	0	_	_	Offset=478-484
+6	mix	_	Action	_	_	0	_	_	Offset=490-493
+7	cells	_	Reagent	_	_	0	_	_	Offset=494-499
+8	flicking	_	Action	_	_	0	_	_	Offset=503-511
+9	gently	_	Modifier	_	_	0	_	_	Offset=512-518
+
+# sent_id = s7
+# text = Thaw NEB Turbo Electrocompetent cells on ice (about 10 min) and mix cells by flicking gently. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=521-529
+2	25	_	Amount	_	_	3	Measure	_	Offset=530-535
+3	cells	_	Reagent	_	_	0	_	_	Offset=543-548
+4	chilled	_	Modifier	_	_	5	Mod-Link	_	Offset=597-604
+5	microcentrifuge	_	Location	_	_	0	_	_	Offset=605-625
+
+# sent_id = s8
+# text = Transfer 25 μl of the cells (or the amount specified for the cuvettes) to a chilled microcentrifuge tube. 
+1	Add	_	Action	_	_	0	_	_	Offset=628-631
+2	1	_	Amount	_	_	3	Measure	_	Offset=632-636
+3	DNA	_	Reagent	_	_	0	_	_	Offset=644-656
+
+# sent_id = s9
+# text = Add 1 μl of the DNA solution.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=658-667
+2	transfer	_	Action	_	_	0	_	_	Offset=668-676
+3	cell/DNA	_	Reagent	_	_	0	_	_	Offset=681-693
+4	chilled	_	Modifier	_	_	5	Mod-Link	_	Offset=701-708
+5	cuvette	_	Location	_	_	0	_	_	Offset=709-716
+6	cells	_	Reagent	_	_	0	_	_	Offset=768-773
+7	deposit	_	Action	_	_	0	_	_	Offset=774-781
+8	across	_	Modifier	_	_	0	_	_	Offset=782-788
+9	bottom	_	Location	_	_	0	_	_	Offset=793-799
+10	cuvette	_	Location	_	_	9	Meronym	_	Offset=807-814
+
+# sent_id = s10
+# text = Carefully transfer the cell/DNA mix into a chilled cuvette without introducing bubbles and make sure that the cells deposit across the bottom of the cuvette. 
+1	Electroporate	_	Action	_	_	0	_	_	Offset=817-830
+
+# sent_id = s11
+# text = Electroporate using the following conditions for BTX ECM 630 and Bio-Rad GenePulser electroporators: 2.1 kV, 100 Ω, and 25 μF.
+1	Immediately	_	Modifier	_	_	0	_	_	Offset=993-1004
+2	add	_	Action	_	_	0	_	_	Offset=1005-1008
+3	975	_	Amount	_	_	5	Measure	_	Offset=1009-1015
+4	37°C	_	Temperature	_	_	0	_	_	Offset=1019-1023
+5	SOC	_	Reagent	_	_	0	_	_	Offset=1024-1027
+6	cuvette	_	Location	_	_	0	_	_	Offset=1035-1042
+
+# sent_id = s12
+# text = The typical time constant is ~2.6 milliseconds. 
+1	Gently	_	Modifier	_	_	0	_	_	Offset=1045-1051
+2	mix	_	Action	_	_	0	_	_	Offset=1052-1055
+3	up	_	Method	_	_	0	_	_	Offset=1056-1067
+4	twice	_	Numerical	_	_	0	_	_	Offset=1068-1073
+
+# sent_id = s13
+# text = Immediately add 975 µl of 37°C SOC to the cuvette. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=1076-1084
+2	17mm	_	Size	_	_	3	Measure	_	Offset=1092-1104
+3	round-bottom	_	Location	_	_	0	_	_	Offset=1105-1130
+
+# sent_id = s14
+# text = Gently mix up and down twice. 
+1	Shake	_	Action	_	_	0	_	_	Offset=1132-1137
+2	vigorously	_	Modifier	_	_	0	_	_	Offset=1138-1148
+3	rotate	_	Action	_	_	0	_	_	Offset=1162-1168
+4	37°C	_	Temperature	_	_	0	_	_	Offset=1172-1176
+5	1	_	Time	_	_	0	_	_	Offset=1181-1187
+
+# sent_id = s15
+# text = Transfer to the 17mm x 100mm round-bottom culture tube.
+1	Dilute	_	Action	_	_	0	_	_	Offset=1190-1196
+2	cells	_	Reagent	_	_	0	_	_	Offset=1201-1206
+3	appropriate	_	Modifier	_	_	0	_	_	Offset=1210-1221
+4	spread	_	Action	_	_	0	_	_	Offset=1227-1233
+5	100-200	_	Amount	_	_	6	Measure	_	Offset=1234-1244
+6	cells	_	Reagent	_	_	0	_	_	Offset=1245-1250
+7	pre-warmed	_	Modifier	_	_	8	Mod-Link	_	Offset=1258-1268
+8	selective	_	Location	_	_	0	_	_	Offset=1269-1284
+
+# sent_id = s16
+# text = Shake vigorously (250 rpm) or rotate at 37°C for 1 hour. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=1287-1295
+2	plates	_	Location	_	_	0	_	_	Offset=1296-1302
+3	8	_	Time	_	_	0	_	_	Offset=1303-1310
+4	overnight	_	Time	_	_	0	_	_	Offset=1314-1323
+5	37°C	_	Temperature	_	_	0	_	_	Offset=1327-1331
+

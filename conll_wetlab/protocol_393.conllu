@@ -1,0 +1,56 @@
+# sent_id = s1
+# text = Protein Expression & Isolation & Purification
+1	Inoculate	_	Action	_	_	0	_	_	Offset=1539-1548
+2	E.	_	Reagent	_	_	3	Meronym	_	Offset=1549-1568
+3	recombinant	_	Reagent	_	_	0	_	_	Offset=1584-1603
+4	chloramphenicol	_	Reagent	_	_	3	Meronym	_	Offset=1607-1640
+5	5mL	_	Amount	_	_	6	Measure	_	Offset=1644-1647
+6	LB	_	Reagent	_	_	0	_	_	Offset=1648-1664
+7	37	_	Temperature	_	_	0	_	_	Offset=1699-1703
+8	shaking	_	Action	_	_	0	_	_	Offset=1704-1711
+9	culture	_	Action	_	_	0	_	_	Offset=1716-1723
+10	overnight	_	Time	_	_	0	_	_	Offset=1724-1733
+
+# sent_id = s2
+# text = Through expression, we can explore the function and the mechanism of regulation of gene expression, as well as the protein encoded by cloned gene expression can be used for the study of structure and function.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1735-1743
+2	1mL	_	Amount	_	_	3	Measure	_	Offset=1744-1747
+3	overnight	_	Reagent	_	_	0	_	_	Offset=1748-1766
+4	100	_	Amount	_	_	7	Measure	_	Offset=1770-1776
+5	100ug/mL	_	Concentration	_	_	6	Measure	_	Offset=1789-1797
+6	ampicillin	_	Reagent	_	_	0	_	_	Offset=1798-1808
+7	LB	_	Reagent	_	_	6	Meronym	_	Offset=1810-1826
+8	37	_	Temperature	_	_	0	_	_	Offset=1828-1832
+9	shake	_	Action	_	_	0	_	_	Offset=1833-1838
+10	culture	_	Reagent	_	_	0	_	_	Offset=1839-1846
+11	OD600	_	Generic-Measure	_	_	10	Measure	_	Offset=1853-1870
+
+# sent_id = s3
+# text = E. Coli is the most widely used protein expression systems and the expression level of exogenous gene product is much higher than other gene expression systems.
+1	Take	_	Action	_	_	0	_	_	Offset=1872-1876
+2	10ul	_	Amount	_	_	3	Measure	_	Offset=1877-1881
+3	samples	_	Reagent	_	_	0	_	_	Offset=1882-1889
+4	SDS-PAGE	_	Method	_	_	0	_	_	Offset=1894-1911
+
+# sent_id = s4
+# text = The amount of targeted protein expressed is even more than 80% of the total bacterial proteins.
+1	Add	_	Action	_	_	0	_	_	Offset=1913-1916
+2	IPTG	_	Reagent	_	_	0	_	_	Offset=1917-1921
+3	final	_	Measure-Type	_	_	0	_	_	Offset=1927-1946
+4	0.5	_	Concentration	_	_	0	_	_	Offset=1950-1960
+5	culture	_	Action	_	_	0	_	_	Offset=1962-1969
+6	1-3h	_	Time	_	_	0	_	_	Offset=1970-1974
+7	37	_	Temperature	_	_	0	_	_	Offset=1978-1982
+
+# sent_id = s5
+# text = In this study, a plasmid carrying the gene of the target protein in E. coli BL21, and at 37 C, IPTG induced overexpression of carries six consecutive histidine residues recombinant chloramphenicol acetyltransferase protein that available one kind by covalent conjugation of nitrilotriacetic acid (NTA) nickel ions (Ni2 +) immobilized chromatographic media to be purified, in fact boil metal affinity chromatography (MCAC).
+1	12,000rpm	_	Speed	_	_	0	_	_	Offset=1984-1993
+2	centrifugation	_	Action	_	_	0	_	_	Offset=1994-2008
+3	10	_	Time	_	_	0	_	_	Offset=2013-2019
+4	discard	_	Action	_	_	0	_	_	Offset=2021-2028
+5	supernatant	_	Reagent	_	_	0	_	_	Offset=2033-2044
+6	store	_	Action	_	_	0	_	_	Offset=2046-2051
+7	cell	_	Reagent	_	_	0	_	_	Offset=2052-2068
+8	-20	_	Temperature	_	_	0	_	_	Offset=2072-2077
+9	-70	_	Temperature	_	_	8	Or	_	Offset=2081-2086
+

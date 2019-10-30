@@ -1,0 +1,160 @@
+# sent_id = s1
+# text = Plasmid DNA miniprep protocol for EZ-10 Spin Column Plasmid DNA minipreps kit (BS413), 50 preps
+1	Add	_	Action	_	_	0	_	_	Offset=96-99
+2	1.5	_	Amount	_	_	3	Measure	_	Offset=100-106
+3	overnight	_	Reagent	_	_	0	_	_	Offset=110-127
+4	microcentrifuge	_	Location	_	_	0	_	_	Offset=133-153
+5	centrifuge	_	Action	_	_	0	_	_	Offset=158-168
+6	12,000rpm	_	Speed	_	_	0	_	_	Offset=172-181
+7	2	_	Time	_	_	0	_	_	Offset=186-195
+
+# sent_id = s2
+# text = Add 1.5 mL of overnight culture to a microcentrifuge tube and centrifuge at 12,000rpm for 2 minutes.
+1	Drain	_	Action	_	_	0	_	_	Offset=197-202
+2	clarified	_	Modifier	_	_	3	Mod-Link	_	Offset=207-216
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=217-229
+4	completely	_	Modifier	_	_	0	_	_	Offset=229-239
+5	cell	_	Reagent	_	_	0	_	_	Offset=257-268
+
+# sent_id = s3
+# text = Drain the clarified supernatant completely leaving only the cell pellet.
+1	add	_	Action	_	_	0	_	_	Offset=321-324
+2	further	_	Modifier	_	_	4	Mod-Link	_	Offset=327-334
+3	1.5	_	Amount	_	_	4	Measure	_	Offset=335-341
+4	overnight	_	Reagent	_	_	0	_	_	Offset=345-362
+5	microcentrifuge	_	Location	_	_	7	Meronym	_	Offset=370-390
+6	previous	_	Modifier	_	_	7	Mod-Link	_	Offset=406-414
+7	pellet	_	Reagent	_	_	0	_	_	Offset=415-421
+
+# sent_id = s4
+# text = Optional: Depending on ease of plasmid replication add a further 1.5 mL of overnight culture to the microcentrifuge tube containing the previous pellet and repeat until a maximum of 5 mL of overnight culture has been added.
+1	Add	_	Action	_	_	0	_	_	Offset=494-497
+2	100uL	_	Amount	_	_	3	Measure	_	Offset=498-503
+3	Solution	_	Reagent	_	_	0	_	_	Offset=507-517
+4	pellet	_	Reagent	_	_	0	_	_	Offset=525-531
+5	mix	_	Action	_	_	0	_	_	Offset=533-536
+6	well	_	Modifier	_	_	0	_	_	Offset=537-541
+7	sit	_	Action	_	_	0	_	_	Offset=587-590
+8	1	_	Time	_	_	0	_	_	Offset=595-601
+
+# sent_id = s5
+# text = Add 100uL of Solution 1 to the pellet, mix well, ensuring that no clumps are present and let sit for 1 min. 
+1	Add	_	Action	_	_	0	_	_	Offset=603-606
+2	1μL	_	Amount	_	_	3	Measure	_	Offset=607-610
+3	VisualLyse	_	Reagent	_	_	0	_	_	Offset=614-624
+4	solution	_	Reagent	_	_	0	_	_	Offset=632-640
+
+# sent_id = s6
+# text = Add 1μL of VisualLyse to the solution from step 2 (optional). 
+1	Add	_	Action	_	_	0	_	_	Offset=666-669
+2	200µl	_	Amount	_	_	3	Measure	_	Offset=670-675
+3	Solution	_	Reagent	_	_	0	_	_	Offset=679-690
+4	mixture	_	Reagent	_	_	0	_	_	Offset=698-705
+5	mix	_	Action	_	_	0	_	_	Offset=711-714
+6	gently	_	Modifier	_	_	0	_	_	Offset=715-721
+7	inverting	_	Action	_	_	0	_	_	Offset=725-734
+8	tube	_	Location	_	_	0	_	_	Offset=739-743
+9	4-6	_	Numerical	_	_	0	_	_	Offset=744-747
+10	keep	_	Action	_	_	0	_	_	Offset=763-767
+11	room	_	Temperature	_	_	0	_	_	Offset=771-787
+12	1	_	Time	_	_	0	_	_	Offset=792-800
+
+# sent_id = s7
+# text = Add 200µl of Solution II to the mixture, and mix gently by inverting the tube 4-6 times and then keep at room temperature for 1 minute.
+1	do	_	Action	_	_	0	_	_	Offset=845-858
+
+# sent_id = s8
+# text = To prevent contamination from genomic DNA, do not vortex.
+1	Add	_	Action	_	_	0	_	_	Offset=860-863
+2	350µl	_	Amount	_	_	3	Measure	_	Offset=864-869
+3	Solution	_	Reagent	_	_	0	_	_	Offset=873-885
+4	mix	_	Action	_	_	0	_	_	Offset=891-894
+5	gently	_	Modifier	_	_	0	_	_	Offset=895-901
+
+# sent_id = s9
+# text = Add 350µl of Solution III, and mix gently.
+1	Incubate	_	Action	_	_	0	_	_	Offset=903-911
+2	room	_	Temperature	_	_	0	_	_	Offset=915-931
+3	1	_	Time	_	_	0	_	_	Offset=936-944
+
+# sent_id = s10
+# text = Incubate at room temperature for 1 minute.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1150-1160
+2	12,000rpm	_	Speed	_	_	0	_	_	Offset=1164-1173
+3	5	_	Time	_	_	0	_	_	Offset=1178-1187
+
+# sent_id = s11
+# text = A fluffy white material forms and lysate should become less viscous.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1190-1198
+2	above	_	Modifier	_	_	3	Mod-Link	_	Offset=1203-1208
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=1209-1220
+4	EZ-10	_	Location	_	_	0	_	_	Offset=1237-1249
+
+# sent_id = s12
+# text = If VisualLyse has been added in step 3, the suspension should be mixed until all traces of blue has gone and lysate becomes colorless.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1251-1261
+2	10,000rpm	_	Speed	_	_	0	_	_	Offset=1265-1274
+3	2	_	Time	_	_	0	_	_	Offset=1279-1288
+
+# sent_id = s13
+# text = Centrifuge at 12,000rpm for 5 minutes. 
+1	Discard	_	Action	_	_	0	_	_	Offset=1292-1299
+2	flow-through	_	Reagent	_	_	0	_	_	Offset=1304-1316
+3	tube	_	Location	_	_	0	_	_	Offset=1324-1328
+
+# sent_id = s14
+# text = Transfer the above supernatant (step 6) to the EZ-10 column.
+1	Add	_	Action	_	_	0	_	_	Offset=1330-1333
+2	750µl	_	Amount	_	_	3	Measure	_	Offset=1334-1339
+3	Wash	_	Reagent	_	_	0	_	_	Offset=1343-1356
+4	column	_	Location	_	_	0	_	_	Offset=1364-1370
+5	centrifuge	_	Action	_	_	0	_	_	Offset=1376-1386
+6	10,000rpm	_	Speed	_	_	0	_	_	Offset=1390-1399
+7	2	_	Time	_	_	0	_	_	Offset=1404-1413
+
+# sent_id = s15
+# text = Centrifuge at 10,000rpm for 2 minutes.  
+1	Discard	_	Action	_	_	0	_	_	Offset=1450-1457
+2	flow-through	_	Reagent	_	_	0	_	_	Offset=1462-1474
+3	collection	_	Location	_	_	0	_	_	Offset=1482-1497
+
+# sent_id = s16
+# text = Discard the flow-through in the tube.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1499-1509
+2	10,000rpm	_	Speed	_	_	0	_	_	Offset=1513-1522
+3	additional	_	Modifier	_	_	4	Mod-Link	_	Offset=1530-1540
+4	minute	_	Time	_	_	0	_	_	Offset=1541-1547
+5	remove	_	Action	_	_	0	_	_	Offset=1551-1557
+6	any	_	Modifier	_	_	8	Mod-Link	_	Offset=1558-1561
+7	residual	_	Modifier	_	_	8	Mod-Link	_	Offset=1562-1570
+8	Wash	_	Reagent	_	_	0	_	_	Offset=1571-1584
+
+# sent_id = s17
+# text = Add 750µl of Wash Solution to the column, and centrifuge at 10,000rpm for 2 minutes. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=1587-1595
+2	column	_	Location	_	_	0	_	_	Offset=1600-1606
+3	clean	_	Modifier	_	_	5	Mod-Link	_	Offset=1612-1617
+4	1.5ml	_	Amount	_	_	5	Measure	_	Offset=1618-1623
+5	microfuge	_	Location	_	_	0	_	_	Offset=1624-1638
+
+# sent_id = s18
+# text = Repeat wash procedure in step 8. 
+1	Add	_	Action	_	_	0	_	_	Offset=1651-1654
+2	50µl	_	Amount	_	_	3	Measure	_	Offset=1655-1659
+3	Elution	_	Reagent	_	_	0	_	_	Offset=1663-1677
+4	center	_	Location	_	_	0	_	_	Offset=1687-1698
+5	column	_	Location	_	_	4	Meronym	_	Offset=1706-1712
+6	incubate	_	Action	_	_	0	_	_	Offset=1717-1725
+7	room	_	Temperature	_	_	0	_	_	Offset=1729-1745
+8	2	_	Time	_	_	0	_	_	Offset=1750-1759
+
+# sent_id = s19
+# text = Discard the flow-through in the collection tube.
+1	Store	_	Action	_	_	0	_	_	Offset=1761-1766
+2	purified	_	Modifier	_	_	3	Mod-Link	_	Offset=1767-1775
+3	DNA	_	Reagent	_	_	0	_	_	Offset=1776-1779
+4	-20ºC	_	Temperature	_	_	0	_	_	Offset=1783-1788
+5	Centrifuge	_	Action	_	_	0	_	_	Offset=1789-1799
+6	10,000	_	Speed	_	_	0	_	_	Offset=1803-1813
+7	2	_	Time	_	_	0	_	_	Offset=1818-1827
+

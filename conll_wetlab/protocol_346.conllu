@@ -1,0 +1,80 @@
+# sent_id = s1
+# text = Yeast Crude Protein Extraction
+1	Grow	_	Action	_	_	0	_	_	Offset=31-35
+2	cells	_	Reagent	_	_	0	_	_	Offset=36-41
+3	liquid	_	Reagent	_	_	0	_	_	Offset=70-83
+
+# sent_id = s2
+# text = Grow cells to mid-exponential phase in liquid medium.
+1	Normalize	_	Action	_	_	0	_	_	Offset=85-94
+2	cells	_	Reagent	_	_	0	_	_	Offset=95-100
+3	OD600	_	Measure-Type	_	_	4	Of-Type	_	Offset=107-112
+4	2-3	_	Numerical	_	_	0	_	_	Offset=116-119
+5	1	_	Amount	_	_	6	Measure	_	Offset=123-127
+6	H2O	_	Reagent	_	_	0	_	_	Offset=131-134
+
+# sent_id = s3
+# text = Normalize cells to an OD600 of 2-3 in 1 mL of H2O.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=136-146
+2	1	_	Amount	_	_	3	Measure	_	Offset=147-151
+3	H2O	_	Reagent	_	_	4	Meronym	_	Offset=155-158
+4	cells	_	Reagent	_	_	0	_	_	Offset=175-180
+5	9000	_	Speed	_	_	0	_	_	Offset=184-192
+6	two	_	Time	_	_	0	_	_	Offset=197-208
+
+# sent_id = s4
+# text = Centrifuge 1 mL of H2O containing your cells at 9000 RPM for two minutes.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=210-219
+2	pelleted	_	Reagent	_	_	0	_	_	Offset=220-234
+3	100	_	Amount	_	_	5	Measure	_	Offset=238-244
+4	0.2	_	Concentration	_	_	5	Measure	_	Offset=245-250
+5	NaOH	_	Reagent	_	_	0	_	_	Offset=251-255
+6	incubate	_	Action	_	_	0	_	_	Offset=260-268
+7	ice	_	Reagent	_	_	0	_	_	Offset=272-275
+8	15	_	Time	_	_	0	_	_	Offset=280-290
+
+# sent_id = s5
+# text = Resuspend pelleted cells in 100 uL 0.2 M NaOH and incubate on ice for 15 minutes.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=292-302
+2	cells	_	Reagent	_	_	0	_	_	Offset=303-308
+3	9000	_	Speed	_	_	0	_	_	Offset=312-320
+4	two	_	Time	_	_	0	_	_	Offset=325-336
+
+# sent_id = s6
+# text = Centrifuge cells at 9000 RPM for two minutes.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=338-347
+2	pellet	_	Reagent	_	_	0	_	_	Offset=352-358
+3	100	_	Amount	_	_	4	Measure	_	Offset=362-368
+4	Yeast	_	Reagent	_	_	0	_	_	Offset=372-410
+
+# sent_id = s7
+# text = Resuspend the pellet in 100 uL of Yeast Protein Extraction Sample Buffer.
+1	Add	_	Action	_	_	0	_	_	Offset=412-415
+2	0.4	_	Amount	_	_	3	Measure	_	Offset=416-422
+3	2-mercaptoethanol	_	Reagent	_	_	0	_	_	Offset=423-440
+4	mixture	_	Reagent	_	_	0	_	_	Offset=448-455
+
+# sent_id = s8
+# text = Add 0.4 uL 2-mercaptoethanol to the mixture.
+1	Boil	_	Action	_	_	0	_	_	Offset=457-461
+2	cells	_	Reagent	_	_	0	_	_	Offset=462-467
+3	sample	_	Reagent	_	_	0	_	_	Offset=471-484
+4	5	_	Time	_	_	0	_	_	Offset=489-498
+5	95	_	Temperature	_	_	0	_	_	Offset=502-506
+
+# sent_id = s9
+# text = Boil cells in sample buffer for 5 minutes at 95 C.
+1	store	_	Action	_	_	0	_	_	Offset=512-517
+2	-80	_	Temperature	_	_	0	_	_	Offset=521-526
+3	load	_	Action	_	_	0	_	_	Offset=530-534
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=535-546
+5	gel	_	Reagent	_	_	0	_	_	Offset=554-557
+
+# sent_id = s10
+# text = Can store at -80 C or load supernatant into a gel.
+1	Vortex	_	Action	_	_	0	_	_	Offset=559-565
+2	briefly	_	Modifier	_	_	0	_	_	Offset=566-573
+3	centrifuge	_	Action	_	_	0	_	_	Offset=579-589
+4	10,000	_	Speed	_	_	0	_	_	Offset=593-603
+5	3	_	Time	_	_	0	_	_	Offset=608-617
+

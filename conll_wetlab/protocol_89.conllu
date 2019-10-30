@@ -1,0 +1,128 @@
+# sent_id = s1
+# text = One Step Procedure for Screening Recombinant Plasmids by Size
+1	Inoculate	_	Action	_	_	0	_	_	Offset=62-71
+2	3.5	_	Amount	_	_	3	Measure	_	Offset=72-78
+3	aliquots	_	Reagent	_	_	0	_	_	Offset=79-87
+4	LB	_	Reagent	_	_	3	Meronym	5:Meronym	Offset=91-99
+5	appropriate	_	Reagent	_	_	0	_	_	Offset=115-137
+6	single	_	Reagent	_	_	8	Meronym	_	Offset=143-165
+7	bacteria	_	Reagent	_	_	6	Meronym	_	Offset=173-181
+8	plasmid	_	Reagent	_	_	0	_	_	Offset=197-204
+
+# sent_id = s2
+# text = Inoculate 3.5 mL aliquots of LB media containing the appropriate antibiotic with single colony isolates of the bacteria containing the plasmid in question.
+1	Incubate	_	Action	_	_	0	_	_	Offset=218-226
+2	overnight	_	Time	_	_	0	_	_	Offset=227-236
+3	37°C.	_	Temperature	_	_	0	_	_	Offset=240-245
+
+# sent_id = s3
+# text = Incubate overnight at 37°C.
+1	Place	_	Action	_	_	0	_	_	Offset=246-251
+2	150	_	Amount	_	_	3	Measure	_	Offset=252-258
+3	each	_	Reagent	_	_	0	_	_	Offset=262-274
+4	microfuge	_	Location	_	_	0	_	_	Offset=282-296
+
+# sent_id = s4
+# text = Place 150 µL of each culture into a microfuge tube.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=298-308
+2	microfuge	_	Device	_	_	0	_	_	Offset=316-325
+3	30	_	Time	_	_	0	_	_	Offset=330-340
+4	pellet	_	Action	_	_	0	_	_	Offset=344-350
+5	bacteria	_	Reagent	_	_	0	_	_	Offset=355-363
+
+# sent_id = s5
+# text = Centrifuge in the microfuge for 30 seconds to pellet the bacteria.
+1	Discard	_	Action	_	_	0	_	_	Offset=365-372
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=377-389
+
+# sent_id = s6
+# text = Discard the supernatants.
+1	Add	_	Action	_	_	0	_	_	Offset=391-394
+2	40	_	Amount	_	_	3	Measure	_	Offset=395-400
+3	agarose	_	Reagent	_	_	0	_	_	Offset=404-417
+4	sample	_	Reagent	_	_	0	_	_	Offset=426-432
+
+# sent_id = s7
+# text = Add 40 µL of agarose beads to each sample.
+1	Add	_	Action	_	_	0	_	_	Offset=434-437
+2	14	_	Amount	_	_	3	Measure	_	Offset=438-443
+3	phenol:chloroform	_	Reagent	_	_	0	_	_	Offset=447-464
+4	1:1)	_	Concentration	_	_	3	Measure	_	Offset=466-470
+5	each	_	Amount	_	_	6	Measure	_	Offset=474-478
+6	sample	_	Reagent	_	_	0	_	_	Offset=479-485
+7	vortex	_	Action	_	_	0	_	_	Offset=490-496
+8	5-10	_	Time	_	_	0	_	_	Offset=501-509
+
+# sent_id = s8
+# text = Add 14 µL of phenol:chloroform (1:1) to each sample and vortex for 5-10 sec.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=511-521
+2	samples	_	Reagent	_	_	0	_	_	Offset=526-533
+3	microfuge	_	Device	_	_	0	_	_	Offset=541-550
+4	5	_	Time	_	_	0	_	_	Offset=555-560
+5	separate	_	Action	_	_	0	_	_	Offset=564-572
+6	phases	_	Reagent	_	_	0	_	_	Offset=577-583
+
+# sent_id = s9
+# text = Centrifuge the samples in the microfuge for 5 min to separate the phases.
+1	Layer	_	Action	_	_	0	_	_	Offset=585-590
+2	10	_	Amount	_	_	3	Measure	_	Offset=591-596
+3	aqueous	_	Reagent	_	_	0	_	_	Offset=612-626
+4	1.2%	_	Concentration	_	_	5	Measure	_	Offset=634-638
+5	agarose	_	Reagent	_	_	7	Meronym	_	Offset=639-661
+6	1X	_	Concentration	_	_	7	Measure	_	Offset=675-677
+7	TPE	_	Reagent	_	_	0	_	_	Offset=678-688
+
+# sent_id = s10
+# text = Layer 10 µL of each of the aqueous phases onto a 1.2% agarose horizontal gel made up with 1X TPE buffer.
+1	outside	_	Location	_	_	0	_	_	Offset=697-710
+2	run	_	Action	_	_	0	_	_	Offset=711-714
+3	lambda	_	Reagent	_	_	0	_	_	Offset=715-725
+4	digested	_	Modifier	_	_	3	Mod-Link	_	Offset=726-734
+5	HindIII	_	Reagent	_	_	0	_	_	Offset=740-747
+6	StyI	_	Reagent	_	_	5	Or	_	Offset=755-759
+
+# sent_id = s11
+# text = In the outside lanes run lambda DNA digested with HindIII and/or StyI for size markers.
+1	run	_	Action	_	_	0	_	_	Offset=783-806
+
+# sent_id = s12
+# text = Also run the original vector to show the size of the plasmid without insert DNA.
+1	Gels	_	Reagent	_	_	0	_	_	Offset=859-863
+2	double	_	Action	_	_	0	_	_	Offset=871-884
+
+# sent_id = s13
+# text = Gels may be double combed to facilitate running more samples.
+1	Electrophorese	_	Action	_	_	0	_	_	Offset=921-935
+2	gel	_	Reagent	_	_	0	_	_	Offset=940-943
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=947-949
+4	TPE	_	Reagent	_	_	0	_	_	Offset=950-960
+5	400-450	_	Generic-Measure	_	_	0	_	_	Offset=979-997
+
+# sent_id = s14
+# text = Electrophorese the gel in 1X TPE buffer for approximately 400-450 volt-hours.
+1	Stain	_	Action	_	_	0	_	_	Offset=999-1004
+2	gel	_	Reagent	_	_	0	_	_	Offset=1009-1012
+3	ethidium	_	Reagent	_	_	0	_	_	Offset=1018-1034
+4	0.5	_	Concentration	_	_	0	_	_	Offset=1057-1066
+5	d-H2O	_	Reagent	_	_	0	_	_	Offset=1070-1075
+6	30	_	Time	_	_	0	_	_	Offset=1080-1090
+
+# sent_id = s15
+# text = Stain the gel with ethidium bromide at a concentration of 0.5 µg/mL in d-H2O for 30 minutes.
+1	Observe	_	Action	_	_	0	_	_	Offset=1092-1099
+2	gel	_	Reagent	_	_	0	_	_	Offset=1104-1107
+3	UV	_	Device	_	_	0	_	_	Offset=1113-1125
+4	photograph	_	Action	_	_	0	_	_	Offset=1130-1140
+5	gel	_	Reagent	_	_	0	_	_	Offset=1145-1148
+
+# sent_id = s16
+# text = Observe the gel on a UV light box and photograph the gel.
+1	plasmid	_	Reagent	_	_	0	_	_	Offset=1172-1183
+2	isolated	_	Action	_	_	0	_	_	Offset=1191-1199
+
+# sent_id = s17
+# text = For further analysis, plasmid DNA may be isolated from those samples that indicate that they have inserts of the appropriate size.
+1	Destain	_	Action	_	_	0	_	_	Offset=1281-1288
+2	gel	_	Reagent	_	_	0	_	_	Offset=1293-1296
+3	d-H2O	_	Reagent	_	_	0	_	_	Offset=1302-1307
+

@@ -1,0 +1,149 @@
+# sent_id = s1
+# text = Most Probable Number (MPN) Counts of Cyanophages
+1	Label	_	Action	_	_	0	_	_	Offset=49-54
+2	dilution	_	Location	_	_	0	_	_	Offset=59-85
+
+# sent_id = s2
+# text = Label the dilution preparation plate using example in guidelines.  
+1	Label	_	Action	_	_	0	_	_	Offset=117-122
+2	sample	_	Reagent	_	_	0	_	_	Offset=127-133
+3	plates	_	Location	_	_	2	Meronym	_	Offset=134-140
+
+# sent_id = s3
+# text = Label the sample plates with the date, host, phage name, and any other applicable information (e.g. the light level).  
+1	8x1500	_	Size	_	_	2	Setting	_	Offset=245-254
+2	multi-channel	_	Device	_	_	0	_	_	Offset=255-277
+3	put	_	Action	_	_	0	_	_	Offset=279-282
+4	270	_	Amount	_	_	5	Measure	6:Measure	Offset=283-289
+5	Pro99	_	Reagent	_	_	0	_	_	Offset=293-298
+6	SN	_	Reagent	_	_	5	Meronym	_	Offset=302-311
+7	all	_	Amount	_	_	8	Measure	_	Offset=315-318
+8	wells	_	Location	_	_	0	_	_	Offset=319-324
+9	dilution	_	Location	_	_	8	Meronym	_	Offset=328-342
+
+# sent_id = s4
+# text = Using a 8x1500 µL multi-channel pipettor, put 270 µL of Pro99 or SN medium in all wells of dilution plate. 
+1	100	_	Size	_	_	2	Setting	_	Offset=353-359
+2	pipettor	_	Device	_	_	0	_	_	Offset=360-368
+3	dispense	_	Action	_	_	0	_	_	Offset=370-378
+4	30	_	Amount	_	_	5	Measure	_	Offset=379-384
+5	virus	_	Reagent	_	_	0	_	_	Offset=388-400
+6	row	_	Location	_	_	0	_	_	Offset=406-411
+7	dilution	_	Location	_	_	6	Meronym	_	Offset=419-433
+
+# sent_id = s5
+# text = Using a 100 µL pipettor, dispense 30 µL of virus sample into row H of the dilution plate.  
+1	Repeat	_	Action	_	_	0	_	_	Offset=437-443
+2	virus	_	Reagent	_	_	0	_	_	Offset=465-478
+
+# sent_id = s6
+# text = Repeat this for each of the virus samples. 
+1	12x300	_	Size	_	_	2	Setting	_	Offset=489-498
+2	multi-channel	_	Device	_	_	0	_	_	Offset=499-521
+3	30	_	Size	_	_	2	Setting	_	Offset=529-534
+4	12	_	Amount	_	_	5	Setting	_	Offset=540-542
+5	tips	_	Device	_	_	0	_	_	Offset=543-547
+6	attached	_	Action	_	_	0	_	_	Offset=548-556
+7	pipette	_	Action	_	_	0	_	_	Offset=558-565
+8	row	_	Location	_	_	0	_	_	Offset=566-571
+9	mix	_	Action	_	_	0	_	_	Offset=587-590
+10	dilution	_	Reagent	_	_	0	_	_	Offset=595-603
+
+# sent_id = s7
+# text = Using a 12x300 µL multi-channel pipettor set at 30 µL with 12 tips attached, pipette row H up and down to mix the dilution. 
+1	Replace	_	Action	_	_	0	_	_	Offset=606-613
+2	tips	_	Device	_	_	0	_	_	Offset=618-622
+3	pipette	_	Action	_	_	0	_	_	Offset=627-634
+4	30	_	Mention	_	_	0	_	_	Offset=635-640
+5	row	_	Location	_	_	4	Meronym	_	Offset=646-651
+6	row	_	Location	_	_	0	_	_	Offset=657-662
+
+# sent_id = s8
+# text = Replace the tips and pipette 30 µL from row H into row A (the 10-2 row). 
+1	Pipette	_	Action	_	_	0	_	_	Offset=680-699
+2	several	_	Numerical	_	_	0	_	_	Offset=700-713
+3	mix	_	Action	_	_	0	_	_	Offset=717-720
+
+# sent_id = s9
+# text = Pipette up and down several times to mix. 
+1	Replace	_	Action	_	_	0	_	_	Offset=723-730
+2	tips	_	Device	_	_	0	_	_	Offset=735-739
+3	transfer	_	Action	_	_	0	_	_	Offset=744-752
+4	30	_	Mention	_	_	0	_	_	Offset=753-758
+5	row	_	Location	_	_	0	_	_	Offset=764-769
+
+# sent_id = s10
+# text = Replace the tips and transfer 30 µL into row B (10-3 row). 
+1	Repeat	_	Action	_	_	0	_	_	Offset=783-789
+2	mixing	_	Method	_	_	0	_	_	Offset=795-801
+3	replacing	_	Method	_	_	0	_	_	Offset=803-817
+4	transferring	_	Method	_	_	0	_	_	Offset=822-834
+5	4	_	Numerical	_	_	0	_	_	Offset=835-836
+
+# sent_id = s11
+# text = Repeat this mixing, replacing tips and transferring 4 more times until you are at row F (10-7 row).   
+1	12x300	_	Size	_	_	2	Setting	_	Offset=894-903
+2	multi-channel	_	Device	_	_	0	_	_	Offset=904-926
+3	30	_	Size	_	_	2	Setting	_	Offset=934-939
+4	8	_	Amount	_	_	5	Setting	_	Offset=945-946
+5	tips	_	Device	_	_	0	_	_	Offset=947-951
+6	attached	_	Action	_	_	0	_	_	Offset=952-960
+7	pipet	_	Action	_	_	0	_	_	Offset=962-967
+8	30	_	Amount	_	_	9	Measure	_	Offset=968-973
+9	host	_	Reagent	_	_	0	_	_	Offset=974-984
+10	appropriate	_	Location	_	_	0	_	_	Offset=994-1011
+11	sample	_	Location	_	_	10	Meronym	_	Offset=1019-1031
+
+# sent_id = s12
+# text = Using a 12x300 µL multi-channel pipettor set to 30 µL with 8 tips attached, pipet 30 µL host cells into all appropriate wells of the sample plate.  
+1	Reset	_	Action	_	_	0	_	_	Offset=1035-1040
+2	pipettor	_	Device	_	_	0	_	_	Offset=1045-1053
+3	20	_	Size	_	_	2	Setting	_	Offset=1066-1071
+4	put	_	Action	_	_	0	_	_	Offset=1073-1079
+5	8	_	Amount	_	_	7	Setting	_	Offset=1080-1081
+6	fresh	_	Modifier	_	_	7	Mod-Link	_	Offset=1082-1087
+7	tips	_	Device	_	_	0	_	_	Offset=1088-1092
+8	transfer	_	Action	_	_	0	_	_	Offset=1097-1105
+9	20	_	Mention	_	_	0	_	_	Offset=1106-1111
+10	virus	_	Location	_	_	9	Meronym	_	Offset=1121-1141
+11	corresponding	_	Location	_	_	0	_	_	Offset=1154-1174
+12	sample	_	Location	_	_	11	Meronym	_	Offset=1182-1199
+
+# sent_id = s13
+# text = Reset the pipettor to dispense 20 µL, put on 8 fresh tips and transfer 20 µL from the virus dilution plate to the same corresponding column in the sample test plate. 	
+1	Put	_	Action	_	_	0	_	_	Offset=1203-1206
+2	lids	_	Seal	_	_	0	_	_	Offset=1211-1215
+3	sample	_	Location	_	_	0	_	_	Offset=1223-1241
+4	place	_	Action	_	_	0	_	_	Offset=1246-1251
+5	incubator	_	Device	_	_	0	_	_	Offset=1255-1264
+6	appropriate	_	Modifier	_	_	8	Mod-Link	7:Mod-Link	Offset=1271-1282
+7	light	_	Generic-Measure	_	_	0	_	_	Offset=1283-1288
+8	temperature	_	Temperature	_	_	0	_	_	Offset=1293-1304
+9	virus	_	Reagent	_	_	0	_	_	Offset=1343-1348
+10	adsorb	_	Action	_	_	0	_	_	Offset=1349-1355
+11	host	_	Reagent	_	_	0	_	_	Offset=1363-1367
+12	1	_	Time	_	_	0	_	_	Offset=1372-1376
+
+# sent_id = s14
+# text = Put the lids on the sample test plates and place in incubator under appropriate light and temperature conditions for each host, and let the virus adsorb to the host for 1 hr. 
+1	8x1500	_	Size	_	_	2	Setting	_	Offset=1389-1398
+2	multi-channel	_	Device	_	_	0	_	_	Offset=1399-1421
+3	6x200	_	Size	_	_	2	Setting	_	Offset=1434-1442
+4	add	_	Action	_	_	0	_	_	Offset=1444-1447
+5	200	_	Amount	_	_	6	Measure	7:Measure	Offset=1448-1454
+6	Pro99	_	Reagent	_	_	0	_	_	Offset=1458-1463
+7	SN	_	Reagent	_	_	6	Meronym	_	Offset=1467-1476
+8	all	_	Amount	_	_	9	Measure	_	Offset=1480-1483
+9	wells	_	Location	_	_	0	_	_	Offset=1484-1489
+10	all	_	Amount	_	_	11	Measure	_	Offset=1493-1496
+11	sample	_	Location	_	_	9	Meronym	_	Offset=1497-1510
+
+# sent_id = s15
+# text = Using the 8x1500 µL multi-channel pipettor set to step 6x200 µL, add 200 µL of Pro99 or SN medium to all wells in all sample plates.  
+1	Seal	_	Action	_	_	0	_	_	Offset=1514-1518
+2	plate	_	Location	_	_	0	_	_	Offset=1524-1529
+3	parafilm	_	Seal	_	_	0	_	_	Offset=1535-1543
+4	return	_	Action	_	_	0	_	_	Offset=1548-1554
+5	plates	_	Location	_	_	0	_	_	Offset=1555-1561
+6	incubator	_	Device	_	_	0	_	_	Offset=1569-1578
+

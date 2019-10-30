@@ -1,0 +1,306 @@
+# sent_id = s1
+# text = DNA Extraction from sorted cells
+1	Prepare	_	Action	_	_	0	_	_	Offset=33-40
+2	2x	_	Concentration	_	_	3	Measure	_	Offset=41-43
+3	lysis	_	Reagent	_	_	7	Coreference-Link	_	Offset=44-56
+4	add	_	Action	_	_	0	_	_	Offset=61-64
+5	volume	_	Amount	_	_	6	Measure	_	Offset=72-78
+6	sample	_	Reagent	_	_	0	_	_	Offset=82-88
+7	its	_	Mention	_	_	0	_	_	Offset=97-100
+8	1x	_	Concentration	_	_	7	Measure	_	Offset=124-126
+
+# sent_id = s2
+# text = Prepare 2x lysis buffer and add to the volume of sample so that its final concentration is 1x.
+1	Filter-sterilize	_	Action	_	_	0	_	_	Offset=128-144
+2	0.2	_	Generic-Measure	_	_	0	_	_	Offset=153-159
+
+# sent_id = s3
+# text = Filter-sterilize through 0.2 μm.
+1	Prepare	_	Action	_	_	0	_	_	Offset=161-168
+2	2x	_	Concentration	_	_	3	Measure	_	Offset=169-171
+3	Lysis	_	Reagent	_	_	0	_	_	Offset=172-184
+4	Lysozyme	_	Reagent	_	_	0	_	_	Offset=190-206
+5	add	_	Action	_	_	0	_	_	Offset=229-232
+6	1	_	Amount	_	_	7	Measure	_	Offset=236-240
+7	aliquot	_	Reagent	_	_	0	_	_	Offset=241-248
+8	lysis	_	Reagent	_	_	7	Meronym	_	Offset=252-264
+
+# sent_id = s4
+# text = Prepare 2x Lysis buffer with Lysozyme & RNase (1): right before use add to 1 ml aliquot of lysis buffer: 
+1	Shake	_	Action	_	_	0	_	_	Offset=267-272
+2	dissolve	_	Action	_	_	0	_	_	Offset=276-284
+3	thoroughly	_	Modifier	_	_	0	_	_	Offset=285-295
+4	filter-sterilize	_	Action	_	_	0	_	_	Offset=302-318
+5	again	_	Modifier	_	_	0	_	_	Offset=319-324
+
+# sent_id = s5
+# text = Shake to dissolve thoroughly, then filter-sterilize again.
+1	Dilute	_	Action	_	_	0	_	_	Offset=326-332
+2	2x	_	Concentration	_	_	3	Measure	_	Offset=337-339
+3	lysis	_	Reagent	_	_	0	_	_	Offset=340-352
+4	1:1	_	Generic-Measure	_	_	0	_	_	Offset=353-356
+5	MQ	_	Reagent	_	_	0	_	_	Offset=362-370
+
+# sent_id = s6
+# text = Dilute the 2x lysis buffer 1:1 with MQ water.
+1	Weigh	_	Action	_	_	0	_	_	Offset=372-381
+2	minimum	_	Modifier	_	_	3	Mod-Link	_	Offset=382-389
+3	amount	_	Amount	_	_	4	Measure	_	Offset=390-396
+4	ProtK	_	Reagent	_	_	0	_	_	Offset=400-405
+5	add	_	Action	_	_	0	_	_	Offset=412-415
+6	appropriate	_	Modifier	_	_	7	Mod-Link	_	Offset=420-431
+7	amount	_	Amount	_	_	8	Measure	_	Offset=432-438
+8	lysis	_	Reagent	_	_	0	_	_	Offset=442-454
+
+# sent_id = s7
+# text = Weigh out minimum amount of ProtK, then add the appropriate amount of lysis buffer.
+1	Filter	_	Action	_	_	0	_	_	Offset=456-472
+2	again	_	Modifier	_	_	0	_	_	Offset=473-478
+
+# sent_id = s8
+# text = Filter sterilize again.
+1	Add	_	Action	_	_	0	_	_	Offset=480-483
+2	1	_	Amount	_	_	4	Measure	_	Offset=484-492
+3	2x	_	Concentration	_	_	4	Measure	_	Offset=496-498
+4	Lysis	_	Reagent	_	_	5	Meronym	_	Offset=499-511
+5	Lysozyme	_	Reagent	_	_	0	_	_	Offset=517-533
+6	1	_	Amount	_	_	8	Measure	_	Offset=537-545
+7	sorted	_	Modifier	_	_	8	Mod-Link	_	Offset=549-555
+8	cells	_	Reagent	_	_	0	_	_	Offset=556-561
+
+# sent_id = s9
+# text = Add 1 volume of 2x Lysis buffer with Lysozyme & RNase to 1 volume of sorted cells.
+1	Incubate	_	Action	_	_	0	_	_	Offset=606-614
+2	37°C	_	Temperature	_	_	0	_	_	Offset=618-622
+3	30	_	Time	_	_	0	_	_	Offset=627-633
+4	rotating	_	Method	_	_	0	_	_	Offset=635-665
+5	shake	_	Action	_	_	0	_	_	Offset=775-780
+6	vertically	_	Modifier	_	_	0	_	_	Offset=781-791
+7	100	_	Speed	_	_	0	_	_	Offset=794-801
+8	shaking	_	Device	_	_	0	_	_	Offset=805-822
+9	invert	_	Action	_	_	0	_	_	Offset=827-833
+10	10	_	Numerical	_	_	0	_	_	Offset=834-836
+11	every	_	Modifier	_	_	12	Mod-Link	_	Offset=843-848
+12	10	_	Time	_	_	0	_	_	Offset=849-855
+
+# sent_id = s10
+# text = Note down volumes and resulting volume V1.
+1	Add	_	Action	_	_	0	_	_	Offset=857-860
+2	V1*0.07	_	Amount	_	_	3	Measure	_	Offset=861-871
+3	ProtK	_	Reagent	_	_	0	_	_	Offset=875-893
+4	0.65	_	Concentration	_	_	0	_	_	Offset=926-937
+
+# sent_id = s11
+# text = Incubate at 37°C for 30 min, rotating end-over-end at angle (OR: in the shaking incubator @ 100 rpm, vertical), for optimal mixing with minimal frothing; alternatively, shake vertically @ 100 rpm on shaking incubator and invert 10 times every 10 min.
+1	Add	_	Action	_	_	0	_	_	Offset=988-991
+2	V2/9	_	Amount	_	_	4	Measure	_	Offset=992-999
+3	10%	_	Concentration	_	_	4	Measure	_	Offset=1003-1006
+4	SDS	_	Reagent	_	_	0	_	_	Offset=1007-1010
+5	1%	_	Concentration	_	_	0	_	_	Offset=1039-1041
+
+# sent_id = s12
+# text = Add V1*0.07 μl of ProtK lysis buffer (2) to a final concentration of 0.65 mg/ml.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1062-1070
+2	55°C	_	Temperature	_	_	0	_	_	Offset=1074-1078
+3	2	_	Time	_	_	0	_	_	Offset=1083-1090
+4	rotating	_	Method	_	_	0	_	_	Offset=1092-1122
+5	shaking	_	Device	_	_	4	Or	_	Offset=1135-1152
+6	100	_	Speed	_	_	5	Setting	_	Offset=1155-1162
+7	vertical	_	Modifier	_	_	5	Mod-Link	_	Offset=1164-1172
+8	invert	_	Action	_	_	0	_	_	Offset=1174-1180
+9	every	_	Modifier	_	_	10	Mod-Link	_	Offset=1181-1186
+10	20	_	Time	_	_	0	_	_	Offset=1187-1193
+11	10	_	Numerical	_	_	0	_	_	Offset=1194-1196
+
+# sent_id = s13
+# text = Note down volumes, including resulting volume V2.
+1	Add	_	Action	_	_	0	_	_	Offset=1206-1209
+2	600	_	Amount	_	_	3	Measure	_	Offset=1210-1216
+3	buffer	_	Reagent	_	_	0	_	_	Offset=1217-1226
+
+# sent_id = s14
+# text = Add V2/9 μl of 10% SDS to a final concentration of 1%.
+1	Mix	_	Action	_	_	0	_	_	Offset=1257-1260
+2	thoroughly	_	Modifier	_	_	0	_	_	Offset=1261-1271
+3	vortexing	_	Method	_	_	0	_	_	Offset=1275-1284
+
+# sent_id = s15
+# text = Note down volumes.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1287-1295
+2	70°C	_	Temperature	_	_	0	_	_	Offset=1299-1303
+3	10	_	Time	_	_	0	_	_	Offset=1308-1314
+4	1.5	_	Amount	_	_	5	Measure	_	Offset=1335-1341
+5	tubes	_	Location	_	_	0	_	_	Offset=1342-1347
+
+# sent_id = s16
+# text = Incubate at 55°C for 2 hours, rotating end-over-end at angle (OR: in the shaking incubator @ 100 rpm, vertical; invert every 20 min 10 times). 
+1	Add	_	Action	_	_	0	_	_	Offset=1350-1353
+2	600	_	Amount	_	_	4	Measure	_	Offset=1354-1360
+3	96-100%	_	Concentration	_	_	4	Measure	_	Offset=1364-1371
+4	EtOH	_	Reagent	_	_	0	_	_	Offset=1372-1376
+5	Mix	_	Action	_	_	0	_	_	Offset=1377-1380
+6	vortexing	_	Action	_	_	0	_	_	Offset=1384-1393
+7	vigorously	_	Modifier	_	_	0	_	_	Offset=1394-1404
+
+# sent_id = s17
+# text = Add 600 μl buffer AL (= buffer without the EtOH). 
+1	Check	_	Action	_	_	0	_	_	Offset=1407-1412
+2	pH	_	Measure-Type	_	_	0	_	_	Offset=1413-1415
+3	lysate	_	Reagent	_	_	0	_	_	Offset=1419-1425
+
+# sent_id = s18
+# text = Mix thoroughly by vortexing. 
+1	Pipette	_	Action	_	_	0	_	_	Offset=1471-1478
+2	max.	_	Modifier	_	_	3	Mod-Link	_	Offset=1479-1492
+3	volume	_	Amount	_	_	0	_	_	Offset=1493-1499
+4	spin	_	Location	_	_	0	_	_	Offset=1505-1517
+
+# sent_id = s19
+# text = Incubate at 70°C for 10 min (for heat block use 1.5 ml tubes!)
+1	Spin	_	Action	_	_	0	_	_	Offset=1520-1524
+2	3	_	Time	_	_	0	_	_	Offset=1525-1530
+3	8000xg	_	Speed	_	_	0	_	_	Offset=1534-1540
+4	discard	_	Action	_	_	0	_	_	Offset=1542-1549
+5	flow-through	_	Reagent	_	_	0	_	_	Offset=1550-1562
+
+# sent_id = s20
+# text = Add 600 μl of 96-100% EtOH Mix by vortexing vigorously. 
+1	Pipette	_	Action	_	_	0	_	_	Offset=1565-1572
+2	additional	_	Modifier	_	_	3	Mod-Link	_	Offset=1573-1583
+3	lysate	_	Reagent	_	_	0	_	_	Offset=1584-1590
+4	spin	_	Location	_	_	0	_	_	Offset=1596-1608
+
+# sent_id = s21
+# text = Check pH of lysate, must be <7 to get max. binding efficiency. 
+1	Spin	_	Action	_	_	0	_	_	Offset=1611-1615
+2	1	_	Time	_	_	0	_	_	Offset=1616-1621
+3	8000xg	_	Speed	_	_	0	_	_	Offset=1625-1631
+4	discard	_	Action	_	_	0	_	_	Offset=1633-1640
+5	flow-through	_	Reagent	_	_	0	_	_	Offset=1641-1653
+6	collection	_	Location	_	_	0	_	_	Offset=1658-1673
+7	transfer	_	Action	_	_	0	_	_	Offset=1675-1683
+8	column	_	Location	_	_	0	_	_	Offset=1684-1690
+9	new	_	Modifier	_	_	10	Mod-Link	_	Offset=1694-1697
+10	collection	_	Location	_	_	0	_	_	Offset=1698-1713
+
+# sent_id = s22
+# text = Pipette max. possible volume onto spin columns. 
+1	Add	_	Action	_	_	0	_	_	Offset=1716-1719
+2	500	_	Amount	_	_	3	Measure	_	Offset=1720-1726
+3	buffer	_	Reagent	_	_	0	_	_	Offset=1730-1738
+
+# sent_id = s23
+# text = Spin 3 min at 8000xg; discard flow-through. 
+1	Spin	_	Action	_	_	0	_	_	Offset=1743-1747
+2	2	_	Time	_	_	0	_	_	Offset=1748-1753
+3	8000xg	_	Speed	_	_	0	_	_	Offset=1757-1763
+4	discard	_	Action	_	_	0	_	_	Offset=1765-1772
+5	flow-through	_	Reagent	_	_	0	_	_	Offset=1773-1785
+
+# sent_id = s24
+# text = Pipette additional lysate onto spin columns. 
+1	Add	_	Action	_	_	0	_	_	Offset=1788-1791
+2	500	_	Amount	_	_	3	Measure	_	Offset=1792-1798
+3	buffer	_	Reagent	_	_	0	_	_	Offset=1802-1808
+
+# sent_id = s25
+# text = Spin 1 min at 8000xg; discard flow-through and collection tube, transfer column to new collection tube. 
+1	Spin	_	Action	_	_	0	_	_	Offset=1815-1819
+2	3	_	Time	_	_	0	_	_	Offset=1820-1825
+3	8000xg	_	Speed	_	_	0	_	_	Offset=1829-1835
+4	discard	_	Action	_	_	0	_	_	Offset=1837-1844
+5	flow-through	_	Reagent	_	_	0	_	_	Offset=1845-1857
+6	collection	_	Location	_	_	0	_	_	Offset=1862-1877
+7	dry	_	Action	_	_	0	_	_	Offset=1882-1885
+8	columns	_	Location	_	_	0	_	_	Offset=1886-1893
+9	spin	_	Action	_	_	0	_	_	Offset=1895-1899
+10	8000xg	_	Speed	_	_	0	_	_	Offset=1903-1909
+11	3	_	Time	_	_	0	_	_	Offset=1914-1919
+
+# sent_id = s26
+# text = Add 500 μl of buffer  
+1	Discard	_	Action	_	_	0	_	_	Offset=1922-1929
+2	potential	_	Modifier	_	_	3	Mod-Link	_	Offset=1930-1939
+3	flow-through	_	Reagent	_	_	0	_	_	Offset=1940-1952
+4	transfer	_	Action	_	_	0	_	_	Offset=1954-1962
+5	column	_	Location	_	_	0	_	_	Offset=1963-1969
+6	new	_	Modifier	_	_	7	Mod-Link	_	Offset=1973-1976
+7	collection	_	Location	_	_	0	_	_	Offset=1977-1992
+
+# sent_id = s27
+# text = AW1 Spin 2 min at 8000xg; discard flow-through. 
+1	Add	_	Action	_	_	0	_	_	Offset=1995-1998
+2	200	_	Amount	_	_	5	Measure	_	Offset=1999-2005
+3	pre-heated	_	Modifier	_	_	5	Mod-Link	_	Offset=2006-2016
+4	70°C	_	Temperature	_	_	0	_	_	Offset=2017-2021
+5	buffer	_	Reagent	_	_	0	_	_	Offset=2022-2031
+6	water	_	Reagent	_	_	5	Or	_	Offset=2035-2040
+
+# sent_id = s28
+# text = Add 500 μl of buffer. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=2043-2051
+2	1	_	Time	_	_	0	_	_	Offset=2052-2057
+3	room	_	Temperature	_	_	0	_	_	Offset=2061-2070
+
+# sent_id = s29
+# text = AW2 Spin 3 min at 8000xg; discard flow-through and collection tube, To dry columns, spin at 8000xg for 3 min. 
+1	Spin	_	Action	_	_	0	_	_	Offset=2072-2076
+2	8000xg	_	Speed	_	_	0	_	_	Offset=2080-2086
+3	2	_	Time	_	_	0	_	_	Offset=2091-2096
+4	elute	_	Action	_	_	0	_	_	Offset=2100-2105
+
+# sent_id = s30
+# text = Discard potential flow-through; transfer column to new collection tube. 
+1	Repeat	_	Action	_	_	0	_	_	Offset=2108-2114
+2	second	_	Modifier	_	_	3	Mod-Link	_	Offset=2120-2126
+3	200	_	Amount	_	_	0	_	_	Offset=2127-2133
+
+# sent_id = s31
+# text = Add 200 μl pre-heated 70°C buffer AE or water. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=2135-2143
+2	eluted	_	Modifier	_	_	3	Mod-Link	_	Offset=2144-2150
+3	DNA	_	Reagent	_	_	0	_	_	Offset=2151-2154
+4	Amicon	_	Device	_	_	0	_	_	Offset=2162-2179
+
+# sent_id = s32
+# text = Incubate 1 min at room temp.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2182-2192
+2	10,000xg	_	Speed	_	_	0	_	_	Offset=2196-2204
+3	10	_	Time	_	_	0	_	_	Offset=2209-2215
+
+# sent_id = s33
+# text = Spin at 8000xg for 2 min to elute. 
+1	Rinse	_	Action	_	_	0	_	_	Offset=2218-2223
+2	DNA	_	Reagent	_	_	0	_	_	Offset=2224-2227
+3	500	_	Amount	_	_	4	Measure	_	Offset=2233-2239
+4	PCR	_	Reagent	_	_	0	_	_	Offset=2240-2249
+
+# sent_id = s34
+# text = Repeat with second 200 μl.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2252-2262
+2	10,000xg	_	Speed	_	_	0	_	_	Offset=2266-2274
+3	10	_	Time	_	_	0	_	_	Offset=2279-2285
+
+# sent_id = s35
+# text = Transfer eluted DNA to the Amicon Ultra 30 K. 
+1	Add	_	Action	_	_	0	_	_	Offset=2288-2291
+2	20	_	Amount	_	_	4	Measure	_	Offset=2292-2297
+3	dilute	_	Modifier	_	_	4	Mod-Link	_	Offset=2298-2304
+4	TE	_	Reagent	_	_	0	_	_	Offset=2305-2307
+5	pipette	_	Action	_	_	0	_	_	Offset=2309-2316
+6	up	_	Method	_	_	0	_	_	Offset=2317-2328
+7	20	_	Numerical	_	_	0	_	_	Offset=2329-2331
+8	transfer	_	Action	_	_	0	_	_	Offset=2342-2350
+9	clean	_	Modifier	_	_	10	Mod-Link	_	Offset=2354-2359
+10	tube	_	Location	_	_	0	_	_	Offset=2360-2364
+
+# sent_id = s36
+# text = Centrifuge at 10,000xg for 10 min. 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2379-2389
+2	1000xg	_	Speed	_	_	0	_	_	Offset=2393-2399
+3	3	_	Time	_	_	0	_	_	Offset=2404-2409
+4	upside	_	Method	_	_	0	_	_	Offset=2410-2421
+5	fresh	_	Modifier	_	_	6	Mod-Link	_	Offset=2426-2431
+6	tube	_	Location	_	_	0	_	_	Offset=2432-2436
+7	retrieve	_	Action	_	_	0	_	_	Offset=2440-2448
+

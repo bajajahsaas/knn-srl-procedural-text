@@ -1,0 +1,64 @@
+# sent_id = s1
+# text = RNAlater Recipe
+1	Prepare	_	Action	_	_	0	_	_	Offset=16-23
+2	0.5	_	Concentration	_	_	3	Measure	_	Offset=24-29
+3	EDTA	_	Reagent	_	_	0	_	_	Offset=30-34
+
+# sent_id = s2
+# text = Prepare 0.5 M EDTA.
+1	Prepare	_	Action	_	_	0	_	_	Offset=36-43
+2	1	_	Concentration	_	_	3	Measure	_	Offset=44-47
+3	Sodium	_	Reagent	_	_	0	_	_	Offset=48-62
+
+# sent_id = s3
+# text = Prepare 1 M Sodium citrate.
+1	2	_	Amount	_	_	2	Or	_	Offset=69-70
+2	3	_	Amount	_	_	3	Measure	_	Offset=74-77
+3	flask	_	Location	_	_	0	_	_	Offset=78-83
+4	mix	_	Action	_	_	0	_	_	Offset=84-87
+5	1,400	_	Amount	_	_	6	Measure	_	Offset=88-96
+6	MilliQ	_	Reagent	_	_	0	_	_	Offset=97-109
+7	60	_	Amount	_	_	9	Measure	_	Offset=115-120
+8	0.5M	_	Concentration	_	_	9	Measure	_	Offset=121-125
+9	EDTA	_	Reagent	_	_	0	_	_	Offset=126-130
+10	37.5	_	Amount	_	_	12	Measure	_	Offset=135-142
+11	1M	_	Concentration	_	_	12	Measure	_	Offset=143-145
+12	sodium	_	Reagent	_	_	0	_	_	Offset=146-160
+13	stirring	_	Action	_	_	0	_	_	Offset=166-174
+
+# sent_id = s4
+# text = In a 2 or 3 L flask mix 1,400 mL MilliQ water with 60 mL 0.5M EDTA and 37.5 mL 1M sodium citrate with stirring.
+1	add	_	Action	_	_	0	_	_	Offset=215-218
+2	1.05	_	Amount	_	_	3	Or	_	Offset=219-226
+3	=	_	Amount	_	_	4	Measure	_	Offset=228-237
+4	Ammonium	_	Reagent	_	_	0	_	_	Offset=239-255
+5	100	_	Method	_	_	0	_	_	Offset=259-272
+
+# sent_id = s5
+# text = While continuing to stir the solution, add 1.05 kg (= 1,050 g) Ammonium sulfate in 100 g amounts.
+1	Stir	_	Action	_	_	0	_	_	Offset=274-278
+2	~30	_	Time	_	_	0	_	_	Offset=279-286
+3	hot	_	Location	_	_	0	_	_	Offset=290-299
+4	low	_	Temperature	_	_	0	_	_	Offset=307-310
+
+# sent_id = s6
+# text = Stir ~30 min on hot plate set to low.
+1	solution	_	Reagent	_	_	0	_	_	Offset=318-326
+2	cool	_	Action	_	_	0	_	_	Offset=330-334
+3	room	_	Temperature	_	_	0	_	_	Offset=338-354
+4	at	_	Modifier	_	_	5	Mod-Link	_	Offset=359-367
+5	30min	_	Time	_	_	0	_	_	Offset=368-373
+
+# sent_id = s7
+# text = Allow solution to cool at room temperature for at least 30min, but overnight on bench is best.
+1	Filter	_	Action	_	_	0	_	_	Offset=407-413
+2	solution	_	Reagent	_	_	0	_	_	Offset=414-422
+3	0.2	_	Size	_	_	4	Measure	_	Offset=431-437
+4	filter	_	Device	_	_	0	_	_	Offset=438-444
+
+# sent_id = s8
+# text = Filter solution through 0.2 μm filter to remove particles.
+1	Store	_	Action	_	_	0	_	_	Offset=466-471
+2	room	_	Temperature	_	_	0	_	_	Offset=475-484
+3	4°C	_	Temperature	_	_	2	Or	_	Offset=491-494
+

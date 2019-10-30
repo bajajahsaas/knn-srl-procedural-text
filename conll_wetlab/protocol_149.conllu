@@ -1,0 +1,57 @@
+# sent_id = s1
+# text = Restriction Digest of DNA
+1	Select	_	Action	_	_	0	_	_	Offset=26-32
+2	restriction	_	Reagent	_	_	0	_	_	Offset=33-52
+
+# sent_id = s2
+# text = Select restriction enzymes to digest your plasmid.
+1	Determine	_	Action	_	_	0	_	_	Offset=77-117
+
+# sent_id = s3
+# text = Determine an appropriate reaction buffer by reading the instructions for your enzyme.
+1	1.5mL	_	Size	_	_	2	Measure	_	Offset=168-173
+2	tube	_	Location	_	_	0	_	_	Offset=174-178
+3	combine	_	Action	_	_	0	_	_	Offset=179-186
+4	DNA	_	Reagent	_	_	0	_	_	Offset=203-206
+
+# sent_id = s4
+# text = In a 1.5mL tube combine the following:  DNA (all amounts are for a typical reaction; your amount may vary depending on the enzymes).
+1	mixture	_	Reagent	_	_	2	Meronym	5:Meronym|8:Meronym	Offset=304-311
+2	Nuclease-free	_	Reagent	_	_	0	_	_	Offset=331-350
+3	16	_	Amount	_	_	2	Measure	_	Offset=352-357
+4	10X	_	Concentration	_	_	5	Measure	_	Offset=359-362
+5	Buffer	_	Reagent	_	_	0	_	_	Offset=363-382
+6	0.5/1	_	Concentration	_	_	5	Measure	_	Offset=384-395
+7	1	_	Amount	_	_	5	Measure	_	Offset=398-402
+8	EcoRI0	_	Reagent	_	_	0	_	_	Offset=404-410
+9	5-2	_	Amount	_	_	8	Measure	_	Offset=412-418
+
+# sent_id = s5
+# text = Typical mixture for single digest: Nuclease-free Water, 16 ul; 10X Buffer EcoRI2 ulDNA (0.5/1 ug/ul), 1 ul; EcoRI0. 5-2 ul;
+1	Mixture	_	Reagent	_	_	2	Meronym	5:Meronym|7:Meronym|10:Meronym|12:Meronym	Offset=428-435
+2	Nuclease-free	_	Reagent	_	_	0	_	_	Offset=455-474
+3	15	_	Amount	_	_	2	Measure	_	Offset=476-481
+4	10X	_	Concentration	_	_	5	Measure	_	Offset=483-486
+5	Buffer	_	Reagent	_	_	0	_	_	Offset=487-493
+6	02	_	Amount	_	_	5	Measure	_	Offset=495-500
+7	DNA	_	Reagent	_	_	0	_	_	Offset=502-505
+8	0.5-1	_	Concentration	_	_	7	Measure	_	Offset=507-518
+9	1	_	Amount	_	_	7	Measure	_	Offset=521-525
+10	EcoRI	_	Reagent	_	_	0	_	_	Offset=527-532
+11	1	_	Amount	_	_	10	Measure	_	Offset=534-538
+12	PstI	_	Reagent	_	_	0	_	_	Offset=540-544
+13	1	_	Amount	_	_	12	Measure	_	Offset=546-550
+
+# sent_id = s6
+# text = Typical Mixture for Double Digest: Nuclease-free Water, 15 ul; 10X Buffer, 02 ul; DNA (0.5-1 ug/ul), 1 ul; EcoRI, 1 ul; PstI, 1 ul;
+1	Mix	_	Action	_	_	0	_	_	Offset=552-555
+2	gently	_	Modifier	_	_	0	_	_	Offset=556-562
+3	pipetting	_	Method	_	_	0	_	_	Offset=566-575
+
+# sent_id = s7
+# text = Mix gently by pipetting.
+1	Incubate	_	Action	_	_	0	_	_	Offset=577-585
+2	tube	_	Location	_	_	0	_	_	Offset=586-590
+3	appropriate	_	Temperature	_	_	0	_	_	Offset=594-632
+4	1	_	Time	_	_	0	_	_	Offset=637-643
+

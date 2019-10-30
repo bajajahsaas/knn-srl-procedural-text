@@ -1,0 +1,97 @@
+# sent_id = s1
+# text = Autoclave Frankfurter Fiesta
+1	Place	_	Action	_	_	0	_	_	Offset=29-34
+2	food	_	Reagent	_	_	0	_	_	Offset=35-39
+3	container	_	Location	_	_	0	_	_	Offset=43-52
+4	foil	_	Location	_	_	3	Or	_	Offset=56-60
+5	directed	_	Method	_	_	0	_	_	Offset=64-86
+
+# sent_id = s2
+# text = Place food in container or foil as directed in the recipe.
+1	Place	_	Action	_	_	0	_	_	Offset=88-93
+2	shelf	_	Location	_	_	0	_	_	Offset=97-102
+3	autoclave	_	Device	_	_	2	Meronym	_	Offset=110-127
+
+# sent_id = s3
+# text = Place on shelf in the autoclave chamber.
+1	Fill	_	Action	_	_	0	_	_	Offset=129-133
+2	chamber	_	Device	_	_	0	_	_	Offset=134-141
+
+# sent_id = s4
+# text = Fill chamber.
+1	autoclave	_	Device	_	_	0	_	_	Offset=147-156
+2	sterilize	_	Action	_	_	0	_	_	Offset=160-169
+3	close	_	Action	_	_	0	_	_	Offset=174-179
+
+# sent_id = s5
+# text = Set autoclave to sterilize and close.
+1	autoclave	_	Action	_	_	0	_	_	Offset=185-194
+2	265°F	_	Temperature	_	_	0	_	_	Offset=203-208
+
+# sent_id = s6
+# text = Let autoclave come to 265°F.
+1	Follow	_	Action	_	_	0	_	_	Offset=298-304
+
+# sent_id = s7
+# text = Pressure must show in the green range.
+1	vent	_	Action	_	_	0	_	_	Offset=420-424
+2	remove	_	Action	_	_	0	_	_	Offset=429-435
+3	food	_	Reagent	_	_	0	_	_	Offset=436-440
+
+# sent_id = s8
+# text = Adjust to maintain temperature between 260-270°.
+1	drain	_	Action	_	_	0	_	_	Offset=505-510
+2	autoclave	_	Device	_	_	0	_	_	Offset=515-524
+3	refill	_	Action	_	_	0	_	_	Offset=529-535
+4	fresh	_	Modifier	_	_	5	Mod-Link	_	Offset=541-546
+5	water	_	Reagent	_	_	0	_	_	Offset=547-552
+
+# sent_id = s9
+# text = Follow the cooking time as per the recipe, beginning as soon as temperature reaches 265°F.
+1	Line	_	Action	_	_	0	_	_	Offset=573-577
+2	autoclave	_	Location	_	_	0	_	_	Offset=578-592
+3	heavy-duty	_	Seal	_	_	0	_	_	Offset=598-613
+
+# sent_id = s10
+# text = When cooking time is complete, vent and remove food.
+1	Slash	_	Action	_	_	0	_	_	Offset=615-620
+2	franks	_	Reagent	_	_	0	_	_	Offset=621-627
+3	diagonal	_	Modifier	_	_	0	_	_	Offset=633-641
+4	3	_	Numerical	_	_	0	_	_	Offset=642-648
+5	both	_	Location	_	_	0	_	_	Offset=658-668
+
+# sent_id = s11
+# text = If any food or its liquids leak into the water in the chamber, drain the autoclave and refill with fresh water before using again.
+1	Place	_	Action	_	_	0	_	_	Offset=670-675
+2	franks	_	Reagent	_	_	0	_	_	Offset=676-682
+3	tray	_	Location	_	_	0	_	_	Offset=686-690
+
+# sent_id = s12
+# text = Line autoclave tray with heavy-duty foil.
+1	Cook	_	Action	_	_	0	_	_	Offset=692-696
+2	accord	_	Method	_	_	0	_	_	Offset=697-719
+3	4	_	Time	_	_	0	_	_	Offset=761-770
+
+# sent_id = s13
+# text = Slash franks on a diagonal 3 or 4 times on both sides.
+1	Vent	_	Action	_	_	0	_	_	Offset=772-776
+2	remove	_	Action	_	_	0	_	_	Offset=783-789
+3	sausages	_	Reagent	_	_	0	_	_	Offset=794-802
+4	foil	_	Action	_	_	0	_	_	Offset=807-811
+
+# sent_id = s14
+# text = Place franks on tray.
+1	Place	_	Action	_	_	0	_	_	Offset=813-818
+2	buns	_	Reagent	_	_	0	_	_	Offset=819-823
+3	tray	_	Location	_	_	5	Coreference-Link	_	Offset=831-835
+4	put	_	Action	_	_	0	_	_	Offset=840-843
+5	them	_	Mention	_	_	0	_	_	Offset=844-848
+6	door	_	Seal	_	_	0	_	_	Offset=861-865
+7	closed	_	Action	_	_	0	_	_	Offset=866-872
+8	4-5	_	Time	_	_	0	_	_	Offset=883-894
+9	warm	_	Action	_	_	0	_	_	Offset=898-902
+
+# sent_id = s15
+# text = Cook accord to instructions outlined in autoclave cookery basics for 4 minutes.
+1	Break	_	Action	_	_	0	_	_	Offset=904-913
+

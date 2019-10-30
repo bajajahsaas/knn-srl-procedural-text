@@ -1,0 +1,55 @@
+# sent_id = s1
+# text = Release of nucleic acids with heat, chelator, and detergent
+1	Add	_	Action	_	_	0	_	_	Offset=198-201
+2	100	_	Amount	_	_	3	Measure	_	Offset=202-208
+3	TE	_	Reagent	_	_	0	_	_	Offset=209-211
+4	TEGED	_	Reagent	_	_	3	Or	_	Offset=216-221
+
+# sent_id = s2
+# text = Concentrate the viruses by centrifuging in the centrifugal ultrafiltration device at 1000g until only a small volume (ca. 10 µL) remains.
+1	Concentrate	_	Action	_	_	0	_	_	Offset=224-235
+2	sample	_	Reagent	_	_	0	_	_	Offset=240-246
+
+# sent_id = s3
+# text = Add 100 µL TE (or TEGED).
+1	Repeat	_	Action	_	_	0	_	_	Offset=267-273
+2	steps	_	Method	_	_	0	_	_	Offset=274-287
+3	once	_	Numerical	_	_	0	_	_	Offset=288-292
+
+# sent_id = s4
+# text = Concentrate the sample again to ca. 10 µL.
+1	Recover	_	Action	_	_	0	_	_	Offset=299-306
+2	final	_	Reagent	_	_	0	_	_	Offset=311-328
+
+# sent_id = s5
+# text = Repeat steps 2 and 3 once more.
+1	Rinse	_	Action	_	_	0	_	_	Offset=330-335
+2	membrane	_	Reagent	_	_	0	_	_	Offset=340-348
+3	device	_	Device	_	_	0	_	_	Offset=356-362
+4	adding	_	Action	_	_	0	_	_	Offset=366-372
+5	TE	_	Reagent	_	_	0	_	_	Offset=391-393
+6	TEGED	_	Reagent	_	_	5	Or	_	Offset=397-402
+7	5–10	_	Amount	_	_	5	Measure	6:Measure	Offset=404-411
+
+# sent_id = s6
+# text = Recover the final concentrate.
+1	Recover	_	Action	_	_	0	_	_	Offset=414-421
+2	rinse	_	Reagent	_	_	0	_	_	Offset=426-431
+3	pool	_	Action	_	_	0	_	_	Offset=436-440
+4	concentrate	_	Reagent	_	_	0	_	_	Offset=450-461
+
+# sent_id = s7
+# text = Rinse the membrane in the device by adding a small volume of TE or TEGED (5–10 µL).
+1	add	_	Action	_	_	0	_	_	Offset=518-521
+2	SDS-EDTA	_	Reagent	_	_	0	_	_	Offset=522-542
+3	1×	_	Concentration	_	_	2	Measure	_	Offset=571-573
+
+# sent_id = s8
+# text = Recover the rinse and pool with the concentrate.
+1	Heat	_	Action	_	_	0	_	_	Offset=575-579
+2	recovered	_	Reagent	_	_	0	_	_	Offset=584-600
+3	60°C	_	Temperature	_	_	0	_	_	Offset=637-641
+4	10	_	Time	_	_	0	_	_	Offset=646-652
+5	release	_	Action	_	_	0	_	_	Offset=656-663
+6	nucleic	_	Reagent	_	_	0	_	_	Offset=668-680
+

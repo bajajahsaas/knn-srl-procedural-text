@@ -1,0 +1,74 @@
+# sent_id = s1
+# text = Lowry Protein Assay
+1	Set	_	Action	_	_	0	_	_	Offset=20-26
+2	standard	_	Reagent	_	_	10	Meronym	_	Offset=29-43
+3	0	_	Amount	_	_	10	Measure	_	Offset=47-48
+4	10	_	Amount	_	_	10	Measure	_	Offset=50-52
+5	25	_	Amount	_	_	10	Measure	_	Offset=54-56
+6	50	_	Amount	_	_	10	Measure	_	Offset=58-60
+7	100	_	Amount	_	_	10	Measure	_	Offset=62-65
+8	150	_	Amount	_	_	10	Measure	_	Offset=67-70
+9	200	_	Amount	_	_	10	Measure	_	Offset=75-81
+10	BSA	_	Reagent	_	_	0	_	_	Offset=85-88
+11	10-15	_	Size	_	_	12	Measure	_	Offset=92-100
+12	tubes	_	Location	_	_	0	_	_	Offset=101-106
+13	1.0	_	Amount	_	_	2	Measure	_	Offset=108-114
+14	per	_	Modifier	_	_	13	Mod-Link	_	Offset=122-132
+
+# sent_id = s2
+# text = Set up a standard curve of 0, 10, 25, 50, 100, 150 and 200 µg of BSA in 10-15 ml tubes, 1.0 mL volume per sample.
+1	Set	_	Action	_	_	0	_	_	Offset=134-140
+2	tubes	_	Location	_	_	4	Meronym	_	Offset=141-146
+3	10-15	_	Size	_	_	2	Measure	_	Offset=148-156
+4	unknown	_	Reagent	_	_	6	Coreference-Link	_	Offset=165-190
+5	223	_	Action	_	_	0	_	_	Offset=194-203;210
+6	their	_	Mention	_	_	0	_	_	Offset=204-209
+7	per	_	Modifier	_	_	8	Mod-Link	_	Offset=242-252
+8	1.0	_	Amount	_	_	0	_	_	Offset=262-268
+
+# sent_id = s3
+# text = Set up tubes (10-15 mL) of the unknown protein sample(s) to determine their concentration, the final volume per sample is to be 1.0 mL.
+1	Add	_	Action	_	_	0	_	_	Offset=270-273
+2	5.0	_	Amount	_	_	3	Measure	_	Offset=274-280
+3	reagent	_	Reagent	_	_	0	_	_	Offset=284-295
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=299-303
+5	tube	_	Location	_	_	0	_	_	Offset=304-308
+6	mix	_	Action	_	_	0	_	_	Offset=310-313
+7	immediately	_	Modifier	_	_	0	_	_	Offset=314-325
+
+# sent_id = s4
+# text = Add 5.0 mL of reagent “C” to each tube, mix immediately.
+1	346	_	Action	_	_	0	_	_	Offset=327-330;343
+2	samples	_	Reagent	_	_	0	_	_	Offset=335-342
+3	10	_	Time	_	_	0	_	_	Offset=351-357
+4	room	_	Temperature	_	_	0	_	_	Offset=361-377
+
+# sent_id = s5
+# text = Let the samples sit for 10 min at room temperature.
+1	Add	_	Action	_	_	0	_	_	Offset=379-382
+2	0.5	_	Amount	_	_	3	Measure	_	Offset=383-389
+3	reagent	_	Reagent	_	_	0	_	_	Offset=393-404
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=408-412
+5	tube	_	Location	_	_	0	_	_	Offset=413-417
+6	mix	_	Action	_	_	0	_	_	Offset=419-422
+7	immediately	_	Modifier	_	_	0	_	_	Offset=423-434
+
+# sent_id = s6
+# text = Add 0.5 mL of reagent “D” to each tube, mix immediately.
+1	455	_	Action	_	_	0	_	_	Offset=436-439;452
+2	samples	_	Reagent	_	_	0	_	_	Offset=444-451
+3	30	_	Time	_	_	0	_	_	Offset=460-466
+4	room	_	Temperature	_	_	0	_	_	Offset=470-486
+
+# sent_id = s7
+# text = Let the samples sit for 30 min at room temperature.
+1	Read	_	Action	_	_	0	_	_	Offset=488-503
+2	600	_	Generic-Measure	_	_	0	_	_	Offset=507-513
+
+# sent_id = s8
+# text = Read absorbance at 600 nm.
+1	Record	_	Action	_	_	0	_	_	Offset=515-528
+2	plot	_	Action	_	_	0	_	_	Offset=530-549
+3	587	_	Action	_	_	0	_	_	Offset=554-563;571
+4	sample	_	Reagent	_	_	0	_	_	Offset=564-570
+

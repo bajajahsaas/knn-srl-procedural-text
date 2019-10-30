@@ -1,0 +1,94 @@
+# sent_id = s1
+# text = Phenol extraction of proteins
+1	100	_	Amount	_	_	2	Measure	_	Offset=33-39
+2	PBCV-1	_	Reagent	_	_	0	_	_	Offset=43-49
+3	1.5	_	Size	_	_	4	Measure	_	Offset=55-58
+4	conical	_	Location	_	_	2	Meronym	_	Offset=59-90
+5	add	_	Action	_	_	0	_	_	Offset=91-94
+6	150	_	Amount	_	_	7	Measure	_	Offset=95-101
+7	phenol	_	Reagent	_	_	0	_	_	Offset=105-111
+
+# sent_id = s2
+# text = To 100 µl of PBCV-1 in a 1.5 conical plastic centrifuge tube add 150 µl of phenol.
+1	Add	_	Action	_	_	0	_	_	Offset=113-116
+2	DTT	_	Reagent	_	_	0	_	_	Offset=117-120
+3	~10	_	Amount	_	_	2	Measure	_	Offset=122-128
+4	10%	_	Concentration	_	_	5	Measure	_	Offset=131-134
+5	SDS	_	Reagent	_	_	0	_	_	Offset=135-138
+6	~20	_	Amount	_	_	5	Measure	_	Offset=140-146
+7	10M	_	Concentration	_	_	8	Measure	_	Offset=149-152
+8	LiCl	_	Reagent	_	_	0	_	_	Offset=153-157
+9	~15	_	Amount	_	_	8	Measure	_	Offset=159-165
+10	Ponceau	_	Reagent	_	_	0	_	_	Offset=171-180
+11	~10	_	Amount	_	_	10	Measure	_	Offset=182-188
+
+# sent_id = s3
+# text = Add DTT (~10 µl), 10% SDS (~20 µl), 10M LiCl (~15 µl) and Ponceau S (~10 µl).
+1	Heat	_	Action	_	_	0	_	_	Offset=191-195
+2	5	_	Time	_	_	0	_	_	Offset=196-201
+3	75°C	_	Temperature	_	_	0	_	_	Offset=205-209
+4	mix	_	Action	_	_	0	_	_	Offset=211-214
+
+# sent_id = s4
+# text = Heat 5 min at 75°C, mix thoroughly.
+1	Allow	_	Action	_	_	0	_	_	Offset=227-240
+2	centrifuge	_	Action	_	_	0	_	_	Offset=242-252
+3	1	_	Time	_	_	0	_	_	Offset=253-258
+4	5K	_	Speed	_	_	0	_	_	Offset=260-262
+
+# sent_id = s5
+# text = Allow to cool, centrifuge 1 min (5K).
+1	Draw	_	Action	_	_	0	_	_	Offset=265-273
+2	lower	_	Reagent	_	_	0	_	_	Offset=274-293
+3	1.5	_	Size	_	_	4	Measure	_	Offset=299-302
+4	conical	_	Location	_	_	0	_	_	Offset=303-334
+
+# sent_id = s6
+# text = Draw off lower (clear) phase into 1.5 conical plastic centrifuge tube.
+1	Add	_	Action	_	_	0	_	_	Offset=336-339
+2	1	_	Amount	_	_	3	Measure	_	Offset=340-344
+3	acetone	_	Reagent	_	_	0	_	_	Offset=345-352
+4	5	_	Amount	_	_	6	Measure	_	Offset=362-366
+5	1%	_	Concentration	_	_	6	Measure	_	Offset=370-372
+6	Ficoll	_	Reagent	_	_	0	_	_	Offset=373-379
+7	mix	_	Action	_	_	0	_	_	Offset=381-384
+
+# sent_id = s7
+# text = Add 1 ml acetone and then 5 µl of 1% Ficoll, mix.
+1	Store	_	Action	_	_	0	_	_	Offset=386-391
+2	20	_	Time	_	_	0	_	_	Offset=392-398
+3	-20°C	_	Temperature	_	_	0	_	_	Offset=402-407
+
+# sent_id = s8
+# text = Store 20 min at -20°C.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=409-419
+2	1	_	Time	_	_	0	_	_	Offset=420-425
+3	6K	_	Speed	_	_	0	_	_	Offset=427-429
+
+# sent_id = s9
+# text = Centrifuge 1 min (6K).
+1	Discard	_	Action	_	_	0	_	_	Offset=432-439
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=440-451
+3	drain	_	Action	_	_	0	_	_	Offset=453-458
+4	tube	_	Location	_	_	0	_	_	Offset=459-463
+5	wash	_	Action	_	_	0	_	_	Offset=465-469
+6	ppt	_	Reagent	_	_	0	_	_	Offset=470-473
+7	once	_	Numerical	_	_	0	_	_	Offset=474-478
+8	acetone	_	Reagent	_	_	0	_	_	Offset=484-491
+9	dry	_	Action	_	_	0	_	_	Offset=517-520
+
+# sent_id = s10
+# text = Discard supernatant, drain tube, wash ppt once with acetone (ppt sticks to tube) and dry.
+1	Dissolve	_	Action	_	_	0	_	_	Offset=522-530
+2	pellet	_	Reagent	_	_	0	_	_	Offset=531-537
+3	~50	_	Amount	_	_	4	Measure	_	Offset=541-547
+4	cracking	_	Reagent	_	_	12	Meronym	6:Meronym|8:Meronym|10:Meronym	Offset=548-563
+5	1%	_	Concentration	_	_	6	Measure	_	Offset=565-567
+6	SDS	_	Reagent	_	_	0	_	_	Offset=568-571
+7	5%	_	Concentration	_	_	8	Measure	_	Offset=573-575
+8	glycerol	_	Reagent	_	_	0	_	_	Offset=576-584
+9	0.03125	_	Concentration	_	_	10	Measure	_	Offset=586-595
+10	Tris-HCl	_	Reagent	_	_	0	_	_	Offset=596-604
+11	pH	_	pH	_	_	10	Measure	_	Offset=606-612
+12	bromophenol	_	Reagent	_	_	0	_	_	Offset=614-636
+

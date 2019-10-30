@@ -1,0 +1,59 @@
+# sent_id = s1
+# text = Mucin biotinylation - NHS-biotin reagent
+1	Prepare	_	Action	_	_	0	_	_	Offset=221-228
+2	Phosphate	_	Reagent	_	_	0	_	_	Offset=229-254
+3	PBS	_	Reagent	_	_	2	Or	_	Offset=256-259
+4	pH	_	pH	_	_	2	Measure	_	Offset=266-272
+
+# sent_id = s2
+# text = Calculate how much NHS-Biotin that is needed for biotinylation of the desired amount of mucin (assumed to have Mw 500 000 Da) and the molar ratio of biotin:mucin should be 1:2000.
+1	Dissolve	_	Action	_	_	0	_	_	Offset=274-282
+2	mucin	_	Reagent	_	_	0	_	_	Offset=283-288
+3	PBS	_	Reagent	_	_	0	_	_	Offset=292-295
+4	2mg/ml	_	Concentration	_	_	0	_	_	Offset=318-324
+
+# sent_id = s3
+# text = Prepare Phosphate Buffered Saline (PBS) with pH 7.4.
+1	Take	_	Action	_	_	0	_	_	Offset=326-334
+2	NHS-Biotin	_	Reagent	_	_	4	Coreference-Link	_	Offset=339-357
+3	equilibrate	_	Action	_	_	0	_	_	Offset=362-373
+4	it	_	Mention	_	_	0	_	_	Offset=374-376
+5	room	_	Temperature	_	_	0	_	_	Offset=380-396
+6	opening	_	Action	_	_	0	_	_	Offset=404-411
+7	vial	_	Location	_	_	0	_	_	Offset=416-420
+
+# sent_id = s4
+# text = Dissolve mucin in PBS to a concentration of 2mg/ml.
+1	Dissolve	_	Action	_	_	0	_	_	Offset=422-430
+2	NHS-Biotin	_	Reagent	_	_	0	_	_	Offset=431-441
+3	dimethylsulfoxide	_	Reagent	_	_	0	_	_	Offset=445-462
+4	DMSO	_	Reagent	_	_	3	Or	_	Offset=464-468
+5	10	_	Concentration	_	_	0	_	_	Offset=492-497
+
+# sent_id = s5
+# text = Take out the NHS-Biotin reagent and equilibrate it in room temperature before opening the vial.
+1	Add	_	Action	_	_	0	_	_	Offset=499-502
+2	pre-calculated	_	Amount	_	_	3	Measure	_	Offset=507-528
+3	biotin	_	Reagent	_	_	0	_	_	Offset=532-546
+4	protein	_	Reagent	_	_	0	_	_	Offset=554-570
+5	incubate	_	Action	_	_	0	_	_	Offset=575-583
+6	4	_	Temperature	_	_	0	_	_	Offset=587-591
+7	4	_	Time	_	_	0	_	_	Offset=596-603
+
+# sent_id = s6
+# text = Dissolve NHS-Biotin in dimethylsulfoxide (DMSO) to a concentration of 10 mM.
+1	exchange	_	Action	_	_	0	_	_	Offset=631-639
+2	buffer	_	Reagent	_	_	0	_	_	Offset=644-650
+3	water	_	Reagent	_	_	0	_	_	Offset=655-660
+4	overnight	_	Time	_	_	0	_	_	Offset=664-673
+5	dialysis	_	Method	_	_	0	_	_	Offset=674-682
+
+# sent_id = s7
+# text = Add the pre-calculated volume of biotin reagent to the protein solution and incubate at 4 °C for 4 hours.
+1	Transfer	_	Action	_	_	0	_	_	Offset=684-692
+2	solution	_	Reagent	_	_	0	_	_	Offset=697-705
+3	another	_	Modifier	_	_	4	Mod-Link	_	Offset=709-716
+4	tube	_	Location	_	_	0	_	_	Offset=717-721
+5	freeze	_	Action	_	_	0	_	_	Offset=723-729
+6	freeze-dry.	_	Action	_	_	0	_	_	Offset=734-745
+

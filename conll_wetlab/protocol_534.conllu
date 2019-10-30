@@ -1,0 +1,257 @@
+# sent_id = s1
+# text = Stellaris® RNA FISH FFPE (Paraffin-Embedded Tissue) Protocol
+1	Paraffin	_	Reagent	_	_	0	_	_	Offset=61-85
+2	sliced	_	Action	_	_	0	_	_	Offset=94-100
+3	4-10	_	Size	_	_	0	_	_	Offset=119-126
+4	microtome	_	Device	_	_	0	_	_	Offset=135-144
+5	mounted	_	Action	_	_	0	_	_	Offset=149-156
+6	microscope	_	Location	_	_	0	_	_	Offset=164-180
+
+# sent_id = s2
+# text = Paraffin embedded tissue must be sliced at a thickness of 4-10 μm using a microtome and mounted onto a microscope slide.
+1	Immerse	_	Action	_	_	0	_	_	Offset=182-189
+2	slide-mounted	_	Reagent	_	_	0	_	_	Offset=194-222
+3	100%	_	Concentration	_	_	4	Measure	_	Offset=226-230
+4	xylene	_	Reagent	_	_	0	_	_	Offset=231-237
+5	10	_	Time	_	_	0	_	_	Offset=242-252
+6	repeat	_	Action	_	_	0	_	_	Offset=254-260
+7	fresh	_	Modifier	_	_	9	Mod-Link	_	Offset=264-269
+8	100%	_	Concentration	_	_	9	Measure	_	Offset=270-274
+9	xylene	_	Reagent	_	_	0	_	_	Offset=275-281
+10	5	_	Time	_	_	0	_	_	Offset=300-309
+
+# sent_id = s3
+# text = Immerse the slide-mounted tissue section in 100% xylene for 10 minutes; repeat in fresh 100% xylene for an additional 5 minutes.
+1	Immerse	_	Action	_	_	0	_	_	Offset=311-318
+2	slide	_	Location	_	_	0	_	_	Offset=323-328
+3	100%	_	Concentration	_	_	4	Measure	_	Offset=332-336
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=337-344
+5	10	_	Time	_	_	0	_	_	Offset=349-359
+6	repeat	_	Action	_	_	0	_	_	Offset=361-367
+7	fresh	_	Modifier	_	_	9	Mod-Link	_	Offset=371-376
+8	100%	_	Concentration	_	_	9	Measure	_	Offset=377-381
+9	ethanol	_	Reagent	_	_	0	_	_	Offset=382-389
+10	10	_	Time	_	_	0	_	_	Offset=408-418
+
+# sent_id = s4
+# text = Immerse the slide in 100% ethanol for 10 minutes; repeat in fresh 100% ethanol for an additional 10 minutes.
+1	Immerse	_	Action	_	_	0	_	_	Offset=420-427
+2	slide	_	Location	_	_	0	_	_	Offset=432-437
+3	95%	_	Concentration	_	_	4	Measure	_	Offset=441-444
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=445-452
+5	10	_	Time	_	_	0	_	_	Offset=457-467
+
+# sent_id = s5
+# text = Immerse the slide in 95% ethanol for 10 minutes.
+1	immerse	_	Action	_	_	0	_	_	Offset=505-512
+2	slide	_	Location	_	_	0	_	_	Offset=517-522
+3	70%	_	Concentration	_	_	4	Measure	_	Offset=526-529
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=530-537
+5	1	_	Time	_	_	0	_	_	Offset=551-557
+6	room	_	Temperature	_	_	0	_	_	Offset=561-577
+
+# sent_id = s6
+# text = To permeabilize the tissue section, immerse the slide in 70% ethanol for at least 1 hour at room temperature.
+1	Slides	_	Location	_	_	0	_	_	Offset=579-585
+2	stored	_	Action	_	_	0	_	_	Offset=593-599
+3	+2	_	Temperature	_	_	0	_	_	Offset=603-614
+4	70%	_	Concentration	_	_	5	Measure	_	Offset=618-621
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=622-629
+
+# sent_id = s7
+# text = Slides can be stored at +2 to +8 °C in 70% ethanol up to a week before hybridization.
+1	Immerse	_	Action	_	_	0	_	_	Offset=665-672
+2	slide	_	Location	_	_	0	_	_	Offset=677-682
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=686-688
+4	PBS	_	Reagent	_	_	0	_	_	Offset=689-692
+5	2-5	_	Time	_	_	0	_	_	Offset=697-708
+
+# sent_id = s8
+# text = Immerse the slide in 1X PBS for 2-5 minutes.
+1	Decant	_	Action	_	_	0	_	_	Offset=710-716
+2	PBS	_	Reagent	_	_	0	_	_	Offset=717-720
+3	immerse	_	Action	_	_	0	_	_	Offset=726-733
+4	slide	_	Location	_	_	0	_	_	Offset=738-743
+5	37	_	Temperature	_	_	0	_	_	Offset=759-764
+6	proteinase	_	Reagent	_	_	8	Meronym	10:Meronym	Offset=766-787
+7	10	_	Concentration	_	_	6	Measure	_	Offset=789-797
+8	proteinase	_	Reagent	_	_	0	_	_	Offset=798-810
+9	1X	_	Concentration	_	_	10	Measure	_	Offset=814-816
+10	PBS	_	Reagent	_	_	0	_	_	Offset=817-820
+
+# sent_id = s9
+# text = Decant PBS, and immerse the slide in pre-warmed (37 °C) proteinase K solution (10 μg/mL proteinase K in 1X PBS).
+1	Incubate	_	Action	_	_	0	_	_	Offset=823-831
+2	20	_	Time	_	_	0	_	_	Offset=836-846
+3	37	_	Temperature	_	_	0	_	_	Offset=850-855
+
+# sent_id = s10
+# text = Incubate for 20 minutes at 37 °C.
+1	Wash	_	Action	_	_	0	_	_	Offset=857-861
+2	1X	_	Concentration	_	_	3	Measure	_	Offset=867-869
+3	PBS	_	Reagent	_	_	0	_	_	Offset=870-873
+4	2-5	_	Time	_	_	0	_	_	Offset=878-889
+
+# sent_id = s11
+# text = Wash with 1X PBS for 2-5 minutes.
+1	Wash	_	Action	_	_	0	_	_	Offset=891-895
+2	1X	_	Concentration	_	_	3	Measure	_	Offset=901-903
+3	PBS	_	Reagent	_	_	0	_	_	Offset=904-907
+4	2-5	_	Time	_	_	0	_	_	Offset=912-923
+
+# sent_id = s12
+# text = Wash with 1X PBS for 2-5 minutes.
+1	warm	_	Action	_	_	0	_	_	Offset=949-953
+2	probe	_	Reagent	_	_	0	_	_	Offset=972-986
+3	room	_	Temperature	_	_	0	_	_	Offset=990-1006
+
+# sent_id = s13
+# text = If frozen before using, warm the reconstituted probe solution to room temperature.
+1	Mix	_	Action	_	_	0	_	_	Offset=1008-1011
+2	vortexing	_	Method	_	_	0	_	_	Offset=1020-1029
+3	centrifuge	_	Action	_	_	0	_	_	Offset=1036-1046
+4	briefly	_	Modifier	_	_	0	_	_	Offset=1047-1054
+
+# sent_id = s14
+# text = Mix well by vortexing, then centrifuge briefly.
+1	prepare	_	Action	_	_	0	_	_	Offset=1059-1066
+2	Hybridization	_	Reagent	_	_	5	Meronym	7:Meronym	Offset=1071-1108
+3	add	_	Action	_	_	0	_	_	Offset=1110-1113
+4	2	_	Amount	_	_	5	Measure	_	Offset=1114-1118
+5	probe	_	Reagent	_	_	0	_	_	Offset=1122-1142
+6	200	_	Amount	_	_	7	Measure	_	Offset=1146-1152
+7	Hybridization	_	Reagent	_	_	0	_	_	Offset=1156-1176
+8	vortex	_	Action	_	_	0	_	_	Offset=1214-1220
+9	centrifuge	_	Action	_	_	0	_	_	Offset=1225-1235
+
+# sent_id = s15
+# text = To prepare the Hybridization Buffer containing probe, add 2 μL of probe stock solution to 200 μL of Hybridization Buffer (enough for one coverslip), and then vortex and centrifuge.
+1	Immerse	_	Action	_	_	0	_	_	Offset=1333-1340
+2	slide-mounted	_	Reagent	_	_	0	_	_	Offset=1345-1373
+3	Wash	_	Reagent	_	_	0	_	_	Offset=1377-1390
+4	2-5	_	Time	_	_	0	_	_	Offset=1414-1425
+
+# sent_id = s16
+# text = This creates a working probe solution of 125 nM.
+1	Assemble	_	Action	_	_	0	_	_	Offset=1427-1435
+2	humidified	_	Device	_	_	0	_	_	Offset=1436-1454
+3	150	_	Size	_	_	4	Measure	_	Offset=1456-1462
+4	tissue	_	Location	_	_	0	_	_	Offset=1463-1483
+5	water	_	Reagent	_	_	0	_	_	Offset=1494-1499
+6	paper	_	Reagent	_	_	5	Meronym	_	Offset=1510-1521
+7	placed	_	Action	_	_	0	_	_	Offset=1522-1528
+8	inner	_	Location	_	_	0	_	_	Offset=1543-1561
+
+# sent_id = s17
+# text = This solution will be used on steps 16 and 17.
+1	Remove	_	Action	_	_	0	_	_	Offset=1653-1659
+2	slide	_	Location	_	_	0	_	_	Offset=1664-1669
+3	Wash	_	Reagent	_	_	0	_	_	Offset=1675-1688
+4	wipe	_	Action	_	_	0	_	_	Offset=1704-1713
+5	excess	_	Reagent	_	_	0	_	_	Offset=1714-1727
+
+# sent_id = s18
+# text = Immerse the slide-mounted tissue section in Wash Buffer A (see recipe above) for 2-5 minutes.
+1	Dispense	_	Action	_	_	0	_	_	Offset=1760-1768
+2	200	_	Amount	_	_	3	Measure	_	Offset=1769-1775
+3	Hybridization	_	Reagent	_	_	4	Meronym	_	Offset=1779-1799
+4	probe	_	Reagent	_	_	0	_	_	Offset=1811-1816
+5	tissue	_	Reagent	_	_	0	_	_	Offset=1826-1840
+6	slide	_	Location	_	_	5	Meronym	_	Offset=1848-1853
+
+# sent_id = s19
+# text = Assemble humidified chamber: 150 mm tissue culture plate; a single water-saturated paper towel placed alongside the inner chamber edge.
+1	place	_	Action	_	_	0	_	_	Offset=2045-2050
+2	coverglass	_	Location	_	_	0	_	_	Offset=2059-2069
+3	Hybridization	_	Reagent	_	_	4	Meronym	_	Offset=2079-2099
+4	probe	_	Reagent	_	_	0	_	_	Offset=2111-2116
+
+# sent_id = s20
+# text = This chamber will help prevent evaporation of the probe solution from the tissue section.
+1	Place	_	Action	_	_	0	_	_	Offset=2218-2223
+2	slide	_	Location	_	_	0	_	_	Offset=2228-2233
+3	humidified	_	Device	_	_	0	_	_	Offset=2241-2259
+4	cover	_	Action	_	_	0	_	_	Offset=2261-2266
+5	tissue	_	Seal	_	_	0	_	_	Offset=2276-2294
+6	seal	_	Action	_	_	0	_	_	Offset=2300-2304
+7	Parafilm	_	Reagent	_	_	0	_	_	Offset=2310-2318
+
+# sent_id = s21
+# text = Remove the slide from Wash Buffer A, and carefully wipe away excess buffer surrounding the tissue section.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2321-2329
+2	dark	_	Method	_	_	0	_	_	Offset=2337-2341
+3	37	_	Temperature	_	_	0	_	_	Offset=2345-2350
+4	4	_	Time	_	_	0	_	_	Offset=2364-2371
+
+# sent_id = s22
+# text = Dispense 200 μL of Hybridization Buffer containing probe onto the tissue section of the slide.
+1	Immerse	_	Action	_	_	0	_	_	Offset=2419-2426
+2	slide	_	Location	_	_	0	_	_	Offset=2431-2436
+3	Wash	_	Reagent	_	_	0	_	_	Offset=2440-2453
+4	coverglass	_	Location	_	_	0	_	_	Offset=2479-2489
+5	slide	_	Action	_	_	0	_	_	Offset=2493-2502
+6	tissue	_	Reagent	_	_	0	_	_	Offset=2507-2521
+
+# sent_id = s23
+# text = (Note that 200 μL is recommended when using a 24 mm x 60 mm, rectangular, #1 coverglass.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2582-2590
+2	dark	_	Method	_	_	0	_	_	Offset=2598-2602
+3	37	_	Temperature	_	_	0	_	_	Offset=2606-2611
+4	30	_	Time	_	_	0	_	_	Offset=2616-2626
+
+# sent_id = s24
+# text = If different sized coverglasses are used, the volume may need to be adjusted accordingly).
+1	Decant	_	Action	_	_	0	_	_	Offset=2628-2634
+2	Wash	_	Reagent	_	_	0	_	_	Offset=2635-2648
+3	add	_	Action	_	_	0	_	_	Offset=2659-2662
+4	DAPI	_	Reagent	_	_	5	Meronym	7:Meronym	Offset=2663-2681
+5	Wash	_	Reagent	_	_	0	_	_	Offset=2683-2696
+6	5	_	Concentration	_	_	7	Measure	_	Offset=2711-2718
+7	DAPI	_	Reagent	_	_	0	_	_	Offset=2719-2723
+
+# sent_id = s25
+# text = Carefully place a clean coverglass over the Hybridization Buffer containing probe to completely cover the tissue section, and allow for even distribution of the Hybridization Buffer.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2753-2761
+2	dark	_	Method	_	_	0	_	_	Offset=2769-2773
+3	37	_	Temperature	_	_	0	_	_	Offset=2777-2782
+4	30	_	Time	_	_	0	_	_	Offset=2787-2797
+
+# sent_id = s26
+# text = Place the slide in the humidified chamber, cover with the tissue culture lid, and seal with Parafilm®.
+1	Decant	_	Action	_	_	0	_	_	Offset=2799-2805
+2	DAPI	_	Reagent	_	_	0	_	_	Offset=2806-2826
+3	immerse	_	Action	_	_	0	_	_	Offset=2837-2844
+4	slide	_	Location	_	_	0	_	_	Offset=2845-2850
+5	Wash	_	Reagent	_	_	0	_	_	Offset=2854-2867
+6	2-5	_	Time	_	_	0	_	_	Offset=2872-2883
+
+# sent_id = s27
+# text = Incubate in the dark at 37 °C for at least 4 hours.
+1	Remove	_	Action	_	_	0	_	_	Offset=2885-2891
+2	slide	_	Location	_	_	0	_	_	Offset=2896-2901
+3	Wash	_	Reagent	_	_	0	_	_	Offset=2907-2920
+4	wipe	_	Action	_	_	0	_	_	Offset=2936-2945
+5	excess	_	Reagent	_	_	0	_	_	Offset=2946-2959
+
+# sent_id = s28
+# text = (Incubation can be continued up to 16 hours).
+1	Add	_	Action	_	_	0	_	_	Offset=2992-2995
+2	50-100	_	Amount	_	_	3	Measure	_	Offset=3024-3033
+3	Vectashield	_	Reagent	_	_	0	_	_	Offset=3038-3065
+4	tissue	_	Reagent	_	_	0	_	_	Offset=3075-3089
+5	cover	_	Action	_	_	0	_	_	Offset=3095-3100
+6	coverglass	_	Location	_	_	0	_	_	Offset=3117-3127
+
+# sent_id = s29
+# text = Immerse the slide in Wash Buffer A, and allow the submerged coverglass to slide off the tissue section.
+1	squeeze	_	Action	_	_	0	_	_	Offset=3136-3147
+2	anti-fade	_	Reagent	_	_	0	_	_	Offset=3155-3164
+3	coverglass	_	Location	_	_	0	_	_	Offset=3185-3195
+
+# sent_id = s30
+# text = Gentle agitation may be required to remove the coverglass.
+1	Seal	_	Action	_	_	0	_	_	Offset=3197-3201
+2	coverglass	_	Location	_	_	0	_	_	Offset=3206-3226
+3	clear	_	Reagent	_	_	0	_	_	Offset=3232-3249
+4	dry	_	Action	_	_	0	_	_	Offset=3264-3267
+

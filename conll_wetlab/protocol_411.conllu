@@ -1,0 +1,57 @@
+# sent_id = s1
+# text = Investigating non-specific protein binding and streptavidin binding using QCM-D sensing
+1	Prepare	_	Action	_	_	0	_	_	Offset=88-95
+2	Hepes	_	Reagent	_	_	0	_	_	Offset=98-119
+3	150	_	Concentration	_	_	4	Measure	_	Offset=146-152
+4	NaCl	_	Reagent	_	_	0	_	_	Offset=153-157
+5	10	_	Concentration	_	_	6	Measure	_	Offset=162-167
+6	Hepes	_	Reagent	_	_	0	_	_	Offset=168-173
+
+# sent_id = s2
+# text = Prepare a Hepes Buffered Saline (HBS) solution containing 150 mM NaCl and 10 mM Hepes.
+1	prepare	_	Action	_	_	0	_	_	Offset=180-187
+2	25	_	Concentration	_	_	3	Measure	_	Offset=202-210
+3	streptavidin	_	Reagent	_	_	0	_	_	Offset=211-223
+4	HBS	_	Reagent	_	_	3	Meronym	_	Offset=227-230
+
+# sent_id = s3
+# text = Then prepare a solution of 25 µg/ml streptavidin in HBS.
+1	QCM-D	_	Device	_	_	0	_	_	Offset=238-251
+2	make	_	Action	_	_	0	_	_	Offset=253-268
+3	HBS	_	Reagent	_	_	0	_	_	Offset=276-288
+
+# sent_id = s4
+# text = Using QCM-D sensing, make a baseline of the HBS solution.
+1	Expose	_	Action	_	_	0	_	_	Offset=290-296
+2	modified	_	Modifier	_	_	3	Mod-Link	_	Offset=301-309
+3	sensors	_	Device	_	_	0	_	_	Offset=310-317
+4	non-diluted	_	Modifier	_	_	5	Mod-Link	_	Offset=321-332
+5	Fetal	_	Reagent	_	_	0	_	_	Offset=333-351
+6	30-60	_	Time	_	_	0	_	_	Offset=362-371
+7	static	_	Method	_	_	0	_	_	Offset=378-395
+8	QCM-D	_	Device	_	_	0	_	_	Offset=399-404
+9	measure	_	Action	_	_	0	_	_	Offset=409-416
+10	amount	_	Amount	_	_	0	_	_	Offset=421-427
+11	adsorbed	_	Modifier	_	_	12	Mod-Link	_	Offset=431-440
+12	FBS	_	Reagent	_	_	0	_	_	Offset=440-444
+
+# sent_id = s5
+# text = Expose the modified sensors to non-diluted Fetal Bovine Serum (FBS) for 30-60 min under static conditions in QCM-D and measure the amount of adsorbed FBS relative to the HBS baseline obtained in the previous step.
+1	Rinse	_	Action	_	_	0	_	_	Offset=504-509
+2	sensors	_	Device	_	_	0	_	_	Offset=514-521
+3	HBS	_	Reagent	_	_	0	_	_	Offset=531-543
+
+# sent_id = s6
+# text = Rinse the sensors with the HBS solution.
+1	Flow	_	Action	_	_	0	_	_	Offset=545-549
+2	streptavidin	_	Reagent	_	_	0	_	_	Offset=554-575
+3	modified	_	Modifier	_	_	4	Mod-Link	_	Offset=585-593
+4	sensors	_	Device	_	_	0	_	_	Offset=594-601
+5	100-500	_	Generic-Measure	_	_	2	Measure	_	Offset=603-617
+
+# sent_id = s7
+# text = Flow the streptavidin solution over the modified sensors (100-500 µl/min), until they are saturated.
+1	Rinse	_	Action	_	_	0	_	_	Offset=646-651
+2	sensors	_	Device	_	_	0	_	_	Offset=656-663
+3	HBS	_	Reagent	_	_	0	_	_	Offset=673-685
+

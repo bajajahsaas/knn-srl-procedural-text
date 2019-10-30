@@ -1,0 +1,523 @@
+# sent_id = s1
+# text = Coral TRIZOL RNA Extraction
+1	Add	_	Action	_	_	0	_	_	Offset=28-31
+2	200	_	Amount	_	_	0	_	_	Offset=32-38
+3	chloroform	_	Reagent	_	_	0	_	_	Offset=39-50
+4	per	_	Modifier	_	_	0	_	_	Offset=50-53
+5	1	_	Amount	_	_	0	_	_	Offset=54-58
+6	TRIzol®	_	Reagent	_	_	0	_	_	Offset=59-74
+
+# sent_id = s2
+# text = Add 200 μL chloroform per 1 mL TRIzol® Reagent used.
+1	Vortex	_	Action	_	_	0	_	_	Offset=81-87
+2	15s	_	Time	_	_	0	_	_	Offset=88-91
+3	Incubate	_	Action	_	_	0	_	_	Offset=96-104
+4	room	_	Temperature	_	_	0	_	_	Offset=108-124
+5	2–3	_	Time	_	_	0	_	_	Offset=129-140
+
+# sent_id = s3
+# text = Vortex 15s and Incubate at room temperature for 2–3 minutes.
+1	vortexing	_	Action	_	_	0	_	_	Offset=205-214
+2	shake	_	Action	_	_	0	_	_	Offset=215-220
+3	tube	_	Location	_	_	0	_	_	Offset=225-229
+4	vigorously	_	Modifier	_	_	0	_	_	Offset=230-240
+5	hand	_	Device	_	_	0	_	_	Offset=244-248
+6	15	_	Time	_	_	0	_	_	Offset=253-263
+
+# sent_id = s4
+# text = Note: If you are not doing a DNAse step below, then instead of vortexing shake the tube vigorously by hand for 15 seconds.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=501-511
+2	sample	_	Reagent	_	_	0	_	_	Offset=516-522
+3	12,000	_	Speed	_	_	0	_	_	Offset=526-536
+4	15	_	Time	_	_	0	_	_	Offset=541-551
+5	4°C	_	Temperature	_	_	0	_	_	Offset=555-558
+
+# sent_id = s5
+# text = Vortexing may increase DNA contamination of your RNA sample.
+1	Transfer	_	Action	_	_	0	_	_	Offset=778-786
+2	~600	_	Amount	_	_	0	_	_	Offset=787-794
+3	colorless	_	Modifier	_	_	0	_	_	Offset=802-811
+4	upper	_	Reagent	_	_	0	_	_	Offset=813-824
+5	RNA	_	Reagent	_	_	0	_	_	Offset=840-843
+6	fresh	_	Modifier	_	_	0	_	_	Offset=849-854
+7	RNase-free	_	Modifier	_	_	0	_	_	Offset=855-865
+8	tube	_	Location	_	_	0	_	_	Offset=866-870
+
+# sent_id = s6
+# text = Avoid vortexing if your downstream application is sensitive to the presence of DNA or perform a DNase-digestion step during RNA purification (as below) or after purification.
+1	Add	_	Action	_	_	0	_	_	Offset=872-875
+2	equal	_	Amount	_	_	0	_	_	Offset=879-891
+3	70%	_	Concentration	_	_	0	_	_	Offset=895-898
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=899-906
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=925-932
+6	35%	_	Concentration	_	_	0	_	_	Offset=950-953
+
+# sent_id = s7
+# text = Centrifuge the sample at 12,000 x g for 15 minutes at 4°C.
+1	Mix	_	Action	_	_	0	_	_	Offset=955-958
+2	well	_	Modifier	_	_	0	_	_	Offset=959-963
+3	vortexing	_	Method	_	_	0	_	_	Offset=967-976
+
+# sent_id = s8
+# text = Note: After centrifugation, the mixture separates into a lower, red phenol–chloroform phase, an interphase, and a colorless upper aqueous phase which contains the RNA.
+1	Invert	_	Action	_	_	0	_	_	Offset=978-984
+2	tube	_	Location	_	_	0	_	_	Offset=989-993
+3	disperse	_	Action	_	_	0	_	_	Offset=997-1005
+4	any	_	Modifier	_	_	0	_	_	Offset=1006-1009
+5	visible	_	Modifier	_	_	0	_	_	Offset=1010-1017
+6	precipitate	_	Reagent	_	_	0	_	_	Offset=1018-1029
+7	may	_	Modifier	_	_	0	_	_	Offset=1035-1038
+8	form	_	Action	_	_	0	_	_	Offset=1039-1043
+9	adding	_	Action	_	_	0	_	_	Offset=1050-1056
+10	ethanol	_	Mention	_	_	0	_	_	Offset=1057-1064
+
+# sent_id = s9
+# text = The volume of the aqueous upper phase is ~600 μL.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1075-1083
+2	700	_	Amount	_	_	0	_	_	Offset=1090-1096
+3	sample	_	Reagent	_	_	0	_	_	Offset=1100-1106
+4	Spin	_	Device	_	_	0	_	_	Offset=1142-1156
+
+# sent_id = s10
+# text = Transfer ~600 μL of the colorless, upper phase containing the RNA to a fresh RNase-free tube.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1183-1193
+2	12,000	_	Speed	_	_	0	_	_	Offset=1197-1207
+3	15	_	Time	_	_	0	_	_	Offset=1212-1222
+4	room	_	Temperature	_	_	0	_	_	Offset=1226-1242
+
+# sent_id = s11
+# text = Add an equal volume of 70% ethanol to obtain a final ethanol concentration of 35%.
+1	Discard	_	Action	_	_	0	_	_	Offset=1244-1251
+2	flow–through	_	Reagent	_	_	0	_	_	Offset=1256-1268
+3	reinsert	_	Action	_	_	0	_	_	Offset=1273-1281
+4	Spin	_	Device	_	_	0	_	_	Offset=1286-1300
+5	same	_	Modifier	_	_	0	_	_	Offset=1310-1314
+6	Collection	_	Location	_	_	0	_	_	Offset=1315-1330
+
+# sent_id = s12
+# text = Mix well by vortexing.
+1	Repeat	_	Action	_	_	0	_	_	Offset=1332-1338
+2	entire	_	Modifier	_	_	0	_	_	Offset=1349-1355
+3	sample	_	Reagent	_	_	0	_	_	Offset=1356-1362
+4	processed	_	Action	_	_	0	_	_	Offset=1372-1381
+
+# sent_id = s13
+# text = Invert the tube to disperse any visible precipitate that may form after adding ethanol.
+1	Add	_	Action	_	_	0	_	_	Offset=1485-1488
+2	350*	_	Amount	_	_	0	_	_	Offset=1489-1496
+3	Wash	_	Reagent	_	_	0	_	_	Offset=1497-1510
+4	Spin	_	Device	_	_	0	_	_	Offset=1518-1532
+
+# sent_id = s14
+# text = BINDING: Transfer up to 700 μL of sample (prepared as described above) to a Spin Cartridge (with a Collection Tube).
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1534-1544
+2	12,000	_	Speed	_	_	0	_	_	Offset=1548-1558
+3	15	_	Time	_	_	0	_	_	Offset=1563-1573
+4	room	_	Temperature	_	_	0	_	_	Offset=1577-1593
+
+# sent_id = s15
+# text = Centrifuge at 12,000 × g for 15 seconds at room temperature.
+1	Discard	_	Action	_	_	0	_	_	Offset=1595-1602
+2	flow-through	_	Reagent	_	_	0	_	_	Offset=1607-1619
+3	Collection	_	Location	_	_	0	_	_	Offset=1628-1643
+
+# sent_id = s16
+# text = Discard the flow–through and reinsert the Spin Cartridge into the same Collection Tube.
+1	Insert	_	Action	_	_	0	_	_	Offset=1645-1651
+2	Spin	_	Device	_	_	0	_	_	Offset=1656-1670
+3	new	_	Modifier	_	_	0	_	_	Offset=1678-1681
+4	Collection	_	Location	_	_	0	_	_	Offset=1682-1697
+
+# sent_id = s17
+# text = Repeat until the entire sample has been processed (in other words until all sample has passed through the spin column and RNA bound to the silica frit).
+1	addition	_	Action	_	_	0	_	_	Offset=1781-1789
+2	700	_	Amount	_	_	0	_	_	Offset=1793-1799
+3	Wash	_	Reagent	_	_	0	_	_	Offset=1800-1814
+
+# sent_id = s18
+# text = Add 350* μL Wash Buffer I to the Spin Cartridge.
+1	Add	_	Action	_	_	0	_	_	Offset=1815-1818
+2	500	_	Amount	_	_	0	_	_	Offset=1819-1825
+3	Wash	_	Reagent	_	_	0	_	_	Offset=1826-1840
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=1846-1853
+5	Spin	_	Device	_	_	0	_	_	Offset=1861-1875
+
+# sent_id = s19
+# text = Centrifuge at 12,000 × g for 15 seconds at room temperature.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1877-1887
+2	12,000	_	Speed	_	_	0	_	_	Offset=1891-1901
+3	15	_	Time	_	_	0	_	_	Offset=1906-1916
+4	room	_	Temperature	_	_	0	_	_	Offset=1920-1936
+
+# sent_id = s20
+# text = Discard the flow-through and the Collection Tube.
+1	Discard	_	Action	_	_	0	_	_	Offset=1938-1945
+2	flow-through	_	Reagent	_	_	0	_	_	Offset=1950-1962
+3	reinsert	_	Action	_	_	0	_	_	Offset=1968-1976
+4	Spin	_	Device	_	_	0	_	_	Offset=1981-1995
+5	same	_	Modifier	_	_	0	_	_	Offset=2005-2009
+6	Collection	_	Location	_	_	0	_	_	Offset=2010-2025
+
+# sent_id = s21
+# text = Insert the Spin Cartridge into a new Collection Tube.
+1	Repeat	_	Action	_	_	0	_	_	Offset=2027-2033
+2	second	_	Modifier	_	_	0	_	_	Offset=2041-2048
+3	500	_	Amount	_	_	0	_	_	Offset=2048-2054
+4	Wash	_	Reagent	_	_	0	_	_	Offset=2055-2069
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=2075-2082
+6	Spin	_	Device	_	_	0	_	_	Offset=2090-2104
+
+# sent_id = s22
+# text = *Without DNAse treatment in the subsequent step there would be only one step with addition of 700 μL Wash Buffer I.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2106-2116
+2	12,000	_	Speed	_	_	0	_	_	Offset=2120-2130
+3	15	_	Time	_	_	0	_	_	Offset=2135-2145
+4	room	_	Temperature	_	_	0	_	_	Offset=2149-2165
+
+# sent_id = s23
+# text = Add 500 μL Wash Buffer II with ethanol to the Spin Cartridge.
+1	Discard	_	Action	_	_	0	_	_	Offset=2167-2174
+2	flow-through	_	Reagent	_	_	0	_	_	Offset=2179-2191
+3	reinsert	_	Action	_	_	0	_	_	Offset=2197-2205
+4	Spin	_	Device	_	_	0	_	_	Offset=2210-2224
+5	same	_	Modifier	_	_	0	_	_	Offset=2234-2238
+6	Collection	_	Location	_	_	0	_	_	Offset=2239-2254
+
+# sent_id = s24
+# text = Centrifuge at 12,000 × g for 15 seconds at room temperature.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2256-2266
+2	Spin	_	Device	_	_	0	_	_	Offset=2271-2285
+3	Collection	_	Location	_	_	0	_	_	Offset=2290-2305
+4	12,000	_	Speed	_	_	0	_	_	Offset=2309-2319
+5	1	_	Time	_	_	0	_	_	Offset=2324-2332
+6	room	_	Temperature	_	_	0	_	_	Offset=2336-2352
+7	dry	_	Action	_	_	0	_	_	Offset=2356-2359
+8	membrane	_	Reagent	_	_	0	_	_	Offset=2364-2372
+9	attached	_	Modifier	_	_	0	_	_	Offset=2378-2386
+10	RNA	_	Reagent	_	_	0	_	_	Offset=2387-2390
+
+# sent_id = s25
+# text = Discard the flow-through, and reinsert the Spin Cartridge into the same Collection Tube.
+1	Discard	_	Action	_	_	0	_	_	Offset=2392-2399
+2	Collection	_	Location	_	_	0	_	_	Offset=2404-2419
+3	insert	_	Action	_	_	0	_	_	Offset=2424-2430
+4	Spin	_	Device	_	_	0	_	_	Offset=2435-2449
+5	Recovery	_	Location	_	_	0	_	_	Offset=2457-2470
+
+# sent_id = s26
+# text = Repeat with a second 500 μL Wash Buffer II with ethanol to the Spin Cartridge.
+1	Add	_	Action	_	_	0	_	_	Offset=2472-2475
+2	30	_	Generic-Measure	_	_	0	_	_	Offset=2476-2492
+3	RNase-Free	_	Reagent	_	_	0	_	_	Offset=2534-2550
+4	center	_	Location	_	_	0	_	_	Offset=2558-2564
+5	Spin	_	Device	_	_	0	_	_	Offset=2572-2586
+6	Incubate	_	Action	_	_	0	_	_	Offset=2591-2599
+7	room	_	Temperature	_	_	0	_	_	Offset=2603-2619
+8	1	_	Time	_	_	0	_	_	Offset=2624-2632
+
+# sent_id = s27
+# text = Centrifuge at 12,000 × g for 15 seconds at room temperature.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2634-2644
+2	Spin	_	Device	_	_	0	_	_	Offset=2649-2663
+3	Recovery	_	Location	_	_	0	_	_	Offset=2673-2686
+4	2	_	Time	_	_	0	_	_	Offset=2691-2700
+5	≥12,000	_	Speed	_	_	0	_	_	Offset=2704-2715
+6	room	_	Temperature	_	_	0	_	_	Offset=2719-2735
+
+# sent_id = s28
+# text = Discard the flow-through, and reinsert the Spin Cartridge into the same Collection Tube.
+1	Discard	_	Action	_	_	0	_	_	Offset=2737-2744
+2	Spin	_	Device	_	_	0	_	_	Offset=2749-2763
+
+# sent_id = s29
+# text = Centrifuge the Spin Cartridge and Collection Tube at 12,000 × g for 1 minute at room temperature to dry the membrane with attached RNA.
+1	Store	_	Action	_	_	0	_	_	Offset=2816-2821
+2	purified	_	Modifier	_	_	0	_	_	Offset=2826-2834
+3	RNA	_	Reagent	_	_	0	_	_	Offset=2835-2838
+4	ice	_	Location	_	_	0	_	_	Offset=2842-2845
+5	few	_	Time	_	_	0	_	_	Offset=2863-2872
+
+# sent_id = s30
+# text = Discard the Collection Tube and insert the Spin Cartridge into a Recovery Tube.
+1	store	_	Action	_	_	0	_	_	Offset=2897-2902
+2	purified	_	Modifier	_	_	0	_	_	Offset=2907-2915
+3	RNA	_	Reagent	_	_	0	_	_	Offset=2916-2919
+4	–80°C	_	Temperature	_	_	0	_	_	Offset=2923-2928
+
+# sent_id = s31
+# text = Add 30 μL–3 × 100 μL (3 sequential elutions with 100 μL each) RNase-Free Water to the center of the Spin Cartridge and Incubate at room temperature for 1 minute.
+1	collect	_	Action	_	_	0	_	_	Offset=2979-2986
+2	all	_	Modifier	_	_	0	_	_	Offset=2987-2990
+3	eluates	_	Reagent	_	_	0	_	_	Offset=2991-2998
+4	same	_	Modifier	_	_	0	_	_	Offset=3008-3012
+5	tube	_	Location	_	_	0	_	_	Offset=3013-3017
+
+# sent_id = s32
+# text = Centrifuge the Spin Cartridge with the Recovery Tube for 2 minutes at ≥12,000 × g at room temperature.
+1	Select	_	Action	_	_	0	_	_	Offset=3056-3062
+2	Sample	_	Reagent	_	_	0	_	_	Offset=3063-3069
+
+# sent_id = s33
+# text = Discard the Spin Cartridge.
+1	Pull	_	Action	_	_	0	_	_	Offset=3087-3095
+
+# sent_id = s34
+# text = The recovery tube contains the purified total RNA.
+1	Cut	_	Action	_	_	0	_	_	Offset=3185-3188
+2	stocking	_	Reagent	_	_	0	_	_	Offset=3189-3197
+3	remove	_	Action	_	_	0	_	_	Offset=3201-3207
+4	SW	_	Reagent	_	_	0	_	_	Offset=3208-3222
+5	styrofoam	_	Device	_	_	0	_	_	Offset=3228-3244
+6	Dry	_	Reagent	_	_	0	_	_	Offset=3250-3257
+7	close	_	Action	_	_	0	_	_	Offset=3259-3264
+8	lid	_	Seal	_	_	0	_	_	Offset=3265-3268
+
+# sent_id = s35
+# text = Store the purified RNA on ice if used within a few hours.
+1	Select	_	Action	_	_	0	_	_	Offset=3308-3314
+2	Sample	_	Reagent	_	_	0	_	_	Offset=3315-3321
+
+# sent_id = s36
+# text = For long-term storage, store the purified RNA at –80°C.
+1	Pull	_	Action	_	_	0	_	_	Offset=3527-3531
+2	whole	_	Reagent	_	_	0	_	_	Offset=3532-3544
+3	gloved	_	Device	_	_	0	_	_	Offset=3554-3566
+4	holding	_	Action	_	_	0	_	_	Offset=3567-3574
+5	plastic	_	Location	_	_	0	_	_	Offset=3579-3591
+6	identify	_	Action	_	_	0	_	_	Offset=3593-3601
+7	target	_	Reagent	_	_	0	_	_	Offset=3602-3620
+8	nucleic	_	Method	_	_	0	_	_	Offset=3625-3648
+
+# sent_id = s37
+# text = Note: If you are performing sequential elutions, collect all eluates into the same tube.
+1	Clip	_	Action	_	_	0	_	_	Offset=3650-3654
+2	target	_	Reagent	_	_	0	_	_	Offset=3655-3676
+3	flamed	_	Modifier	_	_	5	Mod-Link	_	Offset=3683-3689
+4	ethanol	_	Modifier	_	_	5	Mod-Link	_	Offset=3691-3709
+5	tin-snips	_	Device	_	_	0	_	_	Offset=3710-3719
+6	tin-foil	_	Modifier	_	_	7	Mod-Link	_	Offset=3726-3742
+7	bench	_	Location	_	_	0	_	_	Offset=3743-3748
+8	cover	_	Action	_	_	0	_	_	Offset=3751-3756
+9	nubbin	_	Reagent	_	_	0	_	_	Offset=3757-3763
+10	gloved	_	Device	_	_	0	_	_	Offset=3769-3780
+11	prevent	_	Action	_	_	0	_	_	Offset=3784-3791
+12	flying	_	Reagent	_	_	0	_	_	Offset=3792-3803
+
+# sent_id = s38
+# text = Pre-Select Nubbins for RNA analysis.
+1	Replace	_	Action	_	_	0	_	_	Offset=3805-3812
+2	nubbin	_	Reagent	_	_	0	_	_	Offset=3829-3835
+3	dry	_	Device	_	_	0	_	_	Offset=3841-3855
+4	separate	_	Modifier	_	_	0	_	_	Offset=3859-3867
+5	cooler	_	Location	_	_	0	_	_	Offset=3868-3882
+
+# sent_id = s39
+# text = Select Sample Set to Fragment.
+1	Measure	_	Action	_	_	0	_	_	Offset=3884-3891
+2	resulting	_	Reagent	_	_	0	_	_	Offset=3892-3907
+3	calipers	_	Device	_	_	0	_	_	Offset=3914-3922
+4	take	_	Action	_	_	0	_	_	Offset=3924-3928
+
+# sent_id = s40
+# text = Pull out one stocking, comprising a single species from a single tank at a single nutrient level.
+1	Fracture	_	Action	_	_	0	_	_	Offset=4026-4034
+2	piece	_	Reagent	_	_	0	_	_	Offset=4035-4041
+3	two	_	Reagent	_	_	0	_	_	Offset=4045-4048
+4	allocate	_	Action	_	_	0	_	_	Offset=4054-4062
+5	RNA	_	Location	_	_	0	_	_	Offset=4066-4094
+
+# sent_id = s41
+# text = Cut stocking to remove SW nubbinspile into styrofoam cooler with Dry Ice, close lid.
+1	drop	_	Action	_	_	0	_	_	Offset=4109-4113
+2	ready	_	Location	_	_	0	_	_	Offset=4119-4129
+3	1	_	Amount	_	_	0	_	_	Offset=4135-4139
+4	trizol	_	Reagent	_	_	0	_	_	Offset=4140-4146
+5	0.2	_	Amount	_	_	0	_	_	Offset=4151-4157
+6	beating	_	Reagent	_	_	0	_	_	Offset=4158-4171
+7	RNA	_	Method	_	_	0	_	_	Offset=4176-4190
+
+# sent_id = s42
+# text = These will be your 'working samples'.
+1	drop	_	Action	_	_	0	_	_	Offset=4418-4422
+2	ready	_	Location	_	_	0	_	_	Offset=4428-4465
+3	DNA	_	Method	_	_	0	_	_	Offset=4470-4484
+4	freeze	_	Action	_	_	0	_	_	Offset=4489-4495
+5	-80C	_	Temperature	_	_	0	_	_	Offset=4496-4500
+
+# sent_id = s43
+# text = Select Sample to Fragment.
+1	cool	_	Action	_	_	0	_	_	Offset=4673-4677
+2	5-10	_	Time	_	_	0	_	_	Offset=4678-4690
+
+# sent_id = s44
+# text = Noting sample number and recording bag label, select one whirlpacked sample from the cooler.
+1	Incubate	_	Action	_	_	0	_	_	Offset=4705-4713
+2	lysate	_	Reagent	_	_	0	_	_	Offset=4718-4724
+3	TRIzol®	_	Reagent	_	_	0	_	_	Offset=4730-4745
+4	room	_	Temperature	_	_	0	_	_	Offset=4749-4765
+5	5	_	Time	_	_	0	_	_	Offset=4770-4779
+6	complete	_	Modifier	_	_	0	_	_	Offset=4789-4797
+7	dissociation	_	Action	_	_	0	_	_	Offset=4798-4810
+8	nucleoprotein	_	Reagent	_	_	0	_	_	Offset=4814-4837
+
+# sent_id = s45
+# text = Unwhirl it, you may need warm plastic with your hand or cut the whirlpack if it's taking too long.
+1	Sample	_	Reagent	_	_	0	_	_	Offset=4839-4845
+2	stable	_	Action	_	_	0	_	_	Offset=4849-4855
+3	TRIzol	_	Reagent	_	_	0	_	_	Offset=4859-4866
+4	room	_	Temperature	_	_	0	_	_	Offset=4869-4885
+5	bead	_	Action	_	_	0	_	_	Offset=4892-4904
+
+# sent_id = s46
+# text = Pull whole sample out with gloved hands holding the plastic base, identify target branch/clip for nucleic acid extraction.
+1	Remove	_	Action	_	_	0	_	_	Offset=4906-4912
+2	Lysate	_	Reagent	_	_	0	_	_	Offset=4917-4923
+3	pipette	_	Action	_	_	0	_	_	Offset=4932-4939
+4	TRIZOL	_	Reagent	_	_	0	_	_	Offset=4940-4950
+5	clean	_	Modifier	_	_	0	_	_	Offset=4960-4965
+6	tube	_	Location	_	_	0	_	_	Offset=4966-4970
+
+# sent_id = s47
+# text = Clip target branch/section, with flamed, ethanol sterilized tin-snips, over tin-foil covered bench - cover nubbin with gloved hand to prevent flying bits.
+1	Ethanol-clean	_	Action	_	_	0	_	_	Offset=4989-5002
+2	bottom	_	Location	_	_	0	_	_	Offset=5003-5009
+3	beat	_	Location	_	_	0	_	_	Offset=5013-5027
+
+# sent_id = s48
+# text = Replace the rest of the nubbin into dry ice cooler in separate cooler section.
+1	Flame	_	Device	_	_	0	_	_	Offset=5029-5034
+2	sterilize	_	Action	_	_	0	_	_	Offset=5035-5044
+3	syringe	_	Device	_	_	0	_	_	Offset=5045-5059
+
+# sent_id = s49
+# text = Measure resulting piece using calipers: take three measurements to be able to estimate surface area and volume [need more explicitness here].
+1	Poke	_	Action	_	_	0	_	_	Offset=5061-5065
+2	bottom	_	Location	_	_	0	_	_	Offset=5066-5072
+3	tube	_	Location	_	_	0	_	_	Offset=5076-5080
+
+# sent_id = s50
+# text = Fracture piece in 'two' and allocate to RNA and DNA Extraction Tubes.
+1	Nest	_	Action	_	_	0	_	_	Offset=5082-5086
+2	new	_	Modifier	_	_	0	_	_	Offset=5092-5095
+3	clean	_	Modifier	_	_	0	_	_	Offset=5097-5102
+4	tube	_	Location	_	_	0	_	_	Offset=5103-5108
+
+# sent_id = s51
+# text = Fragment (1) drop into ready tube with 1 ml trizol and 0.2 ml beating beads for RNA extraction.
+1	Spin	_	Action	_	_	0	_	_	Offset=5127-5131
+2	fluid	_	Reagent	_	_	0	_	_	Offset=5132-5137
+3	coral	_	Reagent	_	_	0	_	_	Offset=5144-5156
+4	TRIZOL	_	Reagent	_	_	0	_	_	Offset=5157-5170
+5	new	_	Modifier	_	_	0	_	_	Offset=5174-5177
+6	clean	_	Modifier	_	_	0	_	_	Offset=5178-5183
+7	tube	_	Location	_	_	0	_	_	Offset=5184-5188
+
+# sent_id = s52
+# text = The sample volume should not exceed 10% of the volume of TRIzol® Reagent used for homogenization, however in this case we consider the tissue to be the 'sample' so if the nubbin is covered by Trizol that is fine.
+1	Prep	_	Action	_	_	0	_	_	Offset=5190-5194
+2	TRIzol®	_	Reagent	_	_	0	_	_	Offset=5195-5228
+3	TRIzol®	_	Reagent	_	_	0	_	_	Offset=5260-5267
+4	roughly	_	Modifier	_	_	5	Mod-Link	_	Offset=5285-5292
+5	1ml	_	Amount	_	_	3	Measure	_	Offset=5293-5296
+6	per	_	Modifier	_	_	8	Mod-Link	_	Offset=5297-5300
+7	100uL	_	Amount	_	_	8	Measure	_	Offset=5301-5306
+8	tissue	_	Reagent	_	_	0	_	_	Offset=5307-5320
+9	1cm	_	Size	_	_	10	Measure	_	Offset=5324-5328
+10	chunk	_	Reagent	_	_	8	Or	_	Offset=5328-5345
+11	Chloroform	_	Reagent	_	_	0	_	_	Offset=5347-5357
+12	200	_	Generic-Measure	_	_	11	Measure	_	Offset=5364-5377
+13	96–100%	_	Concentration	_	_	14	Measure	_	Offset=5399-5406
+14	ethanol	_	Reagent	_	_	0	_	_	Offset=5407-5414
+15	60ml	_	Amount	_	_	14	Measure	_	Offset=5421-5425
+16	add	_	Action	_	_	0	_	_	Offset=5492-5495
+17	60	_	Amount	_	_	19	Measure	_	Offset=5496-5501
+18	96–100%	_	Concentration	_	_	19	Measure	_	Offset=5502-5509
+19	ethanol	_	Reagent	_	_	0	_	_	Offset=5510-5517
+20	Wash	_	Reagent	_	_	0	_	_	Offset=5521-5535
+
+# sent_id = s53
+# text = Fragment (2) drop into ready DNA extraction buffer bead tube for DNA extraction and freeze -80C.
+1	Store	_	Action	_	_	0	_	_	Offset=5615-5620
+2	Wash	_	Reagent	_	_	0	_	_	Offset=5621-5635
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=5641-5648
+4	room	_	Temperature	_	_	0	_	_	Offset=5652-5668
+
+# sent_id = s54
+# text = The remainder of this protocol focuses only on RNA Extraction Fragment (1).
+1	Prepare	_	Action	_	_	0	_	_	Offset=5726-5733
+2	PureLink	_	Reagent	_	_	0	_	_	Offset=5734-5768
+3	Reconstitute	_	Action	_	_	0	_	_	Offset=5770-5782
+4	PureLink™	_	Reagent	_	_	0	_	_	Offset=5787-5802
+5	dissolving	_	Action	_	_	0	_	_	Offset=5829-5839
+6	lyophilized	_	Modifier	_	_	7	Mod-Link	_	Offset=5844-5856
+7	DNase	_	Reagent	_	_	0	_	_	Offset=5856-5861
+8	550	_	Amount	_	_	10	Measure	_	Offset=5865-5871
+9	RNase-free	_	Modifier	_	_	10	Mod-Link	_	Offset=5872-5882
+10	water	_	Reagent	_	_	0	_	_	Offset=5883-5888
+
+# sent_id = s55
+# text = Lyse the Tissue: Immediately Bead beat for 45s with FastPrep at max speed.
+1	store	_	Action	_	_	0	_	_	Offset=5925-5930
+2	reconstituted	_	Modifier	_	_	3	Mod-Link	_	Offset=5935-5948
+3	PureLink™	_	Reagent	_	_	0	_	_	Offset=5949-5964
+4	4°C	_	Temperature	_	_	0	_	_	Offset=5968-5971
+
+# sent_id = s56
+# text = Note: FastPrep must cool 5-10 minutes between runs.
+1	prepare	_	Action	_	_	0	_	_	Offset=5996-6003
+2	aliquots	_	Reagent	_	_	0	_	_	Offset=6004-6012
+3	PureLink™	_	Reagent	_	_	2	Meronym	_	Offset=6020-6035
+4	store	_	Action	_	_	0	_	_	Offset=6040-6045
+5	-20°C	_	Temperature	_	_	0	_	_	Offset=6049-6054
+
+# sent_id = s57
+# text = Incubate the lysate with TRIzol® Reagent at room temperature for 5 minutes to allow complete dissociation of nucleoprotein complexes.
+1	Thawed	_	Modifier	_	_	2	Mod-Link	_	Offset=6091-6098
+2	PureLink™	_	Reagent	_	_	0	_	_	Offset=6098-6120
+3	stored	_	Action	_	_	0	_	_	Offset=6128-6134
+4	4°C	_	Temperature	_	_	0	_	_	Offset=6138-6141
+
+# sent_id = s58
+# text = Sample is stable in TRIzol at room temperature after bead beating.
+1	Combine	_	Action	_	_	0	_	_	Offset=6219-6226
+2	8uL	_	Amount	_	_	0	_	_	Offset=6227-6230
+3	10X	_	Concentration	_	_	0	_	_	Offset=6234-6237
+4	DNAse	_	Reagent	_	_	0	_	_	Offset=6238-6261
+5	10	_	Amount	_	_	0	_	_	Offset=6267-6272
+6	DNAse	_	Reagent	_	_	0	_	_	Offset=6276-6281
+7	62	_	Amount	_	_	0	_	_	Offset=6294-6299
+8	RNAse-free	_	Modifier	_	_	0	_	_	Offset=6300-6310
+9	water	_	Reagent	_	_	0	_	_	Offset=6311-6316
+
+# sent_id = s59
+# text = Remove the Lysate: Either pipette TRIZOL mix out to a clean tube, ORTom's method :
+1	Log	_	Action	_	_	0	_	_	Offset=6820-6823
+
+# sent_id = s60
+# text = Ethanol-clean bottom of beat beat tube.
+1	Add	_	Action	_	_	0	_	_	Offset=7535-7538
+
+# sent_id = s61
+# text = Flame sterilize syringe needle.
+1	Incubate	_	Action	_	_	0	_	_	Offset=7627-7635
+
+# sent_id = s62
+# text = Poke bottom of tube.
+1	Add	_	Action	_	_	0	_	_	Offset=7672-7675
+
+# sent_id = s63
+# text = Nest into new, clean tube (5ml spin tubes?).
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=7721-7731
+
+# sent_id = s64
+# text = Spin fluid out a coral tissue/TRIZOL slurry in new clean tube.
+1	Discard	_	Action	_	_	0	_	_	Offset=7782-7789
+
+# sent_id = s65
+# text = Prep TRIzol® Plus RNA Purification Kit (Ambion 12183-555) in advance: TRIzol® included in Kit, roughly 1ml per 100uL tissue slurry or 1cm chunk of skeleton, Chloroform, need 200 uL/sample (or per 1ml TRIZOL), 96–100% ethanol, need 60ml to make up Wash Buffer II for 50 samples, Before beginning lysis, add 60 mL 96–100% ethanol to Wash Buffer II.
+1	Insert	_	Action	_	_	0	_	_	Offset=7832-7838
+
+# sent_id = s66
+# text = Check the box on the Wash Buffer II label to indicate that ethanol was added.
+1	addition	_	Action	_	_	0	_	_	Offset=7966-7974
+

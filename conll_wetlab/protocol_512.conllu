@@ -1,0 +1,46 @@
+# sent_id = s1
+# text = Quick Ligation Protocol (M2200)
+1	Combine	_	Action	_	_	0	_	_	Offset=32-39
+2	50	_	Amount	_	_	3	Measure	_	Offset=40-45
+3	vector	_	Reagent	_	_	0	_	_	Offset=49-55
+4	3-fold	_	Concentration	_	_	5	Measure	3:Measure	Offset=63-82
+5	insert	_	Reagent	_	_	0	_	_	Offset=86-92
+
+# sent_id = s2
+# text = Combine 50 ng of vector with a 3-fold molar excess of insert.
+1	Adjust	_	Action	_	_	0	_	_	Offset=94-100
+2	10μl	_	Amount	_	_	3	Measure	_	Offset=111-115
+3	dH2O	_	Reagent	_	_	0	_	_	Offset=121-125
+
+# sent_id = s3
+# text = Adjust volume to 10μl with dH2O.
+1	Add	_	Action	_	_	0	_	_	Offset=127-130
+2	10	_	Amount	_	_	4	Measure	_	Offset=131-136
+3	2X	_	Concentration	_	_	4	Measure	_	Offset=140-142
+4	Quick	_	Reagent	_	_	0	_	_	Offset=143-164
+5	mix	_	Action	_	_	0	_	_	Offset=169-172
+
+# sent_id = s4
+# text = Add 10 μl of 2X Quick Ligation Buffer and mix.
+1	Add	_	Action	_	_	0	_	_	Offset=174-177
+2	1μl	_	Amount	_	_	3	Measure	_	Offset=178-181
+3	Quick	_	Reagent	_	_	0	_	_	Offset=185-204
+4	mix	_	Action	_	_	0	_	_	Offset=209-212
+5	thoroughly	_	Modifier	_	_	0	_	_	Offset=213-223
+
+# sent_id = s5
+# text = Add 1μl of Quick T4 DNA Ligase and mix thoroughly.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=225-235
+2	briefly	_	Modifier	_	_	0	_	_	Offset=236-243
+3	incubate	_	Action	_	_	0	_	_	Offset=248-256
+4	room	_	Temperature	_	_	0	_	_	Offset=260-276
+5	5	_	Time	_	_	0	_	_	Offset=288-297
+
+# sent_id = s6
+# text = Centrifuge briefly and incubate at room temperature (25°C) for 5 minutes.
+1	Chill	_	Action	_	_	0	_	_	Offset=299-304
+2	ice	_	Temperature	_	_	0	_	_	Offset=308-311
+3	transform	_	Action	_	_	0	_	_	Offset=318-327
+4	store	_	Action	_	_	0	_	_	Offset=331-336
+5	-20°C	_	Temperature	_	_	0	_	_	Offset=340-345
+

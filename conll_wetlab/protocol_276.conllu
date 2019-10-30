@@ -1,0 +1,72 @@
+# sent_id = s1
+# text = Obtaining pure phage stock
+1	Transfer	_	Action	_	_	0	_	_	Offset=27-35
+2	phages	_	Reagent	_	_	0	_	_	Offset=36-42
+3	clearing	_	Location	_	_	0	_	_	Offset=52-65
+4	plate	_	Location	_	_	3	Meronym	_	Offset=73-78
+5	1	_	Amount	_	_	6	Measure	_	Offset=82-86
+6	phage	_	Reagent	_	_	0	_	_	Offset=87-99
+7	sterile	_	Modifier	_	_	8	Mod-Link	_	Offset=103-110
+8	sea	_	Reagent	_	_	6	Or	_	Offset=111-120
+9	sterile	_	Modifier	_	_	10	Mod-Link	_	Offset=126-133
+10	tube	_	Location	_	_	8	Meronym	_	Offset=134-138
+11	scraping	_	Action	_	_	0	_	_	Offset=142-154
+12	surface	_	Reagent	_	_	14	Meronym	_	Offset=159-172
+13	soft	_	Reagent	_	_	12	Meronym	_	Offset=180-189
+14	phages	_	Reagent	_	_	0	_	_	Offset=205-211
+15	sterile	_	Modifier	_	_	16	Mod-Link	_	Offset=220-227
+16	loop	_	Device	_	_	0	_	_	Offset=228-232
+
+# sent_id = s2
+# text = Transfer phages from the clearing zone on the plate to 1 mL phage buffer or sterile sea water in a sterile tube by scraping off the surface layer of the soft agar containing the phages using a sterile loop.
+1	phages	_	Reagent	_	_	0	_	_	Offset=244-250
+2	diffuse	_	Action	_	_	0	_	_	Offset=254-261
+3	medium	_	Reagent	_	_	0	_	_	Offset=271-277
+4	overnight	_	Time	_	_	0	_	_	Offset=278-287
+5	4°C	_	Temperature	_	_	0	_	_	Offset=291-294
+
+# sent_id = s3
+# text = Allow the phages to diffuse into the medium overnight at 4°C.
+1	Vortex	_	Action	_	_	0	_	_	Offset=296-302
+2	tube	_	Location	_	_	0	_	_	Offset=307-311
+3	centrifuge	_	Action	_	_	0	_	_	Offset=316-326
+4	sample	_	Reagent	_	_	0	_	_	Offset=331-337
+5	10,000	_	Speed	_	_	0	_	_	Offset=339-347
+6	10	_	Time	_	_	0	_	_	Offset=351-357
+7	remove	_	Action	_	_	0	_	_	Offset=362-368
+8	bacteria	_	Reagent	_	_	0	_	_	Offset=369-377
+9	agar	_	Reagent	_	_	0	_	_	Offset=382-386
+
+# sent_id = s4
+# text = Vortex the tube and centrifuge the sample (10,000 x g, 10 min) to remove bacteria and agar.
+1	Transfer	_	Action	_	_	0	_	_	Offset=388-396
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=401-412
+3	new	_	Modifier	_	_	4	Mod-Link	_	Offset=418-421
+4	tube	_	Location	_	_	0	_	_	Offset=422-426
+
+# sent_id = s5
+# text = Transfer the supernatant to a new tube.
+1	isolate	_	Action	_	_	0	_	_	Offset=487-494
+2	single	_	Numerical	_	_	3	Measure	_	Offset=495-501
+3	phages	_	Reagent	_	_	0	_	_	Offset=502-508
+4	dilutions	_	Action	_	_	0	_	_	Offset=510-519
+5	plaque	_	Action	_	_	0	_	_	Offset=568-580
+6	isolation	_	Action	_	_	0	_	_	Offset=597-606
+7	phages	_	Reagent	_	_	0	_	_	Offset=610-616
+8	single	_	Numerical	_	_	9	Measure	_	Offset=622-628
+9	plaques	_	Reagent	_	_	0	_	_	Offset=629-636
+
+# sent_id = s6
+# text = This sample will typically contain 106–108 phages mL–1.
+1	dilute	_	Action	_	_	0	_	_	Offset=685-695
+2	contaminant	_	Modifier	_	_	3	Mod-Link	_	Offset=700-711
+3	phage	_	Reagent	_	_	0	_	_	Offset=712-717
+
+# sent_id = s7
+# text = To isolate single phages, dilutions of this concentrate should be done, followed by plaque assay, and subsequent isolation of phages from single plaques.
+1	phage	_	Reagent	_	_	0	_	_	Offset=867-884
+2	0.2	_	Generic-Measure	_	_	0	_	_	Offset=888-894
+3	filtered	_	Action	_	_	0	_	_	Offset=895-903
+4	kept	_	Action	_	_	0	_	_	Offset=908-912
+5	fridge	_	Device	_	_	0	_	_	Offset=920-926
+

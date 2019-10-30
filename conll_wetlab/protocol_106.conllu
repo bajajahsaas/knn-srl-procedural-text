@@ -1,0 +1,147 @@
+# sent_id = s1
+# text = Pierce Silver Stain Kit
+1	Wash	_	Action	_	_	0	_	_	Offset=24-28
+2	gel	_	Reagent	_	_	0	_	_	Offset=29-32
+3	ultra	_	Reagent	_	_	0	_	_	Offset=36-52
+4	5	_	Time	_	_	0	_	_	Offset=57-66
+
+# sent_id = s2
+# text = Wash gel in ultra pure water for 5 minutes.
+1	Replace	_	Action	_	_	0	_	_	Offset=68-75
+2	water	_	Reagent	_	_	0	_	_	Offset=80-85
+3	wash	_	Action	_	_	0	_	_	Offset=90-94
+4	5	_	Time	_	_	0	_	_	Offset=107-116
+
+# sent_id = s3
+# text = Replace the water and wash for another 5 minutes.
+1	Fix	_	Action	_	_	0	_	_	Offset=118-121
+2	gel	_	Reagent	_	_	0	_	_	Offset=122-125
+3	30%	_	Concentration	_	_	4	Measure	_	Offset=129-132
+4	ethanol	_	Reagent	_	_	7	Meronym	_	Offset=133-140
+5	10%	_	Concentration	_	_	6	Measure	_	Offset=141-144
+6	acetic	_	Reagent	_	_	7	Meronym	_	Offset=145-156
+7	solution	_	Reagent	_	_	0	_	_	Offset=157-165
+8	15	_	Time	_	_	0	_	_	Offset=210-220
+
+# sent_id = s4
+# text = Fix gel in 30% ethanol:10% acetic acid solution (i.e., 6:3:1 water:ethanol:acetic acid) for 15 minutes.
+1	Replace	_	Action	_	_	0	_	_	Offset=222-229
+2	solution	_	Reagent	_	_	0	_	_	Offset=234-242
+3	fix	_	Action	_	_	0	_	_	Offset=247-250
+4	15	_	Time	_	_	0	_	_	Offset=263-273
+
+# sent_id = s5
+# text = Replace the solution and fix for another 15 minutes.
+1	Wash	_	Action	_	_	0	_	_	Offset=363-367
+2	gel	_	Reagent	_	_	0	_	_	Offset=368-371
+3	10%	_	Concentration	_	_	4	Measure	_	Offset=375-378
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=379-386
+5	5	_	Time	_	_	0	_	_	Offset=400-409
+
+# sent_id = s6
+# text = Note: Gel may be kept in fixing solution overnight without affecting stain performance.
+1	Replace	_	Action	_	_	0	_	_	Offset=411-418
+2	solution	_	Reagent	_	_	0	_	_	Offset=419-427
+3	wash	_	Action	_	_	0	_	_	Offset=432-436
+4	5	_	Time	_	_	0	_	_	Offset=449-458
+
+# sent_id = s7
+# text = Wash gel in 10% ethanol solution for 5 minutes.
+1	Wash	_	Action	_	_	0	_	_	Offset=460-464
+2	gel	_	Reagent	_	_	0	_	_	Offset=465-468
+3	ultrapure	_	Reagent	_	_	0	_	_	Offset=472-487
+4	5	_	Time	_	_	0	_	_	Offset=492-501
+
+# sent_id = s8
+# text = Replace solution and wash for another 5 minutes.
+1	Replace	_	Action	_	_	0	_	_	Offset=503-510
+2	water	_	Reagent	_	_	0	_	_	Offset=511-516
+3	wash	_	Action	_	_	0	_	_	Offset=521-525
+4	5	_	Time	_	_	0	_	_	Offset=538-547
+
+# sent_id = s9
+# text = Wash gel in ultrapure water for 5 minutes.
+1	Sensitizer	_	Reagent	_	_	0	_	_	Offset=557-584
+2	mixing	_	Action	_	_	0	_	_	Offset=588-594
+3	1	_	Generic-Measure	_	_	4	Measure	_	Offset=595-601
+4	Silver	_	Reagent	_	_	0	_	_	Offset=602-625
+5	500	_	Generic-Measure	_	_	6	Measure	_	Offset=631-640
+6	ultrapure	_	Reagent	_	_	0	_	_	Offset=641-656
+
+# sent_id = s10
+# text = Replace water and wash for another 5 minutes.
+1	Incubate	_	Action	_	_	0	_	_	Offset=702-710
+2	gel	_	Reagent	_	_	0	_	_	Offset=711-714
+3	Sensitizer	_	Reagent	_	_	0	_	_	Offset=718-745
+4	1	_	Time	_	_	0	_	_	Offset=758-766
+5	wash	_	Action	_	_	0	_	_	Offset=773-777
+6	two	_	Numerical	_	_	0	_	_	Offset=783-786
+7	ultrapure	_	Reagent	_	_	0	_	_	Offset=798-813
+8	1	_	Time	_	_	0	_	_	Offset=818-826
+
+# sent_id = s11
+# text = Prepare Sensitizer Working Solution by mixing 1 part Silver Stain Sensitizer with 500 parts ultrapure water (e.g., mix 50µL Sensitizer with 25mL water).
+1	Stain	_	Reagent	_	_	0	_	_	Offset=841-863
+2	mixing	_	Action	_	_	0	_	_	Offset=867-873
+3	1	_	Generic-Measure	_	_	4	Measure	_	Offset=874-880
+4	Silver	_	Reagent	_	_	0	_	_	Offset=881-902
+5	50	_	Generic-Measure	_	_	6	Measure	_	Offset=908-916
+6	Silver	_	Reagent	_	_	0	_	_	Offset=917-929
+
+# sent_id = s12
+# text = Incubate gel in Sensitizer Working Solution for exactly 1 minute, then wash with two changes of ultrapure water for 1 minute each.
+1	Incubate	_	Action	_	_	0	_	_	Offset=973-981
+2	gel	_	Reagent	_	_	0	_	_	Offset=982-985
+3	Stain	_	Reagent	_	_	0	_	_	Offset=989-1011
+4	30	_	Time	_	_	0	_	_	Offset=1016-1026
+
+# sent_id = s13
+# text = Prepare Stain Working Solution by mixing 1 part Silver Stain Enhancer with 50 parts Silver Stain (e.g., 0.5mL of Enhancer with 25mL Stain).
+1	Prepare	_	Action	_	_	0	_	_	Offset=1168-1175
+2	Developer	_	Reagent	_	_	0	_	_	Offset=1176-1202
+3	mixing	_	Action	_	_	0	_	_	Offset=1206-1212
+4	1	_	Generic-Measure	_	_	5	Measure	_	Offset=1213-1219
+5	Silver	_	Reagent	_	_	0	_	_	Offset=1220-1241
+6	50	_	Generic-Measure	_	_	7	Measure	_	Offset=1247-1255
+7	Silver	_	Reagent	_	_	0	_	_	Offset=1256-1278
+
+# sent_id = s14
+# text = Incubate gel in Stain Working Solution for 30 minutes.
+1	Prepare	_	Action	_	_	0	_	_	Offset=1330-1337
+2	5%	_	Concentration	_	_	3	Measure	_	Offset=1338-1340
+3	acetic	_	Reagent	_	_	0	_	_	Offset=1341-1361
+4	Stop	_	Reagent	_	_	0	_	_	Offset=1367-1380
+
+# sent_id = s15
+# text = Note: Gel may be incubated in Stain Working Solution for as short as 5 minutes or as long as overnight without affecting stain performance.
+1	Quickly	_	Modifier	_	_	0	_	_	Offset=1382-1389
+2	wash	_	Action	_	_	0	_	_	Offset=1390-1394
+3	gel	_	Reagent	_	_	0	_	_	Offset=1395-1398
+4	two	_	Numerical	_	_	0	_	_	Offset=1404-1407
+5	ultrapure	_	Reagent	_	_	0	_	_	Offset=1419-1434
+6	20	_	Time	_	_	0	_	_	Offset=1439-1449
+
+# sent_id = s16
+# text = Prepare Developer Working Solution by mixing 1 part Silver Stain Enhancer with 50 parts Silver Stain Developer (e.g., mix 0.5mL of Enhancer with 25mL Developer).
+1	Immediately	_	Modifier	_	_	0	_	_	Offset=1456-1467
+2	add	_	Action	_	_	0	_	_	Offset=1468-1471
+3	Developer	_	Reagent	_	_	0	_	_	Offset=1472-1498
+4	incubate	_	Action	_	_	0	_	_	Offset=1503-1511
+5	2-3	_	Time	_	_	0	_	_	Offset=1540-1551
+
+# sent_id = s17
+# text = Prepare 5% acetic acid solution as a Stop Solution.
+1	replace	_	Action	_	_	0	_	_	Offset=1833-1840
+2	Developer	_	Reagent	_	_	0	_	_	Offset=1841-1867
+3	Stop	_	Reagent	_	_	0	_	_	Offset=1882-1895
+
+# sent_id = s18
+# text = Quickly wash gel with two changes of ultrapure water for 20 seconds each.
+1	Wash	_	Action	_	_	0	_	_	Offset=1914-1918
+2	gel	_	Reagent	_	_	0	_	_	Offset=1919-1922
+3	briefly	_	Modifier	_	_	0	_	_	Offset=1923-1930
+4	replace	_	Action	_	_	0	_	_	Offset=1937-1944
+5	Stop	_	Reagent	_	_	0	_	_	Offset=1945-1958
+6	incubate	_	Action	_	_	0	_	_	Offset=1963-1971
+7	10	_	Time	_	_	0	_	_	Offset=1976-1986
+

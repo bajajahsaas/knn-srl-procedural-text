@@ -1,0 +1,88 @@
+# sent_id = s1
+# text = Staining protocol for unicellular protists: Lysotracker and Dapi
+1	2%	_	Concentration	_	_	2	Measure	_	Offset=65-67
+2	PFA	_	Reagent	_	_	0	_	_	Offset=68-80
+3	Add	_	Action	_	_	0	_	_	Offset=82-85
+4	PFA	_	Reagent	_	_	0	_	_	Offset=86-89
+5	drop	_	Method	_	_	0	_	_	Offset=90-102
+6	mixing	_	Action	_	_	0	_	_	Offset=107-113
+7	carefully	_	Modifier	_	_	0	_	_	Offset=114-123
+8	1mL	_	Amount	_	_	9	Measure	_	Offset=129-132
+9	cells	_	Reagent	_	_	0	_	_	Offset=133-138
+
+# sent_id = s2
+# text = 2% PFA Fixation: Add PFA drop by drop and mixing carefully into 1mL cells for a final concentration of 2%PFA. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=176-184
+2	cells	_	Reagent	_	_	0	_	_	Offset=185-190
+3	4	_	Time	_	_	0	_	_	Offset=195-200
+4	room	_	Temperature	_	_	0	_	_	Offset=204-220
+
+# sent_id = s3
+# text = Incubate cells for 4 min at room temperature. 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=223-233
+2	1000g	_	Speed	_	_	0	_	_	Offset=237-242
+3	5	_	Time	_	_	0	_	_	Offset=247-256
+
+# sent_id = s4
+# text = Centrifuge at 1000g for 5 minutes. 
+1	Wash	_	Action	_	_	0	_	_	Offset=259-263
+2	cells	_	Reagent	_	_	0	_	_	Offset=264-269
+3	1XPBS	_	Reagent	_	_	0	_	_	Offset=275-280
+
+# sent_id = s5
+# text = Wash cells with 1XPBS (1/2). 
+1	Resuspend	_	Action	_	_	0	_	_	Offset=289-298
+2	cells	_	Reagent	_	_	0	_	_	Offset=299-304
+3	1mL	_	Amount	_	_	4	Measure	_	Offset=310-313
+4	1xPBS.	_	Reagent	_	_	0	_	_	Offset=314-320
+
+# sent_id = s6
+# text = Resuspend cells with 1mL 1xPBS. 
+1	Add	_	Action	_	_	0	_	_	Offset=322-325
+2	1/1000	_	Amount	_	_	3	Measure	_	Offset=326-332
+3	lysotracker	_	Reagent	_	_	0	_	_	Offset=333-348
+4	1	_	Amount	_	_	5	Measure	_	Offset=350-354
+5	lysotracker	_	Reagent	_	_	3	Or	_	Offset=358-369
+6	1mL	_	Amount	_	_	7	Measure	_	Offset=376-379
+7	cells	_	Reagent	_	_	0	_	_	Offset=396-401
+
+# sent_id = s7
+# text = Add 1/1000 lysotracker dye: 1 uL of lysotracker for a 1mL final Volume of cells.
+1	Add	_	Action	_	_	0	_	_	Offset=441-444
+2	1/1000	_	Amount	_	_	3	Measure	_	Offset=445-451
+3	DAPI	_	Reagent	_	_	0	_	_	Offset=452-460
+
+# sent_id = s8
+# text = Room temperature, protect from light.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=500-510
+2	1000g	_	Speed	_	_	0	_	_	Offset=514-519
+3	5	_	Time	_	_	0	_	_	Offset=524-533
+4	resuspend	_	Action	_	_	0	_	_	Offset=538-547
+5	1xPBS	_	Reagent	_	_	0	_	_	Offset=553-558
+
+# sent_id = s9
+# text = Add 1/1000 DAPI dye.
+1	Wash	_	Action	_	_	0	_	_	Offset=605-609
+2	cells	_	Reagent	_	_	0	_	_	Offset=610-615
+3	1XPBS	_	Reagent	_	_	0	_	_	Offset=621-626
+
+# sent_id = s10
+# text = Room temperature, protect from light.
+1	Wash	_	Action	_	_	0	_	_	Offset=635-639
+2	1xPBS	_	Reagent	_	_	0	_	_	Offset=645-650
+
+# sent_id = s11
+# text = Centrifuge at 1000g for 5 minutes and resuspend with 1xPBS. 
+1	Wash	_	Action	_	_	0	_	_	Offset=659-663
+2	1xPBS	_	Reagent	_	_	0	_	_	Offset=669-674
+
+# sent_id = s12
+# text = Mount your slide and ready for observation!
+1	Incubate	_	Action	_	_	0	_	_	Offset=683-691
+2	20	_	Time	_	_	0	_	_	Offset=696-702
+
+# sent_id = s13
+# text = Wash cells with 1XPBS (2/2). 
+1	Incubate	_	Action	_	_	0	_	_	Offset=742-750
+2	5	_	Time	_	_	0	_	_	Offset=755-764
+

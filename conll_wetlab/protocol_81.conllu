@@ -1,0 +1,68 @@
+# sent_id = s1
+# text = ASP12A Recipe for culturing Aureococcus anophagefferens
+1	Prepare	_	Action	_	_	0	_	_	Offset=56-63
+2	Trace	_	Reagent	_	_	0	_	_	Offset=64-93
+3	Fe-EDTA	_	Reagent	_	_	0	_	_	Offset=95-123
+4	Vitamin	_	Reagent	_	_	0	_	_	Offset=129-145
+
+# sent_id = s2
+# text = Prepare Trace Metal Solutions I - III, Fe-EDTA Sodium Salt Solution, and Vitamin Solution.
+1	Add	_	Action	_	_	0	_	_	Offset=147-150
+2	constituents	_	Reagent	_	_	0	_	_	Offset=151-163
+3	750	_	Amount	_	_	0	_	_	Offset=167-173
+4	MilliQ	_	Reagent	_	_	0	_	_	Offset=174-186
+5	shake	_	Action	_	_	0	_	_	Offset=188-193
+6	dissolve	_	Action	_	_	0	_	_	Offset=197-205
+
+# sent_id = s3
+# text = Add constituents to 750 mL MilliQ water, shake to dissolve.
+1	Add	_	Action	_	_	0	_	_	Offset=207-210
+2	MilliQ	_	Reagent	_	_	0	_	_	Offset=211-223
+3	1.0	_	Amount	_	_	0	_	_	Offset=227-232
+
+# sent_id = s4
+# text = Add MilliQ water to 1.0 L.
+1	Filter	_	Action	_	_	0	_	_	Offset=234-250
+
+# sent_id = s5
+# text = Filter sterilize.
+1	Trace	_	Reagent	_	_	6	Coreference-Link	_	Offset=252-273
+2	Fe-EDTA	_	Reagent	_	_	6	Coreference-Link	_	Offset=278-306
+3	stored	_	Action	_	_	0	_	_	Offset=311-317
+4	4ºC	_	Temperature	_	_	0	_	_	Offset=321-324
+5	15	_	Amount	_	_	6	Measure	_	Offset=328-338
+6	aliquots	_	Mention	_	_	0	_	_	Offset=339-347
+7	Vitamin	_	Reagent	_	_	11	Coreference-Link	_	Offset=359-375
+8	stored	_	Action	_	_	0	_	_	Offset=379-385
+9	-20ºC	_	Temperature	_	_	0	_	_	Offset=389-394
+10	5	_	Amount	_	_	11	Coreference-Link	_	Offset=398-407
+11	aliquots	_	Mention	_	_	0	_	_	Offset=408-416
+
+# sent_id = s6
+# text = Trace Metal Solutions and Fe-EDTA Sodium Salt Solution are stored at 4ºC in 15 - 50 mL aliquots, while the Vitamin solution is stored at -20ºC in 5 - 10 mL aliquots.
+1	Add	_	Action	_	_	0	_	_	Offset=418-421
+2	anhydrous	_	Reagent	_	_	0	_	_	Offset=422-437
+3	hydrous	_	Reagent	_	_	0	_	_	Offset=439-452
+4	macronutrients	_	Reagent	_	_	0	_	_	Offset=454-468
+5	Tris	_	Reagent	_	_	0	_	_	Offset=473-482
+6	75%	_	Concentration	_	_	7	Measure	_	Offset=486-489
+7	MilliQ	_	Reagent	_	_	0	_	_	Offset=498-510
+8	stirring	_	Action	_	_	0	_	_	Offset=517-525
+9	dissolve	_	Action	_	_	0	_	_	Offset=529-537
+
+# sent_id = s7
+# text = Add anhydrous salts, hydrous salts, macronutrients and Tris Base to 75% desired MilliQ water while stirring to dissolve.
+1	Add	_	Action	_	_	0	_	_	Offset=539-542
+2	MilliQ	_	Reagent	_	_	0	_	_	Offset=543-555
+3	final	_	Amount	_	_	0	_	_	Offset=559-571
+4	autoclave	_	Action	_	_	0	_	_	Offset=573-582
+
+# sent_id = s8
+# text = Add MilliQ water to final volume, autoclave.
+1	add	_	Action	_	_	0	_	_	Offset=597-600
+2	1mL	_	Amount	_	_	5	Measure	3:Measure|4:Measure	Offset=604-607
+3	Trace	_	Reagent	_	_	0	_	_	Offset=615-636
+4	Fe-EDTA	_	Reagent	_	_	0	_	_	Offset=638-666
+5	Vitamin	_	Reagent	_	_	0	_	_	Offset=672-688
+6	per	_	Concentration	_	_	5	Measure	_	Offset=689-709
+

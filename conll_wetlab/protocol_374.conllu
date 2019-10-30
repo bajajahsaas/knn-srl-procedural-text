@@ -1,0 +1,141 @@
+# sent_id = s1
+# text = NUCLEIC dotMETRIC™
+1	dilute	_	Action	_	_	0	_	_	Offset=107-113
+2	Nucleic	_	Reagent	_	_	0	_	_	Offset=118-146
+3	100	_	Generic-Measure	_	_	0	_	_	Offset=147-155
+
+# sent_id = s2
+# text = For double stranded DNA, use undiluted Nucleic Acid Dilution Buffer.
+1	Use	_	Action	_	_	0	_	_	Offset=162-165
+2	1µl	_	Amount	_	_	3	Measure	_	Offset=166-169
+3	Nucleic	_	Reagent	_	_	0	_	_	Offset=170-198
+4	99µl	_	Amount	_	_	5	Measure	_	Offset=202-206
+5	ultrapure	_	Reagent	_	_	0	_	_	Offset=207-223
+
+# sent_id = s3
+# text = For RNA or oligos, dilute the Nucleic Acid Dilution Buffer 100 fold.
+1	Dilute	_	Action	_	_	0	_	_	Offset=224-230
+2	samples	_	Reagent	_	_	0	_	_	Offset=231-238
+3	at	_	Modifier	_	_	4	Mod-Link	_	Offset=239-247
+4	1:1	_	Generic-Measure	_	_	0	_	_	Offset=248-251
+5	appropriate	_	Modifier	_	_	6	Mod-Link	_	Offset=261-272
+6	Dilution	_	Reagent	_	_	0	_	_	Offset=273-288
+
+# sent_id = s4
+# text = i.e. Use 1µl Nucleic Acid Dilution Buffer in 99µl ultrapure water.
+1	Open	_	Action	_	_	0	_	_	Offset=290-294
+2	NUCLEIC	_	Location	_	_	0	_	_	Offset=299-321
+3	remove	_	Action	_	_	0	_	_	Offset=323-329
+4	strip	_	Location	_	_	0	_	_	Offset=332-337
+5	peel	_	Action	_	_	0	_	_	Offset=343-352
+6	protective	_	Seal	_	_	0	_	_	Offset=357-374
+7	forceps	_	Device	_	_	0	_	_	Offset=385-392
+
+# sent_id = s5
+# text = Dilute samples at least 1:1 with the appropriate Dilution Buffer.
+1	Attach	_	Action	_	_	0	_	_	Offset=403-409
+2	white	_	Location	_	_	0	_	_	Offset=414-433
+3	application	_	Location	_	_	0	_	_	Offset=441-458
+4	side	_	Device	_	_	0	_	_	Offset=468-480
+
+# sent_id = s6
+# text = Open the NUCLEIC Test Strip box, remove a strip, and peel away the protective sheets using the forceps provided.
+1	Apply	_	Action	_	_	0	_	_	Offset=482-487
+2	1‐5µl	_	Amount	_	_	4	Measure	_	Offset=488-493
+3	diluted	_	Modifier	_	_	4	Mod-Link	_	Offset=501-508
+4	samples	_	Reagent	_	_	0	_	_	Offset=509-516
+5	Test	_	Location	_	_	0	_	_	Offset=524-534
+
+# sent_id = s7
+# text = Attach the white NUCLEIC Strip to the application board with the side magnets.
+1	Squeeze	_	Action	_	_	0	_	_	Offset=673-680
+2	pipette	_	Device	_	_	0	_	_	Offset=685-700
+3	drop	_	Reagent	_	_	0	_	_	Offset=709-713
+4	formed	_	Action	_	_	0	_	_	Offset=717-723
+5	tip	_	Location	_	_	0	_	_	Offset=731-734
+6	pipette	_	Device	_	_	5	Meronym	_	Offset=742-753
+
+# sent_id = s8
+# text = Apply 1‐5µl of the diluted samples to the Test Strip using one of these two methods (or see the Guidelines for using G‐Biosciences’ Spot Application Device): 
+1	Lower	_	Action	_	_	0	_	_	Offset=755-760
+2	drop	_	Reagent	_	_	3	Coreference-Link	_	Offset=765-769
+3	it	_	Mention	_	_	0	_	_	Offset=776-778
+4	touches	_	Action	_	_	0	_	_	Offset=779-786
+5	Test	_	Location	_	_	0	_	_	Offset=791-801
+
+# sent_id = s9
+# text = Free‐Drop Method Of Application Squeeze the pipette plunger until a drop is formed at the tip of the pipette tip.
+1	Apply	_	Action	_	_	0	_	_	Offset=909-914
+2	sample	_	Reagent	_	_	0	_	_	Offset=915-921
+3	point	_	Method	_	_	0	_	_	Offset=925-958
+
+# sent_id = s10
+# text = Lower the drop until it touches the Test Strip.
+1	Keep	_	Action	_	_	0	_	_	Offset=1037-1041
+2	pipette	_	Device	_	_	0	_	_	Offset=1046-1057
+3	straight	_	Method	_	_	0	_	_	Offset=1058-1069
+4	capillary	_	Method	_	_	0	_	_	Offset=1084-1113
+5	draw	_	Action	_	_	0	_	_	Offset=1117-1121
+6	sample	_	Reagent	_	_	0	_	_	Offset=1126-1132
+7	pipette	_	Device	_	_	0	_	_	Offset=1142-1153
+
+# sent_id = s11
+# text = The nucleic acid solution drop will immediately spread on the Test Strip.
+1	Place	_	Action	_	_	0	_	_	Offset=1491-1496
+2	NUCLEIC	_	Reagent	_	_	0	_	_	Offset=1501-1514
+3	developing	_	Location	_	_	0	_	_	Offset=1520-1535
+4	other	_	Modifier	_	_	5	Mod-Link	_	Offset=1556-1561
+5	small	_	Location	_	_	3	Or	_	Offset=1562-1572
+
+# sent_id = s12
+# text = dotMETRIC™ Application Method. 
+1	Apply	_	Action	_	_	0	_	_	Offset=1574-1579
+2	0.5ml	_	Amount	_	_	3	Measure	_	Offset=1580-1585
+3	NUCLEIC	_	Reagent	_	_	0	_	_	Offset=1586-1597
+4	directly	_	Modifier	_	_	0	_	_	Offset=1598-1606
+5	strip	_	Location	_	_	0	_	_	Offset=1614-1619
+
+# sent_id = s13
+# text = Apply sample by point of contact capillary action.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1621-1629
+2	room	_	Temperature	_	_	0	_	_	Offset=1633-1649
+3	1	_	Time	_	_	0	_	_	Offset=1654-1662
+4	without	_	Method	_	_	0	_	_	Offset=1663-1689
+
+# sent_id = s14
+# text = Use pipette tips with an outside bore diameterof 0.6‐0.7 mm (Cat. # 786‐64).
+1	Discard	_	Action	_	_	0	_	_	Offset=1691-1698
+2	NUCLEIC	_	Reagent	_	_	0	_	_	Offset=1703-1714
+3	rinse	_	Action	_	_	0	_	_	Offset=1719-1724
+4	strip	_	Location	_	_	0	_	_	Offset=1729-1734
+5	10	_	Time	_	_	0	_	_	Offset=1739-1749
+6	50ml	_	Amount	_	_	7	Measure	_	Offset=1753-1757
+7	ultra	_	Reagent	_	_	0	_	_	Offset=1758-1774
+
+# sent_id = s15
+# text = Keep the pipette tip straight up and allow the capillary action of the strip to draw the sample from the pipette tip (see figure below).
+1	Discard	_	Action	_	_	0	_	_	Offset=1776-1783
+2	rinse	_	Reagent	_	_	0	_	_	Offset=1788-1793
+3	wash	_	Action	_	_	0	_	_	Offset=1798-1802
+4	50ml	_	Amount	_	_	5	Measure	_	Offset=1808-1812
+5	ultra	_	Reagent	_	_	0	_	_	Offset=1813-1829
+6	30‐60	_	Time	_	_	0	_	_	Offset=1834-1847
+7	blue	_	Reagent	_	_	0	_	_	Offset=1861-1876
+8	disappears	_	Action	_	_	0	_	_	Offset=1877-1887
+
+# sent_id = s16
+# text = Do not use the plunger to force the solution out.
+1	Remove	_	Action	_	_	0	_	_	Offset=1889-1895
+2	strip	_	Location	_	_	0	_	_	Offset=1900-1905
+3	second	_	Reagent	_	_	0	_	_	Offset=1915-1926
+4	blue	_	Reagent	_	_	0	_	_	Offset=1942-1957
+5	disappears	_	Action	_	_	0	_	_	Offset=1958-1968
+
+# sent_id = s17
+# text = NOTE: Accurately pipetting 1µl requires skill and caution.
+1	NUCLEIC	_	Device	_	_	0	_	_	Offset=2108-2132
+2	determine	_	Action	_	_	0	_	_	Offset=2136-2145
+3	concentration	_	Measure-Type	_	_	0	_	_	Offset=2150-2163
+4	diluted	_	Modifier	_	_	5	Mod-Link	_	Offset=2171-2178
+5	sample	_	Reagent	_	_	0	_	_	Offset=2179-2185
+

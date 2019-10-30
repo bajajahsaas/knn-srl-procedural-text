@@ -1,0 +1,32 @@
+# sent_id = s1
+# text = Isotopic labeling of freshwater mixotrophic algae using isotopic labeled heat-killed bacteria
+1	Prepare	_	Action	_	_	0	_	_	Offset=94-101
+2	modified	_	Modifier	_	_	3	Mod-Link	_	Offset=102-110
+3	DY-V	_	Reagent	_	_	0	_	_	Offset=111-121
+
+# sent_id = s2
+# text = Prepare modified DY-V media.   
+1	Add	_	Action	_	_	0	_	_	Offset=726-729
+2	15N	_	Modifier	_	_	3	Mod-Link	_	Offset=730-757
+3	bacteria	_	Reagent	_	_	0	_	_	Offset=758-766
+4	media	_	Reagent	_	_	0	_	_	Offset=780-785
+
+# sent_id = s3
+# text = Media used for Ochromonas growth was a modified version of DY-V media.
+1	Add	_	Action	_	_	0	_	_	Offset=852-855
+2	inoculum	_	Reagent	_	_	0	_	_	Offset=859-867
+3	of	_	Modifier	_	_	2	Mod-Link	_	Offset=868-892
+
+# sent_id = s4
+# text = Modifications were:No MES was used, as it can be used as a source of carbon (bicarbonate and heat-killed bacteria are the only sources of carbon used in this media).
+1	algae	_	Reagent	_	_	0	_	_	Offset=1177-1182
+2	grow	_	Action	_	_	0	_	_	Offset=1183-1188
+
+# sent_id = s5
+# text = No Na2SiO3 was used (Ochromonas does not need silica).
+1	Track	_	Action	_	_	0	_	_	Offset=1246-1251
+2	algae	_	Reagent	_	_	0	_	_	Offset=1256-1261
+3	microscopy	_	Method	_	_	0	_	_	Offset=1277-1287
+4	decline	_	Action	_	_	0	_	_	Offset=1332-1339
+5	heat-killed	_	Reagent	_	_	0	_	_	Offset=1343-1363
+

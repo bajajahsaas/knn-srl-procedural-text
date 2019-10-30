@@ -1,0 +1,84 @@
+# sent_id = s1
+# text = MojoSort™ Positive Selection Columns Protocol
+1	Prepare	_	Action	_	_	0	_	_	Offset=46-53
+2	single	_	Reagent	_	_	0	_	_	Offset=56-78
+3	resuspend	_	Action	_	_	0	_	_	Offset=83-92
+4	cells	_	Reagent	_	_	0	_	_	Offset=97-102
+5	ice	_	Reagent	_	_	0	_	_	Offset=108-139
+
+# sent_id = s2
+# text = Prepare a single cell suspension and resuspend the cells with ice cold cell separation buffer (MojoSort™buffer is recommended).
+1	Pass	_	Action	_	_	0	_	_	Offset=174-178
+2	cells	_	Reagent	_	_	0	_	_	Offset=183-188
+3	70	_	Size	_	_	4	Measure	_	Offset=199-204
+4	filter	_	Device	_	_	0	_	_	Offset=205-211
+5	centrifuge	_	Action	_	_	0	_	_	Offset=213-223
+6	300	_	Speed	_	_	0	_	_	Offset=225-232
+7	5	_	Time	_	_	0	_	_	Offset=237-246
+8	discard	_	Action	_	_	0	_	_	Offset=249-256
+9	supernatant	_	Reagent	_	_	0	_	_	Offset=261-272
+10	resuspend	_	Action	_	_	0	_	_	Offset=277-286
+11	cells	_	Reagent	_	_	0	_	_	Offset=291-296
+12	cell	_	Reagent	_	_	0	_	_	Offset=300-322
+
+# sent_id = s3
+# text = Pass the cells through a 70 μm filter, centrifuge (300 x g for 5 minutes), discard the supernatant and resuspend the cells in cell separation buffer.
+1	Adjust	_	Action	_	_	0	_	_	Offset=324-330
+2	cell	_	Measure-Type	_	_	3	Of-Type	_	Offset=335-353
+3	1	_	Generic-Measure	_	_	0	_	_	Offset=357-373
+
+# sent_id = s4
+# text = Adjust the cell concentration to 1 x 108 cells/mL.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=375-382
+2	100	_	Amount	_	_	4	Measure	_	Offset=383-389
+3	107	_	Numerical	_	_	4	Measure	_	Offset=391-394
+4	cells	_	Reagent	_	_	0	_	_	Offset=395-400
+5	new	_	Modifier	_	_	6	Mod-Link	_	Offset=409-412
+6	tube	_	Location	_	_	0	_	_	Offset=413-417
+
+# sent_id = s5
+# text = Aliquot 100 μL (107 cells) into a new tube.
+1	Vortex	_	Action	_	_	0	_	_	Offset=419-425
+2	antibody-conjugated	_	Reagent	_	_	0	_	_	Offset=430-459
+3	max	_	Speed	_	_	0	_	_	Offset=478-487
+4	5	_	Generic-Measure	_	_	0	_	_	Offset=489-498
+5	prepare	_	Action	_	_	0	_	_	Offset=504-511
+6	dilutions	_	Reagent	_	_	0	_	_	Offset=516-525
+
+# sent_id = s6
+# text = Vortex the antibody-conjugated Nanobeads (to resuspend) at max speed, 5 touches, and prepare the dilutions to test.
+1	Add	_	Action	_	_	0	_	_	Offset=535-538
+2	10	_	Amount	_	_	5	Measure	_	Offset=539-544
+3	pre-diluted	_	Modifier	_	_	5	Mod-Link	_	Offset=548-559
+4	conjugated	_	Modifier	_	_	5	Mod-Link	_	Offset=560-570
+5	Nanobeads	_	Reagent	_	_	0	_	_	Offset=571-580
+
+# sent_id = s7
+# text = Add 10 μL of pre-diluted conjugated Nanobeads.
+1	Mix	_	Action	_	_	0	_	_	Offset=582-585
+2	well	_	Modifier	_	_	0	_	_	Offset=586-590
+3	incubate	_	Action	_	_	0	_	_	Offset=595-603
+4	ice	_	Location	_	_	0	_	_	Offset=607-610
+5	15	_	Time	_	_	0	_	_	Offset=615-625
+
+# sent_id = s8
+# text = Mix well and incubate on ice for 15 minutes.
+1	Scale	_	Action	_	_	0	_	_	Offset=627-635
+
+# sent_id = s9
+# text = Scale up the volume accordingly if separating more cells.
+1	add	_	Action	_	_	0	_	_	Offset=698-701
+2	100	_	Amount	_	_	4	Measure	_	Offset=702-708
+3	pre-diluted	_	Modifier	_	_	4	Mod-Link	_	Offset=712-723
+4	Nanobeads	_	Reagent	_	_	0	_	_	Offset=724-733
+5	1	_	Generic-Measure	_	_	6	Measure	_	Offset=738-745
+6	cells	_	Reagent	_	_	0	_	_	Offset=746-751
+
+# sent_id = s10
+# text = For example, add 100 μL of pre-diluted Nanobeads for 1 x 108 cells.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=921-930
+2	cells	_	Reagent	_	_	0	_	_	Offset=935-940
+3	appropriate	_	Modifier	_	_	4	Mod-Link	_	Offset=944-955
+4	amount	_	Amount	_	_	5	Measure	_	Offset=956-962
+5	buffer	_	Reagent	_	_	0	_	_	Offset=966-972
+

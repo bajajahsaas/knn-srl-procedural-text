@@ -1,0 +1,201 @@
+# sent_id = s1
+# text = Full Contact Microbiology (a.k.a Diatom Transformation via Bacterial Conjugation)
+1	Grow	_	Action	_	_	0	_	_	Offset=82-86
+2	diatom	_	Reagent	_	_	0	_	_	Offset=91-105
+3	mid-log	_	Reagent	_	_	0	_	_	Offset=109-122
+4	8.0E6	_	Concentration	_	_	3	Measure	_	Offset=126-140
+5	Phaeodactylum	_	Reagent	_	_	0	_	_	Offset=145-170
+6	grown	_	Action	_	_	0	_	_	Offset=171-176
+7	F/2	_	Reagent	_	_	0	_	_	Offset=180-189
+8	5.0	_	Concentration	_	_	4	Or	_	Offset=193-207
+9	grown	_	Action	_	_	0	_	_	Offset=213-218
+10	BG-11	_	Reagent	_	_	0	_	_	Offset=222-227
+
+# sent_id = s2
+# text = Grow the diatom culture to mid-log phase (≈ 8.0E6 cells/ml for Phaeodactylum tricornutum grown on F/2 media or 5.0 E7 cell/ml when grown on BG-11).
+1	Grow	_	Action	_	_	0	_	_	Offset=341-345
+2	1	_	Amount	_	_	3	Measure	_	Offset=346-350
+3	E.	_	Reagent	_	_	4	Meronym	6:Meronym	Offset=354-369
+4	mobillity	_	Reagent	_	_	0	_	_	Offset=390-407
+5	Pta-MOB	_	Reagent	_	_	4	Or	_	Offset=409-416
+6	carrier	_	Reagent	_	_	0	_	_	Offset=422-437
+7	overnight	_	Time	_	_	0	_	_	Offset=439-448
+8	16-20	_	Time	_	_	7	Or	_	Offset=450-459
+9	LB+antibiotics	_	Reagent	_	_	0	_	_	Offset=464-478
+
+# sent_id = s3
+# text = We have investigated transformation efficiency throughout the growth curve and found this to be the sweetspot.
+1	grow	_	Action	_	_	0	_	_	Offset=517-521
+2	them	_	Mention	_	_	0	_	_	Offset=522-526
+3	37°C	_	Temperature	_	_	0	_	_	Offset=530-534
+4	270	_	Speed	_	_	0	_	_	Offset=538-545
+5	shaking	_	Device	_	_	0	_	_	Offset=551-568
+
+# sent_id = s4
+# text = Grow 1 mL of E. coli culture containing both the mobillity plasmid (Pta-MOB) and carrier plasmid, overnight (16-20 hrs) in LB+antibiotics, for each planned transformation.
+1	overnight	_	Reagent	_	_	0	_	_	Offset=610-627
+2	inoculate	_	Action	_	_	0	_	_	Offset=631-640
+3	50	_	Amount	_	_	5	Measure	_	Offset=641-646
+4	fresh	_	Modifier	_	_	5	Mod-Link	_	Offset=650-655
+5	LB+antibiotic	_	Reagent	_	_	0	_	_	Offset=656-669
+6	1:50	_	Generic-Measure	_	_	5	Measure	_	Offset=671-684
+7	each	_	Modifier	_	_	9	Mod-Link	_	Offset=690-694
+8	planned	_	Modifier	_	_	9	Mod-Link	_	Offset=695-702
+9	transformation	_	Reagent	_	_	0	_	_	Offset=703-717
+10	Grow	_	Action	_	_	0	_	_	Offset=718-722
+11	OD600	_	Generic-Measure	_	_	0	_	_	Offset=729-747
+12	37°C	_	Temperature	_	_	0	_	_	Offset=749-753
+13	270	_	Speed	_	_	0	_	_	Offset=759-766
+
+# sent_id = s5
+# text = (We grow them at 37°C at 270 rpm in a shaking incubator.).
+1	3-4	_	Time	_	_	0	_	_	Offset=815-824
+2	E.	_	Reagent	_	_	0	_	_	Offset=829-844
+3	growing	_	Action	_	_	0	_	_	Offset=848-855
+4	measure	_	Action	_	_	0	_	_	Offset=857-864
+5	Phaeodactylum	_	Reagent	_	_	0	_	_	Offset=869-913
+6	FlowCam	_	Device	_	_	0	_	_	Offset=921-928
+7	haemocytometer	_	Device	_	_	6	Or	_	Offset=932-946
+8	calculate	_	Action	_	_	0	_	_	Offset=950-959
+9	required	_	Amount	_	_	0	_	_	Offset=964-979
+10	collect	_	Action	_	_	0	_	_	Offset=990-997
+11	2.5E8	_	Amount	_	_	12	Measure	_	Offset=998-1003
+12	cells	_	Reagent	_	_	0	_	_	Offset=1004-1009
+13	each	_	Modifier	_	_	14	Mod-Link	_	Offset=1014-1018
+14	transformation	_	Reagent	_	_	0	_	_	Offset=1019-1033
+
+# sent_id = s6
+# text = On the day of transformation, use the overnight culture to inoculate 50 mL of fresh LB+antibiotic, 1:50 dilution, for each planned transformation.Grow to an OD600 of 0.8 - 1.0 (37°C with 270 rpm shaking).This takes about 3-4 hours.
+1	each	_	Modifier	_	_	2	Mod-Link	_	Offset=1039-1043
+2	transformation	_	Reagent	_	_	0	_	_	Offset=1044-1058
+3	centrifuge	_	Action	_	_	0	_	_	Offset=1060-1070
+4	50	_	Amount	_	_	5	Measure	_	Offset=1071-1076
+5	E.	_	Reagent	_	_	0	_	_	Offset=1080-1095
+6	required	_	Modifier	_	_	8	Mod-Link	_	Offset=1104-1112
+7	Phaeodactylum	_	Reagent	_	_	0	_	_	Offset=1113-1138
+8	volume	_	Amount	_	_	7	Measure	_	Offset=1139-1146
+9	4000	_	Speed	_	_	0	_	_	Offset=1149-1157
+10	10	_	Time	_	_	0	_	_	Offset=1162-1172
+11	4°C	_	Temperature	_	_	0	_	_	Offset=1176-1179
+
+# sent_id = s7
+# text = During the 3-4 hours the E. coli culture is growing, measure the Phaeodactylum tricornutum cell concentration with a FlowCam or haemocytometer to calculate the required volume needed to collect 2.5E8 cells for each transformation.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1181-1190
+2	E.	_	Reagent	_	_	0	_	_	Offset=1191-1205
+3	500	_	Amount	_	_	4	Measure	_	Offset=1209-1215
+4	SOC	_	Reagent	_	_	0	_	_	Offset=1219-1229
+5	Resuspend	_	Action	_	_	0	_	_	Offset=1230-1239
+6	P.	_	Reagent	_	_	0	_	_	Offset=1240-1260
+7	500	_	Amount	_	_	8	Measure	_	Offset=1265-1271
+8	L1	_	Reagent	_	_	0	_	_	Offset=1275-1284
+
+# sent_id = s8
+# text = For each transformation, centrifuge 50 mL of E. coli culture and the required Phaeodactylum tricornutum volume at 4000 x g for 10 minutes at 4°C.
+1	diatom	_	Reagent	_	_	0	_	_	Offset=1296-1302
+2	E.	_	Reagent	_	_	0	_	_	Offset=1307-1323
+3	centrifuged	_	Action	_	_	0	_	_	Offset=1334-1345
+4	same	_	Modifier	_	_	5	Mod-Link	_	Offset=1360-1364
+5	time	_	Time	_	_	0	_	_	Offset=1365-1369
+6	minimize	_	Action	_	_	0	_	_	Offset=1373-1381
+7	amount	_	Time	_	_	0	_	_	Offset=1386-1400
+
+# sent_id = s9
+# text = Resuspend E. coli pellet in 500 μL of SOC medium.Resuspend P. tricornutum pellet in 500 μL of L1 medium.
+1	1.5	_	Amount	_	_	2	Measure	_	Offset=1431-1437
+2	tube	_	Location	_	_	0	_	_	Offset=1438-1442
+3	mix	_	Action	_	_	0	_	_	Offset=1443-1446
+4	200	_	Amount	_	_	5	Measure	_	Offset=1447-1453
+5	E.	_	Reagent	_	_	0	_	_	Offset=1457-1470
+6	200	_	Amount	_	_	7	Measure	_	Offset=1476-1482
+7	Phaeodactylum	_	Reagent	_	_	0	_	_	Offset=1486-1517
+
+# sent_id = s10
+# text = Note: The diatom and E. coli cultures should be centrifuged at around the same time to minimize the amount of time they spend concentrated.
+1	Negative	_	Reagent	_	_	0	_	_	Offset=1519-1535
+2	1.5	_	Amount	_	_	3	Measure	_	Offset=1544-1550
+3	tube	_	Location	_	_	0	_	_	Offset=1551-1555
+4	mix	_	Action	_	_	0	_	_	Offset=1556-1559
+5	200	_	Amount	_	_	6	Measure	_	Offset=1560-1566
+6	SOC	_	Reagent	_	_	0	_	_	Offset=1570-1580
+7	200	_	Amount	_	_	8	Measure	_	Offset=1586-1592
+8	Phaeodactylum	_	Reagent	_	_	0	_	_	Offset=1596-1627
+
+# sent_id = s11
+# text = In a 1.5 mL tube mix 200 μl of E. coli cells with 200 μl of Phaeodactylum tricornutum cells.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1635-1643
+2	negative	_	Location	_	_	0	_	_	Offset=1658-1681
+3	conjugation	_	Location	_	_	0	_	_	Offset=1697-1715
+
+# sent_id = s12
+# text = Negative control:   In a 1.5 mL tube mix 200 μl of SOC medium with 200 μl of Phaeodactylum tricornutum cells.
+1	Spread	_	Action	_	_	0	_	_	Offset=1717-1723
+2	mixture	_	Reagent	_	_	0	_	_	Offset=1728-1735
+3	400	_	Amount	_	_	2	Measure	_	Offset=1737-1743
+4	Conjugation	_	Location	_	_	0	_	_	Offset=1748-1766
+
+# sent_id = s13
+# text = Note: Incubate and treat the negative control plates identically to conjugation plates.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1805-1813
+2	plates	_	Location	_	_	0	_	_	Offset=1814-1820
+3	90	_	Time	_	_	0	_	_	Offset=1825-1835
+4	30°C	_	Temperature	_	_	0	_	_	Offset=1839-1843
+5	dark	_	Location	_	_	0	_	_	Offset=1851-1855
+
+# sent_id = s14
+# text = Spread the mixture (400 μL) on Conjugation Plates.
+1	Move	_	Action	_	_	0	_	_	Offset=1857-1861
+2	plates	_	Location	_	_	0	_	_	Offset=1862-1868
+3	light	_	Device	_	_	0	_	_	Offset=1872-1887
+4	18°C	_	Temperature	_	_	3	Setting	_	Offset=1889-1893
+5	100	_	Generic-Measure	_	_	3	Setting	_	Offset=1898-1922
+6	2	_	Time	_	_	0	_	_	Offset=1928-1934
+
+# sent_id = s15
+# text = (0.5x BG-11 with 5% LB and 1% agar).
+1	Collect	_	Action	_	_	0	_	_	Offset=1936-1943
+2	cells	_	Reagent	_	_	0	_	_	Offset=1944-1949
+3	adding	_	Action	_	_	0	_	_	Offset=1953-1959
+4	1	_	Amount	_	_	5	Measure	_	Offset=1960-1964
+5	L1	_	Reagent	_	_	0	_	_	Offset=1968-1977
+
+# sent_id = s16
+# text = Incubate plates for 90 minutes at 30°C in the dark.
+1	cell	_	Device	_	_	0	_	_	Offset=1985-1997
+2	concentrate	_	Action	_	_	0	_	_	Offset=2001-2012
+3	cells	_	Reagent	_	_	0	_	_	Offset=2013-2018
+4	medium	_	Reagent	_	_	0	_	_	Offset=2023-2029
+5	one	_	Location	_	_	0	_	_	Offset=2033-2041
+6	plate	_	Location	_	_	5	Meronym	_	Offset=2049-2054
+
+# sent_id = s17
+# text = Move plates to light incubator (18°C and 100 μmol photons m-2 s-1) for 2 days.
+1	Transfer	_	Action	_	_	0	_	_	Offset=2056-2064
+2	resuspended	_	Reagent	_	_	0	_	_	Offset=2065-2082
+3	1.5	_	Amount	_	_	4	Measure	_	Offset=2088-2094
+4	microcentrifuge	_	Location	_	_	0	_	_	Offset=2095-2115
+5	P1000	_	Device	_	_	0	_	_	Offset=2123-2136
+6	filter	_	Device	_	_	0	_	_	Offset=2141-2152
+
+# sent_id = s18
+# text = Collect cells by adding 1 mL of L1 medium.
+1	Spread	_	Action	_	_	0	_	_	Offset=2154-2160
+2	200	_	Amount	_	_	3	Measure	_	Offset=2161-2167
+3	cell	_	Reagent	_	_	0	_	_	Offset=2175-2190
+4	Selection	_	Location	_	_	0	_	_	Offset=2196-2211
+
+# sent_id = s19
+# text = Use a cell scraper to concentrate cells and medium to one side of the plate.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2213-2221
+2	18°C	_	Temperature	_	_	0	_	_	Offset=2225-2229
+3	100	_	Generic-Measure	_	_	0	_	_	Offset=2234-2258
+4	colonies	_	Reagent	_	_	0	_	_	Offset=2265-2273
+
+# sent_id = s20
+# text = Transfer resuspended cells to a 1.5 ml microcentrifuge tube with a P1000 pipette and filter tips.
+1	Alternatively	_	Modifier	_	_	0	_	_	Offset=2459-2472
+2	selection	_	Action	_	_	0	_	_	Offset=2473-2482
+3	liquid	_	Reagent	_	_	0	_	_	Offset=2498-2526
+4	eGFP	_	Reagent	_	_	0	_	_	Offset=2533-2537
+5	sorted	_	Action	_	_	0	_	_	Offset=2556-2562
+6	FACS	_	Reagent	_	_	0	_	_	Offset=2569-2573
+

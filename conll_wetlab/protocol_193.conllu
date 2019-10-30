@@ -1,0 +1,98 @@
+# sent_id = s1
+# text = BetaMark™ x-40 ELISA Kit (Chemiluminescent) Protocol
+1	Label	_	Action	_	_	0	_	_	Offset=53-58
+2	1L	_	Modifier	_	_	3	Mod-Link	_	Offset=61-63
+3	bottle	_	Device	_	_	0	_	_	Offset=64-70
+4	“1X	_	Reagent	_	_	0	_	_	Offset=74-90
+
+# sent_id = s2
+# text = Label a 1L bottle as “1X Wash Buffer”.
+1	Dilute	_	Action	_	_	0	_	_	Offset=92-98
+2	5X	_	Reagent	_	_	0	_	_	Offset=99-113
+3	lab	_	Reagent	_	_	0	_	_	Offset=124-139
+4	mix	_	Action	_	_	0	_	_	Offset=145-148
+
+# sent_id = s3
+# text = Dilute 5X Wash Buffer 1:5 using lab grade water* and mix well.
+1	Label	_	Action	_	_	0	_	_	Offset=269-274
+2	bottle	_	Device	_	_	0	_	_	Offset=296-302
+3	“1X	_	Reagent	_	_	0	_	_	Offset=306-326
+
+# sent_id = s4
+# text = *Note: Lab grade filtered water such as injection grade, cell culture grade, Reverse Osmosis De-Ionization(RODI).
+1	Label	_	Action	_	_	0	_	_	Offset=328-333
+2	1.5mL	_	Modifier	_	_	3	Mod-Link	_	Offset=338-343
+3	microcentrifuge	_	Device	_	_	0	_	_	Offset=344-365
+
+# sent_id = s5
+# text = Label an appropriate sized bottle as “1X Reagent Diluent”.
+1	Add	_	Action	_	_	0	_	_	Offset=411-414
+2	990uL	_	Amount	_	_	3	Measure	_	Offset=415-420
+3	standard	_	Reagent	_	_	0	_	_	Offset=424-440
+
+# sent_id = s6
+# text = Label (2) 1.5mL microcentrifuge tubes as intermediate #1 & 2 (use enclosed tubes).
+1	Reconstitute	_	Action	_	_	0	_	_	Offset=471-483
+2	20ug	_	Amount	_	_	3	Setting	_	Offset=484-488
+3	vial	_	Device	_	_	0	_	_	Offset=489-493
+4	80uL	_	Amount	_	_	5	Measure	_	Offset=516-520
+5	Standard	_	Reagent	_	_	0	_	_	Offset=524-540
+
+# sent_id = s7
+# text = Add 990uL of standard diluent to intermediate tubes #1 & 2.
+1	Mix	_	Action	_	_	0	_	_	Offset=542-545
+2	inversion	_	Method	_	_	0	_	_	Offset=554-563
+
+# sent_id = s8
+# text = Reconstitute 20ug vial of 1-40 standard with 80uL of Standard Diluent.
+1	Add	_	Action	_	_	0	_	_	Offset=675-678
+2	10uL	_	Amount	_	_	0	_	_	Offset=679-683
+3	vial	_	Device	_	_	0	_	_	Offset=693-697
+4	reconstituted	_	Reagent	_	_	3	Meronym	2:Or	Offset=701-728
+5	990uL	_	Amount	_	_	6	Measure	_	Offset=732-737
+6	standard	_	Reagent	_	_	0	_	_	Offset=741-757
+
+# sent_id = s9
+# text = Mix well by inversion, donot vortex.
+1	Mix	_	Action	_	_	0	_	_	Offset=782-785
+2	inversion	_	Method	_	_	0	_	_	Offset=794-803
+
+# sent_id = s10
+# text = Concentration will be 250ug/mL.
+1	Remove	_	Action	_	_	0	_	_	Offset=820-826
+2	10uL	_	Amount	_	_	3	Measure	_	Offset=827-831
+3	intermediate	_	Device	_	_	0	_	_	Offset=837-857
+4	add	_	Action	_	_	0	_	_	Offset=862-865
+5	990uL	_	Amount	_	_	6	Measure	_	Offset=869-874
+6	standard	_	Reagent	_	_	0	_	_	Offset=875-891
+7	intermediate	_	Device	_	_	0	_	_	Offset=895-915
+
+# sent_id = s11
+# text = *Once reconstituted, standard must be used within the same day.
+1	Mix	_	Action	_	_	0	_	_	Offset=917-920
+2	inversion	_	Method	_	_	0	_	_	Offset=929-938
+
+# sent_id = s12
+# text = Add 10uL from the vial of reconstituted 1-40 standard to 990uL of standard diluent in intermediatetube #1.
+1	Label	_	Action	_	_	0	_	_	Offset=1020-1025
+2	50mL	_	Modifier	_	_	3	Mod-Link	_	Offset=1028-1043
+3	tube	_	Device	_	_	0	_	_	Offset=1044-1048
+
+# sent_id = s13
+# text = Mix well by inversion, do not vortex.
+1	Dilute	_	Action	_	_	0	_	_	Offset=1076-1082
+2	2X	_	Reagent	_	_	0	_	_	Offset=1083-1103
+3	adding	_	Action	_	_	0	_	_	Offset=1113-1119
+4	10mL	_	Amount	_	_	5	Measure	_	Offset=1120-1124
+5	2X	_	Reagent	_	_	0	_	_	Offset=1128-1148
+6	10mL	_	Amount	_	_	7	Measure	_	Offset=1152-1156
+7	lab	_	Reagent	_	_	0	_	_	Offset=1160-1175
+8	50mL	_	Modifier	_	_	9	Mod-Link	_	Offset=1184-1188
+9	tube	_	Device	_	_	0	_	_	Offset=1189-1193
+10	1X	_	Modifier	_	_	9	Mod-Link	_	Offset=1203-1223
+
+# sent_id = s14
+# text = Remove 10uL from intermediate #1 tube and add to 990uL standard diluent in intermediate #2 tube.
+1	Mix	_	Action	_	_	0	_	_	Offset=1226-1229
+2	vortexing	_	Method	_	_	0	_	_	Offset=1238-1247
+

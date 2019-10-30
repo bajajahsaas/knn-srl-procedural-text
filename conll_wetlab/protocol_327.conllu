@@ -1,0 +1,91 @@
+# sent_id = s1
+# text = T-maze (light vs dark)
+1	anesthetize	_	Action	_	_	0	_	_	Offset=50-61
+2	3-6	_	Modifier	_	_	3	Mod-Link	_	Offset=62-71
+3	flies	_	Reagent	_	_	9	Meronym	_	Offset=72-77
+4	CO2	_	Reagent	_	_	0	_	_	Offset=84-87
+5	clip	_	Action	_	_	0	_	_	Offset=93-97
+6	2/3	_	Amount	_	_	7	Measure	_	Offset=98-101
+7	both	_	Reagent	_	_	0	_	_	Offset=107-117
+8	half	_	Amount	_	_	9	Coreference-Link	_	Offset=121-125
+9	them	_	Mention	_	_	7	Meronym	_	Offset=129-133
+
+# sent_id = s2
+# text = 24h before the experiment, anesthetize 3-6 d old flies under CO2, and clip 2/3 from both wings to half of them.
+1	vial	_	Location	_	_	0	_	_	Offset=147-151
+2	place	_	Action	_	_	0	_	_	Offset=153-158
+3	30	_	Amount	_	_	4	Measure	_	Offset=166-168
+4	flies	_	Reagent	_	_	0	_	_	Offset=169-174
+5	clipped	_	Modifier	_	_	4	Mod-Link	_	Offset=180-193
+6	30	_	Amount	_	_	8	Measure	_	Offset=206-208
+7	intact	_	Modifier	_	_	8	Mod-Link	_	Offset=209-215
+8	flies	_	Reagent	_	_	0	_	_	Offset=216-221
+
+# sent_id = s3
+# text = In the same vial, place around 30 flies with clipped wings and another 30 intact flies.
+1	Place	_	Action	_	_	0	_	_	Offset=282-287
+2	flies	_	Reagent	_	_	0	_	_	Offset=292-297
+3	entrance	_	Location	_	_	0	_	_	Offset=305-318
+4	let	_	Action	_	_	0	_	_	Offset=336-350
+5	10	_	Time	_	_	0	_	_	Offset=355-361
+
+# sent_id = s4
+# text = Let them recover from anaesthesia until experiment begins.
+1	Turn	_	Action	_	_	0	_	_	Offset=363-370
+2	light	_	Device	_	_	0	_	_	Offset=375-387
+
+# sent_id = s5
+# text = Place the flies in the entrance tube (see figure) and let them adapt for 10 min.
+1	Transfer	_	Action	_	_	0	_	_	Offset=389-397
+2	flies	_	Reagent	_	_	0	_	_	Offset=402-407
+3	elevator	_	Location	_	_	0	_	_	Offset=415-423
+4	gently	_	Modifier	_	_	0	_	_	Offset=427-433
+5	tapping	_	Action	_	_	0	_	_	Offset=434-441
+6	apparatus	_	Device	_	_	8	Meronym	_	Offset=446-455
+7	pull	_	Action	_	_	0	_	_	Offset=461-465
+8	movable	_	Device	_	_	0	_	_	Offset=470-482
+9	close	_	Action	_	_	0	_	_	Offset=500-505
+
+# sent_id = s6
+# text = Turn on the light source.
+1	Flies	_	Reagent	_	_	0	_	_	Offset=510-515
+2	kept	_	Action	_	_	0	_	_	Offset=520-524
+3	elevator	_	Location	_	_	0	_	_	Offset=532-540
+4	30	_	Time	_	_	0	_	_	Offset=545-551
+
+# sent_id = s7
+# text = Transfer the flies to the elevator by gently tapping the apparatus, and pull the movable part down in order to close it.
+1	Pull	_	Action	_	_	0	_	_	Offset=553-562
+2	movable	_	Device	_	_	0	_	_	Offset=567-579
+3	elevator	_	Location	_	_	0	_	_	Offset=593-601
+4	placed	_	Action	_	_	0	_	_	Offset=605-611
+5	between	_	Location	_	_	0	_	_	Offset=612-656
+
+# sent_id = s8
+# text = Flies are kept in the elevator for 30 sec.
+1	Allow	_	Action	_	_	0	_	_	Offset=658-683
+2	30	_	Time	_	_	0	_	_	Offset=711-717
+
+# sent_id = s9
+# text = Pull down the movable part, so that the elevator is placed between the transparent and the opaque tubes.
+1	Close	_	Action	_	_	0	_	_	Offset=719-724
+2	all	_	Amount	_	_	3	Measure	_	Offset=725-728
+3	tubes	_	Location	_	_	8	Coreference-Link	_	Offset=729-734
+4	pulling	_	Action	_	_	0	_	_	Offset=738-748
+5	movable	_	Device	_	_	0	_	_	Offset=753-765
+6	lock	_	Action	_	_	0	_	_	Offset=779-783
+7	flies	_	Reagent	_	_	0	_	_	Offset=788-793
+8	tube	_	Mention	_	_	0	_	_	Offset=801-805
+
+# sent_id = s10
+# text = Allow the flies to choose between dark and light for 30 sec.
+1	Count	_	Action	_	_	0	_	_	Offset=826-831
+2	flies	_	Reagent	_	_	0	_	_	Offset=846-851
+3	each	_	Amount	_	_	4	Measure	_	Offset=878-882
+4	tube	_	Location	_	_	0	_	_	Offset=883-887
+
+# sent_id = s11
+# text = Close all tubes by pulling up the movable part, in order to lock the flies in the tube they have selected.
+1	Calculate	_	Action	_	_	0	_	_	Offset=889-898
+2	Choice	_	Measure-Type	_	_	0	_	_	Offset=903-915
+

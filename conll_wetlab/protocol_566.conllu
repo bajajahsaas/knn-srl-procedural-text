@@ -1,0 +1,44 @@
+# sent_id = s1
+# text = ESAW Media for Marine Phytoplankton
+1	Na2SO4	_	Reagent	_	_	0	_	_	Offset=36-42
+2	NaCl	_	Reagent	_	_	0	_	_	Offset=43-47
+3	KCL	_	Reagent	_	_	0	_	_	Offset=48-51
+4	NaHCO3	_	Reagent	_	_	0	_	_	Offset=52-58
+5	KBr	_	Reagent	_	_	0	_	_	Offset=59-62
+6	H3BO	_	Reagent	_	_	0	_	_	Offset=63-67
+7	NaF	_	Reagent	_	_	0	_	_	Offset=68-72
+8	2.7	_	Concentration	_	_	1	Measure	2:Measure|3:Measure|4:Measure|5:Measure|6:Measure|7:Measure	Offset=74-87
+
+# sent_id = s2
+# text = Na2SO4 NaCl KCL NaHCO3 KBr H3BO NaF  (2.7 g/L stock). 
+1	500	_	Amount	_	_	2	Measure	3:Measure	Offset=100-106
+2	MilliQ	_	Reagent	_	_	0	_	_	Offset=107-119
+3	MgCl2-6H2O	_	Reagent	_	_	0	_	_	Offset=120-258
+
+# sent_id = s3
+# text = Bring to 500 mL MilliQ water MgCl2-6H2O CaCl2-2H2O SrCl2-6H2O Tris-HCL (pH 7.8) (1.0 M stock) Fe-EDTA K2HPO4  (10g/L stock) NaNO3 (550 mM stock) Selenite (10 μM stock). 
+1	500	_	Amount	_	_	2	Measure	_	Offset=270-276
+2	MilliQ	_	Reagent	_	_	0	_	_	Offset=277-289
+
+# sent_id = s4
+# text = Bring to 500 mL MilliQ water. 
+1	Autoclave	_	Action	_	_	0	_	_	Offset=292-301
+2	Solution	_	Reagent	_	_	0	_	_	Offset=302-312
+3	Solution	_	Reagent	_	_	0	_	_	Offset=317-328
+
+# sent_id = s5
+# text = Autoclave Solution I and Solution II separately. 
+1	Combine	_	Action	_	_	0	_	_	Offset=342-349
+2	Solution	_	Reagent	_	_	0	_	_	Offset=350-360
+3	Solution	_	Reagent	_	_	0	_	_	Offset=365-377
+
+# sent_id = s6
+# text = Combine Solution I and Solution II. 
+1	Add	_	Action	_	_	0	_	_	Offset=379-382
+2	trace	_	Reagent	_	_	0	_	_	Offset=383-406
+
+# sent_id = s7
+# text = Add trace Metals Solutions. 
+1	Add	_	Action	_	_	0	_	_	Offset=408-411
+2	Vitamin	_	Reagent	_	_	0	_	_	Offset=412-428
+

@@ -1,0 +1,410 @@
+# sent_id = s1
+# text = Preparing Biological Samples for Column Chemistry
+1	make	_	Action	_	_	0	_	_	Offset=117-121
+2	oxalate	_	Reagent	_	_	0	_	_	Offset=125-137
+3	remove	_	Action	_	_	0	_	_	Offset=168-174
+4	extracellular	_	Reagent	_	_	0	_	_	Offset=175-193
+5	diatoms	_	Reagent	_	_	0	_	_	Offset=199-206
+
+# sent_id = s2
+# text = Filtering Cultures 1.1 Oxalate Wash Preparation Before filtration, make an oxalate wash that will be used in order to remove extracellular iron from diatoms.
+1	Mix	_	Action	_	_	0	_	_	Offset=208-211
+2	consecutively	_	Modifier	_	_	0	_	_	Offset=212-225
+3	600	_	Amount	_	_	4	Measure	_	Offset=241-247
+4	ultra	_	Reagent	_	_	0	_	_	Offset=251-261
+
+# sent_id = s3
+# text = Mix consecutively from a to f in 600 ml of ultra pure.
+1	Take	_	Action	_	_	0	_	_	Offset=263-267
+2	1	_	Amount	_	_	3	Measure	_	Offset=274-277
+3	ultra	_	Reagent	_	_	0	_	_	Offset=278-288
+4	Ph	_	pH	_	_	0	_	_	Offset=294-298
+
+# sent_id = s4
+# text = Take up to 1 L ultra pure once Ph 8 is reached.
+1	15.3g	_	Amount	_	_	2	Measure	_	Offset=311-316
+2	EDTA	_	Reagent	_	_	0	_	_	Offset=318-322
+3	14.7g	_	Amount	_	_	4	Measure	_	Offset=324-329
+4	Sodium	_	Reagent	_	_	0	_	_	Offset=331-345
+5	0.74g	_	Amount	_	_	6	Measure	_	Offset=347-352
+6	Potassium	_	Reagent	_	_	0	_	_	Offset=354-372
+7	5g	_	Amount	_	_	8	Measure	_	Offset=374-376
+8	Sodium	_	Reagent	_	_	0	_	_	Offset=378-393
+
+# sent_id = s5
+# text = 15.3g, EDTA; 14.7g, Sodium Citrate; 0.74g, Potassium Chloride; 5g, Sodium Chloride;
+1	Several	_	Amount	_	_	2	Measure	_	Offset=395-408
+2	Sodium	_	Reagent	_	_	0	_	_	Offset=412-428
+3	Ph	_	pH	_	_	2	Measure	_	Offset=437-451
+4	Oxalic	_	Reagent	_	_	0	_	_	Offset=453-464
+
+# sent_id = s6
+# text = Several drops of Sodium Hydroxide until a Ph of 6-712.6g, Oxalic Acid is 1.2. 
+1	Harvest	_	Action	_	_	0	_	_	Offset=474-481
+2	Diatoms	_	Reagent	_	_	0	_	_	Offset=482-489
+
+# sent_id = s7
+# text = Harvest Diatoms Once They Have Been Filtered: 
+1	cultures	_	Reagent	_	_	4	Coreference-Link	_	Offset=526-534
+2	grown	_	Action	_	_	0	_	_	Offset=545-550
+3	3500	_	Generic-Measure	_	_	0	_	_	Offset=591-599
+4	they	_	Mention	_	_	0	_	_	Offset=602-606
+5	harvested	_	Action	_	_	0	_	_	Offset=618-627
+
+# sent_id = s8
+# text = Once cultures have been grown to their optimal density (approximately 3500 RFU), they need to be harvested.
+1	a	_	Device	_	_	0	_	_	Offset=680-698
+2	cleaned	_	Action	_	_	0	_	_	Offset=714-721
+3	10%	_	Concentration	_	_	4	Measure	_	Offset=725-728
+4	HCl	_	Reagent	_	_	0	_	_	Offset=729-732
+5	overnight	_	Time	_	_	0	_	_	Offset=733-742
+6	polycarbonate	_	Location	_	_	0	_	_	Offset=744-765
+7	0.1um	_	Size	_	_	6	Measure	_	Offset=767-772
+8	washed	_	Action	_	_	0	_	_	Offset=789-795
+9	10%	_	Concentration	_	_	10	Measure	_	Offset=799-802
+10	HCl	_	Reagent	_	_	0	_	_	Offset=803-806
+11	overnight	_	Time	_	_	0	_	_	Offset=807-816
+12	rinsed	_	Action	_	_	0	_	_	Offset=821-827
+13	UPW	_	Reagent	_	_	0	_	_	Offset=831-834
+14	3	_	Numerical	_	_	15	Measure	_	Offset=836-837
+15	bottles	_	Location	_	_	16	Meronym	18:Meronym|20:Meronym	Offset=838-845
+16	one	_	Location	_	_	0	_	_	Offset=847-850
+17	to	_	Modifier	_	_	16	Mod-Link	_	Offset=851-867
+18	one	_	Location	_	_	19	Meronym	_	Offset=869-872
+19	ASW	_	Reagent	_	_	0	_	_	Offset=887-890
+20	one	_	Location	_	_	21	Meronym	22:Meronym|24:Meronym|25:Meronym	Offset=895-898
+21	UPW	_	Reagent	_	_	0	_	_	Offset=913-916
+22	oxalate	_	Reagent	_	_	0	_	_	Offset=918-930
+23	60ml	_	Size	_	_	24	Measure	_	Offset=934-938
+24	syringe	_	Device	_	_	0	_	_	Offset=939-946
+25	syringe	_	Device	_	_	0	_	_	Offset=952-970
+
+# sent_id = s9
+# text = In order to do so, the following items are needed: a pair of tweezers that have been cleaned in 10% HCl overnight, polycarbonate filters (0.1um) that have been washed in 10% HCl overnight and rinsed in UPW, 3 bottles: one to collect waste, one that contains ASW and one that contains UPW, oxalate wash, a 60ml syringe, and syringe filter tip.
+1	several	_	Numerical	_	_	3	Measure	_	Offset=978-985
+2	15ml	_	Size	_	_	3	Measure	_	Offset=986-990
+3	tubes	_	Location	_	_	0	_	_	Offset=991-996
+4	with	_	Modifier	_	_	3	Mod-Link	_	Offset=997-1041
+
+# sent_id = s10
+# text = Label several 15ml tubes with the designated solution numbers on them.
+1	tube	_	Location	_	_	0	_	_	Offset=1047-1051
+2	labeled	_	Action	_	_	0	_	_	Offset=1062-1069
+3	for	_	Modifier	_	_	0	_	_	Offset=1070-1092
+4	tube	_	Location	_	_	0	_	_	Offset=1108-1112
+5	labeled	_	Action	_	_	0	_	_	Offset=1113-1120
+6	for	_	Modifier	_	_	0	_	_	Offset=1121-1141
+
+# sent_id = s11
+# text = One tube should be labeled for unwashed solutions and a separate tube labeled for washed solutions.
+1	assemble	_	Action	_	_	0	_	_	Offset=1247-1255
+2	filtration	_	Device	_	_	0	_	_	Offset=1260-1280
+
+# sent_id = s12
+# text = For example, the tubes may say, “solution 1#1 unwashed”, “solution 1#2 washed”.
+1	polyethylene	_	Device	_	_	0	_	_	Offset=1286-1305
+2	handle	_	Action	_	_	0	_	_	Offset=1309-1315
+3	tweezers	_	Device	_	_	0	_	_	Offset=1320-1328
+4	remove	_	Action	_	_	0	_	_	Offset=1330-1336
+5	one	_	Numerical	_	_	6	Measure	_	Offset=1337-1340
+6	polycarbonate	_	Location	_	_	0	_	_	Offset=1341-1361
+7	container	_	Location	_	_	0	_	_	Offset=1371-1380
+8	place	_	Action	_	_	0	_	_	Offset=1385-1390
+9	filter	_	Device	_	_	0	_	_	Offset=1398-1408
+
+# sent_id = s13
+# text = Once tubes are labeled, assemble the filtration apparatus.
+1	Screw	_	Action	_	_	0	_	_	Offset=1410-1415
+2	reservoir	_	Location	_	_	0	_	_	Offset=1420-1429
+3	filter	_	Device	_	_	0	_	_	Offset=1439-1449
+4	rinse	_	Action	_	_	0	_	_	Offset=1454-1459
+5	filter	_	Location	_	_	0	_	_	Offset=1464-1470
+6	UPW	_	Reagent	_	_	0	_	_	Offset=1476-1479
+7	water	_	Reagent	_	_	0	_	_	Offset=1494-1499
+8	filtered	_	Action	_	_	0	_	_	Offset=1506-1522
+
+# sent_id = s14
+# text = Use polyethylene gloves to handle the tweezers, remove one polycarbonate filter from its container and place on the filter rig.
+1	Pour	_	Action	_	_	0	_	_	Offset=1524-1528
+2	250ml	_	Amount	_	_	3	Measure	_	Offset=1529-1534
+3	culture	_	Reagent	_	_	5	Coreference-Link	_	Offset=1538-1545
+4	filter	_	Location	_	_	0	_	_	Offset=1555-1561
+5	it	_	Mention	_	_	0	_	_	Offset=1572-1574
+6	drain	_	Action	_	_	0	_	_	Offset=1578-1583
+
+# sent_id = s15
+# text = Screw the reservoir onto the filter rig and rinse the filter with UPW, allowing the water to be filtered through.
+1	Rinse	_	Action	_	_	0	_	_	Offset=1585-1590
+2	filter	_	Location	_	_	0	_	_	Offset=1595-1601
+3	three	_	Numerical	_	_	0	_	_	Offset=1602-1613
+4	5ml	_	Amount	_	_	5	Measure	_	Offset=1619-1622
+5	ASW	_	Reagent	_	_	0	_	_	Offset=1626-1629
+
+# sent_id = s16
+# text = Pour 250ml of culture onto the filter and allow it to drain.
+1	unscrew	_	Action	_	_	0	_	_	Offset=1667-1674
+2	reservoir	_	Location	_	_	0	_	_	Offset=1679-1688
+3	polyethylene	_	Device	_	_	0	_	_	Offset=1694-1713
+4	remove	_	Action	_	_	0	_	_	Offset=1715-1721
+5	filter	_	Location	_	_	8	Coreference-Link	_	Offset=1726-1732
+6	tweezers	_	Device	_	_	0	_	_	Offset=1738-1746
+7	place	_	Action	_	_	0	_	_	Offset=1752-1757
+8	it	_	Mention	_	_	0	_	_	Offset=1758-1760
+9	15ml	_	Size	_	_	10	Measure	_	Offset=1782-1786
+10	tube	_	Location	_	_	0	_	_	Offset=1787-1791
+11	that	_	Modifier	_	_	10	Mod-Link	_	Offset=1792-1818
+
+# sent_id = s17
+# text = Rinse the filter three times with 5ml of ASW.
+1	Syringe	_	Action	_	_	0	_	_	Offset=1820-1834
+2	60ml	_	Amount	_	_	3	Measure	_	Offset=1835-1839
+3	oxalate	_	Reagent	_	_	0	_	_	Offset=1843-1855
+4	750ml	_	Amount	_	_	5	Measure	_	Offset=1875-1880
+5	culture	_	Reagent	_	_	0	_	_	Offset=1884-1891
+
+# sent_id = s18
+# text = Once filter has completely drained, unscrew the reservoir with polyethylene gloves, remove the filter with tweezers, and place it in the corresponding 15ml tube that is labeled “unwashed”.
+1	Invert	_	Action	_	_	0	_	_	Offset=1893-1899
+2	bottle	_	Location	_	_	0	_	_	Offset=1900-1906
+3	once	_	Numerical	_	_	0	_	_	Offset=1907-1911
+4	allow	_	Action	_	_	0	_	_	Offset=1916-1928
+5	30min	_	Time	_	_	0	_	_	Offset=1933-1938
+
+# sent_id = s19
+# text = Syringe filter 60ml of oxalate wash into the remaining 750ml of culture.
+1	Invert	_	Action	_	_	0	_	_	Offset=1940-1946
+2	bottle	_	Location	_	_	0	_	_	Offset=1947-1953
+3	place	_	Action	_	_	0	_	_	Offset=1972-1977
+4	polycarbonate	_	Location	_	_	0	_	_	Offset=1984-2004
+5	filter	_	Device	_	_	0	_	_	Offset=2014-2024
+6	rinse	_	Action	_	_	0	_	_	Offset=2026-2031
+7	UPW	_	Reagent	_	_	0	_	_	Offset=2037-2040
+8	pour	_	Action	_	_	0	_	_	Offset=2045-2049
+9	culture	_	Reagent	_	_	0	_	_	Offset=2064-2071
+10	filter	_	Location	_	_	0	_	_	Offset=2077-2083
+
+# sent_id = s20
+# text = Invert bottle once and allow to sit for 30min.
+1	Rinse	_	Action	_	_	0	_	_	Offset=2085-2090
+2	filter	_	Location	_	_	0	_	_	Offset=2091-2097
+3	three	_	Numerical	_	_	0	_	_	Offset=2098-2109
+4	5ml	_	Amount	_	_	0	_	_	Offset=2115-2118
+5	ASW	_	Reagent	_	_	0	_	_	Offset=2119-2122
+6	drain	_	Action	_	_	0	_	_	Offset=2124-2129
+7	remove	_	Action	_	_	0	_	_	Offset=2142-2148
+8	filter	_	Location	_	_	0	_	_	Offset=2149-2155
+9	place	_	Action	_	_	0	_	_	Offset=2161-2166
+10	tube	_	Location	_	_	0	_	_	Offset=2184-2188
+11	labeled	_	Modifier	_	_	10	Mod-Link	_	Offset=2189-2205
+
+# sent_id = s21
+# text = Invert bottle a second time and place a new polycarbonate filter onto the filter rig, rinse with UPW and pour the remaining culture onto filter.
+1	Repeat	_	Action	_	_	0	_	_	Offset=2207-2225
+2	1L	_	Size	_	_	3	Measure	_	Offset=2243-2245
+3	bottles	_	Location	_	_	0	_	_	Offset=2246-2253
+4	filtered	_	Action	_	_	0	_	_	Offset=2264-2272
+
+# sent_id = s22
+# text = Rinse filter three times with 5ml ASW, drain completely, remove filter, and place in corresponding tube labeled “washed”.
+1	Rinse	_	Action	_	_	0	_	_	Offset=2274-2279
+2	tweezers	_	Device	_	_	0	_	_	Offset=2280-2288
+3	UPW	_	Reagent	_	_	0	_	_	Offset=2294-2297
+4	filter	_	Device	_	_	0	_	_	Offset=2313-2323
+5	put	_	Action	_	_	0	_	_	Offset=2329-2332
+6	everything	_	Reagent	_	_	0	_	_	Offset=2333-2343
+7	back	_	Location	_	_	0	_	_	Offset=2344-2361
+
+# sent_id = s23
+# text = Repeat these steps until all of the 1L bottles have been filtered.
+1	Rinse	_	Action	_	_	0	_	_	Offset=2363-2368
+2	bottles	_	Location	_	_	5	Coreference-Link	_	Offset=2373-2380
+3	UPW	_	Reagent	_	_	0	_	_	Offset=2390-2393
+4	take	_	Action	_	_	0	_	_	Offset=2398-2402
+5	them	_	Mention	_	_	0	_	_	Offset=2403-2407
+6	clean	_	Location	_	_	0	_	_	Offset=2415-2424
+7	cleaned	_	Action	_	_	0	_	_	Offset=2431-2438
+
+# sent_id = s24
+# text = Rinse tweezers with UPW as well as the filter rig, and put everything back in its place.
+1	cultures	_	Reagent	_	_	0	_	_	Offset=2444-2452
+2	run	_	Action	_	_	0	_	_	Offset=2480-2491
+3	columns	_	Location	_	_	0	_	_	Offset=2492-2499
+
+# sent_id = s25
+# text = Rinse the bottles out with UPW and take them to the clean lab to be cleaned.
+1	filter	_	Action	_	_	0	_	_	Offset=2580-2586
+2	clean	_	Modifier	_	_	4	Mod-Link	_	Offset=2592-2597
+3	15	_	Size	_	_	4	Measure	_	Offset=2598-2602
+4	tube	_	Location	_	_	0	_	_	Offset=2604-2608
+
+# sent_id = s26
+# text = All cultures, once filtered, need to be run through columns in order to examine iron limitation.
+1	Transfer	_	Action	_	_	0	_	_	Offset=2622-2630
+2	filter	_	Location	_	_	0	_	_	Offset=2635-2641
+3	small	_	Location	_	_	0	_	_	Offset=2649-2672
+
+# sent_id = s27
+# text = Preparation for Isotopic Analysis Transfer filter to a clean 15 mL tube for storage.
+1	Add	_	Action	_	_	0	_	_	Offset=2674-2677
+2	1	_	Amount	_	_	3	Measure	_	Offset=2678-2682
+3	conc	_	Reagent	_	_	0	_	_	Offset=2683-2687
+
+# sent_id = s28
+# text = Transfer the filter into a small teflon (PFA) vial.
+1	TE	_	Action	_	_	0	_	_	Offset=2689-2697
+2	HCl	_	Reagent	_	_	0	_	_	Offset=2698-2701
+3	1	_	Amount	_	_	0	_	_	Offset=2706-2710
+4	conc	_	Reagent	_	_	0	_	_	Offset=2711-2715
+
+# sent_id = s29
+# text = Add 1 mL conc.
+1	TE	_	Action	_	_	0	_	_	Offset=2717-2725
+2	HNO3	_	Reagent	_	_	0	_	_	Offset=2726-2730
+3	each	_	Modifier	_	_	4	Mod-Link	_	Offset=2734-2738
+4	vial	_	Location	_	_	0	_	_	Offset=2739-2743
+
+# sent_id = s30
+# text = TE clean HCl and 1 mL conc.
+1	Place	_	Action	_	_	0	_	_	Offset=2823-2828
+2	caps	_	Seal	_	_	0	_	_	Offset=2829-2833
+3	vials	_	Location	_	_	0	_	_	Offset=2845-2850
+4	place	_	Action	_	_	0	_	_	Offset=2855-2860
+5	vials	_	Location	_	_	0	_	_	Offset=2861-2866
+6	fume	_	Location	_	_	0	_	_	Offset=2872-2881
+
+# sent_id = s31
+# text = TE clean HNO3 to each vial.
+1	remove	_	Action	_	_	0	_	_	Offset=3084-3090
+2	filters	_	Location	_	_	0	_	_	Offset=3095-3102
+3	vials	_	Location	_	_	0	_	_	Offset=3112-3117
+4	a	_	Device	_	_	0	_	_	Offset=3123-3148
+
+# sent_id = s32
+# text = CAREFUL: This reaction will produce a corrosive and foul-smelling orange gas.
+1	pick	_	Action	_	_	0	_	_	Offset=3157-3164
+2	filter	_	Location	_	_	0	_	_	Offset=3169-3175
+3	in	_	Modifier	_	_	0	_	_	Offset=3176-3246
+
+# sent_id = s33
+# text = Place caps loosely on vials and place vials in a fume hood.
+1	Rinse	_	Action	_	_	0	_	_	Offset=3352-3361
+2	acid	_	Reagent	_	_	0	_	_	Offset=3367-3371
+3	PFA	_	Location	_	_	0	_	_	Offset=3386-3394
+4	twice	_	Numerical	_	_	0	_	_	Offset=3398-3403
+5	pipetting	_	Action	_	_	0	_	_	Offset=3404-3413
+6	1	_	Amount	_	_	7	Measure	_	Offset=3414-3418
+7	TE	_	Reagent	_	_	0	_	_	Offset=3422-3428
+8	each	_	Modifier	_	_	9	Mod-Link	_	Offset=3434-3438
+9	filter	_	Location	_	_	0	_	_	Offset=3439-3445
+
+# sent_id = s34
+# text = IF YOU DECIDE TO PUT THEM ON A HOT PLATE, DO NOT TURN ON HEAT.
+1	Evaporate	_	Action	_	_	0	_	_	Offset=3447-3456
+2	samples	_	Reagent	_	_	0	_	_	Offset=3457-3464
+3	to	_	Modifier	_	_	0	_	_	Offset=3465-3475
+4	hot	_	Device	_	_	0	_	_	Offset=3481-3490
+
+# sent_id = s35
+# text = (If hotplate is not available, find another good place to store them overnight in a fume hood.)
+1	Reconstitute	_	Action	_	_	0	_	_	Offset=3492-3504
+2	samples	_	Reagent	_	_	0	_	_	Offset=3505-3512
+3	200	_	Amount	_	_	4	Measure	_	Offset=3516-3522
+4	10N	_	Reagent	_	_	6	Meronym	_	Offset=3526-3533
+5	+0.001%	_	Concentration	_	_	6	Measure	_	Offset=3534-3541
+6	H2O2.	_	Reagent	_	_	0	_	_	Offset=3542-3547
+
+# sent_id = s36
+# text = After the samples have reacted overnight, remove the filters from the vials with a pair of teflon tweezers.
+1	Collect	_	Action	_	_	0	_	_	Offset=3548-3555
+2	subsample	_	Reagent	_	_	0	_	_	Offset=3558-3567
+
+# sent_id = s37
+# text = Try to pick up the filter in a way that most of the remaining diatom shells remain on the filter.
+1	Run	_	Action	_	_	0	_	_	Offset=3608-3611
+2	samples	_	Reagent	_	_	0	_	_	Offset=3612-3619
+3	‘mini’	_	Location	_	_	0	_	_	Offset=3628-3642
+4	135	_	Size	_	_	3	Measure	_	Offset=3644-3650
+
+# sent_id = s38
+# text = The filter will also have a lot of the acid still in it, and this acid contains valuable amounts of Fe.
+1	clean	_	Action	_	_	0	_	_	Offset=3712-3717
+2	PFA	_	Location	_	_	4	Coreference-Link	_	Offset=3731-3740
+3	blasting	_	Action	_	_	0	_	_	Offset=3744-3752
+4	then	_	Mention	_	_	0	_	_	Offset=3753-3757
+5	TE	_	Reagent	_	_	0	_	_	Offset=3763-3771
+6	from	_	Modifier	_	_	5	Mod-Link	_	Offset=3772-3784
+7	putting	_	Action	_	_	0	_	_	Offset=3789-3796
+8	them	_	Mention	_	_	0	_	_	Offset=3797-3801
+9	hot	_	Device	_	_	0	_	_	Offset=3809-3818
+10	0.1	_	Concentration	_	_	11	Measure	_	Offset=3824-3829
+11	HNO3	_	Reagent	_	_	0	_	_	Offset=3830-3834
+12	hour	_	Time	_	_	0	_	_	Offset=3842-3853
+
+# sent_id = s39
+# text = Rinse off this acid back into the PFA vial by twice pipetting 1 mL of TE H2O over each filter.
+1	Elute	_	Action	_	_	0	_	_	Offset=3870-3875
+2	columns	_	Location	_	_	0	_	_	Offset=3885-3892
+3	PFA	_	Location	_	_	0	_	_	Offset=3907-3916
+
+# sent_id = s40
+# text = Evaporate samples to dryness on a hot plate.
+1	Dry	_	Action	_	_	0	_	_	Offset=3943-3951
+2	overnight	_	Time	_	_	0	_	_	Offset=3952-3961
+3	for	_	Time	_	_	2	Or	_	Offset=3966-3981
+
+# sent_id = s41
+# text = Reconstitute samples in 200 uL of 10N HCl +0.001% H2O2.
+1	Re	_	Action	_	_	0	_	_	Offset=3984-3995
+2	100ul	_	Amount	_	_	3	Measure	_	Offset=3999-4004
+3	conc	_	Reagent	_	_	0	_	_	Offset=4008-4012
+
+# sent_id = s42
+# text = Collect a subsample before samples are run through columns.
+1	HNO3	_	Reagent	_	_	0	_	_	Offset=4014-4019
+2	Put	_	Action	_	_	0	_	_	Offset=4019-4022
+3	hot	_	Device	_	_	0	_	_	Offset=4026-4035
+4	bio	_	Location	_	_	3	Meronym	_	Offset=4039-4046
+5	capped	_	Modifier	_	_	1	Mod-Link	_	Offset=4048-4054
+6	30min	_	Time	_	_	0	_	_	Offset=4060-4065
+7	350	_	Temperature	_	_	0	_	_	Offset=4069-4072
+
+# sent_id = s43
+# text = Run samples through ‘mini’ columns (135 uL) according to established procedures.
+1	Take	_	Action	_	_	0	_	_	Offset=4074-4082
+2	hot	_	Device	_	_	0	_	_	Offset=4083-4092
+3	clean	_	Location	_	_	2	Meronym	_	Offset=4096-4105
+4	put	_	Action	_	_	0	_	_	Offset=4110-4116
+5	hot	_	Device	_	_	0	_	_	Offset=4117-4126
+6	biological	_	Location	_	_	5	Meronym	_	Offset=4130-4144
+7	dry	_	Action	_	_	0	_	_	Offset=4148-4156
+
+# sent_id = s44
+# text = While running columns, clean each of your PFA vials by blasting then with TE water from the tap and putting them on the hot plate with 0.1 N HNO3 for an hour or two as columns run.
+1	Reconstitute	_	Action	_	_	0	_	_	Offset=4158-4170
+2	1100ul	_	Amount	_	_	4	Measure	_	Offset=4174-4180
+3	0.1N	_	Concentration	_	_	4	Measure	_	Offset=4181-4185
+4	HNO3	_	Reagent	_	_	0	_	_	Offset=4186-4191
+5	Take	_	Action	_	_	0	_	_	Offset=4191-4199
+6	100ul	_	Amount	_	_	7	Measure	_	Offset=4200-4205
+7	sample	_	Reagent	_	_	0	_	_	Offset=4209-4215
+8	dilute	_	Action	_	_	0	_	_	Offset=4220-4226
+9	1ml	_	Amount	_	_	0	_	_	Offset=4230-4233
+10	.1N	_	Concentration	_	_	11	Measure	_	Offset=4239-4242
+11	HNO3	_	Reagent	_	_	0	_	_	Offset=4243-4247
+12	put	_	Action	_	_	0	_	_	Offset=4249-4252
+13	15	_	Size	_	_	14	Measure	_	Offset=4256-4261
+14	vial	_	Location	_	_	0	_	_	Offset=4262-4266
+
+# sent_id = s45
+# text = Elute from the columns into the same PFA vials your samples came out of.
+1	Give	_	Action	_	_	0	_	_	Offset=4268-4272
+2	sample	_	Reagent	_	_	0	_	_	Offset=4277-4283
+3	Tim	_	Location	_	_	0	_	_	Offset=4307-4310
+
+# sent_id = s46
+# text = Dry down overnight (or for a few hours).
+1	add	_	Action	_	_	0	_	_	Offset=4457-4460
+2	enough	_	Amount	_	_	3	Measure	_	Offset=4461-4467
+3	double-spike	_	Reagent	_	_	0	_	_	Offset=4468-4480
+4	1:2	_	Concentration	_	_	0	_	_	Offset=4490-4513
+

@@ -1,0 +1,124 @@
+# sent_id = s1
+# text = DNA extraction from fungal mycelium using Extract-n-Amp
+1	Turn	_	Action	_	_	0	_	_	Offset=56-60
+2	heat	_	Device	_	_	0	_	_	Offset=61-71
+3	on	_	Generic-Measure	_	_	2	Setting	_	Offset=72-74
+4	preheat	_	Action	_	_	0	_	_	Offset=79-86
+5	95C	_	Temperature	_	_	0	_	_	Offset=90-93
+
+# sent_id = s2
+# text = Turn heat block on and preheat to 95C.
+1	lab	_	Location	_	_	8	Meronym	_	Offset=110-119
+2	add	_	Action	_	_	0	_	_	Offset=121-124
+3	½	_	Amount	_	_	5	Measure	_	Offset=125-132
+4	1.0	_	Size	_	_	5	Measure	_	Offset=140-146
+5	zirconium	_	Reagent	_	_	0	_	_	Offset=147-168
+6	sterile	_	Modifier	_	_	8	Mod-Link	_	Offset=174-181
+7	1.5	_	Amount	_	_	8	Measure	_	Offset=182-188
+8	tube	_	Location	_	_	0	_	_	Offset=189-193
+
+# sent_id = s3
+# text = Working at the lab bench, add ½ scoop of the 1.0 mm zirconium oxide beads to a sterile 1.5 ml tube.
+1	Close	_	Action	_	_	0	_	_	Offset=195-200
+2	lid	_	Seal	_	_	0	_	_	Offset=205-208
+3	label	_	Action	_	_	0	_	_	Offset=213-218
+4	top	_	Location	_	_	0	_	_	Offset=223-226
+5	side	_	Location	_	_	0	_	_	Offset=231-235
+6	each	_	Modifier	_	_	7	Mod-Link	_	Offset=239-243
+7	tube	_	Location	_	_	4	Meronym	5:Meronym	Offset=244-248
+8	sample	_	Seal	_	_	0	_	_	Offset=258-269
+
+# sent_id = s4
+# text = Close the lid and label the top and side of each tube with the sample name (e.g., AK0013).
+1	laminar	_	Location	_	_	2	Or	_	Offset=300-317
+2	biosafety	_	Location	_	_	7	Meronym	_	Offset=321-338
+3	remove	_	Action	_	_	0	_	_	Offset=340-346
+4	small	_	Modifier	_	_	6	Mod-Link	_	Offset=349-360
+5	0.5	_	Size	_	_	4	Setting	_	Offset=377-384
+6	mycelium	_	Reagent	_	_	0	_	_	Offset=389-397
+7	culture	_	Location	_	_	0	_	_	Offset=407-425
+8	transfer	_	Action	_	_	0	_	_	Offset=430-438
+9	corresponding	_	Modifier	_	_	11	Mod-Link	_	Offset=446-467
+10	1.5	_	Amount	_	_	11	Measure	_	Offset=468-474
+11	tube	_	Location	_	_	0	_	_	Offset=475-479
+
+# sent_id = s5
+# text = In either the laminar flow hood or biosafety cabinet, remove a small piece (no bigger than 0.5 cm2) of mycelium from the culture tube/plate and transfer to the corresponding labeled 1.5 ml tube.
+1	Add	_	Action	_	_	0	_	_	Offset=665-668
+2	100	_	Amount	_	_	3	Measure	_	Offset=669-675
+3	Extraction	_	Reagent	_	_	0	_	_	Offset=679-696
+4	mycelium	_	Reagent	_	_	0	_	_	Offset=714-722
+5	completely	_	Modifier	_	_	0	_	_	Offset=726-736
+6	submerged	_	Action	_	_	0	_	_	Offset=737-746
+7	liquid	_	Reagent	_	_	0	_	_	Offset=754-760
+8	centrifuge	_	Method	_	_	0	_	_	Offset=778-788
+9	firmly	_	Modifier	_	_	0	_	_	Offset=794-800
+10	close	_	Action	_	_	0	_	_	Offset=801-806
+11	tube	_	Seal	_	_	0	_	_	Offset=807-816
+
+# sent_id = s6
+# text = Try to minimize the amount of agar.
+1	Place	_	Action	_	_	0	_	_	Offset=818-823
+2	tubes	_	Location	_	_	0	_	_	Offset=824-829
+3	bead	_	Device	_	_	0	_	_	Offset=837-848
+
+# sent_id = s7
+# text = ***This step must be donin a sterile environment to ensure the cultures are not contaminated, but the remaining steps can be done on the lab bench.
+1	Close	_	Action	_	_	0	_	_	Offset=950-955
+2	lid	_	Seal	_	_	0	_	_	Offset=960-963
+3	bead	_	Action	_	_	0	_	_	Offset=969-978
+4	1	_	Time	_	_	0	_	_	Offset=983-991
+5	speed	_	Speed	_	_	0	_	_	Offset=995-1003
+
+# sent_id = s8
+# text = Add 100 ul of Extraction Buffer (making sure the mycelium is completely submerged in the liquid; you may need to centrifuge) and firmly close tube lids.
+1	grind	_	Action	_	_	0	_	_	Offset=1028-1033
+2	tissue	_	Reagent	_	_	0	_	_	Offset=1038-1044
+3	sterile	_	Modifier	_	_	4	Mod-Link	_	Offset=1052-1059
+4	blue	_	Device	_	_	0	_	_	Offset=1060-1071
+
+# sent_id = s9
+# text = Place tubes in the bead beater.
+1	Briefly	_	Time	_	_	0	_	_	Offset=1123-1140
+2	centrifuge	_	Method	_	_	0	_	_	Offset=1141-1151
+3	remove	_	Action	_	_	0	_	_	Offset=1155-1161
+4	liquid	_	Reagent	_	_	0	_	_	Offset=1162-1168
+5	lid	_	Seal	_	_	0	_	_	Offset=1178-1181
+6	tube	_	Location	_	_	5	Meronym	_	Offset=1189-1193
+
+# sent_id = s10
+# text = If using the Bullet Blender Storm make sure the lid is for the 1.5 ml tubes not the screwcap tubes.
+1	Do	_	Action	_	_	0	_	_	Offset=1198-1210
+2	samples	_	Reagent	_	_	0	_	_	Offset=1211-1218
+3	Extraction	_	Reagent	_	_	0	_	_	Offset=1226-1243
+4	>25	_	Time	_	_	0	_	_	Offset=1244-1255
+
+# sent_id = s11
+# text = Close the lid, and bead beat for 1 minute on speed 10.
+1	Place	_	Action	_	_	0	_	_	Offset=1295-1300
+2	tubes	_	Location	_	_	0	_	_	Offset=1301-1306
+3	heat	_	Device	_	_	0	_	_	Offset=1310-1320
+4	95°C	_	Temperature	_	_	0	_	_	Offset=1324-1328
+5	10	_	Time	_	_	0	_	_	Offset=1333-1343
+6	briefly	_	Modifier	_	_	0	_	_	Offset=1350-1357
+7	centrifuge	_	Action	_	_	0	_	_	Offset=1358-1368
+8	remove	_	Action	_	_	0	_	_	Offset=1389-1395
+9	condensation	_	Reagent	_	_	0	_	_	Offset=1396-1408
+
+# sent_id = s12
+# text = (Alternatively you can grind the tissue with a sterile blue pestle.)
+1	Add	_	Action	_	_	0	_	_	Offset=1410-1413
+2	100	_	Amount	_	_	3	Measure	_	Offset=1414-1420
+3	Dilution	_	Reagent	_	_	0	_	_	Offset=1424-1439
+4	vortex	_	Method	_	_	0	_	_	Offset=1444-1450
+5	mix	_	Action	_	_	0	_	_	Offset=1454-1457
+
+# sent_id = s13
+# text = **Use ear protection when using the bead beater.
+1	Store	_	Action	_	_	0	_	_	Offset=1459-1464
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1469-1472
+3	2-8°C	_	Temperature	_	_	0	_	_	Offset=1476-1481
+4	short-term	_	Reagent	_	_	0	_	_	Offset=1486-1500
+5	-20°	_	Temperature	_	_	3	Or	_	Offset=1505-1517
+6	long-term	_	Reagent	_	_	4	Or	_	Offset=1522-1539
+

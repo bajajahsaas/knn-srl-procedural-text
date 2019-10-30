@@ -1,0 +1,112 @@
+# sent_id = s1
+# text = YES Rich Medium
+1	Add	_	Action	_	_	0	_	_	Offset=16-19
+2	5.0	_	Amount	_	_	3	Measure	_	Offset=20-25
+3	Yeast	_	Reagent	_	_	0	_	_	Offset=26-39
+4	1	_	Size	_	_	5	Measure	_	Offset=45-52
+5	Erlenmeyer	_	Location	_	_	0	_	_	Offset=53-69
+
+# sent_id = s2
+# text = Add 5.0 g Yeast Extract to a 1 Liter Erlenmeyer Flask.
+1	Add	_	Action	_	_	0	_	_	Offset=71-74
+2	30	_	Amount	_	_	0	_	_	Offset=75-79
+3	Glucose	_	Reagent	_	_	0	_	_	Offset=80-87
+4	Dextrose	_	Reagent	_	_	3	Or	_	Offset=91-99
+5	flask	_	Location	_	_	0	_	_	Offset=107-112
+
+# sent_id = s3
+# text = Add 30 g Glucose or Dextrose to the flask.
+1	Add	_	Action	_	_	0	_	_	Offset=114-117
+2	0.25	_	Amount	_	_	3	Measure	_	Offset=118-124
+3	Adenine	_	Reagent	_	_	0	_	_	Offset=125-132
+4	flask	_	Location	_	_	0	_	_	Offset=140-145
+
+# sent_id = s4
+# text = Add 0.25 g Adenine to the flask.
+1	Add	_	Action	_	_	0	_	_	Offset=147-150
+2	0.25	_	Amount	_	_	3	Measure	_	Offset=151-157
+3	Uracil	_	Reagent	_	_	0	_	_	Offset=158-164
+4	flask	_	Location	_	_	0	_	_	Offset=172-177
+
+# sent_id = s5
+# text = Add 0.25 g Uracil to the flask.
+1	Add	_	Action	_	_	0	_	_	Offset=179-182
+2	0.25	_	Amount	_	_	3	Measure	_	Offset=183-189
+3	Histidine	_	Reagent	_	_	0	_	_	Offset=190-199
+4	flask	_	Location	_	_	0	_	_	Offset=207-212
+
+# sent_id = s6
+# text = Add 0.25 g Histidine to the flask.
+1	Add	_	Action	_	_	0	_	_	Offset=214-217
+2	0.25	_	Amount	_	_	3	Measure	_	Offset=218-222
+3	Leucine	_	Reagent	_	_	0	_	_	Offset=223-230
+4	flask	_	Location	_	_	0	_	_	Offset=238-243
+
+# sent_id = s7
+# text = Add 0.25 Leucine to the flask.
+1	Add	_	Action	_	_	0	_	_	Offset=245-248
+2	0.25	_	Amount	_	_	3	Measure	_	Offset=249-255
+3	Lysine	_	Reagent	_	_	0	_	_	Offset=256-262
+4	flask	_	Location	_	_	0	_	_	Offset=270-275
+
+# sent_id = s8
+# text = Add 0.25 g Lysine to the flask.
+1	Add	_	Action	_	_	0	_	_	Offset=277-280
+2	1	_	Amount	_	_	3	Measure	_	Offset=281-284
+3	Arginine	_	Reagent	_	_	0	_	_	Offset=285-293
+4	flask	_	Location	_	_	0	_	_	Offset=301-306
+
+# sent_id = s9
+# text = Add 1 g Arginine to the flask.
+1	add	_	Action	_	_	0	_	_	Offset=335-338
+2	20	_	Amount	_	_	3	Measure	_	Offset=339-343
+3	Difco	_	Reagent	_	_	0	_	_	Offset=344-360
+4	flask	_	Location	_	_	0	_	_	Offset=368-373
+
+# sent_id = s10
+# text = Optional: For solid medium add 20 g Difco Bacto Agar to the flask.
+1	Fill	_	Action	_	_	0	_	_	Offset=375-379
+2	flask	_	Location	_	_	0	_	_	Offset=384-389
+3	water	_	Reagent	_	_	0	_	_	Offset=395-400
+4	1	_	Size	_	_	2	Measure	_	Offset=411-418
+
+# sent_id = s11
+# text = Fill the flask with water up to the 1 Liter mark on the flask.
+1	Place	_	Action	_	_	0	_	_	Offset=438-443
+2	magnetic	_	Device	_	_	0	_	_	Offset=446-463
+3	flask	_	Location	_	_	0	_	_	Offset=473-478
+4	place	_	Action	_	_	0	_	_	Offset=483-488
+5	flask	_	Location	_	_	0	_	_	Offset=493-498
+6	magnetic	_	Device	_	_	0	_	_	Offset=504-520
+
+# sent_id = s12
+# text = Place a magnetic stir bar into the flask and place the flask on a magnetic stirrer to dissolve the powder into the water.
+1	Remove	_	Action	_	_	0	_	_	Offset=560-566
+2	stir	_	Device	_	_	0	_	_	Offset=571-579
+3	magnetic	_	Device	_	_	0	_	_	Offset=587-599
+
+# sent_id = s13
+# text = Remove the stir bar with a magnetic rod.
+1	Place	_	Action	_	_	0	_	_	Offset=601-606
+2	aluminum	_	Reagent	_	_	0	_	_	Offset=607-620
+3	top	_	Seal	_	_	0	_	_	Offset=630-633
+4	flask	_	Location	_	_	3	Meronym	_	Offset=641-646
+5	autoclave	_	Action	_	_	0	_	_	Offset=656-665
+6	liquid	_	Method	_	_	0	_	_	Offset=671-683
+7	20	_	Time	_	_	0	_	_	Offset=688-698
+
+# sent_id = s14
+# text = Place aluminum foil over the top of the flask and then autoclave on a liquid cycle for 20 minutes.
+1	pour	_	Action	_	_	0	_	_	Offset=717-721
+2	plates	_	Location	_	_	0	_	_	Offset=743-749
+3	766	_	Action	_	_	0	_	_	Offset=754-757;763
+4	them	_	Mention	_	_	0	_	_	Offset=758-762
+5	overnight	_	Time	_	_	0	_	_	Offset=779-788
+6	lab	_	Location	_	_	0	_	_	Offset=796-805
+
+# sent_id = s15
+# text = If solid medium, pour while still hot into plates and let them sit out to cool overnight on the lab bench.
+1	aliquot	_	Action	_	_	0	_	_	Offset=825-832
+2	store	_	Action	_	_	0	_	_	Offset=858-863
+3	4	_	Temperature	_	_	0	_	_	Offset=869-872
+

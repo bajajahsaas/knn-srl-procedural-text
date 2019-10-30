@@ -1,0 +1,74 @@
+# sent_id = s1
+# text = Swift™ Membrane Stain
+1	place	_	Action	_	_	0	_	_	Offset=64-69
+2	membrane	_	Device	_	_	0	_	_	Offset=74-82
+3	tray	_	Location	_	_	0	_	_	Offset=97-101
+
+# sent_id = s2
+# text = Following protein transfer to a membrane, place the membrane in a suitable tray.
+1	Add	_	Action	_	_	0	_	_	Offset=127-130
+2	20ml	_	Amount	_	_	4	Measure	_	Offset=131-135
+3	100%	_	Concentration	_	_	4	Measure	_	Offset=136-140
+4	methanol	_	Reagent	_	_	0	_	_	Offset=141-149
+5	rinse	_	Action	_	_	0	_	_	Offset=154-159
+6	10‐30	_	Time	_	_	0	_	_	Offset=164-177
+
+# sent_id = s3
+# text = a. For PVDF Membranes: 
+1	Discard	_	Action	_	_	0	_	_	Offset=179-186
+2	methanol	_	Reagent	_	_	0	_	_	Offset=191-199
+3	add	_	Action	_	_	0	_	_	Offset=216-219
+4	12ml	_	Amount	_	_	5	Measure	_	Offset=220-224
+5	Swift™	_	Reagent	_	_	0	_	_	Offset=225-246
+
+# sent_id = s4
+# text = Add 20ml 100% methanol and rinse for 10‐30 seconds.
+1	Add	_	Action	_	_	0	_	_	Offset=282-285
+2	20ml	_	Amount	_	_	3	Measure	_	Offset=286-290
+3	deionized	_	Reagent	_	_	0	_	_	Offset=291-306
+4	rinse	_	Action	_	_	0	_	_	Offset=311-316
+5	30	_	Time	_	_	0	_	_	Offset=321-331
+
+# sent_id = s5
+# text = Discard the methanol and immediately add 12ml Swift™ Membrane Stain.
+1	Discard	_	Action	_	_	0	_	_	Offset=333-340
+2	wash	_	Reagent	_	_	0	_	_	Offset=345-349
+3	add	_	Action	_	_	0	_	_	Offset=354-357
+4	12ml	_	Amount	_	_	5	Measure	_	Offset=358-362
+5	Swift™	_	Reagent	_	_	0	_	_	Offset=363-384
+
+# sent_id = s6
+# text = b. For Nitrocellulose Membranes: 
+1	Place	_	Action	_	_	0	_	_	Offset=386-391
+2	trays	_	Location	_	_	0	_	_	Offset=396-401
+3	rocking	_	Device	_	_	0	_	_	Offset=407-421
+
+# sent_id = s7
+# text = Add 20ml deionized water and rinse for 30 seconds.
+1	Rinse	_	Action	_	_	0	_	_	Offset=460-465
+2	membrane	_	Device	_	_	0	_	_	Offset=470-478
+3	DI	_	Reagent	_	_	0	_	_	Offset=482-490
+
+# sent_id = s8
+# text = Discard the wash and add 12ml Swift™ Membrane Stain.
+1	rinse	_	Action	_	_	0	_	_	Offset=618-623
+2	membrane	_	Device	_	_	0	_	_	Offset=628-636
+3	DI	_	Reagent	_	_	0	_	_	Offset=640-648
+
+# sent_id = s9
+# text = Place the trays on a rocking shaker.
+1	Wash	_	Action	_	_	0	_	_	Offset=678-682
+2	membranes	_	Reagent	_	_	0	_	_	Offset=687-696
+3	30‐60	_	Time	_	_	0	_	_	Offset=701-714
+4	50ml	_	Amount	_	_	6	Measure	_	Offset=718-722
+5	1X	_	Concentration	_	_	6	Measure	_	Offset=723-725
+6	Swift™	_	Reagent	_	_	0	_	_	Offset=726-740
+
+# sent_id = s10
+# text = Protein bands appear in ~30 seconds.
+1	rinse	_	Action	_	_	0	_	_	Offset=796-801
+2	DI	_	Reagent	_	_	0	_	_	Offset=805-813
+3	store	_	Action	_	_	0	_	_	Offset=818-823
+4	blot	_	Reagent	_	_	0	_	_	Offset=828-832
+5	DI	_	Reagent	_	_	0	_	_	Offset=836-844
+

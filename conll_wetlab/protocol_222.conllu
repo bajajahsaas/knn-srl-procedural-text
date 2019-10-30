@@ -1,0 +1,132 @@
+# sent_id = s1
+# text = Plating Prochlorococcus and Synechococcus strains in top agarose for plaque assays
+1	Prepare	_	Action	_	_	0	_	_	Offset=83-90
+2	base	_	Reagent	_	_	0	_	_	Offset=91-102
+3	0.4%	_	Concentration	_	_	4	Measure	_	Offset=109-113
+4	GIBCO	_	Reagent	_	_	6	Meronym	_	Offset=114-130
+5	0.4g	_	Amount	_	_	6	Measure	_	Offset=132-136
+6	agarose	_	Reagent	_	_	0	_	_	Offset=137-144
+7	100	_	Amount	_	_	0	_	_	Offset=147-153
+
+# sent_id = s2
+# text = Prepare base plates using 0.4% GIBCO LM agarose (0.4g agarose / 100 ml). 
+1	Make	_	Action	_	_	0	_	_	Offset=157-164
+2	plates	_	Reagent	_	_	0	_	_	Offset=165-171
+3	filtered,	_	Modifier	_	_	5	Mod-Link	_	Offset=178-198
+4	75%	_	Concentration	_	_	5	Measure	_	Offset=199-202
+5	Sargasso	_	Reagent	_	_	0	_	_	Offset=203-228
+
+# sent_id = s3
+# text = Make up plates using filtered, autoclaved 75% Sargasso Sea Water (SSW). 
+1	Add	_	Action	_	_	0	_	_	Offset=230-233
+2	appropriate	_	Reagent	_	_	0	_	_	Offset=234-253
+3	microwave	_	Action	_	_	0	_	_	Offset=260-269
+4	to	_	Modifier	_	_	0	_	_	Offset=270-279
+
+# sent_id = s4
+# text = Add appropriate agarose, then microwave to a boil.  
+1	Add	_	Action	_	_	0	_	_	Offset=283-286
+2	appropriate	_	Reagent	_	_	0	_	_	Offset=287-308
+
+# sent_id = s5
+# text = Add appropriate nutrients to bring levels up to media of choice (SN, Pro99?)
+1	Vortex	_	Action	_	_	0	_	_	Offset=360-374
+2	mix	_	Action	_	_	0	_	_	Offset=378-381
+3	nutrients	_	Reagent	_	_	0	_	_	Offset=382-391
+4	thoroughly	_	Modifier	_	_	0	_	_	Offset=392-402
+5	asceptically	_	Modifier	_	_	0	_	_	Offset=407-419
+6	pour	_	Action	_	_	0	_	_	Offset=420-424
+7	plates	_	Reagent	_	_	0	_	_	Offset=425-431
+8	hood	_	Location	_	_	0	_	_	Offset=435-439
+
+# sent_id = s6
+# text = Vortex / shake to mix nutrients thoroughly and asceptically pour plates in hood. 
+1	461	_	Action	_	_	0	_	_	Offset=442-447;455
+2	plates	_	Reagent	_	_	0	_	_	Offset=448-454
+3	overnight	_	Time	_	_	0	_	_	Offset=462-471
+4	solidify	_	Action	_	_	0	_	_	Offset=475-483
+5	adding	_	Action	_	_	0	_	_	Offset=491-497
+6	top	_	Reagent	_	_	0	_	_	Offset=498-509
+
+# sent_id = s7
+# text = Allow plates to sit overnight to solidify before adding top agarose. 
+1	Prepare	_	Action	_	_	0	_	_	Offset=512-519
+2	cyanophage	_	Reagent	_	_	0	_	_	Offset=525-545
+3	plating	_	Action	_	_	0	_	_	Offset=555-562
+4	cells	_	Reagent	_	_	0	_	_	Offset=563-568
+5	top	_	Reagent	_	_	0	_	_	Offset=572-583
+6	media	_	Reagent	_	_	0	_	_	Offset=593-598
+7	5	_	Size	_	_	8	Measure	_	Offset=616-620
+8	Falcon	_	Location	_	_	0	_	_	Offset=621-633
+
+# sent_id = s8
+# text = Prepare your cyanophage dilutions ahead of plating cells in top agarose by using media for dilutions in 5 ml Falcon tubes. 
+1	Prepare	_	Action	_	_	0	_	_	Offset=636-643
+2	top	_	Reagent	_	_	0	_	_	Offset=644-655
+3	0.5%	_	Concentration	_	_	4	Measure	_	Offset=659-663
+4	GIBCO	_	Reagent	_	_	0	_	_	Offset=664-669
+
+# sent_id = s9
+# text = Prepare top agarose as 0.5% GIBCO. 
+1	filtered,	_	Modifier	_	_	3	Mod-Link	_	Offset=695-715
+2	75%	_	Concentration	_	_	3	Measure	_	Offset=716-719
+3	SSW	_	Reagent	_	_	0	_	_	Offset=720-723
+4	make	_	Action	_	_	0	_	_	Offset=727-734
+5	plates	_	Reagent	_	_	0	_	_	Offset=735-741
+
+# sent_id = s10
+# text = Low-Melt agarose. 
+1	Add	_	Action	_	_	0	_	_	Offset=743-746
+2	appropriate	_	Reagent	_	_	4	Meronym	_	Offset=747-766
+3	0.5	_	Concentration	_	_	4	Measure	_	Offset=768-782
+4	SSW	_	Reagent	_	_	0	_	_	Offset=783-786
+5	microwave	_	Action	_	_	0	_	_	Offset=792-801
+6	as	_	Modifier	_	_	0	_	_	Offset=802-810
+
+# sent_id = s11
+# text = Use filtered, autoclaved 75% SSW to make up plates.
+1	Allow	_	Action	_	_	0	_	_	Offset=813-826
+2	pre-heated	_	Location	_	_	0	_	_	Offset=832-853
+3	~29°C	_	Temperature	_	_	0	_	_	Offset=857-862
+
+# sent_id = s12
+# text = Add appropriate agarose (0.5 g / 100 ml SSW) and microwave as above. 
+1	Asceptically	_	Modifier	_	_	0	_	_	Offset=888-900
+2	add	_	Action	_	_	0	_	_	Offset=901-904
+3	filter	_	Reagent	_	_	0	_	_	Offset=905-932
+
+# sent_id = s13
+# text = Allow to cool in a pre-heated water bath to ~29°C (solidifies ~24-28°C).  
+1	Add	_	Action	_	_	0	_	_	Offset=1002-1005
+2	appropriate	_	Amount	_	_	3	Measure	_	Offset=1006-1024
+3	cells	_	Reagent	_	_	0	_	_	Offset=1028-1033
+4	top	_	Reagent	_	_	0	_	_	Offset=1037-1048
+5	vortex	_	Action	_	_	0	_	_	Offset=1050-1056
+6	thoroughly	_	Modifier	_	_	0	_	_	Offset=1060-1070
+7	mix	_	Action	_	_	0	_	_	Offset=1071-1074
+8	plate	_	Action	_	_	0	_	_	Offset=1079-1084
+9	immediately	_	Modifier	_	_	0	_	_	Offset=1085-1096
+
+# sent_id = s14
+# text = Asceptically add filter sterilized nutrients to bring level of top agarose nutrients to desired media of choice. 
+1	Inoculate	_	Action	_	_	0	_	_	Offset=1099-1108
+2	liquid	_	Reagent	_	_	0	_	_	Offset=1111-1125
+3	same	_	Reagent	_	_	0	_	_	Offset=1136-1171
+
+# sent_id = s15
+# text = Add appropriate volume of cells to top agarose, vortex to thoroughly mix and plate immediately. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=1260-1268
+2	plates	_	Reagent	_	_	0	_	_	Offset=1273-1279
+3	overnight	_	Time	_	_	0	_	_	Offset=1280-1289
+4	~2-5	_	Generic-Measure	_	_	0	_	_	Offset=1293-1306
+5	without	_	Modifier	_	_	0	_	_	Offset=1307-1337
+6	1374	_	Action	_	_	0	_	_	Offset=1341-1346;1363
+7	top	_	Reagent	_	_	0	_	_	Offset=1351-1362
+
+# sent_id = s16
+# text = Inoculate a liquid culture using the same dilution chosen for the plates as an indicator of when the plates might turn green (within a few days of each other). 
+1	parafilm	_	Action	_	_	0	_	_	Offset=1413-1421
+2	plates	_	Reagent	_	_	0	_	_	Offset=1426-1432
+3	place	_	Action	_	_	0	_	_	Offset=1456-1461
+4	at	_	Modifier	_	_	0	_	_	Offset=1462-1493
+

@@ -1,0 +1,52 @@
+# sent_id = s1
+# text = TCBS Agar Plates (500ml)
+1	500ml	_	Amount	_	_	2	Measure	_	Offset=28-33
+2	MilliQ	_	Reagent	_	_	0	_	_	Offset=34-40
+3	add	_	Action	_	_	0	_	_	Offset=42-45
+4	44g	_	Amount	_	_	5	Measure	_	Offset=46-49
+5	TCBS	_	Reagent	_	_	0	_	_	Offset=50-59
+
+# sent_id = s2
+# text = In 500ml MilliQ, add 44g TCBS Agar.
+1	Mix	_	Action	_	_	0	_	_	Offset=61-64
+2	thoroughly	_	Modifier	_	_	0	_	_	Offset=65-75
+3	Loosen	_	Action	_	_	0	_	_	Offset=76-82
+4	cap	_	Seal	_	_	0	_	_	Offset=83-86
+
+# sent_id = s3
+# text = Mix thoroughly Loosen cap.
+1	boil	_	Action	_	_	0	_	_	Offset=99-103
+2	microwave	_	Device	_	_	0	_	_	Offset=107-116
+3	dissolve	_	Action	_	_	0	_	_	Offset=120-128
+4	completely	_	Modifier	_	_	0	_	_	Offset=129-139
+5	boil	_	Action	_	_	0	_	_	Offset=144-148
+6	approximately	_	Modifier	_	_	7	Mod-Link	_	Offset=153-166
+7	1	_	Time	_	_	0	_	_	Offset=167-175
+
+# sent_id = s4
+# text = Bring to a boil in microwave to dissolve completely and boil for approximately 1 minute.
+1	DO	_	Action	_	_	0	_	_	Offset=177-193
+
+# sent_id = s5
+# text = DO NOT AUTOCLAVE. 
+1	cool	_	Action	_	_	0	_	_	Offset=205-209
+2	approximately	_	Modifier	_	_	3	Mod-Link	_	Offset=213-226
+3	60ºC	_	Temperature	_	_	0	_	_	Offset=227-231
+4	running	_	Action	_	_	0	_	_	Offset=235-242
+5	container	_	Location	_	_	0	_	_	Offset=243-252
+6	pour	_	Action	_	_	0	_	_	Offset=282-286
+7	TCBS	_	Reagent	_	_	0	_	_	Offset=287-296
+8	sterile	_	Modifier	_	_	9	Mod-Link	_	Offset=302-309
+9	plates	_	Location	_	_	0	_	_	Offset=310-316
+10	half	_	Modifier	_	_	0	_	_	Offset=323-332
+
+# sent_id = s6
+# text = Allow to cool to approximately 60ºC by running container until MilliQ  Under a flame, pour TCBS agar into sterile plates about half way.
+1	Quickly	_	Modifier	_	_	0	_	_	Offset=333-340
+2	run	_	Action	_	_	0	_	_	Offset=341-344
+3	flame	_	Reagent	_	_	0	_	_	Offset=345-350
+4	surface	_	Location	_	_	0	_	_	Offset=356-363
+5	agar	_	Reagent	_	_	4	Meronym	_	Offset=367-371
+6	remove	_	Action	_	_	0	_	_	Offset=375-381
+7	air	_	Reagent	_	_	0	_	_	Offset=386-397
+

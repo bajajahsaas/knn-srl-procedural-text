@@ -1,0 +1,133 @@
+# sent_id = s1
+# text = Algal culture harvest and RNA extraction for RNA-Seq
+1	sterile	_	Modifier	_	_	0	_	_	Offset=57-64
+2	techniques	_	Method	_	_	0	_	_	Offset=65-75
+3	harvest	_	Action	_	_	0	_	_	Offset=79-86
+4	800	_	Amount	_	_	5	Measure	_	Offset=87-93
+5	culture	_	Reagent	_	_	0	_	_	Offset=97-104
+6	divide	_	Action	_	_	0	_	_	Offset=110-116
+7	4	_	Numerical	_	_	9	Measure	_	Offset=122-123
+8	250	_	Amount	_	_	9	Measure	_	Offset=124-130
+9	centrifuge	_	Location	_	_	0	_	_	Offset=131-149
+10	200	_	Amount	_	_	0	_	_	Offset=155-161
+11	each	_	Modifier	_	_	10	Mod-Link	_	Offset=162-166
+
+# sent_id = s2
+# text = Use sterile techniques to harvest 800 ml of culture, and divide into 4 250 ml centrifuge bottles with 200 ml each.
+1	Spin	_	Action	_	_	0	_	_	Offset=168-172
+2	centrifuge	_	Location	_	_	0	_	_	Offset=177-195
+3	5000	_	Speed	_	_	0	_	_	Offset=199-205
+4	10	_	Time	_	_	0	_	_	Offset=210-216
+
+# sent_id = s3
+# text = Spin the centrifuge bottles at 5000 g for 10 min.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=218-227
+2	decant	_	Action	_	_	0	_	_	Offset=228-234
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=239-250
+
+# sent_id = s4
+# text = Carefully decant the supernatant.
+1	0.5	_	Amount	_	_	2	Measure	_	Offset=256-262
+2	RNALater	_	Reagent	_	_	0	_	_	Offset=266-274
+3	resuspend	_	Action	_	_	0	_	_	Offset=278-287
+4	pellet	_	Reagent	_	_	0	_	_	Offset=292-298
+5	transfer	_	Action	_	_	0	_	_	Offset=303-311
+6	it	_	Mention	_	_	0	_	_	Offset=312-314
+7	microcentrifuge	_	Location	_	_	0	_	_	Offset=320-340
+
+# sent_id = s5
+# text = Use 0.5 ml of RNALater to resuspend the pellet and transfer it to a microcentrifuge tube.
+1	0.25	_	Amount	_	_	2	Measure	_	Offset=354-361
+2	RNALater	_	Reagent	_	_	0	_	_	Offset=365-373
+3	wash	_	Action	_	_	0	_	_	Offset=377-381
+4	bottle	_	Location	_	_	0	_	_	Offset=386-392
+5	obtain	_	Action	_	_	0	_	_	Offset=397-403
+6	any	_	Modifier	_	_	7	Mod-Link	_	Offset=404-417
+7	cells	_	Reagent	_	_	0	_	_	Offset=418-423
+
+# sent_id = s6
+# text = Use another 0.25 ml of RNALater to wash the bottle and obtain any remaining cells.
+1	Transfer	_	Action	_	_	0	_	_	Offset=425-433
+2	0.25	_	Amount	_	_	0	_	_	Offset=439-446
+3	same	_	Modifier	_	_	4	Mod-Link	_	Offset=456-460
+4	microcentrifuge	_	Location	_	_	0	_	_	Offset=461-481
+
+# sent_id = s7
+# text = Transfer this 0.25 ml into the same microcentrifuge tube.
+1	keep	_	Action	_	_	0	_	_	Offset=540-544
+2	4	_	Numerical	_	_	4	Measure	_	Offset=549-550
+3	harvested	_	Modifier	_	_	4	Mod-Link	_	Offset=551-560
+4	pellet	_	Reagent	_	_	0	_	_	Offset=561-567
+
+# sent_id = s8
+# text = Depending on whether you want pseudo-replicates, you can keep the 4 harvested pellet separate or mixed.
+1	Store	_	Action	_	_	0	_	_	Offset=587-592
+2	harvested	_	Modifier	_	_	3	Mod-Link	_	Offset=597-606
+3	cells	_	Reagent	_	_	0	_	_	Offset=607-612
+4	at	_	Modifier	_	_	5	Mod-Link	_	Offset=613-624
+5	-20oC	_	Temperature	_	_	0	_	_	Offset=625-630
+
+# sent_id = s9
+# text = Store the harvested cells at or below -20oC until ready for RNA extraction.
+1	Thaw	_	Action	_	_	0	_	_	Offset=720-724
+2	samples	_	Reagent	_	_	0	_	_	Offset=725-732
+
+# sent_id = s10
+# text = Before RNA extraction, the RNALater needs to be removed.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=753-763
+2	samples	_	Reagent	_	_	0	_	_	Offset=764-771
+3	>	_	Speed	_	_	0	_	_	Offset=775-783
+4	10	_	Time	_	_	0	_	_	Offset=788-794
+5	4oC	_	Temperature	_	_	0	_	_	Offset=798-801
+
+# sent_id = s11
+# text = Thaw samples if they are frozen.
+1	spin	_	Action	_	_	0	_	_	Offset=941-945
+2	harder	_	Modifier	_	_	0	_	_	Offset=946-952
+3	longer	_	Time	_	_	0	_	_	Offset=959-970
+
+# sent_id = s12
+# text = Centrifuge samples at > 10 k g for 10 min at 4oC.
+1	Decant	_	Action	_	_	0	_	_	Offset=972-978
+2	supernatent	_	Reagent	_	_	0	_	_	Offset=979-990
+3	RNALater	_	Reagent	_	_	0	_	_	Offset=996-1004
+
+# sent_id = s13
+# text = RNALater sometimes affects the buoyancy of the cells, and make them a bit harder to pellet.
+1	Extract	_	Action	_	_	0	_	_	Offset=1006-1013
+2	RNA	_	Reagent	_	_	0	_	_	Offset=1014-1017
+3	RNeasy	_	Reagent	_	_	0	_	_	Offset=1026-1047
+4	manufacturer's	_	Method	_	_	0	_	_	Offset=1071-1099
+
+# sent_id = s14
+# text = If you find that the cells are not pelleting, spin harder for a longer time.
+1	Remove	_	Action	_	_	0	_	_	Offset=1100-1106
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1111-1114
+3	extracted	_	Reagent	_	_	0	_	_	Offset=1124-1141
+4	DNase	_	Reagent	_	_	0	_	_	Offset=1148-1153
+5	manufacturer's	_	Method	_	_	0	_	_	Offset=1173-1200
+
+# sent_id = s15
+# text = Decant supernatent with RNALater.
+1	Clean	_	Action	_	_	0	_	_	Offset=1202-1210
+2	total	_	Modifier	_	_	3	Mod-Link	_	Offset=1215-1220
+3	RNA	_	Reagent	_	_	0	_	_	Offset=1221-1224
+4	RNA	_	Reagent	_	_	0	_	_	Offset=1233-1261
+5	manufacturer's	_	Method	_	_	0	_	_	Offset=1284-1311
+
+# sent_id = s16
+# text = Extract RNA using a RNeasy Plant Mini Kit (Qiagen) following the manufacturer's instructions.
+1	Quantify	_	Action	_	_	0	_	_	Offset=1313-1321
+2	RNA	_	Reagent	_	_	0	_	_	Offset=1326-1329
+3	any	_	Method	_	_	0	_	_	Offset=1336-1356
+
+# sent_id = s17
+# text = Remove any DNA from the extracted samples using DNase (Sigma), following manufacturer's instructions.
+1	Store	_	Action	_	_	0	_	_	Offset=1382-1387
+2	RNA	_	Reagent	_	_	0	_	_	Offset=1392-1395
+3	-80oC	_	Temperature	_	_	0	_	_	Offset=1399-1404
+
+# sent_id = s18
+# text = Clean up the total RNA using a RNA Clean & Concentrator kit (Zymo), following the manufacturer's instructions.
+1	aliquot	_	Action	_	_	0	_	_	Offset=1425-1432
+

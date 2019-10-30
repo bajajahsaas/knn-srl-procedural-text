@@ -1,0 +1,65 @@
+# sent_id = s1
+# text = Cyanophage plaque purification
+1	Plate	_	Action	_	_	0	_	_	Offset=31-36
+2	cells	_	Reagent	_	_	0	_	_	Offset=37-42
+3	Plating	_	Action	_	_	0	_	_	Offset=59-66
+4	Prochlorococcus	_	Reagent	_	_	0	_	_	Offset=67-82
+5	Synechococcus	_	Reagent	_	_	0	_	_	Offset=87-108
+6	top	_	Reagent	_	_	0	_	_	Offset=112-123
+7	plaque	_	Reagent	_	_	0	_	_	Offset=128-141
+
+# sent_id = s2
+# text = Plate cells as described in Plating Prochlorococcus and Synechococcus strains in top agarose for plaque assays.
+1	plaques	_	Reagent	_	_	3	Coreference-Link	_	Offset=148-155
+2	pick	_	Action	_	_	0	_	_	Offset=174-178
+3	them	_	Mention	_	_	0	_	_	Offset=179-183
+4	“coring”	_	Method	_	_	0	_	_	Offset=194-212
+
+# sent_id = s3
+# text = When plaques begin showing up, pick them using the “coring” technique.
+1	check	_	Action	_	_	0	_	_	Offset=341-346
+2	them	_	Mention	_	_	0	_	_	Offset=347-351
+3	give	_	Action	_	_	0	_	_	Offset=353-357
+4	them	_	Mention	_	_	0	_	_	Offset=358-362
+5	quick	_	Modifier	_	_	6	Mod-Link	_	Offset=365-370
+6	LOW-SPEED	_	Speed	_	_	0	_	_	Offset=371-380
+7	vortex	_	Action	_	_	0	_	_	Offset=381-387
+8	<4	_	Speed	_	_	6	Or	_	Offset=389-391
+9	cells	_	Reagent	_	_	0	_	_	Offset=404-409
+10	off	_	Action	_	_	0	_	_	Offset=410-413
+11	bottom	_	Location	_	_	0	_	_	Offset=418-424
+12	tube	_	Location	_	_	11	Meronym	_	Offset=432-436
+13	without	_	Action	_	_	0	_	_	Offset=460-476
+14	cells	_	Reagent	_	_	0	_	_	Offset=477-482
+
+# sent_id = s4
+# text = To follow the liquid cultures, you just need to check (by eye) every couple of days to see if any of them have lysed.
+1	harvest	_	Action	_	_	0	_	_	Offset=500-507
+2	cyanophage	_	Reagent	_	_	0	_	_	Offset=513-523
+3	decant	_	Action	_	_	0	_	_	Offset=539-545
+4	tube	_	Device	_	_	0	_	_	Offset=550-554
+5	two	_	Numerical	_	_	8	Measure	_	Offset=560-563
+6	50	_	Amount	_	_	8	Measure	_	Offset=564-569
+7	orange	_	Modifier	_	_	8	Mod-Link	_	Offset=570-583
+8	tubes	_	Location	_	_	0	_	_	Offset=584-589
+
+# sent_id = s5
+# text = When you check them, give them a quick LOW-SPEED vortex (<4) to get the cells off the bottom of the tube (particularly the Syn) without spilling cells.
+1	Spin	_	Action	_	_	0	_	_	Offset=593-597
+2	Beckman	_	Device	_	_	0	_	_	Offset=605-624
+3	10K	_	Speed	_	_	0	_	_	Offset=626-629
+4	~13,800g	_	Speed	_	_	3	Or	_	Offset=631-639
+5	17°C	_	Temperature	_	_	0	_	_	Offset=642-646
+6	20	_	Time	_	_	0	_	_	Offset=648-658
+
+# sent_id = s6
+# text = When you go to “harvest” the cyanophage (after lysis), decant the tube into two 50 ml orange capped tubes.  
+1	Transfer	_	Action	_	_	0	_	_	Offset=660-668
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=673-684
+3	two	_	Numerical	_	_	8	Setting	_	Offset=690-693
+4	fresh	_	Modifier	_	_	8	Mod-Link	_	Offset=694-699
+5	pre-labeled	_	Modifier	_	_	8	Mod-Link	_	Offset=700-711
+6	acid-washed	_	Modifier	_	_	8	Mod-Link	_	Offset=712-723
+7	glass	_	Modifier	_	_	8	Mod-Link	_	Offset=724-742
+8	tubes	_	Device	_	_	0	_	_	Offset=743-748
+

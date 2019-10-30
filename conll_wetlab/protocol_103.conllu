@@ -1,0 +1,367 @@
+# sent_id = s1
+# text = Isolation Of Total DNA From NC64A Chlorella
+1	Inoculate	_	Action	_	_	0	_	_	Offset=44-53
+2	500	_	Size	_	_	3	Measure	_	Offset=54-60
+3	flasks	_	Location	_	_	0	_	_	Offset=61-67
+4	NC64A	_	Reagent	_	_	0	_	_	Offset=73-88
+5	360	_	Amount	_	_	4	Measure	_	Offset=112-118
+6	1.2	_	Concentration	_	_	4	Measure	7:Measure	Offset=131-149
+7	MBBM	_	Reagent	_	_	0	_	_	Offset=153-157
+
+# sent_id = s2
+# text = Inoculate 500 mL flasks with NC64A chlorella, each flask to contain 360 mL of cells at 1.2 X 106 cells/mL in MBBM.
+1	Incubate	_	Action	_	_	0	_	_	Offset=159-167
+2	flasks	_	Location	_	_	0	_	_	Offset=172-178
+3	25°C	_	Temperature	_	_	0	_	_	Offset=182-186
+4	72	_	Time	_	_	0	_	_	Offset=191-199
+5	continuous	_	Method	_	_	0	_	_	Offset=206-222
+6	shaking	_	Method	_	_	0	_	_	Offset=227-234
+
+# sent_id = s3
+# text = Incubate the flasks at 25°C for 72 hours, with continuous light and shaking.
+1	Count	_	Action	_	_	0	_	_	Offset=236-241
+2	cells	_	Reagent	_	_	0	_	_	Offset=246-251
+
+# sent_id = s4
+# text = Count the cells.
+1	Concentrate	_	Action	_	_	0	_	_	Offset=253-264
+2	aliquots	_	Reagent	_	_	0	_	_	Offset=265-273
+3	NC64A	_	Reagent	_	_	0	_	_	Offset=277-292
+4	6.0	_	Amount	_	_	2	Measure	_	Offset=318-333
+
+# sent_id = s5
+# text = Concentrate aliquots of NC64A chlorella, each aliquot to contain 6.0 X 109 cells.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=445-455
+2	samples	_	Reagent	_	_	0	_	_	Offset=460-467
+3	Sorvall	_	Device	_	_	0	_	_	Offset=475-492
+4	5,000	_	Speed	_	_	0	_	_	Offset=496-505
+5	5	_	Time	_	_	0	_	_	Offset=507-512
+6	4°C	_	Temperature	_	_	0	_	_	Offset=514-517
+
+# sent_id = s6
+# text = If the cells are to be infected with virus, infection should be at an moi (multiplicity of infection) of 3-5.
+1	Wash	_	Action	_	_	0	_	_	Offset=540-544
+2	cells	_	Reagent	_	_	0	_	_	Offset=549-554
+3	1X	_	Numerical	_	_	0	_	_	Offset=555-557
+4	sterile	_	Reagent	_	_	0	_	_	Offset=563-576
+5	Sorvall	_	Device	_	_	0	_	_	Offset=584-602
+6	5,000	_	Speed	_	_	0	_	_	Offset=606-615
+7	5	_	Time	_	_	0	_	_	Offset=617-622
+8	4°C	_	Temperature	_	_	0	_	_	Offset=624-627
+
+# sent_id = s7
+# text = Centrifuge the samples in the Sorvall GSA rotor at 5,000 rpm, 5 min, 4°C to harvest the cells.
+1	Quick	_	Action	_	_	0	_	_	Offset=629-641
+2	cells	_	Reagent	_	_	0	_	_	Offset=646-659
+3	liquid	_	Reagent	_	_	0	_	_	Offset=665-674
+4	store	_	Action	_	_	0	_	_	Offset=679-684
+5	frozen	_	Reagent	_	_	0	_	_	Offset=689-703
+6	-80°C	_	Temperature	_	_	0	_	_	Offset=707-712
+
+# sent_id = s8
+# text = Wash the cells 1X with sterile d-H2O in the Sorvall HB-4 rotor at 5,000 rpm, 5 min, 4°C.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=741-750
+2	frozen	_	Reagent	_	_	0	_	_	Offset=756-769
+3	5.0	_	Amount	_	_	5	Measure	_	Offset=775-781
+4	50	_	Concentration	_	_	5	Measure	_	Offset=785-790
+5	NaHPO4	_	Reagent	_	_	0	_	_	Offset=791-797
+6	pH	_	Measure-Type	_	_	7	Of-Type	_	Offset=799-801
+7	7.4	_	Numerical	_	_	5	Measure	_	Offset=802-805
+8	2.0	_	Concentration	_	_	9	Measure	_	Offset=807-812
+9	NaCl	_	Reagent	_	_	5	Meronym	_	Offset=813-817
+
+# sent_id = s9
+# text = Quick freeze the cells pellets with liquid N2 and store the frozen pellets at -80°C until ready for processing.
+1	Heat	_	Action	_	_	0	_	_	Offset=819-823
+2	samples	_	Reagent	_	_	0	_	_	Offset=828-835
+3	65°C	_	Temperature	_	_	0	_	_	Offset=839-843
+4	30	_	Time	_	_	0	_	_	Offset=848-854
+
+# sent_id = s10
+# text = Resuspend each frozen sample with 5.0 mL of 50 mM NaHPO4, pH 7.4, 2.0 M NaCl.
+1	Break	_	Action	_	_	0	_	_	Offset=901-906
+2	samples	_	Reagent	_	_	0	_	_	Offset=911-918
+3	30	_	Time	_	_	0	_	_	Offset=948-954
+4	CO2	_	Method	_	_	0	_	_	Offset=960-971
+
+# sent_id = s11
+# text = Heat the samples at 65°C for 30 min (leave in the MSK flasks during the heating).
+1	Recover	_	Action	_	_	0	_	_	Offset=973-980
+2	homogenates	_	Reagent	_	_	0	_	_	Offset=985-996
+3	1031	_	Location	_	_	0	_	_	Offset=1000-1005;1013
+
+# sent_id = s12
+# text = Break the samples a second time in the MSK for 30 sec with CO2 cooling.
+1	Remove	_	Action	_	_	0	_	_	Offset=1034-1040
+2	0.3	_	Amount	_	_	3	Measure	_	Offset=1043-1049
+3	aliquot	_	Reagent	_	_	0	_	_	Offset=1050-1057
+4	sample	_	Reagent	_	_	0	_	_	Offset=1068-1074
+5	microfuge	_	Location	_	_	0	_	_	Offset=1078-1093
+6	determination	_	Action	_	_	0	_	_	Offset=1098-1111
+7	DNA	_	Reagent	_	_	0	_	_	Offset=1131-1134
+8	concentration	_	Generic-Measure	_	_	7	Measure	_	Offset=1135-1148
+9	fluorometric	_	Method	_	_	0	_	_	Offset=1174-1196
+
+# sent_id = s13
+# text = Recover the homogenates to clean tubes (SS34 plastic tubes).
+1	Treat	_	Action	_	_	0	_	_	Offset=1199-1204
+2	sample	_	Reagent	_	_	0	_	_	Offset=1210-1216
+3	500	_	Amount	_	_	4	Measure	_	Offset=1222-1228
+4	proteinase	_	Reagent	_	_	0	_	_	Offset=1232-1244
+5	60	_	Time	_	_	0	_	_	Offset=1249-1255
+6	37°C	_	Temperature	_	_	0	_	_	Offset=1259-1263
+
+# sent_id = s14
+# text = Remove a 0.3 mL aliquot from each sample to microfuge tubes for determination of the 			original DNA concentration for each sample (use the fluorometric procedure).
+1	Heat	_	Action	_	_	0	_	_	Offset=1285-1289
+2	samples	_	Reagent	_	_	0	_	_	Offset=1294-1301
+3	65°C	_	Temperature	_	_	0	_	_	Offset=1305-1309
+4	5	_	Time	_	_	0	_	_	Offset=1314-1319
+
+# sent_id = s15
+# text = Treat each sample with 500 µL of proteinase K for 60 min at 37°C (add 200 µL/sample).
+1	Add	_	Action	_	_	0	_	_	Offset=1321-1324
+2	20%	_	Concentration	_	_	3	Measure	_	Offset=1325-1328
+3	SDS	_	Reagent	_	_	0	_	_	Offset=1329-1332
+4	sample	_	Reagent	_	_	0	_	_	Offset=1341-1347
+5	1%	_	Concentration	_	_	4	Measure	_	Offset=1376-1378
+6	500	_	Amount	_	_	3	Measure	_	Offset=1384-1390
+
+# sent_id = s16
+# text = Heat the samples at 65°C for 5 min.
+1	Add	_	Action	_	_	0	_	_	Offset=1400-1403
+2	2.7	_	Amount	_	_	4	Measure	_	Offset=1404-1410
+3	5	_	Concentration	_	_	4	Measure	_	Offset=1414-1417
+4	KOAc	_	Reagent	_	_	0	_	_	Offset=1418-1422
+5	sample	_	Reagent	_	_	0	_	_	Offset=1431-1437
+6	mix	_	Action	_	_	0	_	_	Offset=1439-1442
+
+# sent_id = s17
+# text = Add 20% SDS to each sample to a final concentration of 1% (add 500 µL/sample).
+1	Incubate	_	Action	_	_	0	_	_	Offset=1480-1488
+2	samples	_	Reagent	_	_	0	_	_	Offset=1493-1500
+3	cold	_	Temperature	_	_	0	_	_	Offset=1508-1517
+4	30	_	Time	_	_	0	_	_	Offset=1522-1528
+
+# sent_id = s18
+# text = Add 2.7 mL of 5 M KOAc to each sample, mix well (a final concentration of 1 M).
+1	Treat	_	Action	_	_	0	_	_	Offset=1530-1535
+2	samples	_	Reagent	_	_	0	_	_	Offset=1540-1547
+3	RNAse	_	Reagent	_	_	0	_	_	Offset=1553-1558
+4	200	_	Concentration	_	_	3	Measure	_	Offset=1562-1571
+5	2	_	Time	_	_	0	_	_	Offset=1576-1583
+6	37°C	_	Temperature	_	_	0	_	_	Offset=1587-1591
+7	200	_	Amount	_	_	3	Measure	_	Offset=1597-1603
+
+# sent_id = s19
+# text = Incubate the samples in the cold room for 30 min.
+1	samples	_	Reagent	_	_	0	_	_	Offset=1641-1648
+2	adding	_	Action	_	_	0	_	_	Offset=1652-1658
+3	100%	_	Concentration	_	_	4	Measure	_	Offset=1673-1677
+4	EtOH	_	Reagent	_	_	0	_	_	Offset=1678-1682
+5	30	_	Amount	_	_	4	Measure	_	Offset=1698-1703
+
+# sent_id = s20
+# text = Treat the samples with RNAse at 200 µg/mL for 2 hours at 37°C (add 200 µL/sample).
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1713-1723
+2	tubes	_	Location	_	_	0	_	_	Offset=1728-1733
+3	Sorvall	_	Device	_	_	0	_	_	Offset=1741-1759
+4	10,000	_	Speed	_	_	0	_	_	Offset=1763-1773
+5	15	_	Time	_	_	0	_	_	Offset=1775-1781
+6	4°C	_	Temperature	_	_	0	_	_	Offset=1783-1786
+
+# sent_id = s21
+# text = Precipitate the DNAs in the samples by adding 2X volumes of 100% EtOH (approximately 30 mL/sample).
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1788-1797
+2	sample	_	Reagent	_	_	0	_	_	Offset=1807-1813
+3	3.5	_	Amount	_	_	5	Measure	_	Offset=1819-1825
+4	50	_	Concentration	_	_	5	Measure	_	Offset=1829-1834
+5	Tris-HCl	_	Reagent	_	_	0	_	_	Offset=1835-1843
+6	pH	_	Measure-Type	_	_	7	Of-Type	_	Offset=1845-1847
+7	8.0	_	Numerical	_	_	5	Measure	_	Offset=1848-1851
+8	10	_	Concentration	_	_	9	Measure	_	Offset=1853-1858
+9	EDTA	_	Reagent	_	_	5	Meronym	_	Offset=1859-1863
+
+# sent_id = s22
+# text = Centrifuge the tubes in the Sorvall HB-4 rotor at 10,000 rpm, 15 min, 4°C.
+1	Dialyze	_	Action	_	_	0	_	_	Offset=1865-1872
+2	samples	_	Reagent	_	_	0	_	_	Offset=1877-1884
+3	overnight	_	Time	_	_	0	_	_	Offset=1885-1894
+4	4°C	_	Temperature	_	_	0	_	_	Offset=1898-1901
+5	several	_	Generic-Measure	_	_	0	_	_	Offset=1910-1917
+6	changes	_	Action	_	_	0	_	_	Offset=1918-1925
+7	50	_	Concentration	_	_	8	Measure	_	Offset=1929-1934
+8	Tris-HCl	_	Reagent	_	_	0	_	_	Offset=1935-1943
+9	pH	_	Measure-Type	_	_	10	Of-Type	_	Offset=1945-1947
+10	8.0	_	Numerical	_	_	8	Measure	_	Offset=1948-1951
+11	10	_	Concentration	_	_	12	Measure	_	Offset=1953-1958
+12	EDTA	_	Reagent	_	_	8	Meronym	_	Offset=1959-1963
+
+# sent_id = s23
+# text = Resuspend each DNA sample with 3.5 mL of 50 mM Tris-HCl, pH 8.0, 10 mM EDTA.
+1	Add	_	Action	_	_	0	_	_	Offset=1965-1968
+2	375	_	Amount	_	_	4	Measure	_	Offset=1969-1975
+3	3	_	Concentration	_	_	4	Measure	_	Offset=1979-1982
+4	NaOAc	_	Reagent	_	_	0	_	_	Offset=1983-1988
+5	sample	_	Reagent	_	_	0	_	_	Offset=1997-2003
+
+# sent_id = s24
+# text = Dialyze the samples overnight at 4°C against several changes of 50 mM Tris-HCl, pH 8.0, 10 mM EDTA.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2005-2015
+2	samples	_	Reagent	_	_	0	_	_	Offset=2020-2027
+3	Sorvall	_	Device	_	_	0	_	_	Offset=2035-2053
+4	10,000	_	Speed	_	_	0	_	_	Offset=2057-2067
+5	20	_	Time	_	_	0	_	_	Offset=2069-2076
+6	4°C	_	Temperature	_	_	0	_	_	Offset=2077-2080
+
+# sent_id = s25
+# text = Add 375 µL of 3 M NaOAc to each sample.
+1	Wash	_	Action	_	_	0	_	_	Offset=2082-2086
+2	DNA	_	Reagent	_	_	0	_	_	Offset=2091-2102
+3	1X	_	Numerical	_	_	0	_	_	Offset=2103-2105
+4	10	_	Amount	_	_	6	Measure	_	Offset=2111-2116
+5	70%	_	Concentration	_	_	6	Measure	_	Offset=2120-2123
+6	EtOH	_	Reagent	_	_	0	_	_	Offset=2124-2128
+7	Sorvall	_	Device	_	_	0	_	_	Offset=2136-2154
+8	10,000	_	Speed	_	_	0	_	_	Offset=2158-2168
+9	5	_	Time	_	_	0	_	_	Offset=2170-2175
+10	4°C	_	Temperature	_	_	0	_	_	Offset=2177-2180
+
+# sent_id = s26
+# text = Centrifuge the samples in the Sorvall SS34 rotor at 10,000 rpm, 20 min, 4°C.
+1	Dry	_	Action	_	_	0	_	_	Offset=2182-2185
+2	pellets	_	Reagent	_	_	0	_	_	Offset=2190-2197
+3	10-15	_	Time	_	_	0	_	_	Offset=2207-2216
+4	vacuum	_	Device	_	_	0	_	_	Offset=2225-2242
+
+# sent_id = s27
+# text = Wash the DNA pellets 1X with 10 mL of 70% EtOH in the Sorvall SS34 rotor at 10,000 rpm, 5 min, 4°C.
+1	Determine	_	Action	_	_	0	_	_	Offset=2263-2272
+2	concentration	_	Generic-Measure	_	_	3	Measure	_	Offset=2281-2294
+3	samples	_	Reagent	_	_	0	_	_	Offset=2302-2309
+4	fluorometric	_	Method	_	_	0	_	_	Offset=2320-2342
+
+# sent_id = s28
+# text = Dry the pellets briefly (10-15 min) in the vacuum desiccator to remove the EtOH.
+1	Run	_	Action	_	_	0	_	_	Offset=2344-2347
+2	CsCl	_	Method	_	_	0	_	_	Offset=2348-2362
+
+# sent_id = s29
+# text = Determine the DNA concentration of the samples using the fluorometric procedure.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2364-2374
+2	cells	_	Reagent	_	_	0	_	_	Offset=2398-2403
+3	Sorvall	_	Device	_	_	0	_	_	Offset=2428-2445
+4	5,000	_	Speed	_	_	0	_	_	Offset=2449-2458
+5	5	_	Time	_	_	0	_	_	Offset=2460-2465
+6	4°C	_	Temperature	_	_	0	_	_	Offset=2467-2470
+
+# sent_id = s30
+# text = Run CsCl gradients.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=2472-2481
+2	aliquot	_	Reagent	_	_	0	_	_	Offset=2487-2494
+3	160	_	Amount	_	_	4	Measure	_	Offset=2500-2506
+4	fresh	_	Reagent	_	_	0	_	_	Offset=2510-2520
+
+# sent_id = s31
+# text = Centrifuge the required volume of cells for each aliquot in the Sorvall GSA rotor at 5,000 rpm, 5 min, 4°C.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2522-2530
+2	flasks	_	Location	_	_	0	_	_	Offset=2535-2541
+3	45-60	_	Time	_	_	0	_	_	Offset=2546-2555
+4	25°C	_	Temperature	_	_	0	_	_	Offset=2559-2563
+
+# sent_id = s32
+# text = Resuspend each aliquot with 160 mL of fresh MBBM.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2609-2617
+2	flasks	_	Location	_	_	0	_	_	Offset=2622-2628
+3	2659	_	Time	_	_	0	_	_	Offset=2637-2644;2655
+4	25°C	_	Temperature	_	_	0	_	_	Offset=2663-2667
+5	continuous	_	Method	_	_	0	_	_	Offset=2673-2689
+6	shaking	_	Method	_	_	0	_	_	Offset=2694-2701
+
+# sent_id = s33
+# text = Incubate the flasks for 45-60 min at 25°C for the cells to acclimate to the new media.
+1	Discard	_	Action	_	_	0	_	_	Offset=2703-2710
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=2715-2727
+
+# sent_id = s34
+# text = Incubate the flasks for the desired length of time at 25°C with continuous light and shaking.
+1	Break	_	Action	_	_	0	_	_	Offset=2729-2734
+2	cells	_	Reagent	_	_	0	_	_	Offset=2739-2744
+3	MSK	_	Device	_	_	0	_	_	Offset=2752-2778
+4	5.0	_	Amount	_	_	6	Measure	_	Offset=2784-2790
+5	0.3	_	Size	_	_	6	Measure	_	Offset=2794-2800
+6	glass	_	Reagent	_	_	0	_	_	Offset=2801-2812
+7	60	_	Time	_	_	0	_	_	Offset=2817-2823
+8	CO2	_	Method	_	_	0	_	_	Offset=2830-2841
+
+# sent_id = s35
+# text = Discard the supernatants.
+1	Wash	_	Action	_	_	0	_	_	Offset=2843-2847
+2	glass	_	Reagent	_	_	0	_	_	Offset=2852-2863
+3	50	_	Concentration	_	_	4	Measure	_	Offset=2869-2874
+4	NaHPO4	_	Reagent	_	_	0	_	_	Offset=2875-2881
+5	pH	_	Measure-Type	_	_	6	Of-Type	_	Offset=2883-2885
+6	7.4	_	Numerical	_	_	4	Measure	_	Offset=2886-2889
+7	2.0	_	Concentration	_	_	8	Measure	_	Offset=2891-2896
+8	NaCl	_	Reagent	_	_	4	Meronym	_	Offset=2897-2901
+
+# sent_id = s36
+# text = Break the cells in the MSK mechanical homogenizer with 5.0 gm of 0.3 mm glass beads for 60 sec, with CO2 cooling.
+1	Add	_	Action	_	_	0	_	_	Offset=2903-2906
+2	washes	_	Reagent	_	_	0	_	_	Offset=2911-2917
+3	homogenates	_	Reagent	_	_	0	_	_	Offset=2925-2936
+
+# sent_id = s37
+# text = Wash the glass beads with 50 mM NaHPO4, pH 7.4, 2.0 M NaCl.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2938-2948
+2	sample	_	Reagent	_	_	0	_	_	Offset=2953-2959
+3	Sorvall	_	Device	_	_	0	_	_	Offset=2967-2985
+4	14,000	_	Speed	_	_	0	_	_	Offset=2989-2999
+5	20	_	Time	_	_	0	_	_	Offset=3001-3007
+6	4°C	_	Temperature	_	_	0	_	_	Offset=3009-3012
+
+# sent_id = s38
+# text = Add the washes to the homogenates.
+1	Decant	_	Action	_	_	0	_	_	Offset=3014-3020
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=3025-3037
+3	clean	_	Location	_	_	0	_	_	Offset=3041-3052
+
+# sent_id = s39
+# text = Centrifuge the sample in the Sorvall SS34 rotor at 14,000 rpm, 20 min, 4°C.
+1	Store	_	Action	_	_	0	_	_	Offset=3054-3059
+2	-20°C	_	Temperature	_	_	0	_	_	Offset=3063-3068
+3	2-3	_	Time	_	_	0	_	_	Offset=3073-3082
+
+# sent_id = s40
+# text = Decant the supernatants to clean tubes.
+1	Discard	_	Action	_	_	0	_	_	Offset=3084-3091
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=3096-3108
+
+# sent_id = s41
+# text = Store at -20°C for 2-3 hours.
+1	adding	_	Action	_	_	0	_	_	Offset=3134-3140
+2	equal	_	Generic-Measure	_	_	3	Measure	_	Offset=3144-3156
+3	isopropanol	_	Reagent	_	_	0	_	_	Offset=3160-3171
+4	tube	_	Location	_	_	0	_	_	Offset=3180-3184
+
+# sent_id = s42
+# text = Discard the supernatants.
+1	Mix	_	Action	_	_	0	_	_	Offset=3186-3189
+2	well	_	Modifier	_	_	0	_	_	Offset=3190-3194
+3	hold	_	Action	_	_	0	_	_	Offset=3199-3203
+4	room	_	Temperature	_	_	0	_	_	Offset=3207-3223
+5	30	_	Time	_	_	0	_	_	Offset=3228-3234
+
+# sent_id = s43
+# text = Precipitate the DNAs by adding an equal volume of isopropanol to each tube.
+1	Discard	_	Action	_	_	0	_	_	Offset=3236-3243
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=3248-3260
+
+# sent_id = s44
+# text = Mix well and hold at room temperature for 30 min.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=3262-3271
+2	pellets	_	Reagent	_	_	0	_	_	Offset=3276-3283
+3	2.0	_	Amount	_	_	5	Measure	_	Offset=3289-3295
+4	1X	_	Concentration	_	_	5	Measure	_	Offset=3299-3301
+5	TE	_	Reagent	_	_	0	_	_	Offset=3302-3311
+

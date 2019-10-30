@@ -1,0 +1,50 @@
+# sent_id = s1
+# text = How to make a 1M DTT Stock Solution
+1	Weigh	_	Action	_	_	0	_	_	Offset=36-41
+2	1.54	_	Amount	_	_	3	Measure	_	Offset=42-48
+3	Dithiothreitol	_	Reagent	_	_	0	_	_	Offset=52-72
+
+# sent_id = s2
+# text = Weigh 1.54 g of Dithiothreitol (DTT). 
+1	Add	_	Action	_	_	0	_	_	Offset=75-78
+2	10	_	Amount	_	_	3	Measure	_	Offset=79-84
+3	sterile	_	Reagent	_	_	0	_	_	Offset=88-100
+
+# sent_id = s3
+# text = Add 10 ml of sterile dH2O.
+1	Dissolve	_	Action	_	_	0	_	_	Offset=102-110
+2	completely	_	Modifier	_	_	0	_	_	Offset=111-121
+
+# sent_id = s4
+# text = Dissolve completely.
+1	Prewet	_	Action	_	_	0	_	_	Offset=123-129
+2	0.2	_	Size	_	_	3	Measure	_	Offset=132-138
+3	syringe	_	Device	_	_	0	_	_	Offset=139-153
+4	drawing	_	Action	_	_	0	_	_	Offset=157-172
+5	5-10	_	Amount	_	_	6	Measure	_	Offset=173-180
+6	sterile	_	Reagent	_	_	0	_	_	Offset=184-195
+7	discard	_	Action	_	_	0	_	_	Offset=200-207
+8	water	_	Reagent	_	_	0	_	_	Offset=208-213
+
+# sent_id = s5
+# text = Prewet a 0.2 µm syringe filter by drawing through 5-10 ml of sterile H2O and discard water.
+1	Sterilize	_	Action	_	_	0	_	_	Offset=215-224
+2	DTT	_	Reagent	_	_	0	_	_	Offset=225-234
+3	prepared	_	Modifier	_	_	5	Mod-Link	_	Offset=247-255
+4	0.2	_	Size	_	_	5	Measure	_	Offset=256-262
+5	syringe	_	Device	_	_	0	_	_	Offset=263-277
+
+# sent_id = s6
+# text = Sterilize DTT Stock through the prepared 0.2 µm syringe filter.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=279-286
+2	2	_	Size	_	_	3	Measure	_	Offset=292-296
+3	tubes	_	Location	_	_	0	_	_	Offset=297-302
+4	store	_	Action	_	_	0	_	_	Offset=307-312
+5	-20°C	_	Temperature	_	_	0	_	_	Offset=316-321
+
+# sent_id = s7
+# text = Aliquot into 2 ml tubes and store at -20°C.
+1	Stocks	_	Reagent	_	_	0	_	_	Offset=323-329
+2	kept	_	Action	_	_	0	_	_	Offset=337-341
+3	1	_	Time	_	_	0	_	_	Offset=346-352
+

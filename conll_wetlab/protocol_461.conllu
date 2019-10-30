@@ -1,0 +1,105 @@
+# sent_id = s1
+# text = Antibody Purification (small scale)
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=36-46
+2	anti-sera	_	Reagent	_	_	0	_	_	Offset=47-56
+3	4ºC	_	Temperature	_	_	0	_	_	Offset=59-62
+4	14,000g	_	Speed	_	_	0	_	_	Offset=64-71
+5	10min	_	Temperature	_	_	0	_	_	Offset=73-78
+
+# sent_id = s2
+# text = Centrifuge anti-sera @ 4ºC, 14,000g, 10min.
+1	Filter	_	Action	_	_	0	_	_	Offset=91-97
+2	0.2um	_	Size	_	_	3	Measure	_	Offset=106-111
+3	filter	_	Device	_	_	0	_	_	Offset=112-118
+
+# sent_id = s3
+# text = (Optional) Filter through 0.2um filter.
+1	Apply	_	Action	_	_	0	_	_	Offset=120-125
+2	protein	_	Reagent	_	_	0	_	_	Offset=126-135
+3	protein	_	Reagent	_	_	2	Or	_	Offset=139-148
+4	gently	_	Modifier	_	_	0	_	_	Offset=155-161
+5	Bio-Rad	_	Location	_	_	0	_	_	Offset=165-193
+
+# sent_id = s4
+# text = Apply protein A or protein G beads gently to Bio-Rad empty gravity column.
+1	Set	_	Action	_	_	0	_	_	Offset=195-201
+2	column	_	Location	_	_	0	_	_	Offset=206-212
+3	vacuum	_	Device	_	_	0	_	_	Offset=218-233
+
+# sent_id = s5
+# text = Set up the column on a vacuum manifold.
+1	Equilibrate	_	Action	_	_	0	_	_	Offset=235-246
+2	column	_	Location	_	_	0	_	_	Offset=247-253
+3	10	_	Amount	_	_	5	Measure	_	Offset=259-269
+4	ice	_	Modifier	_	_	5	Mod-Link	_	Offset=273-281
+5	Binding	_	Reagent	_	_	0	_	_	Offset=282-296
+
+# sent_id = s6
+# text = Equilibrate column with 10 volumes of ice cold Binding Buffer.
+1	Dilute	_	Action	_	_	0	_	_	Offset=298-304
+2	anti-sera	_	Reagent	_	_	0	_	_	Offset=305-314
+3	2	_	Amount	_	_	4	Measure	_	Offset=320-329
+4	Binding	_	Reagent	_	_	0	_	_	Offset=333-347
+
+# sent_id = s7
+# text = Dilute anti-sera with 2 volumes of Binding Buffer.
+1	diluted	_	Modifier	_	_	2	Mod-Link	_	Offset=353-360
+2	anti-sera	_	Reagent	_	_	0	_	_	Offset=361-370
+3	go	_	Action	_	_	0	_	_	Offset=371-381
+4	column	_	Location	_	_	0	_	_	Offset=386-392
+5	gravity	_	Method	_	_	0	_	_	Offset=396-403
+
+# sent_id = s8
+# text = Let diluted anti-sera go through the column by gravity.
+1	Collect	_	Action	_	_	0	_	_	Offset=405-412
+2	flow	_	Reagent	_	_	0	_	_	Offset=413-425
+3	repeat	_	Action	_	_	0	_	_	Offset=430-436
+4	step	_	Method	_	_	0	_	_	Offset=437-443
+5	once	_	Numerical	_	_	0	_	_	Offset=444-448
+
+# sent_id = s9
+# text = Collect flow through and repeat step 6 once.
+1	Wash	_	Action	_	_	0	_	_	Offset=450-454
+2	column	_	Location	_	_	0	_	_	Offset=455-461
+3	10	_	Amount	_	_	5	Measure	_	Offset=467-481
+4	ice-cold	_	Modifier	_	_	5	Mod-Link	_	Offset=485-493
+5	Binding	_	Reagent	_	_	0	_	_	Offset=494-508
+
+# sent_id = s10
+# text = Wash column with 10 bed volumes of ice-cold Binding Buffer.
+1	Elute	_	Action	_	_	0	_	_	Offset=510-515
+2	antibody	_	Reagent	_	_	0	_	_	Offset=516-524
+3	5	_	Amount	_	_	5	Measure	_	Offset=530-543
+4	room	_	Temperature	_	_	0	_	_	Offset=547-563
+5	Elution	_	Reagent	_	_	0	_	_	Offset=564-579
+
+# sent_id = s11
+# text = Elute antibody with 5 bed volumes of room temperature Elution Buffer.
+1	Fill	_	Action	_	_	0	_	_	Offset=580-587
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=588-592
+3	collecting	_	Location	_	_	0	_	_	Offset=593-608
+4	200	_	Amount	_	_	6	Measure	_	Offset=614-620
+5	1M	_	Concentration	_	_	6	Measure	_	Offset=621-623
+6	Tris-HCl	_	Reagent	_	_	0	_	_	Offset=624-632
+
+# sent_id = s12
+# text = Fill up each collecting tube with 200 μl 1M Tris-HCl (PH9.0).
+1	Collect	_	Action	_	_	0	_	_	Offset=642-649
+2	1ml	_	Amount	_	_	3	Measure	_	Offset=650-653
+3	flow	_	Reagent	_	_	0	_	_	Offset=657-669
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=673-677
+5	collecting	_	Location	_	_	0	_	_	Offset=678-693
+
+# sent_id = s13
+# text = Collect 1ml of flow through in each collecting tube.
+1	Re-equilibrate	_	Action	_	_	0	_	_	Offset=728-742
+2	column	_	Location	_	_	0	_	_	Offset=743-749
+3	10	_	Amount	_	_	4	Measure	_	Offset=755-769
+4	Binding	_	Reagent	_	_	0	_	_	Offset=773-787
+
+# sent_id = s14
+# text = Save for antibody activity test.
+1	Store	_	Action	_	_	0	_	_	Offset=789-794
+2	Column	_	Location	_	_	0	_	_	Offset=795-801
+3	refrigerator	_	Device	_	_	0	_	_	Offset=805-817
+

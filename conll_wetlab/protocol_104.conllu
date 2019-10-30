@@ -1,0 +1,103 @@
+# sent_id = s1
+# text = Immunofluorescent Staining of Whole Blood
+1	Add	_	Action	_	_	0	_	_	Offset=42-45
+2	primary	_	Reagent	_	_	0	_	_	Offset=144-162
+3	100	_	Amount	_	_	4	Measure	_	Offset=166-172
+4	anti-coagulated	_	Reagent	_	_	0	_	_	Offset=176-203
+
+# sent_id = s2
+# text = Add predetermined optimum concentrations of desired fluorochrome conjugated, biotinylated, orpurified primary antibodies to 100 μl of anti-coagulated whole blood.
+1	Incubate	_	Action	_	_	0	_	_	Offset=205-213
+2	room	_	Temperature	_	_	0	_	_	Offset=217-233
+3	15-20	_	Time	_	_	0	_	_	Offset=238-251
+4	dark	_	Method	_	_	0	_	_	Offset=259-263
+
+# sent_id = s3
+# text = Incubate at room temperature for 15-20 minutes in the dark.
+1	Dilute	_	Action	_	_	0	_	_	Offset=265-271
+2	10X	_	Concentration	_	_	3	Measure	_	Offset=272-275
+3	Red	_	Reagent	_	_	0	_	_	Offset=276-309
+
+# sent_id = s4
+# text = Dilute 10X Red Blood Cell (RBC) Lysis Buffer (BioLegend Cat.
+1	1X	_	Concentration	_	_	0	_	_	Offset=341-343
+2	DI	_	Reagent	_	_	0	_	_	Offset=370-378
+
+# sent_id = s5
+# text = No.
+1	Warm	_	Action	_	_	0	_	_	Offset=380-384
+2	room	_	Temperature	_	_	0	_	_	Offset=388-404
+
+# sent_id = s6
+# text = 420301) to 1X working concentrationwith DI water.
+1	Add	_	Action	_	_	0	_	_	Offset=419-422
+2	2	_	Amount	_	_	4	Measure	_	Offset=423-427
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=431-433
+4	RBC	_	Reagent	_	_	0	_	_	Offset=434-452
+5	wholeblood/antibody	_	Reagent	_	_	0	_	_	Offset=456-483
+
+# sent_id = s7
+# text = Warm to room temperature prior to use.
+1	Incubate	_	Action	_	_	0	_	_	Offset=485-493
+2	room	_	Temperature	_	_	0	_	_	Offset=497-513
+3	10	_	Time	_	_	0	_	_	Offset=518-528
+
+# sent_id = s8
+# text = Add 2 ml of 1X RBC lysis solution to wholeblood/antibody mixture.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=530-540
+2	350	_	Speed	_	_	0	_	_	Offset=544-551
+3	5	_	Time	_	_	0	_	_	Offset=556-565
+4	discard	_	Action	_	_	0	_	_	Offset=567-574
+5	supernatant	_	Reagent	_	_	0	_	_	Offset=579-590
+
+# sent_id = s9
+# text = Incubate at room temperature for 10 minutes.
+1	Wash	_	Action	_	_	0	_	_	Offset=592-596
+2	1X	_	Numerical	_	_	0	_	_	Offset=597-599
+3	at	_	Modifier	_	_	4	Mod-Link	_	Offset=605-613
+4	2	_	Amount	_	_	5	Measure	_	Offset=614-618
+5	Cell	_	Reagent	_	_	0	_	_	Offset=622-642
+6	centrifugation	_	Action	_	_	0	_	_	Offset=646-660
+7	350	_	Speed	_	_	0	_	_	Offset=664-671
+8	5	_	Time	_	_	0	_	_	Offset=676-685
+
+# sent_id = s10
+# text = Centrifuge at 350 X g for 5 minutes, discard the supernatant.
+1	resuspend	_	Action	_	_	0	_	_	Offset=725-734
+2	pellet	_	Reagent	_	_	0	_	_	Offset=735-741
+3	residual	_	Reagent	_	_	0	_	_	Offset=745-760
+4	add	_	Action	_	_	0	_	_	Offset=765-768
+5	secondary	_	Reagent	_	_	0	_	_	Offset=869-887
+
+# sent_id = s11
+# text = Wash 1X with at least 2 ml of Cell Staining Buffer by centrifugation at 350 x g for 5 minutes.
+1	incubate	_	Action	_	_	0	_	_	Offset=917-925
+2	dark	_	Method	_	_	0	_	_	Offset=933-937
+3	15-20	_	Time	_	_	0	_	_	Offset=942-955
+
+# sent_id = s12
+# text = If using a purified primary antibody, resuspend pellet in residual buffer and add a previously determinedoptimum concentration of anti-species immunoglobulin fluorochrome conjugated secondary antibody(e.g.
+1	Wash	_	Action	_	_	0	_	_	Offset=957-961
+2	1X	_	Numerical	_	_	0	_	_	Offset=962-964
+3	at	_	Modifier	_	_	4	Mod-Link	_	Offset=970-978
+4	2	_	Amount	_	_	5	Measure	_	Offset=979-983
+5	Cell	_	Reagent	_	_	0	_	_	Offset=987-1007
+6	centrifugation	_	Action	_	_	0	_	_	Offset=1011-1025
+7	350	_	Speed	_	_	0	_	_	Offset=1029-1036
+8	5	_	Time	_	_	0	_	_	Offset=1041-1050
+
+# sent_id = s13
+# text = FITC anti-mouse Ig) and incubate in the dark for 15-20 minutes.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1052-1061
+2	cells	_	Reagent	_	_	0	_	_	Offset=1062-1067
+3	0.5	_	Amount	_	_	4	Measure	_	Offset=1071-1077
+4	Cell	_	Reagent	_	_	0	_	_	Offset=1078-1098
+5	0.5	_	Amount	_	_	7	Measure	_	Offset=1102-1108
+6	2%	_	Concentration	_	_	7	Measure	_	Offset=1109-1111
+7	paraformaldehyde-PBS	_	Reagent	_	_	4	Or	_	Offset=1112-1148
+
+# sent_id = s14
+# text = Wash 1X with at least 2 ml of Cell Staining Buffer by centrifugation at 350 x g for 5 minutes.
+1	Analyze	_	Action	_	_	0	_	_	Offset=1150-1157
+2	Flow	_	Device	_	_	0	_	_	Offset=1165-1179
+

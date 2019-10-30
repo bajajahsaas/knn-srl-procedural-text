@@ -1,0 +1,76 @@
+# sent_id = s1
+# text = QuikChange Mutagenesis
+1	Prepare	_	Action	_	_	0	_	_	Offset=23-30
+2	PCR	_	Reagent	_	_	0	_	_	Offset=31-42
+
+# sent_id = s2
+# text = Prepare PCR mixture.
+1	Perform	_	Action	_	_	0	_	_	Offset=44-51
+2	PCR	_	Reagent	_	_	0	_	_	Offset=56-59
+
+# sent_id = s3
+# text = Perform the PCR.
+1	add	_	Action	_	_	0	_	_	Offset=72-75
+2	1ul	_	Amount	_	_	3	Measure	_	Offset=76-79
+3	DpnI	_	Reagent	_	_	0	_	_	Offset=83-87
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=91-95
+5	pcr	_	Location	_	_	0	_	_	Offset=96-104
+
+# sent_id = s4
+# text = After PCR, add 1ul of DpnI to each pcr tube.
+1	Incubate	_	Action	_	_	0	_	_	Offset=106-114
+2	1	_	Time	_	_	0	_	_	Offset=115-125
+3	37C	_	Temperature	_	_	0	_	_	Offset=129-132
+
+# sent_id = s5
+# text = Incubate 1 hour-O/N at 37C.
+1	PCR	_	Action	_	_	0	_	_	Offset=134-144
+2	Qaigen	_	Device	_	_	0	_	_	Offset=151-161
+
+# sent_id = s6
+# text = PCR Purify using Qaigen kit.
+1	Add	_	Action	_	_	0	_	_	Offset=163-166
+2	5ul	_	Amount	_	_	3	Measure	_	Offset=167-170
+3	PCR	_	Reagent	_	_	0	_	_	Offset=174-186
+4	25ul	_	Amount	_	_	5	Measure	_	Offset=192-196
+5	DH5alpha	_	Reagent	_	_	0	_	_	Offset=197-205
+6	TG1	_	Reagent	_	_	5	Or	_	Offset=209-218
+
+# sent_id = s7
+# text = Add 5ul of PCR reaction into 25ul DH5alpha or TG1 cells.
+1	Incubate	_	Action	_	_	0	_	_	Offset=220-228
+2	on	_	Location	_	_	0	_	_	Offset=229-235
+3	5	_	Time	_	_	0	_	_	Offset=240-249
+
+# sent_id = s8
+# text = Incubate on ice for 5 minutes.
+1	Heatshock	_	Action	_	_	0	_	_	Offset=251-260
+2	42C	_	Temperature	_	_	0	_	_	Offset=264-267
+3	45	_	Time	_	_	0	_	_	Offset=272-282
+
+# sent_id = s9
+# text = Heatshock at 42C for 45 seconds.
+1	Recover	_	Action	_	_	0	_	_	Offset=284-291
+2	on	_	Location	_	_	0	_	_	Offset=292-298
+3	2	_	Time	_	_	0	_	_	Offset=303-312
+
+# sent_id = s10
+# text = Recover on ice for 2 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=314-317
+2	200ul	_	Amount	_	_	3	Measure	_	Offset=318-323
+3	LB	_	Reagent	_	_	0	_	_	Offset=324-326
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=364-368
+5	reaction	_	Reagent	_	_	0	_	_	Offset=369-377
+
+# sent_id = s11
+# text = Add 200ul LB (if in 96 well or 8 strip format) to each reaction.
+1	Shake	_	Action	_	_	0	_	_	Offset=379-384
+2	37C	_	Temperature	_	_	0	_	_	Offset=388-391
+3	1	_	Time	_	_	0	_	_	Offset=396-402
+
+# sent_id = s12
+# text = Shake at 37C for 1 hour.
+1	Plate	_	Action	_	_	0	_	_	Offset=404-409
+2	warmed	_	Modifier	_	_	3	Mod-Link	_	Offset=413-419
+3	antibiotic	_	Location	_	_	0	_	_	Offset=420-437
+

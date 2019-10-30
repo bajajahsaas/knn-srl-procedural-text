@@ -1,0 +1,167 @@
+# sent_id = s1
+# text = ACUITYAdvanced Protocol
+1	Positively	_	Modifier	_	_	2	Mod-Link	_	Offset=115-133
+2	slides	_	Location	_	_	0	_	_	Offset=134-140
+3	securely	_	Modifier	_	_	0	_	_	Offset=156-164
+4	adhere	_	Action	_	_	0	_	_	Offset=165-171
+5	tissue	_	Reagent	_	_	0	_	_	Offset=172-178
+
+# sent_id = s2
+# text = ACUITYAdvanced system is recommended for use on formalin fixed paraffin embedded sections.
+1	Paraffin	_	Modifier	_	_	2	Mod-Link	_	Offset=180-197
+2	sections	_	Location	_	_	0	_	_	Offset=198-206
+3	de-paraffinized	_	Action	_	_	0	_	_	Offset=215-230
+4	xylene	_	Reagent	_	_	0	_	_	Offset=236-242
+5	rehydrated	_	Action	_	_	0	_	_	Offset=247-257
+6	graded	_	Modifier	_	_	0	_	_	Offset=265-278
+7	ethanolbefore	_	Reagent	_	_	0	_	_	Offset=282-295
+8	staining	_	Action	_	_	0	_	_	Offset=296-304
+
+# sent_id = s3
+# text = Positively charged slides recommended to securely adhere tissue.
+1	DO	_	Action	_	_	0	_	_	Offset=306-339
+
+# sent_id = s4
+# text = Paraffin embedded sections must be de-paraffinized with xylene and rehydrated with a graded series of ethanolbefore staining.
+1	prepare	_	Action	_	_	0	_	_	Offset=526-533
+2	recommended	_	Method	_	_	0	_	_	Offset=541-561
+
+# sent_id = s5
+# text = DO NOT let specimen or tissue dry from this point on.
+1	incubate	_	Action	_	_	0	_	_	Offset=654-662
+2	slides	_	Location	_	_	0	_	_	Offset=663-669
+3	3%	_	Concentration	_	_	4	Measure	_	Offset=673-675
+4	hydrogen	_	Reagent	_	_	0	_	_	Offset=676-710
+5	10	_	Time	_	_	0	_	_	Offset=715-725
+
+# sent_id = s6
+# text = Optimal working dilution and incubation times are to bedetermined by the investigator.
+1	Rinse	_	Action	_	_	0	_	_	Offset=798-803
+2	distilled	_	Reagent	_	_	0	_	_	Offset=809-824
+
+# sent_id = s7
+# text = We recommend Peroxidase Block, Catalog# 927401 or 927402.
+1	Wash	_	Action	_	_	0	_	_	Offset=1023-1027
+2	PBS	_	Reagent	_	_	0	_	_	Offset=1033-1036
+3	2	_	Time	_	_	0	_	_	Offset=1037-1046
+4	3	_	Numerical	_	_	0	_	_	Offset=1048-1049
+
+# sent_id = s8
+# text = If supplied by user, prepare as per recommended protocol (supplied by user for 931101, 931201, 930501).
+1	Apply	_	Action	_	_	0	_	_	Offset=1057-1062
+2	2	_	Amount	_	_	3	Or	_	Offset=1063-1070
+3	100	_	Amount	_	_	4	Measure	_	Offset=1072-1078
+4	ACUITYAdvanced	_	Reagent	_	_	0	_	_	Offset=1124-1148
+
+# sent_id = s9
+# text = When using ACUITYAdvanced hydrogen peroxide, incubate slides in 3% hydrogen peroxide blocking reagent for 10 minutes (hydrogen peroxide is provided with 930901, 931001, 930601 and 930701).
+1	Incubate	_	Action	_	_	0	_	_	Offset=1150-1158
+2	humidity	_	Device	_	_	0	_	_	Offset=1164-1180
+3	10	_	Time	_	_	0	_	_	Offset=1185-1195
+
+# sent_id = s10
+# text = Rinse with distilled water.
+1	Drain	_	Action	_	_	0	_	_	Offset=1197-1202
+2	blot	_	Action	_	_	0	_	_	Offset=1206-1214
+3	solution	_	Reagent	_	_	0	_	_	Offset=1215-1223
+
+# sent_id = s11
+# text = Please refer to your antibody datasheet for recommended protocols if required.
+1	Do	_	Action	_	_	0	_	_	Offset=1225-1237
+
+# sent_id = s12
+# text = For HIER we recommend HIER, Catalog # 928501 (order separately).
+1	Apply	_	Action	_	_	0	_	_	Offset=1239-1244
+2	2	_	Amount	_	_	0	_	_	Offset=1245-1252
+3	100	_	Amount	_	_	0	_	_	Offset=1254-1260
+4	primary	_	Reagent	_	_	0	_	_	Offset=1306-1322
+
+# sent_id = s13
+# text = HIER or enzyme for digestion to be supplied by user.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1324-1332
+2	humidity	_	Device	_	_	0	_	_	Offset=1338-1354
+3	30-60	_	Time	_	_	0	_	_	Offset=1359-1372
+
+# sent_id = s14
+# text = Wash with PBS 2 minutes, 3 times.
+1	Rinse	_	Action	_	_	0	_	_	Offset=1374-1379
+2	PBS	_	Reagent	_	_	0	_	_	Offset=1385-1388
+3	2	_	Time	_	_	0	_	_	Offset=1389-1398
+4	3	_	Numerical	_	_	0	_	_	Offset=1400-1401
+
+# sent_id = s15
+# text = Apply 2 drops (100 μL or enough volume to cover tissue section) of ACUITYAdvanced Reagent 1.
+1	Apply	_	Action	_	_	0	_	_	Offset=1409-1414
+2	2	_	Amount	_	_	3	Or	_	Offset=1415-1422
+3	100	_	Amount	_	_	4	Measure	_	Offset=1424-1430
+4	ACUITYAdvanced	_	Reagent	_	_	0	_	_	Offset=1476-1501
+
+# sent_id = s16
+# text = Incubate in a humidity chamber for 10 minutes.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1502-1510
+2	humidity	_	Device	_	_	0	_	_	Offset=1516-1532
+3	15-20	_	Time	_	_	0	_	_	Offset=1537-1550
+
+# sent_id = s17
+# text = Drain or blot off solution.
+1	Rinse	_	Action	_	_	0	_	_	Offset=1552-1557
+2	PBS	_	Reagent	_	_	0	_	_	Offset=1563-1566
+3	2	_	Time	_	_	0	_	_	Offset=1567-1576
+4	3	_	Numerical	_	_	0	_	_	Offset=1578-1579
+
+# sent_id = s18
+# text = Do not rinse!
+1	Apply	_	Action	_	_	0	_	_	Offset=1587-1592
+2	2	_	Amount	_	_	3	Or	_	Offset=1593-1600
+3	100	_	Amount	_	_	4	Measure	_	Offset=1602-1608
+4	ACUITYAdvanced	_	Reagent	_	_	0	_	_	Offset=1654-1678
+
+# sent_id = s19
+# text = Apply 2 drops (100 μL or enough volume to cover tissue section) of primary antibody.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1680-1688
+2	humidity	_	Device	_	_	0	_	_	Offset=1694-1710
+3	15	_	Time	_	_	0	_	_	Offset=1715-1725
+
+# sent_id = s20
+# text = Incubate in a humidity chamber for 30-60 minutes.
+1	Rinse	_	Action	_	_	0	_	_	Offset=1727-1732
+2	PBS	_	Reagent	_	_	0	_	_	Offset=1738-1741
+3	2	_	Time	_	_	0	_	_	Offset=1742-1751
+4	3	_	Numerical	_	_	0	_	_	Offset=1753-1754
+
+# sent_id = s21
+# text = Rinse with PBS 2 minutes, 3 times.
+1	Rinse	_	Action	_	_	0	_	_	Offset=1957-1962
+2	distilled	_	Modifier	_	_	3	Or	_	Offset=1968-1977
+3	tap	_	Modifier	_	_	4	Mod-Link	_	Offset=1981-1984
+4	water	_	Reagent	_	_	0	_	_	Offset=1985-1990
+5	do	_	Action	_	_	0	_	_	Offset=2016-2032
+
+# sent_id = s22
+# text = Apply 2 drops (100 μL or enough volume to cover tissue section) of ACUITYAdvanced Reagent 2.
+1	Counterstain	_	Action	_	_	0	_	_	Offset=2035-2047
+2	desired	_	Reagent	_	_	0	_	_	Offset=2053-2073
+
+# sent_id = s23
+# text = Incubate in a humidity chamber for 15-20 minutes.
+1	Mount	_	Action	_	_	0	_	_	Offset=2075-2080
+2	coverslip	_	Action	_	_	0	_	_	Offset=2085-2094
+
+# sent_id = s24
+# text = Rinse with PBS 2 minutes, 3 times.
+1	AEC	_	Reagent	_	_	0	_	_	Offset=2096-2109
+2	prepared	_	Action	_	_	0	_	_	Offset=2120-2128
+3	1	_	Amount	_	_	4	Measure	_	Offset=2129-2135
+4	AEC	_	Reagent	_	_	0	_	_	Offset=2136-2149
+5	50	_	Amount	_	_	6	Measure	_	Offset=2153-2161
+6	AEC	_	Reagent	_	_	0	_	_	Offset=2162-2182
+
+# sent_id = s25
+# text = Apply 2 drops (100 μL or enough volume to cover tissue section) of ACUITYAdvanced Reagent 3.
+1	DAB	_	Reagent	_	_	0	_	_	Offset=2184-2197
+2	prepared	_	Action	_	_	0	_	_	Offset=2208-2216
+3	1	_	Amount	_	_	4	Measure	_	Offset=2217-2223
+4	DAB	_	Reagent	_	_	0	_	_	Offset=2224-2237
+5	25	_	Amount	_	_	6	Measure	_	Offset=2241-2249
+6	DAB	_	Reagent	_	_	0	_	_	Offset=2250-2270
+

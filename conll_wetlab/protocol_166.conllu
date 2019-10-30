@@ -1,0 +1,90 @@
+# sent_id = s1
+# text = Purifying Viruses Using Sucrose Cushion
+1	Prepare	_	Action	_	_	0	_	_	Offset=40-47
+2	sucrose	_	Reagent	_	_	0	_	_	Offset=48-55
+3	Molecular	_	Modifier	_	_	2	Mod-Link	_	Offset=57-80
+4	38%	_	Concentration	_	_	2	Measure	_	Offset=95-117
+5	SM	_	Reagent	_	_	11	Meronym	7:Meronym|9:Meronym	Offset=121-130
+6	100mM	_	Concentration	_	_	7	Measure	_	Offset=132-137
+7	NaCl	_	Reagent	_	_	0	_	_	Offset=138-142
+8	8mM	_	Concentration	_	_	9	Measure	_	Offset=144-147
+9	MgSO4	_	Reagent	_	_	0	_	_	Offset=148-153
+10	50mM	_	Concentration	_	_	11	Measure	_	Offset=155-159
+11	TrisJHCl	_	Reagent	_	_	0	_	_	Offset=160-168
+12	pH	_	pH	_	_	5	Measure	_	Offset=170-176
+13	0.2μm	_	Modifier	_	_	0	_	_	Offset=192-197
+14	filtered	_	Action	_	_	0	_	_	Offset=198-206
+
+# sent_id = s2
+# text = Prepare sucrose (Molecular Biology Grade or higher) as 38% (weight to volume) in SM buffer (100mM NaCl, 8mM MgSO4, 50mM TrisJHCl, pH 7.5) that has been 0.2μm filtered.
+1	Rinse	_	Action	_	_	0	_	_	Offset=208-213
+2	SW40	_	Location	_	_	0	_	_	Offset=214-224
+3	SM	_	Reagent	_	_	0	_	_	Offset=230-239
+4	sterile	_	Reagent	_	_	3	Or	_	Offset=243-256
+
+# sent_id = s3
+# text = Rinse SW40 tubes with SM buffer or sterile water.
+1	Place	_	Action	_	_	0	_	_	Offset=258-263
+2	9.5ml	_	Amount	_	_	4	Measure	_	Offset=268-273
+3	DNase	_	Modifier	_	_	4	Mod-Link	_	Offset=274-289
+4	sample	_	Reagent	_	_	0	_	_	Offset=290-296
+5	rinsed	_	Modifier	_	_	6	Mod-Link	_	Offset=306-312
+6	ultracentrifuge	_	Location	_	_	0	_	_	Offset=313-333
+
+# sent_id = s4
+# text = Place the 9.5ml DNase I-treated sample into the rinsed ultracentrifuge tube.
+1	3cc	_	Modifier	_	_	2	Mod-Link	_	Offset=343-346
+2	syringe	_	Device	_	_	0	_	_	Offset=347-354
+3	cannula	_	Device	_	_	0	_	_	Offset=359-366
+4	layer	_	Action	_	_	0	_	_	Offset=376-381
+5	2.5	_	Amount	_	_	7	Measure	_	Offset=386-392
+6	38%	_	Concentration	_	_	7	Measure	_	Offset=396-399
+7	sucrose	_	Reagent	_	_	0	_	_	Offset=400-407
+8	under	_	Location	_	_	0	_	_	Offset=408-424
+
+# sent_id = s5
+# text = Using a 3cc syringe and cannula,  slowly layer the 2.5 ml of 38% sucrose under the sample trying not to cause any mixing of sample and sucrose.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=479-489
+2	~175,000g	_	Speed	_	_	0	_	_	Offset=493-502
+3	3.25	_	Time	_	_	0	_	_	Offset=507-514
+4	18°C	_	Time	_	_	0	_	_	Offset=518-522
+
+# sent_id = s6
+# text = Centrifuge at ~175,000g for 3.25 hr at 18°C.
+1	sterile	_	Device	_	_	2	Or	_	Offset=532-548
+2	serological	_	Device	_	_	0	_	_	Offset=552-569
+3	pull	_	Action	_	_	0	_	_	Offset=571-579
+4	9.5	_	Amount	_	_	0	_	_	Offset=584-590
+5	sample	_	Reagent	_	_	0	_	_	Offset=591-597
+
+# sent_id = s7
+# text = Using a sterile transfer or serological pipet, pull off the 9.5 ml sample layer.
+1	Pull	_	Action	_	_	0	_	_	Offset=605-613
+2	interface	_	Reagent	_	_	0	_	_	Offset=618-627
+3	2.5	_	Amount	_	_	4	Measure	_	Offset=632-638
+4	sucrose	_	Reagent	_	_	0	_	_	Offset=639-646
+
+# sent_id = s8
+# text = Pull off the interface and 2.5 ml sucrose, being careful not to disturb or suction off the pelleted sample at the bottom.
+1	Air	_	Action	_	_	0	_	_	Offset=803-810
+2	pellets	_	Reagent	_	_	0	_	_	Offset=815-822
+3	fume	_	Device	_	_	0	_	_	Offset=828-837
+4	15-20	_	Time	_	_	0	_	_	Offset=842-851
+
+# sent_id = s9
+# text = Keep this  sucrose layer until virus counts from the pellets are completed.
+1	A	_	Action	_	_	0	_	_	Offset=853-854
+2	mixture	_	Reagent	_	_	4	Meronym	5:Meronym	Offset=859-872
+3	0.1M	_	Concentration	_	_	4	Measure	5:Measure	Offset=884-888
+4	EDTA	_	Reagent	_	_	0	_	_	Offset=894-898
+5	EGTA	_	Reagent	_	_	0	_	_	Offset=899-903
+6	resuspend	_	Action	_	_	0	_	_	Offset=907-916
+7	pellets	_	Reagent	_	_	0	_	_	Offset=921-928
+8	500	_	Amount	_	_	2	Measure	_	Offset=930-936
+
+# sent_id = s10
+# text = Air dry the pellets in a fume hood for 15-20 min.
+1	Perform	_	Action	_	_	0	_	_	Offset=955-975
+2	extract	_	Action	_	_	0	_	_	Offset=985-992
+3	DNA	_	Reagent	_	_	0	_	_	Offset=993-996
+

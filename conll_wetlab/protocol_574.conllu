@@ -1,0 +1,71 @@
+# sent_id = s1
+# text = Generating CB-X™ Tables and standard curves for CB-X Protein Assay Optimization
+1	Prepare	_	Action	_	_	0	_	_	Offset=80-87
+2	duplicate	_	Modifier	_	_	3	Mod-Link	_	Offset=88-97
+3	standards	_	Reagent	_	_	0	_	_	Offset=98-117
+4	buffer	_	Reagent	_	_	0	_	_	Offset=126-142
+5	0,	_	Concentration	_	_	3	Measure	_	Offset=176-207
+
+# sent_id = s2
+# text = Prepare duplicate standards of choice in your buffer of choice at the following concentrations: 0, 0.2, 0.4, 0.6, 0.8, 1.0µg/µl. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=210-218
+2	50µl	_	Amount	_	_	3	Measure	_	Offset=219-223
+3	protein	_	Reagent	_	_	0	_	_	Offset=224-240
+4	1.5ml	_	Amount	_	_	5	Measure	_	Offset=244-249
+5	centrifuge	_	Location	_	_	0	_	_	Offset=250-266
+
+# sent_id = s3
+# text = Transfer 50µl protein standard to 1.5ml centrifuge tubes.
+1	Add	_	Action	_	_	0	_	_	Offset=606-609
+2	1ml	_	Amount	_	_	4	Measure	_	Offset=610-613
+3	pre-chilled	_	Modifier	_	_	4	Mod-Link	_	Offset=614-625
+4	CB-X™	_	Reagent	_	_	0	_	_	Offset=634-639
+5	vortex	_	Action	_	_	0	_	_	Offset=644-650
+
+# sent_id = s4
+# text = Prepare a standard calibration plot for the determination of protein concentration of the unknown samples.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=659-669
+2	16,000xg	_	Speed	_	_	0	_	_	Offset=673-681
+3	5	_	Time	_	_	0	_	_	Offset=686-695
+4	remove	_	Action	_	_	0	_	_	Offset=710-716
+5	supernatant	_	Reagent	_	_	0	_	_	Offset=725-736
+6	without	_	Modifier	_	_	0	_	_	Offset=737-774
+
+# sent_id = s5
+# text = Use the line equation to generate your own CB-X™ Tables.
+1	Add	_	Action	_	_	0	_	_	Offset=776-779
+2	50µl	_	Amount	_	_	3	Measure	_	Offset=780-784
+3	CB-X™	_	Reagent	_	_	0	_	_	Offset=785-814
+4	50µl	_	Amount	_	_	5	Measure	_	Offset=819-823
+5	CB-X™	_	Reagent	_	_	0	_	_	Offset=824-854
+6	tube	_	Location	_	_	0	_	_	Offset=862-866
+7	vortex	_	Action	_	_	0	_	_	Offset=871-877
+
+# sent_id = s6
+# text = This CB-X™ Table will allow all your future protein estimations to be performed without using protein standards, allowing you to carry out rapid, single protein estimations.
+1	Invert	_	Action	_	_	0	_	_	Offset=910-916
+2	CB-X™	_	Reagent	_	_	0	_	_	Offset=921-936
+3	2-3	_	Numerical	_	_	0	_	_	Offset=937-940
+4	add	_	Action	_	_	0	_	_	Offset=958-961
+5	1ml	_	Amount	_	_	6	Measure	_	Offset=962-965
+6	CB-X™	_	Reagent	_	_	0	_	_	Offset=966-981
+7	tube	_	Location	_	_	0	_	_	Offset=989-993
+8	vortex	_	Action	_	_	0	_	_	Offset=998-1004
+9	briefly	_	Modifier	_	_	0	_	_	Offset=1005-1012
+
+# sent_id = s7
+# text = Add 1ml pre-chilled (-20°C) CB-X™ and vortex to mix.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1014-1022
+2	5	_	Time	_	_	0	_	_	Offset=1027-1036
+3	room	_	Temperature	_	_	0	_	_	Offset=1040-1056
+
+# sent_id = s8
+# text = Centrifuge at 16,000xg for 5 minutes and carefully remove all the supernatant without disturbing the protein pellet.
+1	Read	_	Action	_	_	0	_	_	Offset=1058-1062
+2	absorbance	_	Measure-Type	_	_	3	Of-Type	_	Offset=1067-1077
+3	595nm	_	Generic-Measure	_	_	0	_	_	Offset=1081-1086
+4	against	_	Modifier	_	_	0	_	_	Offset=1087-1110
+5	1cm	_	Size	_	_	6	Measure	_	Offset=1126-1129
+6	path	_	Location	_	_	0	_	_	Offset=1130-1141
+7	cuvette	_	Location	_	_	6	Meronym	_	Offset=1142-1149
+

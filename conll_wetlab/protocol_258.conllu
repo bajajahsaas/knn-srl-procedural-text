@@ -1,0 +1,197 @@
+# sent_id = s1
+# text = Mouse BMDM
+1	Put	_	Action	_	_	0	_	_	Offset=11-14
+2	2	_	Amount	_	_	3	Measure	_	Offset=15-19
+3	media	_	Reagent	_	_	0	_	_	Offset=20-25
+4	per	_	Modifier	_	_	5	Mod-Link	_	Offset=26-29
+5	well	_	Location	_	_	0	_	_	Offset=30-34
+6	6-wells	_	Location	_	_	5	Meronym	_	Offset=38-51
+
+# sent_id = s2
+# text = Put 2 mL media per well in 6-wells plate (1 well per 2 marrows or per animal). 
+1	Clean	_	Action	_	_	0	_	_	Offset=91-96
+2	femur	_	Reagent	_	_	0	_	_	Offset=97-102
+3	as	_	Method	_	_	0	_	_	Offset=103-122
+4	petri	_	Location	_	_	0	_	_	Offset=128-133
+5	little	_	Modifier	_	_	6	Mod-Link	_	Offset=141-151
+6	phenol	_	Reagent	_	_	0	_	_	Offset=155-176
+7	PBS	_	Reagent	_	_	6	Or	_	Offset=180-183
+
+# sent_id = s3
+# text = Clean femur as much as possible in a petri with a little bit of phenol red free media or PBS (the most important part is the middle). 
+1	Cut	_	Action	_	_	0	_	_	Offset=226-233
+2	both	_	Location	_	_	0	_	_	Offset=234-243
+3	femur	_	Reagent	_	_	2	Meronym	_	Offset=251-256
+4	expose	_	Action	_	_	0	_	_	Offset=260-266
+5	marrow	_	Reagent	_	_	0	_	_	Offset=271-277
+
+# sent_id = s4
+# text = Cut off both ends of the femur to expose the marrow.
+1	Fill	_	Action	_	_	0	_	_	Offset=279-283
+2	syringe	_	Device	_	_	0	_	_	Offset=284-291
+3	2ml	_	Amount	_	_	4	Measure	_	Offset=304-307
+4	media	_	Reagent	_	_	0	_	_	Offset=311-316
+5	insert	_	Action	_	_	0	_	_	Offset=318-324
+6	marrow	_	Reagent	_	_	0	_	_	Offset=330-336
+7	flush	_	Action	_	_	0	_	_	Offset=341-346
+8	6	_	Location	_	_	0	_	_	Offset=356-368
+9	bone	_	Reagent	_	_	0	_	_	Offset=379-383
+10	clean	_	Action	_	_	0	_	_	Offset=387-392
+
+# sent_id = s5
+# text = Fill syringe up with the 2ml of media, insert into marrow and flush into the 6 well plate until the bone is clean (goes from pink to white).
+1	Pass	_	Action	_	_	0	_	_	Offset=420-424
+2	media	_	Reagent	_	_	0	_	_	Offset=429-434
+3	syringe	_	Device	_	_	0	_	_	Offset=447-454
+4	1-2	_	Numerical	_	_	0	_	_	Offset=455-458
+
+# sent_id = s6
+# text = Pass the media through the syringe 1-2 times (Start with 20G, then 26G). 
+1	Transfer	_	Action	_	_	0	_	_	Offset=494-502
+2	cells	_	Reagent	_	_	0	_	_	Offset=507-512
+3	50	_	Amount	_	_	4	Measure	_	Offset=518-523
+4	tube	_	Location	_	_	0	_	_	Offset=524-528
+
+# sent_id = s7
+# text = Transfer the cells to a 50 ml tube. 
+1	Prepare	_	Action	_	_	0	_	_	Offset=531-538
+2	RBC	_	Reagent	_	_	0	_	_	Offset=539-557
+3	cell	_	Location	_	_	0	_	_	Offset=574-594
+
+# sent_id = s8
+# text = Prepare RBC lysis solution (proportions in cell culture cabinet) – Or purchase from Sigma 
+1	Add	_	Action	_	_	0	_	_	Offset=622-625
+2	5ml	_	Amount	_	_	0	_	_	Offset=626-629
+3	marrow	_	Reagent	_	_	0	_	_	Offset=634-640
+
+# sent_id = s9
+# text = Add 5ml per marrow.
+1	Place	_	Action	_	_	0	_	_	Offset=642-647
+2	ice	_	Location	_	_	0	_	_	Offset=651-654
+3	10min	_	Time	_	_	0	_	_	Offset=659-664
+4	excatly	_	Modifier	_	_	3	Mod-Link	_	Offset=665-672
+
+# sent_id = s10
+# text = Place on ice for 10min excatly.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=674-684
+2	10min	_	Time	_	_	0	_	_	Offset=689-694
+3	4°C	_	Temperature	_	_	0	_	_	Offset=698-701
+4	400g	_	Speed	_	_	0	_	_	Offset=702-706
+5	1200	_	Speed	_	_	4	Or	_	Offset=717-725
+
+# sent_id = s11
+# text = Centrifuge for 10min at 4°C 400g (~RCF, or 1200 rpm). 
+1	Discard	_	Action	_	_	0	_	_	Offset=729-736
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=737-748
+
+# sent_id = s12
+# text = Discard supernatant. 
+1	Add	_	Action	_	_	0	_	_	Offset=751-754
+2	5ml	_	Amount	_	_	3	Measure	_	Offset=755-758
+3	CSF	_	Reagent	_	_	0	_	_	Offset=759-762
+4	12ml	_	Amount	_	_	5	Measure	_	Offset=767-771
+5	RPMI	_	Reagent	_	_	0	_	_	Offset=775-786
+6	add	_	Action	_	_	0	_	_	Offset=835-838
+7	medium	_	Reagent	_	_	0	_	_	Offset=839-845
+8	immediately	_	Modifier	_	_	0	_	_	Offset=846-857
+
+# sent_id = s13
+# text = Add 5ml CSF and 12ml of RPMI Medium (total volume is 15 ml) – Do not let cells dry, add medium immediately.(Or 9ml RMPI medium and 3ml CSF) 
+1	Transfer	_	Action	_	_	0	_	_	Offset=892-900
+2	15	_	Amount	_	_	3	Measure	_	Offset=905-910
+3	cell	_	Reagent	_	_	0	_	_	Offset=911-926
+4	100	_	Size	_	_	5	Measure	_	Offset=932-938
+5	polystyrene	_	Location	_	_	0	_	_	Offset=939-972
+6	24	_	Time	_	_	0	_	_	Offset=1016-1022
+
+# sent_id = s14
+# text = Transfer the 15 mL cell suspension to a 100 mm polystyrene tissue culture petris (PrimariaTM, Becton Dickinson Labware) for 24 hrs. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=1025-1033
+2	non-adherent	_	Reagent	_	_	0	_	_	Offset=1034-1052
+3	after	_	Modifier	_	_	4	Mod-Link	_	Offset=1053-1058
+4	24	_	Time	_	_	0	_	_	Offset=1059-1065
+5	fresh	_	Modifier	_	_	6	Mod-Link	_	Offset=1069-1074
+6	polystyrene	_	Location	_	_	0	_	_	Offset=1075-1093
+7	non	_	Location	_	_	6	Or	_	Offset=1097-1116
+
+# sent_id = s15
+# text = Transfer non-adherent cells after 24 hrs to fresh polystyrene petris or non adherent flasks (Green - Fisher).
+1	Cultures	_	Reagent	_	_	0	_	_	Offset=1135-1143
+2	grown	_	Action	_	_	0	_	_	Offset=1148-1153
+3	6	_	Time	_	_	0	_	_	Offset=1158-1164
+4	15%	_	Concentration	_	_	5	Measure	_	Offset=1170-1179
+5	L-929	_	Reagent	_	_	0	_	_	Offset=1180-1209
+
+# sent_id = s16
+# text = Cultures are grown for 6 days with 15% (v/v) L-929 cell-conditioned medium as a source of M-CSF.
+1	Add	_	Action	_	_	0	_	_	Offset=1232-1235
+2	fresh	_	Modifier	_	_	3	Mod-Link	_	Offset=1236-1241
+3	CSF	_	Reagent	_	_	0	_	_	Offset=1242-1245
+4	every	_	Modifier	_	_	5	Mod-Link	_	Offset=1246-1251
+5	3	_	Time	_	_	0	_	_	Offset=1252-1258
+
+# sent_id = s17
+# text = Add fresh CSF every 3 days.(15% of 15ml – (about 3ml)
+1	After	_	Action	_	_	0	_	_	Offset=1344-1349
+2	6	_	Time	_	_	0	_	_	Offset=1350-1356
+3	collect	_	Action	_	_	0	_	_	Offset=1358-1365
+4	cell	_	Reagent	_	_	0	_	_	Offset=1370-1374
+5	policeman	_	Device	_	_	0	_	_	Offset=1382-1391
+6	cell	_	Device	_	_	5	Or	_	Offset=1393-1405
+7	25	_	Size	_	_	6	Measure	_	Offset=1406-1412
+
+# sent_id = s18
+# text = The batch made by Kyoko and Rabi ais at 30% , so use 5ml.
+1	Centrifuged	_	Action	_	_	0	_	_	Offset=1433-1444
+2	10min	_	Time	_	_	0	_	_	Offset=1449-1454
+3	400	_	Speed	_	_	0	_	_	Offset=1455-1462
+4	Discard	_	Action	_	_	0	_	_	Offset=1464-1471
+5	supernatant	_	Reagent	_	_	0	_	_	Offset=1472-1483
+6	resuspend	_	Action	_	_	0	_	_	Offset=1488-1497
+7	pellet	_	Reagent	_	_	0	_	_	Offset=1498-1504
+8	2ml	_	Amount	_	_	9	Measure	_	Offset=1508-1511
+9	RPMI	_	Reagent	_	_	0	_	_	Offset=1515-1519
+10	10%	_	Concentration	_	_	11	Measure	_	Offset=1520-1523
+11	FBS	_	Reagent	_	_	0	_	_	Offset=1524-1527
+
+# sent_id = s19
+# text = After 6 days, collect the cell with a policeman (cell scraper 25 cm, Sarstedt #83,1830).
+1	Flush	_	Action	_	_	0	_	_	Offset=1567-1572
+2	media	_	Reagent	_	_	0	_	_	Offset=1573-1578
+3	25,	_	Generic-Measure	_	_	4	Setting	_	Offset=1587-1603
+4	needles	_	Device	_	_	0	_	_	Offset=1604-1611
+5	separate	_	Action	_	_	0	_	_	Offset=1615-1623
+6	aggregates	_	Reagent	_	_	0	_	_	Offset=1624-1634
+
+# sent_id = s20
+# text = Centrifuged for 10min 400 x g. Discard supernatant and resuspend pellet in 2ml of RPMI 10% FBS without Pen/Strep Phenol free for LDH.
+1	Count	_	Action	_	_	0	_	_	Offset=1636-1641
+2	cells	_	Reagent	_	_	0	_	_	Offset=1642-1647
+3	final	_	Reagent	_	_	0	_	_	Offset=1651-1670
+4	1	_	Concentration	_	_	3	Measure	_	Offset=1674-1690
+
+# sent_id = s21
+# text = Flush media through 25, 27, and 30 G needles to separate aggregates.
+1	count	_	Action	_	_	0	_	_	Offset=1695-1700
+2	cells	_	Reagent	_	_	0	_	_	Offset=1701-1706
+3	dilute	_	Action	_	_	0	_	_	Offset=1708-1714
+4	1/5	_	Generic-Measure	_	_	0	_	_	Offset=1715-1718
+5	Turks	_	Location	_	_	0	_	_	Offset=1722-1727
+
+# sent_id = s22
+# text = Count cells to final concentration of 1 x 106 cells/ml.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=1729-1736
+2	500	_	Amount	_	_	4	Measure	_	Offset=1737-1743
+3	5x105	_	Generic-Measure	_	_	4	Measure	_	Offset=1745-1750
+4	cellules	_	Reagent	_	_	0	_	_	Offset=1751-1759
+5	well	_	Location	_	_	0	_	_	Offset=1765-1769
+6	24-wells	_	Location	_	_	0	_	_	Offset=1773-1787
+7	100ul	_	Amount	_	_	8	Measure	_	Offset=1789-1794
+8	96	_	Location	_	_	0	_	_	Offset=1799-1812
+
+# sent_id = s23
+# text = To count cells, dilute 1/5 in Turks.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1814-1822
+2	5%	_	Concentration	_	_	3	Measure	_	Offset=1828-1830
+3	CO2	_	Reagent	_	_	0	_	_	Offset=1831-1834
+

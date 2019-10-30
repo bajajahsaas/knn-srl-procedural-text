@@ -1,0 +1,138 @@
+# sent_id = s1
+# text = General tube bacteria extraction (DNeasy)
+1	Place	_	Action	_	_	0	_	_	Offset=42-47
+2	Buffer	_	Reagent	_	_	0	_	_	Offset=48-58
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=63-72
+4	56C	_	Temperature	_	_	0	_	_	Offset=76-79
+5	at	_	Modifier	_	_	6	Mod-Link	_	Offset=84-92
+6	5	_	Time	_	_	0	_	_	Offset=93-102
+
+# sent_id = s2
+# text = Place Buffer ATL and Buffer Al at 56C for at least 5 minutes before starting.
+1	AW1	_	Reagent	_	_	0	_	_	Offset=130-133
+2	AW2	_	Reagent	_	_	0	_	_	Offset=138-141
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=147-154
+4	added	_	Action	_	_	0	_	_	Offset=155-160
+
+# sent_id = s3
+# text = Make sure AW1 and AW2 have ethanol added.
+1	Spin	_	Action	_	_	0	_	_	Offset=162-166
+2	>500ul	_	Amount	_	_	3	Measure	_	Offset=167-173
+3	bacteria	_	Reagent	_	_	0	_	_	Offset=177-200
+4	10000g	_	Speed	_	_	0	_	_	Offset=204-210
+5	10	_	Time	_	_	0	_	_	Offset=215-225
+
+# sent_id = s4
+# text = Spin >500ul of bacteria liquid culture at 10000g for 10 minutes.
+1	Pour	_	Action	_	_	0	_	_	Offset=227-235
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=236-247
+
+# sent_id = s5
+# text = Pour off supernatant.
+1	Add	_	Action	_	_	0	_	_	Offset=249-252
+2	200ul	_	Amount	_	_	3	Measure	_	Offset=253-258
+3	buffer	_	Reagent	_	_	0	_	_	Offset=259-269
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=273-277
+5	sample	_	Reagent	_	_	0	_	_	Offset=278-284
+6	vortex	_	Action	_	_	0	_	_	Offset=289-295
+7	15s	_	Time	_	_	0	_	_	Offset=300-303
+
+# sent_id = s6
+# text = Add 200ul buffer ATL to each sample and vortex for 15s.
+1	Add	_	Action	_	_	0	_	_	Offset=305-308
+2	200ul	_	Amount	_	_	4	Measure	_	Offset=309-314
+3	100%	_	Concentration	_	_	4	Measure	_	Offset=315-319
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=320-327
+5	each	_	Modifier	_	_	6	Mod-Link	_	Offset=331-335
+6	sample	_	Reagent	_	_	0	_	_	Offset=336-342
+7	vortex	_	Action	_	_	0	_	_	Offset=347-353
+8	15s	_	Time	_	_	0	_	_	Offset=358-361
+
+# sent_id = s7
+# text = Add 200ul 100% ethanol to each sample and vortex for 15s.
+1	Briefly	_	Modifier	_	_	0	_	_	Offset=363-370
+2	spin	_	Action	_	_	0	_	_	Offset=371-375
+3	collect	_	Action	_	_	0	_	_	Offset=379-386
+4	all	_	Amount	_	_	5	Measure	_	Offset=387-390
+5	liquid	_	Reagent	_	_	0	_	_	Offset=391-397
+
+# sent_id = s8
+# text = Briefly spin to collect all liquid.
+1	Transfer	_	Action	_	_	0	_	_	Offset=399-407
+2	all	_	Amount	_	_	3	Measure	_	Offset=408-411
+3	sample	_	Reagent	_	_	0	_	_	Offset=415-421
+4	precipitate	_	Reagent	_	_	0	_	_	Offset=432-443
+5	spin	_	Location	_	_	0	_	_	Offset=447-458
+
+# sent_id = s9
+# text = Transfer all of sample including precipitate to spin column.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=460-470
+2	>20000g	_	Speed	_	_	0	_	_	Offset=485-492
+3	2	_	Time	_	_	0	_	_	Offset=498-507
+
+# sent_id = s10
+# text = Centrifuge at max speed (>20000g) for 2 minutes.
+1	Empty	_	Action	_	_	0	_	_	Offset=509-514
+2	collection	_	Location	_	_	0	_	_	Offset=515-530
+
+# sent_id = s11
+# text = Empty collection tube.
+1	Add	_	Action	_	_	0	_	_	Offset=532-535
+2	500ul	_	Amount	_	_	3	Measure	_	Offset=536-541
+3	buffer	_	Reagent	_	_	0	_	_	Offset=542-552
+4	spin	_	Location	_	_	0	_	_	Offset=556-567
+
+# sent_id = s12
+# text = Add 500ul buffer AW1 to spin column.
+1	Spin	_	Action	_	_	0	_	_	Offset=569-573
+2	>20000g	_	Speed	_	_	0	_	_	Offset=588-595
+3	2	_	Time	_	_	0	_	_	Offset=601-610
+
+# sent_id = s13
+# text = Spin at max speed (>20000g) for 2 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=612-615
+2	500ul	_	Amount	_	_	3	Measure	_	Offset=616-621
+3	buffer	_	Reagent	_	_	0	_	_	Offset=622-632
+4	spin	_	Location	_	_	0	_	_	Offset=636-647
+
+# sent_id = s14
+# text = Add 500ul buffer AW2 to spin column.
+1	Spin	_	Action	_	_	0	_	_	Offset=649-653
+2	>20000g	_	Speed	_	_	0	_	_	Offset=668-675
+3	2	_	Time	_	_	0	_	_	Offset=681-690
+
+# sent_id = s15
+# text = Spin at max speed (>20000g) for 2 minutes.
+1	Place	_	Action	_	_	0	_	_	Offset=692-697
+2	spin	_	Location	_	_	0	_	_	Offset=698-709
+3	new	_	Modifier	_	_	4	Mod-Link	_	Offset=715-718
+4	collection	_	Location	_	_	0	_	_	Offset=719-734
+5	spin	_	Action	_	_	0	_	_	Offset=739-743
+6	>20000g	_	Speed	_	_	0	_	_	Offset=758-765
+7	3	_	Time	_	_	0	_	_	Offset=771-780
+
+# sent_id = s16
+# text = Place spin column in a new collection tube and spin at max speed (>20000g) for 3 minutes.
+1	Transfer	_	Action	_	_	0	_	_	Offset=782-790
+2	spin	_	Location	_	_	0	_	_	Offset=791-802
+3	labeled	_	Modifier	_	_	5	Mod-Link	_	Offset=808-815
+4	1.5ml	_	Amount	_	_	5	Measure	_	Offset=816-821
+5	Eppendorf	_	Location	_	_	0	_	_	Offset=822-843
+
+# sent_id = s17
+# text = Transfer spin column to a labeled 1.5ml Eppendorf lobind tube.
+1	Add	_	Action	_	_	0	_	_	Offset=845-848
+2	100ul	_	Amount	_	_	3	Measure	_	Offset=849-854
+3	buffer	_	Reagent	_	_	0	_	_	Offset=858-867
+4	membrane/filter	_	Location	_	_	0	_	_	Offset=880-895
+5	spin	_	Location	_	_	4	Meronym	_	Offset=899-910
+6	incubate	_	Action	_	_	0	_	_	Offset=915-923
+7	room	_	Temperature	_	_	0	_	_	Offset=927-936
+
+# sent_id = s18
+# text = Add 100ul of buffer TE directly to membrane/filter in spin column and incubate at room temp.
+1	1	_	Time	_	_	0	_	_	Offset=942-947
+2	Spin	_	Action	_	_	0	_	_	Offset=948-952
+3	10000g	_	Speed	_	_	0	_	_	Offset=956-962
+4	2	_	Time	_	_	0	_	_	Offset=967-976
+

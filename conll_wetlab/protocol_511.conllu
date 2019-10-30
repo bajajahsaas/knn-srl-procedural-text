@@ -1,0 +1,49 @@
+# sent_id = s1
+# text = Lethal Phase - Immunohistochemistry
+1	Wash	_	Action	_	_	0	_	_	Offset=36-40
+2	embryos	_	Reagent	_	_	0	_	_	Offset=41-48
+3	place	_	Action	_	_	0	_	_	Offset=53-58
+4	wash	_	Device	_	_	0	_	_	Offset=64-75
+
+# sent_id = s2
+# text = Wash embryos and place into wash basket.
+1	pouring	_	Action	_	_	0	_	_	Offset=93-100
+2	bleach	_	Reagent	_	_	0	_	_	Offset=101-107
+3	embryos	_	Reagent	_	_	0	_	_	Offset=122-129
+
+# sent_id = s3
+# text = Dechorionate by pouring bleach directly onto embryos.
+1	Let	_	Action	_	_	0	_	_	Offset=131-138
+2	three	_	Time	_	_	0	_	_	Offset=143-156
+
+# sent_id = s4
+# text = Let sit for three minutes.
+1	Rinse	_	Action	_	_	0	_	_	Offset=158-163
+2	embryos	_	Reagent	_	_	0	_	_	Offset=164-171
+3	basket	_	Device	_	_	0	_	_	Offset=175-181
+4	ddH2O	_	Reagent	_	_	0	_	_	Offset=187-192
+
+# sent_id = s5
+# text = Rinse embryos in basket with ddH2O until bleach is completely washed away.
+1	Place	_	Action	_	_	0	_	_	Offset=233-238
+2	embryos	_	Reagent	_	_	0	_	_	Offset=239-246
+3	glass	_	Location	_	_	5	Meronym	8:Meronym	Offset=252-262
+4	6ml	_	Amount	_	_	5	Measure	_	Offset=274-277
+5	Heptane	_	Reagent	_	_	0	_	_	Offset=281-288
+6	6ml	_	Amount	_	_	8	Measure	_	Offset=293-296
+7	0.4%	_	Concentration	_	_	8	Measure	_	Offset=300-304
+8	Paraformaldehyde	_	Reagent	_	_	0	_	_	Offset=305-321
+
+# sent_id = s6
+# text = Place embryos into glass vial containing 6ml of Heptane and 6ml of 0.4% Paraformaldehyde.
+1	Shake	_	Action	_	_	0	_	_	Offset=323-328
+2	orbital	_	Device	_	_	0	_	_	Offset=332-347
+3	150rpm	_	Speed	_	_	0	_	_	Offset=351-357
+4	20	_	Time	_	_	0	_	_	Offset=362-372
+
+# sent_id = s7
+# text = Shake on orbital rotator at 150rpm for 20 minutes.
+1	glass	_	Device	_	_	0	_	_	Offset=533-546
+2	remove	_	Action	_	_	0	_	_	Offset=550-556
+3	bottom	_	Reagent	_	_	0	_	_	Offset=561-591
+

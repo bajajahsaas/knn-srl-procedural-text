@@ -1,0 +1,270 @@
+# sent_id = s1
+# text = Flex-T™ HLA Class I ELISA Protocol
+1	Prepare	_	Action	_	_	0	_	_	Offset=35-42
+2	substrate	_	Reagent	_	_	2	Meronym	4:Meronym|7:Meronym|9:Meronym	Offset=47-65
+
+# sent_id = s2
+# text = Prepare the substrate solution approximately 10 minutes before use:
+1	10.34ml	_	Amount	_	_	2	Measure	_	Offset=103-110
+2	DI	_	Reagent	_	_	0	_	_	Offset=111-119
+3	1.2ml	_	Amount	_	_	4	Measure	_	Offset=119-124
+4	Substrate	_	Reagent	_	_	0	_	_	Offset=128-144
+5	10X	_	Concentration	_	_	7	Measure	_	Offset=145-148
+6	240μl	_	Amount	_	_	7	Measure	_	Offset=160-165
+7	ABTS	_	Reagent	_	_	0	_	_	Offset=169-188
+8	120μl	_	Amount	_	_	9	Measure	_	Offset=188-193
+9	Hydrogen	_	Reagent	_	_	0	_	_	Offset=197-223
+
+# sent_id = s3
+# text = 10.34ml DI water1.2ml of Substrate Buffer 10X concentrate240μl of ABTS stock solution120μl of Hydrogen peroxide solution.
+1	Vortex	_	Action	_	_	0	_	_	Offset=225-231
+
+# sent_id = s4
+# text = Vortex to mix well.
+1	Dilute	_	Action	_	_	0	_	_	Offset=342-348
+2	5X	_	Concentration	_	_	3	Measure	_	Offset=353-355
+3	Coating	_	Reagent	_	_	0	_	_	Offset=356-370
+4	1X	_	Concentration	_	_	0	_	_	Offset=374-376
+5	DI	_	Reagent	_	_	0	_	_	Offset=382-390
+6	Prepare	_	Action	_	_	0	_	_	Offset=391-398
+7	Streptavidin	_	Reagent	_	_	2	Meronym	3:Meronym	Offset=399-420
+8	plate	_	Location	_	_	0	_	_	Offset=433-438
+
+# sent_id = s5
+# text = The substrate solution should be at room temperature (18-25°C) for optimal reproducible results.
+1	24μl	_	Amount	_	_	2	Measure	_	Offset=441-445
+2	Streptavidin	_	Reagent	_	_	0	_	_	Offset=449-470
+
+# sent_id = s6
+# text = Dilute the 5X Coating Buffer to 1X with DI water Prepare Streptavidin solution to coat the plate:
+1	11.976	_	Amount	_	_	3	Measure	_	Offset=472-481
+2	1X	_	Concentration	_	_	3	Measure	_	Offset=482-484
+3	Coating	_	Reagent	_	_	0	_	_	Offset=485-499
+
+# sent_id = s7
+# text = -24μl of Streptavidin solution
+1	Calculate	_	Action	_	_	0	_	_	Offset=502-511
+2	amount	_	Generic-Measure	_	_	0	_	_	Offset=516-522
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=526-528
+4	Dilution	_	Reagent	_	_	0	_	_	Offset=529-544
+5	prepare	_	Action	_	_	0	_	_	Offset=558-565
+6	solution	_	Reagent	_	_	0	_	_	Offset=570-578
+7	diluting	_	Action	_	_	0	_	_	Offset=582-590
+8	10X	_	Concentration	_	_	9	Measure	_	Offset=595-598
+9	concentrated	_	Reagent	_	_	0	_	_	Offset=599-618
+10	10	_	Numerical	_	_	0	_	_	Offset=619-627
+11	DI	_	Reagent	_	_	0	_	_	Offset=631-639
+
+# sent_id = s8
+# text = -11.976 ml 1X Coating Buffer. 
+1	Prepare	_	Action	_	_	0	_	_	Offset=717-724
+2	Wash	_	Reagent	_	_	0	_	_	Offset=725-736
+3	dilute	_	Action	_	_	0	_	_	Offset=738-744
+4	20X	_	Concentration	_	_	5	Measure	_	Offset=749-752
+5	wash	_	Reagent	_	_	0	_	_	Offset=753-764
+6	DI	_	Reagent	_	_	0	_	_	Offset=770-778
+
+# sent_id = s9
+# text = Calculate the amount of 1X Dilution Buffer required and prepare the solution by diluting the 10X concentrated buffer 10 times in DI water before use.
+1	Dilute	_	Action	_	_	0	_	_	Offset=806-812
+2	concentrated	_	Generic-Measure	_	_	3	Measure	_	Offset=813-825
+3	HRP-conjugated	_	Reagent	_	_	0	_	_	Offset=826-849
+4	0.3μg/ml	_	Concentration	_	_	0	_	_	Offset=853-861
+5	1X	_	Concentration	_	_	6	Measure	_	Offset=865-867
+6	Dilution	_	Reagent	_	_	0	_	_	Offset=868-883
+
+# sent_id = s10
+# text = The 1X Dilution Buffer can be stored for up to oneweek at 2-8°C.
+1	Prepare	_	Action	_	_	0	_	_	Offset=901-908
+2	12ml	_	Amount	_	_	0	_	_	Offset=908-912
+3	plate	_	Location	_	_	0	_	_	Offset=917-922
+
+# sent_id = s11
+# text = Prepare Wash Buffer; dilute the 20X wash buffer with DI water, at least 300ml per plate.
+1	Dilute	_	Action	_	_	0	_	_	Offset=924-930
+2	Flex-T™	_	Reagent	_	_	0	_	_	Offset=935-965
+3	2.7μM	_	Concentration	_	_	4	Measure	_	Offset=979-984
+4	solution	_	Reagent	_	_	2	Meronym	3:Meronym	Offset=985-993
+
+# sent_id = s12
+# text = Dilute concentrated HRP-conjugated antibody to 0.3μg/ml in 1X Dilution Buffer just before use.
+1	5μl	_	Amount	_	_	2	Measure	_	Offset=996-999
+2	Flex-T™	_	Reagent	_	_	0	_	_	Offset=1003-1033
+3	0.2mg/ml	_	Concentration	_	_	2	Measure	_	Offset=1037-1045
+
+# sent_id = s13
+# text = Prepare12ml per plate.
+1	2.9μl	_	Amount	_	_	3	Measure	_	Offset=1047-1052
+2	1X	_	Concentration	_	_	3	Measure	_	Offset=1056-1058
+3	Dilution	_	Reagent	_	_	0	_	_	Offset=1059-1074
+4	Coat	_	Action	_	_	0	_	_	Offset=1075-1079
+5	wells	_	Location	_	_	0	_	_	Offset=1084-1089
+6	plate	_	Location	_	_	5	Meronym	_	Offset=1097-1102
+7	Streptavidin	_	Reagent	_	_	0	_	_	Offset=1108-1120
+
+# sent_id = s14
+# text = Dilute the Flex-T™ ELISA Positive Control to prepare a 2.7μM solution:
+1	Add	_	Action	_	_	0	_	_	Offset=1122-1125
+2	100μl	_	Amount	_	_	3	Measure	_	Offset=1126-1131
+3	Streptavidin	_	Reagent	_	_	0	_	_	Offset=1135-1156
+4	wells	_	Location	_	_	0	_	_	Offset=1164-1169
+
+# sent_id = s15
+# text = -5μl of Flex-T™ ELISA Positive Control at 0.2mg/ml
+1	Seal	_	Action	_	_	0	_	_	Offset=1171-1175
+2	plate	_	Location	_	_	0	_	_	Offset=1179-1184
+3	incubate	_	Action	_	_	0	_	_	Offset=1189-1197
+4	overnight	_	Time	_	_	0	_	_	Offset=1198-1207
+5	room	_	Temperature	_	_	0	_	_	Offset=1223-1239
+
+# sent_id = s16
+# text = -2.9μl of 1X Dilution Buffer Coat the wells of the plate with Streptavidin.
+1	Discard	_	Action	_	_	0	_	_	Offset=1251-1258
+2	coating	_	Reagent	_	_	0	_	_	Offset=1263-1279
+3	wash	_	Action	_	_	0	_	_	Offset=1284-1288
+4	plate	_	Location	_	_	0	_	_	Offset=1293-1298
+5	3	_	Numerical	_	_	0	_	_	Offset=1299-1306
+6	300μl	_	Amount	_	_	7	Measure	_	Offset=1321-1326
+7	Wash	_	Reagent	_	_	0	_	_	Offset=1327-1338
+8	well	_	Location	_	_	0	_	_	Offset=1343-1347
+9	firmly	_	Modifier	_	_	0	_	_	Offset=1376-1382
+10	tapping	_	Action	_	_	0	_	_	Offset=1383-1390
+11	plate	_	Location	_	_	0	_	_	Offset=1391-1396
+12	upside	_	Method	_	_	0	_	_	Offset=1397-1408
+13	absorbent	_	Reagent	_	_	0	_	_	Offset=1412-1427
+
+# sent_id = s17
+# text = Add 100μl of Streptavidin solution to all wells.
+1	add	_	Action	_	_	0	_	_	Offset=1534-1537
+2	300μl	_	Amount	_	_	4	Measure	_	Offset=1538-1543
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=1547-1549
+4	Dilution	_	Reagent	_	_	0	_	_	Offset=1550-1565
+5	wells	_	Location	_	_	0	_	_	Offset=1573-1578
+
+# sent_id = s18
+# text = Seal theplate and incubate overnight (16-18 hrs) at room temperature (18-25°C).
+1	Seal	_	Action	_	_	0	_	_	Offset=1580-1584
+2	plate	_	Location	_	_	0	_	_	Offset=1589-1594
+3	incubate	_	Action	_	_	0	_	_	Offset=1599-1607
+4	30	_	Time	_	_	0	_	_	Offset=1612-1622
+5	room	_	Temperature	_	_	0	_	_	Offset=1626-1642
+
+# sent_id = s19
+# text = Discard the coating solution and wash the plate 3 times with at least 300μl Wash Buffer per well and blot residual buffer by firmly tapping plate upside down on absorbent paper.
+1	Prepare	_	Action	_	_	0	_	_	Offset=1654-1661
+2	three	_	Numerical	_	_	0	_	_	Offset=1662-1667
+3	HLA	_	Reagent	_	_	0	_	_	Offset=1685-1696
+4	serial	_	Method	_	_	0	_	_	Offset=1700-1715
+5	1X	_	Concentration	_	_	6	Measure	_	Offset=1719-1721
+6	Dilution	_	Reagent	_	_	0	_	_	Offset=1722-1737
+
+# sent_id = s20
+# text = All subsequent washesshould be performed similarly.
+1	Prepare	_	Action	_	_	0	_	_	Offset=1739-1746
+2	controls	_	Reagent	_	_	4	Coreference-Link	_	Offset=1751-1759
+3	1782	_	Action	_	_	0	_	_	Offset=1770-1774;1780
+4	them	_	Mention	_	_	0	_	_	Offset=1775-1779
+5	melting	_	Temperature	_	_	0	_	_	Offset=1783-1794
+
+# sent_id = s21
+# text = To block non-specific binding and reduce background, add 300μl of 1X Dilution Buffer to all wells.
+1	dilute	_	Action	_	_	0	_	_	Offset=1869-1875
+2	small	_	Generic-Measure	_	_	3	Measure	_	Offset=1878-1891
+3	exchange	_	Reagent	_	_	0	_	_	Offset=1899-1924
+4	300-fold	_	Numerical	_	_	0	_	_	Offset=1925-1933
+5	1X	_	Concentration	_	_	6	Measure	_	Offset=1937-1939
+6	Dilution	_	Reagent	_	_	0	_	_	Offset=1940-1955
+
+# sent_id = s22
+# text = Seal the plate and incubate for 30 minutes at room temperature (18-25°C).
+1	Mix	_	Action	_	_	0	_	_	Offset=2083-2086
+2	thoroughly	_	Modifier	_	_	0	_	_	Offset=2087-2097
+
+# sent_id = s23
+# text = Prepare three dilutions of the HLA control by serial dilution in 1X Dilution Buffer.
+1	Discard	_	Action	_	_	0	_	_	Offset=2099-2106
+2	Dilution	_	Reagent	_	_	0	_	_	Offset=2111-2126
+3	plate	_	Location	_	_	0	_	_	Offset=2136-2141
+4	blot	_	Action	_	_	0	_	_	Offset=2146-2150
+5	residual	_	Reagent	_	_	0	_	_	Offset=2155-2170
+
+# sent_id = s24
+# text = Prepare the controls fresh and keep them on melting ice until usage.
+1	Pipette	_	Action	_	_	0	_	_	Offset=2172-2179
+2	100μl	_	Amount	_	_	4	Measure	_	Offset=2180-2185
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=2189-2191
+4	Dilution	_	Reagent	_	_	0	_	_	Offset=2192-2207
+5	diluted	_	Reagent	_	_	0	_	_	Offset=2217-2239
+6	exchange	_	Reagent	_	_	5	Or	_	Offset=2287-2322
+7	wells	_	Location	_	_	0	_	_	Offset=2345-2350
+
+# sent_id = s25
+# text = To evaluate the outcome of UV-mediated HLA peptide exchange, dilute a small aliquot of the exchange reaction mixture 300-fold in 1X Dilution Buffer (refer to the peptide exchange step in Protocol for fluorescent Flex-T™ generation and antigen specific CD8+ T cell staining).
+1	Seal	_	Action	_	_	0	_	_	Offset=2394-2398
+2	plates	_	Location	_	_	0	_	_	Offset=2403-2409
+3	incubate	_	Action	_	_	0	_	_	Offset=2414-2422
+4	1	_	Time	_	_	0	_	_	Offset=2427-2433
+5	37°C	_	Temperature	_	_	0	_	_	Offset=2437-2441
+
+# sent_id = s26
+# text = Mix thoroughly.
+1	Discard	_	Action	_	_	0	_	_	Offset=2443-2450
+2	liquid	_	Reagent	_	_	0	_	_	Offset=2455-2461
+3	wells	_	Location	_	_	0	_	_	Offset=2471-2476
+4	wash	_	Action	_	_	0	_	_	Offset=2481-2485
+5	3	_	Numerical	_	_	0	_	_	Offset=2486-2493
+6	300μl	_	Amount	_	_	7	Measure	_	Offset=2499-2504
+7	wash	_	Reagent	_	_	0	_	_	Offset=2508-2519
+8	well	_	Location	_	_	0	_	_	Offset=2524-2528
+
+# sent_id = s27
+# text = Discard the Dilution Buffer from the plate and blot the residual buffer.
+1	Add	_	Action	_	_	0	_	_	Offset=2530-2533
+2	100μl	_	Amount	_	_	3	Measure	_	Offset=2534-2539
+3	diluted	_	Reagent	_	_	0	_	_	Offset=2543-2574
+
+# sent_id = s28
+# text = Pipette 100μl of 1X Dilution Buffer (blank), diluted ELISA controls (H, M, L, positive, negative, and UV only), or exchange reaction mixture dilutions, into the appropriate wells (recommended in duplicate, see plate map).
+1	Seal	_	Action	_	_	0	_	_	Offset=2576-2580
+2	plates	_	Location	_	_	0	_	_	Offset=2585-2591
+3	incubate	_	Action	_	_	0	_	_	Offset=2596-2604
+4	1	_	Time	_	_	0	_	_	Offset=2609-2615
+5	37°C	_	Temperature	_	_	0	_	_	Offset=2619-2623
+
+# sent_id = s29
+# text = Seal the plates and incubate for 1 hour at 37°C.
+1	Discard	_	Action	_	_	0	_	_	Offset=2625-2632
+2	liquid	_	Reagent	_	_	0	_	_	Offset=2637-2643
+3	wells	_	Location	_	_	0	_	_	Offset=2653-2658
+4	wash	_	Action	_	_	0	_	_	Offset=2663-2667
+5	3	_	Numerical	_	_	0	_	_	Offset=2668-2675
+6	300μl	_	Amount	_	_	7	Measure	_	Offset=2681-2686
+7	wash	_	Reagent	_	_	0	_	_	Offset=2690-2701
+8	well	_	Location	_	_	0	_	_	Offset=2706-2710
+
+# sent_id = s30
+# text = Discard the liquid from the wells and wash 3 times with 300μl of wash buffer per well.
+1	Add	_	Action	_	_	0	_	_	Offset=2712-2715
+2	100μl	_	Amount	_	_	3	Measure	_	Offset=2716-2721
+3	substrate	_	Reagent	_	_	0	_	_	Offset=2725-2743
+
+# sent_id = s31
+# text = Add 100μl of diluted HRP-conjugated antibody.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2745-2753
+2	8	_	Time	_	_	0	_	_	Offset=2758-2767
+3	room	_	Temperature	_	_	0	_	_	Offset=2771-2787
+4	dark	_	Method	_	_	0	_	_	Offset=2805-2809
+5	plate	_	Device	_	_	0	_	_	Offset=2815-2827
+6	400-500	_	Speed	_	_	0	_	_	Offset=2831-2842
+
+# sent_id = s32
+# text = Seal the plates and incubate for 1 hour at 37°C.
+1	Add	_	Action	_	_	0	_	_	Offset=2844-2847
+2	50μl	_	Amount	_	_	3	Measure	_	Offset=2848-2852
+3	Stop	_	Reagent	_	_	0	_	_	Offset=2856-2869
+4	wells	_	Location	_	_	0	_	_	Offset=2877-2882
+5	read	_	Action	_	_	0	_	_	Offset=2887-2891
+6	414	_	Numerical	_	_	0	_	_	Offset=2895-2898
+7	nm	_	Measure-Type	_	_	6	Of-Type	_	Offset=2898-2900
+8	ELISA	_	Device	_	_	0	_	_	Offset=2907-2919
+

@@ -1,0 +1,29 @@
+# sent_id = s1
+# text = Restriction Digest
+1	Mix	_	Action	_	_	0	_	_	Offset=79-82
+2	components	_	Reagent	_	_	0	_	_	Offset=83-93
+3	pipetting	_	Action	_	_	0	_	_	Offset=97-106
+4	reaction	_	Reagent	_	_	0	_	_	Offset=111-127
+5	up	_	Method	_	_	0	_	_	Offset=128-139
+6	"flicking"	_	Action	_	_	0	_	_	Offset=147-157
+7	reaction	_	Location	_	_	0	_	_	Offset=162-175
+
+# sent_id = s2
+# text = Set up the following reaction (total reaction volume 50ul).
+1	Quick	_	Modifier	_	_	0	_	_	Offset=177-182
+2	("touch")	_	Action	_	_	0	_	_	Offset=183-202
+3	microcentrifuge	_	Location	_	_	0	_	_	Offset=208-223
+
+# sent_id = s3
+# text = Mix components by pipetting the reaction mixture up and down, or by "flicking" the reaction tube.
+1	Do	_	Action	_	_	0	_	_	Offset=225-238
+2	reaction	_	Reagent	_	_	0	_	_	Offset=243-251
+
+# sent_id = s4
+# text = Quick ("touch") spin-down in a microcentrifuge.
+1	Incubate	_	Action	_	_	0	_	_	Offset=253-261
+2	1	_	Time	_	_	0	_	_	Offset=266-272
+3	enzyme-specific	_	Modifier	_	_	5	Mod-Link	_	Offset=280-295
+4	appropriate	_	Modifier	_	_	5	Mod-Link	_	Offset=296-307
+5	temperature	_	Temperature	_	_	0	_	_	Offset=308-319
+

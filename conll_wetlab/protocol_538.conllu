@@ -1,0 +1,32 @@
+# sent_id = s1
+# text = Developing a Titration Kill Curve (G418, Hygromycin B and Puromycin)
+1	Split	_	Action	_	_	0	_	_	Offset=69-74
+2	non-transduced,	_	Reagent	_	_	0	_	_	Offset=75-106
+3	1:5	_	Concentration	_	_	0	_	_	Offset=107-110
+4	10	_	Amount	_	_	5	Measure	_	Offset=114-119
+5	DMEM	_	Reagent	_	_	0	_	_	Offset=120-124
+6	10%	_	Concentration	_	_	7	Measure	_	Offset=127-130
+7	FBS	_	Reagent	_	_	0	_	_	Offset=131-140
+
+# sent_id = s2
+# text = Split non-transduced, confluent cells 1:5 in 10 ml DMEM + 10% FBS media.
+1	Transfer	_	Action	_	_	0	_	_	Offset=142-150
+2	0.5	_	Amount	_	_	3	Measure	_	Offset=151-157
+3	cell	_	Reagent	_	_	0	_	_	Offset=158-173
+4	24-well	_	Size	_	_	5	Measure	_	Offset=179-186
+5	plate	_	Location	_	_	7	Meronym	_	Offset=187-192
+6	500	_	Amount	_	_	7	Measure	_	Offset=204-210
+7	media	_	Reagent	_	_	0	_	_	Offset=215-227
+
+# sent_id = s3
+# text = Transfer 0.5 mL cell suspension into 24-well plate containing 500 µl of (media + drug).
+1	Culture	_	Action	_	_	0	_	_	Offset=322-329
+2	14	_	Time	_	_	0	_	_	Offset=334-341
+
+# sent_id = s4
+# text = - G418 Sulfate
+1	Replace	_	Action	_	_	0	_	_	Offset=343-350
+2	media	_	Reagent	_	_	3	Meronym	_	Offset=355-360
+3	antibiotic	_	Reagent	_	_	0	_	_	Offset=372-382
+4	every	_	Time	_	_	0	_	_	Offset=383-395
+

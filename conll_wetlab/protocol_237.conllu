@@ -1,0 +1,187 @@
+# sent_id = s1
+# text = Direct-Blot™ Western Blotting Protocol
+1	Place	_	Action	_	_	0	_	_	Offset=39-44
+2	cells	_	Reagent	_	_	0	_	_	Offset=45-50
+3	microcentrifuge	_	Location	_	_	0	_	_	Offset=56-76
+4	centrifuge	_	Action	_	_	0	_	_	Offset=81-91
+5	collect	_	Action	_	_	0	_	_	Offset=95-102
+6	cell	_	Reagent	_	_	0	_	_	Offset=107-117
+
+# sent_id = s2
+# text = Place cells in a microcentrifuge tube and centrifuge to collect the cell pellet.
+1	Lyse	_	Action	_	_	0	_	_	Offset=120-124
+2	cell	_	Reagent	_	_	0	_	_	Offset=129-140
+3	100	_	Amount	_	_	4	Measure	_	Offset=146-152
+4	lysis	_	Reagent	_	_	0	_	_	Offset=156-168
+5	on	_	Temperature	_	_	0	_	_	Offset=169-175
+6	30	_	Time	_	_	0	_	_	Offset=180-186
+7	lyse	_	Action	_	_	0	_	_	Offset=207-211
+8	100	_	Amount	_	_	9	Measure	_	Offset=217-223
+9	lysis	_	Reagent	_	_	0	_	_	Offset=226-238
+
+# sent_id = s3
+# text = Lyse the cell pellet with 100 µl of lysis buffer on ice for 30 min (For 1 X 106 cells, lyse with 100 µlof lysis buffer).
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=241-251
+2	14,000	_	Speed	_	_	0	_	_	Offset=255-265
+3	16,000	_	Speed	_	_	2	Or	_	Offset=267-277
+4	10	_	Time	_	_	0	_	_	Offset=283-293
+5	4°C	_	Temperature	_	_	0	_	_	Offset=297-300
+
+# sent_id = s4
+# text = Centrifuge at 14,000 rpm (16,000 x g) for 10 minutes at 4°C.
+1	Transfer	_	Action	_	_	0	_	_	Offset=302-310
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=315-326
+3	new	_	Location	_	_	0	_	_	Offset=332-340
+4	discard	_	Action	_	_	0	_	_	Offset=345-352
+5	pellet	_	Reagent	_	_	0	_	_	Offset=357-363
+
+# sent_id = s5
+# text = Transfer the supernatant to a new tube and discard the pellet.
+1	Remove	_	Action	_	_	0	_	_	Offset=365-371
+2	20	_	Amount	_	_	3	Measure	_	Offset=372-377
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=381-392
+4	mix	_	Action	_	_	0	_	_	Offset=397-400
+5	20	_	Amount	_	_	7	Measure	_	Offset=406-411
+6	2x	_	Concentration	_	_	7	Measure	_	Offset=415-417
+7	sample	_	Reagent	_	_	0	_	_	Offset=418-431
+
+# sent_id = s6
+# text = Remove 20 µl of supernatant and mix with 20 µl of 2x sample buffer.
+1	Boil	_	Action	_	_	0	_	_	Offset=433-437
+2	5	_	Time	_	_	0	_	_	Offset=442-447
+
+# sent_id = s7
+# text = Boil for 5 min.
+1	Cool	_	Action	_	_	0	_	_	Offset=449-453
+2	room	_	Temperature	_	_	0	_	_	Offset=457-473
+3	5	_	Time	_	_	0	_	_	Offset=478-487
+
+# sent_id = s8
+# text = Cool at room temperature for 5 minutes.
+1	Microcentrifuge	_	Action	_	_	0	_	_	Offset=489-504
+2	5	_	Time	_	_	0	_	_	Offset=509-518
+
+# sent_id = s9
+# text = Microcentrifuge for 5 minutes.
+1	Load	_	Action	_	_	0	_	_	Offset=520-524
+2	up	_	Amount	_	_	3	Measure	_	Offset=525-536
+3	sample	_	Reagent	_	_	0	_	_	Offset=540-546
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=550-554
+5	well	_	Reagent	_	_	7	Meronym	_	Offset=555-559
+6	1.5	_	Size	_	_	7	Measure	_	Offset=565-577
+7	gel	_	Reagent	_	_	0	_	_	Offset=578-581
+
+# sent_id = s10
+# text = Load up to 40 µl of sample to each well of a 1.5 mm thick gel.
+1	Set	_	Action	_	_	0	_	_	Offset=583-586
+2	gel	_	Generic-Measure	_	_	0	_	_	Offset=587-609
+3	according	_	Modifier	_	_	0	_	_	Offset=610-654
+
+# sent_id = s11
+# text = Set gel running conditions according to the manufacturer’s instructions.
+1	Transfer	_	Action	_	_	0	_	_	Offset=656-664
+2	proteins	_	Reagent	_	_	0	_	_	Offset=669-677
+3	anitrocellulose	_	Reagent	_	_	0	_	_	Offset=681-696
+4	PVDF	_	Reagent	_	_	3	Or	_	Offset=700-713
+5	variable	_	Generic-Measure	_	_	0	_	_	Offset=719-742
+6	according	_	Modifier	_	_	0	_	_	Offset=743-787
+
+# sent_id = s12
+# text = Transfer the proteins to anitrocellulose or PVDF membrane with variable power settings according to the manufacturer’s instructions.
+1	Remove	_	Action	_	_	0	_	_	Offset=789-795
+2	blotted	_	Reagent	_	_	0	_	_	Offset=800-816
+3	transfer	_	Location	_	_	0	_	_	Offset=826-844
+4	immediately	_	Modifier	_	_	0	_	_	Offset=849-860
+5	place	_	Action	_	_	0	_	_	Offset=861-866
+6	blocking	_	Reagent	_	_	8	Meronym	_	Offset=870-885
+7	5%	_	Concentration	_	_	8	Measure	_	Offset=900-902
+8	nonfat	_	Reagent	_	_	0	_	_	Offset=903-924
+9	Incubate	_	Action	_	_	0	_	_	Offset=926-934
+10	blot	_	Reagent	_	_	0	_	_	Offset=939-943
+11	1	_	Time	_	_	0	_	_	Offset=948-954
+12	room	_	Temperature	_	_	0	_	_	Offset=958-974
+13	overnight	_	Time	_	_	11	Or	_	Offset=979-988
+14	4°C	_	Temperature	_	_	12	Or	_	Offset=992-995
+15	with	_	Modifier	_	_	0	_	_	Offset=996-1010
+
+# sent_id = s13
+# text = Remove the blotted membrane from the transfer apparatus and immediately place in blocking buffer consisting of 5% nonfat dry milk/TBS-T. Incubate the blot for 1 hour at room temperature, or overnight at 4°C with agitation.
+1	Dilute	_	Action	_	_	0	_	_	Offset=1012-1018
+2	Direct-Blot™	_	Reagent	_	_	0	_	_	Offset=1023-1044
+3	recommended	_	Concentration	_	_	2	Measure	_	Offset=1052-1086
+4	5%	_	Concentration	_	_	5	Measure	_	Offset=1090-1092
+5	nonfat	_	Reagent	_	_	0	_	_	Offset=1093-1114
+6	1:1000-1:2000	_	Concentration	_	_	0	_	_	Offset=1131-1144
+
+# sent_id = s14
+# text = Dilute the Direct-Blot™ antibody to the recommended concentration/dilution in 5% nonfat dry milk/TBS-T** (usually at a 1:1000-1:2000 dilution).
+1	Place	_	Action	_	_	0	_	_	Offset=1156-1161
+2	membrane	_	Reagent	_	_	0	_	_	Offset=1166-1174
+3	Direct-Blot™	_	Reagent	_	_	0	_	_	Offset=1182-1212
+4	incubate	_	Action	_	_	0	_	_	Offset=1217-1225
+5	2	_	Time	_	_	0	_	_	Offset=1230-1237
+6	room	_	Temperature	_	_	0	_	_	Offset=1241-1257
+7	overnight	_	Time	_	_	5	Or	_	Offset=1262-1271
+8	4°C	_	Temperature	_	_	6	Or	_	Offset=1275-1278
+9	with	_	Modifier	_	_	0	_	_	Offset=1279-1293
+
+# sent_id = s15
+# text = Place the membrane in the Direct-Blot™ antibody solution and incubate for 2 hours at room temperature, or overnight at 4°C with agitation.
+1	Wash	_	Action	_	_	0	_	_	Offset=1295-1299
+2	5	_	Time	_	_	0	_	_	Offset=1305-1314
+3	Wash	_	Reagent	_	_	4	Meronym	6:Meronym	Offset=1320-1331
+4	TBS	_	Reagent	_	_	0	_	_	Offset=1333-1336
+5	0.1%	_	Concentration	_	_	6	Measure	_	Offset=1348-1352
+6	Tween-20	_	Reagent	_	_	0	_	_	Offset=1353-1361
+
+# sent_id = s16
+# text = Wash  for 5 minutes with Wash Buffer (TBS containing 0.1% Tween-20).
+1	Wash	_	Action	_	_	0	_	_	Offset=1375-1380
+2	5	_	Time	_	_	0	_	_	Offset=1385-1394
+3	Wash	_	Reagent	_	_	4	Meronym	6:Meronym	Offset=1400-1411
+4	TBS	_	Reagent	_	_	0	_	_	Offset=1413-1416
+5	0.1%	_	Concentration	_	_	6	Measure	_	Offset=1428-1432
+6	Tween-20	_	Reagent	_	_	0	_	_	Offset=1433-1441
+
+# sent_id = s17
+# text = [wash 1/3] Wash  for 5 minutes with Wash Buffer (TBS containing 0.1% Tween-20).
+1	Wash	_	Action	_	_	0	_	_	Offset=1455-1460
+2	5	_	Time	_	_	0	_	_	Offset=1465-1474
+3	Wash	_	Reagent	_	_	0	_	_	Offset=1480-1491
+4	TBS	_	Reagent	_	_	0	_	_	Offset=1493-1496
+5	0.1%	_	Concentration	_	_	0	_	_	Offset=1508-1512
+6	Tween-20	_	Reagent	_	_	0	_	_	Offset=1513-1521
+
+# sent_id = s18
+# text = [wash 2/3] Wash  for 5 minutes with Wash Buffer (TBS containing 0.1% Tween-20).
+1	Incubate	_	Action	_	_	0	_	_	Offset=1535-1543
+2	membrane	_	Reagent	_	_	0	_	_	Offset=1544-1552
+3	protein	_	Modifier	_	_	2	Mod-Link	_	Offset=1554-1569
+4	10	_	Amount	_	_	5	Measure	_	Offset=1576-1581
+5	ECL	_	Reagent	_	_	0	_	_	Offset=1585-1627
+6	1-2	_	Time	_	_	0	_	_	Offset=1632-1643
+
+# sent_id = s19
+# text = [wash 3/3] Incubate membrane (protein side up) with 10 ml of ECL (enhanced chemiluminescence substrate) for 1-2 minutes.
+1	Drain	_	Action	_	_	0	_	_	Offset=1688-1697
+2	excess	_	Amount	_	_	3	Measure	_	Offset=1702-1708
+3	detection	_	Reagent	_	_	0	_	_	Offset=1709-1726
+4	wrap	_	Action	_	_	0	_	_	Offset=1728-1735
+5	blots	_	Reagent	_	_	0	_	_	Offset=1740-1745
+6	gently	_	Modifier	_	_	0	_	_	Offset=1751-1757
+7	smooth	_	Action	_	_	0	_	_	Offset=1758-1768
+8	air	_	Reagent	_	_	0	_	_	Offset=1773-1784
+
+# sent_id = s20
+# text = The final volume required is 0.125 ml/cm2.
+1	Place	_	Action	_	_	0	_	_	Offset=1786-1791
+2	wrapped	_	Reagent	_	_	0	_	_	Offset=1796-1809
+3	protein	_	Modifier	_	_	2	Mod-Link	_	Offset=1811-1826
+4	X-ray	_	Location	_	_	0	_	_	Offset=1834-1853
+5	expose	_	Action	_	_	0	_	_	Offset=1858-1864
+6	x-ray	_	Reagent	_	_	0	_	_	Offset=1868-1878
+
+# sent_id = s21
+# text = Drain off the excess detection reagent, wrap up the blots, and gently smooth out any air bubbles.
+1	5	_	Time	_	_	0	_	_	Offset=1904-1927
+

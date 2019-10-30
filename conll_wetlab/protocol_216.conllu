@@ -1,0 +1,72 @@
+# sent_id = s1
+# text = General Autoclaving
+1	Place	_	Action	_	_	0	_	_	Offset=20-25
+2	reservoirs	_	Location	_	_	0	_	_	Offset=26-36
+3	autoclave	_	Location	_	_	0	_	_	Offset=40-54
+
+# sent_id = s2
+# text = Place reservoirs in autoclave bags.
+1	Wrap	_	Action	_	_	0	_	_	Offset=56-60
+2	plates	_	Location	_	_	6	Meronym	_	Offset=61-67
+3	foil	_	Device	_	_	0	_	_	Offset=71-75
+4	place	_	Action	_	_	0	_	_	Offset=80-85
+5	a	_	Seal	_	_	0	_	_	Offset=86-111
+6	on	_	Location	_	_	0	_	_	Offset=112-118
+
+# sent_id = s3
+# text = Wrap plates in foil and place a piece of autoclave tape on top.
+1	Place	_	Action	_	_	0	_	_	Offset=120-125
+2	autoclave	_	Seal	_	_	0	_	_	Offset=126-140
+3	pipet	_	Location	_	_	0	_	_	Offset=144-159
+
+# sent_id = s4
+# text = Place autoclave tape on pipet tip boxes. 
+1	Place	_	Action	_	_	0	_	_	Offset=162-167
+2	all	_	Reagent	_	_	0	_	_	Offset=168-177
+3	beige	_	Location	_	_	0	_	_	Offset=181-201
+
+# sent_id = s5
+# text = Place all items in beige autoclave tray.
+1	Bring	_	Action	_	_	0	_	_	Offset=203-208
+2	autoclave	_	Device	_	_	0	_	_	Offset=212-221
+
+# sent_id = s6
+# text = Bring to autoclave.
+1	Fill	_	Action	_	_	0	_	_	Offset=223-231
+
+# sent_id = s7
+# text = Fill out table hanging from autoclave: Name/Lab, Process, Time Open autoclave door by pressing button.
+1	place	_	Action	_	_	0	_	_	Offset=344-349
+2	tray	_	Location	_	_	3	Meronym	_	Offset=350-354
+3	items	_	Reagent	_	_	0	_	_	Offset=360-365
+4	middle	_	Location	_	_	0	_	_	Offset=373-379
+5	autoclave	_	Location	_	_	4	Meronym	_	Offset=387-396
+
+# sent_id = s8
+# text = For dry autoclave place tray with items in the middle of the autoclave.
+1	fill	_	Action	_	_	0	_	_	Offset=416-420
+2	large	_	Location	_	_	0	_	_	Offset=421-443
+3	DI	_	Reagent	_	_	0	_	_	Offset=449-457
+4	c	_	Action	_	_	0	_	_	Offset=465-466
+5	autoclave	_	Device	_	_	0	_	_	Offset=475-484
+6	sensor	_	Device	_	_	0	_	_	Offset=490-496
+7	placed	_	Action	_	_	0	_	_	Offset=497-503
+8	flask	_	Location	_	_	0	_	_	Offset=507-512
+
+# sent_id = s9
+# text = For wet autoclave fill large Erlenmeyer flask with DI water and place in the autoclave with sensor placed in flask.
+1	Close	_	Action	_	_	0	_	_	Offset=514-519
+2	autoclave	_	Seal	_	_	0	_	_	Offset=520-534
+3	pressing	_	Action	_	_	0	_	_	Offset=538-546
+4	button	_	Device	_	_	0	_	_	Offset=547-553
+
+# sent_id = s10
+# text = Close autoclave door by pressing button.
+1	Select	_	Action	_	_	0	_	_	Offset=555-561
+
+# sent_id = s11
+# text = Select which autoclave process to run, P1 for dry, P2 for wet.
+1	Press	_	Action	_	_	0	_	_	Offset=618-623
+2	Start	_	Device	_	_	0	_	_	Offset=624-636
+3	wait	_	Action	_	_	0	_	_	Offset=641-645
+

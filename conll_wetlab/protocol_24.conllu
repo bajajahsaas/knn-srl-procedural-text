@@ -1,0 +1,95 @@
+# sent_id = s1
+# text = Extracting DNA from bananas
+1	Mush	_	Action	_	_	0	_	_	Offset=28-32
+2	banana	_	Reagent	_	_	0	_	_	Offset=37-43
+3	resealable	_	Location	_	_	0	_	_	Offset=51-65
+4	a	_	Time	_	_	0	_	_	Offset=76-84
+
+# sent_id = s2
+# text = Mush the banana in the resealable bag for about a minute until it has a pudding-like consistency and all lumps are gone.
+1	Fill	_	Action	_	_	0	_	_	Offset=149-153
+2	a	_	Location	_	_	0	_	_	Offset=154-159
+3	hot	_	Reagent	_	_	0	_	_	Offset=169-178
+4	salt	_	Reagent	_	_	0	_	_	Offset=183-187
+
+# sent_id = s3
+# text = Fill a cup with the hot water and salt.
+1	Pour	_	Action	_	_	0	_	_	Offset=189-193
+2	saltwater	_	Reagent	_	_	0	_	_	Offset=198-211
+3	bag	_	Location	_	_	0	_	_	Offset=221-224
+4	close	_	Action	_	_	0	_	_	Offset=230-235
+5	bag	_	Location	_	_	0	_	_	Offset=240-243
+
+# sent_id = s4
+# text = Pour the saltwater mix into the bag, and close the bag.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=245-251
+2	mix	_	Action	_	_	0	_	_	Offset=252-265
+3	saltwater	_	Reagent	_	_	0	_	_	Offset=270-279
+4	mashed	_	Reagent	_	_	0	_	_	Offset=284-297
+5	30	_	Time	_	_	0	_	_	Offset=311-327
+
+# sent_id = s5
+# text = Gently mix and slosh the saltwater and mashed banana together for 30 to 45 seconds.
+1	Add	_	Action	_	_	0	_	_	Offset=329-332
+2	dishwashing	_	Reagent	_	_	0	_	_	Offset=333-349
+3	bag	_	Location	_	_	0	_	_	Offset=359-362
+4	gently	_	Modifier	_	_	0	_	_	Offset=367-373
+5	mix	_	Action	_	_	0	_	_	Offset=374-377
+6	contents	_	Reagent	_	_	0	_	_	Offset=382-390
+
+# sent_id = s6
+# text = Add dishwashing soap into the bag and gently mix the contents.
+1	Place	_	Action	_	_	0	_	_	Offset=441-446
+2	coffee	_	Device	_	_	0	_	_	Offset=451-464
+3	clear	_	Location	_	_	0	_	_	Offset=470-485
+4	securing	_	Action	_	_	0	_	_	Offset=487-495
+5	top	_	Location	_	_	0	_	_	Offset=500-503
+6	filter	_	Device	_	_	5	Meronym	_	Offset=511-517
+7	lip	_	Location	_	_	0	_	_	Offset=529-532
+8	cup	_	Location	_	_	7	Meronym	_	Offset=540-543
+
+# sent_id = s7
+# text = You do not want the mixture to become too foamy.
+1	Pour	_	Action	_	_	0	_	_	Offset=545-549
+2	contents	_	Reagent	_	_	3	Meronym	_	Offset=554-562
+3	bag	_	Location	_	_	0	_	_	Offset=570-573
+4	filter	_	Device	_	_	0	_	_	Offset=583-589
+
+# sent_id = s8
+# text = Place the coffee filter in a clear glass cup, securing the top of the filter around the lip of the cup.
+1	Remove	_	Action	_	_	0	_	_	Offset=660-678
+2	used	_	Device	_	_	0	_	_	Offset=683-701
+
+# sent_id = s9
+# text = Pour the contents of the bag into the filter and let it sit until all of the liquid has dripped down into the cup.
+1	Tilt	_	Action	_	_	0	_	_	Offset=703-707
+2	glass	_	Location	_	_	0	_	_	Offset=712-717
+3	slowly	_	Modifier	_	_	0	_	_	Offset=722-728
+4	add	_	Action	_	_	0	_	_	Offset=729-732
+5	cold	_	Reagent	_	_	0	_	_	Offset=733-745
+6	side	_	Location	_	_	0	_	_	Offset=755-759
+7	cup	_	Location	_	_	6	Meronym	_	Offset=767-770
+
+# sent_id = s10
+# text = Remove and discard the used coffee filter.
+1	two-layered	_	Reagent	_	_	0	_	_	Offset=897-916
+2	sit	_	Action	_	_	0	_	_	Offset=917-920
+3	eight	_	Time	_	_	0	_	_	Offset=925-938
+
+# sent_id = s11
+# text = Tilt the glass and slowly add cold alcohol down the side of the cup until there is a layer that is 2.5-5cm (1-2in) thick.
+1	Stick	_	Action	_	_	0	_	_	Offset=1040-1045
+2	wooden	_	Device	_	_	0	_	_	Offset=1050-1064
+3	cup	_	Location	_	_	0	_	_	Offset=1074-1077
+
+# sent_id = s12
+# text = Keep the alcohol and liquefied banana as separate as possible.
+1	Spin	_	Action	_	_	0	_	_	Offset=1079-1083
+2	it	_	Mention	_	_	0	_	_	Offset=1084-1086
+3	in	_	Method	_	_	0	_	_	Offset=1087-1095
+
+# sent_id = s13
+# text = Let this two-layered mixture sit for eight minutes.
+1	Remove	_	Action	_	_	0	_	_	Offset=1135-1141
+2	stirrer	_	Device	_	_	0	_	_	Offset=1146-1153
+

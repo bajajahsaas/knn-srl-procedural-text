@@ -1,0 +1,101 @@
+# sent_id = s1
+# text = Buffers for Chloroplast Isolation from Diatoms
+1	Mix	_	Action	_	_	0	_	_	Offset=75-78
+
+# sent_id = s2
+# text = Isolation Buffer (40 mL)
+1	20	_	Amount	_	_	3	Measure	_	Offset=80-85
+2	1	_	Concentration	_	_	3	Measure	_	Offset=86-89
+3	sorbitol	_	Reagent	_	_	0	_	_	Offset=90-98
+4	400	_	Amount	_	_	6	Measure	_	Offset=98-104
+5	0.6	_	Concentration	_	_	6	Measure	_	Offset=105-110
+6	Na2-EDTA	_	Reagent	_	_	0	_	_	Offset=111-119
+7	200	_	Amount	_	_	9	Measure	_	Offset=119-125
+8	1	_	Concentration	_	_	9	Measure	_	Offset=126-129
+9	MgCl2	_	Reagent	_	_	0	_	_	Offset=130-135
+10	400	_	Amount	_	_	12	Measure	_	Offset=135-141
+11	1	_	Concentration	_	_	12	Measure	_	Offset=142-145
+12	KCl	_	Reagent	_	_	0	_	_	Offset=146-149
+13	40	_	Amount	_	_	15	Measure	_	Offset=149-154
+14	1	_	Concentration	_	_	15	Measure	_	Offset=155-158
+15	MnCl2	_	Reagent	_	_	0	_	_	Offset=159-164
+16	2	_	Amount	_	_	18	Measure	_	Offset=164-168
+17	1	_	Concentration	_	_	18	Measure	_	Offset=169-172
+18	HEPES-KOH	_	Reagent	_	_	0	_	_	Offset=173-182
+19	pH	_	pH	_	_	21	Measure	_	Offset=183-194
+20	6	_	Amount	_	_	21	Measure	_	Offset=195-199
+21	Sterile	_	Reagent	_	_	0	_	_	Offset=200-211
+
+# sent_id = s3
+# text = 1) Mix:
+1	Add	_	Action	_	_	0	_	_	Offset=216-219
+2	bovine	_	Reagent	_	_	0	_	_	Offset=220-240
+3	1%	_	Concentration	_	_	2	Measure	_	Offset=247-249
+4	isolation	_	Reagent	_	_	0	_	_	Offset=285-301
+
+# sent_id = s4
+# text = 20 ml 1 M sorbitol400 μl 0.6 M Na2-EDTA200 μl 1 M MgCl2400 μl 1 M KCl40 μl 1 M MnCl22 ml 1 M HEPES-KOH pH = 8.016.96 ml Sterile H2O.
+1	Mix	_	Action	_	_	0	_	_	Offset=362-365
+2	6	_	Amount	_	_	3	Measure	_	Offset=366-369
+3	PEG	_	Reagent	_	_	0	_	_	Offset=370-373
+4	10	_	Amount	_	_	5	Measure	_	Offset=373-378
+5	water	_	Reagent	_	_	0	_	_	Offset=379-384
+6	Percoll	_	Reagent	_	_	0	_	_	Offset=387-403
+
+# sent_id = s5
+# text = 2) Add bovine serum albumen (BSA) 1% (w/v) just before use to subset of isolation buffer needed at the beginning of the procedure PEG-6000 Solution.
+1	Mix	_	Action	_	_	0	_	_	Offset=419-422
+2	19	_	Amount	_	_	0	_	_	Offset=423-428
+3	Percoll	_	Reagent	_	_	0	_	_	Offset=429-436
+4	1	_	Amount	_	_	5	Measure	_	Offset=436-440
+5	PEG	_	Reagent	_	_	0	_	_	Offset=441-460
+6	0.2	_	Amount	_	_	7	Measure	_	Offset=460-465
+7	Ficoll	_	Reagent	_	_	0	_	_	Offset=466-472
+8	0.2	_	Amount	_	_	9	Measure	_	Offset=472-477
+9	BSA	_	Reagent	_	_	0	_	_	Offset=478-498
+
+# sent_id = s6
+# text = Mix:6 g PEG10 ml water   Percoll Solution (20 mL Stock).
+1	Mix	_	Action	_	_	0	_	_	Offset=514-517
+2	250	_	Amount	_	_	4	Measure	_	Offset=518-524
+3	1	_	Concentration	_	_	4	Measure	_	Offset=525-528
+4	HEPES-KOH	_	Reagent	_	_	0	_	_	Offset=529-538
+5	pH	_	pH	_	_	0	_	_	Offset=539-548
+6	0.1	_	Concentration	_	_	7	Measure	_	Offset=552-557
+7	EDTA	_	Reagent	_	_	0	_	_	Offset=558-562
+8	6.26	_	Amount	_	_	10	Measure	_	Offset=562-569
+9	1	_	Concentration	_	_	10	Measure	_	Offset=570-573
+10	sorbitol	_	Reagent	_	_	0	_	_	Offset=574-582
+11	2.49	_	Amount	_	_	12	Measure	_	Offset=582-589
+12	water	_	Reagent	_	_	0	_	_	Offset=590-595
+13	3X	_	Reagent	_	_	0	_	_	Offset=596-611
+
+# sent_id = s7
+# text = Mix:19 ml Percoll1 ml PEG – 6000 solution0.2 g Ficoll0.2 g BSA Gradient Mixture (10 mL Stock).
+1	Mix	_	Action	_	_	0	_	_	Offset=627-630
+2	5.7	_	Amount	_	_	3	Measure	_	Offset=631-637
+3	Percoll	_	Reagent	_	_	0	_	_	Offset=638-654
+4	1.01	_	Amount	_	_	5	Measure	_	Offset=654-661
+5	Gradient	_	Reagent	_	_	0	_	_	Offset=662-678
+6	3X	_	Amount	_	_	0	_	_	Offset=679-691
+7	40%	_	Concentration	_	_	8	Measure	_	Offset=693-696
+8	Percoll	_	Reagent	_	_	0	_	_	Offset=697-704
+
+# sent_id = s8
+# text = Mix:250 μl 1 M HEPES-KOH pH = 8.01 ml 0.1 M EDTA6.26 ml 1 M sorbitol2.49 ml water 3X Bottom Layer (80% Percoll).
+1	Mix	_	Action	_	_	0	_	_	Offset=707-710
+2	5.04	_	Amount	_	_	3	Measure	_	Offset=711-718
+3	Percoll	_	Reagent	_	_	0	_	_	Offset=719-735
+4	6.96	_	Amount	_	_	5	Measure	_	Offset=735-742
+5	Gradient	_	Reagent	_	_	0	_	_	Offset=743-759
+6	10M	_	Concentration	_	_	7	Measure	_	Offset=760-763
+7	Ammonium	_	Reagent	_	_	0	_	_	Offset=764-781
+
+# sent_id = s9
+# text = Mix:5.7 ml Percoll Solution1.01 ml Gradient Mixture 3X Top Layer (40% Percoll).
+1	Mix	_	Action	_	_	0	_	_	Offset=790-793
+2	3.7	_	Amount	_	_	3	Measure	_	Offset=794-799
+3	NH4F	_	Reagent	_	_	0	_	_	Offset=800-804
+4	10	_	Amount	_	_	5	Measure	_	Offset=804-809
+5	H2O	_	Reagent	_	_	0	_	_	Offset=810-813
+

@@ -1,0 +1,78 @@
+# sent_id = s1
+# text = Cesium Chloride Dialysis for Viruses
+1	Prepare	_	Action	_	_	0	_	_	Offset=37-44
+2	MTN100	_	Reagent	_	_	0	_	_	Offset=45-51
+3	5x	_	Concentration	_	_	4	Measure	_	Offset=57-59
+4	NaCl	_	Reagent	_	_	0	_	_	Offset=60-64
+
+# sent_id = s2
+# text = Prepare MTN100 with 5x NaCl.
+1	Prepare	_	Action	_	_	0	_	_	Offset=66-73
+2	MTN100	_	Reagent	_	_	0	_	_	Offset=74-80
+3	3x	_	Concentration	_	_	4	Measure	_	Offset=86-88
+4	NaCl	_	Reagent	_	_	0	_	_	Offset=89-93
+
+# sent_id = s3
+# text = Prepare MTN100 with 3x NaCl.
+1	Prepare	_	Action	_	_	0	_	_	Offset=95-102
+2	MTN100	_	Reagent	_	_	0	_	_	Offset=103-109
+3	1x	_	Concentration	_	_	4	Measure	_	Offset=115-117
+4	NaCl	_	Reagent	_	_	0	_	_	Offset=118-122
+
+# sent_id = s4
+# text = Prepare MTN100 with 1x NaCl.
+1	Bring	_	Action	_	_	0	_	_	Offset=124-136
+2	1L	_	Amount	_	_	0	_	_	Offset=140-142
+3	Milli-Q	_	Reagent	_	_	0	_	_	Offset=148-161
+
+# sent_id = s5
+# text = Bring volume to 1L with Milli-Q water.
+1	Slide-A-Lyzer	_	Location	_	_	0	_	_	Offset=167-198
+2	follow	_	Action	_	_	0	_	_	Offset=250-256
+3	manufacturer’s	_	Method	_	_	0	_	_	Offset=261-324
+
+# sent_id = s6
+# text = Use Slide-A-Lyzer dialysis casettes (Pierce #66425 or #87730; 10K MWCO, 0.5-3.0ml) and follow the manufacturer’s directions for loading and dialysis of cassettes.
+1	Step	_	Action	_	_	0	_	_	Offset=326-338
+2	~30	_	Time	_	_	0	_	_	Offset=343-350
+3	5x	_	Concentration	_	_	4	Measure	_	Offset=360-362
+4	NaCl	_	Reagent	_	_	0	_	_	Offset=363-378
+
+# sent_id = s7
+# text = Step dialyze for ~30 min with the 5x NaCl MTN buffer.
+1	Step	_	Action	_	_	0	_	_	Offset=380-392
+2	~30	_	Time	_	_	0	_	_	Offset=397-404
+3	3x	_	Concentration	_	_	4	Measure	_	Offset=414-416
+4	NaCl	_	Reagent	_	_	0	_	_	Offset=417-432
+
+# sent_id = s8
+# text = Step dialyze for ~30 min with the 3x NaCl MTN buffer.
+1	Step	_	Action	_	_	0	_	_	Offset=434-446
+2	~30	_	Time	_	_	0	_	_	Offset=451-458
+3	two	_	Generic-Measure	_	_	5	Measure	_	Offset=468-479
+4	1x	_	Concentration	_	_	5	Measure	_	Offset=487-489
+5	NaCl	_	Reagent	_	_	0	_	_	Offset=490-498
+6	at	_	Modifier	_	_	7	Mod-Link	_	Offset=506-514
+7	300	_	Amount	_	_	8	Measure	_	Offset=515-526
+8	buffer	_	Reagent	_	_	0	_	_	Offset=530-536
+9	sample	_	Action	_	_	0	_	_	Offset=540-546
+
+# sent_id = s9
+# text = Step dialyze for ~30 min with the two changes of the 1x NaCl MTN, using at least 300 volumes of buffer to sample.
+1	Stir	_	Action	_	_	0	_	_	Offset=548-552
+2	gently	_	Modifier	_	_	0	_	_	Offset=553-559
+3	room	_	Temperature	_	_	0	_	_	Offset=563-579
+4	Remove	_	Action	_	_	0	_	_	Offset=580-586
+5	sample	_	Reagent	_	_	0	_	_	Offset=591-597
+6	manufacturer’s	_	Method	_	_	0	_	_	Offset=611-636
+7	Transfer	_	Action	_	_	0	_	_	Offset=637-645
+8	sterile	_	Modifier	_	_	9	Mod-Link	_	Offset=649-656
+9	low	_	Location	_	_	0	_	_	Offset=658-672
+
+# sent_id = s10
+# text = Stir gently at room temperature Remove the sample according to manufacturer’s directions Transfer to sterile, low bind tubes.
+1	Store	_	Action	_	_	0	_	_	Offset=674-679
+2	dialyzed	_	Modifier	_	_	3	Mod-Link	_	Offset=680-688
+3	particles	_	Reagent	_	_	0	_	_	Offset=689-698
+4	4°C	_	Temperature	_	_	0	_	_	Offset=702-705
+

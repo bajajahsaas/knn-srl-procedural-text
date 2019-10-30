@@ -1,0 +1,45 @@
+# sent_id = s1
+# text = Cultivation / Spore Production for Alternaria Solani
+1	Inoculate	_	Action	_	_	0	_	_	Offset=53-62
+2	Mycelium	_	Reagent	_	_	0	_	_	Offset=63-71
+3	spores	_	Reagent	_	_	0	_	_	Offset=77-83
+4	fresh	_	Location	_	_	0	_	_	Offset=108-124
+
+# sent_id = s2
+# text = Inoculate Mycelium with spores from the stock plate of fresh SNA plates.
+1	Store	_	Action	_	_	0	_	_	Offset=266-271
+2	plate	_	Location	_	_	0	_	_	Offset=272-277
+3	growth	_	Device	_	_	0	_	_	Offset=283-297
+4	12/12	_	Method	_	_	0	_	_	Offset=303-330
+
+# sent_id = s3
+# text = Make sure to inoculate only a small amount right in the middle of the plate to allow even and equal spread and growth throughout the plate.
+1	22°C	_	Temperature	_	_	0	_	_	Offset=356-360
+
+# sent_id = s4
+# text = Store plate in a growth chamber with 12/12 h darkness/blacklight. 
+1	humidity	_	Method	_	_	0	_	_	Offset=371-386
+
+# sent_id = s5
+# text = Optimal temperature is 22°C. 
+1	grow	_	Action	_	_	0	_	_	Offset=398-402
+2	3	_	Time	_	_	0	_	_	Offset=407-414
+
+# sent_id = s6
+# text = Optimal humidity 60-70%. 
+1	Harvest	_	Action	_	_	0	_	_	Offset=416-423
+2	spores	_	Reagent	_	_	0	_	_	Offset=424-430
+3	0.0-0.5%	_	Concentration	_	_	4	Measure	_	Offset=443-451
+4	tween	_	Reagent	_	_	0	_	_	Offset=452-466
+5	plate	_	Location	_	_	0	_	_	Offset=474-479
+6	scraping	_	Action	_	_	0	_	_	Offset=484-499
+7	coverslip	_	Reagent	_	_	0	_	_	Offset=507-516
+
+# sent_id = s7
+# text = Allow to grow for 3 weeks.
+1	Collect	_	Action	_	_	0	_	_	Offset=518-525
+2	liquid	_	Reagent	_	_	0	_	_	Offset=530-536
+3	Filter	_	Action	_	_	0	_	_	Offset=549-563
+4	four	_	Size	_	_	5	Measure	_	Offset=564-575
+5	mesh	_	Device	_	_	0	_	_	Offset=579-583
+

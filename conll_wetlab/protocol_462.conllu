@@ -1,0 +1,256 @@
+# sent_id = s1
+# text = Embryoid bodies generation
+1	Add	_	Action	_	_	0	_	_	Offset=27-30
+2	Trypsin	_	Reagent	_	_	0	_	_	Offset=31-38
+3	2ml	_	Amount	_	_	2	Measure	_	Offset=39-42
+4	gently	_	Modifier	_	_	0	_	_	Offset=47-53
+5	shake	_	Action	_	_	0	_	_	Offset=54-59
+6	plate	_	Location	_	_	0	_	_	Offset=60-65
+
+# sent_id = s2
+# text = Add Trypsin 2ml and gently shake plate. 
+1	Add	_	Action	_	_	0	_	_	Offset=68-71
+2	8ml	_	Amount	_	_	3	Measure	_	Offset=72-75
+3	ES	_	Reagent	_	_	0	_	_	Offset=76-97
+4	inactivate	_	Action	_	_	0	_	_	Offset=101-111
+5	trypsin	_	Reagent	_	_	0	_	_	Offset=112-119
+6	Centrifuge	_	Action	_	_	0	_	_	Offset=120-130
+7	500rpm	_	Speed	_	_	0	_	_	Offset=134-140
+8	10min	_	Time	_	_	0	_	_	Offset=145-150
+
+# sent_id = s3
+# text = Add 8ml ES medium without LIF to inactivate trypsin Centrifuge at 500rpm for 10min. 
+1	Add	_	Action	_	_	0	_	_	Offset=153-156
+2	8ml	_	Amount	_	_	3	Measure	_	Offset=157-160
+3	EB	_	Reagent	_	_	0	_	_	Offset=164-173
+4	each	_	Modifier	_	_	6	Mod-Link	_	Offset=177-181
+5	10cm	_	Size	_	_	6	Measure	_	Offset=182-186
+6	petri-dish	_	Location	_	_	0	_	_	Offset=187-197
+
+# sent_id = s4
+# text = Add 8ml of EB medium to each 10cm petri-dish while centrifuging. 
+1	Gently	_	Modifier	_	_	0	_	_	Offset=219-225
+2	resuspend	_	Action	_	_	0	_	_	Offset=226-235
+3	pellet	_	Reagent	_	_	0	_	_	Offset=236-242
+4	5ml	_	Amount	_	_	5	Measure	_	Offset=246-249
+5	EB	_	Reagent	_	_	0	_	_	Offset=250-259
+6	5ml	_	Amount	_	_	7	Setting	_	Offset=263-266
+7	pipette	_	Device	_	_	0	_	_	Offset=267-274
+8	up	_	Method	_	_	0	_	_	Offset=276-287
+9	5	_	Numerical	_	_	0	_	_	Offset=292-293
+
+# sent_id = s5
+# text = Gently resuspend pellet in 5ml EB medium by 5ml pipette, up and down for 5 times. 
+1	Take	_	Action	_	_	0	_	_	Offset=302-306
+2	100ul	_	Amount	_	_	3	Measure	_	Offset=307-312
+3	cell	_	Reagent	_	_	0	_	_	Offset=313-328
+4	dilute	_	Action	_	_	0	_	_	Offset=333-339
+5	1ml	_	Amount	_	_	0	_	_	Offset=345-348
+
+# sent_id = s6
+# text = Take 100ul cell suspension and dilute into 1ml.
+1	Count	_	Action	_	_	0	_	_	Offset=350-355
+
+# sent_id = s7
+# text = Count.
+1	Take	_	Action	_	_	0	_	_	Offset=357-361
+2	appropriate	_	Modifier	_	_	4	Mod-Link	_	Offset=362-373
+3	number	_	Amount	_	_	4	Measure	_	Offset=374-380
+4	cells	_	Reagent	_	_	0	_	_	Offset=384-389
+5	dilute	_	Action	_	_	0	_	_	Offset=394-400
+6	1×10^6	_	Concentration	_	_	0	_	_	Offset=406-421
+
+# sent_id = s8
+# text = Take appropriate number of cells and dilute into 1×10^6 cells/ml. 
+1	Gently	_	Modifier	_	_	0	_	_	Offset=424-430
+2	re-suspend	_	Action	_	_	0	_	_	Offset=431-441
+3	5ml	_	Amount	_	_	4	Setting	_	Offset=445-448
+4	pipette	_	Device	_	_	0	_	_	Offset=449-456
+5	up	_	Method	_	_	0	_	_	Offset=458-469
+6	4	_	Numerical	_	_	0	_	_	Offset=474-475
+
+# sent_id = s9
+# text = Gently re-suspend by 5ml pipette, up and down for 4 times. 
+1	Seed	_	Action	_	_	0	_	_	Offset=484-488
+2	2ml	_	Amount	_	_	3	Measure	_	Offset=489-492
+3	cells	_	Reagent	_	_	0	_	_	Offset=496-501
+4	dish	_	Location	_	_	0	_	_	Offset=502-506
+
+# sent_id = s10
+# text = Seed 2ml of cells/dish. 
+1	Save	_	Action	_	_	0	_	_	Offset=509-513
+2	2×10^6	_	Amount	_	_	3	Measure	_	Offset=514-520
+3	cells	_	Reagent	_	_	0	_	_	Offset=521-526
+4	RNA	_	Method	_	_	0	_	_	Offset=531-545
+
+# sent_id = s11
+# text = Save 2×10^6 cells for RNA extraction. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=548-556
+2	medium	_	Reagent	_	_	3	Meronym	_	Offset=557-563
+3	Ebs	_	Reagent	_	_	0	_	_	Offset=575-578
+4	50ml	_	Amount	_	_	5	Measure	_	Offset=582-586
+5	tubes	_	Location	_	_	0	_	_	Offset=587-592
+
+# sent_id = s12
+# text = Transfer medium containing Ebs to 50ml tubes. 
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=595-604
+2	add	_	Action	_	_	0	_	_	Offset=605-608
+3	5ml	_	Amount	_	_	4	Measure	_	Offset=609-612
+4	medium	_	Reagent	_	_	0	_	_	Offset=613-619
+5	dishes	_	Location	_	_	0	_	_	Offset=623-629
+6	immediately	_	Modifier	_	_	5	Mod-Link	_	Offset=630-641
+7	put	_	Action	_	_	0	_	_	Offset=646-649
+8	incubator	_	Device	_	_	0	_	_	Offset=658-667
+
+# sent_id = s13
+# text = Carefully add 5ml medium to dishes immediately and put back in incubator. 
+1	Sink	_	Action	_	_	0	_	_	Offset=670-674
+2	cells	_	Reagent	_	_	0	_	_	Offset=675-680
+3	tubes	_	Location	_	_	0	_	_	Offset=684-689
+4	gravity	_	Method	_	_	0	_	_	Offset=693-700
+5	5min	_	Time	_	_	0	_	_	Offset=705-709
+
+# sent_id = s14
+# text = Sink cells in tubes by gravity for 5min. 
+1	Discard	_	Action	_	_	0	_	_	Offset=712-719
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=720-731
+
+# sent_id = s15
+# text = Discard supernatant. 
+1	Add	_	Action	_	_	0	_	_	Offset=734-737
+2	5ml	_	Amount	_	_	3	Measure	_	Offset=738-741
+3	medium	_	Reagent	_	_	0	_	_	Offset=742-748
+4	pellets	_	Reagent	_	_	0	_	_	Offset=752-759
+
+# sent_id = s16
+# text = Add 5ml medium to pellets. 
+1	Mix	_	Action	_	_	0	_	_	Offset=762-765
+2	samples	_	Reagent	_	_	0	_	_	Offset=766-773
+3	inverting	_	Action	_	_	0	_	_	Offset=777-786
+4	few	_	Numerical	_	_	0	_	_	Offset=789-792
+5	gently	_	Modifier	_	_	0	_	_	Offset=799-805
+
+# sent_id = s17
+# text = Mix samples by inverting a few times gently. 
+1	Distribute	_	Action	_	_	0	_	_	Offset=808-818
+2	samples	_	Reagent	_	_	0	_	_	Offset=819-826
+3	different	_	Modifier	_	_	4	Mod-Link	_	Offset=830-839
+4	dishes	_	Location	_	_	0	_	_	Offset=840-846
+
+# sent_id = s18
+# text = Distribute samples to different dishes. 
+1	gelatin	_	Reagent	_	_	0	_	_	Offset=857-864
+2	coated	_	Action	_	_	0	_	_	Offset=865-871
+3	chamber	_	Location	_	_	0	_	_	Offset=872-886
+
+# sent_id = s19
+# text = Prepare gelatin coated chamber slides (2 well). 
+1	Add	_	Action	_	_	0	_	_	Offset=898-901
+2	1.5ml	_	Amount	_	_	3	Measure	_	Offset=902-907
+3	medium	_	Reagent	_	_	0	_	_	Offset=911-917
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=923-927
+5	well	_	Location	_	_	0	_	_	Offset=928-932
+
+# sent_id = s20
+# text = Add 1.5ml of medium into each well. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=935-943
+2	1	_	Amount	_	_	4	Measure	_	Offset=944-950
+3	day4	_	Modifier	_	_	4	Mod-Link	_	Offset=954-958
+4	Ebs	_	Reagent	_	_	0	_	_	Offset=959-962
+5	15ml	_	Amount	_	_	6	Measure	_	Offset=968-972
+6	tube	_	Location	_	_	0	_	_	Offset=973-977
+
+# sent_id = s21
+# text = Transfer 1 dish of day4 Ebs into 15ml tube. 
+1	Wait	_	Action	_	_	0	_	_	Offset=980-984
+2	Ebs	_	Reagent	_	_	0	_	_	Offset=989-992
+3	sink	_	Action	_	_	0	_	_	Offset=993-997
+4	bottom	_	Location	_	_	0	_	_	Offset=1005-1011
+5	tube	_	Location	_	_	4	Meronym	_	Offset=1015-1019
+6	gravity	_	Method	_	_	0	_	_	Offset=1023-1030
+7	5min	_	Time	_	_	0	_	_	Offset=1035-1039
+
+# sent_id = s22
+# text = Wait for Ebs sink to the bottom of tube by gravity for 5min. 
+1	Discard	_	Action	_	_	0	_	_	Offset=1042-1049
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1050-1061
+
+# sent_id = s23
+# text = Discard supernatant. 
+1	Add	_	Action	_	_	0	_	_	Offset=1064-1067
+2	10ml	_	Amount	_	_	3	Measure	_	Offset=1068-1072
+3	EB	_	Reagent	_	_	0	_	_	Offset=1073-1082
+4	pellets	_	Reagent	_	_	0	_	_	Offset=1088-1095
+
+# sent_id = s24
+# text = Add 10ml EB medium into pellets. 
+1	Seed	_	Action	_	_	0	_	_	Offset=1098-1102
+2	0.5ml	_	Amount	_	_	3	Measure	_	Offset=1103-1108
+3	EB	_	Reagent	_	_	0	_	_	Offset=1112-1114
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=1118-1122
+5	well	_	Location	_	_	0	_	_	Offset=1123-1127
+
+# sent_id = s25
+# text = Seed 0.5ml of EB to each well. 
+1	Change	_	Action	_	_	0	_	_	Offset=1130-1136
+2	medium	_	Reagent	_	_	0	_	_	Offset=1137-1143
+3	everyday	_	Time	_	_	0	_	_	Offset=1144-1152
+4	suck	_	Action	_	_	0	_	_	Offset=1154-1158
+5	supernatant	_	Reagent	_	_	0	_	_	Offset=1159-1170
+6	replace	_	Action	_	_	0	_	_	Offset=1172-1179
+7	fresh	_	Modifier	_	_	8	Mod-Link	_	Offset=1185-1190
+8	EB	_	Reagent	_	_	0	_	_	Offset=1191-1200
+
+# sent_id = s26
+# text = Change medium everyday: suck supernatant, replace with fresh EB medium. 
+1	Take	_	Action	_	_	0	_	_	Offset=1203-1207
+2	2	_	Numerical	_	_	3	Measure	_	Offset=1208-1209
+3	wells	_	Location	_	_	0	_	_	Offset=1210-1215
+4	group	_	Location	_	_	0	_	_	Offset=1225-1230
+5	day6	_	Modifier	_	_	0	_	_	Offset=1234-1238
+6	day8	_	Modifier	_	_	0	_	_	Offset=1240-1244
+7	day12	_	Modifier	_	_	0	_	_	Offset=1249-1254
+
+# sent_id = s27
+# text = Take 2 wells for each group on day6, day8 and day12. 
+1	Suck	_	Action	_	_	0	_	_	Offset=1257-1261
+2	medium	_	Reagent	_	_	0	_	_	Offset=1266-1272
+3	carefully	_	Modifier	_	_	0	_	_	Offset=1273-1282
+
+# sent_id = s28
+# text = Suck the medium carefully. 
+1	Fix	_	Action	_	_	0	_	_	Offset=1285-1288
+2	4%	_	Concentration	_	_	3	Measure	_	Offset=1294-1296
+3	PFA	_	Reagent	_	_	0	_	_	Offset=1297-1300
+4	30min	_	Time	_	_	0	_	_	Offset=1305-1310
+5	@RT	_	Temperature	_	_	0	_	_	Offset=1311-1314
+6	hood	_	Location	_	_	0	_	_	Offset=1320-1324
+
+# sent_id = s29
+# text = Fix with 4% PFA for 30min @RT. (in hood). 
+1	Wash	_	Action	_	_	0	_	_	Offset=1328-1332
+2	#1	_	Reagent	_	_	0	_	_	Offset=1333-1335
+3	2ml	_	Amount	_	_	4	Measure	_	Offset=1341-1344
+4	PBS	_	Reagent	_	_	0	_	_	Offset=1348-1351
+
+# sent_id = s30
+# text = Wash #1 with 2ml of PBS. 
+1	Wash	_	Action	_	_	0	_	_	Offset=1354-1358
+2	#2	_	Reagent	_	_	0	_	_	Offset=1359-1361
+3	2ml	_	Amount	_	_	4	Measure	_	Offset=1367-1370
+4	PBS	_	Reagent	_	_	0	_	_	Offset=1374-1377
+
+# sent_id = s31
+# text = Wash #2 with 2ml of PBS. 
+1	Wash	_	Action	_	_	0	_	_	Offset=1380-1384
+2	#3	_	Reagent	_	_	0	_	_	Offset=1385-1387
+3	2ml	_	Amount	_	_	4	Measure	_	Offset=1393-1396
+4	PBS	_	Reagent	_	_	0	_	_	Offset=1400-1403
+
+# sent_id = s32
+# text = Wash #3 with 2ml of PBS. 
+1	Store	_	Action	_	_	0	_	_	Offset=1406-1411
+2	samples	_	Reagent	_	_	0	_	_	Offset=1412-1419
+3	PBS	_	Reagent	_	_	0	_	_	Offset=1423-1426
+4	4°C	_	Temperature	_	_	0	_	_	Offset=1430-1433
+

@@ -1,0 +1,31 @@
+# sent_id = s1
+# text = TAP Agar Plates
+1	Pour	_	Action	_	_	0	_	_	Offset=16-20
+2	500mL	_	Amount	_	_	4	Measure	_	Offset=21-26
+3	premade	_	Modifier	_	_	4	Mod-Link	_	Offset=30-37
+4	TAP	_	Reagent	_	_	0	_	_	Offset=38-41
+5	1L	_	Amount	_	_	6	Measure	_	Offset=47-49
+6	erlenmeyer	_	Location	_	_	0	_	_	Offset=50-60
+7	Agar	_	Reagent	_	_	0	_	_	Offset=61-65
+8	added	_	Action	_	_	0	_	_	Offset=69-74
+9	TAP	_	Reagent	_	_	0	_	_	Offset=78-81
+10	15g	_	Concentration	_	_	7	Measure	_	Offset=85-98
+
+# sent_id = s2
+# text = Pour 500mL of premade TAP into 1L erlenmeyer Agar is added to TAP at 15g per liter.
+1	add	_	Action	_	_	0	_	_	Offset=111-114
+2	7.5g	_	Amount	_	_	3	Measure	_	Offset=115-119
+3	agar	_	Reagent	_	_	0	_	_	Offset=123-127
+4	Stir	_	Action	_	_	0	_	_	Offset=128-132
+5	10	_	Time	_	_	0	_	_	Offset=137-147
+
+# sent_id = s3
+# text = For 500mL, add 7.5g of agar Stir for 10 minutes.
+1	Cover	_	Action	_	_	0	_	_	Offset=149-154
+2	lid	_	Location	_	_	0	_	_	Offset=159-162
+3	aluminum	_	Seal	_	_	0	_	_	Offset=168-181
+4	autoclave	_	Seal	_	_	0	_	_	Offset=183-197
+5	autoclave	_	Action	_	_	0	_	_	Offset=203-212
+6	liquid	_	Device	_	_	0	_	_	Offset=218-230
+7	90	_	Time	_	_	0	_	_	Offset=235-245
+

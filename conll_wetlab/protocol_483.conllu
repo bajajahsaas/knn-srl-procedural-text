@@ -1,0 +1,127 @@
+# sent_id = s1
+# text = Th2 Polarization of Mouse CD4+ Cells
+1	Harvest	_	Action	_	_	0	_	_	Offset=37-44
+2	lymph	_	Reagent	_	_	0	_	_	Offset=45-56
+3	mice	_	Reagent	_	_	0	_	_	Offset=133-137
+
+# sent_id = s2
+# text = Harvest lymph nodes (superficial cervical, mandibular, axillary, inguinal, and mesenteric) from mice.
+1	Tease	_	Action	_	_	0	_	_	Offset=139-144
+2	lymph	_	Reagent	_	_	0	_	_	Offset=145-156
+3	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=167-174
+4	70-µm	_	Size	_	_	5	Setting	_	Offset=175-180
+5	nylon	_	Device	_	_	0	_	_	Offset=181-200
+6	single-cell	_	Reagent	_	_	8	Meronym	_	Offset=211-250
+7	10%	_	Concentration	_	_	8	Measure	_	Offset=262-265
+8	FCS	_	Reagent	_	_	0	_	_	Offset=266-269
+
+# sent_id = s3
+# text = Tease lymph nodes through a sterile 70-µm nylon cell strainer to obtain single-cell suspensions incomplete RPMI containing 10% FCS (complete medium).
+1	Resuspend	_	Action	_	_	0	_	_	Offset=289-298
+2	cells	_	Reagent	_	_	0	_	_	Offset=299-304
+3	complete	_	Reagent	_	_	2	Meronym	_	Offset=308-323
+4	your	_	Method	_	_	0	_	_	Offset=332-352
+5	isolate	_	Action	_	_	0	_	_	Offset=356-363
+6	CD4+cells	_	Reagent	_	_	0	_	_	Offset=364-373
+
+# sent_id = s4
+# text = Resuspend cells in complete medium and use your favorite method to isolate CD4+cells.
+1	plate	_	Action	_	_	0	_	_	Offset=430-435
+2	CD4+	_	Reagent	_	_	0	_	_	Offset=436-446
+3	30	_	Generic-Measure	_	_	4	Measure	_	Offset=450-469
+4	flask	_	Location	_	_	0	_	_	Offset=470-475
+
+# sent_id = s5
+# text = Checkout Biocompare.com to find useful kits.
+1	Culture	_	Action	_	_	0	_	_	Offset=477-484
+2	cells	_	Reagent	_	_	0	_	_	Offset=485-490
+3	3	_	Time	_	_	0	_	_	Offset=495-501
+4	complete	_	Reagent	_	_	6	Meronym	7:Meronym|9:Meronym|11:Meronym	Offset=505-518
+5	10%	_	Concentration	_	_	6	Measure	_	Offset=530-533
+6	FCS	_	Reagent	_	_	0	_	_	Offset=534-537
+7	Con	_	Reagent	_	_	0	_	_	Offset=539-544
+8	5	_	Concentration	_	_	7	Measure	_	Offset=546-553
+9	recombinant	_	Reagent	_	_	0	_	_	Offset=556-578
+10	20	_	Concentration	_	_	9	Measure	_	Offset=580-588
+11	recombinant	_	Reagent	_	_	0	_	_	Offset=595-617
+12	50	_	Concentration	_	_	11	Measure	_	Offset=619-627
+
+# sent_id = s6
+# text = On day 0, plate CD4+ cells at 30 x106 /30 ml/T-75 flask.
+1	harvest	_	Action	_	_	0	_	_	Offset=640-647
+2	cells	_	Reagent	_	_	0	_	_	Offset=652-657
+3	wash	_	Action	_	_	0	_	_	Offset=662-666
+4	cells	_	Reagent	_	_	0	_	_	Offset=667-672
+5	once	_	Numerical	_	_	0	_	_	Offset=673-677
+
+# sent_id = s7
+# text = Culture cells for 3 days in complete RPMI containing 10% FCS, Con A (5 µg/mL), recombinant mouse IL-2 (20 ng/ml), and recombinant mouse IL-4 (50 ng/ml).
+1	Seed	_	Action	_	_	0	_	_	Offset=679-683
+2	15	_	Generic-Measure	_	_	3	Measure	_	Offset=684-708
+3	flask	_	Location	_	_	0	_	_	Offset=709-714
+4	recombinant	_	Reagent	_	_	0	_	_	Offset=726-748
+5	20	_	Generic-Measure	_	_	4	Measure	_	Offset=750-758
+6	recombinant	_	Reagent	_	_	0	_	_	Offset=764-786
+7	50	_	Concentration	_	_	6	Measure	_	Offset=788-796
+
+# sent_id = s8
+# text = On day 3, harvest the cells and wash cells once.
+1	coat	_	Action	_	_	0	_	_	Offset=809-813
+2	60	_	Size	_	_	3	Measure	_	Offset=816-826
+3	tissue	_	Location	_	_	0	_	_	Offset=827-852
+4	anti-mouse	_	Reagent	_	_	0	_	_	Offset=858-873
+5	clone	_	Action	_	_	0	_	_	Offset=875-880
+6	145-2C11	_	Reagent	_	_	0	_	_	Offset=881-889
+7	10	_	Concentration	_	_	6	Measure	_	Offset=891-899
+8	PBS	_	Reagent	_	_	0	_	_	Offset=903-906
+9	5	_	Generic-Measure	_	_	0	_	_	Offset=908-917
+
+# sent_id = s9
+# text = Seed 15 x106 cells/30 ml/T-75 flask along with recombinant mouse IL-2 (20 ng/ml) and recombinant mouse IL-4 (50 ng/ml).
+1	Incubate	_	Action	_	_	0	_	_	Offset=919-927
+2	4°C	_	Temperature	_	_	0	_	_	Offset=933-936
+3	refrigerator	_	Device	_	_	0	_	_	Offset=937-949
+4	overnight	_	Time	_	_	0	_	_	Offset=950-959
+
+# sent_id = s10
+# text = On day 5, coat a 60 x 15 mm tissue culture petri dish with anti-mouse CD3ε, clone 145-2C11, 10 µg/mL in PBS, 5 ml/dish.
+1	wash	_	Action	_	_	0	_	_	Offset=971-975
+2	anti-mouse	_	Reagent	_	_	0	_	_	Offset=980-995
+3	pre-coated	_	Modifier	_	_	4	Mod-Link	_	Offset=996-1006
+4	tissue	_	Location	_	_	0	_	_	Offset=1007-1032
+5	PBS	_	Reagent	_	_	0	_	_	Offset=1038-1041
+
+# sent_id = s11
+# text = Incubate in a 4°C refrigerator overnight.
+1	Harvest	_	Action	_	_	0	_	_	Offset=1043-1050
+2	cells	_	Reagent	_	_	0	_	_	Offset=1055-1060
+3	flask	_	Location	_	_	0	_	_	Offset=1070-1075
+
+# sent_id = s12
+# text = On day 6, wash the anti-mouse CD3ε pre-coated tissue culture petri dish with PBS.
+1	Wash	_	Action	_	_	0	_	_	Offset=1105-1109
+2	cells	_	Reagent	_	_	0	_	_	Offset=1114-1119
+
+# sent_id = s13
+# text = Harvest the cells from the flask (that were seeded on Day 5).
+1	Wash	_	Action	_	_	0	_	_	Offset=1132-1136
+2	cells	_	Reagent	_	_	0	_	_	Offset=1141-1146
+
+# sent_id = s14
+# text = Wash the cells.
+1	Seed	_	Action	_	_	0	_	_	Offset=1159-1163
+2	20	_	Generic-Measure	_	_	0	_	_	Offset=1167-1192
+3	10	_	Amount	_	_	4	Measure	_	Offset=1204-1209
+4	monensin	_	Reagent	_	_	0	_	_	Offset=1213-1221
+5	anti-mouse	_	Reagent	_	_	0	_	_	Offset=1234-1249
+6	clone	_	Action	_	_	0	_	_	Offset=1251-1256
+7	37.51	_	Reagent	_	_	0	_	_	Offset=1257-1262
+8	5	_	Generic-Measure	_	_	7	Measure	_	Offset=1264-1271
+
+# sent_id = s15
+# text = (wash 1/2) Wash the cells.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1274-1282
+2	6	_	Time	_	_	0	_	_	Offset=1287-1294
+3	37°C	_	Temperature	_	_	0	_	_	Offset=1298-1302
+4	CO2	_	Device	_	_	0	_	_	Offset=1308-1321
+

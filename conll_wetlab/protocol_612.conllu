@@ -1,0 +1,111 @@
+# sent_id = s1
+# text = Filtering for Cell Collection Pump → Steel filter tank → A/E filter → Durapore → DI rinsed cubie container (the one the sample was in).  
+1	Clamp	_	Action	_	_	0	_	_	Offset=138-143
+2	all	_	Modifier	_	_	3	Mod-Link	_	Offset=144-147
+3	tubes	_	Location	_	_	0	_	_	Offset=148-153
+4	manifolds	_	Location	_	_	0	_	_	Offset=157-166
+5	filter	_	Location	_	_	0	_	_	Offset=171-183
+
+# sent_id = s2
+# text = Clamp all tubes to manifolds and filter tanks.  
+1	Turn	_	Action	_	_	0	_	_	Offset=225-232
+2	pump	_	Device	_	_	0	_	_	Offset=233-237
+3	bleed	_	Action	_	_	0	_	_	Offset=247-252
+4	A/E	_	Device	_	_	0	_	_	Offset=253-256
+5	Durapore	_	Device	_	_	0	_	_	Offset=262-270
+6	A/E	_	Device	_	_	0	_	_	Offset=279-282
+
+# sent_id = s3
+# text = Make sure bleeder valves are on top. 
+1	Keep	_	Action	_	_	0	_	_	Offset=292-296
+2	cubie	_	Location	_	_	0	_	_	Offset=297-312
+3	ice-	_	Location	_	_	0	_	_	Offset=316-326
+
+# sent_id = s4
+# text = Turn on pump and then bleed A/E then Durapore and the A/E again.  
+1	Place	_	Action	_	_	0	_	_	Offset=368-373
+2	“out”	_	Location	_	_	0	_	_	Offset=374-384
+3	filter	_	Location	_	_	0	_	_	Offset=406-418
+4	attached	_	Action	_	_	0	_	_	Offset=427-435
+5	vacuum	_	Location	_	_	0	_	_	Offset=443-454
+6	pump	_	Device	_	_	5	Meronym	_	Offset=462-466
+
+# sent_id = s5
+# text = Keep cubie container on ice- water will be used for viral concentration.   
+1	Wait	_	Action	_	_	0	_	_	Offset=470-474
+
+# sent_id = s6
+# text = Place “out” tube from Durapore onto a filter flask that is attached to the vacuum side of the pump.  
+1	Open	_	Action	_	_	0	_	_	Offset=559-563
+2	steel	_	Seal	_	_	0	_	_	Offset=564-585
+3	slowly	_	Modifier	_	_	0	_	_	Offset=590-596
+4	open	_	Action	_	_	0	_	_	Offset=597-601
+5	tank	_	Device	_	_	0	_	_	Offset=602-620
+6	depressurize	_	Method	_	_	0	_	_	Offset=624-636
+7	SLOWLY	_	Modifier	_	_	0	_	_	Offset=638-644
+
+# sent_id = s7
+# text = Wait until water stops moving towards the vacuum and only bubbles are coming through.   
+1	Disconnect	_	Action	_	_	0	_	_	Offset=767-777
+2	clamp	_	Device	_	_	0	_	_	Offset=778-783
+3	bottom	_	Location	_	_	0	_	_	Offset=789-800
+4	A/E	_	Device	_	_	3	Meronym	_	Offset=804-814
+5	remove	_	Action	_	_	0	_	_	Offset=816-822
+6	tube	_	Location	_	_	0	_	_	Offset=823-827
+7	“out”	_	Location	_	_	0	_	_	Offset=833-843
+8	A/E	_	Device	_	_	7	Meronym	_	Offset=847-850
+
+# sent_id = s8
+# text = Open steel filter tank lid and slowly open tank bleeder valve to depressurize (SLOWLY). 
+1	Place	_	Action	_	_	0	_	_	Offset=854-859
+2	Durapore	_	Device	_	_	0	_	_	Offset=860-868
+3	knees	_	Location	_	_	0	_	_	Offset=872-877
+4	swirl	_	Action	_	_	0	_	_	Offset=882-887
+5	gently	_	Modifier	_	_	0	_	_	Offset=888-894
+6	all	_	Modifier	_	_	7	Mod-Link	_	Offset=898-901
+7	water	_	Reagent	_	_	0	_	_	Offset=902-907
+8	goes	_	Action	_	_	0	_	_	Offset=908-912
+9	filter	_	Location	_	_	0	_	_	Offset=922-934
+
+# sent_id = s9
+# text = When pressure has dropped significantly push in steel tank lid, allow a few more minutes for water to drain through.  
+1	open	_	Action	_	_	0	_	_	Offset=956-960
+2	manifold	_	Device	_	_	0	_	_	Offset=961-969
+3	slowly	_	Modifier	_	_	0	_	_	Offset=970-976
+4	fold	_	Action	_	_	0	_	_	Offset=978-985
+5	filter	_	Device	_	_	0	_	_	Offset=986-992
+6	place	_	Action	_	_	0	_	_	Offset=997-1002
+7	whirlpack	_	Location	_	_	0	_	_	Offset=1006-1015
+
+# sent_id = s10
+# text = Disconnect clamp from bottom side of A/E filter, remove tube from “out” side of A/E.  
+1	Remove	_	Action	_	_	0	_	_	Offset=1018-1024
+2	Durapore	_	Location	_	_	0	_	_	Offset=1025-1044
+3	filter	_	Location	_	_	0	_	_	Offset=1050-1062
+4	place	_	Action	_	_	0	_	_	Offset=1064-1069
+5	A/E	_	Location	_	_	0	_	_	Offset=1070-1084
+6	filter	_	Location	_	_	0	_	_	Offset=1090-1102
+
+# sent_id = s11
+# text = Place Durapore on knees and swirl gently so all water goes into the filter flask. 
+1	Place	_	Action	_	_	0	_	_	Offset=1107-1112
+2	A/E	_	Device	_	_	0	_	_	Offset=1113-1116
+3	knees	_	Location	_	_	0	_	_	Offset=1120-1125
+4	water	_	Reagent	_	_	0	_	_	Offset=1131-1136
+5	drain	_	Action	_	_	0	_	_	Offset=1137-1146
+6	filter	_	Location	_	_	0	_	_	Offset=1156-1168
+7	before	_	Method	_	_	0	_	_	Offset=1172-1178
+
+# sent_id = s12
+# text = Once water is out, open manifold slowly, fold up filter and place in whirlpack. 
+1	Open	_	Action	_	_	0	_	_	Offset=1181-1185
+2	manifold	_	Device	_	_	0	_	_	Offset=1186-1194
+3	slowly	_	Modifier	_	_	0	_	_	Offset=1195-1201
+4	peel	_	Action	_	_	0	_	_	Offset=1203-1211
+5	ring	_	Location	_	_	0	_	_	Offset=1212-1216
+6	filter	_	Device	_	_	5	Meronym	_	Offset=1220-1226
+7	discard	_	Action	_	_	0	_	_	Offset=1228-1235
+8	fold	_	Device	_	_	0	_	_	Offset=1237-1248
+9	place	_	Action	_	_	0	_	_	Offset=1253-1258
+10	whirlpack	_	Location	_	_	0	_	_	Offset=1262-1271
+

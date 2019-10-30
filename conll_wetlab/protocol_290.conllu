@@ -1,0 +1,120 @@
+# sent_id = s1
+# text = Preparing AQUIL Media
+1	Add	_	Action	_	_	0	_	_	Offset=37-40
+2	1.42g	_	Amount	_	_	3	Measure	_	Offset=41-46
+3	Sodium	_	Reagent	_	_	0	_	_	Offset=47-62
+4	50ml	_	Amount	_	_	5	Measure	_	Offset=66-70
+5	UPW	_	Reagent	_	_	0	_	_	Offset=74-77
+6	50ml	_	Amount	_	_	7	Measure	_	Offset=83-87
+7	vial	_	Location	_	_	0	_	_	Offset=88-92
+
+# sent_id = s2
+# text = Nutrient Stock Add 1.42g Sodium Silicate to 50ml of UPW in a 50ml vial.
+1	Add	_	Action	_	_	0	_	_	Offset=94-97
+2	0.43g	_	Amount	_	_	3	Measure	_	Offset=98-103
+3	Sodium	_	Reagent	_	_	0	_	_	Offset=104-118
+4	50ml	_	Amount	_	_	5	Measure	_	Offset=122-126
+5	UPW	_	Reagent	_	_	0	_	_	Offset=130-133
+6	50ml	_	Amount	_	_	7	Measure	_	Offset=139-143
+7	vial	_	Location	_	_	0	_	_	Offset=144-148
+
+# sent_id = s3
+# text = Add 0.43g Sodium Nitrate to 50ml of UPW in a 50ml vial.
+1	Add	_	Action	_	_	0	_	_	Offset=150-153
+2	0.069g	_	Amount	_	_	3	Measure	_	Offset=154-160
+3	Sodium	_	Reagent	_	_	0	_	_	Offset=161-188
+4	50ml	_	Amount	_	_	5	Measure	_	Offset=192-196
+5	UPW	_	Reagent	_	_	0	_	_	Offset=200-203
+6	50ml	_	Amount	_	_	7	Measure	_	Offset=209-213
+7	vial	_	Location	_	_	0	_	_	Offset=214-218
+
+# sent_id = s4
+# text = Add 0.069g Sodium dihydrogen Phosphate to 50ml of UPW in a 50ml vial.
+1	Vitamin	_	Reagent	_	_	0	_	_	Offset=220-233
+2	Add	_	Action	_	_	0	_	_	Offset=234-237
+3	0.037g	_	Amount	_	_	4	Measure	_	Offset=238-244
+4	Vitamin	_	Reagent	_	_	0	_	_	Offset=248-259
+5	50ml	_	Amount	_	_	6	Measure	_	Offset=263-267
+6	UPW	_	Reagent	_	_	0	_	_	Offset=271-274
+7	50ml	_	Amount	_	_	8	Measure	_	Offset=280-284
+8	vial	_	Location	_	_	0	_	_	Offset=285-289
+
+# sent_id = s5
+# text = Vitamin Stock Add 0.037g of Vitamin B12 to 50ml of UPW in a 50ml vial.
+1	Add	_	Action	_	_	0	_	_	Offset=291-294
+2	0.0061g	_	Amount	_	_	3	Measure	_	Offset=295-302
+3	Biotin	_	Reagent	_	_	0	_	_	Offset=306-312
+4	50ml	_	Amount	_	_	5	Measure	_	Offset=316-320
+5	UPW	_	Reagent	_	_	0	_	_	Offset=324-327
+6	50ml	_	Amount	_	_	7	Measure	_	Offset=333-337
+7	vial	_	Location	_	_	0	_	_	Offset=338-342
+
+# sent_id = s6
+# text = Add 0.0061g of Biotin to 50ml of UPW in a 50ml vial.
+1	Add	_	Action	_	_	0	_	_	Offset=344-347
+2	1.5g	_	Amount	_	_	3	Measure	_	Offset=348-352
+3	Thiamine	_	Reagent	_	_	0	_	_	Offset=353-361
+4	50ml	_	Amount	_	_	5	Measure	_	Offset=365-369
+5	UPW	_	Reagent	_	_	0	_	_	Offset=373-376
+6	50ml	_	Amount	_	_	7	Measure	_	Offset=382-386
+7	vial	_	Location	_	_	0	_	_	Offset=387-391
+
+# sent_id = s7
+# text = Add 1.5g Thiamine to 50ml of UPW in a 50ml vial.
+1	Add	_	Action	_	_	0	_	_	Offset=404-407
+2	dry	_	Reagent	_	_	0	_	_	Offset=429-442
+3	one	_	Numerical	_	_	6	Measure	_	Offset=448-451
+4	clean	_	Modifier	_	_	6	Mod-Link	_	Offset=452-457
+5	50ml	_	Amount	_	_	6	Measure	_	Offset=458-462
+6	vial	_	Location	_	_	0	_	_	Offset=463-467
+7	EDTA	_	Reagent	_	_	0	_	_	Offset=485-495
+
+# sent_id = s8
+# text = EDTA Stock Add all of the following dry chemicals into one clean 50ml vial in order to make EDTA stock.
+1	Nutrient	_	Reagent	_	_	0	_	_	Offset=497-524
+2	chelexed	_	Action	_	_	0	_	_	Offset=535-543
+3	filter-sterilized	_	Action	_	_	0	_	_	Offset=548-565
+
+# sent_id = s9
+# text = Nutrient and vitamin stocks should be chelexed and filter-sterilized before use.
+1	EDTA(metals)	_	Reagent	_	_	0	_	_	Offset=578-596
+2	filter-sterilized	_	Action	_	_	0	_	_	Offset=607-624
+
+# sent_id = s10
+# text = EDTA(metals) stock should be filter-sterilized.
+1	AQUIL	_	Reagent	_	_	0	_	_	Offset=634-639
+2	add	_	Action	_	_	0	_	_	Offset=641-644
+3	reagents	_	Reagent	_	_	0	_	_	Offset=659-667
+4	1L	_	Amount	_	_	7	Measure	_	Offset=671-673
+5	chelexed	_	Modifier	_	_	7	Mod-Link	_	Offset=677-685
+6	microwave-sterilized	_	Modifier	_	_	7	Mod-Link	_	Offset=687-707
+7	ASW	_	Reagent	_	_	0	_	_	Offset=708-711
+8	1L	_	Amount	_	_	10	Measure	_	Offset=716-718
+9	microwave	_	Modifier	_	_	10	Mod-Link	_	Offset=719-739
+10	surface	_	Reagent	_	_	7	Or	_	Offset=740-756
+
+# sent_id = s11
+# text = To make AQUIL, add the following reagents to 1L of chelexed, microwave-sterilized ASW, or 1L microwave sterilized surface seawater.
+1	Add	_	Action	_	_	0	_	_	Offset=758-761
+2	1ml	_	Amount	_	_	3	Measure	_	Offset=762-765
+3	EDTA	_	Reagent	_	_	0	_	_	Offset=766-776
+4	1ml	_	Amount	_	_	5	Measure	_	Offset=778-781
+5	sodium	_	Reagent	_	_	0	_	_	Offset=782-797
+6	1ml	_	Amount	_	_	7	Measure	_	Offset=799-802
+7	sodium	_	Reagent	_	_	0	_	_	Offset=803-817
+8	1ml	_	Amount	_	_	9	Measure	_	Offset=819-822
+9	sodium	_	Reagent	_	_	0	_	_	Offset=823-850
+10	100ul	_	Amount	_	_	11	Measure	_	Offset=852-857
+11	vitamin	_	Reagent	_	_	0	_	_	Offset=858-869
+12	100ul	_	Amount	_	_	13	Measure	_	Offset=871-876
+13	biotin	_	Reagent	_	_	0	_	_	Offset=877-883
+14	100ul	_	Amount	_	_	15	Measure	_	Offset=888-893
+15	thiamine	_	Reagent	_	_	0	_	_	Offset=894-908
+
+# sent_id = s12
+# text = Add 1ml EDTA stock, 1ml sodium silicate, 1ml sodium nitrate, 1ml sodium dihydrogen phosphate, 100ul vitamin B12, 100ul biotin and 100ul thiamine stock.
+1	Invert	_	Action	_	_	0	_	_	Offset=910-916
+2	bottle	_	Location	_	_	0	_	_	Offset=917-923
+3	twice	_	Numerical	_	_	0	_	_	Offset=924-929
+4	mixing	_	Method	_	_	0	_	_	Offset=934-940
+

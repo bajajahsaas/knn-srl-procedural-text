@@ -1,0 +1,234 @@
+# sent_id = s1
+# text = SYBR Gold Staining for viral enumeration using 13 mm Anodisc 0.02 μm filters
+1	Cut	_	Action	_	_	0	_	_	Offset=77-80
+2	3	_	Size	_	_	3	Measure	_	Offset=83-87
+3	syringe	_	Location	_	_	0	_	_	Offset=88-95
+4	Take	_	Action	_	_	0	_	_	Offset=123-127
+5	gasket	_	Location	_	_	0	_	_	Offset=130-136
+6	13	_	Size	_	_	7	Measure	_	Offset=142-147
+7	MILLIPORE	_	Location	_	_	0	_	_	Offset=148-171
+
+# sent_id = s2
+# text = Cut a 3 ml syringe as a filter funnel:(Fig 1) Take a gasket from 13 mm MILLIPORE filter holder (FISHER, SX0001300).
+1	Obtain	_	Action	_	_	0	_	_	Offset=199-205
+2	clamp	_	Location	_	_	0	_	_	Offset=208-213
+3	25	_	Size	_	_	4	Measure	_	Offset=218-220
+4	filter	_	Location	_	_	0	_	_	Offset=221-234
+
+# sent_id = s3
+# text = Fig 2 Obtain a clamp for 25 filter funnel.
+1	dilution	_	Action	_	_	0	_	_	Offset=241-249
+2	virus	_	Reagent	_	_	0	_	_	Offset=253-263
+3	0.02um	_	Size	_	_	5	Measure	_	Offset=267-273
+4	filtered	_	Modifier	_	_	5	Mod-Link	_	Offset=274-282
+5	seawater	_	Reagent	_	_	0	_	_	Offset=283-291
+6	~E+07	_	Concentration	_	_	0	_	_	Offset=314-334
+
+# sent_id = s4
+# text = Make dilution of virus prep in 0.02um filtered seawater to a concentration of ~E+07 particles ml-1.
+1	Thaw	_	Action	_	_	0	_	_	Offset=336-340
+2	SYBR-Gold	_	Reagent	_	_	0	_	_	Offset=365-374
+3	dark	_	Location	_	_	0	_	_	Offset=382-386
+4	RT	_	Temperature	_	_	0	_	_	Offset=390-392
+5	centrifuge	_	Action	_	_	0	_	_	Offset=397-407
+6	~3000	_	Speed	_	_	0	_	_	Offset=411-420
+7	5	_	Time	_	_	0	_	_	Offset=425-434
+
+# sent_id = s5
+# text = Thaw the commercial stock of SYBR-Gold in the dark at RT and centrifuge at ~3000 rpm for 5 minutes because SYBR-Gold is in DMSO.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=465-475
+2	~3000	_	Speed	_	_	0	_	_	Offset=479-488
+3	5	_	Time	_	_	0	_	_	Offset=493-502
+
+# sent_id = s6
+# text = Centrifuge at ~3000 rpm for 5 minutes.
+1	Dilute	_	Action	_	_	0	_	_	Offset=504-510
+2	SYBR-Gold	_	Reagent	_	_	0	_	_	Offset=511-520
+3	0.02	_	Size	_	_	5	Measure	_	Offset=524-531
+4	filtered	_	Modifier	_	_	5	Mod-Link	_	Offset=532-540
+5	TE	_	Reagent	_	_	0	_	_	Offset=541-550
+6	100x	_	Concentration	_	_	0	_	_	Offset=554-558
+
+# sent_id = s7
+# text = Dilute SYBR-Gold in 0.02 µm filtered TE buffer to 100x (10 µl in 990 µl TE buffer).
+1	Add	_	Action	_	_	0	_	_	Offset=588-591
+2	1	_	Amount	_	_	3	Measure	_	Offset=592-596
+3	SYBR	_	Reagent	_	_	0	_	_	Offset=600-618
+4	49	_	Amount	_	_	7	Measure	_	Offset=622-627
+5	0.02	_	Size	_	_	7	Measure	_	Offset=628-635
+6	filtered	_	Modifier	_	_	7	Mod-Link	_	Offset=636-644
+7	TE	_	Reagent	_	_	0	_	_	Offset=645-654
+8	plastic	_	Location	_	_	7	Meronym	_	Offset=660-678
+
+# sent_id = s8
+# text = Add 1 µl of SYBR working stock in 49 µl 0.02 µm filtered TE buffer in a plastic Petri dish.
+1	Cover	_	Action	_	_	0	_	_	Offset=680-685
+2	dish	_	Location	_	_	0	_	_	Offset=690-694
+3	aluminum	_	Seal	_	_	0	_	_	Offset=698-711
+
+# sent_id = s9
+# text = Cover the dish by aluminum foil.
+1	Set	_	Action	_	_	0	_	_	Offset=713-719
+2	filtration	_	Location	_	_	0	_	_	Offset=724-739
+3	connecting	_	Action	_	_	0	_	_	Offset=741-751
+4	vacuum	_	Device	_	_	0	_	_	Offset=760-766
+
+# sent_id = s10
+# text = Set up the filtration unit, connecting it to a vacuum.
+1	Add	_	Action	_	_	0	_	_	Offset=768-771
+2	few	_	Amount	_	_	5	Measure	_	Offset=774-783
+3	0.02	_	Size	_	_	5	Measure	_	Offset=787-794
+4	filtered	_	Modifier	_	_	5	Mod-Link	_	Offset=795-803
+5	mQ	_	Reagent	_	_	0	_	_	Offset=804-806
+6	filter	_	Location	_	_	0	_	_	Offset=814-825
+7	place	_	Action	_	_	0	_	_	Offset=830-835
+8	25	_	Size	_	_	10	Measure	_	Offset=838-843
+9	0.2	_	Numerical	_	_	10	Measure	_	Offset=844-847
+10	nitrocellulose	_	Location	_	_	0	_	_	Offset=848-869
+11	top	_	Location	_	_	0	_	_	Offset=894-897
+12	water	_	Reagent	_	_	11	Meronym	_	Offset=905-910
+
+# sent_id = s11
+# text = Add a few drops of 0.02 µm filtered mQ on the filter base and place a 25 mm 0.2 nitrocellulose filter (the support filter) on top of the water.
+1	Switch	_	Action	_	_	0	_	_	Offset=918-927
+2	vacuum	_	Device	_	_	0	_	_	Offset=932-938
+
+# sent_id = s12
+# text = Fig 3 Switch on the vacuum, the support filter should be flat on the filter base.
+1	Place	_	Action	_	_	0	_	_	Offset=994-999
+2	13	_	Size	_	_	3	Measure	_	Offset=1002-1007
+3	Anodisc	_	Location	_	_	0	_	_	Offset=1008-1022
+4	wet	_	Modifier	_	_	5	Mod-Link	_	Offset=1030-1033
+5	nitrocellulose	_	Location	_	_	0	_	_	Offset=1034-1055
+
+# sent_id = s13
+# text = Place a 13 mm Anodisc filter on the wet nitrocellulose filter.
+1	Place	_	Action	_	_	0	_	_	Offset=1063-1068
+2	gasket	_	Location	_	_	0	_	_	Offset=1071-1077
+3	13	_	Size	_	_	4	Measure	_	Offset=1085-1090
+4	Anodisc	_	Location	_	_	0	_	_	Offset=1091-1105
+
+# sent_id = s14
+# text = Fig 4 Place a gasket on the 13 mm Anodisc filter.
+1	Place	_	Action	_	_	0	_	_	Offset=1113-1118
+2	syringe	_	Location	_	_	0	_	_	Offset=1123-1144
+3	carefully	_	Modifier	_	_	0	_	_	Offset=1145-1154
+4	gasket	_	Location	_	_	0	_	_	Offset=1162-1168
+5	apply	_	Action	_	_	0	_	_	Offset=1173-1178
+6	clamp	_	Device	_	_	0	_	_	Offset=1183-1188
+
+# sent_id = s15
+# text = Fig 5 Place the syringe filter funnel carefully on the gasket and apply the clamp.
+1	Switch	_	Action	_	_	0	_	_	Offset=1196-1205
+2	vacuum	_	Device	_	_	0	_	_	Offset=1210-1216
+3	add	_	Action	_	_	0	_	_	Offset=1221-1224
+4	samples	_	Reagent	_	_	0	_	_	Offset=1225-1232
+5	filtration	_	Action	_	_	0	_	_	Offset=1237-1247
+
+# sent_id = s16
+# text = Fig 6 Switch on the vacuum and add samples for filtration, leave the vacuum on for 1 more minutes after sample drained completely.
+1	sample	_	Reagent	_	_	0	_	_	Offset=1366-1372
+2	drained	_	Action	_	_	0	_	_	Offset=1373-1380
+3	completely	_	Modifier	_	_	0	_	_	Offset=1381-1391
+
+# sent_id = s17
+# text = Leave the vacuum on for 1 more minutes after sample drained completely.
+1	Take	_	Action	_	_	0	_	_	Offset=1393-1402
+2	clamp	_	Device	_	_	0	_	_	Offset=1407-1412
+3	syringe	_	Location	_	_	0	_	_	Offset=1417-1438
+
+# sent_id = s18
+# text = Take away the clamp and syringe filter funnel while vacuum is on.
+1	push	_	Action	_	_	0	_	_	Offset=1469-1473
+2	filer	_	Device	_	_	0	_	_	Offset=1478-1483
+3	edge	_	Location	_	_	0	_	_	Offset=1491-1495
+4	filter	_	Location	_	_	3	Meronym	_	Offset=1503-1514
+5	tweezers	_	Device	_	_	0	_	_	Offset=1518-1526
+6	remove	_	Action	_	_	0	_	_	Offset=1549-1555
+7	filter	_	Location	_	_	0	_	_	Offset=1560-1566
+
+# sent_id = s19
+# text = Carefully push the filer to the edge of the filter base by tweezers while vacuum is on to remove the filter.
+1	Dry	_	Action	_	_	0	_	_	Offset=1574-1577
+2	filter	_	Location	_	_	0	_	_	Offset=1578-1593
+3	Kimwipes	_	Location	_	_	0	_	_	Offset=1597-1605
+4	dark	_	Location	_	_	0	_	_	Offset=1613-1617
+5	RT	_	Temperature	_	_	0	_	_	Offset=1621-1623
+6	completely	_	Modifier	_	_	0	_	_	Offset=1624-1634
+
+# sent_id = s20
+# text = Fig 7 Dry filter membrane on Kimwipes in the dark at RT completely.
+1	Remove	_	Action	_	_	0	_	_	Offset=1636-1642
+2	membrane	_	Location	_	_	0	_	_	Offset=1643-1651
+3	place	_	Action	_	_	0	_	_	Offset=1656-1661
+4	viruses-side	_	Modifier	_	_	0	_	_	Offset=1662-1677
+5	staining	_	Reagent	_	_	0	_	_	Offset=1681-1698
+6	Petri	_	Location	_	_	5	Meronym	_	Offset=1706-1716
+7	15	_	Time	_	_	0	_	_	Offset=1721-1727
+8	cover	_	Action	_	_	0	_	_	Offset=1729-1734
+9	Petri	_	Location	_	_	0	_	_	Offset=1739-1749
+10	aluminum	_	Seal	_	_	0	_	_	Offset=1753-1766
+
+# sent_id = s21
+# text = Remove membrane and place viruses-side up on staining solution in the Petri dish for 15 min, cover the Petri dish by aluminum foil.
+1	Cover	_	Action	_	_	0	_	_	Offset=1768-1773
+2	Petri	_	Location	_	_	0	_	_	Offset=1778-1788
+3	aluminum	_	Seal	_	_	0	_	_	Offset=1792-1805
+
+# sent_id = s22
+# text = Cover the Petri dish by aluminum foil.
+1	Dry	_	Action	_	_	0	_	_	Offset=1807-1810
+2	filter	_	Location	_	_	0	_	_	Offset=1811-1826
+3	Kimwipes	_	Location	_	_	0	_	_	Offset=1836-1844
+4	dark	_	Location	_	_	0	_	_	Offset=1852-1856
+5	RT	_	Temperature	_	_	0	_	_	Offset=1860-1862
+6	completely	_	Modifier	_	_	0	_	_	Offset=1863-1873
+
+# sent_id = s23
+# text = Dry filter membrane again on Kimwipes in the dark at RT completely.
+1	Pipet	_	Action	_	_	0	_	_	Offset=1875-1880
+2	10	_	Amount	_	_	3	Measure	_	Offset=1881-1886
+3	antifade	_	Reagent	_	_	0	_	_	Offset=1887-1904
+4	microscope	_	Location	_	_	8	Meronym	_	Offset=1910-1926
+5	place	_	Action	_	_	0	_	_	Offset=1931-1936
+6	stained	_	Modifier	_	_	7	Mod-Link	_	Offset=1941-1948
+7	filter	_	Location	_	_	0	_	_	Offset=1949-1964
+8	top	_	Location	_	_	0	_	_	Offset=1968-1971
+
+# sent_id = s24
+# text = Pipet 10 µl antifade solution on a microscope slide and place the stained filter membrane on top of it.
+1	Pipet	_	Action	_	_	0	_	_	Offset=1979-1984
+2	10	_	Amount	_	_	3	Measure	_	Offset=1985-1990
+3	antifade	_	Reagent	_	_	0	_	_	Offset=1991-2008
+4	coverslid	_	Location	_	_	0	_	_	Offset=2014-2023
+5	carefully	_	Modifier	_	_	0	_	_	Offset=2028-2037
+6	place	_	Action	_	_	0	_	_	Offset=2038-2043
+7	filter	_	Location	_	_	0	_	_	Offset=2054-2060
+8	avoid	_	Action	_	_	0	_	_	Offset=2064-2077
+
+# sent_id = s25
+# text = Pipet 10 µl antifade solution on a coverslid and carefully place it on the filter to avoid bubbles.
+1	Pipet	_	Action	_	_	0	_	_	Offset=2079-2084
+2	10	_	Amount	_	_	3	Measure	_	Offset=2085-2090
+3	antifade	_	Reagent	_	_	0	_	_	Offset=2091-2108
+4	coverslid	_	Location	_	_	0	_	_	Offset=2114-2123
+5	carefully	_	Modifier	_	_	0	_	_	Offset=2128-2137
+6	place	_	Action	_	_	0	_	_	Offset=2138-2143
+7	filter	_	Location	_	_	0	_	_	Offset=2154-2160
+8	avoid	_	Action	_	_	0	_	_	Offset=2164-2177
+
+# sent_id = s26
+# text = Pipet 10 µl antifade solution on a coverslid and carefully place it on the filter to avoid bubbles.
+1	Place	_	Action	_	_	0	_	_	Offset=2179-2184
+2	slide	_	Location	_	_	0	_	_	Offset=2185-2190
+3	–20°C	_	Temperature	_	_	0	_	_	Offset=2194-2199
+4	enhance	_	Action	_	_	0	_	_	Offset=2203-2223
+
+# sent_id = s27
+# text = Place slide at –20°C to enhance fluorescence.
+1	Read	_	Action	_	_	0	_	_	Offset=2225-2229
+2	slides	_	Location	_	_	0	_	_	Offset=2230-2236
+3	100x	_	Concentration	_	_	4	Measure	_	Offset=2243-2247
+4	oil	_	Reagent	_	_	0	_	_	Offset=2248-2271
+5	inverted	_	Device	_	_	0	_	_	Offset=2276-2307
+

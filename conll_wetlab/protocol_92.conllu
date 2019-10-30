@@ -1,0 +1,15 @@
+# sent_id = s1
+# text = Vitamin Solution for ESAW Media for Marine Phytoplankton
+1	filter	_	Action	_	_	0	_	_	Offset=99-115
+2	0.2	_	Size	_	_	3	Setting	_	Offset=121-127
+3	filter	_	Device	_	_	0	_	_	Offset=128-134
+4	store	_	Action	_	_	0	_	_	Offset=139-144
+5	dark	_	Location	_	_	0	_	_	Offset=148-152
+6	-20ºC	_	Temperature	_	_	0	_	_	Offset=156-161
+
+# sent_id = s2
+# text = Thiamine Vitamin B12 Biotin After mixing, filter sterilize with 0.2 μm filter and store in dark at -20ºC.
+1	Divide	_	Action	_	_	0	_	_	Offset=163-169
+2	small	_	Modifier	_	_	3	Mod-Link	_	Offset=175-180
+3	aliquots	_	Reagent	_	_	0	_	_	Offset=181-189
+

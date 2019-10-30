@@ -1,0 +1,69 @@
+# sent_id = s1
+# text = Preparation of Denaturing Agarose Gel for RNA Analysis
+1	Melt	_	Action	_	_	0	_	_	Offset=55-59
+2	1.0	_	Amount	_	_	3	Measure	_	Offset=60-65
+3	agarose	_	Reagent	_	_	0	_	_	Offset=66-73
+4	87	_	Amount	_	_	5	Measure	_	Offset=77-82
+5	DEPC	_	Reagent	_	_	0	_	_	Offset=86-96
+6	heating	_	Action	_	_	0	_	_	Offset=138-145
+7	microwave	_	Device	_	_	0	_	_	Offset=151-160
+
+# sent_id = s2
+# text = Melt 1.0 g agarose in 87 ml of DEPC water, by dispersing the agarose uniformly and heating in a microwave until all particles are dissolved.
+1	223	_	Action	_	_	0	_	_	Offset=196-201;222
+2	melted	_	Reagent	_	_	0	_	_	Offset=206-220
+3	60	_	Temperature	_	_	0	_	_	Offset=224-229
+
+# sent_id = s3
+# text = Bring the melted agarose to 60 °C.
+1	Add	_	Action	_	_	0	_	_	Offset=231-234
+2	10	_	Amount	_	_	4	Measure	_	Offset=235-240
+3	10X	_	Concentration	_	_	4	Measure	_	Offset=241-244
+4	MOPS	_	Reagent	_	_	0	_	_	Offset=245-256
+5	3	_	Amount	_	_	7	Measure	_	Offset=261-265
+6	37%	_	Concentration	_	_	7	Measure	_	Offset=266-269
+7	formaldehyde	_	Reagent	_	_	0	_	_	Offset=270-282
+
+# sent_id = s4
+# text = Add 10 ml 10X MOPS Buffer and 3 ml 37% formaldehyde.
+1	Pour	_	Action	_	_	0	_	_	Offset=284-288
+2	agarose	_	Reagent	_	_	0	_	_	Offset=298-309
+
+# sent_id = s5
+# text = Pour standard agarose gel gel.
+1	gel	_	Reagent	_	_	0	_	_	Offset=414-417
+2	set	_	Action	_	_	0	_	_	Offset=421-424
+3	1	_	Time	_	_	0	_	_	Offset=429-435
+
+# sent_id = s6
+# text = USE A FUME HOOD!
+1	Run	_	Action	_	_	0	_	_	Offset=437-440
+2	gel	_	Reagent	_	_	0	_	_	Offset=441-444
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=448-450
+4	MOPS	_	Reagent	_	_	0	_	_	Offset=451-462
+
+# sent_id = s7
+# text = FORMALDEHYDE IS VOLATILE AND TOXIC.
+1	Mix	_	Action	_	_	0	_	_	Offset=464-467
+2	40	_	Amount	_	_	3	Measure	_	Offset=468-473
+3	sample	_	Reagent	_	_	0	_	_	Offset=474-487
+4	10	_	Amount	_	_	5	Measure	_	Offset=493-498
+5	sample	_	Reagent	_	_	0	_	_	Offset=499-505
+6	heat	_	Action	_	_	0	_	_	Offset=507-511
+7	55	_	Temperature	_	_	0	_	_	Offset=515-520
+8	15	_	Time	_	_	0	_	_	Offset=521-531
+
+# sent_id = s8
+# text = WORK IN A HOOD FROM THIS POINT FORWARD.
+1	Add	_	Action	_	_	0	_	_	Offset=533-536
+2	10µl	_	Amount	_	_	3	Measure	_	Offset=537-541
+3	following	_	Reagent	_	_	5	Meronym	7:Meronym|9:Meronym|11:Meronym	Offset=549-558
+4	50%	_	Concentration	_	_	5	Measure	_	Offset=561-564
+5	glycerol	_	Reagent	_	_	0	_	_	Offset=565-573
+6	1	_	Concentration	_	_	7	Measure	_	Offset=574-578
+7	EDTA	_	Reagent	_	_	0	_	_	Offset=579-583
+8	0.3%	_	Concentration	_	_	9	Measure	_	Offset=584-588
+9	bromophenol	_	Reagent	_	_	0	_	_	Offset=594-610
+10	0.3%	_	Concentration	_	_	11	Measure	_	Offset=615-619
+11	xylene	_	Reagent	_	_	0	_	_	Offset=620-633
+

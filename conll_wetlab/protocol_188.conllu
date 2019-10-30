@@ -1,0 +1,171 @@
+# sent_id = s1
+# text = Total digestion of marine particles
+1	Place	_	Action	_	_	0	_	_	Offset=36-41
+2	filter	_	Device	_	_	0	_	_	Offset=42-48
+3	PFA	_	Location	_	_	0	_	_	Offset=54-62
+
+# sent_id = s2
+# text = Place filter into PFA vial, ideally with sample side facing downwards or folded inwards.
+1	Add	_	Action	_	_	0	_	_	Offset=125-128
+2	1.5	_	Amount	_	_	3	Measure	_	Offset=129-135
+3	sulfuric	_	Reagent	_	_	0	_	_	Offset=139-152
+4	samples	_	Reagent	_	_	0	_	_	Offset=160-167
+
+# sent_id = s3
+# text = Add 1.5 mL of sulfuric acid to all samples and blanks. 
+1	Place	_	Action	_	_	0	_	_	Offset=181-186
+2	lid	_	Seal	_	_	0	_	_	Offset=187-190
+3	atop	_	Location	_	_	0	_	_	Offset=191-195
+4	loosely	_	Modifier	_	_	0	_	_	Offset=196-203
+5	filter	_	Device	_	_	0	_	_	Offset=214-220
+6	soak	_	Action	_	_	0	_	_	Offset=224-228
+7	20	_	Time	_	_	0	_	_	Offset=233-239
+8	room	_	Temperature	_	_	0	_	_	Offset=243-259
+
+# sent_id = s4
+# text = Place lid atop loosely and leave filter to soak for 20 min at room temperature. 
+1	Lift	_	Action	_	_	0	_	_	Offset=262-266
+2	lid	_	Seal	_	_	0	_	_	Offset=267-270
+3	slightly	_	Modifier	_	_	0	_	_	Offset=271-279
+4	add	_	Action	_	_	0	_	_	Offset=283-286
+5	0.5mL	_	Amount	_	_	6	Measure	_	Offset=287-292
+6	hydrogen	_	Reagent	_	_	0	_	_	Offset=296-313
+
+# sent_id = s5
+# text = Lift lid slightly to add 0.5mL of hydrogen peroxide.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=315-321
+2	swirl	_	Action	_	_	0	_	_	Offset=323-328
+3	vial	_	Location	_	_	0	_	_	Offset=329-333
+
+# sent_id = s6
+# text = Gently, swirl vial to mix.
+1	React	_	Action	_	_	0	_	_	Offset=342-347
+2	60	_	Time	_	_	0	_	_	Offset=352-358
+3	hot	_	Device	_	_	0	_	_	Offset=364-373
+4	110˚C	_	Temperature	_	_	0	_	_	Offset=377-382
+5	lid	_	Seal	_	_	0	_	_	Offset=388-391
+6	placed	_	Action	_	_	0	_	_	Offset=392-398
+7	loosely	_	Modifier	_	_	0	_	_	Offset=402-409
+
+# sent_id = s7
+# text = React for 60 min in a hot plate at 110˚C with lid placed on loosely. 
+1	Add	_	Action	_	_	0	_	_	Offset=412-415
+2	0.5	_	Amount	_	_	3	Measure	_	Offset=424-430
+3	peroxide	_	Reagent	_	_	0	_	_	Offset=431-439
+4	replace	_	Action	_	_	0	_	_	Offset=441-448
+5	caps	_	Seal	_	_	0	_	_	Offset=449-453
+6	loosely	_	Modifier	_	_	0	_	_	Offset=454-461
+7	increase	_	Action	_	_	0	_	_	Offset=466-474
+8	hotplate	_	Measure-Type	_	_	0	_	_	Offset=475-495
+9	200˚C	_	Temperature	_	_	0	_	_	Offset=499-504
+
+# sent_id = s8
+# text = Add another 0.5 mL peroxide, replace caps loosely and increase hotplate temperature to 200˚C. 
+1	590	_	Action	_	_	0	_	_	Offset=579-582;586
+2	it	_	Mention	_	_	0	_	_	Offset=583-585
+3	a	_	Action	_	_	0	_	_	Offset=600-601
+4	100-200µL	_	Amount	_	_	5	Measure	_	Offset=604-613
+5	peroxide	_	Reagent	_	_	0	_	_	Offset=626-634
+
+# sent_id = s9
+# text = If undissolved filter pieces or semi-digested viscous material persist, let it cool down and add 100-200µL aliquots of peroxide to digest this material. 
+1	Dry	_	Action	_	_	0	_	_	Offset=661-664
+2	contents	_	Reagent	_	_	0	_	_	Offset=670-678
+3	235-250˚C	_	Temperature	_	_	0	_	_	Offset=682-691
+
+# sent_id = s10
+# text = Dry vial contents at 235-250˚C. 
+1	Resuspend	_	Action	_	_	0	_	_	Offset=898-907
+2	dried	_	Reagent	_	_	0	_	_	Offset=908-921
+3	2	_	Amount	_	_	5	Measure	_	Offset=925-929
+4	freshly	_	Modifier	_	_	5	Mod-Link	_	Offset=935-951
+5	mixture	_	Reagent	_	_	0	_	_	Offset=952-959
+6	HNO3	_	Reagent	_	_	5	Meronym	_	Offset=963-967
+7	HCl	_	Reagent	_	_	5	Meronym	_	Offset=969-972
+8	HF	_	Reagent	_	_	5	Meronym	_	Offset=978-980
+9	4M	_	Concentration	_	_	8	Measure	6:Measure|7:Measure	Offset=988-990
+10	milli-Q	_	Reagent	_	_	5	Meronym	_	Offset=1000-1013
+
+# sent_id = s11
+# text = Note: If a small droplet of sulfuric acid remains at this point, let vial cool and suspend contents in a small aliquot of Milli-Q water or 8N nitric acid and re-dry at 235˚C until the droplet is removed.
+1	Heat	_	Action	_	_	0	_	_	Offset=1015-1019
+2	4	_	Time	_	_	0	_	_	Offset=1024-1031
+3	100-110˚C	_	Temperature	_	_	0	_	_	Offset=1035-1044
+
+# sent_id = s12
+# text = Resuspend dried samples in 2 mL of a freshly prepared mixture of HNO3, HCl, and HF acids (4M each) in milli-Q water.
+1	1060	_	Action	_	_	0	_	_	Offset=1046-1049;1056
+2	vials	_	Location	_	_	0	_	_	Offset=1050-1055
+3	room	_	Temperature	_	_	0	_	_	Offset=1064-1080
+4	uncap	_	Action	_	_	0	_	_	Offset=1082-1087
+5	dry	_	Action	_	_	0	_	_	Offset=1092-1095
+6	100-110˚C	_	Temperature	_	_	0	_	_	Offset=1099-1108
+7	overnight	_	Time	_	_	0	_	_	Offset=1110-1119
+
+# sent_id = s13
+# text = Heat for 4 hours at 100-110˚C.
+1	Add	_	Action	_	_	0	_	_	Offset=1122-1125
+2	2mL	_	Amount	_	_	3	Measure	_	Offset=1126-1129
+3	freshly	_	Reagent	_	_	0	_	_	Offset=1133-1149
+4	50%	_	Concentration	_	_	5	Measure	_	Offset=1150-1153
+5	HNO3	_	Reagent	_	_	3	Meronym	_	Offset=1154-1158
+6	15%	_	Concentration	_	_	7	Measure	_	Offset=1159-1162
+7	H2O2	_	Reagent	_	_	3	Meronym	_	Offset=1163-1167
+
+# sent_id = s14
+# text = Let vials cool to room temperature, uncap and dry at 100-110˚C (overnight).
+1	vials	_	Location	_	_	0	_	_	Offset=1181-1186
+2	dry	_	Action	_	_	0	_	_	Offset=1190-1193
+3	hotplate	_	Device	_	_	0	_	_	Offset=1203-1211
+4	100-110˚C	_	Temperature	_	_	0	_	_	Offset=1215-1224
+
+# sent_id = s15
+# text = Add 2mL of freshly prepared 50% HNO3/15% H2O2 (v/v). 
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1227-1236
+2	sample	_	Reagent	_	_	0	_	_	Offset=1237-1243
+3	200-500	_	Amount	_	_	8	Measure	_	Offset=1247-1257
+4	50%	_	Concentration	_	_	5	Measure	_	Offset=1261-1264
+5	HNO3	_	Reagent	_	_	8	Meronym	_	Offset=1265-1269
+6	15%	_	Concentration	_	_	7	Measure	_	Offset=1270-1273
+7	H2O2	_	Reagent	_	_	8	Meronym	_	Offset=1274-1278
+8	(v/v)	_	Reagent	_	_	0	_	_	Offset=1279-1284
+
+# sent_id = s16
+# text = Take vials to dryness on a hotplate at 100-110˚C. 
+1	Cap	_	Action	_	_	0	_	_	Offset=1286-1289
+2	loosely	_	Modifier	_	_	0	_	_	Offset=1290-1297
+3	heat	_	Action	_	_	0	_	_	Offset=1302-1306
+4	110˚C	_	Temperature	_	_	0	_	_	Offset=1310-1315
+
+# sent_id = s17
+# text = Resuspend sample in 200-500 µL of 50% HNO3/15% H2O2 (v/v).
+1	uncap	_	Action	_	_	0	_	_	Offset=1348-1353
+2	vials	_	Seal	_	_	0	_	_	Offset=1354-1359
+3	dry	_	Action	_	_	0	_	_	Offset=1364-1367
+4	135˚C	_	Temperature	_	_	0	_	_	Offset=1371-1376
+
+# sent_id = s18
+# text = Cap loosely and heat at 110˚C.
+1	Add	_	Action	_	_	0	_	_	Offset=1379-1382
+2	100	_	Amount	_	_	3	Measure	_	Offset=1383-1389
+3	concentrated	_	Reagent	_	_	0	_	_	Offset=1390-1407
+4	heat	_	Action	_	_	0	_	_	Offset=1412-1416
+5	110˚C	_	Temperature	_	_	0	_	_	Offset=1420-1425
+6	redissolved	_	Action	_	_	0	_	_	Offset=1437-1448
+7	1mL	_	Amount	_	_	9	Measure	_	Offset=1452-1455
+8	0.1	_	Concentration	_	_	9	Measure	_	Offset=1459-1464
+9	HNO3	_	Reagent	_	_	0	_	_	Offset=1465-1469
+
+# sent_id = s19
+# text = After vigorous bubbling cease, uncap vials and dry at 135˚C. 
+1	Dilute	_	Action	_	_	0	_	_	Offset=1472-1478
+2	sample	_	Reagent	_	_	0	_	_	Offset=1479-1485
+3	5%	_	Generic-Measure	_	_	0	_	_	Offset=1489-1517
+4	0.1	_	Concentration	_	_	5	Measure	_	Offset=1523-1528
+5	HNO3	_	Reagent	_	_	0	_	_	Offset=1529-1533
+
+# sent_id = s20
+# text = Add 100 µL concentrated HNO3 and heat at 110˚C to dryness redissolved in 1mL of 0.1 M HNO3. 
+1	follow	_	Action	_	_	0	_	_	Offset=1579-1585
+2	Conway	_	Method	_	_	0	_	_	Offset=1586-1598
+

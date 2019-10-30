@@ -1,0 +1,135 @@
+# sent_id = s1
+# text = Hemolysis Assay
+1	Wash	_	Action	_	_	0	_	_	Offset=16-20
+2	concentrate	_	Action	_	_	0	_	_	Offset=25-36
+3	blood	_	Reagent	_	_	0	_	_	Offset=37-42
+4	prepare	_	Action	_	_	0	_	_	Offset=44-51
+5	2%	_	Concentration	_	_	6	Measure	_	Offset=52-54
+6	blood	_	Reagent	_	_	0	_	_	Offset=55-69
+
+# sent_id = s2
+# text = Wash and concentrate blood, prepare 2% blood solution.
+1	Add	_	Action	_	_	0	_	_	Offset=71-74
+2	3	_	Amount	_	_	3	Measure	_	Offset=75-79
+3	rabbit	_	Reagent	_	_	0	_	_	Offset=80-92
+4	14	_	Amount	_	_	5	Measure	_	Offset=96-101
+5	PBS	_	Reagent	_	_	0	_	_	Offset=102-105
+6	pH	_	pH	_	_	5	Measure	_	Offset=106-112
+7	mix	_	Action	_	_	0	_	_	Offset=117-120
+
+# sent_id = s3
+# text = Add 3 mL rabbit blood to 14 mL PBS pH 5.7 and mix.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=122-132
+2	10	_	Time	_	_	0	_	_	Offset=133-139
+3	500g	_	Speed	_	_	0	_	_	Offset=140-144
+4	4C	_	Temperature	_	_	0	_	_	Offset=145-147
+
+# sent_id = s4
+# text = Centrifuge 10 min 500g 4C.
+1	Remove	_	Action	_	_	0	_	_	Offset=149-155
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=156-167
+
+# sent_id = s5
+# text = Remove supernatant. 
+1	Repeat	_	Action	_	_	0	_	_	Offset=170-176
+2	steps	_	Method	_	_	0	_	_	Offset=177-182
+3	4	_	Numerical	_	_	0	_	_	Offset=198-199
+
+# sent_id = s6
+# text = Repeat steps for a total of 4 washes. 
+1	remove	_	Action	_	_	0	_	_	Offset=231-237
+2	200	_	Amount	_	_	3	Measure	_	Offset=238-244
+3	blood	_	Reagent	_	_	0	_	_	Offset=245-250
+4	bottom	_	Location	_	_	0	_	_	Offset=260-266
+5	vial	_	Location	_	_	4	Meronym	_	Offset=274-278
+6	add	_	Action	_	_	0	_	_	Offset=283-286
+7	9.8	_	Amount	_	_	8	Measure	_	Offset=290-296
+8	PBS	_	Reagent	_	_	0	_	_	Offset=297-300
+9	pH	_	pH	_	_	8	Measure	_	Offset=301-307
+
+# sent_id = s7
+# text = After the final wash, remove 200 uL blood from the bottom of the vial and add to 9.8 mL PBS pH 5.7.
+1	Prepare	_	Action	_	_	0	_	_	Offset=309-316
+2	endosomal	_	Reagent	_	_	0	_	_	Offset=317-346
+
+# sent_id = s8
+# text = Prepare endosomal disruptor solutions.
+1	Prepare	_	Action	_	_	0	_	_	Offset=348-355
+2	100	_	Amount	_	_	3	Measure	_	Offset=356-362
+3	solutions	_	Reagent	_	_	0	_	_	Offset=363-396
+4	different	_	Concentration	_	_	0	_	_	Offset=400-424
+5	serial	_	Action	_	_	0	_	_	Offset=429-449
+6	TritonX	_	Reagent	_	_	0	_	_	Offset=453-460
+7	15	_	Concentration	_	_	0	_	_	Offset=466-474
+8	.0015	_	Concentration	_	_	0	_	_	Offset=478-489
+
+# sent_id = s9
+# text = Prepare 100 uL solutions of endosomal disruptors at different concentrations (Ex serial 10x dilutions of TritonX from 15 mg/mL to .0015 mg/mL).
+1	Add	_	Action	_	_	0	_	_	Offset=492-495
+2	blood	_	Reagent	_	_	0	_	_	Offset=496-501
+3	endosomal	_	Reagent	_	_	0	_	_	Offset=505-525
+4	incubate	_	Action	_	_	0	_	_	Offset=530-538
+
+# sent_id = s10
+# text = Add blood to endosomal disruptors and incubate.
+1	Add	_	Action	_	_	0	_	_	Offset=540-543
+2	50	_	Amount	_	_	3	Measure	_	Offset=544-549
+3	blood	_	Reagent	_	_	0	_	_	Offset=550-564
+4	100	_	Amount	_	_	5	Measure	_	Offset=568-574
+5	endosomal	_	Reagent	_	_	0	_	_	Offset=575-604
+
+# sent_id = s11
+# text = Add 50 uL blood solution to 100 uL endosomal disruptor solutions. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=607-615
+2	37C	_	Temperature	_	_	0	_	_	Offset=619-622
+3	30	_	Time	_	_	0	_	_	Offset=627-633
+
+# sent_id = s12
+# text = Incubate at 37C for 30 min, starting timer as soon as last solution added.
+1	Make	_	Action	_	_	0	_	_	Offset=705-709
+2	positive	_	Reagent	_	_	0	_	_	Offset=712-728
+3	adding	_	Action	_	_	0	_	_	Offset=746-752
+4	50	_	Amount	_	_	5	Measure	_	Offset=753-758
+5	blood	_	Reagent	_	_	0	_	_	Offset=759-773
+6	100	_	Amount	_	_	7	Measure	_	Offset=777-783
+7	diH2O	_	Reagent	_	_	0	_	_	Offset=784-789
+8	freeze-thaw	_	Action	_	_	0	_	_	Offset=794-813
+9	3	_	Numerical	_	_	0	_	_	Offset=814-815
+10	freeze	_	Action	_	_	0	_	_	Offset=823-829
+11	-80C	_	Temperature	_	_	12	Setting	_	Offset=833-837
+12	freezer	_	Device	_	_	0	_	_	Offset=838-845
+
+# sent_id = s13
+# text = Make positive control.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=848-858
+2	place	_	Action	_	_	0	_	_	Offset=863-868
+3	plate	_	Location	_	_	0	_	_	Offset=872-877
+
+# sent_id = s14
+# text = Make a positive control (known lysis) by adding 50 uL blood solution to 100 uL diH2O and freeze-thaw cycling 3 times (freeze in -80C freezer).
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=879-889
+2	tabletop	_	Device	_	_	0	_	_	Offset=893-912
+3	2500g	_	Speed	_	_	2	Setting	_	Offset=916-921
+4	6	_	Time	_	_	2	Setting	_	Offset=926-931
+
+# sent_id = s15
+# text = Centrifuge and place in plate.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=934-943
+2	collect	_	Action	_	_	0	_	_	Offset=944-951
+3	75	_	Amount	_	_	4	Measure	_	Offset=952-957
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=961-972
+5	each	_	Modifier	_	_	6	Mod-Link	_	Offset=978-982
+6	tube	_	Location	_	_	0	_	_	Offset=983-987
+7	place	_	Action	_	_	0	_	_	Offset=992-997
+8	96	_	Location	_	_	0	_	_	Offset=1001-1014
+
+# sent_id = s16
+# text = Centrifuge in tabletop centrifuge at 2500g for 6 min. 
+1	Take	_	Action	_	_	0	_	_	Offset=1142-1146
+
+# sent_id = s17
+# text = Carefully collect 75 uL of supernatant from each tube and place in 96 well plate. 
+1	Take	_	Action	_	_	0	_	_	Offset=1159-1163
+2	absorbance	_	Measure-Type	_	_	3	Of-Type	_	Offset=1164-1174
+3	541	_	Generic-Measure	_	_	0	_	_	Offset=1178-1184
+

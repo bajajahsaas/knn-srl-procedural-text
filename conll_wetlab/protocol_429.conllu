@@ -1,0 +1,182 @@
+# sent_id = s1
+# text = RNA extraction protocol (Trizol)
+1	Add	_	Action	_	_	0	_	_	Offset=33-36
+2	1000	_	Amount	_	_	3	Measure	_	Offset=37-44
+3	Trizol	_	Reagent	_	_	0	_	_	Offset=48-54
+4	per	_	Modifier	_	_	6	Mod-Link	_	Offset=55-58
+5	50-100	_	Amount	_	_	6	Measure	_	Offset=59-68
+6	parsite	_	Reagent	_	_	0	_	_	Offset=72-87
+7	2	_	Amount	_	_	0	_	_	Offset=93-97
+8	eppendorf	_	Location	_	_	0	_	_	Offset=98-112
+9	place	_	Action	_	_	0	_	_	Offset=130-135
+10	parasite	_	Reagent	_	_	0	_	_	Offset=140-156
+11	respective	_	Modifier	_	_	13	Mod-Link	_	Offset=168-178
+12	labelled	_	Modifier	_	_	13	Mod-Link	_	Offset=180-188
+13	tube	_	Location	_	_	0	_	_	Offset=189-193
+
+# sent_id = s2
+# text = Add 1000 µL of Trizol per 50-100 mg of parsite tissues in a 2 mL eppendorf tube (RNAse free) and place the parasite tissues into their respective, labelled tube. 
+1	Add	_	Action	_	_	0	_	_	Offset=196-199
+2	1	_	Numerical	_	_	3	Measure	_	Offset=200-201
+3	metal	_	Reagent	_	_	0	_	_	Offset=202-212
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=218-222
+5	tube	_	Location	_	_	0	_	_	Offset=223-227
+6	place	_	Action	_	_	0	_	_	Offset=232-237
+7	tubes	_	Location	_	_	0	_	_	Offset=242-247
+8	TissueLyzer	_	Device	_	_	0	_	_	Offset=255-266
+
+# sent_id = s3
+# text = Add 1 metal bead into each tube and place the tubes into a TissueLyzer.
+1	Run	_	Action	_	_	0	_	_	Offset=268-271
+2	30	_	Generic-Measure	_	_	0	_	_	Offset=278-283
+3	3	_	Time	_	_	0	_	_	Offset=288-297
+
+# sent_id = s4
+# text = Run it at 30 Hz for 3 minutes. 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=300-310
+2	12,000	_	Speed	_	_	0	_	_	Offset=314-324
+3	10	_	Time	_	_	0	_	_	Offset=329-339
+4	4°C	_	Temperature	_	_	0	_	_	Offset=343-346
+
+# sent_id = s5
+# text = Centrifuge at 12,000 x g for 10 minutes at 4°C. 
+1	Discard	_	Action	_	_	0	_	_	Offset=349-356
+2	top	_	Reagent	_	_	0	_	_	Offset=357-366
+3	liquid	_	Reagent	_	_	2	Meronym	_	Offset=370-376
+4	formed	_	Action	_	_	0	_	_	Offset=377-383
+5	eppendorf	_	Location	_	_	0	_	_	Offset=391-400
+
+# sent_id = s6
+# text = Discard top layer of liquid formed in the eppendorf after the centrifugation (contains fatty acids). 
+1	Transfer	_	Action	_	_	0	_	_	Offset=451-459
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=460-471
+3	new	_	Modifier	_	_	5	Mod-Link	_	Offset=479-482
+4	labelled	_	Modifier	_	_	5	Mod-Link	_	Offset=487-495
+5	eppendorf	_	Location	_	_	0	_	_	Offset=496-510
+6	2	_	Amount	_	_	5	Measure	_	Offset=512-516
+
+# sent_id = s7
+# text = Transfer supernatant into a new and labelled eppendorf tube (2 mL).
+1	Incubate	_	Action	_	_	0	_	_	Offset=519-527
+2	room	_	Temperature	_	_	0	_	_	Offset=531-547
+3	5	_	Time	_	_	0	_	_	Offset=552-561
+
+# sent_id = s8
+# text = Incubate at room temperature for 5 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=563-566
+2	200	_	Amount	_	_	3	Measure	_	Offset=567-573
+3	chloroform	_	Reagent	_	_	0	_	_	Offset=577-587
+4	per	_	Modifier	_	_	5	Mod-Link	_	Offset=588-591
+5	tube	_	Location	_	_	0	_	_	Offset=592-596
+
+# sent_id = s9
+# text = Add 200 µL of chloroform per tube. 
+1	Mix	_	Action	_	_	0	_	_	Offset=599-602
+2	vigorously	_	Modifier	_	_	0	_	_	Offset=603-613
+3	inverting	_	Action	_	_	0	_	_	Offset=617-626
+4	tubes	_	Location	_	_	0	_	_	Offset=631-636
+5	up	_	Method	_	_	0	_	_	Offset=637-648
+6	1	_	Time	_	_	0	_	_	Offset=653-661
+
+# sent_id = s10
+# text = Mix vigorously by inverting the tubes up and down for 1 minute.
+1	DO	_	Action	_	_	0	_	_	Offset=663-676
+
+# sent_id = s11
+# text = DO NOT VORTEX!
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=678-688
+2	12,000	_	Speed	_	_	0	_	_	Offset=692-702
+3	15	_	Time	_	_	0	_	_	Offset=707-717
+4	4°C	_	Temperature	_	_	0	_	_	Offset=721-724
+
+# sent_id = s12
+# text = Centrifuge at 12,000 x g for 15 minutes at 4°C. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=727-735
+2	precaution	_	Modifier	_	_	0	_	_	Offset=741-751
+3	aqueous	_	Reagent	_	_	0	_	_	Offset=756-769
+4	supernatant	_	Reagent	_	_	3	Or	_	Offset=771-782
+5	new	_	Modifier	_	_	7	Mod-Link	_	Offset=791-794
+6	2	_	Amount	_	_	7	Measure	_	Offset=795-799
+7	eppendorf	_	Location	_	_	0	_	_	Offset=800-814
+
+# sent_id = s13
+# text = Transfer with precaution the aqueous phase (supernatant) into a new 2 mL eppendorf tube. 
+1	Add	_	Action	_	_	0	_	_	Offset=817-820
+2	500	_	Amount	_	_	3	Measure	_	Offset=821-827
+3	RNAse	_	Reagent	_	_	0	_	_	Offset=831-853
+4	100%	_	Concentration	_	_	3	Measure	_	Offset=855-859
+5	mix	_	Action	_	_	0	_	_	Offset=865-868
+6	thoroughly	_	Modifier	_	_	0	_	_	Offset=869-879
+
+# sent_id = s14
+# text = Add 500 µL of RNAse free isopropanol (100%) and mix thoroughly.  
+1	Incubate	_	Action	_	_	0	_	_	Offset=883-891
+2	15	_	Time	_	_	0	_	_	Offset=896-906
+3	room	_	Temperature	_	_	0	_	_	Offset=910-926
+
+# sent_id = s15
+# text = Incubate for 15 minutes at room temperature.  
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=930-940
+2	12,000	_	Speed	_	_	0	_	_	Offset=944-954
+3	10	_	Time	_	_	0	_	_	Offset=959-969
+4	4°C	_	Temperature	_	_	0	_	_	Offset=973-976
+
+# sent_id = s16
+# text = Centrifuge at 12,000 x g for 10 minutes at 4°C. 
+1	Discard	_	Action	_	_	0	_	_	Offset=979-986
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=987-998
+
+# sent_id = s17
+# text = Discard supernatant. 
+1	Add	_	Action	_	_	0	_	_	Offset=1001-1004
+2	1000	_	Amount	_	_	4	Measure	_	Offset=1005-1012
+3	75%	_	Concentration	_	_	4	Measure	_	Offset=1016-1019
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=1020-1027
+5	per	_	Modifier	_	_	6	Mod-Link	_	Offset=1049-1052
+6	tube	_	Location	_	_	0	_	_	Offset=1053-1057
+
+# sent_id = s18
+# text = Add 1000 µL of 75% ethanol (kept cold at -20°C) per tube. 
+1	Vortex	_	Action	_	_	0	_	_	Offset=1060-1066
+2	thoroughly	_	Modifier	_	_	0	_	_	Offset=1067-1077
+3	centrifuge	_	Action	_	_	0	_	_	Offset=1082-1092
+4	7500g	_	Speed	_	_	0	_	_	Offset=1096-1101
+5	5	_	Time	_	_	0	_	_	Offset=1106-1115
+6	4°C	_	Temperature	_	_	0	_	_	Offset=1119-1122
+
+# sent_id = s19
+# text = Vortex thoroughly and centrifuge at 7500g for 5 minutes at 4°C.
+1	Discard	_	Action	_	_	0	_	_	Offset=1124-1131
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1132-1143
+3	tubes	_	Location	_	_	0	_	_	Offset=1156-1161
+4	dry	_	Action	_	_	0	_	_	Offset=1162-1169
+5	cap	_	Seal	_	_	0	_	_	Offset=1179-1182
+6	opened	_	Action	_	_	0	_	_	Offset=1183-1189
+7	5-10	_	Time	_	_	0	_	_	Offset=1194-1206
+
+# sent_id = s20
+# text = Discard supernatant and let the tubes dry out with the cap opened for 5-10 minutes. 
+1	Add	_	Action	_	_	0	_	_	Offset=1209-1212
+2	20-50	_	Amount	_	_	3	Measure	_	Offset=1213-1221
+3	DEPC	_	Reagent	_	_	0	_	_	Offset=1225-1243
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=1249-1253
+5	tube	_	Location	_	_	0	_	_	Offset=1254-1258
+
+# sent_id = s21
+# text = Add 20-50 µL of DEPC treated water into each tube. 
+1	Place	_	Action	_	_	0	_	_	Offset=1261-1266
+2	tubes	_	Location	_	_	0	_	_	Offset=1271-1276
+3	incubator	_	Device	_	_	0	_	_	Offset=1286-1295
+4	65°C	_	Temperature	_	_	3	Setting	_	Offset=1297-1301
+5	1	_	Time	_	_	3	Setting	_	Offset=1307-1315
+
+# sent_id = s22
+# text = Place the tubes into the incubator (65°C) for 1 minute. 
+1	Vortex	_	Action	_	_	0	_	_	Offset=1318-1324
+2	thoroughly	_	Modifier	_	_	0	_	_	Offset=1325-1335
+3	repeat	_	Action	_	_	0	_	_	Offset=1340-1346
+4	step	_	Method	_	_	0	_	_	Offset=1347-1354
+5	RNA	_	Reagent	_	_	0	_	_	Offset=1361-1364
+6	completely	_	Modifier	_	_	0	_	_	Offset=1368-1378
+7	dissolved	_	Action	_	_	0	_	_	Offset=1379-1388
+

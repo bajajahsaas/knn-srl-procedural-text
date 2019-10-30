@@ -1,0 +1,122 @@
+# sent_id = s1
+# text = Tube-O-Dialyzer (No Loss Dialyzer for Small Samples)
+1	discard	_	Action	_	_	0	_	_	Offset=135-142
+2	preservative	_	Reagent	_	_	0	_	_	Offset=147-159
+3	tube	_	Location	_	_	0	_	_	Offset=169-173
+4	place	_	Action	_	_	0	_	_	Offset=178-183
+5	dialysis	_	Seal	_	_	0	_	_	Offset=188-200
+6	beaker	_	Location	_	_	0	_	_	Offset=218-224
+7	other	_	Location	_	_	6	Or	_	Offset=228-252
+
+# sent_id = s2
+# text = Tube‐O‐DIALYZER™ are supplied in a preservative to maintain quality.
+1	Pipette	_	Action	_	_	0	_	_	Offset=254-261
+2	sample	_	Reagent	_	_	0	_	_	Offset=267-273
+3	directly	_	Modifier	_	_	2	Mod-Link	_	Offset=274-282
+4	Tube‐O‐DIALYZER™	_	Location	_	_	0	_	_	Offset=292-313
+
+# sent_id = s3
+# text = Prior to use discard the preservative from the tube and place the dialysis cap upside down in a beaker or other suitable container.
+1	Remove	_	Action	_	_	0	_	_	Offset=400-406
+2	Tube‐O‐DIALYZER™	_	Seal	_	_	0	_	_	Offset=411-440
+3	rinse	_	Reagent	_	_	0	_	_	Offset=450-468
+4	carefully	_	Modifier	_	_	0	_	_	Offset=473-482
+5	remove	_	Action	_	_	0	_	_	Offset=483-489
+6	excess	_	Modifier	_	_	7	Mod-Link	_	Offset=490-496
+7	liquid	_	Reagent	_	_	0	_	_	Offset=497-503
+8	pipette	_	Device	_	_	0	_	_	Offset=511-522
+
+# sent_id = s4
+# text = Pipette your sample directly into the Tube‐O‐DIALYZER™ tube.
+1	Screw	_	Action	_	_	0	_	_	Offset=524-529
+2	dialysis	_	Seal	_	_	0	_	_	Offset=534-546
+3	Tube‐O‐DIALYZER™	_	Location	_	_	0	_	_	Offset=557-578
+
+# sent_id = s5
+# text = For Tube‐O‐DIALYZER™ Micro use 20‐250µl and for Tube‐O‐DIALYZER™ Medi use 0.2‐2.5ml.
+1	Invert	_	Action	_	_	0	_	_	Offset=599-605
+2	Tube‐O‐DIALYZER™	_	Device	_	_	0	_	_	Offset=610-626
+
+# sent_id = s6
+# text = Remove the Tube‐O‐DIALYZER™ dialysis cap from the rinse water/buffer and carefully remove excess liquid with a pipette tip.
+1	Tube‐O‐DIALYZER™	_	Device	_	_	4	Meronym	_	Offset=692-708
+2	slide	_	Action	_	_	0	_	_	Offset=734-739
+3	supplied	_	Location	_	_	0	_	_	Offset=744-758
+4	Tube‐O‐DIALYZER™	_	Location	_	_	0	_	_	Offset=768-789
+
+# sent_id = s7
+# text = Screw the dialysis cap on to the Tube‐O‐DIALYZER™ tube until finger tight.
+1	Place	_	Action	_	_	0	_	_	Offset=791-796
+2	Tube‐O‐DIALYZER™	_	Device	_	_	0	_	_	Offset=801-817
+3	dialysis	_	Reagent	_	_	0	_	_	Offset=825-840
+
+# sent_id = s8
+# text = Invert the Tube‐O‐DIALYZER™, ensuring the entire sample rests upon the membrane.
+1	dialysis	_	Reagent	_	_	0	_	_	Offset=858-875
+2	contacts	_	Action	_	_	0	_	_	Offset=876-884
+3	dialysis	_	Reagent	_	_	0	_	_	Offset=889-904
+
+# sent_id = s9
+# text = Keeping the Tube‐O‐DIALYZER™ in an inverted position, slide the supplied float onto the Tube‐O‐DIALYZER™ tube.
+1	tilt	_	Action	_	_	0	_	_	Offset=987-991
+2	tube	_	Location	_	_	0	_	_	Offset=996-1000
+3	squirt	_	Action	_	_	0	_	_	Offset=1004-1010
+4	buffer	_	Reagent	_	_	0	_	_	Offset=1011-1017
+5	remove	_	Action	_	_	0	_	_	Offset=1021-1027
+6	air	_	Reagent	_	_	0	_	_	Offset=1032-1043
+
+# sent_id = s10
+# text = Place the Tube‐O‐DIALYZER™ in the dialysis buffer.
+1	sample	_	Reagent	_	_	0	_	_	Offset=1251-1257
+2	dialyzed	_	Action	_	_	0	_	_	Offset=1268-1276
+3	2‐12h	_	Time	_	_	0	_	_	Offset=1281-1286
+
+# sent_id = s11
+# text = Ensure that the dialysis membrane contacts the dialysis buffer.
+1	remove	_	Action	_	_	0	_	_	Offset=1375-1381
+2	Tube‐O‐DIALYZER™	_	Device	_	_	0	_	_	Offset=1386-1402
+3	float	_	Reagent	_	_	0	_	_	Offset=1412-1417
+4	immediately	_	Modifier	_	_	0	_	_	Offset=1422-1433
+5	spin	_	Action	_	_	0	_	_	Offset=1434-1438
+6	Tube‐O‐DIALYZER™	_	Device	_	_	0	_	_	Offset=1443-1459
+7	5‐6	_	Time	_	_	0	_	_	Offset=1487-1498
+8	500‐1,000xg	_	Speed	_	_	0	_	_	Offset=1502-1513
+
+# sent_id = s12
+# text = If there are large air bubbles trapped underneath the dialysis membrane surface, tilt the tube or squirt buffer to remove the air bubbles.
+1	Discard	_	Action	_	_	0	_	_	Offset=1515-1522
+2	dialysis	_	Seal	_	_	0	_	_	Offset=1527-1539
+3	replace	_	Action	_	_	0	_	_	Offset=1544-1551
+4	supplied	_	Modifier	_	_	5	Mod-Link	_	Offset=1561-1569
+5	Storage	_	Seal	_	_	0	_	_	Offset=1570-1581
+
+# sent_id = s13
+# text = Dialysis Time:  Dialysis time will depend on the nature of sample, MWCO of the Tube‐O‐DIALYZER™, sample and dialysis buffer volume and concentration.
+1	Add	_	Action	_	_	0	_	_	Offset=1583-1586
+2	1‐2ml	_	Amount	_	_	3	Measure	_	Offset=1587-1592
+3	DI	_	Reagent	_	_	0	_	_	Offset=1593-1601
+4	dialysis	_	Reagent	_	_	3	Or	_	Offset=1605-1620
+5	rinse	_	Action	_	_	0	_	_	Offset=1624-1629
+
+# sent_id = s14
+# text = Higher MWCO will allow faster dialysis.
+1	Keep	_	Action	_	_	0	_	_	Offset=1631-1635
+2	Tube‐O‐DIALYZER™	_	Reagent	_	_	0	_	_	Offset=1640-1665
+
+# sent_id = s15
+# text = As a guide, the sample should be dialyzed for 2‐12h.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=1686-1692
+2	stir	_	Action	_	_	0	_	_	Offset=1694-1698
+3	dialysis	_	Reagent	_	_	0	_	_	Offset=1703-1718
+
+# sent_id = s16
+# text = Dialysis buffer should also be replaced at least once during dialysis.
+1	inverting	_	Action	_	_	0	_	_	Offset=1769-1778
+2	gently	_	Modifier	_	_	0	_	_	Offset=1782-1788
+3	tapping	_	Action	_	_	0	_	_	Offset=1789-1796
+4	Tube‐O‐DIALYZER™	_	Device	_	_	0	_	_	Offset=1801-1817
+5	1‐2	_	Numerical	_	_	0	_	_	Offset=1818-1821
+6	dialysis	_	Method	_	_	0	_	_	Offset=1835-1843
+7	mix	_	Action	_	_	0	_	_	Offset=1847-1850
+8	sample	_	Reagent	_	_	0	_	_	Offset=1855-1861
+

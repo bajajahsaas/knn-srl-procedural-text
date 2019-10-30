@@ -1,0 +1,180 @@
+# sent_id = s1
+# text = Extraction of DNA from Virus
+1	Mix	_	Action	_	_	0	_	_	Offset=29-32
+2	Lysing	_	Reagent	_	_	0	_	_	Offset=33-48
+3	Sodium	_	Reagent	_	_	0	_	_	Offset=56-74
+4	2:1	_	Generic-Measure	_	_	0	_	_	Offset=83-86
+
+# sent_id = s2
+# text = Mix Lysing Solution (LS) & Sodium Perchlorate (SP) in 2:1.
+1	Mix	_	Action	_	_	0	_	_	Offset=88-91
+2	combined	_	Modifier	_	_	3	Mod-Link	_	Offset=96-104
+3	Lysing	_	Reagent	_	_	0	_	_	Offset=105-141
+4	virus	_	Reagent	_	_	0	_	_	Offset=147-157
+5	18.5	_	Amount	_	_	6	Measure	_	Offset=159-166
+6	LS+SP	_	Reagent	_	_	3	Or	_	Offset=167-172
+7	10ml	_	Amount	_	_	8	Measure	_	Offset=178-182
+8	virus	_	Reagent	_	_	4	Or	_	Offset=183-193
+9	~	_	Modifier	_	_	10	Mod-Link	_	Offset=195-196
+10	10¹¹	_	Generic-Measure	_	_	8	Measure	_	Offset=197-208
+
+# sent_id = s3
+# text = Mix the combined Lysing Solution & sodium Perchlorate with virus prep :18.5 ml LS+SP with 10ml virus prep (~ 10¹¹ PFU/ml ).
+1	Incubate	_	Action	_	_	0	_	_	Offset=212-220
+2	lysate	_	Reagent	_	_	0	_	_	Offset=225-231
+3	55ºC	_	Temperature	_	_	0	_	_	Offset=235-239
+4	1hrs	_	Time	_	_	0	_	_	Offset=244-248
+
+# sent_id = s4
+# text = Incubate the lysate at 55ºC for 1hrs.
+1	Add	_	Action	_	_	0	_	_	Offset=250-253
+2	30ml	_	Amount	_	_	3	Measure	_	Offset=254-258
+3	phenol	_	Reagent	_	_	4	Meronym	5:Meronym	Offset=262-268
+4	chloroform	_	Reagent	_	_	0	_	_	Offset=273-283
+5	isoamyl	_	Reagent	_	_	0	_	_	Offset=286-301
+6	25:1	_	Generic-Measure	_	_	4	Measure	5:Measure	Offset=303-307
+7	1:1	_	Generic-Measure	_	_	0	_	_	Offset=337-340
+
+# sent_id = s5
+# text = Add 30ml of phenol : [ chloroform : isoamyl alcohol (25:1)] in the proportion equal to 1:1.
+1	Shake	_	Action	_	_	0	_	_	Offset=342-347
+2	them	_	Mention	_	_	0	_	_	Offset=348-352
+3	hands	_	Device	_	_	0	_	_	Offset=356-361
+4	5mins	_	Time	_	_	0	_	_	Offset=366-371
+
+# sent_id = s6
+# text = Shake them by hands for 5mins.
+1	Transfer	_	Action	_	_	0	_	_	Offset=373-381
+2	liquid	_	Reagent	_	_	0	_	_	Offset=386-392
+3	centrifuge	_	Location	_	_	5	Coreference-Link	_	Offset=400-416
+4	balance	_	Action	_	_	0	_	_	Offset=418-425
+5	them	_	Mention	_	_	0	_	_	Offset=426-430
+6	centrifuge	_	Action	_	_	0	_	_	Offset=433-443
+7	15	_	Time	_	_	0	_	_	Offset=448-455
+8	14000	_	Speed	_	_	0	_	_	Offset=459-468
+9	4ºC	_	Temperature	_	_	0	_	_	Offset=472-475
+
+# sent_id = s7
+# text = Transfer the liquid to the centrifuge tubes, balance them & centrifuge for 15 mins at 14000 rpm at 4ºC.
+1	Transfer	_	Action	_	_	0	_	_	Offset=477-485
+2	aqueous	_	Reagent	_	_	0	_	_	Offset=490-510
+3	pipette	_	Device	_	_	0	_	_	Offset=516-523
+4	clean	_	Modifier	_	_	5	Mod-Link	_	Offset=531-536
+5	centrifuge	_	Location	_	_	0	_	_	Offset=537-553
+
+# sent_id = s8
+# text = Transfer the aqueous (upper) part with pipette to the clean centrifuge tubes.
+1	Put	_	Action	_	_	0	_	_	Offset=590-593
+2	bottom	_	Location	_	_	0	_	_	Offset=598-610
+3	waste	_	Location	_	_	0	_	_	Offset=620-635
+
+# sent_id = s9
+# text = Don’t worry getting protein in it.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=637-647
+2	tubes	_	Location	_	_	0	_	_	Offset=648-653
+3	again	_	Modifier	_	_	0	_	_	Offset=654-659
+4	14,000	_	Speed	_	_	0	_	_	Offset=663-673
+5	15	_	Time	_	_	0	_	_	Offset=678-684
+
+# sent_id = s10
+# text = Put the bottom layer into the waste container.
+1	Aqueous	_	Reagent	_	_	0	_	_	Offset=741-754
+2	stored	_	Action	_	_	0	_	_	Offset=762-768
+3	overnight	_	Time	_	_	0	_	_	Offset=769-778
+4	4	_	Temperature	_	_	0	_	_	Offset=782-786
+
+# sent_id = s11
+# text = Centrifuge tubes again at 14,000 rpm for 15 min.
+1	add	_	Action	_	_	0	_	_	Offset=833-836
+2	0.1	_	Amount	_	_	5	Measure	_	Offset=837-847
+3	3M	_	Concentration	_	_	4	Or	_	Offset=851-853
+4	5M	_	Concentration	_	_	5	Measure	_	Offset=858-860
+5	Sodium	_	Reagent	_	_	0	_	_	Offset=862-876
+6	pH	_	pH	_	_	5	Measure	_	Offset=878-884
+
+# sent_id = s12
+# text = Now it easy to get pure liquid without protein debris.
+1	Collect	_	Action	_	_	0	_	_	Offset=887-894
+2	DNA	_	Reagent	_	_	0	_	_	Offset=895-898
+3	swirling	_	Action	_	_	0	_	_	Offset=902-910
+4	glass	_	Device	_	_	0	_	_	Offset=911-920
+
+# sent_id = s13
+# text = Aqueous layer may be stored overnight at 4 ºC.
+1	it	_	Mention	_	_	0	_	_	Offset=926-928
+2	dry	_	Action	_	_	0	_	_	Offset=929-932
+3	glass	_	Device	_	_	0	_	_	Offset=940-949
+
+# sent_id = s14
+# text = Estimate the volume of the aqueous layer and add 0.1 volume of 3M (or 5M) Sodium Acetate (pH 6.0).
+1	Pour	_	Action	_	_	0	_	_	Offset=951-959
+2	alcohol	_	Reagent	_	_	0	_	_	Offset=960-967
+3	waste	_	Location	_	_	0	_	_	Offset=977-992
+
+# sent_id = s15
+# text = Collect DNA by swirling glass rod.
+1	Put	_	Action	_	_	0	_	_	Offset=994-997
+2	DNA	_	Reagent	_	_	0	_	_	Offset=998-1001
+3	rod	_	Device	_	_	2	Meronym	_	Offset=1009-1012
+4	beaker	_	Location	_	_	0	_	_	Offset=1022-1028
+5	add	_	Action	_	_	0	_	_	Offset=1031-1034
+6	10	_	Amount	_	_	9	Measure	_	Offset=1035-1045
+7	cold	_	Modifier	_	_	9	Mod-Link	_	Offset=1049-1053
+8	76%	_	Concentration	_	_	9	Measure	_	Offset=1054-1057
+9	Ethanol	_	Reagent	_	_	0	_	_	Offset=1058-1065
+10	-20ºC	_	Temperature	_	_	9	Or	_	Offset=1067-1072
+
+# sent_id = s16
+# text = Let it dry on the glass rod.
+1	Let	_	Action	_	_	0	_	_	Offset=1075-1087
+2	10-20	_	Time	_	_	0	_	_	Offset=1092-1101
+
+# sent_id = s17
+# text = Pour off alcohol into the waste container.
+1	Press	_	Action	_	_	0	_	_	Offset=1103-1108
+2	glass	_	Device	_	_	3	Meronym	_	Offset=1113-1122
+3	DNA	_	Reagent	_	_	0	_	_	Offset=1128-1131
+4	wall	_	Location	_	_	0	_	_	Offset=1144-1148
+5	beaker	_	Location	_	_	4	Meronym	_	Offset=1152-1158
+6	get	_	Action	_	_	0	_	_	Offset=1162-1169
+7	ethanol	_	Reagent	_	_	0	_	_	Offset=1177-1184
+
+# sent_id = s18
+# text = Put DNA on the rod into the beaker & add 10 to 20ml of cold 76% Ethanol (-20ºC).
+1	Invert	_	Action	_	_	0	_	_	Offset=1186-1192
+2	stirring	_	Device	_	_	0	_	_	Offset=1197-1209
+3	test	_	Location	_	_	0	_	_	Offset=1217-1231
+4	dry	_	Action	_	_	0	_	_	Offset=1236-1239
+5	5	_	Time	_	_	0	_	_	Offset=1244-1249
+
+# sent_id = s19
+# text = Let it stand for 10-20 min.
+1	Use	_	Action	_	_	0	_	_	Offset=1251-1254
+2	15ml	_	Amount	_	_	3	Measure	_	Offset=1255-1259
+3	plastic	_	Location	_	_	0	_	_	Offset=1260-1273
+
+# sent_id = s20
+# text = Press the glass rod with DNA against the wall of beaker to get rid of the ethanol.
+1	Dissolve	_	Action	_	_	0	_	_	Offset=1275-1283
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1284-1287
+3	4ml	_	Amount	_	_	4	Measure	_	Offset=1291-1294
+4	TE	_	Reagent	_	_	0	_	_	Offset=1298-1300
+
+# sent_id = s21
+# text = Invert the stirring rod in the test tube rack and dry for 5 min.
+1	Estimate	_	Action	_	_	0	_	_	Offset=1302-1310
+2	DNA	_	Measure-Type	_	_	0	_	_	Offset=1311-1328
+3	spectrophotometer	_	Device	_	_	0	_	_	Offset=1335-1352
+4	gel	_	Reagent	_	_	0	_	_	Offset=1357-1360
+5	ensure	_	Action	_	_	0	_	_	Offset=1364-1370
+6	DNA	_	Measure-Type	_	_	0	_	_	Offset=1371-1383
+
+# sent_id = s22
+# text = Use 15ml plastic tubes.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=1385-1391
+2	overlay	_	Action	_	_	0	_	_	Offset=1392-1399
+3	aqueous	_	Reagent	_	_	0	_	_	Offset=1404-1417
+4	2	_	Amount	_	_	6	Measure	_	Offset=1423-1432
+5	95	_	Concentration	_	_	6	Measure	_	Offset=1436-1440
+6	ethanol	_	Reagent	_	_	0	_	_	Offset=1444-1451
+

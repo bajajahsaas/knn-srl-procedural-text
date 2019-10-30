@@ -1,0 +1,84 @@
+# sent_id = s1
+# text = Protocol for STO Cell Transfection by FuGENE HD
+1	Prepare	_	Action	_	_	0	_	_	Offset=199-206
+2	0.02μg/μl	_	Concentration	_	_	3	Measure	_	Offset=207-216
+3	pCMVβ	_	Reagent	_	_	0	_	_	Offset=217-243
+
+# sent_id = s2
+# text = STO cells were seeded the day before transfection with the density 15,000 cells per well in 100 μl complete growth medium DMEM+10% Fetal Bovine Serum.
+1	Add	_	Action	_	_	0	_	_	Offset=257-260
+2	6μl	_	Amount	_	_	3	Measure	_	Offset=261-264
+3	reagent	_	Reagent	_	_	0	_	_	Offset=268-275
+4	100	_	Amount	_	_	5	Measure	_	Offset=279-285
+5	OptiMEM®	_	Reagent	_	_	0	_	_	Offset=289-311
+
+# sent_id = s3
+# text = Prepare 0.02μg/μl pCMVβ plasmid DNA solution in OptiMEM®.
+1	Mix	_	Action	_	_	0	_	_	Offset=313-316
+2	pipetting	_	Method	_	_	0	_	_	Offset=330-339
+
+# sent_id = s4
+# text = Add 6μl of reagent to 100 μl of OptiMEM® /DNA solution.
+1	Incubate	_	Action	_	_	0	_	_	Offset=355-363
+2	5	_	Time	_	_	0	_	_	Offset=364-369
+3	room	_	Temperature	_	_	0	_	_	Offset=373-389
+
+# sent_id = s5
+# text = Mix carefully by pipetting (10-15 times).
+1	Add	_	Action	_	_	0	_	_	Offset=391-394
+2	5μl	_	Amount	_	_	3	Measure	_	Offset=395-398
+3	complex	_	Reagent	_	_	0	_	_	Offset=399-406
+4	cells	_	Location	_	_	0	_	_	Offset=423-428
+
+# sent_id = s6
+# text = Incubate 5 min at room temperature.
+1	Place	_	Action	_	_	0	_	_	Offset=450-455
+2	cells	_	Reagent	_	_	0	_	_	Offset=460-465
+3	CO2	_	Device	_	_	0	_	_	Offset=471-484
+4	26-28	_	Time	_	_	0	_	_	Offset=489-500
+
+# sent_id = s7
+# text = Add 5μl complex per well to the cells, and mix thoroughly.
+1	Remove	_	Action	_	_	0	_	_	Offset=502-508
+2	medium	_	Reagent	_	_	0	_	_	Offset=513-519
+3	well	_	Location	_	_	0	_	_	Offset=529-533
+4	wash	_	Action	_	_	0	_	_	Offset=538-542
+5	100μl	_	Amount	_	_	6	Measure	_	Offset=563-568
+6	well	_	Device	_	_	0	_	_	Offset=573-577
+
+# sent_id = s8
+# text = Place the cells into CO2 incubator for 26-28 hours.
+1	Fix	_	Action	_	_	0	_	_	Offset=583-586
+2	cells	_	Reagent	_	_	0	_	_	Offset=591-596
+3	well	_	Location	_	_	0	_	_	Offset=604-608
+4	50μl	_	Amount	_	_	0	_	_	Offset=614-618
+5	4%	_	Concentration	_	_	6	Measure	_	Offset=631-633
+6	formaldehyde	_	Reagent	_	_	0	_	_	Offset=634-646
+
+# sent_id = s9
+# text = Remove the medium from the well and wash the cells once with 100μl per well PBS.
+1	Wash	_	Action	_	_	0	_	_	Offset=684-688
+2	100μl	_	Amount	_	_	3	Measure	_	Offset=704-709
+3	PBS	_	Reagent	_	_	0	_	_	Offset=710-713
+
+# sent_id = s10
+# text = Fix the cells in the well with 50μl solution of 4% formaldehyde in PBS for 5min at room temperature.
+1	Add	_	Action	_	_	0	_	_	Offset=721-724
+2	50μl	_	Amount	_	_	3	Meronym	_	Offset=725-729
+3	substrate/stain	_	Reagent	_	_	0	_	_	Offset=742-757
+4	incubate	_	Action	_	_	0	_	_	Offset=771-779
+5	plate	_	Device	_	_	0	_	_	Offset=784-789
+6	overnight	_	Time	_	_	0	_	_	Offset=790-799
+7	37°C	_	Temperature	_	_	0	_	_	Offset=803-807
+
+# sent_id = s11
+# text = Wash each well with 100μl PBS.
+1	Observe	_	Action	_	_	0	_	_	Offset=809-816
+2	evaluate	_	Action	_	_	0	_	_	Offset=848-856
+
+# sent_id = s12
+# text = (1/2) Add 50μl per well of substrate/stain solution and incubate the plate overnight at 37°C.
+1	Wash	_	Action	_	_	0	_	_	Offset=904-908
+2	100μl	_	Amount	_	_	3	Measure	_	Offset=924-929
+3	PBS	_	Reagent	_	_	0	_	_	Offset=930-933
+

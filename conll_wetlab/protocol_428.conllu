@@ -1,0 +1,246 @@
+# sent_id = s1
+# text = MojoSort™ Mouse CX3CR1 Selection Kit Protocol
+1	Prepare	_	Action	_	_	0	_	_	Offset=46-53
+2	cells	_	Reagent	_	_	0	_	_	Offset=54-59
+3	your	_	Reagent	_	_	0	_	_	Offset=65-88
+
+# sent_id = s2
+# text = Prepare cells from your tissue of interest.
+1	resuspend	_	Action	_	_	0	_	_	Offset=210-219
+2	cells	_	Reagent	_	_	0	_	_	Offset=224-229
+3	MojoSort™	_	Reagent	_	_	0	_	_	Offset=233-249
+4	adding	_	Action	_	_	0	_	_	Offset=253-259
+5	up	_	Modifier	_	_	6	Mod-Link	_	Offset=260-265
+6	4mL	_	Amount	_	_	0	_	_	Offset=266-269
+7	5	_	Amount	_	_	9	Measure	_	Offset=275-279
+8	12	_	Size	_	_	9	Measure	_	Offset=281-291
+9	polystyrene	_	Location	_	_	0	_	_	Offset=293-309
+
+# sent_id = s3
+# text = Enzymatic digestion, followed by myelin removal, is strongly recommended.
+1	Keep	_	Action	_	_	0	_	_	Offset=317-321
+2	MojoSort™	_	Reagent	_	_	0	_	_	Offset=322-338
+3	ice	_	Location	_	_	0	_	_	Offset=342-345
+4	throughout	_	Modifier	_	_	0	_	_	Offset=346-356
+5	procedure	_	Method	_	_	0	_	_	Offset=361-370
+
+# sent_id = s4
+# text = In the final wash of your sample preparation, resuspend the cells in MojoSort™ Buffer by adding up to 4mL in a 5 mL (12 x 75 mm) polystyrene tube.
+1	Filter	_	Action	_	_	0	_	_	Offset=372-378
+2	cells	_	Reagent	_	_	0	_	_	Offset=383-388
+3	40	_	Size	_	_	4	Setting	_	Offset=396-401
+4	cell	_	Device	_	_	0	_	_	Offset=402-415
+5	centrifuge	_	Action	_	_	0	_	_	Offset=417-427
+6	300	_	Speed	_	_	0	_	_	Offset=431-438
+7	5	_	Time	_	_	0	_	_	Offset=443-452
+8	resuspend	_	Action	_	_	0	_	_	Offset=458-467
+9	anappropriate	_	Modifier	_	_	10	Mod-Link	_	Offset=471-484
+10	volume	_	Amount	_	_	11	Measure	_	Offset=485-491
+11	MojoSort™	_	Reagent	_	_	0	_	_	Offset=495-511
+
+# sent_id = s5
+# text = Note: Keep MojoSort™ Buffer on ice throughout the procedure.
+1	Count	_	Action	_	_	0	_	_	Offset=513-518
+2	adjust	_	Action	_	_	0	_	_	Offset=523-529
+3	cell	_	Measure-Type	_	_	4	Of-Type	_	Offset=534-552
+4	1	_	Generic-Measure	_	_	0	_	_	Offset=556-571
+
+# sent_id = s6
+# text = Filter the cells with a 40 μm cell strainer, centrifuge at 300 x g for 5 minutes, and resuspend in anappropriate volume of MojoSort™ Buffer.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=573-580
+2	100	_	Amount	_	_	3	Measure	_	Offset=581-587
+3	cell	_	Reagent	_	_	0	_	_	Offset=591-606
+4	106	_	Numerical	_	_	5	Measure	_	Offset=608-611
+5	cells	_	Reagent	_	_	3	Or	_	Offset=612-617
+6	new	_	Modifier	_	_	7	Mod-Link	_	Offset=626-629
+7	tube	_	Location	_	_	0	_	_	Offset=630-634
+
+# sent_id = s7
+# text = Count and adjust the cell concentration to 1 x 107cells/mL.
+1	Add	_	Action	_	_	0	_	_	Offset=636-639
+2	10	_	Amount	_	_	3	Measure	_	Offset=640-645
+3	Biotin‐CX3CR1	_	Reagent	_	_	0	_	_	Offset=653-675
+4	mix	_	Action	_	_	0	_	_	Offset=677-680
+5	well	_	Modifier	_	_	0	_	_	Offset=681-685
+6	incubate	_	Action	_	_	0	_	_	Offset=690-698
+7	ice	_	Location	_	_	0	_	_	Offset=702-705
+8	15	_	Time	_	_	0	_	_	Offset=710-720
+
+# sent_id = s8
+# text = Aliquot 100 μL of cell suspension (106 cells) into a new tube.
+1	Scale	_	Action	_	_	0	_	_	Offset=722-730
+2	volume	_	Measure-Type	_	_	0	_	_	Offset=735-741
+
+# sent_id = s9
+# text = Add 10 μL of the Biotin‐CX3CR1 antibody, mix well and incubate on ice for 15 minutes.
+1	add	_	Action	_	_	0	_	_	Offset=793-796
+2	100	_	Amount	_	_	4	Measure	_	Offset=797-803
+3	1	_	Generic-Measure	_	_	4	Measure	_	Offset=808-815
+4	cells	_	Reagent	_	_	0	_	_	Offset=816-821
+
+# sent_id = s10
+# text = Scale up the volume accordingly if separating more cells.
+1	use	_	Action	_	_	0	_	_	Offset=862-865
+2	indicated	_	Modifier	_	_	3	Mod-Link	_	Offset=866-875
+3	volumes	_	Amount	_	_	5	Measure	_	Offset=876-883
+4	106	_	Numerical	_	_	5	Measure	_	Offset=888-892
+5	cells	_	Reagent	_	_	0	_	_	Offset=892-897
+
+# sent_id = s11
+# text = For example, add 100 μL for 1 x 107 cells.
+1	Keep	_	Action	_	_	0	_	_	Offset=909-913
+2	unused	_	Modifier	_	_	3	Mod-Link	_	Offset=914-920
+3	cells	_	Reagent	_	_	0	_	_	Offset=921-926
+4	take	_	Action	_	_	0	_	_	Offset=931-935
+5	aliquot	_	Reagent	_	_	0	_	_	Offset=939-946
+6	adding	_	Action	_	_	0	_	_	Offset=954-960
+7	cocktail	_	Reagent	_	_	0	_	_	Offset=965-973
+8	monitor	_	Action	_	_	0	_	_	Offset=977-984
+9	purity	_	Measure-Type	_	_	0	_	_	Offset=985-1002
+
+# sent_id = s12
+# text = When working with less than 106 cells, use indicated volumes for 106 cells.
+1	Wash	_	Action	_	_	0	_	_	Offset=1003-1007
+2	cells	_	Reagent	_	_	0	_	_	Offset=1012-1017
+3	adding	_	Action	_	_	0	_	_	Offset=1021-1027
+4	MojoSort™	_	Reagent	_	_	0	_	_	Offset=1028-1044
+5	up	_	Modifier	_	_	6	Mod-Link	_	Offset=1045-1050
+6	4	_	Amount	_	_	4	Measure	_	Offset=1051-1055
+7	centrifuge	_	Action	_	_	0	_	_	Offset=1057-1067
+8	cells	_	Reagent	_	_	0	_	_	Offset=1072-1077
+9	300	_	Speed	_	_	0	_	_	Offset=1081-1088
+10	5	_	Time	_	_	0	_	_	Offset=1093-1102
+
+# sent_id = s13
+# text = Optional: Keep unused cells, or take an aliquot before adding the cocktail to monitor purity and yield.
+1	Discard	_	Action	_	_	0	_	_	Offset=1104-1111
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1112-1123
+3	resuspend	_	Action	_	_	0	_	_	Offset=1128-1137
+4	100	_	Amount	_	_	5	Measure	_	Offset=1141-1147
+5	MojoSort™	_	Reagent	_	_	0	_	_	Offset=1151-1167
+
+# sent_id = s14
+# text = Wash the cells by adding MojoSort™ Buffer up to 4 mL; centrifuge the cells at 300 x g for 5 minutes.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1169-1178
+2	beads	_	Reagent	_	_	0	_	_	Offset=1183-1188
+3	vortexing	_	Action	_	_	0	_	_	Offset=1192-1201
+4	maximum	_	Speed	_	_	0	_	_	Offset=1203-1216
+5	5	_	Numerical	_	_	0	_	_	Offset=1218-1219
+
+# sent_id = s15
+# text = Discard supernatant and resuspend in 100 μL of MojoSort™ Buffer.
+1	Add	_	Action	_	_	0	_	_	Offset=1229-1232
+2	10	_	Amount	_	_	3	Measure	_	Offset=1233-1238
+3	Streptavidin	_	Reagent	_	_	0	_	_	Offset=1242-1264
+
+# sent_id = s16
+# text = Resuspend the beads by vortexing, maximum speed, 5 touches.
+1	Mix	_	Action	_	_	0	_	_	Offset=1266-1269
+2	well	_	Modifier	_	_	0	_	_	Offset=1270-1274
+3	incubate	_	Action	_	_	0	_	_	Offset=1279-1287
+4	ice	_	Location	_	_	0	_	_	Offset=1291-1294
+5	15	_	Time	_	_	0	_	_	Offset=1299-1309
+
+# sent_id = s17
+# text = Add 10 μL of Streptavidin Nanobeads.
+1	Scale	_	Action	_	_	0	_	_	Offset=1311-1319
+2	volume	_	Measure-Type	_	_	0	_	_	Offset=1324-1330
+
+# sent_id = s18
+# text = Mix well and incubate on ice for 15 minutes.
+1	add	_	Action	_	_	0	_	_	Offset=1382-1385
+2	100	_	Amount	_	_	4	Measure	_	Offset=1386-1392
+3	1	_	Generic-Measure	_	_	4	Measure	_	Offset=1397-1404
+4	cells	_	Reagent	_	_	0	_	_	Offset=1405-1410
+
+# sent_id = s19
+# text = Scale up the volume accordingly if separating more cells.
+1	use	_	Action	_	_	0	_	_	Offset=1451-1454
+2	indicated	_	Modifier	_	_	3	Mod-Link	_	Offset=1455-1464
+3	volumes	_	Amount	_	_	5	Measure	_	Offset=1465-1472
+4	106	_	Numerical	_	_	5	Measure	_	Offset=1477-1480
+5	cells	_	Reagent	_	_	0	_	_	Offset=1481-1486
+
+# sent_id = s20
+# text = For example, add 100 μL for 1 x 107 cells.
+1	Wash	_	Action	_	_	0	_	_	Offset=1488-1492
+2	cells	_	Reagent	_	_	0	_	_	Offset=1497-1502
+3	adding	_	Action	_	_	0	_	_	Offset=1506-1512
+4	3	_	Amount	_	_	5	Measure	_	Offset=1513-1517
+5	MojoSort™	_	Reagent	_	_	0	_	_	Offset=1521-1537
+6	centrifuge	_	Action	_	_	0	_	_	Offset=1539-1549
+7	300	_	Speed	_	_	0	_	_	Offset=1553-1560
+8	5	_	Time	_	_	0	_	_	Offset=1565-1574
+9	discard	_	Action	_	_	0	_	_	Offset=1576-1583
+10	supernatant	_	Reagent	_	_	0	_	_	Offset=1584-1595
+
+# sent_id = s21
+# text = When working with less than 106 cells, use indicated volumes for 106 cells.
+1	Take	_	Action	_	_	0	_	_	Offset=1607-1611
+2	aliquot	_	Reagent	_	_	0	_	_	Offset=1615-1622
+3	placing	_	Action	_	_	0	_	_	Offset=1630-1637
+4	tube	_	Location	_	_	0	_	_	Offset=1642-1646
+5	magnet	_	Device	_	_	0	_	_	Offset=1654-1660
+6	monitor	_	Action	_	_	0	_	_	Offset=1664-1671
+7	purity	_	Measure-Type	_	_	0	_	_	Offset=1672-1688
+
+# sent_id = s22
+# text = Wash the cells by adding 3 mL of MojoSort™ Buffer; centrifuge at 300 x g for 5 minutes, discard supernatant.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1690-1699
+2	cells	_	Reagent	_	_	0	_	_	Offset=1704-1709
+3	3	_	Amount	_	_	4	Measure	_	Offset=1713-1717
+4	MojoSort™	_	Reagent	_	_	0	_	_	Offset=1721-1737
+
+# sent_id = s23
+# text = Optional: Take an aliquot before placing the tube in the magnet to monitor purity and yield.
+1	filter	_	Action	_	_	0	_	_	Offset=1772-1778
+2	suspension	_	Reagent	_	_	0	_	_	Offset=1783-1793
+
+# sent_id = s24
+# text = Resuspend the cells in 3 mL of MojoSort™ Buffer.
+1	maximize	_	Action	_	_	0	_	_	Offset=1798-1806
+2	yield	_	Measure-Type	_	_	0	_	_	Offset=1807-1812
+3	disrupt	_	Action	_	_	0	_	_	Offset=1822-1829
+4	aggregates	_	Reagent	_	_	0	_	_	Offset=1834-1844
+5	pipetting	_	Action	_	_	0	_	_	Offset=1848-1857
+6	solution	_	Reagent	_	_	0	_	_	Offset=1862-1870
+7	up	_	Method	_	_	0	_	_	Offset=1871-1882
+
+# sent_id = s25
+# text = Note: If you observe aggregates, filter the suspension.
+1	Pour	_	Action	_	_	0	_	_	Offset=1884-1892
+2	collect	_	Action	_	_	0	_	_	Offset=1897-1904
+3	liquid	_	Reagent	_	_	0	_	_	Offset=1909-1915
+
+# sent_id = s26
+# text = To maximize yield, you can disrupt the aggregates by pipetting the solution up and down.
+1	DO	_	Action	_	_	0	_	_	Offset=1950-1964
+
+# sent_id = s27
+# text = Pour out and collect the liquid.
+1	add	_	Action	_	_	0	_	_	Offset=1977-1980
+2	3	_	Amount	_	_	3	Measure	_	Offset=1981-1985
+3	MojoSort™	_	Reagent	_	_	0	_	_	Offset=1989-2005
+4	repeat	_	Action	_	_	0	_	_	Offset=2010-2016
+5	steps	_	Method	_	_	0	_	_	Offset=2017-2032
+6	magnetically	_	Modifier	_	_	7	Mod-Link	_	Offset=2042-2062
+7	fraction	_	Reagent	_	_	0	_	_	Offset=2063-2071
+8	up	_	Modifier	_	_	9	Or	_	Offset=2072-2077
+9	two	_	Numerical	_	_	0	_	_	Offset=2078-2081
+10	pool	_	Action	_	_	0	_	_	Offset=2098-2102
+11	unlabeled	_	Modifier	_	_	12	Mod-Link	_	Offset=2107-2116
+12	fractions	_	Reagent	_	_	0	_	_	Offset=2117-2126
+
+# sent_id = s28
+# text = These are the cells of interest; DO NOT DISCARD.
+1	Scale	_	Action	_	_	0	_	_	Offset=2495-2503
+2	volumes	_	Measure-Type	_	_	0	_	_	Offset=2504-2511
+3	accordingly	_	Modifier	_	_	0	_	_	Offset=2512-2523
+
+# sent_id = s29
+# text = If needed, add 3 mL of MojoSort™ Buffer and repeat steps 10 and 11 with the magnetically labeled fraction up to two times, and then pool the unlabeled fractions.
+1	Place	_	Action	_	_	0	_	_	Offset=2546-2551
+2	tube	_	Location	_	_	0	_	_	Offset=2556-2560
+3	magnet	_	Device	_	_	0	_	_	Offset=2568-2574
+4	5	_	Time	_	_	0	_	_	Offset=2579-2588
+

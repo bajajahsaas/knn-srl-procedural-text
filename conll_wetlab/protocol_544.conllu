@@ -1,0 +1,60 @@
+# sent_id = s1
+# text = Phenol/chloroform extraction
+1	Dilute	_	Action	_	_	0	_	_	Offset=29-35
+2	nucleic	_	Reagent	_	_	0	_	_	Offset=41-60
+3	100–700	_	Amount	_	_	0	_	_	Offset=64-74
+4	divide	_	Action	_	_	0	_	_	Offset=78-84
+5	samples	_	Reagent	_	_	0	_	_	Offset=90-97
+6	tubes	_	Location	_	_	0	_	_	Offset=103-108
+
+# sent_id = s2
+# text = Dilute your nucleic acid sample to 100–700 µL or divide your samples into tubes such that you have no more than 700 µL per tube.
+1	Add	_	Action	_	_	0	_	_	Offset=158-161
+2	equal	_	Amount	_	_	3	Measure	_	Offset=165-177
+3	phenol	_	Reagent	_	_	0	_	_	Offset=181-187
+4	tube	_	Location	_	_	0	_	_	Offset=195-199
+5	vortex	_	Action	_	_	0	_	_	Offset=201-207
+6	vigorously	_	Modifier	_	_	0	_	_	Offset=208-218
+
+# sent_id = s3
+# text = Add an equal volume of phenol to the tube, vortex vigorously to mix the phases.
+1	Spin	_	Action	_	_	0	_	_	Offset=238-242
+2	microfuge	_	Device	_	_	0	_	_	Offset=248-257
+3	top	_	Speed	_	_	0	_	_	Offset=261-270
+4	1–2	_	Time	_	_	0	_	_	Offset=275-282
+
+# sent_id = s4
+# text = Spin in a microfuge at top speed for 1–2 min to separate the phases.
+1	Remove	_	Action	_	_	0	_	_	Offset=307-313
+2	aqueous	_	Reagent	_	_	0	_	_	Offset=318-331
+3	new	_	Location	_	_	0	_	_	Offset=337-345
+
+# sent_id = s5
+# text = Remove the aqueous phase to a new tube, being careful not to transfer any of the protein at the phase interface.
+1	phenol	_	Reagent	_	_	0	_	_	Offset=431-437
+2	extraction	_	Action	_	_	0	_	_	Offset=438-448
+
+# sent_id = s6
+# text = Repeat the phenol extraction from step 4.
+1	phenol	_	Reagent	_	_	0	_	_	Offset=473-479
+2	extraction	_	Action	_	_	0	_	_	Offset=480-490
+
+# sent_id = s7
+# text = Repeat the phenol extraction from step 4.
+1	Extract	_	Action	_	_	0	_	_	Offset=504-511
+2	sample	_	Reagent	_	_	0	_	_	Offset=516-522
+3	equal	_	Amount	_	_	4	Measure	_	Offset=531-543
+4	chloroform:isoamyl	_	Reagent	_	_	0	_	_	Offset=547-573
+
+# sent_id = s8
+# text = Extract the sample with an equal volume of chloroform:isoamyl alcohol to remove any trace phenol.
+1	Extract	_	Action	_	_	0	_	_	Offset=602-609
+2	sample	_	Reagent	_	_	0	_	_	Offset=614-620
+3	equal	_	Amount	_	_	4	Measure	_	Offset=635-647
+4	chloroform:isoamyl	_	Reagent	_	_	0	_	_	Offset=651-677
+
+# sent_id = s9
+# text = Extract the sample again with an equal volume of chloroform:isoamyl alcohol to remove any trace phenol.
+1	Precipitate	_	Action	_	_	0	_	_	Offset=706-717
+2	nucleic	_	Reagent	_	_	0	_	_	Offset=722-734
+

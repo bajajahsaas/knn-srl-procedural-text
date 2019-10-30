@@ -1,0 +1,89 @@
+# sent_id = s1
+# text = Quick Protocol for Monarch® PCR & DNA Cleanup Kit (5 μg) (NEB #T1030)
+1	Dilute	_	Action	_	_	0	_	_	Offset=70-76
+2	sample	_	Reagent	_	_	0	_	_	Offset=77-83
+3	DNA	_	Reagent	_	_	0	_	_	Offset=89-115
+
+# sent_id = s2
+# text = Dilute sample with DNA Cleanup Binding Buffer according to the table below.
+1	Mix	_	Action	_	_	0	_	_	Offset=146-149
+2	well	_	Modifier	_	_	0	_	_	Offset=150-154
+3	pipetting	_	Method	_	_	0	_	_	Offset=158-179
+4	flicking	_	Method	_	_	3	Or	_	Offset=183-200
+
+# sent_id = s3
+# text = Mix well by pipetting up and down or flicking the tube.
+1	load	_	Action	_	_	0	_	_	Offset=360-364
+2	portion	_	Modifier	_	_	3	Mod-Link	_	Offset=367-374
+3	sample	_	Reagent	_	_	0	_	_	Offset=382-388
+4	proceed	_	Action	_	_	0	_	_	Offset=390-397
+5	step	_	Method	_	_	0	_	_	Offset=403-409
+
+# sent_id = s4
+# text = Do not vortex.
+1	Insert	_	Action	_	_	0	_	_	Offset=632-638
+2	column	_	Device	_	_	0	_	_	Offset=639-645
+3	collection	_	Location	_	_	0	_	_	Offset=651-666
+4	load	_	Action	_	_	0	_	_	Offset=671-675
+5	sample	_	Reagent	_	_	0	_	_	Offset=676-682
+6	column	_	Location	_	_	0	_	_	Offset=688-694
+
+# sent_id = s5
+# text = A sample volume of 20–100 μl is recommended.
+1	Spin	_	Action	_	_	0	_	_	Offset=696-700
+2	1	_	Time	_	_	0	_	_	Offset=705-713
+3	16,000	_	Speed	_	_	0	_	_	Offset=717-727
+4	discard	_	Action	_	_	0	_	_	Offset=734-741
+
+# sent_id = s6
+# text = For smaller samples, TE can be used to adjust the volume.
+1	Re-insert	_	Action	_	_	0	_	_	Offset=756-765
+2	column	_	Device	_	_	0	_	_	Offset=766-772
+3	collection	_	Location	_	_	0	_	_	Offset=778-793
+
+# sent_id = s7
+# text = For diluted samples larger than 800 μl, load a portion of the sample, proceed with step 2, and then repeat as necessary.
+1	Add	_	Action	_	_	0	_	_	Offset=795-798
+2	200	_	Amount	_	_	3	Measure	_	Offset=799-805
+3	DNA	_	Reagent	_	_	0	_	_	Offset=806-821
+4	spin	_	Action	_	_	0	_	_	Offset=847-851
+5	1	_	Time	_	_	0	_	_	Offset=856-864
+6	16,000	_	Speed	_	_	0	_	_	Offset=868-878
+
+# sent_id = s8
+# text = Sample TypeRatio of Binding Buffer: 
+1	Repeat	_	Action	_	_	0	_	_	Offset=918-924
+2	Step	_	Method	_	_	0	_	_	Offset=925-931
+
+# sent_id = s9
+# text = SampleExampledsDNA > 2 kb (plasmids, gDNA)2:1200 μl: 100 μldsDNA < 2 kb (some amplicons,  fragments)5:1500 μl: 100 μlssDNA (cDNA, M13)7:1700 μl: 100 μl. 
+1	Add	_	Action	_	_	0	_	_	Offset=981-984
+2	200	_	Amount	_	_	3	Measure	_	Offset=985-991
+3	DNA	_	Reagent	_	_	0	_	_	Offset=992-1007
+4	spin	_	Action	_	_	0	_	_	Offset=1012-1016
+5	1	_	Time	_	_	0	_	_	Offset=1021-1029
+6	16,000	_	Speed	_	_	0	_	_	Offset=1033-1043
+
+# sent_id = s10
+# text = Insert column into collection tube and load sample onto column.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1084-1092
+2	column	_	Device	_	_	0	_	_	Offset=1093-1099
+3	1.5	_	Amount	_	_	4	Measure	_	Offset=1111-1117
+4	microfuge	_	Location	_	_	0	_	_	Offset=1118-1132
+
+# sent_id = s11
+# text = Spin for 1 minute at 16,000 x g, then discard flow-through.
+1	Add	_	Action	_	_	0	_	_	Offset=1265-1268
+2	≥	_	Amount	_	_	3	Measure	_	Offset=1269-1274
+3	DNA	_	Reagent	_	_	0	_	_	Offset=1279-1297
+4	center	_	Modifier	_	_	5	Mod-Link	_	Offset=1305-1311
+5	matrix	_	Location	_	_	0	_	_	Offset=1319-1325
+
+# sent_id = s12
+# text = Re-insert column into collection tube.
+1	Wait	_	Action	_	_	0	_	_	Offset=1327-1331
+2	1	_	Time	_	_	0	_	_	Offset=1336-1344
+3	spin	_	Action	_	_	0	_	_	Offset=1351-1355
+4	1	_	Time	_	_	0	_	_	Offset=1360-1368
+5	16,000	_	Speed	_	_	0	_	_	Offset=1372-1382
+

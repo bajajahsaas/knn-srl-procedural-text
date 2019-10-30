@@ -1,0 +1,59 @@
+# sent_id = s1
+# text = Ligation Protocol WITH T4 DNA Ligase (M0202)
+1	Thaw	_	Action	_	_	0	_	_	Offset=45-49
+2	T4	_	Reagent	_	_	0	_	_	Offset=54-73
+3	resuspended	_	Action	_	_	0	_	_	Offset=79-90
+4	room	_	Temperature	_	_	0	_	_	Offset=94-110
+
+# sent_id = s2
+# text = Thaw the T4 DNA Ligase Buffer and resuspended at room temperature.
+1	Set	_	Action	_	_	0	_	_	Offset=112-118
+2	reaction	_	Reagent	_	_	0	_	_	Offset=123-131
+3	microcentrifuge	_	Location	_	_	0	_	_	Offset=137-157
+4	ice	_	Location	_	_	3	Meronym	_	Offset=161-164
+
+# sent_id = s3
+# text = Set up the reaction in a microcentrifuge tube on ice.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=166-172
+2	mix	_	Action	_	_	0	_	_	Offset=173-176
+3	reaction	_	Reagent	_	_	0	_	_	Offset=181-189
+4	pipetting	_	Method	_	_	0	_	_	Offset=193-214
+5	microfuge	_	Action	_	_	0	_	_	Offset=219-228
+6	briefly	_	Modifier	_	_	0	_	_	Offset=229-236
+
+# sent_id = s4
+# text = Gently mix the reaction by pipetting up and down and microfuge briefly.
+1	cohesive	_	Reagent	_	_	0	_	_	Offset=242-264
+2	incubate	_	Action	_	_	0	_	_	Offset=266-274
+3	16°C	_	Temperature	_	_	0	_	_	Offset=278-282
+4	overnight	_	Time	_	_	0	_	_	Offset=283-292
+5	room	_	Temperature	_	_	3	Or	_	Offset=296-312
+6	10	_	Time	_	_	4	Or	_	Offset=317-327
+
+# sent_id = s5
+# text = For cohesive (sticky) ends, incubate at 16°C overnight or room temperature for 10 minutes.
+1	blunt	_	Reagent	_	_	0	_	_	Offset=333-343
+2	single	_	Reagent	_	_	1	Or	_	Offset=347-368
+3	incubate	_	Action	_	_	0	_	_	Offset=370-378
+4	16°C	_	Temperature	_	_	0	_	_	Offset=382-386
+5	overnight	_	Time	_	_	0	_	_	Offset=387-396
+6	room	_	Temperature	_	_	4	Or	_	Offset=400-416
+7	2	_	Time	_	_	5	Or	_	Offset=421-428
+
+# sent_id = s6
+# text = For blunt ends or single base overhangs, incubate at 16°C overnight or room temperature for 2 hours.
+1	Heat	_	Action	_	_	0	_	_	Offset=430-434
+2	inactivate	_	Reagent	_	_	0	_	_	Offset=435-445
+3	65	_	Temperature	_	_	0	_	_	Offset=449-461
+4	10	_	Time	_	_	0	_	_	Offset=466-476
+
+# sent_id = s7
+# text = Heat inactivate at 65 degrees C for 10 minutes.
+1	Chill	_	Action	_	_	0	_	_	Offset=478-483
+2	ice	_	Location	_	_	0	_	_	Offset=487-490
+3	transform	_	Action	_	_	0	_	_	Offset=495-504
+4	1-5	_	Amount	_	_	5	Measure	_	Offset=505-511
+5	reaction	_	Reagent	_	_	0	_	_	Offset=519-527
+6	50	_	Amount	_	_	7	Measure	_	Offset=533-538
+7	competent	_	Reagent	_	_	0	_	_	Offset=539-554
+

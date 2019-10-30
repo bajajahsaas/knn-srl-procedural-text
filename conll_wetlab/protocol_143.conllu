@@ -1,0 +1,37 @@
+# sent_id = s1
+# text = Oil Red O Staining Drosophila Larval and Prepupal Tissues
+1	Dissect	_	Action	_	_	0	_	_	Offset=58-65
+2	tissues	_	Reagent	_	_	0	_	_	Offset=66-73
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=77-79
+4	PBS	_	Reagent	_	_	0	_	_	Offset=80-83
+5	fix	_	Action	_	_	0	_	_	Offset=88-91
+6	4%	_	Concentration	_	_	7	Measure	_	Offset=95-97
+7	Paraformaldehyde	_	Reagent	_	_	0	_	_	Offset=98-114
+8	20	_	Time	_	_	0	_	_	Offset=119-129
+
+# sent_id = s2
+# text = Dissect tissues in 1X PBS and fix in 4% Paraformaldehyde for 20 minutes.
+1	Rinse	_	Action	_	_	0	_	_	Offset=131-136
+2	twice	_	Numerical	_	_	0	_	_	Offset=137-142
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=148-150
+4	PBS	_	Reagent	_	_	0	_	_	Offset=151-154
+
+# sent_id = s3
+# text = Rinse twice with 1X PBS.
+1	Stain	_	Action	_	_	0	_	_	Offset=156-161
+2	20	_	Time	_	_	0	_	_	Offset=166-176
+3	Oil	_	Reagent	_	_	0	_	_	Offset=180-198
+
+# sent_id = s4
+# text = Stain for 20 minutes in Oil Red O Solution.
+1	Rinse	_	Action	_	_	0	_	_	Offset=200-205
+2	2X	_	Numerical	_	_	0	_	_	Offset=206-208
+3	water	_	Reagent	_	_	0	_	_	Offset=212-217
+
+# sent_id = s5
+# text = Rinse 2X in water.
+1	Mount	_	Action	_	_	0	_	_	Offset=219-224
+2	glycerol	_	Reagent	_	_	0	_	_	Offset=228-236
+3	image	_	Action	_	_	0	_	_	Offset=241-246
+4	immediately	_	Modifier	_	_	0	_	_	Offset=247-258
+

@@ -1,0 +1,779 @@
+# sent_id = s1
+# text = FISH Protocol for FISH & FLOW
+1	Submerge	_	Action	_	_	0	_	_	Offset=30-38
+2	inverted	_	Modifier	_	_	5	Mod-Link	_	Offset=39-47
+3	capped	_	Modifier	_	_	5	Mod-Link	_	Offset=48-54
+4	acid-washed	_	Modifier	_	_	5	Mod-Link	_	Offset=55-66
+5	glass	_	Location	_	_	0	_	_	Offset=67-72
+6	below	_	Location	_	_	0	_	_	Offset=73-78
+7	surface	_	Location	_	_	6	Meronym	_	Offset=83-90
+8	B2	_	Reagent	_	_	7	Meronym	_	Offset=98-106
+
+# sent_id = s2
+# text = Submerge inverted capped acid-washed glass below the surface of the B2 ocean.
+1	Remove	_	Action	_	_	0	_	_	Offset=108-114
+2	cap	_	Seal	_	_	0	_	_	Offset=115-118
+3	water	_	Reagent	_	_	0	_	_	Offset=145-150
+4	fill	_	Action	_	_	0	_	_	Offset=154-158
+5	glass	_	Location	_	_	0	_	_	Offset=159-171
+
+# sent_id = s3
+# text = Remove cap while submerged and allow water to fill glass bottle.
+1	Swirl	_	Action	_	_	0	_	_	Offset=173-178
+2	empty	_	Action	_	_	0	_	_	Offset=183-188
+
+# sent_id = s4
+# text = Swirl and empty.
+1	Repeat	_	Action	_	_	0	_	_	Offset=190-196
+2	Steps	_	Method	_	_	0	_	_	Offset=197-206
+
+# sent_id = s5
+# text = Repeat Steps 1-3, but this time keep the seawater.
+1	Add	_	Action	_	_	0	_	_	Offset=326-329
+2	70mL	_	Amount	_	_	4	Measure	_	Offset=330-334
+3	16%	_	Concentration	_	_	4	Measure	_	Offset=338-341
+4	Formaldehyde	_	Reagent	_	_	0	_	_	Offset=342-354
+5	new	_	Modifier	_	_	7	Mod-Link	_	Offset=360-363
+6	acid-washed	_	Modifier	_	_	7	Mod-Link	_	Offset=364-375
+7	glass	_	Location	_	_	0	_	_	Offset=376-388
+
+# sent_id = s6
+# text = Call B2 Energy Center to obtain B2 ocean temperature & salinity at time of sampling.
+1	Add	_	Action	_	_	0	_	_	Offset=390-393
+2	your	_	Reagent	_	_	0	_	_	Offset=394-405
+3	bottle	_	Location	_	_	0	_	_	Offset=413-419
+4	1	_	Amount	_	_	2	Measure	_	Offset=429-436
+
+# sent_id = s7
+# text = Add 70mL of 16% Formaldehyde to a new acid-washed glass bottle.
+1	repeat	_	Action	_	_	0	_	_	Offset=444-450
+2	Steps	_	Method	_	_	0	_	_	Offset=451-460
+3	keep	_	Action	_	_	0	_	_	Offset=465-469
+4	seawater	_	Reagent	_	_	0	_	_	Offset=474-482
+
+# sent_id = s8
+# text = Add your sample to the bottle to q. to 1 liter.
+1	Add	_	Action	_	_	0	_	_	Offset=484-487
+2	500mL	_	Amount	_	_	4	Measure	_	Offset=488-493
+3	200	_	Numerical	_	_	4	Measure	_	Offset=497-500
+4	Proof	_	Reagent	_	_	0	_	_	Offset=501-514
+5	new	_	Modifier	_	_	7	Mod-Link	_	Offset=520-523
+6	acid-washed	_	Modifier	_	_	7	Mod-Link	_	Offset=524-535
+7	glass	_	Location	_	_	0	_	_	Offset=536-548
+
+# sent_id = s9
+# text = Again repeat Steps 1-3 and keep the seawater.
+1	Add	_	Action	_	_	0	_	_	Offset=550-553
+2	your	_	Reagent	_	_	0	_	_	Offset=554-565
+3	bottle	_	Location	_	_	0	_	_	Offset=573-579
+4	1	_	Amount	_	_	2	Measure	_	Offset=589-596
+
+# sent_id = s10
+# text = Add 500mL of 200 Proof Ethanol to a new acid-washed glass bottle.
+1	repeat	_	Action	_	_	0	_	_	Offset=635-641
+2	Steps	_	Method	_	_	0	_	_	Offset=642-651
+3	keep	_	Action	_	_	0	_	_	Offset=656-660
+4	seawater	_	Reagent	_	_	0	_	_	Offset=665-673
+
+# sent_id = s11
+# text = Add your sample to the bottle to q. to 1 liter.
+1	Add	_	Action	_	_	0	_	_	Offset=675-678
+2	1	_	Amount	_	_	3	Measure	_	Offset=679-686
+3	seawater	_	Reagent	_	_	0	_	_	Offset=690-698
+4	new	_	Modifier	_	_	6	Mod-Link	_	Offset=704-707
+5	acid-washed	_	Modifier	_	_	6	Mod-Link	_	Offset=708-719
+6	glass	_	Location	_	_	0	_	_	Offset=720-725
+
+# sent_id = s12
+# text = Right before you leave the B2 Ocean, repeat Steps 1-3 and keep the seawater.
+1	Attach	_	Action	_	_	0	_	_	Offset=727-733
+2	2	_	Amount	_	_	3	Measure	_	Offset=736-743
+3	glass	_	Location	_	_	0	_	_	Offset=744-755
+4	with	_	Modifier	_	_	3	Mod-Link	_	Offset=756-764
+5	vacuum	_	Device	_	_	0	_	_	Offset=772-783
+6	tubing	_	Method	_	_	0	_	_	Offset=790-796
+
+# sent_id = s13
+# text = Add 1 liter of seawater to a new acid-washed glass.
+1	Set	_	Action	_	_	0	_	_	Offset=798-804
+2	90mm	_	Size	_	_	3	Setting	_	Offset=809-813
+3	filter	_	Device	_	_	0	_	_	Offset=814-836
+4	add	_	Action	_	_	0	_	_	Offset=841-844
+5	90mm	_	Size	_	_	6	Setting	_	Offset=849-853
+6	GF/D	_	Device	_	_	0	_	_	Offset=854-865
+
+# sent_id = s14
+# text = Attach a 2 liter glass flask with arm to the vacuum pump using tubing.
+1	Add	_	Action	_	_	0	_	_	Offset=867-870
+2	your	_	Reagent	_	_	0	_	_	Offset=871-882
+3	tower	_	Location	_	_	0	_	_	Offset=890-895
+4	turn	_	Action	_	_	0	_	_	Offset=900-907
+5	vacuum	_	Device	_	_	0	_	_	Offset=912-918
+6	filtration	_	Method	_	_	0	_	_	Offset=928-938
+
+# sent_id = s15
+# text = Set up the 90mm filter holder assembly and add the 90mm GF/D filter.
+1	Set	_	Action	_	_	0	_	_	Offset=940-946
+2	47mm	_	Size	_	_	3	Setting	_	Offset=951-955
+3	filter	_	Device	_	_	4	Meronym	_	Offset=956-978
+4	flask	_	Location	_	_	0	_	_	Offset=988-993
+5	add	_	Action	_	_	0	_	_	Offset=998-1001
+6	0.2um	_	Size	_	_	7	Setting	_	Offset=1006-1011
+7	GTTP	_	Device	_	_	0	_	_	Offset=1012-1041
+
+# sent_id = s16
+# text = Add your sample to the tower and turn on the vacuum to begin filtration.
+1	Filter	_	Action	_	_	0	_	_	Offset=1057-1063
+2	15mL	_	Amount	_	_	4	Measure	_	Offset=1068-1072
+3	pre-filtered	_	Modifier	_	_	4	Mod-Link	_	Offset=1073-1085
+4	product	_	Reagent	_	_	0	_	_	Offset=1086-1093
+5	per	_	Modifier	_	_	6	Mod-Link	_	Offset=1094-1097
+6	membrane	_	Device	_	_	0	_	_	Offset=1098-1113
+
+# sent_id = s17
+# text = Set up the 47mm filter holder assembly with the flask and add the 0.2um GTTP Isopore membrane filters shiny-side up.
+1	Filter	_	Action	_	_	0	_	_	Offset=1120-1126
+2	100mL	_	Amount	_	_	4	Measure	_	Offset=1127-1132
+3	pre-filtered	_	Modifier	_	_	4	Mod-Link	_	Offset=1133-1145
+4	product	_	Reagent	_	_	0	_	_	Offset=1146-1153
+5	per	_	Modifier	_	_	6	Mod-Link	_	Offset=1154-1157
+6	membrane	_	Device	_	_	0	_	_	Offset=1158-1173
+
+# sent_id = s18
+# text = Filter the 15mL pre-filtered product per membrane filter (x3).
+1	tweezers	_	Device	_	_	0	_	_	Offset=1184-1192
+2	remove	_	Action	_	_	0	_	_	Offset=1196-1202
+3	membrane	_	Device	_	_	0	_	_	Offset=1203-1219
+4	filter	_	Device	_	_	0	_	_	Offset=1229-1251
+5	put	_	Action	_	_	0	_	_	Offset=1256-1262
+6	blotting	_	Device	_	_	0	_	_	Offset=1263-1277
+7	dark	_	Location	_	_	0	_	_	Offset=1285-1289
+8	shiny	_	Modifier	_	_	0	_	_	Offset=1290-1303
+
+# sent_id = s19
+# text = Filter 100mL pre-filtered product per membrane filter (x9).
+1	store	_	Action	_	_	0	_	_	Offset=1338-1343
+2	petri	_	Location	_	_	0	_	_	Offset=1349-1359
+
+# sent_id = s20
+# text = Use tweezers to remove membrane filters from the filter holder assembly and put on blotting paper in the dark shiny side up.
+1	Add	_	Action	_	_	0	_	_	Offset=1361-1364
+2	100µL	_	Amount	_	_	3	Measure	_	Offset=1365-1370
+3	PCR	_	Reagent	_	_	0	_	_	Offset=1371-1380
+4	lyophilized	_	Modifier	_	_	5	Mod-Link	_	Offset=1384-1395
+5	probe	_	Reagent	_	_	0	_	_	Offset=1396-1401
+
+# sent_id = s21
+# text = Once the membrane filter is dry, store in a petri dish.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1403-1411
+2	ice	_	Location	_	_	0	_	_	Offset=1415-1418
+3	>	_	Modifier	_	_	4	Mod-Link	_	Offset=1423-1424
+4	2	_	Time	_	_	0	_	_	Offset=1425-1432
+
+# sent_id = s22
+# text = Add 100µL PCR water to lyophilized probe.
+1	Finger-flick	_	Action	_	_	0	_	_	Offset=1434-1446
+2	few	_	Numerical	_	_	0	_	_	Offset=1449-1452
+3	shake	_	Action	_	_	0	_	_	Offset=1463-1473
+4	material	_	Reagent	_	_	0	_	_	Offset=1474-1482
+5	bottom	_	Location	_	_	0	_	_	Offset=1486-1492
+6	tube	_	Location	_	_	5	Meronym	_	Offset=1496-1500
+
+# sent_id = s23
+# text = Incubate on ice for > 2 hours.
+1	Use	_	Action	_	_	0	_	_	Offset=1502-1505
+2	1.5µL	_	Amount	_	_	0	_	_	Offset=1506-1511
+3	reconstituted	_	Modifier	_	_	0	_	_	Offset=1515-1528
+4	probe	_	Reagent	_	_	0	_	_	Offset=1529-1534
+5	check	_	Action	_	_	0	_	_	Offset=1539-1544
+6	UV	_	Measure-Type	_	_	7	Of-Type	_	Offset=1549-1551
+7	260	_	Numerical	_	_	0	_	_	Offset=1555-1558
+8	404	_	Numerical	_	_	0	_	_	Offset=1563-1566
+9	wavelengths	_	Measure-Type	_	_	8	Of-Type	_	Offset=1567-1578
+10	Nanodrop	_	Device	_	_	0	_	_	Offset=1586-1594
+
+# sent_id = s24
+# text = Finger-flick a few times and shake down material to bottom of tube.
+1	Add	_	Action	_	_	0	_	_	Offset=1596-1599
+2	PCR	_	Reagent	_	_	0	_	_	Offset=1600-1609
+
+# sent_id = s25
+# text = Use 1.5µL of reconstituted probe and check the UV at 260 and 404 wavelengths on the Nanodrop.
+1	Pre-warm	_	Action	_	_	0	_	_	Offset=1641-1649
+2	petri-dish	_	Location	_	_	0	_	_	Offset=1652-1662
+
+# sent_id = s26
+# text = Add PCR water depending on Nanodrop results.
+1	Boil	_	Action	_	_	0	_	_	Offset=1664-1668
+2	0.1%	_	Generic-Measure	_	_	0	_	_	Offset=1669-1691
+3	agarose	_	Reagent	_	_	0	_	_	Offset=1692-1699
+4	pour	_	Action	_	_	0	_	_	Offset=1704-1708
+5	pre-warmed	_	Modifier	_	_	6	Mod-Link	_	Offset=1718-1728
+6	petri-dish	_	Location	_	_	0	_	_	Offset=1729-1739
+
+# sent_id = s27
+# text = Pre-warm a petri-dish.
+1	agarose	_	Reagent	_	_	0	_	_	Offset=1745-1752
+2	cool	_	Action	_	_	0	_	_	Offset=1753-1762
+3	35-40°C	_	Temperature	_	_	0	_	_	Offset=1766-1773
+
+# sent_id = s28
+# text = Boil 0.1% low gelling point agarose and pour into the pre-warmed petri-dish.
+1	Cover	_	Action	_	_	0	_	_	Offset=1775-1780
+2	glass	_	Location	_	_	0	_	_	Offset=1781-1793
+3	layer	_	Seal	_	_	0	_	_	Offset=1799-1816
+
+# sent_id = s29
+# text = Let agarose cool down to 35-40°C.
+1	sterile	_	Modifier	_	_	0	_	_	Offset=1857-1864
+2	tweezers	_	Device	_	_	0	_	_	Offset=1865-1873
+3	dip	_	Action	_	_	0	_	_	Offset=1875-1878
+4	filter	_	Device	_	_	5	Meronym	8:Coreference-Link	Offset=1879-1885
+5	both	_	Location	_	_	0	_	_	Offset=1891-1901
+6	agarose	_	Reagent	_	_	0	_	_	Offset=1909-1916
+7	place	_	Action	_	_	0	_	_	Offset=1921-1926
+8	it	_	Mention	_	_	0	_	_	Offset=1927-1929
+9	parafilm-covered	_	Modifier	_	_	10	Mod-Link	_	Offset=1986-2002
+10	slide	_	Location	_	_	0	_	_	Offset=2003-2008
+
+# sent_id = s30
+# text = Cover glass slides with layer of parafilm so that there is an even surface.
+1	dry	_	Action	_	_	0	_	_	Offset=2014-2017
+2	room	_	Temperature	_	_	0	_	_	Offset=2021-2037
+
+# sent_id = s31
+# text = Using sterile tweezers, dip filter with both sides in the agarose and place it face-down (ie. shiny-side/bacteria-side down!) onto the parafilm-covered slide.
+1	Remove	_	Action	_	_	0	_	_	Offset=2039-2045
+2	filter	_	Device	_	_	0	_	_	Offset=2046-2052
+3	slide	_	Location	_	_	0	_	_	Offset=2058-2071
+4	soaking	_	Action	_	_	0	_	_	Offset=2075-2082
+5	parafilm	_	Modifier	_	_	6	Mod-Link	_	Offset=2083-2099
+6	slide	_	Location	_	_	0	_	_	Offset=2100-2105
+7	petri-dish	_	Location	_	_	9	Meronym	_	Offset=2109-2119
+8	80-96%	_	Concentration	_	_	9	Measure	_	Offset=2132-2138
+9	Ethanol	_	Reagent	_	_	0	_	_	Offset=2139-2146
+
+# sent_id = s32
+# text = Let dry at room temperature.
+1	Air-dry	_	Action	_	_	0	_	_	Offset=2148-2155
+2	filter	_	Device	_	_	0	_	_	Offset=2156-2162
+3	kimwipe	_	Device	_	_	0	_	_	Offset=2168-2175
+
+# sent_id = s33
+# text = Remove filter from slide surface by soaking parafilm covered slide in petri-dish filled with 80-96% Ethanol.
+1	Turn	_	Action	_	_	0	_	_	Offset=2177-2184
+2	water	_	Device	_	_	0	_	_	Offset=2185-2195
+3	pre-warm	_	Action	_	_	0	_	_	Offset=2200-2208
+4	37°C	_	Temperature	_	_	0	_	_	Offset=2212-2216
+5	sterilize	_	Action	_	_	0	_	_	Offset=2221-2230
+6	tweezers	_	Device	_	_	0	_	_	Offset=2231-2239
+7	70%	_	Concentration	_	_	8	Measure	_	Offset=2245-2248
+8	EtOH	_	Reagent	_	_	0	_	_	Offset=2249-2253
+
+# sent_id = s34
+# text = Air-dry filter on a kimwipe.
+1	take	_	Action	_	_	0	_	_	Offset=2291-2299
+2	piece	_	Amount	_	_	3	Setting	_	Offset=2302-2307
+3	blotting	_	Location	_	_	0	_	_	Offset=2311-2325
+
+# sent_id = s35
+# text = Turn on water bath and pre-warm to 37°C and sterilize tweezers with 70% EtOH.
+1	Put	_	Action	_	_	0	_	_	Offset=2327-2330
+2	your	_	Reagent	_	_	0	_	_	Offset=2331-2349
+3	blotting	_	Location	_	_	0	_	_	Offset=2371-2385
+
+# sent_id = s36
+# text = While the water bath is warming up, take out a piece of blotting paper.
+1	Cut	_	Action	_	_	0	_	_	Offset=2387-2390
+2	your	_	Reagent	_	_	0	_	_	Offset=2391-2410
+3	half	_	Amount	_	_	0	_	_	Offset=2414-2418
+4	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=2425-2432
+5	scalpel	_	Device	_	_	0	_	_	Offset=2433-2440
+6	sterile	_	Action	_	_	0	_	_	Offset=2445-2452
+7	tweezers	_	Device	_	_	0	_	_	Offset=2453-2461
+8	stabilize	_	Method	_	_	0	_	_	Offset=2465-2474
+
+# sent_id = s37
+# text = Put your sample filter shiny-side up on the blotting paper.
+1	Mark	_	Action	_	_	0	_	_	Offset=2476-2480
+2	filter	_	Reagent	_	_	0	_	_	Offset=2485-2497
+3	pencil	_	Device	_	_	0	_	_	Offset=2506-2512
+
+# sent_id = s38
+# text = Cut your sample filters in half using sterile scalpel and sterile tweezers to stabilize.
+1	Make	_	Action	_	_	0	_	_	Offset=2514-2518
+2	fresh	_	Modifier	_	_	3	Mod-Link	_	Offset=2519-2524
+3	lysozyme	_	Reagent	_	_	5	Coreference-Link	_	Offset=2525-2542
+4	pour	_	Action	_	_	0	_	_	Offset=2547-2551
+5	it	_	Mention	_	_	0	_	_	Offset=2552-2554
+6	petri	_	Location	_	_	0	_	_	Offset=2562-2572
+
+# sent_id = s39
+# text = Mark the filter piece using a pencil.
+1	permeabilize	_	Action	_	_	0	_	_	Offset=2577-2589
+2	your	_	Reagent	_	_	0	_	_	Offset=2590-2601
+3	submerge	_	Action	_	_	0	_	_	Offset=2603-2611
+4	your	_	Reagent	_	_	0	_	_	Offset=2612-2624
+5	lysozyme	_	Reagent	_	_	0	_	_	Offset=2632-2649
+
+# sent_id = s40
+# text = Make fresh lysozyme solution and pour it into a petri dish.
+1	Wrap	_	Action	_	_	0	_	_	Offset=2651-2655
+2	parafilm	_	Seal	_	_	0	_	_	Offset=2656-2664
+3	around	_	Modifier	_	_	4	Mod-Link	_	Offset=2665-2671
+4	edge	_	Location	_	_	0	_	_	Offset=2676-2680
+5	petri-dish	_	Location	_	_	4	Meronym	_	Offset=2688-2698
+
+# sent_id = s41
+# text = To permeabilize your sample, submerge your samples in the lysozyme solution.
+1	Put	_	Action	_	_	0	_	_	Offset=2700-2703
+2	petri-dish	_	Location	_	_	0	_	_	Offset=2708-2718
+3	37°C	_	Temperature	_	_	4	Setting	_	Offset=2728-2732
+4	water	_	Device	_	_	0	_	_	Offset=2733-2743
+5	1	_	Time	_	_	0	_	_	Offset=2748-2755
+
+# sent_id = s42
+# text = Wrap parafilm around the edge of the petri-dish.
+1	pour	_	Action	_	_	0	_	_	Offset=2791-2795
+2	0.01M	_	Concentration	_	_	3	Measure	_	Offset=2796-2801
+3	HCl	_	Reagent	_	_	0	_	_	Offset=2802-2805
+4	new	_	Modifier	_	_	5	Mod-Link	_	Offset=2811-2814
+5	petri-dish	_	Location	_	_	0	_	_	Offset=2815-2825
+
+# sent_id = s43
+# text = Put the petri-dish into the 37°C water bath for 1 hour.
+1	put	_	Action	_	_	0	_	_	Offset=2857-2860
+2	your	_	Reagent	_	_	0	_	_	Offset=2861-2880
+3	strainer	_	Device	_	_	0	_	_	Offset=2886-2894
+4	rinse	_	Action	_	_	0	_	_	Offset=2899-2908
+5	any	_	Modifier	_	_	6	Mod-Link	_	Offset=2909-2921
+6	lysozyme	_	Reagent	_	_	0	_	_	Offset=2922-2939
+7	distilled	_	Reagent	_	_	0	_	_	Offset=2945-2960
+
+# sent_id = s44
+# text = While waiting for your incubation, pour 0.01M HCl in a new petri-dish.
+1	inactivate	_	Action	_	_	0	_	_	Offset=2965-2975
+2	endogenous	_	Reagent	_	_	0	_	_	Offset=2979-3001
+3	submerge	_	Action	_	_	0	_	_	Offset=3003-3011
+4	your	_	Reagent	_	_	0	_	_	Offset=3012-3023
+5	0.01M	_	Concentration	_	_	6	Measure	_	Offset=3031-3036
+6	HCl	_	Reagent	_	_	0	_	_	Offset=3037-3040
+7	incubate	_	Action	_	_	0	_	_	Offset=3045-3053
+8	15	_	Time	_	_	0	_	_	Offset=3058-3068
+
+# sent_id = s45
+# text = Once your incubation is over, put your sample filters in a strainer and rinse off any residual lysozyme solution with distilled water.
+1	put	_	Action	_	_	0	_	_	Offset=3077-3080
+2	your	_	Reagent	_	_	0	_	_	Offset=3081-3100
+3	strainer	_	Device	_	_	0	_	_	Offset=3106-3114
+4	rinse	_	Action	_	_	0	_	_	Offset=3119-3128
+5	any	_	Modifier	_	_	6	Mod-Link	_	Offset=3129-3141
+6	lysozyme	_	Reagent	_	_	0	_	_	Offset=3142-3159
+7	distilled	_	Reagent	_	_	0	_	_	Offset=3165-3180
+
+# sent_id = s46
+# text = To inactivate of endogenous peroxidases, submerge your sample in the 0.01M HCl and incubate for 15 minutes.
+1	Air	_	Action	_	_	0	_	_	Offset=3182-3189
+2	kimwipe	_	Device	_	_	0	_	_	Offset=3195-3202
+
+# sent_id = s47
+# text = Again, put your sample filters in a strainer and rinse off any residual lysozyme solution with distilled water.
+1	Pre-heat	_	Action	_	_	0	_	_	Offset=3204-3212
+2	hybridization	_	Device	_	_	0	_	_	Offset=3213-3232
+3	46°C	_	Temperature	_	_	0	_	_	Offset=3236-3240
+4	48°C	_	Temperature	_	_	0	_	_	Offset=3245-3249
+
+# sent_id = s48
+# text = Air dry on a kimwipe.
+1	Create	_	Action	_	_	0	_	_	Offset=3251-3257
+2	hybridization	_	Device	_	_	0	_	_	Offset=3260-3290
+
+# sent_id = s49
+# text = Pre-heat hybridization ovens to 46°C and 48°C.
+1	Create	_	Action	_	_	0	_	_	Offset=3386-3392
+2	individual	_	Modifier	_	_	3	Mod-Link	_	Offset=3397-3407
+3	hybridization	_	Device	_	_	0	_	_	Offset=3408-3439
+4	inserting	_	Action	_	_	0	_	_	Offset=3466-3475
+5	kimwipe	_	Device	_	_	0	_	_	Offset=3478-3485
+6	soaked	_	Modifier	_	_	5	Mod-Link	_	Offset=3486-3492
+7	correct	_	Modifier	_	_	10	Mod-Link	_	Offset=3500-3507
+8	2mL	_	Amount	_	_	10	Measure	_	Offset=3508-3511
+9	%	_	Concentration	_	_	10	Measure	_	Offset=3512-3513
+10	formamide-water	_	Reagent	_	_	0	_	_	Offset=3514-3533
+
+# sent_id = s50
+# text = Create a hybridization humidity chamber setup.
+1	Cover	_	Action	_	_	0	_	_	Offset=3563-3568
+2	glass	_	Location	_	_	0	_	_	Offset=3569-3581
+3	evenly	_	Modifier	_	_	0	_	_	Offset=3582-3588
+4	parafilm	_	Seal	_	_	0	_	_	Offset=3594-3602
+
+# sent_id = s51
+# text = Based on the probe you plan to use for hybridization, determine the % formamide to use.
+1	Do	_	Action	_	_	0	_	_	Offset=3604-3614
+2	slide	_	Location	_	_	0	_	_	Offset=3615-3620
+3	individual	_	Modifier	_	_	4	Mod-Link	_	Offset=3624-3634
+4	chamber	_	Device	_	_	0	_	_	Offset=3635-3642
+
+# sent_id = s52
+# text = Create the individual hybridization humidity chambers (Fig. 2 in guidelines) by inserting a kimwipe soaked in the correct 2mL % formamide-water mix (Hybridization Chamber Mix).
+1	Take	_	Action	_	_	0	_	_	Offset=3648-3656
+2	piece	_	Amount	_	_	3	Setting	_	Offset=3659-3664
+3	blotting	_	Device	_	_	0	_	_	Offset=3668-3682
+
+# sent_id = s53
+# text = Cover glass slides evenly with parafilm.
+1	Put	_	Action	_	_	0	_	_	Offset=3684-3687
+2	your	_	Reagent	_	_	0	_	_	Offset=3688-3706
+3	blotting	_	Device	_	_	0	_	_	Offset=3728-3742
+
+# sent_id = s54
+# text = Do NOT add slide to individual chamber yet.
+1	Cut	_	Action	_	_	0	_	_	Offset=3744-3747
+2	your	_	Reagent	_	_	0	_	_	Offset=3748-3759
+3	already	_	Modifier	_	_	2	Mod-Link	_	Offset=3760-3774
+4	eighths	_	Numerical	_	_	0	_	_	Offset=3788-3795
+5	sterile	_	Modifier	_	_	6	Mod-Link	_	Offset=3802-3809
+6	scalpel	_	Device	_	_	0	_	_	Offset=3810-3817
+7	sterile	_	Action	_	_	0	_	_	Offset=3822-3829
+8	tweezers	_	Device	_	_	0	_	_	Offset=3830-3838
+9	stabilize	_	Action	_	_	0	_	_	Offset=3842-3851
+
+# sent_id = s55
+# text = Take out a piece of blotting paper.
+1	Number	_	Action	_	_	0	_	_	Offset=3853-3859
+2	filter	_	Reagent	_	_	0	_	_	Offset=3864-3870
+3	pieces	_	Amount	_	_	2	Measure	_	Offset=3871-3877
+4	pencil	_	Device	_	_	0	_	_	Offset=3886-3892
+
+# sent_id = s56
+# text = Put your sample filter shiny-side up on the blotting paper.
+1	Mix	_	Action	_	_	0	_	_	Offset=3921-3924
+2	hybridization	_	Reagent	_	_	0	_	_	Offset=3925-3945
+3	probe	_	Reagent	_	_	5	Meronym	_	Offset=3951-3973
+4	50ng	_	Amount	_	_	5	Measure	_	Offset=3975-3979
+5	DNA	_	Reagent	_	_	0	_	_	Offset=3980-3988
+6	300:1	_	Generic-Measure	_	_	0	_	_	Offset=3995-4006
+
+# sent_id = s57
+# text = Cut your sample already halved filters into eighths using sterile scalpel and sterile tweezers to stabilize.
+1	Dip	_	Action	_	_	0	_	_	Offset=4008-4011
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=4012-4016
+3	filter	_	Device	_	_	0	_	_	Offset=4017-4023
+4	completely	_	Modifier	_	_	0	_	_	Offset=4024-4034
+5	Hybridization	_	Reagent	_	_	0	_	_	Offset=4044-4061
+6	place	_	Action	_	_	0	_	_	Offset=4066-4071
+7	filters	_	Device	_	_	0	_	_	Offset=4072-4079
+8	face-up	_	Modifier	_	_	0	_	_	Offset=4080-4087
+9	parafilm	_	Modifier	_	_	10	Mod-Link	_	Offset=4095-4111
+10	glass	_	Location	_	_	0	_	_	Offset=4112-4123
+
+# sent_id = s58
+# text = Number the filter pieces using a pencil with a “#” followed by “•”.
+1	Spread	_	Action	_	_	0	_	_	Offset=4125-4131
+2	rest	_	Reagent	_	_	0	_	_	Offset=4136-4156
+3	evenly	_	Modifier	_	_	2	Mod-Link	_	Offset=4157-4163
+4	filters	_	Device	_	_	0	_	_	Offset=4173-4180
+
+# sent_id = s59
+# text = Mix hybridization buffer with probe working solution [50ng DNA µl-1] in a 300:1 ratio.
+1	Put	_	Action	_	_	0	_	_	Offset=4182-4185
+2	glass	_	Location	_	_	0	_	_	Offset=4186-4197
+3	horizontally	_	Modifier	_	_	2	Mod-Link	_	Offset=4198-4210
+4	individual	_	Modifier	_	_	5	Mod-Link	_	Offset=4216-4226
+5	hybridization	_	Device	_	_	0	_	_	Offset=4227-4257
+6	corresponding	_	Modifier	_	_	8	Mod-Link	_	Offset=4263-4276
+7	%	_	Concentration	_	_	8	Measure	_	Offset=4277-4278
+8	formamide	_	Reagent	_	_	0	_	_	Offset=4279-4288
+9	probe	_	Action	_	_	0	_	_	Offset=4292-4297
+
+# sent_id = s60
+# text = Dip each filter completely into the Hybridization mix and place filters face-up on the parafilm covered glass slide.
+1	Incubate	_	Action	_	_	0	_	_	Offset=4299-4307
+2	46°C	_	Temperature	_	_	0	_	_	Offset=4311-4315
+3	overnight	_	Time	_	_	0	_	_	Offset=4316-4325
+
+# sent_id = s61
+# text = Spread the rest of the solution evenly onto the filters.
+1	Make	_	Action	_	_	0	_	_	Offset=4327-4331
+2	50mL	_	Amount	_	_	3	Measure	_	Offset=4332-4336
+3	Washing	_	Reagent	_	_	0	_	_	Offset=4337-4351
+4	50mL	_	Amount	_	_	5	Measure	_	Offset=4355-4359
+5	falcon	_	Location	_	_	0	_	_	Offset=4360-4371
+6	corresponding	_	Modifier	_	_	8	Mod-Link	_	Offset=4377-4390
+7	%	_	Concentration	_	_	8	Measure	_	Offset=4391-4392
+8	formamide	_	Reagent	_	_	0	_	_	Offset=4393-4402
+
+# sent_id = s62
+# text = Put glass slide horizontally into individual hybridization humidity chamber with corresponding % formamide to probe.
+1	Warm	_	Action	_	_	0	_	_	Offset=4413-4417
+2	48°C	_	Temperature	_	_	0	_	_	Offset=4421-4425
+3	overnight	_	Time	_	_	0	_	_	Offset=4426-4435
+
+# sent_id = s63
+# text = Incubate at 46°C overnight.
+1	Cover	_	Action	_	_	0	_	_	Offset=4437-4442
+2	glass	_	Location	_	_	0	_	_	Offset=4443-4455
+3	evenly	_	Modifier	_	_	0	_	_	Offset=4456-4462
+4	parafilm	_	Seal	_	_	0	_	_	Offset=4468-4476
+
+# sent_id = s64
+# text = Make 50mL Washing Buffer in 50mL falcon tube with corresponding % formamide to probe.
+1	Set	_	Action	_	_	0	_	_	Offset=4478-4481
+
+# sent_id = s65
+# text = Warm at 48°C overnight.
+1	Remove	_	Action	_	_	0	_	_	Offset=4505-4511
+2	filters	_	Device	_	_	0	_	_	Offset=4512-4519
+3	individual	_	Modifier	_	_	0	_	_	Offset=4525-4535
+4	humidity	_	Device	_	_	0	_	_	Offset=4536-4553
+5	put	_	Action	_	_	0	_	_	Offset=4558-4561
+6	corresponding	_	Modifier	_	_	8	Mod-Link	_	Offset=4565-4578
+7	%	_	Concentration	_	_	8	Measure	_	Offset=4579-4580
+8	formamide	_	Reagent	_	_	0	_	_	Offset=4581-4590
+
+# sent_id = s66
+# text = Cover glass slides evenly with parafilm.
+1	Incubate	_	Action	_	_	0	_	_	Offset=4618-4626
+2	48°C	_	Temperature	_	_	0	_	_	Offset=4630-4634
+3	10	_	Time	_	_	0	_	_	Offset=4639-4649
+
+# sent_id = s67
+# text = Set aside until later use.
+1	Pour	_	Action	_	_	0	_	_	Offset=4651-4655
+2	1x	_	Concentration	_	_	3	Measure	_	Offset=4656-4658
+3	PBS	_	Reagent	_	_	0	_	_	Offset=4659-4662
+4	Large-sized	_	Modifier	_	_	5	Mod-Link	_	Offset=4668-4679
+5	petri	_	Location	_	_	0	_	_	Offset=4680-4690
+
+# sent_id = s68
+# text = Remove filters from individual humidity chambers and put in corresponding % formamide pre-warmed Washing Buffer.
+1	Transfer	_	Action	_	_	0	_	_	Offset=4692-4700
+2	filters	_	Device	_	_	0	_	_	Offset=4701-4708
+3	1x	_	Concentration	_	_	4	Measure	_	Offset=4712-4714
+4	PBS	_	Reagent	_	_	0	_	_	Offset=4715-4718
+5	incubate	_	Action	_	_	0	_	_	Offset=4723-4731
+6	15	_	Time	_	_	0	_	_	Offset=4736-4746
+7	room	_	Temperature	_	_	0	_	_	Offset=4750-4766
+
+# sent_id = s69
+# text = Incubate at 48°C for 10 minutes.
+1	Get	_	Action	_	_	0	_	_	Offset=4768-4771
+2	Ice	_	Reagent	_	_	0	_	_	Offset=4772-4775
+3	put	_	Action	_	_	0	_	_	Offset=4780-4783
+4	H2O2	_	Reagent	_	_	0	_	_	Offset=4784-4788
+5	Amplification	_	Reagent	_	_	0	_	_	Offset=4790-4811
+6	Alexa	_	Reagent	_	_	0	_	_	Offset=4812-4821
+7	covered	_	Modifier	_	_	8	Mod-Link	_	Offset=4825-4832
+8	ice	_	Location	_	_	0	_	_	Offset=4833-4843
+
+# sent_id = s70
+# text = Pour 1x PBS in a Large-sized petri dish.
+1	Mix	_	Action	_	_	0	_	_	Offset=4845-4848
+2	1µL	_	Amount	_	_	3	Measure	_	Offset=4849-4852
+3	H2O2	_	Reagent	_	_	0	_	_	Offset=4853-4857
+4	199µL	_	Amount	_	_	6	Measure	_	Offset=4863-4868
+5	1x	_	Concentration	_	_	6	Measure	_	Offset=4869-4871
+6	PBS	_	Reagent	_	_	0	_	_	Offset=4872-4875
+
+# sent_id = s71
+# text = Transfer filters to 1x PBS and incubate for 15 minutes at room temperature.
+1	Create	_	Action	_	_	0	_	_	Offset=4877-4883
+2	Substrate	_	Reagent	_	_	0	_	_	Offset=4888-4901
+3	1000	_	Numerical	_	_	4	Measure	_	Offset=4907-4911
+4	Amplification	_	Reagent	_	_	7	Meronym	9:Meronym	Offset=4912-4932
+5	10	_	Numerical	_	_	7	Measure	_	Offset=4934-4936
+6	diluted	_	Modifier	_	_	7	Mod-Link	_	Offset=4937-4944
+7	H2O2	_	Reagent	_	_	0	_	_	Offset=4945-4949
+8	3.3	_	Numerical	_	_	9	Measure	_	Offset=4952-4955
+9	Alexa	_	Reagent	_	_	0	_	_	Offset=4956-4965
+
+# sent_id = s72
+# text = Get Ice and put H2O2, Amplification Buffer, Alexa 488 in covered ice bucket.
+1	Take	_	Action	_	_	0	_	_	Offset=4973-4977
+2	filters	_	Device	_	_	0	_	_	Offset=4978-4985
+3	out	_	Modifier	_	_	0	_	_	Offset=4986-4989
+4	1x	_	Concentration	_	_	5	Measure	_	Offset=4993-4995
+5	PBS	_	Reagent	_	_	0	_	_	Offset=4996-4999
+6	quickly	_	Modifier	_	_	0	_	_	Offset=5004-5011
+7	wipe	_	Action	_	_	0	_	_	Offset=5012-5020
+8	excess	_	Modifier	_	_	10	Mod-Link	_	Offset=5021-5027
+9	1x	_	Concentration	_	_	10	Measure	_	Offset=5028-5030
+10	PBS	_	Reagent	_	_	0	_	_	Offset=5031-5034
+11	kimwipe	_	Device	_	_	0	_	_	Offset=5038-5045
+
+# sent_id = s73
+# text = Mix 1µL H2O2 with 199µL 1x PBS.
+1	Dip	_	Action	_	_	0	_	_	Offset=5047-5050
+2	filters	_	Device	_	_	0	_	_	Offset=5051-5058
+3	Substrate	_	Reagent	_	_	0	_	_	Offset=5068-5081
+4	put	_	Action	_	_	0	_	_	Offset=5086-5089
+5	parafilm	_	Modifier	_	_	6	Mod-Link	_	Offset=5093-5109
+6	slide	_	Location	_	_	0	_	_	Offset=5110-5115
+
+# sent_id = s74
+# text = Create the Substrate mix in a 1000 Amplification Buffer: 10 diluted H2O2 : 3.3 Alexa 488 ratio.
+1	Spread	_	Action	_	_	0	_	_	Offset=5117-5123
+2	rest	_	Modifier	_	_	3	Mod-Link	_	Offset=5128-5132
+3	mix	_	Reagent	_	_	0	_	_	Offset=5140-5143
+4	evenly	_	Modifier	_	_	0	_	_	Offset=5144-5150
+5	filters	_	Location	_	_	0	_	_	Offset=5160-5167
+
+# sent_id = s75
+# text = Take filters out of 1x PBS and quickly wipe off excess 1x PBS on kimwipe.
+1	Put	_	Action	_	_	0	_	_	Offset=5169-5172
+2	slides	_	Location	_	_	0	_	_	Offset=5173-5179
+3	large-sized	_	Modifier	_	_	4	Mod-Link	_	Offset=5185-5196
+4	petri	_	Location	_	_	0	_	_	Offset=5197-5209
+5	seal	_	Action	_	_	0	_	_	Offset=5214-5218
+6	petri	_	Location	_	_	0	_	_	Offset=5219-5229
+7	parafilm	_	Seal	_	_	0	_	_	Offset=5235-5243
+8	put	_	Action	_	_	0	_	_	Offset=5248-5251
+9	46°C	_	Temperature	_	_	0	_	_	Offset=5255-5259
+10	45	_	Time	_	_	0	_	_	Offset=5264-5274
+11	dark	_	Location	_	_	0	_	_	Offset=5282-5286
+
+# sent_id = s76
+# text = Dip filters into the Substrate mix and put on parafilm covered slide.
+1	Dry	_	Action	_	_	0	_	_	Offset=5288-5291
+2	filters	_	Device	_	_	0	_	_	Offset=5292-5299
+3	kimwipe	_	Device	_	_	0	_	_	Offset=5303-5310
+4	put	_	Action	_	_	0	_	_	Offset=5315-5318
+5	1x	_	Concentration	_	_	6	Measure	_	Offset=5322-5324
+6	PBS	_	Reagent	_	_	0	_	_	Offset=5325-5328
+7	10	_	Time	_	_	0	_	_	Offset=5333-5343
+8	room	_	Temperature	_	_	0	_	_	Offset=5347-5363
+9	dark	_	Location	_	_	0	_	_	Offset=5371-5375
+
+# sent_id = s77
+# text = Spread the rest of the mix evenly onto the filters.
+1	Pour	_	Action	_	_	0	_	_	Offset=5377-5381
+2	MQ	_	Reagent	_	_	0	_	_	Offset=5382-5390
+3	Large-sized	_	Modifier	_	_	4	Mod-Link	_	Offset=5398-5409
+4	petri	_	Reagent	_	_	0	_	_	Offset=5410-5420
+5	pour	_	Action	_	_	0	_	_	Offset=5425-5429
+6	96%	_	Concentration	_	_	7	Measure	_	Offset=5430-5433
+7	EtOH	_	Reagent	_	_	0	_	_	Offset=5434-5438
+8	different	_	Modifier	_	_	10	Mod-Link	_	Offset=5446-5455
+9	Large-sized	_	Modifier	_	_	10	Mod-Link	_	Offset=5456-5467
+10	petri	_	Location	_	_	0	_	_	Offset=5468-5478
+
+# sent_id = s78
+# text = Put slides into large-sized petri dishes and seal petri dish with parafilm and put in 46°C for 45 minutes in the dark.
+1	Transfer	_	Action	_	_	0	_	_	Offset=5480-5488
+2	filters	_	Device	_	_	0	_	_	Offset=5489-5496
+3	MQ	_	Reagent	_	_	0	_	_	Offset=5500-5508
+4	cover	_	Action	_	_	0	_	_	Offset=5513-5518
+5	dark	_	Location	_	_	0	_	_	Offset=5522-5526
+6	1	_	Time	_	_	0	_	_	Offset=5531-5536
+7	room	_	Temperature	_	_	0	_	_	Offset=5540-5556
+
+# sent_id = s79
+# text = Dry filters on kimwipe and put in 1x PBS for 10 minutes at room temperature in the dark.
+1	Transfer	_	Action	_	_	0	_	_	Offset=5558-5566
+2	filters	_	Device	_	_	0	_	_	Offset=5567-5574
+3	96%	_	Concentration	_	_	4	Measure	_	Offset=5578-5581
+4	EtOH	_	Reagent	_	_	0	_	_	Offset=5582-5586
+5	cover	_	Action	_	_	0	_	_	Offset=5591-5596
+6	dark	_	Location	_	_	0	_	_	Offset=5600-5604
+7	1	_	Time	_	_	0	_	_	Offset=5609-5614
+8	room	_	Temperature	_	_	0	_	_	Offset=5618-5634
+
+# sent_id = s80
+# text = Pour MQ water into a Large-sized petri dish and pour 96% EtOH into a different Large-sized petri dish.
+1	Put	_	Action	_	_	0	_	_	Offset=5636-5639
+2	kimwipe	_	Device	_	_	0	_	_	Offset=5643-5650
+3	paper	_	Location	_	_	0	_	_	Offset=5656-5667
+4	dry	_	Action	_	_	0	_	_	Offset=5676-5687
+5	dark	_	Location	_	_	0	_	_	Offset=5695-5699
+
+# sent_id = s81
+# text = Transfer filters to MQ water and cover in dark for 1 min at room temperature.
+1	Immediately	_	Modifier	_	_	0	_	_	Offset=5701-5712
+2	begin	_	Action	_	_	0	_	_	Offset=5713-5718
+3	resuspension	_	Method	_	_	0	_	_	Offset=5719-5736
+
+# sent_id = s82
+# text = Transfer filters to 96% EtOH and cover in dark for 1 min at room temperature.
+1	Pre-heat	_	Action	_	_	0	_	_	Offset=5738-5746
+2	incubator	_	Device	_	_	0	_	_	Offset=5747-5756
+3	37°C	_	Temperature	_	_	0	_	_	Offset=5760-5764
+
+# sent_id = s83
+# text = Put on kimwipe on a paper towel and let dry covered in the dark.
+1	Pour	_	Action	_	_	0	_	_	Offset=5766-5770
+2	1x	_	Concentration	_	_	3	Measure	_	Offset=5771-5773
+3	PBS	_	Reagent	_	_	0	_	_	Offset=5774-5777
+4	Large-sized	_	Modifier	_	_	5	Mod-Link	_	Offset=5783-5794
+5	petri	_	Location	_	_	0	_	_	Offset=5795-5805
+
+# sent_id = s84
+# text = Immediately begin resuspension step!
+1	Transfer	_	Action	_	_	0	_	_	Offset=5807-5815
+2	hybridized	_	Modifier	_	_	3	Mod-Link	_	Offset=5816-5826
+3	filters	_	Device	_	_	0	_	_	Offset=5827-5834
+4	1x	_	Concentration	_	_	5	Measure	_	Offset=5838-5840
+5	PBS	_	Reagent	_	_	0	_	_	Offset=5841-5844
+6	incubate	_	Action	_	_	0	_	_	Offset=5849-5857
+7	15	_	Time	_	_	0	_	_	Offset=5862-5872
+8	dark	_	Location	_	_	0	_	_	Offset=5880-5884
+9	room	_	Temperature	_	_	0	_	_	Offset=5888-5904
+
+# sent_id = s85
+# text = Pre-heat incubator to 37°C.
+1	0.2µm	_	Size	_	_	2	Setting	_	Offset=5906-5911
+2	filter	_	Device	_	_	0	_	_	Offset=5912-5918
+3	sterilize	_	Action	_	_	0	_	_	Offset=5919-5928
+4	150mM	_	Concentration	_	_	5	Measure	_	Offset=5933-5938
+5	NaCl	_	Reagent	_	_	0	_	_	Offset=5939-5943
+
+# sent_id = s86
+# text = Pour 1x PBS in a Large-sized petri dish.
+1	Make	_	Action	_	_	0	_	_	Offset=5945-5949
+2	Resuspension	_	Reagent	_	_	5	Meronym	8:Meronym	Offset=5950-5969
+3	30mL	_	Amount	_	_	5	Measure	_	Offset=5971-5975
+4	150mM	_	Concentration	_	_	5	Measure	_	Offset=5976-5981
+5	NaCl	_	Reagent	_	_	0	_	_	Offset=5982-5986
+6	160µL	_	Amount	_	_	8	Measure	_	Offset=5988-5993
+7	10%	_	Concentration	_	_	8	Measure	_	Offset=5994-5997
+8	Tween	_	Reagent	_	_	0	_	_	Offset=5998-6006
+
+# sent_id = s87
+# text = Transfer hybridized filters to 1x PBS and incubate for 15 minutes in the dark at room temperature.
+1	Put	_	Action	_	_	0	_	_	Offset=6009-6012
+2	1.5mL	_	Amount	_	_	3	Measure	_	Offset=6013-6018
+3	Resuspension	_	Reagent	_	_	0	_	_	Offset=6019-6038
+4	2mL	_	Amount	_	_	5	Measure	_	Offset=6043-6046
+5	centrifuge	_	Location	_	_	0	_	_	Offset=6047-6062
+6	put	_	Action	_	_	0	_	_	Offset=6067-6070
+7	filter	_	Device	_	_	0	_	_	Offset=6071-6077
+8	centrifuge	_	Location	_	_	0	_	_	Offset=6081-6096
+
+# sent_id = s88
+# text = 0.2µm filter sterilize the 150mM NaCl.
+1	Incubate	_	Action	_	_	0	_	_	Offset=6098-6106
+2	centrifuge	_	Location	_	_	0	_	_	Offset=6107-6122
+3	30	_	Time	_	_	0	_	_	Offset=6127-6137
+4	37°C	_	Temperature	_	_	0	_	_	Offset=6141-6145
+5	shaking	_	Action	_	_	0	_	_	Offset=6146-6153
+6	horizontally	_	Modifier	_	_	0	_	_	Offset=6154-6166
+
+# sent_id = s89
+# text = Make Resuspension Buffer (30mL 150mM NaCl; 160µL 10% Tween 80).
+1	Tape	_	Action	_	_	0	_	_	Offset=6168-6172
+2	Tubes	_	Location	_	_	0	_	_	Offset=6173-6178
+3	vortexer	_	Device	_	_	0	_	_	Offset=6182-6190
+4	horizontally	_	Modifier	_	_	0	_	_	Offset=6191-6203
+
+# sent_id = s90
+# text = Put 1.5mL Resuspension Buffer per 2mL centrifuge tube and put filter in centrifuge tube.
+1	Shake	_	Action	_	_	0	_	_	Offset=6232-6237
+2	dark	_	Location	_	_	0	_	_	Offset=6241-6245
+3	15	_	Time	_	_	0	_	_	Offset=6250-6260
+4	2500	_	Speed	_	_	0	_	_	Offset=6264-6272
+
+# sent_id = s91
+# text = Incubate centrifuge tube for 30 minutes at 37°C shaking horizontally.
+1	Remove	_	Action	_	_	0	_	_	Offset=6274-6280
+2	filter	_	Device	_	_	0	_	_	Offset=6281-6287
+

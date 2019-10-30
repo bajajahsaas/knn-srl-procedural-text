@@ -1,0 +1,379 @@
+# sent_id = s1
+# text = Hybridized Chain Reaction Fluorescent in situ Hybridization (HCR-FISH)
+1	Collect	_	Action	_	_	0	_	_	Offset=77-84
+2	juvenile	_	Reagent	_	_	0	_	_	Offset=85-99
+3	hatching	_	Location	_	_	0	_	_	Offset=105-119
+4	isolate	_	Action	_	_	0	_	_	Offset=167-174
+5	collection	_	Location	_	_	0	_	_	Offset=180-195
+
+# sent_id = s2
+# text = [1.1] Collect juvenile squid from hatching table (refer to colonization protocol as needed) and isolate into collection cups.
+1	Colonize	_	Action	_	_	0	_	_	Offset=197-205
+2	desired	_	Modifier	_	_	3	Mod-Link	_	Offset=211-218
+3	V.	_	Reagent	_	_	0	_	_	Offset=219-237
+
+# sent_id = s3
+# text = Colonize with desired V. fischeri strain.
+1	Anesthetize	_	Action	_	_	0	_	_	Offset=245-256
+2	squid	_	Reagent	_	_	0	_	_	Offset=257-262
+3	2	_	Time	_	_	0	_	_	Offset=267-272
+4	placing	_	Action	_	_	0	_	_	Offset=276-283
+5	2%	_	Concentration	_	_	6	Measure	_	Offset=289-291
+6	ethanol	_	Reagent	_	_	0	_	_	Offset=292-299
+7	filtered	_	Modifier	_	_	8	Mod-Link	_	Offset=303-311
+8	seawater	_	Reagent	_	_	6	Meronym	_	Offset=312-320
+
+# sent_id = s4
+# text = [1.2] Anesthetize squid for 2 min by placing into 2% ethanol in filtered seawater.
+1	dissecting	_	Device	_	_	0	_	_	Offset=334-350
+2	split	_	Action	_	_	0	_	_	Offset=352-357
+3	peel	_	Action	_	_	0	_	_	Offset=362-371
+4	mantle	_	Reagent	_	_	0	_	_	Offset=372-378
+5	anterior	_	Location	_	_	0	_	_	Offset=382-395
+
+# sent_id = s5
+# text = [1.3] Under dissecting scope, split and peel back mantle on anterior side.
+1	carefully	_	Modifier	_	_	0	_	_	Offset=402-411
+2	pull	_	Action	_	_	0	_	_	Offset=412-421
+3	funnel	_	Reagent	_	_	0	_	_	Offset=426-432
+4	expose	_	Action	_	_	0	_	_	Offset=436-442
+5	light	_	Location	_	_	0	_	_	Offset=447-458
+
+# sent_id = s6
+# text = Then carefully pull back the funnel to expose the light organ.
+1	Place	_	Action	_	_	0	_	_	Offset=466-471
+2	dissected	_	Modifier	_	_	3	Mod-Link	_	Offset=472-481
+3	squid	_	Reagent	_	_	0	_	_	Offset=482-487
+4	4%	_	Concentration	_	_	5	Measure	_	Offset=493-495
+5	paraformaldehyde	_	Reagent	_	_	0	_	_	Offset=496-512
+6	incubate	_	Action	_	_	0	_	_	Offset=523-531
+7	overnight	_	Time	_	_	9	Setting	_	Offset=532-541
+8	4	_	Temperature	_	_	9	Setting	_	Offset=545-549
+9	shaker	_	Device	_	_	0	_	_	Offset=553-559
+10	fix	_	Action	_	_	0	_	_	Offset=563-566
+
+# sent_id = s7
+# text = [1.4] Place dissected squid into 4% paraformaldehyde (PFA) and incubate overnight at 4 °C on shaker to fix.
+1	Perform	_	Action	_	_	0	_	_	Offset=772-779
+2	all	_	Modifier	_	_	0	_	_	Offset=780-783
+3	treatments	_	Method	_	_	0	_	_	Offset=784-794
+4	hybridizations	_	Method	_	_	0	_	_	Offset=796-810
+5	washes	_	Method	_	_	0	_	_	Offset=816-822
+6	500-μL	_	Amount	_	_	7	Measure	_	Offset=828-834
+7	volume	_	Location	_	_	0	_	_	Offset=835-841
+8	rotator/shaker	_	Device	_	_	0	_	_	Offset=848-862
+
+# sent_id = s8
+# text = The best vessels to use are 1.5mL screw-cap vials, to prevent leaking at later wash steps.
+1	Wash	_	Action	_	_	0	_	_	Offset=894-898
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=899-903
+3	sample	_	Location	_	_	0	_	_	Offset=904-910
+4	five	_	Numerical	_	_	0	_	_	Offset=911-915
+5	5	_	Time	_	_	0	_	_	Offset=923-928
+6	per	_	Modifier	_	_	0	_	_	Offset=929-932
+7	wash	_	Action	_	_	0	_	_	Offset=933-937
+8	Permeabilization	_	Reagent	_	_	0	_	_	Offset=944-967
+9	room	_	Temperature	_	_	0	_	_	Offset=971-987
+
+# sent_id = s9
+# text = Permeabilization by Proteinase KUse RNase-free equipment and solutions throughout the remainder of the protocol.
+1	Treat	_	Action	_	_	0	_	_	Offset=1000-1005
+2	0.01	_	Concentration	_	_	3	Measure	_	Offset=1011-1021
+3	Proteinase	_	Reagent	_	_	0	_	_	Offset=1022-1058
+4	RT	_	Temperature	_	_	0	_	_	Offset=1062-1064
+5	15-20	_	Time	_	_	0	_	_	Offset=1069-1083
+
+# sent_id = s10
+# text = Perform all treatments, hybridizations, and washes in a 500-μL volume, on a rotator/shaker, unless otherwise noted.
+1	Do	_	Action	_	_	0	_	_	Offset=1084-1096
+2	shaker	_	Device	_	_	0	_	_	Offset=1100-1106
+3	rotator	_	Device	_	_	2	Or	_	Offset=1110-1117
+
+# sent_id = s11
+# text = [2.1] Wash each sample five times (5 min per wash) with Permeabilization Buffer at room temperature (RT).
+1	Stop	_	Action	_	_	0	_	_	Offset=1125-1129
+2	proteinase	_	Reagent	_	_	0	_	_	Offset=1134-1146
+3	digestion	_	Action	_	_	0	_	_	Offset=1147-1156
+4	two	_	Numerical	_	_	0	_	_	Offset=1162-1165
+5	washes	_	Action	_	_	0	_	_	Offset=1166-1172
+6	2	_	Concentration	_	_	7	Measure	_	Offset=1176-1183
+7	glycine	_	Reagent	_	_	0	_	_	Offset=1184-1191
+8	Permeabilization	_	Reagent	_	_	0	_	_	Offset=1195-1218
+
+# sent_id = s12
+# text = [2.2] Treat with 0.01 mg/mL Proteinase K Permeabilization Buffer at RT for 15-20 minutes.
+1	Post-fix	_	Action	_	_	0	_	_	Offset=1226-1234
+2	Permeabilization	_	Reagent	_	_	0	_	_	Offset=1238-1261
+3	4%	_	Concentration	_	_	4	Measure	_	Offset=1267-1269
+4	PFA	_	Reagent	_	_	0	_	_	Offset=1270-1273
+5	1	_	Time	_	_	0	_	_	Offset=1278-1281
+6	RT	_	Temperature	_	_	0	_	_	Offset=1285-1287
+7	shaker	_	Device	_	_	0	_	_	Offset=1295-1301
+
+# sent_id = s13
+# text = Do not place on shaker or rotator.
+1	Wash	_	Action	_	_	0	_	_	Offset=1309-1313
+2	Permeabilization	_	Reagent	_	_	0	_	_	Offset=1319-1342
+3	five	_	Numerical	_	_	0	_	_	Offset=1343-1347
+4	5	_	Time	_	_	0	_	_	Offset=1355-1360
+5	per	_	Modifier	_	_	0	_	_	Offset=1361-1364
+6	wash	_	Action	_	_	0	_	_	Offset=1365-1369
+
+# sent_id = s14
+# text = [2.3] Stop the proteinase K digestion with two washes of 2 mg/mL glycine in Permeabilization Buffer.
+1	Remove	_	Action	_	_	0	_	_	Offset=1535-1541
+2	as	_	Modifier	_	_	3	Mod-Link	_	Offset=1542-1549
+3	Permeabilization	_	Reagent	_	_	0	_	_	Offset=1557-1580
+4	sample	_	Reagent	_	_	0	_	_	Offset=1602-1608
+
+# sent_id = s15
+# text = [2.4] Post-fix in Permeabilization Buffer with 4% PFA for 1 h at RT on the shaker.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1610-1618
+2	sample	_	Reagent	_	_	0	_	_	Offset=1619-1625
+3	500	_	Amount	_	_	5	Measure	_	Offset=1629-1635
+4	50%	_	Concentration	_	_	5	Measure	_	Offset=1639-1642
+5	Hyb	_	Reagent	_	_	0	_	_	Offset=1643-1653
+6	65	_	Temperature	_	_	0	_	_	Offset=1657-1662
+7	30	_	Time	_	_	0	_	_	Offset=1667-1673
+
+# sent_id = s16
+# text = [2.5] Wash with Permeabilization Buffer five times (5 min per wash).
+1	Change	_	Action	_	_	0	_	_	Offset=1681-1687
+2	sample	_	Reagent	_	_	0	_	_	Offset=1688-1694
+3	500	_	Amount	_	_	6	Measure	_	Offset=1700-1706
+4	fresh	_	Modifier	_	_	6	Mod-Link	_	Offset=1710-1715
+5	50%	_	Concentration	_	_	6	Measure	_	Offset=1716-1719
+6	Hyb	_	Reagent	_	_	0	_	_	Offset=1720-1730
+7	incubate	_	Action	_	_	0	_	_	Offset=1736-1744
+8	65	_	Temperature	_	_	0	_	_	Offset=1748-1753
+9	2.5	_	Time	_	_	0	_	_	Offset=1758-1763
+
+# sent_id = s17
+# text = Note: Permeabilized juveniles can be used immediately, or stored for no longer than 1 week at 4 °C in Permeabilization Buffer.
+1	Prevent	_	Action	_	_	0	_	_	Offset=1771-1778
+
+# sent_id = s18
+# text = Pre-hybridization for Probes.
+1	petri	_	Location	_	_	3	Coreference-Link	_	Offset=1827-1839
+2	place	_	Action	_	_	0	_	_	Offset=1841-1846
+3	them	_	Mention	_	_	0	_	_	Offset=1847-1851
+4	humidified	_	Device	_	_	0	_	_	Offset=1857-1875
+5	seal	_	Action	_	_	0	_	_	Offset=1879-1883
+6	cover	_	Location	_	_	0	_	_	Offset=1888-1893
+7	plate	_	Location	_	_	6	Meronym	_	Offset=1901-1906
+8	strip	_	Seal	_	_	0	_	_	Offset=1914-1931
+
+# sent_id = s19
+# text = [3.1] Remove as much of the Permeabilization Buffer as possible from the sample.
+1	Mix	_	Action	_	_	0	_	_	Offset=2740-2743
+2	1	_	Generic-Measure	_	_	4	Measure	_	Offset=2744-2750
+3	each	_	Modifier	_	_	4	Mod-Link	_	Offset=2754-2758
+4	probe	_	Reagent	_	_	0	_	_	Offset=2759-2764
+5	500	_	Amount	_	_	7	Measure	_	Offset=2768-2774
+6	50%	_	Concentration	_	_	7	Measure	_	Offset=2778-2781
+7	Hyb	_	Reagent	_	_	0	_	_	Offset=2782-2792
+8	45	_	Temperature	_	_	0	_	_	Offset=2796-2801
+9	30	_	Time	_	_	0	_	_	Offset=2806-2812
+
+# sent_id = s20
+# text = Incubate sample in 500 μL of 50% Hyb Buffer at 65 °C for 30 min.
+1	Remove	_	Action	_	_	0	_	_	Offset=2914-2920
+2	50%	_	Concentration	_	_	3	Measure	_	Offset=2925-2928
+3	Hyb	_	Reagent	_	_	0	_	_	Offset=2929-2939
+4	add	_	Action	_	_	0	_	_	Offset=2956-2959
+5	probe	_	Reagent	_	_	0	_	_	Offset=2965-2979
+6	samples	_	Reagent	_	_	0	_	_	Offset=2983-2990
+7	overnight	_	Time	_	_	0	_	_	Offset=2995-3004
+8	16	_	Time	_	_	7	Or	_	Offset=3006-3010
+9	incubation	_	Action	_	_	0	_	_	Offset=3012-3022
+10	45	_	Temperature	_	_	0	_	_	Offset=3026-3032
+
+# sent_id = s21
+# text = [3.2] Change sample into 500 μL of fresh 50% Hyb Buffer, and incubate at 65 °C for 2.5 h.
+1	All	_	Modifier	_	_	2	Mod-Link	_	Offset=3047-3050
+2	solutions	_	Reagent	_	_	0	_	_	Offset=3051-3060
+3	pre-warmed	_	Action	_	_	0	_	_	Offset=3079-3089
+4	45	_	Temperature	_	_	0	_	_	Offset=3093-3098
+
+# sent_id = s22
+# text = Note: Prevent drying during prolonged incubations.
+1	Wash	_	Action	_	_	0	_	_	Offset=3184-3188
+2	samples	_	Reagent	_	_	0	_	_	Offset=3189-3196
+3	500	_	Amount	_	_	4	Measure	_	Offset=3200-3206
+4	Probe	_	Reagent	_	_	0	_	_	Offset=3207-3224
+5	15	_	Time	_	_	0	_	_	Offset=3229-3235
+6	45	_	Temperature	_	_	0	_	_	Offset=3239-3244
+
+# sent_id = s23
+# text = When using petri plates, place them in a humidified chamber or seal the cover of the plate with a strip of parafilm.
+1	Wash	_	Action	_	_	0	_	_	Offset=3252-3256
+2	samples	_	Reagent	_	_	0	_	_	Offset=3257-3264
+3	500	_	Amount	_	_	5	Measure	_	Offset=3268-3274
+4	75%	_	Concentration	_	_	5	Measure	_	Offset=3276-3279
+5	Probe	_	Reagent	_	_	0	_	_	Offset=3283-3300
+6	25%	_	Concentration	_	_	8	Measure	_	Offset=3303-3306
+7	5X	_	Generic-Measure	_	_	8	Measure	_	Offset=3310-3312
+8	SSC	_	Reagent	_	_	0	_	_	Offset=3313-3316
+9	15	_	Time	_	_	0	_	_	Offset=3322-3328
+10	45	_	Temperature	_	_	0	_	_	Offset=3332-3337
+
+# sent_id = s24
+# text = Probe Hybridization.
+1	Wash	_	Action	_	_	0	_	_	Offset=3345-3349
+2	samples	_	Reagent	_	_	0	_	_	Offset=3350-3357
+3	500	_	Amount	_	_	5	Measure	7:Measure	Offset=3361-3367
+4	50%	_	Concentration	_	_	5	Measure	_	Offset=3369-3372
+5	Probe	_	Reagent	_	_	0	_	_	Offset=3376-3393
+6	50%	_	Concentration	_	_	7	Measure	_	Offset=3396-3399
+7	5X	_	Reagent	_	_	0	_	_	Offset=3403-3409
+8	15	_	Time	_	_	0	_	_	Offset=3415-3421
+9	45	_	Temperature	_	_	0	_	_	Offset=3425-3430
+
+# sent_id = s25
+# text = To identify possible artifacts and confounding effects, the following alternate sample preparations should be performed:
+1	Wash	_	Action	_	_	0	_	_	Offset=3438-3442
+2	samples	_	Reagent	_	_	0	_	_	Offset=3443-3450
+3	500	_	Amount	_	_	5	Measure	7:Measure	Offset=3454-3460
+4	25%	_	Concentration	_	_	5	Measure	_	Offset=3462-3465
+5	Probe	_	Reagent	_	_	0	_	_	Offset=3469-3486
+6	75%	_	Concentration	_	_	7	Measure	_	Offset=3489-3492
+7	5X	_	Reagent	_	_	0	_	_	Offset=3496-3502
+8	15	_	Time	_	_	0	_	_	Offset=3508-3514
+9	45	_	Temperature	_	_	0	_	_	Offset=3518-3523
+
+# sent_id = s26
+# text = Autofluorescence (AF) – Follow protocol but do not add probes (step 4) or hairpins (step 7).
+1	Wash	_	Action	_	_	0	_	_	Offset=3531-3535
+2	samples	_	Reagent	_	_	0	_	_	Offset=3536-3543
+3	2	_	Numerical	_	_	0	_	_	Offset=3544-3545
+4	500	_	Amount	_	_	5	Measure	_	Offset=3556-3562
+5	5X	_	Reagent	_	_	0	_	_	Offset=3566-3572
+6	15	_	Time	_	_	0	_	_	Offset=3577-3583
+7	45	_	Temperature	_	_	0	_	_	Offset=3587-3592
+
+# sent_id = s27
+# text = Non-Specific Amplification of hairpins (NSA) – Sample incubated without probes (step 4) but with hairpins included.
+1	Wash	_	Action	_	_	0	_	_	Offset=3600-3604
+2	samples	_	Reagent	_	_	0	_	_	Offset=3605-3612
+3	2	_	Numerical	_	_	0	_	_	Offset=3613-3614
+4	500	_	Amount	_	_	5	Measure	_	Offset=3625-3631
+5	5X	_	Reagent	_	_	0	_	_	Offset=3635-3641
+6	30	_	Time	_	_	0	_	_	Offset=3646-3652
+7	45	_	Temperature	_	_	0	_	_	Offset=3656-3661
+
+# sent_id = s28
+# text = Non-Specific Detection of targets (NSD) – This control is applicable only for (i) transgenic (non-endogenous) targets, where a wild-type sample missing the target transcript is treated using the same protocol, and with the test probes and hairpins; or (ii) non-ubiquitous endogenous target transcript, where the locus of expression is known beforehand, and for which surrounding tissue can give an estimate of NSD in the same sample after treatment.
+1	Incubate	_	Action	_	_	0	_	_	Offset=3700-3708
+2	samples	_	Reagent	_	_	0	_	_	Offset=3709-3716
+3	500	_	Amount	_	_	4	Measure	_	Offset=3720-3726
+4	DNA	_	Reagent	_	_	0	_	_	Offset=3730-3754
+5	RT	_	Temperature	_	_	0	_	_	Offset=3758-3760
+6	30	_	Time	_	_	0	_	_	Offset=3765-3771
+
+# sent_id = s29
+# text = [4.1] Mix 1 pmol of each probe in 500 μL of 50% Hyb buffer at 45 °C for 30 min (this step should be coordinated with step [3.2] so that they are completed at the same time).
+1	Incubate	_	Action	_	_	0	_	_	Offset=3779-3787
+2	samples	_	Reagent	_	_	0	_	_	Offset=3788-3795
+3	fresh	_	Modifier	_	_	5	Mod-Link	_	Offset=3799-3804
+4	500	_	Amount	_	_	5	Measure	_	Offset=3805-3811
+5	DNA	_	Reagent	_	_	0	_	_	Offset=3815-3839
+6	RT	_	Temperature	_	_	0	_	_	Offset=3843-3845
+7	30	_	Time	_	_	0	_	_	Offset=3850-3856
+
+# sent_id = s30
+# text = [4.2] Remove the 50% Hyb buffer from [3.2], and add this probe solution to samples for overnight (16 h) incubation at 45 °C.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=3864-3871
+2	6	_	Amount	_	_	6	Measure	_	Offset=3872-3878
+3	100	_	Amount	_	_	4	Measure	_	Offset=3890-3896
+4	DNA	_	Reagent	_	_	0	_	_	Offset=3900-3924
+5	each	_	Modifier	_	_	6	Mod-Link	_	Offset=3929-3933
+6	hairpin	_	Reagent	_	_	0	_	_	Offset=3934-3941
+7	separate	_	Modifier	_	_	8	Mod-Link	_	Offset=3947-3955
+8	PCR	_	Location	_	_	0	_	_	Offset=3956-3964
+
+# sent_id = s31
+# text = Probe Washes.
+1	Heat	_	Action	_	_	0	_	_	Offset=3972-3976
+2	hairpins	_	Reagent	_	_	0	_	_	Offset=3981-3989
+3	95	_	Temperature	_	_	0	_	_	Offset=3993-3998
+4	90	_	Time	_	_	0	_	_	Offset=4003-4009
+5	PCR	_	Device	_	_	0	_	_	Offset=4025-4051
+
+# sent_id = s32
+# text = All solutions used here must be pre-warmed to 45 °C.
+1	Store	_	Action	_	_	0	_	_	Offset=4060-4065
+2	heated	_	Modifier	_	_	3	Mod-Link	_	Offset=4070-4076
+3	hairpins	_	Reagent	_	_	0	_	_	Offset=4077-4085
+4	dark	_	Location	_	_	0	_	_	Offset=4093-4097
+5	30	_	Time	_	_	0	_	_	Offset=4102-4108
+6	RT	_	Temperature	_	_	0	_	_	Offset=4112-4114
+
+# sent_id = s33
+# text = Probe solution is not reused, and hence discarded at the start of the washes.
+1	Prepare	_	Action	_	_	0	_	_	Offset=4146-4153
+2	100	_	Amount	_	_	4	Measure	_	Offset=4154-4160
+3	fresh	_	Modifier	_	_	4	Mod-Link	_	Offset=4164-4169
+4	DNA	_	Reagent	_	_	0	_	_	Offset=4170-4194
+5	equilibrated	_	Action	_	_	0	_	_	Offset=4195-4207
+6	RT	_	Temperature	_	_	0	_	_	Offset=4211-4213
+
+# sent_id = s34
+# text = [5.1] Wash samples in 500 μL Probe Wash Buffer for 15 min at 45 °C.
+1	Mix	_	Action	_	_	0	_	_	Offset=4361-4364
+2	all	_	Modifier	_	_	3	Mod-Link	_	Offset=4365-4368
+3	hairpins	_	Reagent	_	_	0	_	_	Offset=4369-4377
+4	100	_	Amount	_	_	6	Measure	_	Offset=4381-4387
+5	pre-equilibrated	_	Modifier	_	_	6	Mod-Link	_	Offset=4391-4407
+6	DNA	_	Reagent	_	_	0	_	_	Offset=4408-4432
+7	RT	_	Temperature	_	_	0	_	_	Offset=4436-4438
+
+# sent_id = s35
+# text = [5.2] Wash samples in 500 μL (75% of Probe Wash Buffer + 25% of 5X SSC) for 15 min at 45 °C.
+1	Remove	_	Action	_	_	0	_	_	Offset=4661-4667
+2	final	_	Reagent	_	_	0	_	_	Offset=4668-4687
+3	[6.2]	_	Location	_	_	0	_	_	Offset=4693-4698
+4	add	_	Action	_	_	0	_	_	Offset=4703-4706
+5	hairpin	_	Reagent	_	_	0	_	_	Offset=4711-4727
+6	samples	_	Reagent	_	_	0	_	_	Offset=4735-4742
+7	overnight	_	Time	_	_	0	_	_	Offset=4750-4759
+8	16	_	Time	_	_	7	Or	_	Offset=4761-4765
+9	incubation	_	Action	_	_	0	_	_	Offset=4767-4777
+10	RT	_	Temperature	_	_	0	_	_	Offset=4781-4783
+
+# sent_id = s36
+# text = [5.3] Wash samples in 500 μL (50% of Probe Wash Buffer + 50% of 5X SSC) for 15 min at 45 °C.
+1	Wrap	_	Action	_	_	0	_	_	Offset=4791-4795
+2	sample	_	Location	_	_	0	_	_	Offset=4800-4812
+3	aluminum	_	Seal	_	_	0	_	_	Offset=4837-4850
+4	keep	_	Action	_	_	0	_	_	Offset=4854-4868
+
+# sent_id = s37
+# text = [5.4] Wash samples in 500 μL (25% of Probe Wash Buffer + 75% of 5X SSC) for 15 min at 45 °C.
+1	Wash	_	Action	_	_	0	_	_	Offset=4954-4958
+2	samples	_	Reagent	_	_	0	_	_	Offset=4959-4966
+3	4	_	Numerical	_	_	0	_	_	Offset=4967-4968
+4	500	_	Amount	_	_	5	Measure	_	Offset=4979-4985
+5	5X	_	Reagent	_	_	0	_	_	Offset=4989-4997
+6	5	_	Time	_	_	0	_	_	Offset=5002-5007
+7	RT	_	Temperature	_	_	0	_	_	Offset=5016-5018
+
+# sent_id = s38
+# text = [5.5] Wash samples 2 times, in 500 μL of 5X SSC for 15 min at 45 °C.
+1	Wash	_	Action	_	_	0	_	_	Offset=5026-5030
+2	samples	_	Reagent	_	_	0	_	_	Offset=5031-5038
+3	2	_	Numerical	_	_	0	_	_	Offset=5039-5040
+4	500	_	Amount	_	_	5	Measure	_	Offset=5051-5057
+5	5X	_	Reagent	_	_	0	_	_	Offset=5061-5069
+6	30	_	Time	_	_	0	_	_	Offset=5074-5080
+7	RT	_	Temperature	_	_	0	_	_	Offset=5089-5091
+
+# sent_id = s39
+# text = [5.6] Wash samples 2 times, in 500 μL of 5X SSC for 30 min at 45 °C.
+1	Samples	_	Reagent	_	_	0	_	_	Offset=5108-5115
+2	imaged	_	Action	_	_	0	_	_	Offset=5123-5129
+3	directly	_	Modifier	_	_	0	_	_	Offset=5130-5138
+4	5X	_	Reagent	_	_	0	_	_	Offset=5142-5150
+5	stored	_	Action	_	_	0	_	_	Offset=5155-5161
+6	5X	_	Reagent	_	_	0	_	_	Offset=5165-5173
+7	4	_	Temperature	_	_	0	_	_	Offset=5177-5181
+

@@ -1,0 +1,254 @@
+# sent_id = s1
+# text = Sandwich ELISA Protocol
+1	Dilute	_	Action	_	_	0	_	_	Offset=24-30
+2	unlabeled	_	Reagent	_	_	0	_	_	Offset=31-57
+3	0.5	_	Concentration	_	_	0	_	_	Offset=86-99
+4	Coating	_	Reagent	_	_	0	_	_	Offset=103-146
+5	transfer	_	Action	_	_	0	_	_	Offset=151-159
+6	100	_	Amount	_	_	0	_	_	Offset=160-166
+7	each	_	Modifier	_	_	8	Mod-Link	_	Offset=170-174
+8	well	_	Location	_	_	0	_	_	Offset=175-179
+9	a	_	Location	_	_	8	Meronym	_	Offset=183-260
+
+# sent_id = s2
+# text = Dilute unlabeled capture antibody to a final concentration of 0.5 – 8 µg/ml in Coating Buffer (BioLegend, Cat. No. 421701) and transfer 100 µl to each well of a high affinity, protein-bindingELISA plate (e.g., BioLegend Cat. No. 423501).
+1	Seal	_	Action	_	_	0	_	_	Offset=262-266
+2	plate	_	Location	_	_	0	_	_	Offset=267-272
+3	prevent	_	Action	_	_	0	_	_	Offset=276-295
+
+# sent_id = s3
+# text = Seal plate to prevent evaporation.
+1	Incubate	_	Action	_	_	0	_	_	Offset=297-305
+2	4°C	_	Temperature	_	_	0	_	_	Offset=309-312
+3	overnight	_	Time	_	_	0	_	_	Offset=313-322
+
+# sent_id = s4
+# text = Incubate at 4°C overnight.
+1	Bring	_	Action	_	_	0	_	_	Offset=324-329
+2	plate	_	Location	_	_	0	_	_	Offset=334-339
+3	room	_	Temperature	_	_	0	_	_	Offset=343-359
+4	flick	_	Action	_	_	0	_	_	Offset=361-370
+5	capture	_	Reagent	_	_	0	_	_	Offset=375-400
+
+# sent_id = s5
+# text = Bring the plate to room temperature, flick off the capture antibody solution.
+1	Seal	_	Action	_	_	0	_	_	Offset=402-406
+2	plate	_	Location	_	_	0	_	_	Offset=407-412
+3	incubate	_	Action	_	_	0	_	_	Offset=417-425
+4	room	_	Temperature	_	_	0	_	_	Offset=429-445
+5	≥	_	Time	_	_	0	_	_	Offset=450-459
+
+# sent_id = s6
+# text = Seal plate and incubate at room temperature for ≥ 1 hour.
+1	Firmly	_	Modifier	_	_	0	_	_	Offset=460-466
+2	blot	_	Action	_	_	0	_	_	Offset=467-471
+3	plate	_	Location	_	_	0	_	_	Offset=472-477
+4	clean	_	Device	_	_	0	_	_	Offset=486-504
+
+# sent_id = s7
+# text = Firmly blot plate against clean paper towels.
+1	Dilute	_	Action	_	_	0	_	_	Offset=506-512
+2	standards	_	Reagent	_	_	0	_	_	Offset=513-522
+3	samples	_	Reagent	_	_	0	_	_	Offset=527-534
+4	desired	_	Concentration	_	_	0	_	_	Offset=538-560
+5	Blocking	_	Reagent	_	_	0	_	_	Offset=564-581
+6	polypropylene	_	Location	_	_	0	_	_	Offset=604-623
+7	plate	_	Location	_	_	6	Or	_	Offset=627-632
+8	add	_	Action	_	_	0	_	_	Offset=638-641
+9	100	_	Amount	_	_	0	_	_	Offset=642-648
+10	per	_	Modifier	_	_	9	Mod-Link	11:Mod-Link	Offset=649-652
+11	well	_	Location	_	_	0	_	_	Offset=653-657
+12	ELISA	_	Location	_	_	0	_	_	Offset=665-676
+
+# sent_id = s8
+# text = Dilute standards and samples to desired concentrations in Blocking Solution (perform dilutions in polypropylene tubes or plate) and add 100 µl per well to the ELISA plate.
+1	Seal	_	Action	_	_	0	_	_	Offset=678-682
+2	plate	_	Location	_	_	0	_	_	Offset=687-692
+3	incubate	_	Action	_	_	0	_	_	Offset=697-705
+4	room	_	Temperature	_	_	0	_	_	Offset=709-725
+5	2-4	_	Time	_	_	0	_	_	Offset=730-739
+6	4°C	_	Temperature	_	_	4	Or	_	Offset=746-749
+7	overnight	_	Time	_	_	5	Or	_	Offset=750-759
+
+# sent_id = s9
+# text = Seal the plate and incubate at room temperature for 2-4 hours or at 4°C overnight.
+1	Wash	_	Action	_	_	0	_	_	Offset=761-765
+2	PBS/Tween	_	Reagent	_	_	0	_	_	Offset=771-780
+
+# sent_id = s10
+# text = Wash with PBS/Tween (1/3).
+1	Wash	_	Action	_	_	0	_	_	Offset=788-792
+2	PBS/Tween	_	Reagent	_	_	0	_	_	Offset=798-807
+
+# sent_id = s11
+# text = Wash with PBS/Tween (2/3).
+1	Wash	_	Action	_	_	0	_	_	Offset=815-819
+2	PBS/Tween	_	Reagent	_	_	0	_	_	Offset=825-834
+
+# sent_id = s12
+# text = Wash with PBS/Tween (3/3).
+1	Dilute	_	Action	_	_	0	_	_	Offset=842-848
+2	biotin-labeled	_	Reagent	_	_	0	_	_	Offset=853-886
+3	0.25	_	Concentration	_	_	0	_	_	Offset=890-904
+4	Blocking	_	Reagent	_	_	0	_	_	Offset=908-925
+
+# sent_id = s13
+# text = Dilute the biotin-labeled detection antibody to 0.25 – 2 µg/ml in Blocking Solution.
+1	Add	_	Action	_	_	0	_	_	Offset=927-930
+2	100	_	Amount	_	_	3	Measure	_	Offset=931-937
+3	diluted	_	Reagent	_	_	0	_	_	Offset=941-957
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=961-965
+5	well	_	Location	_	_	0	_	_	Offset=966-970
+
+# sent_id = s14
+# text = Add 100 µl of diluted antibody to each well.
+1	Seal	_	Action	_	_	0	_	_	Offset=972-976
+2	plate	_	Location	_	_	0	_	_	Offset=981-986
+3	incubate	_	Action	_	_	0	_	_	Offset=991-999
+4	room	_	Temperature	_	_	0	_	_	Offset=1003-1019
+5	1	_	Time	_	_	0	_	_	Offset=1024-1030
+
+# sent_id = s15
+# text = Seal the plate and incubate at room temperature for 1 hour.
+1	Wash	_	Action	_	_	0	_	_	Offset=1032-1036
+2	PBS/Tween	_	Reagent	_	_	0	_	_	Offset=1042-1051
+
+# sent_id = s16
+# text = Wash with PBS/Tween (1/3).
+1	Wash	_	Action	_	_	0	_	_	Offset=1059-1063
+2	PBS/Tween	_	Reagent	_	_	0	_	_	Offset=1069-1078
+
+# sent_id = s17
+# text = Wash with PBS/Tween (2/3).
+1	Wash	_	Action	_	_	0	_	_	Offset=1086-1090
+2	PBS/Tween	_	Reagent	_	_	0	_	_	Offset=1096-1105
+
+# sent_id = s18
+# text = Wash with PBS/Tween (3/3).
+1	Dilute	_	Action	_	_	0	_	_	Offset=1113-1119
+2	Av-HRP	_	Reagent	_	_	0	_	_	Offset=1124-1158
+3	other	_	Reagent	_	_	2	Or	_	Offset=1162-1184
+4	its	_	Concentration	_	_	0	_	_	Offset=1188-1228
+5	Blocking	_	Reagent	_	_	0	_	_	Offset=1232-1247
+
+# sent_id = s19
+# text = Dilute the Av-HRP conjugate (Cat. No. 405103) or other enzyme conjugate to its pre-determined optimal concentration in Blocking Buffer (usually between 1/500 – 1/2000).
+1	Add	_	Action	_	_	0	_	_	Offset=1282-1285
+2	100	_	Amount	_	_	0	_	_	Offset=1286-1292
+3	per	_	Modifier	_	_	2	Mod-Link	4:Mod-Link	Offset=1293-1296
+4	well	_	Location	_	_	0	_	_	Offset=1297-1301
+
+# sent_id = s20
+# text = Add 100 µl per well.
+1	Seal	_	Action	_	_	0	_	_	Offset=1303-1307
+2	plate	_	Location	_	_	0	_	_	Offset=1312-1317
+3	incubate	_	Action	_	_	0	_	_	Offset=1322-1330
+4	room	_	Temperature	_	_	0	_	_	Offset=1334-1350
+5	30	_	Time	_	_	0	_	_	Offset=1355-1365
+
+# sent_id = s21
+# text = Seal the plate and incubate at room temperature for 30 minutes.
+1	Wash	_	Action	_	_	0	_	_	Offset=1367-1371
+2	PBS/Tween	_	Reagent	_	_	0	_	_	Offset=1377-1386
+
+# sent_id = s22
+# text = Wash with PBS/Tween (1/5).
+1	Wash	_	Action	_	_	0	_	_	Offset=1394-1398
+2	PBS/Tween	_	Reagent	_	_	0	_	_	Offset=1404-1413
+
+# sent_id = s23
+# text = Wash with PBS/Tween (2/5).
+1	Wash	_	Action	_	_	0	_	_	Offset=1421-1425
+2	PBS/Tween	_	Reagent	_	_	0	_	_	Offset=1431-1440
+
+# sent_id = s24
+# text = Wash with PBS/Tween (3/5).
+1	Wash	_	Action	_	_	0	_	_	Offset=1448-1452
+2	PBS/Tween	_	Reagent	_	_	0	_	_	Offset=1458-1467
+
+# sent_id = s25
+# text = Wash with PBS/Tween (4/5).
+1	Wash	_	Action	_	_	0	_	_	Offset=1475-1479
+2	PBS/Tween	_	Reagent	_	_	0	_	_	Offset=1485-1494
+
+# sent_id = s26
+# text = Wash with PBS/Tween (5/5).
+1	Thaw	_	Action	_	_	0	_	_	Offset=1502-1506
+2	ABTS	_	Reagent	_	_	0	_	_	Offset=1507-1530
+3	within	_	Time	_	_	0	_	_	Offset=1531-1551
+
+# sent_id = s27
+# text = Thaw ABTS Substrate Solution within 20 min of use.
+1	Add	_	Action	_	_	0	_	_	Offset=1553-1556
+2	11	_	Amount	_	_	4	Measure	_	Offset=1557-1562
+3	30%	_	Concentration	_	_	4	Measure	_	Offset=1566-1569
+4	H2O2	_	Reagent	_	_	0	_	_	Offset=1570-1574
+5	per	_	Modifier	_	_	6	Mod-Link	2:Mod-Link	Offset=1575-1578
+6	11	_	Amount	_	_	7	Measure	_	Offset=1579-1584
+7	substrateand	_	Reagent	_	_	0	_	_	Offset=1588-1607
+
+# sent_id = s28
+# text = Add 11 µl of 30% H2O2 per 11 ml of substrateand vortex.
+1	dispense	_	Action	_	_	0	_	_	Offset=1621-1629
+2	100	_	Amount	_	_	4	Measure	_	Offset=1630-1636
+3	each	_	Modifier	_	_	4	Mod-Link	_	Offset=1642-1646
+4	well	_	Location	_	_	0	_	_	Offset=1647-1651
+5	incubate	_	Action	_	_	0	_	_	Offset=1656-1664
+6	room	_	Temperature	_	_	0	_	_	Offset=1668-1684
+7	4-60minutes	_	Time	_	_	0	_	_	Offset=1686-1697
+
+# sent_id = s29
+# text = Immediately dispense 100 µl into each well and incubate at room temperature (4-60minutes) for color development.
+1	add	_	Action	_	_	0	_	_	Offset=1750-1753
+2	50	_	Amount	_	_	3	Measure	_	Offset=1754-1759
+3	ABTS	_	Reagent	_	_	0	_	_	Offset=1763-1781
+
+# sent_id = s30
+# text = To stop the color reaction, add 50 µl of ABTS Stop Solution.
+1	Read	_	Action	_	_	0	_	_	Offset=1783-1787
+2	optical	_	Generic-Measure	_	_	0	_	_	Offset=1792-1812
+3	each	_	Modifier	_	_	4	Mod-Link	_	Offset=1817-1821
+4	well	_	Location	_	_	0	_	_	Offset=1822-1826
+5	microplate	_	Device	_	_	0	_	_	Offset=1834-1851
+6	405	_	Generic-Measure	_	_	5	Setting	_	Offset=1859-1865
+
+# sent_id = s31
+# text = Read the optical density (OD) for each well with a microplate reader set to 405 nm.
+1	Wash	_	Action	_	_	0	_	_	Offset=1867-1871
+2	PBS/Tween	_	Reagent	_	_	0	_	_	Offset=1877-1886
+
+# sent_id = s32
+# text = Wash with PBS/Tween (1/3).
+1	Wash	_	Action	_	_	0	_	_	Offset=1894-1898
+2	PBS/Tween	_	Reagent	_	_	0	_	_	Offset=1904-1913
+
+# sent_id = s33
+# text = Wash with PBS/Tween (2/3).
+1	Wash	_	Action	_	_	0	_	_	Offset=1921-1925
+2	PBS/Tween	_	Reagent	_	_	0	_	_	Offset=1931-1940
+
+# sent_id = s34
+# text = Wash with PBS/Tween (3/3).
+1	Block	_	Action	_	_	0	_	_	Offset=1948-1953
+2	non-specific	_	Reagent	_	_	0	_	_	Offset=1954-1980
+3	adding	_	Action	_	_	0	_	_	Offset=1984-1990
+4	200	_	Amount	_	_	5	Measure	_	Offset=1991-1997
+5	Blocking	_	Reagent	_	_	0	_	_	Offset=2001-2018
+6	each	_	Modifier	_	_	7	Mod-Link	_	Offset=2022-2026
+7	well	_	Location	_	_	0	_	_	Offset=2027-2031
+
+# sent_id = s35
+# text = Block non-specific binding sites by adding 200 µl of Blocking Solution to each well.
+1	Wash	_	Action	_	_	0	_	_	Offset=2033-2037
+2	PBS/Tween	_	Reagent	_	_	0	_	_	Offset=2043-2052
+
+# sent_id = s36
+# text = Wash with PBS/Tween (1/3).
+1	Wash	_	Action	_	_	0	_	_	Offset=2060-2064
+2	PBS/Tween	_	Reagent	_	_	0	_	_	Offset=2070-2079
+
+# sent_id = s37
+# text = Wash with PBS/Tween (2/3).
+1	Wash	_	Action	_	_	0	_	_	Offset=2087-2091
+2	PBS/Tween	_	Reagent	_	_	0	_	_	Offset=2097-2106
+

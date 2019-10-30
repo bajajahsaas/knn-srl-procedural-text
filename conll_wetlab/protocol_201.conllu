@@ -1,0 +1,114 @@
+# sent_id = s1
+# text = Staining protocol for unicellular protists: Mitotracker and Dapi
+1	Add	_	Action	_	_	0	_	_	Offset=82-85
+2	PFA	_	Reagent	_	_	0	_	_	Offset=86-89
+3	drop	_	Modifier	_	_	0	_	_	Offset=90-102
+4	mixing	_	Action	_	_	0	_	_	Offset=107-113
+5	carefully	_	Modifier	_	_	0	_	_	Offset=114-123
+6	1mL	_	Amount	_	_	7	Measure	_	Offset=129-132
+7	cells	_	Reagent	_	_	0	_	_	Offset=133-138
+8	2%	_	Concentration	_	_	9	Measure	_	Offset=168-170
+9	PFA	_	Reagent	_	_	0	_	_	Offset=170-173
+
+# sent_id = s2
+# text = 2% PFA Fixation: Add PFA drop by drop and mixing carefully into 1mL cells for a final concentration of 2%PFA.
+1	Incubate	_	Action	_	_	0	_	_	Offset=175-183
+2	cells	_	Reagent	_	_	0	_	_	Offset=184-189
+3	4	_	Time	_	_	0	_	_	Offset=194-199
+4	room	_	Temperature	_	_	0	_	_	Offset=203-219
+
+# sent_id = s3
+# text = Incubate cells for 4 min at room temperature. 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=222-232
+2	1000g	_	Speed	_	_	0	_	_	Offset=236-241
+3	5	_	Time	_	_	0	_	_	Offset=246-255
+
+# sent_id = s4
+# text = Centrifuge at 1000g for 5 minutes. 
+1	Wash	_	Action	_	_	0	_	_	Offset=258-262
+2	cells	_	Reagent	_	_	0	_	_	Offset=263-268
+3	1X	_	Concentration	_	_	0	_	_	Offset=274-276
+4	PBS	_	Reagent	_	_	0	_	_	Offset=276-279
+
+# sent_id = s5
+# text = Wash cells with 1XPBS (1/2). 
+1	Resuspend	_	Action	_	_	0	_	_	Offset=288-297
+2	cells	_	Reagent	_	_	0	_	_	Offset=298-303
+3	1mL	_	Amount	_	_	5	Measure	_	Offset=309-312
+4	1x	_	Concentration	_	_	5	Measure	_	Offset=313-315
+5	PBS	_	Reagent	_	_	0	_	_	Offset=315-318
+
+# sent_id = s6
+# text = Resuspend cells with 1mL 1xPBS. 
+1	Add	_	Action	_	_	0	_	_	Offset=321-324
+2	1mM	_	Concentration	_	_	3	Measure	_	Offset=325-328
+3	mitotracker	_	Reagent	_	_	0	_	_	Offset=329-344
+
+# sent_id = s7
+# text = Add 1mM mitotracker dye.
+1	Room	_	Temperature	_	_	0	_	_	Offset=346-362
+2	protect	_	Action	_	_	0	_	_	Offset=364-382
+
+# sent_id = s8
+# text = Room temperature, protect from light.  
+1	Add	_	Action	_	_	0	_	_	Offset=386-389
+2	1/1000	_	Concentration	_	_	3	Measure	_	Offset=390-396
+3	DAPI	_	Reagent	_	_	0	_	_	Offset=397-405
+
+# sent_id = s9
+# text = Add 1/1000 DAPI dye.
+1	Room	_	Temperature	_	_	0	_	_	Offset=407-423
+2	protect	_	Action	_	_	0	_	_	Offset=425-443
+
+# sent_id = s10
+# text = Room temperature, protect from light. 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=446-456
+2	1000g	_	Speed	_	_	0	_	_	Offset=460-465
+3	5	_	Time	_	_	0	_	_	Offset=470-479
+4	resuspend	_	Action	_	_	0	_	_	Offset=484-493
+
+# sent_id = s11
+# text = Centrifuge at 1000g for 5 minutes and resuspend with 1xPBS.  
+1	Mount	_	Action	_	_	0	_	_	Offset=508-513
+2	slide	_	Location	_	_	0	_	_	Offset=519-524
+3	ready	_	Action	_	_	0	_	_	Offset=529-534
+
+# sent_id = s12
+# text = Mount your slide and ready for observation!
+1	Wash	_	Action	_	_	0	_	_	Offset=552-556
+2	cells	_	Reagent	_	_	0	_	_	Offset=557-562
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=568-570
+4	PBS	_	Reagent	_	_	0	_	_	Offset=570-573
+
+# sent_id = s13
+# text = Wash cells with 1XPBS (2/2). 
+1	Incubate	_	Action	_	_	0	_	_	Offset=582-590
+2	10	_	Time	_	_	0	_	_	Offset=595-605
+
+# sent_id = s14
+# text = Incubate for 10 minutes.
+1	Room	_	Temperature	_	_	0	_	_	Offset=607-623
+2	protect	_	Action	_	_	0	_	_	Offset=625-643
+
+# sent_id = s15
+# text = Room temperature, protect from light. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=646-654
+2	5	_	Time	_	_	0	_	_	Offset=659-668
+
+# sent_id = s16
+# text = Incubate for 5 minutes.
+1	Room	_	Temperature	_	_	0	_	_	Offset=670-686
+2	protect	_	Action	_	_	0	_	_	Offset=688-706
+
+# sent_id = s17
+# text = Room temperature, protect from light. 
+1	Wash	_	Action	_	_	0	_	_	Offset=709-713
+2	1x	_	Concentration	_	_	3	Measure	_	Offset=719-721
+3	PBS	_	Reagent	_	_	0	_	_	Offset=721-724
+
+# sent_id = s18
+# text = Wash with 1xPBS (1/2). 
+1	Wash	_	Action	_	_	0	_	_	Offset=733-737
+2	1x	_	Concentration	_	_	3	Measure	_	Offset=743-745
+3	PBS	_	Reagent	_	_	0	_	_	Offset=745-748
+

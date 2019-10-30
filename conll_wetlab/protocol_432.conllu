@@ -1,0 +1,76 @@
+# sent_id = s1
+# text = Ki-67 Staining Protocol
+1	Prepare	_	Action	_	_	0	_	_	Offset=24-31
+2	70%	_	Generic-Measure	_	_	3	Measure	_	Offset=32-35
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=36-43
+4	chill	_	Action	_	_	0	_	_	Offset=48-53
+5	-20°C	_	Temperature	_	_	0	_	_	Offset=57-62
+
+# sent_id = s2
+# text = Prepare 70% ethanol and chill at -20°C.
+1	Prepare	_	Action	_	_	0	_	_	Offset=64-71
+2	target	_	Reagent	_	_	0	_	_	Offset=72-96
+3	wash	_	Action	_	_	0	_	_	Offset=101-105
+4	2X	_	Reagent	_	_	0	_	_	Offset=106-108
+5	PBS	_	Reagent	_	_	0	_	_	Offset=114-117
+6	centrifuge	_	Action	_	_	0	_	_	Offset=121-131
+7	350xg	_	Speed	_	_	0	_	_	Offset=135-140
+8	5	_	Time	_	_	0	_	_	Offset=145-154
+
+# sent_id = s3
+# text = Prepare target cells of interest and wash 2X with PBS by centrifuge at 350xg for 5 minutes.
+1	Discard	_	Action	_	_	0	_	_	Offset=156-163
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=164-175
+3	loosen	_	Action	_	_	0	_	_	Offset=180-186
+4	cell	_	Reagent	_	_	0	_	_	Offset=191-202
+5	vortexing	_	Method	_	_	0	_	_	Offset=206-215
+
+# sent_id = s4
+# text = Discard supernatant and loosen the cell pellet by vortexing.
+1	Add	_	Action	_	_	0	_	_	Offset=217-220
+2	3	_	Amount	_	_	5	Measure	_	Offset=221-225
+3	cold	_	Modifier	_	_	5	Mod-Link	_	Offset=226-230
+4	70%	_	Generic-Measure	_	_	5	Measure	_	Offset=231-234
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=235-242
+6	drop	_	Method	_	_	0	_	_	Offset=243-255
+7	cell	_	Location	_	_	0	_	_	Offset=263-274
+
+# sent_id = s5
+# text = Add 3 ml cold 70% ethanol drop by drop to the cell pellet while vortexing.
+1	Continue	_	Action	_	_	0	_	_	Offset=292-300
+2	vortexing	_	Method	_	_	0	_	_	Offset=301-310
+3	30	_	Time	_	_	0	_	_	Offset=315-325
+4	incubate	_	Action	_	_	0	_	_	Offset=335-343
+5	-20°C	_	Temperature	_	_	0	_	_	Offset=347-352
+6	1	_	Time	_	_	0	_	_	Offset=357-363
+
+# sent_id = s6
+# text = Continue vortexing for 30 seconds and then incubate at -20°C for 1 hour.
+1	Wash	_	Action	_	_	0	_	_	Offset=365-369
+2	3X	_	Reagent	_	_	0	_	_	Offset=370-372
+3	BioLegend’s	_	Reagent	_	_	0	_	_	Offset=378-410
+4	resuspend	_	Action	_	_	0	_	_	Offset=438-447
+5	cells	_	Reagent	_	_	0	_	_	Offset=452-457
+6	0.5-10	_	Concentration	_	_	0	_	_	Offset=482-497
+
+# sent_id = s7
+# text = Wash 3X with BioLegend’s Cell Staining Buffer (Cat. No. 420201) and then resuspend the cells at the concentration of 0.5-10 x 106/ml.
+1	Mix	_	Action	_	_	0	_	_	Offset=499-502
+2	100	_	Amount	_	_	3	Measure	_	Offset=503-509
+3	cell	_	Reagent	_	_	0	_	_	Offset=510-525
+4	proper	_	Modifier	_	_	5	Mod-Link	_	Offset=531-537
+5	fluorochrome-conjugated	_	Reagent	_	_	0	_	_	Offset=538-576
+6	incubate	_	Action	_	_	0	_	_	Offset=581-589
+7	room	_	Temperature	_	_	0	_	_	Offset=593-609
+8	dark	_	Location	_	_	0	_	_	Offset=617-621
+9	30	_	Time	_	_	0	_	_	Offset=626-636
+
+# sent_id = s8
+# text = Mix 100 µl cell suspension with proper fluorochrome-conjugated Ki-67 antibody and incubate at room temperature in the dark for 30 minutes.
+1	Wash	_	Action	_	_	0	_	_	Offset=638-642
+2	2X	_	Reagent	_	_	0	_	_	Offset=643-645
+3	BioLegend’s	_	Reagent	_	_	0	_	_	Offset=651-683
+4	resuspend	_	Action	_	_	0	_	_	Offset=711-720
+5	0.5	_	Amount	_	_	6	Measure	_	Offset=724-730
+6	cell	_	Reagent	_	_	0	_	_	Offset=731-751
+

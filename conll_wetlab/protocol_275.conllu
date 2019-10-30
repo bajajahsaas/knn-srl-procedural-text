@@ -1,0 +1,371 @@
+# sent_id = s1
+# text = Immunohistochemistry Protocol for Frozen Sections
+1	Fix	_	Action	_	_	0	_	_	Offset=50-53
+2	tissue	_	Location	_	_	0	_	_	Offset=58-73
+3	suitable	_	Modifier	_	_	4	Mod-Link	_	Offset=81-89
+4	fixative	_	Device	_	_	0	_	_	Offset=90-98
+
+# sent_id = s2
+# text = Fix the tissue sections with a suitable fixative.
+1	immerse	_	Action	_	_	0	_	_	Offset=175-182
+2	slides	_	Location	_	_	0	_	_	Offset=187-193
+3	pre-cooled	_	Modifier	_	_	4	Mod-Link	_	Offset=197-207
+4	acetone	_	Reagent	_	_	0	_	_	Offset=208-215
+5	-20°C	_	Temperature	_	_	0	_	_	Offset=217-222
+6	10	_	Time	_	_	0	_	_	Offset=228-234
+
+# sent_id = s3
+# text = One of the commonly used fixation methods for frozen tissue sections is to immerse the slides in pre-cooled acetone (-20°C) for 10 min.
+1	Place	_	Action	_	_	0	_	_	Offset=236-241
+2	freshly	_	Modifier	_	_	4	Mod-Link	_	Offset=244-251
+3	dissected	_	Modifier	_	_	4	Mod-Link	_	Offset=252-261
+4	tissue	_	Reagent	_	_	0	_	_	Offset=262-274
+5	<5	_	Size	_	_	4	Measure	_	Offset=276-281
+6	pre-labeled	_	Modifier	_	_	7	Mod-Link	_	Offset=297-308
+7	tissue	_	Location	_	_	0	_	_	Offset=309-325
+
+# sent_id = s4
+# text = Place a freshly dissected tissue block (<5 mm thick) on to a pre-labeled tissue base mold.
+1	Cover	_	Action	_	_	0	_	_	Offset=327-332
+2	entire	_	Modifier	_	_	3	Mod-Link	_	Offset=337-343
+3	tissue	_	Reagent	_	_	0	_	_	Offset=344-356
+4	cryo-embedding	_	Reagent	_	_	0	_	_	Offset=362-382
+
+# sent_id = s5
+# text = Cover the entire tissue block with cryo-embedding media (e.g. OCT).
+1	Slowly	_	Modifier	_	_	0	_	_	Offset=395-401
+2	place	_	Action	_	_	0	_	_	Offset=402-407
+3	base	_	Location	_	_	4	Meronym	_	Offset=412-421
+4	tissue	_	Reagent	_	_	0	_	_	Offset=437-449
+5	liquid	_	Reagent	_	_	0	_	_	Offset=455-470
+6	entiretissue	_	Reagent	_	_	0	_	_	Offset=480-498
+7	submerged	_	Action	_	_	0	_	_	Offset=502-511
+8	liquid	_	Reagent	_	_	0	_	_	Offset=517-532
+9	tissue	_	Reagent	_	_	0	_	_	Offset=543-549
+10	frozen	_	Action	_	_	0	_	_	Offset=553-559
+11	completely	_	Modifier	_	_	0	_	_	Offset=560-570
+
+# sent_id = s6
+# text = Slowly place the base mold containing the tissue block into liquid nitrogen till the entiretissue block is submerged into liquid nitrogen to ensure tissue is frozen completely.
+1	Store	_	Action	_	_	0	_	_	Offset=572-577
+2	frozen	_	Modifier	_	_	3	Mod-Link	_	Offset=582-588
+3	tissue	_	Reagent	_	_	0	_	_	Offset=589-601
+4	-80°C	_	Temperature	_	_	0	_	_	Offset=605-610
+
+# sent_id = s7
+# text = Store the frozen tissue block at -80°C until ready for sectioning.
+1	Transfer	_	Action	_	_	0	_	_	Offset=639-647
+2	frozen	_	Modifier	_	_	3	Mod-Link	_	Offset=652-658
+3	tissue	_	Reagent	_	_	0	_	_	Offset=659-671
+4	cryotome	_	Device	_	_	0	_	_	Offset=677-694
+5	frozen	_	Modifier	_	_	6	Mod-Link	_	Offset=761-767
+6	tissue	_	Reagent	_	_	0	_	_	Offset=768-780
+7	equilibrate	_	Action	_	_	0	_	_	Offset=784-795
+
+# sent_id = s8
+# text = Transfer the frozen tissue block to a cryotome cryostat (e.g. -20°C) prior to sectioning and allow the temperature of the frozen tissue block to equilibrate to the temperature of the cryotome cryostat.
+1	Section	_	Action	_	_	0	_	_	Offset=841-848
+2	frozen	_	Modifier	_	_	3	Mod-Link	_	Offset=853-859
+3	tissue	_	Reagent	_	_	0	_	_	Offset=860-872
+4	desired	_	Modifier	_	_	0	_	_	Offset=880-887
+5	thickness	_	Measure-Type	_	_	0	_	_	Offset=888-897
+6	5-10	_	Size	_	_	3	Measure	_	Offset=909-916
+7	cryotome	_	Device	_	_	0	_	_	Offset=928-936
+
+# sent_id = s9
+# text = Section the frozen tissue block into a desired thickness (typically 5-10 µm) using the cryotome.
+1	Place	_	Action	_	_	0	_	_	Offset=938-943
+2	tissue	_	Reagent	_	_	0	_	_	Offset=948-963
+3	glass	_	Location	_	_	0	_	_	Offset=969-981
+
+# sent_id = s10
+# text = Place the tissue sections onto glass slides suitable for immunohistochemistry (e.g. Superfrost).
+1	Dry	_	Action	_	_	0	_	_	Offset=1035-1038
+2	tissue	_	Reagent	_	_	0	_	_	Offset=1043-1058
+3	overnight	_	Time	_	_	0	_	_	Offset=1059-1068
+4	room	_	Temperature	_	_	0	_	_	Offset=1072-1088
+
+# sent_id = s11
+# text = Dry the tissue sections overnight at room temperature.
+1	Sections	_	Reagent	_	_	0	_	_	Offset=1090-1098
+2	stored	_	Action	_	_	0	_	_	Offset=1106-1112
+3	sealed	_	Modifier	_	_	4	Mod-Link	_	Offset=1118-1124
+4	slide	_	Location	_	_	0	_	_	Offset=1125-1134
+5	-80°C	_	Temperature	_	_	0	_	_	Offset=1138-1143
+
+# sent_id = s12
+# text = Sections can be stored in a sealed slide box at -80°C for later use.
+1	Pour	_	Action	_	_	0	_	_	Offset=1159-1167
+2	fixative	_	Reagent	_	_	0	_	_	Offset=1172-1180
+3	acetone	_	Reagent	_	_	0	_	_	Offset=1191-1198
+4	evaporate	_	Action	_	_	0	_	_	Offset=1202-1211
+5	tissue	_	Reagent	_	_	0	_	_	Offset=1221-1236
+6	≥	_	Modifier	_	_	7	Mod-Link	_	Offset=1241-1242
+7	20	_	Time	_	_	0	_	_	Offset=1243-1249
+8	room	_	Temperature	_	_	0	_	_	Offset=1253-1269
+
+# sent_id = s13
+# text = Pour off the fixative and allow acetone to evaporate from the tissue sections for ≥ 20 min at room temperature.
+1	Rinse	_	Action	_	_	0	_	_	Offset=1271-1276
+2	slides	_	Location	_	_	0	_	_	Offset=1281-1287
+3	300	_	Amount	_	_	5	Measure	_	Offset=1291-1297
+4	10	_	Concentration	_	_	5	Measure	_	Offset=1301-1306
+5	phosphate	_	Reagent	_	_	0	_	_	Offset=1307-1332
+6	neutral	_	pH	_	_	5	Measure	_	Offset=1344-1354
+7	5	_	Time	_	_	0	_	_	Offset=1359-1364
+
+# sent_id = s14
+# text = Rinse the slides in 300 ml of 10 mM phosphate buffered saline (PBS) at a neutral pH for 5 min (1/2).
+1	Rinse	_	Action	_	_	0	_	_	Offset=1372-1377
+2	slides	_	Location	_	_	0	_	_	Offset=1382-1388
+3	300	_	Amount	_	_	5	Measure	_	Offset=1392-1398
+4	10	_	Concentration	_	_	5	Measure	_	Offset=1402-1407
+5	phosphate	_	Reagent	_	_	0	_	_	Offset=1408-1433
+6	neutral	_	pH	_	_	5	Measure	_	Offset=1445-1455
+7	5	_	Time	_	_	0	_	_	Offset=1460-1465
+
+# sent_id = s15
+# text = Rinse the slides in 300 ml of 10 mM phosphate buffered saline (PBS) at a neutral pH for 5 min (2/2).
+1	Incubate	_	Action	_	_	0	_	_	Offset=1473-1481
+2	slides	_	Location	_	_	0	_	_	Offset=1486-1492
+3	0.3%	_	Concentration	_	_	4	Measure	_	Offset=1496-1500
+4	H2O2	_	Reagent	_	_	0	_	_	Offset=1501-1514
+5	PBS	_	Reagent	_	_	0	_	_	Offset=1518-1521
+6	room	_	Temperature	_	_	0	_	_	Offset=1525-1541
+7	10	_	Time	_	_	0	_	_	Offset=1546-1552
+8	block	_	Action	_	_	0	_	_	Offset=1556-1561
+9	endogenous	_	Method	_	_	0	_	_	Offset=1562-1592
+
+# sent_id = s16
+# text = Incubate the slides in 0.3% H2O2 solution in PBS at room temperature for 10 min to block endogenous peroxidase activity.
+1	Rinse	_	Action	_	_	0	_	_	Offset=1594-1599
+2	slides	_	Location	_	_	0	_	_	Offset=1604-1610
+3	300	_	Amount	_	_	4	Measure	_	Offset=1614-1620
+4	PBS	_	Reagent	_	_	0	_	_	Offset=1621-1624
+5	5	_	Time	_	_	0	_	_	Offset=1629-1634
+
+# sent_id = s17
+# text = Rinse the slides in 300 ml PBS for 5 min (1/2).
+1	Rinse	_	Action	_	_	0	_	_	Offset=1642-1647
+2	slides	_	Location	_	_	0	_	_	Offset=1652-1658
+3	300	_	Amount	_	_	4	Measure	_	Offset=1662-1668
+4	PBS	_	Reagent	_	_	0	_	_	Offset=1669-1672
+5	5	_	Time	_	_	0	_	_	Offset=1677-1682
+
+# sent_id = s18
+# text = Rinse the slides in 300 ml PBS for 5 min (2/2).
+1	Add	_	Action	_	_	0	_	_	Offset=1701-1704
+2	100	_	Amount	_	_	3	Measure	_	Offset=1705-1711
+3	blocking	_	Reagent	_	_	0	_	_	Offset=1712-1727
+4	sections	_	Reagent	_	_	0	_	_	Offset=1774-1782
+5	slides	_	Location	_	_	4	Meronym	_	Offset=1790-1796
+6	incubate	_	Action	_	_	0	_	_	Offset=1801-1809
+7	humidified	_	Modifier	_	_	8	Mod-Link	_	Offset=1815-1825
+8	chamber	_	Location	_	_	0	_	_	Offset=1826-1833
+9	room	_	Temperature	_	_	0	_	_	Offset=1837-1853
+10	1h	_	Time	_	_	0	_	_	Offset=1858-1860
+
+# sent_id = s19
+# text = (optional) Add 100 µl blocking buffer (e.g. 10% fetal bovine serum in PBS) onto the sections of the slides and incubate in a humidified chamber at room temperature for 1h.
+1	Drain	_	Action	_	_	0	_	_	Offset=1862-1871
+2	blocking	_	Reagent	_	_	0	_	_	Offset=1876-1891
+3	slides	_	Location	_	_	0	_	_	Offset=1901-1907
+
+# sent_id = s20
+# text = Drain off the blocking buffer from the slides.
+1	Apply	_	Action	_	_	0	_	_	Offset=1909-1914
+2	100	_	Amount	_	_	5	Measure	_	Offset=1915-1921
+3	appropriately	_	Modifier	_	_	5	Mod-Link	_	Offset=1925-1938
+4	diluted	_	Modifier	_	_	5	Mod-Link	_	Offset=1939-1946
+5	primary	_	Reagent	_	_	0	_	_	Offset=1947-1963
+6	sections	_	Reagent	_	_	0	_	_	Offset=2039-2047
+7	slides	_	Location	_	_	6	Meronym	_	Offset=2055-2061
+8	incubate	_	Action	_	_	0	_	_	Offset=2066-2074
+9	humidified	_	Modifier	_	_	10	Mod-Link	_	Offset=2080-2090
+10	chamber	_	Location	_	_	0	_	_	Offset=2091-2098
+11	1	_	Time	_	_	0	_	_	Offset=2103-2106
+12	room	_	Temperature	_	_	0	_	_	Offset=2110-2126
+13	overnight	_	Time	_	_	11	Or	_	Offset=2130-2139
+14	4°C	_	Temperature	_	_	12	Or	_	Offset=2143-2146
+
+# sent_id = s21
+# text = Apply 100 µl an appropriately diluted primary antibody (in antibody dilution buffer,e.g. 0.5% bovine serum albumin in PBS) to the sections on the slides and incubate in a humidified chamber for 1 h at room temperature or overnight at 4°C.
+1	Rinse	_	Action	_	_	0	_	_	Offset=2148-2153
+2	slides	_	Location	_	_	0	_	_	Offset=2158-2164
+3	300	_	Amount	_	_	4	Measure	_	Offset=2168-2174
+4	PBS	_	Reagent	_	_	0	_	_	Offset=2175-2178
+5	5	_	Time	_	_	0	_	_	Offset=2183-2188
+
+# sent_id = s22
+# text = Rinse the slides in 300 ml PBS for 5 min (1/2).
+1	Rinse	_	Action	_	_	0	_	_	Offset=2196-2201
+2	slides	_	Location	_	_	0	_	_	Offset=2206-2212
+3	300	_	Amount	_	_	4	Measure	_	Offset=2216-2222
+4	PBS	_	Reagent	_	_	0	_	_	Offset=2223-2226
+5	5	_	Time	_	_	0	_	_	Offset=2231-2236
+
+# sent_id = s23
+# text = Rinse the slides in 300 ml PBS for 5 min (2/2).
+1	Apply	_	Action	_	_	0	_	_	Offset=2244-2249
+2	100	_	Amount	_	_	6	Measure	_	Offset=2250-2256
+3	appropriately	_	Modifier	_	_	6	Mod-Link	_	Offset=2260-2273
+4	diluted	_	Modifier	_	_	6	Mod-Link	_	Offset=2274-2281
+5	biotinylated	_	Modifier	_	_	6	Mod-Link	_	Offset=2282-2294
+6	secondary	_	Reagent	_	_	0	_	_	Offset=2295-2313
+7	sections	_	Reagent	_	_	0	_	_	Offset=2357-2365
+8	slides	_	Location	_	_	7	Meronym	_	Offset=2373-2379
+9	incubate	_	Action	_	_	0	_	_	Offset=2384-2392
+10	humidified	_	Modifier	_	_	11	Mod-Link	_	Offset=2398-2408
+11	chamberat	_	Location	_	_	0	_	_	Offset=2409-2418
+12	room	_	Temperature	_	_	0	_	_	Offset=2419-2435
+13	30	_	Time	_	_	0	_	_	Offset=2440-2446
+
+# sent_id = s24
+# text = Apply 100 µl an appropriately diluted biotinylated secondary antibody (using the antibodydilution buffer) to the sections on the slides and incubate in a humidified chamberat room temperature for 30 min.
+1	Rinse	_	Action	_	_	0	_	_	Offset=2448-2453
+2	slides	_	Location	_	_	0	_	_	Offset=2458-2464
+3	300	_	Amount	_	_	4	Measure	_	Offset=2468-2474
+4	PBS	_	Reagent	_	_	0	_	_	Offset=2475-2478
+5	5	_	Time	_	_	0	_	_	Offset=2483-2488
+
+# sent_id = s25
+# text = Rinse the slides in 300 ml PBS for 5 min (1/2).
+1	Rinse	_	Action	_	_	0	_	_	Offset=2496-2501
+2	slides	_	Location	_	_	0	_	_	Offset=2506-2512
+3	300	_	Amount	_	_	4	Measure	_	Offset=2516-2522
+4	PBS	_	Reagent	_	_	0	_	_	Offset=2523-2526
+5	5	_	Time	_	_	0	_	_	Offset=2531-2536
+
+# sent_id = s26
+# text = Rinse the slides in 300 ml PBS for 5 min (2/2).
+1	Rinse	_	Action	_	_	0	_	_	Offset=2544-2549
+2	slides	_	Location	_	_	0	_	_	Offset=2554-2560
+3	300	_	Amount	_	_	4	Measure	_	Offset=2564-2570
+4	PBS	_	Reagent	_	_	0	_	_	Offset=2571-2574
+5	5	_	Time	_	_	0	_	_	Offset=2579-2584
+
+# sent_id = s27
+# text = Rinse the slides in 300 ml PBS for 5 min (1/2).
+1	Rinse	_	Action	_	_	0	_	_	Offset=2592-2597
+2	slides	_	Location	_	_	0	_	_	Offset=2602-2608
+3	300	_	Amount	_	_	4	Measure	_	Offset=2612-2618
+4	PBS	_	Reagent	_	_	0	_	_	Offset=2619-2622
+5	5	_	Time	_	_	0	_	_	Offset=2627-2632
+
+# sent_id = s28
+# text = Rinse the slides in 300 ml PBS for 5 min (2/2).
+1	Apply	_	Action	_	_	0	_	_	Offset=2640-2645
+2	100	_	Amount	_	_	3	Measure	_	Offset=2646-2652
+3	DAB	_	Reagent	_	_	0	_	_	Offset=2653-2675
+4	sections	_	Reagent	_	_	0	_	_	Offset=2745-2753
+5	slides	_	Location	_	_	4	Meronym	_	Offset=2761-2767
+6	antibody	_	Reagent	_	_	0	_	_	Offset=2795-2812
+
+# sent_id = s29
+# text = Apply 100 µl DAB substrate solution (freshly made just before use: 0.05% DAB - 0.015%H2O2 in PBS) to the sections on the slides to reveal the color of the antibody staining.
+1	color	_	Action	_	_	0	_	_	Offset=2824-2841
+2	≤	_	Modifier	_	_	3	Mod-Link	_	Offset=2846-2847
+3	5	_	Time	_	_	0	_	_	Offset=2848-2853
+4	desired	_	Modifier	_	_	0	_	_	Offset=2864-2871
+5	color	_	Measure-Type	_	_	0	_	_	Offset=2872-2887
+
+# sent_id = s30
+# text = Allow the color development for ≤ 5 min until the desired color intensity is reached.
+1	Wash	_	Action	_	_	0	_	_	Offset=2900-2904
+2	slides	_	Location	_	_	0	_	_	Offset=2905-2911
+3	300	_	Amount	_	_	4	Measure	_	Offset=2915-2921
+4	PBS	_	Reagent	_	_	0	_	_	Offset=2922-2925
+5	5	_	Time	_	_	0	_	_	Offset=2930-2935
+
+# sent_id = s31
+# text = Wash slides in 300 ml PBS for 5 min (1/2).
+1	Wash	_	Action	_	_	0	_	_	Offset=2943-2947
+2	slides	_	Location	_	_	0	_	_	Offset=2948-2954
+3	300	_	Amount	_	_	4	Measure	_	Offset=2958-2964
+4	PBS	_	Reagent	_	_	0	_	_	Offset=2965-2968
+5	5	_	Time	_	_	0	_	_	Offset=2973-2978
+
+# sent_id = s32
+# text = Wash slides in 300 ml PBS for 5 min (2/2).
+1	Counterstain	_	Action	_	_	0	_	_	Offset=2997-3009
+2	slides	_	Location	_	_	0	_	_	Offset=3010-3016
+3	immersing	_	Action	_	_	0	_	_	Offset=3020-3029
+4	sides	_	Location	_	_	0	_	_	Offset=3030-3035
+5	Hematoxylin	_	Reagent	_	_	0	_	_	Offset=3039-3050
+6	1-2	_	Time	_	_	0	_	_	Offset=3081-3088
+
+# sent_id = s33
+# text = (optional) Counterstain slides by immersing sides in Hematoxylin (e.g. Gill’s Hematoxylin) for 1-2 min.
+1	Rinse	_	Action	_	_	0	_	_	Offset=3090-3095
+2	slides	_	Location	_	_	0	_	_	Offset=3100-3106
+3	running	_	Modifier	_	_	4	Mod-Link	_	Offset=3110-3117
+4	tap	_	Reagent	_	_	0	_	_	Offset=3118-3127
+5	≥	_	Modifier	_	_	6	Mod-Link	_	Offset=3132-3133
+6	15	_	Time	_	_	0	_	_	Offset=3134-3140
+
+# sent_id = s34
+# text = Rinse the slides in running tap water for ≥ 15 min.
+1	Dehydrate	_	Action	_	_	0	_	_	Offset=3142-3151
+2	tissue	_	Location	_	_	0	_	_	Offset=3156-3169
+3	95%	_	Concentration	_	_	4	Measure	_	Offset=3176-3179
+4	alcohol	_	Reagent	_	_	0	_	_	Offset=3180-3194
+
+# sent_id = s35
+# text = Dehydrate the tissue slides with  95% alcohol change (1/4).
+1	Dehydrate	_	Action	_	_	0	_	_	Offset=3202-3211
+2	tissue	_	Location	_	_	0	_	_	Offset=3216-3229
+3	95%	_	Concentration	_	_	4	Measure	_	Offset=3235-3238
+4	alcohol	_	Reagent	_	_	0	_	_	Offset=3239-3253
+
+# sent_id = s36
+# text = Dehydrate the tissue slides with 95% alcohol change (2/4).
+1	Dehydrate	_	Action	_	_	0	_	_	Offset=3261-3270
+2	tissue	_	Location	_	_	0	_	_	Offset=3275-3288
+3	100%	_	Concentration	_	_	4	Measure	_	Offset=3294-3298
+4	alcohol	_	Reagent	_	_	0	_	_	Offset=3299-3313
+
+# sent_id = s37
+# text = Dehydrate the tissue slides with 100% alcohol change (3/4).
+1	Dehydrate	_	Action	_	_	0	_	_	Offset=3321-3330
+2	tissue	_	Location	_	_	0	_	_	Offset=3335-3348
+3	100%	_	Concentration	_	_	4	Measure	_	Offset=3354-3358
+4	alcohol	_	Reagent	_	_	0	_	_	Offset=3359-3373
+
+# sent_id = s38
+# text = Dehydrate the tissue slides with 100% alcohol change (4/4).
+1	Add	_	Action	_	_	0	_	_	Offset=3381-3384
+2	100	_	Amount	_	_	4	Measure	_	Offset=3385-3391
+3	pre-diluted	_	Modifier	_	_	4	Mod-Link	_	Offset=3392-3403
+4	Sav-HRP	_	Reagent	_	_	0	_	_	Offset=3404-3422
+5	sections	_	Reagent	_	_	0	_	_	Offset=3467-3475
+6	slides	_	Location	_	_	5	Meronym	_	Offset=3483-3489
+7	incubate	_	Action	_	_	0	_	_	Offset=3494-3502
+8	humidified	_	Modifier	_	_	9	Mod-Link	_	Offset=3508-3518
+9	chamber	_	Location	_	_	0	_	_	Offset=3519-3526
+10	room	_	Temperature	_	_	0	_	_	Offset=3530-3546
+11	30	_	Time	_	_	0	_	_	Offset=3551-3557
+
+# sent_id = s39
+# text = Add 100 µl pre-diluted Sav-HRP conjugates (using the antibody dilution buffer) to the sections on the slides and incubate in a humidified chamber at room temperature for 30 min (keep protected from light).
+1	Clear	_	Action	_	_	0	_	_	Offset=3587-3592
+2	tissue	_	Location	_	_	0	_	_	Offset=3597-3610
+3	xylene	_	Reagent	_	_	0	_	_	Offset=3626-3632
+4	coverslip	_	Action	_	_	0	_	_	Offset=3637-3646
+5	mounting	_	Reagent	_	_	0	_	_	Offset=3653-3670
+
+# sent_id = s40
+# text = Clear the tissue slides in a change of xylene and coverslip using mounting solution (e.g. Permount).
+1	Clear	_	Action	_	_	0	_	_	Offset=3694-3699
+2	tissue	_	Location	_	_	0	_	_	Offset=3704-3717
+3	xylene	_	Reagent	_	_	0	_	_	Offset=3733-3739
+4	coverslip	_	Action	_	_	0	_	_	Offset=3744-3753
+5	mounting	_	Reagent	_	_	0	_	_	Offset=3760-3777
+
+# sent_id = s41
+# text = [1/3] Clear the tissue slides in a change of xylene and coverslip using mounting solution (e.g. Permount).
+1	Clear	_	Action	_	_	0	_	_	Offset=3801-3806
+2	tissue	_	Location	_	_	0	_	_	Offset=3811-3824
+3	xylene	_	Reagent	_	_	0	_	_	Offset=3840-3846
+4	coverslip	_	Action	_	_	0	_	_	Offset=3851-3860
+5	mounting	_	Reagent	_	_	0	_	_	Offset=3867-3884
+

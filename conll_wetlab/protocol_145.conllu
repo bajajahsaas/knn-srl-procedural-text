@@ -1,0 +1,23 @@
+# sent_id = s1
+# text = PNGase F Protocol, Non-Denaturing Conditions
+1	Add	_	Action	_	_	0	_	_	Offset=45-48
+2	2-5	_	Amount	_	_	3	Measure	_	Offset=49-55
+3	PNGase	_	Reagent	_	_	0	_	_	Offset=56-64
+
+# sent_id = s2
+# text = Add 2-5 µl PNGase F.
+1	Mix	_	Action	_	_	0	_	_	Offset=66-69
+2	gently	_	Modifier	_	_	0	_	_	Offset=70-76
+
+# sent_id = s3
+# text = Mix gently.
+1	Incubate	_	Action	_	_	0	_	_	Offset=78-86
+2	reaction	_	Reagent	_	_	0	_	_	Offset=87-95
+3	37°C	_	Temperature	_	_	0	_	_	Offset=99-103
+4	4	_	Time	_	_	0	_	_	Offset=108-120
+
+# sent_id = s4
+# text = Incubate reaction at 37°C for 4 - 24 hours.
+1	Analyze	_	Action	_	_	0	_	_	Offset=122-129
+2	method	_	Method	_	_	0	_	_	Offset=133-149
+

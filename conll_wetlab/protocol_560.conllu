@@ -1,0 +1,47 @@
+# sent_id = s1
+# text = Seydoux lab Cas9 preparation test: Tag gtbp‐1 with eGFP or mCherry using dpy‐10 co‐CRISPR
+1	Prepare	_	Action	_	_	0	_	_	Offset=90-97
+2	repair	_	Reagent	_	_	0	_	_	Offset=102-121
+3	as	_	Method	_	_	0	_	_	Offset=122-182
+4	Repair	_	Method	_	_	0	_	_	Offset=204-229
+
+# sent_id = s2
+# text = Prepare the repair PCR template as indicated in Reagents for gtbp‐1 eGFP and mCherry tagging (see guidelines) and Repair template synthesis.
+1	Make	_	Action	_	_	0	_	_	Offset=231-235
+2	injection	_	Reagent	_	_	0	_	_	Offset=240-253
+3	as	_	Method	_	_	0	_	_	Offset=254-294
+
+# sent_id = s3
+# text = Make the injection mix as indicated in injection mixes, part I.
+1	Use	_	Action	_	_	0	_	_	Offset=295-298
+2	crRNA	_	Reagent	_	_	0	_	_	Offset=303-315
+
+# sent_id = s4
+# text = Use the crRNA gtbp‐1 Ct (#728 in Table S3).
+1	Inject	_	Action	_	_	0	_	_	Offset=339-345
+2	15‐20	_	Numerical	_	_	3	Measure	_	Offset=346-351
+3	young	_	Reagent	_	_	0	_	_	Offset=352-372
+4	recover	_	Action	_	_	0	_	_	Offset=377-384
+5	as	_	Method	_	_	0	_	_	Offset=385-427
+
+# sent_id = s5
+# text = Inject 15‐20 young adult N2 worms and recover as described in Worm recovery and handling.
+1	Pool	_	Action	_	_	0	_	_	Offset=429-433
+2	recovered	_	Reagent	_	_	3	Coreference-Link	_	Offset=438-453
+3	P0s	_	Mention	_	_	0	_	_	Offset=455-458
+4	one	_	Numerical	_	_	5	Measure	_	Offset=463-466
+5	plate	_	Location	_	_	0	_	_	Offset=467-472
+6	incubate	_	Action	_	_	0	_	_	Offset=477-485
+7	22‐23h	_	Time	_	_	0	_	_	Offset=490-496
+8	20	_	Temperature	_	_	0	_	_	Offset=500-505
+
+# sent_id = s6
+# text = Pool the recovered worms (P0s) on one plate and incubate for 22‐23h at 20 °C (day 1).
+1	Clone	_	Action	_	_	0	_	_	Offset=515-520
+2	P0s	_	Reagent	_	_	0	_	_	Offset=525-528
+3	individual	_	Modifier	_	_	4	Mod-Link	_	Offset=532-542
+4	OP50	_	Location	_	_	0	_	_	Offset=543-554
+5	incubate	_	Action	_	_	0	_	_	Offset=559-567
+6	20	_	Temperature	_	_	0	_	_	Offset=571-576
+7	4‐5	_	Time	_	_	0	_	_	Offset=581-589
+

@@ -1,0 +1,133 @@
+# sent_id = s1
+# text = Cloning shRNA Oligos into pLKO.1
+1	Resuspend	_	Action	_	_	0	_	_	Offset=33-42
+2	oligos	_	Reagent	_	_	0	_	_	Offset=43-49
+3	ddH2O	_	Reagent	_	_	0	_	_	Offset=53-58
+4	20	_	Concentration	_	_	0	_	_	Offset=81-86
+
+# sent_id = s2
+# text = Resuspend oligos in ddH2O to a concentration of 20 μM.
+1	Add	_	Action	_	_	0	_	_	Offset=88-91
+2	5ul	_	Amount	_	_	3	Measure	_	Offset=92-95
+3	Forward	_	Reagent	_	_	0	_	_	Offset=96-109
+
+# sent_id = s3
+# text = Add 5ul Forward oligo. 
+1	Add	_	Action	_	_	0	_	_	Offset=112-115
+2	5ul	_	Amount	_	_	3	Measure	_	Offset=116-119
+3	Reverse	_	Reagent	_	_	0	_	_	Offset=120-133
+
+# sent_id = s4
+# text = Add 5ul Reverse oligo. 
+1	Add	_	Action	_	_	0	_	_	Offset=136-139
+2	5	_	Amount	_	_	3	Measure	_	Offset=140-144
+3	10x	_	Reagent	_	_	0	_	_	Offset=145-161
+
+# sent_id = s5
+# text = Add 5 μL	10x NEB buffer 2. 
+1	Add	_	Action	_	_	0	_	_	Offset=164-167
+2	35	_	Amount	_	_	3	Measure	_	Offset=168-173
+3	ddH2O	_	Reagent	_	_	0	_	_	Offset=174-179
+
+# sent_id = s6
+# text = Add 35 μL ddH2O. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=182-190
+2	4	_	Time	_	_	0	_	_	Offset=195-204
+3	95°C	_	Temperature	_	_	0	_	_	Offset=208-212
+4	PCR	_	Device	_	_	0	_	_	Offset=218-229
+
+# sent_id = s7
+# text = Incubate for 4 minutes at 95°C in a PCR machine or in a beaker of boiling water.
+1	Incubate	_	Action	_	_	0	_	_	Offset=263-271
+2	sample	_	Reagent	_	_	0	_	_	Offset=276-282
+3	70°C	_	Temperature	_	_	0	_	_	Offset=286-290
+4	10	_	Time	_	_	0	_	_	Offset=295-305
+5	PCR	_	Device	_	_	0	_	_	Offset=311-322
+
+# sent_id = s8
+# text = Incubate the sample at 70°C for 10 minutes in a PCR machine.
+1	Slowly	_	Modifier	_	_	0	_	_	Offset=324-330
+2	cool	_	Action	_	_	0	_	_	Offset=331-335
+3	room	_	Temperature	_	_	0	_	_	Offset=339-355
+
+# sent_id = s9
+# text = Slowly cool to room temperature over the period of several hours.
+1	Mix	_	Action	_	_	0	_	_	Offset=390-393
+2	6	_	Amount	_	_	3	Measure	_	Offset=395-399
+3	pLKO.1	_	Reagent	_	_	0	_	_	Offset=400-425
+4	5	_	Amount	_	_	5	Measure	_	Offset=458-462
+5	10x	_	Reagent	_	_	0	_	_	Offset=463-479
+6	1	_	Amount	_	_	7	Measure	_	Offset=485-489
+7	AgeI	_	Reagent	_	_	0	_	_	Offset=490-494
+
+# sent_id = s10
+# text = Mix: 6 μg pLKO.1 TRC-cloning vector (maxiprep or miniprep DNA) with 5 μL	10x NEB buffer 1 with 1 μL	AgeI bring to 50 μL	ddH2O. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=518-526
+2	37°C	_	Temperature	_	_	0	_	_	Offset=530-534
+3	2	_	Time	_	_	0	_	_	Offset=539-546
+
+# sent_id = s11
+# text = Incubate at 37°C for 2 hours.
+1	Purify	_	Action	_	_	0	_	_	Offset=548-554
+2	Qiaquick	_	Device	_	_	0	_	_	Offset=560-587
+
+# sent_id = s12
+# text = Purify with Qiaquick gel extraction kit, eluting in 30 μL of ddH2O.
+1	Digest	_	Action	_	_	0	_	_	Offset=616-622
+2	eluate	_	Reagent	_	_	0	_	_	Offset=623-629
+3	EcoRI	_	Reagent	_	_	0	_	_	Offset=635-640
+
+# sent_id = s13
+# text = Digest eluate with EcoRI by mixing: 30 μL pLKO.1 TRC-cloning vector digested with AgeI with 5 μL	10x NEB buffer for EcoRI with 1 μL	EcoRI and 14 μL	ddH2O. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=772-780
+2	37°C	_	Temperature	_	_	0	_	_	Offset=784-788
+3	2	_	Time	_	_	0	_	_	Offset=793-800
+
+# sent_id = s14
+# text = Incubate at 37°C for 2 hours.
+1	Run	_	Action	_	_	0	_	_	Offset=802-805
+2	digested	_	Modifier	_	_	3	Mod-Link	_	Offset=806-814
+3	DNA	_	Reagent	_	_	0	_	_	Offset=815-818
+4	0.8%	_	Generic-Measure	_	_	5	Measure	_	Offset=822-826
+5	low	_	Location	_	_	0	_	_	Offset=827-856
+
+# sent_id = s15
+# text = Run digested DNA on 0.8% low melting point agarose gel until you can distinctly see 2 bands, one 7kb and one 1.9kb.
+1	Cut	_	Action	_	_	0	_	_	Offset=918-925
+2	7kb	_	Generic-Measure	_	_	3	Measure	_	Offset=930-933
+3	band	_	Device	_	_	0	_	_	Offset=934-938
+4	place	_	Action	_	_	0	_	_	Offset=943-948
+5	sterile	_	Modifier	_	_	6	Mod-Link	_	Offset=954-961
+6	microcentrifuge	_	Location	_	_	0	_	_	Offset=962-982
+
+# sent_id = s16
+# text = Cut out the 7kb band and place in a sterile microcentrifuge tube.
+1	Purify	_	Action	_	_	0	_	_	Offset=984-990
+2	DNA	_	Reagent	_	_	0	_	_	Offset=995-998
+3	Qiaquick	_	Device	_	_	0	_	_	Offset=1007-1034
+
+# sent_id = s17
+# text = Purify the DNA using a Qiaquick gel extraction kit.
+1	Elute	_	Action	_	_	0	_	_	Offset=1036-1041
+2	30	_	Amount	_	_	3	Measure	_	Offset=1045-1050
+3	ddH2O	_	Reagent	_	_	0	_	_	Offset=1054-1059
+
+# sent_id = s18
+# text = Elute in 30 μL of ddH2O.
+1	Measure	_	Action	_	_	0	_	_	Offset=1061-1068
+2	DNA	_	Device	_	_	0	_	_	Offset=1073-1090
+
+# sent_id = s19
+# text = Measure the DNA concentration.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1425-1433
+2	16°C	_	Temperature	_	_	0	_	_	Offset=1437-1441
+3	4-20	_	Time	_	_	0	_	_	Offset=1446-1456
+
+# sent_id = s20
+# text = Use your ligation method of choice.
+1	Transform	_	Action	_	_	0	_	_	Offset=1458-1467
+2	2	_	Amount	_	_	3	Measure	_	Offset=1468-1472
+3	ligation	_	Reagent	_	_	0	_	_	Offset=1476-1488
+4	25	_	Amount	_	_	5	Measure	_	Offset=1494-1499
+5	competent	_	Reagent	_	_	0	_	_	Offset=1500-1525
+

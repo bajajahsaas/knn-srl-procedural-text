@@ -1,0 +1,51 @@
+# sent_id = s1
+# text = SMARTseq2 day 1
+1	Wipe	_	Action	_	_	0	_	_	Offset=16-25
+2	bench	_	Location	_	_	0	_	_	Offset=26-31
+3	RNase	_	Reagent	_	_	0	_	_	Offset=37-46
+
+# sent_id = s2
+# text = Wipe down bench with RNase zap or similar. 
+1	Dilute	_	Action	_	_	0	_	_	Offset=60-66
+2	oligo-dT30VN	_	Reagent	_	_	6	Coreference-Link	_	Offset=67-86
+3	adding	_	Action	_	_	0	_	_	Offset=90-96
+4	37µL	_	Amount	_	_	6	Measure	_	Offset=97-101
+5	100µM	_	Concentration	_	_	6	Measure	_	Offset=105-110
+6	primer	_	Mention	_	_	0	_	_	Offset=111-117
+7	63µL	_	Amount	_	_	8	Measure	_	Offset=121-125
+8	nuclease	_	Reagent	_	_	0	_	_	Offset=129-146
+
+# sent_id = s3
+# text = Dilute oligo-dT30VN primer by adding 37µL of 100µM primer to 63µL of nuclease free H20. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=383-391
+2	72º	_	Temperature	_	_	0	_	_	Offset=395-398
+3	3m	_	Time	_	_	0	_	_	Offset=403-405
+4	return	_	Action	_	_	0	_	_	Offset=407-413
+5	ice	_	Location	_	_	0	_	_	Offset=417-420
+
+# sent_id = s4
+# text = Prepare RT mix ReagentStock ConcAmt/1Amt/NFinal ConcNuclease Free H20---0.29  FS Buffer5x2 1xBetaine5M2 1MMgCl21M0.06 6mMTSO100µM0.1 1µMDTT100mM0.5 5mMSuperscript II200U/µL0.5 100URNase OUT40U/µL  10USample---------- (4.3)---------. 
+1	Take	_	Action	_	_	0	_	_	Offset=423-427
+2	4.3µL	_	Amount	_	_	4	Measure	_	Offset=428-433
+3	hybridized	_	Modifier	_	_	4	Mod-Link	_	Offset=437-447
+4	oligo-dT+RNA	_	Reagent	_	_	0	_	_	Offset=448-460
+5	put	_	Action	_	_	0	_	_	Offset=465-468
+6	strip	_	Location	_	_	0	_	_	Offset=472-483
+
+# sent_id = s5
+# text = Incubate at 72º for 3m, return to ice. 
+1	Add	_	Action	_	_	0	_	_	Offset=787-790
+2	15µL	_	Amount	_	_	3	Measure	_	Offset=791-795
+3	PCR	_	Reagent	_	_	0	_	_	Offset=796-810
+4	10µL	_	Amount	_	_	0	_	_	Offset=814-818
+5	RT	_	Temperature	_	_	0	_	_	Offset=819-821
+
+# sent_id = s6
+# text = Take 4.3µL of hybridized oligo-dT+RNA and put in strip tubes.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=993-1002
+2	15.5µL	_	Amount	_	_	3	Measure	_	Offset=1006-1012
+3	EB	_	Reagent	_	_	0	_	_	Offset=1013-1015
+4	measure	_	Action	_	_	0	_	_	Offset=1022-1029
+5	concentrations	_	Measure-Type	_	_	0	_	_	Offset=1030-1044
+6	qubit	_	Device	_	_	0	_	_	Offset=1051-1056
+

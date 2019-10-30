@@ -1,0 +1,87 @@
+# sent_id = s1
+# text = Double SPRI for Second Generation Sequencing
+1	Add	_	Action	_	_	0	_	_	Offset=45-48
+2	65	_	Amount	_	_	3	Measure	_	Offset=49-54
+3	SPRI	_	Reagent	_	_	0	_	_	Offset=55-72
+4	50µl	_	Amount	_	_	5	Measure	_	Offset=76-80
+5	sample	_	Reagent	_	_	0	_	_	Offset=84-90
+
+# sent_id = s2
+# text = Add 65 µl SPRI Ampure beads to 50µl of sample.
+1	Mix	_	Action	_	_	0	_	_	Offset=92-95
+2	incubate	_	Action	_	_	0	_	_	Offset=100-108
+3	20	_	Time	_	_	0	_	_	Offset=113-123
+
+# sent_id = s3
+# text = Mix and incubate for 20 minutes.
+1	Separate	_	Action	_	_	0	_	_	Offset=125-133
+2	magnet	_	Device	_	_	0	_	_	Offset=137-143
+3	6	_	Time	_	_	0	_	_	Offset=145-150
+
+# sent_id = s4
+# text = Separate on magnet (6 min.)
+1	Transfer	_	Action	_	_	0	_	_	Offset=153-161
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=166-177
+3	115	_	Amount	_	_	2	Measure	_	Offset=185-191
+4	new	_	Location	_	_	0	_	_	Offset=200-208
+
+# sent_id = s5
+# text = Transfer all supernatant (about 115 µl) into a new well (off magnet).
+1	Add	_	Action	_	_	0	_	_	Offset=223-226
+2	100	_	Amount	_	_	3	Measure	_	Offset=227-233
+3	SPRI	_	Reagent	_	_	0	_	_	Offset=237-247
+
+# sent_id = s6
+# text = Add 100 µl of SPRI beads.
+1	Mix	_	Action	_	_	0	_	_	Offset=249-252
+2	incubate	_	Action	_	_	0	_	_	Offset=257-265
+3	15	_	Time	_	_	0	_	_	Offset=270-280
+
+# sent_id = s7
+# text = Mix and incubate for 15 minutes.
+1	Separate	_	Action	_	_	0	_	_	Offset=282-290
+2	magnet	_	Device	_	_	0	_	_	Offset=294-300
+3	6min	_	Time	_	_	0	_	_	Offset=302-306
+4	discard	_	Action	_	_	0	_	_	Offset=309-316
+5	supernatant	_	Reagent	_	_	0	_	_	Offset=317-328
+
+# sent_id = s8
+# text = Separate on magnet (6min), discard supernatant.
+1	Wash	_	Action	_	_	0	_	_	Offset=330-334
+2	beads	_	Reagent	_	_	0	_	_	Offset=335-340
+3	60	_	Amount	_	_	5	Measure	_	Offset=346-351
+4	70%	_	Concentration	_	_	5	Measure	_	Offset=355-358
+5	EtOH	_	Reagent	_	_	0	_	_	Offset=359-363
+
+# sent_id = s9
+# text = Wash beads with 60 µl of 70% EtOH.
+1	378	_	Action	_	_	0	_	_	Offset=365-369;375
+2	well	_	Modifier	_	_	0	_	_	Offset=370-374
+3	magnet	_	Device	_	_	0	_	_	Offset=379-385
+
+# sent_id = s10
+# text = Move well off magnet.
+1	Dry	_	Action	_	_	0	_	_	Offset=387-390
+2	beads	_	Reagent	_	_	0	_	_	Offset=391-396
+3	~10min	_	Time	_	_	0	_	_	Offset=406-412
+
+# sent_id = s11
+# text = Dry beads of EtOH (~10min).
+1	Add	_	Action	_	_	0	_	_	Offset=415-418
+2	40	_	Amount	_	_	3	Measure	_	Offset=419-424
+3	EB	_	Reagent	_	_	0	_	_	Offset=425-427
+
+# sent_id = s12
+# text = Add 40 µl EB.
+1	Mix	_	Action	_	_	0	_	_	Offset=429-432
+2	incubate	_	Action	_	_	0	_	_	Offset=437-445
+3	3	_	Time	_	_	0	_	_	Offset=450-459
+
+# sent_id = s13
+# text = Mix and incubate for 3 minutes.
+1	Separate	_	Action	_	_	0	_	_	Offset=461-469
+2	magnet	_	Device	_	_	0	_	_	Offset=473-479
+3	transfer	_	Action	_	_	0	_	_	Offset=484-492
+4	eluted	_	Reagent	_	_	0	_	_	Offset=493-507
+5	destination	_	Location	_	_	0	_	_	Offset=513-530
+

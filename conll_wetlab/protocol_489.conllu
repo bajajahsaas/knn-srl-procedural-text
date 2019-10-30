@@ -1,0 +1,377 @@
+# sent_id = s1
+# text = Bead Beating RNA extraction from 25 mm filter
+1	Turn	_	Action	_	_	0	_	_	Offset=46-53
+2	4°C	_	Temperature	_	_	3	Setting	_	Offset=54-57
+3	centrifuge	_	Device	_	_	0	_	_	Offset=58-68
+
+# sent_id = s2
+# text = Turn on 4°C centrifuge. 
+1	Thaw	_	Action	_	_	0	_	_	Offset=71-75
+2	internal	_	Reagent	_	_	0	_	_	Offset=76-94
+3	ice	_	Location	_	_	0	_	_	Offset=98-101
+
+# sent_id = s3
+# text = Thaw internal standards on ice. 
+1	Set	_	Action	_	_	0	_	_	Offset=104-110
+2	2.0	_	Amount	_	_	3	Measure	_	Offset=111-117
+3	tube	_	Location	_	_	0	_	_	Offset=118-130
+4	Mo	_	Device	_	_	0	_	_	Offset=134-155
+
+# sent_id = s4
+# text = Set up 2.0 ml tube adaptor on Mo Bio Vortex Genie 2.
+1	each	_	Modifier	_	_	2	Mod-Link	_	Offset=161-165
+2	sample	_	Reagent	_	_	0	_	_	Offset=166-172
+3	prepare	_	Action	_	_	0	_	_	Offset=174-181
+4	2.0	_	Amount	_	_	5	Measure	_	Offset=184-190
+5	tube	_	Location	_	_	0	_	_	Offset=191-195
+6	following	_	Reagent	_	_	0	_	_	Offset=205-229
+7	200	_	Amount	_	_	9	Measure	_	Offset=231-237
+8	0.1	_	Size	_	_	9	Measure	_	Offset=238-244
+9	zirconium	_	Reagent	_	_	0	_	_	Offset=245-260
+10	100	_	Amount	_	_	12	Measure	_	Offset=262-268
+11	0.4-0.6	_	Size	_	_	12	Measure	_	Offset=269-279
+12	glass	_	Reagent	_	_	0	_	_	Offset=280-291
+13	100	_	Amount	_	_	15	Measure	_	Offset=293-299
+14	0.5	_	Size	_	_	15	Measure	_	Offset=300-306
+15	zirconium	_	Reagent	_	_	0	_	_	Offset=307-322
+
+# sent_id = s5
+# text = For each sample, prepare a 2.0 ml tube with the following 3-bead mixture: 200 μl 0.1 mm zirconium beads, 100 μl 0.4-0.6 mm glass beads, 100 μl 0.5 mm zirconium beads. 
+1	Add	_	Action	_	_	0	_	_	Offset=325-328
+2	Ambion	_	Reagent	_	_	0	_	_	Offset=329-357
+3	each	_	Modifier	_	_	4	Mod-Link	_	Offset=361-365
+4	tube	_	Location	_	_	0	_	_	Offset=366-370
+
+# sent_id = s6
+# text = Add Ambion Denaturation Solution to each tube. 
+1	each	_	Modifier	_	_	2	Mod-Link	_	Offset=376-380
+2	bead	_	Location	_	_	0	_	_	Offset=381-390
+3	add	_	Action	_	_	0	_	_	Offset=392-395
+4	internal	_	Reagent	_	_	0	_	_	Offset=396-414
+5	reach	_	Action	_	_	0	_	_	Offset=418-423
+6	~0.5%	_	Generic-Measure	_	_	8	Measure	_	Offset=424-429
+7	expected	_	Modifier	_	_	8	Mod-Link	_	Offset=433-441
+8	RNA	_	Reagent	_	_	0	_	_	Offset=442-445
+9	yield	_	Measure-Type	_	_	6	Of-Type	_	Offset=446-451
+
+# sent_id = s7
+# text = To each bead tube, add internal standards to reach ~0.5% of expected RNA yield. 
+1	Place	_	Action	_	_	0	_	_	Offset=454-459
+2	one	_	Numerical	_	_	4	Measure	_	Offset=460-463
+3	25	_	Size	_	_	4	Measure	_	Offset=464-469
+4	sample	_	Device	_	_	0	_	_	Offset=470-483
+5	each	_	Modifier	_	_	6	Mod-Link	_	Offset=489-493
+6	bead	_	Location	_	_	0	_	_	Offset=494-503
+7	RNase-free	_	Modifier	_	_	8	Mod-Link	_	Offset=510-520
+8	forceps	_	Device	_	_	0	_	_	Offset=521-528
+
+# sent_id = s8
+# text = Place one 25 mm sample filter into each bead tube using RNase-free forceps. 
+1	Place	_	Action	_	_	0	_	_	Offset=531-536
+2	sample	_	Location	_	_	0	_	_	Offset=537-549
+3	vortex	_	Device	_	_	0	_	_	Offset=553-567
+4	beat	_	Action	_	_	0	_	_	Offset=572-576
+5	5	_	Time	_	_	0	_	_	Offset=581-586
+
+# sent_id = s9
+# text = Place sample tubes on vortex adaptor and beat for 5 min. 
+1	Switch	_	Action	_	_	0	_	_	Offset=589-595
+2	tube	_	Location	_	_	0	_	_	Offset=596-610
+3	beat	_	Action	_	_	0	_	_	Offset=615-619
+4	another	_	Modifier	_	_	5	Mod-Link	_	Offset=620-627
+5	5	_	Time	_	_	0	_	_	Offset=628-633
+
+# sent_id = s10
+# text = Switch tube positions and beat another 5 min.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=635-645
+2	sample	_	Reagent	_	_	0	_	_	Offset=646-658
+3	1	_	Time	_	_	0	_	_	Offset=663-668
+4	5000	_	Speed	_	_	0	_	_	Offset=672-680
+5	4°C	_	Time	_	_	0	_	_	Offset=684-687
+
+# sent_id = s11
+# text = Centrifuge sample tubes for 1 min at 5000 rpm at 4°C. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=690-698
+2	as	_	Modifier	_	_	3	Mod-Link	_	Offset=699-706
+3	RNA	_	Reagent	_	_	0	_	_	Offset=714-724
+4	new	_	Modifier	_	_	6	Mod-Link	_	Offset=742-745
+5	1.5	_	Amount	_	_	6	Measure	_	Offset=746-752
+6	centrifuge	_	Location	_	_	0	_	_	Offset=753-768
+
+# sent_id = s12
+# text = Transfer as much of the RNA lysate as possible to a new 1.5 ml centrifuge tube (Can carryover some beads). 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=798-808
+2	RNA	_	Location	_	_	0	_	_	Offset=809-818
+3	5	_	Time	_	_	0	_	_	Offset=823-828
+4	5000	_	Speed	_	_	0	_	_	Offset=832-840
+5	4°C	_	Temperature	_	_	0	_	_	Offset=844-847
+
+# sent_id = s13
+# text = Centrifuge RNA tubes for 5 min at 5000 rpm at 4°C. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=850-858
+2	lysate	_	Reagent	_	_	0	_	_	Offset=859-865
+3	new	_	Modifier	_	_	5	Mod-Link	_	Offset=869-872
+4	2.0	_	Amount	_	_	5	Measure	_	Offset=873-879
+5	tube	_	Location	_	_	0	_	_	Offset=880-884
+
+# sent_id = s14
+# text = Transfer lysate to new 2.0 ml tube (Do not carry over any beads).
+1	Add	_	Action	_	_	0	_	_	Offset=916-919
+2	1	_	Amount	_	_	4	Measure	_	Offset=920-928
+3	100%	_	Concentration	_	_	4	Measure	_	Offset=932-936
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=937-944
+5	lysate	_	Reagent	_	_	0	_	_	Offset=952-958
+
+# sent_id = s15
+# text = Add 1 volume of 100% ethanol to the lysate. 
+1	Draw	_	Action	_	_	0	_	_	Offset=961-965
+2	RNA	_	Reagent	_	_	8	Coreference-Link	_	Offset=970-980
+3	3.0	_	Amount	_	_	4	Setting	_	Offset=991-997
+4	syringe	_	Device	_	_	0	_	_	Offset=998-1005
+5	21g1	_	Generic-Measure	_	_	6	Setting	_	Offset=1013-1017
+6	gauge	_	Device	_	_	0	_	_	Offset=1018-1030
+7	pass	_	Action	_	_	0	_	_	Offset=1035-1039
+8	it	_	Mention	_	_	0	_	_	Offset=1040-1042
+9	back	_	Modifier	_	_	0	_	_	Offset=1043-1051
+10	8	_	Numerical	_	_	0	_	_	Offset=1052-1053
+11	shear	_	Action	_	_	0	_	_	Offset=1063-1068
+12	RNA	_	Reagent	_	_	0	_	_	Offset=1069-1072
+
+# sent_id = s16
+# text = Draw the RNA lysate up into a 3.0 ml syringe with a 21g1 gauge needle and pass it back out 8 times to shear RNA. 
+1	Apply	_	Action	_	_	0	_	_	Offset=1075-1080
+2	700	_	Amount	_	_	3	Measure	_	Offset=1081-1087
+3	RNA	_	Reagent	_	_	0	_	_	Offset=1091-1101
+4	RNeasy	_	Location	_	_	0	_	_	Offset=1105-1123
+
+# sent_id = s17
+# text = Apply 700 μL of RNA lysate to RNeasy mini column. 
+1	Close	_	Action	_	_	0	_	_	Offset=1126-1131
+2	tube	_	Location	_	_	0	_	_	Offset=1132-1136
+3	gently	_	Modifier	_	_	0	_	_	Offset=1137-1143
+4	centrifuge	_	Action	_	_	0	_	_	Offset=1148-1158
+5	15	_	Time	_	_	0	_	_	Offset=1159-1165
+6	13000	_	Speed	_	_	0	_	_	Offset=1169-1178
+
+# sent_id = s18
+# text = Close tube gently and centrifuge 15 sec at 13000 rpm. 
+1	Discard	_	Action	_	_	0	_	_	Offset=1181-1188
+2	flow-through	_	Reagent	_	_	0	_	_	Offset=1189-1201
+
+# sent_id = s19
+# text = Discard flow-through.
+1	Add	_	Action	_	_	0	_	_	Offset=1270-1273
+2	700	_	Amount	_	_	3	Measure	_	Offset=1274-1280
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=1281-1291
+4	RNeasy	_	Location	_	_	0	_	_	Offset=1295-1318
+
+# sent_id = s20
+# text = Repeat steps 16-18 until entire sample has been applied to column.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1320-1330
+2	15	_	Time	_	_	0	_	_	Offset=1335-1341
+3	13000	_	Speed	_	_	0	_	_	Offset=1345-1354
+
+# sent_id = s21
+# text = Add 700 μl Buffer RW1 to RNeasy Mini spin column.
+1	Discard	_	Action	_	_	0	_	_	Offset=1356-1363
+2	flow-through	_	Reagent	_	_	0	_	_	Offset=1368-1380
+
+# sent_id = s22
+# text = Centrifuge for 15 sec at 13000 rpm.
+1	Add	_	Action	_	_	0	_	_	Offset=1382-1385
+2	500	_	Amount	_	_	3	Measure	_	Offset=1386-1392
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=1393-1403
+4	RNeasy	_	Location	_	_	0	_	_	Offset=1407-1425
+
+# sent_id = s23
+# text = Discard the flow-through.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1427-1437
+2	15	_	Time	_	_	0	_	_	Offset=1442-1448
+3	13000	_	Speed	_	_	0	_	_	Offset=1452-1462
+
+# sent_id = s24
+# text = Add 500 μl Buffer RPE to RNeasy spin column.
+1	Discard	_	Action	_	_	0	_	_	Offset=1463-1470
+2	flow-through	_	Reagent	_	_	0	_	_	Offset=1471-1483
+
+# sent_id = s25
+# text = Centrifuge for 15 sec at 13000 rpm.
+1	Add	_	Action	_	_	0	_	_	Offset=1485-1488
+2	500	_	Amount	_	_	3	Measure	_	Offset=1489-1495
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=1496-1506
+4	RNeasy	_	Location	_	_	0	_	_	Offset=1510-1528
+
+# sent_id = s26
+# text = Discard flow-through.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1530-1540
+2	2	_	Time	_	_	0	_	_	Offset=1545-1550
+3	13000	_	Speed	_	_	0	_	_	Offset=1554-1563
+
+# sent_id = s27
+# text = Add 500 μl Buffer RPE to RNeasy spin column.
+1	Place	_	Action	_	_	0	_	_	Offset=1566-1571
+2	column	_	Location	_	_	0	_	_	Offset=1572-1578
+3	new	_	Modifier	_	_	5	Mod-Link	_	Offset=1582-1585
+4	2.0	_	Amount	_	_	5	Measure	_	Offset=1586-1592
+5	collection	_	Location	_	_	0	_	_	Offset=1593-1608
+
+# sent_id = s28
+# text = Centrifuge for 2 min at 13000 rpm. 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1610-1620
+2	1	_	Time	_	_	0	_	_	Offset=1625-1630
+3	13000	_	Speed	_	_	0	_	_	Offset=1634-1643
+
+# sent_id = s29
+# text = Place column in new 2.0 ml collection tube.
+1	Place	_	Action	_	_	0	_	_	Offset=1646-1651
+2	column	_	Location	_	_	0	_	_	Offset=1652-1658
+3	new	_	Modifier	_	_	6	Mod-Link	_	Offset=1664-1667
+4	1.5	_	Amount	_	_	6	Measure	_	Offset=1668-1674
+5	sterile	_	Modifier	_	_	6	Mod-Link	_	Offset=1675-1682
+6	tube	_	Location	_	_	0	_	_	Offset=1683-1687
+
+# sent_id = s30
+# text = Centrifuge for 1 min at 13000 rpm. 
+1	Add	_	Action	_	_	0	_	_	Offset=1690-1693
+2	35	_	Amount	_	_	3	Measure	_	Offset=1694-1699
+3	RNase-free	_	Reagent	_	_	0	_	_	Offset=1700-1716
+4	directly	_	Modifier	_	_	0	_	_	Offset=1717-1725
+5	filter	_	Location	_	_	0	_	_	Offset=1731-1737
+6	close	_	Action	_	_	0	_	_	Offset=1742-1747
+7	lid	_	Seal	_	_	0	_	_	Offset=1752-1755
+
+# sent_id = s31
+# text = Place column in a new 1.5 ml sterile tube. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=1757-1765
+2	tube	_	Location	_	_	0	_	_	Offset=1766-1770
+3	1	_	Time	_	_	0	_	_	Offset=1775-1780
+4	room	_	Temperature	_	_	0	_	_	Offset=1784-1800
+
+# sent_id = s32
+# text = Add 35 μl RNase-free water directly onto filter and close the lid.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1803-1813
+2	1	_	Time	_	_	0	_	_	Offset=1818-1823
+3	13000	_	Speed	_	_	0	_	_	Offset=1827-1836
+
+# sent_id = s33
+# text = Incubate tube for 1 min at room temperature. 
+1	Add	_	Action	_	_	0	_	_	Offset=1838-1841
+2	35	_	Amount	_	_	4	Measure	_	Offset=1850-1855
+3	RNase-free	_	Modifier	_	_	4	Mod-Link	_	Offset=1856-1866
+4	water	_	Reagent	_	_	0	_	_	Offset=1867-1872
+5	same	_	Modifier	_	_	6	Mod-Link	_	Offset=1878-1882
+6	column/tube	_	Location	_	_	0	_	_	Offset=1883-1894
+
+# sent_id = s34
+# text = Centrifuge for 1 min at 13000 rpm.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1897-1905
+2	1	_	Time	_	_	0	_	_	Offset=1910-1915
+3	room	_	Temperature	_	_	0	_	_	Offset=1919-1935
+
+# sent_id = s35
+# text = Add another 35 μl RNase-free water into same column/tube. 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1938-1948
+2	1	_	Time	_	_	0	_	_	Offset=1953-1958
+3	13000	_	Speed	_	_	0	_	_	Offset=1962-1971
+
+# sent_id = s36
+# text = Incubate for 1 min at room temperature. 
+1	Discard	_	Action	_	_	0	_	_	Offset=1974-1981
+2	column	_	Location	_	_	0	_	_	Offset=1982-1988
+3	place	_	Action	_	_	0	_	_	Offset=1993-1998
+4	tube	_	Location	_	_	5	Meronym	_	Offset=1999-2003
+5	RNA	_	Reagent	_	_	0	_	_	Offset=2009-2012
+6	ice	_	Location	_	_	0	_	_	Offset=2016-2019
+
+# sent_id = s37
+# text = Centrifuge for 1 min at 13000 rpm. 
+1	Quantify	_	Action	_	_	0	_	_	Offset=2022-2030
+2	extracted	_	Modifier	_	_	3	Mod-Link	_	Offset=2031-2040
+3	RNA	_	Reagent	_	_	0	_	_	Offset=2041-2044
+4	Nanodrop	_	Reagent	_	_	0	_	_	Offset=2050-2058
+5	2	_	Amount	_	_	4	Measure	_	Offset=2060-2064
+
+# sent_id = s38
+# text = Discard column and place tube with RNA on ice. 
+1	Mix	_	Action	_	_	0	_	_	Offset=2068-2071
+2	following	_	Reagent	_	_	0	_	_	Offset=2076-2085
+3	1.5	_	Amount	_	_	4	Measure	_	Offset=2091-2097
+4	tube	_	Location	_	_	0	_	_	Offset=2098-2102
+
+# sent_id = s39
+# text = Quantify extracted RNA with Nanodrop (2 μl). 
+1	Incubate	_	Action	_	_	0	_	_	Offset=2205-2213
+2	20	_	Time	_	_	0	_	_	Offset=2218-2224
+3	37	_	Temperature	_	_	0	_	_	Offset=2228-2234
+
+# sent_id = s40
+# text = Mix the following in a 1.5 ml tube:
+1	Add	_	Action	_	_	0	_	_	Offset=2236-2239
+2	3	_	Amount	_	_	4	Measure	_	Offset=2240-2244
+3	more	_	Modifier	_	_	4	Mod-Link	_	Offset=2245-2249
+4	Turbo	_	Reagent	_	_	0	_	_	Offset=2250-2261
+5	sample	_	Reagent	_	_	0	_	_	Offset=2265-2271
+
+# sent_id = s41
+# text = componentamountextracted sample50 μlRNase-free water40 μlDNase reaction buffer10 μlTurbo DNase3 μl. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=2274-2282
+2	additional	_	Modifier	_	_	3	Mod-Link	_	Offset=2286-2296
+3	20	_	Time	_	_	0	_	_	Offset=2297-2303
+4	37	_	Temperature	_	_	0	_	_	Offset=2307-2312
+
+# sent_id = s42
+# text = Incubate for 20 min at 37 °C. 
+1	Add	_	Action	_	_	0	_	_	Offset=2315-2318
+2	20	_	Amount	_	_	3	Measure	_	Offset=2319-2324
+3	inactivation	_	Reagent	_	_	0	_	_	Offset=2325-2346
+4	sample	_	Reagent	_	_	0	_	_	Offset=2350-2356
+
+# sent_id = s43
+# text = Add 3 μl more Turbo DNase to sample. 
+1	Vortex	_	Action	_	_	0	_	_	Offset=2393-2399
+2	on	_	Method	_	_	0	_	_	Offset=2400-2410
+3	~4	_	Time	_	_	0	_	_	Offset=2415-2422
+
+# sent_id = s44
+# text = Incubate an additional 20 min at 37 °C. 
+1	Spin	_	Action	_	_	0	_	_	Offset=2424-2428
+2	1	_	Time	_	_	0	_	_	Offset=2433-2438
+3	13000	_	Speed	_	_	0	_	_	Offset=2442-2451
+
+# sent_id = s45
+# text = Add 20 μl inactivation solution to sample (make sure solution is well mixed).
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=2454-2463
+2	without	_	Modifier	_	_	0	_	_	Offset=2465-2472
+3	disturbing	_	Action	_	_	0	_	_	Offset=2473-2483
+4	inactivation	_	Reagent	_	_	0	_	_	Offset=2484-2504
+5	remove	_	Action	_	_	0	_	_	Offset=2506-2512
+6	supernatant	_	Reagent	_	_	0	_	_	Offset=2513-2524
+7	~100	_	Amount	_	_	6	Measure	_	Offset=2526-2533
+8	new	_	Modifier	_	_	10	Mod-Link	_	Offset=2542-2545
+9	1.5	_	Amount	_	_	10	Measure	_	Offset=2546-2552
+10	tube	_	Location	_	_	0	_	_	Offset=2553-2557
+11	place	_	Action	_	_	0	_	_	Offset=2562-2567
+12	ice	_	Location	_	_	0	_	_	Offset=2571-2574
+
+# sent_id = s46
+# text = Vortex on and off for ~4 min. 
+1	Quantify	_	Action	_	_	0	_	_	Offset=2577-2585
+2	DNased	_	Reagent	_	_	0	_	_	Offset=2586-2596
+3	Nanodrop	_	Reagent	_	_	0	_	_	Offset=2602-2610
+4	2	_	Amount	_	_	3	Measure	_	Offset=2612-2616
+
+# sent_id = s47
+# text = Spin for 1 min at 13000 rpm. 
+1	Clean	_	Action	_	_	0	_	_	Offset=2629-2634
+2	concentrate	_	Action	_	_	0	_	_	Offset=2639-2650
+3	DNased	_	Reagent	_	_	0	_	_	Offset=2651-2661
+4	Zymo	_	Reagent	_	_	0	_	_	Offset=2668-2676
+5	Clean	_	Action	_	_	0	_	_	Offset=2677-2699
+6	manufacturer	_	Method	_	_	0	_	_	Offset=2713-2734
+
+# sent_id = s48
+# text = Carefully, without disturbing inactivation reagent, remove supernatant (~100 μl) into a new 1.5 ml tube and place on ice. 
+1	Store	_	Action	_	_	0	_	_	Offset=2737-2742
+2	RNA	_	Reagent	_	_	0	_	_	Offset=2743-2746
+3	-80	_	Temperature	_	_	0	_	_	Offset=2750-2756
+

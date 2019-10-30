@@ -1,0 +1,174 @@
+# sent_id = s1
+# text = Recovery of DNA from Low Melting Point Agarose
+1	Low	_	Modifier	_	_	2	Mod-Link	_	Offset=47-64
+2	agarose	_	Reagent	_	_	0	_	_	Offset=65-77
+3	poured	_	Action	_	_	0	_	_	Offset=88-94
+4	set	_	Action	_	_	0	_	_	Offset=110-116
+5	cold	_	Temperature	_	_	0	_	_	Offset=124-133
+6	electrophoresed	_	Action	_	_	0	_	_	Offset=139-154
+7	room	_	Temperature	_	_	0	_	_	Offset=158-174
+
+# sent_id = s2
+# text = Low melting point agarose gels should be poured and allowed to set up in the cold room, but electrophoresed at room temperature.
+1	gels	_	Reagent	_	_	0	_	_	Offset=180-184
+2	stained	_	Action	_	_	0	_	_	Offset=195-202
+3	4°C	_	Temperature	_	_	0	_	_	Offset=206-209
+4	kept	_	Action	_	_	0	_	_	Offset=214-223
+
+# sent_id = s3
+# text = The gels should be stained at 4°C and kept cold until ready to cut out the DNA bands from the gel.
+1	Cut	_	Action	_	_	0	_	_	Offset=275-282
+2	DNA	_	Reagent	_	_	0	_	_	Offset=287-296
+3	gel	_	Reagent	_	_	0	_	_	Offset=306-309
+4	new	_	Modifier	_	_	5	Mod-Link	_	Offset=315-318
+5	razor	_	Device	_	_	0	_	_	Offset=319-331
+
+# sent_id = s4
+# text = Cut out the DNA bands from the gel with new razor blades.
+1	Use	_	Action	_	_	0	_	_	Offset=333-336
+2	new	_	Modifier	_	_	3	Mod-Link	_	Offset=339-342
+3	razor	_	Device	_	_	0	_	_	Offset=343-354
+4	band	_	Reagent	_	_	0	_	_	Offset=364-368
+
+# sent_id = s5
+# text = Use a new razor blade for each band.
+1	Place	_	Action	_	_	0	_	_	Offset=370-375
+2	agarose	_	Reagent	_	_	0	_	_	Offset=380-394
+3	sterile	_	Location	_	_	0	_	_	Offset=400-420
+
+# sent_id = s6
+# text = Place the agarose pieces into sterile capped tubes (the size of the tubes depends on the volume of the agarose involved).
+1	Add	_	Action	_	_	0	_	_	Offset=492-495
+2	1X	_	Concentration	_	_	3	Measure	_	Offset=496-498
+3	TE	_	Reagent	_	_	0	_	_	Offset=499-508
+4	tubes	_	Location	_	_	0	_	_	Offset=516-521
+
+# sent_id = s7
+# text = Add 1X TE buffer to the tubes of agarose (as small a volume as possible, usually about 5X the volume of the gel pieces).
+1	Transfer	_	Action	_	_	0	_	_	Offset=613-621
+2	tubes	_	Location	_	_	0	_	_	Offset=626-631
+3	37°C	_	Temperature	_	_	0	_	_	Offset=635-639
+
+# sent_id = s8
+# text = Transfer the tubes to 37°C.
+1	Add	_	Action	_	_	0	_	_	Offset=641-644
+2	equal	_	Generic-Measure	_	_	3	Measure	_	Offset=648-660
+3	buffer-saturated	_	Reagent	_	_	0	_	_	Offset=664-687
+
+# sent_id = s9
+# text = Add an equal volume of buffer-saturated phenol.
+1	phenol	_	Reagent	_	_	0	_	_	Offset=693-699
+2	warmed	_	Action	_	_	0	_	_	Offset=717-723
+3	37°C	_	Temperature	_	_	0	_	_	Offset=727-731
+
+# sent_id = s10
+# text = The phenol should have been warmed to 37°C.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=733-743
+2	tubes	_	Location	_	_	0	_	_	Offset=748-753
+3	room	_	Temperature	_	_	0	_	_	Offset=757-773
+
+# sent_id = s11
+# text = Centrifuge the tubes at room temperature to separate the phases.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=798-808
+2	10,000	_	Speed	_	_	0	_	_	Offset=812-822
+3	10	_	Time	_	_	0	_	_	Offset=824-830
+4	Sorvall	_	Device	_	_	0	_	_	Offset=838-845
+5	5	_	Time	_	_	3	Or	_	Offset=849-854
+6	microfuge	_	Device	_	_	4	Or	_	Offset=862-871
+
+# sent_id = s12
+# text = Centrifuge at 10,000 rpm, 10 min in the Sorvall or 5 min in the microfuge.
+1	Transfer	_	Action	_	_	0	_	_	Offset=873-881
+2	upper	_	Reagent	_	_	0	_	_	Offset=886-906
+3	clean	_	Location	_	_	0	_	_	Offset=910-921
+
+# sent_id = s13
+# text = Transfer the upper aqueous layers to clean tubes.
+1	Add	_	Action	_	_	0	_	_	Offset=923-926
+2	equal	_	Generic-Measure	_	_	3	Measure	_	Offset=930-942
+3	phenol:CHCl3:Isoamyl	_	Reagent	_	_	0	_	_	Offset=946-974
+4	25:24:1	_	Concentration	_	_	3	Measure	_	Offset=976-983
+5	tubes	_	Location	_	_	0	_	_	Offset=992-997
+
+# sent_id = s14
+# text = Add an equal volume of phenol:CHCl3:Isoamyl alcohol (25:24:1) to the tubes.
+1	Mix	_	Action	_	_	0	_	_	Offset=999-1002
+2	well	_	Modifier	_	_	0	_	_	Offset=1003-1007
+3	centrifuge	_	Action	_	_	0	_	_	Offset=1012-1022
+4	10,000	_	Speed	_	_	0	_	_	Offset=1026-1036
+5	10	_	Time	_	_	0	_	_	Offset=1038-1044
+6	Sorvall	_	Device	_	_	0	_	_	Offset=1052-1059
+7	5	_	Time	_	_	5	Or	_	Offset=1063-1068
+8	microfuge	_	Device	_	_	6	Or	_	Offset=1076-1085
+
+# sent_id = s15
+# text = Mix well and centrifuge at 10,000 rpm, 10 min in the Sorvall or 5 min in the microfuge.
+1	Re-extract	_	Action	_	_	0	_	_	Offset=1087-1097
+2	aqueous	_	Reagent	_	_	0	_	_	Offset=1102-1115
+3	2X	_	Numerical	_	_	0	_	_	Offset=1116-1118
+4	CHCl3:Isoamyl	_	Reagent	_	_	0	_	_	Offset=1124-1145
+5	24:1	_	Concentration	_	_	4	Measure	_	Offset=1147-1151
+6	centrifuge	_	Device	_	_	0	_	_	Offset=1160-1170
+
+# sent_id = s16
+# text = Re-extract the aqueous layer 2X with CHCl3:Isoamyl alcohol (24:1) in the centrifuge as before.
+1	Add	_	Action	_	_	0	_	_	Offset=1182-1185
+2	3	_	Concentration	_	_	3	Measure	_	Offset=1186-1189
+3	Na	_	Reagent	_	_	0	_	_	Offset=1190-1200
+4	precipitate	_	Action	_	_	0	_	_	Offset=1239-1250
+5	DNAs	_	Reagent	_	_	0	_	_	Offset=1255-1259
+6	2X	_	Generic-Measure	_	_	8	Measure	_	Offset=1265-1275
+7	100%	_	Concentration	_	_	8	Measure	_	Offset=1279-1283
+8	EtOH	_	Reagent	_	_	0	_	_	Offset=1284-1288
+9	-20°C	_	Temperature	_	_	0	_	_	Offset=1292-1297
+10	overnight	_	Time	_	_	0	_	_	Offset=1298-1307
+
+# sent_id = s17
+# text = Add 3 M Na acetate to a final concentration of 0.3 M and precipitate the DNAs with 2X volumes of 100% EtOH at -20°C overnight.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1309-1319
+2	tubes	_	Location	_	_	0	_	_	Offset=1324-1329
+
+# sent_id = s18
+# text = Centrifuge the tubes to pellet the DNAs.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1350-1360
+2	Sorvall	_	Device	_	_	0	_	_	Offset=1368-1375
+3	10,000	_	Speed	_	_	0	_	_	Offset=1379-1389
+4	10	_	Time	_	_	0	_	_	Offset=1391-1397
+5	4°C	_	Temperature	_	_	0	_	_	Offset=1399-1402
+6	10-15	_	Time	_	_	4	Or	_	Offset=1406-1415
+7	4°C	_	Temperature	_	_	5	Or	_	Offset=1419-1422
+8	microfuge	_	Device	_	_	2	Or	_	Offset=1430-1439
+
+# sent_id = s19
+# text = Centrifuge in the Sorvall at 10,000 rpm, 10 min, 4°C or 10-15 min at 4°C in the microfuge. 
+1	Wash	_	Action	_	_	0	_	_	Offset=1442-1446
+2	DNAs	_	Reagent	_	_	0	_	_	Offset=1451-1455
+3	1X	_	Numerical	_	_	0	_	_	Offset=1456-1458
+4	70%	_	Concentration	_	_	5	Measure	_	Offset=1464-1467
+5	EtOH	_	Reagent	_	_	0	_	_	Offset=1468-1472
+6	centrifuge	_	Device	_	_	0	_	_	Offset=1480-1490
+7	dry	_	Action	_	_	0	_	_	Offset=1505-1508
+8	DNA	_	Reagent	_	_	0	_	_	Offset=1513-1524
+9	vacuum	_	Device	_	_	0	_	_	Offset=1532-1549
+10	10-15	_	Time	_	_	0	_	_	Offset=1559-1568
+
+# sent_id = s20
+# text = Wash the DNAs 1X with 70% EtOH in the centrifuge as before and dry the DNA pellets in the vacuum desiccator briefly (10-15 min) to remove the EtOH.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1590-1599
+2	DNAs	_	Reagent	_	_	0	_	_	Offset=1604-1608
+3	small	_	Generic-Measure	_	_	5	Measure	_	Offset=1616-1628
+4	1X	_	Concentration	_	_	5	Measure	_	Offset=1632-1634
+5	TE	_	Reagent	_	_	0	_	_	Offset=1635-1644
+
+# sent_id = s21
+# text = Resuspend the DNAs with a small volume of 1X TE buffer.
+1	Heat	_	Action	_	_	0	_	_	Offset=1646-1650
+2	tubes	_	Location	_	_	0	_	_	Offset=1655-1660
+3	65°C	_	Temperature	_	_	0	_	_	Offset=1664-1668
+4	10-15	_	Time	_	_	0	_	_	Offset=1673-1682
+
+# sent_id = s22
+# text = Heat the tubes at 65°C for 10-15 min.
+1	Mix	_	Action	_	_	0	_	_	Offset=1684-1687
+2	well	_	Modifier	_	_	0	_	_	Offset=1688-1692
+

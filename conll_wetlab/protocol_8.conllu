@@ -1,0 +1,414 @@
+# sent_id = s1
+# text = High quality DNA from Fungi for long read sequencing e.g.
+1	lysis	_	Reagent	_	_	0	_	_	Offset=70-82
+2	mixing	_	Action	_	_	0	_	_	Offset=86-92
+3	buffer	_	Reagent	_	_	0	_	_	Offset=93-105
+4	2.5:2.5:1	_	Generic-Measure	_	_	3	Measure	_	Offset=107-116
+5	0.1%	_	Concentration	_	_	6	Measure	_	Offset=119-123
+6	PVP	_	Reagent	_	_	0	_	_	Offset=123-132
+7	briefly	_	Modifier	_	_	0	_	_	Offset=138-145
+8	heat	_	Action	_	_	0	_	_	Offset=146-150
+9	64	_	Temperature	_	_	0	_	_	Offset=154-159
+
+# sent_id = s2
+# text = PacBio
+1	cool	_	Action	_	_	0	_	_	Offset=165-169
+2	room	_	Temperature	_	_	0	_	_	Offset=173-189
+3	50mL	_	Amount	_	_	4	Measure	_	Offset=201-205
+4	Falcon	_	Location	_	_	0	_	_	Offset=206-218
+5	17.5ml	_	Amount	_	_	6	Measure	_	Offset=252-258
+6	lysis	_	Reagent	_	_	0	_	_	Offset=259-271
+
+# sent_id = s3
+# text = Make lysis buffer by mixing buffer A+B+C (2.5:2.5:1 + 0.1%PVP final) and briefly heat to 64 °C.
+1	add	_	Action	_	_	0	_	_	Offset=292-295
+2	10uL	_	Amount	_	_	4	Measure	_	Offset=296-300
+3	10kU	_	Generic-Measure	_	_	4	Measure	_	Offset=302-306
+4	RNAse	_	Reagent	_	_	0	_	_	Offset=308-316
+5	lysis	_	Reagent	_	_	0	_	_	Offset=320-332
+
+# sent_id = s4
+# text = Let cool to room temperature for use in 50mL Falcon tubes.All following steps are based on 17.5ml lysis buffer as starting volume.
+1	Grind	_	Action	_	_	0	_	_	Offset=334-339
+2	tissue/spores	_	Reagent	_	_	3	Meronym	9:Coreference-Link	Offset=340-353
+3	liquid	_	Reagent	_	_	0	_	_	Offset=359-374
+4	mortar	_	Device	_	_	0	_	_	Offset=380-386
+5	sand	_	Reagent	_	_	7	Coreference-Link	_	Offset=392-396
+6	1g	_	Amount	_	_	7	Measure	_	Offset=402-404
+7	sand	_	Mention	_	_	0	_	_	Offset=408-412
+8	100mg	_	Amount	_	_	9	Coreference-Link	_	Offset=417-422
+9	starting	_	Mention	_	_	0	_	_	Offset=426-443
+
+# sent_id = s5
+# text = add 10uL (10kU) RNAse T1 to lysis buffer.
+1	Grind	_	Action	_	_	0	_	_	Offset=445-450
+2	2	_	Time	_	_	0	_	_	Offset=455-461
+3	4x	_	Generic-Measure	_	_	0	_	_	Offset=465-481
+4	adding	_	Action	_	_	0	_	_	Offset=482-488
+5	iquid	_	Reagent	_	_	0	_	_	Offset=490-504
+6	each	_	Modifier	_	_	7	Mod-Link	_	Offset=511-515
+7	15	_	Time	_	_	0	_	_	Offset=516-522
+8	grinding	_	Method	_	_	0	_	_	Offset=523-537
+
+# sent_id = s6
+# text = Grind tissue/spores with liquid nitrogen in a mortar with sand, use 1g of sand per 100mg of starting material.
+1	Transfer	_	Action	_	_	0	_	_	Offset=539-547
+2	powder	_	Reagent	_	_	0	_	_	Offset=548-554
+3	50mL	_	Amount	_	_	4	Measure	_	Offset=558-562
+4	Falcon	_	Location	_	_	5	Meronym	6:Meronym	Offset=563-569
+5	lysis	_	Reagent	_	_	0	_	_	Offset=581-593
+6	RNAse	_	Reagent	_	_	0	_	_	Offset=598-603
+7	mix	_	Action	_	_	0	_	_	Offset=605-608
+8	well	_	Modifier	_	_	0	_	_	Offset=609-613
+9	vortexing	_	Method	_	_	0	_	_	Offset=617-626
+
+# sent_id = s7
+# text = Grind for 2 mins in 4x 15 sec bursts adding liquid nitrogen after each 15 sec grinding burst.
+1	Incubate	_	Action	_	_	0	_	_	Offset=628-636
+2	RT	_	Temperature	_	_	0	_	_	Offset=640-642
+3	30	_	Time	_	_	0	_	_	Offset=647-654
+4	mixing	_	Action	_	_	0	_	_	Offset=655-661
+5	inversion	_	Method	_	_	0	_	_	Offset=665-674
+6	every	_	Modifier	_	_	7	Mod-Link	_	Offset=675-680
+7	5	_	Time	_	_	0	_	_	Offset=681-687
+
+# sent_id = s8
+# text = Transfer powder to 50mL Falcon containing lysis buffer and RNAse, mix well by vortexing.
+1	Add	_	Action	_	_	0	_	_	Offset=689-692
+2	200uL	_	Amount	_	_	3	Measure	_	Offset=693-698
+3	Proteinase	_	Reagent	_	_	0	_	_	Offset=699-711
+4	incubate	_	Action	_	_	0	_	_	Offset=713-721
+5	RT	_	Temperature	_	_	0	_	_	Offset=725-727
+6	30	_	Time	_	_	0	_	_	Offset=732-739
+7	mixing	_	Action	_	_	0	_	_	Offset=740-746
+8	inversion	_	Method	_	_	0	_	_	Offset=750-759
+9	every	_	Modifier	_	_	10	Mod-Link	_	Offset=760-765
+10	5	_	Time	_	_	0	_	_	Offset=766-772
+
+# sent_id = s9
+# text = Incubate at RT for 30 mins mixing by inversion every 5 mins.
+1	Cool	_	Action	_	_	0	_	_	Offset=774-778
+2	ice	_	Location	_	_	0	_	_	Offset=782-785
+3	5	_	Time	_	_	0	_	_	Offset=790-796
+
+# sent_id = s10
+# text = Add 200uL Proteinase K, incubate at RT for 30 mins mixing by inversion every 5 mins.
+1	Add	_	Action	_	_	0	_	_	Offset=798-801
+2	3.5	_	Amount	_	_	4	Measure	_	Offset=802-808
+3	0.2	_	Amount	_	_	2	Or	_	Offset=810-817
+4	KAc	_	Reagent	_	_	0	_	_	Offset=822-825
+5	5M	_	Concentration	_	_	4	Measure	_	Offset=826-828
+6	mix	_	Action	_	_	0	_	_	Offset=830-833
+7	inversion	_	Method	_	_	0	_	_	Offset=837-846
+8	incubate	_	Action	_	_	0	_	_	Offset=848-856
+9	ice	_	Location	_	_	0	_	_	Offset=860-863
+10	max	_	Modifier	_	_	11	Mod-Link	_	Offset=868-871
+11	5	_	Time	_	_	0	_	_	Offset=872-878
+
+# sent_id = s11
+# text = Cool on ice for 5 mins.
+1	Spin	_	Action	_	_	0	_	_	Offset=880-884
+2	4oC	_	Temperature	_	_	0	_	_	Offset=888-891
+3	5000g	_	Speed	_	_	0	_	_	Offset=896-901
+4	12	_	Time	_	_	0	_	_	Offset=906-913
+
+# sent_id = s12
+# text = Add 3.5 mL (0.2 vol) of KAc 5M, mix by inversion, incubate on ice for max 5 mins.
+1	Transfer	_	Action	_	_	0	_	_	Offset=915-923
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=924-935
+3	fresh	_	Modifier	_	_	4	Mod-Link	_	Offset=939-944
+4	Falcon	_	Location	_	_	0	_	_	Offset=945-956
+5	17.5ml	_	Amount	_	_	7	Measure	_	Offset=968-974
+6	1vol	_	Amount	_	_	5	Or	_	Offset=976-980
+7	P/C/I	_	Reagent	_	_	0	_	_	Offset=983-988
+8	mix	_	Action	_	_	0	_	_	Offset=994-997
+9	inversion	_	Method	_	_	0	_	_	Offset=1001-1010
+10	2	_	Time	_	_	0	_	_	Offset=1015-1021
+
+# sent_id = s13
+# text = Spin at 4oC and 5000g for 12 mins.
+1	Spin	_	Action	_	_	0	_	_	Offset=1023-1027
+2	10	_	Time	_	_	0	_	_	Offset=1050-1057
+
+# sent_id = s14
+# text = Transfer supernatant to fresh Falcon tube containing 17.5ml (1vol) (P/C/I) and mix by inversion for 2 mins.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1059-1067
+2	supernatan	_	Reagent	_	_	0	_	_	Offset=1068-1078
+3	fresh	_	Modifier	_	_	4	Mod-Link	_	Offset=1117-1122
+4	Falcon	_	Location	_	_	0	_	_	Offset=1123-1134
+5	17.5ml	_	Amount	_	_	7	Measure	_	Offset=1146-1152
+6	1vol	_	Amount	_	_	5	Or	_	Offset=1154-1158
+7	P/C/I	_	Reagent	_	_	0	_	_	Offset=1160-1165
+8	mix	_	Action	_	_	0	_	_	Offset=1170-1173
+9	inversion	_	Method	_	_	0	_	_	Offset=1177-1186
+10	2	_	Time	_	_	0	_	_	Offset=1191-1197
+
+# sent_id = s15
+# text = Spin at 4 °C and 4000g for 10 mins.
+1	Spin	_	Action	_	_	0	_	_	Offset=1199-1203
+2	4	_	Temperature	_	_	0	_	_	Offset=1207-1211
+3	4000g	_	Speed	_	_	0	_	_	Offset=1216-1221
+4	10	_	Time	_	_	0	_	_	Offset=1226-1233
+
+# sent_id = s16
+# text = Transfer supernatant (might be milky but do not worry) to fresh Falcon tube containing 17.5ml (1vol) P/C/I and mix by inversion for 2 mins.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1235-1243
+2	supernatan	_	Reagent	_	_	0	_	_	Offset=1244-1254
+3	~17mL	_	Amount	_	_	2	Measure	_	Offset=1257-1262
+4	fresh	_	Modifier	_	_	5	Mod-Link	_	Offset=1267-1272
+5	Falcon	_	Location	_	_	0	_	_	Offset=1273-1284
+6	add	_	Action	_	_	0	_	_	Offset=1289-1292
+7	5uL	_	Amount	_	_	8	Measure	_	Offset=1293-1296
+8	RNAse	_	Reagent	_	_	0	_	_	Offset=1297-1305
+
+# sent_id = s17
+# text = Spin at 4 °C and 4000g for 10 mins.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1307-1315
+2	20-30mins	_	Time	_	_	0	_	_	Offset=1320-1329
+3	RT	_	Temperature	_	_	0	_	_	Offset=1333-1335
+
+# sent_id = s18
+# text = Transfer supernatant (~17mL) to fresh Falcon tube and add 5uL RNAse T1.
+1	Add	_	Action	_	_	0	_	_	Offset=1337-1340
+2	1.8mL	_	Amount	_	_	4	Measure	_	Offset=1341-1346
+3	~0.1vol	_	Amount	_	_	2	Or	_	Offset=1348-1355
+4	NaAc	_	Reagent	_	_	0	_	_	Offset=1357-1361
+5	mix	_	Action	_	_	0	_	_	Offset=1366-1369
+6	inversion	_	Method	_	_	0	_	_	Offset=1373-1382
+
+# sent_id = s19
+# text = Incubate for 20-30mins at RT.
+1	Add	_	Action	_	_	0	_	_	Offset=1384-1387
+2	18mL	_	Amount	_	_	5	Measure	_	Offset=1388-1392
+3	~1vol	_	Amount	_	_	2	Or	_	Offset=1394-1399
+4	RT	_	Temperature	_	_	0	_	_	Offset=1401-1403
+5	isopropanol	_	Reagent	_	_	0	_	_	Offset=1404-1415
+6	mix	_	Action	_	_	0	_	_	Offset=1420-1423
+7	inversio	_	Method	_	_	0	_	_	Offset=1427-1435
+
+# sent_id = s20
+# text = Add 1.8mL (~0.1vol) NaAc and mix by inversion.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1438-1446
+2	RT	_	Temperature	_	_	0	_	_	Offset=1450-1452
+3	5-10mins	_	Time	_	_	0	_	_	Offset=1457-1465
+
+# sent_id = s21
+# text = Add 18mL (~1vol) RT isopropanol and mix by inversion.
+1	Spin	_	Action	_	_	0	_	_	Offset=1467-1471
+2	4	_	Temperature	_	_	0	_	_	Offset=1475-1479
+3	10000g	_	Speed	_	_	0	_	_	Offset=1484-1490
+4	30	_	Time	_	_	0	_	_	Offset=1495-1502
+
+# sent_id = s22
+# text = Incubate at RT for 5-10mins.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=1504-1513
+2	pipette	_	Action	_	_	0	_	_	Offset=1514-1525
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=1526-1537
+4	1-2	_	Amount	_	_	5	Measure	_	Offset=1549-1555
+5	left	_	Reagent	_	_	0	_	_	Offset=1556-1560
+6	DNA	_	Reagent	_	_	0	_	_	Offset=1562-1565
+7	form	_	Action	_	_	0	_	_	Offset=1571-1575
+8	mostly	_	Modifier	_	_	10	Mod-Link	_	Offset=1578-1584
+9	translucent	_	Modifier	_	_	10	Mod-Link	_	Offset=1585-1605
+10	film/pellet	_	Reagent	_	_	0	_	_	Offset=1606-1617
+11	bottom	_	Location	_	_	0	_	_	Offset=1625-1631
+12	tube	_	Location	_	_	11	Meronym	_	Offset=1639-1643
+
+# sent_id = s23
+# text = Spin at 4 °C and 10000g for 30 mins.
+1	1mL	_	Amount	_	_	2	Setting	_	Offset=1649-1652
+2	pipette	_	Device	_	_	0	_	_	Offset=1653-1664
+3	transfer	_	Action	_	_	0	_	_	Offset=1668-1676
+4	pellet	_	Reagent	_	_	0	_	_	Offset=1677-1683
+5	remaining	_	Modifier	_	_	6	Mod-Link	_	Offset=1688-1697
+6	liquid	_	Reagent	_	_	0	_	_	Offset=1698-1704
+7	fresh	_	Modifier	_	_	9	Mod-Link	_	Offset=1710-1715
+8	1.7mL	_	Amount	_	_	9	Measure	_	Offset=1716-1721
+9	eppendorf	_	Location	_	_	0	_	_	Offset=1722-1736
+
+# sent_id = s24
+# text = Carefully pipette off supernatant till about 1-2 mL left, DNA will form a mostly translucent to white film/pellet at the bottom of the tube.
+1	add	_	Action	_	_	0	_	_	Offset=1778-1781
+2	1.5mL	_	Amount	_	_	5	Measure	_	Offset=1782-1787
+3	fresh	_	Modifier	_	_	5	Mod-Link	_	Offset=1788-1793
+4	70%	_	Concentration	_	_	5	Measure	_	Offset=1794-1797
+5	EtOH	_	Reagent	_	_	0	_	_	Offset=1798-1802
+6	50mL	_	Amount	_	_	7	Measure	_	Offset=1810-1814
+7	Faclon	_	Location	_	_	0	_	_	Offset=1815-1821
+8	spin	_	Action	_	_	0	_	_	Offset=1826-1830
+9	5min	_	Time	_	_	0	_	_	Offset=1835-1839
+10	4000g	_	Speed	_	_	0	_	_	Offset=1843-1848
+
+# sent_id = s25
+# text = Use 1mL pipette tip to transfer pellet and remaining liquid into fresh 1.7mL eppendorf tube.
+1	Remove	_	Action	_	_	0	_	_	Offset=1850-1856
+2	1mL	_	Amount	_	_	0	_	_	Offset=1857-1860
+3	transfe	_	Action	_	_	0	_	_	Offset=1865-1872
+4	remaining	_	Amount	_	_	0	_	_	Offset=1878-1894
+5	DNA	_	Reagent	_	_	0	_	_	Offset=1899-1909
+6	same	_	Modifier	_	_	8	Mod-Link	_	Offset=1913-1917
+7	1.7mL	_	Amount	_	_	8	Measure	_	Offset=1918-1923
+8	eppendorf	_	Location	_	_	0	_	_	Offset=1924-1938
+
+# sent_id = s26
+# text = If the pellet got loose during transfer add 1.5mL fresh 70% EtOH to the 50mL Faclon and spin for 5min at 4000g.
+1	Spin	_	Action	_	_	0	_	_	Offset=1940-1944
+2	table	_	Device	_	_	0	_	_	Offset=1948-1968
+3	5	_	Time	_	_	0	_	_	Offset=1973-1979
+4	13000g	_	Speed	_	_	0	_	_	Offset=1983-1989
+
+# sent_id = s27
+# text = Remove 1mL and transfer the remaining volume and DNA pellet to same 1.7mL eppendorf tube.
+1	Remove	_	Action	_	_	0	_	_	Offset=1991-1997
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1998-2009
+3	pipette	_	Device	_	_	0	_	_	Offset=2015-2022
+4	wash	_	Action	_	_	0	_	_	Offset=2027-2031
+5	1.5mL	_	Amount	_	_	8	Measure	_	Offset=2037-2042
+6	fresh	_	Modifier	_	_	8	Mod-Link	_	Offset=2043-2048
+7	70%	_	Concentration	_	_	8	Measure	_	Offset=2049-2052
+8	Ethanol	_	Reagent	_	_	0	_	_	Offset=2053-2060
+9	invert	_	Action	_	_	0	_	_	Offset=2062-2068
+10	several	_	Numerical	_	_	0	_	_	Offset=2069-2076
+11	dislodge	_	Action	_	_	0	_	_	Offset=2086-2094
+12	pellet	_	Reagent	_	_	0	_	_	Offset=2095-2101
+
+# sent_id = s28
+# text = Spin in table top centrifuge for 5 mins at 13000g.
+1	Spin	_	Action	_	_	0	_	_	Offset=2103-2107
+2	table	_	Device	_	_	0	_	_	Offset=2111-2131
+3	5	_	Time	_	_	0	_	_	Offset=2136-2142
+4	13000g	_	Speed	_	_	0	_	_	Offset=2146-2152
+
+# sent_id = s29
+# text = Remove supernatant with pipette and wash with 1.5mL fresh 70% Ethanol, invert several times to dislodge pellet.
+1	Remove	_	Action	_	_	0	_	_	Offset=2154-2160
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=2161-2172
+3	pipette	_	Device	_	_	0	_	_	Offset=2178-2185
+4	wash	_	Action	_	_	0	_	_	Offset=2190-2194
+5	1.5mL	_	Amount	_	_	8	Measure	_	Offset=2200-2205
+6	fresh	_	Modifier	_	_	8	Mod-Link	_	Offset=2206-2211
+7	70%	_	Concentration	_	_	8	Measure	_	Offset=2212-2215
+8	Ethanol	_	Reagent	_	_	0	_	_	Offset=2216-2223
+9	invert	_	Action	_	_	0	_	_	Offset=2225-2231
+10	several	_	Numerical	_	_	0	_	_	Offset=2232-2239
+11	dislodge	_	Action	_	_	0	_	_	Offset=2249-2257
+12	pellet	_	Reagent	_	_	0	_	_	Offset=2258-2264
+
+# sent_id = s30
+# text = Spin in table top centrifuge for 5 mins at 13000g.
+1	Spin	_	Action	_	_	0	_	_	Offset=2266-2270
+2	table	_	Device	_	_	0	_	_	Offset=2274-2294
+3	5	_	Time	_	_	0	_	_	Offset=2299-2305
+4	13000g	_	Speed	_	_	0	_	_	Offset=2309-2315
+
+# sent_id = s31
+# text = Remove supernatant with pipette and wash with 1.5mL fresh 70% Ethanol, invert several times to dislodge pellet.
+1	Remove	_	Action	_	_	0	_	_	Offset=2317-2323
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=2324-2335
+3	pipette	_	Device	_	_	0	_	_	Offset=2341-2348
+
+# sent_id = s32
+# text = Spin in table top centrifuge for 5 mins at 13000g.
+1	Spin	_	Action	_	_	0	_	_	Offset=2350-2354
+2	table	_	Device	_	_	0	_	_	Offset=2358-2378
+3	1	_	Time	_	_	0	_	_	Offset=2383-2388
+4	13000g	_	Speed	_	_	0	_	_	Offset=2392-2398
+
+# sent_id = s33
+# text = Remove supernatant with pipette.
+1	Remove	_	Action	_	_	0	_	_	Offset=2400-2406
+2	remaining	_	Modifier	_	_	3	Mod-Link	_	Offset=2407-2416
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=2417-2424
+4	pipette	_	Device	_	_	0	_	_	Offset=2430-2437
+
+# sent_id = s34
+# text = Spin in table top centrifuge for 1 min at 13000g.
+1	Air-dry	_	Action	_	_	0	_	_	Offset=2439-2446
+2	pellet	_	Reagent	_	_	0	_	_	Offset=2447-2453
+3	7	_	Time	_	_	0	_	_	Offset=2458-2464
+
+# sent_id = s35
+# text = Remove remaining ethanol with pipette.
+1	Add	_	Action	_	_	0	_	_	Offset=2466-2469
+2	200uL	_	Amount	_	_	4	Measure	_	Offset=2470-2475
+3	10mM	_	Concentration	_	_	4	Measure	_	Offset=2479-2483
+4	Tris	_	Reagent	_	_	0	_	_	Offset=2484-2492
+5	leave	_	Action	_	_	0	_	_	Offset=2493-2498
+6	RT	_	Temperature	_	_	0	_	_	Offset=2502-2504
+7	3	_	Time	_	_	0	_	_	Offset=2509-2516
+
+# sent_id = s36
+# text = Air-dry pellet for 7 mins.
+1	Flick	_	Action	_	_	0	_	_	Offset=2518-2523
+2	tube	_	Location	_	_	0	_	_	Offset=2524-2528
+3	slightly	_	Modifier	_	_	0	_	_	Offset=2529-2537
+4	mixing	_	Method	_	_	0	_	_	Offset=2542-2548
+5	add	_	Action	_	_	0	_	_	Offset=2553-2556
+6	200uL	_	Amount	_	_	7	Measure	_	Offset=2557-2562
+7	TE	_	Reagent	_	_	0	_	_	Offset=2566-2575
+
+# sent_id = s37
+# text = Add 200uL of 10mM Tris pH9 leave at RT for 3 hours.
+1	leave	_	Action	_	_	0	_	_	Offset=2610-2615
+2	RT	_	Temperature	_	_	0	_	_	Offset=2619-2621
+3	over	_	Time	_	_	0	_	_	Offset=2622-2632
+
+# sent_id = s38
+# text = Flick tube slightly for mixing and add 200uL of TE buffer.
+1	add	_	Action	_	_	0	_	_	Offset=2643-2646
+2	another	_	Modifier	_	_	4	Mod-Link	_	Offset=2647-2654
+3	100uL	_	Amount	_	_	4	Measure	_	Offset=2655-2660
+4	TE	_	Reagent	_	_	0	_	_	Offset=2661-2670
+5	incubate	_	Action	_	_	0	_	_	Offset=2675-2683
+6	1h	_	Time	_	_	0	_	_	Offset=2688-2690
+7	28	_	Temperature	_	_	0	_	_	Offset=2694-2699
+8	1400rpm	_	Speed	_	_	0	_	_	Offset=2705-2712
+9	shaking	_	Action	_	_	0	_	_	Offset=2713-2720
+
+# sent_id = s39
+# text = DO NOT!
+1	Measure	_	Action	_	_	0	_	_	Offset=2722-2729
+2	dsDNA	_	Reagent	_	_	0	_	_	Offset=2730-2735
+3	concentration	_	Measure-Type	_	_	0	_	_	Offset=2736-2749
+4	BR	_	Device	_	_	0	_	_	Offset=2756-2764
+5	measure	_	Action	_	_	0	_	_	Offset=2769-2776
+6	absorbance	_	Measure-Type	_	_	0	_	_	Offset=2777-2787
+7	Nanodrop	_	Device	_	_	0	_	_	Offset=2793-2801
+
+# sent_id = s40
+# text = vortex as it shears DNA.
+1	assess	_	Action	_	_	0	_	_	Offset=2892-2898
+2	DNA	_	Reagent	_	_	0	_	_	Offset=2899-2902
+3	quality	_	Measure-Type	_	_	0	_	_	Offset=2903-2910
+4	runing	_	Action	_	_	0	_	_	Offset=2914-2920
+5	0.8%	_	Concentration	_	_	6	Measure	_	Offset=2923-2927
+6	TBE	_	Reagent	_	_	0	_	_	Offset=2928-2943
+7	500ng	_	Amount	_	_	8	Measure	_	Offset=2949-2954
+8	dsDNA	_	Reagent	_	_	0	_	_	Offset=2955-2960
+9	lamda-Hind-III	_	Reagent	_	_	0	_	_	Offset=2967-2988
+
+# sent_id = s41
+# text = leave at RT over night.
+1	AMPure	_	Reagent	_	_	0	_	_	Offset=3071-3083
+2	secondary	_	Modifier	_	_	0	_	_	Offset=3088-3097
+3	clean	_	Action	_	_	0	_	_	Offset=3098-3106
+4	beads	_	Reagent	_	_	0	_	_	Offset=3110-3115
+5	0.45	_	Generic-Measure	_	_	4	Measure	_	Offset=3116-3130
+6	PacBio	_	Method	_	_	0	_	_	Offset=3145-3160
+
+# sent_id = s42
+# text = Next day add another 100uL TE buffer and incubate for 1h at 28 °C with 1400rpm shaking.
+1	Elute	_	Action	_	_	0	_	_	Offset=3162-3167
+2	10mM	_	Concentration	_	_	3	Measure	_	Offset=3171-3175
+3	Tris	_	Reagent	_	_	0	_	_	Offset=3176-3184
+
+# sent_id = s43
+# text = Measure dsDNA concentration using BR Qubit and measure absorbance with Nanodrop.
+1	Measure	_	Action	_	_	0	_	_	Offset=3186-3193
+2	dsDNA	_	Reagent	_	_	0	_	_	Offset=3194-3199
+3	concentration	_	Measure-Type	_	_	0	_	_	Offset=3200-3213
+4	BR	_	Device	_	_	0	_	_	Offset=3220-3228
+5	measure	_	Action	_	_	0	_	_	Offset=3233-3240
+6	absorbance	_	Measure-Type	_	_	0	_	_	Offset=3241-3251
+7	Nanodrop	_	Device	_	_	0	_	_	Offset=3257-3265
+

@@ -1,0 +1,116 @@
+# sent_id = s1
+# text = Digestion NotI
+1	Add	_	Action	_	_	0	_	_	Offset=15-18
+2	nuclease-free	_	Reagent	_	_	0	_	_	Offset=22-41
+3	50	_	Amount	_	_	2	Measure	_	Offset=46-51
+4	5µL	_	Amount	_	_	6	Measure	_	Offset=62-65
+5	10X	_	Concentration	_	_	6	Measure	_	Offset=66-69
+6	Buffer	_	Reagent	_	_	0	_	_	Offset=70-78
+7	1µL	_	Amount	_	_	8	Measure	_	Offset=80-83
+8	DNA	_	Reagent	_	_	0	_	_	Offset=84-87
+9	1	_	Concentration	_	_	8	Measure	_	Offset=89-96
+10	1	_	Amount	_	_	11	Measure	_	Offset=100-104
+11	NotI	_	Reagent	_	_	0	_	_	Offset=105-111
+12	10U/µL	_	Concentration	_	_	11	Measure	_	Offset=113-119
+
+# sent_id = s2
+# text = Add: - nuclease-free water qsp 50 µL > 47 µL - 5µL 10X Buffer O- 1µL DNA (1 µg/µL) - 1 µL NotI 1 (10U/µL) *. 
+1	Mix	_	Action	_	_	0	_	_	Offset=125-128
+2	spin	_	Action	_	_	0	_	_	Offset=140-144
+3	few	_	Time	_	_	0	_	_	Offset=156-167
+
+# sent_id = s3
+# text = Mix gently and spin down for a few seconds.
+1	Incubate	_	Action	_	_	0	_	_	Offset=169-177
+2	37°C	_	Temperature	_	_	0	_	_	Offset=181-185
+3	1-16	_	Time	_	_	0	_	_	Offset=190-200
+
+# sent_id = s4
+# text = Incubate at 37°C for 1-16 hours.
+1	incubation	_	Action	_	_	0	_	_	Offset=359-369
+2	80°C	_	Temperature	_	_	0	_	_	Offset=373-377
+3	20	_	Time	_	_	0	_	_	Offset=382-388
+
+# sent_id = s5
+# text = The digestion reaction may be scaled either up or down. 
+1	Measure	_	Action	_	_	0	_	_	Offset=390-397
+2	volume	_	Generic-Measure	_	_	3	Measure	_	Offset=402-408
+3	DNA	_	Reagent	_	_	0	_	_	Offset=416-426
+
+# sent_id = s6
+# text = It's possible to process extended incubation by adding 0.25U/µg of DNA in 50 µL of reaction volume.
+1	Add	_	Action	_	_	0	_	_	Offset=435-438
+2	1/10	_	Amount	_	_	3	Measure	_	Offset=439-450
+3	sodium	_	Reagent	_	_	0	_	_	Offset=454-468
+4	pH	_	Measure-Type	_	_	5	Of-Type	_	Offset=470-472
+5	5.2	_	Numerical	_	_	3	Measure	_	Offset=473-476
+
+# sent_id = s7
+# text = incubation at 80°C for 20 min.
+1	Mix	_	Action	_	_	0	_	_	Offset=678-681
+
+# sent_id = s8
+# text = Measure the volume of the DNA sample > 50 µL
+1	Add	_	Action	_	_	0	_	_	Offset=688-691
+2	2	_	Amount	_	_	5	Measure	_	Offset=692-708
+3	cold	_	Temperature	_	_	0	_	_	Offset=712-716
+4	100%	_	Concentration	_	_	5	Measure	_	Offset=717-721
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=722-729
+
+# sent_id = s9
+# text = Add 1/10 volume of sodium acetate, pH 5.2, (final concentration of 0.3 M) 
+1	Mix	_	Action	_	_	0	_	_	Offset=775-778
+
+# sent_id = s10
+# text = - These amounts assume that the DNA is in TE only; if DNA is in a solution containing salt, adjust salt accordingly to achieve the correct final concentration. > 5 µL.
+1	Place	_	Action	_	_	0	_	_	Offset=785-790
+2	ice	_	Temperature	_	_	0	_	_	Offset=794-797
+3	-20	_	Temperature	_	_	2	Or	_	Offset=804-817
+4	>20	_	Time	_	_	0	_	_	Offset=822-833
+
+# sent_id = s11
+# text = Mix well.
+1	Spin	_	Action	_	_	0	_	_	Offset=835-839
+2	maximum	_	Speed	_	_	0	_	_	Offset=842-855
+3	microfuge	_	Location	_	_	0	_	_	Offset=861-870
+4	10-15	_	Time	_	_	0	_	_	Offset=871-880
+
+# sent_id = s12
+# text = Add 2 to 2.5 volumes of cold 100% ethanol (calculated after salt addition).> 110 (2V).
+1	decant	_	Action	_	_	0	_	_	Offset=892-898
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=899-910
+
+# sent_id = s13
+# text = Mix well.
+1	Add	_	Action	_	_	0	_	_	Offset=912-915
+2	1	_	Amount	_	_	4	Measure	_	Offset=916-920
+3	70%	_	Concentration	_	_	4	Measure	_	Offset=921-924
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=925-932
+
+# sent_id = s14
+# text = Place on ice or at -20 degrees C for >20 minutes.
+1	Mix	_	Action	_	_	0	_	_	Offset=934-937
+
+# sent_id = s15
+# text = Spin a maximum speed in a microfuge 10-15 min.
+1	Spin	_	Action	_	_	0	_	_	Offset=939-943
+
+# sent_id = s16
+# text = Carefully decant supernatant.
+1	decant	_	Action	_	_	0	_	_	Offset=963-969
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=970-981
+
+# sent_id = s17
+# text = Add 1 ml 70% ethanol.
+1	Air	_	Action	_	_	0	_	_	Offset=983-990
+2	vacuum	_	Action	_	_	0	_	_	Offset=1002-1012
+3	pellet	_	Reagent	_	_	0	_	_	Offset=1013-1019
+
+# sent_id = s18
+# text = Mix.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1021-1030
+2	pellet	_	Reagent	_	_	0	_	_	Offset=1031-1037
+3	appropriate	_	Generic-Measure	_	_	4	Measure	_	Offset=1045-1063
+4	TE	_	Reagent	_	_	0	_	_	Offset=1067-1069
+5	water	_	Reagent	_	_	4	Or	_	Offset=1073-1078
+

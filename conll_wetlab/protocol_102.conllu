@@ -1,0 +1,274 @@
+# sent_id = s1
+# text = FlowCam Standard Operating Procedure
+1	Turn	_	Action	_	_	0	_	_	Offset=37-44
+2	FlowCam	_	Device	_	_	5	Meronym	_	Offset=45-52
+3	Push	_	Action	_	_	0	_	_	Offset=52-56
+4	silver	_	Location	_	_	0	_	_	Offset=57-70
+5	machine	_	Seal	_	_	0	_	_	Offset=86-98
+
+# sent_id = s2
+# text = Turn on FlowCamPush silver button on the left of machine face to turn on computer and machine.
+1	Instal	_	Action	_	_	0	_	_	Offset=132-138
+2	flow	_	Reagent	_	_	0	_	_	Offset=139-148
+3	flow	_	Location	_	_	0	_	_	Offset=158-174
+4	Select	_	Action	_	_	0	_	_	Offset=174-180
+5	flow	_	Reagent	_	_	0	_	_	Offset=189-205
+
+# sent_id = s3
+# text = Instal flow cell into the flow cell holderSelect desired flow cell tubing based on application.
+1	kimwipe	_	Reagent	_	_	0	_	_	Offset=282-289
+2	lens	_	Reagent	_	_	1	Or	_	Offset=293-303
+3	clean	_	Action	_	_	0	_	_	Offset=314-319
+4	glass	_	Location	_	_	0	_	_	Offset=324-337
+5	flow	_	Reagent	_	_	4	Meronym	_	Offset=345-354
+6	Insert	_	Action	_	_	0	_	_	Offset=355-361
+7	glass	_	Location	_	_	0	_	_	Offset=362-375
+8	flow	_	Reagent	_	_	7	Meronym	_	Offset=383-392
+9	flow	_	Location	_	_	0	_	_	Offset=402-418
+10	flow	_	Reagent	_	_	0	_	_	Offset=426-435
+11	gently	_	Modifier	_	_	0	_	_	Offset=439-445
+12	screwing	_	Action	_	_	0	_	_	Offset=446-454
+13	male	_	Device	_	_	0	_	_	Offset=459-479
+
+# sent_id = s4
+# text = (In general we use the 100 um x 1 mm flow cell).Use a kimwipe or lens paper to gently clean the glass portion of the flow cell.Insert glass portion of the flow cell into the flow cell holder.Secure flow cell by gently screwing the male threaded holder until the flow cell is stationary.
+1	Instal	_	Action	_	_	0	_	_	Offset=724-730
+2	flow	_	Reagent	_	_	0	_	_	Offset=735-751
+3	FLowCam	_	Device	_	_	0	_	_	Offset=761-768
+
+# sent_id = s5
+# text = Be careful not to screw too tightly at the risk of breaking the fragile flow cell.
+1	kimwipe	_	Reagent	_	_	0	_	_	Offset=930-937
+2	lens	_	Reagent	_	_	1	Or	_	Offset=941-951
+3	clean	_	Action	_	_	0	_	_	Offset=962-967
+4	objective	_	Device	_	_	0	_	_	Offset=972-986
+5	collimnator	_	Device	_	_	0	_	_	Offset=991-1002
+6	Install	_	Action	_	_	0	_	_	Offset=1003-1010
+7	flow	_	Reagent	_	_	0	_	_	Offset=1011-1027
+8	flow	_	Location	_	_	0	_	_	Offset=1057-1079
+
+# sent_id = s6
+# text = Note:  Since there are multiple projects using the FlowCam be sure to select the flow cell labeled for each specific project.
+1	Tighten	_	Action	_	_	0	_	_	Offset=1127-1134
+2	screw	_	Device	_	_	0	_	_	Offset=1135-1140
+3	top	_	Seal	_	_	0	_	_	Offset=1144-1147
+4	holder	_	Reagent	_	_	3	Meronym	_	Offset=1151-1157
+5	Insert	_	Action	_	_	0	_	_	Offset=1184-1190
+6	tubing	_	Reagent	_	_	0	_	_	Offset=1191-1197
+7	top	_	Seal	_	_	8	Meronym	_	Offset=1201-1204
+8	flow	_	Reagent	_	_	0	_	_	Offset=1208-1217
+9	bottom	_	Seal	_	_	10	Meronym	_	Offset=1227-1233
+10	sample	_	Location	_	_	0	_	_	Offset=1237-1250
+
+# sent_id = s7
+# text = Instal the flow cell holder into the FLowCamMake sure that the objective lens and collimator are compatible with each other.
+1	Insert	_	Action	_	_	0	_	_	Offset=1252-1258
+2	bottom	_	Reagent	_	_	0	_	_	Offset=1259-1272
+3	tip	_	Seal	_	_	4	Meronym	_	Offset=1278-1281
+4	syringe	_	Device	_	_	0	_	_	Offset=1285-1292
+
+# sent_id = s8
+# text = For example, when using the 10X lens, use the corresponding 10X collimator.Use a kimwipe or lens paper to gently clean the objective lens and collimnator.Install flow cell holder (screw pointing up) into the flow cell holder mount located in the middle of the camera apparatus.
+1	Insert	_	Action	_	_	0	_	_	Offset=1294-1300
+2	syringe-out	_	Reagent	_	_	0	_	_	Offset=1301-1319
+3	small	_	Location	_	_	0	_	_	Offset=1325-1337
+
+# sent_id = s9
+# text = Tighten screw on top of holder to secure it to the mount.Insert tubing on top of flow cell into the bottom of sample funnel.
+1	Flush	_	Action	_	_	0	_	_	Offset=1360-1365
+2	Flow	_	Reagent	_	_	0	_	_	Offset=1366-1375
+
+# sent_id = s10
+# text = Insert bottom tubing into tip of syringe.
+1	Load	_	Action	_	_	0	_	_	Offset=1511-1515
+2	funnel	_	Device	_	_	0	_	_	Offset=1520-1526
+3	ddH2O	_	Reagent	_	_	0	_	_	Offset=1532-1537
+
+# sent_id = s11
+# text = Insert syringe-out tubing into small beaker for collecting waste.
+1	click	_	Action	_	_	0	_	_	Offset=1562-1567
+2	Setup	_	Method	_	_	0	_	_	Offset=1568-1590
+
+# sent_id = s12
+# text = Flush Flow CellMake sure to flush the flow cell before beginning to prevent any previous cellular material or debris from showing up in your sample.1.
+1	Set	_	Action	_	_	0	_	_	Offset=1595-1598
+2	4-5	_	Generic-Measure	_	_	0	_	_	Offset=1602-1612
+
+# sent_id = s13
+# text = Load the funnel with ddH2O.2.
+1	Load	_	Action	_	_	0	_	_	Offset=1628-1632
+2	Sample1	_	Reagent	_	_	0	_	_	Offset=1633-1640
+
+# sent_id = s14
+# text = On the top menu bar, click Setup -> Pump -> Flush  3.
+1	draw	_	Action	_	_	0	_	_	Offset=1655-1659
+2	container	_	Location	_	_	0	_	_	Offset=1677-1686
+
+# sent_id = s15
+# text = Set to 4-5 cycles.4.
+1	0.2-0.5	_	Amount	_	_	2	Measure	_	Offset=1702-1712
+2	homogenized	_	Reagent	_	_	0	_	_	Offset=1716-1734
+
+# sent_id = s16
+# text = Click Start Load Sample1.
+1	Lower	_	Action	_	_	0	_	_	Offset=1914-1919
+2	tip	_	Seal	_	_	3	Meronym	_	Offset=1920-1923
+3	pipet	_	Device	_	_	0	_	_	Offset=1927-1932
+4	bottom	_	Seal	_	_	5	Meronym	_	Offset=1938-1944
+5	P1000	_	Location	_	_	0	_	_	Offset=1948-1967
+
+# sent_id = s17
+# text = Use pipet to draw sample from your container.
+1	Forcibly	_	Modifier	_	_	0	_	_	Offset=1969-1977
+2	squeeze	_	Action	_	_	0	_	_	Offset=1978-1985
+3	pipet	_	Device	_	_	0	_	_	Offset=1986-1991
+
+# sent_id = s18
+# text = Usually about 0.2-0.5 mL of homogenized sample is sufficient.
+1	click	_	Action	_	_	0	_	_	Offset=2111-2116
+2	Setup	_	Method	_	_	0	_	_	Offset=2117-2151
+3	0.500mL	_	Amount	_	_	4	Measure	_	Offset=2152-2159
+4	Flow	_	Reagent	_	_	0	_	_	Offset=2165-2174
+
+# sent_id = s19
+# text = For dense cultures, a dilution may be appropiate (Be sure to note this in your files).
+1	Click	_	Action	_	_	0	_	_	Offset=2180-2185
+2	Stop	_	Method	_	_	0	_	_	Offset=2186-2195
+3	Click	_	Action	_	_	0	_	_	Offset=2257-2262
+4	Context	_	Method	_	_	0	_	_	Offset=2266-2273
+
+# sent_id = s20
+# text = Sieving is great for raw samples that might have detritus or zooplankton.
+1	Check	_	Action	_	_	0	_	_	Offset=3046-3051
+2	export	_	Reagent	_	_	0	_	_	Offset=3056-3067
+3	export	_	Action	_	_	0	_	_	Offset=3072-3078
+4	summary	_	Reagent	_	_	0	_	_	Offset=3079-3091
+
+# sent_id = s21
+# text = 2.
+1	Click	_	Action	_	_	0	_	_	Offset=3309-3314
+2	Setup/Focus	_	Method	_	_	0	_	_	Offset=3315-3326
+
+# sent_id = s22
+# text = Lower tip of pipet into bottom of P1000 sample funnel.
+1	3435	_	Method	_	_	0	_	_	Offset=3393-3396;3430
+2	center	_	Action	_	_	0	_	_	Offset=3439-3445
+3	flow	_	Reagent	_	_	0	_	_	Offset=3450-3459
+
+# sent_id = s23
+# text = Forcibly squeeze pipet to ensure that sample ends up as one liquid mass and doesn't stick to the walls of the funnel.
+1	3503	_	Method	_	_	0	_	_	Offset=3463-3466;3498
+2	3534	_	Action	_	_	0	_	_	Offset=3507-3512;3524
+3	sample	_	Reagent	_	_	0	_	_	Offset=3517-3523
+
+# sent_id = s24
+# text = 3.
+1	Run	_	Action	_	_	0	_	_	Offset=3536-3539
+2	Sample1	_	Reagent	_	_	0	_	_	Offset=3540-3547
+
+# sent_id = s25
+# text = On the top menu bar, click Setup -> Pump -> Prime -> Aspirate 0.500mL from Flow Cell   4.
+1	Click	_	Action	_	_	0	_	_	Offset=3549-3554
+2	Autoimage.2	_	Method	_	_	0	_	_	Offset=3555-3566
+
+# sent_id = s26
+# text = Click Stop Pump when the sample volume has reached the flow cell Run Context Click on Context.
+1	enter	_	Action	_	_	0	_	_	Offset=3646-3651
+2	value	_	Numerical	_	_	0	_	_	Offset=3654-3659
+
+# sent_id = s27
+# text = A window with several tabs will pop up.
+1	3783	_	Action	_	_	0	_	_	Offset=3728-3733;3776
+2	button	_	Method	_	_	0	_	_	Offset=3769-3775
+3	manually	_	Method	_	_	0	_	_	Offset=3788-3801
+
+# sent_id = s28
+# text = Notes Tab - any relevant metadata.
+1	Make	_	Action	_	_	0	_	_	Offset=3863-3867
+2	informative	_	Modifier	_	_	3	Mod-Link	_	Offset=3871-3882
+3	folder	_	Reagent	_	_	0	_	_	Offset=3883-3894
+
+# sent_id = s29
+# text = There is a file on the Desktop that can be pasted and modified as needed.
+1	click	_	Action	_	_	0	_	_	Offset=3996-4001
+2	save	_	Method	_	_	0	_	_	Offset=4002-4006
+
+# sent_id = s30
+# text = This file includes lines for date, experiment, strain, species, magnification, flow cell, syringe, dilution, etc.Fluidics tab - Adjust here the sample volume (usually 1 mL), relative to the stop rule (see below).
+1	Select	_	Action	_	_	0	_	_	Offset=4328-4334
+2	data	_	Reagent	_	_	0	_	_	Offset=4340-4344
+3	clicking	_	Action	_	_	0	_	_	Offset=4356-4367
+4	filter	_	Reagent	_	_	0	_	_	Offset=4380-4386
+5	highlighting	_	Action	_	_	0	_	_	Offset=4390-4402
+6	portions	_	Reagent	_	_	7	Meronym	_	Offset=4403-4411
+7	graphs	_	Reagent	_	_	0	_	_	Offset=4419-4425
+8	selecting	_	Action	_	_	0	_	_	Offset=4430-4439
+9	Open	_	Method	_	_	0	_	_	Offset=4440-4449
+10	Adjust	_	Action	_	_	0	_	_	Offset=4473-4479
+11	4561	_	Method	_	_	0	_	_	Offset=4505-4524;4529
+
+# sent_id = s31
+# text = Also, make sure the efficiency is near 25%.Flow cell tab - Adjust the tube length below the flow cell.
+1	Enter	_	Action	_	_	0	_	_	Offset=4563-4571
+2	ratio	_	Numerical	_	_	0	_	_	Offset=4576-4581
+
+# sent_id = s32
+# text = By default it is at 0 cm.
+1	flush	_	Action	_	_	0	_	_	Offset=4762-4767
+2	flow	_	Reagent	_	_	0	_	_	Offset=4772-4781
+
+# sent_id = s33
+# text = Our flow cells are cut to have 10 cm tubing above and 20 cm tubing below.
+1	Flush	_	Action	_	_	0	_	_	Offset=4799-4804
+2	Flow	_	Reagent	_	_	0	_	_	Offset=4805-4814
+
+# sent_id = s34
+# text = Stop tab - Stop rule for terminating the run.
+1	Load	_	Action	_	_	0	_	_	Offset=4949-4953
+2	funnel	_	Device	_	_	0	_	_	Offset=4958-4964
+3	ddH2O	_	Reagent	_	_	0	_	_	Offset=4970-4975
+
+# sent_id = s35
+# text = Usually after 100 uL (0.1 mL) of sample has been imaged.
+1	click	_	Action	_	_	0	_	_	Offset=5000-5005
+2	Setup	_	Method	_	_	0	_	_	Offset=5006-5029
+
+# sent_id = s36
+# text = This works well with 1 mL of sample and a short priming step (see Setup and Focus below).Reports tab - Check the export data and export summary data checkboxes.
+1	Set	_	Action	_	_	0	_	_	Offset=5033-5036
+2	4-5	_	Numerical	_	_	0	_	_	Offset=5040-5050
+
+# sent_id = s37
+# text = This saves the measurements of all captured particles.
+1	Remove	_	Action	_	_	0	_	_	Offset=5245-5251
+2	tubing	_	Reagent	_	_	0	_	_	Offset=5256-5262
+3	syringe	_	Device	_	_	0	_	_	Offset=5272-5283
+4	sample	_	Device	_	_	0	_	_	Offset=5292-5305
+
+# sent_id = s38
+# text = The list file with collages of images are saved by default upon starting a run.You can save these settings and load them as needed.
+1	Loosen	_	Action	_	_	0	_	_	Offset=5310-5316
+2	flow	_	Device	_	_	0	_	_	Offset=5321-5343
+3	remove	_	Action	_	_	0	_	_	Offset=5348-5354
+4	flow	_	Location	_	_	0	_	_	Offset=5359-5375
+5	flow	_	Reagent	_	_	0	_	_	Offset=5380-5389
+
+# sent_id = s39
+# text = Setup and Focus1.
+1	Remove	_	Action	_	_	0	_	_	Offset=5394-5400
+2	flow	_	Reagent	_	_	0	_	_	Offset=5405-5414
+3	flow	_	Location	_	_	0	_	_	Offset=5424-5440
+
+# sent_id = s40
+# text = Click Setup/Focus.
+1	5466	_	Action	_	_	0	_	_	Offset=5444-5447;5462
+2	flow	_	Reagent	_	_	0	_	_	Offset=5452-5461
+3	protective	_	Location	_	_	0	_	_	Offset=5474-5489
+
+# sent_id = s41
+# text = A window will pop up with a live camera view of the flow cell.2.
+1	Close	_	Action	_	_	0	_	_	Offset=5493-5498
+2	program	_	Device	_	_	0	_	_	Offset=5503-5510
+3	shut	_	Action	_	_	0	_	_	Offset=5515-5524
+4	computer	_	Device	_	_	0	_	_	Offset=5525-5533
+

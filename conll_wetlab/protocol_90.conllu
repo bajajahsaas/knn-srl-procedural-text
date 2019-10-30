@@ -1,0 +1,145 @@
+# sent_id = s1
+# text = DNA extraction from plants
+1	Grind	_	Action	_	_	0	_	_	Offset=27-32
+2	frozen	_	Modifier	_	_	3	Mod-Link	_	Offset=33-39
+3	plant	_	Reagent	_	_	0	_	_	Offset=40-54
+4	100mg	_	Amount	_	_	3	Measure	_	Offset=56-61
+5	liquid	_	Reagent	_	_	0	_	_	Offset=66-81
+
+# sent_id = s2
+# text = Grind frozen plant material (100mg) in liquid Nitrogen.
+1	2	_	Amount	_	_	2	Measure	_	Offset=88-92
+2	tube	_	Location	_	_	0	_	_	Offset=93-97
+3	add	_	Action	_	_	0	_	_	Offset=99-102
+4	800	_	Amount	_	_	6	Measure	_	Offset=103-109
+5	1,5x	_	Concentration	_	_	6	Measure	_	Offset=113-117
+6	CTAB	_	Reagent	_	_	0	_	_	Offset=118-122
+7	1	_	Amount	_	_	8	Measure	_	Offset=127-131
+8	Beta-mercaptoethanol	_	Reagent	_	_	0	_	_	Offset=135-155
+9	ground	_	Modifier	_	_	10	Mod-Link	_	Offset=163-169
+10	leaf	_	Reagent	_	_	0	_	_	Offset=170-183
+
+# sent_id = s3
+# text = In a 2 ml tube, add 800 uL of 1,5x CTAB and 1 ul of Beta-mercaptoethanol to the ground leaf material.
+1	Incubate	_	Action	_	_	0	_	_	Offset=185-193
+2	1	_	Time	_	_	0	_	_	Offset=194-200
+3	60-65	_	Temperature	_	_	0	_	_	Offset=204-217
+
+# sent_id = s4
+# text = Incubate 1 hour at 60-65 degrees (C).
+1	Cool	_	Action	_	_	0	_	_	Offset=223-227
+2	Room	_	Temperature	_	_	0	_	_	Offset=231-240
+
+# sent_id = s5
+# text = Cool at Room Temp.
+1	Add	_	Action	_	_	0	_	_	Offset=242-245
+2	1	_	Amount	_	_	3	Measure	_	Offset=246-254
+3	Chloroform/Isoamylalkohol	_	Reagent	_	_	0	_	_	Offset=258-283
+4	24:1	_	Generic-Measure	_	_	3	Measure	_	Offset=285-289
+
+# sent_id = s6
+# text = Add 1 volume of Chloroform/Isoamylalkohol (24:1) mixture.
+1	Mix	_	Action	_	_	0	_	_	Offset=300-303
+2	overhead	_	Device	_	_	0	_	_	Offset=307-322
+3	10	_	Time	_	_	0	_	_	Offset=327-337
+
+# sent_id = s7
+# text = Mix on overhead shaker for 10 minutes.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=339-349
+2	3000	_	Speed	_	_	0	_	_	Offset=353-361
+3	25	_	Time	_	_	0	_	_	Offset=366-376
+
+# sent_id = s8
+# text = Centrifuge at 3000 rmp for 25 minutes.
+1	Transfer	_	Action	_	_	0	_	_	Offset=378-386
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=387-398
+3	new	_	Modifier	_	_	4	Mod-Link	_	Offset=404-407
+4	tube	_	Location	_	_	0	_	_	Offset=408-412
+
+# sent_id = s9
+# text = Transfer supernatant to a new tube.
+1	Use	_	Action	_	_	0	_	_	Offset=414-417
+2	wide	_	Modifier	_	_	3	Mod-Link	_	Offset=418-422
+3	pipette	_	Device	_	_	0	_	_	Offset=423-435
+
+# sent_id = s10
+# text = Use wide pipette tips (cut point of tips if needed).
+1	Add	_	Action	_	_	0	_	_	Offset=467-470
+2	10	_	Amount	_	_	3	Measure	_	Offset=471-476
+3	RNAse	_	Reagent	_	_	0	_	_	Offset=477-482
+4	10	_	Concentration	_	_	3	Measure	_	Offset=484-492
+5	incubate	_	Action	_	_	0	_	_	Offset=494-502
+6	37	_	Temperature	_	_	0	_	_	Offset=506-516
+7	30	_	Time	_	_	0	_	_	Offset=525-535
+
+# sent_id = s11
+# text = Add 10 uL RNAse (10 mg/ml) incubate at 37 degrees (C) for 30 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=537-540
+2	one	_	Amount	_	_	4	Measure	_	Offset=541-551
+3	100%	_	Concentration	_	_	4	Measure	_	Offset=552-556
+4	Isoponanol	_	Reagent	_	_	0	_	_	Offset=557-567
+5	pre-chilled	_	Action	_	_	0	_	_	Offset=569-580
+6	-20	_	Temperature	_	_	0	_	_	Offset=584-587
+
+# sent_id = s12
+# text = Add one volume 100% Isoponanol (pre-chilled at -20).
+1	sample	_	Reagent	_	_	0	_	_	Offset=596-602
+2	precepitate	_	Action	_	_	0	_	_	Offset=606-617
+3	up	_	Modifier	_	_	4	Mod-Link	_	Offset=622-627
+4	20	_	Time	_	_	0	_	_	Offset=628-638
+5	-20	_	Temperature	_	_	0	_	_	Offset=642-645
+
+# sent_id = s13
+# text = Allow sample to precepitate for up to 20 minutes at -20.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=647-657
+2	full	_	Speed	_	_	0	_	_	Offset=661-671
+3	10	_	Time	_	_	0	_	_	Offset=676-686
+
+# sent_id = s14
+# text = Centrifuge at full speed for 10 minutes.
+1	Remove	_	Action	_	_	0	_	_	Offset=688-694
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=695-706
+
+# sent_id = s15
+# text = Remove supernatant.
+1	Add	_	Action	_	_	0	_	_	Offset=708-711
+2	1	_	Amount	_	_	4	Measure	_	Offset=712-716
+3	70%	_	Concentration	_	_	4	Measure	_	Offset=717-720
+4	Ethanol	_	Reagent	_	_	0	_	_	Offset=721-728
+
+# sent_id = s16
+# text = Add 1 ml 70% Ethanol.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=730-740
+2	full	_	Speed	_	_	0	_	_	Offset=744-754
+3	10	_	Time	_	_	0	_	_	Offset=759-769
+
+# sent_id = s17
+# text = Centrifuge at full speed for 10 minutes.
+1	Remove	_	Action	_	_	0	_	_	Offset=771-777
+2	Supernatant	_	Reagent	_	_	0	_	_	Offset=778-789
+
+# sent_id = s18
+# text = Remove Supernatant.
+1	Repeat	_	Action	_	_	0	_	_	Offset=791-797
+2	once	_	Numerical	_	_	0	_	_	Offset=798-802
+
+# sent_id = s19
+# text = Repeat once.
+1	Dry	_	Action	_	_	0	_	_	Offset=804-807
+2	pellet	_	Reagent	_	_	0	_	_	Offset=808-814
+3	approx	_	Modifier	_	_	4	Mod-Link	_	Offset=825-831
+4	20	_	Time	_	_	5	Setting	_	Offset=832-842
+5	vacuum	_	Device	_	_	0	_	_	Offset=846-863
+
+# sent_id = s20
+# text = Dry pellet in air or approx 20 minutes in vacuum centrifuge.
+1	Dissolve	_	Action	_	_	0	_	_	Offset=865-873
+2	pallet	_	Reagent	_	_	0	_	_	Offset=874-880
+3	1x	_	Concentration	_	_	4	Measure	_	Offset=884-886
+4	TE	_	Reagent	_	_	6	Meronym	9:Meronym	Offset=887-889
+5	10	_	Concentration	_	_	6	Measure	_	Offset=891-896
+6	Tris	_	Reagent	_	_	0	_	_	Offset=897-901
+7	pH8	_	pH	_	_	0	_	_	Offset=903-906
+8	1	_	Concentration	_	_	9	Measure	_	Offset=908-912
+9	EDTA	_	Reagent	_	_	0	_	_	Offset=913-917
+

@@ -1,0 +1,211 @@
+# sent_id = s1
+# text = OmniPrep™ For High Quality Genomic DNA Extraction From Gram-Negative Bacteria
+1	Add	_	Action	_	_	0	_	_	Offset=78-81
+2	0.5	_	Amount	_	_	3	Measure	_	Offset=82-88
+3	overnight	_	Reagent	_	_	0	_	_	Offset=95-112
+4	1.5ml	_	Size	_	_	5	Measure	_	Offset=118-123
+5	microfuge	_	Location	_	_	0	_	_	Offset=124-138
+
+# sent_id = s2
+# text = Add 0.5 ml of an overnight culture to a 1.5ml microfuge tube.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=140-150
+2	16,000xg	_	Speed	_	_	0	_	_	Offset=154-162
+3	2-3	_	Time	_	_	0	_	_	Offset=167-178
+4	cells	_	Reagent	_	_	0	_	_	Offset=193-198
+
+# sent_id = s3
+# text = Centrifuge at 16,000xg for 2-3 minutes to pellet the cells.
+1	Add	_	Action	_	_	0	_	_	Offset=200-203
+2	700µl	_	Amount	_	_	3	Measure	_	Offset=204-209
+3	Lysis	_	Reagent	_	_	0	_	_	Offset=210-222
+4	mix	_	Action	_	_	0	_	_	Offset=227-230
+5	inverting	_	Method	_	_	0	_	_	Offset=234-243
+6	few	_	Generic-Measure	_	_	0	_	_	Offset=246-255
+
+# sent_id = s4
+# text = Add 700µl Lysis Buffer and mix by inverting a few times.
+1	Incubate	_	Action	_	_	0	_	_	Offset=257-265
+2	sample	_	Reagent	_	_	0	_	_	Offset=270-276
+3	55-60°C	_	Temperature	_	_	0	_	_	Offset=280-287
+4	15	_	Time	_	_	0	_	_	Offset=292-302
+
+# sent_id = s5
+# text = Incubate the sample at 55-60°C for 15 minutes.
+1	add	_	Action	_	_	0	_	_	Offset=370-373
+2	1µl	_	Amount	_	_	3	Measure	_	Offset=374-377
+3	Proteinase	_	Reagent	_	_	0	_	_	Offset=378-399
+4	100µl	_	Amount	_	_	5	Measure	_	Offset=410-415
+5	Lysis	_	Reagent	_	_	0	_	_	Offset=416-428
+6	incubate	_	Action	_	_	0	_	_	Offset=433-441
+7	60°C	_	Temperature	_	_	0	_	_	Offset=445-449
+8	1-2	_	Time	_	_	0	_	_	Offset=454-463
+
+# sent_id = s6
+# text = Do not heat higher than 60°C.
+1	Invert	_	Action	_	_	0	_	_	Offset=465-471
+2	tube	_	Location	_	_	0	_	_	Offset=476-480
+3	periodically	_	Modifier	_	_	2	Mod-Link	_	Offset=481-493
+4	each	_	Generic-Measure	_	_	0	_	_	Offset=494-503
+
+# sent_id = s7
+# text = OPTIONAL: For maximum DNA recovery, add 1µl Proteinase K solution for every 100µl Lysis Buffer and incubate at 60°C for 1-2 hours.
+1	611	_	Action	_	_	0	_	_	Offset=587-592;604
+2	sample	_	Reagent	_	_	0	_	_	Offset=597-603
+3	room	_	Temperature	_	_	0	_	_	Offset=615-631
+
+# sent_id = s8
+# text = Invert the tube periodically each hour.
+1	Add	_	Action	_	_	0	_	_	Offset=633-636
+2	200µl	_	Amount	_	_	3	Measure	_	Offset=637-642
+3	chloroform	_	Reagent	_	_	0	_	_	Offset=643-653
+4	mix	_	Action	_	_	0	_	_	Offset=658-661
+5	by	_	Method	_	_	0	_	_	Offset=662-674
+6	tube	_	Location	_	_	0	_	_	Offset=679-683
+7	several	_	Generic-Measure	_	_	0	_	_	Offset=684-697
+
+# sent_id = s9
+# text = This step will digest hard to handle tissues and significantly improve the yield.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=699-709
+2	10	_	Time	_	_	0	_	_	Offset=714-724
+3	14,000xg	_	Speed	_	_	0	_	_	Offset=728-736
+4	carefully	_	Modifier	_	_	0	_	_	Offset=741-750
+5	remove	_	Action	_	_	0	_	_	Offset=751-757
+6	upper	_	Reagent	_	_	0	_	_	Offset=762-773
+7	clean	_	Location	_	_	0	_	_	Offset=779-805
+
+# sent_id = s10
+# text = Allow the sample to cool to room temperature.
+1	Add	_	Action	_	_	0	_	_	Offset=807-810
+2	50µl	_	Amount	_	_	3	Measure	_	Offset=811-815
+3	DNA	_	Reagent	_	_	0	_	_	Offset=816-838
+4	sample	_	Reagent	_	_	0	_	_	Offset=846-852
+5	invert	_	Action	_	_	0	_	_	Offset=857-863
+6	several	_	Generic-Measure	_	_	0	_	_	Offset=864-877
+
+# sent_id = s11
+# text = Add 200µl chloroform and mix by inverting the tube several times.
+1	Incubate	_	Action	_	_	0	_	_	Offset=886-894
+2	sample	_	Reagent	_	_	0	_	_	Offset=899-905
+3	5-10	_	Time	_	_	0	_	_	Offset=910-922
+4	60°C	_	Temperature	_	_	0	_	_	Offset=926-930
+
+# sent_id = s12
+# text = Centrifuge for 10 minutes at 14,000xg and carefully remove the upper phase to a clean microcentrifuge tube.
+1	Add	_	Action	_	_	0	_	_	Offset=932-935
+2	100µl	_	Amount	_	_	3	Measure	_	Offset=936-941
+3	Precipitation	_	Reagent	_	_	0	_	_	Offset=942-964
+4	mix	_	Action	_	_	0	_	_	Offset=969-972
+5	inverting	_	Method	_	_	0	_	_	Offset=976-985
+6	tube	_	Location	_	_	0	_	_	Offset=990-994
+7	several	_	Generic-Measure	_	_	0	_	_	Offset=995-1008
+
+# sent_id = s13
+# text = Add 50µl DNA Stripping Solution to the sample and invert several times to mix.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1010-1020
+2	sample	_	Reagent	_	_	0	_	_	Offset=1025-1031
+3	14,000xg	_	Speed	_	_	0	_	_	Offset=1035-1043
+4	5	_	Time	_	_	0	_	_	Offset=1048-1057
+
+# sent_id = s14
+# text = Incubate the sample for 5-10 minutes at 60°C.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1059-1067
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1072-1083
+3	clean	_	Location	_	_	0	_	_	Offset=1089-1099
+4	precipitate	_	Action	_	_	0	_	_	Offset=1104-1115
+5	genomic	_	Reagent	_	_	0	_	_	Offset=1120-1131
+6	500µl	_	Amount	_	_	7	Measure	_	Offset=1137-1142
+7	isopropanol	_	Reagent	_	_	0	_	_	Offset=1143-1154
+
+# sent_id = s15
+# text = Add 100µl Precipitation Solution and mix by inverting the tube several times.
+1	Invert	_	Action	_	_	0	_	_	Offset=1156-1162
+2	tubes	_	Location	_	_	0	_	_	Offset=1167-1172
+3	10	_	Numerical	_	_	0	_	_	Offset=1173-1181
+
+# sent_id = s16
+# text = Centrifuge the sample at 14,000xg for 5 minutes.
+1	add	_	Action	_	_	0	_	_	Offset=1244-1247
+2	2µl	_	Amount	_	_	3	Measure	_	Offset=1248-1251
+3	Mussel	_	Reagent	_	_	0	_	_	Offset=1252-1267
+
+# sent_id = s17
+# text = Transfer the supernatant to a clean tube and precipitate the genomic DNA with 500µl isopropanol.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1286-1296
+2	14,000xg	_	Speed	_	_	0	_	_	Offset=1300-1308
+3	5	_	Time	_	_	0	_	_	Offset=1313-1322
+
+# sent_id = s18
+# text = Invert the tubes 10 times to precipitate the DNA.
+1	Remove	_	Action	_	_	0	_	_	Offset=1346-1352
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1357-1368
+
+# sent_id = s19
+# text = OPTIONAL: For increased DNA recovery, add 2µl Mussel Glycogen as a DNA carrier.
+1	Add	_	Action	_	_	0	_	_	Offset=1370-1373
+2	700µl	_	Amount	_	_	4	Measure	_	Offset=1374-1379
+3	70%	_	Concentration	_	_	4	Measure	_	Offset=1380-1383
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=1384-1391
+5	tube	_	Location	_	_	0	_	_	Offset=1399-1403
+6	invert	_	Action	_	_	0	_	_	Offset=1408-1414
+7	several	_	Generic-Measure	_	_	0	_	_	Offset=1415-1428
+
+# sent_id = s20
+# text = Centrifuge at 14,000xg for 5 minutes to pellet genomic DNA.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1453-1463
+2	1	_	Time	_	_	0	_	_	Offset=1468-1476
+3	14,000xg	_	Speed	_	_	0	_	_	Offset=1480-1488
+
+# sent_id = s21
+# text = Remove the supernatant.
+1	Decant	_	Action	_	_	0	_	_	Offset=1490-1496
+2	pipette	_	Action	_	_	0	_	_	Offset=1500-1511
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=1516-1523
+
+# sent_id = s22
+# text = Add 700µl 70% ethanol to the tube and invert several times to wash the DNA pellet.
+1	Invert	_	Action	_	_	0	_	_	Offset=1532-1538
+2	tube	_	Location	_	_	0	_	_	Offset=1543-1547
+3	clean	_	Location	_	_	0	_	_	Offset=1553-1576
+4	several	_	Generic-Measure	_	_	0	_	_	Offset=1581-1596
+
+# sent_id = s23
+# text = Centrifuge for 1 minute at 14,000xg.
+1	Add	_	Action	_	_	0	_	_	Offset=1640-1643
+2	50µl	_	Amount	_	_	3	Measure	_	Offset=1644-1648
+3	TE	_	Reagent	_	_	0	_	_	Offset=1649-1658
+
+# sent_id = s24
+# text = Decant or pipette off the ethanol wash.  
+1	Incubate	_	Action	_	_	0	_	_	Offset=1674-1682
+2	room	_	Temperature	_	_	0	_	_	Offset=1686-1702
+3	at	_	Modifier	_	_	4	Mod-Link	_	Offset=1707-1715
+4	15	_	Time	_	_	0	_	_	Offset=1716-1726
+
+# sent_id = s25
+# text = Invert the tube on a clean absorbent surface for several minutes to allow any excess ethanol to drain away.
+1	1µl	_	Amount	_	_	2	Measure	_	Offset=1751-1754
+2	LongLife™	_	Reagent	_	_	0	_	_	Offset=1755-1770
+3	100µl	_	Amount	_	_	4	Measure	_	Offset=1781-1786
+4	TE	_	Reagent	_	_	0	_	_	Offset=1787-1796
+5	added	_	Action	_	_	0	_	_	Offset=1804-1809
+
+# sent_id = s26
+# text = Add 50µl TE Buffer to the pellet.
+1	Store	_	Action	_	_	0	_	_	Offset=1825-1830
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1831-1834
+3	4°C	_	Temperature	_	_	0	_	_	Offset=1838-1841
+4	store	_	Action	_	_	0	_	_	Offset=1865-1870
+5	-20°C	_	Temperature	_	_	0	_	_	Offset=1874-1879
+6	-80°C	_	Temperature	_	_	0	_	_	Offset=1883-1888
+
+# sent_id = s27
+# text = Incubate at room temperature for at least 15 minutes to rehydrate.
+1	Remove	_	Action	_	_	0	_	_	Offset=1890-1896
+2	discard	_	Action	_	_	0	_	_	Offset=1901-1908
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=1913-1924
+
+# sent_id = s28
+# text = OPTIONAL: 1µl LongLife™ RNase for every 100µl TE Buffer can be added at this stage.
+1	Vortex	_	Action	_	_	0	_	_	Offset=1926-1932
+2	tube	_	Location	_	_	0	_	_	Offset=1937-1941
+

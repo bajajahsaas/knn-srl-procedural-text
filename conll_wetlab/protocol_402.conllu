@@ -1,0 +1,154 @@
+# sent_id = s1
+# text = Time Efficient Method for Washing 15 mL Vials
+1	Arrange	_	Action	_	_	0	_	_	Offset=46-53
+2	vials	_	Location	_	_	3	Coreference-Link	_	Offset=54-59
+3	they	_	Mention	_	_	0	_	_	Offset=68-72
+4	sit	_	Action	_	_	0	_	_	Offset=77-80
+5	upright	_	Method	_	_	0	_	_	Offset=81-88
+6	large	_	Location	_	_	0	_	_	Offset=94-112
+
+# sent_id = s2
+# text = Arrange vials so that they all sit upright in a large plastic cage.
+1	fit	_	Action	_	_	0	_	_	Offset=141-144
+2	about	_	Modifier	_	_	4	Mod-Link	_	Offset=145-150
+3	60	_	Numerical	_	_	4	Measure	_	Offset=151-153
+4	vials	_	Location	_	_	0	_	_	Offset=154-159
+5	single	_	Location	_	_	0	_	_	Offset=193-204
+
+# sent_id = s3
+# text = I’ve found you can usually fit about 60 vials (a bit more than one bag) into a single cage.
+1	Place	_	Action	_	_	0	_	_	Offset=206-211
+2	caps	_	Seal	_	_	0	_	_	Offset=212-216
+3	small	_	Location	_	_	0	_	_	Offset=224-234
+
+# sent_id = s4
+# text = Place caps into a small cage.
+1	Place	_	Action	_	_	0	_	_	Offset=236-241
+2	cages	_	Location	_	_	0	_	_	Offset=242-247
+3	upright	_	Method	_	_	0	_	_	Offset=248-255
+4	soap	_	Device	_	_	0	_	_	Offset=263-272
+5	overnight	_	Time	_	_	0	_	_	Offset=273-282
+
+# sent_id = s5
+# text = Place cages upright into a soap bath overnight.
+1	Place	_	Action	_	_	0	_	_	Offset=284-289
+2	large	_	Reagent	_	_	5	Coreference-Link	_	Offset=292-311
+3	cages	_	Location	_	_	0	_	_	Offset=321-326
+4	keep	_	Action	_	_	0	_	_	Offset=330-334
+5	them	_	Mention	_	_	0	_	_	Offset=335-339
+6	submerged	_	Method	_	_	0	_	_	Offset=340-349
+
+# sent_id = s6
+# text = Place a large piece of PTFE over the cages to keep them submerged.
+1	Remove	_	Action	_	_	0	_	_	Offset=351-357
+2	cages	_	Location	_	_	0	_	_	Offset=358-363
+3	soap	_	Reagent	_	_	0	_	_	Offset=369-373
+4	rinse	_	Action	_	_	0	_	_	Offset=379-384
+5	thoroughly	_	Modifier	_	_	0	_	_	Offset=385-395
+6	7	_	Numerical	_	_	0	_	_	Offset=396-397
+7	remove	_	Action	_	_	0	_	_	Offset=407-413
+8	soap	_	Reagent	_	_	0	_	_	Offset=414-418
+
+# sent_id = s7
+# text = Remove cages from soap, and rinse thoroughly 7 times to remove soap.
+1	water	_	Reagent	_	_	0	_	_	Offset=453-458
+2	gets	_	Action	_	_	0	_	_	Offset=459-463
+3	each	_	Modifier	_	_	5	Mod-Link	_	Offset=469-473
+4	individual	_	Modifier	_	_	5	Mod-Link	_	Offset=474-484
+5	vial	_	Location	_	_	0	_	_	Offset=485-489
+6	move	_	Action	_	_	0	_	_	Offset=494-498
+7	cage	_	Location	_	_	0	_	_	Offset=503-507
+8	back	_	Method	_	_	0	_	_	Offset=508-522
+9	each	_	Modifier	_	_	10	Mod-Link	_	Offset=529-533
+10	vials	_	Location	_	_	0	_	_	Offset=541-546
+11	at	_	Modifier	_	_	0	_	_	Offset=550-558
+12	partially	_	Modifier	_	_	0	_	_	Offset=559-568
+13	filled	_	Action	_	_	0	_	_	Offset=569-575
+
+# sent_id = s8
+# text = It’s important to make sure that water gets into each individual vial, so move the cage back and forth until each of the vials is at least partially filled.
+1	shake	_	Action	_	_	0	_	_	Offset=623-628
+2	cage	_	Location	_	_	0	_	_	Offset=633-637
+3	interior	_	Location	_	_	0	_	_	Offset=649-657
+4	all	_	Modifier	_	_	5	Mod-Link	_	Offset=661-664
+5	vials	_	Location	_	_	3	Meronym	_	Offset=669-674
+6	rinsed	_	Action	_	_	0	_	_	Offset=678-684
+
+# sent_id = s9
+# text = When pouring the water back out, make sure to shake the cage so that in interior of all the vials is rinsed.
+1	Rinse	_	Action	_	_	0	_	_	Offset=686-691
+
+# sent_id = s10
+# text = Rinse the outsides in between rinsing the vial interiors.
+1	Place	_	Action	_	_	0	_	_	Offset=744-749
+2	cages	_	Location	_	_	0	_	_	Offset=750-755
+3	upright	_	Method	_	_	0	_	_	Offset=756-763
+4	1N	_	Concentration	_	_	5	Setting	_	Offset=771-773
+5	HCl	_	Device	_	_	0	_	_	Offset=774-782
+
+# sent_id = s11
+# text = Place cages upright into a 1N HCl bath.
+1	invert	_	Action	_	_	0	_	_	Offset=815-821
+2	rotate	_	Action	_	_	0	_	_	Offset=829-835
+3	all	_	Modifier	_	_	4	Mod-Link	_	Offset=836-839
+4	cages	_	Location	_	_	6	Meronym	5:Meronym	Offset=847-852
+5	vials	_	Location	_	_	0	_	_	Offset=854-859
+6	caps	_	Seal	_	_	0	_	_	Offset=864-868
+7	all	_	Modifier	_	_	8	Mod-Link	_	Offset=883-886
+8	surfaces	_	Location	_	_	0	_	_	Offset=887-895
+9	exposed	_	Action	_	_	0	_	_	Offset=900-907
+
+# sent_id = s12
+# text = Once or twice during the week, invert and/or rotate all of the cages (vials and caps) to make sure all surfaces are exposed.
+1	Remove	_	Action	_	_	0	_	_	Offset=909-915
+2	vials	_	Location	_	_	0	_	_	Offset=916-921
+3	caps	_	Location	_	_	0	_	_	Offset=926-930
+4	bath	_	Device	_	_	0	_	_	Offset=940-944
+5	rinse	_	Action	_	_	0	_	_	Offset=949-954
+6	each	_	Modifier	_	_	7	Mod-Link	_	Offset=955-959
+7	cage	_	Location	_	_	0	_	_	Offset=960-964
+8	7	_	Numerical	_	_	0	_	_	Offset=965-966
+9	remove	_	Action	_	_	0	_	_	Offset=976-982
+10	most	_	Modifier	_	_	11	Mod-Link	_	Offset=983-987
+11	HCl	_	Reagent	_	_	0	_	_	Offset=995-998
+
+# sent_id = s13
+# text = Remove vials and caps from the bath and rinse each cage 7 times to remove most of the HCl.
+1	Clean	_	Action	_	_	0	_	_	Offset=1000-1005
+2	area	_	Location	_	_	0	_	_	Offset=1009-1013
+3	drying	_	Location	_	_	2	Meronym	_	Offset=1021-1033
+4	clean	_	Modifier	_	_	5	Mod-Link	_	Offset=1041-1046
+5	wipe	_	Device	_	_	0	_	_	Offset=1047-1051
+6	place	_	Action	_	_	0	_	_	Offset=1057-1062
+7	cages	_	Location	_	_	0	_	_	Offset=1063-1068
+8	drying	_	Location	_	_	0	_	_	Offset=1078-1090
+
+# sent_id = s14
+# text = Clean an area in the drying bench with a clean wipe, and place cages into the drying bench.
+1	thoroughly	_	Modifier	_	_	3	Mod-Link	_	Offset=1097-1115
+2	rinsed	_	Modifier	_	_	3	Mod-Link	_	Offset=1120-1126
+3	poly	_	Device	_	_	0	_	_	Offset=1127-1138
+4	remove	_	Action	_	_	0	_	_	Offset=1140-1146
+5	each	_	Modifier	_	_	6	Mod-Link	_	Offset=1147-1151
+6	vial	_	Location	_	_	0	_	_	Offset=1152-1156
+7	cage	_	Location	_	_	0	_	_	Offset=1166-1170
+8	individually	_	Modifier	_	_	0	_	_	Offset=1175-1187
+9	rinse	_	Action	_	_	0	_	_	Offset=1188-1193
+10	vial	_	Location	_	_	0	_	_	Offset=1198-1202
+11	one	_	Numerical	_	_	12	Measure	_	Offset=1208-1211
+12	cap	_	Seal	_	_	0	_	_	Offset=1212-1215
+13	three	_	Numerical	_	_	0	_	_	Offset=1216-1221
+
+# sent_id = s15
+# text = With thoroughly cleaned and rinsed poly gloves, remove each vial from the cage and individually rinse the vial plus one cap three times.
+1	Stand	_	Action	_	_	0	_	_	Offset=1229-1234
+2	front	_	Location	_	_	0	_	_	Offset=1238-1243
+3	flow	_	Location	_	_	2	Meronym	_	Offset=1251-1261
+4	shake	_	Action	_	_	0	_	_	Offset=1265-1274
+5	excess	_	Modifier	_	_	6	Mod-Link	_	Offset=1275-1281
+6	water	_	Reagent	_	_	0	_	_	Offset=1282-1287
+7	cap	_	Action	_	_	0	_	_	Offset=1289-1292
+8	vial	_	Location	_	_	0	_	_	Offset=1293-1297
+9	place	_	Action	_	_	0	_	_	Offset=1303-1308
+10	bag	_	Location	_	_	0	_	_	Offset=1314-1317
+

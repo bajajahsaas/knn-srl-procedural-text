@@ -1,0 +1,138 @@
+# sent_id = s1
+# text = Fixation of yeast cells for RNA-FISH
+1	10am	_	Time	_	_	0	_	_	Offset=44-48
+2	start	_	Action	_	_	0	_	_	Offset=50-55
+3	cell	_	Reagent	_	_	0	_	_	Offset=58-70
+4	50ml	_	Amount	_	_	5	Measure	_	Offset=76-80
+5	tube	_	Location	_	_	0	_	_	Offset=81-85
+6	10ml	_	Amount	_	_	7	Measure	_	Offset=93-97
+7	CSM	_	Reagent	_	_	0	_	_	Offset=101-104
+
+# sent_id = s2
+# text = Around 10am, start a cell culture in a 50ml tube, using 10ml of CSM.
+1	Grow	_	Action	_	_	0	_	_	Offset=106-110
+2	8-10	_	Time	_	_	0	_	_	Offset=115-125
+3	shaker	_	Location	_	_	0	_	_	Offset=131-137
+4	30	_	Temperature	_	_	0	_	_	Offset=141-146
+
+# sent_id = s3
+# text = Grow for 8-10 hours in a shaker at 30 °C.
+1	Measure	_	Action	_	_	0	_	_	Offset=148-155
+2	OD	_	Measure-Type	_	_	0	_	_	Offset=156-158
+3	evening	_	Time	_	_	0	_	_	Offset=166-173
+4	dilute	_	Action	_	_	0	_	_	Offset=178-184
+5	250ml	_	Amount	_	_	6	Measure	_	Offset=190-195
+6	glass	_	Location	_	_	0	_	_	Offset=196-208
+7	45ml	_	Amount	_	_	8	Measure	_	Offset=219-223
+8	CSM	_	Reagent	_	_	0	_	_	Offset=227-230
+9	overnight	_	Time	_	_	0	_	_	Offset=235-244
+10	growth	_	Method	_	_	0	_	_	Offset=245-251
+
+# sent_id = s4
+# text = Measure OD in the evening and dilute into 250ml glass flasks, starting 45ml of CSM for overnight growth.
+1	Transfer	_	Action	_	_	0	_	_	Offset=305-313
+2	50ml	_	Amount	_	_	3	Measure	_	Offset=317-321
+3	falcon	_	Location	_	_	0	_	_	Offset=322-334
+
+# sent_id = s5
+# text = Aiming for OD 0.2-0.4 around 10am the next morning.
+1	Add	_	Action	_	_	0	_	_	Offset=336-339
+2	5ml	_	Amount	_	_	3	Measure	_	Offset=340-343
+3	Formaldehyde	_	Reagent	_	_	0	_	_	Offset=347-359
+4	invert	_	Action	_	_	0	_	_	Offset=361-367
+5	few	_	Numerical	_	_	0	_	_	Offset=370-380
+6	set	_	Action	_	_	0	_	_	Offset=381-384
+7	benchtop	_	Location	_	_	0	_	_	Offset=388-396
+8	45min	_	Time	_	_	0	_	_	Offset=401-406
+
+# sent_id = s6
+# text = Transfer to 50ml falcon tubes.
+1	Spin	_	Action	_	_	0	_	_	Offset=408-417
+2	3,000rpm	_	Speed	_	_	0	_	_	Offset=421-429
+3	4min	_	Time	_	_	0	_	_	Offset=434-438
+
+# sent_id = s7
+# text = Add 5ml of Formaldehyde, invert a few times, set at benchtop for 45min.
+1	Decant	_	Action	_	_	0	_	_	Offset=440-455
+2	pipetting	_	Method	_	_	0	_	_	Offset=459-468
+3	1ml	_	Amount	_	_	5	Measure	_	Offset=474-477
+4	ice-cold	_	Modifier	_	_	5	Mod-Link	_	Offset=481-489
+5	BufferB	_	Reagent	_	_	0	_	_	Offset=490-497
+
+# sent_id = s8
+# text = Spin down at 3,000rpm for 4min.
+1	Transfer	_	Action	_	_	0	_	_	Offset=499-507
+2	1.5ml	_	Amount	_	_	3	Measure	_	Offset=511-516
+3	tubes	_	Location	_	_	0	_	_	Offset=517-522
+
+# sent_id = s9
+# text = Decant and wash by pipetting with 1ml of ice-cold BufferB.
+1	Spin	_	Action	_	_	0	_	_	Offset=536-540
+2	3,000rpm	_	Speed	_	_	0	_	_	Offset=549-557
+3	4min	_	Time	_	_	0	_	_	Offset=562-566
+
+# sent_id = s10
+# text = Transfer to 1.5ml tubes.
+1	Wash	_	Action	_	_	0	_	_	Offset=580-584
+2	1ml	_	Amount	_	_	3	Measure	_	Offset=600-603
+3	ice-cold	_	Reagent	_	_	0	_	_	Offset=604-620
+
+# sent_id = s11
+# text = (wash 1/2).
+1	Spin	_	Action	_	_	0	_	_	Offset=634-638
+2	3,000rpm	_	Speed	_	_	0	_	_	Offset=647-655
+3	4min	_	Time	_	_	0	_	_	Offset=660-664
+
+# sent_id = s12
+# text = Spin down at 3,000rpm for 4min.
+1	Decant	_	Action	_	_	0	_	_	Offset=678-698
+2	1ml	_	Amount	_	_	3	Measure	_	Offset=702-705
+3	BufferB	_	Reagent	_	_	0	_	_	Offset=709-716
+
+# sent_id = s13
+# text = (wash 1/2).
+1	Add	_	Action	_	_	0	_	_	Offset=718-721
+2	2.5ul	_	Amount	_	_	3	Measure	_	Offset=722-727
+3	Zymolyase	_	Reagent	_	_	0	_	_	Offset=731-740
+4	digest	_	Action	_	_	0	_	_	Offset=745-751
+5	30	_	Temperature	_	_	0	_	_	Offset=755-760
+
+# sent_id = s14
+# text = Wash once more with 1ml ice-cold BufferB.
+1	Drop	_	Action	_	_	0	_	_	Offset=868-872
+2	1	_	Amount	_	_	3	Measure	_	Offset=873-877
+3	cells	_	Reagent	_	_	0	_	_	Offset=885-890
+4	glass	_	Location	_	_	0	_	_	Offset=898-909
+
+# sent_id = s15
+# text = (wash 2/2).
+1	Use	_	Action	_	_	0	_	_	Offset=969-972
+2	phase	_	Device	_	_	0	_	_	Offset=992-1011
+
+# sent_id = s16
+# text = Spin down at 3,000rpm for 4min.
+1	Wash	_	Action	_	_	0	_	_	Offset=1180-1184
+2	1ml	_	Amount	_	_	3	Measure	_	Offset=1190-1193
+3	ice-cold	_	Reagent	_	_	0	_	_	Offset=1194-1210
+4	spinning	_	Action	_	_	0	_	_	Offset=1212-1220
+5	5-6min	_	Time	_	_	0	_	_	Offset=1221-1227
+6	2,000rpm	_	Speed	_	_	0	_	_	Offset=1231-1239
+
+# sent_id = s17
+# text = (wash 2/2).
+1	Decant	_	Action	_	_	0	_	_	Offset=1253-1268
+2	1ml	_	Time	_	_	0	_	_	Offset=1280-1283
+3	ice-cold	_	Reagent	_	_	0	_	_	Offset=1284-1300
+4	spinning	_	Action	_	_	0	_	_	Offset=1302-1310
+5	5-6min	_	Time	_	_	0	_	_	Offset=1311-1317
+6	2,000rpm	_	Speed	_	_	0	_	_	Offset=1321-1329
+
+# sent_id = s18
+# text = Decant and resuspend in 1ml of BufferB.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1343-1352
+2	1ml	_	Amount	_	_	4	Measure	_	Offset=1356-1359
+3	70%	_	Concentration	_	_	4	Measure	_	Offset=1363-1366
+4	Ethanol	_	Reagent	_	_	0	_	_	Offset=1367-1374
+5	overnight	_	Time	_	_	0	_	_	Offset=1375-1384
+6	4	_	Temperature	_	_	0	_	_	Offset=1388-1392
+

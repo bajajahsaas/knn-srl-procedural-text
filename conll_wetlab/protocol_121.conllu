@@ -1,0 +1,84 @@
+# sent_id = s1
+# text = FLVP assays
+1	Prepare	_	Action	_	_	0	_	_	Offset=126-133
+2	culture	_	Reagent	_	_	0	_	_	Offset=167-174
+3	natural	_	Reagent	_	_	0	_	_	Offset=178-192
+4	~105	_	Amount	_	_	5	Measure	_	Offset=218-233
+5	target	_	Reagent	_	_	0	_	_	Offset=241-247
+6	obtained	_	Action	_	_	0	_	_	Offset=280-288
+
+# sent_id = s2
+# text = Perform preparation of FLVPs as described in Viral and bacterial isolates, propagation and preparation of stocks.
+1	Perform	_	Action	_	_	0	_	_	Offset=290-297
+2	subsequent	_	Mention	_	_	0	_	_	Offset=302-318
+3	subdued	_	Location	_	_	0	_	_	Offset=325-338
+
+# sent_id = s3
+# text = Prepare a 10-fold dilution series of the culture or natural sample to be enumerated so that ~105 cells mL–1 of the target (FLVP-specific species) will be obtained.
+1	Add	_	Action	_	_	0	_	_	Offset=378-381
+2	0.1	_	Amount	_	_	3	Measure	_	Offset=382-388
+3	FLVP	_	Reagent	_	_	0	_	_	Offset=389-407
+4	0.9	_	Amount	_	_	5	Measure	_	Offset=411-417
+5	sample	_	Reagent	_	_	0	_	_	Offset=418-424
+6	microcentrifuge	_	Location	_	_	0	_	_	Offset=430-450
+7	slide	_	Location	_	_	0	_	_	Offset=460-465
+8	prepared	_	Action	_	_	0	_	_	Offset=472-480
+9	vortex	_	Action	_	_	0	_	_	Offset=485-491
+10	mix	_	Action	_	_	0	_	_	Offset=495-498
+
+# sent_id = s4
+# text = Perform all subsequent steps under subdued light, since the stain will fade if exposed.
+1	30	_	Time	_	_	0	_	_	Offset=512-518
+2	adsorption	_	Action	_	_	0	_	_	Offset=523-533
+3	FLVPs	_	Reagent	_	_	0	_	_	Offset=537-542
+4	target	_	Reagent	_	_	0	_	_	Offset=546-558
+
+# sent_id = s5
+# text = Add 0.1 mL FLVP working stock to 0.9 mL sample in a microcentrifuge tube for each slide to be prepared and vortex to mix.
+1	Filter	_	Action	_	_	0	_	_	Offset=560-566
+2	1	_	Amount	_	_	3	Measure	_	Offset=572-576
+3	sample	_	Reagent	_	_	0	_	_	Offset=577-583
+4	0.2-µm	_	Modifier	_	_	5	Mod-Link	_	Offset=591-597
+5	Anodisc	_	Location	_	_	0	_	_	Offset=598-612
+6	0.45-µm	_	Modifier	_	_	7	Mod-Link	_	Offset=621-628
+7	HA	_	Device	_	_	0	_	_	Offset=629-638
+8	backing	_	Action	_	_	0	_	_	Offset=643-650
+
+# sent_id = s6
+# text = Allow up to 30 min for adsorption of FLVPs to target cells.
+1	Pipette	_	Action	_	_	0	_	_	Offset=652-659
+2	10	_	Amount	_	_	3	Measure	_	Offset=660-665
+3	mounting	_	Reagent	_	_	0	_	_	Offset=666-681
+4	surface	_	Location	_	_	0	_	_	Offset=691-698
+5	slide	_	Location	_	_	4	Meronym	_	Offset=704-709
+
+# sent_id = s7
+# text = Filter each 1 mL sample onto a 0.2-µm Anodisc filter using a 0.45-µm HA filter for backing.
+1	Place	_	Action	_	_	0	_	_	Offset=711-716
+2	filter	_	Device	_	_	0	_	_	Offset=721-727
+3	over	_	Location	_	_	0	_	_	Offset=728-741
+
+# sent_id = s8
+# text = Pipette 10 µL mounting medium onto the surface of a slide.
+1	Pipette	_	Action	_	_	0	_	_	Offset=743-750
+2	10	_	Amount	_	_	3	Measure	_	Offset=751-756
+3	mounting	_	Reagent	_	_	0	_	_	Offset=757-772
+4	surface	_	Location	_	_	0	_	_	Offset=782-789
+5	filter	_	Location	_	_	4	Meronym	_	Offset=797-803
+
+# sent_id = s9
+# text = Place the filter over the drop.
+1	Place	_	Action	_	_	0	_	_	Offset=805-810
+2	25	_	Size	_	_	3	Measure	_	Offset=813-823
+3	coverslip	_	Seal	_	_	0	_	_	Offset=824-833
+4	filter	_	Location	_	_	0	_	_	Offset=843-849
+
+# sent_id = s10
+# text = Pipette 10 µL mounting medium onto the surface of the filter.
+1	Observe	_	Action	_	_	0	_	_	Offset=851-858
+2	slides	_	Device	_	_	0	_	_	Offset=863-869
+3	blue-light	_	Location	_	_	0	_	_	Offset=876-897
+4	count	_	Action	_	_	0	_	_	Offset=902-907
+5	cells	_	Reagent	_	_	0	_	_	Offset=912-917
+6	fluorescent	_	Device	_	_	0	_	_	Offset=925-941
+

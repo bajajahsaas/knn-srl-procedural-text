@@ -1,0 +1,63 @@
+# sent_id = s1
+# text = T-maze phototaxis with LEDs
+1	Clip	_	Action	_	_	0	_	_	Offset=28-32
+2	wings	_	Reagent	_	_	0	_	_	Offset=33-38
+3	half	_	Generic-Measure	_	_	4	Measure	_	Offset=42-46
+4	flies	_	Reagent	_	_	0	_	_	Offset=54-59
+
+# sent_id = s2
+# text = Clip wings of half of the flies.
+1	Let	_	Action	_	_	0	_	_	Offset=61-64
+2	flies	_	Reagent	_	_	0	_	_	Offset=65-70
+3	recover	_	Action	_	_	0	_	_	Offset=71-78
+4	1	_	Time	_	_	0	_	_	Offset=83-88
+
+# sent_id = s3
+# text = Let flies recover for 1 day (at 25°C, faster recovery).
+1	Put	_	Action	_	_	0	_	_	Offset=117-120
+2	flies	_	Reagent	_	_	5	Coreference-Link	_	Offset=125-130
+3	T-maze	_	Location	_	_	0	_	_	Offset=138-144
+4	let	_	Action	_	_	0	_	_	Offset=165-168
+5	them	_	Mention	_	_	0	_	_	Offset=169-173
+6	adapt	_	Action	_	_	0	_	_	Offset=174-179
+7	machine	_	Location	_	_	0	_	_	Offset=198-205
+8	darkness	_	Location	_	_	0	_	_	Offset=214-222
+9	10	_	Time	_	_	0	_	_	Offset=227-237
+
+# sent_id = s4
+# text = Put the flies in the T-maze (entrance tube) and let them adapt themselves to the machine and the darkness for 10 minutes.
+1	Move	_	Action	_	_	0	_	_	Offset=239-243
+2	flies	_	Reagent	_	_	5	Coreference-Link	_	Offset=248-253
+3	elevator	_	Location	_	_	0	_	_	Offset=263-271
+4	let	_	Action	_	_	0	_	_	Offset=309-312
+5	them	_	Mention	_	_	0	_	_	Offset=313-317
+6	stay	_	Action	_	_	0	_	_	Offset=318-322
+7	there	_	Location	_	_	0	_	_	Offset=323-328
+8	1	_	Time	_	_	0	_	_	Offset=340-348
+
+# sent_id = s5
+# text = Move the flies into the elevator (the mobile part of the T-maze), and let them stay there for around 1 minute.
+1	Move	_	Action	_	_	0	_	_	Offset=350-354
+2	flies	_	Reagent	_	_	0	_	_	Offset=359-364
+3	bottom	_	Modifier	_	_	4	Mod-Link	_	Offset=372-378
+4	T-maze	_	Location	_	_	0	_	_	Offset=382-388
+
+# sent_id = s6
+# text = Move the flies to the bottom of T-maze (taking down the elevator).
+1	Wait	_	Action	_	_	0	_	_	Offset=649-653
+2	30	_	Time	_	_	0	_	_	Offset=658-668
+3	flies	_	Reagent	_	_	5	Coreference-Link	_	Offset=677-682
+4	lock	_	Action	_	_	0	_	_	Offset=711-715
+5	them	_	Mention	_	_	0	_	_	Offset=716-720
+6	tubes	_	Location	_	_	0	_	_	Offset=728-733
+
+# sent_id = s7
+# text = Now they will have to make a decision between two different tubes: one is completely dark, and the other one has a LED in the bottom/is entirely transparent.
+1	Anesthetize	_	Action	_	_	0	_	_	Offset=782-793
+2	flies	_	Reagent	_	_	5	Coreference-Link	_	Offset=798-803
+3	CO2	_	Reagent	_	_	0	_	_	Offset=809-812
+4	count	_	Action	_	_	0	_	_	Offset=817-822
+5	them	_	Mention	_	_	0	_	_	Offset=823-827
+6	under	_	Modifier	_	_	7	Mod-Link	_	Offset=828-833
+7	magnifying	_	Location	_	_	0	_	_	Offset=838-854
+

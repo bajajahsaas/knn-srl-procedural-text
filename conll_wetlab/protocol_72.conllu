@@ -1,0 +1,134 @@
+# sent_id = s1
+# text = PBCV-1 Virus Plaque Assay
+1	Pour	_	Action	_	_	0	_	_	Offset=26-30
+2	plates	_	Device	_	_	0	_	_	Offset=35-41
+3	day	_	Time	_	_	0	_	_	Offset=53-68
+4	day	_	Time	_	_	3	Or	_	Offset=76-86
+
+# sent_id = s2
+# text = Pour the plates either the day of titering or the day before.
+1	Melt	_	Action	_	_	0	_	_	Offset=88-92
+2	MBBM	_	Modifier	_	_	3	Mod-Link	_	Offset=97-106
+3	agar	_	Reagent	_	_	0	_	_	Offset=107-111
+4	hold	_	Action	_	_	0	_	_	Offset=116-120
+5	50°C	_	Temperature	_	_	0	_	_	Offset=128-132
+6	water	_	Location	_	_	0	_	_	Offset=133-143
+
+# sent_id = s3
+# text = Melt the MBBM soft agar and hold in the 50°C water bath.
+1	Dispense	_	Action	_	_	0	_	_	Offset=145-153
+2	2.5	_	Amount	_	_	4	Measure	_	Offset=154-160
+3	soft	_	Modifier	_	_	4	Mod-Link	_	Offset=164-168
+4	agar	_	Reagent	_	_	0	_	_	Offset=169-173
+5	sterile	_	Modifier	_	_	7	Mod-Link	_	Offset=177-184
+6	13	_	Size	_	_	7	Measure	_	Offset=185-196
+7	tubes	_	Device	_	_	0	_	_	Offset=197-202
+8	hold	_	Action	_	_	0	_	_	Offset=207-211
+9	50°C	_	Temperature	_	_	0	_	_	Offset=215-219
+
+# sent_id = s4
+# text = Dispense 2.5 ml of soft agar to sterile 13 x 100 mm tubes and hold at 50°C.
+1	Concentrate	_	Action	_	_	0	_	_	Offset=221-232
+2	NC64A	_	Reagent	_	_	0	_	_	Offset=237-252
+3	4.0	_	Concentration	_	_	0	_	_	Offset=256-274
+4	Sorvall	_	Device	_	_	0	_	_	Offset=282-300
+5	5,000	_	Speed	_	_	0	_	_	Offset=304-313
+6	5	_	Time	_	_	0	_	_	Offset=315-320
+7	4°C	_	Temperature	_	_	0	_	_	Offset=322-325
+8	resuspend	_	Action	_	_	0	_	_	Offset=330-339
+9	pellets	_	Reagent	_	_	0	_	_	Offset=344-351
+10	fresh	_	Modifier	_	_	11	Mod-Link	_	Offset=357-362
+11	medium	_	Reagent	_	_	0	_	_	Offset=363-369
+
+# sent_id = s5
+# text = Concentrate the NC64A chlorella to 4.0 X 108 cells/ml in the Sorvall centrifuge at 5,000 rpm, 5 min, 4°C and resuspend the pellets with fresh medium.
+1	Concentrate	_	Action	_	_	0	_	_	Offset=371-382
+2	enough	_	Modifier	_	_	0	_	_	Offset=383-389
+
+# sent_id = s6
+# text = Concentrate enough so that 0.3 ml can be used for each plate.
+1	Make	_	Action	_	_	0	_	_	Offset=433-440
+2	dilution	_	Device	_	_	0	_	_	Offset=441-456
+3	virus	_	Reagent	_	_	0	_	_	Offset=465-470
+4	sterile	_	Modifier	_	_	0	_	_	Offset=478-485
+5	13	_	Size	_	_	6	Measure	_	Offset=486-497
+6	tubes	_	Location	_	_	0	_	_	Offset=498-503
+7	50	_	Amount	_	_	8	Measure	_	Offset=509-514
+8	Tris-HCl	_	Reagent	_	_	0	_	_	Offset=515-523
+9	pH	_	pH	_	_	8	Measure	_	Offset=525-531
+
+# sent_id = s7
+# text = Make up dilution blanks for the virus in the sterile 13 x 100 mm tubes with 50 mM Tris-HCl, pH 7.8.
+1	Dilute	_	Action	_	_	0	_	_	Offset=533-539
+2	virus	_	Reagent	_	_	0	_	_	Offset=544-549
+
+# sent_id = s8
+# text = Dilute the virus in 1/10 serial dilutions.
+1	Label	_	Action	_	_	0	_	_	Offset=576-581
+2	plates	_	Device	_	_	0	_	_	Offset=586-592
+
+# sent_id = s9
+# text = Label the plates.
+1	Remove	_	Action	_	_	0	_	_	Offset=594-600
+2	13	_	Size	_	_	3	Measure	_	Offset=601-612
+3	tubes	_	Device	_	_	5	Meronym	_	Offset=613-618
+4	soft	_	Modifier	_	_	5	Mod-Link	_	Offset=622-626
+5	agar	_	Reagent	_	_	0	_	_	Offset=627-631
+6	water	_	Location	_	_	0	_	_	Offset=641-651
+7	test	_	Location	_	_	0	_	_	Offset=657-671
+
+# sent_id = s10
+# text = Remove 13 x 100 mm tubes of soft agar from the water bath to a test tube rack as needed.
+1	each	_	Modifier	_	_	2	Mod-Link	_	Offset=686-690
+2	tube	_	Location	_	_	0	_	_	Offset=691-695
+3	add	_	Action	_	_	0	_	_	Offset=697-700
+4	0.3	_	Amount	_	_	6	Measure	_	Offset=701-707
+5	concentrated	_	Modifier	_	_	6	Mod-Link	_	Offset=715-727
+6	chlorella	_	Reagent	_	_	0	_	_	Offset=728-737
+7	0.1	_	Amount	_	_	8	Measure	_	Offset=742-748
+8	diluted	_	Reagent	_	_	0	_	_	Offset=756-769
+
+# sent_id = s11
+# text = To each tube, add 0.3 ml of the concentrated chlorella and 0.1 ml of the diluted virus (when titering the NY-2A virus, use 0.05 to 0.1 ml of the concentrated chlorella instead of 0.3 ml).
+1	Mix	_	Action	_	_	0	_	_	Offset=871-874
+2	briefly	_	Modifier	_	_	0	_	_	Offset=875-882
+3	pour	_	Action	_	_	0	_	_	Offset=941-945
+4	contents	_	Reagent	_	_	0	_	_	Offset=950-970
+5	plate	_	Location	_	_	0	_	_	Offset=980-985
+
+# sent_id = s12
+# text = Mix briefly (by rolling the tubes between the palms of the hands) and pour the contents of the tube onto the plate.
+1	Tilt	_	Action	_	_	0	_	_	Offset=987-991
+2	plate	_	Location	_	_	0	_	_	Offset=996-1001
+3	gently	_	Modifier	_	_	0	_	_	Offset=1002-1008
+4	until	_	Time	_	_	0	_	_	Offset=1009-1072
+
+# sent_id = s13
+# text = Tilt the plate gently until the entire surface of the plate is covered with soft agar.
+1	Allow	_	Action	_	_	0	_	_	Offset=1074-1079
+2	top	_	Modifier	_	_	3	Mod-Link	_	Offset=1084-1087
+3	agar	_	Reagent	_	_	0	_	_	Offset=1088-1092
+4	solidify	_	Action	_	_	0	_	_	Offset=1096-1104
+5	stick	_	Action	_	_	0	_	_	Offset=1109-1114
+6	bottom	_	Modifier	_	_	7	Mod-Link	_	Offset=1122-1128
+7	agar	_	Reagent	_	_	0	_	_	Offset=1129-1133
+
+# sent_id = s14
+# text = Allow the top agar to solidify and stick to the bottom agar (maybe 20 minutes).
+1	Invert	_	Action	_	_	0	_	_	Offset=1154-1160
+2	plates	_	Location	_	_	0	_	_	Offset=1165-1171
+3	lid	_	Seal	_	_	0	_	_	Offset=1181-1184
+4	down	_	Modifier	_	_	3	Mod-Link	_	Offset=1185-1189
+
+# sent_id = s15
+# text = Invert the plates with the lid down.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1191-1199
+2	plates	_	Location	_	_	0	_	_	Offset=1204-1210
+3	25°C	_	Temperature	_	_	0	_	_	Offset=1214-1218
+4	continuous	_	Location	_	_	0	_	_	Offset=1222-1238
+
+# sent_id = s16
+# text = Incubate the plates at 25°C in continuous light.
+1	Stack	_	Action	_	_	0	_	_	Offset=1240-1245
+2	plates	_	Location	_	_	0	_	_	Offset=1250-1256
+

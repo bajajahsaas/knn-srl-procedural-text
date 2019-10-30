@@ -1,0 +1,71 @@
+# sent_id = s1
+# text = CB-X™ Protein Assay for simple aqueous samples
+1	Chill	_	Action	_	_	0	_	_	Offset=47-52
+2	CB-X	_	Reagent	_	_	0	_	_	Offset=53-57
+3	-20°C	_	Temperature	_	_	0	_	_	Offset=62-67
+
+# sent_id = s2
+# text = Chill CB-X™ at -20°C.
+1	mix	_	Action	_	_	0	_	_	Offset=83-86
+2	CB-X™	_	Reagent	_	_	0	_	_	Offset=87-102
+3	inverting	_	Action	_	_	0	_	_	Offset=113-122
+4	bottle	_	Location	_	_	2	Meronym	_	Offset=127-133
+5	several	_	Numerical	_	_	0	_	_	Offset=134-147
+
+# sent_id = s3
+# text = Prior to use, mix CB-X™ Assay Dye by gently inverting the bottle several times.
+1	DO	_	Action	_	_	0	_	_	Offset=149-161
+2	BOTTLE	_	Location	_	_	0	_	_	Offset=166-172
+
+# sent_id = s4
+# text = DO NOT SHAKE THE BOTTLE.
+1	Dilute	_	Action	_	_	0	_	_	Offset=174-180
+2	supplied	_	Reagent	_	_	0	_	_	Offset=185-211
+3	buffer	_	Reagent	_	_	4	Meronym	_	Offset=224-230
+4	protein	_	Reagent	_	_	0	_	_	Offset=239-254
+
+# sent_id = s5
+# text = Dilute the supplied protein standards in the same buffer as your protein samples.
+1	Transfer	_	Action	_	_	0	_	_	Offset=331-339
+2	50µl	_	Amount	_	_	4	Measure	_	Offset=340-344
+3	diluted	_	Modifier	_	_	4	Mod-Link	_	Offset=345-352
+4	protein	_	Reagent	_	_	0	_	_	Offset=353-370
+5	test	_	Reagent	_	_	0	_	_	Offset=375-387
+6	assay	_	Location	_	_	0	_	_	Offset=395-406
+
+# sent_id = s6
+# text = We recommend duplicates of 5-6 dilutions within the range of 0.1-1.0mg/ml.
+1	Set	_	Action	_	_	0	_	_	Offset=408-414
+2	blank	_	Reagent	_	_	4	Meronym	_	Offset=417-422
+3	50µl	_	Amount	_	_	4	Measure	_	Offset=434-438
+4	buffer	_	Reagent	_	_	0	_	_	Offset=446-452
+
+# sent_id = s7
+# text = Transfer 50µl diluted protein standards and test samples to the assay tubes.
+1	Add	_	Action	_	_	0	_	_	Offset=485-488
+2	1ml	_	Amount	_	_	3	Measure	_	Offset=489-492
+3	CB-X™	_	Reagent	_	_	0	_	_	Offset=493-508
+4	each	_	Amount	_	_	5	Measure	_	Offset=514-518
+5	tube	_	Location	_	_	0	_	_	Offset=519-523
+6	mix	_	Action	_	_	0	_	_	Offset=528-531
+7	well	_	Modifier	_	_	0	_	_	Offset=532-536
+
+# sent_id = s8
+# text = Set up a blank containing 50µl of the buffer used to generate the standards.
+1	Incubate	_	Action	_	_	0	_	_	Offset=538-546
+2	5	_	Time	_	_	0	_	_	Offset=551-560
+3	room	_	Temperature	_	_	0	_	_	Offset=564-580
+
+# sent_id = s9
+# text = Add 1ml CB-X™ Assay Dye into each tube and mix well.
+1	Read	_	Action	_	_	0	_	_	Offset=582-586
+2	absorbance	_	Measure-Type	_	_	0	_	_	Offset=591-601
+3	595nm	_	Generic-Measure	_	_	0	_	_	Offset=605-610
+
+# sent_id = s10
+# text = Incubate for 5 minutes at room temperature.
+1	Prepare	_	Action	_	_	0	_	_	Offset=612-647
+2	determination	_	Action	_	_	0	_	_	Offset=656-669
+3	protein	_	Measure-Type	_	_	0	_	_	Offset=673-694
+4	unknown	_	Reagent	_	_	0	_	_	Offset=702-717
+

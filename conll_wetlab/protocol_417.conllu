@@ -1,0 +1,35 @@
+# sent_id = s1
+# text = Ligation Protocol for NEB PCR Cloning Kit (E1202)
+1	Mix	_	Action	_	_	0	_	_	Offset=50-53
+2	first	_	Modifier	_	_	4	Mod-Link	_	Offset=58-63
+3	3	_	Numerical	_	_	4	Measure	_	Offset=64-65
+4	components	_	Reagent	_	_	0	_	_	Offset=66-76
+
+# sent_id = s2
+# text = Mix the first 3 components of the reaction.
+1	Add	_	Action	_	_	0	_	_	Offset=94-97
+2	Cloning	_	Reagent	_	_	0	_	_	Offset=98-116
+3	2X	_	Concentration	_	_	2	Measure	_	Offset=118-120
+4	5	_	Amount	_	_	2	Measure	_	Offset=123-127
+
+# sent_id = s3
+# text = Add Cloning Master Mix (2X), 5 μl, to a total of 10 μl per ligation reaction.
+1	Incubate	_	Action	_	_	0	_	_	Offset=172-180
+2	room	_	Temperature	_	_	0	_	_	Offset=184-200
+3	25°C	_	Temperature	_	_	2	Or	_	Offset=202-206
+4	5–15	_	Time	_	_	0	_	_	Offset=212-224
+
+# sent_id = s4
+# text = Incubate at room temperature (25°C) for 5–15 minutes.
+1	Incubate	_	Action	_	_	0	_	_	Offset=226-234
+2	ice	_	Location	_	_	0	_	_	Offset=238-241
+3	2	_	Time	_	_	0	_	_	Offset=246-255
+
+# sent_id = s5
+# text = Incubate on ice for 2 minutes.
+1	Transform	_	Action	_	_	0	_	_	Offset=257-266
+2	immediately	_	Modifier	_	_	0	_	_	Offset=267-278
+3	NEB	_	Reagent	_	_	0	_	_	Offset=284-313
+4	store	_	Action	_	_	0	_	_	Offset=317-322
+5	-20°C	_	Temperature	_	_	0	_	_	Offset=326-331
+

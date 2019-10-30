@@ -1,0 +1,41 @@
+# sent_id = s1
+# text = How to Make a 0.5M TCEP Stock Solution
+1	Weigh	_	Action	_	_	0	_	_	Offset=39-44
+2	5.73	_	Amount	_	_	3	Measure	_	Offset=45-51
+3	TCEP	_	Reagent	_	_	0	_	_	Offset=55-59
+
+# sent_id = s2
+# text = Weigh 5.73 g of TCEP.
+1	Add	_	Action	_	_	0	_	_	Offset=61-64
+2	35	_	Amount	_	_	4	Measure	_	Offset=65-70
+3	cold	_	Modifier	_	_	4	Mod-Link	_	Offset=74-78
+4	molecular	_	Reagent	_	_	0	_	_	Offset=79-108
+5	vial	_	Location	_	_	0	_	_	Offset=116-120
+6	dissolve	_	Action	_	_	0	_	_	Offset=126-134
+7	TCEP	_	Reagent	_	_	0	_	_	Offset=139-143
+
+# sent_id = s3
+# text = Add 35 ml of cold molecular biology grade water to the vial, and dissolve the TCEP.
+1	Bring	_	Action	_	_	0	_	_	Offset=216-221
+2	solution	_	Reagent	_	_	0	_	_	Offset=226-234
+3	pH	_	pH	_	_	0	_	_	Offset=238-244
+4	10	_	Concentration	_	_	5	Measure	_	Offset=250-254
+5	NaOH	_	Reagent	_	_	0	_	_	Offset=255-259
+6	10	_	Concentration	_	_	7	Measure	_	Offset=263-267
+7	KOH	_	Reagent	_	_	5	Or	_	Offset=268-271
+
+# sent_id = s4
+# text = This resulting solution is very acidic, with an approximate pH of 2.5.
+1	Bring	_	Action	_	_	0	_	_	Offset=273-278
+2	resulting	_	Reagent	_	_	0	_	_	Offset=283-301
+3	40	_	Amount	_	_	0	_	_	Offset=305-310
+4	molecular	_	Reagent	_	_	0	_	_	Offset=316-345
+
+# sent_id = s5
+# text = Bring the solution to pH 7.0 with 10 N NaOH or 10 N KOH.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=347-354
+2	1	_	Amount	_	_	3	Measure	_	Offset=360-364
+3	freezer	_	Location	_	_	0	_	_	Offset=376-389
+4	store	_	Action	_	_	0	_	_	Offset=394-399
+5	-20°C	_	Temperature	_	_	0	_	_	Offset=403-408
+

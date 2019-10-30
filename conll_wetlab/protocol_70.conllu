@@ -1,0 +1,106 @@
+# sent_id = s1
+# text = Viral and bacterial isolates, propagation and preparation of stocks
+1	Pipette	_	Action	_	_	0	_	_	Offset=68-75
+2	1.7	_	Amount	_	_	6	Measure	_	Offset=76-82
+3	amplified	_	Modifier	_	_	6	Mod-Link	_	Offset=83-92
+4	0.22-µm	_	Size	_	_	6	Measure	_	Offset=93-100
+5	filtered	_	Modifier	_	_	6	Mod-Link	_	Offset=101-109
+6	virus	_	Reagent	_	_	0	_	_	Offset=110-121
+7	1.7-mL	_	Amount	_	_	0	_	_	Offset=127-133
+8	screw	_	Location	_	_	0	_	_	Offset=134-149
+
+# sent_id = s2
+# text = Pipette 1.7 mL amplified 0.22-µm filtered virus stock into 1.7-mL screw cap tubes.
+1	Float	_	Action	_	_	0	_	_	Offset=151-156
+2	microcentrifuge	_	Device	_	_	0	_	_	Offset=161-182
+3	long	_	Modifier	_	_	4	Mod-Link	_	Offset=186-190
+4	ultracentrifuge	_	Device	_	_	0	_	_	Offset=191-212
+5	water	_	Reagent	_	_	0	_	_	Offset=232-237
+6	until	_	Time	_	_	0	_	_	Offset=238-305
+7	balance	_	Action	_	_	0	_	_	Offset=307-314
+8	1	_	Speed	_	_	0	_	_	Offset=330-333
+
+# sent_id = s3
+# text = Float the microcentrifuge tubes in long ultracentrifuge tubes (14 × 95 mm) using water until they are just flush with the top of the ultracentrifuge tubes; balance them to within 1 g.
+1	Load	_	Action	_	_	0	_	_	Offset=335-339
+2	ultracentrifuge	_	Device	_	_	0	_	_	Offset=344-365
+3	SW40	_	Device	_	_	0	_	_	Offset=375-385
+4	spin	_	Action	_	_	0	_	_	Offset=390-394
+5	133,000g	_	Speed	_	_	0	_	_	Offset=403-411
+6	1	_	Time	_	_	0	_	_	Offset=416-419
+
+# sent_id = s4
+# text = Load the ultracentrifuge tubes into the SW40 rotor and spin them at 133,000g for 1 h.
+1	Recover	_	Action	_	_	0	_	_	Offset=421-428
+2	microcentrifuge	_	Device	_	_	0	_	_	Offset=433-454
+
+# sent_id = s5
+# text = Recover the microcentrifuge tubes.
+1	Remove	_	Action	_	_	0	_	_	Offset=456-462
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=467-478
+3	resuspend	_	Action	_	_	0	_	_	Offset=483-492
+4	pellet	_	Reagent	_	_	0	_	_	Offset=497-503
+
+# sent_id = s6
+# text = Remove the supernatant and resuspend the pellet.
+1	Perform	_	Action	_	_	0	_	_	Offset=505-512
+2	subsequent	_	Method	_	_	0	_	_	Offset=517-533
+3	subdued	_	Location	_	_	0	_	_	Offset=540-553
+
+# sent_id = s7
+# text = Perform all subsequent steps under subdued light since the stain will fade if exposed.
+1	Thaw	_	Action	_	_	0	_	_	Offset=592-596
+2	SYBR	_	Reagent	_	_	0	_	_	Offset=601-613
+3	add	_	Action	_	_	0	_	_	Offset=620-623
+4	1	_	Amount	_	_	5	Measure	_	Offset=624-628
+5	stain	_	Reagent	_	_	0	_	_	Offset=629-634
+6	concentrated	_	Modifier	_	_	7	Mod-Link	_	Offset=643-655
+7	virus	_	Location	_	_	0	_	_	Offset=656-666
+8	incubate	_	Action	_	_	0	_	_	Offset=671-679
+9	15	_	Time	_	_	0	_	_	Offset=684-690
+10	dark	_	Location	_	_	0	_	_	Offset=698-702
+
+# sent_id = s8
+# text = Thaw the SYBR Green I, then add 1 µL stain to each concentrated virus tube and incubate for 15 min in the dark.
+1	Verify	_	Action	_	_	0	_	_	Offset=704-710
+2	staining	_	Modifier	_	_	3	Mod-Link	_	Offset=715-723
+3	viruses	_	Reagent	_	_	0	_	_	Offset=751-758
+4	pipetting	_	Action	_	_	0	_	_	Offset=762-771
+5	1	_	Amount	_	_	6	Measure	_	Offset=772-776
+6	suspension	_	Reagent	_	_	0	_	_	Offset=784-794
+7	microscope	_	Location	_	_	0	_	_	Offset=802-818
+
+# sent_id = s9
+# text = Verify the staining (and monodispersal) of the viruses by pipetting 1 µL of the suspension onto a microscope slide.
+1	Add	_	Action	_	_	0	_	_	Offset=820-823
+2	18	_	Size	_	_	3	Measure	_	Offset=827-837
+3	coverslip	_	Device	_	_	0	_	_	Offset=838-847
+4	observe	_	Action	_	_	0	_	_	Offset=852-859
+5	slide	_	Device	_	_	0	_	_	Offset=864-869
+6	epifluorescence	_	Device	_	_	0	_	_	Offset=880-906
+
+# sent_id = s10
+# text = Add an 18 × 18 mm coverslip and observe the slide under the epifluorescence microscope.
+1	Add	_	Action	_	_	0	_	_	Offset=908-911
+2	1.65	_	Amount	_	_	3	Measure	4:Measure	Offset=912-919
+3	water	_	Reagent	_	_	0	_	_	Offset=920-925
+4	seawater	_	Reagent	_	_	3	Or	_	Offset=929-937
+5	tube	_	Location	_	_	0	_	_	Offset=953-957
+6	respin	_	Action	_	_	0	_	_	Offset=962-968
+
+# sent_id = s11
+# text = Add 1.65 mL water or seawater medium to each tube and respin as above.
+1	Remove	_	Action	_	_	0	_	_	Offset=979-985
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=990-1001
+3	resuspend	_	Action	_	_	0	_	_	Offset=1006-1015
+
+# sent_id = s12
+# text = Remove the supernatant and resuspend as above (completes first wash out of stain).
+1	Repeat	_	Action	_	_	0	_	_	Offset=1062-1068
+2	10	_	Method	_	_	0	_	_	Offset=1075-1084
+
+# sent_id = s13
+# text = Repeat steps 10 and 11.
+1	Repeat	_	Action	_	_	0	_	_	Offset=1086-1092
+2	10	_	Method	_	_	0	_	_	Offset=1099-1108
+

@@ -1,0 +1,139 @@
+# sent_id = s1
+# text = Silver Development protocol (silver stain) for 0.75mm polyacrylamide gels
+1	Agitate	_	Action	_	_	0	_	_	Offset=74-81
+2	gel	_	Reagent	_	_	0	_	_	Offset=82-85
+3	twice	_	Numerical	_	_	0	_	_	Offset=86-91
+4	50%	_	Concentration	_	_	5	Measure	_	Offset=97-100
+5	MeOH	_	Reagent	_	_	0	_	_	Offset=101-105
+6	10%	_	Concentration	_	_	7	Measure	_	Offset=107-110
+7	acetic	_	Reagent	_	_	0	_	_	Offset=111-122
+8	15	_	Time	_	_	0	_	_	Offset=137-143
+
+# sent_id = s2
+# text = Agitate gel twice with 50% MeOH, 10% acetic acid (Fixer 1) for 15 min ea.
+1	Rinse	_	Action	_	_	0	_	_	Offset=148-153
+2	1	_	Time	_	_	0	_	_	Offset=155-160
+3	200	_	Amount	_	_	4	Measure	_	Offset=167-173
+4	DW	_	Reagent	_	_	0	_	_	Offset=174-176
+
+# sent_id = s3
+# text = Rinse (1 min) with 200 ml DW.
+1	Agitate	_	Action	_	_	0	_	_	Offset=178-185
+2	10%	_	Concentration	_	_	3	Measure	_	Offset=189-192
+3	EtOH	_	Reagent	_	_	0	_	_	Offset=193-197
+4	5%	_	Concentration	_	_	5	Measure	_	Offset=199-201
+5	glacial	_	Reagent	_	_	0	_	_	Offset=202-221
+6	6	_	Time	_	_	0	_	_	Offset=236-241
+
+# sent_id = s4
+# text = Agitate in 10% EtOH, 5% glacial acetic acid (Fixer 2) for 6 min.
+1	Agitate	_	Action	_	_	0	_	_	Offset=243-250
+2	distilled	_	Modifier	_	_	3	Mod-Link	_	Offset=254-263
+3	water	_	Reagent	_	_	0	_	_	Offset=264-269
+
+# sent_id = s5
+# text = Agitate in distilled water.
+1	Agitate	_	Action	_	_	0	_	_	Offset=271-278
+2	twice	_	Numerical	_	_	0	_	_	Offset=279-284
+3	9	_	Time	_	_	0	_	_	Offset=286-291
+4	each	_	Modifier	_	_	3	Mod-Link	_	Offset=292-296
+5	500	_	Concentration	_	_	6	Measure	_	Offset=303-309
+6	DW	_	Reagent	_	_	0	_	_	Offset=310-312
+
+# sent_id = s6
+# text = Agitate twice (9 min each) with 500 ml DW.
+1	Agitate	_	Action	_	_	0	_	_	Offset=314-321
+2	500	_	Amount	_	_	4	Measure	_	Offset=325-331
+3	20	_	Concentration	_	_	4	Measure	_	Offset=335-342
+4	Na2S2O4	_	Reagent	_	_	0	_	_	Offset=343-350
+5	distilled	_	Modifier	_	_	7	Mod-Link	_	Offset=394-403
+6	deionized	_	Modifier	_	_	7	Mod-Link	_	Offset=405-414
+7	water	_	Reagent	_	_	0	_	_	Offset=415-420
+8	9min	_	Time	_	_	0	_	_	Offset=431-435
+
+# sent_id = s7
+# text = Agitate in 500 ml of 20 mg/L Na2S2O4 (hydrosulfite [dithionite], make fresh) in distilled, deionized water (DDW) for 9min (sensitization).
+1	Pour	_	Action	_	_	0	_	_	Offset=453-461
+2	solution	_	Reagent	_	_	0	_	_	Offset=462-470
+
+# sent_id = s8
+# text = Pour off solution.
+1	Agitate	_	Action	_	_	0	_	_	Offset=472-479
+2	9	_	Time	_	_	0	_	_	Offset=484-489
+
+# sent_id = s9
+# text = Agitate for 9 min.
+1	Rinse	_	Action	_	_	0	_	_	Offset=491-496
+2	30	_	Time	_	_	0	_	_	Offset=497-503
+3	DDW	_	Reagent	_	_	0	_	_	Offset=509-512
+4	remove	_	Action	_	_	0	_	_	Offset=516-522
+5	excess	_	Modifier	_	_	6	Mod-Link	_	Offset=523-529
+6	AgNO3	_	Reagent	_	_	0	_	_	Offset=530-535
+
+# sent_id = s10
+# text = Rinse 30 sec with DDW to remove excess AgNO3.
+1	Add	_	Action	_	_	0	_	_	Offset=537-540
+2	200	_	Amount	_	_	3	Measure	_	Offset=541-547
+3	image	_	Reagent	_	_	6	Meronym	10:Meronym	Offset=548-563
+4	1ml	_	Amount	_	_	6	Measure	_	Offset=565-568
+5	37%	_	Concentration	_	_	6	Measure	_	Offset=569-572
+6	formaldehyde	_	Reagent	_	_	0	_	_	Offset=573-585
+7	per	_	Modifier	_	_	8	Mod-Link	_	Offset=586-589
+8	liter	_	Amount	_	_	10	Measure	_	Offset=590-595
+9	3%	_	Concentration	_	_	10	Measure	_	Offset=599-601
+10	sodium	_	Reagent	_	_	0	_	_	Offset=602-618
+11	200	_	Amount	_	_	13	Measure	_	Offset=631-637
+12	10g/L	_	Concentration	_	_	13	Measure	_	Offset=638-643
+13	sodium	_	Reagent	_	_	0	_	_	Offset=644-662
+
+# sent_id = s11
+# text = Add 200 ml image developer (1ml 37% formaldehyde per liter of 3% sodium carbonate) mixed with 200 ml 10g/L sodium thiosulfate.
+1	Pour	_	Action	_	_	0	_	_	Offset=664-672
+2	developer	_	Reagent	_	_	0	_	_	Offset=673-682
+
+# sent_id = s12
+# text = Pour off developer.
+1	Add	_	Action	_	_	0	_	_	Offset=684-687
+2	80	_	Amount	_	_	3	Measure	_	Offset=688-693
+3	stop	_	Reagent	_	_	5	Meronym	7:Meronym|11:Meronym	Offset=697-710
+4	50	_	Amount	_	_	5	Measure	_	Offset=712-716
+5	tris	_	Reagent	_	_	0	_	_	Offset=717-721
+6	25	_	Amount	_	_	7	Measure	_	Offset=723-728
+7	glacial	_	Reagent	_	_	0	_	_	Offset=729-743
+8	per	_	Modifier	_	_	9	Mod-Link	_	Offset=744-747
+9	liter	_	Amount	_	_	11	Measure	_	Offset=748-753
+10	distilled	_	Modifier	_	_	11	Mod-Link	_	Offset=757-766
+11	water	_	Reagent	_	_	0	_	_	Offset=767-772
+
+# sent_id = s13
+# text = Add 80 ml of stop solution (50 g tris, 25 ml glacial acetic per liter of distilled water).
+1	Store	_	Action	_	_	0	_	_	Offset=775-780
+2	gel	_	Reagent	_	_	0	_	_	Offset=781-784
+3	10%	_	Concentration	_	_	4	Measure	_	Offset=788-791
+4	glycerol	_	Reagent	_	_	5	Meronym	_	Offset=792-800
+5	bacteriostat	_	Reagent	_	_	7	Meronym	_	Offset=806-818
+6	0.02%	_	Concentration	_	_	7	Measure	_	Offset=820-825
+7	NaN3	_	Reagent	_	_	0	_	_	Offset=826-830
+
+# sent_id = s14
+# text = Store gel in 10% glycerol with bacteriostat (0.02% NaN3 ).
+1	add	_	Action	_	_	0	_	_	Offset=851-854
+2	200	_	Amount	_	_	4	Measure	_	Offset=855-861
+3	0.1%	_	Concentration	_	_	4	Measure	_	Offset=863-867
+4	AgNO3	_	Reagent	_	_	0	_	_	Offset=868-873
+5	200	_	Amount	_	_	4	Measure	_	Offset=875-881
+6	DDW	_	Reagent	_	_	4	Meronym	_	Offset=886-889
+
+# sent_id = s15
+# text = Without rinsing, add 200 ml, 0.1% AgNO3 (200 mg) in DDW.
+1	Add	_	Action	_	_	0	_	_	Offset=891-894
+2	150	_	Amount	_	_	4	Measure	_	Offset=895-901
+3	37%	_	Concentration	_	_	4	Measure	_	Offset=902-905
+4	formaldehyde	_	Reagent	_	_	0	_	_	Offset=906-918
+
+# sent_id = s16
+# text = Add 150 ml 37% formaldehyde.
+1	Agitate	_	Action	_	_	0	_	_	Offset=920-927
+2	desired	_	Generic-Measure	_	_	0	_	_	Offset=931-957
+3	3	_	Time	_	_	2	Or	_	Offset=959-969
+

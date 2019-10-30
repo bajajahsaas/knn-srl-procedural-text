@@ -1,0 +1,20 @@
+# sent_id = s1
+# text = Fixing solution to SEM
+1	Put	_	Action	_	_	0	_	_	Offset=23-26
+2	Milonig's	_	Reagent	_	_	0	_	_	Offset=27-53
+3	becker	_	Location	_	_	0	_	_	Offset=59-65
+
+# sent_id = s2
+# text = Put Milonig's phosphate buffer in a becker. 
+1	Add	_	Action	_	_	0	_	_	Offset=68-71
+2	Tannic	_	Reagent	_	_	0	_	_	Offset=72-83
+3	becker	_	Location	_	_	4	Meronym	_	Offset=91-97
+4	previous	_	Reagent	_	_	0	_	_	Offset=107-124
+
+# sent_id = s3
+# text = Add Tannic Acid to the becker with the previous solution. 
+1	Add	_	Action	_	_	0	_	_	Offset=127-130
+2	6	_	Amount	_	_	3	Measure	_	Offset=131-135
+3	Glutarandehyde	_	Reagent	_	_	0	_	_	Offset=139-153
+4	previous	_	Reagent	_	_	0	_	_	Offset=161-178
+

@@ -1,0 +1,63 @@
+# sent_id = s1
+# text = Heald Lab  Margaritas
+1	Slice	_	Action	_	_	0	_	_	Offset=22-27
+2	limes	_	Reagent	_	_	0	_	_	Offset=28-33
+3	squeeze	_	Action	_	_	0	_	_	Offset=46-57
+4	juice	_	Reagent	_	_	0	_	_	Offset=62-67
+
+# sent_id = s2
+# text = Slice limes in half and squeeze out the juice. 
+1	Measure	_	Action	_	_	0	_	_	Offset=70-77
+2	1	_	Amount	_	_	0	_	_	Offset=78-85
+3	graduated	_	Modifier	_	_	0	_	_	Offset=89-98
+4	cylinder	_	Location	_	_	0	_	_	Offset=99-107
+
+# sent_id = s3
+# text = Measure 1 liter in graduated cylinder. 
+1	Discard	_	Action	_	_	0	_	_	Offset=110-117
+2	rinds	_	Reagent	_	_	0	_	_	Offset=118-123
+
+# sent_id = s4
+# text = Discard rinds. 
+1	Combine	_	Action	_	_	0	_	_	Offset=126-133
+2	4	_	Amount	_	_	0	_	_	Offset=137-144
+3	1	_	Amount	_	_	0	_	_	Offset=157-163
+4	lime	_	Reagent	_	_	0	_	_	Offset=164-174
+5	1	_	Amount	_	_	0	_	_	Offset=176-182
+6	triple	_	Reagent	_	_	0	_	_	Offset=183-193
+7	1.5	_	Amount	_	_	0	_	_	Offset=195-204
+8	tequila	_	Reagent	_	_	0	_	_	Offset=205-212
+
+# sent_id = s5
+# text = Combine in 4 liter receptacle: 1 part lime juice, 1 part triple sec, 1.5 parts tequila. 
+1	Mix	_	Action	_	_	0	_	_	Offset=215-218
+2	well	_	Modifier	_	_	0	_	_	Offset=219-223
+3	sterile	_	Modifier	_	_	0	_	_	Offset=229-236
+4	pipette	_	Device	_	_	0	_	_	Offset=237-244
+
+# sent_id = s6
+# text = Mix well with sterile pipette.
+1	Salt	_	Action	_	_	0	_	_	Offset=246-250
+2	glass	_	Location	_	_	0	_	_	Offset=251-261
+3	turning	_	Action	_	_	0	_	_	Offset=265-272
+4	upside	_	Method	_	_	0	_	_	Offset=273-284
+5	placing	_	Action	_	_	0	_	_	Offset=289-296
+6	plate	_	Location	_	_	0	_	_	Offset=302-307
+7	lime	_	Reagent	_	_	0	_	_	Offset=311-321
+8	plate	_	Location	_	_	0	_	_	Offset=333-338
+9	salt	_	Reagent	_	_	0	_	_	Offset=342-346
+
+# sent_id = s7
+# text = Salt glass rims by turning upside down and placing on a plate of lime juice, then on a plate of salt.
+1	Fill	_	Action	_	_	0	_	_	Offset=348-352
+2	glasses	_	Location	_	_	0	_	_	Offset=353-360
+3	ice	_	Reagent	_	_	0	_	_	Offset=366-369
+4	Pour	_	Action	_	_	0	_	_	Offset=370-374
+5	margarita	_	Reagent	_	_	0	_	_	Offset=375-384
+6	glasses	_	Location	_	_	0	_	_	Offset=390-397
+
+# sent_id = s8
+# text = Fill glasses with ice Pour margarita into glasses. 
+1	Drink	_	Action	_	_	0	_	_	Offset=400-405
+2	enjoy	_	Action	_	_	0	_	_	Offset=410-415
+

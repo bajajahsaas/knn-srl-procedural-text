@@ -1,0 +1,94 @@
+# sent_id = s1
+# text = Western Blot - Whole Embryonic Sample
+1	Collect	_	Action	_	_	0	_	_	Offset=38-45
+2	100	_	Numerical	_	_	3	Measure	_	Offset=46-49
+3	embryos	_	Reagent	_	_	0	_	_	Offset=50-57
+4	place	_	Action	_	_	0	_	_	Offset=62-67
+5	eppendorf	_	Location	_	_	0	_	_	Offset=73-87
+
+# sent_id = s2
+# text = Collect 100 embryos and place into eppendorf tube (1.5ml) containing 50ul of embryo wash. 
+1	Add	_	Action	_	_	0	_	_	Offset=129-132
+2	3	_	Numerical	_	_	4	Measure	_	Offset=133-134
+3	drops	_	Measure-Type	_	_	2	Of-Type	_	Offset=135-140
+4	bleach	_	Reagent	_	_	0	_	_	Offset=144-150
+5	let	_	Action	_	_	0	_	_	Offset=155-162
+6	3	_	Time	_	_	0	_	_	Offset=167-173
+
+# sent_id = s3
+# text = Add 3 drops of bleach and let sit for 3 mins.
+1	Raise	_	Action	_	_	0	_	_	Offset=175-180
+2	volume	_	Device	_	_	0	_	_	Offset=181-187
+3	1.5ml	_	Amount	_	_	0	_	_	Offset=191-196
+4	dH2O	_	Reagent	_	_	0	_	_	Offset=203-207
+
+# sent_id = s4
+# text = Raise volume to 1.5ml using dH2O.
+1	Spin	_	Action	_	_	0	_	_	Offset=209-218
+2	1min	_	Time	_	_	0	_	_	Offset=223-227
+
+# sent_id = s5
+# text = Spin down for 1min. 
+1	Remove	_	Action	_	_	0	_	_	Offset=230-236
+2	solution	_	Reagent	_	_	0	_	_	Offset=237-245
+
+# sent_id = s6
+# text = Remove solution.
+1	Add	_	Action	_	_	0	_	_	Offset=247-250
+2	1.5ml	_	Amount	_	_	3	Measure	_	Offset=251-256
+3	dH2O	_	Reagent	_	_	0	_	_	Offset=260-264
+
+# sent_id = s7
+# text = Add 1.5ml of dH2O.
+1	Spin	_	Action	_	_	0	_	_	Offset=266-275
+2	1min	_	Time	_	_	0	_	_	Offset=276-280
+
+# sent_id = s8
+# text = Spin down 1min. 
+1	Remove	_	Action	_	_	0	_	_	Offset=283-289
+2	solution	_	Reagent	_	_	0	_	_	Offset=290-298
+
+# sent_id = s9
+# text = Remove solution.
+1	Add	_	Action	_	_	0	_	_	Offset=300-303
+2	1.5ml	_	Amount	_	_	3	Measure	_	Offset=304-309
+3	dH2O	_	Reagent	_	_	0	_	_	Offset=313-317
+
+# sent_id = s10
+# text = Add 1.5ml of dH2O.
+1	Spin	_	Action	_	_	0	_	_	Offset=319-328
+2	1	_	Time	_	_	0	_	_	Offset=329-334
+
+# sent_id = s11
+# text = Spin down 1 min. 
+1	Remove	_	Action	_	_	0	_	_	Offset=337-343
+2	solution	_	Reagent	_	_	0	_	_	Offset=344-352
+3	micropipette	_	Device	_	_	0	_	_	Offset=358-370
+
+# sent_id = s12
+# text = Remove solution with micropipette.
+1	Add	_	Action	_	_	0	_	_	Offset=372-375
+2	50ul	_	Amount	_	_	3	Measure	_	Offset=376-380
+3	1X	_	Reagent	_	_	0	_	_	Offset=384-390
+
+# sent_id = s13
+# text = Add 50ul of 1X PBS. 
+1	Add	_	Action	_	_	0	_	_	Offset=393-396
+2	50ul	_	Amount	_	_	3	Measure	_	Offset=397-401
+3	2X	_	Reagent	_	_	0	_	_	Offset=405-414
+4	Homogenize	_	Action	_	_	0	_	_	Offset=415-425
+5	pestle	_	Device	_	_	0	_	_	Offset=431-437
+6	27ga	_	Size	_	_	7	Measure	_	Offset=442-446
+7	needle	_	Device	_	_	0	_	_	Offset=447-453
+
+# sent_id = s14
+# text = Add 50ul of 2X SDS SB Homogenize with pestle and 27ga needle. 
+1	Boil	_	Action	_	_	0	_	_	Offset=456-460
+2	5	_	Time	_	_	0	_	_	Offset=465-471
+3	98	_	Temperature	_	_	0	_	_	Offset=475-487
+
+# sent_id = s15
+# text = Boil for 5 mins at 98 degrees C. 
+1	Store	_	Action	_	_	0	_	_	Offset=490-495
+2	-20	_	Temperature	_	_	0	_	_	Offset=499-512
+

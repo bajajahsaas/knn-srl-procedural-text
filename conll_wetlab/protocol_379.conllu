@@ -1,0 +1,110 @@
+# sent_id = s1
+# text = Phototaxis suppression
+1	preselection	_	Action	_	_	0	_	_	Offset=111-123
+2	running	_	Action	_	_	0	_	_	Offset=127-134
+3	regular	_	Modifier	_	_	0	_	_	Offset=137-144
+4	single-trial	_	Modifier	_	_	0	_	_	Offset=146-158
+5	photoxasis	_	Method	_	_	0	_	_	Offset=159-180
+6	without	_	Modifier	_	_	8	Mod-Link	_	Offset=181-188
+7	aversive	_	Modifier	_	_	8	Mod-Link	_	Offset=189-197
+8	stimulus	_	Reagent	_	_	0	_	_	Offset=198-206
+9	collect	_	Action	_	_	0	_	_	Offset=211-218
+10	flies	_	Reagent	_	_	0	_	_	Offset=228-233
+11	bright	_	Modifier	_	_	13	Mod-Link	_	Offset=248-254
+12	dark	_	Modifier	_	_	11	Or	_	Offset=262-266
+13	tube	_	Location	_	_	0	_	_	Offset=267-271
+
+# sent_id = s2
+# text = To ensure that you only use photopositive/photonegative flies for this experiment, do a preselection by running a regular, single-trial photoxasis experiment without aversive stimulus and collect only the flies in either the bright or the dark tube.
+1	placing	_	Action	_	_	0	_	_	Offset=279-286
+2	filter	_	Device	_	_	0	_	_	Offset=291-303
+3	appropriate	_	Modifier	_	_	4	Mod-Link	_	Offset=311-322
+4	tube	_	Location	_	_	0	_	_	Offset=323-327
+5	elevator	_	Device	_	_	0	_	_	Offset=341-349
+6	down	_	Modifier	_	_	5	Mod-Link	_	Offset=350-354
+7	load	_	Action	_	_	0	_	_	Offset=356-360
+8	selected	_	Modifier	_	_	9	Mod-Link	_	Offset=365-373
+9	flies	_	Reagent	_	_	0	_	_	Offset=374-379
+10	around	_	Modifier	_	_	11	Or	_	Offset=381-387
+11	50	_	Numerical	_	_	9	Measure	_	Offset=388-390
+12	entrance	_	Location	_	_	0	_	_	Offset=401-414
+13	10	_	Time	_	_	0	_	_	Offset=429-439
+14	dark	_	Method	_	_	0	_	_	Offset=444-457
+
+# sent_id = s3
+# text = After placing the filter paper in the appropriate tube and with the elevator down, load the selected flies (around 50) into the entrance tube and give them 10 minutes for dark adaption.
+1	Shift	_	Action	_	_	0	_	_	Offset=459-464
+2	elevator	_	Device	_	_	0	_	_	Offset=469-477
+3	all	_	Modifier	_	_	4	Mod-Link	_	Offset=478-489
+4	up	_	Location	_	_	0	_	_	Offset=490-492
+5	tap	_	Action	_	_	0	_	_	Offset=494-497
+6	flies	_	Reagent	_	_	0	_	_	Offset=502-507
+7	elevator	_	Device	_	_	9	Coreference-Link	_	Offset=517-525
+8	move	_	Action	_	_	0	_	_	Offset=530-534
+9	it	_	Mention	_	_	0	_	_	Offset=535-537
+10	middle	_	Location	_	_	0	_	_	Offset=545-560
+
+# sent_id = s4
+# text = Shift the elevator all the way up, tap the flies into the elevator and move it to the middle position (between the entrance tube and the dark tube).
+1	Bring	_	Action	_	_	0	_	_	Offset=608-613
+2	T-maze	_	Device	_	_	0	_	_	Offset=618-624
+3	back	_	Modifier	_	_	4	Mod-Link	_	Offset=625-629
+4	vertical	_	Location	_	_	0	_	_	Offset=639-656
+5	put	_	Action	_	_	0	_	_	Offset=661-664
+6	elevator	_	Device	_	_	7	Meronym	_	Offset=669-677
+7	flies	_	Reagent	_	_	0	_	_	Offset=687-692
+8	all	_	Modifier	_	_	9	Mod-Link	_	Offset=693-704
+9	down	_	Location	_	_	0	_	_	Offset=705-709
+
+# sent_id = s5
+# text = Bring the T-maze back into the vertical position and put the elevator with the flies all the way down.
+1	Tap	_	Action	_	_	0	_	_	Offset=794-797
+2	all	_	Modifier	_	_	3	Mod-Link	_	Offset=798-801
+3	flies	_	Reagent	_	_	0	_	_	Offset=806-811
+4	tube	_	Location	_	_	6	Meronym	_	Offset=821-825
+5	doesn’t	_	Modifier	_	_	6	Mod-Link	_	Offset=832-847
+6	aversive	_	Reagent	_	_	0	_	_	Offset=852-869
+
+# sent_id = s6
+# text = Now let the flies choose between the bright tube and the dark tube for 30 seconds.
+1	tube	_	Location	_	_	4	Meronym	_	Offset=910-914
+2	put	_	Action	_	_	0	_	_	Offset=919-922
+3	all	_	Modifier	_	_	4	Mod-Link	_	Offset=923-926
+4	flies	_	Reagent	_	_	0	_	_	Offset=931-936
+5	entrance	_	Location	_	_	0	_	_	Offset=944-957
+6	again	_	Modifier	_	_	0	_	_	Offset=958-963
+
+# sent_id = s7
+# text = Tap all the flies into the tube which doesn’t contain the aversive stimulus (The elevator is still down).
+1	calm	_	Action	_	_	0	_	_	Offset=990-999
+2	15	_	Time	_	_	0	_	_	Offset=1004-1014
+
+# sent_id = s8
+# text = Take this tube and put all the flies in the entrance tube again (with a funnel).
+1	Repeat	_	Action	_	_	0	_	_	Offset=1016-1022
+2	Bright/dark	_	Method	_	_	0	_	_	Offset=1028-1051
+
+# sent_id = s9
+# text = Let them calm down for 15 seconds.
+1	Switch	_	Action	_	_	0	_	_	Offset=1082-1088
+2	tube	_	Location	_	_	3	Meronym	_	Offset=1093-1097
+3	aversive	_	Reagent	_	_	0	_	_	Offset=1117-1134
+4	tube	_	Location	_	_	6	Meronym	_	Offset=1142-1146
+5	without	_	Modifier	_	_	6	Mod-Link	_	Offset=1147-1158
+6	filter	_	Device	_	_	0	_	_	Offset=1159-1171
+7	repeat	_	Action	_	_	0	_	_	Offset=1176-1182
+8	Bright/dark	_	Method	_	_	0	_	_	Offset=1188-1211
+
+# sent_id = s10
+# text = Repeat the "Bright/dark tube choice" section (steps 3 through 8).
+1	Put	_	Action	_	_	0	_	_	Offset=1242-1245
+2	elevator	_	Device	_	_	0	_	_	Offset=1250-1258
+3	up	_	Location	_	_	0	_	_	Offset=1259-1261
+4	count	_	Action	_	_	0	_	_	Offset=1266-1271
+5	flies	_	Reagent	_	_	10	Coreference-Link	_	Offset=1276-1281
+6	entrance	_	Location	_	_	0	_	_	Offset=1289-1302
+7	transparent	_	Location	_	_	0	_	_	Offset=1308-1324
+8	opaque	_	Location	_	_	0	_	_	Offset=1333-1344
+9	anesthetizing	_	Action	_	_	0	_	_	Offset=1351-1364
+10	them	_	Mention	_	_	0	_	_	Offset=1365-1369
+

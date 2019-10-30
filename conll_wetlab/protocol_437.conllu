@@ -1,0 +1,39 @@
+# sent_id = s1
+# text = Marine Purity Broth
+1	Autoclave	_	Action	_	_	0	_	_	Offset=20-29
+2	BD	_	Reagent	_	_	0	_	_	Offset=30-47
+3	NaCl	_	Reagent	_	_	0	_	_	Offset=52-59
+4	1	_	Amount	_	_	0	_	_	Offset=63-66
+5	distilled	_	Reagent	_	_	0	_	_	Offset=72-87
+6	20	_	Time	_	_	0	_	_	Offset=92-98
+
+# sent_id = s2
+# text = Autoclave BD Difco AC Broth and NaCl Qs to 1 L with distilled water for 20 min.
+1	add	_	Action	_	_	0	_	_	Offset=124-127
+2	16	_	Amount	_	_	4	Measure	_	Offset=128-133
+3	2	_	Generic-Measure	_	_	4	Measure	_	Offset=134-137
+4	MgSO4	_	Reagent	_	_	0	_	_	Offset=138-143
+5	10	_	Amount	_	_	7	Measure	_	Offset=148-153
+6	1	_	Generic-Measure	_	_	7	Measure	_	Offset=154-157
+7	CaCl2	_	Reagent	_	_	0	_	_	Offset=158-163
+
+# sent_id = s3
+# text = After broth has cooled, add 16 ml 2 M MgSO4 and 10 ml 1 M CaCl2.  
+1	Dispense	_	Action	_	_	0	_	_	Offset=167-175
+2	2.0	_	Amount	_	_	0	_	_	Offset=176-179
+3	4.5	_	Amount	_	_	2	Or	_	Offset=183-189
+4	sterile	_	Device	_	_	0	_	_	Offset=194-206
+
+# sent_id = s4
+# text = Dispense 2.0 or 4.5 ml per sterile tube. 
+1	Inoculate	_	Action	_	_	0	_	_	Offset=209-218
+2	sterile	_	Reagent	_	_	0	_	_	Offset=219-230
+3	1:5	_	Numerical	_	_	5	Measure	_	Offset=236-239
+4	dilution	_	Measure-Type	_	_	3	Of-Type	_	Offset=250-258
+5	culture	_	Reagent	_	_	0	_	_	Offset=262-269
+
+# sent_id = s5
+# text = Inoculate sterile MPB with 1:5 (vol:vol) dilution of culture. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=272-280
+2	22°C	_	Temperature	_	_	0	_	_	Offset=284-288
+

@@ -1,0 +1,69 @@
+# sent_id = s1
+# text = Bacteriophage isolation using enrichment cultures
+1	Potential	_	Reagent	_	_	0	_	_	Offset=50-70
+2	grown	_	Action	_	_	0	_	_	Offset=75-80
+3	overnight	_	Time	_	_	0	_	_	Offset=81-90
+4	liquid	_	Reagent	_	_	5	Meronym	_	Offset=94-109
+5	rich	_	Reagent	_	_	0	_	_	Offset=123-141
+
+# sent_id = s2
+# text = Potential host cells are grown overnight in liquid cultures containing a rich growth medium (e.g., MLB).
+1	Adjust	_	Action	_	_	0	_	_	Offset=155-161
+2	525	_	Concentration	_	_	0	_	_	Offset=196-202
+
+# sent_id = s3
+# text = Adjust to an optical density measured at 525 nm (OD525) of 0.3–0.5.
+1	25	_	Amount	_	_	2	Measure	_	Offset=237-242
+2	water	_	Reagent	_	_	0	_	_	Offset=243-255
+3	filtered	_	Action	_	_	0	_	_	Offset=259-267
+4	minimize	_	Action	_	_	0	_	_	Offset=307-315
+5	bacterial	_	Reagent	_	_	0	_	_	Offset=328-351
+6	enrichment	_	Reagent	_	_	0	_	_	Offset=359-378
+
+# sent_id = s4
+# text = Approximately 25 mL water sample is filtered (0.2 µm or 0.45 µm syringe filters) to minimize the risk of bacterial contamination of the enrichment cultures.
+1	Transfer	_	Action	_	_	0	_	_	Offset=380-388
+2	samples	_	Reagent	_	_	0	_	_	Offset=398-405
+3	triplicate	_	Modifier	_	_	0	_	_	Offset=409-419
+4	sterile	_	Modifier	_	_	0	_	_	Offset=420-427
+5	100	_	Size	_	_	0	_	_	Offset=428-434
+6	culture	_	Location	_	_	0	_	_	Offset=435-449
+
+# sent_id = s5
+# text = Transfer filtered samples to triplicate sterile 100 mL culture flasks.
+1	Add	_	Action	_	_	0	_	_	Offset=451-454
+2	3	_	Amount	_	_	4	Measure	_	Offset=455-459
+3	10×	_	Concentration	_	_	4	Measure	_	Offset=460-463
+4	growth	_	Reagent	_	_	0	_	_	Offset=464-477
+
+# sent_id = s6
+# text = Add 3 mL 10× growth medium (i.e., 10 times concentrated medium).
+1	Start	_	Action	_	_	0	_	_	Offset=516-521
+2	enrichment	_	Reagent	_	_	0	_	_	Offset=522-541
+3	adding	_	Action	_	_	0	_	_	Offset=545-551
+4	1	_	Amount	_	_	5	Measure	_	Offset=552-564
+5	host	_	Reagent	_	_	0	_	_	Offset=579-591
+
+# sent_id = s7
+# text = Start enrichment cultures by adding 1 mL of each of the target host strains of interest (e.g., 1–6 different strains for each incubation) to the culture flask.
+1	Incubate	_	Action	_	_	0	_	_	Offset=676-684
+2	cultures	_	Reagent	_	_	0	_	_	Offset=689-697
+3	shaking	_	Device	_	_	0	_	_	Offset=703-716
+4	temperature	_	Temperature	_	_	0	_	_	Offset=722-733
+5	period	_	Time	_	_	0	_	_	Offset=738-744
+6	appropriate	_	Modifier	_	_	5	Mod-Link	4:Mod-Link	Offset=753-764
+
+# sent_id = s8
+# text = Incubate the cultures on a shaking table at a temperature and period that is appropriate for the host bacteria.
+1	culture	_	Reagent	_	_	0	_	_	Offset=798-805
+2	established	_	Action	_	_	0	_	_	Offset=809-820
+3	environmental	_	Reagent	_	_	0	_	_	Offset=831-851
+4	replaced	_	Action	_	_	0	_	_	Offset=855-863
+5	25	_	Amount	_	_	6	Measure	_	Offset=867-872
+6	artificial	_	Reagent	_	_	0	_	_	Offset=873-892
+7	0.02	_	Amount	_	_	8	Measure	_	Offset=897-904
+8	filtered	_	Reagent	_	_	6	Or	_	Offset=905-926
+9	verify	_	Action	_	_	0	_	_	Offset=931-937
+10	bacterial	_	Reagent	_	_	0	_	_	Offset=938-954
+11	in	_	Modifier	_	_	0	_	_	Offset=955-975
+

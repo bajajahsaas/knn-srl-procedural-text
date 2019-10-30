@@ -1,0 +1,140 @@
+# sent_id = s1
+# text = MegaLong™ Protocol for Isolation of >100kb Genomic DNA (Bacterial DNA)
+1	ice	_	Location	_	_	5	Meronym	_	Offset=74-77
+2	add	_	Action	_	_	0	_	_	Offset=79-82
+3	0.5ml	_	Amount	_	_	4	Measure	_	Offset=83-88
+4	bacteria	_	Reagent	_	_	0	_	_	Offset=89-105
+5	Tube-O-DIALYZER™	_	Location	_	_	0	_	_	Offset=111-127
+6	centrifuge	_	Action	_	_	0	_	_	Offset=132-142
+7	5,000xg	_	Speed	_	_	0	_	_	Offset=146-153
+8	5	_	Time	_	_	0	_	_	Offset=158-167
+9	pellet	_	Reagent	_	_	0	_	_	Offset=171-183
+
+# sent_id = s2
+# text = On ice, add 0.5ml bacteria culture to a Tube-O-DIALYZER™ and centrifuge at 5,000xg for 5 minutes to pellet cells.
+1	Discard	_	Action	_	_	0	_	_	Offset=185-192
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=197-208
+
+# sent_id = s3
+# text = Discard the supernatant.
+1	Add	_	Action	_	_	0	_	_	Offset=210-213
+2	50µl	_	Amount	_	_	3	Measure	_	Offset=214-218
+3	lysis	_	Reagent	_	_	5	Meronym	7:Meronym|9:Meronym|11:Meronym|13:Meronym	Offset=219-233
+4	1%	_	Concentration	_	_	5	Measure	_	Offset=245-247
+5	SDS	_	Reagent	_	_	0	_	_	Offset=248-251
+6	0.1N	_	Concentration	_	_	7	Measure	_	Offset=253-257
+7	NaOH	_	Reagent	_	_	0	_	_	Offset=258-262
+8	10mM	_	Concentration	_	_	9	Measure	_	Offset=267-271
+9	EDTA	_	Reagent	_	_	0	_	_	Offset=272-276
+10	25µl	_	Amount	_	_	11	Measure	_	Offset=293-297
+11	Digestion	_	Reagent	_	_	0	_	_	Offset=301-317
+12	10µl	_	Amount	_	_	13	Measure	_	Offset=322-326
+13	LongLife™	_	Reagent	_	_	0	_	_	Offset=327-358
+
+# sent_id = s4
+# text = Add 50µl lysis solution containing 1% SDS, 0.1N NaOH and 10mM EDTA (not supplied), 25µl of Digestion Buffer and 10µl LongLife™ Proteinase K Solution.
+1	Incubate	_	Action	_	_	0	_	_	Offset=360-368
+2	55°C	_	Temperature	_	_	0	_	_	Offset=372-376
+3	2-4	_	Time	_	_	0	_	_	Offset=381-390
+4	periodic	_	Method	_	_	0	_	_	Offset=396-412
+
+# sent_id = s5
+# text = Incubate at 55°C for 2-4 hours with periodic rocking.
+1	centrifuge	_	Action	_	_	0	_	_	Offset=458-468
+2	tube	_	Location	_	_	0	_	_	Offset=473-477
+3	20	_	Time	_	_	0	_	_	Offset=482-492
+4	1,000g	_	Speed	_	_	0	_	_	Offset=496-502
+
+# sent_id = s6
+# text = Do not vortex.
+1	Replace	_	Action	_	_	0	_	_	Offset=504-511
+2	cap	_	Seal	_	_	0	_	_	Offset=516-519
+3	dialysis	_	Seal	_	_	0	_	_	Offset=529-541
+
+# sent_id = s7
+# text = After digestion is complete, centrifuge the tube for 20 seconds at 1,000g.
+1	DNA	_	Reagent	_	_	0	_	_	Offset=614-617
+
+# sent_id = s8
+# text = Replace the cap with the dialysis cap.
+1	Place	_	Action	_	_	0	_	_	Offset=619-624
+2	Tube-O-DIALYZER™	_	Location	_	_	0	_	_	Offset=629-645
+3	upside	_	Modifier	_	_	0	_	_	Offset=646-657
+4	50ml	_	Amount	_	_	5	Measure	_	Offset=663-667
+5	centrifuge	_	Location	_	_	0	_	_	Offset=668-683
+6	centrifuge	_	Action	_	_	0	_	_	Offset=688-698
+7	1000xg	_	Speed	_	_	0	_	_	Offset=702-708
+8	30	_	Time	_	_	0	_	_	Offset=713-723
+9	bring	_	Action	_	_	0	_	_	Offset=727-732
+10	sample	_	Reagent	_	_	0	_	_	Offset=737-743
+11	dialysis	_	Location	_	_	0	_	_	Offset=753-770
+
+# sent_id = s9
+# text = Do not discard the storage cap as this will be required for storage of DNA.
+1	Remove	_	Action	_	_	0	_	_	Offset=772-778
+2	Tube-O-DIALYZER™	_	Location	_	_	0	_	_	Offset=783-799
+3	50ml	_	Amount	_	_	4	Measure	_	Offset=809-813
+4	tube	_	Location	_	_	0	_	_	Offset=814-818
+5	forceps	_	Device	_	_	0	_	_	Offset=824-831
+6	slide	_	Action	_	_	0	_	_	Offset=856-866
+7	float	_	Location	_	_	0	_	_	Offset=880-885
+8	dialyze	_	Action	_	_	0	_	_	Offset=890-897
+9	500ml	_	Amount	_	_	11	Measure	_	Offset=901-906
+10	1X	_	Concentration	_	_	11	Measure	_	Offset=907-909
+11	TE	_	Reagent	_	_	0	_	_	Offset=910-919
+12	room	_	Temperature	_	_	0	_	_	Offset=923-939
+13	18-24	_	Time	_	_	0	_	_	Offset=944-955
+14	2-3	_	Numerical	_	_	0	_	_	Offset=961-964
+15	buffer	_	Reagent	_	_	0	_	_	Offset=965-971
+16	changes	_	Action	_	_	0	_	_	Offset=972-979
+
+# sent_id = s10
+# text = Place the Tube-O-DIALYZER™ upside down in a 50ml centrifuge tube and centrifuge at 1000xg for 30 seconds to bring the sample onto the dialysis membrane.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=981-987
+2	swirl	_	Action	_	_	0	_	_	Offset=988-993
+3	tube	_	Location	_	_	0	_	_	Offset=994-998
+4	mix	_	Action	_	_	0	_	_	Offset=1002-1005
+5	contents	_	Reagent	_	_	0	_	_	Offset=1006-1014
+6	each	_	Modifier	_	_	0	_	_	Offset=1018-1022
+7	buffer	_	Reagent	_	_	0	_	_	Offset=1023-1029
+8	change	_	Action	_	_	0	_	_	Offset=1030-1036
+
+# sent_id = s11
+# text = Remove the Tube-O-DIALYZER™ from the 50ml tube with forceps and keeping it inverted slide into the provided float and dialyze in 500ml 1X TE buffer at room temperature for 18-24 hours with 2-3 buffer changes.
+1	genomic	_	Reagent	_	_	0	_	_	Offset=1061-1072
+2	concentrated	_	Action	_	_	0	_	_	Offset=1080-1092
+3	Tube-O-DIALYZER™	_	Location	_	_	0	_	_	Offset=1100-1116
+4	Tube-O-DIALYZER™	_	Reagent	_	_	0	_	_	Offset=1130-1159
+
+# sent_id = s12
+# text = Gently swirl tube to mix contents at each buffer change.
+1	Concentrator	_	Reagent	_	_	0	_	_	Offset=1180-1201
+
+# sent_id = s13
+# text = Following dialysis the genomic DNA may be concentrated in the Tube-O-DIALYZER™ using either Tube-O-DIALYZER™ Concentrator (Cat.
+1	Simply	_	Modifier	_	_	0	_	_	Offset=1220-1226
+2	prepare	_	Action	_	_	0	_	_	Offset=1227-1234
+3	Concentrator	_	Reagent	_	_	0	_	_	Offset=1239-1251
+4	instructions	_	Method	_	_	0	_	_	Offset=1263-1275
+5	invert	_	Action	_	_	0	_	_	Offset=1280-1286
+6	Tube-O-DIALYZER™	_	Location	_	_	7	Meronym	_	Offset=1291-1307
+7	DNA	_	Reagent	_	_	0	_	_	Offset=1324-1327
+8	solution	_	Reagent	_	_	0	_	_	Offset=1335-1343
+
+# sent_id = s14
+# text = # 786-144) or Concentrator Solution (Cat.
+1	centrifuge	_	Action	_	_	0	_	_	Offset=1406-1416
+2	tube	_	Location	_	_	0	_	_	Offset=1421-1425
+3	1000xg	_	Speed	_	_	0	_	_	Offset=1429-1435
+4	1	_	Time	_	_	0	_	_	Offset=1440-1448
+
+# sent_id = s15
+# text = # 786-143).
+1	Replace	_	Action	_	_	0	_	_	Offset=1450-1457
+2	dialysis	_	Seal	_	_	0	_	_	Offset=1462-1474
+3	normal	_	Seal	_	_	0	_	_	Offset=1484-1495
+
+# sent_id = s16
+# text = Simply prepare the Concentrator as per the instructions and invert the Tube-O-DIALYZER™ containing your DNA in the solution.
+1	genomic	_	Reagent	_	_	0	_	_	Offset=1500-1511
+

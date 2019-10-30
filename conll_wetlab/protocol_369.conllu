@@ -1,0 +1,17 @@
+# sent_id = s1
+# text = Fe-EDTA Stock solution for ESAW Media for Marine Phytoplankton
+1	Na2EDTA	_	Reagent	_	_	0	_	_	Offset=63-76
+2	Bring	_	Action	_	_	0	_	_	Offset=77-82
+3	solution	_	Reagent	_	_	1	Meronym	_	Offset=83-91
+4	1000	_	Amount	_	_	0	_	_	Offset=95-102
+5	MilliQ	_	Reagent	_	_	0	_	_	Offset=108-118
+6	filter	_	Action	_	_	0	_	_	Offset=123-139
+7	0.2μm	_	Size	_	_	8	Setting	_	Offset=147-152
+8	filter	_	Device	_	_	0	_	_	Offset=153-159
+
+# sent_id = s2
+# text = Na2EDTA FeCl3 Bring solution to 1000 mL with MilliQ H2O and filter sterilize with a 0.2μm filter.
+1	Store	_	Action	_	_	0	_	_	Offset=161-166
+2	in	_	Location	_	_	0	_	_	Offset=167-178
+3	4ºC	_	Temperature	_	_	0	_	_	Offset=182-185
+

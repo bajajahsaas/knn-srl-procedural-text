@@ -1,0 +1,326 @@
+# sent_id = s1
+# text = Cesium Chloride Protocol for Phage
+1	Filter	_	Action	_	_	0	_	_	Offset=35-41
+2	cesium	_	Reagent	_	_	0	_	_	Offset=42-58
+3	0.02µm	_	Size	_	_	4	Measure	_	Offset=64-70
+4	filter	_	Device	_	_	0	_	_	Offset=71-77
+
+# sent_id = s2
+# text = Filter cesium solutions with 0.02µm filter. 
+1	Mark	_	Action	_	_	0	_	_	Offset=80-84
+2	top	_	Location	_	_	0	_	_	Offset=85-88
+3	first	_	Reagent	_	_	2	Meronym	_	Offset=92-112
+4	pen	_	Device	_	_	0	_	_	Offset=118-121
+5	adding	_	Action	_	_	0	_	_	Offset=129-135
+6	next	_	Modifier	_	_	7	Mod-Link	_	Offset=136-140
+7	layers	_	Reagent	_	_	0	_	_	Offset=141-147
+
+# sent_id = s3
+# text = Mark top of first gradient layer with pen before adding next layers. 
+1	Add	_	Action	_	_	0	_	_	Offset=326-329
+2	CsCl	_	Reagent	_	_	0	_	_	Offset=330-334
+3	your	_	Reagent	_	_	0	_	_	Offset=338-349
+
+# sent_id = s4
+# text = Set up gradient as (from top to bottom): 1ml of 1.7 g/ml, mark top of layer 1ml of 1.5 g/ml, mark top of layer 1ml of 1.35 g/ml 8.5ml of 1.15 g/ml - this is phage concentrate.
+1	Check	_	Action	_	_	0	_	_	Offset=351-356
+2	balance	_	Measure-Type	_	_	0	_	_	Offset=357-364
+3	tubes	_	Location	_	_	0	_	_	Offset=368-373
+
+# sent_id = s5
+# text = Add CsCl to your sample.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=375-385
+2	22,000	_	Speed	_	_	0	_	_	Offset=389-399
+3	2	_	Time	_	_	0	_	_	Offset=404-411
+4	4°C	_	Temperature	_	_	0	_	_	Offset=415-418
+5	approximately	_	Modifier	_	_	6	Mod-Link	_	Offset=420-433
+6	60-80,000xg	_	Speed	_	_	0	_	_	Offset=434-445
+
+# sent_id = s6
+# text = Check balance of tubes.
+1	Pierce	_	Action	_	_	0	_	_	Offset=447-453
+2	tube	_	Location	_	_	0	_	_	Offset=454-458
+3	1.7/1.5	_	Generic-Measure	_	_	0	_	_	Offset=462-474
+4	interface	_	Measure-Type	_	_	3	Of-Type	_	Offset=475-484
+
+# sent_id = s7
+# text = Centrifuge at 22,000 rpm for 2 hours at 4°C, approximately 60-80,000xg.
+1	Bevel	_	Action	_	_	0	_	_	Offset=486-494
+2	collect	_	Action	_	_	0	_	_	Offset=500-507
+3	1.5	_	Amount	_	_	0	_	_	Offset=508-515
+
+# sent_id = s8
+# text = Pierce tube at 1.7/1.5 g/ml interface.
+1	Store	_	Action	_	_	0	_	_	Offset=684-689
+2	fridge	_	Device	_	_	0	_	_	Offset=693-699
+3	4°C	_	Temperature	_	_	2	Setting	_	Offset=703-706
+
+# sent_id = s9
+# text = Bevel up, and collect 1.5 mls (should include 1.5 g/ml step and 1.5 to 1.35 interface).  
+1	Add	_	Action	_	_	0	_	_	Offset=731-734
+2	0.2	_	Amount	_	_	3	Measure	_	Offset=735-742
+3	chloroform	_	Reagent	_	_	0	_	_	Offset=743-753
+4	mix	_	Action	_	_	0	_	_	Offset=755-758
+5	incubate	_	Action	_	_	0	_	_	Offset=763-771
+6	10	_	Time	_	_	0	_	_	Offset=772-778
+7	room	_	Temperature	_	_	0	_	_	Offset=783-799
+
+# sent_id = s10
+# text = Check with slides for virus particles, etc.
+1	Spin	_	Action	_	_	0	_	_	Offset=802-806
+2	4000	_	Speed	_	_	0	_	_	Offset=810-818
+3	table	_	Device	_	_	0	_	_	Offset=822-835
+4	10	_	Time	_	_	0	_	_	Offset=840-850
+5	separate	_	Action	_	_	0	_	_	Offset=854-862
+6	phases	_	Reagent	_	_	0	_	_	Offset=863-869
+
+# sent_id = s11
+# text = Use 20 µl from [viral] fraction and 500 µl from "upper" layers.
+1	Save	_	Action	_	_	0	_	_	Offset=871-875
+2	transfer	_	Action	_	_	0	_	_	Offset=880-888
+3	top	_	Reagent	_	_	0	_	_	Offset=889-898
+4	new	_	Modifier	_	_	6	Mod-Link	_	Offset=902-905
+5	15	_	Amount	_	_	6	Measure	_	Offset=906-911
+6	tubes	_	Location	_	_	0	_	_	Offset=912-917
+
+# sent_id = s12
+# text = Store in fridge at 4°C until ready to extract.
+1	Add	_	Action	_	_	0	_	_	Offset=919-922
+2	10-15	_	Amount	_	_	3	Measure	_	Offset=923-931
+3	DNase	_	Reagent	_	_	5	Meronym	_	Offset=932-939
+4	1	_	Concentration	_	_	3	Measure	_	Offset=941-948
+5	H2O	_	Reagent	_	_	0	_	_	Offset=952-955
+6	phage	_	Reagent	_	_	0	_	_	Offset=960-972
+7	1.2-1.5ml	_	Amount	_	_	6	Measure	_	Offset=974-983
+
+# sent_id = s13
+# text = Add 0.2 vol chloroform, mix and incubate 10 min. at room temperature. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=987-995
+2	15	_	Time	_	_	0	_	_	Offset=996-1006
+3	37°C	_	Temperature	_	_	0	_	_	Offset=1010-1014
+
+# sent_id = s14
+# text = Spin at 4000 rpm in table Beckman for 10 minutes to separate phases.
+1	Treat	_	Action	_	_	0	_	_	Offset=1016-1021
+2	RNase	_	Reagent	_	_	0	_	_	Offset=1027-1032
+
+# sent_id = s15
+# text = Save and transfer top phase to new 15 ml tubes.
+1	Inactivate	_	Action	_	_	0	_	_	Offset=1060-1070
+2	15	_	Time	_	_	0	_	_	Offset=1075-1085
+3	65°C.	_	Temperature	_	_	0	_	_	Offset=1089-1094
+
+# sent_id = s16
+# text = Add 10-15 µl DNase I (1 mg/ml in H2O) to phage sample (1.2-1.5ml). 
+1	Transfer	_	Action	_	_	0	_	_	Offset=1095-1103
+2	all	_	Modifier	_	_	0	_	_	Offset=1104-1107
+3	new	_	Modifier	_	_	4	Mod-Link	_	Offset=1111-1114
+4	"oak	_	Location	_	_	0	_	_	Offset=1115-1131
+
+# sent_id = s17
+# text = Incubate 15 minutes at 37°C.
+1	Add	_	Action	_	_	0	_	_	Offset=1165-1168
+2	0.1	_	Amount	_	_	4	Measure	_	Offset=1169-1179
+3	2	_	Concentration	_	_	4	Measure	_	Offset=1180-1183
+4	TrisHCL	_	Reagent	_	_	0	_	_	Offset=1184-1191
+5	pH	_	pH	_	_	4	Measure	_	Offset=1193-1199
+6	0.2	_	Concentration	_	_	7	Measure	_	Offset=1201-1206
+7	EDTA	_	Reagent	_	_	0	_	_	Offset=1207-1211
+
+# sent_id = s18
+# text = Treat with RNase if RNA is to be extracted.
+1	Add	_	Action	_	_	0	_	_	Offset=1214-1217
+2	100	_	Amount	_	_	4	Measure	_	Offset=1218-1224
+3	0.5	_	Concentration	_	_	4	Measure	_	Offset=1225-1230
+4	EDTA	_	Reagent	_	_	0	_	_	Offset=1231-1235
+5	per	_	Modifier	_	_	6	Mod-Link	_	Offset=1236-1239
+6	10ml	_	Amount	_	_	0	_	_	Offset=1240-1244
+
+# sent_id = s19
+# text = Inactivate for 15 minutes at 65°C.
+1	Add	_	Action	_	_	0	_	_	Offset=1247-1250
+2	1	_	Amount	_	_	3	Measure	_	Offset=1251-1259
+3	formamide	_	Reagent	_	_	0	_	_	Offset=1263-1272
+
+# sent_id = s20
+# text = Transfer all to new "oak ridge" tube for faster centrifugation later.
+1	Add	_	Action	_	_	0	_	_	Offset=1275-1278
+2	10	_	Generic-Measure	_	_	3	Measure	_	Offset=1279-1284
+3	glycogen	_	Reagent	_	_	0	_	_	Offset=1285-1293
+4	Incubate	_	Action	_	_	0	_	_	Offset=1294-1302
+5	room	_	Temperature	_	_	0	_	_	Offset=1306-1322
+6	30	_	Time	_	_	0	_	_	Offset=1327-1337
+
+# sent_id = s21
+# text = Add 0.1 volume 2 M TrisHCL (pH 8.5)/0.2 M EDTA. 
+1	Add	_	Action	_	_	0	_	_	Offset=1339-1342
+2	2	_	Amount	_	_	5	Measure	_	Offset=1343-1352
+3	room	_	Temperature	_	_	0	_	_	Offset=1356-1372
+4	100%	_	Concentration	_	_	5	Measure	_	Offset=1373-1377
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=1378-1385
+
+# sent_id = s22
+# text = Add 100 µl 0.5 M EDTA per 10ml. 
+1	Pellet	_	Action	_	_	0	_	_	Offset=1387-1393
+2	Sorvall	_	Device	_	_	0	_	_	Offset=1397-1404
+3	12,000	_	Speed	_	_	2	Setting	_	Offset=1406-1416
+4	20	_	Time	_	_	2	Setting	_	Offset=1421-1431
+
+# sent_id = s23
+# text = Add 1 volume of formamide. 
+1	Wash	_	Action	_	_	0	_	_	Offset=1435-1439
+2	70%	_	Concentration	_	_	3	Measure	_	Offset=1445-1448
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=1449-1456
+4	two	_	Numerical	_	_	0	_	_	Offset=1458-1461
+
+# sent_id = s24
+# text = Add 10 Fl glycogen Incubate at room temperature for 30 minutes.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1469-1478
+2	567	_	Amount	_	_	3	Measure	_	Offset=1484-1490
+3	TE	_	Reagent	_	_	0	_	_	Offset=1491-1493
+4	continue	_	Action	_	_	0	_	_	Offset=1498-1506
+5	CTAB	_	Method	_	_	0	_	_	Offset=1512-1527
+
+# sent_id = s25
+# text = Add 2 volumes of room temperature 100% ethanol.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1529-1538
+2	pellet	_	Reagent	_	_	0	_	_	Offset=1539-1545
+3	567	_	Amount	_	_	4	Measure	_	Offset=1549-1555
+4	TE	_	Reagent	_	_	0	_	_	Offset=1556-1558
+
+# sent_id = s26
+# text = Pellet in Sorvall (12,000 rpm for 20 minutes). 
+1	Add	_	Action	_	_	0	_	_	Offset=1560-1563
+2	30	_	Amount	_	_	4	Measure	_	Offset=1564-1569
+3	10%	_	Concentration	_	_	4	Measure	_	Offset=1573-1576
+4	SDS	_	Reagent	_	_	0	_	_	Offset=1577-1580
+5	3	_	Amount	_	_	7	Measure	_	Offset=1585-1589
+6	20	_	Concentration	_	_	7	Measure	_	Offset=1593-1601
+7	proteinase	_	Reagent	_	_	0	_	_	Offset=1602-1614
+
+# sent_id = s27
+# text = Wash with 70% ethanol, two times.
+1	Mix	_	Action	_	_	0	_	_	Offset=1617-1620
+
+# sent_id = s28
+# text = Resuspend into 567 µl TE and continue with CTAB extraction.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1622-1630
+2	1	_	Time	_	_	0	_	_	Offset=1631-1637
+3	37°C	_	Temperature	_	_	0	_	_	Offset=1641-1652
+
+# sent_id = s29
+# text = Resuspend pellet in 567 µl TE.
+1	Add	_	Action	_	_	0	_	_	Offset=1655-1658
+2	100	_	Amount	_	_	4	Measure	_	Offset=1659-1665
+3	5	_	Concentration	_	_	4	Measure	_	Offset=1669-1672
+4	NaCl	_	Reagent	_	_	0	_	_	Offset=1673-1677
+5	mix	_	Action	_	_	0	_	_	Offset=1682-1685
+6	thoroughly	_	Modifier	_	_	0	_	_	Offset=1686-1696
+
+# sent_id = s30
+# text = Add 30 µl of 10% SDS and 3 µl of 20 µg/ml proteinase K. 
+1	Add	_	Action	_	_	0	_	_	Offset=1698-1701
+2	80	_	Amount	_	_	3	Measure	_	Offset=1702-1707
+3	CTAB/NaCl	_	Reagent	_	_	0	_	_	Offset=1708-1726
+
+# sent_id = s31
+# text = Mix.
+1	Mix	_	Action	_	_	0	_	_	Offset=1728-1731
+
+# sent_id = s32
+# text = Incubate 1 hour at 37°C - 56°C. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=1733-1741
+2	10	_	Time	_	_	0	_	_	Offset=1742-1752
+3	65°C	_	Temperature	_	_	0	_	_	Offset=1756-1760
+
+# sent_id = s33
+# text = Add 100 µl of 5 M NaCl and mix thoroughly.
+1	Add	_	Action	_	_	0	_	_	Offset=1762-1765
+2	equal	_	Amount	_	_	3	Measure	_	Offset=1766-1778
+3	chloroform	_	Reagent	_	_	0	_	_	Offset=1782-1792
+4	mix	_	Action	_	_	0	_	_	Offset=1794-1797
+
+# sent_id = s34
+# text = Add 80 µl CTAB/NaCl solution.
+1	Microcentrifuge	_	Action	_	_	0	_	_	Offset=1799-1814
+2	2	_	Time	_	_	0	_	_	Offset=1819-1828
+
+# sent_id = s35
+# text = Mix.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1830-1838
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1839-1850
+3	separate	_	Modifier	_	_	4	Mod-Link	_	Offset=1854-1862
+4	tube	_	Location	_	_	0	_	_	Offset=1863-1867
+
+# sent_id = s36
+# text = Incubate 10 minutes at 65°C.
+1	Add	_	Action	_	_	0	_	_	Offset=1869-1872
+2	equal	_	Amount	_	_	3	Measure	_	Offset=1873-1885
+3	phenol/chloroform	_	Reagent	_	_	0	_	_	Offset=1889-1906
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=1914-1934
+5	mix	_	Action	_	_	0	_	_	Offset=1936-1939
+
+# sent_id = s37
+# text = Add equal volume of chloroform; mix.
+1	Microcentrifuge	_	Action	_	_	0	_	_	Offset=1941-1956
+2	2	_	Time	_	_	0	_	_	Offset=1961-1970
+
+# sent_id = s38
+# text = Microcentrifuge for 2 minutes.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1972-1980
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1981-1992
+3	separate	_	Modifier	_	_	4	Mod-Link	_	Offset=1996-2004
+4	tube	_	Location	_	_	0	_	_	Offset=2005-2009
+
+# sent_id = s39
+# text = Transfer supernatant to separate tube.
+1	Add	_	Action	_	_	0	_	_	Offset=2011-2014
+2	equal	_	Amount	_	_	3	Measure	_	Offset=2015-2027
+3	chloroform	_	Reagent	_	_	0	_	_	Offset=2031-2041
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=2049-2069
+5	mix	_	Action	_	_	0	_	_	Offset=2071-2074
+
+# sent_id = s40
+# text = Add equal volume of phenol/chloroform to the supernatant fraction; mix.
+1	Microcentrifuge	_	Action	_	_	0	_	_	Offset=2076-2091
+2	2	_	Time	_	_	0	_	_	Offset=2096-2105
+
+# sent_id = s41
+# text = Microcentrifuge for 2 minutes.
+1	Transfer	_	Action	_	_	0	_	_	Offset=2107-2115
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=2116-2127
+3	separate	_	Modifier	_	_	4	Mod-Link	_	Offset=2131-2139
+4	tube	_	Location	_	_	0	_	_	Offset=2140-2144
+
+# sent_id = s42
+# text = Transfer supernatant to separate tube.
+1	Add	_	Action	_	_	0	_	_	Offset=2146-2149
+2	0.7	_	Amount	_	_	3	Measure	_	Offset=2150-2160
+3	isopropanol	_	Reagent	_	_	0	_	_	Offset=2161-2172
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=2180-2200
+
+# sent_id = s43
+# text = Add equal volume of chloroform to the supernatant fraction; mix.
+1	Mix	_	Action	_	_	0	_	_	Offset=2202-2205
+2	gently	_	Modifier	_	_	0	_	_	Offset=2206-2212
+3	DNA	_	Reagent	_	_	0	_	_	Offset=2219-2222
+4	precipitates	_	Action	_	_	0	_	_	Offset=2223-2235
+
+# sent_id = s44
+# text = Microcentrifuge for 2 minutes.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2237-2247
+2	15	_	Time	_	_	0	_	_	Offset=2248-2258
+3	cold	_	Location	_	_	0	_	_	Offset=2262-2266
+
+# sent_id = s45
+# text = Transfer supernatant to separate tube.
+1	Wash	_	Action	_	_	0	_	_	Offset=2268-2272
+2	70%	_	Concentration	_	_	3	Measure	_	Offset=2278-2281
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=2282-2289
+
+# sent_id = s46
+# text = Add 0.7 volume isopropanol to the supernatant fraction.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=2291-2300
+2	50	_	Amount	_	_	3	Measure	_	Offset=2304-2309
+3	Sigma	_	Reagent	_	_	0	_	_	Offset=2310-2321
+

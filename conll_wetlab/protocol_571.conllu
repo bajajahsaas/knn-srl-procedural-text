@@ -1,0 +1,71 @@
+# sent_id = s1
+# text = Isolation of cyanophages by liquid enrichment assay
+1	Prefilter	_	Action	_	_	0	_	_	Offset=52-61
+2	3	_	Amount	_	_	3	Measure	_	Offset=71-74
+3	water	_	Reagent	_	_	0	_	_	Offset=75-87
+4	glass	_	Modifier	_	_	5	Mod-Link	_	Offset=98-109
+5	filter	_	Device	_	_	0	_	_	Offset=110-116
+
+# sent_id = s2
+# text = Prefilter at least 3 L water sample through a glass fiber filter.
+1	Filter	_	Action	_	_	0	_	_	Offset=118-124
+2	sample	_	Reagent	_	_	0	_	_	Offset=125-131
+3	0.2	_	Size	_	_	6	Measure	_	Offset=140-146
+4	0.45	_	Size	_	_	3	Or	_	Offset=150-157
+5	low	_	Modifier	_	_	6	Mod-Link	_	Offset=158-177
+6	PVDF	_	Device	_	_	0	_	_	Offset=178-189
+
+# sent_id = s3
+# text = Filter sample through 0.2 µm or 0.45 µm low protein binding PVDF filter.
+1	Dispense	_	Action	_	_	0	_	_	Offset=191-199
+2	filtered	_	Modifier	_	_	3	Mod-Link	_	Offset=204-212
+3	water	_	Reagent	_	_	0	_	_	Offset=213-226
+4	culture	_	Location	_	_	0	_	_	Offset=254-269
+
+# sent_id = s4
+# text = Dispense the filtered water samples (e.g., 0.5 L or more) into culture vessels, e.g., 1 L or larger Erlenmeyer flasks.
+1	Add	_	Action	_	_	0	_	_	Offset=310-313
+2	nutrients	_	Reagent	_	_	0	_	_	Offset=314-323
+3	filtered	_	Modifier	_	_	4	Mod-Link	_	Offset=331-339
+4	water	_	Reagent	_	_	0	_	_	Offset=340-345
+
+# sent_id = s5
+# text = Add nutrients to the filtered water to support growth of the target cells.
+1	Seed	_	Action	_	_	0	_	_	Offset=385-389
+2	filtered	_	Modifier	_	_	3	Mod-Link	_	Offset=394-402
+3	water	_	Reagent	_	_	0	_	_	Offset=403-408
+4	1%	_	Concentration	_	_	5	Measure	_	Offset=414-427
+5	host	_	Reagent	_	_	0	_	_	Offset=431-443
+
+# sent_id = s6
+# text = Seed the filtered water with 1% to 10% v/v of host culture.
+1	Incubate	_	Action	_	_	0	_	_	Offset=565-573
+2	flasks	_	Location	_	_	0	_	_	Offset=578-584
+3	temperature	_	Modifier	_	_	0	_	_	Offset=592-658
+
+# sent_id = s7
+# text = As a control, replace the filtered environmental sample with virus-free (0.02 µm filtered or heat-killed) water sample.
+1	Remove	_	Action	_	_	0	_	_	Offset=688-694
+2	aliquot	_	Reagent	_	_	0	_	_	Offset=698-705
+3	enrichment	_	Reagent	_	_	2	Meronym	_	Offset=713-731
+4	pellet	_	Action	_	_	0	_	_	Offset=737-743
+5	remaining	_	Modifier	_	_	6	Mod-Link	_	Offset=744-753
+6	cells	_	Reagent	_	_	0	_	_	Offset=754-759
+7	centrifugation	_	Action	_	_	0	_	_	Offset=763-777
+8	20	_	Time	_	_	0	_	_	Offset=785-795
+9	6000g	_	Speed	_	_	0	_	_	Offset=799-804
+
+# sent_id = s8
+# text = Incubate the flasks at the temperature and light conditions appropriate for the cyanobacteria and look for signs of lysis.
+1	Filter	_	Action	_	_	0	_	_	Offset=807-813
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=818-829
+3	0.22	_	Size	_	_	5	Measure	_	Offset=840-847
+4	0.45	_	Size	_	_	3	Or	_	Offset=851-858
+5	PVDF	_	Device	_	_	0	_	_	Offset=859-870
+
+# sent_id = s9
+# text = Remove an aliquot of the enrichment culture, and pellet remaining cells by centrifugation (e.g., 20 minutes at 6000g).
+1	Store	_	Action	_	_	0	_	_	Offset=872-877
+2	lysate	_	Reagent	_	_	0	_	_	Offset=882-888
+3	4°C	_	Temperature	_	_	0	_	_	Offset=892-895
+

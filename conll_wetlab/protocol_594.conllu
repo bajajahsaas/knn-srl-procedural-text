@@ -1,0 +1,109 @@
+# sent_id = s1
+# text = Screening Recombinant Clones by PCR. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=38-46
+2	transformed	_	Reagent	_	_	0	_	_	Offset=51-69
+3	stock	_	Reagent	_	_	0	_	_	Offset=75-87
+
+# sent_id = s2
+# text = Transfer the transformed clones to a stock LB-Amp or other appropriate plated media.
+1	Grow	_	Action	_	_	0	_	_	Offset=123-127
+2	24	_	Time	_	_	0	_	_	Offset=132-137
+3	37°C	_	Temperature	_	_	0	_	_	Offset=141-145
+
+# sent_id = s3
+# text = Grow for 24 hr at 37°C.
+1	Prepare	_	Action	_	_	0	_	_	Offset=147-154
+2	forward	_	Reagent	_	_	0	_	_	Offset=155-182
+3	100	_	Concentration	_	_	0	_	_	Offset=225-234
+4	DDH2O	_	Reagent	_	_	0	_	_	Offset=238-243
+
+# sent_id = s4
+# text = Prepare forward and reverse primers for the vector used for transformation at 100 ng/μl in DDH2O.
+1	Label	_	Action	_	_	0	_	_	Offset=319-324
+2	thin-walled	_	Modifier	_	_	3	Mod-Link	_	Offset=325-336
+3	tubes	_	Device	_	_	0	_	_	Offset=337-342
+
+# sent_id = s5
+# text = See table in guidelines for recommended primers to use with pUC18 vector.
+1	Prepare	_	Action	_	_	0	_	_	Offset=344-351
+2	1	_	Amount	_	_	3	Measure	_	Offset=352-356
+3	Master	_	Reagent	_	_	0	_	_	Offset=360-370
+
+# sent_id = s6
+# text = Label thin-walled tubes.
+1	Vortex	_	Action	_	_	0	_	_	Offset=707-713
+2	spin	_	Action	_	_	0	_	_	Offset=718-722
+3	Master	_	Reagent	_	_	0	_	_	Offset=723-733
+4	dispense	_	Action	_	_	0	_	_	Offset=738-746
+5	20	_	Amount	_	_	0	_	_	Offset=747-752
+6	thin-walled	_	Modifier	_	_	7	Mod-Link	_	Offset=757-768
+7	tube	_	Device	_	_	0	_	_	Offset=769-773
+
+# sent_id = s7
+# text = Prepare 1 ml of Master Mix:
+1	Cap	_	Action	_	_	0	_	_	Offset=775-778
+2	all	_	Modifier	_	_	3	Mod-Link	_	Offset=779-782
+3	tubes	_	Device	_	_	0	_	_	Offset=783-788
+
+# sent_id = s8
+# text = ABI Reagents  PGC Scientific Reagents  Final Concentration       DDH2O690 µl DDH2O833.5 µl -----10x Buffer II100 µl 10x Buffer w/MgCl2100 µl 1x BufferdNTP mix80 µl dNTP mix20 µl 200 µM each25mM MgCl280 µl    2mMPrimer F20 µl Primer F20 µl 0.33 µMPrimer R20 µl Primer R20 µl 0.33 µMAmpliTaq Gold10 µl Taq Polymerase6.5 µl 1U/20 µl rxn.
+1	Set	_	Action	_	_	0	_	_	Offset=790-793
+2	10	_	Amount	_	_	3	Measure	_	Offset=796-801
+3	pipetter	_	Device	_	_	0	_	_	Offset=802-810
+4	1	_	Amount	_	_	0	_	_	Offset=814-818
+
+# sent_id = s9
+# text = Vortex and spin Master Mix and dispense 20 μl per thin-walled tube.
+1	Place	_	Action	_	_	0	_	_	Offset=820-825
+2	tranformant	_	Device	_	_	0	_	_	Offset=826-843
+3	template	_	Location	_	_	0	_	_	Offset=847-855
+4	touch	_	Action	_	_	0	_	_	Offset=860-865
+5	pipette	_	Device	_	_	0	_	_	Offset=870-881
+6	appropriate	_	Modifier	_	_	0	_	_	Offset=889-900
+7	colony	_	Reagent	_	_	0	_	_	Offset=901-907
+
+# sent_id = s10
+# text = Cap all tubes.
+1	Pipette	_	Action	_	_	0	_	_	Offset=909-916
+2	up	_	Method	_	_	0	_	_	Offset=917-928
+3	appropriate	_	Modifier	_	_	4	Mod-Link	_	Offset=936-947
+4	PCR	_	Location	_	_	0	_	_	Offset=948-956
+
+# sent_id = s11
+# text = Set a 10 μl pipetter to 1 μl.
+1	Re-cap	_	Action	_	_	0	_	_	Offset=958-964
+2	tube	_	Device	_	_	0	_	_	Offset=965-969
+3	change	_	Action	_	_	0	_	_	Offset=971-977
+4	tip	_	Seal	_	_	0	_	_	Offset=978-981
+5	repeat	_	Action	_	_	0	_	_	Offset=986-992
+6	steps	_	Method	_	_	0	_	_	Offset=993-1003
+7	until	_	Modifier	_	_	0	_	_	Offset=1004-1038
+
+# sent_id = s12
+# text = Place tranformant plate on template and touch the pipette tip to the appropriate colony.
+1	Perform	_	Action	_	_	0	_	_	Offset=1040-1047
+2	PCR	_	Method	_	_	0	_	_	Offset=1048-1051
+3	thermal	_	Method	_	_	0	_	_	Offset=1062-1086
+
+# sent_id = s13
+# text = Pipette up and down in the appropriate PCR tube.
+1	Remove	_	Action	_	_	0	_	_	Offset=1251-1257
+2	tubes	_	Device	_	_	0	_	_	Offset=1258-1263
+
+# sent_id = s14
+# text = Re-cap tube, change tip and repeat steps 9-10 until all colonies have been added.
+1	Add	_	Action	_	_	0	_	_	Offset=1291-1294
+2	2	_	Amount	_	_	3	Measure	_	Offset=1295-1299
+3	10x	_	Reagent	_	_	0	_	_	Offset=1300-1322
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=1326-1330
+5	tube	_	Device	_	_	0	_	_	Offset=1331-1335
+
+# sent_id = s15
+# text = Perform PCR using the thermal cycling protocol:
+1	Spin	_	Action	_	_	0	_	_	Offset=1337-1341
+2	load	_	Action	_	_	0	_	_	Offset=1382-1386
+3	10	_	Amount	_	_	0	_	_	Offset=1387-1392
+4	lane	_	Modifier	_	_	5	Mod-Link	_	Offset=1398-1402
+5	1%	_	Reagent	_	_	0	_	_	Offset=1408-1422
+6	0.5x	_	Reagent	_	_	5	Meronym	_	Offset=1426-1441
+

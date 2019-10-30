@@ -1,0 +1,509 @@
+# sent_id = s1
+# text = Immunohistochemistry Protocol for Paraffin-Embedded Sections
+1	Fix	_	Action	_	_	0	_	_	Offset=61-64
+2	freshly	_	Reagent	_	_	0	_	_	Offset=65-89
+3	<3mm	_	Amount	_	_	2	Measure	_	Offset=91-101
+4	10%	_	Concentration	_	_	5	Measure	_	Offset=108-111
+5	formalin	_	Reagent	_	_	0	_	_	Offset=112-120
+6	other	_	Reagent	_	_	5	Or	_	Offset=124-139
+7	24-48	_	Time	_	_	0	_	_	Offset=144-151
+8	room	_	Temperature	_	_	0	_	_	Offset=155-171
+
+# sent_id = s2
+# text = Fix freshly dissected tissue (<3mm thick) with 10% formalin or other fixatives for 24-48 h at room temperature.
+1	Rinse	_	Action	_	_	0	_	_	Offset=173-178
+2	tissue	_	Reagent	_	_	0	_	_	Offset=183-189
+3	running	_	Reagent	_	_	0	_	_	Offset=195-212
+4	1	_	Time	_	_	0	_	_	Offset=217-220
+5	Dehydrate	_	Action	_	_	0	_	_	Offset=222-231
+6	tissue	_	Reagent	_	_	0	_	_	Offset=236-242
+7	70%	_	Concentration	_	_	8	Measure	_	Offset=251-254
+8	alcohol	_	Reagent	_	_	0	_	_	Offset=255-262
+9	45	_	Time	_	_	0	_	_	Offset=264-270
+
+# sent_id = s3
+# text = Rinse the tissue with running tap water for 1 h. Dehydrate the tissue through 70% alcohol, 45 min.
+1	Clear	_	Action	_	_	0	_	_	Offset=272-277
+2	tissue	_	Reagent	_	_	0	_	_	Offset=282-288
+3	xylene	_	Reagent	_	_	0	_	_	Offset=309-315
+4	1	_	Time	_	_	0	_	_	Offset=317-320
+
+# sent_id = s4
+# text = Clear the tissue through a change of xylene, 1 h. (1/2) 
+1	Clear	_	Action	_	_	0	_	_	Offset=329-334
+2	tissue	_	Reagent	_	_	0	_	_	Offset=339-345
+3	xylene	_	Reagent	_	_	0	_	_	Offset=366-372
+4	1	_	Time	_	_	0	_	_	Offset=374-377
+
+# sent_id = s5
+# text = Clear the tissue through a change of xylene, 1 h. (2/2) 
+1	Immerse	_	Action	_	_	0	_	_	Offset=386-393
+2	tissue	_	Reagent	_	_	0	_	_	Offset=398-404
+3	paraffin	_	Reagent	_	_	0	_	_	Offset=420-428
+4	1	_	Time	_	_	0	_	_	Offset=430-433
+
+# sent_id = s6
+# text = Immerse the tissue in a change of paraffin, 1 h. (1/3) 
+1	Immerse	_	Action	_	_	0	_	_	Offset=442-449
+2	tissue	_	Reagent	_	_	0	_	_	Offset=454-460
+3	paraffin	_	Reagent	_	_	0	_	_	Offset=476-484
+4	1	_	Time	_	_	0	_	_	Offset=486-489
+
+# sent_id = s7
+# text = Immerse the tissue in a change of paraffin, 1 h. (2/3) 
+1	Immerse	_	Action	_	_	0	_	_	Offset=498-505
+2	tissue	_	Reagent	_	_	0	_	_	Offset=510-516
+3	paraffin	_	Reagent	_	_	0	_	_	Offset=532-540
+4	1	_	Time	_	_	0	_	_	Offset=542-545
+
+# sent_id = s8
+# text = Immerse the tissue in a change of paraffin, 1 h. (3/3) 
+1	Embed	_	Action	_	_	0	_	_	Offset=554-559
+2	tissue	_	Reagent	_	_	0	_	_	Offset=564-570
+3	paraffin	_	Reagent	_	_	0	_	_	Offset=576-590
+
+# sent_id = s9
+# text = Embed the tissue in a paraffin block.
+1	Section	_	Action	_	_	0	_	_	Offset=592-599
+2	paraffin-embedded	_	Reagent	_	_	0	_	_	Offset=604-634
+3	5-8	_	Modifier	_	_	0	_	_	Offset=638-654
+4	microtome	_	Location	_	_	0	_	_	Offset=660-669
+5	float	_	Action	_	_	0	_	_	Offset=674-679
+6	40°C	_	Temperature	_	_	0	_	_	Offset=685-689
+7	water	_	Location	_	_	8	Meronym	_	Offset=690-700
+8	distilled	_	Reagent	_	_	0	_	_	Offset=712-727
+
+# sent_id = s10
+# text = Section the paraffin-embedded tissue block at 5-8 µm thickness on a microtome and float in a 40°C water bath containing distilled water.
+1	Transfer	_	Action	_	_	0	_	_	Offset=729-737
+2	sections	_	Reagent	_	_	0	_	_	Offset=742-750
+3	glass	_	Location	_	_	0	_	_	Offset=756-768
+4	suitable	_	Modifier	_	_	3	Mod-Link	_	Offset=769-802
+
+# sent_id = s11
+# text = Transfer the sections onto glass slides suitable for immunohistochemistry (e.g. Superfrost Plus).
+1	850	_	Action	_	_	0	_	_	Offset=827-832;844
+2	slides	_	Location	_	_	0	_	_	Offset=837-843
+3	overnight	_	Time	_	_	0	_	_	Offset=851-860
+4	store	_	Action	_	_	0	_	_	Offset=865-870
+5	slides	_	Location	_	_	0	_	_	Offset=871-877
+6	room	_	Temperature	_	_	0	_	_	Offset=881-897
+7	until	_	Time	_	_	0	_	_	Offset=898-917
+
+# sent_id = s12
+# text = Allow the slides to dry overnight and store slides at room temperature until ready for use.
+1	Deparaffinize	_	Action	_	_	0	_	_	Offset=919-932
+2	slides	_	Location	_	_	0	_	_	Offset=933-939
+3	xylene	_	Reagent	_	_	0	_	_	Offset=955-961
+4	5	_	Time	_	_	0	_	_	Offset=963-968
+
+# sent_id = s13
+# text = Deparaffinize slides in a change of xylene, 5 min. (1/2) 
+1	Deparaffinize	_	Action	_	_	0	_	_	Offset=977-990
+2	slides	_	Location	_	_	0	_	_	Offset=991-997
+3	xylene	_	Reagent	_	_	0	_	_	Offset=1013-1019
+4	5	_	Time	_	_	0	_	_	Offset=1021-1026
+
+# sent_id = s14
+# text = Deparaffinize slides in a change of xylene, 5 min. (2/2) 
+1	Drain	_	Action	_	_	0	_	_	Offset=1035-1044
+2	blocking	_	Reagent	_	_	0	_	_	Offset=1049-1064
+3	slides	_	Location	_	_	0	_	_	Offset=1074-1080
+
+# sent_id = s15
+# text = Drain off the blocking buffer from the slides.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1082-1090
+2	slides	_	Reagent	_	_	0	_	_	Offset=1091-1097
+3	100%	_	Concentration	_	_	4	Measure	_	Offset=1101-1105
+4	alcohol	_	Reagent	_	_	0	_	_	Offset=1106-1113
+5	3-minute	_	Time	_	_	0	_	_	Offset=1121-1129
+
+# sent_id = s16
+# text = Transfer slides to 100% alcohol, for a 3-minute change. (1/2) 
+1	Transfer	_	Action	_	_	0	_	_	Offset=1145-1153
+2	slides	_	Reagent	_	_	0	_	_	Offset=1154-1160
+3	100%	_	Concentration	_	_	4	Measure	_	Offset=1164-1168
+4	alcohol	_	Reagent	_	_	0	_	_	Offset=1169-1176
+5	3-minute	_	Time	_	_	0	_	_	Offset=1184-1192
+
+# sent_id = s17
+# text = Transfer slides to 100% alcohol, for a 3-minute change. (2/2) 
+1	incubating	_	Action	_	_	0	_	_	Offset=1248-1258
+2	sections	_	Reagent	_	_	0	_	_	Offset=1259-1267
+3	3%	_	Concentration	_	_	4	Measure	_	Offset=1271-1273
+4	H2O2	_	Reagent	_	_	5	Meronym	_	Offset=1274-1287
+5	methanol	_	Reagent	_	_	0	_	_	Offset=1291-1299
+6	room	_	Temperature	_	_	0	_	_	Offset=1303-1319
+7	10	_	Time	_	_	0	_	_	Offset=1324-1330
+
+# sent_id = s18
+# text = Block endogenous peroxidase activity by incubating sections in 3% H2O2 solution in methanol at room temperature for 10 min to block endogenous peroxidase activity.
+1	Change	_	Action	_	_	0	_	_	Offset=1372-1378
+2	rinsing	_	Action	_	_	0	_	_	Offset=1382-1389
+3	300	_	Amount	_	_	4	Measure	_	Offset=1393-1399
+4	PBS	_	Reagent	_	_	0	_	_	Offset=1403-1406
+5	5	_	Time	_	_	0	_	_	Offset=1412-1417
+
+# sent_id = s19
+# text = Change by rinsing in 300 ml of PBS, for 5 min. (1/2) 
+1	Change	_	Action	_	_	0	_	_	Offset=1426-1432
+2	rinsing	_	Action	_	_	0	_	_	Offset=1436-1443
+3	300	_	Amount	_	_	4	Measure	_	Offset=1447-1453
+4	PBS	_	Reagent	_	_	0	_	_	Offset=1457-1460
+5	5	_	Time	_	_	0	_	_	Offset=1466-1471
+
+# sent_id = s20
+# text = Change by rinsing in 300 ml of PBS, for 5 min. (2/2) 
+1	Perform	_	Action	_	_	0	_	_	Offset=1491-1516
+
+# sent_id = s21
+# text = (optional) Perform antigen retrieval to unmask the antigenic epitope.
+1	Arrange	_	Action	_	_	0	_	_	Offset=1619-1626
+2	slides	_	Location	_	_	0	_	_	Offset=1631-1637
+3	staining	_	Location	_	_	0	_	_	Offset=1643-1661
+
+# sent_id = s22
+# text = The most commonly used antigen retrieval is a citrate buffer method.
+1	Pour	_	Action	_	_	0	_	_	Offset=1663-1667
+2	300	_	Amount	_	_	4	Measure	_	Offset=1668-1674
+3	10	_	Concentration	_	_	4	Measure	_	Offset=1678-1683
+4	citrate	_	Reagent	_	_	8	Coreference-Link	_	Offset=1684-1698
+5	pH	_	pH	_	_	4	Measure	_	Offset=1700-1706
+6	staining	_	Location	_	_	0	_	_	Offset=1716-1734
+7	incubate	_	Action	_	_	0	_	_	Offset=1739-1747
+8	it	_	Mention	_	_	0	_	_	Offset=1748-1750
+9	95-100°C	_	Temperature	_	_	0	_	_	Offset=1754-1762
+10	10	_	Time	_	_	0	_	_	Offset=1767-1773
+
+# sent_id = s23
+# text = Arrange the slides in a staining container.
+1	Remove	_	Action	_	_	0	_	_	Offset=1830-1836
+2	staining	_	Location	_	_	0	_	_	Offset=1841-1859
+3	room	_	Temperature	_	_	0	_	_	Offset=1863-1879
+4	1908	_	Action	_	_	0	_	_	Offset=1884-1889;1901
+5	slides	_	Reagent	_	_	0	_	_	Offset=1894-1900
+6	20	_	Time	_	_	0	_	_	Offset=1913-1919
+
+# sent_id = s24
+# text = Pour 300 ml of 10 mM citrate buffer, pH 6.0 into the staining container and incubate it at 95-100°C for 10 min (optimal incubation time should be determined by user).
+1	Change	_	Action	_	_	0	_	_	Offset=1921-1927
+2	rinsing	_	Action	_	_	0	_	_	Offset=1931-1938
+3	slides	_	Location	_	_	0	_	_	Offset=1939-1945
+4	300	_	Amount	_	_	5	Measure	_	Offset=1949-1955
+5	PBS	_	Reagent	_	_	0	_	_	Offset=1956-1959
+6	5	_	Time	_	_	0	_	_	Offset=1964-1969
+
+# sent_id = s25
+# text = Remove the staining container to room temperature and allow the slides to cool for 20 min.
+1	Change	_	Action	_	_	0	_	_	Offset=1978-1984
+2	rinsing	_	Action	_	_	0	_	_	Offset=1988-1995
+3	slides	_	Location	_	_	0	_	_	Offset=1996-2002
+4	300	_	Amount	_	_	5	Measure	_	Offset=2006-2012
+5	PBS	_	Reagent	_	_	0	_	_	Offset=2013-2016
+6	5	_	Time	_	_	0	_	_	Offset=2021-2026
+
+# sent_id = s26
+# text = Change by rinsing slides in 300 ml PBS for 5 min. (1/2) 
+1	Add	_	Action	_	_	0	_	_	Offset=2046-2049
+2	100	_	Amount	_	_	3	Measure	_	Offset=2050-2056
+3	blocking	_	Reagent	_	_	5	Meronym	_	Offset=2057-2072
+4	10%	_	Concentration	_	_	5	Measure	_	Offset=2079-2082
+5	fetal	_	Reagent	_	_	6	Meronym	_	Offset=2083-2101
+6	PBS	_	Reagent	_	_	0	_	_	Offset=2105-2108
+7	sections	_	Location	_	_	0	_	_	Offset=2119-2127
+8	slides	_	Location	_	_	7	Meronym	_	Offset=2135-2141
+9	incubate	_	Action	_	_	0	_	_	Offset=2146-2154
+10	humidified	_	Location	_	_	0	_	_	Offset=2160-2178
+11	room	_	Temperature	_	_	0	_	_	Offset=2182-2198
+12	1h	_	Time	_	_	0	_	_	Offset=2203-2205
+
+# sent_id = s27
+# text = Change by rinsing slides in 300 ml PBS for 5 min. (2/2) 
+1	Apply	_	Action	_	_	0	_	_	Offset=2207-2212
+2	100	_	Amount	_	_	4	Measure	_	Offset=2213-2219
+3	appropriately	_	Concentration	_	_	4	Measure	_	Offset=2220-2241
+4	primary	_	Reagent	_	_	5	Meronym	_	Offset=2242-2258
+5	antibody	_	Reagent	_	_	7	Meronym	_	Offset=2263-2287
+6	0.5%	_	Concentration	_	_	7	Measure	_	Offset=2294-2298
+7	bovine	_	Reagent	_	_	8	Meronym	_	Offset=2299-2319
+8	PBS	_	Reagent	_	_	0	_	_	Offset=2323-2326
+9	sections	_	Reagent	_	_	0	_	_	Offset=2335-2343
+10	slides	_	Location	_	_	9	Meronym	_	Offset=2351-2357
+11	incubate	_	Action	_	_	0	_	_	Offset=2362-2370
+12	humidified	_	Location	_	_	0	_	_	Offset=2376-2394
+13	room	_	Temperature	_	_	0	_	_	Offset=2398-2414
+14	1	_	Time	_	_	0	_	_	Offset=2419-2422
+
+# sent_id = s28
+# text = (optional) Add 100 µl blocking buffer (e.g. 10% fetal bovine serum in PBS) onto the sections of the slides and incubate in a humidified chamber at room temperature for 1h.
+1	Change	_	Action	_	_	0	_	_	Offset=2425-2431
+2	washing	_	Action	_	_	0	_	_	Offset=2435-2442
+3	slides	_	Location	_	_	0	_	_	Offset=2447-2453
+4	300	_	Amount	_	_	5	Measure	_	Offset=2457-2463
+5	PBS	_	Reagent	_	_	0	_	_	Offset=2464-2467
+6	5	_	Time	_	_	0	_	_	Offset=2472-2477
+
+# sent_id = s29
+# text = Apply 100 µl appropriately diluted primary antibody (in antibody dilution buffer, e.g. 0.5% bovine serum albumin in PBS) to the sections on the slides and incubate in a humidified chamber at room temperature for 1 h. 
+1	Change	_	Action	_	_	0	_	_	Offset=2486-2492
+2	washing	_	Action	_	_	0	_	_	Offset=2496-2503
+3	slides	_	Location	_	_	0	_	_	Offset=2508-2514
+4	300	_	Amount	_	_	5	Measure	_	Offset=2518-2524
+5	PBS	_	Reagent	_	_	0	_	_	Offset=2525-2528
+6	5	_	Time	_	_	0	_	_	Offset=2533-2538
+
+# sent_id = s30
+# text = Change by washing the slides in 300 ml PBS for 5 min. (1/2) 
+1	Apply	_	Action	_	_	0	_	_	Offset=2547-2552
+2	100	_	Amount	_	_	4	Measure	_	Offset=2553-2559
+3	appropriately	_	Concentration	_	_	4	Measure	_	Offset=2560-2581
+4	biotinylated	_	Reagent	_	_	5	Meronym	_	Offset=2582-2613
+5	antibody	_	Reagent	_	_	0	_	_	Offset=2625-2649
+6	sections	_	Reagent	_	_	0	_	_	Offset=2658-2666
+7	slides	_	Location	_	_	6	Meronym	_	Offset=2674-2680
+8	incubate	_	Action	_	_	0	_	_	Offset=2685-2693
+9	humidified	_	Location	_	_	0	_	_	Offset=2699-2717
+10	room	_	Temperature	_	_	0	_	_	Offset=2721-2737
+11	30	_	Time	_	_	0	_	_	Offset=2742-2748
+
+# sent_id = s31
+# text = Change by washing the slides in 300 ml PBS for 5 min. (2/2) 
+1	Change	_	Action	_	_	0	_	_	Offset=2750-2756
+2	washing	_	Action	_	_	0	_	_	Offset=2760-2767
+3	slides	_	Location	_	_	0	_	_	Offset=2768-2774
+4	300	_	Amount	_	_	5	Measure	_	Offset=2778-2784
+5	PBS	_	Reagent	_	_	0	_	_	Offset=2785-2788
+6	5	_	Time	_	_	0	_	_	Offset=2793-2798
+
+# sent_id = s32
+# text = Apply 100 µl appropriately diluted biotinylated secondary antibody (using the antibody dilution buffer) to the sections on the slides and incubate in a humidified chamber at room temperature for 30 min.
+1	Change	_	Action	_	_	0	_	_	Offset=2807-2813
+2	washing	_	Action	_	_	0	_	_	Offset=2817-2824
+3	slides	_	Location	_	_	0	_	_	Offset=2825-2831
+4	300	_	Amount	_	_	5	Measure	_	Offset=2835-2841
+5	PBS	_	Reagent	_	_	0	_	_	Offset=2842-2845
+6	5	_	Time	_	_	0	_	_	Offset=2850-2855
+
+# sent_id = s33
+# text = Change by washing slides in 300 ml PBS for 5 min. (1/2) 
+1	Apply	_	Action	_	_	0	_	_	Offset=2864-2869
+2	100	_	Amount	_	_	4	Measure	_	Offset=2870-2876
+3	appropriately	_	Concentration	_	_	4	Measure	_	Offset=2877-2898
+4	Sav-HRP	_	Reagent	_	_	0	_	_	Offset=2899-2917
+5	antibody	_	Reagent	_	_	0	_	_	Offset=2929-2953
+6	sections	_	Reagent	_	_	0	_	_	Offset=2962-2970
+7	slides	_	Location	_	_	6	Meronym	_	Offset=2978-2984
+8	incubate	_	Action	_	_	0	_	_	Offset=2989-2997
+9	humidified	_	Location	_	_	0	_	_	Offset=3003-3021
+10	room	_	Temperature	_	_	0	_	_	Offset=3025-3041
+11	30	_	Time	_	_	0	_	_	Offset=3046-3052
+12	keep	_	Action	_	_	0	_	_	Offset=3054-3079
+
+# sent_id = s34
+# text = Change by washing slides in 300 ml PBS for 5 min. (2/2) 
+1	Change	_	Action	_	_	0	_	_	Offset=3082-3088
+2	washing	_	Action	_	_	0	_	_	Offset=3092-3099
+3	slides	_	Location	_	_	0	_	_	Offset=3100-3106
+4	300	_	Amount	_	_	5	Measure	_	Offset=3110-3116
+5	PBS	_	Reagent	_	_	0	_	_	Offset=3117-3120
+6	5	_	Time	_	_	0	_	_	Offset=3125-3130
+
+# sent_id = s35
+# text = Apply 100 µl appropriately diluted Sav-HRP conjugates (using the antibody dilution buffer) to the sections on the slides and incubate in a humidified chamber at room temperature for 30 min (keep protected from light).
+1	Change	_	Action	_	_	0	_	_	Offset=3139-3145
+2	washing	_	Action	_	_	0	_	_	Offset=3149-3156
+3	slides	_	Location	_	_	0	_	_	Offset=3157-3163
+4	300	_	Amount	_	_	5	Measure	_	Offset=3167-3173
+5	PBS	_	Reagent	_	_	0	_	_	Offset=3174-3177
+6	5	_	Time	_	_	0	_	_	Offset=3182-3187
+
+# sent_id = s36
+# text = Change by washing slides in 300 ml PBS for 5 min. (1/2) 
+1	Apply	_	Action	_	_	0	_	_	Offset=3196-3201
+2	100	_	Amount	_	_	3	Measure	_	Offset=3202-3208
+3	DAB	_	Reagent	_	_	5	Meronym	7:Meronym	Offset=3209-3231
+4	0.05%	_	Concentration	_	_	5	Measure	_	Offset=3263-3268
+5	DAB	_	Reagent	_	_	0	_	_	Offset=3269-3272
+6	0.015%	_	Concentration	_	_	7	Measure	_	Offset=3275-3281
+7	H2O2	_	Reagent	_	_	8	Meronym	_	Offset=3282-3286
+8	PBS	_	Reagent	_	_	0	_	_	Offset=3290-3293
+9	sections	_	Reagent	_	_	0	_	_	Offset=3302-3310
+10	slides	_	Location	_	_	9	Meronym	_	Offset=3318-3324
+11	reveal	_	Action	_	_	0	_	_	Offset=3328-3344
+12	antibody	_	Reagent	_	_	0	_	_	Offset=3348-3365
+
+# sent_id = s37
+# text = Change by washing slides in 300 ml PBS for 5 min. (2/2) 
+1	Allow	_	Action	_	_	0	_	_	Offset=3367-3394
+2	<	_	Time	_	_	0	_	_	Offset=3399-3406
+
+# sent_id = s38
+# text = Apply 100 µl DAB substrate solution (freshly made just before use: 0.05% DAB - 0.015% H2O2 in PBS) to the sections on the slides to reveal the color of antibody staining.
+1	Change	_	Action	_	_	0	_	_	Offset=3453-3459
+2	washing	_	Action	_	_	0	_	_	Offset=3463-3470
+3	slides	_	Location	_	_	0	_	_	Offset=3471-3477
+4	300	_	Amount	_	_	5	Measure	_	Offset=3481-3487
+5	PBS	_	Reagent	_	_	0	_	_	Offset=3488-3491
+6	2	_	Time	_	_	0	_	_	Offset=3496-3501
+
+# sent_id = s39
+# text = Allow the color development for < 5 min until the desired color intensity is reached.
+1	Change	_	Action	_	_	0	_	_	Offset=3510-3516
+2	washing	_	Action	_	_	0	_	_	Offset=3520-3527
+3	slides	_	Location	_	_	0	_	_	Offset=3528-3534
+4	300	_	Amount	_	_	5	Measure	_	Offset=3538-3544
+5	PBS	_	Reagent	_	_	0	_	_	Offset=3545-3548
+6	2	_	Time	_	_	0	_	_	Offset=3553-3558
+
+# sent_id = s40
+# text = Change by washing slides in 300 ml PBS for 2 min. (1/3) 
+1	Change	_	Action	_	_	0	_	_	Offset=3567-3573
+2	washing	_	Action	_	_	0	_	_	Offset=3577-3584
+3	slides	_	Location	_	_	0	_	_	Offset=3585-3591
+4	300	_	Amount	_	_	5	Measure	_	Offset=3595-3601
+5	PBS	_	Reagent	_	_	0	_	_	Offset=3602-3605
+6	2	_	Time	_	_	0	_	_	Offset=3610-3615
+
+# sent_id = s41
+# text = Change by washing slides in 300 ml PBS for 2 min. (2/3) 
+1	Counterstain	_	Action	_	_	0	_	_	Offset=3635-3647
+2	slides	_	Location	_	_	0	_	_	Offset=3648-3654
+3	immersing	_	Action	_	_	0	_	_	Offset=3658-3667
+4	sides	_	Location	_	_	0	_	_	Offset=3668-3673
+5	Hematoxylin	_	Reagent	_	_	6	Meronym	_	Offset=3677-3688
+6	Gill’s	_	Reagent	_	_	0	_	_	Offset=3695-3713
+7	1-2	_	Time	_	_	0	_	_	Offset=3719-3726
+
+# sent_id = s42
+# text = Change by washing slides in 300 ml PBS for 2 min. (3/3) 
+1	Rinse	_	Action	_	_	0	_	_	Offset=3728-3733
+2	slides	_	Location	_	_	0	_	_	Offset=3738-3744
+3	running	_	Reagent	_	_	0	_	_	Offset=3748-3765
+4	>	_	Time	_	_	0	_	_	Offset=3770-3778
+
+# sent_id = s43
+# text = (optional) Counterstain slides by immersing sides in Hematoxylin (e.g. Gill’s Hematoxylin) for 1-2 min.
+1	Dehydrate	_	Action	_	_	0	_	_	Offset=3780-3789
+2	tissue	_	Reagent	_	_	0	_	_	Offset=3794-3807
+3	95%	_	Concentration	_	_	4	Measure	_	Offset=3828-3831
+4	alcohol	_	Reagent	_	_	0	_	_	Offset=3832-3839
+5	5	_	Time	_	_	0	_	_	Offset=3845-3850
+
+# sent_id = s44
+# text = Rinse the slides in running tap water for > 15 min.
+1	Dehydrate	_	Action	_	_	0	_	_	Offset=3859-3868
+2	tissue	_	Reagent	_	_	0	_	_	Offset=3873-3886
+3	95%	_	Concentration	_	_	4	Measure	_	Offset=3907-3910
+4	alcohol	_	Reagent	_	_	0	_	_	Offset=3911-3918
+5	5	_	Time	_	_	0	_	_	Offset=3924-3929
+
+# sent_id = s45
+# text = Dehydrate the tissue slides through a change of 95% alcohol, for 5 min. (1/2) 
+1	Clear	_	Action	_	_	0	_	_	Offset=3938-3943
+2	tissue	_	Reagent	_	_	0	_	_	Offset=3948-3961
+3	xylene	_	Reagent	_	_	0	_	_	Offset=3977-3983
+4	coverslip	_	Action	_	_	0	_	_	Offset=3988-3997
+5	mounting	_	Reagent	_	_	6	Meronym	_	Offset=4004-4021
+6	Permount	_	Reagent	_	_	0	_	_	Offset=4028-4036
+
+# sent_id = s46
+# text = Dehydrate the tissue slides through a change of 95% alcohol, for 5 min. (2/2) 
+1	Clear	_	Action	_	_	0	_	_	Offset=4046-4051
+2	tissue	_	Reagent	_	_	0	_	_	Offset=4056-4069
+3	xylene	_	Reagent	_	_	0	_	_	Offset=4085-4091
+4	coverslip	_	Action	_	_	0	_	_	Offset=4096-4105
+5	mounting	_	Reagent	_	_	6	Meronym	_	Offset=4112-4129
+6	Permount	_	Reagent	_	_	0	_	_	Offset=4136-4144
+
+# sent_id = s47
+# text = Clear the tissue slides in a change of xylene and coverslip using mounting solution (e.g. Permount). (1/3) 
+1	Clear	_	Action	_	_	0	_	_	Offset=4154-4159
+2	tissue	_	Reagent	_	_	0	_	_	Offset=4164-4177
+3	xylene	_	Reagent	_	_	0	_	_	Offset=4193-4199
+4	coverslip	_	Action	_	_	0	_	_	Offset=4204-4213
+5	mounting	_	Reagent	_	_	6	Meronym	_	Offset=4220-4237
+6	Permount	_	Reagent	_	_	0	_	_	Offset=4244-4252
+
+# sent_id = s48
+# text = Clear the tissue slides in a change of xylene and coverslip using mounting solution (e.g. Permount). (2/3) 
+1	Observe	_	Action	_	_	0	_	_	Offset=4261-4278
+2	antibody	_	Reagent	_	_	0	_	_	Offset=4286-4303
+3	tissue	_	Reagent	_	_	2	Meronym	_	Offset=4311-4326
+
+# sent_id = s49
+# text = Clear the tissue slides in a change of xylene and coverslip using mounting solution (e.g. Permount). (3/3)
+1	Dehydrate	_	Action	_	_	0	_	_	Offset=4345-4354
+2	tissue	_	Reagent	_	_	0	_	_	Offset=4359-4365
+3	80%	_	Concentration	_	_	4	Measure	_	Offset=4374-4377
+4	alcohol	_	Reagent	_	_	0	_	_	Offset=4378-4385
+5	45	_	Time	_	_	0	_	_	Offset=4387-4393
+
+# sent_id = s50
+# text = Observe the color of the antibody staining in the tissue sections under microscopy.
+1	Dehydrate	_	Action	_	_	0	_	_	Offset=4395-4404
+2	tissue	_	Reagent	_	_	0	_	_	Offset=4409-4415
+3	95%	_	Concentration	_	_	4	Measure	_	Offset=4424-4427
+4	alcohol	_	Reagent	_	_	0	_	_	Offset=4428-4435
+5	45	_	Time	_	_	0	_	_	Offset=4437-4443
+
+# sent_id = s51
+# text = Dehydrate the tissue through 80% alcohol, 45 min.
+1	Dehydrate	_	Action	_	_	0	_	_	Offset=4445-4454
+2	tissue	_	Reagent	_	_	0	_	_	Offset=4459-4465
+3	100%	_	Concentration	_	_	4	Measure	_	Offset=4486-4490
+4	alcohol	_	Reagent	_	_	0	_	_	Offset=4491-4498
+5	1	_	Time	_	_	0	_	_	Offset=4500-4503
+
+# sent_id = s52
+# text = Dehydrate the tissue through 95% alcohol, 45 min.
+1	Dehydrate	_	Action	_	_	0	_	_	Offset=4512-4521
+2	tissue	_	Reagent	_	_	0	_	_	Offset=4526-4532
+3	100%	_	Concentration	_	_	4	Measure	_	Offset=4553-4557
+4	alcohol	_	Reagent	_	_	0	_	_	Offset=4558-4565
+5	1	_	Time	_	_	0	_	_	Offset=4567-4570
+
+# sent_id = s53
+# text = Dehydrate the tissue through a change of 100% alcohol, 1 h. (1/3) 
+1	Dehydrate	_	Action	_	_	0	_	_	Offset=4579-4588
+2	tissue	_	Reagent	_	_	0	_	_	Offset=4593-4599
+3	100%	_	Concentration	_	_	4	Measure	_	Offset=4620-4624
+4	alcohol	_	Reagent	_	_	0	_	_	Offset=4625-4632
+5	1	_	Time	_	_	0	_	_	Offset=4634-4637
+
+# sent_id = s54
+# text = Dehydrate the tissue through a change of 100% alcohol, 1 h. (2/3) 
+1	Transfer	_	Action	_	_	0	_	_	Offset=4646-4654
+2	95%	_	Concentration	_	_	3	Measure	_	Offset=4663-4666
+3	alcohol	_	Reagent	_	_	0	_	_	Offset=4667-4674
+4	3	_	Time	_	_	0	_	_	Offset=4679-4684
+
+# sent_id = s55
+# text = Dehydrate the tissue through a change of 100% alcohol, 1 h. (3/3) 
+1	Transfer	_	Action	_	_	0	_	_	Offset=4686-4694
+2	70%	_	Concentration	_	_	3	Measure	_	Offset=4703-4706
+3	alcohol	_	Reagent	_	_	0	_	_	Offset=4707-4714
+4	3	_	Time	_	_	0	_	_	Offset=4719-4724
+
+# sent_id = s56
+# text = Transfer through 95% alcohol for 3 min.
+1	Transfer	_	Action	_	_	0	_	_	Offset=4726-4734
+2	50%	_	Concentration	_	_	3	Measure	_	Offset=4743-4746
+3	alcohol	_	Reagent	_	_	0	_	_	Offset=4747-4754
+4	3	_	Time	_	_	0	_	_	Offset=4759-4764
+
+# sent_id = s57
+# text = Transfer through 70% alcohol for 3 min.
+1	Dehydrate	_	Action	_	_	0	_	_	Offset=4766-4775
+2	tissue	_	Reagent	_	_	0	_	_	Offset=4780-4793
+3	100%	_	Concentration	_	_	4	Measure	_	Offset=4814-4818
+4	alcohol	_	Reagent	_	_	0	_	_	Offset=4819-4826
+5	5	_	Time	_	_	0	_	_	Offset=4832-4837
+
+# sent_id = s58
+# text = Transfer through 50% alcohol for 3 min.
+1	Dehydrate	_	Action	_	_	0	_	_	Offset=4846-4855
+2	tissue	_	Reagent	_	_	0	_	_	Offset=4860-4873
+3	100%	_	Concentration	_	_	4	Measure	_	Offset=4894-4898
+4	alcohol	_	Reagent	_	_	0	_	_	Offset=4899-4906
+5	5	_	Time	_	_	0	_	_	Offset=4912-4917
+

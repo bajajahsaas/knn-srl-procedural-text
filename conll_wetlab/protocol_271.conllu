@@ -1,0 +1,96 @@
+# sent_id = s1
+# text = Zymoclean™ Gel DNA Recovery Kit
+1	Excise	_	Action	_	_	0	_	_	Offset=32-38
+2	DNA	_	Reagent	_	_	0	_	_	Offset=43-55
+3	agarose	_	Reagent	_	_	0	_	_	Offset=65-76
+4	razor	_	Device	_	_	0	_	_	Offset=85-96
+5	scalpel	_	Device	_	_	4	Or	_	Offset=98-105
+6	other	_	Device	_	_	5	Or	_	Offset=109-121
+7	transfer	_	Action	_	_	0	_	_	Offset=126-134
+8	15	_	Amount	_	_	9	Measure	_	Offset=145-150
+9	microcentrifuge	_	Location	_	_	0	_	_	Offset=151-171
+
+# sent_id = s2
+# text = Excise the DNA fragment from the agarose gel using a razor blade, scalpel or other device and transfer it into a 15 ml microcentrifuge tube. 
+1	Add	_	Action	_	_	0	_	_	Offset=174-177
+2	3	_	Amount	_	_	3	Measure	_	Offset=178-187
+3	ADB	_	Reagent	_	_	0	_	_	Offset=191-194
+
+# sent_id = s3
+# text = Add 3 volumes of ADB to each volume of agarose excised from the gel.
+1	Incubate	_	Action	_	_	0	_	_	Offset=243-251
+2	37-55	_	Temperature	_	_	0	_	_	Offset=255-263
+3	5-10	_	Time	_	_	0	_	_	Offset=268-280
+
+# sent_id = s4
+# text = Incubate at 37-55 °C for 5-10 minutes until the gel slice is completely dissolved.
+1	Transfer	_	Action	_	_	0	_	_	Offset=326-334
+2	melted	_	Reagent	_	_	0	_	_	Offset=339-362
+3	Zymo-Spin™	_	Location	_	_	0	_	_	Offset=368-385
+4	Collection	_	Location	_	_	3	Meronym	_	Offset=391-406
+
+# sent_id = s5
+# text = Transfer the melted agarose solution to a Zymo-Spin™ Column in a Collection Tube.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=408-418
+2	30-60	_	Time	_	_	0	_	_	Offset=423-436
+
+# sent_id = s6
+# text = Centrifuge for 30-60 seconds.
+1	Discard	_	Action	_	_	0	_	_	Offset=438-445
+2	flow-through	_	Reagent	_	_	0	_	_	Offset=450-462
+
+# sent_id = s7
+# text = Discard the flow-through.
+1	Add	_	Action	_	_	0	_	_	Offset=472-475
+2	200	_	Amount	_	_	3	Measure	_	Offset=476-482
+3	DNA	_	Reagent	_	_	0	_	_	Offset=486-501
+4	column	_	Location	_	_	0	_	_	Offset=509-515
+
+# sent_id = s8
+# text = Wash #1:Add 200 µl of DNA Wash Buffer to the column.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=525-535
+2	30	_	Time	_	_	0	_	_	Offset=540-550
+
+# sent_id = s9
+# text = Wash #1:Centrifuge for 30 seconds.
+1	Discard	_	Action	_	_	0	_	_	Offset=552-559
+2	flow-through	_	Reagent	_	_	0	_	_	Offset=564-576
+
+# sent_id = s10
+# text = Discard the flow-through.
+1	Add	_	Action	_	_	0	_	_	Offset=587-590
+2	200	_	Amount	_	_	3	Measure	_	Offset=591-597
+3	DNA	_	Reagent	_	_	0	_	_	Offset=601-616
+4	column	_	Location	_	_	0	_	_	Offset=624-630
+
+# sent_id = s11
+# text = Wash #2: Add 200 µl of DNA Wash Buffer to the column.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=640-650
+2	30	_	Time	_	_	0	_	_	Offset=655-665
+
+# sent_id = s12
+# text = Wash #2:Centrifuge for 30 seconds.
+1	Discard	_	Action	_	_	0	_	_	Offset=667-674
+2	flow-through	_	Reagent	_	_	0	_	_	Offset=679-691
+
+# sent_id = s13
+# text = Discard the flow-through.
+1	Add	_	Action	_	_	0	_	_	Offset=693-696
+2	≥	_	Modifier	_	_	3	Mod-Link	_	Offset=697-698
+3	6	_	Amount	_	_	4	Measure	_	Offset=699-703
+4	DNA	_	Reagent	_	_	0	_	_	Offset=704-722
+5	water	_	Reagent	_	_	4	Or	_	Offset=726-731
+6	directly	_	Modifier	_	_	0	_	_	Offset=732-740
+7	column	_	Location	_	_	0	_	_	Offset=748-761
+
+# sent_id = s14
+# text = Add ≥ 6 µl DNA Elution Buffer or water directly to the column matrix.
+1	Place	_	Action	_	_	0	_	_	Offset=763-768
+2	column	_	Location	_	_	0	_	_	Offset=769-775
+3	1.5	_	Amount	_	_	4	Measure	_	Offset=783-789
+4	tube	_	Location	_	_	0	_	_	Offset=790-794
+5	centrifuge	_	Action	_	_	0	_	_	Offset=799-809
+6	30-60	_	Time	_	_	0	_	_	Offset=814-827
+7	elute	_	Action	_	_	0	_	_	Offset=831-836
+8	DNA	_	Reagent	_	_	0	_	_	Offset=837-840
+

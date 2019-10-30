@@ -1,0 +1,132 @@
+# sent_id = s1
+# text = Isolation of cyanophages by plaque assays
+1	Prepare	_	Action	_	_	0	_	_	Offset=42-49
+2	base	_	Reagent	_	_	0	_	_	Offset=50-61
+3	Prepare	_	Action	_	_	0	_	_	Offset=62-69
+4	top	_	Reagent	_	_	0	_	_	Offset=70-86
+
+# sent_id = s2
+# text = Prepare base plates Prepare top agar/agarose.
+1	Prepare	_	Action	_	_	0	_	_	Offset=88-95
+2	target	_	Reagent	_	_	0	_	_	Offset=96-118
+
+# sent_id = s3
+# text = Prepare target indicator cells.
+1	Prepare	_	Action	_	_	0	_	_	Offset=120-127
+2	sample	_	Reagent	_	_	0	_	_	Offset=132-138
+3	Environmental	_	Reagent	_	_	0	_	_	Offset=140-161
+4	prefiltered	_	Action	_	_	0	_	_	Offset=172-183
+5	described	_	Method	_	_	0	_	_	Offset=187-204
+
+# sent_id = s4
+# text = Prepare the sample: Environmental samples should be prefiltered as described earlier.
+1	Adsorb	_	Action	_	_	0	_	_	Offset=206-212
+2	50	_	Amount	_	_	3	Measure	_	Offset=213-225
+3	sample	_	Reagent	_	_	0	_	_	Offset=226-232
+
+# sent_id = s5
+# text = Adsorb 50 to 100 µL sample (as is, and 10-fold serial dilutions, up to ca.
+1	1	_	Time	_	_	0	_	_	Offset=505-508
+2	transfer	_	Action	_	_	0	_	_	Offset=510-518
+3	virus:	_	Reagent	_	_	0	_	_	Offset=519-538
+4	2.5	_	Amount	_	_	5	Measure	_	Offset=542-548
+5	soft	_	Reagent	_	_	0	_	_	Offset=549-558
+
+# sent_id = s6
+# text = 3 levels) to 0.5 mL target cells under the usual culturing conditions (e.g., for Synechococcus sp.
+1	Quickly	_	Modifier	_	_	0	_	_	Offset=560-578
+2	vortex	_	Action	_	_	0	_	_	Offset=579-585
+3	mixture	_	Reagent	_	_	0	_	_	Offset=590-597
+4	pour	_	Action	_	_	0	_	_	Offset=602-606
+5	entire	_	Location	_	_	6	Meronym	_	Offset=611-622
+6	contents	_	Reagent	_	_	0	_	_	Offset=623-631
+7	surface	_	Location	_	_	0	_	_	Offset=641-648
+8	agar	_	Location	_	_	7	Meronym	_	Offset=656-666
+
+# sent_id = s7
+# text = strain DC2, constant 5–25 µmol quanta m–2s–1, at 25°C), agitate occasionally to encourage adsorption of phage to host.
+1	gently	_	Modifier	_	_	0	_	_	Offset=685-691
+2	rock	_	Action	_	_	0	_	_	Offset=692-706
+3	plate	_	Location	_	_	0	_	_	Offset=711-716
+4	spread	_	Action	_	_	0	_	_	Offset=720-726
+5	mixture	_	Reagent	_	_	0	_	_	Offset=731-738
+6	evenly	_	Modifier	_	_	5	Mod-Link	_	Offset=739-745
+7	plate	_	Location	_	_	0	_	_	Offset=755-768
+
+# sent_id = s8
+# text = After 1 h, transfer virus: host mixture to 2.5 mL soft agar.
+1	flat	_	Location	_	_	0	_	_	Offset=815-827
+2	harden	_	Action	_	_	0	_	_	Offset=831-837
+3	1	_	Time	_	_	0	_	_	Offset=845-848
+
+# sent_id = s9
+# text = Quickly and gently vortex the mixture and pour the entire tube contents onto the surface of the agar plate.
+1	Seal	_	Action	_	_	0	_	_	Offset=948-952
+2	plate	_	Location	_	_	0	_	_	Offset=953-958
+3	parafilm	_	Seal	_	_	0	_	_	Offset=964-972
+4	flip	_	Action	_	_	0	_	_	Offset=974-978
+5	plates	_	Location	_	_	0	_	_	Offset=979-985
+6	upside	_	Method	_	_	0	_	_	Offset=986-997
+
+# sent_id = s10
+# text = Working rapidly, gently rock and swirl the plate to spread the mixture evenly onto the plate surface before the agar starts to gel.
+1	Choose	_	Action	_	_	0	_	_	Offset=1235-1241
+2	well-isolated	_	Reagent	_	_	0	_	_	Offset=1244-1264
+3	plate	_	Location	_	_	2	Meronym	_	Offset=1270-1275
+4	100	_	Generic-Measure	_	_	2	Measure	_	Offset=1300-1308
+
+# sent_id = s11
+# text = Set aside on a flat surface to harden (about 1 h).
+1	Harvest	_	Action	_	_	0	_	_	Offset=1310-1317
+2	plaque	_	Reagent	_	_	0	_	_	Offset=1322-1328
+3	Pasteur	_	Device	_	_	0	_	_	Offset=1337-1352
+4	gently	_	Modifier	_	_	0	_	_	Offset=1354-1360
+5	press	_	Action	_	_	0	_	_	Offset=1361-1366
+6	tip	_	Device	_	_	0	_	_	Offset=1371-1389
+7	plaque	_	Reagent	_	_	0	_	_	Offset=1399-1405
+8	bottom	_	Reagent	_	_	0	_	_	Offset=1413-1424
+9	gentle	_	Modifier	_	_	0	_	_	Offset=1432-1438
+10	suction	_	Method	_	_	0	_	_	Offset=1439-1446
+11	remove	_	Action	_	_	0	_	_	Offset=1448-1454
+12	plug	_	Reagent	_	_	0	_	_	Offset=1459-1463
+
+# sent_id = s12
+# text = Prepare a control plate containing only cells; this plate will allow you to monitor cell growth.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1465-1473
+2	plug	_	Reagent	_	_	0	_	_	Offset=1478-1482
+3	1	_	Amount	_	_	4	Measure	_	Offset=1486-1490
+4	media	_	Reagent	_	_	0	_	_	Offset=1491-1496
+5	vortex	_	Action	_	_	0	_	_	Offset=1501-1507
+6	briefly	_	Modifier	_	_	0	_	_	Offset=1508-1515
+
+# sent_id = s13
+# text = Seal plate with parafilm, flip plates upside down.
+1	Place	_	Action	_	_	0	_	_	Offset=1532-1537
+2	tube	_	Location	_	_	0	_	_	Offset=1542-1546
+3	4°C	_	Temperature	_	_	0	_	_	Offset=1550-1553
+4	phages	_	Reagent	_	_	0	_	_	Offset=1568-1583
+5	elute	_	Action	_	_	0	_	_	Offset=1587-1592
+6	plug	_	Reagent	_	_	0	_	_	Offset=1602-1606
+7	overnight	_	Time	_	_	0	_	_	Offset=1607-1616
+8	plaque	_	Reagent	_	_	0	_	_	Offset=1627-1640
+
+# sent_id = s14
+# text = Incubation of plates under constant low light conditions (5 to 25 µmol quanta m–2s–1) will produce darker lawns thus allowing for easier detection of plaques.
+1	Vortex	_	Action	_	_	0	_	_	Offset=1642-1648
+2	centrifuge	_	Action	_	_	0	_	_	Offset=1653-1663
+3	sample	_	Reagent	_	_	0	_	_	Offset=1668-1674
+
+# sent_id = s15
+# text = Note the number of plaque forming units (PFUs), plaque size, and morphology.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1734-1742
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1747-1758
+3	new	_	Modifier	_	_	4	Mod-Link	_	Offset=1764-1767
+4	tube	_	Location	_	_	0	_	_	Offset=1768-1772
+
+# sent_id = s16
+# text = Choose a well-isolated plaque on a plate that contains less than 100 PFUs.
+1	Repeat	_	Action	_	_	0	_	_	Offset=1837-1843
+2	steps	_	Method	_	_	0	_	_	Offset=1844-1858
+3	3	_	Numerical	_	_	4	Measure	_	Offset=1876-1877
+4	plaques	_	Reagent	_	_	0	_	_	Offset=1878-1885
+

@@ -1,0 +1,35 @@
+# sent_id = s1
+# text = PCR with Taq DNA Polymerase (M0273)
+1	Set	_	Action	_	_	0	_	_	Offset=36-42
+2	following	_	Modifier	_	_	3	Mod-Link	_	Offset=47-56
+3	reaction	_	Reagent	_	_	0	_	_	Offset=57-65
+4	ice	_	Location	_	_	0	_	_	Offset=69-72
+
+# sent_id = s2
+# text = Set up the following reaction on ice.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=74-80
+2	mix	_	Action	_	_	0	_	_	Offset=81-84
+3	reaction	_	Reagent	_	_	0	_	_	Offset=89-97
+
+# sent_id = s3
+# text = Gently mix the reaction.
+1	Collect	_	Action	_	_	0	_	_	Offset=99-106
+2	liquid	_	Reagent	_	_	0	_	_	Offset=111-117
+3	bottom	_	Location	_	_	0	_	_	Offset=125-131
+4	tube	_	Location	_	_	3	Meronym	_	Offset=139-143
+5	quick	_	Modifier	_	_	0	_	_	Offset=149-154
+6	spin	_	Action	_	_	0	_	_	Offset=155-159
+7	overlay	_	Action	_	_	0	_	_	Offset=177-184
+8	sample	_	Reagent	_	_	0	_	_	Offset=189-195
+9	mineral	_	Reagent	_	_	0	_	_	Offset=201-212
+
+# sent_id = s4
+# text = Collect all liquid to the bottom of the tube by a quick spin if necessary and overlay the sample with mineral oil if using a PCR machine without a heated lid.
+1	Transfer	_	Action	_	_	0	_	_	Offset=258-266
+2	PCR	_	Reagent	_	_	0	_	_	Offset=267-276
+3	ice	_	Location	_	_	0	_	_	Offset=282-285
+4	PCR	_	Device	_	_	0	_	_	Offset=291-302
+5	preheated	_	Action	_	_	0	_	_	Offset=318-327
+6	95°C	_	Temperature	_	_	0	_	_	Offset=331-335
+7	thermocycling	_	Action	_	_	0	_	_	Offset=346-359
+

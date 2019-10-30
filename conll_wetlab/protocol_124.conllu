@@ -1,0 +1,209 @@
+# sent_id = s1
+# text = Making heat-killed bacteria for feeding axenic phagotrophic protists
+1	Heat	_	Action	_	_	0	_	_	Offset=381-385
+2	dissolve	_	Action	_	_	0	_	_	Offset=389-397
+
+# sent_id = s2
+# text = Obtaining a clonal bacteria strain (Skip to step 2 if one is already available)Prepare 1.5.% agar plates with 0.5% yeast extract and 0.5% trypton.
+1	Autoclave	_	Action	_	_	0	_	_	Offset=399-408
+2	sterilize	_	Action	_	_	0	_	_	Offset=412-421
+
+# sent_id = s3
+# text = Use the salinity that the protist culture in growing in i.e. 0.5 g yeast extract+ 0.5 g trypton + 1.5 g agar in 100 ml of MiliQ water (MQ)/Filtered sea water (FSW).
+1	Pour	_	Action	_	_	0	_	_	Offset=423-427
+2	medium	_	Modifier	_	_	3	Mod-Link	_	Offset=433-445
+3	petri	_	Location	_	_	0	_	_	Offset=446-458
+
+# sent_id = s4
+# text = Heat to dissolve.
+1	streak	_	Action	_	_	0	_	_	Offset=501-507
+2	liquid	_	Reagent	_	_	0	_	_	Offset=513-519
+3	bacterized	_	Reagent	_	_	4	Meronym	_	Offset=527-545
+4	protist	_	Reagent	_	_	0	_	_	Offset=553-560
+5	agar	_	Location	_	_	0	_	_	Offset=568-579
+
+# sent_id = s5
+# text = Autoclave to sterilize.
+1	Incubate	_	Action	_	_	0	_	_	Offset=581-589
+2	agar	_	Location	_	_	0	_	_	Offset=594-605
+3	same	_	Method	_	_	0	_	_	Offset=613-651
+
+# sent_id = s6
+# text = Pour into medium sized petri dishes.
+1	flame	_	Modifier	_	_	2	Mod-Link	_	Offset=687-703
+2	metal	_	Device	_	_	0	_	_	Offset=704-714
+3	pick	_	Action	_	_	0	_	_	Offset=718-722
+4	one	_	Numerical	_	_	5	Measure	_	Offset=723-726
+5	clonal	_	Reagent	_	_	0	_	_	Offset=727-740
+6	dip	_	Action	_	_	0	_	_	Offset=745-748
+7	metal	_	Device	_	_	0	_	_	Offset=753-763
+8	nutrient	_	Reagent	_	_	10	Meronym	12:Meronym	Offset=771-785
+9	0.5%	_	Concentration	_	_	10	Measure	_	Offset=787-791
+10	yeast	_	Reagent	_	_	0	_	_	Offset=792-805
+11	0.5%	_	Concentration	_	_	12	Measure	_	Offset=808-812
+12	trypton	_	Reagent	_	_	0	_	_	Offset=813-820
+13	MQ/FSW	_	Reagent	_	_	12	Meronym	_	Offset=824-830
+
+# sent_id = s7
+# text = When the agar plates are cooled and set, streak some liquid from a bacterized culture of the protist on the agar plates.
+1	bacteria	_	Reagent	_	_	0	_	_	Offset=841-849
+2	grow	_	Action	_	_	0	_	_	Offset=850-854
+3	same	_	Method	_	_	0	_	_	Offset=862-888
+
+# sent_id = s8
+# text = Incubate the agar plates at the same conditions of the protist culture
+1	Grow	_	Action	_	_	0	_	_	Offset=890-894
+2	large	_	Amount	_	_	3	Measure	_	Offset=897-909
+3	bacteria	_	Reagent	_	_	0	_	_	Offset=917-925
+
+# sent_id = s9
+# text = When bacteria colonies form, use a flame sterilized metal loop to pick one clonal strain and dip the metal loop into a nutrient broth (0.5% yeast extract + 0.5% trypton in MQ/FSW).
+1	Prepare	_	Action	_	_	0	_	_	Offset=927-934
+2	1	_	Amount	_	_	3	Measure	_	Offset=935-938
+3	bacteria	_	Reagent	_	_	0	_	_	Offset=942-965
+4	0.5%	_	Concentration	_	_	5	Measure	_	Offset=1031-1035
+5	yeast	_	Reagent	_	_	0	_	_	Offset=1036-1049
+6	0.5%	_	Concentration	_	_	7	Measure	_	Offset=1052-1056
+7	trypton	_	Reagent	_	_	0	_	_	Offset=1057-1064
+8	MQ	_	Reagent	_	_	7	Meronym	_	Offset=1068-1070
+9	FSW	_	Reagent	_	_	8	Or	_	Offset=1074-1077
+10	autoclave	_	Action	_	_	0	_	_	Offset=1082-1091
+11	sterilize	_	Action	_	_	0	_	_	Offset=1095-1104
+
+# sent_id = s10
+# text = Let the bacteria grow in the same incubating conditions.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1106-1114
+2	0.1	_	Amount	_	_	3	Measure	_	Offset=1115-1121
+3	bacteria	_	Reagent	_	_	0	_	_	Offset=1129-1145
+4	broth	_	Reagent	_	_	0	_	_	Offset=1155-1160
+
+# sent_id = s11
+# text = Grow a large amount of the bacteria.
+1	bacteria	_	Reagent	_	_	0	_	_	Offset=1170-1178
+2	grow	_	Action	_	_	0	_	_	Offset=1179-1183
+3	~4	_	Time	_	_	0	_	_	Offset=1188-1195
+
+# sent_id = s12
+# text = Prepare 1 L of bacteria nutrient broth (Or however much depending on how much bacteria you want to grow)0.5% yeast extract + 0.5% trypton in MQ or FSW and autoclave to sterilize.
+1	Heat-killing	_	Action	_	_	0	_	_	Offset=1197-1209
+2	bacteria	_	Reagent	_	_	0	_	_	Offset=1214-1222
+3	250	_	Amount	_	_	4	Measure	_	Offset=1230-1236
+4	centrifuge	_	Location	_	_	2	Meronym	_	Offset=1237-1255
+5	entirely	_	Modifier	_	_	0	_	_	Offset=1256-1264
+6	bacteria	_	Reagent	_	_	0	_	_	Offset=1274-1290
+
+# sent_id = s13
+# text = Transfer 0.1 ml of the bacteria culture into the broth.
+1	Place	_	Action	_	_	0	_	_	Offset=1292-1297
+2	water	_	Device	_	_	0	_	_	Offset=1301-1311
+3	70oC	_	Temperature	_	_	2	Setting	_	Offset=1315-1319
+4	30	_	Time	_	_	2	Setting	_	Offset=1324-1330
+
+# sent_id = s14
+# text = Let the bacteria grow for ~4 days.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1332-1342
+2	wash	_	Action	_	_	0	_	_	Offset=1347-1351
+3	bacteria	_	Reagent	_	_	0	_	_	Offset=1356-1364
+
+# sent_id = s15
+# text = Heat-killing the bacteria filled 250 ml centrifuge bottles entirely with the bacteria culture.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1366-1376
+2	heat-killed	_	Reagent	_	_	0	_	_	Offset=1381-1401
+3	10	_	Speed	_	_	0	_	_	Offset=1405-1411
+4	20	_	Time	_	_	0	_	_	Offset=1416-1422
+
+# sent_id = s16
+# text = Place in water bath at 70oC for 30 min 
+1	Decant	_	Action	_	_	0	_	_	Offset=1424-1430
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1431-1442
+
+# sent_id = s17
+# text = Centrifuge and wash the bacteria.
+1	Add	_	Action	_	_	0	_	_	Offset=1444-1447
+2	~25	_	Amount	_	_	4	Measure	_	Offset=1448-1454
+3	sterilized	_	Modifier	_	_	4	Mod-Link	_	Offset=1458-1468
+4	MQ/FSW	_	Reagent	_	_	0	_	_	Offset=1469-1475
+5	bottle	_	Location	_	_	0	_	_	Offset=1527-1533
+
+# sent_id = s18
+# text = Centrifuge the heat-killed bacteria at 10 k g for 20 min.
+1	Vortex/shake	_	Action	_	_	0	_	_	Offset=1535-1547
+2	resuspend	_	Action	_	_	0	_	_	Offset=1551-1560
+3	pellet	_	Reagent	_	_	0	_	_	Offset=1561-1567
+
+# sent_id = s19
+# text = Decant supernatant.
+1	Add	_	Action	_	_	0	_	_	Offset=1569-1572
+2	MQ/FSW	_	Reagent	_	_	0	_	_	Offset=1573-1579
+3	fill	_	Action	_	_	0	_	_	Offset=1583-1587
+4	200	_	Amount	_	_	0	_	_	Offset=1591-1597
+5	centrifuge	_	Action	_	_	0	_	_	Offset=1602-1612
+6	again	_	Modifier	_	_	0	_	_	Offset=1613-1618
+7	10	_	Speed	_	_	0	_	_	Offset=1622-1628
+8	20	_	Time	_	_	0	_	_	Offset=1633-1639
+
+# sent_id = s20
+# text = Add ~25 ml of sterilized MQ/FSW (depending on the salinity of your culture) in the bottle.
+1	Repeat	_	Action	_	_	0	_	_	Offset=1641-1647
+2	this	_	Method	_	_	0	_	_	Offset=1648-1657
+3	washed	_	Action	_	_	0	_	_	Offset=1673-1679
+4	bacteria	_	Reagent	_	_	0	_	_	Offset=1684-1692
+5	3	_	Numerical	_	_	0	_	_	Offset=1693-1694
+
+# sent_id = s21
+# text = Vortex/shake to resuspend pellet.
+1	centrifuge	_	Action	_	_	0	_	_	Offset=1735-1745
+2	decant	_	Action	_	_	0	_	_	Offset=1750-1756
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=1757-1768
+
+# sent_id = s22
+# text = Add MQ/FSW to fill to 200 ml and centrifuge again at 10 k g for 20 min.
+1	Add	_	Action	_	_	0	_	_	Offset=1770-1773
+2	little	_	Modifier	_	_	3	Mod-Link	_	Offset=1777-1783
+3	MQ/FSW	_	Reagent	_	_	0	_	_	Offset=1784-1790
+4	vortex/shake	_	Action	_	_	0	_	_	Offset=1807-1819
+5	resuspend	_	Action	_	_	0	_	_	Offset=1823-1832
+6	pellet	_	Reagent	_	_	0	_	_	Offset=1833-1839
+
+# sent_id = s23
+# text = Repeat this step until you have washed the bacteria 3 times.
+1	sonicate	_	Action	_	_	0	_	_	Offset=1854-1862
+2	concentrated	_	Modifier	_	_	3	Mod-Link	_	Offset=1867-1879
+3	bacteria	_	Reagent	_	_	0	_	_	Offset=1880-1888
+4	sonicator	_	Device	_	_	0	_	_	Offset=1894-1903
+
+# sent_id = s24
+# text = After washing for the last time, centrifuge and decant supernatant.
+1	Test	_	Action	_	_	0	_	_	Offset=1918-1922
+2	sterility	_	Measure-Type	_	_	0	_	_	Offset=1927-1936
+3	bacteria	_	Reagent	_	_	0	_	_	Offset=1944-1952
+
+# sent_id = s25
+# text = Add as little MQ/FSW as possible and vortex/shake to resuspend pellet.
+1	Test	_	Action	_	_	0	_	_	Offset=1954-1958
+2	sterility	_	Measure-Type	_	_	0	_	_	Offset=1963-1972
+3	bacteria	_	Reagent	_	_	0	_	_	Offset=1980-1988
+4	placing	_	Action	_	_	0	_	_	Offset=1992-1999
+5	dilute	_	Modifier	_	_	6	Mod-Link	_	Offset=2002-2008
+6	aliquot	_	Reagent	_	_	0	_	_	Offset=2009-2016
+7	heat-killed	_	Modifier	_	_	8	Mod-Link	_	Offset=2024-2035
+8	bacteria	_	Reagent	_	_	6	Meronym	_	Offset=2036-2044
+9	5	_	Amount	_	_	11	Measure	13:Measure	Offset=2048-2052
+10	0.5%	_	Concentration	_	_	11	Measure	_	Offset=2056-2060
+11	yeast	_	Reagent	_	_	0	_	_	Offset=2061-2074
+12	0.5%	_	Concentration	_	_	13	Measure	_	Offset=2077-2081
+13	trypton	_	Reagent	_	_	0	_	_	Offset=2082-2095
+
+# sent_id = s26
+# text = You may also sonicate the concentrated bacteria if a sonicator is available.
+1	liquid	_	Reagent	_	_	0	_	_	Offset=2116-2122
+2	clear	_	Action	_	_	0	_	_	Offset=2132-2137
+3	adding	_	Action	_	_	0	_	_	Offset=2144-2150
+4	bacteria	_	Reagent	_	_	0	_	_	Offset=2155-2163
+
+# sent_id = s27
+# text = Test the sterility of the bacteria.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2264-2272
+2	sterility	_	Reagent	_	_	0	_	_	Offset=2277-2291
+3	several	_	Time	_	_	0	_	_	Offset=2296-2307
+

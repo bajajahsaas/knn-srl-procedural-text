@@ -1,0 +1,85 @@
+# sent_id = s1
+# text = Buffers for Chloroplast Isolation from Diatoms Isolation Buffer (40 mL)
+1	Mix	_	Action	_	_	0	_	_	Offset=75-78
+2	20	_	Amount	_	_	4	Measure	_	Offset=79-84
+3	1	_	Generic-Measure	_	_	4	Measure	_	Offset=85-88
+4	sorbitol	_	Reagent	_	_	0	_	_	Offset=89-97
+5	400	_	Amount	_	_	7	Measure	_	Offset=97-103
+6	0.6	_	Generic-Measure	_	_	7	Measure	_	Offset=104-109
+7	Na2-EDTA	_	Reagent	_	_	0	_	_	Offset=110-118
+8	200	_	Amount	_	_	10	Measure	_	Offset=118-124
+9	1	_	Generic-Measure	_	_	10	Measure	_	Offset=125-128
+10	MgCl	_	Reagent	_	_	0	_	_	Offset=129-133
+11	2400	_	Amount	_	_	13	Measure	_	Offset=133-140
+12	1	_	Generic-Measure	_	_	13	Measure	_	Offset=141-144
+13	KCl	_	Reagent	_	_	0	_	_	Offset=145-148
+14	40	_	Amount	_	_	16	Measure	_	Offset=148-153
+15	1	_	Generic-Measure	_	_	16	Measure	_	Offset=154-157
+16	MnCl	_	Reagent	_	_	0	_	_	Offset=158-162
+17	22	_	Amount	_	_	19	Measure	_	Offset=162-167
+18	1	_	Generic-Measure	_	_	19	Measure	_	Offset=168-171
+19	HEPES-KOH	_	Reagent	_	_	0	_	_	Offset=172-181
+20	8.016	_	pH	_	_	23	Measure	_	Offset=187-192
+21	96	_	Amount	_	_	23	Measure	_	Offset=193-198
+22	Sterile	_	Modifier	_	_	23	Mod-Link	_	Offset=199-206
+23	H2O	_	Reagent	_	_	0	_	_	Offset=207-210
+
+# sent_id = s2
+# text = 1) Mix:20 ml 1 M sorbitol400 μl 0.6 M Na2-EDTA200 μl 1 M MgCl2400 μl 1 M KCl40 μl 1 M MnCl22 ml 1 M HEPES-KOH pH = 8.016.96 ml Sterile H2O.
+1	Add	_	Action	_	_	0	_	_	Offset=215-218
+2	bovine	_	Reagent	_	_	0	_	_	Offset=219-239
+3	1%	_	Generic-Measure	_	_	2	Measure	_	Offset=246-248
+
+# sent_id = s3
+# text = 2) Add bovine serum albumen (BSA) 1% (w/v) just before use to subset of isolation buffer needed at the beginning of the procedure PEG-6000 Solution.
+1	Mix	_	Action	_	_	0	_	_	Offset=361-364
+2	6	_	Amount	_	_	3	Measure	_	Offset=365-368
+3	PEG	_	Reagent	_	_	0	_	_	Offset=369-372
+4	10	_	Amount	_	_	5	Measure	_	Offset=372-377
+5	water	_	Reagent	_	_	0	_	_	Offset=378-402
+6	Mix	_	Action	_	_	0	_	_	Offset=416-419
+7	19	_	Amount	_	_	8	Measure	_	Offset=420-425
+8	Percoll	_	Reagent	_	_	0	_	_	Offset=426-433
+9	1	_	Amount	_	_	10	Measure	_	Offset=433-437
+10	PEG	_	Reagent	_	_	0	_	_	Offset=438-457
+11	0.2	_	Amount	_	_	12	Measure	_	Offset=457-462
+12	Ficoll	_	Reagent	_	_	0	_	_	Offset=463-469
+13	0.2	_	Amount	_	_	14	Measure	_	Offset=469-474
+14	BSA	_	Reagent	_	_	0	_	_	Offset=475-495
+15	Mix	_	Action	_	_	0	_	_	Offset=509-512
+16	250	_	Amount	_	_	18	Measure	_	Offset=513-519
+17	1	_	Generic-Measure	_	_	18	Measure	_	Offset=520-523
+18	HEPES-KOH	_	Reagent	_	_	0	_	_	Offset=524-533
+19	8.01	_	pH	_	_	21	Measure	_	Offset=539-543
+20	0.1	_	Generic-Measure	_	_	21	Measure	_	Offset=547-552
+21	EDTA	_	Reagent	_	_	0	_	_	Offset=553-557
+22	6.26	_	Amount	_	_	24	Measure	_	Offset=557-564
+23	1	_	Generic-Measure	_	_	24	Measure	_	Offset=565-568
+24	sorbitol	_	Reagent	_	_	0	_	_	Offset=569-577
+25	2.49	_	Amount	_	_	26	Measure	_	Offset=577-584
+26	water	_	Reagent	_	_	0	_	_	Offset=585-606
+
+# sent_id = s4
+# text = Mix:6 g PEG10 ml water   Percoll Solution (20 mL Stock)Mix:19 ml Percoll1 ml PEG – 6000 solution0.2 g Ficoll0.2 g BSA Gradient Mixture (10 mL Stock)Mix:250 μl 1 M HEPES-KOH pH = 8.01 ml 0.1 M EDTA6.26 ml 1 M sorbitol2.49 ml water 3X Bottom Layer (80% Percoll).
+1	Mix	_	Action	_	_	0	_	_	Offset=622-625
+2	5.7	_	Amount	_	_	3	Measure	_	Offset=626-632
+3	Percoll	_	Reagent	_	_	0	_	_	Offset=633-649
+4	1.01	_	Amount	_	_	5	Measure	_	Offset=649-656
+5	Gradient	_	Reagent	_	_	0	_	_	Offset=657-686
+
+# sent_id = s5
+# text = Mix:5.7 ml Percoll Solution1.01 ml Gradient Mixture 3X Top Layer (40% Percoll).
+1	Mix	_	Action	_	_	0	_	_	Offset=702-705
+2	5.04	_	Amount	_	_	3	Measure	_	Offset=706-713
+3	Percoll	_	Reagent	_	_	0	_	_	Offset=714-730
+4	6.96	_	Amount	_	_	5	Measure	_	Offset=730-737
+5	Gradient	_	Reagent	_	_	0	_	_	Offset=738-776
+
+# sent_id = s6
+# text = Mix:5.04 ml Percoll Solution6.96 ml Gradient Mixture 10M Ammonium Fluoride (NH4F).
+1	Mix	_	Action	_	_	0	_	_	Offset=785-788
+2	3.7	_	Amount	_	_	3	Measure	_	Offset=789-794
+3	NH4F	_	Reagent	_	_	0	_	_	Offset=795-799
+4	10	_	Amount	_	_	5	Measure	_	Offset=799-804
+5	H2O	_	Reagent	_	_	0	_	_	Offset=805-808
+

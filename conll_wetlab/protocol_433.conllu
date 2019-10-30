@@ -1,0 +1,70 @@
+# sent_id = s1
+# text = Anti-Neu5Gc Antibody Kit Protocol - Flow Cytometry
+1	Prepare	_	Action	_	_	0	_	_	Offset=51-58
+2	0.5%	_	Generic-Measure	_	_	3	Measure	_	Offset=59-63
+3	Neu5Gc	_	Reagent	_	_	0	_	_	Offset=64-94
+4	PBS	_	Location	_	_	0	_	_	Offset=98-101
+
+# sent_id = s2
+# text = Prepare 0.5% Neu5Gc Assay Blocking Solution in PBS (diluent buffer).
+1	Wash	_	Action	_	_	0	_	_	Offset=940-944
+
+# sent_id = s3
+# text = The following tubes should be set up for flow cytometry analysis: 
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=1007-1016
+2	remove	_	Action	_	_	0	_	_	Offset=1017-1023
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=1024-1035
+4	discard	_	Action	_	_	0	_	_	Offset=1040-1047
+
+# sent_id = s4
+# text = * Three (3) tubes containing cells to be examined.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=1049-1055
+2	resuspend	_	Action	_	_	0	_	_	Offset=1056-1065
+3	cells	_	Reagent	_	_	0	_	_	Offset=1066-1071
+4	100	_	Amount	_	_	7	Measure	_	Offset=1075-1081
+5	appropriate	_	Modifier	_	_	7	Mod-Link	_	Offset=1089-1100
+6	diluted	_	Modifier	_	_	7	Mod-Link	_	Offset=1101-1108
+7	antibody	_	Reagent	_	_	0	_	_	Offset=1109-1117
+
+# sent_id = s5
+# text = If choosing to use different dilutions of primary antibody, as noted in step 3, more tubes may be needed.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1137-1145
+2	cells	_	Reagent	_	_	0	_	_	Offset=1146-1151
+3	ice	_	Location	_	_	0	_	_	Offset=1155-1158
+4	at	_	Modifier	_	_	5	Mod-Link	_	Offset=1163-1171
+5	1	_	Time	_	_	0	_	_	Offset=1172-1178
+
+# sent_id = s6
+# text = * Three (3) tubes containing positive control cells.
+1	Wash	_	Action	_	_	0	_	_	Offset=1181-1185
+2	cells	_	Reagent	_	_	0	_	_	Offset=1186-1191
+
+# sent_id = s7
+# text = * Three (3) tubes containing negative control cells. 
+1	Gently	_	Modifier	_	_	0	_	_	Offset=1203-1209
+2	resuspend	_	Action	_	_	0	_	_	Offset=1210-1219
+3	cells	_	Reagent	_	_	0	_	_	Offset=1220-1225
+4	100	_	Amount	_	_	5	Measure	_	Offset=1229-1235
+5	Secondary	_	Reagent	_	_	0	_	_	Offset=1236-1272
+6	incubate	_	Action	_	_	0	_	_	Offset=1278-1286
+7	1	_	Time	_	_	0	_	_	Offset=1291-1297
+8	ice	_	Location	_	_	0	_	_	Offset=1301-1304
+
+# sent_id = s8
+# text = Each set of tubes to be analyzed should receive an antibody treatment as follows:
+1	Wash	_	Action	_	_	0	_	_	Offset=1306-1310
+2	cells	_	Reagent	_	_	0	_	_	Offset=1311-1316
+
+# sent_id = s9
+# text = * Tube 1 will contain cells that will receive no antibody, to be used as unstained control (optional but highly recommended).
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1328-1337
+2	cell	_	Reagent	_	_	0	_	_	Offset=1338-1349
+3	400	_	Amount	_	_	4	Measure	_	Offset=1353-1359
+4	diluent	_	Location	_	_	0	_	_	Offset=1363-1377
+
+# sent_id = s10
+# text = * Tube 2 will contain cells that receive Control Antibody.
+1	Run	_	Action	_	_	0	_	_	Offset=1380-1383
+2	cells	_	Reagent	_	_	0	_	_	Offset=1384-1389
+3	flow	_	Device	_	_	0	_	_	Offset=1402-1416
+

@@ -1,0 +1,158 @@
+# sent_id = s1
+# text = Quick Protocol for Monarch® Plasmid Miniprep Kit (NEB #T1010)
+1	Pellet	_	Action	_	_	0	_	_	Offset=62-68
+2	1–5	_	Amount	_	_	3	Measure	_	Offset=69-75
+3	bacterial	_	Reagent	_	_	0	_	_	Offset=76-93
+4	centrifugation	_	Action	_	_	0	_	_	Offset=97-111
+5	16,000	_	Speed	_	_	0	_	_	Offset=115-125
+6	30	_	Time	_	_	0	_	_	Offset=130-140
+
+# sent_id = s2
+# text = Pellet 1–5 ml bacterial culture by centrifugation at 16,000 x g for 30 seconds.
+1	Discard	_	Action	_	_	0	_	_	Offset=142-149
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=150-161
+
+# sent_id = s3
+# text = Discard supernatant.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=163-172
+2	pellet	_	Reagent	_	_	0	_	_	Offset=173-179
+3	200	_	Amount	_	_	4	Measure	_	Offset=183-189
+4	Plasmid	_	Reagent	_	_	0	_	_	Offset=190-217
+
+# sent_id = s4
+# text = Resuspend pellet in 200 μl Plasmid Resuspension Buffer (B1).
+1	Vortex	_	Action	_	_	0	_	_	Offset=224-230
+2	pipet	_	Action	_	_	0	_	_	Offset=234-239
+3	cells	_	Reagent	_	_	0	_	_	Offset=250-255
+4	completely	_	Modifier	_	_	0	_	_	Offset=260-270
+5	resuspended	_	Action	_	_	0	_	_	Offset=271-282
+
+# sent_id = s5
+# text = Vortex or pipet to ensure cells are completely resuspended.
+1	Add	_	Action	_	_	0	_	_	Offset=319-322
+2	200	_	Amount	_	_	3	Measure	_	Offset=323-329
+3	Plasmid	_	Reagent	_	_	0	_	_	Offset=330-350
+4	gently	_	Modifier	_	_	0	_	_	Offset=357-363
+5	invert	_	Action	_	_	0	_	_	Offset=364-370
+6	tube	_	Location	_	_	0	_	_	Offset=371-375
+7	5–6	_	Numerical	_	_	0	_	_	Offset=376-379
+8	incubate	_	Action	_	_	0	_	_	Offset=391-399
+9	room	_	Temperature	_	_	0	_	_	Offset=403-419
+10	1	_	Time	_	_	0	_	_	Offset=424-432
+
+# sent_id = s6
+# text = There should be no visible clumps.
+1	Do	_	Action	_	_	0	_	_	Offset=518-531
+
+# sent_id = s7
+# text = Add 200 μl Plasmid Lysis Buffer (B2), gently invert tube 5–6 times, and incubate at room temperature for 1 minute.
+1	Add	_	Action	_	_	0	_	_	Offset=533-536
+2	400	_	Amount	_	_	3	Measure	_	Offset=537-543
+3	Plasmid	_	Reagent	_	_	0	_	_	Offset=547-576
+4	gently	_	Modifier	_	_	0	_	_	Offset=583-589
+5	invert	_	Action	_	_	0	_	_	Offset=590-596
+6	tube	_	Location	_	_	0	_	_	Offset=597-601
+7	incubate	_	Action	_	_	0	_	_	Offset=625-633
+8	room	_	Temperature	_	_	0	_	_	Offset=637-653
+9	2	_	Time	_	_	0	_	_	Offset=658-667
+
+# sent_id = s8
+# text = Color should change to dark pink, and solution will become transparent and viscous.
+1	Do	_	Action	_	_	0	_	_	Offset=745-758
+
+# sent_id = s9
+# text = Do not vortex.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=760-770
+2	lysate	_	Reagent	_	_	0	_	_	Offset=771-777
+3	16,000	_	Speed	_	_	0	_	_	Offset=781-791
+4	2–5	_	Time	_	_	0	_	_	Offset=796-807
+
+# sent_id = s10
+# text = Add 400 μl of Plasmid Neutralization Buffer (B3), gently invert tube until neutralized, and incubate at room temperature for 2 minutes.
+1	culture	_	Reagent	_	_	0	_	_	Offset=813-820
+2	1	_	Amount	_	_	1	Measure	_	Offset=830-834
+3	5	_	Time	_	_	0	_	_	Offset=851-859
+4	spin	_	Action	_	_	0	_	_	Offset=860-864
+5	efficient	_	Modifier	_	_	0	_	_	Offset=875-884
+6	RNA	_	Reagent	_	_	0	_	_	Offset=885-888
+7	removal	_	Action	_	_	0	_	_	Offset=889-896
+8	RNase	_	Reagent	_	_	0	_	_	Offset=900-907
+
+# sent_id = s11
+# text = Sample is neutralized when color is uniformly yellow and precipitate forms.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=958-967
+2	transfer	_	Action	_	_	0	_	_	Offset=968-976
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=977-988
+4	spin	_	Location	_	_	0	_	_	Offset=996-1007
+5	centrifuge	_	Action	_	_	0	_	_	Offset=1012-1022
+6	16,000	_	Speed	_	_	0	_	_	Offset=1026-1036
+7	1	_	Time	_	_	0	_	_	Offset=1041-1049
+
+# sent_id = s12
+# text = Do not vortex.
+1	Discard	_	Action	_	_	0	_	_	Offset=1051-1058
+2	flow-through	_	Reagent	_	_	0	_	_	Offset=1059-1071
+
+# sent_id = s13
+# text = Centrifuge lysate at 16,000 x g for 2–5 minutes.
+1	Re-insert	_	Action	_	_	0	_	_	Offset=1073-1082
+2	column	_	Location	_	_	0	_	_	Offset=1083-1089
+3	collection	_	Location	_	_	0	_	_	Offset=1097-1112
+4	add	_	Action	_	_	0	_	_	Offset=1117-1120
+5	200	_	Amount	_	_	6	Measure	_	Offset=1121-1127
+6	Plasmid	_	Reagent	_	_	0	_	_	Offset=1131-1150
+
+# sent_id = s14
+# text = For culture volumes >1 ml, we recommend a 5 minute spin to ensure efficient RNA removal by RNase A.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1154-1164
+2	1	_	Time	_	_	0	_	_	Offset=1169-1177
+3	16,000	_	Speed	_	_	0	_	_	Offset=1181-1191
+
+# sent_id = s15
+# text = Pellet should be compact; spin longer if needed.
+1	Add	_	Action	_	_	0	_	_	Offset=1234-1237
+2	400	_	Amount	_	_	3	Measure	_	Offset=1238-1244
+3	Plasmid	_	Reagent	_	_	0	_	_	Offset=1248-1267
+4	centrifuge	_	Action	_	_	0	_	_	Offset=1274-1284
+5	16,000	_	Speed	_	_	0	_	_	Offset=1288-1298
+6	1	_	Time	_	_	0	_	_	Offset=1303-1311
+
+# sent_id = s16
+# text = Carefully transfer supernatant to the spin column and centrifuge at 16,000 x g for 1 minute.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1313-1321
+2	column	_	Location	_	_	0	_	_	Offset=1322-1328
+3	clean	_	Modifier	_	_	5	Mod-Link	_	Offset=1334-1339
+4	1.5	_	Amount	_	_	5	Measure	_	Offset=1340-1346
+5	microfuge	_	Location	_	_	0	_	_	Offset=1347-1361
+
+# sent_id = s17
+# text = Discard flow-through.
+1	re-spin	_	Action	_	_	0	_	_	Offset=1482-1489
+2	column	_	Location	_	_	0	_	_	Offset=1494-1500
+3	1	_	Time	_	_	0	_	_	Offset=1505-1513
+
+# sent_id = s18
+# text = Re-insert column in the collection tube and add 200 μl of Plasmid Wash Buffer 1.
+1	Add	_	Action	_	_	0	_	_	Offset=1515-1518
+2	30	_	Amount	_	_	3	Measure	_	Offset=1521-1526
+3	DNA	_	Reagent	_	_	0	_	_	Offset=1527-1545
+4	center	_	Location	_	_	0	_	_	Offset=1553-1559
+5	matrix	_	Location	_	_	4	Meronym	_	Offset=1567-1573
+
+# sent_id = s19
+# text = Centrifuge for 1 minute at 16,000 x g. Discarding the flow-through is optional.
+1	Wait	_	Action	_	_	0	_	_	Offset=1575-1579
+2	1	_	Time	_	_	0	_	_	Offset=1584-1592
+3	spin	_	Action	_	_	0	_	_	Offset=1599-1603
+4	1	_	Time	_	_	0	_	_	Offset=1608-1616
+5	16,000	_	Speed	_	_	0	_	_	Offset=1620-1630
+6	elute	_	Action	_	_	0	_	_	Offset=1634-1639
+7	DNA	_	Reagent	_	_	0	_	_	Offset=1644-1647
+
+# sent_id = s20
+# text = Add 400 μl of Plasmid Wash Buffer 2 and centrifuge at 16,000 x g for 1 minute.
+1	Nuclease-free	_	Reagent	_	_	0	_	_	Offset=1649-1668
+2	pH	_	pH	_	_	1	Measure	_	Offset=1670-1678
+3	elute	_	Action	_	_	0	_	_	Offset=1700-1705
+4	DNA	_	Reagent	_	_	0	_	_	Offset=1710-1713
+

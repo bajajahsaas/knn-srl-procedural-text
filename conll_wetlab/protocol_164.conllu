@@ -1,0 +1,150 @@
+# sent_id = s1
+# text = Isolation and isotopic labeling of bacteria
+1	Prepare	_	Action	_	_	0	_	_	Offset=44-51
+2	M9	_	Reagent	_	_	0	_	_	Offset=52-67
+
+# sent_id = s2
+# text = Prepare M9 media stocks.  
+1	recipe	_	Action	_	_	0	_	_	Offset=75-81
+2	1L	_	Amount	_	_	3	Measure	_	Offset=86-88
+3	minimal	_	Reagent	_	_	0	_	_	Offset=92-113
+
+# sent_id = s3
+# text = The recipe for 1L of minimal growth medium (M9) is as follows:   
+1	cooling	_	Action	_	_	0	_	_	Offset=143-150
+2	autoclaved	_	Modifier	_	_	3	Mod-Link	_	Offset=158-168
+3	mix	_	Reagent	_	_	0	_	_	Offset=169-172
+4	add	_	Action	_	_	0	_	_	Offset=174-177
+5	rest	_	Reagent	_	_	0	_	_	Offset=182-204
+6	0.2	_	Size	_	_	7	Setting	_	Offset=208-214
+7	filter	_	Device	_	_	0	_	_	Offset=215-221
+8	sterilization	_	Action	_	_	0	_	_	Offset=222-235
+
+# sent_id = s4
+# text = After cooling of the autoclaved mix, add the rest of the components by 0.2 µm filter sterilization.
+1	prepare	_	Action	_	_	0	_	_	Offset=249-256
+2	solid	_	Reagent	_	_	0	_	_	Offset=257-268
+3	add	_	Action	_	_	0	_	_	Offset=282-285
+4	1.5%	_	Concentration	_	_	5	Measure	_	Offset=286-290
+5	agar	_	Reagent	_	_	0	_	_	Offset=291-295
+6	autoclaving	_	Action	_	_	0	_	_	Offset=335-346
+
+# sent_id = s5
+# text = In order to prepare solid media for plating, add 1.5% agar (15 gr agar per 1 L of media) prior to autoclaving.
+1	cooling	_	Action	_	_	0	_	_	Offset=354-361
+2	media	_	Reagent	_	_	0	_	_	Offset=369-374
+3	add	_	Action	_	_	0	_	_	Offset=384-387
+4	0.2µm	_	Size	_	_	5	Measure	_	Offset=392-397
+5	filter	_	Device	_	_	0	_	_	Offset=398-429
+
+# sent_id = s6
+# text = Allow cooling of the media prior to add the 0.2µm filter sterilization components.
+1	Pour	_	Action	_	_	0	_	_	Offset=431-435
+2	media	_	Reagent	_	_	0	_	_	Offset=440-445
+3	Petri	_	Location	_	_	0	_	_	Offset=449-461
+4	solidification	_	Action	_	_	0	_	_	Offset=472-486
+5	agar	_	Reagent	_	_	0	_	_	Offset=490-494
+
+# sent_id = s7
+# text = Pour the media in Petri dishes and allow solidification of agar.
+1	prepare	_	Action	_	_	0	_	_	Offset=499-506
+2	1	_	Amount	_	_	3	Measure	_	Offset=507-510
+3	5x	_	Reagent	_	_	0	_	_	Offset=518-535
+4	autoclaved	_	Modifier	_	_	3	Mod-Link	_	Offset=537-547
+
+# sent_id = s8
+# text = To prepare 1 L of the 5x M9 salts stock (autoclaved). 
+1	isotopic	_	Action	_	_	0	_	_	Offset=555-572
+2	D-glucose-1-13C	_	Reagent	_	_	4	Meronym	_	Offset=578-593
+3	99%	_	Concentration	_	_	4	Measure	_	Offset=595-598
+4	atom	_	Reagent	_	_	0	_	_	Offset=599-607
+5	ammonium-15N	_	Reagent	_	_	7	Meronym	_	Offset=613-634
+6	98%	_	Concentration	_	_	7	Measure	_	Offset=636-639
+7	atom	_	Reagent	_	_	0	_	_	Offset=640-648
+
+# sent_id = s9
+# text = For isotopic labeling, use D-glucose-1-13C (99% atom 13C) and ammonium-15N chloride (98% atom 15N)
+1	0.1	_	Amount	_	_	2	Measure	_	Offset=776-782
+2	sample	_	Reagent	_	_	0	_	_	Offset=791-797
+3	isolate	_	Action	_	_	0	_	_	Offset=810-817
+4	bacteria	_	Reagent	_	_	0	_	_	Offset=823-831
+5	inoculate	_	Action	_	_	0	_	_	Offset=835-844
+6	M9	_	Reagent	_	_	0	_	_	Offset=845-852
+7	plates	_	Location	_	_	6	Meronym	_	Offset=853-859
+
+# sent_id = s10
+# text = Vitamins and trace metals stock used were the same as for algal DY-V media.   
+1	striking	_	Action	_	_	0	_	_	Offset=876-884
+2	dispersal	_	Action	_	_	0	_	_	Offset=889-898
+3	inoculum	_	Reagent	_	_	0	_	_	Offset=906-914
+4	picking	_	Action	_	_	0	_	_	Offset=929-936
+5	colonies	_	Reagent	_	_	0	_	_	Offset=951-959
+
+# sent_id = s11
+# text = Bacterial plating.   
+1	Incubate	_	Action	_	_	0	_	_	Offset=990-998
+2	bacteria	_	Reagent	_	_	0	_	_	Offset=999-1007
+3	temperature	_	Temperature	_	_	0	_	_	Offset=1013-1034
+
+# sent_id = s12
+# text = Use a small volume (i.e. 0.1 mL) of the sample you want to isolate your bacteria to inoculate M9 agar plates.
+1	Bacteria	_	Reagent	_	_	0	_	_	Offset=1036-1044
+2	isolated	_	Action	_	_	0	_	_	Offset=1045-1053
+3	algal	_	Reagent	_	_	0	_	_	Offset=1063-1077
+4	grow	_	Action	_	_	0	_	_	Offset=1093-1097
+5	30	_	Temperature	_	_	0	_	_	Offset=1101-1106
+
+# sent_id = s13
+# text = Ensure correct striking and dispersal of the inoculum to facilitate picking of individual colonies afterwards.
+1	Inspect	_	Action	_	_	0	_	_	Offset=1108-1115
+2	plates	_	Location	_	_	0	_	_	Offset=1116-1122
+3	24h	_	Time	_	_	0	_	_	Offset=1129-1132
+4	big	_	Size	_	_	5	Measure	_	Offset=1139-1149
+5	colonies	_	Reagent	_	_	0	_	_	Offset=1150-1158
+6	pick	_	Action	_	_	0	_	_	Offset=1174-1178
+
+# sent_id = s14
+# text = Bacterial growth  Incubate bacteria at a temperature of choice.
+1	transfer	_	Action	_	_	0	_	_	Offset=1235-1243
+2	single	_	Amount	_	_	3	Measure	_	Offset=1246-1252
+3	colony	_	Reagent	_	_	0	_	_	Offset=1253-1271
+4	M9	_	Reagent	_	_	2	Coreference-Link	_	Offset=1277-1292
+
+# sent_id = s15
+# text = Bacteria isolated from the algal cultures were chosen to grow at 30 ºC.
+1	transfer	_	Action	_	_	0	_	_	Offset=1320-1328
+2	small	_	Mention	_	_	0	_	_	Offset=1336-1348
+3	25	_	Amount	_	_	2	Measure	_	Offset=1352-1362
+
+# sent_id = s16
+# text = Inspect plates after 24h until big enough colonies are visible to pick.
+1	Prepare	_	Action	_	_	0	_	_	Offset=1365-1372
+2	tubes	_	Location	_	_	0	_	_	Offset=1386-1391
+3	M9	_	Reagent	_	_	9	Coreference-Link	_	Offset=1408-1423
+4	pick	_	Action	_	_	0	_	_	Offset=1428-1432
+5	colonies	_	Reagent	_	_	0	_	_	Offset=1446-1454
+
+# sent_id = s17
+# text = Picking and transfer of colonies.
+1	produce	_	Action	_	_	0	_	_	Offset=1511-1518
+2	large	_	Amount	_	_	3	Measure	_	Offset=1521-1534
+3	biomass	_	Reagent	_	_	0	_	_	Offset=1538-1545
+4	transfer	_	Action	_	_	0	_	_	Offset=1547-1555
+5	some	_	Amount	_	_	6	Measure	_	Offset=1556-1563
+6	bacteria	_	Reagent	_	_	0	_	_	Offset=1568-1576
+7	M9	_	Reagent	_	_	0	_	_	Offset=1586-1597
+8	tubes	_	Location	_	_	7	Meronym	6:Meronym	Offset=1598-1603
+9	larger	_	Mention	_	_	0	_	_	Offset=1609-1622
+
+# sent_id = s18
+# text = Using sterile picks, transfer a single colony of bacteria into M9 liquid media.
+1	bacteria	_	Reagent	_	_	0	_	_	Offset=1638-1646
+2	grow	_	Action	_	_	0	_	_	Offset=1647-1651
+3	3-4	_	Time	_	_	0	_	_	Offset=1736-1744
+
+# sent_id = s19
+# text = Recommended to do a first transfer into a small volume (~ 25 - 50 mL).
+1	making	_	Action	_	_	0	_	_	Offset=1953-1959
+2	heat	_	Modifier	_	_	3	Mod-Link	_	Offset=1960-1971
+3	bacteria	_	Reagent	_	_	0	_	_	Offset=1972-1980
+

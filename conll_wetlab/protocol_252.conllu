@@ -1,0 +1,117 @@
+# sent_id = s1
+# text = Cleaning for new teflon (PFA/FEP/PTFE)
+1	Soak	_	Action	_	_	0	_	_	Offset=39-43
+2	citrad	_	Reagent	_	_	0	_	_	Offset=47-53
+3	~couple	_	Time	_	_	0	_	_	Offset=55-71
+
+# sent_id = s2
+# text = Soak in citrad (~couple of hours).
+1	Rinse	_	Action	_	_	0	_	_	Offset=74-79
+2	thoroughly	_	Modifier	_	_	0	_	_	Offset=80-90
+3	UPW	_	Reagent	_	_	0	_	_	Offset=91-94
+
+# sent_id = s3
+# text = Rinse thoroughly UPW.
+1	Immerse	_	Action	_	_	0	_	_	Offset=96-103
+2	completely	_	Modifier	_	_	0	_	_	Offset=104-114
+3	1	_	Amount	_	_	4	Measure	5:Measure	Offset=119-122
+4	jars	_	Location	_	_	8	Meronym	_	Offset=123-127
+5	bottles	_	Location	_	_	4	Or	8:Meronym	Offset=131-138
+6	50%	_	Generic-Measure	_	_	8	Measure	_	Offset=143-150
+7	distilled	_	Modifier	_	_	8	Mod-Link	_	Offset=151-160
+8	HNO3	_	Reagent	_	_	0	_	_	Offset=161-165
+9	>=48hrs	_	Time	_	_	0	_	_	Offset=170-177
+
+# sent_id = s4
+# text = Immerse completely (in 1 L jars or bottles) in 50% v/v distilled HNO3 for >=48hrs.  
+1	Rinse	_	Action	_	_	0	_	_	Offset=181-186
+2	thoroughly	_	Modifier	_	_	0	_	_	Offset=187-197
+3	UPW	_	Reagent	_	_	0	_	_	Offset=198-201
+
+# sent_id = s5
+# text = Rinse thoroughly UPW.
+1	Immerse	_	Action	_	_	0	_	_	Offset=203-210
+2	completely	_	Modifier	_	_	0	_	_	Offset=211-221
+3	1	_	Amount	_	_	4	Measure	5:Measure	Offset=226-229
+4	jars	_	Location	_	_	8	Meronym	_	Offset=230-234
+5	bottles	_	Location	_	_	4	Or	8:Meronym	Offset=238-245
+6	50%	_	Generic-Measure	_	_	8	Measure	_	Offset=250-257
+7	distilled	_	Modifier	_	_	8	Mod-Link	_	Offset=258-267
+8	HCl	_	Reagent	_	_	0	_	_	Offset=268-271
+9	>=48hrs	_	Time	_	_	0	_	_	Offset=276-283
+
+# sent_id = s6
+# text = Immerse completely (in 1 L jars or bottles) in 50% v/v distilled HCl for >=48hrs.  
+1	Rinse	_	Action	_	_	0	_	_	Offset=287-292
+2	thoroughly	_	Modifier	_	_	0	_	_	Offset=293-303
+3	UPW	_	Reagent	_	_	0	_	_	Offset=304-307
+
+# sent_id = s7
+# text = Rinse thoroughly UPW.
+1	Immerse	_	Action	_	_	0	_	_	Offset=309-316
+2	completely	_	Modifier	_	_	0	_	_	Offset=317-327
+3	1	_	Amount	_	_	4	Measure	5:Measure	Offset=332-335
+4	jars	_	Location	_	_	8	Meronym	_	Offset=336-340
+5	bottles	_	Location	_	_	4	Or	8:Meronym	Offset=344-351
+6	0.1%	_	Generic-Measure	_	_	8	Measure	_	Offset=356-364
+7	distilled	_	Modifier	_	_	8	Mod-Link	_	Offset=365-374
+8	HNO3	_	Reagent	_	_	0	_	_	Offset=375-379
+9	>=48hrs	_	Time	_	_	0	_	_	Offset=384-391
+
+# sent_id = s8
+# text = Immerse completely (in 1 L jars or bottles) in 0.1% v/v distilled HNO3 for >=48hrs.  
+1	Rinse	_	Action	_	_	0	_	_	Offset=395-400
+2	thoroughly	_	Modifier	_	_	0	_	_	Offset=401-411
+3	UPW	_	Reagent	_	_	0	_	_	Offset=412-415
+
+# sent_id = s9
+# text = Rinse thoroughly UPW.
+1	Immerse	_	Action	_	_	0	_	_	Offset=417-424
+2	completely	_	Modifier	_	_	0	_	_	Offset=425-435
+3	1	_	Amount	_	_	4	Measure	5:Measure	Offset=440-443
+4	jars	_	Location	_	_	8	Meronym	_	Offset=444-448
+5	bottles	_	Location	_	_	4	Or	8:Meronym	Offset=452-459
+6	1-3M	_	Generic-Measure	_	_	8	Measure	_	Offset=464-472
+7	distilled	_	Modifier	_	_	8	Mod-Link	_	Offset=473-482
+8	HNO3	_	Reagent	_	_	0	_	_	Offset=483-487
+9	>=48hrs	_	Time	_	_	0	_	_	Offset=492-499
+
+# sent_id = s10
+# text = Immerse completely (in 1 L jars or bottles) in 1-3M v/v distilled HNO3 for >=48hrs.  
+1	Rinse	_	Action	_	_	0	_	_	Offset=503-508
+2	thoroughly	_	Modifier	_	_	0	_	_	Offset=509-519
+3	UPW	_	Reagent	_	_	0	_	_	Offset=520-523
+
+# sent_id = s11
+# text = Rinse thoroughly UPW.
+1	Fill	_	Action	_	_	0	_	_	Offset=525-539
+2	~0.1%	_	Generic-Measure	_	_	4	Measure	_	Offset=545-554
+3	distilled	_	Modifier	_	_	4	Mod-Link	_	Offset=555-564
+4	HNO3	_	Reagent	_	_	0	_	_	Offset=565-569
+
+# sent_id = s12
+# text = Fill and store with ~0.1% v/v distilled HNO3 For already-cleaned teflon for Geotraces.  
+1	Rinse	_	Action	_	_	0	_	_	Offset=614-619
+2	UPW	_	Reagent	_	_	0	_	_	Offset=625-628
+
+# sent_id = s13
+# text = Rinse with UPW.
+1	Fill	_	Action	_	_	0	_	_	Offset=630-634
+2	1-3M	_	Generic-Measure	_	_	4	Measure	_	Offset=640-648
+3	distilled	_	Modifier	_	_	4	Mod-Link	_	Offset=649-658
+4	HNO3	_	Reagent	_	_	0	_	_	Offset=659-663
+5	24-48hrs.	_	Time	_	_	0	_	_	Offset=668-677
+
+# sent_id = s14
+# text = Fill with 1-3M v/v distilled HNO3 for 24-48hrs.
+1	Rinse	_	Action	_	_	0	_	_	Offset=678-683
+2	thoroughly	_	Modifier	_	_	0	_	_	Offset=684-694
+3	UPW	_	Reagent	_	_	0	_	_	Offset=700-703
+
+# sent_id = s15
+# text = Rinse thoroughly with UPW.
+1	Fill	_	Action	_	_	0	_	_	Offset=705-709
+2	~0.1%	_	Generic-Measure	_	_	3	Measure	_	Offset=715-724
+3	seastar	_	Reagent	_	_	0	_	_	Offset=725-754
+4	as	_	Time	_	_	0	_	_	Offset=759-778
+

@@ -1,0 +1,44 @@
+# sent_id = s1
+# text = Super simple In vivo Hoechst staining of unicellular protists
+1	Add	_	Action	_	_	0	_	_	Offset=62-65
+2	1/1000	_	Concentration	_	_	3	Measure	_	Offset=66-72
+3	Hoechst	_	Reagent	_	_	0	_	_	Offset=73-84
+4	Keep	_	Action	_	_	0	_	_	Offset=118-122
+5	cells	_	Reagent	_	_	0	_	_	Offset=123-137
+6	protected	_	Method	_	_	0	_	_	Offset=138-158
+
+# sent_id = s2
+# text = Add 1/1000 Hoechst dye (1 uL into 1 mL volume of cells).Keep cells with dye protected from light.
+1	Incubate	_	Action	_	_	0	_	_	Offset=160-168
+2	room	_	Temperature	_	_	0	_	_	Offset=172-188
+3	10	_	Time	_	_	0	_	_	Offset=193-203
+4	Keep	_	Action	_	_	0	_	_	Offset=204-208
+5	cells	_	Reagent	_	_	0	_	_	Offset=209-223
+6	protected	_	Method	_	_	0	_	_	Offset=224-244
+
+# sent_id = s3
+# text = Incubate at room temperature for 10 minutes.Keep cells with dye protected from light.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=246-256
+2	cells	_	Reagent	_	_	0	_	_	Offset=257-262
+3	1000g	_	Speed	_	_	0	_	_	Offset=266-271
+4	5	_	Time	_	_	0	_	_	Offset=276-285
+
+# sent_id = s4
+# text = Centrifuge cells at 1000g for 5 minutes.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=287-296
+2	fresh	_	Reagent	_	_	0	_	_	Offset=302-322
+
+# sent_id = s5
+# text = Resuspend with fresh growing medium.
+1	minimum	_	Amount	_	_	2	Measure	_	Offset=328-342
+2	medium	_	Reagent	_	_	0	_	_	Offset=346-352
+3	plate	_	Action	_	_	0	_	_	Offset=365-373
+4	slide	_	Location	_	_	0	_	_	Offset=381-386
+5	immediately	_	Modifier	_	_	0	_	_	Offset=387-398
+
+# sent_id = s6
+# text = Use minimum volume of medium in order to plate in to the slide immediately.
+1	Mount	_	Action	_	_	0	_	_	Offset=400-405
+2	slide	_	Location	_	_	0	_	_	Offset=411-416
+3	microscope	_	Device	_	_	0	_	_	Offset=449-459
+

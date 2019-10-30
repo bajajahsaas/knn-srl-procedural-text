@@ -1,0 +1,66 @@
+# sent_id = s1
+# text = Sequential Double Digest
+1	Set	_	Action	_	_	0	_	_	Offset=25-31
+2	reaction	_	Reagent	_	_	0	_	_	Offset=46-54
+3	restriction	_	Reagent	_	_	7	Meronym	_	Offset=65-89
+4	lowest	_	Modifier	_	_	6	Mod-Link	_	Offset=103-109
+5	salt	_	Modifier	_	_	6	Mod-Link	_	Offset=110-114
+6	concentration	_	Concentration	_	_	7	Measure	_	Offset=115-128
+7	buffer	_	Reagent	_	_	0	_	_	Offset=148-154
+8	50	_	Amount	_	_	2	Measure	_	Offset=178-183
+
+# sent_id = s2
+# text = Set up the following reaction using the restriction endonuclease that has the lowest salt concentration in its recommended buffer (total reaction volume 50 µl).
+1	Mix	_	Action	_	_	0	_	_	Offset=186-189
+2	components	_	Reagent	_	_	0	_	_	Offset=190-200
+3	246	_	Action	_	_	0	_	_	Offset=204-213;235
+4	flicking	_	Action	_	_	0	_	_	Offset=255-263
+5	reaction	_	Location	_	_	0	_	_	Offset=269-282
+
+# sent_id = s3
+# text = Mix components by pipetting the reaction mixture up and down, or by "flicking" the reaction tube.
+1	Quick	_	Modifier	_	_	0	_	_	Offset=284-289
+2	spin-down	_	Action	_	_	0	_	_	Offset=300-309
+3	microcentrifuge	_	Device	_	_	0	_	_	Offset=315-330
+
+# sent_id = s4
+# text = Quick ("touch") spin-down in a microcentrifuge.
+1	Incubate	_	Action	_	_	0	_	_	Offset=360-368
+2	1	_	Time	_	_	0	_	_	Offset=373-379
+3	the	_	Temperature	_	_	0	_	_	Offset=383-426
+
+# sent_id = s5
+# text = Do not vortex the reaction.
+1	Adjust	_	Action	_	_	0	_	_	Offset=428-434
+2	salt	_	Modifier	_	_	3	Mod-Link	_	Offset=439-443
+3	concentration	_	Concentration	_	_	0	_	_	Offset=444-457
+4	reaction	_	Reagent	_	_	0	_	_	Offset=465-473
+5	a	_	Amount	_	_	6	Measure	_	Offset=481-495
+6	concentrated	_	Reagent	_	_	0	_	_	Offset=501-527
+
+# sent_id = s6
+# text = Incubate for 1 hour at the enzyme-specific appropriate temperature.
+1	Add	_	Action	_	_	0	_	_	Offset=608-611
+2	second	_	Reagent	_	_	0	_	_	Offset=616-629
+
+# sent_id = s7
+# text = Adjust the salt concentration of the reaction (using a small volume of a concentrated salt solution) to approximate the reaction conditions of the second restriction endonuclease.
+1	Mix	_	Action	_	_	0	_	_	Offset=631-634
+2	components	_	Reagent	_	_	0	_	_	Offset=635-645
+3	691	_	Action	_	_	0	_	_	Offset=649-658;680
+4	reaction	_	Reagent	_	_	0	_	_	Offset=663-679
+5	flicking	_	Action	_	_	0	_	_	Offset=700-708
+6	reaction	_	Location	_	_	0	_	_	Offset=714-727
+
+# sent_id = s8
+# text = Add the second enzyme.
+1	Quick	_	Modifier	_	_	0	_	_	Offset=729-734
+2	spin-down	_	Action	_	_	0	_	_	Offset=745-754
+3	microcentrifuge	_	Device	_	_	0	_	_	Offset=760-775
+
+# sent_id = s9
+# text = Mix components by pipetting the reaction mixture up and down, or by "flicking" the reaction tube.
+1	Incubate	_	Action	_	_	0	_	_	Offset=805-813
+2	1	_	Time	_	_	0	_	_	Offset=818-824
+3	the	_	Temperature	_	_	0	_	_	Offset=828-871
+

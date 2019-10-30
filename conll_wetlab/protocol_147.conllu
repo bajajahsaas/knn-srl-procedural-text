@@ -1,0 +1,373 @@
+# sent_id = s1
+# text = Detection of protein-synthesizing microorganisms in the environment via bioorthogonal non-canonical amino acid tagging (BONCAT)
+1	add	_	Action	_	_	0	_	_	Offset=137-140
+2	AHA	_	Reagent	_	_	0	_	_	Offset=141-144
+3	HPG	_	Reagent	_	_	2	Or	_	Offset=148-151
+4	sterile-filtered	_	Modifier	_	_	8	Mod-Link	_	Offset=160-176
+5	0.2	_	Concentration	_	_	8	Measure	_	Offset=178-184
+6	pH-	_	Modifier	_	_	8	Mod-Link	_	Offset=187-199
+7	pH	_	pH	_	_	8	Measure	_	Offset=201-207
+8	stock	_	Reagent	_	_	0	_	_	Offset=209-223
+9	1	_	Concentration	_	_	0	_	_	Offset=258-270
+
+# sent_id = s2
+# text = Directly add AHA or HPG using a sterile-filtered (0.2 μM), pH- adjusted (pH 7.0) stock solution yielding a final concentration of 1 nM to 1 mM.
+1	perform	_	Action	_	_	0	_	_	Offset=286-315
+2	include	_	Action	_	_	0	_	_	Offset=320-327
+3	366	_	Modifier	_	_	4	Mod-Link	_	Offset=328-338;351
+4	incubations	_	Reagent	_	_	0	_	_	Offset=339-350
+
+# sent_id = s3
+# text = Additionally, perform replicate experiments and include replicated incubations without AHA/HPG.
+1	L-2-amino-4-azidobutanoic	_	Reagent	_	_	0	_	_	Offset=372-428
+2	Dissolve	_	Action	_	_	0	_	_	Offset=430-438
+3	nano-pure	_	Reagent	_	_	0	_	_	Offset=442-457
+4	adjust	_	Action	_	_	0	_	_	Offset=459-465
+5	pH	_	pH	_	_	0	_	_	Offset=469-475
+6	filter	_	Action	_	_	0	_	_	Offset=477-493
+7	0.2	_	Amount	_	_	0	_	_	Offset=495-501
+8	store	_	Action	_	_	0	_	_	Offset=508-513
+9	in	_	Modifier	_	_	0	_	_	Offset=514-525
+10	4	_	Temperature	_	_	0	_	_	Offset=529-532
+
+# sent_id = s4
+# text = For L-2-amino-4-azidobutanoic acid (L-azidohomoalanine, AHA): Dissolve in nano-pure water, adjust to pH 7.0, filter sterilize (0.2 μm), and store in the dark at 4 C.
+1	Prepare	_	Action	_	_	0	_	_	Offset=534-541
+2	stock	_	Reagent	_	_	0	_	_	Offset=542-557
+3	1–100	_	Concentration	_	_	2	Measure	_	Offset=561-569
+
+# sent_id = s5
+# text = Prepare stock solutions of 1–100 mM.
+1	L-2-amino-5-hexynoic	_	Reagent	_	_	0	_	_	Offset=575-630
+2	Dissolve	_	Action	_	_	0	_	_	Offset=632-640
+3	nano-pure	_	Reagent	_	_	0	_	_	Offset=644-659
+4	adjust	_	Action	_	_	0	_	_	Offset=661-667
+5	pH	_	pH	_	_	0	_	_	Offset=671-677
+6	filter	_	Action	_	_	0	_	_	Offset=679-695
+7	0.2	_	Amount	_	_	0	_	_	Offset=697-704
+8	store	_	Action	_	_	0	_	_	Offset=710-715
+9	in	_	Modifier	_	_	0	_	_	Offset=716-727
+10	4	_	Temperature	_	_	0	_	_	Offset=731-734
+
+# sent_id = s6
+# text = For L-2-amino-5-hexynoic acid (L-homopropargylglycine, HPG): Dissolve in nano-pure water, adjust to pH 7.0, filter sterilize (0.2 μm), and store in the dark at 4 C.
+1	Prepare	_	Action	_	_	0	_	_	Offset=736-743
+2	stock	_	Reagent	_	_	0	_	_	Offset=744-759
+3	1–100	_	Concentration	_	_	2	Measure	_	Offset=763-771
+
+# sent_id = s7
+# text = Prepare stock solutions of 1–100 mM.
+1	Fix	_	Action	_	_	0	_	_	Offset=773-776
+2	cells	_	Reagent	_	_	0	_	_	Offset=777-782
+3	according	_	Modifier	_	_	0	_	_	Offset=783-814
+4	immediately	_	Time	_	_	0	_	_	Offset=820-846
+5	fixation	_	Action	_	_	0	_	_	Offset=861-869
+6	3%	_	Concentration	_	_	7	Measure	_	Offset=873-875
+7	formaldehyde	_	Reagent	_	_	0	_	_	Offset=876-901
+8	resuspending	_	Action	_	_	0	_	_	Offset=928-940
+9	pelleted	_	Modifier	_	_	10	Mod-Link	_	Offset=941-949
+10	biomass	_	Reagent	_	_	0	_	_	Offset=950-957
+11	1:1	_	Concentration	_	_	12	Measure	_	Offset=963-966
+12	mix	_	Reagent	_	_	13	Meronym	14:Meronym	Offset=967-970
+13	PBS	_	Reagent	_	_	0	_	_	Offset=974-977
+14	EtOH	_	Reagent	_	_	0	_	_	Offset=978-982
+
+# sent_id = s8
+# text = Fix cells according to standard protocols [34] immediately after sampling either by (1) fixation in 3% formaldehyde (PFA) in PBS (See Steps 3-6) or (2) by resuspending pelleted biomass in a 1:1 mix of PBS:EtOH.
+1	fixation	_	Action	_	_	0	_	_	Offset=1001-1009
+2	PFA	_	Reagent	_	_	0	_	_	Offset=1015-1018
+3	pellet	_	Action	_	_	0	_	_	Offset=1020-1026
+4	biomass	_	Reagent	_	_	0	_	_	Offset=1031-1038
+5	remove	_	Action	_	_	0	_	_	Offset=1040-1046
+6	supernatant	_	Reagent	_	_	0	_	_	Offset=1051-1062
+7	resuspend	_	Action	_	_	0	_	_	Offset=1073-1082
+8	cells	_	Reagent	_	_	0	_	_	Offset=1083-1088
+9	3%	_	Concentration	_	_	10	Measure	_	Offset=1092-1094
+10	PFA	_	Reagent	_	_	0	_	_	Offset=1095-1105
+
+# sent_id = s9
+# text = (See Step 7) For fixation with PFA, pellet the biomass, remove the supernatant (SN), and resuspend cells in 3% PFA in PBS.
+1	add	_	Action	_	_	0	_	_	Offset=1137-1140
+2	PFA	_	Reagent	_	_	0	_	_	Offset=1141-1144
+3	reach	_	Action	_	_	0	_	_	Offset=1148-1175
+4	3%	_	Concentration	_	_	5	Measure	_	Offset=1179-1181
+5	PFA	_	Reagent	_	_	0	_	_	Offset=1182-1185
+
+# sent_id = s10
+# text = For aqueous samples, directly add PFA to reach a final concentration of 3% PFA.
+1	Fix	_	Action	_	_	0	_	_	Offset=1187-1190
+2	3	_	Time	_	_	0	_	_	Offset=1202-1205
+3	on	_	Temperature	_	_	0	_	_	Offset=1206-1212
+4	1	_	Time	_	_	2	Or	_	Offset=1216-1219
+5	RT	_	Temperature	_	_	3	Or	_	Offset=1223-1225
+
+# sent_id = s11
+# text = Fix for either 3 h on ice or 1 h at RT.
+1	Pellet	_	Action	_	_	0	_	_	Offset=1243-1249
+2	biomass	_	Reagent	_	_	0	_	_	Offset=1254-1261
+3	centrifugation	_	Method	_	_	0	_	_	Offset=1265-1279
+4	filter	_	Action	_	_	0	_	_	Offset=1283-1289
+5	0.2	_	Size	_	_	6	Measure	_	Offset=1295-1301
+6	filters	_	Location	_	_	0	_	_	Offset=1302-1309
+
+# sent_id = s12
+# text = After fixation, Pellet the biomass by centrifugation or filter onto 0.2 μm filters.
+1	Wash	_	Action	_	_	0	_	_	Offset=1311-1315
+2	PBS	_	Reagent	_	_	0	_	_	Offset=1321-1324
+3	remove	_	Action	_	_	0	_	_	Offset=1328-1334
+4	remaining	_	Modifier	_	_	5	Mod-Link	_	Offset=1335-1344
+5	PFA	_	Reagent	_	_	0	_	_	Offset=1345-1348
+6	resuspending	_	Action	_	_	0	_	_	Offset=1356-1368
+7	biomass	_	Reagent	_	_	0	_	_	Offset=1369-1376
+8	1:1	_	Concentration	_	_	9	Measure	_	Offset=1380-1383
+9	PBS:	_	Reagent	_	_	0	_	_	Offset=1384-1393
+
+# sent_id = s13
+# text = Wash with PBS to remove remaining PFA before resuspending biomass in 1:1 PBS: EtOH.
+1	Store	_	Action	_	_	0	_	_	Offset=1395-1400
+2	-20°C	_	Temperature	_	_	0	_	_	Offset=1404-1409
+
+# sent_id = s14
+# text = Store at -20°C.
+1	deposit	_	Action	_	_	0	_	_	Offset=1424-1431
+2	PFA	_	Reagent	_	_	0	_	_	Offset=1432-1435
+3	the	_	Reagent	_	_	0	_	_	Offset=1439-1457
+
+# sent_id = s15
+# text = Make sure to deposit PFA in the chemical waste.
+1	pellet	_	Action	_	_	0	_	_	Offset=1478-1484
+2	biomass	_	Reagent	_	_	0	_	_	Offset=1485-1492
+3	remove	_	Action	_	_	0	_	_	Offset=1494-1500
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=1501-1512
+5	resuspend	_	Action	_	_	0	_	_	Offset=1514-1523
+6	1:1	_	Concentration	_	_	7	Measure	_	Offset=1527-1530
+7	PBS:EtOH	_	Reagent	_	_	0	_	_	Offset=1531-1539
+8	store	_	Action	_	_	0	_	_	Offset=1545-1550
+9	-20°C	_	Temperature	_	_	0	_	_	Offset=1554-1559
+
+# sent_id = s16
+# text = For EtOH fixation, pellet biomass, remove supernatant, resuspend in 1:1 PBS:EtOH, and store at -20°C.
+1	Immobilize	_	Action	_	_	0	_	_	Offset=1561-1571
+2	biomass	_	Reagent	_	_	0	_	_	Offset=1572-1579
+3	glass	_	Location	_	_	0	_	_	Offset=1590-1602
+4	filters	_	Location	_	_	3	Or	_	Offset=1606-1613
+
+# sent_id = s17
+# text = Immobilize biomass either on glass slides or filters.
+1	Dry	_	Action	_	_	0	_	_	Offset=1615-1618
+2	46°C	_	Temperature	_	_	0	_	_	Offset=1622-1626
+3	37°C	_	Temperature	_	_	0	_	_	Offset=1652-1656
+
+# sent_id = s18
+# text = Dry at 46°C or, if not available, at 37°C or RT.
+1	Dehydrate	_	Action	_	_	0	_	_	Offset=1664-1673
+2	permeabilize	_	Action	_	_	0	_	_	Offset=1678-1690
+3	cells	_	Reagent	_	_	0	_	_	Offset=1691-1696
+4	sequentially	_	Modifier	_	_	0	_	_	Offset=1700-1712
+5	placing	_	Action	_	_	0	_	_	Offset=1713-1720
+6	slides	_	Reagent	_	_	0	_	_	Offset=1721-1727
+7	filters	_	Reagent	_	_	6	Or	_	Offset=1731-1738
+8	3	_	Time	_	_	0	_	_	Offset=1743-1748
+9	50	_	Size	_	_	10	Measure	_	Offset=1754-1759
+10	tubes	_	Location	_	_	14	Meronym	_	Offset=1760-1765
+11	50	_	Concentration	_	_	14	Measure	_	Offset=1779-1781
+12	80	_	Concentration	_	_	14	Measure	_	Offset=1783-1785
+13	96%	_	Concentration	_	_	14	Measure	_	Offset=1791-1794
+14	ethanol	_	Reagent	_	_	0	_	_	Offset=1795-1802
+
+# sent_id = s19
+# text = Dehydrate and permeabilize cells by sequentially placing slides or filters for 3 min into 50 mL tubes that contain 50, 80, and 96% ethanol.
+1	Dry	_	Action	_	_	0	_	_	Offset=1804-1807
+2	biomass	_	Reagent	_	_	0	_	_	Offset=1808-1815
+3	pressurized	_	Reagent	_	_	0	_	_	Offset=1822-1837
+
+# sent_id = s20
+# text = Dry biomass using pressurized air.
+1	Pellet	_	Action	_	_	0	_	_	Offset=1839-1845
+2	sample	_	Reagent	_	_	0	_	_	Offset=1846-1852
+3	centrifugation	_	Method	_	_	0	_	_	Offset=1857-1871
+4	16,100g	_	Speed	_	_	0	_	_	Offset=1873-1880
+5	max	_	Speed	_	_	4	Or	_	Offset=1884-1887
+
+# sent_id = s21
+# text = Pellet sample via centrifugation (16,100g or max.
+1	5	_	Time	_	_	0	_	_	Offset=1901-1906
+2	RT	_	Temperature	_	_	0	_	_	Offset=1910-1912
+3	resuspend	_	Action	_	_	0	_	_	Offset=1918-1927
+4	250	_	Amount	_	_	6	Measure	_	Offset=1931-1937
+5	80%	_	Concentration	_	_	6	Measure	_	Offset=1938-1941
+6	EtOH	_	Reagent	_	_	0	_	_	Offset=1942-1946
+
+# sent_id = s22
+# text = setting for 5 min at RT) and resuspend in 250 μL 80% EtOH.
+1	Mix	_	Action	_	_	0	_	_	Offset=1948-1951
+2	vortex	_	Method	_	_	0	_	_	Offset=1955-1961
+3	incubate	_	Action	_	_	0	_	_	Offset=1966-1974
+4	3	_	Time	_	_	0	_	_	Offset=1979-1984
+5	RT	_	Temperature	_	_	0	_	_	Offset=1988-1990
+
+# sent_id = s23
+# text = Mix by vortex and incubate for 3 min at RT.
+1	Add	_	Action	_	_	0	_	_	Offset=1992-1995
+2	1.5	_	Amount	_	_	4	Measure	_	Offset=1996-2002
+3	96%	_	Concentration	_	_	4	Measure	_	Offset=2003-2006
+4	EtOH	_	Reagent	_	_	0	_	_	Offset=2007-2011
+5	mix	_	Action	_	_	0	_	_	Offset=2013-2016
+6	vortex	_	Method	_	_	0	_	_	Offset=2020-2026
+7	incubate	_	Action	_	_	0	_	_	Offset=2032-2040
+8	3	_	Time	_	_	0	_	_	Offset=2045-2050
+9	RT	_	Temperature	_	_	0	_	_	Offset=2054-2056
+
+# sent_id = s24
+# text = Add 1.5 mL 96% EtOH, mix by vortex, and incubate for 3 min at RT.
+1	pellet	_	Action	_	_	0	_	_	Offset=2070-2076
+2	sample	_	Reagent	_	_	0	_	_	Offset=2077-2083
+3	centrifugation	_	Method	_	_	0	_	_	Offset=2088-2102
+4	resuspend	_	Action	_	_	0	_	_	Offset=2107-2116
+5	221	_	Amount	_	_	6	Measure	_	Offset=2120-2126
+6	PBS	_	Reagent	_	_	0	_	_	Offset=2127-2130
+
+# sent_id = s25
+# text = Afterwards, pellet sample via centrifugation and resuspend in 221 μL PBS.
+1	prepare	_	Action	_	_	0	_	_	Offset=2302-2309
+2	dye	_	Reagent	_	_	0	_	_	Offset=2314-2324
+3	mixing	_	Action	_	_	0	_	_	Offset=2328-2334
+4	1.25μL	_	Amount	_	_	6	Measure	_	Offset=2335-2341
+5	20	_	Concentration	_	_	6	Measure	_	Offset=2345-2350
+6	CuSO4	_	Reagent	_	_	0	_	_	Offset=2351-2365
+7	2.50μL	_	Amount	_	_	9	Measure	_	Offset=2371-2377
+8	50	_	Concentration	_	_	9	Measure	_	Offset=2381-2386
+9	THPTA	_	Reagent	_	_	0	_	_	Offset=2387-2392
+10	0.30μL	_	Amount	_	_	11	Measure	_	Offset=2397-2403
+11	alkyne	_	Reagent	_	_	0	_	_	Offset=2407-2417
+
+# sent_id = s26
+# text = Removing small volumes of leftover EtOH is not necessary as it does not interfere with the click reaction.
+1	Allow	_	Action	_	_	0	_	_	Offset=2419-2433
+2	3	_	Time	_	_	0	_	_	Offset=2438-2443
+3	RT	_	Temperature	_	_	0	_	_	Offset=2447-2449
+4	in	_	Modifier	_	_	0	_	_	Offset=2450-2461
+
+# sent_id = s27
+# text = If using immobilized biomass, after dehydration of the sample, prepare the dye premix by mixing 1.25μL of 20 mM CuSO4 solution with 2.50μL of 50 mM THPTA and 0.30μL of alkyne dye.
+1	perform	_	Action	_	_	0	_	_	Offset=2479-2518
+2	1-5μM	_	Concentration	_	_	0	_	_	Offset=2545-2550
+
+# sent_id = s28
+# text = Allow to react for 3 min at RT in the dark.
+1	continue	_	Action	_	_	0	_	_	Offset=2818-2826
+
+# sent_id = s29
+# text = We recommend to perform Cu(I)-catalyzed click chemistry at a dye concentration of 1-5μM (final concentration) to guarantee for best signal-to-noise ratios, but substantially lower or higher concentrations can be used, if necessary.
+1	skip	_	Action	_	_	0	_	_	Offset=2839-2854
+
+# sent_id = s30
+# text = We successfully tested concentrations as low as 10 nM and as high as 50μM.
+1	Add	_	Action	_	_	0	_	_	Offset=2856-2859
+2	12.5	_	Amount	_	_	5	Measure	7:Measure	Offset=2860-2867
+3	each	_	Modifier	_	_	2	Mod-Link	_	Offset=2871-2875
+4	100	_	Concentration	_	_	5	Measure	_	Offset=2876-2882
+5	sodium	_	Reagent	_	_	0	_	_	Offset=2883-2899
+6	100	_	Concentration	_	_	7	Measure	_	Offset=2904-2910
+7	aminoguanidine	_	Reagent	_	_	0	_	_	Offset=2911-2939
+8	221	_	Amount	_	_	9	Measure	_	Offset=2943-2949
+9	PBS	_	Reagent	_	_	0	_	_	Offset=2950-2953
+
+# sent_id = s31
+# text = If using immobilized biomass after dehydration, continue.
+1	add	_	Action	_	_	0	_	_	Offset=2961-2964
+2	dye	_	Reagent	_	_	0	_	_	Offset=2969-2979
+3	invert	_	Action	_	_	0	_	_	Offset=2984-2990
+4	tube	_	Location	_	_	0	_	_	Offset=2995-2999
+5	once	_	Numerical	_	_	0	_	_	Offset=3000-3004
+
+# sent_id = s32
+# text = Otherwise, skip to Step 18.
+1	Cover	_	Action	_	_	0	_	_	Offset=3061-3066
+2	sample	_	Reagent	_	_	0	_	_	Offset=3071-3077
+3	20	_	Amount	_	_	4	Measure	_	Offset=3083-3088
+4	click	_	Reagent	_	_	0	_	_	Offset=3096-3110
+5	transfer	_	Action	_	_	0	_	_	Offset=3112-3120
+6	slide	_	Location	_	_	0	_	_	Offset=3125-3130
+7	a	_	Location	_	_	9	Meronym	_	Offset=3136-3151
+8	water	_	Reagent	_	_	0	_	_	Offset=3153-3158
+9	tissue	_	Location	_	_	8	Meronym	_	Offset=3162-3174
+10	incubate	_	Action	_	_	0	_	_	Offset=3181-3189
+11	in	_	Modifier	_	_	0	_	_	Offset=3190-3201
+12	RT	_	Temperature	_	_	0	_	_	Offset=3205-3207
+13	30	_	Time	_	_	0	_	_	Offset=3212-3218
+
+# sent_id = s33
+# text = Add 12.5 μL of each 100 mM sodium ascorbate and 100 mM aminoguanidine hydrochloride to 221 μL PBS.
+1	Wash	_	Action	_	_	0	_	_	Offset=3317-3321
+2	slide	_	Location	_	_	11	Coreference-Link	13:Coreference-Link	Offset=3326-3331
+3	filter	_	Location	_	_	2	Or	_	Offset=3335-3341
+4	three	_	Numerical	_	_	0	_	_	Offset=3342-3353
+5	3	_	Time	_	_	6	Setting	_	Offset=3358-3363
+6	each	_	Modifier	_	_	0	_	_	Offset=3364-3368
+7	PBS-filled	_	Modifier	_	_	9	Mod-Link	_	Offset=3372-3382
+8	50	_	Size	_	_	9	Measure	_	Offset=3383-3388
+9	tubes	_	Location	_	_	0	_	_	Offset=3389-3394
+10	dehydrating	_	Action	_	_	0	_	_	Offset=3402-3413
+11	it	_	Mention	_	_	0	_	_	Offset=3414-3416
+12	incubating	_	Action	_	_	0	_	_	Offset=3420-3430
+13	it	_	Mention	_	_	0	_	_	Offset=3431-3433
+14	3	_	Time	_	_	0	_	_	Offset=3438-3443
+15	50%	_	Concentration	_	_	16	Measure	_	Offset=3447-3450
+16	EtOH	_	Reagent	_	_	0	_	_	Offset=3451-3455
+17	RT	_	Temperature	_	_	0	_	_	Offset=3459-3461
+
+# sent_id = s34
+# text = Then, add the dye premix and invert the tube once (do not mix by vortex to maintain reducing conditions).
+1	all	_	Reagent	_	_	2	Meronym	3:Meronym|4:Meronym	Offset=3494-3506
+2	sodium	_	Reagent	_	_	0	_	_	Offset=3508-3524
+3	aminoguanidine	_	Reagent	_	_	0	_	_	Offset=3529-3543
+4	dye	_	Reagent	_	_	0	_	_	Offset=3573-3583
+5	as	_	Concentration	_	_	1	Measure	_	Offset=3606-3624
+6	added	_	Action	_	_	0	_	_	Offset=3630-3635
+7	directly	_	Modifier	_	_	0	_	_	Offset=3636-3644
+8	sample	_	Reagent	_	_	0	_	_	Offset=3652-3658
+
+# sent_id = s35
+# text = Cover the sample with 20 μL of the click solution, transfer the slide into a humid chamber (water on tissue paper), and incubate in the dark at RT for 30 min.
+1	Invert	_	Action	_	_	0	_	_	Offset=3660-3666
+2	tubes	_	Location	_	_	0	_	_	Offset=3667-3672
+3	once	_	Numerical	_	_	0	_	_	Offset=3673-3677
+4	incubate	_	Action	_	_	0	_	_	Offset=3682-3690
+5	in	_	Modifier	_	_	0	_	_	Offset=3691-3702
+6	RT	_	Temperature	_	_	0	_	_	Offset=3706-3708
+7	30	_	Time	_	_	0	_	_	Offset=3713-3719
+
+# sent_id = s36
+# text = Increasing the incubation time is possible, but typically does not increase fluorescence signal.
+1	wash	_	Action	_	_	0	_	_	Offset=3733-3737
+2	samples	_	Reagent	_	_	0	_	_	Offset=3738-3745
+3	three	_	Numerical	_	_	0	_	_	Offset=3746-3757
+4	PBS	_	Reagent	_	_	0	_	_	Offset=3763-3766
+5	one	_	Numerical	_	_	0	_	_	Offset=3776-3784
+6	50%	_	Concentration	_	_	7	Measure	_	Offset=3788-3791
+7	EtOH	_	Reagent	_	_	0	_	_	Offset=3792-3796
+8	RT	_	Temperature	_	_	0	_	_	Offset=3798-3800
+
+# sent_id = s37
+# text = Wash the slide or filter three times for 3 min each in PBS-filled 50 mL tubes before dehydrating it by incubating it for 3 min in 50% EtOH at RT.
+1	pellet	_	Action	_	_	0	_	_	Offset=3826-3832
+2	samples	_	Reagent	_	_	0	_	_	Offset=3833-3840
+3	centrifugation	_	Method	_	_	0	_	_	Offset=3845-3859
+4	5	_	Time	_	_	0	_	_	Offset=3864-3869
+5	16,100g	_	Speed	_	_	0	_	_	Offset=3873-3880
+6	highest	_	Speed	_	_	5	Or	_	Offset=3885-3900
+7	RT	_	Temperature	_	_	0	_	_	Offset=3905-3907
+
+# sent_id = s38
+# text = If the biomass is in solution, all reagents (sodium ascorbate and aminoguanidine, followed after 3 min by the dye premix, final concentrations as described above) are added directly to the sample.
+1	resuspend	_	Action	_	_	0	_	_	Offset=3918-3927
+2	biomass	_	Reagent	_	_	0	_	_	Offset=3928-3935
+3	1:1	_	Concentration	_	_	4	Measure	_	Offset=3941-3944
+4	mix	_	Reagent	_	_	5	Meronym	6:Meronym	Offset=3945-3948
+5	PBS	_	Reagent	_	_	0	_	_	Offset=3952-3955
+6	EtOH	_	Reagent	_	_	0	_	_	Offset=3956-3960
+7	transfer	_	Action	_	_	0	_	_	Offset=3962-3970
+8	glass	_	Location	_	_	0	_	_	Offset=3978-3989
+9	air-dry	_	Action	_	_	0	_	_	Offset=3995-4002
+

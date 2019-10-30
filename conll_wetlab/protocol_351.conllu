@@ -1,0 +1,222 @@
+# sent_id = s1
+# text = Intracellular Staining With True-Phos™ Perm Buffer in Whole Blood
+1	Warm	_	Action	_	_	0	_	_	Offset=66-70
+2	1	_	Concentration	_	_	3	Measure	_	Offset=71-74
+3	RBC	_	Reagent	_	_	0	_	_	Offset=75-102
+
+# sent_id = s2
+# text = Warm 1 X RBC Lysis/Fixation Solution (Cat# 422401, 10X solution).
+1	0.1	_	Amount	_	_	2	Measure	_	Offset=141-147
+2	whole	_	Reagent	_	_	6	Meronym	_	Offset=151-162
+3	aliquot	_	Action	_	_	0	_	_	Offset=164-171
+4	2	_	Amount	_	_	6	Measure	_	Offset=172-176
+5	1	_	Concentration	_	_	6	Measure	_	Offset=180-183
+6	RBC	_	Reagent	_	_	0	_	_	Offset=184-211
+7	50	_	Size	_	_	8	Measure	_	Offset=217-222
+8	conical	_	Location	_	_	0	_	_	Offset=223-235
+9	warm	_	Action	_	_	0	_	_	Offset=240-244
+10	37°C.	_	Temperature	_	_	0	_	_	Offset=248-253
+
+# sent_id = s3
+# text = For each 0.1 mL of whole blood, aliquot 2 mL of 1 X RBC Lysis/Fixation Solution to a 50 mL conical tube and warm to 37°C.
+1	Chill	_	Action	_	_	0	_	_	Offset=254-259
+2	True-Phos™	_	Reagent	_	_	0	_	_	Offset=260-282
+3	-20°C	_	Temperature	_	_	0	_	_	Offset=286-291
+
+# sent_id = s4
+# text = Chill True-Phos™ Perm Buffer to -20°C.
+1	0.1	_	Amount	_	_	2	Measure	_	Offset=302-308
+2	whole	_	Reagent	_	_	5	Meronym	_	Offset=312-323
+3	aliquot	_	Action	_	_	0	_	_	Offset=325-332
+4	1.0	_	Amount	_	_	5	Measure	_	Offset=333-339
+5	True-Phos™	_	Reagent	_	_	0	_	_	Offset=343-365
+6	chill	_	Action	_	_	0	_	_	Offset=370-375
+7	-20°C	_	Temperature	_	_	0	_	_	Offset=379-384
+
+# sent_id = s5
+# text = For each 0.1 mL of whole blood, aliquot 1.0 mL of True-Phos™ Perm Buffer and chill to -20°C.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=386-393
+2	0.1	_	Amount	_	_	3	Measure	_	Offset=394-400
+3	whole	_	Reagent	_	_	0	_	_	Offset=404-415
+4	50	_	Size	_	_	5	Measure	_	Offset=433-438
+5	conical	_	Location	_	_	0	_	_	Offset=439-451
+
+# sent_id = s6
+# text = Aliquot 0.1 mL of whole blood (heparin) into a 50 mL conical tube for each test Tips: - 22 tests (or 2.2 mL of whole blood) are the maximum number of tests that can be processed in a 50 mL conical, due to volume constraints.
+1	Prepare	_	Action	_	_	0	_	_	Offset=612-619
+2	two	_	Numerical	_	_	0	_	_	Offset=620-623
+3	aliquots	_	Reagent	_	_	0	_	_	Offset=624-632
+
+# sent_id = s7
+# text = -Prepare two aliquots: Negative control: untreated, Positive control: treated with stimuli 
+1	Incubate	_	Action	_	_	0	_	_	Offset=704-712
+2	cells	_	Reagent	_	_	0	_	_	Offset=717-722
+3	appropriate	_	Reagent	_	_	0	_	_	Offset=732-751
+4	suitable	_	Temperature	_	_	0	_	_	Offset=760-780
+5	time	_	Time	_	_	0	_	_	Offset=785-789
+
+# sent_id = s8
+# text = -Incubate the cells with the appropriate stimuli, at the suitable temperature and time.
+1	Fix	_	Action	_	_	0	_	_	Offset=791-794
+2	cells	_	Reagent	_	_	0	_	_	Offset=799-804
+3	immediately	_	Modifier	_	_	0	_	_	Offset=805-816
+4	pre-warmed	_	Modifier	_	_	6	Mod-Link	_	Offset=836-846
+5	1	_	Concentration	_	_	6	Measure	_	Offset=847-850
+6	RBC	_	Reagent	_	_	0	_	_	Offset=851-878
+
+# sent_id = s9
+# text = Fix the cells immediately after treatment by pre-warmed 1 X RBC Lysis/Fixation Solution.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=880-886
+2	pipette	_	Action	_	_	0	_	_	Offset=887-894
+3	thorough	_	Modifier	_	_	0	_	_	Offset=905-913
+4	mixing	_	Action	_	_	0	_	_	Offset=914-920
+
+# sent_id = s10
+# text = Gently pipette to ensure thorough mixing. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=923-931
+2	37°C	_	Temperature	_	_	0	_	_	Offset=935-939
+3	15	_	Time	_	_	0	_	_	Offset=944-954
+4	cells	_	Reagent	_	_	0	_	_	Offset=965-970
+5	fixed	_	Action	_	_	0	_	_	Offset=984-989
+
+# sent_id = s11
+# text = Incubate at 37°C for 15 minutes to ensure cells are properly fixed. 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=992-1002
+2	cells	_	Reagent	_	_	0	_	_	Offset=1003-1008
+3	350	_	Speed	_	_	0	_	_	Offset=1012-1019
+4	room	_	Temperature	_	_	0	_	_	Offset=1023-1039
+5	5	_	Time	_	_	0	_	_	Offset=1044-1053
+6	decant	_	Action	_	_	0	_	_	Offset=1055-1061
+7	supernatant	_	Reagent	_	_	0	_	_	Offset=1062-1073
+8	vortex	_	Action	_	_	0	_	_	Offset=1075-1081
+9	resuspend	_	Action	_	_	0	_	_	Offset=1085-1094
+10	cell	_	Reagent	_	_	0	_	_	Offset=1095-1106
+
+# sent_id = s12
+# text = Centrifuge cells at 350 x g at room temperature for 5 minutes, decant supernatant, vortex to resuspend cell pellet. 
+1	Add	_	Action	_	_	0	_	_	Offset=1109-1112
+2	sufficient	_	Amount	_	_	3	Measure	_	Offset=1113-1123
+3	Cell	_	Reagent	_	_	0	_	_	Offset=1124-1144
+4	wash	_	Action	_	_	0	_	_	Offset=1148-1152
+5	cells	_	Reagent	_	_	0	_	_	Offset=1157-1162
+6	BioLegend	_	Reagent	_	_	3	Or	_	Offset=1207-1237
+7	centrifuge	_	Action	_	_	0	_	_	Offset=1264-1274
+8	350	_	Speed	_	_	0	_	_	Offset=1278-1285
+9	room	_	Temperature	_	_	0	_	_	Offset=1289-1305
+10	5	_	Time	_	_	0	_	_	Offset=1310-1319
+11	decant	_	Action	_	_	0	_	_	Offset=1325-1331
+12	supernatant	_	Reagent	_	_	0	_	_	Offset=1332-1343
+
+# sent_id = s13
+# text = Add sufficient Cell Staining Buffer to wash the cells (approximately 2 ml for each 1 x 106 cells, BioLegend Cell Staining Buffer recommended, Cat#420201), centrifuge at 350 x g at room temperature for 5 minutes, and decant supernatant.
+1	Repeat	_	Action	_	_	0	_	_	Offset=1345-1351
+
+# sent_id = s14
+# text = Repeat, for a total of two washes. 
+1	Gently	_	Modifier	_	_	0	_	_	Offset=1381-1387
+2	pipette	_	Action	_	_	0	_	_	Offset=1388-1395
+3	cells	_	Reagent	_	_	0	_	_	Offset=1396-1401
+4	residual	_	Reagent	_	_	0	_	_	Offset=1408-1423
+5	resuspend	_	Action	_	_	0	_	_	Offset=1427-1436
+6	cell	_	Reagent	_	_	0	_	_	Offset=1437-1448
+
+# sent_id = s15
+# text = Gently pipette cells using residual volume to resuspend cell pellet. 
+1	permeabilize	_	Action	_	_	0	_	_	Offset=1468-1480
+2	cells	_	Reagent	_	_	0	_	_	Offset=1481-1486
+3	adding	_	Action	_	_	0	_	_	Offset=1490-1496
+4	pre-chilled	_	Modifier	_	_	5	Mod-Link	_	Offset=1497-1508
+5	True-Phos™	_	Reagent	_	_	0	_	_	Offset=1509-1531
+
+# sent_id = s16
+# text = While vortexing, permeabilize cells by adding pre-chilled True-Phos™ Perm Buffer. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=1632-1640
+2	-20°C	_	Temperature	_	_	0	_	_	Offset=1644-1649
+3	60	_	Time	_	_	0	_	_	Offset=1654-1664
+4	cells	_	Reagent	_	_	0	_	_	Offset=1675-1680
+5	permeabilized	_	Action	_	_	0	_	_	Offset=1694-1707
+
+# sent_id = s17
+# text = Example: for 1 mL of whole blood, permeabilize with 10 mL of pre-chilled True-Phos™ Perm Buffer. 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1710-1720
+2	cells	_	Reagent	_	_	0	_	_	Offset=1721-1726
+3	1000	_	Speed	_	_	0	_	_	Offset=1730-1738
+4	room	_	Temperature	_	_	0	_	_	Offset=1742-1758
+5	5	_	Time	_	_	0	_	_	Offset=1763-1772
+6	decant	_	Action	_	_	0	_	_	Offset=1774-1780
+7	supernatant	_	Reagent	_	_	0	_	_	Offset=1781-1792
+8	vortex	_	Action	_	_	0	_	_	Offset=1794-1800
+9	resuspend	_	Action	_	_	0	_	_	Offset=1804-1813
+10	cell	_	Reagent	_	_	0	_	_	Offset=1814-1825
+
+# sent_id = s18
+# text = Incubate at -20°C for 60 minutes to ensure cells are properly permeabilized. 
+1	Add	_	Action	_	_	0	_	_	Offset=1828-1831
+2	sufficient	_	Amount	_	_	3	Measure	_	Offset=1832-1842
+3	Cell	_	Reagent	_	_	0	_	_	Offset=1843-1863
+4	wash	_	Action	_	_	0	_	_	Offset=1867-1871
+5	cells	_	Reagent	_	_	0	_	_	Offset=1876-1881
+6	centrifuge	_	Action	_	_	0	_	_	Offset=1883-1893
+7	cells	_	Reagent	_	_	0	_	_	Offset=1894-1899
+8	1000	_	Speed	_	_	0	_	_	Offset=1903-1911
+9	room	_	Temperature	_	_	0	_	_	Offset=1915-1931
+10	5	_	Time	_	_	0	_	_	Offset=1936-1945
+11	decant	_	Action	_	_	0	_	_	Offset=1947-1953
+12	supernatant	_	Reagent	_	_	0	_	_	Offset=1954-1965
+
+# sent_id = s19
+# text = Centrifuge cells at 1000 x g at room temperature for 5 minutes, decant supernatant, vortex to resuspend cell pellet. 
+1	Repeat	_	Action	_	_	0	_	_	Offset=1967-1973
+
+# sent_id = s20
+# text = Add sufficient Cell Staining Buffer to wash the cells, centrifuge cells at 1000 x g at room temperature for 5 minutes, decant supernatant.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=2003-2012
+2	cells	_	Reagent	_	_	0	_	_	Offset=2017-2022
+3	Cell	_	Reagent	_	_	0	_	_	Offset=2038-2058
+4	starting	_	Amount	_	_	3	Measure	_	Offset=2077-2101
+
+# sent_id = s21
+# text = Repeat, for a total of two washes. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=2213-2221
+2	100	_	Reagent	_	_	0	_	_	Offset=2222-2228
+3	12	_	Size	_	_	4	Measure	_	Offset=2234-2244
+4	tube	_	Location	_	_	0	_	_	Offset=2245-2249
+
+# sent_id = s22
+# text = Resuspend the cells in a volume of Cell Staining Buffer equivalent to the starting volume of blood. 
+1	Add	_	Action	_	_	0	_	_	Offset=2252-2255
+2	antibody	_	Reagent	_	_	0	_	_	Offset=2256-2276
+3	appropriate	_	Location	_	_	0	_	_	Offset=2280-2297
+4	vortex	_	Action	_	_	0	_	_	Offset=2299-2305
+5	mix	_	Action	_	_	0	_	_	Offset=2309-2312
+6	incubate	_	Action	_	_	0	_	_	Offset=2318-2326
+7	30	_	Time	_	_	0	_	_	Offset=2331-2341
+8	room	_	Temperature	_	_	0	_	_	Offset=2345-2361
+9	dark	_	Location	_	_	0	_	_	Offset=2369-2373
+
+# sent_id = s23
+# text = Example: if starting volume of whole blood was 1 mL, resuspend cell pellet in 1 mL of Cell Staining Buffer. 
+1	Add	_	Action	_	_	0	_	_	Offset=2376-2379
+2	2	_	Amount	_	_	3	Measure	_	Offset=2380-2384
+3	Cell	_	Reagent	_	_	0	_	_	Offset=2388-2408
+4	centrifuge	_	Action	_	_	0	_	_	Offset=2410-2420
+5	cells	_	Reagent	_	_	0	_	_	Offset=2421-2426
+6	1000	_	Speed	_	_	0	_	_	Offset=2430-2438
+7	room	_	Temperature	_	_	0	_	_	Offset=2442-2458
+8	5	_	Time	_	_	0	_	_	Offset=2463-2472
+9	decant	_	Action	_	_	0	_	_	Offset=2474-2480
+10	supernatant	_	Reagent	_	_	0	_	_	Offset=2481-2492
+
+# sent_id = s24
+# text = Transfer 100 ml to a 12 x 75 mm tube. 
+1	Repeat	_	Action	_	_	0	_	_	Offset=2494-2500
+
+# sent_id = s25
+# text = Add antibody cocktail(s) to appropriate tubes, vortex to mix, and incubate for 30 minutes at room temperature in the dark. 
+1	Resuspend	_	Action	_	_	0	_	_	Offset=2530-2539
+2	cells	_	Reagent	_	_	0	_	_	Offset=2540-2545
+3	500	_	Amount	_	_	4	Measure	_	Offset=2563-2569
+4	Cell	_	Reagent	_	_	0	_	_	Offset=2573-2593
+5	analyze	_	Action	_	_	0	_	_	Offset=2598-2605
+6	flow	_	Device	_	_	0	_	_	Offset=2613-2627
+

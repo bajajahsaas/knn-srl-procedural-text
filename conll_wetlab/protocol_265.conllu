@@ -1,0 +1,66 @@
+# sent_id = s1
+# text = Re-amplification of CRISPRa and CRISPRi libraries (v1.0)Reference: Genome-Scale CRISPR-Mediated Control of Gene Repression and A
+1	Dilute	_	Action	_	_	0	_	_	Offset=129-135
+2	sub-library	_	Reagent	_	_	0	_	_	Offset=141-152
+3	50	_	Concentration	_	_	0	_	_	Offset=156-164
+4	water	_	Reagent	_	_	0	_	_	Offset=168-173
+5	EB	_	Action	_	_	0	_	_	Offset=177-194
+
+# sent_id = s2
+# text = Dilute each sub-library to 50 ng/ul in water or EB 	Electroporate the library a	Pre-chill 01 cm cuvettes, megaX cells, 10% glycerol on ice.
+1	mix	_	Action	_	_	0	_	_	Offset=362-365
+2	incubate	_	Action	_	_	0	_	_	Offset=377-385
+
+# sent_id = s3
+# text = Follow the table above for the amounts of sub-library plasmid DNA and MegaX competent cells, mix gently and incubate on ice for 30 min.	
+1	Add	_	Action	_	_	0	_	_	Offset=406-409
+2	mix	_	Action	_	_	0	_	_	Offset=456-459
+3	transfer	_	Action	_	_	0	_	_	Offset=479-487
+
+# sent_id = s4
+# text = Add pre-chilled 10% glycerol to the MageX-library mix for a final 75 ul, transfer the mix to a prechilled 01 cm cuvette.	
+1	Electroporate	_	Action	_	_	0	_	_	Offset=528-541
+
+# sent_id = s5
+# text = Electroporate at 20 kV, 200 ohms, 25 uF (Gene Pulser Xcell, Bio-rad).	
+1	Transfer	_	Action	_	_	0	_	_	Offset=599-607
+
+# sent_id = s6
+# text = Transfer cells to a culture tube.	
+1	Wash	_	Action	_	_	0	_	_	Offset=675-679
+
+# sent_id = s7
+# text = Use 1 ml pipettes and gel loading tips.	
+1	Incubate	_	Action	_	_	0	_	_	Offset=737-745
+
+# sent_id = s8
+# text = Wash cells out gently with 300 ul SOC twice (total 600 ul).		
+1	Plate	_	Action	_	_	0	_	_	Offset=775-780
+
+# sent_id = s9
+# text = Incubate at 37oC, 250 rpm, 15 hour. 	
+1	Plate	_	Action	_	_	0	_	_	Offset=804-809
+
+# sent_id = s10
+# text = Plate the transformations. 	
+1	Incubate	_	Action	_	_	0	_	_	Offset=880-888
+
+# sent_id = s11
+# text = Plate all in one large square plate per sub-library, use autoclaved beads.	
+1	Collect	_	Action	_	_	0	_	_	Offset=913-920
+2	elute	_	Action	_	_	0	_	_	Offset=973-978
+
+# sent_id = s12
+# text = Incubate at 37oC for 18 hours. 	
+1	PCR	_	Action	_	_	0	_	_	Offset=1071-1074
+
+# sent_id = s13
+# text = Collect all colonies with LB and do one maxiprep per plate, elute in 500 ul EB; an ideal concentration is about 2~3 ug/ul. 	
+1	Pool	_	Action	_	_	0	_	_	Offset=1122-1126
+2	measure	_	Action	_	_	0	_	_	Offset=1228-1235
+3	dilute	_	Action	_	_	0	_	_	Offset=1265-1271
+
+# sent_id = s14
+# text = To sequence the library, you can PCR the sgRNA region with the following primers. 	
+1	Run	_	Action	_	_	0	_	_	Offset=1298-1301
+

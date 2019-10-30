@@ -1,0 +1,81 @@
+# sent_id = s1
+# text = LB Agar Plates
+1	20g	_	Amount	_	_	2	Measure	_	Offset=15-18
+2	Agar	_	Reagent	_	_	0	_	_	Offset=22-26
+3	add	_	Action	_	_	0	_	_	Offset=27-30
+4	dH2O	_	Reagent	_	_	0	_	_	Offset=32-36
+5	500mL	_	Amount	_	_	0	_	_	Offset=41-46
+
+# sent_id = s2
+# text = 20g of Agar add (dH2O) to 500mL. 
+1	Swirl	_	Action	_	_	0	_	_	Offset=49-54
+2	stir	_	Device	_	_	0	_	_	Offset=69-77
+3	10	_	Time	_	_	0	_	_	Offset=82-92
+
+# sent_id = s3
+# text = Swirl to mix with a stir bar for 10 minutes. 
+1	Cover	_	Action	_	_	0	_	_	Offset=95-100
+2	top	_	Seal	_	_	0	_	_	Offset=105-108
+3	flask	_	Location	_	_	2	Meronym	_	Offset=116-121
+4	aluminum	_	Reagent	_	_	0	_	_	Offset=127-140
+5	label	_	Action	_	_	0	_	_	Offset=145-150
+6	autoclave	_	Seal	_	_	0	_	_	Offset=156-170
+
+# sent_id = s4
+# text = Cover the top of the flask with aluminum foil and label with autoclave tape.
+1	Autoclave	_	Action	_	_	0	_	_	Offset=172-181
+2	liquid	_	Method	_	_	0	_	_	Offset=189-203
+3	30	_	Time	_	_	0	_	_	Offset=208-218
+
+# sent_id = s5
+# text = Autoclave on the liquid setting for 30 minutes.
+1	removing	_	Action	_	_	0	_	_	Offset=226-234
+2	solution	_	Reagent	_	_	0	_	_	Offset=239-247
+3	autoclave	_	Device	_	_	0	_	_	Offset=257-266
+4	agar	_	Reagent	_	_	0	_	_	Offset=278-291
+5	cool	_	Action	_	_	0	_	_	Offset=295-299
+6	55°C	_	Temperature	_	_	0	_	_	Offset=303-307
+
+# sent_id = s6
+# text = After removing the solution from the autoclave, allow the agar solution to cool to 55°C.
+1	Add	_	Action	_	_	0	_	_	Offset=309-312
+2	appropriate	_	Generic-Measure	_	_	3	Measure	_	Offset=317-335
+3	desired	_	Reagent	_	_	0	_	_	Offset=339-357
+4	solution	_	Reagent	_	_	0	_	_	Offset=365-373
+5	swirl	_	Action	_	_	0	_	_	Offset=378-383
+
+# sent_id = s7
+# text = Add the appropriate amount of desired antibiotic to the solution and swirl to mix.
+1	Pour	_	Action	_	_	0	_	_	Offset=455-459
+2	~20mL	_	Amount	_	_	3	Measure	_	Offset=460-465
+3	LB	_	Reagent	_	_	0	_	_	Offset=469-476
+4	10cm	_	Size	_	_	5	Measure	_	Offset=481-485
+5	polystyrene	_	Location	_	_	0	_	_	Offset=486-508
+
+# sent_id = s8
+# text = iGEM standard concentrations:
+1	Place	_	Action	_	_	0	_	_	Offset=510-515
+2	lids	_	Seal	_	_	0	_	_	Offset=520-524
+3	plates	_	Location	_	_	2	Meronym	_	Offset=532-538
+4	cool	_	Action	_	_	0	_	_	Offset=557-561
+5	30-60	_	Time	_	_	0	_	_	Offset=566-579
+
+# sent_id = s9
+# text = TetKanCam15ug/mL50ug/mL35ug/mL. 
+1	Invert	_	Action	_	_	0	_	_	Offset=601-607
+2	plates	_	Location	_	_	0	_	_	Offset=612-618
+3	let	_	Action	_	_	0	_	_	Offset=623-630
+4	several	_	Time	_	_	0	_	_	Offset=635-653
+5	overnight	_	Time	_	_	4	Or	_	Offset=657-666
+
+# sent_id = s10
+# text = Pour ~20mL of LB agar per 10cm polystyrene Petri dish.
+1	Label	_	Action	_	_	0	_	_	Offset=668-673
+2	bottom	_	Location	_	_	0	_	_	Offset=678-684
+3	plates	_	Location	_	_	2	Meronym	_	Offset=688-694
+4	store	_	Action	_	_	0	_	_	Offset=724-729
+5	plastic	_	Reagent	_	_	0	_	_	Offset=733-745
+6	sealed	_	Action	_	_	0	_	_	Offset=749-755
+7	parafilm	_	Reagent	_	_	0	_	_	Offset=761-769
+8	4°C	_	Temperature	_	_	0	_	_	Offset=773-776
+

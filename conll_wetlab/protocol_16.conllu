@@ -1,0 +1,14 @@
+# sent_id = s1
+# text = Non-radioactive phosphorylation with T4 PNK
+1	Incubate	_	Action	_	_	0	_	_	Offset=75-83
+2	37°C	_	Temperature	_	_	0	_	_	Offset=87-91
+3	30	_	Time	_	_	0	_	_	Offset=96-106
+
+# sent_id = s2
+# text = Set up the following reaction.
+1	Heat	_	Action	_	_	0	_	_	Offset=108-112
+2	inactivate	_	Reagent	_	_	0	_	_	Offset=113-123
+3	incubating	_	Action	_	_	0	_	_	Offset=127-137
+4	65°C	_	Temperature	_	_	0	_	_	Offset=141-145
+5	20	_	Time	_	_	0	_	_	Offset=150-160
+

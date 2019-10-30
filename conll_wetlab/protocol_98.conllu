@@ -1,0 +1,21 @@
+# sent_id = s1
+# text = Script R8: Plotting Bacterial Taxonomy from MetaPhlan
+1	Load	_	Action	_	_	0	_	_	Offset=54-58
+
+# sent_id = s2
+# text = Load the libraries needed for analysis.
+1	Read	_	Action	_	_	0	_	_	Offset=94-98
+2	format	_	Action	_	_	0	_	_	Offset=119-125
+
+# sent_id = s3
+# text = Read in the metadata and format it so that it matches the samples we are working with.
+1	Format	_	Action	_	_	0	_	_	Offset=377-383
+
+# sent_id = s4
+# text = We only want to look at a certain number of taxa to make the data more visually informative.
+1	Look	_	Action	_	_	0	_	_	Offset=396-403
+
+# sent_id = s5
+# text = Now we are ready to read in the MetaPhlAn merged output at the genus level and format it for plotting.
+1	Plot	_	Action	_	_	0	_	_	Offset=417-421
+

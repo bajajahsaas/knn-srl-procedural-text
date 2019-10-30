@@ -1,0 +1,273 @@
+# sent_id = s1
+# text = Gambierdiscus Whole Cell Hybridization
+1	Prepare	_	Action	_	_	0	_	_	Offset=39-46
+2	Prehybridization/	_	Reagent	_	_	0	_	_	Offset=47-85
+
+# sent_id = s2
+# text = Prepare Prehybridization/ Hybridization Buffer.
+1	50	_	Amount	_	_	2	Measure	_	Offset=203-208
+2	centrifuge	_	Location	_	_	0	_	_	Offset=209-224
+3	labeled	_	Action	_	_	0	_	_	Offset=225-232
+4	prehybridization”	_	Method	_	_	0	_	_	Offset=234-258
+5	add	_	Action	_	_	0	_	_	Offset=259-262
+6	20.4	_	Amount	_	_	7	Measure	_	Offset=264-271
+7	Milli-Q	_	Reagent	_	_	0	_	_	Offset=272-285
+8	6.0	_	Amount	_	_	10	Measure	_	Offset=286-292
+9	25X	_	Concentration	_	_	10	Measure	_	Offset=293-296
+10	SET	_	Reagent	_	_	0	_	_	Offset=297-300
+11	300	_	Amount	_	_	13	Measure	_	Offset=301-307
+12	10%	_	Concentration	_	_	13	Measure	_	Offset=308-311
+13	IGEPAL	_	Reagent	_	_	0	_	_	Offset=312-325
+14	300	_	Amount	_	_	15	Measure	_	Offset=326-332
+15	Poly	_	Reagent	_	_	0	_	_	Offset=333-339
+16	10	_	Concentration	_	_	15	Measure	_	Offset=340-348
+17	3.0	_	Amount	_	_	18	Measure	_	Offset=381-387
+18	Formamide	_	Reagent	_	_	0	_	_	Offset=388-397
+
+# sent_id = s3
+# text = The Promega filtration manifold has a 14-sample capacity.
+1	Prepare	_	Action	_	_	0	_	_	Offset=445-452
+2	hybridization	_	Reagent	_	_	0	_	_	Offset=453-473
+
+# sent_id = s4
+# text = The following recipe prepares buffer for 15 samples.
+1	sample	_	Reagent	_	_	0	_	_	Offset=531-537
+2	use	_	Action	_	_	0	_	_	Offset=539-542
+3	1	_	Amount	_	_	4	Measure	_	Offset=543-547
+4	buffer	_	Reagent	_	_	0	_	_	Offset=548-554
+5	10	_	Amount	_	_	6	Measure	_	Offset=557-562
+6	working	_	Reagent	_	_	0	_	_	Offset=563-582
+
+# sent_id = s5
+# text = In a 50 mL centrifuge tube labeled “prehybridization” buffer add: 20.4 mL Milli-Q water 6.0 mL 25X SET 300 μL 10% IGEPAL CA-630 300 μL Poly A 10 mg/mL (3-10 freezer in Styrofoam box) 3.0 mL Formamide* (in flammable refrigerator/freezer in 3-30). 
+1	14	_	Numerical	_	_	2	Measure	_	Offset=594-596
+2	samples	_	Reagent	_	_	0	_	_	Offset=597-604
+3	transfer	_	Action	_	_	0	_	_	Offset=606-614
+4	14	_	Amount	_	_	5	Measure	_	Offset=615-620
+5	buffer	_	Reagent	_	_	0	_	_	Offset=621-627
+6	15	_	Amount	_	_	7	Measure	_	Offset=635-640
+7	tube	_	Location	_	_	0	_	_	Offset=641-645
+8	hybridization	_	Method	_	_	0	_	_	Offset=655-675
+9	add	_	Action	_	_	0	_	_	Offset=680-683
+10	140	_	Amount	_	_	11	Measure	_	Offset=684-690
+11	probe	_	Reagent	_	_	0	_	_	Offset=691-696
+12	14	_	Generic-Measure	_	_	11	Measure	_	Offset=698-708
+
+# sent_id = s6
+# text = Prepare hybridization buffer: Probe working stock concentration = 200 ng/μL.
+1	Prepare	_	Action	_	_	0	_	_	Offset=711-718
+2	0.2X	_	Concentration	_	_	3	Measure	_	Offset=719-723
+3	SET	_	Reagent	_	_	0	_	_	Offset=724-732
+4	120	_	Amount	_	_	6	Measure	_	Offset=767-773
+5	25X	_	Concentration	_	_	6	Measure	_	Offset=774-777
+6	SET	_	Reagent	_	_	0	_	_	Offset=778-781
+7	14.880	_	Amount	_	_	8	Measure	_	Offset=782-791
+8	Milli-Q	_	Reagent	_	_	0	_	_	Offset=792-805
+9	20ul	_	Amount	_	_	10	Measure	_	Offset=806-810
+10	Calcifluor	_	Reagent	_	_	0	_	_	Offset=814-824
+
+# sent_id = s7
+# text = For each sample, use 1 mL buffer + 10 μL working stock probe.
+1	Place	_	Action	_	_	0	_	_	Offset=841-846
+2	Whatman	_	Device	_	_	0	_	_	Offset=847-871
+3	5	_	Generic-Measure	_	_	2	Setting	_	Offset=873-877
+4	25	_	Generic-Measure	_	_	2	Setting	_	Offset=879-884
+5	shiny-side	_	Method	_	_	0	_	_	Offset=887-900
+6	filter	_	Location	_	_	0	_	_	Offset=909-925
+7	minimal	_	Modifier	_	_	8	Mod-Link	_	Offset=931-938
+8	vacuum	_	Device	_	_	0	_	_	Offset=939-945
+9	applied	_	Action	_	_	0	_	_	Offset=946-953
+
+# sent_id = s8
+# text = Thus, for 14 samples, transfer 14 mL buffer into a 15 mL tube labeled “hybridization buffer and add 140 µL probe (14 x 10 μL).
+1	wet	_	Action	_	_	0	_	_	Offset=999-1002
+2	filter	_	Device	_	_	0	_	_	Offset=1003-1009
+3	Milli-Q	_	Reagent	_	_	0	_	_	Offset=1015-1022
+4	add	_	Action	_	_	0	_	_	Offset=1024-1027
+5	o-ring	_	Location	_	_	0	_	_	Offset=1032-1038
+6	chimney	_	Location	_	_	0	_	_	Offset=1047-1054
+
+# sent_id = s9
+# text = Prepare 0.2X SET Wash For 15 samples (1 mL per sample): 120 μL 25X SET 14.880 mL Milli-Q water 20ul of Calcifluor (3-30 fridge). 
+1	Tighten	_	Action	_	_	0	_	_	Offset=1056-1063
+2	only	_	Modifier	_	_	0	_	_	Offset=1067-1071
+3	turning	_	Action	_	_	0	_	_	Offset=1072-1079
+4	base	_	Location	_	_	0	_	_	Offset=1080-1084
+5	filter	_	Location	_	_	0	_	_	Offset=1092-1106
+
+# sent_id = s10
+# text = Place Whatman Cyclopore filter (5 μm, 25 mm), shiny-side up, on the filter unit base with minimal vacuum applied (2.5” Hg = 65 mm Hg).
+1	Discard	_	Action	_	_	0	_	_	Offset=1108-1115
+2	blue	_	Device	_	_	0	_	_	Offset=1116-1135
+
+# sent_id = s11
+# text = With continued vacuum, wet filter with Milli-Q, add the o-ring and the chimney.
+1	Label	_	Action	_	_	0	_	_	Offset=1137-1142
+2	towers	_	Location	_	_	0	_	_	Offset=1147-1153
+3	appropriate	_	Modifier	_	_	0	_	_	Offset=1163-1174
+4	sample	_	Method	_	_	0	_	_	Offset=1175-1193
+
+# sent_id = s12
+# text = Tighten by only turning base of the filter chimney!
+1	Mix	_	Action	_	_	0	_	_	Offset=1334-1337
+2	sample	_	Reagent	_	_	0	_	_	Offset=1338-1344
+3	well	_	Modifier	_	_	0	_	_	Offset=1345-1349
+4	remove	_	Action	_	_	0	_	_	Offset=1380-1386
+5	aliquot	_	Reagent	_	_	0	_	_	Offset=1390-1397
+6	sample	_	Reagent	_	_	5	Meronym	_	Offset=1401-1407
+7	place	_	Action	_	_	0	_	_	Offset=1412-1417
+8	membrane	_	Reagent	_	_	0	_	_	Offset=1427-1435
+
+# sent_id = s13
+# text = Discard blue backing filter.
+1	Filter	_	Action	_	_	0	_	_	Offset=1468-1474
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=1475-1479
+3	tower	_	Location	_	_	0	_	_	Offset=1480-1485
+
+# sent_id = s14
+# text = Label the towers with the appropriate sample information.
+1	EMPTY	_	Action	_	_	0	_	_	Offset=1503-1508
+2	CONTENTS	_	Reagent	_	_	0	_	_	Offset=1509-1517
+3	FILTRATION	_	Device	_	_	2	Meronym	_	Offset=1521-1540
+4	METHANOL	_	Location	_	_	0	_	_	Offset=1558-1579
+
+# sent_id = s15
+# text = Include: Site ID and number, Sampling Month and Hybridization Date.
+1	Add	_	Action	_	_	0	_	_	Offset=1581-1584
+2	1	_	Amount	_	_	3	Measure	_	Offset=1585-1589
+3	prehybridization	_	Reagent	_	_	0	_	_	Offset=1590-1613
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=1617-1621
+5	tower	_	Location	_	_	0	_	_	Offset=1622-1627
+
+# sent_id = s16
+# text = (Use a sticky label that can later be placed onto a microscope slide).
+1	Prehybridize	_	Action	_	_	0	_	_	Offset=1629-1641
+2	cells	_	Reagent	_	_	0	_	_	Offset=1646-1651
+3	5	_	Time	_	_	0	_	_	Offset=1656-1665
+4	room	_	Temperature	_	_	0	_	_	Offset=1669-1685
+
+# sent_id = s17
+# text = Mix sample well (inverting tube ~6 times) and remove an aliquot of sample and place onto the membrane (record volume to sample used).
+1	Filter	_	Action	_	_	0	_	_	Offset=1687-1693
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=1694-1698
+3	sample	_	Reagent	_	_	0	_	_	Offset=1699-1705
+
+# sent_id = s18
+# text = Filter each tower to near dryness.
+1	Add	_	Action	_	_	0	_	_	Offset=1723-1726
+2	1	_	Amount	_	_	3	Measure	_	Offset=1727-1731
+3	hybridization	_	Reagent	_	_	4	Meronym	_	Offset=1732-1752
+4	oligonucleotide	_	Reagent	_	_	0	_	_	Offset=1768-1789
+
+# sent_id = s19
+# text = EMPTY CONTENTS OF FILTRATION MANIFOLD (THE “PIG”) INTO METHANOL WASTE CARBOY!
+1	Cap	_	Action	_	_	0	_	_	Offset=1791-1794
+2	tubes	_	Location	_	_	0	_	_	Offset=1799-1804
+3	place	_	Action	_	_	0	_	_	Offset=1809-1814
+4	filter	_	Device	_	_	0	_	_	Offset=1819-1834
+5	large	_	Modifier	_	_	7	Mod-Link	_	Offset=1842-1847
+6	black	_	Modifier	_	_	7	Mod-Link	_	Offset=1848-1853
+7	plastic	_	Location	_	_	8	Meronym	_	Offset=1854-1865
+8	wet	_	Device	_	_	0	_	_	Offset=1879-1894
+9	minimize	_	Action	_	_	0	_	_	Offset=1903-1923
+
+# sent_id = s20
+# text = Add 1 mL prehybridization buffer to each tower.
+1	Fold	_	Action	_	_	0	_	_	Offset=1925-1934
+2	bag	_	Location	_	_	4	Coreference-Link	_	Offset=1939-1942
+3	seal	_	Action	_	_	0	_	_	Offset=1947-1951
+4	it	_	Mention	_	_	0	_	_	Offset=1952-1954
+5	binder	_	Device	_	_	0	_	_	Offset=1962-1973
+
+# sent_id = s21
+# text = Prehybridize the cells for 5 minutes at room temperature.
+1	Place	_	Action	_	_	0	_	_	Offset=1975-1980
+2	filter	_	Device	_	_	0	_	_	Offset=1985-2000
+3	tube	_	Location	_	_	5	Meronym	_	Offset=2009-2013
+4	0.2X	_	Concentration	_	_	5	Measure	_	Offset=2017-2021
+5	SET	_	Reagent	_	_	0	_	_	Offset=2022-2025
+6	incubator	_	Device	_	_	0	_	_	Offset=2035-2044
+7	samples	_	Reagent	_	_	0	_	_	Offset=2059-2066
+8	hybridize	_	Action	_	_	0	_	_	Offset=2070-2079
+9	hour	_	Time	_	_	0	_	_	Offset=2087-2091
+10	probe's	_	Temperature	_	_	0	_	_	Offset=2099-2132
+
+# sent_id = s22
+# text = Filter each sample to near dryness.
+1	filter	_	Action	_	_	0	_	_	Offset=2152-2158
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=2159-2163
+3	sample	_	Reagent	_	_	0	_	_	Offset=2164-2170
+
+# sent_id = s23
+# text = Add 1 mL hybridization buffer containing the oligonucleotide probe.
+1	Add	_	Action	_	_	0	_	_	Offset=2188-2191
+2	1.0	_	Amount	_	_	4	Measure	_	Offset=2192-2198
+3	0.2X	_	Concentration	_	_	4	Measure	_	Offset=2199-2203
+4	SET	_	Reagent	_	_	0	_	_	Offset=2204-2207
+5	50˚C	_	Temperature	_	_	0	_	_	Offset=2209-2213
+6	each	_	Modifier	_	_	7	Mod-Link	_	Offset=2218-2222
+7	sample	_	Reagent	_	_	0	_	_	Offset=2223-2229
+8	incubate	_	Action	_	_	0	_	_	Offset=2246-2254
+9	5	_	Time	_	_	0	_	_	Offset=2259-2268
+10	room	_	Temperature	_	_	0	_	_	Offset=2272-2288
+
+# sent_id = s24
+# text = Cap the tubes and place the filter manifold into a large black plastic bag containing a wet paper towel to help minimize evaporation.
+1	Filter	_	Action	_	_	0	_	_	Offset=2290-2296
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=2297-2301
+3	sample	_	Reagent	_	_	0	_	_	Offset=2302-2308
+
+# sent_id = s25
+# text = Fold over the bag and seal it with a binder clip.
+1	remove	_	Action	_	_	0	_	_	Offset=2350-2356
+2	chimney	_	Location	_	_	0	_	_	Offset=2361-2368
+
+# sent_id = s26
+# text = Place the filter manifold and the tube of 0.2X SET into the incubator and allow the samples to hybridize for an hour at the probe's hybridization temperature.
+1	Remove	_	Action	_	_	0	_	_	Offset=2419-2425
+2	filter	_	Device	_	_	5	Coreference-Link	_	Offset=2430-2436
+3	fritted	_	Location	_	_	0	_	_	Offset=2446-2458
+4	place	_	Action	_	_	0	_	_	Offset=2463-2468
+5	it	_	Mention	_	_	0	_	_	Offset=2469-2471
+6	microscope	_	Location	_	_	0	_	_	Offset=2477-2493
+7	forceps	_	Device	_	_	0	_	_	Offset=2500-2507
+
+# sent_id = s27
+# text = After incubation, filter each sample to near dryness.
+1	Add	_	Action	_	_	0	_	_	Offset=2590-2593
+2	25-30	_	Amount	_	_	3	Measure	_	Offset=2594-2602
+3	glycerol/SET	_	Reagent	_	_	0	_	_	Offset=2603-2624
+4	equal	_	Amount	_	_	0	_	_	Offset=2628-2639
+5	filter	_	Action	_	_	0	_	_	Offset=2647-2653
+6	mount	_	Action	_	_	0	_	_	Offset=2658-2663
+7	cover	_	Device	_	_	0	_	_	Offset=2671-2681
+
+# sent_id = s28
+# text = Add 1.0 mL 0.2X SET (50˚C) to each sample (wash step) and incubate for 5 minutes at room temperature.
+1	Add	_	Action	_	_	0	_	_	Offset=2683-2686
+2	label	_	Location	_	_	0	_	_	Offset=2691-2696
+3	slide	_	Location	_	_	0	_	_	Offset=2704-2709
+
+# sent_id = s29
+# text = Filter each sample to near dryness.
+1	Store	_	Action	_	_	0	_	_	Offset=2711-2716
+2	prepared	_	Modifier	_	_	3	Mod-Link	_	Offset=2717-2725
+3	slides	_	Location	_	_	0	_	_	Offset=2726-2732
+4	cold	_	Location	_	_	0	_	_	Offset=2733-2737
+5	dark	_	Location	_	_	0	_	_	Offset=2742-2746
+
+# sent_id = s30
+# text = While the vacuum is on, remove the chimney (loosen by only turning base of filter chimney!).
+1	View	_	Action	_	_	0	_	_	Offset=2748-2752
+2	filters	_	Device	_	_	0	_	_	Offset=2753-2760
+3	fluorescence	_	Device	_	_	0	_	_	Offset=2766-2789
+4	appropriate	_	Modifier	_	_	5	Mod-Link	_	Offset=2799-2810
+5	filter	_	Device	_	_	0	_	_	Offset=2811-2821
+
+# sent_id = s31
+# text = Remove the filter from the fritted base and place it on a microscope slide using forceps (minimize the amount of filter surface area that forceps come into contact with).
+1	EMPTY	_	Action	_	_	0	_	_	Offset=2879-2884
+2	CONTENTS	_	Reagent	_	_	0	_	_	Offset=2885-2893
+3	FILTRATION	_	Device	_	_	2	Meronym	_	Offset=2897-2916
+4	FORMALIN	_	Location	_	_	0	_	_	Offset=2934-2955
+

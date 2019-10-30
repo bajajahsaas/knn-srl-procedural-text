@@ -1,0 +1,88 @@
+# sent_id = s1
+# text = SpinOUT™: Protein Desalting
+1	Equilibrate	_	Action	_	_	0	_	_	Offset=28-39
+2	column	_	Location	_	_	0	_	_	Offset=44-50
+3	buffer	_	Reagent	_	_	0	_	_	Offset=60-76
+4	applying	_	Action	_	_	0	_	_	Offset=80-88
+5	at	_	Modifier	_	_	6	Mod-Link	_	Offset=89-97
+6	5	_	Amount	_	_	7	Measure	_	Offset=98-114
+7	buffer	_	Reagent	_	_	0	_	_	Offset=118-124
+
+# sent_id = s2
+# text = Equilibrate the column with the buffer of choice by applying at least 5 column volumes of buffer in batches of 1-2 column volumes.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=159-169
+2	column	_	Location	_	_	0	_	_	Offset=174-180
+3	1,000g	_	Speed	_	_	0	_	_	Offset=184-190
+4	2	_	Time	_	_	0	_	_	Offset=195-204
+5	remove	_	Action	_	_	0	_	_	Offset=208-214
+6	buffer	_	Reagent	_	_	0	_	_	Offset=219-225
+
+# sent_id = s3
+# text = Centrifuge the column at 1,000g for 2 minutes to remove the buffer after each application.
+1	Place	_	Action	_	_	0	_	_	Offset=250-255
+2	column	_	Location	_	_	0	_	_	Offset=260-266
+3	new	_	Modifier	_	_	4	Mod-Link	_	Offset=272-275
+4	collection	_	Location	_	_	0	_	_	Offset=276-291
+5	remove	_	Action	_	_	0	_	_	Offset=296-302
+6	cap	_	Seal	_	_	0	_	_	Offset=307-310
+
+# sent_id = s4
+# text = Place the column in a new collection tube and remove the cap.
+1	Slowly	_	Modifier	_	_	0	_	_	Offset=312-318
+2	apply	_	Action	_	_	0	_	_	Offset=320-325
+3	protein	_	Reagent	_	_	0	_	_	Offset=330-346
+4	center	_	Location	_	_	0	_	_	Offset=354-360
+5	SpinOUT™	_	Reagent	_	_	4	Meronym	_	Offset=368-382
+
+# sent_id = s5
+# text = Slowly, apply the protein solution to the center of the SpinOUT™ resin.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=384-394
+2	column	_	Location	_	_	0	_	_	Offset=399-405
+3	1,000g	_	Speed	_	_	0	_	_	Offset=409-415
+4	collect	_	Action	_	_	0	_	_	Offset=462-469
+5	desalted	_	Modifier	_	_	6	Mod-Link	_	Offset=474-482
+6	protein	_	Reagent	_	_	0	_	_	Offset=483-499
+
+# sent_id = s6
+# text = Centrifuge the column at 1,000g for the indicated times in the table below to collect the desalted protein solution.
+1	Discard	_	Action	_	_	0	_	_	Offset=501-508
+2	column	_	Location	_	_	0	_	_	Offset=513-519
+
+# sent_id = s7
+# text = Discard the column.
+1	Mark	_	Action	_	_	0	_	_	Offset=521-525
+2	one	_	Location	_	_	0	_	_	Offset=526-534
+3	column	_	Location	_	_	2	Meronym	_	Offset=542-548
+
+# sent_id = s8
+# text = Mark one side of the column and ensure in all centrifugations the mark is facing outwards during centrifugation.
+1	Prepare	_	Action	_	_	0	_	_	Offset=634-641
+2	SpinOUT™	_	Location	_	_	0	_	_	Offset=646-661
+3	centrifuging	_	Action	_	_	0	_	_	Offset=665-677
+4	SpinOUT™	_	Location	_	_	0	_	_	Offset=682-698
+5	1,000g	_	Speed	_	_	0	_	_	Offset=702-708
+6	1	_	Time	_	_	0	_	_	Offset=713-721
+7	compact	_	Action	_	_	0	_	_	Offset=725-732
+8	resin	_	Reagent	_	_	0	_	_	Offset=737-742
+
+# sent_id = s9
+# text = Prepare the SpinOUT™ column by centrifuging the SpinOUT™ columns at 1,000g for 1 minute to compact the resin.
+1	Remove	_	Action	_	_	0	_	_	Offset=744-750
+2	top	_	Seal	_	_	0	_	_	Offset=755-758
+3	bottom	_	Seal	_	_	0	_	_	Offset=768-779
+
+# sent_id = s10
+# text = Remove the top and then bottom caps.
+1	Place	_	Action	_	_	0	_	_	Offset=781-786
+2	appropriate	_	Modifier	_	_	3	Mod-Link	_	Offset=795-806
+3	collection	_	Location	_	_	0	_	_	Offset=807-822
+
+# sent_id = s11
+# text = Place into an appropriate collection tube.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=824-834
+2	column	_	Location	_	_	0	_	_	Offset=839-845
+3	1,000g	_	Speed	_	_	0	_	_	Offset=849-855
+4	2	_	Time	_	_	0	_	_	Offset=860-869
+5	remove	_	Action	_	_	0	_	_	Offset=873-879
+6	storage	_	Reagent	_	_	0	_	_	Offset=884-898
+

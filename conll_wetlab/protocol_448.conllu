@@ -1,0 +1,217 @@
+# sent_id = s1
+# text = Immunoprecipitation using Protein A/G Magnetic Beads
+1	Rinse	_	Action	_	_	0	_	_	Offset=53-58
+2	60	_	Size	_	_	3	Measure	_	Offset=61-66
+3	culture	_	Location	_	_	4	Meronym	_	Offset=67-79
+4	confluent	_	Reagent	_	_	0	_	_	Offset=83-98
+5	PBS	_	Reagent	_	_	0	_	_	Offset=104-107
+
+# sent_id = s2
+# text = Rinse a 60 mm culture dish of confluent cells with PBS. 
+1	Lyse	_	Action	_	_	0	_	_	Offset=110-114
+2	cells	_	Reagent	_	_	0	_	_	Offset=119-124
+3	0.5	_	Amount	_	_	5	Measure	_	Offset=130-136
+4	cold	_	Modifier	_	_	5	Mod-Link	_	Offset=137-141
+5	Immunoprecipitation	_	Reagent	_	_	0	_	_	Offset=142-168
+
+# sent_id = s3
+# text = Lyse the cells with 0.5 ml cold Immunoprecipitation Buffer.  
+1	constant	_	Modifier	_	_	0	_	_	Offset=181-189
+2	agitation	_	Action	_	_	0	_	_	Offset=190-199
+3	30	_	Time	_	_	0	_	_	Offset=204-214
+4	4°C	_	Temperature	_	_	0	_	_	Offset=218-221
+
+# sent_id = s4
+# text = Maintain constant agitation for 30 minutes at 4°C. 
+1	Scrape	_	Action	_	_	0	_	_	Offset=224-230
+2	cells	_	Reagent	_	_	0	_	_	Offset=235-240
+3	dish	_	Location	_	_	0	_	_	Offset=250-254
+
+# sent_id = s5
+# text = Scrape the cells from the dish. 
+1	Sonicate	_	Action	_	_	0	_	_	Offset=257-265
+2	ice	_	Location	_	_	0	_	_	Offset=269-272
+3	5	_	Time	_	_	0	_	_	Offset=277-286
+4	repeat	_	Action	_	_	0	_	_	Offset=288-294
+5	4	_	Numerical	_	_	0	_	_	Offset=295-296
+
+# sent_id = s6
+# text = Sonicate on ice for 5 seconds; repeat 4 times. 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=305-315
+2	5	_	Time	_	_	0	_	_	Offset=320-329
+3	4°C.	_	Temperature	_	_	0	_	_	Offset=333-337
+
+# sent_id = s7
+# text = Centrifuge for 5 minutes at 4°C. 
+1	Assay	_	Action	_	_	0	_	_	Offset=339-344
+2	adjust	_	Action	_	_	0	_	_	Offset=368-374
+3	concentration	_	Measure-Type	_	_	0	_	_	Offset=375-388
+4	approximately	_	Modifier	_	_	5	Mod-Link	_	Offset=392-405
+5	1	_	Concentration	_	_	0	_	_	Offset=406-413
+6	Immunoprecipitation	_	Reagent	_	_	0	_	_	Offset=419-445
+
+# sent_id = s8
+# text = Assay for total protein then adjust concentration to approximately 1 mg/ml with Immunoprecipitation Buffer. 
+1	1.5	_	Amount	_	_	2	Measure	_	Offset=453-459
+2	microcentrifuge	_	Location	_	_	7	Meronym	_	Offset=460-480
+3	add	_	Action	_	_	0	_	_	Offset=482-485
+4	25	_	Amount	_	_	5	Setting	_	Offset=486-491
+5	Protein	_	Device	_	_	0	_	_	Offset=492-518
+6	200	_	Amount	_	_	7	Measure	_	Offset=522-528
+7	crude	_	Reagent	_	_	0	_	_	Offset=532-550
+
+# sent_id = s9
+# text = In a 1.5 ml microcentrifuge tube, add 25 μl Protein A/G Magnetic Beads to 200 μl of crude cell extract. 
+1	Gently	_	Modifier	_	_	0	_	_	Offset=553-559
+2	vortex	_	Action	_	_	0	_	_	Offset=560-566
+
+# sent_id = s10
+# text = Gently vortex. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=569-577
+2	4°C	_	Temperature	_	_	0	_	_	Offset=581-584
+3	1	_	Time	_	_	0	_	_	Offset=589-595
+
+# sent_id = s11
+# text = Incubate at 4°C for 1 hour. 
+1	Apply	_	Action	_	_	0	_	_	Offset=598-603
+2	magnetic	_	Device	_	_	0	_	_	Offset=604-618
+3	30	_	Time	_	_	0	_	_	Offset=623-633
+4	pull	_	Action	_	_	0	_	_	Offset=637-641
+5	beads	_	Reagent	_	_	0	_	_	Offset=642-647
+6	side	_	Location	_	_	0	_	_	Offset=655-659
+7	tube	_	Location	_	_	6	Meronym	_	Offset=667-671
+
+# sent_id = s12
+# text = Apply magnetic field for 30 seconds to pull beads to the side of the tube. 
+1	Pipette	_	Action	_	_	0	_	_	Offset=674-681
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=682-693
+3	clean	_	Modifier	_	_	5	Mod-Link	_	Offset=699-704
+4	1.5	_	Amount	_	_	5	Measure	_	Offset=705-711
+5	microcentrifuge	_	Location	_	_	0	_	_	Offset=712-732
+6	discard	_	Action	_	_	0	_	_	Offset=737-744
+7	beads	_	Reagent	_	_	0	_	_	Offset=749-754
+
+# sent_id = s13
+# text = Pipette supernatant to a clean 1.5 ml microcentrifuge tube and discard the beads.
+1	Add	_	Action	_	_	0	_	_	Offset=756-759
+2	1-5	_	Amount	_	_	3	Measure	_	Offset=760-766
+3	antibody	_	Reagent	_	_	0	_	_	Offset=770-778
+4	crude	_	Reagent	_	_	0	_	_	Offset=782-799
+
+# sent_id = s14
+# text = Add 1-5 μg of antibody to crude cell lysate. 
+1	Vortex	_	Action	_	_	0	_	_	Offset=802-808
+
+# sent_id = s15
+# text = Vortex. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=811-819
+2	4°C	_	Temperature	_	_	0	_	_	Offset=823-826
+3	1	_	Time	_	_	0	_	_	Offset=831-837
+
+# sent_id = s16
+# text = Incubate at 4°C for 1 hour. 
+1	Add	_	Action	_	_	0	_	_	Offset=840-843
+2	25	_	Amount	_	_	3	Measure	_	Offset=844-849
+3	Protein	_	Reagent	_	_	0	_	_	Offset=853-890
+
+# sent_id = s17
+# text = Add 25 μl of Protein A/G Magnetic Beads suspension. 
+1	Gently	_	Modifier	_	_	0	_	_	Offset=893-899
+2	vortex	_	Action	_	_	0	_	_	Offset=900-906
+
+# sent_id = s18
+# text = Gently vortex.  
+1	Incubate	_	Action	_	_	0	_	_	Offset=910-918
+2	agitation	_	Method	_	_	0	_	_	Offset=924-933
+3	1	_	Time	_	_	0	_	_	Offset=938-944
+4	4°C	_	Temperature	_	_	0	_	_	Offset=948-951
+
+# sent_id = s19
+# text = Incubate with agitation for 1 hour at 4°C.
+1	Apply	_	Action	_	_	0	_	_	Offset=953-958
+2	magnetic	_	Device	_	_	0	_	_	Offset=959-973
+3	pull	_	Action	_	_	0	_	_	Offset=977-981
+4	beads	_	Reagent	_	_	0	_	_	Offset=982-987
+5	side	_	Location	_	_	0	_	_	Offset=995-999
+6	tube	_	Location	_	_	5	Meronym	_	Offset=1007-1011
+
+# sent_id = s20
+# text = Apply magnetic field to pull beads to the side of the tube. 
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=1014-1023
+2	pipette	_	Action	_	_	0	_	_	Offset=1024-1031
+3	remove	_	Action	_	_	0	_	_	Offset=1035-1041
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=1042-1053
+
+# sent_id = s21
+# text = Carefully pipette to remove supernatant. 
+1	Wash	_	Action	_	_	0	_	_	Offset=1066-1070
+2	500	_	Amount	_	_	3	Measure	_	Offset=1076-1082
+3	Immunoprecipitation	_	Reagent	_	_	0	_	_	Offset=1086-1112
+4	gentle	_	Modifier	_	_	0	_	_	Offset=1116-1122
+5	vortex	_	Action	_	_	0	_	_	Offset=1123-1129
+
+# sent_id = s22
+# text = (wash #1) Wash with 500 μl of Immunoprecipitation Buffer by gentle vortex. 
+1	Apply	_	Action	_	_	0	_	_	Offset=1142-1147
+2	magnetic	_	Device	_	_	0	_	_	Offset=1148-1162
+3	remove	_	Action	_	_	0	_	_	Offset=1168-1174
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=1175-1186
+5	discard	_	Action	_	_	0	_	_	Offset=1191-1198
+
+# sent_id = s23
+# text = (wash #1) Apply magnetic field then remove supernatant and discard. 
+1	Wash	_	Action	_	_	0	_	_	Offset=1211-1215
+2	500	_	Amount	_	_	3	Measure	_	Offset=1221-1227
+3	Immunoprecipitation	_	Reagent	_	_	0	_	_	Offset=1231-1257
+4	gentle	_	Modifier	_	_	0	_	_	Offset=1261-1267
+5	vortex	_	Action	_	_	0	_	_	Offset=1268-1274
+
+# sent_id = s24
+# text = (wash #2) Wash with 500 μl of Immunoprecipitation Buffer by gentle vortex. 
+1	Apply	_	Action	_	_	0	_	_	Offset=1287-1292
+2	magnetic	_	Device	_	_	0	_	_	Offset=1293-1307
+3	remove	_	Action	_	_	0	_	_	Offset=1313-1319
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=1320-1331
+5	discard	_	Action	_	_	0	_	_	Offset=1336-1343
+
+# sent_id = s25
+# text = (wash #2) Apply magnetic field then remove supernatant and discard. 
+1	Wash	_	Action	_	_	0	_	_	Offset=1356-1360
+2	500	_	Amount	_	_	3	Measure	_	Offset=1366-1372
+3	Immunoprecipitation	_	Reagent	_	_	0	_	_	Offset=1376-1402
+4	gentle	_	Modifier	_	_	0	_	_	Offset=1406-1412
+5	vortex	_	Action	_	_	0	_	_	Offset=1413-1419
+
+# sent_id = s26
+# text = (wash #3) Wash with 500 μl of Immunoprecipitation Buffer by gentle vortex. 
+1	Apply	_	Action	_	_	0	_	_	Offset=1432-1437
+2	magnetic	_	Device	_	_	0	_	_	Offset=1438-1452
+3	remove	_	Action	_	_	0	_	_	Offset=1458-1464
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=1465-1476
+5	discard	_	Action	_	_	0	_	_	Offset=1481-1488
+
+# sent_id = s27
+# text = (wash #3) Apply magnetic field then remove supernatant and discard. 
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1491-1500
+2	bead	_	Reagent	_	_	0	_	_	Offset=1501-1512
+3	30	_	Amount	_	_	5	Measure	_	Offset=1516-1521
+4	3X	_	Concentration	_	_	5	Measure	_	Offset=1525-1527
+5	SDS	_	Reagent	_	_	0	_	_	Offset=1528-1553
+
+# sent_id = s28
+# text = Resuspend bead pellet in 30 μl of 3X SDS Sample Loading Buffer. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=1556-1564
+2	sample	_	Reagent	_	_	0	_	_	Offset=1565-1571
+3	70°C	_	Temperature	_	_	0	_	_	Offset=1575-1579
+4	5	_	Time	_	_	0	_	_	Offset=1584-1593
+
+# sent_id = s29
+# text = Incubate sample at 70°C for 5 minutes.
+1	Apply	_	Action	_	_	0	_	_	Offset=1595-1600
+2	magnetic	_	Device	_	_	0	_	_	Offset=1601-1615
+3	sample	_	Reagent	_	_	0	_	_	Offset=1619-1625
+4	load	_	Action	_	_	0	_	_	Offset=1631-1635
+5	supernatant	_	Reagent	_	_	0	_	_	Offset=1636-1647
+6	SDS-PAGE	_	Reagent	_	_	0	_	_	Offset=1651-1663
+7	electrophorese	_	Action	_	_	0	_	_	Offset=1668-1682
+

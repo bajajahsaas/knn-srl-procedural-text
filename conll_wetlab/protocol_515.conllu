@@ -1,0 +1,143 @@
+# sent_id = s1
+# text = Isolation and Purification of DNA from Chlorella Viruses
+1	100	_	Size	_	_	2	Measure	_	Offset=79-90
+2	tubes	_	Location	_	_	0	_	_	Offset=91-96
+3	mix	_	Action	_	_	0	_	_	Offset=98-101
+4	500	_	Amount	_	_	5	Measure	_	Offset=111-117
+5	virus	_	Reagent	_	_	0	_	_	Offset=121-126
+6	60	_	Amount	_	_	8	Measure	_	Offset=128-133
+7	10X	_	Concentration	_	_	8	Measure	_	Offset=137-140
+8	TEN	_	Reagent	_	_	0	_	_	Offset=141-144
+9	pH	_	Measure-Type	_	_	10	Of-Type	_	Offset=146-148
+10	7.4	_	Numerical	_	_	0	_	_	Offset=149-152
+11	60	_	Amount	_	_	13	Measure	_	Offset=158-163
+12	1%	_	Concentration	_	_	13	Measure	_	Offset=167-169
+13	Na	_	Reagent	_	_	0	_	_	Offset=170-181
+
+# sent_id = s2
+# text = For each gradient, in 100 x 13 mm tubes, mix together 500 µL of virus, 60 µL of 10X TEN, pH 7.4, and 60 µL of 1% Na sarcosyl.
+1	Add	_	Action	_	_	0	_	_	Offset=183-186
+2	600	_	Amount	_	_	4	Measure	_	Offset=187-193
+3	60%	_	Concentration	_	_	4	Measure	_	Offset=197-200
+4	CsCl	_	Reagent	_	_	0	_	_	Offset=207-211
+5	tube	_	Location	_	_	0	_	_	Offset=220-224
+
+# sent_id = s3
+# text = Add 600 µL of 60% (w/w) CsCl to each tube.
+1	Heat	_	Action	_	_	0	_	_	Offset=226-230
+2	tubes	_	Location	_	_	0	_	_	Offset=235-240
+3	75°C	_	Temperature	_	_	0	_	_	Offset=244-248
+4	15	_	Time	_	_	0	_	_	Offset=253-259
+
+# sent_id = s4
+# text = Heat the tubes at 75°C for 15 min.
+1	Layer	_	Action	_	_	0	_	_	Offset=261-266
+2	samples	_	Reagent	_	_	0	_	_	Offset=271-278
+3	40-60%	_	Concentration	_	_	4	Measure	_	Offset=295-301
+4	CsCl	_	Reagent	_	_	0	_	_	Offset=308-312
+5	SW60	_	Location	_	_	0	_	_	Offset=326-342
+
+# sent_id = s5
+# text = Layer the samples onto pre-formed 40-60% (w/w) CsCl gradients in SW60 rotor tubes (to make a final 30-60% gradient).
+1	Add	_	Action	_	_	0	_	_	Offset=378-381
+2	1200	_	Amount	_	_	3	Measure	_	Offset=382-389
+3	heated	_	Reagent	_	_	0	_	_	Offset=397-409
+
+# sent_id = s6
+# text = Add 1200 µL of the heated virus to each gradient.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=428-438
+2	gradients	_	Reagent	_	_	0	_	_	Offset=443-452
+3	SW60	_	Device	_	_	0	_	_	Offset=456-467
+4	35,000	_	Speed	_	_	0	_	_	Offset=471-481
+5	18	_	Time	_	_	0	_	_	Offset=483-491
+6	25°C	_	Temperature	_	_	0	_	_	Offset=493-497
+
+# sent_id = s7
+# text = Centrifuge the gradients in SW60 rotors at 35,000 rpm, 18 hours, 25°C.
+1	Remove	_	Action	_	_	0	_	_	Offset=499-505
+2	DNA	_	Reagent	_	_	0	_	_	Offset=510-519
+3	wide	_	Device	_	_	0	_	_	Offset=546-562
+4	598	_	Location	_	_	0	_	_	Offset=566-580;587
+5	30	_	Size	_	_	4	Measure	_	Offset=581-586
+
+# sent_id = s8
+# text = Remove the DNA bands from the gradients with a wide bent needle to silicon-coated 30 mL corex tubes.
+1	adding	_	Action	_	_	0	_	_	Offset=640-646
+2	equal	_	Generic-Measure	_	_	3	Measure	_	Offset=650-662
+3	CsCl/TE-saturated	_	Reagent	_	_	0	_	_	Offset=666-695
+4	DNA	_	Reagent	_	_	0	_	_	Offset=703-715
+5	mixing	_	Action	_	_	0	_	_	Offset=717-723
+6	gently	_	Modifier	_	_	0	_	_	Offset=724-730
+7	inversion	_	Method	_	_	0	_	_	Offset=734-743
+8	centrifuge	_	Action	_	_	0	_	_	Offset=745-755
+9	1	_	Time	_	_	0	_	_	Offset=760-765
+10	3,000	_	Speed	_	_	0	_	_	Offset=769-778
+11	Sorvall	_	Device	_	_	0	_	_	Offset=786-793
+12	pipet	_	Action	_	_	0	_	_	Offset=822-831
+13	isopropanol	_	Reagent	_	_	0	_	_	Offset=842-859
+
+# sent_id = s9
+# text = Extract the Hoechst dye from the DNA by adding an equal volume of CsCl/TE-saturated isopropanol to the DNA solution, mixing gently by inversion, centrifuge for 1 min at 3,000 rpm in the Sorvall to separate the phases, and pipet off the upper isopropanol layer.
+1	Add	_	Action	_	_	0	_	_	Offset=879-882
+2	1.0	_	Amount	_	_	4	Measure	_	Offset=883-889
+3	3	_	Concentration	_	_	4	Measure	_	Offset=893-896
+4	NaOAc	_	Reagent	_	_	0	_	_	Offset=897-902
+5	tube	_	Location	_	_	0	_	_	Offset=911-915
+6	adjust	_	Action	_	_	0	_	_	Offset=920-926
+7	10.0	_	Amount	_	_	0	_	_	Offset=954-961
+8	1X	_	Concentration	_	_	9	Measure	_	Offset=967-969
+9	TE	_	Reagent	_	_	0	_	_	Offset=970-979
+
+# sent_id = s10
+# text = Repeat last step.
+1	Precipitate	_	Action	_	_	0	_	_	Offset=981-992
+2	DNAs	_	Reagent	_	_	0	_	_	Offset=997-1001
+3	2X	_	Generic-Measure	_	_	5	Measure	_	Offset=1007-1017
+4	100%	_	Concentration	_	_	5	Measure	_	Offset=1021-1025
+5	EtOH	_	Reagent	_	_	0	_	_	Offset=1026-1030
+
+# sent_id = s11
+# text = Add 1.0 mL of 3 M NaOAc to each tube and adjust the volume of each tube to 10.0 mL with 1X TE buffer.
+1	Mix	_	Action	_	_	0	_	_	Offset=1032-1035
+2	well	_	Modifier	_	_	0	_	_	Offset=1036-1040
+3	hold	_	Action	_	_	0	_	_	Offset=1045-1049
+4	-20°C	_	Temperature	_	_	0	_	_	Offset=1053-1058
+5	overnight	_	Time	_	_	0	_	_	Offset=1059-1068
+
+# sent_id = s12
+# text = Precipitate the DNAs with 2X volumes of 100% EtOH.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1070-1080
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1085-1096
+3	Sorvall	_	Device	_	_	0	_	_	Offset=1104-1122
+4	10,000	_	Speed	_	_	0	_	_	Offset=1126-1136
+5	20	_	Time	_	_	0	_	_	Offset=1138-1144
+6	4°C	_	Temperature	_	_	0	_	_	Offset=1146-1149
+
+# sent_id = s13
+# text = Mix well and hold at -20°C overnight.
+1	Discard	_	Action	_	_	0	_	_	Offset=1151-1158
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=1163-1175
+
+# sent_id = s14
+# text = Centrifuge the DNA samples in the Sorvall HB-4 rotor at 10,000 rpm, 20 min, 4°C.
+1	Dry	_	Action	_	_	0	_	_	Offset=1177-1180
+2	pellets	_	Reagent	_	_	0	_	_	Offset=1185-1192
+3	10-15	_	Time	_	_	0	_	_	Offset=1202-1211
+4	vacuum	_	Device	_	_	0	_	_	Offset=1220-1237
+
+# sent_id = s15
+# text = Discard the supernatants.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1258-1267
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1272-1283
+3	500	_	Amount	_	_	5	Measure	_	Offset=1303-1309
+4	1X	_	Concentration	_	_	5	Measure	_	Offset=1313-1315
+5	TE	_	Reagent	_	_	0	_	_	Offset=1316-1325
+
+# sent_id = s16
+# text = Dry the pellets briefly (10-15 min) in the vacuum desiccator to remove the EtOH.
+1	Determine	_	Action	_	_	0	_	_	Offset=1327-1336
+2	DNA	_	Generic-Measure	_	_	0	_	_	Offset=1341-1359
+3	store	_	Action	_	_	0	_	_	Offset=1364-1369
+4	DNAs	_	Reagent	_	_	0	_	_	Offset=1374-1378
+5	4°C	_	Temperature	_	_	0	_	_	Offset=1382-1385
+

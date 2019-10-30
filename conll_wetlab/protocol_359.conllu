@@ -1,0 +1,103 @@
+# sent_id = s1
+# text = Protocol for washing and modifying QCM-D sensors
+1	Prepare	_	Action	_	_	0	_	_	Offset=49-56
+2	solutions	_	Reagent	_	_	4	Meronym	6:Meronym|8:Meronym	Offset=57-66
+3	2%	_	Concentration	_	_	4	Measure	_	Offset=70-72
+4	SDS	_	Reagent	_	_	0	_	_	Offset=73-76
+5	0.1%	_	Concentration	_	_	6	Measure	_	Offset=78-82
+6	SDS	_	Reagent	_	_	0	_	_	Offset=83-86
+7	0.1	_	Concentration	_	_	8	Measure	_	Offset=91-96
+8	HCl	_	Reagent	_	_	0	_	_	Offset=97-100
+
+# sent_id = s2
+# text = Prepare solutions of 2% SDS, 0.1% SDS and 0.1 M HCl.
+1	Clean	_	Action	_	_	0	_	_	Offset=102-107
+2	gold-coated	_	Modifier	_	_	3	Mod-Link	_	Offset=112-123
+3	QCM-D	_	Device	_	_	0	_	_	Offset=124-137
+4	2%	_	Concentration	_	_	5	Measure	_	Offset=151-153
+5	SDS	_	Reagent	_	_	0	_	_	Offset=154-157
+6	mechanically	_	Modifier	_	_	0	_	_	Offset=161-173
+7	remove	_	Action	_	_	0	_	_	Offset=174-180
+8	contaminants	_	Reagent	_	_	0	_	_	Offset=181-193
+
+# sent_id = s3
+# text = Clean the gold-coated QCM-D sensors by hand with 2% SDS to mechanically remove contaminants.
+1	glove	_	Device	_	_	0	_	_	Offset=212-217
+2	wet	_	Modifier	_	_	1	Mod-Link	_	Offset=221-224
+
+# sent_id = s4
+# text = Be sure that the glove is wet all the time so it doesn't scratch the sensor!
+1	Place	_	Action	_	_	0	_	_	Offset=272-277
+2	sensors	_	Device	_	_	5	Coreference-Link	_	Offset=282-289
+3	stand	_	Location	_	_	0	_	_	Offset=295-300
+4	put	_	Action	_	_	0	_	_	Offset=305-308
+5	them	_	Mention	_	_	0	_	_	Offset=309-313
+6	0.1%	_	Concentration	_	_	7	Measure	_	Offset=319-323
+7	SDS	_	Reagent	_	_	0	_	_	Offset=324-336
+
+# sent_id = s5
+# text = Place the sensors in a stand and put them in a 0.1% SDS solution.
+1	Heat	_	Action	_	_	0	_	_	Offset=338-342
+2	10	_	Time	_	_	0	_	_	Offset=347-353
+3	80°C,	_	Temperature	_	_	0	_	_	Offset=357-362
+4	rinse	_	Action	_	_	0	_	_	Offset=368-373
+5	sensors	_	Device	_	_	0	_	_	Offset=378-385
+6	water	_	Reagent	_	_	0	_	_	Offset=391-396
+
+# sent_id = s6
+# text = Heat for 10 min at 80°C, then rinse the sensors with water.
+1	Place	_	Action	_	_	0	_	_	Offset=398-403
+2	sensors	_	Device	_	_	0	_	_	Offset=408-415
+3	0.1	_	Concentration	_	_	0	_	_	Offset=421-426
+4	HCl	_	Reagent	_	_	0	_	_	Offset=427-439
+
+# sent_id = s7
+# text = Place the sensors in a 0.1 M HCl solution.
+1	Heat	_	Action	_	_	0	_	_	Offset=441-445
+2	10	_	Time	_	_	0	_	_	Offset=450-456
+3	80°C,	_	Temperature	_	_	0	_	_	Offset=460-465
+4	rinse	_	Action	_	_	0	_	_	Offset=471-476
+5	sensors	_	Device	_	_	0	_	_	Offset=481-488
+6	water	_	Reagent	_	_	0	_	_	Offset=494-499
+7	several	_	Numerical	_	_	0	_	_	Offset=500-513
+8	remove	_	Action	_	_	0	_	_	Offset=517-523
+9	HCl	_	Reagent	_	_	0	_	_	Offset=528-540
+
+# sent_id = s8
+# text = Heat for 10 min at 80°C, then rinse the sensors with water several times to remove all HCl solution.
+1	sensors	_	Reagent	_	_	0	_	_	Offset=556-563
+2	dry	_	Action	_	_	0	_	_	Offset=564-567
+3	nitrogen	_	Reagent	_	_	0	_	_	Offset=584-592
+
+# sent_id = s9
+# text = Then blow the sensors dry under a flow of nitrogen.
+1	Make	_	Action	_	_	0	_	_	Offset=594-598
+2	ethanolic	_	Reagent	_	_	4	Meronym	_	Offset=602-620
+3	10	_	Concentration	_	_	4	Measure	_	Offset=646-651
+4	mixed	_	Reagent	_	_	0	_	_	Offset=655-671
+
+# sent_id = s10
+# text = Make an ethanolic solution with total concentration 10 mM of mixed PEG thiols (PEG and biotin-PEG thiols in a molar ratio of 99:1).
+1	Incubate	_	Action	_	_	0	_	_	Offset=783-791
+2	QCM-D	_	Device	_	_	0	_	_	Offset=796-809
+3	ethanolic	_	Reagent	_	_	0	_	_	Offset=817-845
+4	16	_	Time	_	_	0	_	_	Offset=859-867
+5	4°C	_	Temperature	_	_	0	_	_	Offset=871-874
+6	darkness	_	Modifier	_	_	0	_	_	Offset=878-886
+
+# sent_id = s11
+# text = (MW, dS-PEG = 386.5 Da and MW, dS-PEG-biotin = 788.0 Da) Incubate the QCM-D sensors in the ethanolic PEG thiol solution for at least 16 hours at 4°C in darkness.
+1	Rinse	_	Action	_	_	0	_	_	Offset=888-893
+2	sensors	_	Device	_	_	6	Coreference-Link	1:Coreference-Link	Offset=898-905
+3	couple	_	Numerical	_	_	0	_	_	Offset=908-923
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=929-936
+5	milli-Q	_	Reagent	_	_	0	_	_	Offset=966-979
+6	them	_	Mention	_	_	0	_	_	Offset=996-1000
+7	dry	_	Action	_	_	0	_	_	Offset=1001-1004
+8	nitrogen	_	Reagent	_	_	0	_	_	Offset=1010-1018
+
+# sent_id = s12
+# text = Rinse the sensors a couple of times with ethanol, then a couple of times with milli-Q water and lastly blow them dry with nitrogen.
+1	They	_	Mention	_	_	0	_	_	Offset=1020-1024
+2	stored	_	Action	_	_	0	_	_	Offset=1044-1050
+

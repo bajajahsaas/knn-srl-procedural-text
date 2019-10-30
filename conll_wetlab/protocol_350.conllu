@@ -1,0 +1,105 @@
+# sent_id = s1
+# text = Transformation of competent E.coli cells with plasmid DNA
+1	Thaw	_	Action	_	_	0	_	_	Offset=58-62
+2	appropriate	_	Amount	_	_	3	Measure	_	Offset=67-85
+3	competent	_	Reagent	_	_	0	_	_	Offset=89-104
+4	ice	_	Reagent	_	_	0	_	_	Offset=108-111
+
+# sent_id = s2
+# text = Thaw the appropriate amount of competent cells on ice.
+1	Pre-chill	_	Action	_	_	0	_	_	Offset=113-122
+2	required	_	Amount	_	_	5	Measure	_	Offset=127-142
+3	empty	_	Modifier	_	_	5	Mod-Link	_	Offset=146-151
+4	1.5	_	Size	_	_	5	Measure	_	Offset=152-158
+5	microcentrifuge	_	Location	_	_	0	_	_	Offset=159-180
+
+# sent_id = s3
+# text = Pre-chill the required number of empty 1.5 ml microcentrifuge tubes.
+1	Pipet	_	Action	_	_	0	_	_	Offset=182-187
+2	100	_	Amount	_	_	3	Measure	_	Offset=188-194
+3	aliquots	_	Reagent	_	_	4	Meronym	_	Offset=195-203
+4	cells	_	Reagent	_	_	0	_	_	Offset=207-212
+5	pre-chilled	_	Modifier	_	_	6	Mod-Link	_	Offset=222-233
+6	tubes	_	Location	_	_	0	_	_	Offset=234-239
+
+# sent_id = s4
+# text = Pipet 100 µl aliquots of cells into the pre-chilled tubes.
+1	Add	_	Action	_	_	0	_	_	Offset=241-244
+2	5-10	_	Amount	_	_	3	Measure	_	Offset=245-252
+3	ligation	_	Reagent	_	_	0	_	_	Offset=258-279
+4	5	_	Amount	_	_	5	Measure	_	Offset=283-287
+5	pure	_	Reagent	_	_	3	Or	_	Offset=291-307
+6	each	_	Amount	_	_	7	Measure	_	Offset=311-315
+7	tube	_	Location	_	_	0	_	_	Offset=316-320
+
+# sent_id = s5
+# text = Add 5-10 µl of a ligation reaction mix or 5 ng of pure plasmid DNA to each tube.
+1	Mix	_	Action	_	_	0	_	_	Offset=322-325
+2	gently	_	Modifier	_	_	0	_	_	Offset=326-332
+
+# sent_id = s6
+# text = Mix gently!
+1	Incubate	_	Action	_	_	0	_	_	Offset=334-342
+2	tubes	_	Location	_	_	3	Meronym	_	Offset=347-352
+3	ice	_	Reagent	_	_	0	_	_	Offset=356-359
+4	30	_	Time	_	_	0	_	_	Offset=364-370
+
+# sent_id = s7
+# text = Incubate the tubes of ice for 30 min. 
+1	Heat	_	Action	_	_	0	_	_	Offset=373-383
+2	cells	_	Reagent	_	_	0	_	_	Offset=388-393
+3	45	_	Time	_	_	0	_	_	Offset=398-404
+4	42°C	_	Temperature	_	_	0	_	_	Offset=408-412
+
+# sent_id = s8
+# text = Heat shock the cells for 45 sec at 42°C. 
+1	Place	_	Action	_	_	0	_	_	Offset=415-420
+2	tubes	_	Location	_	_	0	_	_	Offset=425-430
+3	immediately	_	Modifier	_	_	0	_	_	Offset=431-442
+4	ice	_	Reagent	_	_	0	_	_	Offset=446-449
+5	2	_	Time	_	_	0	_	_	Offset=463-468
+
+# sent_id = s9
+# text = Place the tubes immediately on ice for at least 2 min. 
+1	Add	_	Action	_	_	0	_	_	Offset=471-474
+2	1000	_	Amount	_	_	3	Measure	_	Offset=475-482
+3	SOC	_	Reagent	_	_	0	_	_	Offset=486-496
+4	each	_	Amount	_	_	5	Measure	_	Offset=500-504
+5	tube	_	Location	_	_	0	_	_	Offset=505-509
+6	incubate	_	Action	_	_	0	_	_	Offset=514-522
+7	1	_	Time	_	_	0	_	_	Offset=527-533
+8	37°C	_	Temperature	_	_	0	_	_	Offset=537-541
+9	shaking	_	Action	_	_	0	_	_	Offset=547-554
+
+# sent_id = s10
+# text = Add 1000 µl of SOC medium to each tube and incubate for 1 hour at 37°C with shaking.
+1	Transfer	_	Action	_	_	0	_	_	Offset=556-564
+2	cultures	_	Reagent	_	_	0	_	_	Offset=569-577
+3	1.5	_	Size	_	_	4	Measure	_	Offset=581-587
+4	microcentrifuge	_	Location	_	_	0	_	_	Offset=588-609
+5	spin	_	Action	_	_	0	_	_	Offset=614-618
+6	1	_	Time	_	_	0	_	_	Offset=623-628
+7	10000	_	Speed	_	_	0	_	_	Offset=632-642
+
+# sent_id = s11
+# text = Transfer the cultures to 1.5 ml microcentrifuge tubes and spin for 1 min at 10000 x g. 
+1	Remove	_	Action	_	_	0	_	_	Offset=644-650
+2	800	_	Amount	_	_	3	Measure	_	Offset=651-657
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=665-676
+4	resuspend	_	Action	_	_	0	_	_	Offset=681-690
+5	pellet	_	Reagent	_	_	0	_	_	Offset=695-701
+
+# sent_id = s12
+# text = Remove 800 µl of the supernatant and resuspend the pellet.
+1	Plate	_	Action	_	_	0	_	_	Offset=703-712
+2	suspension	_	Reagent	_	_	0	_	_	Offset=717-727
+3	LB	_	Location	_	_	4	Meronym	_	Offset=733-746
+4	appropriate	_	Reagent	_	_	0	_	_	Offset=762-784
+
+# sent_id = s13
+# text = Plate out the suspension on a LB agar plate containing the appropriate antibiotic.
+1	Incubate	_	Action	_	_	0	_	_	Offset=786-794
+2	plates	_	Location	_	_	0	_	_	Offset=799-805
+3	overnight	_	Time	_	_	0	_	_	Offset=806-815
+4	37°C	_	Temperature	_	_	0	_	_	Offset=819-823
+

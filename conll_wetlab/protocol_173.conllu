@@ -1,0 +1,143 @@
+# sent_id = s1
+# text = Re-amplification of CRISPRa and CRISPRi libraries
+1	Dilute	_	Action	_	_	0	_	_	Offset=50-56
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=57-61
+3	sub-library	_	Reagent	_	_	0	_	_	Offset=62-73
+4	50	_	Concentration	_	_	0	_	_	Offset=77-85
+5	water	_	Reagent	_	_	0	_	_	Offset=89-94
+6	EB	_	Action	_	_	0	_	_	Offset=98-114
+7	library	_	Reagent	_	_	0	_	_	Offset=119-126
+
+# sent_id = s2
+# text = Dilute each sub-library to 50 ng/ul in water or EB Electroporate the library.
+1	Pre-chill	_	Action	_	_	0	_	_	Offset=128-137
+2	0.1	_	Size	_	_	3	Measure	_	Offset=138-144
+3	cuvettes	_	Location	_	_	0	_	_	Offset=145-153
+4	megaX	_	Reagent	_	_	0	_	_	Offset=155-166
+5	10%	_	Concentration	_	_	6	Measure	_	Offset=168-171
+6	glycerol	_	Reagent	_	_	0	_	_	Offset=172-180
+7	ice	_	Location	_	_	0	_	_	Offset=184-187
+
+# sent_id = s3
+# text = Pre-chill 0.1 cm cuvettes, megaX cells, 10% glycerol on ice.
+1	mix	_	Action	_	_	0	_	_	Offset=276-279
+2	gently	_	Modifier	_	_	0	_	_	Offset=280-286
+3	incubate	_	Action	_	_	0	_	_	Offset=291-299
+4	ice	_	Location	_	_	0	_	_	Offset=303-306
+5	30	_	Time	_	_	0	_	_	Offset=311-317
+
+# sent_id = s4
+# text = Follow the table for the amounts of sub-library plasmid DNA and MegaX competent cells, mix gently and incubate on ice for 30 min.  
+1	Add	_	Action	_	_	0	_	_	Offset=321-324
+2	pre-chilled	_	Modifier	_	_	4	Mod-Link	_	Offset=325-336
+3	10%	_	Concentration	_	_	4	Measure	_	Offset=337-340
+4	glycerol	_	Reagent	_	_	0	_	_	Offset=341-349
+5	MageX-library	_	Reagent	_	_	0	_	_	Offset=357-374
+6	final	_	Modifier	_	_	7	Mod-Link	_	Offset=381-386
+7	75	_	Amount	_	_	0	_	_	Offset=387-392
+8	transfer	_	Action	_	_	0	_	_	Offset=394-402
+9	mix	_	Reagent	_	_	0	_	_	Offset=407-410
+10	prechilled	_	Modifier	_	_	12	Mod-Link	_	Offset=416-426
+11	0.1	_	Size	_	_	12	Measure	_	Offset=427-433
+12	cuvette	_	Location	_	_	0	_	_	Offset=434-441
+
+# sent_id = s5
+# text = Add pre-chilled 10% glycerol to the MageX-library mix for a final 75 ul, transfer the mix to a prechilled 0.1 cm cuvette.
+1	Electroporate	_	Action	_	_	0	_	_	Offset=443-456
+2	2.0	_	Generic-Measure	_	_	5	Setting	_	Offset=460-466
+3	200	_	Generic-Measure	_	_	5	Setting	_	Offset=468-476
+4	25	_	Generic-Measure	_	_	5	Setting	_	Offset=478-483
+5	Gene	_	Device	_	_	0	_	_	Offset=485-511
+
+# sent_id = s6
+# text = Electroporate at 2.0 kV, 200 ohms, 25 uF (Gene Pulser Xcell, Bio-rad).  
+1	Transfer	_	Action	_	_	0	_	_	Offset=516-524
+2	cells	_	Reagent	_	_	0	_	_	Offset=525-530
+3	culture	_	Location	_	_	0	_	_	Offset=536-548
+
+# sent_id = s7
+# text = Transfer cells to a culture tube.  
+1	Use	_	Action	_	_	0	_	_	Offset=552-555
+2	1	_	Amount	_	_	3	Setting	_	Offset=556-560
+3	pipettes	_	Device	_	_	0	_	_	Offset=561-569
+4	gel	_	Device	_	_	0	_	_	Offset=574-590
+
+# sent_id = s8
+# text = Use 1 ml pipettes and gel loading tips.
+1	Wash	_	Action	_	_	0	_	_	Offset=592-596
+2	cells	_	Reagent	_	_	0	_	_	Offset=597-602
+3	gently	_	Modifier	_	_	0	_	_	Offset=607-613
+4	300	_	Amount	_	_	5	Measure	_	Offset=619-625
+5	S.O.C	_	Reagent	_	_	0	_	_	Offset=626-631
+6	twice	_	Numerical	_	_	0	_	_	Offset=633-638
+
+# sent_id = s9
+# text = Wash cells out gently with 300 ul S.O.C. twice (total 600 ul).
+1	Incubate	_	Action	_	_	0	_	_	Offset=655-663
+2	37oC	_	Temperature	_	_	0	_	_	Offset=667-671
+3	250	_	Speed	_	_	0	_	_	Offset=673-680
+4	1.5	_	Time	_	_	0	_	_	Offset=682-691
+
+# sent_id = s10
+# text = Incubate at 37oC, 250 rpm, 1.5 hour.
+1	Plate	_	Action	_	_	0	_	_	Offset=692-697
+2	transformations	_	Reagent	_	_	0	_	_	Offset=702-717
+
+# sent_id = s11
+# text = Plate the transformations.
+1	Plate	_	Action	_	_	0	_	_	Offset=719-724
+2	one	_	Numerical	_	_	4	Measure	_	Offset=732-735
+3	large	_	Modifier	_	_	4	Mod-Link	_	Offset=736-741
+4	square	_	Reagent	_	_	0	_	_	Offset=742-754
+5	per	_	Modifier	_	_	6	Mod-Link	_	Offset=755-758
+6	sub-library	_	Reagent	_	_	0	_	_	Offset=759-770
+7	use	_	Action	_	_	0	_	_	Offset=772-775
+8	autoclaved	_	Modifier	_	_	9	Mod-Link	_	Offset=776-786
+9	beads	_	Reagent	_	_	0	_	_	Offset=787-792
+
+# sent_id = s12
+# text = Plate all in one large square plate per sub-library, use autoclaved beads.
+1	Incubate	_	Action	_	_	0	_	_	Offset=794-802
+2	37oC	_	Temperature	_	_	0	_	_	Offset=806-810
+3	18	_	Time	_	_	0	_	_	Offset=815-823
+
+# sent_id = s13
+# text = Incubate at 37oC for 18 hours.
+1	Collect	_	Action	_	_	0	_	_	Offset=825-832
+2	all	_	Modifier	_	_	3	Mod-Link	_	Offset=833-836
+3	colonies	_	Reagent	_	_	4	Meronym	_	Offset=837-845
+4	LB	_	Reagent	_	_	0	_	_	Offset=851-853
+5	do	_	Action	_	_	0	_	_	Offset=858-860
+6	one	_	Numerical	_	_	7	Or	_	Offset=861-864
+7	maxiprep	_	Method	_	_	0	_	_	Offset=865-873
+8	per	_	Modifier	_	_	9	Mod-Link	_	Offset=874-877
+9	plate	_	Location	_	_	0	_	_	Offset=878-883
+10	elute	_	Action	_	_	0	_	_	Offset=885-890
+11	500	_	Amount	_	_	12	Measure	_	Offset=894-900
+12	EB	_	Reagent	_	_	0	_	_	Offset=901-903
+13	2~3	_	Concentration	_	_	0	_	_	Offset=937-946
+
+# sent_id = s14
+# text = Collect all colonies with LB and do one maxiprep per plate, elute in 500 ul EB; an ideal concentration is about 2~3 ug/ul.
+1	PCR	_	Action	_	_	0	_	_	Offset=981-984
+
+# sent_id = s15
+# text = To sequence the library, you can PCR the sgRNA region with the following primers (a common 3’ primer, with 2 different 5’ primers for CRISPRa or CRISPRi).
+1	Pool	_	Action	_	_	0	_	_	Offset=1411-1415
+2	sub-libraries	_	Reagent	_	_	0	_	_	Offset=1416-1429
+3	proportionally	_	Modifier	_	_	0	_	_	Offset=1430-1444
+4	CRISPRa	_	Reagent	_	_	0	_	_	Offset=1489-1515
+5	measure	_	Action	_	_	0	_	_	Offset=1517-1524
+6	pooled	_	Measure-Type	_	_	0	_	_	Offset=1529-1549
+7	dilute	_	Action	_	_	0	_	_	Offset=1554-1560
+8	400	_	Concentration	_	_	9	Measure	_	Offset=1567-1576
+9	PCR	_	Reagent	_	_	0	_	_	Offset=1581-1584
+
+# sent_id = s16
+# text = CRISPRi TSS common 3' caagcagaagacggcatacgaCGACTCGGTGCCACTTTTTC.
+1	Run	_	Action	_	_	0	_	_	Offset=1585-1588
+2	3	_	Numerical	_	_	3	Measure	_	Offset=1589-1590
+3	tubes	_	Location	_	_	5	Meronym	_	Offset=1591-1596
+4	100	_	Amount	_	_	5	Measure	_	Offset=1600-1606
+5	PCR	_	Reagent	_	_	0	_	_	Offset=1607-1620
+

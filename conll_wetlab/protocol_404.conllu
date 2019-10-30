@@ -1,0 +1,99 @@
+# sent_id = s1
+# text = Th9 Polarization of Mouse CD4+ Cells
+1	Harvest	_	Action	_	_	0	_	_	Offset=37-44
+2	lymph	_	Reagent	_	_	0	_	_	Offset=45-56
+3	mice	_	Reagent	_	_	0	_	_	Offset=133-137
+
+# sent_id = s2
+# text = Harvest lymph nodes (superficial cervical, mandibular, axillary, inguinal, and mesenteric) from mice.
+1	Tease	_	Action	_	_	0	_	_	Offset=139-144
+2	lymph	_	Reagent	_	_	0	_	_	Offset=145-156
+3	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=167-174
+4	70-μm	_	Size	_	_	5	Setting	_	Offset=175-180
+5	nylon	_	Device	_	_	0	_	_	Offset=181-200
+6	single-cell	_	Reagent	_	_	0	_	_	Offset=211-234
+7	IMDM	_	Reagent	_	_	9	Meronym	_	Offset=238-242
+8	10%	_	Concentration	_	_	9	Measure	_	Offset=254-257
+9	FCS	_	Reagent	_	_	0	_	_	Offset=258-261
+
+# sent_id = s3
+# text = Tease lymph nodes through a sterile 70-μm nylon cell strainer to obtain single-cell suspensions in IMDM containing 10% FCS (complete medium).
+1	Resuspend	_	Action	_	_	0	_	_	Offset=281-290
+2	cells	_	Reagent	_	_	0	_	_	Offset=291-296
+3	complete	_	Reagent	_	_	0	_	_	Offset=300-315
+4	your	_	Method	_	_	0	_	_	Offset=324-344
+5	isolate	_	Action	_	_	0	_	_	Offset=348-355
+6	CD4+	_	Reagent	_	_	0	_	_	Offset=356-366
+
+# sent_id = s4
+# text = Resuspend cells in complete medium and use your favorite method to isolate CD4+ cells.
+1	coat	_	Action	_	_	0	_	_	Offset=424-428
+2	60	_	Size	_	_	3	Measure	_	Offset=429-439
+3	plastic	_	Location	_	_	0	_	_	Offset=443-463
+4	anti-mouse	_	Reagent	_	_	0	_	_	Offset=469-500
+5	5	_	Concentration	_	_	4	Measure	_	Offset=502-509
+
+# sent_id = s5
+# text = Check out Biocompare.com to find useful kits.
+1	Incubate	_	Action	_	_	0	_	_	Offset=512-520
+2	37°C	_	Temperature	_	_	0	_	_	Offset=524-528
+3	2	_	Time	_	_	0	_	_	Offset=533-540
+4	4˚C	_	Temperature	_	_	2	Or	_	Offset=544-547
+5	overnight	_	Time	_	_	3	Or	_	Offset=548-557
+
+# sent_id = s6
+# text = On day 0, coat 60 × 15 mm of plastic petri dishes with anti-mouse CD3ε, clone 145-2C11 (5 μg/ml).
+1	Aseptically	_	Modifier	_	_	0	_	_	Offset=559-570
+2	decant	_	Action	_	_	0	_	_	Offset=571-577
+3	antibody	_	Reagent	_	_	0	_	_	Offset=578-595
+4	plate	_	Location	_	_	0	_	_	Offset=605-610
+
+# sent_id = s7
+# text = Incubate at 37°C for 2 hours or 4˚C overnight.
+1	Wash	_	Action	_	_	0	_	_	Offset=612-616
+2	plate	_	Location	_	_	0	_	_	Offset=617-622
+3	3	_	Numerical	_	_	0	_	_	Offset=623-624
+4	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=636-643
+5	PBS	_	Reagent	_	_	0	_	_	Offset=644-647
+
+# sent_id = s8
+# text = Aseptically decant antibody solution from the plate.
+1	Discard	_	Action	_	_	0	_	_	Offset=649-656
+2	liquid	_	Reagent	_	_	0	_	_	Offset=657-663
+
+# sent_id = s9
+# text = Wash plate 3 times with sterile PBS.
+1	Plate	_	Action	_	_	0	_	_	Offset=665-670
+2	CD4+	_	Reagent	_	_	0	_	_	Offset=671-681
+3	10	_	Generic-Measure	_	_	0	_	_	Offset=685-702
+
+# sent_id = s10
+# text = Discard liquid.
+1	Culture	_	Action	_	_	0	_	_	Offset=704-711
+2	cells	_	Reagent	_	_	0	_	_	Offset=712-717
+3	3	_	Time	_	_	0	_	_	Offset=722-728
+4	anti-mouse	_	Reagent	_	_	0	_	_	Offset=748-776
+5	5	_	Concentration	_	_	4	Measure	_	Offset=778-785
+6	recombinant	_	Reagent	_	_	0	_	_	Offset=788-812
+7	10	_	Concentration	_	_	6	Measure	_	Offset=814-822
+8	recombinant	_	Reagent	_	_	0	_	_	Offset=825-847
+9	10	_	Concentration	_	_	8	Measure	_	Offset=848-856
+10	recombinant	_	Reagent	_	_	0	_	_	Offset=859-881
+11	20	_	Concentration	_	_	10	Measure	_	Offset=883-891
+12	anti-mouse	_	Reagent	_	_	0	_	_	Offset=898-928
+13	10	_	Concentration	_	_	12	Measure	_	Offset=930-938
+
+# sent_id = s11
+# text = Plate CD4+ cells at 10 x106/5 ml/dish.
+1	wash	_	Action	_	_	0	_	_	Offset=951-955
+2	cells	_	Reagent	_	_	0	_	_	Offset=956-961
+3	once	_	Numerical	_	_	0	_	_	Offset=962-966
+4	restimulate	_	Action	_	_	0	_	_	Offset=976-987
+5	complete	_	Reagent	_	_	0	_	_	Offset=991-1006
+6	500	_	Concentration	_	_	7	Measure	_	Offset=1012-1021
+7	PMA	_	Reagent	_	_	0	_	_	Offset=1022-1025
+8	500	_	Concentration	_	_	9	Measure	_	Offset=1030-1039
+9	ionomycin	_	Reagent	_	_	0	_	_	Offset=1040-1049
+10	monensin	_	Reagent	_	_	0	_	_	Offset=1070-1078
+11	6	_	Time	_	_	0	_	_	Offset=1083-1090
+

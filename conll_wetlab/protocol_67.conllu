@@ -1,0 +1,682 @@
+# sent_id = s1
+# text = Generating viral metagenomes from the coral holobiont
+1	approximately	_	Modifier	_	_	2	Mod-Link	_	Offset=69-82
+2	45	_	Amount	_	_	3	Measure	_	Offset=83-87
+3	coral	_	Reagent	_	_	0	_	_	Offset=91-103
+4	sampled	_	Action	_	_	0	_	_	Offset=108-115
+5	three	_	Numerical	_	_	7	Measure	_	Offset=121-126
+6	healthy,	_	Modifier	_	_	7	Mod-Link	_	Offset=127-153
+7	coral	_	Reagent	_	_	0	_	_	Offset=154-168
+8	Pocillopora	_	Reagent	_	_	7	Meronym	_	Offset=172-194
+
+# sent_id = s2
+# text = At Trunk Reef, approximately 45 g of coral tissue was sampled from three healthy, freshly collected coral colonies of Pocillopora damicornis.
+1	Approximately	_	Modifier	_	_	2	Mod-Link	_	Offset=196-209
+2	20	_	Amount	_	_	3	Measure	_	Offset=210-214
+3	Acropora	_	Reagent	_	_	0	_	_	Offset=218-240
+4	sampled	_	Action	_	_	0	_	_	Offset=245-252
+5	three	_	Numerical	_	_	7	Measure	_	Offset=258-263
+6	healthy,	_	Modifier	_	_	7	Mod-Link	_	Offset=264-290
+7	coral	_	Reagent	_	_	0	_	_	Offset=291-305
+8	collected	_	Action	_	_	0	_	_	Offset=306-315
+9	Pioneer	_	Location	_	_	0	_	_	Offset=319-330
+
+# sent_id = s3
+# text = Approximately 20 g of Acropora tenuis tissue was sampled from three healthy, freshly collected coral colonies collected in Pioneer Bay.
+1	Fragments	_	Reagent	_	_	0	_	_	Offset=332-341
+2	washed	_	Action	_	_	0	_	_	Offset=347-353
+3	autoclaved,	_	Modifier	_	_	4	Mod-Link	_	Offset=357-396
+4	seawater	_	Reagent	_	_	0	_	_	Offset=397-405
+
+# sent_id = s4
+# text = Fragments were washed in autoclaved, 0.02 μm filtered virus-free seawater.
+1	tissue	_	Reagent	_	_	0	_	_	Offset=421-427
+2	blasted	_	Action	_	_	0	_	_	Offset=432-439
+3	coral	_	Reagent	_	_	0	_	_	Offset=449-463
+4	air-gun	_	Device	_	_	0	_	_	Offset=474-481
+5	15	_	Amount	_	_	7	Measure	_	Offset=488-493
+6	0.02	_	Modifier	_	_	7	Mod-Link	_	Offset=494-510
+7	SM	_	Reagent	_	_	9	Meronym	11:Meronym|13:Meronym	Offset=529-538
+8	100	_	Concentration	_	_	9	Measure	_	Offset=540-546
+9	NaCl	_	Reagent	_	_	0	_	_	Offset=547-551
+10	8	_	Concentration	_	_	11	Measure	_	Offset=553-557
+11	MgSO4	_	Reagent	_	_	0	_	_	Offset=558-563
+12	50	_	Concentration	_	_	13	Measure	_	Offset=565-570
+13	Tris	_	Reagent	_	_	0	_	_	Offset=571-575
+14	pH	_	pH	_	_	13	Measure	_	Offset=576-582
+15	zip-lock	_	Location	_	_	7	Meronym	_	Offset=589-601
+
+# sent_id = s5
+# text = Subsequently, tissue was blasted from the coral skeleton, using an air-gun, into 15 mL 0.02 μm filtered (Anotop, Whatman) SM buffer (100 mM NaCl, 8 mM MgSO4, 50 mM Tris pH 7.5) in a zip-lock bag.
+1	Briefly	_	Modifier	_	_	0	_	_	Offset=603-610
+2	5	_	Amount	_	_	3	Measure	_	Offset=612-616
+3	chloroform	_	Reagent	_	_	0	_	_	Offset=620-630
+4	per	_	Modifier	_	_	6	Mod-Link	_	Offset=631-634
+5	40	_	Amount	_	_	6	Measure	_	Offset=635-640
+6	coral	_	Reagent	_	_	0	_	_	Offset=644-658
+7	added	_	Action	_	_	0	_	_	Offset=663-668
+8	samples	_	Reagent	_	_	0	_	_	Offset=673-680
+9	agitated	_	Action	_	_	0	_	_	Offset=686-694
+10	gently	_	Modifier	_	_	0	_	_	Offset=695-701
+11	1	_	Time	_	_	0	_	_	Offset=706-709
+12	room	_	Temperature	_	_	0	_	_	Offset=713-729
+
+# sent_id = s6
+# text = Briefly, 5 mL of chloroform per 40 mL of coral blastate was added and samples were agitated gently for 1 h at room temperature.
+1	Coral	_	Reagent	_	_	0	_	_	Offset=731-746
+2	homogenized	_	Action	_	_	0	_	_	Offset=752-763
+3	5000	_	Speed	_	_	0	_	_	Offset=767-775
+4	1	_	Time	_	_	0	_	_	Offset=780-785
+5	Heidolph	_	Device	_	_	0	_	_	Offset=787-810
+
+# sent_id = s7
+# text = Coral blastates were homogenized at 5000 rpm for 1 min (Heidolph SilentCrusher™).
+1	Samples	_	Reagent	_	_	0	_	_	Offset=813-820
+2	immediately	_	Modifier	_	_	0	_	_	Offset=826-837
+3	centrifuged	_	Action	_	_	0	_	_	Offset=838-849
+4	1000	_	Speed	_	_	0	_	_	Offset=853-859
+5	15	_	Time	_	_	0	_	_	Offset=864-870
+
+# sent_id = s8
+# text = Samples were immediately centrifuged at 1000 g for 15 min.
+1	supernatant	_	Reagent	_	_	0	_	_	Offset=876-887
+2	transferred	_	Action	_	_	0	_	_	Offset=892-903
+3	sterile	_	Modifier	_	_	4	Mod-Link	_	Offset=907-914
+4	glass	_	Location	_	_	0	_	_	Offset=915-932
+5	spun	_	Action	_	_	0	_	_	Offset=937-941
+6	12,000	_	Speed	_	_	0	_	_	Offset=945-953
+7	15	_	Time	_	_	0	_	_	Offset=958-964
+8	pellet	_	Action	_	_	0	_	_	Offset=968-974
+9	majority	_	Modifier	_	_	10	Mod-Link	_	Offset=979-987
+10	microbial	_	Reagent	_	_	0	_	_	Offset=991-1006
+11	Beckman	_	Device	_	_	0	_	_	Offset=1008-1038
+
+# sent_id = s9
+# text = The supernatant was transferred to sterile glass corex tubes and spun at 12,000 g for 15 min to pellet the majority of microbial cells (Beckman Coulter JA 25.50 rotor).
+1	cesium	_	Reagent	_	_	0	_	_	Offset=1043-1082
+2	formed	_	Action	_	_	0	_	_	Offset=1092-1098
+3	layering	_	Action	_	_	0	_	_	Offset=1102-1110
+4	1	_	Amount	_	_	8	Measure	_	Offset=1111-1115
+5	1.7	_	Concentration	_	_	8	Measure	_	Offset=1119-1122
+6	1.5	_	Concentration	_	_	8	Measure	_	Offset=1124-1127
+7	1.35	_	Concentration	_	_	8	Measure	_	Offset=1133-1144
+8	CsCl	_	Reagent	_	_	0	_	_	Offset=1145-1149
+9	13.2	_	Amount	_	_	10	Measure	_	Offset=1155-1162
+10	UltraClear™	_	Location	_	_	0	_	_	Offset=1163-1196
+11	9	_	Amount	_	_	12	Measure	_	Offset=1220-1224
+12	sample	_	Reagent	_	_	0	_	_	Offset=1225-1231
+13	layered	_	Action	_	_	0	_	_	Offset=1232-1239
+14	top	_	Location	_	_	0	_	_	Offset=1247-1250
+15	gradient	_	Reagent	_	_	14	Meronym	_	Offset=1258-1266
+
+# sent_id = s10
+# text = A cesium chloride (CsCl) density gradient was then formed by layering 1 mL of 1.7, 1.5, and 1.35 g mL−1 CsCl into 13.2 mL UltraClear™ ultracentrifuge tubes (Beckman Coulter) with 9 mL sample layered on the top of the gradient.
+1	Gradients	_	Reagent	_	_	0	_	_	Offset=1268-1277
+2	centrifuged	_	Action	_	_	0	_	_	Offset=1288-1299
+3	2	_	Time	_	_	0	_	_	Offset=1304-1307
+4	60,000	_	Speed	_	_	0	_	_	Offset=1311-1319
+5	4°C	_	Temperature	_	_	0	_	_	Offset=1323-1326
+6	swinging	_	Device	_	_	0	_	_	Offset=1332-1353
+
+# sent_id = s11
+# text = Gradients were then centrifuged for 2 h at 60,000 g at 4°C in a swinging bucket rotor.
+1	MECH	_	Method	_	_	0	_	_	Offset=1362-1373
+2	coral	_	Reagent	_	_	0	_	_	Offset=1379-1400
+3	homogenized	_	Action	_	_	0	_	_	Offset=1405-1416
+4	10,000	_	Speed	_	_	0	_	_	Offset=1420-1430
+5	1	_	Time	_	_	0	_	_	Offset=1435-1440
+
+# sent_id = s12
+# text = In the MECH method, the coral tissue blastate was homogenized at 10,000 rpm for 1 min.
+1	coral	_	Reagent	_	_	0	_	_	Offset=1446-1467
+2	spun	_	Action	_	_	0	_	_	Offset=1477-1481
+3	400	_	Speed	_	_	0	_	_	Offset=1485-1490
+4	5	_	Time	_	_	0	_	_	Offset=1495-1500
+
+# sent_id = s13
+# text = The coral tissue blastate was then spun at 400 g for 5 min.
+1	supernatant	_	Reagent	_	_	0	_	_	Offset=1506-1517
+2	aliquoted	_	Action	_	_	0	_	_	Offset=1527-1536
+3	1.5	_	Amount	_	_	4	Measure	_	Offset=1542-1548
+4	aliquots	_	Reagent	_	_	0	_	_	Offset=1549-1557
+5	2	_	Size	_	_	6	Measure	_	Offset=1561-1565
+6	eppendorf	_	Location	_	_	9	Meronym	_	Offset=1566-1581
+7	0.3	_	Amount	_	_	9	Measure	_	Offset=1593-1599
+8	acid-washed	_	Modifier	_	_	9	Mod-Link	_	Offset=1600-1611
+9	glass	_	Reagent	_	_	0	_	_	Offset=1612-1623
+10	425–600	_	Generic-Measure	_	_	9	Measure	_	Offset=1625-1635
+11	diameter	_	Measure-Type	_	_	10	Of-Type	_	Offset=1636-1644
+
+# sent_id = s14
+# text = The supernatant was then aliquoted into 1.5 mL aliquots in 2 mL eppendorf tubes containing 0.3 mL acid-washed glass beads (425–600 μm diameter) (Sigma-Aldrich).
+1	tubes	_	Location	_	_	0	_	_	Offset=1667-1672
+2	placed	_	Action	_	_	0	_	_	Offset=1678-1684
+3	bead	_	Device	_	_	0	_	_	Offset=1690-1701
+4	cells	_	Reagent	_	_	0	_	_	Offset=1706-1711
+5	disrupted	_	Action	_	_	0	_	_	Offset=1717-1726
+6	5000	_	Speed	_	_	0	_	_	Offset=1730-1738
+7	5	_	Time	_	_	0	_	_	Offset=1743-1748
+
+# sent_id = s15
+# text = The tubes were placed in a bead beater and cells were disrupted at 5000 rpm for 5 min.
+1	Tubes	_	Location	_	_	0	_	_	Offset=1750-1755
+2	centrifuged	_	Action	_	_	0	_	_	Offset=1761-1772
+3	top	_	Speed	_	_	0	_	_	Offset=1776-1785
+4	bench-top	_	Device	_	_	0	_	_	Offset=1791-1821
+5	1	_	Time	_	_	0	_	_	Offset=1826-1831
+
+# sent_id = s16
+# text = Tubes were centrifuged at top speed in a bench-top Eppendorf centrifuge for 1 min.
+1	supernatant	_	Reagent	_	_	0	_	_	Offset=1837-1848
+2	collected	_	Action	_	_	0	_	_	Offset=1853-1862
+3	viral	_	Method	_	_	0	_	_	Offset=1867-1886
+4	step	_	Method	_	_	0	_	_	Offset=1893-1920
+
+# sent_id = s17
+# text = The supernatant was collected for viral fractionation using step CsCl density gradients.
+1	MECH	_	Method	_	_	0	_	_	Offset=1942-1953
+2	not	_	Action	_	_	0	_	_	Offset=1958-1972
+3	virus	_	Reagent	_	_	0	_	_	Offset=1973-1988
+4	two	_	Numerical	_	_	5	Measure	6:Measure|7:Measure	Offset=1990-1993
+5	dsDNA	_	Reagent	_	_	0	_	_	Offset=1994-2007
+6	OtV-2	_	Reagent	_	_	0	_	_	Offset=2009-2014
+7	EhV-86	_	Reagent	_	_	0	_	_	Offset=2043-2049
+8	subjected	_	Action	_	_	0	_	_	Offset=2079-2088
+9	same	_	Method	_	_	0	_	_	Offset=2096-2131
+
+# sent_id = s18
+# text = To confirm that the MECH method was not disrupting virus particles, two dsDNA viruses, OtV-2 (Weynberg et al., 2011) and EhV-86 (Wilson et al., 2005b), were subjected to the same mechanical disruption protocol.
+1	Flow	_	Method	_	_	0	_	_	Offset=2133-2147
+2	enumerate	_	Action	_	_	0	_	_	Offset=2160-2169
+3	viruses	_	Reagent	_	_	0	_	_	Offset=2170-2177
+
+# sent_id = s19
+# text = Flow cytometry was used to enumerate viruses before and after disruption.
+1	samples	_	Reagent	_	_	0	_	_	Offset=2211-2218
+2	treated	_	Action	_	_	0	_	_	Offset=2224-2231
+3	DNase	_	Reagent	_	_	0	_	_	Offset=2237-2252
+4	nucleic	_	Method	_	_	0	_	_	Offset=2271-2294
+
+# sent_id = s20
+# text = All samples were treated with DNase and RNase (Ambion) prior to nucleic acid extraction.
+1	DNA	_	Reagent	_	_	0	_	_	Offset=2296-2299
+2	extracted	_	Action	_	_	0	_	_	Offset=2304-2313
+3	RNase	_	Reagent	_	_	0	_	_	Offset=2318-2323
+4	treated	_	Action	_	_	0	_	_	Offset=2324-2331
+5	MasterPure	_	Reagent	_	_	0	_	_	Offset=2340-2354
+6	manufacturer's	_	Method	_	_	0	_	_	Offset=2387-2414
+
+# sent_id = s21
+# text = DNA was extracted and RNase treated using a MasterPure kit (Epicentre, Illumina) following manufacturer's instructions.
+1	RNA	_	Reagent	_	_	0	_	_	Offset=2416-2419
+2	extracted	_	Action	_	_	0	_	_	Offset=2424-2433
+3	Qiagen	_	Reagent	_	_	0	_	_	Offset=2442-2469
+4	manufacturer's	_	Method	_	_	0	_	_	Offset=2489-2516
+5	final	_	Method	_	_	0	_	_	Offset=2532-2548
+
+# sent_id = s22
+# text = RNA was extracted using a Qiagen QIAamp viral RNA kit (Qiagen) following manufacturer's instructions, including the final DNase step (Ambion).
+1	Two	_	Numerical	_	_	0	_	_	Offset=2559-2562
+2	amplification	_	Method	_	_	0	_	_	Offset=2573-2594
+3	used	_	Action	_	_	0	_	_	Offset=2600-2604
+
+# sent_id = s23
+# text = Two different amplification methods were used.
+1	ssDNA	_	Reagent	_	_	0	_	_	Offset=2721-2740
+2	DNA	_	Reagent	_	_	0	_	_	Offset=2742-2757
+3	converted	_	Action	_	_	0	_	_	Offset=2763-2772
+4	dsDNA	_	Reagent	_	_	0	_	_	Offset=2776-2781
+
+# sent_id = s24
+# text = In order to reduce some of the inherent biases in multi-displacement amplification (MDA), such as a preference for ssDNA viral genomes, DNA extractions were converted to dsDNA prior to amplification.
+1	Triplicate	_	Numerical	_	_	3	Measure	_	Offset=2806-2816
+2	10	_	Amount	_	_	3	Measure	_	Offset=2817-2823
+3	aliquots	_	Reagent	_	_	0	_	_	Offset=2824-2832
+4	DNA	_	Reagent	_	_	0	_	_	Offset=2840-2855
+5	ds	_	Reagent	_	_	0	_	_	Offset=2868-2894
+6	Klenow	_	Method	_	_	0	_	_	Offset=2924-2939
+7	1.5	_	Amount	_	_	9	Measure	_	Offset=2971-2978
+8	10×	_	Concentration	_	_	9	Measure	_	Offset=2982-2985
+9	reaction	_	Reagent	_	_	0	_	_	Offset=2986-3001
+10	1.5	_	Amount	_	_	11	Measure	_	Offset=3034-3041
+11	dNTPs	_	Reagent	_	_	0	_	_	Offset=3045-3050
+12	2.5	_	Concentration	_	_	13	Measure	_	Offset=3052-3058
+13	stock	_	Reagent	_	_	0	_	_	Offset=3059-3064
+14	1	_	Amount	_	_	15	Measure	_	Offset=3067-3072
+15	random	_	Reagent	_	_	0	_	_	Offset=3076-3098
+16	50	_	Concentration	_	_	0	_	_	Offset=3100-3109
+
+# sent_id = s25
+# text = Triplicate 10 μ L aliquots of the DNA extractions, containing ds and ssDNA viral genomes, underwent a single round of Klenow reaction (3′–5′ exo-, 5U/μ L) by mixing 1.5 μ L of 10× reaction buffer (New England Biolabs Buffer 2), 1.5 μ L of dNTPs (2.5 mM stock), 1 μ L of random hexamer primers (50 ng/μ L, Invitrogen).
+1	reaction	_	Reagent	_	_	0	_	_	Offset=3128-3136
+2	incubated	_	Action	_	_	0	_	_	Offset=3141-3150
+3	94°C	_	Temperature	_	_	0	_	_	Offset=3154-3158
+4	3	_	Time	_	_	0	_	_	Offset=3163-3168
+
+# sent_id = s26
+# text = The reaction was incubated at 94°C for 3 min.
+1	reaction	_	Reagent	_	_	0	_	_	Offset=3174-3182
+2	placed	_	Action	_	_	0	_	_	Offset=3192-3198
+3	ice	_	Reagent	_	_	0	_	_	Offset=3202-3205
+4	3	_	Time	_	_	0	_	_	Offset=3210-3215
+
+# sent_id = s27
+# text = The reaction was then placed on ice for 3 min to allow for primer annealing.
+1	1	_	Amount	_	_	2	Measure	_	Offset=3247-3252
+2	Klenow	_	Reagent	_	_	0	_	_	Offset=3256-3262
+3	added	_	Action	_	_	0	_	_	Offset=3280-3285
+4	incubated	_	Action	_	_	0	_	_	Offset=3290-3299
+5	25°C	_	Time	_	_	0	_	_	Offset=3303-3307
+6	10	_	Time	_	_	0	_	_	Offset=3312-3318
+
+# sent_id = s28
+# text = 1 μ L of Klenow (3′–5′ exo-) was added and incubated at 25°C for 10 min.
+1	It	_	Mention	_	_	0	_	_	Offset=3320-3322
+2	incubated	_	Action	_	_	0	_	_	Offset=3332-3341
+3	37°C	_	Temperature	_	_	0	_	_	Offset=3345-3349
+4	60	_	Time	_	_	0	_	_	Offset=3354-3360
+
+# sent_id = s29
+# text = It was then incubated at 37°C for 60 min.
+1	It	_	Mention	_	_	0	_	_	Offset=3362-3364
+2	incubated	_	Action	_	_	0	_	_	Offset=3374-3383
+3	termination	_	Method	_	_	0	_	_	Offset=3391-3407
+4	75°C	_	Temperature	_	_	0	_	_	Offset=3411-3415
+5	20	_	Time	_	_	0	_	_	Offset=3420-3426
+
+# sent_id = s30
+# text = It was then incubated with a termination step of 75°C for 20 min.
+1	reactions	_	Reagent	_	_	0	_	_	Offset=3447-3456
+2	pooled	_	Action	_	_	0	_	_	Offset=3462-3468
+3	cleaned	_	Action	_	_	0	_	_	Offset=3473-3480
+4	Qiagen	_	Reagent	_	_	0	_	_	Offset=3489-3515
+5	eluted	_	Action	_	_	0	_	_	Offset=3520-3526
+6	50	_	Amount	_	_	7	Measure	_	Offset=3530-3535
+7	Buffer	_	Reagent	_	_	0	_	_	Offset=3539-3548
+
+# sent_id = s31
+# text = After termination, reactions were pooled and cleaned using a Qiagen QIAamp DNA mini kit and eluted in 50 μL of Buffer AE.
+1	Replicate	_	Reagent	_	_	0	_	_	Offset=3550-3573
+2	amplified	_	Action	_	_	0	_	_	Offset=3603-3612
+3	2.5	_	Amount	_	_	4	Measure	_	Offset=3619-3626
+4	dsDNA	_	Reagent	_	_	0	_	_	Offset=3627-3641
+5	Qiagen	_	Reagent	_	_	0	_	_	Offset=3650-3668
+6	standard	_	Method	_	_	0	_	_	Offset=3679-3696
+
+# sent_id = s32
+# text = Replicate MDA reactions (n = 3 for each sample) were amplified using 2.5 μ L dsDNA template and the Qiagen RepliG® kit using the standard protocol.
+1	reactions	_	Reagent	_	_	0	_	_	Offset=3702-3711
+2	run	_	Action	_	_	0	_	_	Offset=3717-3720
+3	0.8%	_	Concentration	_	_	4	Measure	_	Offset=3726-3730
+4	agarose	_	Reagent	_	_	0	_	_	Offset=3731-3742
+5	1×	_	Concentration	_	_	6	Measure	_	Offset=3746-3748
+6	TAE	_	Reagent	_	_	4	Meronym	_	Offset=3749-3752
+7	100	_	Generic-Measure	_	_	0	_	_	Offset=3756-3761
+8	30	_	Time	_	_	0	_	_	Offset=3766-3772
+9	pooled	_	Action	_	_	0	_	_	Offset=3799-3817
+10	QIAampl	_	Reagent	_	_	0	_	_	Offset=3823-3842
+11	eluted	_	Action	_	_	0	_	_	Offset=3847-3853
+12	200	_	Amount	_	_	13	Measure	_	Offset=3857-3864
+13	Buffer	_	Reagent	_	_	0	_	_	Offset=3868-3877
+
+# sent_id = s33
+# text = All reactions were run on a 0.8% agarose gel in 1× TAE at 100 V for 30 min to confirm amplification, pooled and cleaned with QIAampl DNA minikit and eluted in 200 μ L of Buffer AE.
+1	Negative	_	Reagent	_	_	0	_	_	Offset=3879-3896
+2	treated	_	Action	_	_	0	_	_	Offset=3902-3909
+3	sent	_	Action	_	_	0	_	_	Offset=3928-3932
+4	sequencing	_	Method	_	_	0	_	_	Offset=3937-3947
+
+# sent_id = s34
+# text = Negative controls were treated the same and also sent for sequencing to confirm that no viral contamination was present.
+1	Klenow	_	Reagent	_	_	0	_	_	Offset=4030-4045
+2	convert	_	Action	_	_	0	_	_	Offset=4071-4078
+3	DNA	_	Reagent	_	_	0	_	_	Offset=4083-4094
+4	dsDNA	_	Reagent	_	_	0	_	_	Offset=4098-4103
+5	RP-SISPA	_	Reagent	_	_	0	_	_	Offset=4110-4160
+6	used	_	Action	_	_	0	_	_	Offset=4169-4173
+7	PCR	_	Method	_	_	0	_	_	Offset=4189-4206
+
+# sent_id = s35
+# text = As with the RepliG® protocol, Klenow Fragment (3′–5′ exo-) was used to convert all DNA genomes to dsDNA using RP-SISPA primers with a 3′ random hexamer sequence that is used for downstream PCR amplification.
+1	label	_	Action	_	_	0	_	_	Offset=4211-4216
+2	first	_	Reagent	_	_	0	_	_	Offset=4221-4233
+3	RP-SISPA	_	Reagent	_	_	0	_	_	Offset=4243-4258
+4	5	_	Amount	_	_	5	Measure	_	Offset=4260-4264
+5	nucleic	_	Reagent	_	_	0	_	_	Offset=4268-4280
+6	added	_	Action	_	_	0	_	_	Offset=4285-4290
+7	9	_	Amount	_	_	8	Measure	_	Offset=4294-4298
+8	reaction	_	Reagent	_	_	0	_	_	Offset=4299-4311
+
+# sent_id = s36
+# text = To label the first strand with the RP-SISPA primer, 5 μL of nucleic acid was added to 9 μL reaction mix containing:.
+1	reaction	_	Reagent	_	_	0	_	_	Offset=4329-4337
+2	incubated	_	Action	_	_	0	_	_	Offset=4342-4351
+3	94°C	_	Temperature	_	_	0	_	_	Offset=4355-4359
+4	3	_	Time	_	_	0	_	_	Offset=4364-4369
+
+# sent_id = s37
+# text = The reaction was incubated at 94°C for 3 min.
+1	reaction	_	Reagent	_	_	0	_	_	Offset=4375-4383
+2	placed	_	Action	_	_	0	_	_	Offset=4393-4399
+3	ice	_	Reagent	_	_	0	_	_	Offset=4403-4406
+4	3	_	Time	_	_	0	_	_	Offset=4411-4416
+5	primer	_	Reagent	_	_	0	_	_	Offset=4430-4436
+6	annealing	_	Action	_	_	0	_	_	Offset=4437-4446
+
+# sent_id = s38
+# text = The reaction was then placed on ice for 3 min to allow for primer annealing.
+1	1	_	Amount	_	_	2	Measure	_	Offset=4448-4452
+2	Klenow	_	Reagent	_	_	0	_	_	Offset=4456-4471
+3	added	_	Action	_	_	0	_	_	Offset=4503-4508
+4	incubated	_	Action	_	_	0	_	_	Offset=4513-4522
+5	37°C	_	Temperature	_	_	0	_	_	Offset=4526-4530
+6	60	_	Time	_	_	0	_	_	Offset=4535-4541
+
+# sent_id = s39
+# text = 1 μL of Klenow Fragment (3′–5′ exo-, 5U/μL, NEB #) was added and incubated at 37°C for 60 min.
+1	Klenow	_	Method	_	_	0	_	_	Offset=4561-4585
+2	labeled	_	Action	_	_	0	_	_	Offset=4598-4605
+3	second	_	Reagent	_	_	0	_	_	Offset=4610-4623
+4	SISPA	_	Reagent	_	_	0	_	_	Offset=4633-4645
+5	adding	_	Action	_	_	0	_	_	Offset=4650-4656
+6	additional	_	Modifier	_	_	7	Mod-Link	_	Offset=4660-4670
+7	1	_	Amount	_	_	8	Measure	_	Offset=4671-4675
+8	primer	_	Reagent	_	_	0	_	_	Offset=4679-4685
+9	1	_	Amount	_	_	10	Measure	_	Offset=4690-4694
+10	dNTP	_	Reagent	_	_	0	_	_	Offset=4695-4699
+
+# sent_id = s40
+# text = A second round of Klenow Fragment reaction (3′–5′ exo) labeled the second strand with the SISPA primer, by adding an additional 1 μL of primer and 1 μL dNTP.
+1	reaction	_	Reagent	_	_	0	_	_	Offset=4705-4713
+2	94°C	_	Temperature	_	_	0	_	_	Offset=4731-4735
+3	3	_	Time	_	_	0	_	_	Offset=4740-4745
+4	heating	_	Action	_	_	0	_	_	Offset=4746-4753
+
+# sent_id = s41
+# text = The reaction then underwent a 94°C for 3 min heating step.
+1	reaction	_	Reagent	_	_	0	_	_	Offset=4764-4772
+2	put	_	Action	_	_	0	_	_	Offset=4782-4785
+3	ice	_	Reagent	_	_	0	_	_	Offset=4789-4792
+4	3	_	Time	_	_	0	_	_	Offset=4797-4802
+
+# sent_id = s42
+# text = The reaction was then put on ice for 3 min.
+1	reaction	_	Reagent	_	_	0	_	_	Offset=4808-4816
+2	final	_	Modifier	_	_	0	_	_	Offset=4834-4839
+3	addition	_	Action	_	_	0	_	_	Offset=4840-4848
+4	1	_	Amount	_	_	5	Measure	_	Offset=4852-4856
+5	Klenow	_	Reagent	_	_	0	_	_	Offset=4860-4875
+
+# sent_id = s43
+# text = The reaction then underwent a final addition of 1 μL of Klenow Fragment (3′–5′ exo-).
+1	reaction	_	Reagent	_	_	0	_	_	Offset=4894-4902
+2	incubated	_	Action	_	_	0	_	_	Offset=4907-4916
+3	37°C	_	Temperature	_	_	0	_	_	Offset=4920-4924
+4	60	_	Time	_	_	0	_	_	Offset=4929-4935
+
+# sent_id = s44
+# text = The reaction was incubated at 37°C for 60 min.
+1	reaction	_	Reagent	_	_	0	_	_	Offset=4941-4949
+2	terminated	_	Action	_	_	0	_	_	Offset=4959-4969
+3	75°C	_	Temperature	_	_	0	_	_	Offset=4973-4977
+4	20	_	Time	_	_	0	_	_	Offset=4982-4988
+
+# sent_id = s45
+# text = The reaction was then terminated at 75°C for 20 min.
+1	cDNA	_	Method	_	_	0	_	_	Offset=5018-5032
+2	10	_	Amount	_	_	4	Measure	_	Offset=5034-5040
+3	purified	_	Modifier	_	_	4	Mod-Link	_	Offset=5041-5049
+4	RNA	_	Reagent	_	_	0	_	_	Offset=5050-5068
+5	mixed	_	Action	_	_	0	_	_	Offset=5073-5078
+6	1	_	Amount	_	_	8	Measure	_	Offset=5084-5089
+7	2.5	_	Concentration	_	_	8	Measure	_	Offset=5093-5099
+8	dNTPs	_	Reagent	_	_	0	_	_	Offset=5100-5105
+9	1.3	_	Amount	_	_	10	Measure	13:Measure	Offset=5110-5117
+10	FR26RV-N	_	Reagent	_	_	0	_	_	Offset=5121-5129
+11	10	_	Concentration	_	_	12	Measure	_	Offset=5159-5165
+12	stock	_	Reagent	_	_	0	_	_	Offset=5166-5171
+13	FR40RV-T	_	Reagent	_	_	0	_	_	Offset=5177-5192
+14	50	_	Concentration	_	_	15	Measure	_	Offset=5221-5226
+15	stock	_	Reagent	_	_	0	_	_	Offset=5227-5232
+
+# sent_id = s46
+# text = Briefly, in preparation for cDNA synthesis, 10 μ L purified RNA viral template was mixed with 1 μ L of 2.5 mM dNTPs and 1.3 μ L of FR26RV-N (GCCGGAGCTCTGCAGATATCNNNNNN, 10 μ M stock) and FR40RV-T primer (GCCGGAGCTCTGCAGATATC(T)20, 50 nM stock).
+1	reaction	_	Reagent	_	_	0	_	_	Offset=5239-5247
+2	heated	_	Action	_	_	0	_	_	Offset=5252-5258
+3	65°C	_	Temperature	_	_	0	_	_	Offset=5262-5266
+4	5	_	Time	_	_	0	_	_	Offset=5271-5276
+
+# sent_id = s47
+# text = The reaction was heated to 65°C for 5 min.
+1	reaction	_	Reagent	_	_	0	_	_	Offset=5282-5290
+2	cooled	_	Action	_	_	0	_	_	Offset=5300-5306
+3	ice	_	Reagent	_	_	0	_	_	Offset=5310-5313
+4	3	_	Time	_	_	0	_	_	Offset=5318-5323
+5	primers	_	Reagent	_	_	0	_	_	Offset=5337-5344
+6	anneal	_	Action	_	_	0	_	_	Offset=5348-5354
+
+# sent_id = s48
+# text = The reaction was then cooled on ice for 3 min to allow the primers to anneal.
+1	ice	_	Location	_	_	0	_	_	Offset=5371-5374
+2	1	_	Amount	_	_	3	Measure	_	Offset=5376-5380
+3	DTT	_	Reagent	_	_	6	Or	_	Offset=5381-5384
+4	added	_	Action	_	_	0	_	_	Offset=5402-5407
+5	reaction	_	Reagent	_	_	0	_	_	Offset=5415-5423
+6	enzyme	_	Reagent	_	_	8	Meronym	_	Offset=5430-5458
+7	1	_	Amount	_	_	8	Measure	_	Offset=5464-5468
+8	RNase	_	Reagent	_	_	0	_	_	Offset=5469-5478
+9	protect	_	Action	_	_	0	_	_	Offset=5495-5502
+10	sample	_	Reagent	_	_	0	_	_	Offset=5507-5513
+11	RNAse	_	Reagent	_	_	0	_	_	Offset=5519-5524
+
+# sent_id = s49
+# text = While still on ice, 1 μL DTT (Invitrogen) was added to the reaction as an enzyme stabilization reagent with 1 μL RNase OUT (Invitrogen) to protect the sample from RNAse activity.
+1	complementary	_	Reagent	_	_	0	_	_	Offset=5539-5563
+2	synthesized	_	Action	_	_	0	_	_	Offset=5568-5579
+3	200	_	Amount	_	_	4	Measure	_	Offset=5585-5590
+4	Superscript	_	Reagent	_	_	0	_	_	Offset=5594-5631
+
+# sent_id = s50
+# text = The complementary DNA strand was synthesized with 200 U of Superscript III reverse transcriptase.
+1	reaction	_	Reagent	_	_	0	_	_	Offset=5637-5645
+2	incubated	_	Action	_	_	0	_	_	Offset=5650-5659
+3	25°C	_	Temperature	_	_	0	_	_	Offset=5673-5677
+4	10	_	Time	_	_	0	_	_	Offset=5682-5688
+5	annealing	_	Action	_	_	0	_	_	Offset=5698-5707
+6	hexamer	_	Reagent	_	_	0	_	_	Offset=5715-5748
+7	poly(T)20	_	Reagent	_	_	0	_	_	Offset=5757-5792
+8	template	_	Reagent	_	_	0	_	_	Offset=5800-5808
+9	cDNA	_	Method	_	_	0	_	_	Offset=5815-5829
+
+# sent_id = s51
+# text = The reaction was incubated initially at 25°C for 10 min to allow annealing of the hexamer 3′ end of primer FR26RV-N and the poly(T)20 3′ end of primer FR40RV-T to the template while cDNA synthesis commenced.
+1	temperature	_	Generic-Measure	_	_	0	_	_	Offset=5845-5856
+2	increased	_	Action	_	_	0	_	_	Offset=5866-5875
+3	50°C	_	Temperature	_	_	0	_	_	Offset=5879-5883
+4	60	_	Time	_	_	0	_	_	Offset=5888-5894
+
+# sent_id = s52
+# text = The temperature was then increased to 50°C for 60 min.
+1	first	_	Reagent	_	_	0	_	_	Offset=5900-5931
+2	heated	_	Action	_	_	0	_	_	Offset=5936-5942
+3	immediately	_	Modifier	_	_	0	_	_	Offset=5943-5954
+4	94°C	_	Temperature	_	_	0	_	_	Offset=5958-5962
+5	3	_	Time	_	_	0	_	_	Offset=5967-5972
+6	rapidly	_	Modifier	_	_	0	_	_	Offset=5982-5989
+7	cooled	_	Action	_	_	0	_	_	Offset=5990-5996
+8	ice	_	Location	_	_	0	_	_	Offset=6000-6003
+
+# sent_id = s53
+# text = The first strand synthesis reaction was heated immediately to 94°C for 3 min and then rapidly cooled on ice.
+1	complementary	_	Reagent	_	_	0	_	_	Offset=6007-6034
+2	subsequently	_	Modifier	_	_	0	_	_	Offset=6039-6051
+3	synthesized	_	Action	_	_	0	_	_	Offset=6052-6063
+4	37°C	_	Temperature	_	_	0	_	_	Offset=6067-6071
+5	60	_	Time	_	_	0	_	_	Offset=6076-6082
+6	1	_	Amount	_	_	7	Measure	_	Offset=6104-6108
+7	Klenow	_	Reagent	_	_	0	_	_	Offset=6109-6124
+
+# sent_id = s54
+# text = A complementary second strand was subsequently synthesized at 37°C for 60 min with the addition of 1 μL Klenow Fragment (3′–5′ exo-, 5U/μL).
+1	Klenow	_	Reagent	_	_	0	_	_	Offset=6150-6165
+2	terminated	_	Action	_	_	0	_	_	Offset=6170-6180
+3	incubation	_	Method	_	_	0	_	_	Offset=6194-6204
+4	75°C	_	Temperature	_	_	0	_	_	Offset=6208-6212
+5	20	_	Time	_	_	0	_	_	Offset=6217-6223
+
+# sent_id = s55
+# text = The Klenow reaction was terminated with a final incubation at 75°C for 20 min.
+1	PCR	_	Method	_	_	0	_	_	Offset=6225-6242
+2	SISPA	_	Reagent	_	_	0	_	_	Offset=6250-6279
+3	done	_	Action	_	_	0	_	_	Offset=6298-6302
+4	triplicate	_	Numerical	_	_	6	Measure	_	Offset=6306-6316
+5	25	_	Amount	_	_	6	Measure	_	Offset=6317-6322
+6	reactions	_	Reagent	_	_	0	_	_	Offset=6323-6332
+
+# sent_id = s56
+# text = PCR amplification of the SISPA primer labeled template (DNA and RNA) was done in triplicate 25 μL reactions containing:.
+1	reaction	_	Reagent	_	_	0	_	_	Offset=6350-6358
+2	incubated	_	Action	_	_	0	_	_	Offset=6363-6372
+3	95°C	_	Temperature	_	_	0	_	_	Offset=6376-6380
+4	10	_	Time	_	_	0	_	_	Offset=6385-6391
+
+# sent_id = s57
+# text = The reaction was incubated at 95°C for 10 min.
+1	reaction	_	Reagent	_	_	0	_	_	Offset=6397-6405
+2	30	_	Generic-Measure	_	_	0	_	_	Offset=6421-6430
+3	denaturation	_	Action	_	_	0	_	_	Offset=6434-6446
+
+# sent_id = s58
+# text = The reaction then underwent 30 cycles of denaturation at:.
+1	PCR	_	Reagent	_	_	0	_	_	Offset=6456-6469
+2	loaded	_	Action	_	_	0	_	_	Offset=6475-6481
+3	0.8%	_	Concentration	_	_	4	Measure	_	Offset=6490-6494
+4	agarose	_	Reagent	_	_	0	_	_	Offset=6495-6506
+5	1×	_	Concentration	_	_	6	Measure	_	Offset=6510-6512
+6	TAE	_	Reagent	_	_	0	_	_	Offset=6512-6515
+7	100	_	Generic-Measure	_	_	0	_	_	Offset=6519-6524
+8	30	_	Time	_	_	0	_	_	Offset=6529-6535
+
+# sent_id = s59
+# text = The PCR reactions were loaded on to a 0.8% agarose gel in 1×TAE at 100 V for 30 min.
+1	amplification	_	Method	_	_	0	_	_	Offset=6540-6553
+2	visible	_	Modifier	_	_	3	Mod-Link	_	Offset=6566-6573
+3	PCR	_	Reagent	_	_	0	_	_	Offset=6574-6586
+4	reconditioning	_	Reagent	_	_	0	_	_	Offset=6649-6667
+5	performed	_	Action	_	_	0	_	_	Offset=6672-6681
+6	pooled	_	Modifier	_	_	7	Mod-Link	_	Offset=6685-6691
+7	reactions	_	Reagent	_	_	0	_	_	Offset=6692-6701
+
+# sent_id = s60
+# text = If amplification resulted in visible PCR products (typically a smear; products should be longer than 250 bp), a reconditioning PCR was performed on pooled reactions as follows.
+1	reconditioning	_	Reagent	_	_	0	_	_	Offset=6718-6736
+2	contained	_	Action	_	_	0	_	_	Offset=6737-6746
+3	10	_	Amount	_	_	5	Measure	_	Offset=6747-6752
+4	pooled	_	Modifier	_	_	5	Mod-Link	_	Offset=6756-6762
+5	SISPA	_	Reagent	_	_	0	_	_	Offset=6763-6786
+6	10	_	Amount	_	_	8	Measure	_	Offset=6788-6793
+7	10×	_	Concentration	_	_	8	Measure	_	Offset=6794-6797
+8	buffer	_	Reagent	_	_	0	_	_	Offset=6798-6804
+9	16	_	Amount	_	_	10	Measure	_	Offset=6806-6811
+10	dNTP	_	Reagent	_	_	0	_	_	Offset=6812-6816
+11	2.5	_	Concentration	_	_	12	Measure	_	Offset=6818-6824
+12	stock	_	Reagent	_	_	0	_	_	Offset=6825-6830
+13	8	_	Amount	_	_	14	Measure	_	Offset=6833-6837
+14	FR20RV	_	Reagent	_	_	0	_	_	Offset=6838-6851
+15	10	_	Concentration	_	_	16	Measure	_	Offset=6853-6859
+16	stock	_	Reagent	_	_	0	_	_	Offset=6860-6865
+17	0.75	_	Amount	_	_	18	Measure	_	Offset=6871-6878
+18	TaKaRa	_	Reagent	_	_	0	_	_	Offset=6879-6895
+
+# sent_id = s61
+# text = One reconditioning PCR contained 10 μL of pooled SISPA reaction template, 10 μL 10× buffer, 16 μL dNTP (2.5 mM stock), 8 μL FR20RV primer (10 μ M stock) and 0.75 μL TaKaRa LA HS Taq.
+1	reaction	_	Reagent	_	_	0	_	_	Offset=6901-6909
+2	incubated	_	Action	_	_	0	_	_	Offset=6914-6923
+3	95°C	_	Temperature	_	_	0	_	_	Offset=6927-6931
+4	10	_	Time	_	_	0	_	_	Offset=6936-6942
+
+# sent_id = s62
+# text = The reaction was incubated at 95°C for 10 min.
+1	reaction	_	Reagent	_	_	0	_	_	Offset=6948-6956
+2	5	_	Generic-Measure	_	_	0	_	_	Offset=6972-6980
+3	denaturation	_	Action	_	_	0	_	_	Offset=6984-6996
+
+# sent_id = s63
+# text = The reaction then underwent 5 cycles of denaturation at:.
+1	Reactions	_	Reagent	_	_	0	_	_	Offset=7002-7011
+2	cleaned	_	Action	_	_	0	_	_	Offset=7017-7024
+3	QC	_	Generic-Measure	_	_	0	_	_	Offset=7029-7031
+4	assessed	_	Action	_	_	0	_	_	Offset=7036-7044
+
+# sent_id = s64
+# text = Reactions were cleaned and QC was assessed.
+1	amplification	_	Method	_	_	0	_	_	Offset=7052-7065
+2	samples	_	Reagent	_	_	0	_	_	Offset=7067-7074
+3	cleaned	_	Action	_	_	0	_	_	Offset=7080-7087
+4	QIAamp®	_	Reagent	_	_	0	_	_	Offset=7095-7115
+5	RepliG®	_	Reagent	_	_	4	Or	_	Offset=7117-7138
+6	MinElute®	_	Reagent	_	_	4	Or	_	Offset=7145-7175
+7	RP-SISPA	_	Reagent	_	_	6	Or	_	Offset=7177-7185
+
+# sent_id = s65
+# text = After amplification, samples were cleaned with a QIAamp® DNA Mini kit (RepliG® amplification) or a MinElute® PCR purification kit (RP-SISPA).
+1	Samples	_	Reagent	_	_	0	_	_	Offset=7188-7195
+2	checked	_	Action	_	_	0	_	_	Offset=7201-7208
+3	quantification	_	Measure-Type	_	_	0	_	_	Offset=7213-7227
+4	Quant-iT	_	Reagent	_	_	0	_	_	Offset=7236-7259
+5	NanoDrop	_	Device	_	_	4	Meronym	_	Offset=7265-7296
+6	quality	_	Generic-Measure	_	_	7	Setting	_	Offset=7302-7326
+7	NanoDrop	_	Device	_	_	0	_	_	Offset=7332-7345
+8	run	_	Action	_	_	0	_	_	Offset=7356-7359
+9	0.8%	_	Concentration	_	_	10	Measure	_	Offset=7365-7369
+10	agarose	_	Reagent	_	_	0	_	_	Offset=7370-7381
+11	1×	_	Concentration	_	_	12	Measure	_	Offset=7385-7387
+12	TAE	_	Reagent	_	_	0	_	_	Offset=7388-7391
+13	100	_	Generic-Measure	_	_	0	_	_	Offset=7395-7400
+14	30	_	Time	_	_	0	_	_	Offset=7405-7411
+15	confirm	_	Action	_	_	0	_	_	Offset=7415-7422
+16	size	_	Measure-Type	_	_	0	_	_	Offset=7425-7435
+17	appropriate	_	Modifier	_	_	0	_	_	Offset=7436-7447
+18	sequencing	_	Method	_	_	0	_	_	Offset=7452-7462
+19	without	_	Action	_	_	0	_	_	Offset=7489-7510
+20	smaller	_	Modifier	_	_	21	Mod-Link	_	Offset=7514-7521
+21	fragments	_	Reagent	_	_	0	_	_	Offset=7522-7531
+
+# sent_id = s66
+# text = Samples were checked for quantification using a Quant-iT PicoGreen® kit on a NanoDrop 3300 fluorospecrometer, for quality (260:280 ratios) on a NanoDrop 2000, and were run on a 0.8% agarose gel in 1× TAE at 100 V for 30 min to confirm a size range appropriate for sequencing (~250–500 bp) was present without contamination of smaller fragments.
+1	metagenomes	_	Reagent	_	_	0	_	_	Offset=7537-7548
+2	sequenced	_	Action	_	_	0	_	_	Offset=7554-7563
+3	Nextera	_	Method	_	_	0	_	_	Offset=7570-7615
+
+# sent_id = s67
+# text = All metagenomes were sequenced using Nextera XT MiSeq 250 bp paired-end sequencing (Illumina) at the Ramaciotti Centre, University of New South Wales, Sydney, Australia.
+1	Raw	_	Reagent	_	_	0	_	_	Offset=7703-7721
+2	processed	_	Action	_	_	0	_	_	Offset=7727-7736
+3	CLC	_	Device	_	_	0	_	_	Offset=7740-7766
+
+# sent_id = s68
+# text = Raw sequence reads were processed in CLC Genomics Workbench 5.5.
+1	Sequences	_	Reagent	_	_	0	_	_	Offset=7768-7777
+2	imported	_	Action	_	_	0	_	_	Offset=7783-7791
+3	Illumina	_	Reagent	_	_	0	_	_	Offset=7795-7820
+4	adaptor	_	Reagent	_	_	0	_	_	Offset=7822-7839
+5	trimmed	_	Action	_	_	0	_	_	Offset=7845-7852
+6	reads	_	Reagent	_	_	0	_	_	Offset=7858-7863
+7	checked	_	Action	_	_	0	_	_	Offset=7869-7876
+8	quality	_	Measure-Type	_	_	0	_	_	Offset=7881-7888
+9	PHRED	_	Measure-Type	_	_	10	Of-Type	_	Offset=7897-7908
+10	20	_	Numerical	_	_	0	_	_	Offset=7912-7914
+11	minimum	_	Measure-Type	_	_	12	Of-Type	_	Offset=7921-7935
+12	100	_	Generic-Measure	_	_	0	_	_	Offset=7939-7945
+
+# sent_id = s69
+# text = Sequences were imported as Illumina paired-end reads, adaptor sequences were trimmed, and reads were checked for quality using a PHRED score of 20 and a minimum length of 100 bp.
+1	Paired	_	Reagent	_	_	0	_	_	Offset=7947-7959
+2	merged	_	Action	_	_	0	_	_	Offset=7965-7971
+3	final	_	Reagent	_	_	4	Meronym	_	Offset=7978-7992
+4	merged	_	Reagent	_	_	0	_	_	Offset=8004-8016
+5	checked	_	Action	_	_	0	_	_	Offset=8032-8039
+6	QC	_	Measure-Type	_	_	0	_	_	Offset=8050-8052
+7	minimum	_	Measure-Type	_	_	8	Of-Type	_	Offset=8060-8074
+8	200	_	Generic-Measure	_	_	0	_	_	Offset=8078-8084
+

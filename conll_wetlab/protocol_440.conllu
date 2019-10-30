@@ -1,0 +1,153 @@
+# sent_id = s1
+# text = Conjugation of Thalassiosira pseudonana
+1	Pick	_	Action	_	_	0	_	_	Offset=40-44
+2	bacterial	_	Reagent	_	_	0	_	_	Offset=45-63
+3	Gent+Kan	_	Location	_	_	0	_	_	Offset=74-89
+4	inoculate	_	Action	_	_	0	_	_	Offset=94-103
+5	10	_	Amount	_	_	6	Measure	_	Offset=104-109
+6	LB	_	Reagent	_	_	0	_	_	Offset=110-119
+
+# sent_id = s2
+# text = Pick bacterial colonies from your Gent+Kan plates and inoculate 10 mL LB medium.
+1	Measure	_	Action	_	_	0	_	_	Offset=137-144
+2	OD600	_	Generic-Measure	_	_	0	_	_	Offset=145-150
+3	start	_	Action	_	_	0	_	_	Offset=155-160
+4	150	_	Amount	_	_	5	Measure	_	Offset=163-169
+5	LB	_	Reagent	_	_	0	_	_	Offset=170-183
+
+# sent_id = s3
+# text = Grow overnight.
+1	Grow	_	Action	_	_	0	_	_	Offset=233-237
+2	37oC	_	Generic-Measure	_	_	0	_	_	Offset=241-245
+
+# sent_id = s4
+# text = Measure OD600 and start a 150 mL LB subculture (recommended starting OD600 either 0.05 or 0.1).
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=275-285
+2	4,000	_	Speed	_	_	0	_	_	Offset=289-298
+3	10oC	_	Generic-Measure	_	_	0	_	_	Offset=300-304
+4	10	_	Time	_	_	0	_	_	Offset=310-316
+
+# sent_id = s5
+# text = Grow at 37oC until OD600 reaches 0.3-0.4.
+1	Decant	_	Action	_	_	0	_	_	Offset=318-324
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=325-336
+3	resuspend	_	Action	_	_	0	_	_	Offset=341-350
+4	800	_	Amount	_	_	5	Measure	_	Offset=354-360
+5	SOC	_	Reagent	_	_	0	_	_	Offset=361-364
+
+# sent_id = s6
+# text = Centrifuge at 4,000 rpm, 10oC, for 10 min.
+1	Spin	_	Action	_	_	0	_	_	Offset=439-448
+2	2	_	Size	_	_	3	Measure	_	Offset=449-456
+3	cells	_	Reagent	_	_	0	_	_	Offset=457-462
+4	4000	_	Speed	_	_	0	_	_	Offset=466-474
+5	10oC	_	Generic-Measure	_	_	0	_	_	Offset=476-480
+6	10	_	Time	_	_	0	_	_	Offset=486-492
+
+# sent_id = s7
+# text = Decant supernatant and resuspend in 800 µL SOC.
+1	Decant	_	Action	_	_	0	_	_	Offset=494-500
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=501-512
+3	resuspend	_	Action	_	_	0	_	_	Offset=517-526
+4	pellet	_	Reagent	_	_	0	_	_	Offset=527-533
+5	1	_	Amount	_	_	6	Measure	_	Offset=537-541
+6	L1	_	Location	_	_	0	_	_	Offset=542-551
+
+# sent_id = s8
+# text = Tp was cultured in L1 medium as described in the 'Before start' section.
+1	Mix	_	Action	_	_	0	_	_	Offset=553-556
+2	200	_	Amount	_	_	3	Measure	_	Offset=557-563
+3	T.	_	Reagent	_	_	0	_	_	Offset=564-583
+4	200	_	Amount	_	_	5	Measure	_	Offset=588-594
+5	E.	_	Reagent	_	_	0	_	_	Offset=595-608
+6	1.5	_	Amount	_	_	7	Measure	_	Offset=614-620
+7	tube	_	Location	_	_	0	_	_	Offset=621-625
+
+# sent_id = s9
+# text = Spin down 2 x 108 cells at 4000 rpm, 10oC, for 10 min.
+1	Pipette	_	Action	_	_	0	_	_	Offset=627-634
+2	up	_	Method	_	_	0	_	_	Offset=635-646
+3	few	_	Generic-Measure	_	_	0	_	_	Offset=649-658
+
+# sent_id = s10
+# text = Decant supernatant and resuspend pellet in 1 mL L1 medium.
+1	Plate	_	Action	_	_	0	_	_	Offset=660-665
+2	1/2xL1	_	Generic-Measure	_	_	4	Measure	_	Offset=669-675
+3	1%	_	Generic-Measure	_	_	4	Measure	_	Offset=676-678
+4	agar	_	Location	_	_	0	_	_	Offset=679-690
+5	5%	_	Generic-Measure	_	_	6	Measure	_	Offset=694-696
+6	LB	_	Reagent	_	_	0	_	_	Offset=697-699
+
+# sent_id = s11
+# text = Mix 200 µL T. pseudonana cells and 200 µL E. coli cells in a 1.5 mL tube.
+1	Incubate	_	Action	_	_	0	_	_	Offset=701-709
+2	dark	_	Location	_	_	0	_	_	Offset=713-717
+3	30oC	_	Generic-Measure	_	_	0	_	_	Offset=721-725
+4	90	_	Time	_	_	0	_	_	Offset=730-740
+
+# sent_id = s12
+# text = Pipette up and down a few times.
+1	Add	_	Action	_	_	0	_	_	Offset=844-847
+2	1	_	Amount	_	_	3	Measure	_	Offset=848-852
+3	L1	_	Reagent	_	_	0	_	_	Offset=853-862
+4	scrape	_	Action	_	_	0	_	_	Offset=867-873
+5	cell	_	Device	_	_	0	_	_	Offset=881-893
+6	L	_	Device	_	_	5	Or	_	Offset=897-907
+
+# sent_id = s13
+# text = Plate on 1/2xL1 1% agar plates w/ 5% LB.
+1	Leave	_	Action	_	_	0	_	_	Offset=1078-1083
+2	18oC	_	Generic-Measure	_	_	0	_	_	Offset=1087-1091
+3	constant	_	Location	_	_	0	_	_	Offset=1096-1110
+
+# sent_id = s14
+# text = Incubate in dark at 30oC for 90 minutes.
+1	Pick	_	Action	_	_	0	_	_	Offset=1382-1386
+2	colonies	_	Reagent	_	_	0	_	_	Offset=1387-1395
+3	inoculate	_	Action	_	_	0	_	_	Offset=1439-1448
+4	~0.5	_	Amount	_	_	5	Measure	_	Offset=1449-1456
+5	L1	_	Reagent	_	_	0	_	_	Offset=1457-1466
+
+# sent_id = s15
+# text = Move plates to your standard Tp growth conditions - in my case 18oC and constant light - for 4 hours.
+1	Use	_	Action	_	_	0	_	_	Offset=1526-1529
+2	µL	_	Amount	_	_	3	Measure	_	Offset=1532-1534
+3	diatom	_	Reagent	_	_	0	_	_	Offset=1538-1552
+
+# sent_id = s16
+# text = Add 1 mL L1 medium and scrape with a cell scraper or L spreader.
+1	Purify	_	Action	_	_	0	_	_	Offset=2040-2046
+2	total	_	Modifier	_	_	3	Mod-Link	_	Offset=2047-2052
+3	RNA	_	Reagent	_	_	8	Coreference-Link	_	Offset=2053-2056
+4	Nou100	_	Reagent	_	_	0	_	_	Offset=2062-2083
+5	convert	_	Action	_	_	0	_	_	Offset=2085-2092
+6	cDNA	_	Reagent	_	_	0	_	_	Offset=2099-2103
+7	use	_	Action	_	_	0	_	_	Offset=2108-2111
+8	it	_	Mention	_	_	0	_	_	Offset=2112-2114
+
+# sent_id = s17
+# text = Expect to recover ~500 µL co-culture suspension after scraping.
+1	Perform	_	Action	_	_	0	_	_	Offset=2246-2253
+2	diatom	_	Device	_	_	0	_	_	Offset=2256-2271
+
+# sent_id = s18
+# text = Plate 200 µL of the resulting suspension on pre-dried 1/2xL1 1% agar plates w/ 100 µg/mL nourseothricin.
+1	Transform	_	Action	_	_	0	_	_	Offset=2311-2320
+2	E.	_	Reagent	_	_	0	_	_	Offset=2321-2328
+3	diatom-derived	_	Modifier	_	_	4	Mod-Link	_	Offset=2334-2348
+4	DNA	_	Reagent	_	_	0	_	_	Offset=2349-2352
+
+# sent_id = s19
+# text = Leave at 18oC and constant light until colonies appear - ~2 weeks.
+1	Select	_	Action	_	_	0	_	_	Offset=2356-2362
+2	LB	_	Location	_	_	0	_	_	Offset=2366-2380
+3	50	_	Concentration	_	_	4	Measure	_	Offset=2386-2394
+4	kanamycin	_	Reagent	_	_	0	_	_	Offset=2395-2404
+
+# sent_id = s20
+# text = Here are a few ways to confirm the presence and expression of your heterologous gene in resulting colonies:
+1	Miniprep	_	Action	_	_	0	_	_	Offset=2408-2416
+2	digest	_	Action	_	_	0	_	_	Offset=2418-2424
+3	analyze	_	Action	_	_	0	_	_	Offset=2429-2436
+4	gel	_	Location	_	_	0	_	_	Offset=2442-2445
+

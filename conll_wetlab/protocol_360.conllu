@@ -1,0 +1,23 @@
+# sent_id = s1
+# text = HiFi DNA Assembly (NEB)
+1	Incubate	_	Action	_	_	0	_	_	Offset=24-32
+2	samples	_	Reagent	_	_	0	_	_	Offset=33-40
+3	thermocycler	_	Device	_	_	0	_	_	Offset=46-58
+4	50°C	_	Temperature	_	_	0	_	_	Offset=62-66
+5	15	_	Time	_	_	0	_	_	Offset=71-81
+6	60	_	Time	_	_	5	Or	_	Offset=129-139
+
+# sent_id = s2
+# text = Incubate samples in a thermocycler at 50°C for 15 minutes (when 2 or 3 fragments are being assembled) or 60 minutes (when 4–6 fragments are being assembled).
+1	store	_	Action	_	_	0	_	_	Offset=204-209
+2	samples	_	Reagent	_	_	0	_	_	Offset=210-217
+3	ice	_	Reagent	_	_	0	_	_	Offset=221-224
+4	–20°C	_	Temperature	_	_	0	_	_	Offset=231-236
+
+# sent_id = s3
+# text = Following incubation, store samples on ice or at –20°C for subsequent transformation.
+1	Transform	_	Action	_	_	0	_	_	Offset=268-277
+2	NEB	_	Reagent	_	_	0	_	_	Offset=278-313
+3	2	_	Amount	_	_	4	Measure	_	Offset=382-386
+4	assembled	_	Reagent	_	_	0	_	_	Offset=394-411
+

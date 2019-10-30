@@ -1,0 +1,40 @@
+# sent_id = s1
+# text = A Typical DNase I Reaction (M0303)
+1	Resuspend	_	Action	_	_	0	_	_	Offset=35-44
+2	10	_	Amount	_	_	3	Measure	_	Offset=45-50
+3	RNA	_	Reagent	_	_	0	_	_	Offset=51-54
+4	1X	_	Concentration	_	_	5	Measure	_	Offset=58-60
+5	DNase	_	Reagent	_	_	0	_	_	Offset=61-84
+6	final	_	Reagent	_	_	0	_	_	Offset=90-102
+7	100	_	Amount	_	_	6	Measure	_	Offset=106-112
+
+# sent_id = s2
+# text = Resuspend 10 µg RNA in 1X DNase I Reaction Buffer to a final volume of 100 µl. 
+1	Add	_	Action	_	_	0	_	_	Offset=115-118
+2	2	_	Generic-Measure	_	_	3	Measure	_	Offset=119-126
+3	DNase	_	Reagent	_	_	0	_	_	Offset=130-137
+4	Mix	_	Action	_	_	0	_	_	Offset=138-141
+5	thoroughly	_	Modifier	_	_	0	_	_	Offset=142-152
+
+# sent_id = s3
+# text = Add 2 units of DNase I Mix thoroughly. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=155-163
+2	37°C	_	Temperature	_	_	0	_	_	Offset=167-171
+3	10	_	Time	_	_	0	_	_	Offset=176-186
+
+# sent_id = s4
+# text = Incubate at 37°C for 10 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=188-191
+2	1	_	Amount	_	_	4	Measure	_	Offset=192-196
+3	0.5	_	Concentration	_	_	4	Measure	_	Offset=200-205
+4	EDTA	_	Reagent	_	_	0	_	_	Offset=206-210
+5	final	_	Reagent	_	_	0	_	_	Offset=217-236
+6	5	_	Concentration	_	_	5	Measure	_	Offset=240-244
+
+# sent_id = s5
+# text = Add 1 µl of 0.5 M EDTA (to a final concentration of 5 mM).
+1	Heat	_	Action	_	_	0	_	_	Offset=247-251
+2	inactivate	_	Reagent	_	_	0	_	_	Offset=252-262
+3	75°C	_	Temperature	_	_	0	_	_	Offset=266-270
+4	10	_	Time	_	_	0	_	_	Offset=275-285
+

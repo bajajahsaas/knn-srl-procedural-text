@@ -1,0 +1,63 @@
+# sent_id = s1
+# text = SMARTseq2. 
+1	Wipe	_	Action	_	_	0	_	_	Offset=18-27
+2	bench	_	Location	_	_	0	_	_	Offset=28-33
+3	RNase	_	Reagent	_	_	0	_	_	Offset=39-48
+4	Dilute	_	Reagent	_	_	3	Or	_	Offset=60-86
+5	adding	_	Method	_	_	0	_	_	Offset=90-146
+
+# sent_id = s2
+# text = day 1 Wipe down bench with RNase zap or similar Dilute oligo-dT30VN primer by adding 37µL of 100µM primer to 63µL of nuclease free H20. 
+1	Prepare	_	Action	_	_	0	_	_	Offset=149-156
+2	RT	_	Reagent	_	_	0	_	_	Offset=157-159
+
+# sent_id = s3
+# text = Prepare RT 
+1	Incubate	_	Action	_	_	0	_	_	Offset=382-390
+2	72º	_	Temperature	_	_	0	_	_	Offset=394-397
+3	3m	_	Time	_	_	0	_	_	Offset=402-404
+4	return	_	Action	_	_	0	_	_	Offset=406-412
+5	ice	_	Location	_	_	0	_	_	Offset=416-419
+
+# sent_id = s4
+# text = mixReagentStock ConcAmt/1Amt/NFinal ConcNuclease Free H20---0.29  FS Buffer5x2 1xBetaine5M2 1MMgCl21M0.06 6mMTSO100µM0.1 1µMDTT100mM0.5 5mMSuperscript II200U/µL0.5 100URNase OUT40U/µL  10USample---------- (4.3)---------.
+1	Take	_	Action	_	_	0	_	_	Offset=422-426
+2	4.3µL	_	Amount	_	_	3	Measure	_	Offset=427-432
+3	hybridized	_	Reagent	_	_	0	_	_	Offset=436-459
+4	put	_	Action	_	_	0	_	_	Offset=464-467
+5	strip	_	Location	_	_	0	_	_	Offset=471-482
+
+# sent_id = s5
+# text = Incubate at 72º for 3m, return to ice. 
+1	Add	_	Action	_	_	0	_	_	Offset=484-487
+2	5.7µL	_	Amount	_	_	3	Measure	_	Offset=488-493
+3	RT	_	Reagent	_	_	0	_	_	Offset=494-565
+4	Dilute	_	Action	_	_	0	_	_	Offset=566-572
+5	ISPCR	_	Reagent	_	_	0	_	_	Offset=573-586
+6	1:100	_	Generic-Measure	_	_	0	_	_	Offset=587-592
+7	Prepare	_	Action	_	_	0	_	_	Offset=593-600
+8	PCR	_	Reagent	_	_	0	_	_	Offset=601-611
+
+# sent_id = s6
+# text = Take 4.3µL of hybridized oligo-dT+RNA and put in strip tubes.
+1	Add	_	Action	_	_	0	_	_	Offset=783-786
+2	15µL	_	Amount	_	_	3	Measure	_	Offset=787-791
+3	PCR	_	Reagent	_	_	0	_	_	Offset=792-806
+4	10µL	_	Amount	_	_	5	Measure	_	Offset=810-814
+5	RT	_	Reagent	_	_	0	_	_	Offset=815-817
+
+# sent_id = s7
+# text = Add 5.7µL RT mix RTNum CycleGroupTempTime1xA4290m10xB502m B422m1xC7015mholdD4hold Dilute ISPCR primers 1:100 Prepare PCR preamp mixComponentStockAmt/1Amt/NFinal Conc(First Strand Rxn)--10µL-------KAPA HiFi Hot Start2x12.5 1xISPCR primers1µM2.5µL 0.1µM--------------------------Final Volume 25µL.   
+1	Use	_	Action	_	_	0	_	_	Offset=923-926
+2	0.6	_	Numerical	_	_	4	Measure	_	Offset=927-930
+3	volumes	_	Measure-Type	_	_	2	Of-Type	_	Offset=931-938
+4	beads	_	Device	_	_	0	_	_	Offset=942-947
+
+# sent_id = s8
+# text = Add 15µL PCR preamp mix to 10µL RT. 
+1	Resuspend	_	Action	_	_	0	_	_	Offset=989-998
+2	15.5µL	_	Amount	_	_	3	Measure	_	Offset=1002-1008
+3	EB	_	Reagent	_	_	0	_	_	Offset=1009-1011
+4	measure	_	Action	_	_	0	_	_	Offset=1018-1025
+5	qubit	_	Method	_	_	0	_	_	Offset=1047-1052
+

@@ -1,0 +1,93 @@
+# sent_id = s1
+# text = Frying Chips for Frying Oil Studies (Food Science)
+1	Fill	_	Action	_	_	0	_	_	Offset=51-55
+2	Fry	_	Device	_	_	0	_	_	Offset=56-65
+3	900	_	Amount	_	_	4	Measure	6:Measure	Offset=71-76
+4	liquid	_	Reagent	_	_	0	_	_	Offset=77-91
+5	edible	_	Modifier	_	_	6	Mod-Link	_	Offset=102-108
+6	oil	_	Reagent	_	_	4	Meronym	_	Offset=110-113
+
+# sent_id = s2
+# text = Fill Fry Daddy with 900 g liquid soybean (or other edible) oil.
+1	Plug	_	Action	_	_	0	_	_	Offset=115-122
+2	Fry	_	Device	_	_	0	_	_	Offset=123-132
+3	heat	_	Action	_	_	0	_	_	Offset=137-141
+4	frying	_	Modifier	_	_	0	_	_	Offset=145-163
+5	180	_	Temperature	_	_	4	Setting	_	Offset=165-170
+
+# sent_id = s3
+# text = Plug in Fry Daddy and heat to frying temperature (180 C).
+1	Use	_	Action	_	_	0	_	_	Offset=173-176
+2	temperature	_	Device	_	_	0	_	_	Offset=179-201
+
+# sent_id = s4
+# text = Use a temperature controller if necessary.
+1	Log	_	Action	_	_	0	_	_	Offset=216-219
+
+# sent_id = s5
+# text = Log temperature data using a computer if desired.
+1	Weigh	_	Action	_	_	0	_	_	Offset=266-271
+2	chips	_	Reagent	_	_	0	_	_	Offset=272-277
+3	initially	_	Modifier	_	_	0	_	_	Offset=278-287
+4	approximately	_	Modifier	_	_	5	Mod-Link	_	Offset=289-302
+5	40	_	Amount	_	_	2	Measure	_	Offset=303-307
+6	20-25	_	Numerical	_	_	5	Or	_	Offset=312-317
+
+# sent_id = s6
+# text = Weigh chips initially (approximately 40 g, or 20-25 chips).
+1	Fry	_	Action	_	_	0	_	_	Offset=326-329
+2	chips	_	Reagent	_	_	0	_	_	Offset=330-335
+3	basket	_	Location	_	_	0	_	_	Offset=343-349
+4	provided	_	Modifier	_	_	3	Mod-Link	_	Offset=350-358
+5	2	_	Time	_	_	0	_	_	Offset=363-372
+
+# sent_id = s7
+# text = Fry chips in the basket provided for 2 minutes.
+1	Lift	_	Action	_	_	0	_	_	Offset=374-378
+2	basket	_	Location	_	_	0	_	_	Offset=383-389
+3	drain	_	Action	_	_	0	_	_	Offset=391-396
+4	chips	_	Reagent	_	_	0	_	_	Offset=401-406
+5	well	_	Modifier	_	_	0	_	_	Offset=407-411
+6	dump	_	Action	_	_	0	_	_	Offset=417-421
+7	paper	_	Location	_	_	0	_	_	Offset=429-440
+8	drain	_	Action	_	_	0	_	_	Offset=444-449
+9	cool	_	Action	_	_	0	_	_	Offset=454-458
+
+# sent_id = s8
+# text = Lift the basket, drain the chips well, and dump onto a paper towel to drain and cool.
+1	Spread	_	Action	_	_	0	_	_	Offset=460-466
+2	chips	_	Reagent	_	_	4	Coreference-Link	_	Offset=467-472
+3	out	_	Modifier	_	_	0	_	_	Offset=473-476
+4	they	_	Mention	_	_	0	_	_	Offset=485-489
+5	contact	_	Action	_	_	0	_	_	Offset=499-506
+6	paper	_	Location	_	_	0	_	_	Offset=516-527
+
+# sent_id = s9
+# text = Spread chips out so that they all have contact with the paper towel.
+1	them	_	Reagent	_	_	0	_	_	Offset=538-542
+2	dry	_	Action	_	_	0	_	_	Offset=546-549
+3	a	_	Modifier	_	_	0	_	_	Offset=550-555
+
+# sent_id = s10
+# text = Wait for them to dry a bit.
+1	Turn	_	Action	_	_	0	_	_	Offset=557-561
+2	chips	_	Reagent	_	_	0	_	_	Offset=562-567
+3	paper	_	Location	_	_	0	_	_	Offset=575-587
+4	get	_	Action	_	_	0	_	_	Offset=604-611
+5	any	_	Modifier	_	_	7	Mod-Link	_	Offset=615-618
+6	pooled	_	Modifier	_	_	7	Mod-Link	_	Offset=619-625
+7	oil	_	Reagent	_	_	0	_	_	Offset=626-629
+
+# sent_id = s11
+# text = Turn chips on the paper towels if necessary to get rid of any pooled oil.
+1	Put	_	Action	_	_	0	_	_	Offset=631-634
+2	chips	_	Reagent	_	_	0	_	_	Offset=635-640
+3	weigh	_	Device	_	_	0	_	_	Offset=651-662
+
+# sent_id = s12
+# text = Put chips back into weigh boats and record a final weight.
+1	Store	_	Action	_	_	0	_	_	Offset=690-695
+2	chips	_	Reagent	_	_	0	_	_	Offset=696-701
+3	covered	_	Action	_	_	0	_	_	Offset=702-709
+4	airtight	_	Location	_	_	0	_	_	Offset=716-734
+

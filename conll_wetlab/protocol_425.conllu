@@ -1,0 +1,118 @@
+# sent_id = s1
+# text = Q5® Site-Directed Mutagenesis (E0552)
+1	Assemble	_	Action	_	_	0	_	_	Offset=38-46
+2	following	_	Reagent	_	_	0	_	_	Offset=51-69
+3	thin-walled	_	Modifier	_	_	4	Mod-Link	_	Offset=75-86
+4	PCR	_	Location	_	_	0	_	_	Offset=87-95
+
+# sent_id = s2
+# text = Assemble the following reagents in a thin-walled PCR tube.
+1	Mix	_	Action	_	_	0	_	_	Offset=97-100
+2	reagents	_	Reagent	_	_	0	_	_	Offset=101-109
+3	completely	_	Modifier	_	_	0	_	_	Offset=110-120
+
+# sent_id = s3
+# text = Mix reagents completely.
+1	Transfer	_	Action	_	_	0	_	_	Offset=122-130
+2	thermocycler	_	Device	_	_	0	_	_	Offset=136-148
+
+# sent_id = s4
+# text = Transfer to a thermocycler and perform the following cycling conditions:
+1	Assemble	_	Action	_	_	0	_	_	Offset=195-203
+2	following	_	Reagent	_	_	0	_	_	Offset=208-226
+3	Mix	_	Action	_	_	0	_	_	Offset=228-231
+4	well	_	Modifier	_	_	0	_	_	Offset=232-236
+5	pipetting	_	Method	_	_	0	_	_	Offset=240-261
+
+# sent_id = s5
+# text = Assemble the following reagents: Mix well by pipetting up and down.
+1	Incubate	_	Action	_	_	0	_	_	Offset=263-271
+2	room	_	Temperature	_	_	0	_	_	Offset=275-291
+3	5	_	Time	_	_	0	_	_	Offset=296-305
+
+# sent_id = s6
+# text = Incubate at room temperature for 5 minutes.
+1	Thaw	_	Action	_	_	0	_	_	Offset=307-311
+2	50	_	Amount	_	_	3	Measure	_	Offset=314-319
+3	aliquot	_	Reagent	_	_	0	_	_	Offset=320-327
+4	chemically	_	Reagent	_	_	3	Meronym	_	Offset=331-365
+5	ice	_	Location	_	_	0	_	_	Offset=369-372
+
+# sent_id = s7
+# text = Thaw a 50 μl aliquot of chemically competent E. coli cells on ice.
+1	Add	_	Action	_	_	0	_	_	Offset=374-377
+2	5	_	Amount	_	_	3	Measure	_	Offset=378-382
+3	KLD	_	Reagent	_	_	0	_	_	Offset=390-397
+4	"KLD	_	Location	_	_	0	_	_	Offset=407-426
+5	tube	_	Location	_	_	7	Meronym	_	Offset=434-438
+6	thawed	_	Modifier	_	_	7	Mod-Link	_	Offset=442-448
+7	cells	_	Reagent	_	_	0	_	_	Offset=449-454
+
+# sent_id = s8
+# text = Add 5 μl of the KLD mix from the "KLD Section" above to the tube of thawed cells.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=456-465
+2	flick	_	Action	_	_	0	_	_	Offset=466-471
+3	tube	_	Location	_	_	0	_	_	Offset=476-480
+4	4-5	_	Numerical	_	_	0	_	_	Offset=481-484
+5	mix	_	Action	_	_	0	_	_	Offset=494-497
+
+# sent_id = s9
+# text = Carefully flick the tube 4-5 times to mix.
+1	Do	_	Action	_	_	0	_	_	Offset=499-512
+
+# sent_id = s10
+# text = Do not vortex.
+1	Place	_	Action	_	_	0	_	_	Offset=514-519
+2	mixture	_	Reagent	_	_	0	_	_	Offset=524-531
+3	ice	_	Location	_	_	0	_	_	Offset=535-538
+4	30	_	Time	_	_	0	_	_	Offset=543-553
+
+# sent_id = s11
+# text = Place the mixture on ice for 30 minutes.
+1	Heat	_	Action	_	_	0	_	_	Offset=555-565
+2	42°C	_	Temperature	_	_	0	_	_	Offset=569-573
+3	30	_	Time	_	_	0	_	_	Offset=578-588
+
+# sent_id = s12
+# text = Heat shock at 42°C for 30 seconds.
+1	Place	_	Action	_	_	0	_	_	Offset=590-595
+2	ice	_	Location	_	_	0	_	_	Offset=599-602
+3	5	_	Time	_	_	0	_	_	Offset=607-616
+
+# sent_id = s13
+# text = Place on ice for 5 minutes.
+1	Pipette	_	Action	_	_	0	_	_	Offset=618-625
+2	950	_	Amount	_	_	4	Measure	_	Offset=626-632
+3	room	_	Modifier	_	_	4	Mod-Link	_	Offset=636-652
+4	SOC	_	Reagent	_	_	0	_	_	Offset=653-656
+5	mixture	_	Reagent	_	_	0	_	_	Offset=666-673
+
+# sent_id = s14
+# text = Pipette 950 μl of room temperature SOC into the mixture.
+1	Incubate	_	Action	_	_	0	_	_	Offset=675-683
+2	37°C	_	Temperature	_	_	0	_	_	Offset=687-691
+3	60	_	Time	_	_	0	_	_	Offset=696-706
+4	shaking	_	Action	_	_	0	_	_	Offset=712-719
+5	250	_	Speed	_	_	0	_	_	Offset=721-728
+
+# sent_id = s15
+# text = Incubate at 37°C for 60 minutes with shaking (250 rpm).
+1	Mix	_	Action	_	_	0	_	_	Offset=731-734
+2	cells	_	Reagent	_	_	0	_	_	Offset=739-744
+3	thoroughly	_	Modifier	_	_	0	_	_	Offset=745-755
+4	flicking	_	Action	_	_	0	_	_	Offset=759-767
+5	tube	_	Location	_	_	0	_	_	Offset=772-776
+6	inverting	_	Action	_	_	0	_	_	Offset=781-790
+
+# sent_id = s16
+# text = Mix the cells thoroughly by flicking the tube and inverting.
+1	Spread	_	Action	_	_	0	_	_	Offset=792-798
+2	50-100	_	Amount	_	_	0	_	_	Offset=799-808
+3	selection	_	Location	_	_	0	_	_	Offset=816-831
+
+# sent_id = s17
+# text = Spread 50-100 μl onto a selection plate.
+1	Incubate	_	Action	_	_	0	_	_	Offset=833-841
+2	overnight	_	Time	_	_	0	_	_	Offset=842-851
+3	37°C	_	Temperature	_	_	0	_	_	Offset=855-859
+

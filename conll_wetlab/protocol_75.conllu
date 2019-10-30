@@ -1,0 +1,187 @@
+# sent_id = s1
+# text = Extracting nucleic acids from viruses on a filter
+1	Add	_	Action	_	_	0	_	_	Offset=50-53
+2	1	_	Amount	_	_	3	Measure	_	Offset=54-58
+3	T	_	Reagent	_	_	5	Meronym	_	Offset=59-77
+4	100	_	Concentration	_	_	5	Measure	_	Offset=89-98
+5	proteinase	_	Reagent	_	_	0	_	_	Offset=99-111
+6	ow-volume	_	Modifier	_	_	7	Mod-Link	_	Offset=118-127
+7	syringe	_	Location	_	_	0	_	_	Offset=137-144
+
+# sent_id = s2
+# text = Add 1 mL T + C lysis buffer containing 100 µg/ml proteinase K to a low-volume (1–3 cc) syringe that has been fitted with a female–female Luer-Lok adapter (the injection syringe).
+1	Ensure	_	Action	_	_	0	_	_	Offset=229-235
+2	minimal	_	Modifier	_	_	3	Mod-Link	_	Offset=250-257
+3	air	_	Reagent	_	_	0	_	_	Offset=258-261
+4	injection	_	Location	_	_	0	_	_	Offset=269-303
+5	connect	_	Action	_	_	0	_	_	Offset=310-317
+6	outlet	_	Device	_	_	7	Meronym	_	Offset=328-334
+7	filter	_	Device	_	_	0	_	_	Offset=342-348
+
+# sent_id = s3
+# text = Ensure that there is minimal air in the injection syringe-adapter assembly, then connect it to the outlet of the filter.
+1	Connect	_	Action	_	_	0	_	_	Offset=350-357
+2	second	_	Modifier	_	_	3	Mod-Link	_	Offset=360-366
+3	low-volume	_	Device	_	_	0	_	_	Offset=367-385
+4	filter	_	Device	_	_	0	_	_	Offset=393-405
+
+# sent_id = s4
+# text = Connect a second low-volume syringe to the filter inlet (the aspiration syringe).
+1	Hold	_	Action	_	_	0	_	_	Offset=432-436
+2	filter-syringe	_	Device	_	_	0	_	_	Offset=441-464
+3	vertically	_	Modifier	_	_	0	_	_	Offset=465-475
+4	injector	_	Device	_	_	0	_	_	Offset=485-501
+5	pushing	_	Action	_	_	0	_	_	Offset=502-509
+6	upward	_	Method	_	_	0	_	_	Offset=510-527
+
+# sent_id = s5
+# text = Hold the filter-syringe assembly vertically with the injector syringe pushing upward from below.
+1	Hold	_	Action	_	_	0	_	_	Offset=529-533
+2	filter	_	Device	_	_	0	_	_	Offset=538-544
+3	securely	_	Modifier	_	_	0	_	_	Offset=545-553
+4	injection	_	Device	_	_	0	_	_	Offset=561-578
+5	gently	_	Modifier	_	_	0	_	_	Offset=583-589
+6	firmly	_	Modifier	_	_	0	_	_	Offset=595-601
+7	push	_	Action	_	_	0	_	_	Offset=603-607
+8	extraction	_	Reagent	_	_	0	_	_	Offset=608-625
+9	filter	_	Location	_	_	0	_	_	Offset=635-649
+
+# sent_id = s6
+# text = Hold the filter securely to the injection syringe and gently, but firmly, push extraction buffer into the filter housing until liquid just begins to appear in the aspiration syringe.
+1	Incubate	_	Action	_	_	0	_	_	Offset=712-720
+2	assembly	_	Device	_	_	0	_	_	Offset=725-733
+3	15	_	Temperature	_	_	0	_	_	Offset=774-780
+4	65°C	_	Temperature	_	_	0	_	_	Offset=784-788
+5	hybridization	_	Location	_	_	0	_	_	Offset=794-812
+
+# sent_id = s7
+# text = Incubate the assembly (filter with two syringes attached) for 15 min at 65°C in a hybridization oven.
+1	Allow	_	Action	_	_	0	_	_	Offset=814-819
+2	syringe-filter	_	Device	_	_	0	_	_	Offset=824-847
+3	cool	_	Action	_	_	0	_	_	Offset=851-855
+4	briefly	_	Modifier	_	_	0	_	_	Offset=856-863
+
+# sent_id = s8
+# text = Allow the syringe-filter assembly to cool briefly.
+1	Remove	_	Action	_	_	0	_	_	Offset=865-871
+2	extract	_	Reagent	_	_	0	_	_	Offset=876-883
+3	holding	_	Action	_	_	0	_	_	Offset=887-894
+4	syringe	_	Device	_	_	0	_	_	Offset=899-915
+5	vertically	_	Modifier	_	_	0	_	_	Offset=916-926
+6	aspiration	_	Device	_	_	0	_	_	Offset=936-954
+7	underneath	_	Location	_	_	0	_	_	Offset=955-965
+
+# sent_id = s9
+# text = Remove the extract by holding the syringe assembly vertically with the aspiration syringe underneath (and the filter upside down) and gently pulling on the plunger to pull the extract into the aspiration syringe.
+1	Detach	_	Action	_	_	0	_	_	Offset=1078-1084
+2	aspiration	_	Device	_	_	0	_	_	Offset=1089-1107
+
+# sent_id = s10
+# text = Detach the aspiration syringe.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1109-1117
+2	extract	_	Reagent	_	_	0	_	_	Offset=1122-1129
+3	microcentrifuge	_	Device	_	_	0	_	_	Offset=1135-1155
+
+# sent_id = s11
+# text = Transfer the extract to a microcentrifuge tube.
+1	Chill	_	Action	_	_	0	_	_	Offset=1157-1162
+2	ice	_	Location	_	_	0	_	_	Offset=1166-1169
+3	2–3	_	Time	_	_	0	_	_	Offset=1174-1185
+
+# sent_id = s12
+# text = Chill on ice for 2–3 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=1187-1190
+2	one-half	_	Generic-Measure	_	_	3	Measure	_	Offset=1191-1199
+3	volume	_	Reagent	_	_	0	_	_	Offset=1200-1243
+4	vortex	_	Action	_	_	0	_	_	Offset=1270-1276
+5	10	_	Time	_	_	0	_	_	Offset=1281-1285
+
+# sent_id = s13
+# text = Add one-half volume of MPC protein precipitation reagent (supplied in the kit) and vortex for 10 s.
+1	Pellet	_	Action	_	_	0	_	_	Offset=1287-1293
+2	debris	_	Reagent	_	_	0	_	_	Offset=1298-1304
+3	centrifugation	_	Method	_	_	0	_	_	Offset=1308-1322
+4	10,000g	_	Speed	_	_	0	_	_	Offset=1326-1333
+5	10	_	Time	_	_	0	_	_	Offset=1338-1344
+
+# sent_id = s14
+# text = Pellet the debris by centrifugation at 10,000g for 10 min.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1346-1354
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1359-1370
+3	sterile	_	Modifier	_	_	4	Mod-Link	_	Offset=1407-1414
+4	microcentrifuge	_	Device	_	_	0	_	_	Offset=1415-1435
+
+# sent_id = s15
+# text = Transfer the supernatant (containing the nucleic acids) to a sterile microcentrifuge tube; be very careful to avoid the pellet (containing the SDS-protein complex).
+1	Transfer	_	Action	_	_	0	_	_	Offset=1511-1519
+2	up	_	Modifier	_	_	0	_	_	Offset=1520-1525
+3	800	_	Amount	_	_	2	Setting	4:Measure	Offset=1526-1532
+4	sample	_	Reagent	_	_	0	_	_	Offset=1540-1546
+5	fresh	_	Device	_	_	0	_	_	Offset=1552-1562
+6	add	_	Action	_	_	0	_	_	Offset=1564-1567
+7	1	_	Amount	_	_	8	Measure	_	Offset=1568-1572
+8	polyacryl	_	Reagent	_	_	0	_	_	Offset=1573-1590
+9	vortex	_	Action	_	_	0	_	_	Offset=1596-1602
+10	briefly	_	Modifier	_	_	0	_	_	Offset=1603-1610
+
+# sent_id = s16
+# text = Transfer up to 800 µl of the sample to a fresh tube; add 1 µl polyacryl carrier, and vortex briefly.
+1	Add	_	Action	_	_	0	_	_	Offset=1612-1615
+2	1	_	Amount	_	_	3	Measure	_	Offset=1616-1620
+3	polyacryl	_	Reagent	_	_	0	_	_	Offset=1621-1638
+4	vortex	_	Action	_	_	0	_	_	Offset=1644-1650
+5	briefly	_	Modifier	_	_	0	_	_	Offset=1651-1658
+
+# sent_id = s17
+# text = Add 1 µl polyacryl carrier, and vortex briefly.
+1	Add	_	Action	_	_	0	_	_	Offset=1660-1663
+2	equal	_	Modifier	_	_	4	Mod-Link	_	Offset=1667-1679
+3	100%	_	Generic-Measure	_	_	4	Measure	_	Offset=1683-1687
+4	isopropanol	_	Reagent	_	_	0	_	_	Offset=1688-1699
+
+# sent_id = s18
+# text = Add an equal volume of 100% isopropanol.
+1	Mix	_	Action	_	_	0	_	_	Offset=1701-1704
+2	inverting	_	Action	_	_	0	_	_	Offset=1708-1717
+3	tube	_	Device	_	_	0	_	_	Offset=1722-1726
+4	several	_	Method	_	_	0	_	_	Offset=1727-1740
+
+# sent_id = s19
+# text = Mix by inverting the tube several times.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1742-1752
+2	sample	_	Reagent	_	_	0	_	_	Offset=1757-1763
+3	≥10,000g	_	Speed	_	_	0	_	_	Offset=1767-1775
+4	15–45	_	Time	_	_	0	_	_	Offset=1780-1789
+
+# sent_id = s20
+# text = Centrifuge the sample at ≥10,000g for 15–45 min.
+1	Decant	_	Action	_	_	0	_	_	Offset=1791-1797
+2	aspirate	_	Action	_	_	0	_	_	Offset=1801-1809
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=1814-1825
+
+# sent_id = s21
+# text = Decant or aspirate the supernatant.
+1	Wash	_	Action	_	_	0	_	_	Offset=1827-1831
+2	pellet	_	Reagent	_	_	0	_	_	Offset=1836-1842
+3	twice	_	Method	_	_	0	_	_	Offset=1843-1848
+4	each	_	Modifier	_	_	0	_	_	Offset=1850-1859
+5	adding	_	Action	_	_	0	_	_	Offset=1860-1866
+6	70%	_	Generic-Measure	_	_	7	Measure	_	Offset=1867-1870
+7	ethanol	_	Reagent	_	_	0	_	_	Offset=1871-1878
+8	centrifuging	_	Action	_	_	0	_	_	Offset=1880-1892
+9	1	_	Time	_	_	0	_	_	Offset=1897-1902
+10	decanting	_	Action	_	_	0	_	_	Offset=1908-1917
+11	ethanol	_	Reagent	_	_	0	_	_	Offset=1938-1945
+
+# sent_id = s22
+# text = Wash the pellet twice, each time adding 70% ethanol, centrifuging for 1 min, and decanting (or aspirating) the ethanol.
+1	Air-dry	_	Action	_	_	0	_	_	Offset=1947-1954
+2	pellet	_	Reagent	_	_	0	_	_	Offset=1959-1965
+3	dissolve	_	Action	_	_	0	_	_	Offset=1972-1980
+4	10	_	Amount	_	_	7	Measure	_	Offset=1984-1989
+5	0.02-	_	Modifier	_	_	7	Mod-Link	_	Offset=1993-2007
+6	sterile	_	Modifier	_	_	7	Mod-Link	_	Offset=2009-2016
+7	0.5×	_	Reagent	_	_	0	_	_	Offset=2017-2031
+8	heated	_	Modifier	_	_	7	Mod-Link	_	Offset=2032-2038
+9	50°C	_	Temperature	_	_	8	Setting	_	Offset=2042-2046
+

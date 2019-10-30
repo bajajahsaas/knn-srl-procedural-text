@@ -1,0 +1,167 @@
+# sent_id = s1
+# text = Cell Surface Immunofluorescence Staining Protocol
+1	Obtain	_	Action	_	_	0	_	_	Offset=50-56
+2	desired	_	Reagent	_	_	0	_	_	Offset=57-71
+3	prepare	_	Action	_	_	0	_	_	Offset=123-130
+4	a	_	Reagent	_	_	0	_	_	Offset=131-155
+5	Cell	_	Reagent	_	_	0	_	_	Offset=159-207
+
+# sent_id = s2
+# text = Obtain desired tissue (e.g. spleen, lymph node, thymus, bone marrow) and prepare a single cell suspension in Cell Staining Buffer (BioLegend Cat. No. 420201).
+1	Add	_	Action	_	_	0	_	_	Offset=209-212
+2	Cell	_	Reagent	_	_	0	_	_	Offset=213-233
+3	~15	_	Amount	_	_	0	_	_	Offset=240-246
+4	centrifuge	_	Action	_	_	0	_	_	Offset=251-261
+5	350	_	Speed	_	_	0	_	_	Offset=265-272
+6	5	_	Time	_	_	0	_	_	Offset=277-286
+7	discard	_	Action	_	_	0	_	_	Offset=288-295
+8	supernatant	_	Reagent	_	_	0	_	_	Offset=296-307
+
+# sent_id = s3
+# text = Add Cell Staining Buffer up to ~15 ml and centrifuge at 350 x g for 5 minutes, discard supernatant.
+1	dilute	_	Action	_	_	0	_	_	Offset=337-343
+2	10X	_	Concentration	_	_	3	Measure	_	Offset=344-347
+3	Red	_	Reagent	_	_	0	_	_	Offset=348-409
+4	1X	_	Concentration	_	_	0	_	_	Offset=413-415
+5	DI	_	Reagent	_	_	0	_	_	Offset=443-451
+6	resuspend	_	Action	_	_	0	_	_	Offset=456-465
+7	pellet	_	Reagent	_	_	0	_	_	Offset=466-472
+8	3	_	Amount	_	_	10	Measure	_	Offset=476-480
+9	1X	_	Concentration	_	_	10	Measure	_	Offset=481-483
+10	RBC	_	Reagent	_	_	0	_	_	Offset=484-500
+
+# sent_id = s4
+# text = If necessary (e.g. spleen), dilute 10X Red Blood Cell (RBC) Lysis Buffer (BioLegend Cat. No. 420301) to 1X working concentration with DI water and resuspend pellet in 3 ml 1X RBC Lysis Buffer.
+1	Incubate	_	Action	_	_	0	_	_	Offset=502-510
+2	on	_	Temperature	_	_	0	_	_	Offset=511-517
+3	5	_	Time	_	_	0	_	_	Offset=522-531
+
+# sent_id = s5
+# text = Incubate on ice for 5 minutes.
+1	Stop	_	Action	_	_	0	_	_	Offset=533-548
+2	adding	_	Action	_	_	0	_	_	Offset=552-558
+3	10	_	Amount	_	_	4	Measure	_	Offset=559-564
+4	Cell	_	Reagent	_	_	0	_	_	Offset=565-585
+5	tube	_	Location	_	_	0	_	_	Offset=593-597
+
+# sent_id = s6
+# text = Stop cell lysis by adding 10 ml Cell Staining Buffer to the tube.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=599-609
+2	5	_	Time	_	_	0	_	_	Offset=614-623
+3	350	_	Speed	_	_	0	_	_	Offset=627-634
+4	discard	_	Action	_	_	0	_	_	Offset=639-646
+5	supernatant	_	Reagent	_	_	0	_	_	Offset=647-658
+
+# sent_id = s7
+# text = Centrifuge for 5 minutes at 350 x g and discard supernatant.
+1	Add	_	Action	_	_	0	_	_	Offset=660-663
+2	Cell	_	Reagent	_	_	0	_	_	Offset=664-684
+3	~15	_	Amount	_	_	0	_	_	Offset=691-697
+4	centrifuge	_	Action	_	_	0	_	_	Offset=702-712
+5	350	_	Speed	_	_	0	_	_	Offset=716-723
+6	5	_	Time	_	_	0	_	_	Offset=728-737
+7	discard	_	Action	_	_	0	_	_	Offset=739-746
+8	supernatant	_	Reagent	_	_	0	_	_	Offset=747-758
+
+# sent_id = s8
+# text = Add Cell Staining Buffer up to ~15 ml and centrifuge at 350 x g for 5 minutes, discard supernatant.
+1	Count	_	Action	_	_	0	_	_	Offset=760-765
+2	viable	_	Reagent	_	_	0	_	_	Offset=766-778
+3	resuspend	_	Action	_	_	0	_	_	Offset=783-792
+4	Cell	_	Reagent	_	_	0	_	_	Offset=796-816
+5	5-10	_	Concentration	_	_	0	_	_	Offset=820-839
+6	distribute	_	Action	_	_	0	_	_	Offset=844-854
+7	100	_	Amount	_	_	8	Measure	_	Offset=855-866
+8	cell	_	Reagent	_	_	0	_	_	Offset=870-885
+9	5-10	_	Concentration	_	_	8	Measure	_	Offset=887-908
+10	12	_	Size	_	_	11	Measure	_	Offset=915-925
+11	plastic	_	Location	_	_	0	_	_	Offset=926-939
+
+# sent_id = s9
+# text = Count viable cells and resuspend in Cell Staining Buffer at 5-10 x 106 cells/ml and distribute 100 μl/tube of cell suspension (5-10 x 105 cells/tube) into 12 x 75 mm plastic tubes.
+1	Add	_	Action	_	_	0	_	_	Offset=941-944
+2	fluorescent	_	Modifier	_	_	5	Mod-Link	_	Offset=970-981
+3	biotinylated	_	Modifier	_	_	2	Or	_	Offset=983-995
+4	purified	_	Modifier	_	_	3	Or	_	Offset=1000-1008
+5	primary	_	Reagent	_	_	0	_	_	Offset=1009-1027
+6	predetermined	_	Concentration	_	_	5	Measure	_	Offset=1031-1067
+7	incubate	_	Action	_	_	0	_	_	Offset=1128-1136
+8	on	_	Temperature	_	_	0	_	_	Offset=1137-1143
+9	15-20	_	Time	_	_	0	_	_	Offset=1148-1161
+10	in	_	Modifier	_	_	0	_	_	Offset=1162-1173
+
+# sent_id = s10
+# text = Add appropriately conjugated fluorescent, biotinylated, or purified primary antibodies at predetermined optimum concentrations (e.g. anti-CD3-FITC, anti-CD4-Biotin, and anti-CD8-APC) and incubate on ice for 15-20 minutes in the dark.
+1	Wash	_	Action	_	_	0	_	_	Offset=1175-1179
+2	at	_	Amount	_	_	3	Measure	_	Offset=1185-1198
+3	Cell	_	Reagent	_	_	0	_	_	Offset=1202-1222
+4	centrifugation	_	Action	_	_	0	_	_	Offset=1226-1240
+5	350	_	Speed	_	_	0	_	_	Offset=1244-1251
+6	5	_	Time	_	_	0	_	_	Offset=1256-1265
+
+# sent_id = s11
+# text = Wash with at least 2 ml of Cell Staining Buffer by centrifugation at 350 x g for 5 minutes. (1/2). 
+1	resuspend	_	Action	_	_	0	_	_	Offset=1313-1322
+2	pellet	_	Reagent	_	_	0	_	_	Offset=1323-1329
+3	residual	_	Reagent	_	_	0	_	_	Offset=1333-1348
+4	add	_	Action	_	_	0	_	_	Offset=1353-1356
+5	previously	_	Concentration	_	_	6	Measure	_	Offset=1357-1401
+6	anti-species	_	Reagent	_	_	0	_	_	Offset=1405-1475
+7	incubate	_	Action	_	_	0	_	_	Offset=1506-1514
+8	on	_	Temperature	_	_	0	_	_	Offset=1515-1521
+9	in	_	Modifier	_	_	0	_	_	Offset=1522-1533
+10	15-20	_	Time	_	_	0	_	_	Offset=1538-1551
+
+# sent_id = s12
+# text = If using a purified primary antibody, resuspend pellet in residual buffer and add previously determined optimum concentrations of anti-species immunoglobulin fluorochrome conjugated secondary antibody (e.g. FITC anti-mouse Ig) and incubate on ice in the dark for 15-20 minutes.
+1	Wash	_	Action	_	_	0	_	_	Offset=1553-1557
+2	at	_	Amount	_	_	3	Measure	_	Offset=1563-1576
+3	Cell	_	Reagent	_	_	0	_	_	Offset=1580-1600
+4	centrifugation	_	Action	_	_	0	_	_	Offset=1604-1618
+5	350	_	Speed	_	_	0	_	_	Offset=1622-1629
+6	5	_	Time	_	_	0	_	_	Offset=1634-1643
+
+# sent_id = s13
+# text = Wash with at least 2 ml of Cell Staining Buffer by centrifugation at 350 x g for 5 minutes. (1/2). 
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1653-1662
+2	cell	_	Reagent	_	_	0	_	_	Offset=1663-1674
+3	0.5	_	Amount	_	_	4	Measure	_	Offset=1678-1684
+4	Cell	_	Reagent	_	_	0	_	_	Offset=1688-1708
+5	add	_	Action	_	_	0	_	_	Offset=1713-1716
+6	5	_	Amount	_	_	8	Measure	_	Offset=1717-1721
+7	(0.25	_	Concentration	_	_	8	Measure	_	Offset=1722-1739
+8	cells	_	Reagent	_	_	0	_	_	Offset=1740-1745
+9	7-AAD	_	Reagent	_	_	8	Meronym	_	Offset=1749-1810
+10	exclude	_	Action	_	_	0	_	_	Offset=1814-1821
+11	dead	_	Reagent	_	_	0	_	_	Offset=1822-1832
+
+# sent_id = s14
+# text = Resuspend cell pellet in 0.5 ml of Cell Staining Buffer and add 5 μl (0.25 μg)/million cells of 7-AAD Viability Staining Solution (BioLegend Cat. No. 420403) to exclude dead cells.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1834-1842
+2	on	_	Temperature	_	_	0	_	_	Offset=1843-1849
+3	3-5	_	Time	_	_	0	_	_	Offset=1854-1865
+4	in	_	Modifier	_	_	0	_	_	Offset=1866-1877
+
+# sent_id = s15
+# text = Incubate on ice for 3-5 minutes in the dark.
+1	Analyze	_	Action	_	_	0	_	_	Offset=1879-1886
+2	Flow	_	Device	_	_	0	_	_	Offset=1894-1908
+
+# sent_id = s16
+# text = Analyze with a Flow Cytometer.
+1	Wash	_	Action	_	_	0	_	_	Offset=1910-1914
+2	at	_	Amount	_	_	3	Measure	_	Offset=1920-1933
+3	Cell	_	Reagent	_	_	0	_	_	Offset=1937-1957
+4	centrifugation	_	Action	_	_	0	_	_	Offset=1961-1975
+5	350	_	Speed	_	_	0	_	_	Offset=1979-1986
+6	5	_	Time	_	_	0	_	_	Offset=1991-2000
+
+# sent_id = s17
+# text = Wash with at least 2 ml of Cell Staining Buffer by centrifugation at 350 x g for 5 minutes. (2/2). 
+1	Wash	_	Action	_	_	0	_	_	Offset=2010-2014
+2	at	_	Amount	_	_	3	Measure	_	Offset=2020-2033
+3	Cell	_	Reagent	_	_	0	_	_	Offset=2037-2057
+4	centrifugation	_	Action	_	_	0	_	_	Offset=2061-2075
+5	350	_	Speed	_	_	0	_	_	Offset=2079-2086
+6	5	_	Time	_	_	0	_	_	Offset=2091-2100
+

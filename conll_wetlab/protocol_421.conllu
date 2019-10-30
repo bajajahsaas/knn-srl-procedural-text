@@ -1,0 +1,81 @@
+# sent_id = s1
+# text = Picking colonies
+1	Number	_	Action	_	_	0	_	_	Offset=17-23
+2	annotate	_	Action	_	_	0	_	_	Offset=28-36
+3	95	_	Numerical	_	_	5	Measure	_	Offset=50-52
+4	isolated	_	Modifier	_	_	5	Mod-Link	_	Offset=53-61
+5	colonies	_	Reagent	_	_	0	_	_	Offset=62-70
+6	SPOT	_	Location	_	_	0	_	_	Offset=74-93
+
+# sent_id = s2
+# text = Number and annotate (color/size) 95 isolated colonies on SPOT 0m 10ml plates.
+1	2ml	_	Amount	_	_	3	Measure	_	Offset=98-101
+2	deep	_	Modifier	_	_	3	Mod-Link	_	Offset=102-106
+3	96	_	Location	_	_	0	_	_	Offset=107-121
+4	add	_	Action	_	_	0	_	_	Offset=122-125
+5	1ml	_	Amount	_	_	6	Measure	_	Offset=126-129
+6	Zobell	_	Reagent	_	_	0	_	_	Offset=133-145
+7	all	_	Modifier	_	_	8	Mod-Link	_	Offset=149-152
+8	wells	_	Location	_	_	0	_	_	Offset=153-158
+9	8	_	Device	_	_	0	_	_	Offset=165-180
+10	autoclaved/sterile	_	Modifier	_	_	12	Mod-Link	_	Offset=187-205
+11	200ul	_	Amount	_	_	12	Setting	_	Offset=206-211
+12	pipet	_	Device	_	_	0	_	_	Offset=212-222
+13	pick	_	Action	_	_	0	_	_	Offset=234-238
+14	all	_	Modifier	_	_	16	Mod-Link	_	Offset=239-242
+15	95	_	Numerical	_	_	16	Measure	_	Offset=243-245
+16	colonies	_	Reagent	_	_	0	_	_	Offset=246-254
+
+# sent_id = s3
+# text = In 2ml deep 96 well plates add 1ml of Zobell broth to all wells using 8 channel pipet Using autoclaved/sterile 200ul pipet tips (full box) pick all 95 colonies.
+1	pipet	_	Device	_	_	0	_	_	Offset=260-269
+2	pick	_	Action	_	_	0	_	_	Offset=273-280
+3	entire	_	Modifier	_	_	5	Mod-Link	_	Offset=284-290
+4	isolated	_	Modifier	_	_	5	Mod-Link	_	Offset=291-299
+5	colony	_	Reagent	_	_	0	_	_	Offset=300-306
+6	place	_	Action	_	_	0	_	_	Offset=311-316
+7	pipet	_	Device	_	_	0	_	_	Offset=317-326
+8	well	_	Location	_	_	0	_	_	Offset=332-336
+
+# sent_id = s4
+# text = Use pipet tip to pick up an entire isolated colony and place pipet tip into well.
+1	place	_	Action	_	_	0	_	_	Offset=432-437
+2	final	_	Modifier	_	_	3	Mod-Link	_	Offset=442-454
+3	pipet	_	Device	_	_	0	_	_	Offset=455-464
+4	Negative	_	Reagent	_	_	0	_	_	Offset=470-478
+
+# sent_id = s5
+# text = Pick colonies 1-95 in column 1 A through H, column 2 1 through H and so on.
+1	12	_	Device	_	_	0	_	_	Offset=532-548
+2	attach	_	Action	_	_	0	_	_	Offset=550-556
+3	row	_	Location	_	_	0	_	_	Offset=562-565
+4	tips	_	Device	_	_	3	Meronym	_	Offset=569-573
+5	pipet	_	Action	_	_	0	_	_	Offset=578-583
+6	up	_	Method	_	_	0	_	_	Offset=584-595
+7	3	_	Numerical	_	_	0	_	_	Offset=605-606
+8	dislodge	_	Action	_	_	0	_	_	Offset=616-624
+9	colony	_	Reagent	_	_	0	_	_	Offset=625-631
+
+# sent_id = s6
+# text = In well 96 (12 H) place the final unused pipet tip as a Negative.
+1	Remove	_	Action	_	_	0	_	_	Offset=633-639
+2	tips	_	Device	_	_	0	_	_	Offset=640-644
+
+# sent_id = s7
+# text = After all 96 wells have pipet tips in them, using a 12 channel pipet, attach each row of tips and pipet up and down at least 3 times to dislodge colony.
+1	Place	_	Action	_	_	0	_	_	Offset=661-666
+2	pore	_	Seal	_	_	0	_	_	Offset=667-676
+3	plate	_	Location	_	_	0	_	_	Offset=682-687
+4	seal	_	Action	_	_	0	_	_	Offset=692-696
+5	well	_	Location	_	_	0	_	_	Offset=697-701
+
+# sent_id = s8
+# text = Remove tips after each row.
+1	Label	_	Action	_	_	0	_	_	Offset=703-708
+2	plate	_	Location	_	_	0	_	_	Offset=709-714
+3	Place	_	Action	_	_	0	_	_	Offset=715-720
+4	shaker	_	Device	_	_	0	_	_	Offset=724-730
+5	at	_	Modifier	_	_	6	Mod-Link	_	Offset=735-743
+6	48	_	Time	_	_	0	_	_	Offset=744-752
+7	grow	_	Action	_	_	0	_	_	Offset=756-760
+

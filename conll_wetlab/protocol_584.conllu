@@ -1,0 +1,75 @@
+# sent_id = s1
+# text = One-step growth curves for Cellulophaga phages
+1	Inoculate	_	Action	_	_	0	_	_	Offset=47-56
+2	new	_	Modifier	_	_	3	Mod-Link	_	Offset=59-62
+3	culture	_	Reagent	_	_	0	_	_	Offset=63-70
+4	pick	_	Action	_	_	0	_	_	Offset=76-80
+5	colony	_	Reagent	_	_	0	_	_	Offset=83-89
+6	new	_	Modifier	_	_	7	Mod-Link	_	Offset=97-100
+7	flask	_	Location	_	_	9	Meronym	_	Offset=101-106
+8	10	_	Amount	_	_	9	Measure	_	Offset=118-123
+9	MLB	_	Reagent	_	_	0	_	_	Offset=127-136
+
+# sent_id = s2
+# text = Inoculate a new culture; ie, pick a colony into a new flask containing 10 ml of MLB media.  
+1	Calculate	_	Action	_	_	0	_	_	Offset=342-362
+2	107	_	Numerical	_	_	3	Measure	_	Offset=374-377
+3	phages	_	Reagent	_	_	0	_	_	Offset=378-384
+
+# sent_id = s3
+# text = Immediately after the transfer, take a ‘time 0’ growth reading. 
+1	Determine	_	Action	_	_	0	_	_	Offset=387-414
+2	culture	_	Reagent	_	_	0	_	_	Offset=423-430
+3	at	_	Modifier	_	_	0	_	_	Offset=431-474
+
+# sent_id = s4
+# text = Continue taking readings as performed in step 2 periodically. 
+1	Calculate	_	Action	_	_	0	_	_	Offset=478-498
+2	host	_	Reagent	_	_	0	_	_	Offset=502-514
+3	108	_	Numerical	_	_	4	Measure	_	Offset=526-529
+4	cells	_	Reagent	_	_	0	_	_	Offset=530-535
+
+# sent_id = s5
+# text = Do a plaque assay to determine the PFU/ml of the lysate you plan to use. 
+1	Pipet	_	Action	_	_	0	_	_	Offset=538-543
+2	this	_	Mention	_	_	0	_	_	Offset=544-555
+3	1.5	_	Amount	_	_	4	Measure	_	Offset=563-569
+4	tube	_	Location	_	_	0	_	_	Offset=570-574
+
+# sent_id = s6
+# text = Calculate the volume needed for 107 phages. 
+1	Add	_	Action	_	_	0	_	_	Offset=577-580
+2	107	_	Numerical	_	_	3	Measure	_	Offset=581-584
+3	phages	_	Reagent	_	_	0	_	_	Offset=585-591
+4	tube	_	Location	_	_	0	_	_	Offset=599-603
+5	start	_	Action	_	_	0	_	_	Offset=608-613
+6	timer	_	Device	_	_	0	_	_	Offset=619-624
+7	15	_	Time	_	_	0	_	_	Offset=629-639
+
+# sent_id = s7
+# text = Determine the concentration of your culture at the time you want to start the infection.  
+1	After	_	Modifier	_	_	0	_	_	Offset=690-706
+2	dilute	_	Action	_	_	0	_	_	Offset=708-714
+3	infection	_	Reagent	_	_	0	_	_	Offset=719-728
+4	1:1000	_	Concentration	_	_	3	Measure	_	Offset=729-735
+5	MLB	_	Reagent	_	_	0	_	_	Offset=739-748
+6	250	_	Amount	_	_	7	Measure	_	Offset=754-760
+7	flask	_	Location	_	_	0	_	_	Offset=761-766
+
+# sent_id = s8
+# text = Calculate the volume of host culture needed for 108 cells. 
+1	Store	_	Action	_	_	0	_	_	Offset=954-959
+2	filtered	_	Modifier	_	_	3	Mod-Link	_	Offset=964-972
+3	samples	_	Reagent	_	_	0	_	_	Offset=973-980
+4	4°C	_	Temperature	_	_	0	_	_	Offset=984-987
+
+# sent_id = s9
+# text = Pipet this amount into a 1.5 ml tube. 
+1	Count	_	Action	_	_	0	_	_	Offset=1285-1290
+2	on	_	Modifier	_	_	0	_	_	Offset=1297-1313
+
+# sent_id = s10
+# text = Add 107 phages to the tube and start your timer for 15 minutes to allow the phages to adsorb to the host cells. 
+1	Calculate	_	Action	_	_	0	_	_	Offset=1457-1466
+2	burst	_	Measure-Type	_	_	0	_	_	Offset=1467-1477
+

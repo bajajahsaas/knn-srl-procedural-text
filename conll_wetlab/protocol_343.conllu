@@ -1,0 +1,48 @@
+# sent_id = s1
+# text = Cobalt standard reagent for dissolved cobalt analyses
+1	Rinse	_	Action	_	_	0	_	_	Offset=54-59
+2	100	_	Size	_	_	3	Measure	_	Offset=62-68
+3	volumetric	_	Location	_	_	0	_	_	Offset=69-85
+4	cleaned	_	Action	_	_	0	_	_	Offset=102-109
+5	10%	_	Concentration	_	_	6	Measure	_	Offset=115-118
+6	hydrocholoric	_	Reagent	_	_	0	_	_	Offset=119-145
+7	pH	_	pH	_	_	8	Measure	_	Offset=152-156
+8	Milli-Q	_	Reagent	_	_	0	_	_	Offset=157-164
+9	3	_	Numerical	_	_	0	_	_	Offset=165-166
+10	Milli-Q	_	Reagent	_	_	0	_	_	Offset=177-184
+11	3	_	Numerical	_	_	0	_	_	Offset=185-186
+
+# sent_id = s2
+# text = Rinse a 100 mL volumetric flask  (that has been cleaned with 10% hydrocholoric acid cabinet) with pH 2 Milli-Q 3 times and Milli-Q 3 times.
+1	Fill	_	Action	_	_	0	_	_	Offset=194-198
+2	flask	_	Location	_	_	0	_	_	Offset=203-208
+3	part	_	Amount	_	_	4	Measure	_	Offset=209-217
+4	Milli-Q	_	Reagent	_	_	10	Coreference-Link	_	Offset=223-230
+5	add	_	Action	_	_	0	_	_	Offset=235-238
+6	29.5	_	Amount	_	_	7	Measure	_	Offset=239-246
+7	cobalt	_	Reagent	_	_	9	Meronym	_	Offset=254-272
+8	1	_	Amount	_	_	9	Measure	_	Offset=274-278
+9	L-1	_	Reagent	_	_	0	_	_	Offset=279-282
+10	Milli-Q	_	Mention	_	_	0	_	_	Offset=291-298
+
+# sent_id = s3
+# text = Fill the flask part way with Milli-Q and add 29.5 μl of the cobalt AA standard (1 mg L-1) to the Milli-Q.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=344-353
+2	fill	_	Action	_	_	0	_	_	Offset=354-358
+3	100	_	Amount	_	_	4	Measure	_	Offset=365-371
+4	Milli-Q	_	Reagent	_	_	0	_	_	Offset=372-379
+5	squirt	_	Device	_	_	0	_	_	Offset=388-401
+6	invert	_	Action	_	_	0	_	_	Offset=406-412
+7	mix	_	Action	_	_	0	_	_	Offset=416-419
+
+# sent_id = s4
+# text = The final concentration will be 5 nmol L-1.
+1	Save	_	Action	_	_	0	_	_	Offset=421-425
+2	small	_	Amount	_	_	3	Measure	_	Offset=428-433
+3	aliquot	_	Reagent	_	_	0	_	_	Offset=434-441
+4	5	_	Size	_	_	6	Measure	_	Offset=447-451
+5	clean	_	Modifier	_	_	6	Mod-Link	_	Offset=452-457
+6	bottle	_	Location	_	_	0	_	_	Offset=458-464
+7	run	_	Action	_	_	0	_	_	Offset=481-484
+8	ICP-MS	_	Device	_	_	0	_	_	Offset=498-504
+

@@ -1,0 +1,72 @@
+# sent_id = s1
+# text = Isotopic labeling of freshwater mixotrophic algae using isotopic labeled heat-killed bacteria
+1	Prepare	_	Action	_	_	0	_	_	Offset=94-101
+2	modified	_	Modifier	_	_	3	Mod-Link	_	Offset=102-110
+3	DY-V	_	Reagent	_	_	0	_	_	Offset=111-121
+
+# sent_id = s2
+# text = Prepare modified DY-V media.   
+1	Sodium	_	Reagent	_	_	0	_	_	Offset=517-535
+2	added	_	Action	_	_	0	_	_	Offset=536-541
+3	95	_	Concentration	_	_	1	Measure	_	Offset=570-575
+
+# sent_id = s3
+# text = Media used for Ochromonas growth was a modified version of DY-V media.
+1	addition	_	Action	_	_	0	_	_	Offset=589-597
+2	algal	_	Reagent	_	_	0	_	_	Offset=613-627
+3	0.2	_	Size	_	_	0	_	_	Offset=631-637
+4	filtration	_	Action	_	_	0	_	_	Offset=638-648
+5	stock	_	Reagent	_	_	0	_	_	Offset=654-668
+
+# sent_id = s4
+# text = Modifications were:No MES was used, as it can be used as a source of carbon (bicarbonate and heat-killed bacteria are the only sources of carbon used in this media).
+1	Media	_	Reagent	_	_	0	_	_	Offset=689-706
+2	labeled	_	Action	_	_	0	_	_	Offset=712-719
+3	HKB	_	Device	_	_	0	_	_	Offset=720-723
+
+# sent_id = s5
+# text = No Na2SiO3 was used (Ochromonas does not need silica).
+1	Add	_	Action	_	_	0	_	_	Offset=726-729
+2	15N	_	Reagent	_	_	0	_	_	Offset=730-766
+3	media	_	Reagent	_	_	0	_	_	Offset=780-785
+
+# sent_id = s6
+# text = No NaNO3 (ammonium and heat-killed bacteria were the only sources of nitrogen used in this media).
+1	Add	_	Action	_	_	0	_	_	Offset=852-855
+2	inoculum	_	Reagent	_	_	0	_	_	Offset=859-867
+3	mixotrophic	_	Reagent	_	_	2	Meronym	_	Offset=875-892
+
+# sent_id = s7
+# text = Sodium bicarbonate added at a final concentration of 95 µM.
+1	algae	_	Reagent	_	_	0	_	_	Offset=1175-1180
+2	grow	_	Action	_	_	0	_	_	Offset=1181-1186
+
+# sent_id = s8
+# text = Bicarbonate addition is done before algal inoculum by 0.2 µm filtration of a stock solution (do not autoclave).
+1	Track	_	Action	_	_	0	_	_	Offset=1244-1249
+2	algae	_	Reagent	_	_	0	_	_	Offset=1254-1266
+3	microscopy	_	Method	_	_	0	_	_	Offset=1275-1285
+
+# sent_id = s9
+# text = Media inoculation with labeled HKB. 
+1	filter	_	Action	_	_	0	_	_	Offset=1666-1672
+2	30-50	_	Amount	_	_	0	_	_	Offset=1673-1681
+3	cultures	_	Reagent	_	_	0	_	_	Offset=1689-1697
+4	dry	_	Action	_	_	0	_	_	Offset=1741-1744
+
+# sent_id = s10
+# text = Add 15N 13C labeled heat-killed bacteria (HKB) to the media (isolation and labeling of HKB was done following this protocol).
+1	collect	_	Action	_	_	0	_	_	Offset=2108-2115
+2	2	_	Amount	_	_	3	Measure	_	Offset=2116-2120
+3	sample	_	Reagent	_	_	0	_	_	Offset=2124-2130
+4	fix	_	Action	_	_	0	_	_	Offset=2135-2138
+5	2X	_	Concentration	_	_	6	Measure	_	Offset=2144-2146
+6	EM-grade	_	Reagent	_	_	0	_	_	Offset=2147-2170
+
+# sent_id = s11
+# text = Add an inoculum of the mixotrophic algae (volume of inoculum should be low as to avoid dilution of the isotopic label and carry over of nutrients).
+1	Sample	_	Reagent	_	_	0	_	_	Offset=2172-2178
+2	stored	_	Action	_	_	0	_	_	Offset=2186-2192
+3	fridge	_	Device	_	_	0	_	_	Offset=2200-2206
+4	4	_	Temperature	_	_	0	_	_	Offset=2210-2214
+

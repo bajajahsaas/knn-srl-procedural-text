@@ -1,0 +1,88 @@
+# sent_id = s1
+# text = DNA Extraction Protocol. 
+1	Create	_	Action	_	_	0	_	_	Offset=26-32
+2	mixture	_	Reagent	_	_	0	_	_	Offset=33-40
+3	CsCl	_	Reagent	_	_	0	_	_	Offset=44-48
+4	Proteinase	_	Reagent	_	_	0	_	_	Offset=50-62
+5	SDS	_	Reagent	_	_	0	_	_	Offset=68-71
+
+# sent_id = s2
+# text = Create mixture of CsCl, Proteinase K, and SDS.
+1	Mix	_	Action	_	_	0	_	_	Offset=73-76
+2	incubate	_	Action	_	_	0	_	_	Offset=81-89
+3	1	_	Time	_	_	0	_	_	Offset=90-96
+4	56°C	_	Temperature	_	_	0	_	_	Offset=100-104
+
+# sent_id = s3
+# text = Mix and incubate 1 hour at 56°C.
+1	Cool	_	Action	_	_	0	_	_	Offset=106-110
+2	room	_	Temperature	_	_	0	_	_	Offset=114-130
+
+# sent_id = s4
+# text = Cool to room temperature. 
+1	Add	_	Action	_	_	0	_	_	Offset=133-136
+2	equal	_	Amount	_	_	3	Measure	_	Offset=140-152
+3	phenol	_	Reagent	_	_	0	_	_	Offset=156-162
+4	invert	_	Action	_	_	0	_	_	Offset=167-173
+5	several	_	Numerical	_	_	0	_	_	Offset=174-181
+
+# sent_id = s5
+# text = Add an equal volume of phenol and invert several times.
+1	Spin	_	Action	_	_	0	_	_	Offset=189-193
+2	3000g	_	Speed	_	_	0	_	_	Offset=194-199
+3	microfuge	_	Device	_	_	0	_	_	Offset=213-222
+4	5	_	Time	_	_	0	_	_	Offset=225-234
+5	room	_	Temperature	_	_	0	_	_	Offset=236-252
+
+# sent_id = s6
+# text = Spin 3000g (6000 rpm on microfuge), 5 minutes, room temperature.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=254-263
+2	transfer	_	Action	_	_	0	_	_	Offset=264-272
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=277-288
+4	wide-bore	_	Device	_	_	0	_	_	Offset=296-313
+5	fresh	_	Modifier	_	_	6	Mod-Link	_	Offset=319-324
+6	tube	_	Location	_	_	0	_	_	Offset=325-329
+
+# sent_id = s7
+# text = Carefully transfer the supernatant with a wide-bore pipette to a fresh tube.
+1	Add	_	Action	_	_	0	_	_	Offset=331-334
+2	equal	_	Amount	_	_	3	Measure	_	Offset=338-350
+3	phenol:choroform	_	Reagent	_	_	0	_	_	Offset=354-370
+4	1:1	_	Generic-Measure	_	_	3	Measure	_	Offset=372-375
+5	invert	_	Action	_	_	0	_	_	Offset=378-384
+
+# sent_id = s8
+# text = Add an equal volume of phenol:choroform (1:1), invert.
+1	Spin	_	Action	_	_	0	_	_	Offset=386-390
+2	3000g	_	Speed	_	_	0	_	_	Offset=398-403
+3	microfuge	_	Device	_	_	0	_	_	Offset=417-426
+4	5	_	Time	_	_	0	_	_	Offset=429-438
+5	room	_	Temperature	_	_	0	_	_	Offset=440-456
+
+# sent_id = s9
+# text = Spin again, 3000g (6000 rpm on microfuge), 5 minutes, room temperature.
+1	Transfer	_	Action	_	_	0	_	_	Offset=458-466
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=471-482
+3	before	_	Method	_	_	0	_	_	Offset=492-498
+
+# sent_id = s10
+# text = Transfer the supernatant, as done before.
+1	Add	_	Action	_	_	0	_	_	Offset=500-503
+2	equal	_	Amount	_	_	3	Measure	_	Offset=507-519
+3	chloroform	_	Reagent	_	_	0	_	_	Offset=523-533
+4	invert	_	Action	_	_	0	_	_	Offset=538-544
+
+# sent_id = s11
+# text = Add an equal volume of chloroform and invert.
+1	Spin	_	Action	_	_	0	_	_	Offset=546-550
+2	3000g	_	Speed	_	_	0	_	_	Offset=558-563
+3	microfuge	_	Device	_	_	0	_	_	Offset=577-586
+4	5	_	Time	_	_	0	_	_	Offset=589-598
+5	room	_	Temperature	_	_	0	_	_	Offset=600-616
+
+# sent_id = s12
+# text = Spin again, 3000g (6000 rpm on microfuge), 5 minutes, room temperature.
+1	Transfer	_	Action	_	_	0	_	_	Offset=618-626
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=631-642
+3	before	_	Method	_	_	0	_	_	Offset=652-658
+

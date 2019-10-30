@@ -1,0 +1,783 @@
+# sent_id = s1
+# text = 16S Amplicon Library Generation for Reef Corals
+1	Add	_	Action	_	_	0	_	_	Offset=48-51
+2	coral	_	Reagent	_	_	0	_	_	Offset=52-65
+3	PowerBead	_	Location	_	_	0	_	_	Offset=88-103
+
+# sent_id = s2
+# text = Add coral samples (< 1 cm2 biopsies) to PowerBead Tubes.
+1	PowerBead	_	Location	_	_	0	_	_	Offset=109-124
+2	beating	_	Action	_	_	0	_	_	Offset=129-136
+3	coral	_	Reagent	_	_	0	_	_	Offset=141-154
+4	extract	_	Action	_	_	0	_	_	Offset=163-170
+5	DNA	_	Reagent	_	_	0	_	_	Offset=175-178
+6	tissues	_	Reagent	_	_	0	_	_	Offset=188-195
+7	break	_	Action	_	_	0	_	_	Offset=200-211
+8	cell	_	Reagent	_	_	0	_	_	Offset=212-222
+
+# sent_id = s3
+# text = The PowerBead tubes are beating the coral samples to help extract the DNA from the tissues and break apart cell walls.
+1	C1	_	Reagent	_	_	0	_	_	Offset=323-334
+2	dissolved	_	Action	_	_	0	_	_	Offset=338-347
+3	add	_	Action	_	_	0	_	_	Offset=382-385
+4	60	_	Amount	_	_	5	Measure	_	Offset=386-391
+5	Solution	_	Reagent	_	_	0	_	_	Offset=395-406
+
+# sent_id = s4
+# text = Furthermore, the bead tubes have a solution that is protecting the DNA from degradation.
+1	Secure	_	Action	_	_	0	_	_	Offset=459-465
+2	PowerSoil	_	Location	_	_	0	_	_	Offset=466-481
+3	FastPrep	_	Device	_	_	0	_	_	Offset=485-505
+
+# sent_id = s5
+# text = Make sure C1 solution is dissolved (heat solution if not dissolved), add 60 µl of Solution C1(This solution contains SDS needed for cell lysis). 
+1	Beat	_	Action	_	_	0	_	_	Offset=507-511
+2	bead	_	Location	_	_	0	_	_	Offset=512-522
+3	6	_	Numerical	_	_	0	_	_	Offset=534-535
+4	30	_	Time	_	_	0	_	_	Offset=540-544
+
+# sent_id = s6
+# text = Secure PowerSoil tubes in FastPrep Bead Beater.
+1	label	_	Action	_	_	0	_	_	Offset=701-706
+2	BeadBeating	_	Location	_	_	0	_	_	Offset=711-727
+3	2	_	Amount	_	_	4	Measure	_	Offset=733-737
+4	collection	_	Location	_	_	0	_	_	Offset=738-754
+5	Spin	_	Action	_	_	0	_	_	Offset=763-767
+
+# sent_id = s7
+# text = Beat bead tubes at setting 6 for 30 s(Modified from MoBio protocol, helps to facilitate bead beating and lysis tissues). 
+1	Filter	_	Action	_	_	0	_	_	Offset=769-775
+
+# sent_id = s8
+# text = DNA EXTRACTION (modified from the MoBio PowerSoil Kit).
+1	Extract	_	Action	_	_	0	_	_	Offset=777-784
+2	up	_	Modifier	_	_	3	Or	_	Offset=785-790
+3	24	_	Numerical	_	_	4	Measure	_	Offset=791-793
+4	samples	_	Reagent	_	_	0	_	_	Offset=794-801
+5	at	_	Modifier	_	_	0	_	_	Offset=802-809
+6	randomize	_	Action	_	_	0	_	_	Offset=811-820
+7	samples	_	Reagent	_	_	0	_	_	Offset=825-832
+
+# sent_id = s9
+# text = For each sample label (1) BeadBeating tube, (4) 2 mL collection tubes and (1) Spin.
+1	Finally	_	Modifier	_	_	0	_	_	Offset=873-880
+2	extract	_	Action	_	_	0	_	_	Offset=882-889
+3	sample	_	Reagent	_	_	0	_	_	Offset=890-896
+4	test	_	Method	_	_	0	_	_	Offset=907-929
+
+# sent_id = s10
+# text = Filter.
+1	Secure	_	Action	_	_	0	_	_	Offset=931-937
+2	PowerBead	_	Location	_	_	0	_	_	Offset=938-953
+3	MoBio	_	Device	_	_	0	_	_	Offset=957-977
+4	vortex	_	Action	_	_	0	_	_	Offset=979-985
+5	max	_	Speed	_	_	0	_	_	Offset=989-998
+6	10	_	Time	_	_	0	_	_	Offset=1003-1013
+
+# sent_id = s11
+# text = Extract up to 24 samples at once, randomize the samples extracted across the experiment design.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1016-1026
+2	tubes	_	Location	_	_	0	_	_	Offset=1027-1032
+3	10,000	_	Speed	_	_	0	_	_	Offset=1036-1044
+4	30	_	Time	_	_	0	_	_	Offset=1078-1088
+5	room	_	Temperature	_	_	0	_	_	Offset=1092-1108
+
+# sent_id = s12
+# text = Finally, extract sample blanks to test for contamination.
+1	tubes	_	Location	_	_	0	_	_	Offset=1120-1125
+2	spin	_	Action	_	_	0	_	_	Offset=1130-1134
+3	freely	_	Modifier	_	_	0	_	_	Offset=1135-1141
+4	centrifuge	_	Device	_	_	0	_	_	Offset=1149-1159
+
+# sent_id = s13
+# text = Secure PowerBead tubes to MoBio Vortex Adaptor, vortex at max speed for 10 minutes. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=1161-1169
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1170-1181
+3	clean	_	Modifier	_	_	6	Mod-Link	_	Offset=1187-1192
+4	pre-labeled	_	Modifier	_	_	6	Mod-Link	_	Offset=1193-1204
+5	2	_	Amount	_	_	6	Measure	_	Offset=1205-1209
+6	collection	_	Location	_	_	0	_	_	Offset=1210-1225
+
+# sent_id = s14
+# text = Centrifuge tubes at 10,000 g (no more or tubes may break) for 30 seconds at room temperature.
+1	Add	_	Action	_	_	0	_	_	Offset=1278-1281
+2	250	_	Amount	_	_	3	Measure	_	Offset=1282-1288
+3	Solution	_	Reagent	_	_	0	_	_	Offset=1292-1303
+4	vortex	_	Action	_	_	0	_	_	Offset=1308-1314
+5	5	_	Time	_	_	0	_	_	Offset=1319-1328
+
+# sent_id = s15
+# text = Make sure tubes can spin freely in the centrifuge.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1330-1338
+2	4°C	_	Temperature	_	_	0	_	_	Offset=1342-1345
+3	5	_	Time	_	_	0	_	_	Offset=1350-1359
+
+# sent_id = s16
+# text = Transfer supernatant to a clean pre-labeled 2 mL collection tube (expect bewteen 400 µL and 500 µL of supernatant). 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1406-1416
+2	tubes	_	Location	_	_	0	_	_	Offset=1417-1422
+3	room	_	Temperature	_	_	0	_	_	Offset=1426-1442
+4	1	_	Time	_	_	0	_	_	Offset=1447-1455
+5	10,000	_	Speed	_	_	0	_	_	Offset=1459-1468
+
+# sent_id = s17
+# text = Add 250 µL of Solution C2 and vortex for 5 seconds.
+1	transfer	_	Action	_	_	0	_	_	Offset=1491-1499
+2	up	_	Modifier	_	_	3	Mod-Link	_	Offset=1500-1505
+3	600	_	Amount	_	_	4	Measure	_	Offset=1506-1512
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=1516-1527
+5	clean	_	Modifier	_	_	8	Mod-Link	_	Offset=1533-1538
+6	pre-labeled	_	Modifier	_	_	8	Mod-Link	_	Offset=1540-1551
+7	2	_	Amount	_	_	8	Measure	_	Offset=1552-1556
+8	collection	_	Location	_	_	0	_	_	Offset=1557-1572
+
+# sent_id = s18
+# text = Incubate at 4°C for 5 minutes(Solution C2 is an inhibitor removal reagent).
+1	Add	_	Action	_	_	0	_	_	Offset=1608-1611
+2	200	_	Amount	_	_	3	Measure	_	Offset=1612-1618
+3	solution	_	Reagent	_	_	0	_	_	Offset=1622-1633
+4	vortex	_	Action	_	_	0	_	_	Offset=1638-1644
+5	briefly	_	Modifier	_	_	0	_	_	Offset=1645-1652
+
+# sent_id = s19
+# text = Centrifuge tubes at room temperature for 1 minute at 10,000 g. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=1654-1662
+2	4°C	_	Temperature	_	_	0	_	_	Offset=1666-1669
+3	5	_	Time	_	_	0	_	_	Offset=1674-1683
+
+# sent_id = s20
+# text = Avoiding the pellet, transfer up to 600 µL of supernatant to a clean, pre-labeled 2 ml collection tube(the pellet does not contain DNA). 
+1	Centrigue	_	Action	_	_	0	_	_	Offset=1730-1739
+2	tubes	_	Location	_	_	0	_	_	Offset=1744-1749
+3	room	_	Temperature	_	_	0	_	_	Offset=1753-1769
+4	1	_	Time	_	_	0	_	_	Offset=1774-1782
+5	10,000	_	Speed	_	_	0	_	_	Offset=1786-1794
+
+# sent_id = s21
+# text = Add 200 µL of solution C3 and vortex briefly.
+1	transfer	_	Action	_	_	0	_	_	Offset=1818-1826
+2	up	_	Modifier	_	_	3	Mod-Link	_	Offset=1827-1832
+3	600	_	Amount	_	_	4	Measure	_	Offset=1833-1839
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=1843-1854
+5	clean	_	Modifier	_	_	8	Mod-Link	_	Offset=1860-1865
+6	pre-labled	_	Modifier	_	_	8	Mod-Link	_	Offset=1867-1877
+7	2	_	Amount	_	_	8	Measure	_	Offset=1878-1882
+8	collection	_	Location	_	_	0	_	_	Offset=1883-1898
+
+# sent_id = s22
+# text = Incubate at 4°C for 5 minutes(Solution C3 is an inhibitor removal reagent).
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1930-1940
+2	tubes	_	Location	_	_	0	_	_	Offset=1941-1946
+3	room	_	Temperature	_	_	0	_	_	Offset=1950-1966
+4	1	_	Time	_	_	0	_	_	Offset=1971-1979
+5	10,000	_	Speed	_	_	0	_	_	Offset=1983-1992
+
+# sent_id = s23
+# text = Centrigue the tubes at room temperature for 1 minute at 10,000 g. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=1994-2002
+2	750	_	Amount	_	_	3	Measure	_	Offset=2003-2009
+3	supernatant	_	Location	_	_	0	_	_	Offset=2013-2024
+4	clean	_	Modifier	_	_	7	Mod-Link	_	Offset=2030-2035
+5	pre-labeled	_	Modifier	_	_	7	Mod-Link	_	Offset=2037-2048
+6	2	_	Amount	_	_	7	Measure	_	Offset=2049-2053
+7	collection	_	Location	_	_	0	_	_	Offset=2054-2069
+
+# sent_id = s24
+# text = Avoiding the pellet, transfer up to 600 µL of supernatant to a clean, pre-labled 2 ml collection tube.
+1	Shake	_	Action	_	_	0	_	_	Offset=2101-2106
+2	mix	_	Action	_	_	0	_	_	Offset=2110-2113
+3	Solution	_	Reagent	_	_	0	_	_	Offset=2118-2129
+4	add	_	Action	_	_	0	_	_	Offset=2131-2134
+5	1.2	_	Amount	_	_	6	Measure	_	Offset=2135-2141
+6	solution	_	Reagent	_	_	0	_	_	Offset=2145-2156
+7	supernatant	_	Reagent	_	_	0	_	_	Offset=2160-2171
+8	vortex	_	Action	_	_	0	_	_	Offset=2176-2182
+9	5	_	Time	_	_	0	_	_	Offset=2187-2196
+
+# sent_id = s25
+# text = (Pellet does not contain DNA) Centrifuge tubes at room temperature for 1 minute at 10,000 g. 
+1	Load	_	Action	_	_	0	_	_	Offset=2281-2285
+2	approximately	_	Modifier	_	_	3	Mod-Link	_	Offset=2286-2299
+3	675	_	Amount	_	_	4	Measure	_	Offset=2300-2306
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=2314-2325
+5	solution	_	Reagent	_	_	0	_	_	Offset=2330-2338
+6	spin	_	Device	_	_	0	_	_	Offset=2346-2357
+7	centrifuge	_	Action	_	_	0	_	_	Offset=2362-2372
+8	10,000	_	Speed	_	_	0	_	_	Offset=2376-2384
+9	1	_	Time	_	_	0	_	_	Offset=2389-2397
+10	room	_	Temperature	_	_	0	_	_	Offset=2401-2417
+
+# sent_id = s26
+# text = Transfer 750 µL of supernatant to a clean, pre-labeled 2 ml collection tube(Pellet does not contain DNA). 
+1	Discard	_	Action	_	_	0	_	_	Offset=2419-2426
+2	flow	_	Reagent	_	_	0	_	_	Offset=2427-2439
+3	add	_	Action	_	_	0	_	_	Offset=2444-2447
+4	additional	_	Modifier	_	_	5	Mod-Link	_	Offset=2451-2461
+5	675	_	Amount	_	_	6	Measure	_	Offset=2462-2468
+6	supernatant	_	Reagent	_	_	0	_	_	Offset=2472-2483
+7	spin	_	Device	_	_	0	_	_	Offset=2491-2502
+8	centrifuge	_	Action	_	_	0	_	_	Offset=2504-2514
+9	10,000	_	Speed	_	_	0	_	_	Offset=2518-2526
+10	1	_	Time	_	_	0	_	_	Offset=2531-2539
+
+# sent_id = s27
+# text = Shake to mix the Solution C4, add 1.2 mL of solution C4 to supernatant and vortex for 5 seconds.
+1	Load	_	Action	_	_	0	_	_	Offset=2541-2545
+2	remaining	_	Modifier	_	_	3	Mod-Link	_	Offset=2546-2555
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=2556-2567
+4	spin	_	Device	_	_	0	_	_	Offset=2578-2589
+5	centrifuge	_	Action	_	_	0	_	_	Offset=2594-2604
+6	10,000	_	Speed	_	_	0	_	_	Offset=2608-2616
+7	1	_	Time	_	_	0	_	_	Offset=2621-2629
+8	discard	_	Action	_	_	0	_	_	Offset=2631-2638
+9	flow	_	Reagent	_	_	0	_	_	Offset=2643-2655
+
+# sent_id = s28
+# text = (C4 is a high salt concentrated solution to help bind the DNA to the spin filter) 
+1	Add	_	Action	_	_	0	_	_	Offset=2776-2779
+2	500	_	Amount	_	_	3	Measure	_	Offset=2780-2786
+3	Solution	_	Reagent	_	_	0	_	_	Offset=2790-2801
+4	centrifuge	_	Action	_	_	0	_	_	Offset=2806-2816
+5	room	_	Temperature	_	_	0	_	_	Offset=2820-2836
+6	30	_	Time	_	_	0	_	_	Offset=2841-2851
+7	10,000	_	Speed	_	_	0	_	_	Offset=2855-2864
+
+# sent_id = s29
+# text = Load approximately 675 µL of the supernatant and solution onto a spin filter and centrifuge at 10,000 g for 1 minute at room temperature.
+1	Discard	_	Action	_	_	0	_	_	Offset=2866-2873
+2	flow	_	Reagent	_	_	0	_	_	Offset=2878-2890
+3	appropriate	_	Modifier	_	_	4	Mod-Link	_	Offset=2899-2910
+4	waste	_	Location	_	_	0	_	_	Offset=2911-2926
+
+# sent_id = s30
+# text = Discard flow through and add an additional 675 µL of supernatant to the spin filter, centrifuge at 10,000 g for 1 minute.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=3010-3020
+2	filter	_	Device	_	_	0	_	_	Offset=3025-3031
+3	2	_	Amount	_	_	4	Measure	_	Offset=3036-3040
+4	collection	_	Location	_	_	0	_	_	Offset=3041-3056
+5	1	_	Time	_	_	0	_	_	Offset=3061-3069
+6	10,000	_	Speed	_	_	0	_	_	Offset=3073-3082
+
+# sent_id = s31
+# text = Load remaining supernatant on to the spin filter and centrifuge at 10,000 g for 1 minute, discard the flow through.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=3211-3220
+2	place	_	Action	_	_	0	_	_	Offset=3221-3226
+3	spin	_	Device	_	_	0	_	_	Offset=3227-3238
+4	new	_	Modifier	_	_	8	Mod-Link	_	Offset=3246-3249
+5	pre-labeled	_	Modifier	_	_	8	Mod-Link	_	Offset=3250-3261
+6	clean	_	Modifier	_	_	8	Mod-Link	_	Offset=3262-3267
+7	2	_	Amount	_	_	8	Measure	_	Offset=3268-3272
+8	collection	_	Location	_	_	0	_	_	Offset=3273-3288
+
+# sent_id = s32
+# text = The DNA should now be bound to the spin filter and the contaminants should be passed through the filter and discarded.
+1	Do	_	Action	_	_	0	_	_	Offset=3290-3303
+2	Solution	_	Reagent	_	_	0	_	_	Offset=3304-3315
+3	filter	_	Device	_	_	0	_	_	Offset=3325-3331
+
+# sent_id = s33
+# text = Add 500 µL of Solution C5 and centrifuge at room temperature for 30 seconds at 10,000 g. 
+1	Add	_	Action	_	_	0	_	_	Offset=3335-3338
+2	100	_	Amount	_	_	3	Measure	_	Offset=3339-3345
+3	Solution	_	Reagent	_	_	0	_	_	Offset=3349-3360
+4	center	_	Location	_	_	0	_	_	Offset=3368-3374
+5	filter	_	Device	_	_	4	Meronym	_	Offset=3382-3388
+6	centrifuge	_	Action	_	_	0	_	_	Offset=3393-3403
+7	room	_	Temperature	_	_	0	_	_	Offset=3407-3423
+8	30	_	Time	_	_	0	_	_	Offset=3428-3438
+9	10,000	_	Speed	_	_	0	_	_	Offset=3442-3450
+
+# sent_id = s34
+# text = Discard the flow through into an appropriate waste container (for ethanol).
+1	elute	_	Action	_	_	0	_	_	Offset=3634-3639
+2	DNA	_	Reagent	_	_	0	_	_	Offset=3645-3648
+3	water	_	Reagent	_	_	0	_	_	Offset=3655-3660
+4	TE	_	Reagent	_	_	3	Or	_	Offset=3664-3673
+
+# sent_id = s35
+# text = This is a wash step to clean the DNA that is bound to the membrane.
+1	Discard	_	Action	_	_	0	_	_	Offset=3676-3683
+2	spin	_	Device	_	_	0	_	_	Offset=3688-3699
+3	store	_	Action	_	_	0	_	_	Offset=3704-3709
+4	DNA	_	Reagent	_	_	0	_	_	Offset=3710-3713
+5	-20°C	_	Temperature	_	_	0	_	_	Offset=3717-3722
+
+# sent_id = s36
+# text = Centrifuge the filter and 2 ml collection tube for 1 minute at 10,000 g. 
+1	Adjust	_	Action	_	_	0	_	_	Offset=3981-3987
+
+# sent_id = s37
+# text = This spin removes residual Solution C5, which is important because ethanol can inhibit PCR and other downstream applications. 
+1	Array	_	Action	_	_	0	_	_	Offset=4025-4030
+2	extracted	_	Modifier	_	_	3	Mod-Link	_	Offset=4031-4040
+3	DNA	_	Reagent	_	_	0	_	_	Offset=4041-4044
+4	96	_	Location	_	_	0	_	_	Offset=4050-4064
+5	detailed	_	Modifier	_	_	6	Or	_	Offset=4080-4088
+6	plate	_	Method	_	_	0	_	_	Offset=4089-4105
+
+# sent_id = s38
+# text = Carefully place spin filter into a new pre-labeled clean 2 ml collection tube.
+1	randomize	_	Action	_	_	0	_	_	Offset=4340-4349
+2	DNA	_	Reagent	_	_	0	_	_	Offset=4354-4365
+3	plates	_	Location	_	_	0	_	_	Offset=4377-4383
+
+# sent_id = s39
+# text = Do not splash Solution C5 onto the filter!!!
+1	Store	_	Action	_	_	0	_	_	Offset=4477-4482
+2	DNA	_	Location	_	_	0	_	_	Offset=4483-4502
+3	-20°C	_	Temperature	_	_	0	_	_	Offset=4506-4511
+
+# sent_id = s40
+# text = Add 100 µl of Solution C6 to the center of the filter and centrifuge at room temperature for 30 seconds at 10,000 g. 
+1	Reconstitute	_	Action	_	_	0	_	_	Offset=4513-4525
+2	primers	_	Reagent	_	_	0	_	_	Offset=4526-4533
+3	100	_	Concentration	_	_	0	_	_	Offset=4537-4543
+4	original	_	Modifier	_	_	5	Mod-Link	_	Offset=4547-4555
+5	primer	_	Location	_	_	0	_	_	Offset=4556-4568
+6	Hyclone	_	Reagent	_	_	0	_	_	Offset=4572-4585
+
+# sent_id = s41
+# text = Solution C6 is a sterile elution buffer that will release the DNA from the spin filter membrane.
+1	primers	_	Reagent	_	_	0	_	_	Offset=4602-4609
+2	sit	_	Action	_	_	0	_	_	Offset=4613-4616
+3	overnight	_	Time	_	_	0	_	_	Offset=4617-4626
+4	4°C	_	Temperature	_	_	0	_	_	Offset=4630-4633
+5	store	_	Action	_	_	0	_	_	Offset=4635-4640
+6	-20°C	_	Temperature	_	_	0	_	_	Offset=4644-4649
+
+# sent_id = s42
+# text = Therefore, after the spin the DNA is now in solution in the 2 ml tube.
+1	Dilute	_	Action	_	_	0	_	_	Offset=4651-4657
+2	working	_	Reagent	_	_	4	Meronym	_	Offset=4660-4673
+3	100	_	Concentration	_	_	4	Measure	_	Offset=4681-4687
+4	primers	_	Reagent	_	_	0	_	_	Offset=4688-4695
+5	10	_	Concentration	_	_	0	_	_	Offset=4699-4704
+6	HyClone	_	Reagent	_	_	0	_	_	Offset=4711-4724
+7	2	_	Amount	_	_	8	Measure	_	Offset=4730-4734
+8	collection	_	Location	_	_	0	_	_	Offset=4735-4750
+
+# sent_id = s43
+# text = You can also elute your DNA using water or TE buffer. 
+1	array	_	Action	_	_	0	_	_	Offset=5309-5314
+2	20	_	Amount	_	_	5	Measure	_	Offset=5315-5320
+3	each	_	Modifier	_	_	5	Mod-Link	_	Offset=5324-5328
+4	10	_	Concentration	_	_	5	Measure	_	Offset=5329-5334
+5	primer	_	Reagent	_	_	0	_	_	Offset=5335-5341
+6	96	_	Location	_	_	0	_	_	Offset=5349-5366
+7	detailed	_	Modifier	_	_	0	_	_	Offset=5378-5386
+
+# sent_id = s44
+# text = Discard the spin filter and store DNA at -20°C until further processing.
+1	mix	_	Action	_	_	0	_	_	Offset=5506-5509
+
+# sent_id = s45
+# text = When ready proceed to next step.
+1	use	_	Action	_	_	0	_	_	Offset=5680-5683
+
+# sent_id = s46
+# text = This is a potential stopping point in the protocol.
+1	Defrost	_	Action	_	_	0	_	_	Offset=5764-5771
+
+# sent_id = s47
+# text = PCR AMPLIFICATION for generation of 16s libraries.
+1	run	_	Action	_	_	0	_	_	Offset=5933-5936
+
+# sent_id = s48
+# text = This protocol assumes 96 or more samples are being processed at the same time using PCR plates.
+1	run	_	Action	_	_	0	_	_	Offset=6040-6043
+
+# sent_id = s49
+# text = Adjust accordingly if this is not the case.
+1	mix	_	Action	_	_	0	_	_	Offset=6101-6104
+
+# sent_id = s50
+# text = Array extracted DNA into 96 well plates according to a detailed plate map design.
+1	Vortex	_	Action	_	_	0	_	_	Offset=6215-6221
+
+# sent_id = s51
+# text = The plate map should indicate the sample ID and barcodes being used.
+1	array	_	Action	_	_	0	_	_	Offset=6252-6257
+2	array	_	Action	_	_	0	_	_	Offset=6360-6365
+
+# sent_id = s52
+# text = This is essential because it is needed to bioinformatically determine which sequences belongs to which samples after receiving data from the facility.
+1	array	_	Action	_	_	0	_	_	Offset=6454-6459
+
+# sent_id = s53
+# text = Make sure to randomize the DNA samples across the plates.
+1	Make	_	Action	_	_	0	_	_	Offset=6533-6542
+
+# sent_id = s54
+# text = Note this map has the forward barcodes SA501 to SA508 and the reverse barcodes SA701-SA712.
+1	adjsut	_	Action	_	_	0	_	_	Offset=6648-6654
+
+# sent_id = s55
+# text = Store DNA template plates at -20°C.
+1	Seal	_	Action	_	_	0	_	_	Offset=6786-6790
+2	vortex	_	Action	_	_	0	_	_	Offset=6829-6835
+
+# sent_id = s56
+# text = Reconstitute primers to 100 µM in original primer tubes in Hyclone water.
+1	Spin	_	Action	_	_	0	_	_	Offset=6863-6867
+
+# sent_id = s57
+# text = After allowing primers to sit overnight at 4°C, store at -20°C.
+1	Plate	_	Action	_	_	0	_	_	Offset=6928-6933
+
+# sent_id = s58
+# text = Dilute a working stock of the 100 µM primers to 10 mM using HyClone water in a 2 mL collection tube.
+1	Set	_	Action	_	_	0	_	_	Offset=6964-6970
+2	run	_	Action	_	_	0	_	_	Offset=6975-6978
+
+# sent_id = s59
+# text = Make sure to dilute enough primer to array across primer plates.
+1	Select	_	Action	_	_	0	_	_	Offset=6999-7005
+
+# sent_id = s60
+# text = Depending how many samples are going to be multiplex, you may need to make several plates.
+1	Start	_	Action	_	_	0	_	_	Offset=7011-7016
+
+# sent_id = s61
+# text = It is important each primer combo is only used once across the entire study, therefore primer plates should be designed carefully.
+1	Hold	_	Action	_	_	0	_	_	Offset=7251-7255
+
+# sent_id = s62
+# text = The forward codes should be arrayed across the ROWS (i.e., A-H) of the primer plates, while the reverse codes should be arrayed across the COLUMNS (i.e., 1-12) of the primer plates.
+1	Check	_	Action	_	_	0	_	_	Offset=7258-7263
+
+# sent_id = s63
+# text = Using the working stock and working carefully to avoid cross-contaminating PCR primers, array 20 µL of each 10 mM primer into a 96 well PCR plate based on a detailed primer map that corresponds to the DNA template map (see example above).
+1	Store	_	Action	_	_	0	_	_	Offset=7398-7403
+
+# sent_id = s64
+# text = After adding the forward and reverse primers, mix the contents of each well using a pipet tip.
+1	make	_	Action	_	_	0	_	_	Offset=7437-7441
+2	dissolve	_	Action	_	_	0	_	_	Offset=7463-7471
+
+# sent_id = s65
+# text = The primer plates should be stored at -20°C.
+1	Add	_	Action	_	_	0	_	_	Offset=7547-7550
+2	poor	_	Action	_	_	0	_	_	Offset=7589-7593
+
+# sent_id = s66
+# text = Warning: it is essential to avoid contaminating the primer stocks.
+1	mix	_	Action	_	_	0	_	_	Offset=7643-7646
+
+# sent_id = s67
+# text = Make sure to use individual pipet tips when arraying and mixing the primers.
+1	Load	_	Action	_	_	0	_	_	Offset=7703-7707
+
+# sent_id = s68
+# text = PCR Amplifications.
+1	Load	_	Action	_	_	0	_	_	Offset=7726-7730
+
+# sent_id = s69
+# text = Defrost PCR reagents (NEB Q5 HiFidelity Master Mix), primers and DNA samples and label PCR plate (e.g., PCR plate I).
+1	Run	_	Action	_	_	0	_	_	Offset=7790-7793
+
+# sent_id = s70
+# text = To minimize basis introduced during PCR reactions, run PCR reactions in triplicate, so for each PCR plate run three plates using the same chemistry.
+1	Visualize	_	Action	_	_	0	_	_	Offset=7826-7835
+
+# sent_id = s71
+# text = If able, run PCR plates at the same time.
+1	move	_	Action	_	_	0	_	_	Offset=8010-8022
+
+# sent_id = s72
+# text = In a 2 ml collection tubes, mix together 12.5 µL of the NEB Q5 HiFidelity Master Mix and 8.5 µL of HyClone water for each 25 µl PCR reaction.
+1	pool	_	Action	_	_	0	_	_	Offset=8116-8120
+
+# sent_id = s73
+# text = Vortex.
+1	add	_	Action	_	_	0	_	_	Offset=8356-8359
+2	mix	_	Action	_	_	0	_	_	Offset=8389-8392
+
+# sent_id = s74
+# text = Using a multi-channel pipet, array 1.5 µl of each primer pair into the PCR plate according to the plate map Using a multi-channel pipet, array 21 µl of the master mix into each well of the PCR plate. 
+1	Store	_	Action	_	_	0	_	_	Offset=8399-8404
+
+# sent_id = s75
+# text = Using a multi-channel pipett, array 2.5 µl of each sample DNA into the PCR plate according to the plate map.
+1	Make	_	Action	_	_	0	_	_	Offset=8426-8435
+
+# sent_id = s76
+# text = Make sure one sample corresponds to one well of the plate.
+1	Bind	_	Action	_	_	0	_	_	Offset=8560-8564
+
+# sent_id = s77
+# text = **Note: DNA amount can be altered, but you will need to adjsut the amount of water added in step 28 and the amount of master mix added in step 30 to ensure each PCR reaction is 25 µl in volume.
+1	transfer	_	Action	_	_	0	_	_	Offset=8622-8630
+2	place	_	Action	_	_	0	_	_	Offset=8684-8689
+
+# sent_id = s78
+# text = Seal PCR plate using a PCR plate cover and vortex PCR plate to mix contents.
+1	Mix	_	Action	_	_	0	_	_	Offset=8716-8719
+2	add	_	Action	_	_	0	_	_	Offset=8773-8776
+
+# sent_id = s79
+# text = Spin PCR plate to ensure solution is at the bottom of each well.
+1	Mix	_	Action	_	_	0	_	_	Offset=8821-8824
+
+# sent_id = s80
+# text = Plate PCR plate into thrermocycler.
+1	Use	_	Action	_	_	0	_	_	Offset=8879-8882
+
+# sent_id = s81
+# text = Set up and run following protocol:
+1	Seal	_	Action	_	_	0	_	_	Offset=8917-8921
+2	incubate	_	Action	_	_	0	_	_	Offset=8936-8944
+
+# sent_id = s82
+# text = Select Hot.
+1	Remove	_	Action	_	_	0	_	_	Offset=8984-8990
+
+# sent_id = s83
+# text = Start for Taq at 98°C.
+1	Aspirate	_	Action	_	_	0	_	_	Offset=9008-9016
+
+# sent_id = s84
+# text = Step 1: ( initial denaturation) 98°C, 30 seconds.
+1	flip	_	Action	_	_	0	_	_	Offset=9138-9142
+2	tap	_	Action	_	_	0	_	_	Offset=9202-9205
+
+# sent_id = s85
+# text = Step 2: 30 Cycles of (denaturation) 98°C 10 seconds, (primer annealing) 55°C 30 seconds, (extentsion) 72°C 30 seconds.
+1	Move	_	Action	_	_	0	_	_	Offset=9244-9253
+
+# sent_id = s86
+# text = Step 3: (extension) 72°C 2 minutes.
+1	Wash	_	Action	_	_	0	_	_	Offset=9352-9356
+
+# sent_id = s87
+# text = Step 4: 4°C Hold. 
+1	Add	_	Action	_	_	0	_	_	Offset=9371-9374
+
+# sent_id = s88
+# text = Check random sub-set of PCR products by running them out on a 1.5% Agarose gel and visualizing the gel in a gel box to check for PCR bands.
+1	Mix	_	Action	_	_	0	_	_	Offset=9410-9413
+
+# sent_id = s89
+# text = Store PCR products at 4°C.
+1	incubate	_	Action	_	_	0	_	_	Offset=9459-9467
+
+# sent_id = s90
+# text = Briefly, to make a 1.5 % agarose gel, dissolve 1.5 g of aragose in 100 ml of TBE buffer by heating solution in microwave.
+1	Aspirate	_	Action	_	_	0	_	_	Offset=9510-9518
+
+# sent_id = s91
+# text = Add 10 µl of sybrsafe dye to solution and poor into gel tray with comb.
+1	Repeat	_	Action	_	_	0	_	_	Offset=9592-9598
+
+# sent_id = s92
+# text = On a piece of parafilm, mix 2 µl of 10X loading buffer with 5-10 µl of PCR product.
+1	Air	_	Action	_	_	0	_	_	Offset=9643-9650
+
+# sent_id = s93
+# text = Load mixture onto gel.
+1	Proceed	_	Action	_	_	0	_	_	Offset=9732-9739
+
+# sent_id = s94
+# text = Load 5-10 µl of a 50 bp ladder onto gel alongside PCR products.
+1	Add	_	Action	_	_	0	_	_	Offset=9780-9783
+
+# sent_id = s95
+# text = Run gel at 100 V for 30-40 minutes.
+1	Seal	_	Action	_	_	0	_	_	Offset=9948-9952
+2	cortex	_	Action	_	_	0	_	_	Offset=9989-9995
+
+# sent_id = s96
+# text = Visualize using a gel imaging system to check for PCR bands between 300 and 400 bp.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=10012-10022
+
+# sent_id = s97
+# text = This is a potential stopping point in protocol.
+1	Store	_	Action	_	_	0	_	_	Offset=10083-10088
+
+# sent_id = s98
+# text = After all PCR reactions have been completed you can move forward to cleaning and normalizing your PCR libraries.
+1	Quantify	_	Action	_	_	0	_	_	Offset=10226-10234
+
+# sent_id = s99
+# text = If you ran your PCR libraries in triplicate, pool replicate sample PCR products 
+1	Pool	_	Action	_	_	0	_	_	Offset=10346-10350
+2	pool	_	Action	_	_	0	_	_	Offset=10391-10395
+
+# sent_id = s100
+# text = PCR PURIFICATION AND NORMALIZATION.
+1	Transfer	_	Action	_	_	0	_	_	Offset=10488-10496
+
+# sent_id = s101
+# text = Using Charm Biotech, Just-a-Plate 96 PCR purification and normalization plates.
+1	Purify	_	Action	_	_	0	_	_	Offset=10528-10534
+
+# sent_id = s102
+# text = Following the manufacture's protocol.
+1	Make	_	Action	_	_	0	_	_	Offset=10660-10669
+2	shake	_	Action	_	_	0	_	_	Offset=10701-10706
+
+# sent_id = s103
+# text = Before starting, to prepare washing buffer (WB2), add 19.2 ml of 100 % Ethanol and mix well.
+1	Add	_	Action	_	_	0	_	_	Offset=10751-10754
+
+# sent_id = s104
+# text = Store at room temperature.
+1	add	_	Action	_	_	0	_	_	Offset=10818-10821
+
+# sent_id = s105
+# text = Make sure to have plenty of pipet tips on hand, kimwipes or absorbent paper, multichannel pipet and sterile multichannel liquid well.
+1	Incubate	_	Action	_	_	0	_	_	Offset=10868-10876
+
+# sent_id = s106
+# text = Bind PCR products to plate wells.
+1	Place	_	Action	_	_	0	_	_	Offset=10913-10918
+2	wait	_	Action	_	_	0	_	_	Offset=10957-10961
+
+# sent_id = s107
+# text = Using a multichannel pipet, transfer 20 µl of each PCR product to normalization plate and place into corresponding wells.
+1	Aspirate	_	Action	_	_	0	_	_	Offset=10992-11000
+
+# sent_id = s108
+# text = Mix binding buffer in bottle, using a multichannel pipet add 20 µl of the binding buffer into each well.
+1	Add	_	Action	_	_	0	_	_	Offset=11055-11058
+
+# sent_id = s109
+# text = Mix with PCR products by pipetting up and down 5-6 times.
+1	Incubate	_	Action	_	_	0	_	_	Offset=11095-11103
+
+# sent_id = s110
+# text = Use separate pipet tip for each well.
+1	Aspirate	_	Action	_	_	0	_	_	Offset=11141-11149
+
+# sent_id = s111
+# text = Seal the plate and incubate at room temperature for 30-60 minutes.
+1	Preform	_	Action	_	_	0	_	_	Offset=11164-11171
+
+# sent_id = s112
+# text = Remove the plate cover.
+1	Dry	_	Action	_	_	0	_	_	Offset=11220-11223
+
+# sent_id = s113
+# text = Aspirate the liquid from the plate by quickly flipping the plate upside down over a waster container and shaking vigorously.
+1	Remove	_	Action	_	_	0	_	_	Offset=11296-11302
+
+# sent_id = s114
+# text = Then flip the plate onto a clean absorbent paper (i.e., kimwipe) and tap three or four times to remove liquid.
+1	Add	_	Action	_	_	0	_	_	Offset=11333-11336
+
+# sent_id = s115
+# text = Move onto the washing step.
+1	add	_	Action	_	_	0	_	_	Offset=11428-11431
+
+# sent_id = s116
+# text = Your PCR products should now be bound to the walls of the normalization plate. 
+1	Pipet	_	Action	_	_	0	_	_	Offset=11448-11453
+
+# sent_id = s117
+# text = Wash PCR Products.
+1	Place	_	Action	_	_	0	_	_	Offset=11502-11507
+
+# sent_id = s118
+# text = Add 50 µl of wash buffer to each well.
+1	Transfer	_	Action	_	_	0	_	_	Offset=11538-11546
+2	submit	_	Action	_	_	0	_	_	Offset=11583-11589
+
+# sent_id = s119
+# text = Mix solution by pipetting up and down 1-2 times.
+1	Size	_	Action	_	_	0	_	_	Offset=11634-11645
+
+# sent_id = s120
+# text = incubate plate for 30 seconds at room temperature.
+1	size	_	Action	_	_	0	_	_	Offset=11875-11886
+
+# sent_id = s121
+# text = Aspirate wash buffer from the binding plate as done above for the binding buffer.
+1	Run	_	Action	_	_	0	_	_	Offset=11974-11977
+
+# sent_id = s122
+# text = Repeat these steps once for a total of two washes.
+1	include	_	Action	_	_	0	_	_	Offset=12065-12072
+
+# sent_id = s123
+# text = Air dry normalization plate in an open thermocycler set at 65°C until dry (2-4 minutes).
+1	Excise	_	Action	_	_	0	_	_	Offset=12083-12089
+2	place	_	Action	_	_	0	_	_	Offset=12147-12152
+
+# sent_id = s124
+# text = Proceed to elution step. 
+1	See	_	Action	_	_	0	_	_	Offset=12178-12181
+
+# sent_id = s125
+# text = Eluting PCR Products.
+1	Obtain	_	Action	_	_	0	_	_	Offset=12268-12274
+
+# sent_id = s126
+# text = Add 20-40 µl of an elution buffer (such as the PowerSoil elution buffer Solution C6 used during DNA extraction) into each well of the plate using a multichannel pipet.
+1	Add	_	Action	_	_	0	_	_	Offset=12326-12329
+
+# sent_id = s127
+# text = Seal plate with a new adhesive cover and cortex for 30 seconds.
+1	Incubate	_	Action	_	_	0	_	_	Offset=12374-12382
+
+# sent_id = s128
+# text = Centrifuge the plate to collect all liquid at the bottom of the wells.
+1	Mix	_	Action	_	_	0	_	_	Offset=12443-12446
+
+# sent_id = s129
+# text = Store cleaned and normalized products at 4°C for short term storage or -20°C for longer storage.
+1	check	_	Action	_	_	0	_	_	Offset=12533-12538
+
+# sent_id = s130
+# text = This is a potential stopping point.
+1	Add	_	Action	_	_	0	_	_	Offset=12632-12635
+
+# sent_id = s131
+# text = OPTIONAL: Quantify cleaned and normalized PCR products following the AccuClear dsDNA quantification kit manufacture instructions.
+1	Place	_	Action	_	_	0	_	_	Offset=12688-12693
+
+# sent_id = s132
+# text = Pool PCR ProductsUsing a multichannel pipet, pool PCR products by adding equal volumes of each pcr plate well to a sterile multichannel well.
+1	bind	_	Action	_	_	0	_	_	Offset=12747-12751
+2	apply	_	Action	_	_	0	_	_	Offset=12761-12766
+3	centrifuge	_	Action	_	_	0	_	_	Offset=12796-12806
+
+# sent_id = s133
+# text = Transfer pooled library to a 2 mL tube.
+1	Discard	_	Action	_	_	0	_	_	Offset=12832-12839
+
+# sent_id = s134
+# text = Purify pooled library using AMPure XP PCR purification beads.
+1	spin	_	Action	_	_	0	_	_	Offset=12950-12954
+2	bind	_	Action	_	_	0	_	_	Offset=13006-13010
+
+# sent_id = s135
+# text = This step is added to help remove primer dimers from pooled library. 
+1	Add	_	Action	_	_	0	_	_	Offset=13041-13044
+2	centrifuge	_	Action	_	_	0	_	_	Offset=13083-13093
+
+# sent_id = s136
+# text = Make sure beads are at room temperature, shake beads to re-suspend any settled particles. 
+1	add	_	Action	_	_	0	_	_	Offset=13139-13142
+2	centrifuge	_	Action	_	_	0	_	_	Offset=13182-13192
+
+# sent_id = s137
+# text = Add beads at a 0.8 ratio (~0.8 X) to pooled library.
+1	Discard	_	Action	_	_	0	_	_	Offset=13218-13225
+
+# sent_id = s138
+# text = For instance, add 500 µL of the library to 400 µL of the beads.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=13244-13254
+
+# sent_id = s139
+# text = Incubate at room temperature for 5 minutes. 
+1	Place	_	Action	_	_	0	_	_	Offset=13346-13351
+
+# sent_id = s140
+# text = Place tube on magnetic stand for 2 minutes, wait until the solution is clear. 
+1	elute	_	Action	_	_	0	_	_	Offset=13403-13408
+2	add	_	Action	_	_	0	_	_	Offset=13418-13421
+3	centrifuge	_	Action	_	_	0	_	_	Offset=13484-13494
+
+# sent_id = s141
+# text = Aspirate the clear solution with care to not scrape the beads.
+1	Submit	_	Action	_	_	0	_	_	Offset=13520-13526
+

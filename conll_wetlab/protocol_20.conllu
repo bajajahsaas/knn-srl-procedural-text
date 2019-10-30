@@ -1,0 +1,130 @@
+# sent_id = s1
+# text = DNA Extraction of Cesium Chloride-Purified Viruses using Wizard Prep Columns
+1	Prepare	_	Action	_	_	0	_	_	Offset=77-84
+2	1.5ml	_	Amount	_	_	3	Measure	_	Offset=95-100
+3	microfuge	_	Location	_	_	0	_	_	Offset=101-116
+4	make	_	Action	_	_	0	_	_	Offset=132-141
+5	resin	_	Reagent	_	_	0	_	_	Offset=142-147
+6	room	_	Temperature	_	_	0	_	_	Offset=154-170
+
+# sent_id = s2
+# text = Prepare 2 labeled 1.5ml microfuge tubes per sample and make sure resin is at room temperature.
+1	Shake	_	Action	_	_	0	_	_	Offset=172-177
+2	resin	_	Reagent	_	_	0	_	_	Offset=178-183
+3	vigorously	_	Modifier	_	_	0	_	_	Offset=184-194
+4	resuspend	_	Action	_	_	0	_	_	Offset=198-207
+5	particles	_	Reagent	_	_	0	_	_	Offset=208-217
+
+# sent_id = s3
+# text = Shake resin vigorously to resuspend particles.
+1	Mix	_	Action	_	_	0	_	_	Offset=219-222
+2	1ml	_	Amount	_	_	3	Measure	_	Offset=223-226
+3	DNA	_	Reagent	_	_	0	_	_	Offset=227-249
+4	0.5ml	_	Amount	_	_	5	Measure	_	Offset=255-260
+5	CsCl	_	Reagent	_	_	0	_	_	Offset=261-272
+
+# sent_id = s4
+# text = Mix 1ml DNA Purification Resin with 0.5ml CsCl sample.
+1	Attach	_	Action	_	_	0	_	_	Offset=274-280
+2	minicolumn	_	Location	_	_	0	_	_	Offset=281-291
+3	bottom	_	Location	_	_	0	_	_	Offset=295-301
+4	3ml	_	Amount	_	_	5	Or	_	Offset=305-308
+5	5ml	_	Amount	_	_	6	Measure	_	Offset=312-315
+6	sterile	_	Device	_	_	3	Meronym	_	Offset=316-331
+
+# sent_id = s5
+# text = Attach minicolumn to bottom of 3ml or 5ml sterile syringe that has had plunger removed.
+1	Add	_	Action	_	_	0	_	_	Offset=362-365
+2	resin	_	Reagent	_	_	0	_	_	Offset=366-383
+3	syringe	_	Device	_	_	0	_	_	Offset=391-398
+4	push	_	Action	_	_	0	_	_	Offset=403-407
+5	solution	_	Reagent	_	_	0	_	_	Offset=420-428
+
+# sent_id = s6
+# text = Add resin with sample to the syringe and push through the solution.
+1	Remove	_	Action	_	_	0	_	_	Offset=430-436
+2	minicolumn	_	Location	_	_	0	_	_	Offset=437-447
+3	syringe	_	Device	_	_	0	_	_	Offset=457-464
+4	pull	_	Action	_	_	0	_	_	Offset=469-473
+5	plunger	_	Device	_	_	0	_	_	Offset=478-485
+
+# sent_id = s7
+# text = Remove minicolumn from the syringe and pull out plunger.
+1	Reattach	_	Action	_	_	0	_	_	Offset=487-495
+2	minicolumn	_	Location	_	_	0	_	_	Offset=496-506
+3	syringe	_	Device	_	_	0	_	_	Offset=514-521
+4	2ml	_	Amount	_	_	6	Measure	_	Offset=526-529
+5	80%	_	Concentration	_	_	6	Measure	_	Offset=533-536
+6	isopropanol	_	Reagent	_	_	0	_	_	Offset=537-548
+7	syringe	_	Device	_	_	0	_	_	Offset=556-563
+
+# sent_id = s8
+# text = Reattach minicolumn to the syringe and 2ml of 80% isopropanol to the syringe.
+1	plunger	_	Device	_	_	0	_	_	Offset=575-582
+2	push	_	Action	_	_	0	_	_	Offset=583-587
+3	isopropanol	_	Reagent	_	_	0	_	_	Offset=600-611
+4	wash	_	Action	_	_	0	_	_	Offset=615-619
+5	resin	_	Reagent	_	_	0	_	_	Offset=624-629
+
+# sent_id = s9
+# text = Using the plunger push through the isopropanol to wash the resin.
+1	Remove	_	Action	_	_	0	_	_	Offset=631-637
+2	minicolumn	_	Location	_	_	0	_	_	Offset=638-648
+3	syringe	_	Device	_	_	0	_	_	Offset=654-661
+4	place	_	Action	_	_	0	_	_	Offset=666-671
+5	sterile	_	Modifier	_	_	7	Mod-Link	_	Offset=677-684
+6	1.5ml	_	Amount	_	_	7	Measure	_	Offset=685-690
+7	centrifuge	_	Location	_	_	0	_	_	Offset=691-706
+
+# sent_id = s10
+# text = Remove minicolumn from syringe and place in a sterile 1.5ml centrifuge tube.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=708-718
+2	10,000	_	Speed	_	_	0	_	_	Offset=719-727
+3	2min	_	Time	_	_	0	_	_	Offset=732-736
+4	remove	_	Action	_	_	0	_	_	Offset=740-746
+5	residual	_	Reagent	_	_	0	_	_	Offset=751-766
+
+# sent_id = s11
+# text = Centrifuge 10,000 g for 2min to remove any residual liquid.
+1	Place	_	Action	_	_	0	_	_	Offset=768-773
+2	minicolumn	_	Location	_	_	0	_	_	Offset=774-784
+3	1.5ml	_	Amount	_	_	4	Measure	_	Offset=800-805
+4	centrifuge	_	Location	_	_	0	_	_	Offset=806-821
+
+# sent_id = s12
+# text = Place minicolumn in new sterile 1.5ml centrifuge tube.
+1	Add	_	Action	_	_	0	_	_	Offset=823-826
+2	100μl	_	Amount	_	_	4	Measure	_	Offset=827-832
+3	80°C	_	Temperature	_	_	0	_	_	Offset=833-837
+4	TE	_	Reagent	_	_	0	_	_	Offset=838-847
+5	top	_	Location	_	_	0	_	_	Offset=851-854
+6	minicolumn	_	Location	_	_	5	Meronym	_	Offset=858-868
+
+# sent_id = s13
+# text = Add 100μl 80°C TE buffer to top of minicolumn.
+1	Place	_	Action	_	_	0	_	_	Offset=870-875
+2	tube	_	Seal	_	_	0	_	_	Offset=876-884
+3	top	_	Location	_	_	0	_	_	Offset=890-893
+4	column	_	Location	_	_	3	Meronym	_	Offset=897-903
+5	vortex	_	Action	_	_	0	_	_	Offset=908-914
+6	gently	_	Modifier	_	_	0	_	_	Offset=915-921
+7	10	_	Time	_	_	0	_	_	Offset=926-936
+
+# sent_id = s14
+# text = Place tube lid over top of column and vortex gently for 10 seconds.
+1	Wait	_	Action	_	_	0	_	_	Offset=938-942
+2	1	_	Time	_	_	0	_	_	Offset=943-951
+
+# sent_id = s15
+# text = Wait 1 minute.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=953-963
+2	10,000	_	Speed	_	_	0	_	_	Offset=967-975
+3	30	_	Time	_	_	0	_	_	Offset=980-986
+4	elute	_	Reagent	_	_	0	_	_	Offset=990-999
+
+# sent_id = s16
+# text = Centrifuge at 10,000 g for 30 sec to elute DNA.
+1	Quantify	_	Action	_	_	0	_	_	Offset=1001-1009
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1010-1013
+3	Quant-iT	_	Reagent	_	_	0	_	_	Offset=1017-1051
+

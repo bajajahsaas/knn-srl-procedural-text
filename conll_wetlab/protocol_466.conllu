@@ -1,0 +1,175 @@
+# sent_id = s1
+# text = Artificial Seawater Based AMP1 Medium
+1	Dissolve	_	Action	_	_	0	_	_	Offset=38-46
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=47-51
+3	salt	_	Reagent	_	_	7	Coreference-Link	_	Offset=52-56
+4	completely	_	Modifier	_	_	0	_	_	Offset=57-67
+5	adding	_	Action	_	_	0	_	_	Offset=75-81
+6	next	_	Modifier	_	_	7	Mod-Link	_	Offset=86-90
+7	one	_	Mention	_	_	0	_	_	Offset=91-94
+
+# sent_id = s2
+# text = Dissolve each salt completely before adding the next one. 
+1	Dispense	_	Action	_	_	0	_	_	Offset=97-105
+2	500	_	Amount	_	_	4	Measure	_	Offset=111-117
+3	acid-washed	_	Modifier	_	_	4	Mod-Link	_	Offset=118-129
+4	polycarbonate	_	Location	_	_	0	_	_	Offset=130-151
+
+# sent_id = s3
+# text = Dispense into 500 ml acid-washed polycarbonate bottles.  
+1	Autoclave	_	Action	_	_	0	_	_	Offset=155-164
+2	30	_	Time	_	_	0	_	_	Offset=165-171
+3	pH	_	Action	_	_	0	_	_	Offset=173-175
+4	NaH2PO4	_	Reagent	_	_	0	_	_	Offset=176-183
+5	7.5	_	pH	_	_	0	_	_	Offset=187-190
+6	1M	_	Concentration	_	_	7	Measure	_	Offset=197-199
+7	NaOH	_	Reagent	_	_	0	_	_	Offset=200-204
+
+# sent_id = s4
+# text = Autoclave 30 min. pH NaH2PO4 to 7.5 using 1M NaOH. 
+1	Filter	_	Action	_	_	0	_	_	Offset=207-223
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=224-228
+3	solution	_	Reagent	_	_	0	_	_	Offset=229-237
+4	0.2	_	Amount	_	_	5	Measure	_	Offset=244-250
+5	syringe	_	Device	_	_	0	_	_	Offset=251-265
+6	new	_	Modifier	_	_	9	Mod-Link	_	Offset=271-274
+7	sterile	_	Modifier	_	_	9	Mod-Link	_	Offset=276-283
+8	50ml	_	Amount	_	_	9	Measure	_	Offset=284-288
+9	centrifuge	_	Location	_	_	0	_	_	Offset=289-305
+10	acid	_	Modifier	_	_	12	Mod-Link	_	Offset=309-320
+11	sterile	_	Modifier	_	_	12	Mod-Link	_	Offset=325-332
+12	polycarbonate	_	Location	_	_	9	Or	_	Offset=333-354
+
+# sent_id = s5
+# text = Filter sterilize each solution using 0.2 µm syringe filter into new, sterile 50ml centrifuge tubes or acid washed and sterile polycarbonate bottles. 
+1	Store	_	Action	_	_	0	_	_	Offset=357-362
+2	4°C	_	Temperature	_	_	0	_	_	Offset=366-369
+3	pH	_	Action	_	_	0	_	_	Offset=370-372
+4	HEPES	_	Reagent	_	_	0	_	_	Offset=373-378
+5	7.5	_	pH	_	_	0	_	_	Offset=382-385
+6	1M	_	Concentration	_	_	7	Measure	_	Offset=392-394
+7	NaOH	_	Reagent	_	_	0	_	_	Offset=395-399
+
+# sent_id = s6
+# text = Store at 4°C pH HEPES to 7.5 using 1M NaOH.  
+1	Filter	_	Action	_	_	0	_	_	Offset=403-419
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=420-424
+3	solution	_	Reagent	_	_	0	_	_	Offset=425-433
+4	0.2	_	Amount	_	_	5	Measure	_	Offset=440-446
+5	syringe	_	Device	_	_	0	_	_	Offset=447-461
+6	new	_	Modifier	_	_	9	Mod-Link	_	Offset=467-470
+7	sterile	_	Modifier	_	_	9	Mod-Link	_	Offset=472-479
+8	15	_	Amount	_	_	9	Measure	_	Offset=480-491
+9	centrifuge	_	Location	_	_	0	_	_	Offset=492-508
+10	acid	_	Modifier	_	_	12	Mod-Link	_	Offset=512-523
+11	sterile	_	Modifier	_	_	12	Mod-Link	_	Offset=528-535
+12	polycarbonate	_	Location	_	_	9	Or	_	Offset=536-557
+
+# sent_id = s7
+# text = Filter sterilize each solution using 0.2 µm syringe filter into new, sterile 15 or 50 ml centrifuge tubes or acid washed and sterile polycarbonate bottles. 
+1	Store	_	Action	_	_	0	_	_	Offset=560-565
+2	4°C	_	Temperature	_	_	0	_	_	Offset=569-572
+
+# sent_id = s8
+# text = Store at 4°C. 
+1	Dispense	_	Action	_	_	0	_	_	Offset=575-583
+2	5	_	Amount	_	_	3	Measure	_	Offset=584-588
+3	NaHCO3	_	Reagent	_	_	0	_	_	Offset=592-598
+4	0.5	_	Amount	_	_	5	Measure	_	Offset=603-609
+5	HEPES	_	Reagent	_	_	0	_	_	Offset=610-615
+6	per	_	Modifier	_	_	8	Mod-Link	_	Offset=616-619
+7	500	_	Amount	_	_	8	Measure	_	Offset=620-626
+8	bottle	_	Location	_	_	9	Meronym	_	Offset=627-633
+9	Turk's	_	Reagent	_	_	0	_	_	Offset=637-659
+10	preparing	_	Action	_	_	0	_	_	Offset=665-674
+11	final	_	Reagent	_	_	0	_	_	Offset=675-687
+
+# sent_id = s9
+# text = Dispense 5 ml of NaHCO3 and 0.5 ml HEPES per 500 ml bottle of Turk's Island Salt Mix when preparing final medium. 
+1	Weigh	_	Action	_	_	0	_	_	Offset=690-699
+2	0.2175	_	Amount	_	_	3	Measure	_	Offset=700-708
+3	Na2EDTA·2H2O	_	Reagent	_	_	0	_	_	Offset=709-721
+4	dust	_	Modifier	_	_	5	Mod-Link	_	Offset=728-737
+5	paper	_	Device	_	_	0	_	_	Offset=738-743
+
+# sent_id = s10
+# text = Weigh out 0.2175 g Na2EDTA·2H2O using dust free paper. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=746-754
+2	acid	_	Modifier	_	_	4	Mod-Link	_	Offset=758-769
+3	50	_	Amount	_	_	4	Measure	_	Offset=770-775
+4	volumetric	_	Location	_	_	6	Meronym	_	Offset=776-792
+5	40	_	Amount	_	_	6	Measure	_	Offset=805-810
+6	MQ-water	_	Reagent	_	_	0	_	_	Offset=811-819
+
+# sent_id = s11
+# text = Transfer to acid washed 50 ml volumetric flask filled with 40 ml MQ-water. 
+1	Dissolve	_	Action	_	_	0	_	_	Offset=822-830
+2	EDTA	_	Reagent	_	_	0	_	_	Offset=831-835
+3	inverting	_	Action	_	_	0	_	_	Offset=839-848
+4	flask	_	Location	_	_	0	_	_	Offset=849-854
+5	several	_	Numerical	_	_	0	_	_	Offset=855-862
+
+# sent_id = s12
+# text = Dissolve EDTA by inverting flask several times. 
+1	Weigh	_	Action	_	_	0	_	_	Offset=871-880
+2	0.16	_	Amount	_	_	3	Measure	_	Offset=881-887
+3	FeCl3·6H2O	_	Reagent	_	_	0	_	_	Offset=888-898
+4	dust	_	Modifier	_	_	5	Mod-Link	_	Offset=905-914
+5	paper	_	Device	_	_	0	_	_	Offset=915-920
+
+# sent_id = s13
+# text = Weigh out 0.16 g FeCl3·6H2O using dust free paper. 
+1	Dissolve	_	Action	_	_	0	_	_	Offset=923-931
+2	iron	_	Reagent	_	_	0	_	_	Offset=932-945
+3	same	_	Modifier	_	_	4	Mod-Link	_	Offset=951-955
+4	volumetric	_	Location	_	_	0	_	_	Offset=956-972
+5	inverting	_	Action	_	_	0	_	_	Offset=976-985
+6	several	_	Numerical	_	_	0	_	_	Offset=986-993
+
+# sent_id = s14
+# text = Dissolve iron chloride into same volumetric flask by inverting several times. 
+1	add	_	Action	_	_	0	_	_	Offset=1015-1018
+2	dissolve	_	Action	_	_	0	_	_	Offset=1023-1031
+3	50	_	Amount	_	_	4	Measure	5:Measure|6:Measure|7:Measure|8:Measure|9:Measure	Offset=1032-1037
+4	ZnSO4	_	Reagent	_	_	0	_	_	Offset=1050-1055
+5	CoCl2	_	Reagent	_	_	0	_	_	Offset=1057-1062
+6	MnCl2	_	Reagent	_	_	0	_	_	Offset=1064-1069
+7	Na2MoO4	_	Reagent	_	_	0	_	_	Offset=1071-1078
+8	NaSeO3	_	Reagent	_	_	0	_	_	Offset=1080-1086
+9	NiCl2	_	Reagent	_	_	0	_	_	Offset=1092-1124
+
+# sent_id = s15
+# text = Individually add and dissolve 50 µl each of the ZnSO4, CoCl2, MnCl2, Na2MoO4, NaSeO3, and NiCl2 Primary Trace Metal Stocks. 
+1	Adjust	_	Action	_	_	0	_	_	Offset=1127-1133
+2	volume	_	Measure-Type	_	_	0	_	_	Offset=1134-1140
+3	50	_	Amount	_	_	0	_	_	Offset=1144-1149
+4	MQ-water.	_	Reagent	_	_	0	_	_	Offset=1160-1169
+
+# sent_id = s16
+# text = Adjust volume to 50 ml mark with MQ-water. 
+1	Filter	_	Action	_	_	0	_	_	Offset=1171-1177
+2	0.2	_	Size	_	_	3	Measure	_	Offset=1188-1194
+3	syringe	_	Device	_	_	0	_	_	Offset=1195-1209
+4	sterile	_	Modifier	_	_	6	Mod-Link	_	Offset=1215-1222
+5	acid	_	Modifier	_	_	6	Mod-Link	_	Offset=1224-1235
+6	container	_	Location	_	_	0	_	_	Offset=1236-1245
+7	laminar	_	Location	_	_	6	Meronym	_	Offset=1249-1266
+
+# sent_id = s17
+# text = Filter through a 0.2 µm syringe filter into sterile, acid washed container in laminar flow hood. 
+1	Store	_	Action	_	_	0	_	_	Offset=1269-1274
+2	sterile	_	Modifier	_	_	3	Mod-Link	_	Offset=1275-1282
+3	stock	_	Reagent	_	_	0	_	_	Offset=1283-1288
+4	4°C	_	Temperature	_	_	0	_	_	Offset=1292-1295
+
+# sent_id = s18
+# text = Store sterile stock at 4°C. 
+1	Dispense	_	Action	_	_	0	_	_	Offset=1298-1306
+2	5	_	Amount	_	_	3	Measure	_	Offset=1307-1311
+3	Stock	_	Reagent	_	_	0	_	_	Offset=1312-1333
+4	500	_	Amount	_	_	5	Measure	_	Offset=1337-1343
+5	bottle	_	Location	_	_	6	Meronym	_	Offset=1344-1350
+6	Turk's	_	Reagent	_	_	0	_	_	Offset=1354-1376
+7	preparing	_	Action	_	_	0	_	_	Offset=1382-1391
+8	final	_	Reagent	_	_	0	_	_	Offset=1392-1404
+

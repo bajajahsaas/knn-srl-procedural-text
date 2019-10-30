@@ -1,0 +1,294 @@
+# sent_id = s1
+# text = Immunohistochemistry - Drosophila Embryo
+1	Collection	_	Reagent	_	_	0	_	_	Offset=118-128
+2	apple	_	Location	_	_	5	Meronym	_	Offset=148-171
+3	yeast	_	Reagent	_	_	0	_	_	Offset=195-206
+4	applied	_	Action	_	_	0	_	_	Offset=207-214
+5	surface	_	Location	_	_	0	_	_	Offset=218-225
+
+# sent_id = s2
+# text = Time collection of embryos to obtain the correct stage desired for analysis.
+1	collections	_	Reagent	_	_	0	_	_	Offset=231-242
+2	conducted	_	Action	_	_	0	_	_	Offset=257-266
+3	25	_	Temperature	_	_	0	_	_	Offset=270-282
+
+# sent_id = s3
+# text = Collection is completed using apple juice agar plates with a small amount of yeast paste applied to surface.
+1	Wash	_	Action	_	_	0	_	_	Offset=347-351
+2	embryos	_	Reagent	_	_	0	_	_	Offset=352-359
+3	apple	_	Location	_	_	0	_	_	Offset=365-387
+4	embryo	_	Location	_	_	0	_	_	Offset=400-418
+5	small	_	Device	_	_	0	_	_	Offset=427-443
+6	embryo	_	Reagent	_	_	0	_	_	Offset=448-468
+
+# sent_id = s4
+# text = Our collections are typically conducted at 25 degrees C, unless otherwise specified in published materials and methods.
+1	Place	_	Action	_	_	0	_	_	Offset=470-475
+2	wash	_	Location	_	_	0	_	_	Offset=476-487
+3	small	_	Location	_	_	0	_	_	Offset=495-505
+4	pour	_	Action	_	_	0	_	_	Offset=510-514
+5	household	_	Reagent	_	_	0	_	_	Offset=515-531
+6	top	_	Location	_	_	0	_	_	Offset=535-538
+7	embryos	_	Reagent	_	_	6	Meronym	_	Offset=546-553
+
+# sent_id = s5
+# text = Wash embryos from apple juice agar plate and into an embryo wash basket using a small paintbrush and embryo wash solution.
+1	sit	_	Action	_	_	0	_	_	Offset=584-587
+2	3	_	Time	_	_	0	_	_	Offset=592-601
+3	remove	_	Action	_	_	0	_	_	Offset=605-611
+4	chorion	_	Reagent	_	_	0	_	_	Offset=612-619
+
+# sent_id = s6
+# text = Place wash basket into a small tray and pour household bleach on top of the embryos until completely covered.
+1	Rinse	_	Action	_	_	0	_	_	Offset=621-626
+2	bleach	_	Reagent	_	_	0	_	_	Offset=627-633
+3	wash	_	Location	_	_	0	_	_	Offset=639-650
+4	embryos	_	Reagent	_	_	0	_	_	Offset=655-662
+
+# sent_id = s7
+# text = Let sit for 3 minutes to remove chorion.
+1	transfer	_	Action	_	_	0	_	_	Offset=688-696
+2	embryos	_	Reagent	_	_	0	_	_	Offset=697-704
+3	container	_	Location	_	_	5	Meronym	6:Meronym	Offset=708-717
+4	4%	_	Concentration	_	_	0	_	_	Offset=729-731
+5	paraformaldehyde	_	Reagent	_	_	4	Or	_	Offset=732-748
+6	heptane	_	Reagent	_	_	4	Or	_	Offset=753-760
+7	Shake	_	Action	_	_	0	_	_	Offset=761-766
+8	orbital	_	Device	_	_	0	_	_	Offset=770-785
+9	150rpm	_	Speed	_	_	0	_	_	Offset=789-795
+10	20	_	Time	_	_	0	_	_	Offset=800-807
+
+# sent_id = s8
+# text = Rinse bleach from wash basket and embryos.
+1	heptane	_	Reagent	_	_	0	_	_	Offset=827-834
+2	PFA	_	Reagent	_	_	0	_	_	Offset=839-842
+3	separate	_	Action	_	_	0	_	_	Offset=846-854
+
+# sent_id = s9
+# text = Once bleach is removed, transfer embryos to container with 50:50 4% paraformaldehyde and heptane.Shake on orbital rotator at 150rpm for 20 mins.
+1	Remove	_	Action	_	_	0	_	_	Offset=856-862
+2	PFA	_	Reagent	_	_	0	_	_	Offset=877-880
+3	dispose	_	Action	_	_	0	_	_	Offset=886-893
+
+# sent_id = s10
+# text = Allow solution to heptane and PFA to separate.
+1	Add	_	Action	_	_	0	_	_	Offset=989-992
+2	Methanol	_	Reagent	_	_	0	_	_	Offset=993-1001
+3	heptane	_	Reagent	_	_	0	_	_	Offset=1035-1042
+
+# sent_id = s11
+# text = Remove bottom phase (PFA) and dispose of as required.
+1	Shake	_	Action	_	_	0	_	_	Offset=1044-1049
+2	20	_	Time	_	_	0	_	_	Offset=1065-1075
+3	embryos	_	Reagent	_	_	0	_	_	Offset=1086-1093
+4	settle	_	Action	_	_	0	_	_	Offset=1097-1103
+5	bottom	_	Location	_	_	0	_	_	Offset=1111-1134
+
+# sent_id = s12
+# text = Be sure to not disturb or remove the embryos that are trapped in the interface.Add Methanol in equal volume to the remaining heptane.
+1	Remove	_	Action	_	_	0	_	_	Offset=1136-1142
+2	heptane	_	Reagent	_	_	0	_	_	Offset=1143-1150
+3	top	_	Location	_	_	0	_	_	Offset=1160-1169
+4	methanol	_	Reagent	_	_	0	_	_	Offset=1186-1194
+
+# sent_id = s13
+# text = Shake vigorously for 20 seconds and allow embryos to settle to the bottom of the container.
+1	Add	_	Action	_	_	0	_	_	Offset=1196-1199
+2	methanol	_	Reagent	_	_	0	_	_	Offset=1200-1208
+3	remove	_	Action	_	_	0	_	_	Offset=1213-1219
+4	two	_	Numerical	_	_	0	_	_	Offset=1220-1234
+5	Transfer	_	Action	_	_	0	_	_	Offset=1235-1243
+6	embryos	_	Reagent	_	_	0	_	_	Offset=1244-1263
+7	culture	_	Location	_	_	0	_	_	Offset=1278-1291
+8	Remove	_	Action	_	_	0	_	_	Offset=1326-1332
+9	methanol	_	Reagent	_	_	0	_	_	Offset=1333-1341
+10	without	_	Action	_	_	0	_	_	Offset=1342-1360
+11	embryos	_	Reagent	_	_	0	_	_	Offset=1365-1372
+12	bottom	_	Location	_	_	0	_	_	Offset=1380-1386
+13	tube	_	Location	_	_	12	Meronym	_	Offset=1394-1398
+
+# sent_id = s14
+# text = Remove heptane from the top layer and most of the methanol.
+1	Rinse	_	Action	_	_	0	_	_	Offset=1400-1405
+2	embryos	_	Reagent	_	_	0	_	_	Offset=1406-1413
+3	750ul	_	Amount	_	_	4	Measure	_	Offset=1419-1424
+4	blocking	_	Reagent	_	_	0	_	_	Offset=1428-1445
+5	once	_	Numerical	_	_	0	_	_	Offset=1447-1451
+6	embryos	_	Reagent	_	_	0	_	_	Offset=1458-1465
+7	settle	_	Action	_	_	0	_	_	Offset=1469-1475
+8	bottom	_	Location	_	_	0	_	_	Offset=1483-1489
+9	tube	_	Location	_	_	8	Meronym	_	Offset=1493-1497
+
+# sent_id = s15
+# text = Add methanol and remove two more times.Transfer embryos in methanol to disposable culture tubes (flint glass) and allow to settle.Remove methanol without disturbing the embryos at the bottom of the tube.
+1	Remove	_	Action	_	_	0	_	_	Offset=1499-1505
+2	blocking	_	Reagent	_	_	0	_	_	Offset=1506-1523
+3	rinse	_	Action	_	_	0	_	_	Offset=1528-1533
+4	twice	_	Numerical	_	_	0	_	_	Offset=1534-1539
+5	1X	_	Concentration	_	_	6	Measure	_	Offset=1545-1547
+6	PBS	_	Reagent	_	_	0	_	_	Offset=1548-1551
+7	Remove	_	Action	_	_	0	_	_	Offset=1552-1558
+8	1X	_	Concentration	_	_	9	Measure	_	Offset=1559-1561
+9	PBS	_	Reagent	_	_	0	_	_	Offset=1562-1565
+10	add	_	Action	_	_	0	_	_	Offset=1570-1573
+11	750ul	_	Amount	_	_	12	Measure	_	Offset=1574-1579
+12	blocking	_	Reagent	_	_	0	_	_	Offset=1583-1600
+13	Seal	_	Action	_	_	0	_	_	Offset=1601-1605
+14	tube	_	Location	_	_	0	_	_	Offset=1606-1610
+15	parafilm	_	Seal	_	_	0	_	_	Offset=1616-1624
+16	rock	_	Action	_	_	0	_	_	Offset=1629-1633
+17	gently	_	Modifier	_	_	0	_	_	Offset=1634-1640
+18	30	_	Time	_	_	0	_	_	Offset=1645-1655
+
+# sent_id = s16
+# text = Rinse embryos with 750ul of blocking solution, once.Allow embryos to settle to the bottom of tube.
+1	Remove	_	Action	_	_	0	_	_	Offset=1657-1663
+2	blocking	_	Reagent	_	_	0	_	_	Offset=1664-1681
+3	rinse	_	Action	_	_	0	_	_	Offset=1686-1691
+4	once	_	Numerical	_	_	0	_	_	Offset=1692-1696
+5	1X	_	Concentration	_	_	6	Measure	_	Offset=1702-1704
+6	PBS	_	Reagent	_	_	0	_	_	Offset=1705-1708
+
+# sent_id = s17
+# text = Remove blocking solution and rinse twice with 1X PBS.Remove 1X PBS and add 750ul of blocking solution.Seal tube with parafilm and rock gently for 30 minutes.
+1	Remove	_	Action	_	_	0	_	_	Offset=1710-1716
+2	1X	_	Concentration	_	_	3	Measure	_	Offset=1717-1719
+3	PBS	_	Reagent	_	_	0	_	_	Offset=1720-1723
+4	add	_	Action	_	_	0	_	_	Offset=1728-1731
+5	blocking	_	Reagent	_	_	0	_	_	Offset=1732-1749
+
+# sent_id = s18
+# text = Remove blocking solution and rinse once with 1X PBS.
+1	Add	_	Action	_	_	0	_	_	Offset=1751-1754
+2	primary	_	Reagent	_	_	0	_	_	Offset=1755-1773
+
+# sent_id = s19
+# text = Remove 1X PBS and add blocking solution.
+1	Wrap	_	Action	_	_	0	_	_	Offset=1918-1922
+2	tube	_	Location	_	_	0	_	_	Offset=1923-1927
+3	parafilm	_	Seal	_	_	0	_	_	Offset=1933-1941
+4	rock	_	Action	_	_	0	_	_	Offset=1946-1950
+5	overnight	_	Time	_	_	0	_	_	Offset=1951-1960
+6	4	_	Temperature	_	_	0	_	_	Offset=1964-1981
+
+# sent_id = s20
+# text = Add primary antibodies in optimized concentrations.
+1	Remove	_	Action	_	_	0	_	_	Offset=1983-1989
+2	blocking	_	Reagent	_	_	0	_	_	Offset=1990-2031
+3	Rinse	_	Action	_	_	0	_	_	Offset=2032-2037
+4	three	_	Numerical	_	_	0	_	_	Offset=2038-2043
+5	1X	_	Concentration	_	_	6	Measure	_	Offset=2055-2057
+6	PBS	_	Reagent	_	_	0	_	_	Offset=2058-2061
+
+# sent_id = s21
+# text = (See Optimized Concentrations for Developmental Studies Hybridoma Bank Antibodies for use with Drosophila Embryos).Wrap tube with parafilm and rock overnight at 4 degrees Celsius.
+1	Remove	_	Action	_	_	0	_	_	Offset=2063-2069
+2	1X	_	Concentration	_	_	3	Measure	_	Offset=2070-2072
+3	PBS	_	Reagent	_	_	0	_	_	Offset=2073-2076
+4	add	_	Action	_	_	0	_	_	Offset=2081-2084
+5	750ul	_	Amount	_	_	6	Measure	_	Offset=2085-2090
+6	blocking	_	Reagent	_	_	0	_	_	Offset=2094-2111
+
+# sent_id = s22
+# text = Remove blocking solution with primary antibodies.Rinse three times with 1X PBS.
+1	Wrap	_	Action	_	_	0	_	_	Offset=2113-2117
+2	tube	_	Location	_	_	0	_	_	Offset=2118-2122
+3	parafilm	_	Seal	_	_	0	_	_	Offset=2128-2136
+4	rock	_	Action	_	_	0	_	_	Offset=2141-2145
+5	room	_	Temperature	_	_	0	_	_	Offset=2149-2165
+6	30	_	Time	_	_	0	_	_	Offset=2170-2180
+
+# sent_id = s23
+# text = Remove 1X PBS and add 750ul of blocking solution.
+1	Remove	_	Action	_	_	0	_	_	Offset=2182-2188
+2	blocking	_	Reagent	_	_	0	_	_	Offset=2189-2206
+3	rinse	_	Action	_	_	0	_	_	Offset=2211-2216
+4	once	_	Numerical	_	_	0	_	_	Offset=2217-2221
+5	1X	_	Concentration	_	_	6	Measure	_	Offset=2227-2229
+6	PBS	_	Reagent	_	_	0	_	_	Offset=2230-2233
+
+# sent_id = s24
+# text = Wrap tube with parafilm and rock at room temperature for 30 minutes.
+1	Remove	_	Action	_	_	0	_	_	Offset=2235-2241
+2	1X	_	Concentration	_	_	3	Measure	_	Offset=2242-2244
+3	PBS	_	Reagent	_	_	0	_	_	Offset=2245-2248
+4	add	_	Action	_	_	0	_	_	Offset=2253-2256
+5	blocking	_	Reagent	_	_	0	_	_	Offset=2261-2278
+
+# sent_id = s25
+# text = Remove blocking solution and rinse once with 1X PBS.
+1	Add	_	Action	_	_	0	_	_	Offset=2280-2283
+2	secondary	_	Reagent	_	_	0	_	_	Offset=2284-2304
+3	optimized	_	Concentration	_	_	2	Measure	_	Offset=2308-2332
+
+# sent_id = s26
+# text = Remove 1X PBS and add new blocking solution.
+1	Wrap	_	Action	_	_	0	_	_	Offset=2376-2380
+2	tube	_	Location	_	_	0	_	_	Offset=2381-2385
+3	parafilm	_	Seal	_	_	0	_	_	Offset=2391-2399
+4	foil	_	Seal	_	_	0	_	_	Offset=2404-2408
+
+# sent_id = s27
+# text = Add secondary antibodies at optimized concentrations.
+1	Rock	_	Action	_	_	0	_	_	Offset=2410-2414
+2	2-3	_	Time	_	_	0	_	_	Offset=2426-2435
+3	room	_	Temperature	_	_	0	_	_	Offset=2439-2455
+
+# sent_id = s28
+# text = Our studies used concentrations of 1:1000.Wrap tube with parafilm and foil.
+1	Remove	_	Action	_	_	0	_	_	Offset=2457-2463
+2	blocking	_	Reagent	_	_	0	_	_	Offset=2464-2507
+
+# sent_id = s29
+# text = Rock gently for 2-3 hours at room temperature.
+1	Rinse	_	Action	_	_	0	_	_	Offset=2509-2514
+2	three	_	Numerical	_	_	0	_	_	Offset=2515-2520
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=2532-2534
+4	PBS	_	Reagent	_	_	0	_	_	Offset=2535-2538
+
+# sent_id = s30
+# text = Remove blocking solution with secondary antibodies.
+1	Add	_	Action	_	_	0	_	_	Offset=2540-2543
+2	750ul	_	Amount	_	_	3	Measure	_	Offset=2544-2549
+3	blocking	_	Reagent	_	_	0	_	_	Offset=2553-2570
+4	Wrap	_	Action	_	_	0	_	_	Offset=2571-2575
+5	tube	_	Location	_	_	0	_	_	Offset=2576-2580
+6	parafilm	_	Seal	_	_	0	_	_	Offset=2586-2594
+7	foil	_	Seal	_	_	0	_	_	Offset=2599-2603
+
+# sent_id = s31
+# text = Rinse three times with 1X PBS.
+1	30	_	Time	_	_	0	_	_	Offset=2614-2624
+
+# sent_id = s32
+# text = Add 750ul of blocking solution.Wrap tube with parafilm and foil.
+1	Remove	_	Action	_	_	0	_	_	Offset=2626-2632
+2	blocking	_	Reagent	_	_	0	_	_	Offset=2633-2650
+3	rinse	_	Action	_	_	0	_	_	Offset=2655-2660
+4	once	_	Numerical	_	_	0	_	_	Offset=2661-2665
+5	1X	_	Concentration	_	_	6	Measure	_	Offset=2671-2673
+6	PBS	_	Reagent	_	_	0	_	_	Offset=2674-2677
+7	Carefully	_	Modifier	_	_	0	_	_	Offset=2678-2687
+8	remove	_	Action	_	_	0	_	_	Offset=2688-2694
+9	embryos	_	Reagent	_	_	0	_	_	Offset=2695-2702
+10	glass	_	Device	_	_	0	_	_	Offset=2710-2723
+11	rinsed	_	Action	_	_	0	_	_	Offset=2738-2744
+12	blocking	_	Reagent	_	_	0	_	_	Offset=2750-2767
+13	transfer	_	Action	_	_	0	_	_	Offset=2772-2780
+14	microscope	_	Location	_	_	0	_	_	Offset=2786-2802
+15	carefully	_	Modifier	_	_	0	_	_	Offset=2826-2835
+16	wick	_	Action	_	_	0	_	_	Offset=2836-2845
+17	excess	_	Amount	_	_	19	Measure	_	Offset=2846-2852
+18	1X	_	Concentration	_	_	19	Measure	_	Offset=2853-2855
+19	PBS	_	Reagent	_	_	0	_	_	Offset=2856-2859
+20	Add	_	Action	_	_	0	_	_	Offset=2860-2863
+21	35ul	_	Amount	_	_	22	Measure	_	Offset=2864-2868
+22	mounting	_	Reagent	_	_	0	_	_	Offset=2872-2886
+23	cover	_	Action	_	_	0	_	_	Offset=2891-2896
+24	coverslip	_	Seal	_	_	0	_	_	Offset=2902-2911
+
+# sent_id = s33
+# text = Rock for 30 minutes.
+1	Seal	_	Action	_	_	0	_	_	Offset=2913-2917
+2	nail	_	Seal	_	_	0	_	_	Offset=2923-2934
+

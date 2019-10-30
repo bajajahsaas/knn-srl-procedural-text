@@ -1,0 +1,21 @@
+# sent_id = s1
+# text = Transformation and Storage Solution (TSS)
+1	Prepare	_	Action	_	_	0	_	_	Offset=176-183
+2	2x	_	Concentration	_	_	3	Measure	_	Offset=184-186
+3	TSS	_	Reagent	_	_	0	_	_	Offset=187-190
+4	autoclave	_	Action	_	_	0	_	_	Offset=208-217
+
+# sent_id = s2
+# text = ChemicalVolume/MassFinal Conc.PEG 8000 or PEG 335020 g20% (w/v)DMSO10 ml10% (w/v)MgCl2 * H2O2.03 g100 mMLB Mediumadd 100 ml (pH 6.5).
+1	Add	_	Action	_	_	0	_	_	Offset=219-222
+2	sterile	_	Modifier	_	_	3	Mod-Link	_	Offset=223-230
+3	DMSO	_	Reagent	_	_	0	_	_	Offset=231-235
+
+# sent_id = s3
+# text = Prepare 2x TSS without DMSO and autoclave.
+1	Divide	_	Action	_	_	0	_	_	Offset=255-261
+2	10	_	Amount	_	_	3	Measure	_	Offset=265-270
+3	aliquots	_	Location	_	_	0	_	_	Offset=271-279
+4	store	_	Action	_	_	0	_	_	Offset=284-289
+5	4	_	Temperature	_	_	0	_	_	Offset=293-297
+

@@ -1,0 +1,159 @@
+# sent_id = s1
+# text = DIY Spin Column DNA Extraction
+1	Spin	_	Action	_	_	0	_	_	Offset=31-35
+2	500ul	_	Amount	_	_	3	Measure	_	Offset=36-41
+3	bacteria	_	Reagent	_	_	0	_	_	Offset=45-67
+4	10000g	_	Speed	_	_	0	_	_	Offset=71-77
+5	10	_	Time	_	_	0	_	_	Offset=82-92
+
+# sent_id = s2
+# text = Spin 500ul of bacteria broth culture at 10000g for 10 minutes.
+1	Pour	_	Action	_	_	0	_	_	Offset=94-102
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=103-114
+
+# sent_id = s3
+# text = Pour off supernatant. 
+1	Add	_	Action	_	_	0	_	_	Offset=117-120
+2	200ul	_	Amount	_	_	3	Measure	_	Offset=121-126
+3	Lysis	_	Reagent	_	_	0	_	_	Offset=127-139
+4	20ul	_	Amount	_	_	5	Measure	_	Offset=144-148
+5	Proteinase	_	Reagent	_	_	0	_	_	Offset=149-161
+
+# sent_id = s4
+# text = Add 200ul Lysis buffer and 20ul Proteinase K. 
+1	Vortex	_	Action	_	_	0	_	_	Offset=164-170
+2	15	_	Time	_	_	0	_	_	Offset=175-185
+3	spin	_	Action	_	_	0	_	_	Offset=190-199
+
+# sent_id = s5
+# text = Vortex for 15 seconds and spin down. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=202-210
+2	56	_	Temperature	_	_	0	_	_	Offset=214-218
+3	1	_	Time	_	_	0	_	_	Offset=223-229
+
+# sent_id = s6
+# text = Incubate at 56 C for 1 hour. 
+1	Add	_	Action	_	_	0	_	_	Offset=232-235
+2	200ul	_	Amount	_	_	3	Measure	_	Offset=236-241
+3	Binding	_	Reagent	_	_	0	_	_	Offset=242-256
+4	200ul	_	Amount	_	_	5	Measure	_	Offset=261-266
+5	Ethanol	_	Reagent	_	_	0	_	_	Offset=267-274
+6	each	_	Modifier	_	_	7	Mod-Link	_	Offset=278-282
+7	sample	_	Reagent	_	_	0	_	_	Offset=283-289
+
+# sent_id = s7
+# text = Add 200ul Binding Buffer and 200ul Ethanol to each sample.
+1	Vortex	_	Action	_	_	0	_	_	Offset=291-297
+2	15	_	Time	_	_	0	_	_	Offset=302-312
+3	spin	_	Action	_	_	0	_	_	Offset=317-326
+
+# sent_id = s8
+# text = Vortex for 15 seconds and spin down. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=329-337
+2	600ul	_	Amount	_	_	3	Measure	_	Offset=342-347
+3	sample	_	Reagent	_	_	0	_	_	Offset=351-357
+4	spin	_	Location	_	_	0	_	_	Offset=363-374
+5	collection	_	Location	_	_	0	_	_	Offset=379-394
+
+# sent_id = s9
+# text = Transfer all 600ul of sample to a spin column and collection tube.
+1	Spin	_	Action	_	_	0	_	_	Offset=396-400
+2	high	_	Speed	_	_	0	_	_	Offset=404-414
+3	1	_	Time	_	_	0	_	_	Offset=419-427
+
+# sent_id = s10
+# text = Spin on high speed for 1 minute.
+1	Dispose	_	Action	_	_	0	_	_	Offset=429-436
+2	flow	_	Reagent	_	_	0	_	_	Offset=440-452
+
+# sent_id = s11
+# text = Dispose of flow through. 
+1	Add	_	Action	_	_	0	_	_	Offset=455-458
+2	500ul	_	Amount	_	_	3	Measure	_	Offset=459-464
+3	Wash	_	Reagent	_	_	0	_	_	Offset=465-476
+
+# sent_id = s12
+# text = Add 500ul Wash Buffer.
+1	Spin	_	Action	_	_	0	_	_	Offset=478-482
+2	high	_	Speed	_	_	0	_	_	Offset=486-496
+3	1	_	Time	_	_	0	_	_	Offset=501-509
+
+# sent_id = s13
+# text = Spin on high speed for 1 minute.
+1	Dispose	_	Action	_	_	0	_	_	Offset=511-518
+2	flow	_	Reagent	_	_	0	_	_	Offset=522-534
+
+# sent_id = s14
+# text = Dispose of flow through. 
+1	Add	_	Action	_	_	0	_	_	Offset=537-540
+2	500ul	_	Amount	_	_	3	Measure	_	Offset=549-554
+3	Wash	_	Reagent	_	_	0	_	_	Offset=555-566
+
+# sent_id = s15
+# text = Add another 500ul Wash Buffer.
+1	Spin	_	Action	_	_	0	_	_	Offset=568-572
+2	high	_	Speed	_	_	0	_	_	Offset=576-586
+3	1	_	Time	_	_	0	_	_	Offset=591-599
+
+# sent_id = s16
+# text = Spin on high speed for 1 minute.
+1	Place	_	Action	_	_	0	_	_	Offset=601-606
+2	spin	_	Location	_	_	0	_	_	Offset=611-622
+3	new	_	Modifier	_	_	4	Mod-Link	_	Offset=628-631
+4	collection	_	Location	_	_	0	_	_	Offset=632-647
+
+# sent_id = s17
+# text = Place the spin column in a new collection tube.
+1	Spin	_	Action	_	_	0	_	_	Offset=649-653
+2	high	_	Generic-Measure	_	_	0	_	_	Offset=657-661
+3	2	_	Time	_	_	0	_	_	Offset=666-675
+
+# sent_id = s18
+# text = Spin on high for 2 minutes. 
+1	Place	_	Action	_	_	0	_	_	Offset=678-683
+2	spin	_	Location	_	_	0	_	_	Offset=688-699
+3	clean	_	Modifier	_	_	4	Mod-Link	_	Offset=705-710
+4	tube	_	Location	_	_	0	_	_	Offset=711-715
+
+# sent_id = s19
+# text = Place the spin column in a clean tube. 
+1	Add	_	Action	_	_	0	_	_	Offset=718-721
+2	100ul	_	Amount	_	_	3	Measure	_	Offset=722-727
+3	TE	_	Reagent	_	_	0	_	_	Offset=728-737
+
+# sent_id = s20
+# text = Add 100ul TE buffer.
+1	Incubate	_	Action	_	_	0	_	_	Offset=739-747
+2	RT	_	Temperature	_	_	0	_	_	Offset=751-753
+3	2	_	Time	_	_	0	_	_	Offset=758-767
+
+# sent_id = s21
+# text = Incubate at RT for 2 minutes.
+1	Spin	_	Action	_	_	0	_	_	Offset=769-773
+2	high	_	Speed	_	_	0	_	_	Offset=777-787
+3	1	_	Time	_	_	0	_	_	Offset=792-800
+
+# sent_id = s22
+# text = Spin on high speed for 1 minute. 
+1	Add	_	Action	_	_	0	_	_	Offset=803-806
+2	another	_	Modifier	_	_	4	Mod-Link	_	Offset=807-814
+3	100ul	_	Amount	_	_	4	Measure	_	Offset=815-820
+4	TE	_	Reagent	_	_	0	_	_	Offset=821-830
+
+# sent_id = s23
+# text = Add another 100ul TE buffer.
+1	Incubate	_	Action	_	_	0	_	_	Offset=832-840
+2	RT	_	Temperature	_	_	0	_	_	Offset=844-846
+3	1	_	Time	_	_	0	_	_	Offset=851-859
+
+# sent_id = s24
+# text = Incubate at RT for 1 minute.
+1	Spin	_	Action	_	_	0	_	_	Offset=861-865
+2	high	_	Speed	_	_	0	_	_	Offset=869-879
+3	1	_	Time	_	_	0	_	_	Offset=884-892
+
+# sent_id = s25
+# text = Spin on high speed for 1 minute.
+1	Discard	_	Action	_	_	0	_	_	Offset=894-901
+2	spin	_	Location	_	_	0	_	_	Offset=902-913
+

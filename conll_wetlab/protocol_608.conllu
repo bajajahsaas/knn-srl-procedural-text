@@ -1,0 +1,11 @@
+# sent_id = s1
+# text = FLV tracer assays Prepare FLVs for tracer assays.
+1	Collect	_	Action	_	_	0	_	_	Offset=50-57
+2	seawater	_	Reagent	_	_	0	_	_	Offset=58-66
+3	desired	_	Location	_	_	0	_	_	Offset=84-100
+
+# sent_id = s2
+# text = Collect seawater samples from the desired location.
+1	Designate	_	Action	_	_	0	_	_	Offset=389-398
+2	control	_	Method	_	_	0	_	_	Offset=401-418
+

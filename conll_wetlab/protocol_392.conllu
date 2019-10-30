@@ -1,0 +1,226 @@
+# sent_id = s1
+# text = Fingerprinting aquatic virus communities using pulsed field gel electrophoresis (PFGE)
+1	Prepare	_	Action	_	_	0	_	_	Offset=87-94
+2	1.5%	_	Concentration	_	_	3	Measure	_	Offset=99-103
+3	agarose	_	Reagent	_	_	0	_	_	Offset=104-111
+4	lysis	_	Reagent	_	_	0	_	_	Offset=120-132
+
+# sent_id = s2
+# text = Prepare the 1.5% agarose and the lysis buffer.
+1	Incubate	_	Action	_	_	0	_	_	Offset=134-142
+2	agarose	_	Reagent	_	_	0	_	_	Offset=147-154
+3	80°C	_	Temperature	_	_	0	_	_	Offset=158-162
+
+# sent_id = s3
+# text = Incubate the agarose at 80°C until further use.
+1	Dispense	_	Action	_	_	0	_	_	Offset=182-190
+2	5	_	Amount	_	_	4	Measure	_	Offset=191-195
+3	freshly	_	Modifier	_	_	4	Mod-Link	_	Offset=203-215
+4	lysis	_	Reagent	_	_	0	_	_	Offset=216-228
+5	50-mL	_	Amount	_	_	6	Measure	_	Offset=234-239
+6	Falcon	_	Location	_	_	0	_	_	Offset=240-252
+
+# sent_id = s4
+# text = Dispense 5 mL of the freshly made lysis buffer into 50-mL Falcon tubes, one for each sample.
+1	Combine	_	Action	_	_	0	_	_	Offset=275-282
+2	equal	_	Amount	_	_	0	_	_	Offset=283-296
+3	200	_	Amount	_	_	4	Measure	_	Offset=298-304
+4	virus	_	Reagent	_	_	0	_	_	Offset=309-326
+5	molten	_	Modifier	_	_	7	Mod-Link	_	Offset=331-337
+6	1.5%	_	Concentration	_	_	7	Measure	_	Offset=338-342
+7	agarose	_	Reagent	_	_	0	_	_	Offset=343-350
+
+# sent_id = s5
+# text = Combine equal volumes (200 µL) of virus concentrate and molten 1.5% agarose.
+1	Mix	_	Action	_	_	0	_	_	Offset=352-355
+2	briefly	_	Modifier	_	_	0	_	_	Offset=356-363
+
+# sent_id = s6
+# text = Mix briefly.
+1	Dispense	_	Action	_	_	0	_	_	Offset=365-373
+2	mixture	_	Reagent	_	_	0	_	_	Offset=378-385
+3	plug	_	Reagent	_	_	0	_	_	Offset=391-401
+4	pipette	_	Device	_	_	0	_	_	Offset=409-416
+
+# sent_id = s7
+# text = Dispense the mixture into plug molds with a pipette.
+1	Place	_	Action	_	_	0	_	_	Offset=418-423
+2	plug	_	Reagent	_	_	0	_	_	Offset=428-438
+3	freezer	_	Device	_	_	0	_	_	Offset=446-453
+4	–20°C	_	Temperature	_	_	3	Setting	_	Offset=455-460
+5	at	_	Modifier	_	_	6	Mod-Link	_	Offset=466-474
+6	2	_	Time	_	_	3	Setting	_	Offset=475-480
+
+# sent_id = s8
+# text = Place the plug molds in the freezer (–20°C) for at least 2 min to set.
+1	Remove	_	Action	_	_	0	_	_	Offset=489-495
+2	tape	_	Seal	_	_	0	_	_	Offset=500-504
+3	bottom	_	Location	_	_	0	_	_	Offset=514-520
+4	plug	_	Reagent	_	_	3	Meronym	_	Offset=528-538
+5	push	_	Action	_	_	0	_	_	Offset=543-547
+6	plugs	_	Reagent	_	_	0	_	_	Offset=552-557
+7	molds	_	Reagent	_	_	0	_	_	Offset=571-576
+8	5	_	Amount	_	_	9	Measure	_	Offset=582-586
+9	lysis	_	Reagent	_	_	0	_	_	Offset=587-599
+
+# sent_id = s9
+# text = Remove the tape from the bottom of the plug molds and push the plugs out from the molds into 5 mL lysis buffer.
+1	Incubate	_	Action	_	_	0	_	_	Offset=601-609
+2	plugs	_	Reagent	_	_	0	_	_	Offset=614-619
+3	lysis	_	Reagent	_	_	2	Meronym	_	Offset=623-635
+4	overnight	_	Time	_	_	0	_	_	Offset=636-645
+5	dark	_	Location	_	_	0	_	_	Offset=653-657
+6	30°C	_	Temperature	_	_	0	_	_	Offset=661-665
+
+# sent_id = s10
+# text = Incubate the plugs in lysis buffer overnight in the dark at 30°C.
+1	decant	_	Action	_	_	0	_	_	Offset=681-687
+2	lysis	_	Reagent	_	_	0	_	_	Offset=692-704
+3	plastic	_	Device	_	_	0	_	_	Offset=713-726
+4	attached	_	Action	_	_	0	_	_	Offset=754-762
+5	top	_	Location	_	_	0	_	_	Offset=770-773
+6	Falcon	_	Location	_	_	5	Meronym	_	Offset=781-792
+
+# sent_id = s11
+# text = The next day, decant the lysis buffer using a plastic sieve (screened cap) that can be attached at the top of the Falcon tube.
+1	Wash	_	Action	_	_	0	_	_	Offset=794-798
+2	plugs	_	Reagent	_	_	0	_	_	Offset=803-808
+3	three	_	Numerical	_	_	2	Measure	_	Offset=809-814
+4	30	_	Time	_	_	0	_	_	Offset=822-828
+5	each	_	Modifier	_	_	4	Mod-Link	_	Offset=829-833
+6	TE	_	Reagent	_	_	0	_	_	Offset=838-847
+7	10:1	_	Generic-Measure	_	_	6	Measure	_	Offset=848-852
+8	room	_	Temperature	_	_	0	_	_	Offset=856-872
+
+# sent_id = s12
+# text = Wash the plugs three times, 30 min each, in TE buffer 10:1 at room temperature.
+1	plugs	_	Reagent	_	_	0	_	_	Offset=878-883
+2	stored	_	Action	_	_	0	_	_	Offset=891-897
+3	4°C	_	Temperature	_	_	0	_	_	Offset=901-904
+4	TE	_	Reagent	_	_	0	_	_	Offset=908-910
+5	20:50	_	Generic-Measure	_	_	4	Measure	_	Offset=911-916
+6	several	_	Time	_	_	0	_	_	Offset=921-934
+
+# sent_id = s13
+# text = The plugs can be stored at 4°C in TE 20:50 for several month before further processing; nevertheless, we recommend running the samples as soon as possible, because degradation of the viral DNA will occur and result in less discrete bands.
+1	Set	_	Action	_	_	0	_	_	Offset=1113-1119
+2	gel	_	Device	_	_	0	_	_	Offset=1124-1131
+
+# sent_id = s14
+# text = Set up the gel rig.
+1	Prepare	_	Action	_	_	0	_	_	Offset=1133-1140
+2	1%	_	Concentration	_	_	3	Measure	_	Offset=1143-1145
+3	agarose	_	Reagent	_	_	0	_	_	Offset=1146-1157
+4	1×	_	Concentration	_	_	5	Measure	_	Offset=1161-1163
+5	TBE	_	Reagent	_	_	0	_	_	Offset=1164-1174
+
+# sent_id = s15
+# text = Prepare a 1% agarose gel in 1× TBE buffer.
+1	Melt	_	Action	_	_	0	_	_	Offset=1176-1180
+2	agarose	_	Reagent	_	_	0	_	_	Offset=1191-1198
+
+# sent_id = s16
+# text = Melt until the agarose is completely dissolved.
+1	Place	_	Action	_	_	0	_	_	Offset=1224-1229
+2	warm	_	Modifier	_	_	3	Mod-Link	_	Offset=1234-1238
+3	agarose	_	Reagent	_	_	8	Coreference-Link	_	Offset=1239-1246
+4	60°C	_	Temperature	_	_	0	_	_	Offset=1250-1254
+5	10	_	Time	_	_	0	_	_	Offset=1259-1265
+6	pouring	_	Action	_	_	0	_	_	Offset=1273-1280
+7	gel	_	Device	_	_	0	_	_	Offset=1290-1297
+8	it	_	Mention	_	_	0	_	_	Offset=1311-1313
+9	cool	_	Action	_	_	0	_	_	Offset=1317-1321
+
+# sent_id = s17
+# text = Place the warm agarose at 60°C for 10 min before pouring into the gel rig and allowing it to cool.
+1	Keep	_	Action	_	_	0	_	_	Offset=1323-1327
+2	~5	_	Amount	_	_	3	Measure	_	Offset=1328-1333
+3	agarose	_	Reagent	_	_	0	_	_	Offset=1334-1341
+4	60°C	_	Temperature	_	_	0	_	_	Offset=1345-1349
+5	seal	_	Action	_	_	0	_	_	Offset=1367-1371
+6	wells	_	Location	_	_	0	_	_	Offset=1376-1381
+
+# sent_id = s18
+# text = Keep ~5 mL agarose at 60°C for later use to seal the wells.
+1	pour	_	Action	_	_	0	_	_	Offset=1408-1412
+2	50	_	Amount	_	_	4	Measure	_	Offset=1413-1418
+3	1×	_	Concentration	_	_	4	Measure	_	Offset=1422-1424
+4	TBE	_	Reagent	_	_	0	_	_	Offset=1425-1443
+5	top	_	Location	_	_	0	_	_	Offset=1451-1454
+6	gel	_	Reagent	_	_	5	Meronym	8:Coreference-Link	Offset=1462-1465
+7	place	_	Action	_	_	0	_	_	Offset=1470-1475
+8	it	_	Mention	_	_	0	_	_	Offset=1476-1478
+9	refrigerator	_	Device	_	_	0	_	_	Offset=1486-1498
+10	at	_	Modifier	_	_	11	Mod-Link	_	Offset=1503-1511
+11	20	_	Time	_	_	0	_	_	Offset=1512-1518
+12	overnight	_	Time	_	_	11	Or	_	Offset=1522-1531
+
+# sent_id = s19
+# text = When the agarose is set, pour 50 mL of 1× TBE running buffer on the top of the gel and place it in the refrigerator for at least 20 min or overnight.
+1	Place	_	Action	_	_	0	_	_	Offset=1533-1538
+2	molecular	_	Reagent	_	_	3	Meronym	_	Offset=1539-1565
+3	slices	_	Reagent	_	_	0	_	_	Offset=1567-1573
+4	~5	_	Size	_	_	3	Measure	_	Offset=1577-1582
+5	either	_	Location	_	_	0	_	_	Offset=1587-1598
+6	gel	_	Reagent	_	_	5	Meronym	_	Offset=1606-1609
+
+# sent_id = s20
+# text = Place molecular weight standards (slices of ~5 mm) on either side of the gel.
+1	Place	_	Action	_	_	0	_	_	Offset=1611-1616
+2	samples	_	Reagent	_	_	0	_	_	Offset=1621-1628
+3	between	_	Modifier	_	_	4	Mod-Link	_	Offset=1629-1636
+4	markers	_	Location	_	_	0	_	_	Offset=1641-1648
+5	sterile	_	Modifier	_	_	6	Mod-Link	_	Offset=1657-1664
+6	loop	_	Device	_	_	0	_	_	Offset=1665-1669
+
+# sent_id = s21
+# text = Place the samples between the markers using a sterile loop.
+1	Overlay	_	Action	_	_	0	_	_	Offset=1671-1678
+2	wells	_	Location	_	_	0	_	_	Offset=1683-1688
+3	leftover	_	Modifier	_	_	6	Mod-Link	_	Offset=1694-1702
+4	molten	_	Modifier	_	_	6	Mod-Link	_	Offset=1703-1709
+5	1%	_	Concentration	_	_	6	Measure	_	Offset=1710-1712
+6	agarose	_	Reagent	_	_	0	_	_	Offset=1713-1720
+
+# sent_id = s22
+# text = Overlay the wells with leftover molten 1% agarose.
+1	Remove	_	Action	_	_	0	_	_	Offset=1722-1728
+2	gel	_	Reagent	_	_	0	_	_	Offset=1733-1736
+3	pouring	_	Device	_	_	0	_	_	Offset=1746-1757
+4	remove	_	Action	_	_	0	_	_	Offset=1762-1768
+5	any	_	Modifier	_	_	7	Mod-Link	_	Offset=1769-1772
+6	extraneous	_	Modifier	_	_	7	Mod-Link	_	Offset=1773-1783
+7	agarose	_	Reagent	_	_	0	_	_	Offset=1784-1791
+8	bottom	_	Location	_	_	0	_	_	Offset=1801-1807
+9	edges	_	Location	_	_	0	_	_	Offset=1812-1817
+
+# sent_id = s23
+# text = Remove the gel from the pouring rig and remove any extraneous agarose from the bottom and edges.
+1	Prepare	_	Action	_	_	0	_	_	Offset=1819-1826
+2	1×	_	Concentration	_	_	3	Measure	_	Offset=1831-1833
+3	TBE	_	Reagent	_	_	0	_	_	Offset=1834-1837
+4	place	_	Action	_	_	0	_	_	Offset=1859-1864
+5	14°C	_	Time	_	_	0	_	_	Offset=1868-1872
+
+# sent_id = s24
+# text = Prepare the 1× TBE (running buffer) and place at 14°C until further use.
+1	Place	_	Action	_	_	0	_	_	Offset=1892-1897
+2	gel	_	Reagent	_	_	0	_	_	Offset=1902-1905
+3	electrophoresis	_	Device	_	_	0	_	_	Offset=1915-1938
+4	carefully	_	Modifier	_	_	0	_	_	Offset=1943-1952
+5	pour	_	Action	_	_	0	_	_	Offset=1953-1957
+6	cooled	_	Modifier	_	_	8	Mod-Link	_	Offset=1962-1968
+7	1×	_	Concentration	_	_	8	Measure	_	Offset=1969-1971
+8	TBE	_	Reagent	_	_	0	_	_	Offset=1972-1990
+9	chamber	_	Device	_	_	0	_	_	Offset=2000-2007
+
+# sent_id = s25
+# text = Place the gel into the electrophoresis chamber and carefully pour the cooled 1× TBE running buffer into the chamber.
+1	Run	_	Action	_	_	0	_	_	Offset=2009-2012
+2	gel	_	Reagent	_	_	0	_	_	Offset=2017-2020
+3	6	_	Generic-Measure	_	_	4	Setting	_	Offset=2024-2032
+4	pulse	_	Device	_	_	0	_	_	Offset=2038-2049
+5	20	_	Time	_	_	4	Setting	_	Offset=2055-2065
+6	14°C	_	Temperature	_	_	4	Setting	_	Offset=2083-2087
+7	22	_	Time	_	_	0	_	_	Offset=2092-2096
+

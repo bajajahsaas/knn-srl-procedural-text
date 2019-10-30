@@ -1,0 +1,80 @@
+# sent_id = s1
+# text = Plaque Assay Protocol for Pseudoalteromonas
+1	autoclave	_	Action	_	_	0	_	_	Offset=51-60
+2	top	_	Location	_	_	3	Meronym	_	Offset=65-68
+3	agar	_	Reagent	_	_	5	Coreference-Link	_	Offset=69-73
+4	melt	_	Action	_	_	0	_	_	Offset=77-81
+5	it	_	Mention	_	_	0	_	_	Offset=82-84
+
+# sent_id = s2
+# text = First, autoclave the top agar to melt it.
+1	bottom	_	Location	_	_	2	Meronym	_	Offset=127-133
+2	agar	_	Location	_	_	6	Coreference-Link	_	Offset=134-145
+3	warm	_	Action	_	_	0	_	_	Offset=146-150
+4	room	_	Temperature	_	_	0	_	_	Offset=154-170
+5	label	_	Action	_	_	0	_	_	Offset=175-180
+6	them	_	Mention	_	_	0	_	_	Offset=181-185
+7	make	_	Action	_	_	0	_	_	Offset=190-194
+8	dilutions	_	Reagent	_	_	0	_	_	Offset=204-213
+9	phages	_	Reagent	_	_	0	_	_	Offset=222-228
+
+# sent_id = s3
+# text = While the autoclave is running, let your bottom agar plates warm to room temperature and label them and make whatever dilutions of your phages you plan to plate.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=356-363
+2	agar	_	Reagent	_	_	0	_	_	Offset=368-372
+3	tubes	_	Location	_	_	0	_	_	Offset=378-383
+4	place	_	Action	_	_	0	_	_	Offset=388-393
+5	40°C	_	Temperature	_	_	0	_	_	Offset=397-401
+6	water	_	Location	_	_	0	_	_	Offset=402-412
+
+# sent_id = s4
+# text = Note:  it is wise to plate one dilution higher and one dilution lower than what you calculated as optimal. 
+1	Pipet	_	Action	_	_	0	_	_	Offset=414-419
+2	100	_	Amount	_	_	3	Measure	_	Offset=420-426
+3	phage	_	Reagent	_	_	0	_	_	Offset=435-447
+4	plate	_	Location	_	_	0	_	_	Offset=457-462
+
+# sent_id = s5
+# text = Aliquot the agar into tubes and place in 40°C water bath.
+1	Remove	_	Action	_	_	0	_	_	Offset=467-473
+2	agar	_	Location	_	_	6	Coreference-Link	_	Offset=478-487
+3	water	_	Location	_	_	0	_	_	Offset=497-507
+4	add	_	Action	_	_	0	_	_	Offset=512-515
+5	host	_	Reagent	_	_	0	_	_	Offset=520-524
+6	it	_	Mention	_	_	0	_	_	Offset=528-530
+7	1	_	Size	_	_	9	Setting	_	Offset=539-543
+8	5	_	Size	_	_	9	Setting	_	Offset=547-551
+9	pipettor	_	Device	_	_	0	_	_	Offset=552-560
+
+# sent_id = s6
+# text = Pipet 100 μl of your phage sample onto the plate.   
+1	Add	_	Action	_	_	0	_	_	Offset=563-566
+2	3.5	_	Amount	_	_	5	Measure	_	Offset=567-573
+3	agar	_	Reagent	_	_	0	_	_	Offset=581-585
+4	host	_	Reagent	_	_	0	_	_	Offset=586-590
+5	mixture	_	Reagent	_	_	4	Meronym	3:Meronym	Offset=591-598
+6	each	_	Amount	_	_	7	Measure	_	Offset=602-606
+7	plate	_	Location	_	_	0	_	_	Offset=607-612
+
+# sent_id = s7
+# text = Remove the agar tube from the water bath and add the host to it using a 1 ml or 5 ml pipettor. 
+1	Swirl	_	Action	_	_	0	_	_	Offset=614-619
+2	plate	_	Location	_	_	0	_	_	Offset=624-629
+3	spread	_	Action	_	_	0	_	_	Offset=633-639
+4	agar	_	Reagent	_	_	0	_	_	Offset=644-648
+5	covers	_	Action	_	_	0	_	_	Offset=664-670
+6	plate	_	Location	_	_	0	_	_	Offset=681-686
+
+# sent_id = s8
+# text = Add 3.5 ml of the agar/host mixture to each plate.
+1	Leave	_	Action	_	_	0	_	_	Offset=688-693
+2	plates	_	Location	_	_	0	_	_	Offset=698-704
+3	bench	_	Location	_	_	0	_	_	Offset=712-717
+4	overnight	_	Time	_	_	0	_	_	Offset=718-727
+
+# sent_id = s9
+# text = Swirl the plate to spread the agar making sure it covers the whole plate.
+1	Count	_	Action	_	_	0	_	_	Offset=730-735
+2	pick	_	Action	_	_	0	_	_	Offset=739-743
+3	plaques	_	Reagent	_	_	0	_	_	Offset=744-751
+

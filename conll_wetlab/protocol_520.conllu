@@ -1,0 +1,57 @@
+# sent_id = s1
+# text = First Strand Synthesis with Reverse Transcriptase
+1	sterile	_	Location	_	_	0	_	_	Offset=55-77
+2	add	_	Action	_	_	0	_	_	Offset=78-81
+3	following	_	Reagent	_	_	0	_	_	Offset=86-95
+
+# sent_id = s2
+# text = In a sterile microfuge tube add the following: 
+1	Heat	_	Action	_	_	0	_	_	Offset=98-102
+2	3-5	_	Time	_	_	0	_	_	Offset=107-118
+3	65-80°C	_	Temperature	_	_	0	_	_	Offset=122-129
+
+# sent_id = s3
+# text = Heat for 3-5 minutes at 65-80°C.
+1	Spin	_	Action	_	_	0	_	_	Offset=131-135
+2	briefly	_	Generic-Measure	_	_	0	_	_	Offset=136-143
+3	place	_	Action	_	_	0	_	_	Offset=148-153
+4	promptly	_	Generic-Measure	_	_	0	_	_	Offset=154-162
+5	ice	_	Temperature	_	_	0	_	_	Offset=166-169
+
+# sent_id = s4
+# text = Spin briefly and place promptly on ice.
+1	Add	_	Action	_	_	0	_	_	Offset=171-174
+2	10X	_	Concentration	_	_	3	Measure	_	Offset=175-178
+3	RT	_	Reagent	_	_	0	_	_	Offset=179-188
+
+# sent_id = s5
+# text = Add 10X RT Buffer. 
+1	Add	_	Action	_	_	0	_	_	Offset=191-194
+2	RNAse	_	Reagent	_	_	0	_	_	Offset=195-210
+3	1	_	Amount	_	_	2	Measure	_	Offset=211-215
+
+# sent_id = s6
+# text = Add RNAse inhibitor 1 µL.  
+1	Add	_	Action	_	_	0	_	_	Offset=219-222
+2	M-MuLV	_	Reagent	_	_	0	_	_	Offset=223-251
+3	1	_	Amount	_	_	2	Measure	_	Offset=252-256
+
+# sent_id = s7
+# text = Add M-MuLV Reverse Transcriptase 1 µL.  
+1	Incubate	_	Action	_	_	0	_	_	Offset=260-268
+2	42°C	_	Temperature	_	_	0	_	_	Offset=272-276
+3	one	_	Time	_	_	0	_	_	Offset=281-289
+
+# sent_id = s8
+# text = Incubate at 42°C for one hour.
+1	Inactivate	_	Action	_	_	0	_	_	Offset=291-301
+2	enzyme	_	Reagent	_	_	0	_	_	Offset=302-308
+3	90°C	_	Temperature	_	_	0	_	_	Offset=312-316
+4	10	_	Time	_	_	0	_	_	Offset=321-331
+
+# sent_id = s9
+# text = Inactivate enzyme at 90°C for 10 minutes.
+1	Store	_	Action	_	_	0	_	_	Offset=333-338
+2	products	_	Reagent	_	_	0	_	_	Offset=339-347
+3	-20°C	_	Temperature	_	_	0	_	_	Offset=351-356
+

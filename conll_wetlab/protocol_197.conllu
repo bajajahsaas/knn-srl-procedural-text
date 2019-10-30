@@ -1,0 +1,622 @@
+# sent_id = s1
+# text = Metatranscriptomics sample preparation protocol w/ScriptSeq
+1	Thaw	_	Action	_	_	0	_	_	Offset=60-64
+2	2-ml	_	Modifier	_	_	3	Mod-Link	_	Offset=65-69
+3	screw-cap	_	Device	_	_	0	_	_	Offset=70-84
+4	ice	_	Location	_	_	0	_	_	Offset=88-91
+
+# sent_id = s2
+# text = Thaw 2-ml screw-cap tube on ice (should take a while).
+1	Lyse	_	Action	_	_	0	_	_	Offset=171-175
+2	cells	_	Reagent	_	_	0	_	_	Offset=180-185
+3	filters	_	Device	_	_	0	_	_	Offset=193-200
+4	Remove	_	Action	_	_	0	_	_	Offset=202-208
+5	300	_	Amount	_	_	6	Measure	_	Offset=213-219
+6	RNAlater	_	Reagent	_	_	0	_	_	Offset=220-228
+7	discard	_	Action	_	_	0	_	_	Offset=243-250
+
+# sent_id = s3
+# text = If using sterivex filters, follow notes in annotations.
+1	Add	_	Action	_	_	0	_	_	Offset=252-255
+2	750	_	Amount	_	_	3	Measure	_	Offset=256-262
+3	Lysis/Binding	_	Reagent	_	_	0	_	_	Offset=272-292
+4	vortex	_	Action	_	_	0	_	_	Offset=294-300
+5	lyse	_	Action	_	_	0	_	_	Offset=326-330
+6	cells	_	Reagent	_	_	0	_	_	Offset=335-340
+
+# sent_id = s4
+# text = Lyse the cells on the filters: Remove the 300 µl RNAlater carefully and discard.
+1	Add	_	Action	_	_	0	_	_	Offset=342-345
+2	75	_	Amount	_	_	3	Measure	_	Offset=346-351
+3	miRNA	_	Reagent	_	_	0	_	_	Offset=362-387
+
+# sent_id = s5
+# text = Add 750 µl (1.5mL)* Lysis/Binding buffer, vortex vigorously to completely lyse the cells.
+1	Vortex	_	Action	_	_	0	_	_	Offset=389-395
+2	mix	_	Action	_	_	0	_	_	Offset=399-402
+
+# sent_id = s6
+# text = Add 75 µl (150 µl)* miRNA Homogenate Additive.
+1	Leave	_	Action	_	_	0	_	_	Offset=404-409
+2	mixture	_	Reagent	_	_	0	_	_	Offset=414-421
+3	ice	_	Location	_	_	0	_	_	Offset=425-428
+4	10	_	Time	_	_	0	_	_	Offset=433-439
+
+# sent_id = s7
+# text = Vortex to mix.
+1	Transfer	_	Action	_	_	0	_	_	Offset=441-449
+2	825	_	Amount	_	_	3	Measure	_	Offset=454-460
+3	lysate	_	Reagent	_	_	0	_	_	Offset=461-467
+4	Non-stick	_	Modifier	_	_	5	Mod-Link	_	Offset=477-486
+5	RNase-free	_	Device	_	_	0	_	_	Offset=487-502
+6	2	_	Amount	_	_	7	Setting	_	Offset=508-512
+7	tube	_	Device	_	_	0	_	_	Offset=513-517
+
+# sent_id = s8
+# text = Leave the mixture on ice for 10 min.
+1	Add	_	Action	_	_	0	_	_	Offset=600-603
+2	750	_	Amount	_	_	3	Measure	_	Offset=604-610
+3	Acid-Phenol:Chloroform	_	Reagent	_	_	0	_	_	Offset=611-633
+4	vortex	_	Action	_	_	0	_	_	Offset=635-641
+5	30-60	_	Time	_	_	0	_	_	Offset=646-655
+6	mix	_	Action	_	_	0	_	_	Offset=659-662
+
+# sent_id = s9
+# text = Transfer the 825 µl lysate to a new Non-stick RNase-free tube or a 2 mL tube with o-ring (might need to spin the tubes to get as much lysate out as possible).
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=664-674
+2	5	_	Time	_	_	0	_	_	Offset=679-684
+3	10,000	_	Speed	_	_	0	_	_	Offset=696-706
+
+# sent_id = s10
+# text = Add 750 µl Acid-Phenol:Chloroform, vortex for 30-60 sec to mix.
+1	remove	_	Action	_	_	0	_	_	Offset=724-730
+2	op	_	Reagent	_	_	0	_	_	Offset=736-752
+3	transfer	_	Action	_	_	0	_	_	Offset=785-793
+4	fresh	_	Device	_	_	0	_	_	Offset=802-812
+
+# sent_id = s11
+# text = Centrifuge for 5 min at maximum 10,000 X g at RT.
+1	Pre-heat	_	Action	_	_	0	_	_	Offset=814-822
+2	Elution	_	Reagent	_	_	0	_	_	Offset=823-839
+3	95ºC	_	Temperature	_	_	0	_	_	Offset=868-872
+
+# sent_id = s12
+# text = Carefully remove the top aqueous phase w/o disturbing the lower phase, transfer it to a fresh tube.
+1	Add	_	Action	_	_	0	_	_	Offset=874-877
+2	1.25	_	Amount	_	_	0	_	_	Offset=878-890
+3	RT	_	Temperature	_	_	0	_	_	Offset=894-896
+4	100%	_	Concentration	_	_	5	Measure	_	Offset=897-901
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=902-909
+6	mix	_	Action	_	_	0	_	_	Offset=932-935
+7	load	_	Action	_	_	0	_	_	Offset=942-946
+
+# sent_id = s13
+# text = Pre-heat Elution Solution (or Nuclease-free water) to 95ºC.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1004-1014
+2	discard	_	Action	_	_	0	_	_	Offset=1041-1048
+
+# sent_id = s14
+# text = Add 1.25 volumes of RT 100% ethanol to the aqueous phase, mix well, load to a Filter Cartridge in the collection tube (provided).
+1	Apply	_	Action	_	_	0	_	_	Offset=1067-1072
+2	centrifuge	_	Action	_	_	0	_	_	Offset=1130-1140
+3	discard	_	Action	_	_	0	_	_	Offset=1167-1174
+
+# sent_id = s15
+# text = Centrifuge for 15 sec at 10,000 X g, discard the flow-through.
+1	Apply	_	Action	_	_	0	_	_	Offset=1193-1198
+2	spin	_	Action	_	_	0	_	_	Offset=1225-1229
+3	discard	_	Action	_	_	0	_	_	Offset=1256-1263
+
+# sent_id = s16
+# text = Apply 700 µl miRNA Wash Solution 1 to the Filter Cartridge and centrifuge for 10 sec at 10,000 X g, discard the flow-through.
+1	Put	_	Action	_	_	0	_	_	Offset=1298-1301
+2	centrifuge	_	Action	_	_	0	_	_	Offset=1341-1351
+3	remove	_	Action	_	_	0	_	_	Offset=1381-1387
+
+# sent_id = s17
+# text = Apply 500 µl Wash Solution 2/3, spin 15 sec at 10,000 X g, and discard the flow-through.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1420-1428
+2	apply	_	Action	_	_	0	_	_	Offset=1480-1485
+
+# sent_id = s18
+# text = Repeat step 14.
+1	Spin	_	Action	_	_	0	_	_	Offset=1587-1591
+
+# sent_id = s19
+# text = Put the Filter Cartridge back in the tube, centrifuge for 1.5 min at 10,000 X g to remove residual fluid from the filter.
+1	Add	_	Action	_	_	0	_	_	Offset=1694-1697
+2	mix	_	Action	_	_	0	_	_	Offset=1772-1775
+3	incubate	_	Action	_	_	0	_	_	Offset=1780-1788
+
+# sent_id = s20
+# text = Transfer the Filter Cartridge into a fresh collection tube, apply 50 µl pre-heated (95 ºC) Elution Solution (0.1 mM EDTA) to the center of the filter.
+1	Add	_	Action	_	_	0	_	_	Offset=1970-1973
+2	mix	_	Action	_	_	0	_	_	Offset=2024-2027
+3	incubate	_	Action	_	_	0	_	_	Offset=2034-2042
+4	flicking	_	Action	_	_	0	_	_	Offset=2060-2068
+
+# sent_id = s21
+# text = Wait ~1 minute.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2092-2102
+2	transfer	_	Action	_	_	0	_	_	Offset=2130-2138
+3	store	_	Action	_	_	0	_	_	Offset=2192-2197
+
+# sent_id = s22
+# text = Spin for 30 sec at 10,000 X g.  
+1	Pre-heat	_	Action	_	_	0	_	_	Offset=2209-2217
+
+# sent_id = s23
+# text = Repeat steps 17-19 with another 50 µl pre-heated (95ºC) Elution Solution.
+1	Combine	_	Action	_	_	0	_	_	Offset=2251-2258
+
+# sent_id = s24
+# text = Add 1/10th volume of DNase I buffer (~10 µl) and 2 µl DNase I (2U/µl), gently mix and incubate at 37 ºC for 30 min.
+1	Add	_	Action	_	_	0	_	_	Offset=2348-2351
+2	mix	_	Action	_	_	0	_	_	Offset=2375-2378
+
+# sent_id = s25
+# text = If RNeasy MinElute is to be used immediately after this, there is no need to use the DNase inactivation reagent – go directly to the RNeasy MinElute Procedure.
+1	Add	_	Action	_	_	0	_	_	Offset=2397-2400
+2	mix	_	Action	_	_	0	_	_	Offset=2422-2425
+
+# sent_id = s26
+# text = Add 0.1 volume (10 µl) of DNase inactivation reagent, mix well, incubate at RT for 2 min, flicking the tube occasionally.
+1	load	_	Action	_	_	0	_	_	Offset=2482-2486
+2	close	_	Action	_	_	0	_	_	Offset=2541-2546
+3	centrifuge	_	Action	_	_	0	_	_	Offset=2564-2574
+
+# sent_id = s27
+# text = Centrifuge for 1.5 min at 10,000 X g, transfer RNA to a fresh new 0.5 ml non-stick Rnase-free tube, store in –70 ºC.
+1	Discard	_	Action	_	_	0	_	_	Offset=2601-2608
+
+# sent_id = s28
+# text = Pre-heat elution buffer or water to 40°C.
+1	process	_	Action	_	_	0	_	_	Offset=2641-2648
+
+# sent_id = s29
+# text = Combine two 100 µl DNase-treated RNA samples in a 2ml Nonsticky RNase-free tube (~200 µl total).
+1	Transfer	_	Action	_	_	0	_	_	Offset=2697-2705
+
+# sent_id = s30
+# text = Add 700 µl RLT buffer, and mix with by pipeting.
+1	Pipet	_	Action	_	_	0	_	_	Offset=2753-2758
+
+# sent_id = s31
+# text = Add 500 µl 100% ethanol, mix thoroughly by pipetting.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2813-2823
+
+# sent_id = s32
+# text = DO NOT CENTRIFUGE.
+1	Discard	_	Action	_	_	0	_	_	Offset=2857-2864
+
+# sent_id = s33
+# text = Immediately load 700 µl onto an RNeasy MinElute Column in a 2 ml tube, close the tube gently, centrifuge for 15 s at ≥ 8,000 X g. 
+1	Reuse	_	Action	_	_	0	_	_	Offset=2883-2888
+
+# sent_id = s34
+# text = Discard flow through.
+1	Add	_	Action	_	_	0	_	_	Offset=2910-2913
+2	close	_	Action	_	_	0	_	_	Offset=2951-2956
+
+# sent_id = s35
+# text = Repeat step 29 to process the remaining sample volume through the column.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2970-2980
+2	discard	_	Action	_	_	0	_	_	Offset=3007-3014
+
+# sent_id = s36
+# text = Transfer the spin column to a new 2 ml collection tube.
+1	Transfer	_	Action	_	_	0	_	_	Offset=3029-3037
+
+# sent_id = s37
+# text = Pipet 500 µl buffer RPE onto the column, close tube gently.
+1	OPEN	_	Action	_	_	0	_	_	Offset=3080-3084
+2	centrifuge	_	Action	_	_	0	_	_	Offset=3110-3120
+3	discard	_	Action	_	_	0	_	_	Offset=3146-3153
+
+# sent_id = s38
+# text = Centrifuge for 15 s at ≥ 8,000 X g to wash.
+1	Elute	_	Action	_	_	0	_	_	Offset=3168-3173
+
+# sent_id = s39
+# text = Discard the flow-through.
+1	Transfer	_	Action	_	_	0	_	_	Offset=3239-3247
+2	pipet	_	Action	_	_	0	_	_	Offset=3286-3291
+3	wait	_	Action	_	_	0	_	_	Offset=3361-3365
+4	close	_	Action	_	_	0	_	_	Offset=3383-3388
+
+# sent_id = s40
+# text = Reuse the collection tube.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=3397-3407
+
+# sent_id = s41
+# text = Add 500 µl of 80% ethanol to the column, close tube gently.
+1	Repeat	_	Action	_	_	0	_	_	Offset=3442-3448
+
+# sent_id = s42
+# text = Centrifuge for 2 min at ≥ 8,000 X g, discard flow-through.
+1	Store	_	Action	_	_	0	_	_	Offset=3489-3494
+
+# sent_id = s43
+# text = Transfer the column to a new 2 ml collection tube.
+1	Order	_	Action	_	_	0	_	_	Offset=3861-3866
+
+# sent_id = s44
+# text = OPEN the cap of the tube, and centrifuge at 12,000 X g for 5 min, discard flow-through.
+1	PCR	_	Action	_	_	0	_	_	Offset=3898-3909
+
+# sent_id = s45
+# text = Elute with 25 µl pre-heated nuclease-free water or RNA storage buffer.
+1	Template	_	Action	_	_	0	_	_	Offset=3916-3924
+
+# sent_id = s46
+# text = Transfer the spin column to a new 1.5 ml tube, pipet water or buffer directly onto the center of the silica-gel membrane, wait for 2 min at RT, close gently.
+1	Purify	_	Action	_	_	0	_	_	Offset=3989-3995
+2	elution	_	Action	_	_	0	_	_	Offset=4065-4072
+3	quantify	_	Action	_	_	0	_	_	Offset=4101-4109
+
+# sent_id = s47
+# text = Centrifuge for 1 min at 12,000 X g to elute.
+1	Prepare	_	Action	_	_	0	_	_	Offset=4231-4238
+
+# sent_id = s48
+# text = Repeat elution using 15 µl of water or buffer.
+1	mix	_	Action	_	_	0	_	_	Offset=4715-4718
+
+# sent_id = s49
+# text = Store elutions at -80°C or continue with quantification.
+1	Incubate	_	Action	_	_	0	_	_	Offset=4749-4757
+
+# sent_id = s50
+# text = Depending on your application, the recommended option for RNA quantification is:Bioanalyzer (Agilent) using the RNA 6000 Pico total RNA kit: quantitative range = 0.05-5.0 ng / µl (dilute samples 1:10 and 1:100 prior to analysis), allows visualization of RNA size distribution, less accurate, ~1 hr processing time.
+1	add	_	Action	_	_	0	_	_	Offset=4797-4800
+2	remove	_	Action	_	_	0	_	_	Offset=4850-4856
+
+# sent_id = s51
+# text = Order primers (found in guidelines).
+1	Incubate	_	Action	_	_	0	_	_	Offset=4875-4883
+
+# sent_id = s52
+# text = PCR amplify rRNA.
+1	Purify	_	Action	_	_	0	_	_	Offset=4918-4924
+2	elution	_	Action	_	_	0	_	_	Offset=4973-4980
+
+# sent_id = s53
+# text = Template DNA100 ngBact 23S (35 cycles).
+1	Quantify	_	Action	_	_	0	_	_	Offset=5008-5016
+
+# sent_id = s54
+# text = All other primers (35 cycles).  
+1	Store	_	Action	_	_	0	_	_	Offset=5146-5151
+
+# sent_id = s55
+# text = Purify PCR products using the QIAquick PCR purification kit (Qiagen)** with elution in 50 ul elution buffer and quantify DNA concentration using the Nanodrop (Nanodrop is fine here, as the PCR products should be at high conc. (>100 ng/µl)). 
+1	transfer	_	Action	_	_	0	_	_	Offset=5250-5258
+
+# sent_id = s56
+# text = Prepare separate reactions for all probes.
+1	bind	_	Action	_	_	0	_	_	Offset=5302-5306
+2	pipet	_	Action	_	_	0	_	_	Offset=5357-5366
+3	discard	_	Action	_	_	0	_	_	Offset=5371-5378
+4	re-suspend	_	Action	_	_	0	_	_	Offset=5392-5402
+5	vortex	_	Action	_	_	0	_	_	Offset=5486-5492
+6	re-suspend	_	Action	_	_	0	_	_	Offset=5496-5506
+7	re-bind	_	Action	_	_	0	_	_	Offset=5519-5526
+8	pipet	_	Action	_	_	0	_	_	Offset=5541-5550
+
+# sent_id = s57
+# text = For a standard 20 µl reaction*: PCR amplicons, (step B1, suggest 250-500 ng)*1µl; ATP, (75 mM)2 µl; GTP, (75 mM)2 µl; CTP, (75 mM)1.5 µl; UTP, (75 mM)1.5 µl; Biotin-11-CTP, (10 mM, Roche 04739205001)3.75 µl; Biotin-16-UTP, (10 mM, Roche 11388908910)3.75 µl; 10X buffer, 2 µl; SUPERase•InTM RNase inhibitor, 0.5 µl; T7 RNA polymerase, 2 µl; 
+1	leave	_	Action	_	_	0	_	_	Offset=5655-5660
+
+# sent_id = s58
+# text = At room temperature (not on ice, as spermidine in the reaction buffer may cause DNA precipitation), mix reagents in the order listed.
+1	incubate	_	Action	_	_	0	_	_	Offset=5870-5878
+2	Rampdown	_	Action	_	_	0	_	_	Offset=5927-5935
+
+# sent_id = s59
+# text = Incubate at 37ºC for 4-6 hrs.
+1	Remove	_	Action	_	_	0	_	_	Offset=5982-5988
+2	sit	_	Action	_	_	0	_	_	Offset=6010-6013
+
+# sent_id = s60
+# text = After incubation, add 1 µl DNase I (included in the MEGAscript kit) to remove the DNA template.
+1	capture	_	Action	_	_	0	_	_	Offset=6090-6097
+2	pipet	_	Action	_	_	0	_	_	Offset=6164-6173
+3	remove	_	Action	_	_	0	_	_	Offset=6195-6201
+
+# sent_id = s61
+# text = Incubate at 37ºC for an additional 30 min.
+1	Dilute	_	Action	_	_	0	_	_	Offset=6227-6233
+
+# sent_id = s62
+# text = Purify synthesized RNA using the MEGAclearTM kit, with elution in 50 µl elution solution.
+1	Add	_	Action	_	_	0	_	_	Offset=6315-6318
+
+# sent_id = s63
+# text = Quantify RNA concentration using either RiboGreen or Nanodrop (Nanodrop should work fine as RNA samples should be at high concentration).
+1	Incubate	_	Action	_	_	0	_	_	Offset=6379-6387
+2	flicking	_	Action	_	_	0	_	_	Offset=6422-6430
+3	mix	_	Action	_	_	0	_	_	Offset=6434-6437
+
+# sent_id = s64
+# text = Store probes at -80°C.
+1	spin	_	Action	_	_	0	_	_	Offset=6459-6463
+
+# sent_id = s65
+# text = Bead washing (do this before or during the hybridization step).
+1	Capture	_	Action	_	_	0	_	_	Offset=6475-6482
+
+# sent_id = s66
+# text = For each sample, transfer 400 µl of beads* to a 1.5 ml tube.
+1	Transfer	_	Action	_	_	0	_	_	Offset=6525-6533
+
+# sent_id = s67
+# text = Wash 1: bind beads to magnetic separation rack (takes ~2 min), pipet off and discard supernatant, re-suspend beads in equal volume of 0.1N NaOH (deactivates bead-associated RNases), and quick vortex to re-suspend, spin down, re-bind to magnet and pipet off supernatant.
+1	Re-suspend	_	Action	_	_	0	_	_	Offset=6610-6620
+2	transfer	_	Action	_	_	0	_	_	Offset=6681-6689
+
+# sent_id = s68
+# text = Do this step quickly.
+1	Purify	_	Action	_	_	0	_	_	Offset=6749-6755
+2	remove	_	Action	_	_	0	_	_	Offset=6783-6789
+
+# sent_id = s69
+# text = Wash #2: Repeat wash in step57 using 1X SSC buffer.
+1	Elute	_	Action	_	_	0	_	_	Offset=6830-6835
+
+# sent_id = s70
+# text = On the 3rd wash, leave beads in buffer on ice until hybridization is complete.
+1	Run	_	Action	_	_	0	_	_	Offset=6898-6901
+
+# sent_id = s71
+# text = Wash #3: Repeat wash in step57 using 1X SSC buffer and leave beads in buffer on ice until hybridization is complete.
+1	Store	_	Action	_	_	0	_	_	Offset=7014-7019
+
+# sent_id = s72
+# text = Hybridization.
+1	speedvac	_	Action	_	_	0	_	_	Offset=7073-7081
+
+# sent_id = s73
+# text = In a thermal cycler, incubate under the following conditions:  5 min at 70ºC, Rampdown to 25°C, using 5°C increments for 1 min each.
+1	assemble	_	Action	_	_	0	_	_	Offset=7225-7233
+
+# sent_id = s74
+# text = Remove the reaction and let sit at RT for 2-5 min.
+1	placing	_	Action	_	_	0	_	_	Offset=7358-7365
+
+# sent_id = s75
+# text = Bead binding.
+1	mix	_	Action	_	_	0	_	_	Offset=7590-7593
+
+# sent_id = s76
+# text = While the hybridization reaction is at RT, capture the pre-aliquoted beads (400 µl per sample) on the magnetic rack, pipet off the supernatant, and remove the beads from the rack.
+1	Add	_	Action	_	_	0	_	_	Offset=7638-7641
+2	mix	_	Action	_	_	0	_	_	Offset=7721-7724
+
+# sent_id = s77
+# text = Dilute the hybridization reaction in PCR tubes to 100 µl using 20% formamide in 1X SSC.
+1	Incubate	_	Action	_	_	0	_	_	Offset=7739-7747
+
+# sent_id = s78
+# text = Add the hybridization reaction (now 100 µl) to the dried beads.
+1	Cool	_	Action	_	_	0	_	_	Offset=7805-7809
+
+# sent_id = s79
+# text = Incubate at RT for 10 min, with occasional flicking to mix.
+1	Remove	_	Action	_	_	0	_	_	Offset=7861-7867
+2	add	_	Action	_	_	0	_	_	Offset=7914-7917
+3	mix	_	Action	_	_	0	_	_	Offset=7951-7954
+
+# sent_id = s80
+# text = Bead removal.
+1	Incubate	_	Action	_	_	0	_	_	Offset=8048-8056
+
+# sent_id = s81
+# text = Quick spin the tubes.
+1	Incubate	_	Action	_	_	0	_	_	Offset=8082-8090
+
+# sent_id = s82
+# text = Capture the beads on the magnetic rack (2-3 min).
+1	prepare	_	Action	_	_	0	_	_	Offset=8213-8220
+
+# sent_id = s83
+# text = Transfer the non-rRNA-containing supernatant to a 1.5 ml tube using a P200 pipettor.
+1	Remove	_	Action	_	_	0	_	_	Offset=8428-8434
+2	add	_	Action	_	_	0	_	_	Offset=8499-8502
+
+# sent_id = s84
+# text = Re-suspend remaining beads with 100 µl 1X SSC, capture beads as above, transfer supernatant to the same 1.5 ml tube (200 µl total volume).
+1	mix	_	Action	_	_	0	_	_	Offset=8551-8554
+
+# sent_id = s85
+# text = Purify subtracted RNA (200 µl) to remove formamide.
+1	Return	_	Action	_	_	0	_	_	Offset=8569-8575
+
+# sent_id = s86
+# text = Use the RNeasy MinElute kit.
+1	Incubate	_	Action	_	_	0	_	_	Offset=8641-8649
+
+# sent_id = s87
+# text = Elute in 15 µl and 5 µl pre-heated to 50 °C (combine the elutions).
+1	Incubate	_	Action	_	_	0	_	_	Offset=8689-8697
+
+# sent_id = s88
+# text = Run 1 µl of purified RNA (diluted 1:10 and 1:100) on the Bioanalyzer to confirm rRNA subtraction and probe removal.
+1	cool	_	Action	_	_	0	_	_	Offset=8741-8745
+
+# sent_id = s89
+# text = Store RNA at -80°C for downstream applications.
+1	purify	_	Action	_	_	0	_	_	Offset=8818-8824
+
+# sent_id = s90
+# text = If needed, speedvac the subtracted RNA to maximum volume of 9 µl.
+1	Warm	_	Action	_	_	0	_	_	Offset=8858-8862
+
+# sent_id = s91
+# text = Use all of the template material remaining after the rRNA-subtraction step.
+1	Prepare	_	Action	_	_	0	_	_	Offset=8912-8919
+
+# sent_id = s92
+# text = In a 0.2 mL PCR tube assemble the following reaction by incubation at 85 ºC for 5 minutes in thermocycler with heated lid.
+1	Add	_	Action	_	_	0	_	_	Offset=8982-8985
+
+# sent_id = s93
+# text = Stop fragmentation reaction by placing the tube on ice.
+1	Mix	_	Action	_	_	0	_	_	Offset=9068-9071
+
+# sent_id = s94
+# text = On ice preare the cDNA synthesis master mix, volumes below are per rxn: cDNA synthesis premix, 3 µl, 100 mM; DTT, 0.5 µl; StarScript Reverse Transcriptase, 0.5 µl; Total volume, 4 µl. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=9106-9114
+
+# sent_id = s95
+# text = Gently but thoroughly mix the cDNA synthesis master mix by pipetting.
+1	Incubate	_	Action	_	_	0	_	_	Offset=9138-9146
+
+# sent_id = s96
+# text = Add 4 µl of the cDNA synthesis master mix to each reaction on ice from Part C1 and mix by pipetting.
+1	Place	_	Action	_	_	0	_	_	Offset=9176-9181
+
+# sent_id = s97
+# text = Incubate at 25 °C for 5 minutes followed by 42 °C for 20 minutes.
+1	Remove	_	Action	_	_	0	_	_	Offset=9262-9268
+2	discard	_	Action	_	_	0	_	_	Offset=9273-9280
+
+# sent_id = s98
+# text = Cool the reactions to 37 °C and pause the thermocycler.
+1	add	_	Action	_	_	0	_	_	Offset=9378-9381
+
+# sent_id = s99
+# text = Remove one reaction at a time from the thermocycler, add 1.0 µl of Finishing solution and mix gently by pipetting.
+1	Incubate	_	Action	_	_	0	_	_	Offset=9461-9469
+2	remove	_	Action	_	_	0	_	_	Offset=9491-9497
+3	discard	_	Action	_	_	0	_	_	Offset=9502-9509
+
+# sent_id = s100
+# text = Return each reaction to the thermocycler before proceeding to the next.
+1	add	_	Action	_	_	0	_	_	Offset=9561-9564
+
+# sent_id = s101
+# text = Incubate at 37 °C for 10 minutes.
+1	Incubate	_	Action	_	_	0	_	_	Offset=9644-9652
+2	remove	_	Action	_	_	0	_	_	Offset=9674-9680
+3	discard	_	Action	_	_	0	_	_	Offset=9685-9692
+
+# sent_id = s102
+# text = Incubate each reaction at 95°C for 3 minutes, then cool reactions to 25 °C and pause the thermocycler.
+1	air-dry	_	Action	_	_	0	_	_	Offset=9721-9728
+
+# sent_id = s103
+# text = During the 95 °C incubation prepare the terminal tagging master mix described in C3.
+1	Add	_	Action	_	_	0	_	_	Offset=9776-9779
+2	remove	_	Action	_	_	0	_	_	Offset=9828-9834
+
+# sent_id = s104
+# text = On ice, prepare the terminal tagging premix: For each reaction, combine on ice: Terminal tagging premix, 7.5 µl; DNA polymerase, 0.5 µl; Total volume, 8 µl; 
+1	resuspend	_	Action	_	_	0	_	_	Offset=9867-9876
+
+# sent_id = s105
+# text = Remove one reaction at a time from the thermocycler (25 °C paused) and add 8 µl of the terminal tagging master mix.
+1	Incubate	_	Action	_	_	0	_	_	Offset=9906-9914
+
+# sent_id = s106
+# text = Gently mix by pipetting.
+1	Place	_	Action	_	_	0	_	_	Offset=9955-9960
+
+# sent_id = s107
+# text = Return each reaction to the thermocycler before proceeding to the next.
+1	Transfer	_	Action	_	_	0	_	_	Offset=10046-10054
+2	place	_	Action	_	_	0	_	_	Offset=10148-10153
+
+# sent_id = s108
+# text = Incubate each reaction at 25 °C for 15 minutes.
+1	Bring	_	Action	_	_	0	_	_	Offset=10577-10582
+
+# sent_id = s109
+# text = Incubate each reaction at 95 °C for 3 minutes.
+1	purify	_	Action	_	_	0	_	_	Offset=10716-10722
+2	remove	_	Action	_	_	0	_	_	Offset=10743-10749
+
+# sent_id = s110
+# text = Then cool to 4 °C on ice or in thermocycler.
+1	Warm	_	Action	_	_	0	_	_	Offset=10795-10799
+
+# sent_id = s111
+# text = Use the Agencourt AmpureXP system to purify the cDNA with 1.8X purification.
+1	Prepare	_	Action	_	_	0	_	_	Offset=10849-10856
+
+# sent_id = s112
+# text = Warm Ampure beads to room temperature for 30 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=10919-10922
+
+# sent_id = s113
+# text = Prepare 400 µl fresh 80% ethanol at room temperature for each sample.
+1	Mix	_	Action	_	_	0	_	_	Offset=10994-10997
+
+# sent_id = s114
+# text = Add 45 µl of beads to each microfuge tube containing the di-tagged cDNA from part 3C.
+1	Transfer	_	Action	_	_	0	_	_	Offset=11032-11040
+
+# sent_id = s115
+# text = Mix thoroughly by pipetting 10 times.
+1	Incubate	_	Action	_	_	0	_	_	Offset=11076-11084
+
+# sent_id = s116
+# text = Transfer volume to 1.5 mL tube.
+1	Place	_	Action	_	_	0	_	_	Offset=11114-11119
+
+# sent_id = s117
+# text = Incubate at room temp for 15 minutes.
+1	Remove	_	Action	_	_	0	_	_	Offset=11200-11206
+2	discard	_	Action	_	_	0	_	_	Offset=11211-11218
+
+# sent_id = s118
+# text = Place tubes in magnetic stand at room temp for at least 5 minutes until liquid clear.
+1	add	_	Action	_	_	0	_	_	Offset=11316-11319
+
+# sent_id = s119
+# text = Remove and discard supernatant using a pipet, some liquid may remain in tube.
+1	Incubate	_	Action	_	_	0	_	_	Offset=11399-11407
+2	remove	_	Action	_	_	0	_	_	Offset=11429-11435
+3	discard	_	Action	_	_	0	_	_	Offset=11440-11447
+
+# sent_id = s120
+# text = Ethanol Wash #1: With tubes on stand, add 200 µl 80% ethanol to each tube without disturbing the beads.
+1	add	_	Action	_	_	0	_	_	Offset=11499-11502
+
+# sent_id = s121
+# text = Ethanol Wash #1: Incubate for 30 seconds, then remove and discard supernatant.
+1	Incubate	_	Action	_	_	0	_	_	Offset=11582-11590
+2	remove	_	Action	_	_	0	_	_	Offset=11612-11618
+
+# sent_id = s122
+# text = Ethanol Wash #2: With tubes on stand, add 200 µl 80% ethanol to each tube without disturbing the beads.
+1	air-dry	_	Action	_	_	0	_	_	Offset=11659-11666
+
+# sent_id = s123
+# text = Ethanol Wash #2: Incubate for 30 seconds, then remove and discard supernatant.
+1	Add	_	Action	_	_	0	_	_	Offset=11714-11717
+2	remove	_	Action	_	_	0	_	_	Offset=11764-11770
+
+# sent_id = s124
+# text = Allow tubes to air-dry on magnetic stand for 15 minutes at room temp.
+1	resuspend	_	Action	_	_	0	_	_	Offset=11803-11812
+
+# sent_id = s125
+# text = Add 24.5 µl of nuclease-free water to each tube and remove from magnetic stand.
+1	Incubate	_	Action	_	_	0	_	_	Offset=11842-11850
+
+# sent_id = s126
+# text = Thoroughly resuspend beads by pipetting 10 times.
+1	Place	_	Action	_	_	0	_	_	Offset=11891-11896
+
+# sent_id = s127
+# text = Incubate tube at room temperature for 2 minutes.
+1	Transfer	_	Action	_	_	0	_	_	Offset=11982-11990
+
+# sent_id = s128
+# text = Place the tube on magnetic stand at room temp for at least 5 minutes, until liquid clears.
+1	Make	_	Action	_	_	0	_	_	Offset=12074-12078
+
+# sent_id = s129
+# text = Transfer 22.5 µl supernatant, which contains di-tagged cDNA, from each tube to a new 0.2 mL PCR tube, place on ice.
+1	Perform	_	Action	_	_	0	_	_	Offset=12154-12161
+

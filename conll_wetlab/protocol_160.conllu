@@ -1,0 +1,128 @@
+# sent_id = s1
+# text = Polyacrylamide Gel System For Electrophoresis Of Proteins
+1	Prepare	_	Action	_	_	0	_	_	Offset=58-65
+2	30.0%	_	Concentration	_	_	3	Measure	_	Offset=66-71
+3	Acrylamide	_	Reagent	_	_	0	_	_	Offset=72-97
+
+# sent_id = s2
+# text = Prepare 30.0% Acrylamide stock solution (30.0:0.8).
+1	Prepare	_	Action	_	_	0	_	_	Offset=110-117
+2	Resolving	_	Modifier	_	_	3	Mod-Link	_	Offset=118-127
+3	gel	_	Reagent	_	_	0	_	_	Offset=128-138
+
+# sent_id = s3
+# text = Prepare Resolving gel buffer (4X).
+1	Prepare	_	Action	_	_	0	_	_	Offset=145-152
+2	Stacking	_	Modifier	_	_	3	Mod-Link	_	Offset=153-161
+3	gel	_	Reagent	_	_	0	_	_	Offset=162-172
+
+# sent_id = s4
+# text = Prepare Stacking gel buffer (4X).
+1	Prepare	_	Action	_	_	0	_	_	Offset=179-186
+2	Running	_	Modifier	_	_	3	Mod-Link	_	Offset=187-194
+3	gel	_	Reagent	_	_	0	_	_	Offset=195-205
+
+# sent_id = s5
+# text = Prepare Running gel buffer (10X).
+1	Prepare	_	Action	_	_	0	_	_	Offset=213-220
+2	Cracking	_	Modifier	_	_	3	Mod-Link	_	Offset=221-229
+3	buffer	_	Reagent	_	_	0	_	_	Offset=230-236
+
+# sent_id = s6
+# text = Prepare Cracking buffer, 4X (10 mL).
+1	Mix	_	Action	_	_	0	_	_	Offset=302-305
+2	ingredients	_	Reagent	_	_	0	_	_	Offset=317-328
+3	ammonium	_	Reagent	_	_	0	_	_	Offset=349-368
+
+# sent_id = s7
+# text = See guidelines for Sample Recipe for Resolving Gel.
+1	overlay	_	Action	_	_	0	_	_	Offset=377-384
+2	gel	_	Reagent	_	_	6	Coreference-Link	_	Offset=389-392
+3	d-H2O	_	Reagent	_	_	0	_	_	Offset=398-403
+4	resolving	_	Modifier	_	_	5	Mod-Link	_	Offset=411-420
+5	gel	_	Reagent	_	_	3	Or	_	Offset=421-430
+6	gel	_	Mention	_	_	0	_	_	Offset=447-450
+7	polymerize	_	Action	_	_	0	_	_	Offset=454-464
+
+# sent_id = s8
+# text = Mix all of the ingredients together except the ammonium persulfate.
+1	Pour	_	Action	_	_	0	_	_	Offset=466-470
+2	stacking	_	Modifier	_	_	3	Mod-Link	_	Offset=475-483
+3	gel	_	Reagent	_	_	0	_	_	Offset=484-487
+4	add	_	Action	_	_	0	_	_	Offset=506-509
+5	ammonium	_	Reagent	_	_	0	_	_	Offset=517-536
+
+# sent_id = s9
+# text = Gently overlay the gel with d-H2O (or 1X resolving gel buffer) and allow the gel to polymerize.
+1	Insert	_	Action	_	_	0	_	_	Offset=538-544
+2	gel	_	Device	_	_	0	_	_	Offset=549-557
+3	form	_	Action	_	_	0	_	_	Offset=561-565
+4	wells	_	Location	_	_	0	_	_	Offset=570-575
+
+# sent_id = s10
+# text = Pour the stacking gel immediately after adding the ammonium persulfate.
+1	stacking	_	Modifier	_	_	2	Mod-Link	_	Offset=587-595
+2	gel	_	Reagent	_	_	0	_	_	Offset=596-599
+3	polymerize	_	Action	_	_	0	_	_	Offset=603-613
+4	60	_	Time	_	_	0	_	_	Offset=618-624
+
+# sent_id = s11
+# text = Insert the gel comb to form the wells.
+1	Boil	_	Action	_	_	0	_	_	Offset=669-673
+2	samples	_	Reagent	_	_	0	_	_	Offset=678-685
+3	cracking	_	Modifier	_	_	4	Mod-Link	_	Offset=693-701
+4	buffer	_	Reagent	_	_	0	_	_	Offset=702-708
+5	5-10	_	Time	_	_	0	_	_	Offset=709-717
+6	loading	_	Action	_	_	0	_	_	Offset=725-732
+7	gel	_	Reagent	_	_	0	_	_	Offset=742-745
+
+# sent_id = s12
+# text = Allow the stacking gel to polymerize for 60 min before use.
+1	Electrophorese	_	Action	_	_	0	_	_	Offset=747-761
+2	gel	_	Reagent	_	_	9	Coreference-Link	_	Offset=766-769
+3	100	_	Numerical	_	_	0	_	_	Offset=773-776
+4	volts	_	Measure-Type	_	_	3	Of-Type	_	Offset=777-782
+5	10	_	Numerical	_	_	3	Or	_	Offset=797-799
+6	milliamps	_	Measure-Type	_	_	0	_	_	Offset=800-809
+7	dye	_	Reagent	_	_	0	_	_	Offset=831-834
+8	run	_	Action	_	_	0	_	_	Offset=846-849
+9	gel	_	Mention	_	_	0	_	_	Offset=859-862
+
+# sent_id = s13
+# text = See guidelines for ingredients.
+1	Stain	_	Action	_	_	0	_	_	Offset=931-936
+2	gels	_	Reagent	_	_	0	_	_	Offset=941-945
+3	coomassie	_	Reagent	_	_	5	Meronym	7:Meronym|9:Meronym|11:Meronym	Offset=951-971
+4	1.0	_	Amount	_	_	5	Measure	_	Offset=1007-1013
+5	Coomassie	_	Reagent	_	_	0	_	_	Offset=1015-1039
+6	455	_	Amount	_	_	7	Measure	_	Offset=1042-1048
+7	methanol	_	Reagent	_	_	0	_	_	Offset=1050-1058
+8	455	_	Amount	_	_	9	Measure	_	Offset=1060-1066
+9	d-H2O	_	Reagent	_	_	0	_	_	Offset=1068-1073
+10	90	_	Amount	_	_	11	Measure	_	Offset=1075-1080
+11	glacial	_	Reagent	_	_	0	_	_	Offset=1082-1101
+
+# sent_id = s14
+# text = Boil the samples in the cracking buffer 5-10 min before loading onto the gel.
+1	Gels	_	Reagent	_	_	11	Coreference-Link	_	Offset=1103-1107
+2	destain	_	Action	_	_	0	_	_	Offset=1112-1119
+3	700	_	Amount	_	_	4	Measure	_	Offset=1142-1148
+4	methanol	_	Reagent	_	_	0	_	_	Offset=1150-1158
+5	200	_	Amount	_	_	6	Measure	_	Offset=1160-1166
+6	glacial	_	Reagent	_	_	0	_	_	Offset=1168-1187
+7	2600	_	Amount	_	_	8	Measure	_	Offset=1189-1196
+8	d-H2O	_	Reagent	_	_	0	_	_	Offset=1198-1203
+9	Stain	_	Action	_	_	0	_	_	Offset=1204-1209
+10	destain	_	Action	_	_	0	_	_	Offset=1214-1221
+11	gels	_	Mention	_	_	0	_	_	Offset=1226-1230
+12	65°C	_	Temperature	_	_	0	_	_	Offset=1234-1238
+
+# sent_id = s15
+# text = Electrophorese the gel at 100 volts (constant) or 10 milliamps (constant) until the dye front just runs off the gel.
+1	Small	_	Modifier	_	_	2	Mod-Link	_	Offset=1240-1245
+2	foam	_	Reagent	_	_	0	_	_	Offset=1246-1264
+3	add	_	Action	_	_	0	_	_	Offset=1265-1268
+4	absorb	_	Action	_	_	0	_	_	Offset=1301-1307
+5	some	_	Amount	_	_	6	Measure	_	Offset=1308-1312
+6	coomassie	_	Reagent	_	_	0	_	_	Offset=1320-1329
+

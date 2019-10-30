@@ -1,0 +1,69 @@
+# sent_id = s1
+# text = Peroxide Value Method
+1	Weigh	_	Action	_	_	0	_	_	Offset=25-30
+2	0.01	_	Amount	_	_	3	Measure	_	Offset=31-38
+3	oil	_	Reagent	_	_	0	_	_	Offset=39-42
+4	test	_	Location	_	_	0	_	_	Offset=48-57
+5	record	_	Action	_	_	0	_	_	Offset=62-68
+6	weight	_	Measure-Type	_	_	0	_	_	Offset=75-81
+
+# sent_id = s2
+# text = 1.
+1	Solid	_	Reagent	_	_	0	_	_	Offset=83-92
+2	melted	_	Action	_	_	0	_	_	Offset=103-109
+3	first	_	Modifier	_	_	0	_	_	Offset=110-115
+
+# sent_id = s3
+# text = Weigh 0.01 mg oil into test tube and record exact weight.
+1	Samples	_	Reagent	_	_	0	_	_	Offset=117-137
+2	serially	_	Modifier	_	_	0	_	_	Offset=153-161
+3	diluted	_	Action	_	_	0	_	_	Offset=162-169
+4	working	_	Reagent	_	_	0	_	_	Offset=173-188
+
+# sent_id = s4
+# text = Solid fat should be melted first.
+1	Immediately	_	Modifier	_	_	0	_	_	Offset=291-302
+2	add	_	Action	_	_	0	_	_	Offset=303-306
+3	3	_	Amount	_	_	4	Measure	_	Offset=307-311
+4	working	_	Reagent	_	_	0	_	_	Offset=312-327
+5	vortex	_	Action	_	_	0	_	_	Offset=332-338
+6	dissolve	_	Action	_	_	0	_	_	Offset=342-350
+
+# sent_id = s5
+# text = Samples with high PV may need to be serially diluted in working solvent.
+1	Prepare	_	Action	_	_	0	_	_	Offset=387-394
+2	blank	_	Location	_	_	0	_	_	Offset=397-407
+
+# sent_id = s6
+# text = Make sure to record dilution factor if so.
+1	Add	_	Action	_	_	0	_	_	Offset=441-444
+2	15	_	Amount	_	_	3	Measure	_	Offset=445-450
+3	ammonium	_	Reagent	_	_	0	_	_	Offset=451-471
+4	all	_	Modifier	_	_	5	Mod-Link	_	Offset=475-478
+5	tubes	_	Location	_	_	0	_	_	Offset=479-484
+6	vortex	_	Action	_	_	0	_	_	Offset=490-496
+7	2-4	_	Time	_	_	0	_	_	Offset=497-504
+
+# sent_id = s7
+# text = Up to 0.10 g can be used for samples with very low PV.
+1	Add	_	Action	_	_	0	_	_	Offset=509-512
+2	15	_	Amount	_	_	3	Measure	_	Offset=513-518
+3	ferrous	_	Reagent	_	_	0	_	_	Offset=519-535
+4	all	_	Modifier	_	_	5	Mod-Link	_	Offset=539-542
+5	tubes	_	Location	_	_	0	_	_	Offset=543-548
+6	vortex	_	Action	_	_	0	_	_	Offset=554-560
+7	2-4	_	Time	_	_	0	_	_	Offset=561-568
+
+# sent_id = s8
+# text = 2.
+1	sit	_	Action	_	_	0	_	_	Offset=577-580
+2	room	_	Temperature	_	_	0	_	_	Offset=584-600
+3	20	_	Time	_	_	0	_	_	Offset=601-607
+
+# sent_id = s9
+# text = Immediately add 3 mL working solvent and vortex to dissolve-make sure it is fully dissolved.
+1	Read	_	Action	_	_	0	_	_	Offset=638-642
+2	absorbance	_	Measure-Type	_	_	0	_	_	Offset=643-653
+3	spectrophotometer	_	Device	_	_	0	_	_	Offset=657-674
+4	510	_	Generic-Measure	_	_	3	Setting	_	Offset=682-688
+

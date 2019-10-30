@@ -1,0 +1,108 @@
+# sent_id = s1
+# text = Mouse T Cell Activation with anti-CD3ε Antibodies (clone 145-2C11)
+1	Prepare	_	Action	_	_	0	_	_	Offset=67-74
+2	5	_	Concentration	_	_	3	Measure	_	Offset=77-84
+3	solution	_	Reagent	_	_	0	_	_	Offset=85-106
+4	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=127-134
+5	PBS	_	Reagent	_	_	0	_	_	Offset=135-138
+
+# sent_id = s2
+# text = Prepare a 5 µg/ml solution of anti-CD3ε (clone 145-2C11) in sterile PBS.
+1	Dispense	_	Action	_	_	0	_	_	Offset=140-148
+2	50	_	Amount	_	_	3	Measure	_	Offset=149-154
+3	antibody	_	Reagent	_	_	0	_	_	Offset=162-179
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=183-187
+5	microwell	_	Location	_	_	0	_	_	Offset=188-197
+6	96-well	_	Location	_	_	5	Meronym	_	Offset=205-224
+
+# sent_id = s3
+# text = Dispense 50 µl of the antibody solution to each microwell of the 96-well assay plate.
+1	add	_	Action	_	_	0	_	_	Offset=262-265
+2	50	_	Amount	_	_	4	Measure	_	Offset=266-271
+3	sterile	_	Modifier	_	_	4	Mod-Link	_	Offset=275-282
+4	PBS	_	Reagent	_	_	0	_	_	Offset=283-286
+
+# sent_id = s4
+# text = For the unstimulated control wells, add 50 µl of sterile PBS.
+1	Seal	_	Action	_	_	0	_	_	Offset=288-292
+2	plate	_	Location	_	_	0	_	_	Offset=293-298
+
+# sent_id = s5
+# text = Seal plate.
+1	Incubate	_	Action	_	_	0	_	_	Offset=300-308
+2	37°C	_	Temperature	_	_	0	_	_	Offset=312-316
+3	2	_	Time	_	_	0	_	_	Offset=321-328
+4	4°C	_	Temperature	_	_	2	Or	_	Offset=332-335
+5	overnight	_	Time	_	_	3	Or	_	Offset=336-345
+
+# sent_id = s6
+# text = Incubate at 37°C for 2 hours or 4°C overnight.
+1	Aseptically	_	Modifier	_	_	0	_	_	Offset=347-358
+2	decant	_	Action	_	_	0	_	_	Offset=359-365
+3	antibody	_	Reagent	_	_	0	_	_	Offset=366-383
+4	microwell	_	Location	_	_	0	_	_	Offset=389-404
+
+# sent_id = s7
+# text = Aseptically decant antibody solution from microwell plate.
+1	Wash	_	Action	_	_	0	_	_	Offset=406-410
+2	plate	_	Location	_	_	0	_	_	Offset=411-427
+3	3	_	Numerical	_	_	0	_	_	Offset=428-429
+4	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=441-448
+5	PBS	_	Reagent	_	_	0	_	_	Offset=449-452
+
+# sent_id = s8
+# text = Wash plate microwells 3 times with sterile PBS (wash 1/3).
+1	Prepare	_	Action	_	_	0	_	_	Offset=465-472
+2	single	_	Numerical	_	_	3	Measure	_	Offset=473-479
+3	cell	_	Reagent	_	_	0	_	_	Offset=480-516
+
+# sent_id = s9
+# text = Prepare single cell suspension of cells of interest.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=518-527
+2	cells	_	Reagent	_	_	0	_	_	Offset=528-533
+3	supplemented	_	Modifier	_	_	4	Mod-Link	_	Offset=537-549
+4	cell	_	Reagent	_	_	0	_	_	Offset=550-569
+5	1-2	_	Generic-Measure	_	_	0	_	_	Offset=573-585
+
+# sent_id = s10
+# text = Resuspend cells in supplemented cell culture medium to 1-2 x 106/ml.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=587-594
+2	200	_	Amount	_	_	3	Measure	_	Offset=595-601
+3	cell	_	Reagent	_	_	0	_	_	Offset=602-617
+4	plate	_	Location	_	_	0	_	_	Offset=623-639
+
+# sent_id = s11
+# text = Aliquot 200 µl cell suspension into plate microwells.
+1	Cover	_	Action	_	_	0	_	_	Offset=641-646
+2	lid	_	Seal	_	_	0	_	_	Offset=652-655
+
+# sent_id = s12
+# text = Cover with lid.
+1	Incubate	_	Action	_	_	0	_	_	Offset=657-665
+2	37°C	_	Temperature	_	_	0	_	_	Offset=669-673
+3	5%	_	Concentration	_	_	4	Measure	_	Offset=677-679
+4	CO2	_	Reagent	_	_	0	_	_	Offset=680-683
+5	100%	_	Generic-Measure	_	_	0	_	_	Offset=688-701
+6	3	_	Time	_	_	0	_	_	Offset=706-712
+
+# sent_id = s13
+# text = Incubate at 37°C in 5% CO2 and 100% humidity for 3 days.
+1	Wash	_	Action	_	_	0	_	_	Offset=714-718
+2	plate	_	Location	_	_	0	_	_	Offset=719-735
+3	3	_	Numerical	_	_	0	_	_	Offset=736-737
+4	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=749-756
+5	PBS	_	Reagent	_	_	0	_	_	Offset=757-760
+
+# sent_id = s14
+# text = Wash plate microwells 3 times with sterile PBS (wash 2/3).
+1	Wash	_	Action	_	_	0	_	_	Offset=773-777
+2	plate	_	Location	_	_	0	_	_	Offset=778-794
+3	3	_	Numerical	_	_	0	_	_	Offset=795-796
+4	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=808-815
+5	PBS	_	Reagent	_	_	0	_	_	Offset=816-819
+
+# sent_id = s15
+# text = Wash plate microwells 3 times with sterile PBS (wash 3/3).
+1	Discard	_	Action	_	_	0	_	_	Offset=832-839
+2	liquid	_	Reagent	_	_	0	_	_	Offset=840-846
+

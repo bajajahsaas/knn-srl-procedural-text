@@ -1,0 +1,107 @@
+# sent_id = s1
+# text = Edinburgh Minimal Medium
+1	Add	_	Action	_	_	0	_	_	Offset=25-28
+2	32.0	_	Amount	_	_	3	Measure	_	Offset=29-35
+3	EMM	_	Reagent	_	_	0	_	_	Offset=36-39
+4	1	_	Amount	_	_	5	Measure	_	Offset=45-52
+5	Erlenmeyer	_	Location	_	_	0	_	_	Offset=53-70
+
+# sent_id = s2
+# text = Add 32.0 g EMM to a 1 Liter Erlenmeyer Flask.
+1	Add	_	Action	_	_	0	_	_	Offset=71-74
+2	0.25	_	Amount	_	_	3	Measure	_	Offset=75-81
+3	Adenine	_	Reagent	_	_	0	_	_	Offset=82-89
+4	flask	_	Location	_	_	0	_	_	Offset=97-102
+
+# sent_id = s3
+# text = Add 0.25 g Adenine to the flask.
+1	Add	_	Action	_	_	0	_	_	Offset=104-107
+2	0.25	_	Amount	_	_	3	Measure	_	Offset=108-114
+3	Uracil	_	Reagent	_	_	0	_	_	Offset=115-121
+4	flask	_	Location	_	_	0	_	_	Offset=129-134
+
+# sent_id = s4
+# text = Add 0.25 g Uracil to the flask.
+1	Add	_	Action	_	_	0	_	_	Offset=136-139
+2	0.25	_	Amount	_	_	3	Measure	_	Offset=140-146
+3	Histidine	_	Reagent	_	_	0	_	_	Offset=147-156
+4	flask	_	Location	_	_	0	_	_	Offset=164-169
+
+# sent_id = s5
+# text = Add 0.25 g Histidine to the flask.
+1	Add	_	Action	_	_	0	_	_	Offset=171-174
+2	0.25	_	Amount	_	_	3	Measure	_	Offset=175-179
+3	Leucine	_	Reagent	_	_	0	_	_	Offset=180-187
+4	flask	_	Location	_	_	0	_	_	Offset=195-200
+
+# sent_id = s6
+# text = Add 0.25 Leucine to the flask.
+1	Add	_	Action	_	_	0	_	_	Offset=202-205
+2	0.25	_	Amount	_	_	3	Measure	_	Offset=206-212
+3	Lysine	_	Reagent	_	_	0	_	_	Offset=213-219
+4	flask	_	Location	_	_	0	_	_	Offset=227-232
+
+# sent_id = s7
+# text = Add 0.25 g Lysine to the flask.
+1	Add	_	Action	_	_	0	_	_	Offset=234-237
+2	1	_	Amount	_	_	3	Measure	_	Offset=238-241
+3	Arginine	_	Reagent	_	_	0	_	_	Offset=242-250
+4	flask	_	Location	_	_	0	_	_	Offset=258-263
+
+# sent_id = s8
+# text = Add 1 g Arginine to the flask.
+1	solid	_	Reagent	_	_	0	_	_	Offset=279-291
+2	add	_	Action	_	_	0	_	_	Offset=292-295
+3	20	_	Amount	_	_	4	Measure	_	Offset=296-300
+4	Difco	_	Reagent	_	_	0	_	_	Offset=301-317
+5	flask	_	Location	_	_	0	_	_	Offset=325-330
+
+# sent_id = s9
+# text = Optional: For solid medium add 20 g Difco Bacto Agar to the flask.
+1	Fill	_	Action	_	_	0	_	_	Offset=332-336
+2	flask	_	Location	_	_	0	_	_	Offset=341-346
+3	water	_	Reagent	_	_	0	_	_	Offset=352-357
+4	1	_	Amount	_	_	3	Measure	_	Offset=368-375
+
+# sent_id = s10
+# text = Fill the flask with water up to the 1 Liter mark on the flask.
+1	Place	_	Action	_	_	0	_	_	Offset=395-400
+2	magnetic	_	Device	_	_	0	_	_	Offset=403-420
+3	flask	_	Location	_	_	0	_	_	Offset=430-435
+4	place	_	Action	_	_	0	_	_	Offset=440-445
+5	flask	_	Location	_	_	0	_	_	Offset=450-455
+6	magnetic	_	Device	_	_	0	_	_	Offset=461-477
+7	dissolve	_	Action	_	_	0	_	_	Offset=481-489
+8	powder	_	Reagent	_	_	0	_	_	Offset=494-500
+9	water	_	Reagent	_	_	0	_	_	Offset=510-515
+
+# sent_id = s11
+# text = Place a magnetic stir bar into the flask and place the flask on a magnetic stirrer to dissolve the powder into the water.
+1	Remove	_	Action	_	_	0	_	_	Offset=517-523
+2	stir	_	Device	_	_	0	_	_	Offset=528-536
+3	magnetic	_	Device	_	_	0	_	_	Offset=544-556
+
+# sent_id = s12
+# text = Remove the stir bar with a magnetic rod.
+1	Place	_	Action	_	_	0	_	_	Offset=558-563
+2	aluminum	_	Seal	_	_	0	_	_	Offset=564-577
+3	top	_	Location	_	_	0	_	_	Offset=587-590
+4	flask	_	Location	_	_	3	Meronym	_	Offset=598-603
+5	autoclave	_	Action	_	_	0	_	_	Offset=613-622
+6	liquid	_	Generic-Measure	_	_	0	_	_	Offset=628-640
+7	20	_	Time	_	_	0	_	_	Offset=645-655
+
+# sent_id = s13
+# text = Place aluminum foil over the top of the flask and then autoclave on a liquid cycle for 20 minutes.
+1	pour	_	Action	_	_	0	_	_	Offset=674-678
+2	plates	_	Location	_	_	0	_	_	Offset=700-706
+3	sit	_	Action	_	_	0	_	_	Offset=720-727
+4	cool	_	Action	_	_	0	_	_	Offset=731-735
+5	overnight	_	Time	_	_	0	_	_	Offset=736-745
+6	lab	_	Location	_	_	0	_	_	Offset=753-762
+7	aliquot	_	Action	_	_	0	_	_	Offset=781-788
+8	smaller	_	Amount	_	_	0	_	_	Offset=794-809
+9	store	_	Action	_	_	0	_	_	Offset=814-819
+10	+	_	Modifier	_	_	11	Mod-Link	_	Offset=823-824
+11	4	_	Temperature	_	_	0	_	_	Offset=825-828
+

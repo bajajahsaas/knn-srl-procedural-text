@@ -1,0 +1,273 @@
+# sent_id = s1
+# text = Treatments and Preservation of Seawater Samples for FISH
+1	Add	_	Action	_	_	0	_	_	Offset=57-60
+2	formaldehyde	_	Reagent	_	_	0	_	_	Offset=61-73
+3	1-2%	_	Concentration	_	_	0	_	_	Offset=102-106
+
+# sent_id = s2
+# text = Add formaldehyde at a final concentration of 1-2% to filtrate.
+1	Fix	_	Action	_	_	0	_	_	Offset=120-123
+2	12-24	_	Time	_	_	0	_	_	Offset=128-136
+3	4°C	_	Temperature	_	_	0	_	_	Offset=140-143
+
+# sent_id = s3
+# text = Fix for 12-24 hr at 4°C.
+1	Setup	_	Action	_	_	0	_	_	Offset=145-150
+2	frittered	_	Device	_	_	0	_	_	Offset=151-174
+3	25mm	_	Size	_	_	2	Measure	_	Offset=176-189
+4	filtration	_	Location	_	_	0	_	_	Offset=194-213
+
+# sent_id = s4
+# text = Setup frittered glass support (25mm diameter) in filtration manifold.
+1	Place	_	Action	_	_	0	_	_	Offset=215-220
+2	Milli	_	Reagent	_	_	0	_	_	Offset=231-244
+3	~250-500µl	_	Amount	_	_	2	Measure	_	Offset=246-256
+4	support	_	Device	_	_	9	Meronym	_	Offset=261-268
+5	float	_	Action	_	_	0	_	_	Offset=270-275
+6	0.45µm	_	Size	_	_	7	Measure	_	Offset=276-282
+7	cellulose	_	Device	_	_	0	_	_	Offset=283-315
+8	25mm	_	Size	_	_	7	Measure	_	Offset=317-330
+9	top	_	Location	_	_	0	_	_	Offset=335-338
+10	turn	_	Action	_	_	0	_	_	Offset=340-347
+11	vacuum	_	Device	_	_	0	_	_	Offset=348-354
+12	~	_	Amount	_	_	13	Measure	_	Offset=356-362
+13	Hg	_	Reagent	_	_	11	Meronym	_	Offset=366-368
+
+# sent_id = s5
+# text = Place a drop of Milli Q water (~250-500µl) on support, float 0.45µm cellulose nitrate support filter (25mm diameter) on top, turn on vacuum (~ 5 in of Hg) to lay filter flat with no air bubbles.
+1	Turn	_	Action	_	_	0	_	_	Offset=410-418
+2	vacuum	_	Device	_	_	0	_	_	Offset=419-425
+3	release	_	Action	_	_	0	_	_	Offset=430-437
+4	pressure	_	Generic-Measure	_	_	0	_	_	Offset=438-446
+5	chamber	_	Location	_	_	0	_	_	Offset=452-459
+
+# sent_id = s6
+# text = Turn off vacuum and release pressure from chamber.
+1	Add	_	Action	_	_	0	_	_	Offset=461-464
+2	drop	_	Generic-Measure	_	_	3	Measure	_	Offset=473-477
+3	Milli	_	Reagent	_	_	0	_	_	Offset=481-488
+4	filter	_	Device	_	_	0	_	_	Offset=500-506
+5	float	_	Action	_	_	0	_	_	Offset=508-513
+6	0.2µm	_	Size	_	_	7	Measure	_	Offset=514-519
+7	polycarbonate	_	Device	_	_	0	_	_	Offset=520-549
+8	25mm	_	Size	_	_	7	Measure	_	Offset=551-564
+9	filter	_	Device	_	_	0	_	_	Offset=577-583
+
+# sent_id = s7
+# text = Add another drop of Milli Q to support filter, float 0.2µm polycarbonate membrane filter (25mm diameter) on support filter (shiny side facing up!).
+1	Save	_	Action	_	_	0	_	_	Offset=609-613
+2	filter	_	Device	_	_	0	_	_	Offset=614-637
+
+# sent_id = s8
+# text = Save filter separator sheets for storage later.
+1	Turn	_	Action	_	_	0	_	_	Offset=657-664
+2	vacuum	_	Device	_	_	0	_	_	Offset=665-671
+3	~	_	Amount	_	_	4	Measure	_	Offset=673-679
+4	Hg	_	Reagent	_	_	2	Meronym	_	Offset=683-685
+
+# sent_id = s9
+# text = Turn on vacuum (~ 5 in of Hg) to lay filter flat with no air bubbles.
+1	742	_	Action	_	_	0	_	_	Offset=727-732;740
+2	vacuum	_	Device	_	_	0	_	_	Offset=733-739
+
+# sent_id = s10
+# text = Leave vacuum on.
+1	Place	_	Action	_	_	0	_	_	Offset=744-749
+2	filter	_	Device	_	_	0	_	_	Offset=750-762
+3	membrane	_	Location	_	_	0	_	_	Offset=766-774
+4	clamp	_	Location	_	_	0	_	_	Offset=779-784
+
+# sent_id = s11
+# text = Place filter tower on membrane and clamp.
+1	Filter	_	Action	_	_	0	_	_	Offset=786-792
+2	1ml	_	Amount	_	_	3	Measure	_	Offset=793-796
+3	fixed	_	Reagent	_	_	0	_	_	Offset=800-812
+4	gentle	_	Modifier	_	_	5	Mod-Link	_	Offset=825-831
+5	vacuum	_	Device	_	_	0	_	_	Offset=832-838
+6	~5	_	Amount	_	_	7	Measure	_	Offset=840-847
+7	Hg	_	Reagent	_	_	5	Meronym	_	Offset=848-850
+8	filter	_	Action	_	_	0	_	_	Offset=853-859
+9	2	_	Amount	_	_	10	Measure	_	Offset=860-864
+10	fixed	_	Reagent	_	_	0	_	_	Offset=872-884
+11	filter	_	Device	_	_	0	_	_	Offset=899-905
+
+# sent_id = s12
+# text = Filter 1ml of fixed sample by applying gentle vacuum (~5 inch Hg); filter 2 ml of the fixed sample onto a second filter.
+1	Remove	_	Action	_	_	0	_	_	Offset=960-966
+2	filter	_	Device	_	_	5	Coreference-Link	_	Offset=967-973
+3	filter	_	Location	_	_	0	_	_	Offset=979-992
+4	put	_	Action	_	_	0	_	_	Offset=997-1000
+5	it	_	Mention	_	_	0	_	_	Offset=1001-1003
+6	Kimwipes	_	Reagent	_	_	0	_	_	Offset=1007-1015
+
+# sent_id = s13
+# text = The support filter may be utilized for both samples.
+1	Cover	_	Action	_	_	0	_	_	Offset=1024-1029
+2	lid	_	Seal	_	_	0	_	_	Offset=1045-1048
+3	cryo	_	Location	_	_	0	_	_	Offset=1054-1062
+4	Petri	_	Location	_	_	3	Or	_	Offset=1068-1078
+
+# sent_id = s14
+# text = Remove filter from filter holder and put it on Kimwipes to dry.
+1	air-dry	_	Action	_	_	0	_	_	Offset=1089-1096
+
+# sent_id = s15
+# text = Cover, e.g. with the lid of a cryo box or a Petri dish.
+1	Label	_	Action	_	_	0	_	_	Offset=1098-1103
+2	membrane	_	Device	_	_	5	Coreference-Link	_	Offset=1104-1119
+3	pencil	_	Device	_	_	0	_	_	Offset=1125-1131
+4	place	_	Action	_	_	0	_	_	Offset=1133-1138
+5	membrane	_	Mention	_	_	0	_	_	Offset=1139-1154
+6	separator	_	Reagent	_	_	0	_	_	Offset=1163-1179
+
+# sent_id = s16
+# text = Allow to air-dry.
+1	Seal	_	Action	_	_	0	_	_	Offset=1266-1270
+2	Petri	_	Location	_	_	6	Coreference-Link	_	Offset=1271-1281
+3	parafilm	_	Reagent	_	_	0	_	_	Offset=1287-1295
+4	tape	_	Reagent	_	_	0	_	_	Offset=1328-1332
+5	put	_	Action	_	_	0	_	_	Offset=1338-1341
+6	Petri	_	Mention	_	_	0	_	_	Offset=1342-1354
+7	Ziploc	_	Location	_	_	0	_	_	Offset=1362-1372
+
+# sent_id = s17
+# text = Label membrane filter with pencil; place membrane filter between separator sheets (will prevent the membrane filters from sticking to each other or to the Petri dish).
+1	Store	_	Action	_	_	0	_	_	Offset=1375-1380
+2	-20°C	_	Temperature	_	_	0	_	_	Offset=1384-1389
+
+# sent_id = s18
+# text = Seal Petri dish with parafilm, prevent dish from opening with tape, and put Petri dishes into a Ziploc bag. 
+1	Setup	_	Action	_	_	0	_	_	Offset=1503-1508
+2	1548	_	Device	_	_	0	_	_	Offset=1509-1524;1541
+3	47mm	_	Size	_	_	2	Setting	_	Offset=1526-1539
+4	filtration	_	Location	_	_	0	_	_	Offset=1552-1571
+
+# sent_id = s19
+# text = Store at -20°C until processing.
+1	Place	_	Action	_	_	0	_	_	Offset=1573-1578
+2	Milli	_	Reagent	_	_	0	_	_	Offset=1589-1602
+3	~1ml	_	Amount	_	_	2	Measure	_	Offset=1604-1608
+4	support	_	Location	_	_	9	Meronym	_	Offset=1613-1620
+5	float	_	Action	_	_	0	_	_	Offset=1622-1627
+6	0.45µm	_	Size	_	_	7	Setting	_	Offset=1628-1634
+7	cellulose	_	Device	_	_	0	_	_	Offset=1635-1667
+8	47mm	_	Size	_	_	7	Setting	_	Offset=1669-1682
+9	top	_	Location	_	_	0	_	_	Offset=1687-1690
+10	turn	_	Action	_	_	0	_	_	Offset=1692-1699
+11	vacuum	_	Device	_	_	0	_	_	Offset=1700-1706
+12	~	_	Numerical	_	_	0	_	_	Offset=1708-1711
+13	in	_	Measure-Type	_	_	12	Of-Type	_	Offset=1712-1720
+
+# sent_id = s20
+# text = Filters can be stored frozen for several months without apparent loss of hybridization signal.
+1	Turn	_	Action	_	_	0	_	_	Offset=1762-1770
+2	vacuum	_	Device	_	_	0	_	_	Offset=1771-1777
+3	release	_	Action	_	_	0	_	_	Offset=1782-1789
+4	pressure	_	Generic-Measure	_	_	0	_	_	Offset=1790-1798
+
+# sent_id = s21
+# text = Setup frittered glass (47mm diameter) support in filtration manifold.
+1	Add	_	Action	_	_	0	_	_	Offset=1813-1816
+2	drop	_	Amount	_	_	3	Measure	_	Offset=1825-1829
+3	Milli	_	Reagent	_	_	0	_	_	Offset=1833-1840
+4	support	_	Location	_	_	0	_	_	Offset=1844-1858
+5	float	_	Action	_	_	0	_	_	Offset=1860-1865
+6	0.2µm	_	Amount	_	_	7	Setting	_	Offset=1866-1871
+7	polycarbonate	_	Device	_	_	0	_	_	Offset=1872-1901
+8	47mm	_	Size	_	_	7	Setting	_	Offset=1903-1916
+9	support	_	Location	_	_	10	Meronym	_	Offset=1921-1935
+10	shiny	_	Location	_	_	0	_	_	Offset=1937-1947
+11	facing	_	Action	_	_	0	_	_	Offset=1948-1954
+12	up	_	Location	_	_	0	_	_	Offset=1955-1957
+
+# sent_id = s22
+# text = Place a drop of Milli Q water (~1ml) on support, float 0.45µm cellulose nitrate support filter (47mm diameter) on top, turn on vacuum (~ 5 in of Hg) to lay filter flat with no air bubbles.
+1	Save	_	Action	_	_	0	_	_	Offset=1961-1965
+2	filter	_	Reagent	_	_	0	_	_	Offset=1966-1989
+
+# sent_id = s23
+# text = Turn off vacuum and release pressure from chamber.
+1	Turn	_	Action	_	_	0	_	_	Offset=2009-2016
+2	vacuum	_	Device	_	_	0	_	_	Offset=2017-2023
+3	~	_	Numerical	_	_	0	_	_	Offset=2025-2028
+4	in	_	Measure-Type	_	_	3	Of-Type	_	Offset=2029-2037
+
+# sent_id = s24
+# text = Add another drop of Milli Q to support filter, float 0.2µm polycarbonate membrane filter (47mm diameter) on support filter (shiny side facing up!).
+1	2094	_	Action	_	_	0	_	_	Offset=2079-2084;2092
+2	vacuum	_	Device	_	_	0	_	_	Offset=2085-2091
+
+# sent_id = s25
+# text = Save filter separator sheets for storage later.
+1	Place	_	Action	_	_	0	_	_	Offset=2096-2101
+2	filter	_	Location	_	_	0	_	_	Offset=2102-2114
+3	membrane	_	Location	_	_	0	_	_	Offset=2118-2126
+4	clamp	_	Action	_	_	0	_	_	Offset=2131-2136
+
+# sent_id = s26
+# text = Turn on vacuum (~ 5 in of Hg) to lay filter flat with no air bubbles.
+1	Filter	_	Action	_	_	0	_	_	Offset=2138-2144
+2	appropriate	_	Generic-Measure	_	_	3	Measure	_	Offset=2145-2163
+3	fixed	_	Reagent	_	_	0	_	_	Offset=2181-2193
+4	vacuum	_	Device	_	_	0	_	_	Offset=2213-2219
+5	~5	_	Numerical	_	_	4	Setting	_	Offset=2221-2223
+6	inch	_	Measure-Type	_	_	5	Of-Type	_	Offset=2224-2231
+
+# sent_id = s27
+# text = Leave vacuum on.
+1	wash	_	Action	_	_	0	_	_	Offset=2324-2328
+2	filter	_	Device	_	_	0	_	_	Offset=2329-2335
+3	tower	_	Device	_	_	0	_	_	Offset=2340-2345
+4	20-30	_	Amount	_	_	5	Measure	_	Offset=2351-2359
+5	sterile	_	Reagent	_	_	7	Coreference-Link	_	Offset=2363-2374
+6	remove	_	Action	_	_	0	_	_	Offset=2376-2382
+7	H2O	_	Mention	_	_	0	_	_	Offset=2383-2386
+8	vacuum	_	Device	_	_	0	_	_	Offset=2390-2396
+
+# sent_id = s28
+# text = Place filter tower on membrane and clamp.
+1	Remove	_	Action	_	_	0	_	_	Offset=2398-2404
+2	filter	_	Device	_	_	0	_	_	Offset=2405-2411
+3	filter	_	Location	_	_	0	_	_	Offset=2417-2430
+4	2444	_	Action	_	_	0	_	_	Offset=2435-2438;2442
+5	it	_	Mention	_	_	0	_	_	Offset=2439-2441
+6	Kimwipes	_	Reagent	_	_	0	_	_	Offset=2445-2453
+
+# sent_id = s29
+# text = Filter appropriate volume (see Table I) of fixed sample by applying gentle vacuum (~5 inch Hg).
+1	Cover	_	Action	_	_	0	_	_	Offset=2462-2467
+
+# sent_id = s30
+# text = The support filter may be utilized for several samples.
+1	lid	_	Seal	_	_	2	Meronym	_	Offset=2483-2486
+2	cryo	_	Location	_	_	0	_	_	Offset=2492-2500
+3	Petri	_	Location	_	_	1	Or	_	Offset=2506-2516
+
+# sent_id = s31
+# text = After complete sample filtration, wash filter and tower with 20-30 ml of sterile H2O; remove H2O by vacuum.
+1	air-dry	_	Action	_	_	0	_	_	Offset=2527-2534
+
+# sent_id = s32
+# text = Remove filter from filter holder and put it on Kimwipes to dry.
+1	Label	_	Action	_	_	0	_	_	Offset=2536-2541
+2	membrane	_	Device	_	_	0	_	_	Offset=2542-2557
+3	pencil	_	Device	_	_	0	_	_	Offset=2563-2569
+4	place	_	Action	_	_	0	_	_	Offset=2571-2576
+5	membrane	_	Device	_	_	0	_	_	Offset=2577-2592
+6	separator	_	Reagent	_	_	0	_	_	Offset=2601-2617
+
+# sent_id = s33
+# text = Cover, e.g.
+1	Seal	_	Action	_	_	0	_	_	Offset=2704-2708
+2	Petri	_	Location	_	_	0	_	_	Offset=2709-2719
+3	parafilm	_	Reagent	_	_	0	_	_	Offset=2725-2733
+4	tape	_	Reagent	_	_	0	_	_	Offset=2766-2770
+5	put	_	Action	_	_	0	_	_	Offset=2776-2779
+6	Petri	_	Location	_	_	0	_	_	Offset=2780-2792
+7	Ziploc	_	Location	_	_	0	_	_	Offset=2800-2810
+
+# sent_id = s34
+# text = with the lid of a cryo box or a Petri dish.
+1	Store	_	Action	_	_	0	_	_	Offset=2813-2818
+2	-20°C	_	Temperature	_	_	0	_	_	Offset=2822-2827
+

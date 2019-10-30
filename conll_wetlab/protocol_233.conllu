@@ -1,0 +1,263 @@
+# sent_id = s1
+# text = A degenerate primer reverse transcriptionpolymerase chain reaction protocol to determine the diversity of picorna-like viruses
+1	Whole	_	Reagent	_	_	0	_	_	Offset=127-141
+2	0.22-filtered	_	Reagent	_	_	1	Or	_	Offset=207-229
+3	filtered	_	Action	_	_	0	_	_	Offset=287-295
+4	0.02	_	Size	_	_	5	Measure	_	Offset=315-322
+5	aluminum	_	Reagent	_	_	0	_	_	Offset=323-344
+
+# sent_id = s2
+# text = Whole seawater (if intracellular viruses are to be included in the analysis) or 0.22-filtered seawater (if only the free virus community is targeted) is gently filtered (7 mmHg) through a 0.02 µm aluminum oxide filter (Anotop, Whatman).
+1	pumped	_	Reagent	_	_	0	_	_	Offset=447-457
+2	remove	_	Action	_	_	0	_	_	Offset=461-467
+3	503	_	Amount	_	_	4	Measure	_	Offset=468-475;492
+4	residual	_	Reagent	_	_	0	_	_	Offset=476-491
+
+# sent_id = s3
+# text = Filtration should continue until the rate slows dramatically or drops to zero.
+1	seal	_	Action	_	_	0	_	_	Offset=515-519
+2	filter	_	Location	_	_	0	_	_	Offset=524-549
+3	parafilm	_	Seal	_	_	0	_	_	Offset=555-563
+
+# sent_id = s4
+# text = Use pumped air to remove as much residual sample as possible.
+1	Label	_	Action	_	_	0	_	_	Offset=565-570
+2	filter	_	Location	_	_	0	_	_	Offset=575-581
+
+# sent_id = s5
+# text = Once dry, seal the filter inlets and outlets with parafilm.
+1	Flash-freeze	_	Action	_	_	0	_	_	Offset=583-595
+2	filter	_	Location	_	_	0	_	_	Offset=600-606
+3	liquid	_	Reagent	_	_	0	_	_	Offset=610-625
+
+# sent_id = s6
+# text = Label the filter.
+1	Store	_	Action	_	_	0	_	_	Offset=627-632
+2	it	_	Mention	_	_	0	_	_	Offset=633-635
+3	–80°C	_	Temperature	_	_	0	_	_	Offset=639-644
+
+# sent_id = s7
+# text = Flash-freeze the filter in liquid nitrogen.
+1	Total	_	Reagent	_	_	0	_	_	Offset=663-682
+2	extracted	_	Action	_	_	0	_	_	Offset=687-696
+3	aluminum	_	Location	_	_	0	_	_	Offset=706-728
+4	Masterpure	_	Device	_	_	0	_	_	Offset=737-785
+
+# sent_id = s8
+# text = Store it at –80°C until extraction.
+1	Remove	_	Action	_	_	0	_	_	Offset=816-822
+2	contaminating	_	Reagent	_	_	0	_	_	Offset=823-840
+3	RNA	_	Reagent	_	_	0	_	_	Offset=846-862
+4	Turbo	_	Device	_	_	0	_	_	Offset=872-911
+5	as	_	Modifier	_	_	0	_	_	Offset=912-962
+
+# sent_id = s9
+# text = Total nucleic acids are extracted from the aluminum oxide filters using a Masterpure complete DNA and RNA Purification kit (Epicenter, Biotechnologies).
+1	Each	_	Modifier	_	_	2	Mod-Link	_	Offset=964-968
+2	cDNA	_	Reagent	_	_	4	Meronym	7:Meronym|9:Meronym	Offset=969-982
+3	11	_	Amount	_	_	4	Measure	_	Offset=992-997
+4	extracted	_	Reagent	_	_	0	_	_	Offset=1001-1046
+5	0.2	_	Concentration	_	_	7	Measure	_	Offset=1048-1054
+6	each	_	Modifier	_	_	7	Mod-Link	_	Offset=1058-1062
+7	dNTP	_	Reagent	_	_	0	_	_	Offset=1063-1067
+8	100	_	Amount	_	_	9	Measure	_	Offset=1073-1079
+9	N6	_	Reagent	_	_	0	_	_	Offset=1083-1092
+10	13	_	Amount	_	_	2	Measure	_	Offset=1114-1119
+
+# sent_id = s10
+# text = Remove contaminating DNA from RNA preparations with the Turbo DNA-free kit (Applied Biosystems) as described in the protocol provided with the kit.
+1	heating	_	Action	_	_	0	_	_	Offset=1193-1200
+2	sample	_	Reagent	_	_	6	Coreference-Link	_	Offset=1205-1211
+3	65°C	_	Temperature	_	_	0	_	_	Offset=1215-1219
+4	5	_	Time	_	_	0	_	_	Offset=1224-1229
+5	cooling	_	Action	_	_	0	_	_	Offset=1239-1246
+6	it	_	Mention	_	_	0	_	_	Offset=1247-1249
+7	on	_	Location	_	_	0	_	_	Offset=1250-1256
+
+# sent_id = s11
+# text = Each cDNA reaction contains 11 µL of extracted Turbo DNA-free–treated RNA template, 0.2 mM of each dNTP, and 100 ng of N6 primer in a total volume of 13 µL.
+1	DTT	_	Reagent	_	_	0	_	_	Offset=1278-1281
+2	0.5	_	Concentration	_	_	1	Measure	_	Offset=1283-1289
+3	added	_	Action	_	_	0	_	_	Offset=1306-1311
+4	reaction	_	Reagent	_	_	0	_	_	Offset=1319-1327
+5	40	_	Amount	_	_	6	Measure	_	Offset=1368-1372
+6	RNase	_	Reagent	_	_	0	_	_	Offset=1373-1395
+7	protect	_	Action	_	_	0	_	_	Offset=1399-1406
+8	sample	_	Reagent	_	_	0	_	_	Offset=1411-1417
+
+# sent_id = s12
+# text = Denaturation and annealing of the primers to the RNA template occurs by heating the sample to 65°C for 5 min and then cooling it on ice.
+1	complementary	_	Reagent	_	_	0	_	_	Offset=1443-1467
+2	synthesized	_	Action	_	_	0	_	_	Offset=1471-1482
+3	200	_	Amount	_	_	4	Measure	_	Offset=1488-1493
+4	Superscript	_	Reagent	_	_	0	_	_	Offset=1494-1544
+
+# sent_id = s13
+# text = While still on ice, DTT (0.5 mM final conc.) is added to the reaction as an enzyme stabilization reagent with 40 U RNase OUT (Invitrogen) to protect the sample from RNAse activity.
+1	reaction	_	Reagent	_	_	0	_	_	Offset=1593-1601
+2	incubated	_	Action	_	_	0	_	_	Offset=1605-1614
+3	25°C	_	Temperature	_	_	0	_	_	Offset=1628-1632
+4	5	_	Time	_	_	0	_	_	Offset=1637-1642
+
+# sent_id = s14
+# text = The complementary DNA strand is synthesized with 200 U Superscript III (Invitrogen) Reverse Transcriptase.
+1	1788	_	Action	_	_	0	_	_	Offset=1759-1770;1779
+2	50°C	_	Temperature	_	_	0	_	_	Offset=1792-1796
+3	60	_	Time	_	_	0	_	_	Offset=1870-1876
+
+# sent_id = s15
+# text = The final reaction volume should be 20 µL.
+1	1918	_	Action	_	_	0	_	_	Offset=1882-1890;1908
+2	enzyme	_	Reagent	_	_	0	_	_	Offset=1898-1904
+3	incubating	_	Action	_	_	0	_	_	Offset=1922-1932
+4	reaction	_	Reagent	_	_	0	_	_	Offset=1937-1945
+5	85°C	_	Temperature	_	_	0	_	_	Offset=1949-1953
+6	5	_	Time	_	_	0	_	_	Offset=1958-1962
+
+# sent_id = s16
+# text = The reaction is incubated initially at 25°C for 5 min so that the relatively unstable hexamer primers remain annealed to the template while cDNA synthesis commences.
+1	add	_	Action	_	_	0	_	_	Offset=1987-1990
+2	1	_	Amount	_	_	3	Measure	_	Offset=1991-2001
+3	RNase	_	Reagent	_	_	0	_	_	Offset=2005-2025
+4	reaction	_	Reagent	_	_	0	_	_	Offset=2033-2041
+5	incubate	_	Action	_	_	0	_	_	Offset=2046-2054
+6	37°C	_	Temperature	_	_	0	_	_	Offset=2058-2062
+7	20	_	Time	_	_	0	_	_	Offset=2067-2073
+8	digest	_	Action	_	_	0	_	_	Offset=2077-2083
+9	RNA	_	Reagent	_	_	0	_	_	Offset=2088-2100
+10	cDNA:RNA	_	Reagent	_	_	9	Meronym	_	Offset=2110-2127
+
+# sent_id = s17
+# text = The temperature is then increased to 50°C, the temperature at which Superscript III’s processivity is highest, for 60 min.
+1	2149	_	Action	_	_	0	_	_	Offset=2129-2132;2140
+2	RdRp,	_	Reagent	_	_	0	_	_	Offset=2159-2214
+3	listed	_	Modifier	_	_	2	Mod-Link	_	Offset=2215-2232
+4	cDNA	_	Reagent	_	_	0	_	_	Offset=2241-2245
+5	synthesized	_	Action	_	_	0	_	_	Offset=2246-2257
+
+# sent_id = s18
+# text = The activity of the enzyme is terminated by incubating the reaction at 85°C for 5 min.
+1	0.2	_	Size	_	_	2	Measure	_	Offset=2285-2291
+2	nuclease-free	_	Location	_	_	0	_	_	Offset=2292-2314
+3	add	_	Action	_	_	0	_	_	Offset=2316-2319
+4	reaction	_	Reagent	_	_	0	_	_	Offset=2320-2339
+5	achieve	_	Action	_	_	0	_	_	Offset=2343-2371
+6	1×	_	Concentration	_	_	7	Measure	_	Offset=2375-2377
+7	Platinum	_	Reagent	_	_	0	_	_	Offset=2378-2397
+8	3	_	Concentration	_	_	9	Measure	_	Offset=2399-2403
+9	MgCl2	_	Reagent	_	_	0	_	_	Offset=2404-2409
+10	0.2	_	Concentration	_	_	12	Measure	_	Offset=2411-2417
+11	each	_	Modifier	_	_	12	Mod-Link	_	Offset=2421-2425
+12	dNTP	_	Reagent	_	_	0	_	_	Offset=2426-2430
+13	1	_	Concentration	_	_	15	Measure	_	Offset=2432-2436
+14	each	_	Modifier	_	_	15	Mod-Link	_	Offset=2440-2444
+15	primer	_	Reagent	_	_	0	_	_	Offset=2445-2451
+16	1	_	Amount	_	_	17	Measure	_	Offset=2457-2463
+17	Platinum	_	Reagent	_	_	0	_	_	Offset=2467-2507
+
+# sent_id = s19
+# text = After cDNA synthesis, add 1 µL (2 U) of RNase H (Invitrogen) to the reaction and incubate at 37°C for 20 min to digest the RNA template from the cDNA:RNA molecule.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2509-2517
+2	reactions	_	Reagent	_	_	0	_	_	Offset=2522-2531
+3	94°C	_	Temperature	_	_	0	_	_	Offset=2579-2583
+4	75	_	Time	_	_	0	_	_	Offset=2588-2592
+5	denaturation	_	Action	_	_	0	_	_	Offset=2716-2728
+6	94°C	_	Temperature	_	_	0	_	_	Offset=2732-2736
+7	45	_	Time	_	_	0	_	_	Offset=2741-2745
+8	annealing	_	Action	_	_	0	_	_	Offset=2747-2756
+9	primer-specific	_	Temperature	_	_	0	_	_	Offset=2762-2789
+10	45	_	Time	_	_	0	_	_	Offset=2804-2808
+11	extension	_	Action	_	_	0	_	_	Offset=2814-2823
+12	72°C	_	Temperature	_	_	0	_	_	Offset=2827-2831
+13	45	_	Time	_	_	0	_	_	Offset=2836-2840
+
+# sent_id = s20
+# text = PCR can be performed with the RdRp, Mpl.sc1, Mpl.sc2, Mplsc3, and Mpl.cdh primer sets listed in Table 1 and the cDNA synthesized in the previous step.
+1	purify	_	Action	_	_	0	_	_	Offset=2946-2952
+2	concentrate	_	Action	_	_	0	_	_	Offset=2957-2968
+3	PCR	_	Reagent	_	_	0	_	_	Offset=2973-2986
+4	MinElute	_	Device	_	_	0	_	_	Offset=2994-3030
+
+# sent_id = s21
+# text = In a 0.2 mL nuclease-free PCR tube, add reaction components to achieve final concentrations of 1× Platinum Taq buffer, 3 mM MgCl2, 0.2 mM of each dNTP, 1 µM of each primer, and 1 unit of Platinum Taq DNA polymerase (Invitrogen).
+1	Purified	_	Reagent	_	_	0	_	_	Offset=3065-3086
+2	loaded	_	Action	_	_	0	_	_	Offset=3091-3097
+3	1%	_	Concentration	_	_	4	Measure	_	Offset=3105-3107
+4	agarose	_	Reagent	_	_	5	Meronym	_	Offset=3108-3119
+5	1×	_	Reagent	_	_	7	Meronym	_	Offset=3131-3162
+6	0.5×	_	Concentration	_	_	7	Measure	_	Offset=3167-3171
+7	TBE	_	Reagent	_	_	0	_	_	Offset=3172-3182
+
+# sent_id = s22
+# text = Incubate the reactions with the following thermal cycling conditions: 94°C for 75 s (this is necessary to activate the enzyme and ensures complete initial denaturation of template), followed by 35 cycles of denaturation at 94°C for 45 s, annealing at a primer-specific temperature (Table 1) for 45 s, and extension at 72°C for 45 s. 
+1	Bands	_	Reagent	_	_	0	_	_	Offset=3184-3196
+2	approximately	_	Size	_	_	1	Measure	_	Offset=3222-3242
+3	excised	_	Action	_	_	0	_	_	Offset=3248-3255
+4	purified	_	Action	_	_	0	_	_	Offset=3260-3268
+5	MinElute	_	Device	_	_	0	_	_	Offset=3276-3312
+
+# sent_id = s23
+# text = Complete the cycle with a single final extension step of 9 min 15 s at 72°C.
+1	eluting	_	Action	_	_	0	_	_	Offset=3372-3379
+2	DNA	_	Reagent	_	_	0	_	_	Offset=3380-3383
+3	column	_	Location	_	_	2	Meronym	_	Offset=3393-3399
+4	10	_	Amount	_	_	5	Measure	_	Offset=3421-3426
+5	nuclease-free	_	Reagent	_	_	0	_	_	Offset=3427-3445
+
+# sent_id = s24
+# text = Before gel separation, we purify and concentrate the PCR reactions with a MinElute PCR cleanup column (Qiagen) as described by the manufacturer.
+1	PCR	_	Reagent	_	_	0	_	_	Offset=3520-3532
+2	polished	_	Action	_	_	0	_	_	Offset=3537-3545
+3	phosphorylated	_	Action	_	_	0	_	_	Offset=3550-3564
+4	PCRTerminator	_	Device	_	_	0	_	_	Offset=3574-3611
+
+# sent_id = s25
+# text = Purified PCR products are loaded onto a 1% agarose gel containing 1× SYBR safe stain (Invitrogen) and 0.5× TBE buffer.
+1	15-min	_	Time	_	_	0	_	_	Offset=3655-3661
+2	incubation	_	Action	_	_	0	_	_	Offset=3662-3672
+3	room	_	Temperature	_	_	0	_	_	Offset=3676-3692
+4	reaction	_	Reagent	_	_	0	_	_	Offset=3697-3705
+5	purified	_	Action	_	_	0	_	_	Offset=3709-3717
+6	concentrated	_	Action	_	_	0	_	_	Offset=3722-3734
+7	MinElute	_	Device	_	_	0	_	_	Offset=3742-3783
+
+# sent_id = s26
+# text = Bands of DNA of the appropriate size (approximately 500 bp) are excised and purified with a MinElute Gel Extraction kit (Qiagen) according to the manufacturer’s instructions.
+1	eluted	_	Reagent	_	_	0	_	_	Offset=3789-3808
+2	ligated	_	Action	_	_	0	_	_	Offset=3826-3833
+3	pSMART-HCKan	_	Reagent	_	_	0	_	_	Offset=3843-3872
+
+# sent_id = s27
+# text = We recommend eluting DNA from the column with three washes of 10 µL nuclease-free water in preparation for the end repair reaction.
+1	terminating	_	Action	_	_	0	_	_	Offset=3910-3921
+2	ligation	_	Reagent	_	_	0	_	_	Offset=3926-3943
+3	incubating	_	Action	_	_	0	_	_	Offset=3947-3957
+4	15	_	Time	_	_	0	_	_	Offset=3962-3968
+5	70°C	_	Temperature	_	_	0	_	_	Offset=3972-3976
+6	2	_	Amount	_	_	7	Measure	_	Offset=3978-3982
+7	ligation	_	Reagent	_	_	0	_	_	Offset=3990-4007
+8	transformed	_	Action	_	_	0	_	_	Offset=4011-4022
+9	Ecloni	_	Reagent	_	_	0	_	_	Offset=4028-4062
+10	electroporation	_	Method	_	_	0	_	_	Offset=4067-4082
+
+# sent_id = s28
+# text = In preparation for ligation, PCR products are polished and phosphorylated with the PCRTerminator End Repair kit (Lucigen) as described by the manufacturer.
+1	screening	_	Action	_	_	0	_	_	Offset=4148-4157
+2	10	_	Numerical	_	_	3	Measure	_	Offset=4158-4166
+3	colonies	_	Reagent	_	_	0	_	_	Offset=4167-4175
+4	inserts	_	Action	_	_	0	_	_	Offset=4180-4187
+5	PCR	_	Method	_	_	0	_	_	Offset=4191-4208
+6	primers	_	Reagent	_	_	0	_	_	Offset=4218-4237
+7	assess	_	Action	_	_	0	_	_	Offset=4251-4269
+8	library	_	Reagent	_	_	0	_	_	Offset=4277-4284
+
+# sent_id = s29
+# text = After a 15-min incubation at room temperature the reaction is purified and concentrated with a MinElute Reaction Cleanup column (Qiagen).
+1	Colony	_	Reagent	_	_	0	_	_	Offset=4286-4305
+2	visualized	_	Action	_	_	0	_	_	Offset=4313-4323
+3	gel	_	Reagent	_	_	0	_	_	Offset=4329-4332
+4	products	_	Reagent	_	_	0	_	_	Offset=4341-4349
+5	in	_	Modifier	_	_	4	Mod-Link	_	Offset=4350-4375
+6	purified	_	Action	_	_	0	_	_	Offset=4376-4384
+7	sequenced	_	Action	_	_	0	_	_	Offset=4389-4398
+

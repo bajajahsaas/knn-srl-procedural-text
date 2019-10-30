@@ -1,0 +1,1052 @@
+# sent_id = s1
+# text = NEXTflex™ mtDNA-Seq for blood samples
+1	Briefly	_	Modifier	_	_	0	_	_	Offset=38-45
+2	spin	_	Action	_	_	0	_	_	Offset=46-55
+3	component	_	Reagent	_	_	0	_	_	Offset=61-70
+
+# sent_id = s2
+# text = Briefly spin down each component to ensure material has not lodged in the cap or side of tube.
+1	Keep	_	Action	_	_	0	_	_	Offset=133-137
+2	ice	_	Temperature	_	_	0	_	_	Offset=141-144
+3	vortex	_	Action	_	_	0	_	_	Offset=149-155
+4	tube	_	Location	_	_	0	_	_	Offset=161-165
+
+# sent_id = s3
+# text = Keep on ice and vortex each tube prior to use.
+1	Allow	_	Action	_	_	0	_	_	Offset=180-185
+2	Agencourt	_	Reagent	_	_	0	_	_	Offset=186-211
+3	room	_	Temperature	_	_	0	_	_	Offset=223-239
+4	vortex	_	Action	_	_	0	_	_	Offset=244-250
+5	beads	_	Reagent	_	_	0	_	_	Offset=255-260
+
+# sent_id = s4
+# text = Allow Agencourt AMPure XP Beads to come to room temperature and vortex the beads until liquid appears homogenous before every use.
+1	combine	_	Action	_	_	0	_	_	Offset=328-335
+2	ice	_	Temperature	_	_	0	_	_	Offset=362-365
+3	nuclease-free	_	Location	_	_	0	_	_	Offset=369-404
+
+# sent_id = s5
+# text = For each sample, combine the following reagents on ice in nuclease-free microcentrifuge tubes:_ 
+1	μL	_	Amount	_	_	2	Measure	_	Offset=408-410
+2	Nuclease-free	_	Reagent	_	_	0	_	_	Offset=410-429
+3	μL	_	Amount	_	_	4	Measure	_	Offset=431-433
+4	gDNA	_	Reagent	_	_	0	_	_	Offset=433-437
+5	2	_	Amount	_	_	4	Measure	_	Offset=439-447
+6	5	_	Amount	_	_	7	Measure	_	Offset=448-452
+7	NEXTflex™	_	Reagent	_	_	0	_	_	Offset=452-478
+8	15	_	Amount	_	_	9	Measure	_	Offset=479-484
+9	NEXTflex™	_	Reagent	_	_	0	_	_	Offset=484-510
+10	25	_	Amount	_	_	11	Measure	_	Offset=511-516
+11	NEXTflex™	_	Reagent	_	_	0	_	_	Offset=516-548
+
+# sent_id = s6
+# text = μLNuclease-free Water_ μLgDNA (2 – 4 μg)5 μLNEXTflex™ mtDNA Buffer Mix 15 μLNEXTflex™ mtDNA Buffer Mix 25 μLNEXTflex™ Nuclear DNA Digest Mix50 μLTOTAL
+1	Mix	_	Action	_	_	0	_	_	Offset=559-562
+2	well	_	Modifier	_	_	0	_	_	Offset=563-567
+3	pipetting	_	Method	_	_	0	_	_	Offset=571-580
+
+# sent_id = s7
+# text = Mix well by pipetting.
+1	Incubate	_	Action	_	_	0	_	_	Offset=582-590
+2	heat	_	Device	_	_	0	_	_	Offset=596-606
+3	48	_	Time	_	_	0	_	_	Offset=611-619
+4	37°C	_	Temperature	_	_	0	_	_	Offset=623-627
+
+# sent_id = s8
+# text = Incubate in a heat block for 48 hours at 37°C.
+1	Incubate	_	Action	_	_	0	_	_	Offset=629-637
+2	sample	_	Reagent	_	_	0	_	_	Offset=642-648
+3	70°C	_	Temperature	_	_	0	_	_	Offset=652-656
+4	30	_	Time	_	_	0	_	_	Offset=661-671
+
+# sent_id = s9
+# text = Incubate the sample at 70°C for 30 minutes.
+1	Spin	_	Action	_	_	0	_	_	Offset=673-677
+2	tubes	_	Location	_	_	0	_	_	Offset=682-687
+3	10	_	Time	_	_	0	_	_	Offset=692-702
+
+# sent_id = s10
+# text = Spin the tubes for 10 seconds to collect contents of the tube.
+1	Add	_	Action	_	_	0	_	_	Offset=736-739
+2	50	_	Amount	_	_	3	Measure	_	Offset=740-745
+3	AMPure	_	Reagent	_	_	0	_	_	Offset=749-764
+4	sample	_	Reagent	_	_	0	_	_	Offset=773-779
+5	mix	_	Action	_	_	0	_	_	Offset=784-787
+6	well	_	Modifier	_	_	0	_	_	Offset=788-792
+7	pipetting	_	Method	_	_	0	_	_	Offset=796-805
+
+# sent_id = s11
+# text = Add 50 μL of AMPure XP Beads to each sample and mix well by pipetting.
+1	Incubate	_	Action	_	_	0	_	_	Offset=807-815
+2	room	_	Temperature	_	_	0	_	_	Offset=819-835
+3	5	_	Time	_	_	0	_	_	Offset=840-849
+
+# sent_id = s12
+# text = Incubate at room temperature for 5 minutes.
+1	Place	_	Action	_	_	0	_	_	Offset=851-856
+2	tube	_	Location	_	_	0	_	_	Offset=861-865
+3	magnetic	_	Location	_	_	0	_	_	Offset=873-886
+4	room	_	Temperature	_	_	0	_	_	Offset=890-906
+5	5	_	Time	_	_	0	_	_	Offset=911-920
+
+# sent_id = s13
+# text = Place the tube on the magnetic rack at room temperature for 5 minutes or until the supernatant appears clear.
+1	Remove	_	Action	_	_	0	_	_	Offset=961-967
+2	discard	_	Action	_	_	0	_	_	Offset=972-979
+3	clear	_	Reagent	_	_	0	_	_	Offset=980-997
+
+# sent_id = s14
+# text = Remove and discard clear supernatant taking care not to disturb beads.
+1	gently	_	Modifier	_	_	0	_	_	Offset=1096-1102
+2	add	_	Action	_	_	0	_	_	Offset=1103-1106
+3	200	_	Amount	_	_	6	Measure	_	Offset=1107-1113
+4	freshly	_	Modifier	_	_	6	Mod-Link	_	Offset=1117-1133
+5	80%	_	Concentration	_	_	6	Measure	_	Offset=1134-1137
+6	ethanol	_	Reagent	_	_	0	_	_	Offset=1138-1145
+7	magnetic	_	Reagent	_	_	0	_	_	Offset=1154-1174
+8	incubate	_	Action	_	_	0	_	_	Offset=1179-1187
+9	plate	_	Location	_	_	0	_	_	Offset=1188-1193
+10	room	_	Temperature	_	_	0	_	_	Offset=1197-1213
+11	30	_	Time	_	_	0	_	_	Offset=1218-1228
+
+# sent_id = s15
+# text = Some liquid may remain in the tube.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=1230-1239
+2	remove	_	Action	_	_	0	_	_	Offset=1241-1247
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=1248-1255
+4	pipette	_	Device	_	_	0	_	_	Offset=1259-1266
+
+# sent_id = s16
+# text = Wash #1: With tube on rack, gently add 200 μL of freshly prepared 80% ethanol to each magnetic bead pellet and incubate plate at room temperature for 30 seconds.
+1	gently	_	Modifier	_	_	0	_	_	Offset=1296-1302
+2	add	_	Action	_	_	0	_	_	Offset=1303-1306
+3	200	_	Amount	_	_	6	Measure	_	Offset=1307-1313
+4	freshly	_	Modifier	_	_	6	Mod-Link	_	Offset=1317-1333
+5	80%	_	Concentration	_	_	6	Measure	_	Offset=1334-1337
+6	ethanol	_	Reagent	_	_	0	_	_	Offset=1338-1345
+7	magnetic	_	Reagent	_	_	0	_	_	Offset=1354-1374
+8	incubate	_	Action	_	_	0	_	_	Offset=1379-1387
+9	plate	_	Location	_	_	0	_	_	Offset=1388-1393
+10	room	_	Temperature	_	_	0	_	_	Offset=1397-1413
+11	30	_	Time	_	_	0	_	_	Offset=1418-1428
+
+# sent_id = s17
+# text = Carefully, remove ethanol by pipette.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=1430-1439
+2	remove	_	Action	_	_	0	_	_	Offset=1441-1447
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=1448-1455
+4	pipette	_	Device	_	_	0	_	_	Offset=1459-1466
+
+# sent_id = s18
+# text = Wash #2: With tube on rack, gently add 200 μL of freshly prepared 80% ethanol to each magnetic bead pellet and incubate plate at room temperature for 30 seconds.
+1	Remove	_	Action	_	_	0	_	_	Offset=1505-1511
+2	tube	_	Location	_	_	0	_	_	Offset=1516-1520
+3	magnetic	_	Location	_	_	0	_	_	Offset=1530-1543
+4	let	_	Action	_	_	0	_	_	Offset=1548-1555
+5	room	_	Temperature	_	_	0	_	_	Offset=1559-1575
+6	3	_	Time	_	_	0	_	_	Offset=1580-1589
+
+# sent_id = s19
+# text = Carefully, remove ethanol by pipette.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1617-1626
+2	dried	_	Reagent	_	_	0	_	_	Offset=1627-1638
+3	36	_	Amount	_	_	4	Measure	_	Offset=1644-1649
+4	Nuclease-free	_	Reagent	_	_	0	_	_	Offset=1650-1669
+
+# sent_id = s20
+# text = Ensure all ethanol has been removed.
+1	Mix	_	Action	_	_	0	_	_	Offset=1671-1674
+2	well	_	Modifier	_	_	0	_	_	Offset=1675-1679
+3	pipetting	_	Method	_	_	0	_	_	Offset=1683-1692
+
+# sent_id = s21
+# text = Remove the tube from the magnetic rack and let dry at room temperature for 3 minutes.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1755-1763
+2	resuspended	_	Reagent	_	_	0	_	_	Offset=1764-1781
+3	room	_	Temperature	_	_	0	_	_	Offset=1785-1801
+4	2	_	Time	_	_	0	_	_	Offset=1806-1815
+
+# sent_id = s22
+# text = Do not overdry the beads.
+1	Place	_	Action	_	_	0	_	_	Offset=1817-1822
+2	tube	_	Location	_	_	0	_	_	Offset=1823-1827
+3	magnetic	_	Location	_	_	0	_	_	Offset=1831-1844
+4	5	_	Time	_	_	0	_	_	Offset=1849-1858
+
+# sent_id = s23
+# text = Resuspend dried beads with 36 μL Nuclease-free Water.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=1894-1900
+2	transfer	_	Action	_	_	0	_	_	Offset=1901-1909
+3	35	_	Amount	_	_	4	Measure	_	Offset=1910-1915
+4	clear	_	Reagent	_	_	0	_	_	Offset=1919-1931
+5	fresh	_	Location	_	_	0	_	_	Offset=1937-1963
+
+# sent_id = s24
+# text = Mix well by pipetting.
+1	repeat	_	Action	_	_	0	_	_	Offset=2022-2028
+2	digestion	_	Method	_	_	0	_	_	Offset=2033-2042
+3	35	_	Amount	_	_	4	Measure	_	Offset=2048-2053
+4	eluted	_	Reagent	_	_	0	_	_	Offset=2054-2069
+
+# sent_id = s25
+# text = Ensure beads are no longer attached to the side of the well.
+1	Set	_	Action	_	_	0	_	_	Offset=2084-2090
+2	reaction	_	Reagent	_	_	0	_	_	Offset=2095-2103
+
+# sent_id = s26
+# text = Incubate resuspended beads at room temperature for 2 minutes.
+1	35	_	Amount	_	_	2	Measure	_	Offset=2116-2121
+2	Eluted	_	Reagent	_	_	0	_	_	Offset=2121-2131
+3	5	_	Amount	_	_	0	_	_	Offset=2141-2145
+4	NEXTflex™	_	Reagent	_	_	0	_	_	Offset=2145-2171
+5	15μL	_	Amount	_	_	0	_	_	Offset=2172-2176
+6	NEXTflex™	_	Reagent	_	_	0	_	_	Offset=2176-2202
+7	25	_	Amount	_	_	0	_	_	Offset=2203-2208
+8	NEXTflex™	_	Reagent	_	_	0	_	_	Offset=2208-2240
+
+# sent_id = s27
+# text = Place tube on magnetic rack for 5 minutes or until the sample appears clear.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2253-2261
+2	24	_	Time	_	_	0	_	_	Offset=2266-2274
+3	37°C	_	Temperature	_	_	0	_	_	Offset=2278-2282
+
+# sent_id = s28
+# text = Gently transfer 35 μL of clear sample to a fresh microcentrifuge tube.
+1	prepare	_	Action	_	_	0	_	_	Offset=2319-2326
+2	two	_	Numerical	_	_	0	_	_	Offset=2327-2330
+3	reactions	_	Reagent	_	_	0	_	_	Offset=2340-2349
+4	adjacent	_	Modifier	_	_	5	Mod-Link	_	Offset=2353-2361
+5	wells	_	Location	_	_	0	_	_	Offset=2362-2367
+6	96-well	_	Size	_	_	7	Measure	_	Offset=2373-2380
+7	PCR	_	Reagent	_	_	0	_	_	Offset=2381-2390
+8	ice	_	Temperature	_	_	0	_	_	Offset=2394-2397
+
+# sent_id = s29
+# text = To ensure complete removal of nuclear DNA contamination, repeat the digestion with 35 μL eluted material from Step 18.
+1	Mix	_	Action	_	_	0	_	_	Offset=2419-2422
+2	well	_	Modifier	_	_	0	_	_	Offset=2423-2427
+3	pipetting	_	Method	_	_	0	_	_	Offset=2431-2440
+
+# sent_id = s30
+# text = Set up the reaction as follows.
+1	Apply	_	Action	_	_	0	_	_	Offset=2442-2447
+2	adhesive	_	Seal	_	_	0	_	_	Offset=2448-2471
+3	place	_	Action	_	_	0	_	_	Offset=2476-2481
+4	thermocycler	_	Device	_	_	0	_	_	Offset=2485-2497
+
+# sent_id = s31
+# text = 35 μLEluted DNA (Step 18)5 μLNEXTflex™ mtDNA Buffer Mix 15μLNEXTflex™ mtDNA Buffer Mix 25 μLNEXTflex™ Nuclear DNA Digest Mix50 μLTOTAL. 
+1	Prepare	_	Action	_	_	0	_	_	Offset=2529-2536
+2	pre-stained	_	Reagent	_	_	0	_	_	Offset=2537-2558
+3	2%	_	Concentration	_	_	2	Measure	_	Offset=2559-2561
+4	Ethidium	_	Reagent	_	_	2	Or	_	Offset=2565-2597
+
+# sent_id = s32
+# text = Incubate for 24 hours at 37°C.
+1	Mix	_	Action	_	_	0	_	_	Offset=2599-2602
+2	pour	_	Action	_	_	0	_	_	Offset=2607-2611
+3	gel	_	Location	_	_	0	_	_	Offset=2617-2625
+
+# sent_id = s33
+# text = Repeat steps 6-18.
+1	Load	_	Action	_	_	0	_	_	Offset=2627-2631
+2	3	_	Amount	_	_	3	Measure	_	Offset=2632-2636
+3	PCR	_	Reagent	_	_	0	_	_	Offset=2644-2655
+4	mixed	_	Action	_	_	0	_	_	Offset=2656-2661
+5	2	_	Amount	_	_	7	Measure	_	Offset=2667-2671
+6	6X	_	Concentration	_	_	7	Measure	_	Offset=2675-2677
+7	Loading	_	Reagent	_	_	0	_	_	Offset=2678-2689
+8	7	_	Amount	_	_	9	Measure	_	Offset=2694-2698
+9	Nuclease-free	_	Reagent	_	_	0	_	_	Offset=2702-2721
+
+# sent_id = s34
+# text = For each sample prepare two separate reactions in adjacent wells of a 96-well PCR Plate on ice as described below: 
+1	Load	_	Action	_	_	0	_	_	Offset=2723-2727
+2	samples	_	Reagent	_	_	0	_	_	Offset=2732-2739
+3	gel	_	Reagent	_	_	0	_	_	Offset=2747-2750
+4	6	_	Amount	_	_	6	Measure	_	Offset=2762-2766
+5	MW	_	Size	_	_	6	Measure	_	Offset=2770-2779
+6	Ready-to-Load	_	Reagent	_	_	0	_	_	Offset=2780-2800
+
+# sent_id = s35
+# text = Mix well by pipetting.
+1	Run	_	Action	_	_	0	_	_	Offset=2802-2805
+2	gel	_	Reagent	_	_	0	_	_	Offset=2810-2813
+3	1X	_	Reagent	_	_	0	_	_	Offset=2819-2832
+4	100-120	_	Numerical	_	_	0	_	_	Offset=2836-2843
+5	V	_	Measure-Type	_	_	4	Of-Type	_	Offset=2843-2844
+6	60-120	_	Time	_	_	0	_	_	Offset=2849-2863
+
+# sent_id = s36
+# text = Apply adhesive PCR plate seal and place in thermocycler for the following PCR cycles: 
+1	Visualize	_	Action	_	_	0	_	_	Offset=2906-2915
+2	gel	_	Reagent	_	_	0	_	_	Offset=2920-2923
+3	UV	_	Device	_	_	0	_	_	Offset=2927-2946
+4	gel	_	Device	_	_	3	Or	_	Offset=2950-2978
+
+# sent_id = s37
+# text = Prepare pre-stained SYBR Gold 2% or Ethidium Bromide TAE agarose gel.
+1	Adjust	_	Action	_	_	0	_	_	Offset=3161-3167
+2	mtDNA	_	Reagent	_	_	0	_	_	Offset=3168-3180
+3	volume	_	Measure-Type	_	_	0	_	_	Offset=3181-3187
+4	130	_	Amount	_	_	0	_	_	Offset=3191-3197
+5	Nuclease-free	_	Reagent	_	_	0	_	_	Offset=3203-3222
+
+# sent_id = s38
+# text = Mix and pour into gel tray.
+1	Set	_	Action	_	_	0	_	_	Offset=3224-3227
+2	pipette	_	Device	_	_	0	_	_	Offset=3228-3235
+3	130	_	Amount	_	_	0	_	_	Offset=3239-3245
+4	mix	_	Action	_	_	0	_	_	Offset=3250-3253
+5	well	_	Modifier	_	_	0	_	_	Offset=3254-3258
+6	pipetting	_	Method	_	_	0	_	_	Offset=3262-3271
+
+# sent_id = s39
+# text = Load 3 μL of the PCR product mixed with 2 μL of 6X Loading Dye and 7 μL of Nuclease-free Water.
+1	Transfer	_	Action	_	_	0	_	_	Offset=3273-3281
+2	sample	_	Reagent	_	_	0	_	_	Offset=3286-3292
+3	Covaris	_	Location	_	_	0	_	_	Offset=3298-3310
+
+# sent_id = s40
+# text = Load the samples on the gel along with 6 μL of MW 100 bp Ready-to-Load Ladder.
+1	Follow	_	Action	_	_	0	_	_	Offset=3312-3318
+2	manufacturer's	_	Method	_	_	0	_	_	Offset=3319-3346
+
+# sent_id = s41
+# text = Run the gel with 1X TAE buffer at 100-120V for 60-120 minutes, or until bands have adequately resolved.
+1	Transfer	_	Action	_	_	0	_	_	Offset=3526-3534
+2	sample	_	Reagent	_	_	0	_	_	Offset=3540-3546
+3	Covaris	_	Location	_	_	0	_	_	Offset=3554-3566
+4	15	_	Size	_	_	5	Measure	_	Offset=3572-3577
+5	microcentrifuge	_	Location	_	_	0	_	_	Offset=3578-3598
+
+# sent_id = s42
+# text = Visualize the gel on UV transilluminator or gel documentation instrument.
+1	spin	_	Action	_	_	0	_	_	Offset=3643-3652
+2	sample	_	Reagent	_	_	0	_	_	Offset=3653-3659
+3	SpeedVac	_	Device	_	_	0	_	_	Offset=3665-3673
+4	2	_	Time	_	_	0	_	_	Offset=3678-3685
+5	45°C	_	Temperature	_	_	0	_	_	Offset=3688-3692
+
+# sent_id = s43
+# text = Check for the presence of a mtDNA band and absence/significant reduction (compared to the control) of nuclear DNA bands to proceed with the subsequent steps (Fig. 2 in Guidelines).
+1	Qubit®	_	Reagent	_	_	0	_	_	Offset=3908-3928
+2	quantify	_	Action	_	_	0	_	_	Offset=3945-3953
+3	DNA	_	Generic-Measure	_	_	0	_	_	Offset=3958-3975
+
+# sent_id = s44
+# text = Adjust mtDNA sample volume to 130 μL with Nuclease-free Water.
+1	combine	_	Action	_	_	0	_	_	Offset=3994-4001
+2	ice	_	Temperature	_	_	0	_	_	Offset=4028-4031
+3	nuclease-free	_	Location	_	_	0	_	_	Offset=4037-4068
+
+# sent_id = s45
+# text = Set pipette to 130 μL and mix well by pipetting.
+1	40	_	Amount	_	_	2	Measure	_	Offset=4071-4076
+2	mtDNA	_	Reagent	_	_	0	_	_	Offset=4076-4081
+3	7	_	Amount	_	_	4	Measure	_	Offset=4121-4125
+4	NEXTflex™	_	Reagent	_	_	0	_	_	Offset=4125-4162
+5	3	_	Amount	_	_	6	Measure	_	Offset=4162-4166
+6	NEXTflex™	_	Reagent	_	_	0	_	_	Offset=4166-4203
+
+# sent_id = s46
+# text = Transfer the sample to a Covaris tube.
+1	Mix	_	Action	_	_	0	_	_	Offset=4216-4219
+2	well	_	Modifier	_	_	0	_	_	Offset=4220-4224
+3	pipetting	_	Method	_	_	0	_	_	Offset=4228-4237
+
+# sent_id = s47
+# text = Follow manufacturer's instructions.
+1	Apply	_	Action	_	_	0	_	_	Offset=4239-4244
+2	adhesive	_	Seal	_	_	0	_	_	Offset=4245-4268
+3	incubate	_	Action	_	_	0	_	_	Offset=4273-4281
+4	thermocycler	_	Device	_	_	0	_	_	Offset=4287-4299
+5	30	_	Time	_	_	0	_	_	Offset=4304-4314
+6	22°C	_	Temperature	_	_	0	_	_	Offset=4318-4322
+
+# sent_id = s48
+# text = For example, using the Covaris S2 system, the following parameters will produce fragments of 150-200 bp Peak Intensity – 5 Duty cycle – 10% Cycles per burst – 200 Time – 180 s. 
+1	Add	_	Action	_	_	0	_	_	Offset=4324-4327
+2	80	_	Amount	_	_	3	Measure	_	Offset=4328-4333
+3	AMPure	_	Reagent	_	_	0	_	_	Offset=4337-4352
+4	sample	_	Reagent	_	_	0	_	_	Offset=4361-4367
+5	mix	_	Action	_	_	0	_	_	Offset=4372-4375
+6	well	_	Modifier	_	_	0	_	_	Offset=4376-4380
+7	pipetting	_	Method	_	_	0	_	_	Offset=4384-4393
+
+# sent_id = s49
+# text = Transfer your sample from a Covaris tube to a 15 mL microcentrifuge tube.
+1	Incubate	_	Action	_	_	0	_	_	Offset=4395-4403
+2	sample	_	Reagent	_	_	0	_	_	Offset=4404-4410
+3	room	_	Temperature	_	_	0	_	_	Offset=4414-4430
+4	5	_	Time	_	_	0	_	_	Offset=4435-4444
+
+# sent_id = s50
+# text = Option 1: SpeedVac - following sonication, spin down sample in a SpeedVac for 2 hoursat 45°C to reduce the volume of your sample to ≤ 40 μL.
+1	Place	_	Action	_	_	0	_	_	Offset=4446-4451
+2	96	_	Size	_	_	3	Measure	_	Offset=4456-4463
+3	PCR	_	Location	_	_	0	_	_	Offset=4464-4473
+4	magnetic	_	Location	_	_	0	_	_	Offset=4481-4495
+5	room	_	Temperature	_	_	0	_	_	Offset=4499-4515
+
+# sent_id = s51
+# text = Do not let the sample drydown completely.
+1	Remove	_	Action	_	_	0	_	_	Offset=4569-4575
+2	discard	_	Action	_	_	0	_	_	Offset=4580-4587
+3	clear	_	Reagent	_	_	0	_	_	Offset=4588-4605
+
+# sent_id = s52
+# text = Option 2: Bead Cleanup – Alternatively a 2X AMPure XP bead clean up can be done as follows: 
+1	gently	_	Modifier	_	_	0	_	_	Offset=4703-4709
+2	add	_	Action	_	_	0	_	_	Offset=4710-4713
+3	200	_	Amount	_	_	6	Measure	_	Offset=4714-4720
+4	freshly	_	Modifier	_	_	6	Mod-Link	_	Offset=4724-4740
+5	80%	_	Concentration	_	_	6	Measure	_	Offset=4741-4744
+6	ethanol	_	Reagent	_	_	0	_	_	Offset=4745-4752
+7	magnetic	_	Location	_	_	0	_	_	Offset=4761-4781
+8	incubate	_	Action	_	_	0	_	_	Offset=4786-4794
+9	plate	_	Location	_	_	0	_	_	Offset=4795-4800
+10	room	_	Temperature	_	_	0	_	_	Offset=4804-4820
+11	30	_	Time	_	_	0	_	_	Offset=4825-4835
+
+# sent_id = s53
+# text = After concentrating the sample, Qubit® dsDNA reagents can be used to quantify the DNA concentration.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=4837-4846
+2	remove	_	Action	_	_	0	_	_	Offset=4848-4854
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=4855-4862
+4	pipette	_	Device	_	_	0	_	_	Offset=4866-4873
+
+# sent_id = s54
+# text = For each sample, combine the following reagents on ice in a nuclease-free 96 well PCR Plate: 
+1	gently	_	Modifier	_	_	0	_	_	Offset=4905-4911
+2	add	_	Action	_	_	0	_	_	Offset=4912-4915
+3	200	_	Amount	_	_	6	Measure	_	Offset=4916-4922
+4	freshly	_	Modifier	_	_	6	Mod-Link	_	Offset=4926-4942
+5	80%	_	Concentration	_	_	6	Measure	_	Offset=4943-4946
+6	ethanol	_	Reagent	_	_	0	_	_	Offset=4947-4954
+7	magnetic	_	Location	_	_	0	_	_	Offset=4963-4983
+8	incubate	_	Action	_	_	0	_	_	Offset=4988-4996
+9	plate	_	Location	_	_	0	_	_	Offset=4997-5002
+10	room	_	Temperature	_	_	0	_	_	Offset=5006-5022
+11	30	_	Time	_	_	0	_	_	Offset=5027-5037
+
+# sent_id = s55
+# text = 40 μLmtDNA (from section "Fragmentation of mtDNA")7 μLNEXTflex™ mtDNA End Repair Buffer Mix3 μLNEXTflex™ mtDNA End Repair Enzyme Mix50 μLTOTAL. 
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=5039-5048
+2	remove	_	Action	_	_	0	_	_	Offset=5050-5056
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=5057-5064
+4	pipette	_	Device	_	_	0	_	_	Offset=5068-5075
+
+# sent_id = s56
+# text = Mix well by pipetting.
+1	Remove	_	Action	_	_	0	_	_	Offset=5114-5120
+2	plate	_	Reagent	_	_	0	_	_	Offset=5125-5130
+3	magnetic	_	Location	_	_	0	_	_	Offset=5140-5154
+4	let	_	Action	_	_	0	_	_	Offset=5159-5166
+5	room	_	Temperature	_	_	0	_	_	Offset=5170-5186
+6	3	_	Time	_	_	0	_	_	Offset=5191-5200
+
+# sent_id = s57
+# text = Apply adhesive PCR plate seal and incubate on a thermocycler for 30 minutes at 22°C.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=5234-5243
+2	dried	_	Reagent	_	_	0	_	_	Offset=5244-5255
+3	17	_	Amount	_	_	4	Measure	_	Offset=5261-5266
+4	Resuspension	_	Reagent	_	_	0	_	_	Offset=5267-5286
+
+# sent_id = s58
+# text = Add 80 μL of AMPure XP Beads to each sample and mix well by pipetting.
+1	Mix	_	Action	_	_	0	_	_	Offset=5288-5291
+2	well	_	Modifier	_	_	0	_	_	Offset=5292-5296
+3	pipetting	_	Method	_	_	0	_	_	Offset=5300-5309
+
+# sent_id = s59
+# text = Incubate sample at room temperature for 5 minutes.
+1	Incubate	_	Action	_	_	0	_	_	Offset=5371-5379
+2	resuspended	_	Reagent	_	_	0	_	_	Offset=5380-5397
+3	room	_	Temperature	_	_	0	_	_	Offset=5401-5417
+4	2	_	Time	_	_	0	_	_	Offset=5422-5431
+
+# sent_id = s60
+# text = Place the 96 well PCR Plate on the magnetic stand at room temperature for 5 minutesor until the supernatant appears clear.
+1	Place	_	Action	_	_	0	_	_	Offset=5433-5438
+2	plate	_	Location	_	_	0	_	_	Offset=5439-5444
+3	magnetic	_	Location	_	_	0	_	_	Offset=5448-5462
+4	5	_	Time	_	_	0	_	_	Offset=5467-5476
+
+# sent_id = s61
+# text = Remove and discard clear supernatant taking care not to disturb beads.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=5512-5518
+2	transfer	_	Action	_	_	0	_	_	Offset=5519-5527
+3	16	_	Amount	_	_	4	Measure	_	Offset=5528-5533
+4	clear	_	Reagent	_	_	0	_	_	Offset=5537-5549
+5	well	_	Location	_	_	0	_	_	Offset=5559-5563
+
+# sent_id = s62
+# text = Some liquid may remain in wells.
+1	Combine	_	Action	_	_	0	_	_	Offset=5565-5572
+2	96	_	Size	_	_	3	Measure	_	Offset=5594-5601
+3	PCR	_	Location	_	_	0	_	_	Offset=5602-5611
+
+# sent_id = s63
+# text = Wash #1: With plate on stand, gently add 200 μL of freshly prepared 80% ethanol to each magnetic bead pellet and incubate plate at room temperature for 30 seconds.
+1	16	_	Amount	_	_	2	Measure	_	Offset=5613-5618
+2	End-Repaired	_	Reagent	_	_	0	_	_	Offset=5618-5634
+3	4.5	_	Amount	_	_	4	Measure	_	Offset=5660-5666
+4	NEXTflex™	_	Reagent	_	_	0	_	_	Offset=5666-5697
+
+# sent_id = s64
+# text = Carefully, remove ethanol by pipette.
+1	Mix	_	Action	_	_	0	_	_	Offset=5712-5715
+2	well	_	Modifier	_	_	0	_	_	Offset=5716-5720
+3	pipetting	_	Method	_	_	0	_	_	Offset=5724-5733
+
+# sent_id = s65
+# text = Wash #2: With plate on stand, gently add 200 μL of freshly prepared 80% ethanol to each magnetic bead pellet and incubate plate at room temperature for 30 seconds.
+1	Apply	_	Action	_	_	0	_	_	Offset=5735-5740
+2	adhesive	_	Seal	_	_	0	_	_	Offset=5741-5764
+3	incubate	_	Action	_	_	0	_	_	Offset=5769-5777
+4	thermocycler	_	Device	_	_	0	_	_	Offset=5783-5795
+5	30	_	Time	_	_	0	_	_	Offset=5800-5810
+6	37°C	_	Temperature	_	_	0	_	_	Offset=5814-5818
+
+# sent_id = s66
+# text = Carefully, remove ethanol by pipette.
+1	combine	_	Action	_	_	0	_	_	Offset=5837-5844
+2	96-well	_	Size	_	_	3	Measure	_	Offset=5891-5898
+3	PCR	_	Location	_	_	0	_	_	Offset=5899-5908
+
+# sent_id = s67
+# text = Ensure all ethanol has been removed.
+1	20.5	_	Amount	_	_	2	Measure	_	Offset=5910-5917
+2	3’	_	Reagent	_	_	0	_	_	Offset=5917-5934
+3	27.5	_	Amount	_	_	4	Measure	_	Offset=5959-5966
+4	NEXTflex™	_	Reagent	_	_	0	_	_	Offset=5966-5994
+5	2.0	_	Amount	_	_	6	Measure	_	Offset=5994-6000
+6	NEXTflex™	_	Reagent	_	_	0	_	_	Offset=6000-6023
+7	NEXTflex™	_	Reagent	_	_	6	Or	_	Offset=6027-6049
+
+# sent_id = s68
+# text = Remove the plate from the magnetic stand and let dry at room temperature for 3 minutes.
+1	Mix	_	Action	_	_	0	_	_	Offset=6062-6065
+2	well	_	Modifier	_	_	0	_	_	Offset=6066-6070
+3	pipetting	_	Method	_	_	0	_	_	Offset=6074-6083
+
+# sent_id = s69
+# text = Note: Do not overdry the beads.
+1	Apply	_	Action	_	_	0	_	_	Offset=6085-6090
+2	adhesive	_	Seal	_	_	0	_	_	Offset=6091-6114
+3	incubate	_	Action	_	_	0	_	_	Offset=6119-6127
+4	thermocycler	_	Device	_	_	0	_	_	Offset=6133-6145
+5	15	_	Time	_	_	0	_	_	Offset=6150-6160
+6	22°C	_	Temperature	_	_	0	_	_	Offset=6164-6168
+
+# sent_id = s70
+# text = Resuspend dried beads with 17 μL Resuspension Buffer.
+1	Add	_	Action	_	_	0	_	_	Offset=6170-6173
+2	40	_	Amount	_	_	3	Measure	_	Offset=6174-6179
+3	AMPure	_	Reagent	_	_	0	_	_	Offset=6183-6198
+4	sample	_	Reagent	_	_	0	_	_	Offset=6207-6213
+5	mix	_	Action	_	_	0	_	_	Offset=6218-6221
+6	well	_	Modifier	_	_	0	_	_	Offset=6222-6226
+7	pipetting	_	Method	_	_	0	_	_	Offset=6230-6239
+
+# sent_id = s71
+# text = Mix well by pipetting.
+1	Incubate	_	Action	_	_	0	_	_	Offset=6241-6249
+2	room	_	Temperature	_	_	0	_	_	Offset=6253-6269
+3	5	_	Time	_	_	0	_	_	Offset=6274-6283
+
+# sent_id = s72
+# text = Ensurebeads are no longer attached to the side of the well.
+1	Place	_	Action	_	_	0	_	_	Offset=6285-6290
+2	96	_	Size	_	_	3	Measure	_	Offset=6295-6302
+3	PCR	_	Reagent	_	_	0	_	_	Offset=6303-6312
+4	magnetic	_	Location	_	_	0	_	_	Offset=6320-6334
+5	room	_	Temperature	_	_	0	_	_	Offset=6338-6354
+6	5	_	Time	_	_	0	_	_	Offset=6359-6368
+
+# sent_id = s73
+# text = Incubate resuspended beads at room temperature for 2 minutes.
+1	Set	_	Action	_	_	0	_	_	Offset=6408-6411
+2	pipette	_	Device	_	_	0	_	_	Offset=6412-6419
+3	88	_	Amount	_	_	0	_	_	Offset=6423-6428
+4	gently	_	Modifier	_	_	0	_	_	Offset=6433-6439
+5	remove	_	Action	_	_	0	_	_	Offset=6440-6446
+6	clear	_	Reagent	_	_	0	_	_	Offset=6447-6464
+
+# sent_id = s74
+# text = Place plate on magnetic stand for 5 minutes or until the sample appears clear.
+1	gently	_	Modifier	_	_	0	_	_	Offset=6561-6567
+2	add	_	Action	_	_	0	_	_	Offset=6568-6571
+3	200	_	Amount	_	_	6	Measure	_	Offset=6572-6578
+4	freshly	_	Modifier	_	_	6	Mod-Link	_	Offset=6582-6598
+5	80%	_	Concentration	_	_	6	Measure	_	Offset=6599-6602
+6	ethanol	_	Reagent	_	_	0	_	_	Offset=6603-6610
+7	sample	_	Reagent	_	_	0	_	_	Offset=6619-6625
+8	incubate	_	Action	_	_	0	_	_	Offset=6630-6638
+9	plate	_	Location	_	_	0	_	_	Offset=6639-6644
+10	room	_	Temperature	_	_	0	_	_	Offset=6648-6664
+11	30	_	Time	_	_	0	_	_	Offset=6669-6679
+
+# sent_id = s75
+# text = Gently transfer 16 μL of clear sample to a new well.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=6681-6690
+2	remove	_	Action	_	_	0	_	_	Offset=6692-6698
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=6699-6706
+4	pipette	_	Device	_	_	0	_	_	Offset=6710-6717
+
+# sent_id = s76
+# text = Combine the following in the 96 well PCR Plate:
+1	gently	_	Modifier	_	_	0	_	_	Offset=6749-6755
+2	add	_	Action	_	_	0	_	_	Offset=6756-6759
+3	200	_	Amount	_	_	6	Measure	_	Offset=6760-6766
+4	freshly	_	Modifier	_	_	6	Mod-Link	_	Offset=6770-6786
+5	80%	_	Concentration	_	_	6	Measure	_	Offset=6787-6790
+6	ethanol	_	Reagent	_	_	0	_	_	Offset=6791-6798
+7	sample	_	Reagent	_	_	0	_	_	Offset=6807-6813
+8	incubate	_	Action	_	_	0	_	_	Offset=6818-6826
+9	plate	_	Location	_	_	0	_	_	Offset=6827-6832
+10	room	_	Temperature	_	_	0	_	_	Offset=6836-6852
+11	30	_	Time	_	_	0	_	_	Offset=6857-6867
+
+# sent_id = s77
+# text = 16 μLEnd-Repaired DNA (from section "Clean-Up")4.5 μLNEXTflex™ mtDNA Adenylation Mix20.5 μLTOTAL. 
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=6869-6878
+2	remove	_	Action	_	_	0	_	_	Offset=6880-6886
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=6887-6894
+4	pipette	_	Device	_	_	0	_	_	Offset=6898-6905
+
+# sent_id = s78
+# text = Mix well by pipetting.
+1	Remove	_	Action	_	_	0	_	_	Offset=6944-6950
+2	plate	_	Location	_	_	0	_	_	Offset=6955-6960
+3	magnetic	_	Location	_	_	0	_	_	Offset=6970-6984
+4	let	_	Action	_	_	0	_	_	Offset=6989-6996
+5	room	_	Temperature	_	_	0	_	_	Offset=7000-7016
+6	3	_	Time	_	_	0	_	_	Offset=7021-7030
+
+# sent_id = s79
+# text = Apply adhesive PCR plate seal and incubate on a thermocycler for 30 minutes at 37°C.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=7032-7041
+2	dried	_	Reagent	_	_	0	_	_	Offset=7042-7053
+3	52	_	Amount	_	_	4	Measure	_	Offset=7059-7064
+4	Resuspension	_	Reagent	_	_	0	_	_	Offset=7065-7084
+
+# sent_id = s80
+# text = For each sample, combine the following reagents (in this order) in the 96-well PCR Plate:
+1	Mix	_	Action	_	_	0	_	_	Offset=7086-7089
+2	well	_	Modifier	_	_	0	_	_	Offset=7090-7094
+3	pipetting	_	Method	_	_	0	_	_	Offset=7098-7107
+
+# sent_id = s81
+# text = 20.5 μL3’ Adenylated DNA (from the above section)27.5 μLNEXTflex™ mtDNA Ligation Mix2.0 μLNEXTflex™ mtDNA Adapter or NEXTflex™ ChIP Barcode50 μLTOTAL. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=7175-7183
+2	resuspended	_	Reagent	_	_	0	_	_	Offset=7184-7201
+3	room	_	Temperature	_	_	0	_	_	Offset=7205-7221
+4	2	_	Time	_	_	0	_	_	Offset=7226-7235
+
+# sent_id = s82
+# text = Mix well by pipetting.
+1	Place	_	Action	_	_	0	_	_	Offset=7237-7242
+2	plate	_	Location	_	_	0	_	_	Offset=7243-7248
+3	magnetic	_	Location	_	_	0	_	_	Offset=7252-7266
+4	5	_	Time	_	_	0	_	_	Offset=7271-7280
+
+# sent_id = s83
+# text = Apply adhesive PCR plate seal and incubate on a thermocycler for 15 minutes at 22°C.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=7316-7322
+2	transfer	_	Action	_	_	0	_	_	Offset=7323-7331
+3	50	_	Amount	_	_	4	Measure	_	Offset=7332-7337
+4	clear	_	Reagent	_	_	0	_	_	Offset=7341-7353
+5	well	_	Location	_	_	0	_	_	Offset=7361-7365
+
+# sent_id = s84
+# text = Add 40 μL of AMPure XP Beads to each sample and mix well by pipetting.
+1	Add	_	Action	_	_	0	_	_	Offset=7367-7370
+2	40	_	Amount	_	_	3	Measure	_	Offset=7371-7376
+3	AMPure	_	Reagent	_	_	0	_	_	Offset=7380-7395
+4	sample	_	Reagent	_	_	0	_	_	Offset=7404-7410
+5	mix	_	Action	_	_	0	_	_	Offset=7415-7418
+6	well	_	Modifier	_	_	0	_	_	Offset=7419-7423
+7	pipetting	_	Method	_	_	0	_	_	Offset=7427-7436
+
+# sent_id = s85
+# text = Incubate at room temperature for 5 minutes.
+1	Incubate	_	Action	_	_	0	_	_	Offset=7438-7446
+2	room	_	Temperature	_	_	0	_	_	Offset=7450-7466
+3	5	_	Time	_	_	0	_	_	Offset=7471-7480
+
+# sent_id = s86
+# text = Place the 96 well PCR Plate on the magnetic stand at room temperature for 5 minutesor until the supernatant appears clear.
+1	Place	_	Action	_	_	0	_	_	Offset=7482-7487
+2	96	_	Size	_	_	3	Measure	_	Offset=7492-7499
+3	PCR	_	Location	_	_	0	_	_	Offset=7500-7509
+4	magnetic	_	Location	_	_	0	_	_	Offset=7517-7531
+5	room	_	Temperature	_	_	0	_	_	Offset=7535-7551
+6	5	_	Time	_	_	0	_	_	Offset=7556-7565
+
+# sent_id = s87
+# text = Set pipette to 88 μL and gently remove clear supernatant taking care not to disturbbeads.
+1	Set	_	Action	_	_	0	_	_	Offset=7605-7608
+2	pipette	_	Device	_	_	0	_	_	Offset=7609-7616
+3	88	_	Amount	_	_	0	_	_	Offset=7620-7625
+4	gently	_	Modifier	_	_	0	_	_	Offset=7630-7636
+5	remove	_	Action	_	_	0	_	_	Offset=7637-7643
+6	clear	_	Reagent	_	_	0	_	_	Offset=7644-7661
+
+# sent_id = s88
+# text = Some liquid may remain in wells.
+1	gently	_	Modifier	_	_	0	_	_	Offset=7759-7765
+2	add	_	Action	_	_	0	_	_	Offset=7766-7769
+3	200	_	Amount	_	_	6	Measure	_	Offset=7770-7776
+4	freshly	_	Modifier	_	_	6	Mod-Link	_	Offset=7780-7796
+5	80%	_	Concentration	_	_	6	Measure	_	Offset=7797-7800
+6	ethanol	_	Reagent	_	_	0	_	_	Offset=7801-7808
+7	sample	_	Reagent	_	_	0	_	_	Offset=7817-7823
+8	incubate	_	Action	_	_	0	_	_	Offset=7828-7836
+9	plate	_	Location	_	_	0	_	_	Offset=7837-7842
+10	room	_	Temperature	_	_	0	_	_	Offset=7846-7862
+11	30	_	Time	_	_	0	_	_	Offset=7867-7877
+
+# sent_id = s89
+# text = Wash #1: With plate on stand, gently add 200 μL of freshly prepared 80% ethanol to each sample and incubate plate at room temperature for 30 seconds.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=7879-7888
+2	remove	_	Action	_	_	0	_	_	Offset=7890-7896
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=7897-7904
+4	pipette	_	Device	_	_	0	_	_	Offset=7908-7915
+
+# sent_id = s90
+# text = Carefully, remove ethanol by pipette.
+1	gently	_	Modifier	_	_	0	_	_	Offset=7947-7953
+2	add	_	Action	_	_	0	_	_	Offset=7954-7957
+3	200	_	Amount	_	_	6	Measure	_	Offset=7958-7964
+4	freshly	_	Modifier	_	_	6	Mod-Link	_	Offset=7968-7984
+5	80%	_	Concentration	_	_	6	Measure	_	Offset=7985-7988
+6	ethanol	_	Reagent	_	_	0	_	_	Offset=7989-7996
+7	incubate	_	Action	_	_	0	_	_	Offset=8016-8024
+8	plate	_	Location	_	_	0	_	_	Offset=8025-8030
+9	room	_	Temperature	_	_	0	_	_	Offset=8034-8050
+10	30	_	Time	_	_	0	_	_	Offset=8055-8065
+
+# sent_id = s91
+# text = Wash #2: With plate on stand, gently add 200 μL of freshly prepared 80% ethanol to each sample and incubate plate at room temperature for 30 seconds.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=8067-8076
+2	remove	_	Action	_	_	0	_	_	Offset=8078-8084
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=8085-8092
+4	pipette	_	Device	_	_	0	_	_	Offset=8096-8103
+
+# sent_id = s92
+# text = Carefully, remove ethanol by pipette.
+1	Remove	_	Action	_	_	0	_	_	Offset=8142-8148
+2	plate	_	Location	_	_	0	_	_	Offset=8153-8158
+3	magnetic	_	Location	_	_	0	_	_	Offset=8168-8182
+4	let	_	Action	_	_	0	_	_	Offset=8187-8194
+5	room	_	Temperature	_	_	0	_	_	Offset=8198-8214
+6	3	_	Time	_	_	0	_	_	Offset=8219-8228
+
+# sent_id = s93
+# text = Ensure all ethanol has been removed.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=8230-8239
+2	dried	_	Reagent	_	_	0	_	_	Offset=8240-8251
+3	38	_	Amount	_	_	4	Measure	_	Offset=8257-8262
+4	Resuspension	_	Reagent	_	_	0	_	_	Offset=8263-8282
+
+# sent_id = s94
+# text = Remove the plate from the magnetic stand and let dry at room temperature for 3 minutes.
+1	Mix	_	Action	_	_	0	_	_	Offset=8285-8288
+2	well	_	Modifier	_	_	0	_	_	Offset=8289-8293
+3	pipetting	_	Method	_	_	0	_	_	Offset=8297-8306
+
+# sent_id = s95
+# text = Resuspend dried beads with 52 μL Resuspension Buffer.
+1	Incubate	_	Action	_	_	0	_	_	Offset=8370-8378
+2	resuspended	_	Reagent	_	_	0	_	_	Offset=8379-8396
+3	room	_	Temperature	_	_	0	_	_	Offset=8400-8416
+4	2	_	Time	_	_	0	_	_	Offset=8421-8430
+
+# sent_id = s96
+# text = Mix well by pipetting and ensuring beads are no longer attached to the side of the well.
+1	Place	_	Action	_	_	0	_	_	Offset=8432-8437
+2	plate	_	Location	_	_	0	_	_	Offset=8438-8443
+3	magnetic	_	Location	_	_	0	_	_	Offset=8447-8461
+4	5	_	Time	_	_	0	_	_	Offset=8466-8475
+
+# sent_id = s97
+# text = Incubate resuspended beads at room temperature for 2 minutes.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=8511-8517
+2	transfer	_	Action	_	_	0	_	_	Offset=8518-8526
+3	36	_	Amount	_	_	4	Measure	_	Offset=8527-8532
+4	clear	_	Reagent	_	_	0	_	_	Offset=8536-8548
+5	new	_	Location	_	_	0	_	_	Offset=8552-8560
+
+# sent_id = s98
+# text = Place plate on magnetic stand for 5 minutes or until the sample appears clear.
+1	combine	_	Action	_	_	0	_	_	Offset=8579-8586
+2	ice	_	Temperature	_	_	0	_	_	Offset=8613-8616
+3	96	_	Size	_	_	4	Measure	_	Offset=8624-8631
+4	PCR	_	Location	_	_	0	_	_	Offset=8632-8641
+
+# sent_id = s99
+# text = Gently transfer 50 μL of clear sample to new well.
+1	36	_	Amount	_	_	2	Measure	_	Offset=8643-8648
+2	Purified	_	Reagent	_	_	0	_	_	Offset=8648-8673
+3	12	_	Amount	_	_	4	Measure	_	Offset=8701-8706
+4	NEXTflex™	_	Reagent	_	_	0	_	_	Offset=8706-8730
+5	2	_	Amount	_	_	6	Measure	_	Offset=8730-8734
+6	NEXTflex™	_	Reagent	_	_	0	_	_	Offset=8734-8754
+
+# sent_id = s100
+# text = Add 40 μL of AMPure XP Beads to each sample and mix well by pipetting.
+1	Mix	_	Action	_	_	0	_	_	Offset=8767-8770
+2	well	_	Modifier	_	_	0	_	_	Offset=8771-8775
+3	pipetting	_	Method	_	_	0	_	_	Offset=8779-8788
+
+# sent_id = s101
+# text = Incubate at room temperature for 5 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=8802-8805
+2	40	_	Amount	_	_	3	Measure	_	Offset=8806-8811
+3	AMPure	_	Reagent	_	_	0	_	_	Offset=8815-8830
+4	sample	_	Reagent	_	_	0	_	_	Offset=8839-8845
+5	mix	_	Action	_	_	0	_	_	Offset=8850-8853
+6	well	_	Modifier	_	_	0	_	_	Offset=8854-8858
+7	pipetting	_	Method	_	_	0	_	_	Offset=8862-8871
+
+# sent_id = s102
+# text = Place the 96 well PCR Plate on the magnetic stand at room temperature for 5 minutes oruntil the supernatant appears clear.
+1	Incubate	_	Action	_	_	0	_	_	Offset=8873-8881
+2	room	_	Temperature	_	_	0	_	_	Offset=8885-8901
+3	5	_	Time	_	_	0	_	_	Offset=8906-8915
+
+# sent_id = s103
+# text = Set pipette to 88 μL and gently remove clear supernatant taking care not to disturb beads.
+1	Place	_	Action	_	_	0	_	_	Offset=8917-8922
+2	96	_	Size	_	_	3	Measure	_	Offset=8927-8934
+3	PCR	_	Location	_	_	0	_	_	Offset=8935-8944
+4	magnetic	_	Location	_	_	0	_	_	Offset=8952-8966
+5	room	_	Temperature	_	_	0	_	_	Offset=8970-8986
+6	5	_	Time	_	_	0	_	_	Offset=8991-9000
+
+# sent_id = s104
+# text = Some liquid may remain in wells.
+1	Set	_	Action	_	_	0	_	_	Offset=9040-9043
+2	pipette	_	Device	_	_	0	_	_	Offset=9044-9051
+3	88	_	Amount	_	_	0	_	_	Offset=9055-9060
+4	gently	_	Modifier	_	_	0	_	_	Offset=9065-9071
+5	remove	_	Action	_	_	0	_	_	Offset=9072-9078
+6	clear	_	Reagent	_	_	0	_	_	Offset=9079-9096
+
+# sent_id = s105
+# text = Wash #1: With plate on stand, gently add 200 μL of freshly prepared 80% ethanol to each sample and incubate plate at room temperature for 30 seconds.
+1	gently	_	Modifier	_	_	0	_	_	Offset=9193-9199
+2	add	_	Action	_	_	0	_	_	Offset=9200-9203
+3	200	_	Amount	_	_	6	Measure	_	Offset=9204-9210
+4	freshly	_	Modifier	_	_	6	Mod-Link	_	Offset=9214-9230
+5	80%	_	Concentration	_	_	6	Measure	_	Offset=9231-9234
+6	ethanol	_	Reagent	_	_	0	_	_	Offset=9235-9242
+7	sample	_	Reagent	_	_	0	_	_	Offset=9251-9257
+8	incubate	_	Action	_	_	0	_	_	Offset=9262-9270
+9	plate	_	Location	_	_	0	_	_	Offset=9271-9276
+10	room	_	Temperature	_	_	0	_	_	Offset=9280-9296
+11	30	_	Time	_	_	0	_	_	Offset=9301-9311
+
+# sent_id = s106
+# text = Carefully, remove ethanol by pipette.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=9313-9322
+2	remove	_	Action	_	_	0	_	_	Offset=9324-9330
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=9331-9338
+4	pipette	_	Device	_	_	0	_	_	Offset=9342-9349
+
+# sent_id = s107
+# text = Wash #2: With plate on stand, gently add 200 μL of freshly prepared 80% ethanol to each sample and incubate plate at room temperature for 30 seconds.
+1	gently	_	Modifier	_	_	0	_	_	Offset=9381-9387
+2	add	_	Action	_	_	0	_	_	Offset=9388-9391
+3	200	_	Amount	_	_	6	Measure	_	Offset=9392-9398
+4	freshly	_	Modifier	_	_	6	Mod-Link	_	Offset=9402-9418
+5	80%	_	Concentration	_	_	6	Measure	_	Offset=9419-9422
+6	ethanol	_	Reagent	_	_	0	_	_	Offset=9423-9430
+7	sample	_	Reagent	_	_	0	_	_	Offset=9439-9445
+8	incubate	_	Action	_	_	0	_	_	Offset=9450-9458
+9	plate	_	Location	_	_	0	_	_	Offset=9459-9464
+10	room	_	Temperature	_	_	0	_	_	Offset=9468-9484
+11	30	_	Time	_	_	0	_	_	Offset=9489-9499
+
+# sent_id = s108
+# text = Carefully, remove ethanol by pipette.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=9501-9510
+2	remove	_	Action	_	_	0	_	_	Offset=9512-9518
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=9519-9526
+4	pipette	_	Device	_	_	0	_	_	Offset=9530-9537
+
+# sent_id = s109
+# text = Ensure all ethanol has been removed.
+1	Remove	_	Action	_	_	0	_	_	Offset=9576-9582
+2	plate	_	Location	_	_	0	_	_	Offset=9587-9592
+3	magnetic	_	Location	_	_	0	_	_	Offset=9602-9616
+4	let	_	Action	_	_	0	_	_	Offset=9621-9628
+5	room	_	Temperature	_	_	0	_	_	Offset=9632-9648
+6	3	_	Time	_	_	0	_	_	Offset=9653-9662
+
+# sent_id = s110
+# text = Remove the plate from the magnetic stand and let dry at room temperature for 3 minutes.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=9664-9673
+2	dried	_	Reagent	_	_	0	_	_	Offset=9674-9685
+3	52	_	Amount	_	_	4	Measure	_	Offset=9691-9696
+4	Resuspension	_	Reagent	_	_	0	_	_	Offset=9697-9716
+
+# sent_id = s111
+# text = Resuspend dried beads with 38 μL Resuspension Buffer. 
+1	Mix	_	Action	_	_	0	_	_	Offset=9718-9721
+2	well	_	Modifier	_	_	0	_	_	Offset=9722-9726
+3	pipetting	_	Method	_	_	0	_	_	Offset=9730-9739
+
+# sent_id = s112
+# text = Mix well by pipetting. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=9806-9814
+2	resuspended	_	Reagent	_	_	0	_	_	Offset=9815-9832
+3	room	_	Temperature	_	_	0	_	_	Offset=9836-9852
+4	2	_	Time	_	_	0	_	_	Offset=9857-9866
+
+# sent_id = s113
+# text = Ensure beads are no longer attached to the side of the well.
+1	Place	_	Action	_	_	0	_	_	Offset=9868-9873
+2	plate	_	Location	_	_	0	_	_	Offset=9874-9879
+3	magnetic	_	Location	_	_	0	_	_	Offset=9883-9897
+4	5	_	Time	_	_	0	_	_	Offset=9902-9911
+
+# sent_id = s114
+# text = Incubate resuspended beads at room temperature for 2 minutes.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=9947-9953
+2	transfer	_	Action	_	_	0	_	_	Offset=9954-9962
+3	50	_	Amount	_	_	4	Measure	_	Offset=9963-9968
+4	clear	_	Reagent	_	_	0	_	_	Offset=9972-9984
+5	well	_	Location	_	_	0	_	_	Offset=9992-9996
+
+# sent_id = s115
+# text = Place plate on magnetic stand for 5 minutes or until the sample appears clear.
+1	Add	_	Action	_	_	0	_	_	Offset=9998-10001
+2	40	_	Amount	_	_	3	Measure	_	Offset=10002-10007
+3	AMPure	_	Reagent	_	_	0	_	_	Offset=10011-10026
+4	sample	_	Reagent	_	_	0	_	_	Offset=10035-10041
+5	mix	_	Action	_	_	0	_	_	Offset=10046-10049
+6	well	_	Modifier	_	_	0	_	_	Offset=10050-10054
+7	pipetting	_	Method	_	_	0	_	_	Offset=10058-10067
+
+# sent_id = s116
+# text = Gently transfer 36 μL of clear sample to new well.
+1	Incubate	_	Action	_	_	0	_	_	Offset=10069-10077
+2	room	_	Temperature	_	_	0	_	_	Offset=10081-10097
+3	5	_	Time	_	_	0	_	_	Offset=10102-10111
+
+# sent_id = s117
+# text = For each sample, combine the following reagents on ice in the 96 well PCR plate:
+1	Place	_	Action	_	_	0	_	_	Offset=10113-10118
+2	96	_	Size	_	_	3	Measure	_	Offset=10123-10130
+3	PCR	_	Location	_	_	0	_	_	Offset=10131-10140
+4	magnetic	_	Location	_	_	0	_	_	Offset=10148-10162
+5	room	_	Temperature	_	_	0	_	_	Offset=10166-10182
+6	5	_	Time	_	_	0	_	_	Offset=10187-10196
+
+# sent_id = s118
+# text = 36 μLPurified Ligation Product (from section "Clean-Up 2")12 μLNEXTflex™ PCR Master Mix2 μLNEXTflex™ Primer Mix50 μLTOTAL. 
+1	Set	_	Action	_	_	0	_	_	Offset=10236-10239
+2	pipette	_	Device	_	_	0	_	_	Offset=10240-10247
+3	90	_	Amount	_	_	0	_	_	Offset=10251-10256
+4	gently	_	Modifier	_	_	0	_	_	Offset=10261-10267
+5	remove	_	Action	_	_	0	_	_	Offset=10268-10274
+6	clear	_	Reagent	_	_	0	_	_	Offset=10275-10292
+
+# sent_id = s119
+# text = Mix well by pipetting.
+1	gently	_	Modifier	_	_	0	_	_	Offset=10389-10395
+2	add	_	Action	_	_	0	_	_	Offset=10396-10399
+3	200	_	Amount	_	_	6	Measure	_	Offset=10400-10406
+4	freshly	_	Modifier	_	_	6	Mod-Link	_	Offset=10410-10426
+5	80%	_	Concentration	_	_	6	Measure	_	Offset=10427-10430
+6	ethanol	_	Reagent	_	_	0	_	_	Offset=10431-10438
+7	sample	_	Reagent	_	_	0	_	_	Offset=10447-10453
+8	incubate	_	Action	_	_	0	_	_	Offset=10458-10466
+9	plate	_	Location	_	_	0	_	_	Offset=10467-10472
+10	room	_	Temperature	_	_	0	_	_	Offset=10476-10492
+11	30	_	Time	_	_	0	_	_	Offset=10497-10507
+
+# sent_id = s120
+# text = PCR Cycles: Add 40 μL of AMPure XP Beads to each sample and mix well by pipetting.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=10509-10518
+2	remove	_	Action	_	_	0	_	_	Offset=10520-10526
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=10527-10534
+4	pipette	_	Device	_	_	0	_	_	Offset=10538-10545
+
+# sent_id = s121
+# text = Incubate at room temperature for 5 minutes.
+1	gently	_	Modifier	_	_	0	_	_	Offset=10577-10583
+2	add	_	Action	_	_	0	_	_	Offset=10584-10587
+3	200	_	Amount	_	_	6	Measure	_	Offset=10588-10594
+4	freshly	_	Modifier	_	_	6	Mod-Link	_	Offset=10598-10614
+5	80%	_	Concentration	_	_	6	Measure	_	Offset=10615-10618
+6	ethanol	_	Reagent	_	_	0	_	_	Offset=10619-10626
+7	sample	_	Location	_	_	0	_	_	Offset=10635-10641
+8	incubate	_	Action	_	_	0	_	_	Offset=10646-10654
+9	plate	_	Location	_	_	0	_	_	Offset=10655-10660
+10	room	_	Temperature	_	_	0	_	_	Offset=10664-10680
+11	30	_	Time	_	_	0	_	_	Offset=10685-10695
+
+# sent_id = s122
+# text = Place the 96 well PCR Plate on the magnetic stand at room temperature for 5 minutesor until the supernatant appears clear.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=10697-10706
+2	remove	_	Action	_	_	0	_	_	Offset=10708-10714
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=10715-10722
+4	pipette	_	Device	_	_	0	_	_	Offset=10726-10733
+
+# sent_id = s123
+# text = Set pipette to 88 μL and gently remove clear supernatant taking care not to disturbbeads.
+1	Remove	_	Action	_	_	0	_	_	Offset=10772-10778
+2	plate	_	Location	_	_	0	_	_	Offset=10783-10788
+3	magnetic	_	Location	_	_	0	_	_	Offset=10798-10812
+4	let	_	Action	_	_	0	_	_	Offset=10817-10824
+5	room	_	Temperature	_	_	0	_	_	Offset=10828-10844
+6	3	_	Time	_	_	0	_	_	Offset=10849-10858
+
+# sent_id = s124
+# text = Some liquid may remain in wells.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=10860-10869
+2	dried	_	Reagent	_	_	0	_	_	Offset=10870-10881
+3	16	_	Amount	_	_	4	Measure	_	Offset=10887-10892
+4	Resuspension	_	Reagent	_	_	0	_	_	Offset=10893-10912
+
+# sent_id = s125
+# text = Wash #1: With plate on stand, gently add 200 μL of freshly prepared 80% ethanol to each sample and incubate plate at room temperature for 30 seconds.
+1	Mix	_	Action	_	_	0	_	_	Offset=10914-10917
+2	well	_	Modifier	_	_	0	_	_	Offset=10918-10922
+3	pipetting	_	Method	_	_	0	_	_	Offset=10926-10935
+
+# sent_id = s126
+# text = Carefully, remove ethanol by pipette.
+1	Incubate	_	Action	_	_	0	_	_	Offset=10998-11006
+2	resuspended	_	Reagent	_	_	0	_	_	Offset=11007-11024
+3	room	_	Temperature	_	_	0	_	_	Offset=11028-11044
+4	2	_	Time	_	_	0	_	_	Offset=11049-11058
+
+# sent_id = s127
+# text = Wash #2: With plate on stand, gently add 200 μL of freshly prepared 80% ethanol to each sample and incubate plate at room temperature for 30 seconds.
+1	Place	_	Action	_	_	0	_	_	Offset=11060-11065
+2	plate	_	Location	_	_	0	_	_	Offset=11066-11071
+3	magnetic	_	Location	_	_	0	_	_	Offset=11075-11089
+4	5	_	Time	_	_	0	_	_	Offset=11094-11103
+
+# sent_id = s128
+# text = Carefully, remove ethanol by pipette.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=11139-11145
+2	transfer	_	Action	_	_	0	_	_	Offset=11146-11154
+3	15	_	Amount	_	_	4	Measure	_	Offset=11155-11160
+4	clear	_	Reagent	_	_	0	_	_	Offset=11164-11176
+5	well	_	Location	_	_	0	_	_	Offset=11182-11186
+6	new	_	Modifier	_	_	8	Mod-Link	_	Offset=11192-11195
+7	96	_	Size	_	_	8	Measure	_	Offset=11196-11203
+8	PCR	_	Location	_	_	5	Meronym	_	Offset=11204-11213
+
+# sent_id = s129
+# text = Ensure all ethanol has been removed.
+1	qPCR	_	Method	_	_	0	_	_	Offset=11215-11219
+2	quantitate	_	Action	_	_	0	_	_	Offset=11238-11248
+3	DNA	_	Reagent	_	_	0	_	_	Offset=11249-11270
+

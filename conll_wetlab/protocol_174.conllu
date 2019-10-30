@@ -1,0 +1,117 @@
+# sent_id = s1
+# text = Transformation Protocol for BL21(DE3) Competent Cells (C2527H)
+1	Thaw	_	Action	_	_	0	_	_	Offset=63-67
+2	tube	_	Location	_	_	3	Meronym	_	Offset=70-74
+3	BL21(DE3)	_	Reagent	_	_	0	_	_	Offset=78-111
+4	ice	_	Location	_	_	0	_	_	Offset=115-118
+5	10	_	Time	_	_	0	_	_	Offset=123-133
+
+# sent_id = s2
+# text = Thaw a tube of BL21(DE3) Competent E. coli cells on ice for 10 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=135-138
+2	1–5	_	Amount	_	_	4	Measure	_	Offset=139-145
+3	1	_	Generic-Measure	_	_	4	Measure	_	Offset=157-168
+4	plasmid	_	Reagent	_	_	0	_	_	Offset=172-183
+5	cell	_	Reagent	_	_	0	_	_	Offset=191-203
+
+# sent_id = s3
+# text = Add 1–5 µl containing 1 pg–100 ng of plasmid DNA to the cell mixture.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=205-214
+2	flick	_	Action	_	_	0	_	_	Offset=215-220
+3	tube	_	Location	_	_	0	_	_	Offset=225-229
+4	4–5	_	Numerical	_	_	0	_	_	Offset=230-233
+5	mix	_	Action	_	_	0	_	_	Offset=243-246
+6	cells	_	Reagent	_	_	0	_	_	Offset=247-252
+7	DNA	_	Reagent	_	_	0	_	_	Offset=257-260
+
+# sent_id = s4
+# text = Carefully flick the tube 4–5 times to mix cells and DNA.
+1	Do	_	Action	_	_	0	_	_	Offset=262-275
+
+# sent_id = s5
+# text = Do not vortex.
+1	Place	_	Action	_	_	0	_	_	Offset=277-282
+2	mixture	_	Reagent	_	_	0	_	_	Offset=287-294
+3	ice	_	Location	_	_	0	_	_	Offset=298-301
+4	30	_	Time	_	_	0	_	_	Offset=306-316
+
+# sent_id = s6
+# text = Place the mixture on ice for 30 minutes.
+1	Do	_	Action	_	_	0	_	_	Offset=318-328
+
+# sent_id = s7
+# text = Do not mix.
+1	Heat	_	Action	_	_	0	_	_	Offset=330-340
+2	exactly	_	Modifier	_	_	3	Mod-Link	_	Offset=344-351
+3	42°C	_	Temperature	_	_	0	_	_	Offset=352-356
+4	exactly	_	Modifier	_	_	5	Mod-Link	_	Offset=361-368
+5	10	_	Time	_	_	0	_	_	Offset=369-379
+
+# sent_id = s8
+# text = Heat shock at exactly 42°C for exactly 10 seconds.
+1	Do	_	Action	_	_	0	_	_	Offset=381-391
+
+# sent_id = s9
+# text = Do not mix.
+1	Place	_	Action	_	_	0	_	_	Offset=393-398
+2	ice	_	Location	_	_	0	_	_	Offset=402-405
+3	5	_	Time	_	_	0	_	_	Offset=410-419
+
+# sent_id = s10
+# text = Place on ice for 5 minutes.
+1	Do	_	Action	_	_	0	_	_	Offset=421-431
+
+# sent_id = s11
+# text = Do not mix.
+1	Pipette	_	Action	_	_	0	_	_	Offset=433-440
+2	950	_	Amount	_	_	4	Measure	_	Offset=441-447
+3	room	_	Temperature	_	_	0	_	_	Offset=451-467
+4	SOC	_	Reagent	_	_	0	_	_	Offset=468-471
+5	mixture	_	Reagent	_	_	0	_	_	Offset=481-488
+
+# sent_id = s12
+# text = Pipette 950 µl of room temperature SOC into the mixture.
+1	Place	_	Action	_	_	0	_	_	Offset=490-495
+2	37°C	_	Temperature	_	_	0	_	_	Offset=499-503
+3	60	_	Time	_	_	0	_	_	Offset=508-518
+
+# sent_id = s13
+# text = Place at 37°C for 60 minutes.
+1	Shake	_	Action	_	_	0	_	_	Offset=520-525
+2	vigorously	_	Modifier	_	_	0	_	_	Offset=526-536
+3	250	_	Speed	_	_	0	_	_	Offset=538-545
+4	rotate	_	Action	_	_	0	_	_	Offset=550-556
+
+# sent_id = s14
+# text = Shake vigorously (250 rpm) or rotate.
+1	Warm	_	Action	_	_	0	_	_	Offset=558-562
+2	selection	_	Location	_	_	0	_	_	Offset=563-579
+3	37°C	_	Temperature	_	_	0	_	_	Offset=583-587
+
+# sent_id = s15
+# text = Warm selection plates to 37°C.
+1	Mix	_	Action	_	_	0	_	_	Offset=589-592
+2	cells	_	Reagent	_	_	0	_	_	Offset=597-602
+3	thoroughly	_	Modifier	_	_	0	_	_	Offset=603-613
+4	flicking	_	Action	_	_	0	_	_	Offset=617-625
+5	tube	_	Location	_	_	0	_	_	Offset=630-634
+6	inverting	_	Action	_	_	0	_	_	Offset=639-648
+
+# sent_id = s16
+# text = Mix the cells thoroughly by flicking the tube and inverting.
+1	Perform	_	Action	_	_	0	_	_	Offset=650-657
+2	several	_	Modifier	_	_	0	_	_	Offset=658-665
+3	10-fold	_	Method	_	_	0	_	_	Offset=666-690
+4	SOC	_	Reagent	_	_	0	_	_	Offset=694-697
+
+# sent_id = s17
+# text = Perform several 10-fold serial dilutions in SOC.
+1	Spread	_	Action	_	_	0	_	_	Offset=699-705
+2	50–100	_	Amount	_	_	4	Measure	_	Offset=706-715
+3	each	_	Modifier	_	_	4	Mod-Link	_	Offset=719-723
+4	dilution	_	Reagent	_	_	0	_	_	Offset=724-732
+5	selection	_	Location	_	_	0	_	_	Offset=740-755
+6	incubate	_	Action	_	_	0	_	_	Offset=760-768
+7	overnight	_	Time	_	_	0	_	_	Offset=769-778
+8	37°C	_	Temperature	_	_	0	_	_	Offset=782-786
+

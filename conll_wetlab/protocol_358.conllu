@@ -1,0 +1,45 @@
+# sent_id = s1
+# text = Monitoring fluorescence during cyanobacterial physiology/lysis experiments
+1	Aliquot	_	Action	_	_	0	_	_	Offset=96-103
+2	180	_	Amount	_	_	3	Measure	_	Offset=104-110
+3	seawater	_	Reagent	_	_	0	_	_	Offset=111-126
+4	each	_	Location	_	_	0	_	_	Offset=143-152
+5	96-well	_	Location	_	_	4	Meronym	_	Offset=158-171
+
+# sent_id = s2
+# text = Advance Preparation: Aliquot 180 µl seawater medium (e.g. ASW) into each well of a 96-well plate.
+1	Keep	_	Action	_	_	0	_	_	Offset=173-204
+
+# sent_id = s3
+# text = Keep a log of your plate layout (which samples in which wells).
+1	Add	_	Action	_	_	0	_	_	Offset=250-253
+2	20	_	Amount	_	_	3	Measure	_	Offset=254-259
+3	sample	_	Reagent	_	_	0	_	_	Offset=263-269
+4	ASW	_	Reagent	_	_	0	_	_	Offset=279-282
+5	10X	_	Concentration	_	_	3	Measure	_	Offset=289-292
+
+# sent_id = s4
+# text = Plate-Setup: Add 20 µl of sample into the ASW for a 10X dilution.
+1	Mix	_	Action	_	_	0	_	_	Offset=303-306
+2	well	_	Modifier	_	_	0	_	_	Offset=307-311
+3	pipette	_	Device	_	_	0	_	_	Offset=319-326
+
+# sent_id = s5
+# text = Mix well with a pipette.
+1	Read	_	Action	_	_	0	_	_	Offset=328-332
+2	fluorescence	_	Measure-Type	_	_	0	_	_	Offset=333-345
+3	Tecan	_	Device	_	_	0	_	_	Offset=356-392
+
+# sent_id = s6
+# text = Read fluorescence using the Tecan Infinite Pro 200M plate reader.
+1	Set	_	Action	_	_	0	_	_	Offset=394-400
+2	program	_	Device	_	_	0	_	_	Offset=403-410
+
+# sent_id = s7
+# text = Set up a program using the following wavelengths: excitation 440 nm, emission 680 nm for chlorophyll a;  excitation 544 nm, emission 577 nm for phycoerythrin.
+1	Plot	_	Action	_	_	0	_	_	Offset=553-557
+2	fluorescence	_	Measure-Type	_	_	0	_	_	Offset=558-579
+3	track	_	Action	_	_	0	_	_	Offset=583-588
+4	cell	_	Measure-Type	_	_	0	_	_	Offset=618-629
+5	phage	_	Measure-Type	_	_	4	Or	_	Offset=637-652
+

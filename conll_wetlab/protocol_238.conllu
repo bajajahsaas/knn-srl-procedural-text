@@ -1,0 +1,784 @@
+# sent_id = s1
+# text = NEXTflex™ Small RNA Sequencing for Small RNA Starting Material
+1	Vortex	_	Action	_	_	0	_	_	Offset=63-69
+2	micro	_	Action	_	_	0	_	_	Offset=74-90
+3	each	_	Modifier	_	_	4	Mod-Link	_	Offset=91-95
+4	component	_	Reagent	_	_	0	_	_	Offset=96-105
+5	material	_	Reagent	_	_	0	_	_	Offset=130-138
+6	not	_	Action	_	_	0	_	_	Offset=143-153
+7	cap	_	Seal	_	_	0	_	_	Offset=161-164
+8	side	_	Location	_	_	7	Or	_	Offset=172-176
+9	tube	_	Location	_	_	8	Meronym	_	Offset=184-188
+
+# sent_id = s2
+# text = Vortex and micro centrifuge each component prior to use, to ensure material has not lodged in the cap or the side of the tube.
+1	Add	_	Action	_	_	0	_	_	Offset=190-193
+2	18	_	Amount	_	_	4	Measure	_	Offset=194-199
+3	molecular	_	Modifier	_	_	4	Mod-Link	_	Offset=203-226
+4	water	_	Reagent	_	_	0	_	_	Offset=227-232
+5	each	_	Modifier	_	_	6	Mod-Link	_	Offset=236-240
+6	bottle	_	Location	_	_	7	Meronym	_	Offset=241-247
+7	Elution	_	Reagent	_	_	0	_	_	Offset=251-265
+8	10X	_	Concentration	_	_	7	Measure	_	Offset=267-270
+9	1X	_	Concentration	_	_	10	Measure	_	Offset=282-284
+10	Elution	_	Reagent	_	_	0	_	_	Offset=285-299
+
+# sent_id = s3
+# text = Add 18 mL of molecular biology-grade water to each bottle of Elution Buffer (10X) to make a 1X Elution Buffer.
+1	Check	_	Action	_	_	0	_	_	Offset=301-306
+2	box	_	Location	_	_	0	_	_	Offset=307-310
+3	bottle	_	Location	_	_	2	Meronym	_	Offset=314-320
+4	water	_	Reagent	_	_	0	_	_	Offset=329-334
+5	added	_	Action	_	_	0	_	_	Offset=344-349
+
+# sent_id = s4
+# text = Check box on bottle to show water has been added.
+1	50%	_	Concentration	_	_	2	Measure	_	Offset=357-360
+2	PEG	_	Reagent	_	_	0	_	_	Offset=361-364
+3	come	_	Action	_	_	0	_	_	Offset=368-372
+4	room	_	Temperature	_	_	0	_	_	Offset=376-392
+
+# sent_id = s5
+# text = Allow 50% PEG to come to room temperature before use.
+1	Inhibitor	_	Reagent	_	_	0	_	_	Offset=405-414
+2	Incubate	_	Action	_	_	0	_	_	Offset=415-423
+3	22°C	_	Temperature	_	_	0	_	_	Offset=427-431
+4	2	_	Time	_	_	0	_	_	Offset=436-443
+5	thermocycler	_	Device	_	_	0	_	_	Offset=449-461
+
+# sent_id = s6
+# text = Inhibitor Incubate at 22°C for 2 hours in a thermocycler.
+1	2’	_	Reagent	_	_	0	_	_	Offset=480-506
+2	incubate	_	Action	_	_	0	_	_	Offset=539-547
+3	16°C	_	Temperature	_	_	0	_	_	Offset=551-555
+4	overnight	_	Time	_	_	0	_	_	Offset=556-565
+
+# sent_id = s7
+# text = For ligations to 2’ O-methylated small RNAs, such as those found in plants, incubate at 16°C overnight.
+1	Add	_	Action	_	_	0	_	_	Offset=567-570
+2	10	_	Amount	_	_	4	Measure	_	Offset=571-576
+3	Nuclease-free	_	Modifier	_	_	4	Mod-Link	_	Offset=580-593
+4	Water	_	Reagent	_	_	0	_	_	Offset=594-599
+5	each	_	Modifier	_	_	6	Mod-Link	_	Offset=603-607
+6	sample	_	Reagent	_	_	0	_	_	Offset=608-614
+7	mix	_	Action	_	_	0	_	_	Offset=619-622
+8	pipetting	_	Method	_	_	0	_	_	Offset=626-635
+
+# sent_id = s8
+# text = Add 10 µL of Nuclease-free Water to each sample and mix by pipetting.
+1	Add	_	Action	_	_	0	_	_	Offset=637-640
+2	6	_	Amount	_	_	3	Measure	_	Offset=641-645
+3	Adapter	_	Reagent	_	_	0	_	_	Offset=649-675
+4	mix	_	Action	_	_	0	_	_	Offset=680-683
+5	well	_	Modifier	_	_	0	_	_	Offset=684-688
+6	pipetting	_	Method	_	_	0	_	_	Offset=692-701
+
+# sent_id = s9
+# text = Add 6 μL of Adapter Depletion Solution and mix well by pipetting.
+1	Add	_	Action	_	_	0	_	_	Offset=703-706
+2	40	_	Amount	_	_	3	Measure	_	Offset=707-712
+3	AMPure	_	Reagent	_	_	0	_	_	Offset=716-731
+4	60	_	Amount	_	_	5	Measure	_	Offset=736-741
+5	ispropanol	_	Reagent	_	_	0	_	_	Offset=745-755
+6	mix	_	Action	_	_	0	_	_	Offset=760-763
+7	well	_	Modifier	_	_	0	_	_	Offset=764-768
+8	pipetting	_	Method	_	_	0	_	_	Offset=772-781
+
+# sent_id = s10
+# text = Add 40 μL of AMPure XP beads and 60 μL of ispropanol and mix well by pipetting.
+1	Incubate	_	Action	_	_	0	_	_	Offset=783-791
+2	5	_	Time	_	_	0	_	_	Offset=796-805
+
+# sent_id = s11
+# text = Incubate for 5 minutes.
+1	Magnetize	_	Action	_	_	0	_	_	Offset=807-816
+2	beads	_	Reagent	_	_	0	_	_	Offset=817-822
+3	solution	_	Reagent	_	_	0	_	_	Offset=829-837
+4	clear	_	Action	_	_	0	_	_	Offset=841-846
+
+# sent_id = s12
+# text = Magnetize beads until solution is clear.
+1	Remove	_	Action	_	_	0	_	_	Offset=848-854
+2	discard	_	Action	_	_	0	_	_	Offset=859-866
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=867-878
+
+# sent_id = s13
+# text = Remove and discard supernatant.
+1	Add	_	Action	_	_	0	_	_	Offset=889-892
+2	180	_	Amount	_	_	5	Measure	_	Offset=893-899
+3	freshly	_	Modifier	_	_	5	Mod-Link	_	Offset=903-919
+4	80%	_	Concentration	_	_	5	Measure	_	Offset=920-923
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=924-931
+6	incubate	_	Action	_	_	0	_	_	Offset=933-941
+7	30	_	Time	_	_	0	_	_	Offset=946-956
+8	remove	_	Action	_	_	0	_	_	Offset=962-968
+9	P200	_	Device	_	_	0	_	_	Offset=976-980
+10	P300	_	Device	_	_	9	Or	_	Offset=984-988
+11	200	_	Amount	_	_	9	Setting	10:Setting	Offset=996-1002
+
+# sent_id = s14
+# text = Wash #1: Add 180 μL of freshly prepared 80% ethanol, incubate for 30 seconds, and remove with a P200 or P300 set to 200 μL.
+1	Add	_	Action	_	_	0	_	_	Offset=1013-1016
+2	180	_	Amount	_	_	5	Measure	_	Offset=1017-1023
+3	freshly	_	Modifier	_	_	5	Mod-Link	_	Offset=1027-1043
+4	80%	_	Concentration	_	_	5	Measure	_	Offset=1044-1047
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=1048-1055
+6	incubate	_	Action	_	_	0	_	_	Offset=1057-1065
+7	30	_	Time	_	_	0	_	_	Offset=1070-1080
+8	remove	_	Action	_	_	0	_	_	Offset=1086-1092
+9	P200	_	Device	_	_	0	_	_	Offset=1100-1104
+10	P300	_	Device	_	_	9	Or	_	Offset=1108-1112
+11	200	_	Amount	_	_	9	Setting	10:Setting	Offset=1120-1126
+
+# sent_id = s15
+# text = Wash #2: Add 180 μL of freshly prepared 80% ethanol, incubate for 30 seconds, and remove with a P200 or P300 set to 200 μL.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1128-1136
+2	sample	_	Reagent	_	_	0	_	_	Offset=1137-1143
+3	3	_	Time	_	_	0	_	_	Offset=1148-1157
+
+# sent_id = s16
+# text = Incubate sample for 3 minutes.
+1	remove	_	Action	_	_	0	_	_	Offset=1177-1183
+2	all	_	Modifier	_	_	4	Mod-Link	_	Offset=1184-1187
+3	residual	_	Modifier	_	_	4	Mod-Link	_	Offset=1188-1196
+4	liquid	_	Reagent	_	_	0	_	_	Offset=1197-1203
+5	collected	_	Action	_	_	0	_	_	Offset=1218-1227
+6	bottom	_	Location	_	_	0	_	_	Offset=1235-1241
+7	well	_	Location	_	_	6	Meronym	_	Offset=1249-1253
+
+# sent_id = s17
+# text = After one minute, remove all residual liquid that may have collected at the bottom of the well.
+1	Remove	_	Action	_	_	0	_	_	Offset=1255-1261
+2	plate	_	Location	_	_	0	_	_	Offset=1262-1267
+3	magnetic	_	Device	_	_	0	_	_	Offset=1273-1287
+4	resuspend	_	Action	_	_	0	_	_	Offset=1292-1301
+5	bead	_	Reagent	_	_	0	_	_	Offset=1302-1313
+6	22	_	Amount	_	_	7	Measure	_	Offset=1317-1322
+7	Resuspenion	_	Reagent	_	_	0	_	_	Offset=1326-1344
+8	pipetting	_	Method	_	_	0	_	_	Offset=1348-1376
+
+# sent_id = s18
+# text = Remove plate from magnetic stand and resuspend bead pellet in 22 μL of Resuspenion Buffer by pipetting volume up and down.
+1	beads	_	Reagent	_	_	0	_	_	Offset=1390-1395
+2	completely	_	Modifier	_	_	0	_	_	Offset=1400-1410
+3	resuspended	_	Action	_	_	0	_	_	Offset=1411-1422
+
+# sent_id = s19
+# text = Ensure that beads are completely resuspended.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1424-1432
+2	2	_	Time	_	_	0	_	_	Offset=1433-1442
+
+# sent_id = s20
+# text = Incubate 2 minutes.
+1	add	_	Action	_	_	0	_	_	Offset=1463-1466
+2	6	_	Amount	_	_	3	Measure	_	Offset=1467-1471
+3	Adapter	_	Reagent	_	_	0	_	_	Offset=1475-1501
+4	new	_	Modifier	_	_	6	Mod-Link	_	Offset=1507-1510
+5	empty	_	Modifier	_	_	6	Mod-Link	_	Offset=1512-1517
+6	well	_	Location	_	_	0	_	_	Offset=1518-1522
+
+# sent_id = s21
+# text = During incubation, add 6 μL of Adapter Depletion Solution to a new, empty well.
+1	Magnetize	_	Action	_	_	0	_	_	Offset=1524-1533
+2	sample	_	Reagent	_	_	0	_	_	Offset=1534-1540
+3	solution	_	Reagent	_	_	0	_	_	Offset=1547-1555
+4	clear	_	Action	_	_	0	_	_	Offset=1564-1569
+
+# sent_id = s22
+# text = Magnetize sample until solution appears clear.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1571-1579
+2	20	_	Amount	_	_	3	Measure	_	Offset=1580-1585
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=1589-1600
+4	well	_	Location	_	_	6	Meronym	_	Offset=1608-1612
+5	6	_	Amount	_	_	6	Measure	_	Offset=1624-1628
+6	Adapter	_	Reagent	_	_	0	_	_	Offset=1629-1655
+7	mix	_	Action	_	_	0	_	_	Offset=1660-1663
+8	well	_	Modifier	_	_	0	_	_	Offset=1664-1668
+9	pipette	_	Device	_	_	0	_	_	Offset=1672-1679
+
+# sent_id = s23
+# text = Transfer 20 µL of supernatant to the well containing 6 µL Adapter Depletion Solution and mix well by pipette.
+1	Add	_	Action	_	_	0	_	_	Offset=1681-1684
+2	40	_	Amount	_	_	3	Measure	_	Offset=1685-1690
+3	AMPure	_	Reagent	_	_	0	_	_	Offset=1694-1709
+
+# sent_id = s24
+# text = Add 40 µL of AMPure XP beads.
+1	Add	_	Action	_	_	0	_	_	Offset=1711-1714
+2	60	_	Amount	_	_	3	Measure	_	Offset=1715-1720
+3	isopropanol	_	Reagent	_	_	0	_	_	Offset=1724-1735
+4	mix	_	Action	_	_	0	_	_	Offset=1740-1743
+5	well	_	Modifier	_	_	0	_	_	Offset=1744-1748
+6	pipetting	_	Method	_	_	0	_	_	Offset=1752-1761
+
+# sent_id = s25
+# text = Add 60 µL of isopropanol and mix well by pipetting.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1763-1771
+2	5	_	Time	_	_	0	_	_	Offset=1776-1785
+
+# sent_id = s26
+# text = Incubate for 5 minutes.
+1	Magnetize	_	Action	_	_	0	_	_	Offset=1787-1796
+2	sample	_	Reagent	_	_	0	_	_	Offset=1797-1803
+3	solution	_	Reagent	_	_	0	_	_	Offset=1810-1818
+4	clear	_	Action	_	_	0	_	_	Offset=1827-1832
+
+# sent_id = s27
+# text = Magnetize sample until solution appears clear.
+1	Remove	_	Action	_	_	0	_	_	Offset=1834-1840
+2	discard	_	Action	_	_	0	_	_	Offset=1845-1852
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=1853-1864
+
+# sent_id = s28
+# text = Remove and discard supernatant.
+1	Add	_	Action	_	_	0	_	_	Offset=1875-1878
+2	180	_	Amount	_	_	5	Measure	_	Offset=1879-1885
+3	freshly	_	Modifier	_	_	5	Mod-Link	_	Offset=1889-1905
+4	80%	_	Concentration	_	_	5	Measure	_	Offset=1906-1909
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=1910-1917
+6	incubate	_	Action	_	_	0	_	_	Offset=1919-1927
+7	30	_	Time	_	_	0	_	_	Offset=1932-1942
+8	remove	_	Action	_	_	0	_	_	Offset=1948-1954
+9	P200	_	Device	_	_	0	_	_	Offset=1962-1966
+10	P300	_	Device	_	_	9	Or	_	Offset=1970-1974
+11	200	_	Amount	_	_	9	Setting	10:Setting	Offset=1982-1988
+
+# sent_id = s29
+# text = Wash #1: Add 180 µL of freshly prepared 80% ethanol, incubate for 30 seconds, and remove with a P200 or P300 set to 200 µL.
+1	Add	_	Action	_	_	0	_	_	Offset=1999-2002
+2	180	_	Amount	_	_	5	Measure	_	Offset=2003-2009
+3	freshly	_	Modifier	_	_	5	Mod-Link	_	Offset=2013-2029
+4	80%	_	Concentration	_	_	5	Measure	_	Offset=2030-2033
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=2034-2041
+6	incubate	_	Action	_	_	0	_	_	Offset=2043-2051
+7	30	_	Time	_	_	0	_	_	Offset=2056-2066
+8	remove	_	Action	_	_	0	_	_	Offset=2072-2078
+9	P200	_	Device	_	_	0	_	_	Offset=2086-2090
+10	P300	_	Device	_	_	9	Or	_	Offset=2094-2098
+11	200	_	Amount	_	_	9	Setting	10:Setting	Offset=2106-2112
+
+# sent_id = s30
+# text = Wash #2: Add 180 µL of freshly prepared 80% ethanol, incubate for 30 seconds, and remove with a P200 or P300 set to 200 µL.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2114-2122
+2	sample	_	Reagent	_	_	0	_	_	Offset=2123-2129
+3	3	_	Time	_	_	0	_	_	Offset=2134-2143
+
+# sent_id = s31
+# text = Incubate sample for 3 minutes.
+1	one	_	Time	_	_	0	_	_	Offset=2151-2161
+2	remove	_	Action	_	_	0	_	_	Offset=2163-2169
+3	all	_	Modifier	_	_	5	Mod-Link	_	Offset=2170-2173
+4	residual	_	Modifier	_	_	5	Mod-Link	_	Offset=2174-2182
+5	liquid	_	Reagent	_	_	0	_	_	Offset=2183-2189
+6	collected	_	Action	_	_	0	_	_	Offset=2203-2212
+7	bottom	_	Location	_	_	0	_	_	Offset=2220-2226
+8	well	_	Location	_	_	7	Meronym	_	Offset=2234-2238
+
+# sent_id = s32
+# text = After one minute, remove all residual liquid that mayhave collected at the bottom of the well.
+1	Remove	_	Action	_	_	0	_	_	Offset=2240-2246
+2	plate	_	Location	_	_	0	_	_	Offset=2247-2252
+3	magnetic	_	Device	_	_	0	_	_	Offset=2258-2272
+4	resuspend	_	Action	_	_	0	_	_	Offset=2277-2286
+5	bead	_	Reagent	_	_	0	_	_	Offset=2287-2298
+6	12	_	Amount	_	_	7	Measure	_	Offset=2302-2307
+7	Nuclease-freeWater	_	Reagent	_	_	0	_	_	Offset=2311-2329
+8	pipetting	_	Method	_	_	0	_	_	Offset=2333-2361
+
+# sent_id = s33
+# text = Remove plate from magnetic stand and resuspend bead pellet in 12 µL of Nuclease-freeWater by pipetting volume up and down.
+1	beads	_	Reagent	_	_	0	_	_	Offset=2375-2380
+2	completely	_	Modifier	_	_	0	_	_	Offset=2385-2395
+3	resuspended	_	Action	_	_	0	_	_	Offset=2396-2407
+
+# sent_id = s34
+# text = Ensure that beads are completely resuspended.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2409-2417
+2	2	_	Time	_	_	0	_	_	Offset=2422-2431
+
+# sent_id = s35
+# text = Incubate for 2 minutes.
+1	Magnetize	_	Action	_	_	0	_	_	Offset=2433-2442
+2	sample	_	Reagent	_	_	0	_	_	Offset=2443-2449
+3	solution	_	Reagent	_	_	0	_	_	Offset=2456-2464
+4	clear	_	Action	_	_	0	_	_	Offset=2473-2478
+
+# sent_id = s36
+# text = Magnetize sample until solution appears clear.
+1	Transfer	_	Action	_	_	0	_	_	Offset=2480-2488
+2	11	_	Amount	_	_	3	Measure	_	Offset=2489-2494
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=2498-2509
+4	new	_	Modifier	_	_	5	Mod-Link	_	Offset=2515-2518
+5	well	_	Location	_	_	0	_	_	Offset=2519-2523
+
+# sent_id = s37
+# text = Transfer 11 µL of supernatant to a new well.
+1	add	_	Action	_	_	0	_	_	Offset=2544-2547
+2	1.5	_	Amount	_	_	3	Measure	_	Offset=2548-2554
+3	5’	_	Reagent	_	_	0	_	_	Offset=2562-2585
+4	heat	_	Action	_	_	0	_	_	Offset=2590-2594
+5	70°C	_	Temperature	_	_	0	_	_	Offset=2598-2602
+6	2	_	Time	_	_	0	_	_	Offset=2607-2616
+7	immediately	_	Modifier	_	_	0	_	_	Offset=2623-2634
+8	place	_	Action	_	_	0	_	_	Offset=2635-2640
+9	ice	_	Location	_	_	0	_	_	Offset=2644-2647
+
+# sent_id = s38
+# text = For each reaction, add 1.5 µL of the 5’ NEXTflex™ 4N Adapter and heat at 70°C for 2 minutes, then immediately place on ice.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2649-2657
+2	20°C	_	Temperature	_	_	0	_	_	Offset=2661-2665
+3	1	_	Time	_	_	0	_	_	Offset=2670-2676
+4	thermocycler	_	Device	_	_	0	_	_	Offset=2682-2694
+
+# sent_id = s39
+# text = Incubate at 20°C for 1 hour in a thermocycler.
+1	Add	_	Action	_	_	0	_	_	Offset=2696-2699
+2	1	_	Amount	_	_	3	Measure	_	Offset=2700-2704
+3	NEXTflex™	_	Reagent	_	_	0	_	_	Offset=2705-2724
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=2728-2732
+5	sample	_	Reagent	_	_	0	_	_	Offset=2733-2739
+
+# sent_id = s40
+# text = Add 1 µL NEXTflex™ RT primer to each sample.
+1	Heat	_	Action	_	_	0	_	_	Offset=2741-2745
+2	70°C	_	Temperature	_	_	0	_	_	Offset=2749-2753
+3	2	_	Time	_	_	0	_	_	Offset=2758-2767
+4	immediately	_	Modifier	_	_	0	_	_	Offset=2773-2784
+5	place	_	Action	_	_	0	_	_	Offset=2785-2790
+6	ice	_	Location	_	_	0	_	_	Offset=2794-2797
+
+# sent_id = s41
+# text = Heat at 70°C for 2 minutes then immediately place on ice.
+1	each	_	Modifier	_	_	2	Mod-Link	_	Offset=2803-2807
+2	sample	_	Reagent	_	_	0	_	_	Offset=2808-2814
+3	add	_	Action	_	_	0	_	_	Offset=2816-2819
+4	following	_	Reagent	_	_	0	_	_	Offset=2824-2844
+5	mix	_	Action	_	_	0	_	_	Offset=2849-2852
+6	well	_	Modifier	_	_	0	_	_	Offset=2853-2857
+
+# sent_id = s42
+# text = For each sample, add the following components and mix well.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2859-2867
+2	thermocycler	_	Device	_	_	0	_	_	Offset=2873-2885
+3	44°C	_	Temperature	_	_	0	_	_	Offset=2889-2893
+4	1	_	Time	_	_	0	_	_	Offset=2898-2904
+5	90°C	_	Temperature	_	_	0	_	_	Offset=2917-2921
+6	10	_	Time	_	_	0	_	_	Offset=2926-2936
+
+# sent_id = s43
+# text = Incubate in a thermocycler at 44°C for 1 hour followed by 90°C for 10 minutes.
+1	procedure	_	Method	_	_	0	_	_	Offset=2942-2951
+2	safely	_	Modifier	_	_	0	_	_	Offset=2959-2965
+3	stopped	_	Action	_	_	0	_	_	Offset=2966-2973
+4	this	_	Method	_	_	0	_	_	Offset=2977-2986
+5	samples	_	Reagent	_	_	0	_	_	Offset=2991-2998
+6	stored	_	Action	_	_	0	_	_	Offset=2999-3005
+7	-20°C	_	Temperature	_	_	0	_	_	Offset=3009-3014
+
+# sent_id = s44
+# text = The procedure may be safely stopped at this step and samples stored at -20°C.
+1	Add	_	Action	_	_	0	_	_	Offset=3016-3019
+2	10	_	Amount	_	_	3	Measure	_	Offset=3020-3025
+3	Adapter	_	Reagent	_	_	0	_	_	Offset=3029-3055
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=3059-3063
+5	sample	_	Reagent	_	_	0	_	_	Offset=3064-3070
+6	mix	_	Action	_	_	0	_	_	Offset=3075-3078
+7	well	_	Modifier	_	_	0	_	_	Offset=3079-3083
+8	pipette	_	Device	_	_	0	_	_	Offset=3087-3094
+
+# sent_id = s45
+# text = Add 10 µL of Adapter Depletion Solution to each sample and mix well by pipette.  
+1	Add	_	Action	_	_	0	_	_	Offset=3098-3101
+2	40	_	Amount	_	_	3	Measure	_	Offset=3102-3107
+3	AMPure	_	Reagent	_	_	0	_	_	Offset=3111-3126
+4	90	_	Amount	_	_	5	Measure	_	Offset=3131-3136
+5	ispropanol	_	Reagent	_	_	0	_	_	Offset=3140-3150
+6	mix	_	Action	_	_	0	_	_	Offset=3155-3158
+7	well	_	Modifier	_	_	0	_	_	Offset=3159-3163
+8	pipette	_	Device	_	_	0	_	_	Offset=3167-3174
+
+# sent_id = s46
+# text = Add 40 µL of AMPure XP beads and 90 µL of ispropanol and mix well by pipette.
+1	Incubate	_	Action	_	_	0	_	_	Offset=3176-3184
+2	5	_	Time	_	_	0	_	_	Offset=3189-3198
+
+# sent_id = s47
+# text = Incubate for 5 minutes.
+1	Magnetize	_	Action	_	_	0	_	_	Offset=3200-3209
+2	sample	_	Reagent	_	_	0	_	_	Offset=3210-3216
+3	solution	_	Reagent	_	_	0	_	_	Offset=3223-3231
+4	clear	_	Action	_	_	0	_	_	Offset=3235-3240
+
+# sent_id = s48
+# text = Magnetize sample until solution is clear.
+1	Remove	_	Action	_	_	0	_	_	Offset=3242-3248
+2	discard	_	Action	_	_	0	_	_	Offset=3253-3260
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=3261-3272
+
+# sent_id = s49
+# text = Remove and discard supernatant.
+1	Add	_	Action	_	_	0	_	_	Offset=3283-3286
+2	180	_	Amount	_	_	5	Measure	_	Offset=3287-3293
+3	freshly	_	Modifier	_	_	5	Mod-Link	_	Offset=3297-3313
+4	80%	_	Concentration	_	_	5	Measure	_	Offset=3314-3317
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=3318-3325
+6	incubate	_	Action	_	_	0	_	_	Offset=3327-3335
+7	30	_	Time	_	_	0	_	_	Offset=3340-3350
+8	remove	_	Action	_	_	0	_	_	Offset=3356-3362
+9	P200	_	Device	_	_	0	_	_	Offset=3370-3374
+10	P300	_	Device	_	_	9	Or	_	Offset=3378-3382
+11	200	_	Amount	_	_	9	Setting	10:Setting	Offset=3390-3396
+
+# sent_id = s50
+# text = Wash #1: Add 180 µL of freshly prepared 80% ethanol, incubate for 30 seconds, and remove with a P200 or P300 set to 200 µL.
+1	Add	_	Action	_	_	0	_	_	Offset=3407-3410
+2	180	_	Amount	_	_	5	Measure	_	Offset=3411-3417
+3	freshly	_	Modifier	_	_	5	Mod-Link	_	Offset=3421-3437
+4	80%	_	Concentration	_	_	5	Measure	_	Offset=3438-3441
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=3442-3449
+6	incubate	_	Action	_	_	0	_	_	Offset=3451-3459
+7	30	_	Time	_	_	0	_	_	Offset=3464-3474
+8	remove	_	Action	_	_	0	_	_	Offset=3480-3486
+9	P200	_	Device	_	_	0	_	_	Offset=3494-3498
+10	P300	_	Device	_	_	9	Or	_	Offset=3502-3506
+11	200	_	Amount	_	_	10	Setting	9:Setting	Offset=3514-3520
+
+# sent_id = s51
+# text = Wash #2: Add 180 µL of freshly prepared 80% ethanol, incubate for 30 seconds, and remove with a P200 or P300 set to 200 µL.
+1	Incubate	_	Action	_	_	0	_	_	Offset=3522-3530
+2	sample	_	Reagent	_	_	0	_	_	Offset=3531-3537
+3	3	_	Time	_	_	0	_	_	Offset=3542-3551
+
+# sent_id = s52
+# text = Incubate sample for 3 minutes.
+1	one	_	Time	_	_	0	_	_	Offset=3559-3569
+2	remove	_	Action	_	_	0	_	_	Offset=3571-3577
+3	any	_	Modifier	_	_	5	Mod-Link	_	Offset=3578-3581
+4	residual	_	Modifier	_	_	5	Mod-Link	_	Offset=3582-3590
+5	liquid	_	Reagent	_	_	0	_	_	Offset=3591-3597
+6	collected	_	Action	_	_	0	_	_	Offset=3611-3620
+7	bottom	_	Location	_	_	0	_	_	Offset=3628-3634
+8	well	_	Location	_	_	7	Meronym	_	Offset=3642-3646
+
+# sent_id = s53
+# text = After one minute, remove any residual liquid that mayhave collected at the bottom of the well.
+1	Remove	_	Action	_	_	0	_	_	Offset=3648-3654
+2	plate	_	Location	_	_	0	_	_	Offset=3655-3660
+3	magnetic	_	Device	_	_	0	_	_	Offset=3666-3680
+4	resuspend	_	Action	_	_	0	_	_	Offset=3685-3694
+5	bead	_	Reagent	_	_	0	_	_	Offset=3695-3706
+6	19	_	Amount	_	_	7	Measure	_	Offset=3710-3715
+7	Nuclease-freeWater	_	Reagent	_	_	0	_	_	Offset=3719-3737
+8	pipetting	_	Method	_	_	0	_	_	Offset=3741-3750
+
+# sent_id = s54
+# text = Remove plate from magnetic stand and resuspend bead pellet in 19 µL of Nuclease-freeWater by pipetting.
+1	beads	_	Reagent	_	_	0	_	_	Offset=3764-3769
+2	completely	_	Modifier	_	_	0	_	_	Offset=3774-3784
+3	resuspended	_	Action	_	_	0	_	_	Offset=3785-3796
+
+# sent_id = s55
+# text = Ensure that beads are completely resuspended.
+1	Incubate	_	Action	_	_	0	_	_	Offset=3798-3806
+2	2	_	Time	_	_	0	_	_	Offset=3811-3820
+
+# sent_id = s56
+# text = Incubate for 2 minutes.
+1	Magnetize	_	Action	_	_	0	_	_	Offset=3822-3831
+2	solution	_	Reagent	_	_	0	_	_	Offset=3838-3846
+3	clear	_	Action	_	_	0	_	_	Offset=3850-3855
+
+# sent_id = s57
+# text = Magnetize until solution is clear.
+1	Transfer	_	Action	_	_	0	_	_	Offset=3857-3865
+2	18	_	Amount	_	_	3	Measure	_	Offset=3866-3871
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=3875-3886
+4	new	_	Modifier	_	_	5	Mod-Link	_	Offset=3892-3895
+5	well	_	Location	_	_	0	_	_	Offset=3896-3900
+
+# sent_id = s58
+# text = Transfer 18 µL of supernatant to a new well.
+1	Add	_	Action	_	_	0	_	_	Offset=3902-3905
+2	5	_	Amount	_	_	4	Measure	_	Offset=3906-3910
+3	6X	_	Concentration	_	_	4	Measure	_	Offset=3914-3916
+4	Gel	_	Reagent	_	_	0	_	_	Offset=3917-3932
+5	each	_	Modifier	_	_	6	Mod-Link	_	Offset=3936-3940
+6	PCR	_	Reagent	_	_	0	_	_	Offset=3941-3952
+7	mix	_	Action	_	_	0	_	_	Offset=3957-3960
+8	well	_	Modifier	_	_	0	_	_	Offset=3961-3965
+9	Load	_	Action	_	_	0	_	_	Offset=3966-3970
+10	purified	_	Modifier	_	_	11	Mod-Link	_	Offset=3971-3979
+11	PCR	_	Reagent	_	_	0	_	_	Offset=3980-3992
+12	6%	_	Concentration	_	_	13	Measure	_	Offset=4000-4002
+13	TBE-PAGE	_	Reagent	_	_	0	_	_	Offset=4003-4015
+
+# sent_id = s59
+# text = Add 5 µL of 6X Gel Loading Dye to each PCR product and mix well Load purified PCR products onto a 6% TBE-PAGE gel.
+1	Samples	_	Reagent	_	_	4	Coreference-Link	_	Offset=4132-4139
+2	prepared	_	Action	_	_	0	_	_	Offset=4140-4148
+3	different	_	Method	_	_	0	_	_	Offset=4154-4172
+4	that	_	Mention	_	_	0	_	_	Offset=4177-4181
+5	sequenced	_	Action	_	_	0	_	_	Offset=4190-4199
+6	together	_	Method	_	_	0	_	_	Offset=4200-4208
+7	run	_	Action	_	_	0	_	_	Offset=4216-4219
+8	adjacent	_	Location	_	_	0	_	_	Offset=4223-4237
+
+# sent_id = s60
+# text = We recommend leaving 1-2 lanes between samples prepared with the same barcode primer to avoid cross contamination.
+1	adjacent	_	Location	_	_	0	_	_	Offset=4245-4258
+2	load	_	Action	_	_	0	_	_	Offset=4259-4263
+3	10	_	Amount	_	_	4	Measure	_	Offset=4264-4269
+4	Ready	_	Reagent	_	_	0	_	_	Offset=4273-4300
+
+# sent_id = s61
+# text = Samples prepared with different barcodes and that will be sequenced together may be run in adjacent lanes.
+1	Run	_	Action	_	_	0	_	_	Offset=4302-4305
+2	gel	_	Reagent	_	_	0	_	_	Offset=4310-4313
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=4319-4321
+4	TBE	_	Reagent	_	_	0	_	_	Offset=4322-4332
+5	200	_	Generic-Measure	_	_	0	_	_	Offset=4336-4341
+6	lower	_	Reagent	_	_	0	_	_	Offset=4352-4366
+7	bottom	_	Location	_	_	0	_	_	Offset=4379-4385
+8	gel	_	Reagent	_	_	0	_	_	Offset=4393-4396
+
+# sent_id = s62
+# text = In an adjacent lane load 10 µL of Ready to Load Low MW Ladder.
+1	gel	_	Reagent	_	_	0	_	_	Offset=4413-4416
+2	run	_	Action	_	_	0	_	_	Offset=4424-4427
+3	approximately	_	Modifier	_	_	4	Mod-Link	_	Offset=4432-4445
+4	30	_	Time	_	_	0	_	_	Offset=4446-4456
+
+# sent_id = s63
+# text = Run the gel with 1X TBE buffer at 200 V until the lower dye band is near the bottom of the gel (0.5-1 cm).
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=4512-4521
+2	remove	_	Action	_	_	0	_	_	Offset=4522-4528
+3	gel	_	Reagent	_	_	0	_	_	Offset=4533-4536
+4	glass	_	Location	_	_	0	_	_	Offset=4546-4558
+5	stain	_	Action	_	_	0	_	_	Offset=4563-4568
+6	nucleic	_	Reagent	_	_	0	_	_	Offset=4576-4594
+7	SYBR	_	Reagent	_	_	6	Or	_	Offset=4603-4612
+8	Invitrogen	_	Reagent	_	_	7	Or	_	Offset=4614-4624
+9	manufacturer	_	Method	_	_	0	_	_	Offset=4630-4655
+
+# sent_id = s64
+# text = The gel should run for approximately 30 minutes.
+1	Visualize	_	Action	_	_	0	_	_	Offset=4657-4666
+2	gel	_	Reagent	_	_	0	_	_	Offset=4667-4676
+3	UV	_	Device	_	_	0	_	_	Offset=4682-4701
+4	gel	_	Device	_	_	3	Or	_	Offset=4711-4739
+
+# sent_id = s65
+# text = Run times may vary depending on individual equipment.
+1	clean	_	Modifier	_	_	2	Mod-Link	_	Offset=4749-4754
+2	razor	_	Device	_	_	0	_	_	Offset=4755-4760
+3	cut	_	Action	_	_	0	_	_	Offset=4761-4768
+4	~150	_	Generic-Measure	_	_	5	Measure	_	Offset=4773-4780
+5	band	_	Reagent	_	_	0	_	_	Offset=4781-4785
+6	place	_	Action	_	_	0	_	_	Offset=4790-4795
+7	clean	_	Modifier	_	_	9	Mod-Link	_	Offset=4801-4806
+8	1.7	_	Amount	_	_	9	Measure	_	Offset=4807-4813
+9	tube	_	Location	_	_	0	_	_	Offset=4814-4818
+
+# sent_id = s66
+# text = Carefully remove the gel from the glass plates and stain with a nucleic acid stain such as SYBR Gold (Invitrogen) per manufacturer instructions.
+1	Do	_	Action	_	_	0	_	_	Offset=4820-4834
+2	~130	_	Reagent	_	_	0	_	_	Offset=4839-4851
+
+# sent_id = s67
+# text = Visualize gel bands on a UV transilluminator or other gel documentation instrument.
+1	Briefly	_	Modifier	_	_	0	_	_	Offset=5022-5029
+2	centrifuge	_	Action	_	_	0	_	_	Offset=5030-5040
+3	microcentrifuge	_	Location	_	_	4	Meronym	_	Offset=5045-5065
+4	gel	_	Reagent	_	_	0	_	_	Offset=5081-5090
+5	collect	_	Action	_	_	0	_	_	Offset=5094-5101
+6	gel	_	Reagent	_	_	0	_	_	Offset=5106-5115
+7	bottom	_	Location	_	_	0	_	_	Offset=5123-5129
+8	tube	_	Location	_	_	7	Meronym	_	Offset=5137-5141
+
+# sent_id = s68
+# text = Using a clean razor cut out the ~150 bp band and place into clean 1.7 mL tube.
+1	Crush	_	Action	_	_	0	_	_	Offset=5143-5148
+2	gel	_	Reagent	_	_	0	_	_	Offset=5153-5162
+3	thoroughly	_	Modifier	_	_	0	_	_	Offset=5163-5173
+4	disposable	_	Modifier	_	_	5	Mod-Link	_	Offset=5181-5191
+5	pestle	_	Device	_	_	0	_	_	Offset=5192-5198
+
+# sent_id = s69
+# text = Do not cut out the ~130 bp band; this is adapter dimer product.
+1	Leave	_	Action	_	_	0	_	_	Offset=5200-5205
+2	pestle	_	Device	_	_	0	_	_	Offset=5210-5216
+3	tube	_	Location	_	_	0	_	_	Offset=5224-5228
+
+# sent_id = s70
+# text = See Figure 2 in Guidelines for example.
+1	Add	_	Action	_	_	0	_	_	Offset=5230-5233
+2	300	_	Amount	_	_	3	Measure	_	Offset=5234-5240
+3	Elution	_	Reagent	_	_	0	_	_	Offset=5244-5258
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=5262-5266
+5	tube	_	Location	_	_	0	_	_	Offset=5267-5271
+6	remove	_	Action	_	_	0	_	_	Offset=5281-5287
+7	pestle	_	Device	_	_	0	_	_	Offset=5292-5298
+8	gel	_	Reagent	_	_	0	_	_	Offset=5322-5325
+9	washed	_	Action	_	_	0	_	_	Offset=5347-5353
+10	pestle	_	Device	_	_	0	_	_	Offset=5363-5369
+
+# sent_id = s71
+# text = The ladder band at 200 bp is twice as intense as the other bands and can be used for orientation.
+1	gel	_	Reagent	_	_	0	_	_	Offset=5375-5385
+2	soak	_	Action	_	_	0	_	_	Offset=5386-5390
+3	at	_	Modifier	_	_	4	Mod-Link	_	Offset=5391-5399
+4	2	_	Time	_	_	0	_	_	Offset=5400-5407
+5	overnight	_	Time	_	_	4	Or	_	Offset=5411-5420
+6	room	_	Temperature	_	_	0	_	_	Offset=5424-5440
+7	agitation	_	Method	_	_	0	_	_	Offset=5446-5455
+
+# sent_id = s72
+# text = Briefly centrifuge the microcentrifuge tube containing the gel slice to collect the gel slice at the bottom of the tube.
+1	DO	_	Action	_	_	0	_	_	Offset=5457-5472
+2	overnight	_	Time	_	_	0	_	_	Offset=5485-5494
+
+# sent_id = s73
+# text = Crush the gel slice thoroughly with a disposable pestle.
+1	Pulse	_	Action	_	_	0	_	_	Offset=5496-5501
+2	spin	_	Location	_	_	0	_	_	Offset=5502-5512
+3	collect	_	Action	_	_	0	_	_	Offset=5516-5523
+4	all	_	Modifier	_	_	5	Mod-Link	_	Offset=5524-5527
+5	eluate	_	Reagent	_	_	0	_	_	Offset=5528-5534
+6	wall	_	Location	_	_	0	_	_	Offset=5540-5544
+7	lid	_	Seal	_	_	0	_	_	Offset=5549-5552
+
+# sent_id = s74
+# text = Leave the pestle in the tube.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=5554-5563
+2	transfer	_	Action	_	_	0	_	_	Offset=5564-5572
+3	eluate	_	Reagent	_	_	0	_	_	Offset=5577-5583
+4	top	_	Location	_	_	0	_	_	Offset=5615-5618
+5	Spin-X	_	Location	_	_	4	Meronym	_	Offset=5624-5645
+
+# sent_id = s75
+# text = Add 300 µL of Elution Buffer to each tube and then remove the pestle, ensuring that as much gel as possible has been washed from the pestle.
+1	Cutting	_	Action	_	_	0	_	_	Offset=5655-5662
+2	end	_	Location	_	_	0	_	_	Offset=5667-5674
+3	P1000	_	Device	_	_	2	Meronym	_	Offset=5680-5689
+4	transfer	_	Action	_	_	0	_	_	Offset=5702-5710
+5	larger	_	Reagent	_	_	0	_	_	Offset=5714-5731
+
+# sent_id = s76
+# text = Let gel pieces soak at least 2 hours or overnight at room temperature with agitation.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=5733-5743
+2	Spin-X	_	Location	_	_	0	_	_	Offset=5748-5759
+3	16,000	_	Speed	_	_	0	_	_	Offset=5763-5773
+4	2	_	Time	_	_	0	_	_	Offset=5778-5787
+
+# sent_id = s77
+# text = DO NOT incubate longer than overnight.
+1	Dispose	_	Action	_	_	0	_	_	Offset=5789-5796
+2	spin	_	Device	_	_	0	_	_	Offset=5804-5815
+
+# sent_id = s78
+# text = Pulse spin tubes to collect all eluate from wall and lid.
+1	Add	_	Action	_	_	0	_	_	Offset=5817-5820
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=5824-5828
+3	tube	_	Location	_	_	0	_	_	Offset=5829-5833
+4	mix	_	Action	_	_	0	_	_	Offset=5838-5841
+5	well	_	Modifier	_	_	0	_	_	Offset=5842-5846
+6	50	_	Amount	_	_	7	Measure	_	Offset=5849-5854
+7	AMPure	_	Reagent	_	_	0	_	_	Offset=5856-5871
+8	350	_	Amount	_	_	9	Measure	_	Offset=5873-5879
+9	Isopropanol	_	Reagent	_	_	0	_	_	Offset=5881-5892
+
+# sent_id = s79
+# text = Carefully transfer the eluate (including crushed gel) to the top of a Spin-X Centrifugetube (Sigma).
+1	Incubate	_	Action	_	_	0	_	_	Offset=5895-5903
+2	room	_	Temperature	_	_	0	_	_	Offset=5907-5923
+3	10	_	Reagent	_	_	0	_	_	Offset=5928-5938
+
+# sent_id = s80
+# text = Cutting the end off of a P1000 tip can help in transfer of larger gel pieces.
+1	Magnetize	_	Action	_	_	0	_	_	Offset=6010-6019
+2	sample	_	Reagent	_	_	0	_	_	Offset=6020-6026
+3	solution	_	Reagent	_	_	0	_	_	Offset=6033-6041
+4	clear	_	Action	_	_	0	_	_	Offset=6050-6055
+
+# sent_id = s81
+# text = Centrifuge the Spin-X tube at 16,000 x g for 2 minutes.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=6066-6075
+2	remove	_	Action	_	_	0	_	_	Offset=6076-6082
+3	discard	_	Action	_	_	0	_	_	Offset=6087-6094
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=6099-6110
+5	add	_	Action	_	_	0	_	_	Offset=6112-6115
+6	950	_	Amount	_	_	8	Measure	_	Offset=6116-6122
+7	80%	_	Concentration	_	_	8	Measure	_	Offset=6123-6126
+8	ethanol	_	Reagent	_	_	0	_	_	Offset=6127-6134
+9	incubate	_	Action	_	_	0	_	_	Offset=6136-6144
+10	30	_	Time	_	_	0	_	_	Offset=6145-6155
+11	remove	_	Action	_	_	0	_	_	Offset=6161-6167
+
+# sent_id = s82
+# text = Dispose of the spin filter.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=6178-6187
+2	remove	_	Action	_	_	0	_	_	Offset=6188-6194
+3	discard	_	Action	_	_	0	_	_	Offset=6199-6206
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=6211-6222
+5	add	_	Action	_	_	0	_	_	Offset=6224-6227
+6	950	_	Amount	_	_	8	Measure	_	Offset=6228-6234
+7	80%	_	Concentration	_	_	8	Measure	_	Offset=6235-6238
+8	ethanol	_	Reagent	_	_	0	_	_	Offset=6239-6246
+9	incubate	_	Action	_	_	0	_	_	Offset=6248-6256
+10	30	_	Time	_	_	0	_	_	Offset=6257-6267
+11	remove	_	Action	_	_	0	_	_	Offset=6273-6279
+
+# sent_id = s83
+# text = Add to each tube and mix well*: 50 µL, AMPure XP Beads; 350 µL, Isopropanol. 
+1	Dry	_	Action	_	_	0	_	_	Offset=6281-6284
+2	sample	_	Reagent	_	_	0	_	_	Offset=6285-6291
+3	3	_	Time	_	_	0	_	_	Offset=6296-6305
+
+# sent_id = s84
+# text = Incubate at room temperature for 10 minutes.
+1	one	_	Time	_	_	0	_	_	Offset=6313-6323
+2	remove	_	Action	_	_	0	_	_	Offset=6325-6331
+3	all	_	Modifier	_	_	5	Mod-Link	_	Offset=6332-6335
+4	residual	_	Modifier	_	_	5	Mod-Link	_	Offset=6336-6344
+5	liquid	_	Reagent	_	_	0	_	_	Offset=6345-6351
+6	bottom	_	Location	_	_	0	_	_	Offset=6382-6388
+7	tube	_	Location	_	_	6	Meronym	_	Offset=6396-6400
+
+# sent_id = s85
+# text = Agitation during this incubation may increase efficiency of recovery.
+1	Remove	_	Action	_	_	0	_	_	Offset=6402-6408
+2	plate	_	Location	_	_	0	_	_	Offset=6409-6414
+3	magnetic	_	Device	_	_	0	_	_	Offset=6420-6433
+4	resuspend	_	Action	_	_	0	_	_	Offset=6438-6447
+5	bead	_	Reagent	_	_	0	_	_	Offset=6448-6459
+6	13	_	Amount	_	_	7	Measure	_	Offset=6463-6468
+7	Resuspension	_	Reagent	_	_	0	_	_	Offset=6472-6491
+8	pipetting	_	Method	_	_	0	_	_	Offset=6495-6523
+
+# sent_id = s86
+# text = Magnetize sample until solution appears clear.
+1	beads	_	Reagent	_	_	0	_	_	Offset=6537-6542
+2	completely	_	Modifier	_	_	0	_	_	Offset=6547-6557
+3	resuspended	_	Action	_	_	0	_	_	Offset=6558-6569
+
+# sent_id = s87
+# text = Wash #1: Carefully remove and discard the supernatant, add 950 µL 80% ethanol, incubate 30 seconds, and remove.
+1	Incubate	_	Action	_	_	0	_	_	Offset=6586-6594
+2	2	_	Time	_	_	0	_	_	Offset=6599-6608
+
+# sent_id = s88
+# text = Wash #2: Carefully remove and discard the supernatant, add 950 µL 80% ethanol, incubate 30 seconds, and remove.
+1	Magnetize	_	Action	_	_	0	_	_	Offset=6610-6619
+2	5	_	Time	_	_	0	_	_	Offset=6624-6633
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=6643-6654
+4	clear	_	Action	_	_	0	_	_	Offset=6663-6668
+
+# sent_id = s89
+# text = Dry sample for 3 minutes.
+1	Transfer	_	Action	_	_	0	_	_	Offset=6670-6678
+2	12	_	Amount	_	_	3	Measure	_	Offset=6679-6684
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=6688-6699
+4	clean	_	Modifier	_	_	6	Mod-Link	_	Offset=6705-6710
+5	1.7	_	Amount	_	_	6	Measure	_	Offset=6711-6717
+6	tube	_	Location	_	_	0	_	_	Offset=6718-6722
+

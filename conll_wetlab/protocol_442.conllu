@@ -1,0 +1,87 @@
+# sent_id = s1
+# text = LB Agar Plates
+1	Weigh	_	Action	_	_	0	_	_	Offset=15-24
+2	1L	_	Amount	_	_	3	Measure	_	Offset=46-48
+3	Erlenmeyer	_	Location	_	_	0	_	_	Offset=49-65
+4	5g	_	Amount	_	_	5	Measure	_	Offset=67-69
+5	NaCl	_	Reagent	_	_	0	_	_	Offset=70-74
+6	5g	_	Amount	_	_	7	Measure	_	Offset=75-77
+7	Tryptone	_	Reagent	_	_	0	_	_	Offset=78-86
+8	2.5g	_	Amount	_	_	9	Measure	_	Offset=87-91
+9	Yeast	_	Reagent	_	_	0	_	_	Offset=92-97
+
+# sent_id = s2
+# text = Weigh out the following into a 1L Erlenmeyer flask: 5g NaCl 5g Tryptone 2.5g Yeast. 
+1	Extract	_	Action	_	_	0	_	_	Offset=100-107
+2	7.5g	_	Amount	_	_	3	Measure	_	Offset=108-112
+3	Agar	_	Reagent	_	_	0	_	_	Offset=113-117
+
+# sent_id = s3
+# text = Extract 7.5g Agar add (dH2O) to 500mL. 
+1	Swirl	_	Action	_	_	0	_	_	Offset=140-145
+
+# sent_id = s4
+# text = Swirl to mix. 
+1	Cover	_	Action	_	_	0	_	_	Offset=155-160
+2	top	_	Location	_	_	0	_	_	Offset=165-181
+3	aluminum	_	Device	_	_	0	_	_	Offset=187-200
+4	label	_	Action	_	_	0	_	_	Offset=205-210
+5	autoclave	_	Device	_	_	0	_	_	Offset=216-230
+
+# sent_id = s5
+# text = Cover the top of the flask with aluminum foil and label with autoclave tape.
+1	Autoclave	_	Action	_	_	0	_	_	Offset=232-241
+2	liquid	_	Location	_	_	0	_	_	Offset=249-255
+3	20	_	Time	_	_	0	_	_	Offset=268-278
+
+# sent_id = s6
+# text = Autoclave on the liquid setting for 20 minutes or according to your autoclave's specifications.
+1	allow	_	Action	_	_	0	_	_	Offset=376-381
+2	agar	_	Reagent	_	_	0	_	_	Offset=386-399
+3	cool	_	Action	_	_	0	_	_	Offset=403-407
+4	55°C	_	Temperature	_	_	0	_	_	Offset=411-415
+
+# sent_id = s7
+# text = After removing the solution from the autoclave, allow the agar solution to cool to 55°C.
+1	Add	_	Action	_	_	0	_	_	Offset=417-420
+2	appropriate	_	Modifier	_	_	4	Mod-Link	_	Offset=425-443
+3	desired	_	Modifier	_	_	4	Mod-Link	_	Offset=447-454
+4	antibiotic	_	Reagent	_	_	0	_	_	Offset=455-465
+5	solution	_	Location	_	_	0	_	_	Offset=473-481
+6	swirl	_	Action	_	_	0	_	_	Offset=537-542
+
+# sent_id = s8
+# text = Add the appropriate amount of desired antibiotic to the solution (500μL if you are using a 1,000x antibiotic stock) and swirl to mix.
+1	Pour	_	Action	_	_	0	_	_	Offset=551-555
+2	~20mL	_	Amount	_	_	3	Measure	_	Offset=556-561
+3	LB	_	Reagent	_	_	0	_	_	Offset=565-572
+4	Petri	_	Location	_	_	0	_	_	Offset=594-604
+
+# sent_id = s9
+# text = Pour ~20mL of LB agar per 10cm polystyrene Petri dish.
+1	Place	_	Action	_	_	0	_	_	Offset=606-611
+2	lids	_	Seal	_	_	0	_	_	Offset=616-620
+3	plates	_	Location	_	_	0	_	_	Offset=628-634
+4	allow	_	Action	_	_	0	_	_	Offset=639-644
+5	them	_	Mention	_	_	0	_	_	Offset=645-649
+6	cool	_	Action	_	_	0	_	_	Offset=653-657
+7	30-60	_	Time	_	_	0	_	_	Offset=662-675
+
+# sent_id = s10
+# text = Place the lids on the plates and allow them to cool for 30-60 minutes (until solidified). 
+1	Invert	_	Action	_	_	0	_	_	Offset=697-703
+2	plates	_	Location	_	_	0	_	_	Offset=708-714
+3	let	_	Action	_	_	0	_	_	Offset=719-722
+4	sit	_	Action	_	_	0	_	_	Offset=723-726
+5	several	_	Time	_	_	0	_	_	Offset=731-749
+
+# sent_id = s11
+# text = Invert the plates and let sit for several more hours or overnight.
+1	Label	_	Action	_	_	0	_	_	Offset=764-769
+2	bottom	_	Modifier	_	_	3	Mod-Link	_	Offset=774-780
+3	plates	_	Location	_	_	0	_	_	Offset=784-790
+4	antibiotic	_	Reagent	_	_	0	_	_	Offset=796-806
+5	date	_	Device	_	_	0	_	_	Offset=811-815
+6	store	_	Action	_	_	0	_	_	Offset=820-825
+7	plastic	_	Location	_	_	0	_	_	Offset=829-841
+

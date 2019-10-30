@@ -1,0 +1,125 @@
+# sent_id = s1
+# text = Isotopic Labeling of Cyanobacteria and DNA Analysis
+1	Prepare	_	Action	_	_	0	_	_	Offset=52-59
+2	Pro99	_	Reagent	_	_	0	_	_	Offset=60-65
+3	SN	_	Reagent	_	_	2	Or	_	Offset=67-69
+4	SNAX	_	Reagent	_	_	3	Or	_	Offset=71-75
+5	Amp1	_	Reagent	_	_	4	Or	_	Offset=79-90
+6	according	_	Method	_	_	0	_	_	Offset=91-114
+7	15N	_	Concentration	_	_	8	Measure	_	Offset=124-127
+8	ammonium	_	Reagent	_	_	0	_	_	Offset=128-145
+
+# sent_id = s2
+# text = Prepare Pro99, SN, SNAX or Amp1 medium according to directions, but use 15N ammonium chloride which will provide the heavy isotope.
+1	Grow	_	Action	_	_	0	_	_	Offset=262-266
+2	cyanobacteria	_	Reagent	_	_	0	_	_	Offset=267-280
+3	medium	_	Reagent	_	_	4	Meronym	_	Offset=288-294
+4	heavy	_	Reagent	_	_	0	_	_	Offset=300-314
+5	transfer	_	Action	_	_	0	_	_	Offset=319-327
+6	at	_	Modifier	_	_	7	Or	_	Offset=328-336
+7	3	_	Numerical	_	_	0	_	_	Offset=337-338
+
+# sent_id = s3
+# text = 15 NH4Cl is available from Cambridge Isotope Laboratories, Inc. (#NLM-467-1).
+1	Harvest	_	Action	_	_	0	_	_	Offset=357-364
+2	bacteria	_	Reagent	_	_	0	_	_	Offset=369-383
+3	heavy	_	Reagent	_	_	0	_	_	Offset=387-401
+
+# sent_id = s4
+# text = Grow cyanobacteria in the medium with heavy nitrogen and transfer at least 3 times before use.
+1	Extract	_	Action	_	_	0	_	_	Offset=403-410
+2	bacterial	_	Reagent	_	_	0	_	_	Offset=411-424
+3	standard	_	Method	_	_	0	_	_	Offset=431-447
+
+# sent_id = s5
+# text = Harvest the bacteria grown in heavy nitrogen.
+1	Quantify	_	Action	_	_	0	_	_	Offset=449-457
+2	DNA	_	Reagent	_	_	0	_	_	Offset=462-465
+3	Quant-iT	_	Reagent	_	_	0	_	_	Offset=472-491
+
+# sent_id = s6
+# text = Extract bacterial DNA using standard methods.
+1	at	_	Modifier	_	_	2	Mod-Link	_	Offset=497-505
+2	10	_	Amount	_	_	3	Measure	_	Offset=506-511
+3	DNA	_	Reagent	_	_	0	_	_	Offset=515-518
+4	density	_	Action	_	_	0	_	_	Offset=523-554
+
+# sent_id = s7
+# text = Quantify the DNA using Quant-iT Pico Green.
+1	density	_	Action	_	_	0	_	_	Offset=560-591
+2	Beckman	_	Device	_	_	0	_	_	Offset=595-624
+3	13x48	_	Size	_	_	4	Measure	_	Offset=639-647
+4	OptiSeal	_	Location	_	_	0	_	_	Offset=648-674
+5	4.9	_	Amount	_	_	4	Measure	_	Offset=676-682
+
+# sent_id = s8
+# text = Use at least 10 µg of DNA for density gradient centrifugation.
+1	Mix	_	Action	_	_	0	_	_	Offset=694-697
+2	DNA	_	Reagent	_	_	0	_	_	Offset=702-705
+3	TE	_	Reagent	_	_	5	Meronym	7:Meronym	Offset=711-720
+4	10mM	_	Concentration	_	_	5	Measure	_	Offset=722-726
+5	Tris	_	Reagent	_	_	0	_	_	Offset=727-731
+6	1mM	_	Concentration	_	_	7	Measure	_	Offset=733-736
+7	EDTA	_	Reagent	_	_	0	_	_	Offset=737-741
+8	pH7.6	_	pH	_	_	7	Measure	_	Offset=743-748
+9	0.9	_	Amount	_	_	0	_	_	Offset=771-777
+
+# sent_id = s9
+# text = For density gradient centrifugation, a Beckman VTi 65 vertical rotor was used with 13x48 mm OptiSeal polyallomer tubes (4.9 ml capacity).
+1	Mix	_	Action	_	_	0	_	_	Offset=779-782
+2	DNA	_	Reagent	_	_	0	_	_	Offset=787-790
+3	4ml	_	Amount	_	_	4	Measure	_	Offset=796-799
+4	CsCl	_	Reagent	_	_	5	Meronym	_	Offset=803-807
+5	TE	_	Reagent	_	_	0	_	_	Offset=820-822
+6	density	_	Generic-Measure	_	_	0	_	_	Offset=828-843
+
+# sent_id = s10
+# text = Mix the DNA with TE buffer (10mM Tris, 1mM EDTA, pH7.6) to a final volume of 0.9 ml.
+1	Dispense	_	Action	_	_	0	_	_	Offset=911-919
+2	4.9	_	Amount	_	_	3	Measure	_	Offset=920-926
+3	DNA	_	Reagent	_	_	0	_	_	Offset=934-944
+4	CsCl	_	Reagent	_	_	0	_	_	Offset=948-952
+5	OptiSeal	_	Location	_	_	4	Meronym	_	Offset=962-975
+6	plug	_	Action	_	_	0	_	_	Offset=980-984
+7	black	_	Seal	_	_	0	_	_	Offset=994-1004
+
+# sent_id = s11
+# text = Mix the DNA with 4ml of CsCl prepared in TE to a density of p1.8 (measure the density of the final solutions, they should be p1.7).
+1	Load	_	Action	_	_	0	_	_	Offset=1006-1010
+2	tubes	_	Location	_	_	0	_	_	Offset=1015-1020
+3	rotor	_	Device	_	_	0	_	_	Offset=1030-1035
+4	put	_	Action	_	_	0	_	_	Offset=1040-1043
+5	caps	_	Seal	_	_	0	_	_	Offset=1044-1048
+
+# sent_id = s12
+# text = Dispense 4.9 ml of the DNA sample in CsCl into the OptiSeal tube and plug with the black caps.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1066-1076
+2	44,000	_	Speed	_	_	3	Setting	_	Offset=1080-1090
+3	Beckman	_	Device	_	_	0	_	_	Offset=1111-1129
+4	ultracentrifuge	_	Action	_	_	0	_	_	Offset=1130-1145
+5	48	_	Time	_	_	0	_	_	Offset=1150-1155
+6	18°C	_	Temperature	_	_	0	_	_	Offset=1159-1163
+
+# sent_id = s13
+# text = Load the tubes into the rotor and put caps on all carriers.
+1	Collect	_	Action	_	_	0	_	_	Offset=1165-1172
+2	0.2-0.25	_	Amount	_	_	3	Measure	_	Offset=1173-1184
+3	fractions	_	Reagent	_	_	0	_	_	Offset=1185-1194
+
+# sent_id = s14
+# text = Centrifuge at 44,000 rpm (=184,678.5 g) in a Beckman L70 or L80 ultracentrifuge for 48 hr at 18°C.
+1	Calculate	_	Action	_	_	0	_	_	Offset=1196-1205
+2	amount	_	Amount	_	_	0	_	_	Offset=1206-1212
+3	DNA	_	Reagent	_	_	0	_	_	Offset=1216-1219
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=1223-1227
+5	fraction	_	Reagent	_	_	0	_	_	Offset=1228-1236
+6	Quant-iT	_	Reagent	_	_	0	_	_	Offset=1243-1262
+7	measure	_	Action	_	_	0	_	_	Offset=1290-1297
+8	density	_	Measure-Type	_	_	0	_	_	Offset=1302-1309
+9	each	_	Modifier	_	_	10	Mod-Link	_	Offset=1313-1317
+10	fraction	_	Reagent	_	_	0	_	_	Offset=1318-1326
+
+# sent_id = s15
+# text = Collect 0.2-0.25 ml fractions.
+1	Determine	_	Action	_	_	0	_	_	Offset=1328-1337
+

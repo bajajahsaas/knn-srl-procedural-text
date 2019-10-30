@@ -1,0 +1,277 @@
+# sent_id = s1
+# text = Extraction of surface-community DNA from Ulva sp.
+1	Collect	_	Action	_	_	0	_	_	Offset=462-469
+2	several	_	Amount	_	_	3	Measure	_	Offset=470-477
+3	Ulva	_	Reagent	_	_	0	_	_	Offset=478-493
+4	by	_	Method	_	_	0	_	_	Offset=494-501
+5	intertidal	_	Location	_	_	0	_	_	Offset=507-522
+6	transfer	_	Action	_	_	0	_	_	Offset=527-535
+7	plastic	_	Location	_	_	0	_	_	Offset=543-564
+8	with	_	Modifier	_	_	0	_	_	Offset=565-579
+
+# sent_id = s2
+# text = This method performs a direct lysis of the microbial community on the algal surface followed by an organic extraction and precipitation of the microbial DNA.
+1	Transfer	_	Action	_	_	0	_	_	Offset=602-610
+2	laboratory	_	Location	_	_	0	_	_	Offset=620-630
+3	asap	_	Modifier	_	_	0	_	_	Offset=631-635
+
+# sent_id = s3
+# text = Ulva plants do get damaged during the treatment, however eukaryotic microbes might be lysed.
+1	Transfer	_	Action	_	_	0	_	_	Offset=637-645
+2	plants	_	Reagent	_	_	0	_	_	Offset=646-652
+3	sterile	_	Location	_	_	0	_	_	Offset=658-688
+4	CMFSW	_	Reagent	_	_	0	_	_	Offset=703-708
+5	cut	_	Action	_	_	0	_	_	Offset=713-720
+6	buttom	_	Modifier	_	_	7	Mod-Link	_	Offset=725-736
+7	plant	_	Reagent	_	_	0	_	_	Offset=753-758
+8	sterile	_	Device	_	_	0	_	_	Offset=766-779
+9	forceps	_	Device	_	_	0	_	_	Offset=784-791
+
+# sent_id = s4
+# text = Therefore microscopic check of the algal surface before treatment and removal of basal parts (old and most likely covered by secondary colonisers) is necessary.
+1	Chop	_	Action	_	_	0	_	_	Offset=793-797
+2	plant	_	Reagent	_	_	0	_	_	Offset=802-807
+3	2-4	_	Size	_	_	0	_	_	Offset=830-849
+
+# sent_id = s5
+# text = Collect several Ulva sp. plants by hand from intertidal pool and transfer into a plastic bag container with sea water (from the same site).
+1	Wash	_	Action	_	_	0	_	_	Offset=851-855
+2	plant	_	Reagent	_	_	0	_	_	Offset=856-861
+3	3	_	Numerical	_	_	0	_	_	Offset=869-870
+4	1-2	_	Time	_	_	0	_	_	Offset=881-888
+5	CMFSW	_	Reagent	_	_	0	_	_	Offset=894-899
+
+# sent_id = s6
+# text = Transfer into the laboratory asap.
+1	Take	_	Action	_	_	0	_	_	Offset=962-966
+2	couple	_	Amount	_	_	0	_	_	Offset=969-975
+3	random	_	Modifier	_	_	2	Mod-Link	4:Mod-Link	Offset=979-985
+4	pieces	_	Reagent	_	_	0	_	_	Offset=986-992
+5	perform	_	Action	_	_	0	_	_	Offset=997-1004
+6	microscopic	_	Method	_	_	0	_	_	Offset=1007-1030
+7	place	_	Action	_	_	0	_	_	Offset=1037-1042
+8	Ulva	_	Reagent	_	_	0	_	_	Offset=1043-1047
+9	glass	_	Location	_	_	0	_	_	Offset=1059-1075
+
+# sent_id = s7
+# text = Transfer plants into sterile washing bowl container with a bit of CMFSW and cut off the buttom part (2-3 cm) of the plant with a sterile knife and forceps.
+1	Place	_	Action	_	_	0	_	_	Offset=1121-1126
+2	cover	_	Location	_	_	0	_	_	Offset=1130-1140
+3	drain	_	Action	_	_	0	_	_	Offset=1145-1150
+4	excessive	_	Modifier	_	_	5	Mod-Link	_	Offset=1151-1160
+5	liquid	_	Reagent	_	_	0	_	_	Offset=1161-1167
+6	tissue	_	Device	_	_	0	_	_	Offset=1175-1181
+
+# sent_id = s8
+# text = Chop the plant into piece of roughly 2-4 cm length width.
+1	Observe	_	Action	_	_	0	_	_	Offset=1183-1190
+2	fluorescent	_	Modifier	_	_	3	Mod-Link	_	Offset=1197-1208
+3	microscope	_	Location	_	_	0	_	_	Offset=1209-1219
+
+# sent_id = s9
+# text = Wash plant pieces 3 times for 1-2 min with CMFSW; make sure smaller bits and non-plant material get wash away.
+1	Describe	_	Action	_	_	0	_	_	Offset=1221-1229
+2	note	_	Action	_	_	0	_	_	Offset=1234-1238
+3	surface	_	Generic-Measure	_	_	4	Measure	_	Offset=1239-1255
+4	cells	_	Reagent	_	_	0	_	_	Offset=1259-1264
+
+# sent_id = s10
+# text = Take a couple of random pieces and perform a microscopic observation on it:place Ulva piece onto glass slidecover Ulva piece with approx. 10 µl of live stain.
+1	Using	_	Action	_	_	0	_	_	Offset=1266-1271
+2	balance	_	Device	_	_	0	_	_	Offset=1274-1281
+3	weigh	_	Action	_	_	0	_	_	Offset=1282-1287
+4	12	_	Amount	_	_	5	Measure	_	Offset=1292-1296
+5	plant	_	Reagent	_	_	0	_	_	Offset=1300-1316
+6	petri	_	Device	_	_	0	_	_	Offset=1335-1345
+
+# sent_id = s11
+# text = Place on cover slip and drain excessive liquid with a tissue.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1347-1355
+2	12	_	Amount	_	_	3	Measure	_	Offset=1356-1360
+3	plant	_	Reagent	_	_	0	_	_	Offset=1364-1369
+4	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=1377-1384
+5	50	_	Location	_	_	0	_	_	Offset=1385-1402
+6	30	_	Amount	_	_	7	Measure	_	Offset=1408-1413
+7	CMFSW	_	Reagent	_	_	0	_	_	Offset=1417-1422
+8	300	_	Amount	_	_	9	Measure	_	Offset=1427-1433
+9	3M	_	Reagent	_	_	0	_	_	Offset=1437-1460
+10	shake	_	Action	_	_	0	_	_	Offset=1462-1467
+11	gently	_	Modifier	_	_	0	_	_	Offset=1468-1474
+12	plant	_	Location	_	_	0	_	_	Offset=1492-1505
+13	covered	_	Action	_	_	0	_	_	Offset=1509-1516
+14	CMFSW	_	Reagent	_	_	0	_	_	Offset=1526-1543
+
+# sent_id = s12
+# text = Observe under fluorescent microscope.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1545-1553
+2	room	_	Temperature	_	_	0	_	_	Offset=1557-1573
+
+# sent_id = s13
+# text = Describe and note surface coverage of cells.
+1	Perform	_	Action	_	_	0	_	_	Offset=1575-1582
+2	microscopy	_	Method	_	_	0	_	_	Offset=1583-1593
+3	30	_	Time	_	_	0	_	_	Offset=1600-1606
+
+# sent_id = s14
+# text = Using a balance weigh out 12 g of plant wet-weight (drip dry) into a petri dish.
+1	continue	_	Action	_	_	0	_	_	Offset=1703-1711
+2	incubation	_	Method	_	_	0	_	_	Offset=1712-1722
+3	until	_	Time	_	_	0	_	_	Offset=1750-1799
+
+# sent_id = s15
+# text = Transfer 12 g of plant into a sterile 50 ml Falcon tube with 30 ml of CMFSW and 300 µl of 3M Multi Enzyme Cleaner; shake gently to make sure the plant surface is covered with the CMFSW cleaner mix.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1800-1808
+2	liquid	_	Reagent	_	_	0	_	_	Offset=1809-1815
+3	1	_	Numerical	_	_	6	Measure	_	Offset=1821-1822
+4	2	_	Numerical	_	_	6	Measure	_	Offset=1826-1827
+5	new	_	Modifier	_	_	6	Mod-Link	_	Offset=1828-1831
+6	50ml	_	Location	_	_	0	_	_	Offset=1832-1849
+
+# sent_id = s16
+# text = Incubate at room temperature.
+1	Add	_	Action	_	_	0	_	_	Offset=2021-2024
+2	equal	_	Modifier	_	_	3	Mod-Link	_	Offset=2028-2033
+3	volume	_	Amount	_	_	4	Measure	_	Offset=2034-2040
+4	phenol	_	Reagent	_	_	0	_	_	Offset=2044-2077
+5	supernatant	_	Reagent	_	_	0	_	_	Offset=2095-2106
+6	shake	_	Action	_	_	0	_	_	Offset=2111-2116
+7	gently	_	Modifier	_	_	0	_	_	Offset=2117-2123
+8	thoroughly	_	Modifier	_	_	0	_	_	Offset=2128-2138
+
+# sent_id = s17
+# text = Perform microscopy after 30 min (see point 6).
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2140-2150
+2	5	_	Time	_	_	0	_	_	Offset=2155-2160
+3	2000	_	Speed	_	_	0	_	_	Offset=2164-2172
+
+# sent_id = s18
+# text = If surface shows little cells left or is cleared, then go to point 12.
+1	Transfer	_	Action	_	_	0	_	_	Offset=2174-2182
+2	aqueous	_	Reagent	_	_	0	_	_	Offset=2183-2196
+3	SS34	_	Location	_	_	0	_	_	Offset=2204-2214
+
+# sent_id = s19
+# text = Otherwise continue incubation (total 1 hour or 2 hours), until most cells on the plant surface are remove.
+1	Add	_	Action	_	_	0	_	_	Offset=2216-2219
+2	1/10	_	Amount	_	_	3	Measure	_	Offset=2220-2231
+3	3M	_	Reagent	_	_	0	_	_	Offset=2235-2252
+4	3	_	Amount	_	_	5	Measure	_	Offset=2257-2266
+5	95%	_	Reagent	_	_	0	_	_	Offset=2270-2281
+
+# sent_id = s20
+# text = Transfer liquid into 1 or 2 new 50ml Falcon tubes (file tubes not more than 20 ml); make sure no plant material is being transferred, optional the liquid can be filtered through a sterile 125 µm sieve of a 0.8 µm filter.
+1	Shake	_	Action	_	_	0	_	_	Offset=2283-2288
+2	gently	_	Modifier	_	_	0	_	_	Offset=2289-2295
+3	thoroughly	_	Modifier	_	_	0	_	_	Offset=2300-2310
+
+# sent_id = s21
+# text = Add an equal volume of phenol chloroform isoamyl alcohol (25:24:1) to the supernatant and shake gently but thoroughly.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2359-2367
+2	–20oC	_	Temperature	_	_	0	_	_	Offset=2371-2376
+3	at	_	Modifier	_	_	4	Mod-Link	_	Offset=2381-2389
+4	2	_	Time	_	_	0	_	_	Offset=2390-2397
+
+# sent_id = s22
+# text = Centrifuge for 5 min at 2000 x g.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2399-2409
+2	30	_	Time	_	_	0	_	_	Offset=2414-2420
+3	20	_	Speed	_	_	0	_	_	Offset=2424-2434
+
+# sent_id = s23
+# text = Transfer aqueous phase into a SS34 tubes.
+1	Remove	_	Action	_	_	0	_	_	Offset=2436-2442
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=2443-2454
+
+# sent_id = s24
+# text = Add 1/10 volume of 3M sodium acetate and 3 volumes of 95% ethanol.
+1	Add	_	Action	_	_	0	_	_	Offset=2456-2459
+2	10	_	Amount	_	_	3	Measure	_	Offset=2460-2465
+3	70%	_	Reagent	_	_	0	_	_	Offset=2469-2480
+4	pellet	_	Location	_	_	0	_	_	Offset=2484-2490
+
+# sent_id = s25
+# text = Shake gently but thoroughly; note: a white precipitate will become visible.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2492-2502
+2	5	_	Time	_	_	0	_	_	Offset=2507-2512
+3	20	_	Speed	_	_	0	_	_	Offset=2516-2526
+
+# sent_id = s26
+# text = Incubate at –20oC for at least 2 hours.
+1	Remove	_	Action	_	_	0	_	_	Offset=2528-2534
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=2535-2546
+3	air-dry	_	Action	_	_	0	_	_	Offset=2551-2558
+4	pellet	_	Reagent	_	_	0	_	_	Offset=2559-2565
+
+# sent_id = s27
+# text = Centrifuge for 30 min at 20 000 x g.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=2567-2576
+2	pellet	_	Reagent	_	_	0	_	_	Offset=2577-2583
+3	0.5	_	Reagent	_	_	0	_	_	Offset=2587-2607
+4	transfer	_	Action	_	_	0	_	_	Offset=2612-2620
+5	2	_	Location	_	_	0	_	_	Offset=2626-2651
+
+# sent_id = s28
+# text = Remove supernatant.
+1	Add	_	Action	_	_	0	_	_	Offset=2653-2656
+2	1/10	_	Amount	_	_	3	Measure	_	Offset=2657-2668
+3	3M	_	Reagent	_	_	0	_	_	Offset=2672-2689
+4	3	_	Amount	_	_	5	Measure	_	Offset=2694-2703
+5	95%	_	Reagent	_	_	0	_	_	Offset=2707-2718
+
+# sent_id = s29
+# text = Add 10 ml of 70% ethanol to pellet.
+1	Shake	_	Action	_	_	0	_	_	Offset=2720-2725
+2	gently	_	Modifier	_	_	0	_	_	Offset=2726-2732
+3	thoroughly	_	Modifier	_	_	0	_	_	Offset=2737-2747
+
+# sent_id = s30
+# text = Centrifuge for 5 min at 20 000 x g.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2796-2804
+2	–20oC	_	Temperature	_	_	0	_	_	Offset=2808-2813
+3	at	_	Modifier	_	_	0	_	_	Offset=2818-2826
+4	2	_	Time	_	_	3	Setting	_	Offset=2827-2834
+
+# sent_id = s31
+# text = Remove supernatant and air-dry pellet.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2836-2846
+2	30	_	Time	_	_	0	_	_	Offset=2851-2857
+3	20	_	Speed	_	_	0	_	_	Offset=2861-2871
+
+# sent_id = s32
+# text = Resuspend pellet in 0.5 ml sterile water and transfer into 2 ml microcentrifuge tube.
+1	Remove	_	Action	_	_	0	_	_	Offset=2873-2879
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=2880-2891
+
+# sent_id = s33
+# text = Add 1/10 volume of 3M sodium acetate and 3 volumes of 95% ethanol.
+1	Add	_	Action	_	_	0	_	_	Offset=2893-2896
+2	1	_	Amount	_	_	3	Measure	_	Offset=2897-2900
+3	70%	_	Reagent	_	_	0	_	_	Offset=2905-2916
+4	pellet	_	Location	_	_	0	_	_	Offset=2920-2926
+
+# sent_id = s34
+# text = Shake gently but thoroughly; note: a white precipitate will become visible.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2928-2938
+2	5	_	Time	_	_	0	_	_	Offset=2943-2948
+3	20	_	Speed	_	_	0	_	_	Offset=2952-2962
+
+# sent_id = s35
+# text = Incubate at –20oC for at least 2 hours.
+1	Remove	_	Action	_	_	0	_	_	Offset=2964-2970
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=2971-2982
+3	air-dry	_	Action	_	_	0	_	_	Offset=2987-2994
+4	pellet	_	Reagent	_	_	0	_	_	Offset=2995-3001
+
+# sent_id = s36
+# text = Centrifuge for 30 min at 20 000 x g.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=3003-3012
+2	pellet	_	Reagent	_	_	0	_	_	Offset=3013-3019
+3	50-100µl	_	Reagent	_	_	0	_	_	Offset=3025-3043
+
+# sent_id = s37
+# text = Remove supernatant.
+1	Check	_	Action	_	_	0	_	_	Offset=3045-3050
+2	approx	_	Modifier	_	_	4	Mod-Link	_	Offset=3051-3057
+3	1µl	_	Amount	_	_	4	Measure	_	Offset=3059-3062
+4	agarose	_	Reagent	_	_	0	_	_	Offset=3066-3078
+

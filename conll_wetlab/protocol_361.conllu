@@ -1,0 +1,57 @@
+# sent_id = s1
+# text = Modified KAPA Express Extract
+1	Incubate	_	Action	_	_	0	_	_	Offset=30-38
+2	thermocycler	_	Device	_	_	0	_	_	Offset=44-56
+3	10	_	Time	_	_	0	_	_	Offset=61-71
+4	75ºC	_	Temperature	_	_	0	_	_	Offset=75-79
+
+# sent_id = s2
+# text = Incubate in a thermocycler for 10 minutes at 75ºC.
+1	cells	_	Reagent	_	_	0	_	_	Offset=99-104
+2	lysed	_	Action	_	_	0	_	_	Offset=109-114
+3	nucleases	_	Reagent	_	_	0	_	_	Offset=116-125
+4	proteins	_	Reagent	_	_	0	_	_	Offset=130-138
+5	degraded	_	Action	_	_	0	_	_	Offset=139-147
+6	DNA	_	Reagent	_	_	0	_	_	Offset=152-155
+7	released	_	Action	_	_	0	_	_	Offset=156-164
+
+# sent_id = s3
+# text = During this step, cells are lysed, nucleases and proteins degraded and DNA released.
+1	Incubate	_	Action	_	_	0	_	_	Offset=166-174
+2	5	_	Time	_	_	0	_	_	Offset=179-188
+3	95ºC	_	Temperature	_	_	0	_	_	Offset=192-196
+4	inactivate	_	Action	_	_	0	_	_	Offset=200-210
+5	thermostable	_	Reagent	_	_	0	_	_	Offset=215-257
+
+# sent_id = s4
+# text = Incubate for 5 minutes at 95ºC to inactivate the thermostable KAPA Express Extract protease.
+1	Vortex	_	Action	_	_	0	_	_	Offset=259-265
+2	reaction	_	Reagent	_	_	0	_	_	Offset=266-282
+3	2-3	_	Time	_	_	0	_	_	Offset=287-294
+
+# sent_id = s5
+# text = Vortex reaction product for 2-3 sec.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=296-306
+2	high	_	Speed	_	_	0	_	_	Offset=310-320
+3	1	_	Time	_	_	0	_	_	Offset=325-333
+4	pellet	_	Action	_	_	0	_	_	Offset=337-343
+5	debris	_	Reagent	_	_	0	_	_	Offset=344-350
+6	Transfer	_	Action	_	_	0	_	_	Offset=351-359
+7	DNA-containing	_	Reagent	_	_	0	_	_	Offset=360-386
+8	fresh	_	Modifier	_	_	9	Mod-Link	_	Offset=392-397
+9	tube	_	Location	_	_	0	_	_	Offset=398-402
+
+# sent_id = s6
+# text = Centrifuge at high speed for 1 minute to pellet debris.Transfer DNA-containing supernatant to a fresh tube.
+1	1	_	Amount	_	_	2	Measure	_	Offset=408-412
+2	DNA	_	Reagent	_	_	0	_	_	Offset=416-427
+3	25	_	Size	_	_	0	_	_	Offset=442-447
+4	PCR	_	Action	_	_	0	_	_	Offset=448-451
+
+# sent_id = s7
+# text = Use 1 μl of DNA extract directly in a 25 μl PCR, without quantification.
+1	Dilute	_	Action	_	_	0	_	_	Offset=477-483
+2	TE	_	Reagent	_	_	0	_	_	Offset=487-496
+3	storage	_	Action	_	_	0	_	_	Offset=511-518
+4	-20ºC	_	Temperature	_	_	0	_	_	Offset=522-527
+

@@ -1,0 +1,130 @@
+# sent_id = s1
+# text = Protocol for SYBR Counts of Cyanophages and Bacteria Make dilutions of the sample(s).
+1	Remove	_	Action	_	_	0	_	_	Offset=330-336
+2	10%	_	Concentration	_	_	3	Measure	_	Offset=341-344
+3	SYBR	_	Reagent	_	_	0	_	_	Offset=345-349
+4	phenylenediamine	_	Reagent	_	_	0	_	_	Offset=354-370
+5	freezer	_	Device	_	_	0	_	_	Offset=380-387
+
+# sent_id = s2
+# text = Record volume of samples used.
+1	Connect	_	Action	_	_	0	_	_	Offset=467-474
+2	glass	_	Device	_	_	0	_	_	Offset=479-490
+3	vacuum	_	Device	_	_	0	_	_	Offset=498-509
+
+# sent_id = s3
+# text = Custom has been to use 20 µl of phage stocks or 200 µl of cells diluted to 2 ml with autoclaved seawater.
+1	Attach	_	Action	_	_	0	_	_	Offset=511-517
+2	filter	_	Device	_	_	0	_	_	Offset=522-535
+
+# sent_id = s4
+# text = If the final slides appear too sparse or dense then the volume of sample used can be adjusted accordingly.
+1	Place	_	Action	_	_	0	_	_	Offset=588-593
+2	0.8	_	Size	_	_	3	Measure	_	Offset=596-602
+3	filter	_	Device	_	_	0	_	_	Offset=603-609
+4	top	_	Location	_	_	0	_	_	Offset=613-629
+
+# sent_id = s5
+# text = Remove the 10% SYBR and phenylenediamine from the freezer.
+1	Place	_	Action	_	_	0	_	_	Offset=811-816
+2	0.02	_	Size	_	_	3	Measure	_	Offset=821-828
+3	filter	_	Device	_	_	0	_	_	Offset=829-835
+4	0.8	_	Size	_	_	5	Measure	_	Offset=850-856
+5	filter	_	Location	_	_	0	_	_	Offset=857-863
+
+# sent_id = s6
+# text = Keep the stocks away from light (such as in a drawer) while they are thawing.
+1	Clamp	_	Action	_	_	0	_	_	Offset=1002-1007
+2	funnel	_	Device	_	_	0	_	_	Offset=1012-1018
+3	filters	_	Location	_	_	0	_	_	Offset=1033-1040
+
+# sent_id = s7
+# text = Connect the glass flask to the vacuum pump.
+1	Add	_	Action	_	_	0	_	_	Offset=1042-1045
+2	sample	_	Reagent	_	_	0	_	_	Offset=1050-1056
+3	turn	_	Action	_	_	0	_	_	Offset=1061-1068
+4	pump	_	Mention	_	_	0	_	_	Offset=1073-1077
+
+# sent_id = s8
+# text = Attach the filter holder so that the grout is flat and level with the table.
+1	Turn	_	Action	_	_	0	_	_	Offset=1220-1228
+2	vacuum	_	Device	_	_	0	_	_	Offset=1233-1239
+3	remove	_	Action	_	_	0	_	_	Offset=1241-1247
+4	0.02	_	Size	_	_	5	Measure	_	Offset=1248-1255
+5	filter	_	Device	_	_	0	_	_	Offset=1256-1262
+
+# sent_id = s9
+# text = Place a 0.8 µm filter on top of the grout.
+1	Blot	_	Action	_	_	0	_	_	Offset=1315-1323
+2	seawater	_	Reagent	_	_	0	_	_	Offset=1328-1336
+3	bottom	_	Modifier	_	_	5	Mod-Link	_	Offset=1344-1350
+4	top	_	Modifier	_	_	5	Mod-Link	_	Offset=1358-1361
+5	plastic	_	Location	_	_	0	_	_	Offset=1362-1373
+6	kimwipe	_	Device	_	_	0	_	_	Offset=1381-1388
+
+# sent_id = s10
+# text = Make sure it is completely flat and centered, with no air bubbles underneath (pre-wetting the grout helps).
+1	Prepare	_	Action	_	_	0	_	_	Offset=1639-1646
+2	100	_	Amount	_	_	4	Measure	_	Offset=1649-1655
+3	drop	_	Modifier	_	_	4	Mod-Link	_	Offset=1656-1660
+4	SYBR	_	Reagent	_	_	0	_	_	Offset=1664-1668
+
+# sent_id = s11
+# text = This filter can be used many times so long as it stays intact and flat.
+1	Lay	_	Action	_	_	0	_	_	Offset=1786-1789
+2	0.02	_	Size	_	_	0	_	_	Offset=1794-1798
+
+# sent_id = s12
+# text = Place the 0.02 µm filter on top of the 0.8 µm filter. 
+1	Dry	_	Action	_	_	0	_	_	Offset=1983-1986
+2	completely	_	Modifier	_	_	0	_	_	Offset=1987-1997
+3	steps	_	Method	_	_	0	_	_	Offset=2004-2013
+
+# sent_id = s13
+# text = Again, make sure it is flat and centered with no air bubbles underneath.
+1	Place	_	Action	_	_	0	_	_	Offset=2051-2056
+2	glass	_	Location	_	_	0	_	_	Offset=2088-2099
+
+# sent_id = s14
+# text = Turning on the vacuum for a brief while can help achieve this.
+1	Place	_	Action	_	_	0	_	_	Offset=2101-2106
+2	30	_	Amount	_	_	3	Measure	_	Offset=2107-2112
+3	antifade	_	Reagent	_	_	0	_	_	Offset=2116-2124
+4	cover	_	Location	_	_	6	Coreference-Link	_	Offset=2130-2140
+5	invert	_	Action	_	_	0	_	_	Offset=2147-2153
+6	slip	_	Mention	_	_	0	_	_	Offset=2154-2158
+7	place	_	Action	_	_	0	_	_	Offset=2163-2168
+8	top	_	Location	_	_	0	_	_	Offset=2172-2189
+
+# sent_id = s15
+# text = Clamp the funnel on top of the filters.
+1	Examine	_	Action	_	_	0	_	_	Offset=2299-2306
+2	at	_	Modifier	_	_	0	_	_	Offset=2307-2315
+3	ten	_	Numerical	_	_	4	Measure	_	Offset=2316-2319
+4	fields	_	Location	_	_	0	_	_	Offset=2320-2326
+5	microscope	_	Device	_	_	0	_	_	Offset=2334-2344
+
+# sent_id = s16
+# text = Add the sample and turn on the pump (pressure should be ~20 kPa or 7 mmHg).
+1	Count	_	Action	_	_	0	_	_	Offset=2370-2375
+2	at	_	Modifier	_	_	0	_	_	Offset=2376-2384
+3	200	_	Numerical	_	_	4	Measure	_	Offset=2385-2388
+4	viruses	_	Reagent	_	_	0	_	_	Offset=2389-2396
+5	bacteria	_	Reagent	_	_	4	Or	_	Offset=2400-2408
+
+# sent_id = s17
+# text = After the last liquid passes through the funnel and clamp should be removed with the vacuum still on.
+1	Find	_	Action	_	_	0	_	_	Offset=2606-2610
+2	average	_	Reagent	_	_	0	_	_	Offset=2615-2629
+3	particles	_	Concentration	_	_	2	Measure	_	Offset=2633-2655
+
+# sent_id = s18
+# text = Turn off the vacuum; remove 0.02 µm filter.
+1	Multiply	_	Action	_	_	0	_	_	Offset=2676-2684
+2	scaling	_	Device	_	_	0	_	_	Offset=2695-2723
+
+# sent_id = s19
+# text = Keep track of which side of the filter is the top.
+1	Divide	_	Action	_	_	0	_	_	Offset=2776-2782
+2	volume	_	Device	_	_	0	_	_	Offset=2795-2806
+

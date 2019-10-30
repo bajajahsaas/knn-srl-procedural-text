@@ -1,0 +1,442 @@
+# sent_id = s1
+# text = Obtaining targeted metagenomes from uncultivated environmental Synechococcus using flow cytometry-based viral tagging
+1	Prepare	_	Action	_	_	0	_	_	Offset=118-125
+2	SNAX	_	Reagent	_	_	0	_	_	Offset=126-137
+3	directions6	_	Method	_	_	0	_	_	Offset=151-162
+4	15N	_	Concentration	_	_	5	Measure	_	Offset=172-175
+5	ammonium	_	Reagent	_	_	0	_	_	Offset=176-193
+
+# sent_id = s2
+# text = Prepare SNAX medium according to directions6, but use 15N ammonium chloride which will provide the heavy isotope. 
+1	Grow	_	Action	_	_	0	_	_	Offset=233-237
+2	cyanobacteria	_	Reagent	_	_	0	_	_	Offset=238-251
+3	medium	_	Reagent	_	_	4	Meronym	_	Offset=259-265
+4	heavy	_	Reagent	_	_	0	_	_	Offset=271-285
+5	transfer	_	Action	_	_	0	_	_	Offset=290-298
+6	at	_	Modifier	_	_	7	Or	_	Offset=299-307
+7	3	_	Numerical	_	_	0	_	_	Offset=308-309
+
+# sent_id = s3
+# text = Grow cyanobacteria in the medium with heavy nitrogen and transfer at least 3 times before use. 
+1	Extract	_	Action	_	_	0	_	_	Offset=329-336
+2	DNA	_	Reagent	_	_	0	_	_	Offset=337-340
+3	bacterial	_	Reagent	_	_	0	_	_	Offset=346-379
+4	standard	_	Method	_	_	0	_	_	Offset=386-402
+
+# sent_id = s4
+# text = Extract DNA from bacterial grown in heavy nitrogen using standard methods. 
+1	Quantify	_	Action	_	_	0	_	_	Offset=405-413
+2	DNA	_	Reagent	_	_	0	_	_	Offset=418-421
+3	Quant-iT	_	Reagent	_	_	0	_	_	Offset=428-447
+
+# sent_id = s5
+# text = Quantify the DNA using Quant-iT Pico Green (Invitrogen #P7589). 
+1	Use	_	Action	_	_	0	_	_	Offset=470-473
+2	at	_	Modifier	_	_	3	Mod-Link	_	Offset=474-482
+3	10	_	Amount	_	_	4	Measure	_	Offset=483-488
+4	DNA	_	Reagent	_	_	0	_	_	Offset=492-495
+5	density	_	Method	_	_	0	_	_	Offset=500-531
+
+# sent_id = s6
+# text = Use at least 10 µg of DNA for density gradient centrifugation. 
+1	density	_	Method	_	_	0	_	_	Offset=538-569
+2	Beckman	_	Device	_	_	5	Meronym	_	Offset=573-602
+3	used	_	Action	_	_	0	_	_	Offset=607-611
+4	13x48	_	Size	_	_	5	Measure	_	Offset=617-625
+5	OptiSeal	_	Location	_	_	0	_	_	Offset=626-652
+6	4.9	_	Amount	_	_	5	Measure	_	Offset=654-660
+
+# sent_id = s7
+# text = For density gradient centrifugation, a Beckman VTi 65 vertical rotor was used with 13x48 mm OptiSeal polyallomer tubes (4.9 ml capacity). 
+1	Mix	_	Action	_	_	0	_	_	Offset=673-676
+2	DNA	_	Reagent	_	_	0	_	_	Offset=681-684
+3	TE	_	Reagent	_	_	5	Meronym	7:Meronym	Offset=690-699
+4	10mM	_	Concentration	_	_	5	Measure	_	Offset=701-705
+5	Tris	_	Reagent	_	_	0	_	_	Offset=706-710
+6	1mM	_	Concentration	_	_	7	Measure	_	Offset=712-715
+7	EDTA	_	Reagent	_	_	0	_	_	Offset=716-720
+8	pH7.6	_	pH	_	_	7	Measure	_	Offset=722-727
+9	0.9	_	Amount	_	_	0	_	_	Offset=750-756
+
+# sent_id = s8
+# text = Mix the DNA with TE buffer (10mM Tris, 1mM EDTA, pH7.6) to a final volume of 0.9 ml. 
+1	Mix	_	Action	_	_	0	_	_	Offset=759-762
+2	DNA	_	Reagent	_	_	0	_	_	Offset=767-770
+3	4ml	_	Amount	_	_	4	Measure	_	Offset=776-779
+4	CsCl	_	Reagent	_	_	0	_	_	Offset=783-787
+5	prepared	_	Action	_	_	0	_	_	Offset=788-796
+6	TE	_	Reagent	_	_	0	_	_	Offset=800-802
+7	density	_	Measure-Type	_	_	8	Of-Type	_	Offset=808-815
+8	p1.8	_	Generic-Measure	_	_	0	_	_	Offset=819-823
+
+# sent_id = s9
+# text = Mix the DNA with 4ml of CsCl prepared in TE to a density of p1.8. 
+1	Dispense	_	Action	_	_	0	_	_	Offset=826-834
+2	4.9	_	Amount	_	_	3	Measure	_	Offset=835-841
+3	DNA	_	Reagent	_	_	0	_	_	Offset=849-859
+4	CsCl	_	Reagent	_	_	0	_	_	Offset=863-867
+5	OptiSeal	_	Location	_	_	0	_	_	Offset=877-890
+6	plug	_	Action	_	_	0	_	_	Offset=895-899
+7	black	_	Seal	_	_	0	_	_	Offset=909-919
+
+# sent_id = s10
+# text = Dispense 4.9 ml of the DNA sample in CsCl into the OptiSeal tube and plug with the black caps. 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=922-932
+2	44,000	_	Speed	_	_	0	_	_	Offset=936-946
+3	Beckman	_	Device	_	_	0	_	_	Offset=967-978
+4	L80	_	Device	_	_	3	Or	_	Offset=982-1001
+5	48	_	Time	_	_	0	_	_	Offset=1006-1011
+6	18°C	_	Temperature	_	_	0	_	_	Offset=1015-1019
+
+# sent_id = s11
+# text = Centrifuge at 44,000 rpm (=184,678.5 g) in a Beckman L70 or L80 ultracentrifuge for 48 hr at 18°C.   
+1	Collect	_	Action	_	_	0	_	_	Offset=1024-1031
+2	0.2-0.25	_	Amount	_	_	3	Measure	_	Offset=1032-1043
+3	fractions	_	Reagent	_	_	0	_	_	Offset=1044-1053
+4	measure	_	Action	_	_	0	_	_	Offset=1058-1065
+5	density	_	Measure-Type	_	_	0	_	_	Offset=1070-1077
+
+# sent_id = s12
+# text = Collect 0.2-0.25 ml fractions and measure the density of each. 
+1	Calculate	_	Action	_	_	0	_	_	Offset=1088-1097
+2	amount	_	Amount	_	_	3	Measure	_	Offset=1098-1104
+3	DNA	_	Reagent	_	_	0	_	_	Offset=1108-1111
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=1115-1119
+5	fraction	_	Reagent	_	_	0	_	_	Offset=1120-1128
+6	Quant-iT	_	Reagent	_	_	0	_	_	Offset=1135-1154
+7	determine	_	Action	_	_	0	_	_	Offset=1181-1190
+8	density	_	Measure-Type	_	_	0	_	_	Offset=1195-1202
+9	fractions	_	Reagent	_	_	0	_	_	Offset=1210-1219
+10	DNA	_	Reagent	_	_	9	Meronym	_	Offset=1225-1228
+
+# sent_id = s13
+# text = Calculate amount of DNA in each fraction using Quant-iT Pico Green (perform in duplicate) to determine the density of the fractions with DNA. 
+1	Estimate	_	Action	_	_	0	_	_	Offset=1231-1239
+2	ratio	_	Measure-Type	_	_	0	_	_	Offset=1244-1249
+3	isotopic	_	Reagent	_	_	0	_	_	Offset=1253-1275
+
+# sent_id = s14
+# text = Estimate the ratio of isotopic labeled cells. 
+1	Thaw	_	Action	_	_	0	_	_	Offset=1278-1282
+2	10,000x	_	Concentration	_	_	3	Measure	_	Offset=1283-1290
+3	stock	_	Reagent	_	_	0	_	_	Offset=1291-1309
+4	dark	_	Location	_	_	0	_	_	Offset=1317-1321
+5	vortex	_	Action	_	_	0	_	_	Offset=1326-1332
+6	vigorously	_	Modifier	_	_	0	_	_	Offset=1333-1343
+
+# sent_id = s15
+# text = Thaw 10,000x stock of SYBR Gold in the dark and vortex vigorously. 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1346-1356
+2	10	_	Time	_	_	0	_	_	Offset=1361-1367
+3	3000	_	Speed	_	_	0	_	_	Offset=1371-1379
+
+# sent_id = s16
+# text = Centrifuge for 10 min at 3000 x g. 
+1	Dilute	_	Action	_	_	0	_	_	Offset=1382-1388
+2	1:100	_	Generic-Measure	_	_	0	_	_	Offset=1389-1394
+3	TE	_	Reagent	_	_	0	_	_	Offset=1410-1419
+4	filter	_	Action	_	_	0	_	_	Offset=1429-1435
+5	0.02µm	_	Amount	_	_	6	Setting	_	Offset=1444-1450
+6	filter	_	Device	_	_	0	_	_	Offset=1451-1457
+
+# sent_id = s17
+# text = Dilute 1:100 (to 100x) with TE buffer and then filter through 0.02µm filter. 
+1	Aliquot	_	Action	_	_	0	_	_	Offset=1460-1467
+2	50	_	Amount	_	_	0	_	_	Offset=1473-1484
+3	store	_	Action	_	_	0	_	_	Offset=1497-1502
+4	frozen	_	Modifier	_	_	0	_	_	Offset=1503-1509
+5	-20°C	_	Temperature	_	_	0	_	_	Offset=1513-1518
+
+# sent_id = s18
+# text = Aliquot into 50 or 100µl amounts and store frozen at -20°C. 
+1	Thaw	_	Action	_	_	0	_	_	Offset=1521-1525
+2	prepared	_	Modifier	_	_	4	Mod-Link	_	Offset=1526-1534
+3	100X	_	Concentration	_	_	4	Measure	_	Offset=1535-1539
+4	SYBR	_	Reagent	_	_	0	_	_	Offset=1540-1549
+5	dark	_	Location	_	_	0	_	_	Offset=1554-1558
+6	one	_	Numerical	_	_	0	_	_	Offset=1560-1563
+
+# sent_id = s19
+# text = Thaw prepared 100X SYBR Gold the dark, one time only. 
+1	Vortex	_	Action	_	_	0	_	_	Offset=1576-1582
+2	thawed	_	Modifier	_	_	3	Mod-Link	_	Offset=1583-1589
+3	SYBR	_	Reagent	_	_	0	_	_	Offset=1590-1599
+4	vigorously	_	Modifier	_	_	0	_	_	Offset=1600-1610
+
+# sent_id = s20
+# text = Vortex thawed SYBR Gold vigorously before using to stain viruses. 
+1	dialyze	_	Action	_	_	0	_	_	Offset=1673-1680
+2	modified	_	Modifier	_	_	3	Mod-Link	_	Offset=1684-1692
+3	MTN	_	Reagent	_	_	0	_	_	Offset=1693-1703
+
+# sent_id = s21
+# text = If using CsCl-purified virus, dialyze in modified MTN buffer.  
+1	Stain	_	Action	_	_	0	_	_	Offset=1707-1712
+2	viruses	_	Reagent	_	_	0	_	_	Offset=1717-1724
+3	adding	_	Action	_	_	0	_	_	Offset=1728-1734
+4	prepared	_	Modifier	_	_	5	Mod-Link	_	Offset=1735-1743
+5	SYBR	_	Reagent	_	_	0	_	_	Offset=1744-1753
+6	viral	_	Reagent	_	_	0	_	_	Offset=1761-1777
+7	5	_	Concentration	_	_	9	Measure	_	Offset=1806-1814
+8	concentrated	_	Modifier	_	_	9	Mod-Link	_	Offset=1821-1833
+9	viral	_	Reagent	_	_	0	_	_	Offset=1834-1845
+10	1x	_	Concentration	_	_	11	Measure	_	Offset=1881-1883
+11	viral	_	Reagent	_	_	9	Or	_	Offset=1906-1917
+
+# sent_id = s22
+# text = Stain the viruses by adding prepared SYBR Gold to the viral suspension to a final concentration of 5 to 10x for a concentrated viral stock (equal to or greater than E+09) or 1x for less concentrated viral stock (<E+09). 
+1	Prepare	_	Action	_	_	0	_	_	Offset=1928-1935
+2	blank	_	Reagent	_	_	0	_	_	Offset=1938-1957
+3	assess	_	Action	_	_	0	_	_	Offset=1961-1967
+4	how	_	Modifier	_	_	0	_	_	Offset=1968-1976
+5	excess	_	Modifier	_	_	6	Mod-Link	_	Offset=1981-1987
+6	SYBR	_	Reagent	_	_	0	_	_	Offset=1988-1997
+7	washed	_	Method	_	_	0	_	_	Offset=2001-2012
+
+# sent_id = s23
+# text = Prepare a blank without virus to assess how well the excess SYBR Gold is washed away.  
+1	Vortex	_	Action	_	_	0	_	_	Offset=2016-2022
+2	sample	_	Reagent	_	_	0	_	_	Offset=2027-2033
+3	10	_	Time	_	_	0	_	_	Offset=2038-2044
+4	high	_	Generic-Measure	_	_	0	_	_	Offset=2048-2052
+5	mix	_	Action	_	_	0	_	_	Offset=2056-2059
+6	dye	_	Reagent	_	_	0	_	_	Offset=2064-2067
+7	viruses	_	Reagent	_	_	0	_	_	Offset=2072-2079
+
+# sent_id = s24
+# text = Vortex the sample for 10 sec on high to mix the dye and viruses. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=2082-2090
+2	10	_	Time	_	_	0	_	_	Offset=2091-2097
+3	dark	_	Location	_	_	0	_	_	Offset=2105-2109
+4	room	_	Temperature	_	_	0	_	_	Offset=2113-2129
+
+# sent_id = s25
+# text = Incubate 10 min in the dark at room temperature. 
+1	Heat	_	Action	_	_	0	_	_	Offset=2132-2136
+2	46°C	_	Temperature	_	_	0	_	_	Offset=2140-2144
+3	15	_	Time	_	_	0	_	_	Offset=2149-2159
+4	hybridization	_	Device	_	_	0	_	_	Offset=2167-2185
+5	inverting	_	Action	_	_	0	_	_	Offset=2204-2213
+6	tubes	_	Location	_	_	0	_	_	Offset=2214-2219
+7	5	_	Time	_	_	0	_	_	Offset=2226-2235
+8	foil	_	Seal	_	_	0	_	_	Offset=2243-2247
+9	keep	_	Action	_	_	0	_	_	Offset=2251-2255
+10	sample	_	Reagent	_	_	0	_	_	Offset=2260-2266
+11	dark	_	Location	_	_	0	_	_	Offset=2274-2278
+
+# sent_id = s26
+# text = Heat at 46°C for 15 minutes inside hybridization oven (not heat block), inverting tubes every 5 minutes, using foil to keep the sample in the dark. 
+1	Cool	_	Action	_	_	0	_	_	Offset=2281-2290
+2	sample	_	Reagent	_	_	0	_	_	Offset=2295-2301
+3	dark	_	Location	_	_	0	_	_	Offset=2309-2313
+4	room	_	Temperature	_	_	0	_	_	Offset=2317-2333
+5	10	_	Time	_	_	0	_	_	Offset=2338-2344
+
+# sent_id = s27
+# text = Cool down the sample in the dark at room temperature for 10 min. 
+1	Prepare	_	Action	_	_	0	_	_	Offset=2347-2354
+2	0.02µm	_	Amount	_	_	5	Measure	_	Offset=2355-2361
+3	filtered	_	Modifier	_	_	5	Mod-Link	_	Offset=2362-2370
+4	1%	_	Concentration	_	_	5	Measure	_	Offset=2371-2373
+5	bovine	_	Reagent	_	_	0	_	_	Offset=2374-2394
+6	phosphate	_	Reagent	_	_	0	_	_	Offset=2423-2448
+
+# sent_id = s28
+# text = Prepare 0.02µm filtered 1% bovine serum albumin (BSA; equal to 10 mg/ml) in phosphate buffered saline (PBS). 
+1	Wash	_	Action	_	_	0	_	_	Offset=2457-2461
+2	Nanosep	_	Modifier	_	_	3	Mod-Link	_	Offset=2462-2469
+3	10k	_	Location	_	_	0	_	_	Offset=2470-2479
+4	adding	_	Action	_	_	0	_	_	Offset=2483-2489
+5	500µl	_	Amount	_	_	6	Measure	_	Offset=2490-2495
+6	MTN	_	Reagent	_	_	0	_	_	Offset=2496-2506
+7	stand	_	Action	_	_	0	_	_	Offset=2512-2517
+8	10	_	Time	_	_	0	_	_	Offset=2518-2524
+
+# sent_id = s29
+# text = Wash Nanosep 10k tubes by adding 500µl MTN buffer, let stand 10 min. 
+1	Spin	_	Action	_	_	0	_	_	Offset=2527-2531
+2	almost	_	Modifier	_	_	0	_	_	Offset=2538-2544
+3	5,000	_	Speed	_	_	0	_	_	Offset=2550-2559
+4	10	_	Time	_	_	0	_	_	Offset=2561-2567
+
+# sent_id = s30
+# text = Spin until almost dry (5,000 x g, 10 min). 
+1	Discard	_	Action	_	_	0	_	_	Offset=2571-2578
+2	flow-through	_	Reagent	_	_	0	_	_	Offset=2583-2595
+
+# sent_id = s31
+# text = Discard the flow-through.  
+1	Add	_	Action	_	_	0	_	_	Offset=2599-2602
+2	500µl	_	Amount	_	_	5	Measure	_	Offset=2603-2608
+3	0.02µm	_	Modifier	_	_	5	Mod-Link	_	Offset=2609-2624
+4	1%	_	Concentration	_	_	5	Measure	_	Offset=2625-2627
+5	BSA	_	Reagent	_	_	0	_	_	Offset=2628-2631
+6	let	_	Action	_	_	0	_	_	Offset=2633-2642
+7	1hr	_	Time	_	_	0	_	_	Offset=2643-2646
+8	room	_	Temperature	_	_	0	_	_	Offset=2650-2666
+
+# sent_id = s32
+# text = Add 500µl 0.02µm filtered 1% BSA, let stand 1hr at room temperature.  
+1	Spin	_	Action	_	_	0	_	_	Offset=2670-2674
+2	5,000	_	Speed	_	_	0	_	_	Offset=2693-2702
+3	15-30	_	Time	_	_	0	_	_	Offset=2704-2713
+
+# sent_id = s33
+# text = Spin until almost dry (5,000 x g, 15-30 min).  
+1	Discard	_	Action	_	_	0	_	_	Offset=2718-2725
+2	flow-through	_	Reagent	_	_	0	_	_	Offset=2730-2742
+
+# sent_id = s34
+# text = Discard the flow-through. 
+1	Wash	_	Action	_	_	0	_	_	Offset=2745-2749
+2	500µl	_	Amount	_	_	4	Measure	_	Offset=2755-2760
+3	0.02µm	_	Modifier	_	_	4	Mod-Link	_	Offset=2761-2776
+4	MTN	_	Reagent	_	_	0	_	_	Offset=2777-2787
+
+# sent_id = s35
+# text = Wash with 500µl 0.02µm filtered MTN buffer. 
+1	Concentrate	_	Action	_	_	0	_	_	Offset=2790-2801
+2	500µl	_	Amount	_	_	4	Measure	_	Offset=2806-2811
+3	stained	_	Modifier	_	_	4	Mod-Link	_	Offset=2812-2830
+4	virus	_	Reagent	_	_	0	_	_	Offset=2831-2849
+5	SYBR-Blank	_	Reagent	_	_	0	_	_	Offset=2858-2868
+6	pre-treated	_	Modifier	_	_	7	Mod-Link	_	Offset=2876-2887
+7	Nanosep	_	Device	_	_	0	_	_	Offset=2888-2903
+8	3,000	_	Speed	_	_	0	_	_	Offset=2910-2919
+9	15-30	_	Time	_	_	0	_	_	Offset=2924-2933
+10	10°C	_	Temperature	_	_	0	_	_	Offset=2938-2942
+11	<50µl	_	Amount	_	_	0	_	_	Offset=2953-2958
+
+# sent_id = s36
+# text = Concentrate the 500µl stained and cooled virus preparations and the SYBR-Blank in the pre-treated Nanosep devices using 3,000 x g for 15-30 min, at 10°C to get to <50µl volume. 
+1	Wash	_	Action	_	_	0	_	_	Offset=2968-2972
+2	reduced	_	Amount	_	_	4	Measure	_	Offset=2977-2991
+3	stained	_	Modifier	_	_	4	Mod-Link	_	Offset=2995-3002
+4	virus	_	Reagent	_	_	0	_	_	Offset=3003-3008
+5	SYBR-Blank	_	Reagent	_	_	4	Or	_	Offset=3012-3022
+6	500µl	_	Amount	_	_	8	Measure	_	Offset=3028-3033
+7	0.02µm	_	Modifier	_	_	8	Mod-Link	_	Offset=3034-3049
+8	MTN	_	Reagent	_	_	0	_	_	Offset=3050-3060
+
+# sent_id = s37
+# text = Wash the reduced volume of stained virus or SYBR-Blank with 500µl 0.02µm filtered MTN buffer.  
+1	Repeat	_	Action	_	_	0	_	_	Offset=3064-3070
+2	spin	_	Action	_	_	0	_	_	Offset=3071-3075
+3	step	_	Method	_	_	0	_	_	Offset=3082-3090
+
+# sent_id = s38
+# text = Repeat spin as in step #36. 
+1	Repeat	_	Action	_	_	0	_	_	Offset=3093-3099
+2	#37&38	_	Method	_	_	0	_	_	Offset=3100-3106
+3	6	_	Numerical	_	_	0	_	_	Offset=3122-3123
+4	washes	_	Action	_	_	0	_	_	Offset=3124-3130
+5	bring	_	Action	_	_	0	_	_	Offset=3145-3157
+6	<50µl	_	Amount	_	_	0	_	_	Offset=3161-3166
+7	each	_	Modifier	_	_	0	_	_	Offset=3167-3176
+
+# sent_id = s39
+# text = Repeat #37&38 for a total of 6 washes being sure to bring volume to <50µl each time. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=3179-3187
+2	50µl	_	Amount	_	_	4	Measure	_	Offset=3192-3196
+3	washed	_	Modifier	_	_	4	Mod-Link	_	Offset=3200-3206
+4	viruses	_	Reagent	_	_	0	_	_	Offset=3207-3214
+5	SYBR-Blank	_	Reagent	_	_	0	_	_	Offset=3219-3229
+6	Nanosep	_	Device	_	_	0	_	_	Offset=3239-3246
+7	fresh	_	Modifier	_	_	8	Mod-Link	_	Offset=3252-3257
+8	collection	_	Location	_	_	0	_	_	Offset=3258-3274
+
+# sent_id = s40
+# text = Transfer the 50µl of washed viruses and SYBR-Blank from the Nanosep into fresh collection tubes. 
+1	Keep	_	Action	_	_	0	_	_	Offset=3277-3281
+2	collection	_	Location	_	_	0	_	_	Offset=3286-3302
+3	ice	_	Location	_	_	0	_	_	Offset=3306-3309
+
+# sent_id = s41
+# text = Keep the collection tubes on ice. 
+1	Add	_	Action	_	_	0	_	_	Offset=3312-3315
+2	50µl	_	Amount	_	_	4	Measure	_	Offset=3316-3320
+3	0.02µm	_	Modifier	_	_	4	Mod-Link	_	Offset=3321-3336
+4	buffer	_	Reagent	_	_	0	_	_	Offset=3337-3343
+5	each	_	Modifier	_	_	6	Mod-Link	_	Offset=3347-3351
+6	Nanosep	_	Device	_	_	0	_	_	Offset=3352-3359
+7	sonicate	_	Action	_	_	0	_	_	Offset=3364-3372
+8	3	_	Time	_	_	0	_	_	Offset=3377-3382
+9	50W	_	Generic-Measure	_	_	0	_	_	Offset=3405-3408
+10	42	_	Generic-Measure	_	_	0	_	_	Offset=3412-3418
+
+# sent_id = s42
+# text = Add 50µl 0.02µm filtered buffer to each Nanosep and sonicate for 3 min using the settings of 50W at 42 kHz. 
+1	Pipet	_	Action	_	_	0	_	_	Offset=3421-3426
+2	up	_	Method	_	_	0	_	_	Offset=3427-3438
+3	filter	_	Device	_	_	0	_	_	Offset=3446-3452
+4	carefully	_	Modifier	_	_	0	_	_	Offset=3453-3462
+5	not	_	Modifier	_	_	0	_	_	Offset=3469-3475
+6	puncture	_	Action	_	_	0	_	_	Offset=3476-3484
+7	membrane	_	Reagent	_	_	0	_	_	Offset=3489-3497
+8	add	_	Action	_	_	0	_	_	Offset=3502-3505
+9	appropriate	_	Modifier	_	_	11	Mod-Link	_	Offset=3513-3524
+10	stained	_	Modifier	_	_	11	Mod-Link	_	Offset=3525-3532
+11	virus	_	Reagent	_	_	0	_	_	Offset=3533-3538
+12	blank	_	Location	_	_	11	Or	_	Offset=3542-3553
+13	transport	_	Action	_	_	0	_	_	Offset=3558-3567
+14	collection	_	Location	_	_	16	Meronym	_	Offset=3572-3588
+15	washed	_	Modifier	_	_	16	Mod-Link	_	Offset=3592-3598
+16	viruses	_	Reagent	_	_	0	_	_	Offset=3599-3606
+17	ice	_	Location	_	_	0	_	_	Offset=3610-3613
+
+# sent_id = s43
+# text = Pipet up and down on the filter carefully so as not to puncture the membrane and add to the appropriate stained virus or blank tubes and transport the collection tubes of washed viruses on ice. 
+1	Count	_	Action	_	_	0	_	_	Offset=3616-3621
+2	host	_	Reagent	_	_	7	Coreference-Link	_	Offset=3626-3636
+3	SYBR-stained	_	Modifier	_	_	4	Mod-Link	_	Offset=3645-3657
+4	viruses	_	Reagent	_	_	7	Coreference-Link	_	Offset=3658-3665
+5	determine	_	Action	_	_	0	_	_	Offset=3669-3678
+6	amount	_	Amount	_	_	0	_	_	Offset=3683-3689
+7	each	_	Mention	_	_	0	_	_	Offset=3693-3697
+8	add	_	Action	_	_	0	_	_	Offset=3701-3704
+
+# sent_id = s44
+# text = Count the host cells and the SYBR-stained viruses to determine the amount of each to add. 
+1	at	_	Modifier	_	_	2	Mod-Link	_	Offset=3711-3719
+2	2	_	Amount	_	_	3	Measure	_	Offset=3720-3724
+3	cells	_	Reagent	_	_	0	_	_	Offset=3728-3733
+4	106	_	Concentration	_	_	3	Measure	_	Offset=3737-3749
+5	mix	_	Action	_	_	0	_	_	Offset=3751-3754
+6	appropriate	_	Modifier	_	_	8	Mod-Link	_	Offset=3760-3771
+7	concentration	_	Concentration	_	_	8	Measure	_	Offset=3772-3785
+8	virus	_	Reagent	_	_	0	_	_	Offset=3789-3804
+9	incubate	_	Action	_	_	0	_	_	Offset=3809-3817
+10	10-20	_	Time	_	_	0	_	_	Offset=3822-3835
+11	start	_	Action	_	_	0	_	_	Offset=3839-3854
+12	VT	_	Measure-Type	_	_	0	_	_	Offset=3855-3864
+
+# sent_id = s45
+# text = Use at least 2 ml of cells at 106 cells/ml, mix with appropriate concentration of virus particles and incubate for 10-20 minutes to start detecting VT signal. 
+1	Mix	_	Action	_	_	0	_	_	Offset=4339-4342
+2	host	_	Reagent	_	_	0	_	_	Offset=4347-4357
+3	SYBR-Blank	_	Reagent	_	_	0	_	_	Offset=4367-4377
+4	10	_	Time	_	_	0	_	_	Offset=4383-4389
+5	mix	_	Action	_	_	0	_	_	Offset=4394-4397
+6	tube	_	Location	_	_	0	_	_	Offset=4402-4406
+7	gently	_	Modifier	_	_	0	_	_	Offset=4407-4413
+
+# sent_id = s46
+# text = Prepare the flow cytometer for use and trigger on forward angle or side scatter Examine the 0.02µm filtered MTN buffer and set voltages so that noise is minimized.
+1	Mix	_	Action	_	_	0	_	_	Offset=4416-4419
+2	host	_	Reagent	_	_	0	_	_	Offset=4424-4434
+3	stained	_	Modifier	_	_	4	Mod-Link	_	Offset=4444-4462
+4	virus	_	Reagent	_	_	0	_	_	Offset=4463-4468
+5	appropriate	_	Modifier	_	_	6	Mod-Link	_	Offset=4476-4487
+6	VBR	_	Generic-Measure	_	_	0	_	_	Offset=4488-4491
+7	examine	_	Action	_	_	0	_	_	Offset=4496-4503
+8	appropriate	_	Modifier	_	_	9	Mod-Link	_	Offset=4510-4521
+9	incubation	_	Time	_	_	0	_	_	Offset=4522-4538
+
+# sent_id = s47
+# text = Examine the host cells alone to set voltages to determine proper concentration to use and to determine where they are located on the plot of 520nm vs scatter. 
+1	Sort	_	Action	_	_	0	_	_	Offset=4541-4545
+2	collect	_	Action	_	_	0	_	_	Offset=4550-4557
+3	viral-tagged	_	Modifier	_	_	4	Mod-Link	_	Offset=4562-4574
+4	cells	_	Reagent	_	_	0	_	_	Offset=4575-4580
+5	increased	_	Generic-Measure	_	_	0	_	_	Offset=4595-4617
+

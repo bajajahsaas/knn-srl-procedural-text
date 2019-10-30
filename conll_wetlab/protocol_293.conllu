@@ -1,0 +1,56 @@
+# sent_id = s1
+# text = Basic electron microscopy of aquatic viruses
+1	Filter	_	Action	_	_	0	_	_	Offset=149-155
+2	membrane	_	Device	_	_	0	_	_	Offset=164-180
+3	0.22–0.45	_	Size	_	_	2	Measure	_	Offset=184-196
+
+# sent_id = s2
+# text = For high-resolution images, samples should be sterile and free from bacteria and other large particles.
+1	Wash	_	Action	_	_	0	_	_	Offset=208-212
+2	buffer	_	Reagent	_	_	0	_	_	Offset=218-224
+3	0.1	_	Concentration	_	_	4	Measure	_	Offset=232-237
+4	ammonium	_	Reagent	_	_	0	_	_	Offset=238-254
+5	pH	_	pH	_	_	4	Measure	_	Offset=256-260
+6	ultracentrifuge	_	Device	_	_	7	Meronym	_	Offset=269-284
+7	fixed-angle	_	Device	_	_	0	_	_	Offset=292-309
+8	25,000g	_	Speed	_	_	6	Setting	_	Offset=311-318
+9	25,000	_	Speed	_	_	6	Setting	_	Offset=322-332
+10	1	_	Time	_	_	6	Setting	_	Offset=337-340
+
+# sent_id = s3
+# text = Filter through membrane filters of 0.22–0.45 µm pore size.
+1	Deposit	_	Action	_	_	0	_	_	Offset=343-350
+2	drop	_	Reagent	_	_	0	_	_	Offset=353-357
+3	virus	_	Reagent	_	_	2	Meronym	_	Offset=361-377
+4	grid	_	Location	_	_	0	_	_	Offset=383-387
+5	Leave	_	Action	_	_	0	_	_	Offset=388-393
+6	30s	_	Time	_	_	0	_	_	Offset=398-401
+7	adsorption	_	Method	_	_	0	_	_	Offset=406-427
+
+# sent_id = s4
+# text = Wash in a buffer, e.g., 0.1 M ammonium acetate (pH 7), in an ultracentrifuge with a fixed-angle rotor (25,000g or 25,000 rpm for 1 h).
+1	Add	_	Action	_	_	0	_	_	Offset=430-433
+2	drop	_	Reagent	_	_	0	_	_	Offset=436-440
+3	stain	_	Reagent	_	_	2	Meronym	_	Offset=444-449
+
+# sent_id = s5
+# text = Deposit a drop of virus suspension on a grid Leave for 30s for adsorption of viruses. 
+1	Withdraw	_	Action	_	_	0	_	_	Offset=452-460
+2	liquid	_	Reagent	_	_	0	_	_	Offset=461-467
+3	filter	_	Device	_	_	0	_	_	Offset=474-486
+
+# sent_id = s6
+# text = Add a drop of stain. 
+1	Operate	_	Action	_	_	0	_	_	Offset=489-496
+2	transmission	_	Device	_	_	0	_	_	Offset=497-530
+3	60–80	_	Generic-Measure	_	_	0	_	_	Offset=541-549
+
+# sent_id = s7
+# text = Withdraw liquid using filter paper. 
+1	Cool	_	Action	_	_	0	_	_	Offset=552-556
+2	object	_	Reagent	_	_	0	_	_	Offset=561-573
+3	liquid	_	Reagent	_	_	0	_	_	Offset=579-594
+4	limit	_	Action	_	_	0	_	_	Offset=598-617
+5	hydrocarbon	_	Reagent	_	_	0	_	_	Offset=621-642
+6	column	_	Location	_	_	0	_	_	Offset=658-664
+

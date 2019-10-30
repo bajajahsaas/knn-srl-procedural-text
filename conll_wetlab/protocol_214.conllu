@@ -1,0 +1,77 @@
+# sent_id = s1
+# text = Internal Genomic DNA Standard for Quantitative Metagenome Analysis
+1	Suspend	_	Action	_	_	0	_	_	Offset=67-74
+2	genomic	_	Reagent	_	_	0	_	_	Offset=75-86
+3	nuclease-free	_	Reagent	_	_	0	_	_	Offset=102-121
+4	produce	_	Action	_	_	0	_	_	Offset=125-154
+5	0.1	_	Concentration	_	_	0	_	_	Offset=158-167
+
+# sent_id = s2
+# text = Suspend genomic DNA in a volume of nuclease-free water to produce a stock concentration of 0.1 μg/μL.
+1	Incubate	_	Action	_	_	0	_	_	Offset=169-177
+2	rehydrated	_	Reagent	_	_	0	_	_	Offset=178-192
+3	overnight	_	Time	_	_	0	_	_	Offset=193-202
+4	4°C	_	Temperature	_	_	0	_	_	Offset=206-209
+5	incubate	_	Action	_	_	0	_	_	Offset=234-242
+6	1	_	Time	_	_	0	_	_	Offset=247-250
+7	65°C	_	Temperature	_	_	0	_	_	Offset=254-258
+
+# sent_id = s3
+# text = Incubate rehydrated DNA overnight at 4°C while rocking, and then incubate for 1 h at 65°C.
+1	Prepare	_	Action	_	_	0	_	_	Offset=260-267
+2	working	_	Reagent	_	_	0	_	_	Offset=268-284
+3	adding	_	Action	_	_	0	_	_	Offset=288-294
+4	1	_	Amount	_	_	5	Measure	_	Offset=295-299
+5	stock	_	Reagent	_	_	0	_	_	Offset=307-321
+6	99	_	Amount	_	_	7	Measure	_	Offset=325-330
+7	nuclease-free	_	Reagent	_	_	0	_	_	Offset=334-353
+8	produce	_	Action	_	_	0	_	_	Offset=357-386
+9	1	_	Concentration	_	_	0	_	_	Offset=390-397
+
+# sent_id = s4
+# text = Prepare working solution by adding 1 μL of the stock solution to 99 μL of nuclease-free water to produce a final concentration of 1 ng/μL.
+1	Check	_	Action	_	_	0	_	_	Offset=399-426
+2	stocks	_	Reagent	_	_	0	_	_	Offset=430-436
+3	Quant-iT™	_	Device	_	_	0	_	_	Offset=460-496
+4	Genomic	_	Reagent	_	_	0	_	_	Offset=497-508
+5	stored	_	Action	_	_	0	_	_	Offset=516-522
+6	−20	_	Temperature	_	_	0	_	_	Offset=526-532
+
+# sent_id = s5
+# text = Check the DNA concentration of stocks fluorometrically using Quant-iT™ PicoGreen® dsDNA Assay Kit Genomic DNA can be stored at −20 °C.
+1	add	_	Action	_	_	0	_	_	Offset=571-574
+2	standard	_	Reagent	_	_	0	_	_	Offset=582-594
+3	each	_	Modifier	_	_	4	Mod-Link	_	Offset=598-602
+4	sample	_	Reagent	_	_	0	_	_	Offset=603-609
+5	reach	_	Action	_	_	0	_	_	Offset=613-618
+6	~0.1-1.0%	_	Concentration	_	_	0	_	_	Offset=619-628
+
+# sent_id = s6
+# text = Just prior to sample DNA extraction, add enough standard DNA to each sample to reach ~0.1-1.0% of expected total reads.
+1	quantify	_	Action	_	_	0	_	_	Offset=676-721
+
+# sent_id = s7
+# text = Following sequencing, quantify the number of genomic standard reads (steps 8 and 9).
+1	identify	_	Action	_	_	0	_	_	Offset=771-794
+
+# sent_id = s8
+# text = Using a bit score cutoff of 50, identify standard reads by BLASTn homology search aganst the internal standard genome.
+1	perform	_	Action	_	_	0	_	_	Offset=918-934
+
+# sent_id = s9
+# text = Using the results from step 8 and a bit score cutoff of 40, perform a BLASTx against the RefSeq Protein database to identify all protein encoding reads derived from the internal standard genome.
+1	Quantify	_	Action	_	_	0	_	_	Offset=1053-1090
+2	remove	_	Action	_	_	0	_	_	Offset=1095-1101
+
+# sent_id = s10
+# text = Quantify recovered standard DNA reads and remove from dataset.
+1	Calculate	_	Action	_	_	0	_	_	Offset=1116-1149
+
+# sent_id = s11
+# text = Calculate the number of molecules of internal standard recovered from sequencing: Sr=SS/SPSr = number of molecules of internal standard genome recovered from sequencingSS = number of protein encoding internal standard reads in the sequence librarySP = number of protein encoding genes in the internal standard reference genome. 
+1	Calculate	_	Action	_	_	0	_	_	Offset=1445-1483
+
+# sent_id = s12
+# text = Calculate the community gene pool size: Pg=Ps*(Sa/Sr)Pg = total number of protein encoding genes in the samplePs = number of protein encoding sequences in the metagenome librarySa = number of molecules of internal standard genome added to the sampleSr = number of molecules of internal standard genome recovered from sequencing. 
+1	Calculate	_	Action	_	_	0	_	_	Offset=1775-1811
+

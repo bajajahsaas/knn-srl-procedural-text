@@ -1,0 +1,36 @@
+# sent_id = s1
+# text = Labyrinthula growth medium
+1	Combine	_	Action	_	_	0	_	_	Offset=27-34
+2	following	_	Reagent	_	_	0	_	_	Offset=39-48
+3	Autoclave	_	Action	_	_	0	_	_	Offset=50-59
+4	medium	_	Reagent	_	_	0	_	_	Offset=64-70
+
+# sent_id = s2
+# text = Combine the following: Autoclave the medium.
+1	Add	_	Action	_	_	0	_	_	Offset=72-75
+2	15	_	Amount	_	_	3	Measure	_	Offset=76-80
+3	artificial	_	Reagent	_	_	0	_	_	Offset=84-115
+
+# sent_id = s3
+# text = Add 15 g of artificial salt (Instant Ocean).
+1	141	_	Action	_	_	0	_	_	Offset=117-120;132
+2	medium	_	Reagent	_	_	0	_	_	Offset=125-131
+3	50°	_	Temperature	_	_	0	_	_	Offset=145-148
+
+# sent_id = s4
+# text = Let the medium cool down to 50°C.
+1	Add	_	Action	_	_	0	_	_	Offset=151-154
+2	15	_	Amount	_	_	3	Measure	_	Offset=155-160
+3	Penicillin/Streptomycin	_	Reagent	_	_	0	_	_	Offset=164-187
+4	XX	_	Concentration	_	_	3	Measure	_	Offset=204-206
+5	6	_	Amount	_	_	6	Measure	_	Offset=212-216
+6	horse	_	Reagent	_	_	0	_	_	Offset=220-231
+
+# sent_id = s5
+# text = Add 15 ml of Penicillin/Streptomycin (concentration: XX) and 6 ml of horse serum.
+1	Pour	_	Action	_	_	0	_	_	Offset=233-237
+2	medium	_	Reagent	_	_	0	_	_	Offset=242-248
+3	petri	_	Location	_	_	0	_	_	Offset=252-264
+4	5	_	Amount	_	_	0	_	_	Offset=272-276
+5	each	_	Modifier	_	_	4	Mod-Link	_	Offset=277-287
+

@@ -1,0 +1,99 @@
+# sent_id = s1
+# text = Selection of Ampicillin Resistant Bacteria
+1	ampicillin	_	Reagent	_	_	0	_	_	Offset=46-71
+2	prepared	_	Action	_	_	0	_	_	Offset=79-87
+3	100	_	Concentration	_	_	0	_	_	Offset=110-119
+4	stored	_	Action	_	_	0	_	_	Offset=134-140
+5	-20⁰C	_	Temperature	_	_	0	_	_	Offset=144-149
+
+# sent_id = s2
+# text = An ampicillin stock solution can be prepared at a concentration of 100 mg/mL and should be stored at -20⁰C.
+1	Add	_	Action	_	_	0	_	_	Offset=151-154
+2	1	_	Amount	_	_	3	Measure	_	Offset=155-158
+3	ampicillin	_	Reagent	_	_	0	_	_	Offset=172-182
+4	10	_	Amount	_	_	5	Measure	_	Offset=186-191
+5	dH2O	_	Reagent	_	_	0	_	_	Offset=195-199
+6	Sterilize	_	Action	_	_	0	_	_	Offset=200-209
+7	solution	_	Reagent	_	_	0	_	_	Offset=214-222
+8	0.22	_	Size	_	_	9	Setting	_	Offset=231-238
+9	filter	_	Device	_	_	0	_	_	Offset=239-245
+10	Store	_	Action	_	_	0	_	_	Offset=245-250
+11	solution	_	Reagent	_	_	0	_	_	Offset=251-259
+12	aliquots	_	Location	_	_	0	_	_	Offset=273-281
+13	-20⁰C	_	Temperature	_	_	0	_	_	Offset=285-290
+
+# sent_id = s3
+# text = Add 1 g (1000 mg) of ampicillin to 10 mL of dH2O Sterilize the solution using a 0.22 μm filterStore solution in different aliquots at -20⁰C LB-ampicillin agar preparation:
+1	Dissolve	_	Action	_	_	0	_	_	Offset=323-331
+2	following	_	Reagent	_	_	2	Meronym	4:Meronym|6:Meronym|8:Meronym|10:Meronym	Offset=336-345
+3	500	_	Amount	_	_	4	Measure	_	Offset=349-355
+4	dH2O	_	Reagent	_	_	0	_	_	Offset=356-360
+
+# sent_id = s4
+# text = Dissolve the following in 500 mL dH2O:
+1	5g	_	Amount	_	_	2	Measure	_	Offset=362-364
+2	tryptone	_	Reagent	_	_	0	_	_	Offset=365-373
+3	2.5	_	Amount	_	_	4	Measure	_	Offset=373-378
+4	yeast	_	Reagent	_	_	0	_	_	Offset=379-392
+5	5.0	_	Amount	_	_	6	Measure	_	Offset=392-397
+6	NaCl	_	Reagent	_	_	0	_	_	Offset=398-402
+7	7.5	_	Amount	_	_	8	Measure	_	Offset=402-407
+8	agar	_	Reagent	_	_	0	_	_	Offset=408-412
+9	25	_	Amount	_	_	10	Measure	_	Offset=412-417
+10	ampicillin	_	Reagent	_	_	0	_	_	Offset=418-428
+11	20	_	Amount	_	_	12	Measure	_	Offset=430-434
+12	pre-mixed	_	Reagent	_	_	2	Or	_	Offset=435-459
+13	LB	_	Reagent	_	_	12	Or	_	Offset=464-480
+14	25	_	Amount	_	_	15	Measure	_	Offset=481-486
+15	ampicillin	_	Reagent	_	_	0	_	_	Offset=487-497
+
+# sent_id = s5
+# text = 5g tryptone2.5 g yeast extract5.0 g NaCl7.5 g agar25 mg ampicillinOr20 g pre-mixed LB agar powder (or LB agar capsules)25 mg ampicillin. 
+1	Boil	_	Action	_	_	0	_	_	Offset=500-504
+2	solution	_	Reagent	_	_	0	_	_	Offset=505-513
+3	stirring	_	Device	_	_	0	_	_	Offset=517-535
+4	1	_	Time	_	_	0	_	_	Offset=540-549
+
+# sent_id = s6
+# text = Boil solution on stirring hot plate for 1 – 2 min.
+1	Autoclave	_	Action	_	_	0	_	_	Offset=551-560
+2	20	_	Time	_	_	0	_	_	Offset=565-575
+3	let	_	Action	_	_	0	_	_	Offset=580-588
+4	50-60⁰C	_	Temperature	_	_	0	_	_	Offset=592-599
+
+# sent_id = s7
+# text = Autoclave for 20 minutes and let cool to 50-60⁰C.
+1	Pour	_	Action	_	_	0	_	_	Offset=601-605
+2	10	_	Amount	_	_	4	Measure	_	Offset=620-625
+3	molten	_	Temperature	_	_	0	_	_	Offset=629-635
+4	LB	_	Reagent	_	_	0	_	_	Offset=636-643
+5	plate	_	Location	_	_	0	_	_	Offset=654-659
+
+# sent_id = s8
+# text = Pour approximately 10 mL of molten LB agar into each plate.
+1	685	_	Action	_	_	0	_	_	Offset=661-666;674
+2	plates	_	Location	_	_	0	_	_	Offset=667-673
+
+# sent_id = s9
+# text = Allow plates to solidify for approx.
+1	20	_	Time	_	_	0	_	_	Offset=698-704
+
+# sent_id = s10
+# text = 20 min.
+1	sterile	_	Device	_	_	0	_	_	Offset=758-770
+2	take	_	Action	_	_	0	_	_	Offset=772-776
+3	sample	_	Generic-Measure	_	_	4	Measure	_	Offset=779-785
+4	suspected	_	Reagent	_	_	5	Meronym	_	Offset=789-828
+5	colony	_	Reagent	_	_	0	_	_	Offset=836-842
+6	broth	_	Reagent	_	_	5	Or	_	Offset=846-862
+7	streak	_	Action	_	_	0	_	_	Offset=867-873
+8	LB-ampicillin	_	Location	_	_	0	_	_	Offset=916-936
+
+# sent_id = s11
+# text = Selection of ampicillin resistant bacteria:
+1	Incubate	_	Action	_	_	0	_	_	Offset=938-946
+2	plates	_	Reagent	_	_	0	_	_	Offset=947-953
+3	inverted	_	Method	_	_	0	_	_	Offset=954-962
+4	overnight	_	Time	_	_	0	_	_	Offset=963-972
+5	37⁰C	_	Temperature	_	_	0	_	_	Offset=986-990
+

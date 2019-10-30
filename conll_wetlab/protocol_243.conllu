@@ -1,0 +1,130 @@
+# sent_id = s1
+# text = Qiagen QIAprep Spin Miniprep Kit (27104 or 27106) with a microcentrifuge
+1	Resuspend	_	Action	_	_	0	_	_	Offset=73-82
+2	pelleted	_	Reagent	_	_	0	_	_	Offset=83-107
+3	250μl	_	Amount	_	_	4	Measure	_	Offset=111-116
+4	Buffer	_	Reagent	_	_	0	_	_	Offset=117-126
+5	transfer	_	Action	_	_	0	_	_	Offset=131-139
+6	micro-centrifuge	_	Location	_	_	0	_	_	Offset=145-165
+
+# sent_id = s2
+# text = Resuspend pelleted bacterial cells in 250μl Buffer P1 and transfer to a micro-centrifuge tube.
+1	Add	_	Action	_	_	0	_	_	Offset=168-171
+2	250	_	Amount	_	_	3	Measure	_	Offset=172-178
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=179-188
+4	mix	_	Action	_	_	0	_	_	Offset=193-196
+5	thoroughly	_	Modifier	_	_	0	_	_	Offset=197-207
+6	inverting	_	Action	_	_	0	_	_	Offset=211-220
+7	tube	_	Location	_	_	0	_	_	Offset=225-229
+8	4–6	_	Numerical	_	_	0	_	_	Offset=230-239
+
+# sent_id = s3
+# text = Add 250 μl Buffer P2 and mix thoroughly by inverting the tube 4–6 times.
+1	Add	_	Action	_	_	0	_	_	Offset=241-244
+2	350	_	Amount	_	_	3	Measure	_	Offset=245-251
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=252-261
+4	mix	_	Action	_	_	0	_	_	Offset=266-269
+5	immediately	_	Modifier	_	_	0	_	_	Offset=270-296
+6	inverting	_	Action	_	_	0	_	_	Offset=300-309
+7	tube	_	Location	_	_	0	_	_	Offset=314-318
+8	4–6	_	Numerical	_	_	0	_	_	Offset=319-328
+
+# sent_id = s4
+# text = Add 350 μl Buffer N3 and mix immediately and thoroughly by inverting the tube 4–6 times.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=330-340
+2	10	_	Time	_	_	0	_	_	Offset=345-351
+3	13,000	_	Speed	_	_	4	Coreference-Link	_	Offset=355-365
+4	~17,900	_	Mention	_	_	0	_	_	Offset=367-378
+5	a	_	Device	_	_	0	_	_	Offset=383-410
+
+# sent_id = s5
+# text = Centrifuge for 10 min at 13,000 rpm (~17,900 x g) in a table-top microcentrifuge.
+1	Apply	_	Action	_	_	0	_	_	Offset=412-417
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=422-434
+3	the	_	Location	_	_	0	_	_	Offset=450-472
+4	decanting	_	Method	_	_	0	_	_	Offset=477-486
+5	pipetting	_	Method	_	_	4	Or	_	Offset=490-499
+
+# sent_id = s6
+# text = Apply the supernatants from step 4 to the QIAprep spin column by decanting or pipetting.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=501-511
+2	30–60	_	Time	_	_	0	_	_	Offset=516-523
+
+# sent_id = s7
+# text = Centrifuge for 30–60 s. 
+1	Discard	_	Action	_	_	0	_	_	Offset=526-533
+2	flow-through	_	Reagent	_	_	0	_	_	Offset=538-550
+
+# sent_id = s8
+# text = Discard the flow-through.
+1	Wash	_	Action	_	_	0	_	_	Offset=552-556
+2	QIAprep	_	Location	_	_	0	_	_	Offset=561-580
+3	adding	_	Action	_	_	0	_	_	Offset=584-590
+4	0.5	_	Amount	_	_	5	Measure	_	Offset=591-597
+5	Buffer	_	Reagent	_	_	0	_	_	Offset=598-607
+6	centrifuging	_	Action	_	_	0	_	_	Offset=612-624
+7	30–60	_	Time	_	_	0	_	_	Offset=629-636
+
+# sent_id = s9
+# text = Wash the QIAprep spin column by adding 0.5 ml Buffer PB and centrifuging for 30–60 s. 
+1	Discard	_	Action	_	_	0	_	_	Offset=639-646
+2	flow-through	_	Reagent	_	_	0	_	_	Offset=651-663
+
+# sent_id = s10
+# text = Discard the flow-through.
+1	Wash	_	Action	_	_	0	_	_	Offset=665-669
+2	QIAprep	_	Location	_	_	0	_	_	Offset=670-689
+3	adding	_	Action	_	_	0	_	_	Offset=693-699
+4	0.75	_	Amount	_	_	5	Measure	_	Offset=700-707
+5	Buffer	_	Reagent	_	_	0	_	_	Offset=708-717
+6	centrifuging	_	Action	_	_	0	_	_	Offset=722-734
+7	30–60	_	Time	_	_	0	_	_	Offset=739-746
+
+# sent_id = s11
+# text = Wash QIAprep spin column by adding 0.75 ml Buffer PE and centrifuging for 30–60 s. 
+1	Discard	_	Action	_	_	0	_	_	Offset=749-756
+2	flow-through	_	Reagent	_	_	0	_	_	Offset=761-773
+3	centrifuge	_	Action	_	_	0	_	_	Offset=779-789
+4	full	_	Speed	_	_	0	_	_	Offset=793-802
+5	an	_	Modifier	_	_	6	Mod-Link	_	Offset=808-821
+6	1	_	Time	_	_	0	_	_	Offset=822-827
+7	remove	_	Action	_	_	0	_	_	Offset=831-837
+8	residual	_	Reagent	_	_	0	_	_	Offset=838-858
+
+# sent_id = s12
+# text = Discard the flow-through, and centrifuge at full speed for an additional 1 min to remove residual wash buffer. 
+1	Place	_	Action	_	_	0	_	_	Offset=861-866
+2	QIAprep	_	Location	_	_	0	_	_	Offset=871-885
+3	clean	_	Modifier	_	_	5	Mod-Link	_	Offset=891-896
+4	1.5	_	Size	_	_	5	Measure	_	Offset=897-903
+5	microcentrifuge	_	Location	_	_	0	_	_	Offset=904-923
+
+# sent_id = s13
+# text = Place the QIAprep column in a clean 1.5 ml microcentrifuge tube.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=926-936
+2	1	_	Time	_	_	0	_	_	Offset=941-946
+
+# sent_id = s14
+# text = Centrifuge for 1 min.
+1	Let	_	Action	_	_	0	_	_	Offset=948-957
+2	1	_	Time	_	_	0	_	_	Offset=958-966
+
+# sent_id = s15
+# text = Let stand 1 minute. 
+1	Add	_	Action	_	_	0	_	_	Offset=969-972
+2	50	_	Amount	_	_	3	Measure	4:Measure	Offset=973-978
+3	buffer	_	Reagent	_	_	0	_	_	Offset=979-988
+4	water	_	Reagent	_	_	3	Or	_	Offset=992-997
+5	center	_	Location	_	_	0	_	_	Offset=1005-1011
+6	each	_	Modifier	_	_	7	Mod-Link	_	Offset=1015-1019
+7	QIAprep	_	Location	_	_	5	Meronym	_	Offset=1020-1039
+
+# sent_id = s16
+# text = Add 50 μl buffer EB or water to the center of each QIAprep spin column. 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1042-1052
+2	1-5mL	_	Amount	_	_	3	Measure	_	Offset=1053-1058
+3	bacterial	_	Reagent	_	_	0	_	_	Offset=1059-1086
+4	>6800g	_	Speed	_	_	0	_	_	Offset=1090-1096
+5	3	_	Time	_	_	0	_	_	Offset=1101-1110
+6	room	_	Temperature	_	_	0	_	_	Offset=1114-1130
+

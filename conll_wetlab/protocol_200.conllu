@@ -1,0 +1,145 @@
+# sent_id = s1
+# text = Isolation of Haloviruses from Natural Waters
+1	Salt	_	Reagent	_	_	0	_	_	Offset=45-62
+2	collected	_	Action	_	_	0	_	_	Offset=67-76
+3	hypersaline	_	Reagent	_	_	1	Meronym	_	Offset=82-100
+
+# sent_id = s2
+# text = Salt lake samples are collected from hypersaline waters, which typically range from 15% w/v total salt, up to saturation (ca 35%).
+1	Samples	_	Reagent	_	_	0	_	_	Offset=176-183
+2	collected	_	Action	_	_	0	_	_	Offset=188-197
+3	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=201-208
+4	5–10	_	Size	_	_	5	Measure	_	Offset=209-216
+5	vessels	_	Location	_	_	0	_	_	Offset=217-224
+6	stored	_	Action	_	_	0	_	_	Offset=236-242
+7	several	_	Time	_	_	0	_	_	Offset=247-260
+8	room	_	Temperature	_	_	0	_	_	Offset=264-280
+
+# sent_id = s3
+# text = Samples are collected in sterile 5–10 mL vessels and may be stored for several weeks at room temperature.
+1	cells	_	Reagent	_	_	0	_	_	Offset=301-306
+2	cellular	_	Reagent	_	_	0	_	_	Offset=311-326
+3	removed	_	Action	_	_	0	_	_	Offset=331-338
+4	centrifugation	_	Method	_	_	0	_	_	Offset=342-356
+5	5,000g	_	Speed	_	_	0	_	_	Offset=358-364
+6	10	_	Time	_	_	0	_	_	Offset=366-372
+7	room	_	Temperature	_	_	0	_	_	Offset=374-390
+
+# sent_id = s4
+# text = In the laboratory, cells and cellular debris are removed by centrifugation (5,000g, 10 min, room temperature).
+1	supernatant	_	Reagent	_	_	0	_	_	Offset=397-408
+2	446	_	Action	_	_	0	_	_	Offset=417-425;435
+3	plaque	_	Method	_	_	0	_	_	Offset=450-462
+
+# sent_id = s5
+# text = The supernatant is then screened directly for viruses by plaque assay.
+1	Base	_	Reagent	_	_	0	_	_	Offset=790-813
+2	90	_	Size	_	_	1	Measure	_	Offset=815-820
+3	made	_	Action	_	_	0	_	_	Offset=826-830
+4	MGM	_	Reagent	_	_	0	_	_	Offset=836-839
+5	solidified	_	Action	_	_	0	_	_	Offset=858-868
+6	15%	_	Concentration	_	_	7	Measure	_	Offset=875-878
+7	w/v	_	Reagent	_	_	0	_	_	Offset=879-888
+
+# sent_id = s6
+# text = The choice of host strains depends on the experimental objectives, and includes well-characterized members of the Halobacteriaceae, such as Hbt.
+1	salt	_	Reagent	_	_	0	_	_	Offset=900-925
+2	examined	_	Action	_	_	0	_	_	Offset=936-944
+
+# sent_id = s7
+# text = salinarum (host for ΦH and several others) or Har.
+1	Plates	_	Reagent	_	_	0	_	_	Offset=1030-1036
+2	stored	_	Action	_	_	0	_	_	Offset=1044-1050
+3	indefinitely	_	Time	_	_	0	_	_	Offset=1051-1063
+4	4°C	_	Temperature	_	_	0	_	_	Offset=1067-1070
+5	wrapped	_	Action	_	_	0	_	_	Offset=1072-1079
+6	plastic	_	Seal	_	_	0	_	_	Offset=1083-1090
+7	prevent	_	Action	_	_	0	_	_	Offset=1094-1113
+8	warmed	_	Action	_	_	0	_	_	Offset=1130-1136
+9	room	_	Temperature	_	_	0	_	_	Offset=1140-1156
+10	warmer	_	Temperature	_	_	9	Or	_	Offset=1160-1166
+
+# sent_id = s8
+# text = hispanica (host for SH1, His1, His2, and others), or natural isolates from the same source, such as Hrr.
+1	100–500	_	Amount	_	_	2	Measure	_	Offset=1197-1207
+2	cleared	_	Reagent	_	_	0	_	_	Offset=1215-1235
+3	mixed	_	Action	_	_	0	_	_	Offset=1239-1244
+4	150	_	Amount	_	_	6	Measure	_	Offset=1250-1256
+5	exponentially	_	Modifier	_	_	6	Mod-Link	_	Offset=1260-1281
+6	host	_	Reagent	_	_	0	_	_	Offset=1282-1292
+
+# sent_id = s9
+# text = coriense (host for HF2).
+1	3–4	_	Amount	_	_	3	Measure	_	Offset=1300-1306
+2	molten	_	Temperature	_	_	0	_	_	Offset=1310-1323
+3	top-layer	_	Reagent	_	_	0	_	_	Offset=1324-1337
+4	0.7%	_	Concentration	_	_	5	Measure	_	Offset=1344-1348
+5	w/v	_	Reagent	_	_	0	_	_	Offset=1349-1357
+6	added	_	Action	_	_	0	_	_	Offset=1362-1367
+7	solution	_	Reagent	_	_	0	_	_	Offset=1377-1385
+8	mixed	_	Action	_	_	0	_	_	Offset=1386-1391
+9	gently	_	Modifier	_	_	0	_	_	Offset=1392-1398
+10	poured	_	Action	_	_	0	_	_	Offset=1403-1409
+11	evenly	_	Modifier	_	_	0	_	_	Offset=1410-1416
+12	plate	_	Location	_	_	0	_	_	Offset=1426-1431
+
+# sent_id = s10
+# text = Base and overlay plates (90 mm) are made with MGM (see guidelines), solidified using 15% w/v agar.
+1	setting	_	Action	_	_	0	_	_	Offset=1439-1446
+2	level	_	Location	_	_	0	_	_	Offset=1452-1465
+3	5–10	_	Time	_	_	0	_	_	Offset=1470-1478
+4	plates	_	Location	_	_	0	_	_	Offset=1480-1486
+5	incubated	_	Action	_	_	0	_	_	Offset=1491-1500
+6	aerobically	_	Modifier	_	_	0	_	_	Offset=1501-1512
+7	inverted	_	Action	_	_	0	_	_	Offset=1514-1522
+8	airtight	_	Location	_	_	0	_	_	Offset=1526-1545
+9	30°C	_	Temperature	_	_	0	_	_	Offset=1549-1553
+10	37°C	_	Temperature	_	_	0	_	_	Offset=1558-1562
+11	1–4	_	Time	_	_	0	_	_	Offset=1567-1572
+12	1607	_	Action	_	_	0	_	_	Offset=1581-1582;1596
+13	every	_	Time	_	_	0	_	_	Offset=1586-1595
+
+# sent_id = s11
+# text = A range of salt water concentrations should be examined, because salt concentration seems to greatly affect the size and clarity of plaques.
+1	Any	_	Reagent	_	_	0	_	_	Offset=1609-1628
+2	picked	_	Action	_	_	0	_	_	Offset=1633-1639
+3	sterile	_	Device	_	_	0	_	_	Offset=1646-1676
+4	sterile	_	Device	_	_	3	Or	_	Offset=1681-1714
+
+# sent_id = s12
+# text = Plates can be stored indefinitely at 4°C (wrapped in plastic to prevent dessication), but should be warmed to room temperature or warmer for use.
+1	agar	_	Reagent	_	_	0	_	_	Offset=1722-1732
+2	transferred	_	Action	_	_	0	_	_	Offset=1742-1753
+3	tubes	_	Location	_	_	5	Meronym	_	Offset=1757-1762
+4	500	_	Amount	_	_	5	Measure	_	Offset=1774-1780
+5	halovirus	_	Reagent	_	_	7	Meronym	9:Meronym|11:Meronym|13:Meronym|15:Meronym|17:Meronym	Offset=1784-1801
+6	2.47	_	Concentration	_	_	7	Measure	_	Offset=1803-1809
+7	NaCl	_	Reagent	_	_	0	_	_	Offset=1811-1815
+8	90	_	Concentration	_	_	9	Measure	_	Offset=1817-1822
+9	MgCl2	_	Reagent	_	_	0	_	_	Offset=1824-1829
+10	90	_	Concentration	_	_	11	Measure	_	Offset=1831-1836
+11	MgSO4	_	Reagent	_	_	0	_	_	Offset=1838-1843
+12	60	_	Concentration	_	_	13	Measure	_	Offset=1845-1850
+13	KCl	_	Reagent	_	_	0	_	_	Offset=1852-1855
+14	3	_	Concentration	_	_	15	Measure	_	Offset=1857-1861
+15	CaCl2	_	Reagent	_	_	0	_	_	Offset=1863-1868
+16	10	_	Concentration	_	_	17	Measure	_	Offset=1870-1875
+17	Tris-HCl	_	Reagent	_	_	0	_	_	Offset=1877-1885
+18	pH	_	pH	_	_	17	Measure	_	Offset=1887-1893
+
+# sent_id = s13
+# text = For virus isolation, 100–500 µl of the cleared water sample is mixed with 150 µl of exponentially growing host cells.
+1	vortexed	_	Action	_	_	0	_	_	Offset=1909-1917
+2	homogenize	_	Action	_	_	0	_	_	Offset=1921-1931
+3	sample	_	Reagent	_	_	0	_	_	Offset=1936-1942
+
+# sent_id = s14
+# text = Then, 3–4 mL of molten (50°C) top-layer MGM (with 0.7% w/v agar) is added, and the solution mixed gently and poured evenly over the plate.
+1	suspensions	_	Reagent	_	_	0	_	_	Offset=1950-1961
+2	replaqued	_	Action	_	_	0	_	_	Offset=1971-1980
+3	overlay	_	Location	_	_	0	_	_	Offset=1984-1998
+4	purify	_	Action	_	_	0	_	_	Offset=2002-2008
+5	isolates	_	Reagent	_	_	0	_	_	Offset=2013-2021
+6	eliminate	_	Action	_	_	0	_	_	Offset=2029-2038
+7	“false	_	Reagent	_	_	0	_	_	Offset=2039-2054
+

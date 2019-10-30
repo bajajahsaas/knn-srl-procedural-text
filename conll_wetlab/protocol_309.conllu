@@ -1,0 +1,53 @@
+# sent_id = s1
+# text = Probe Making
+1	Cut	_	Action	_	_	0	_	_	Offset=13-16
+2	5	_	Size	_	_	3	Measure	_	Offset=19-34
+3	carbon	_	Location	_	_	0	_	_	Offset=38-55
+4	6	_	Size	_	_	5	Measure	_	Offset=59-72
+5	FEP	_	Location	_	_	0	_	_	Offset=76-101
+6	two	_	Size	_	_	7	Measure	_	Offset=103-113
+7	pieces	_	Location	_	_	0	_	_	Offset=114-120
+8	inner	_	Location	_	_	7	Meronym	_	Offset=124-146
+9	two	_	Size	_	_	10	Measure	_	Offset=152-162
+10	pieces	_	Location	_	_	0	_	_	Offset=163-169
+11	middle	_	Location	_	_	10	Meronym	_	Offset=173-196
+
+# sent_id = s2
+# text = Cut a 5 ¼ inch length of carbon fiber tube, a 6 inch length of FEP outer sheath material, two ¾ inch pieces of inner end-cap material, and two ¾ inch pieces of middle end-cap material.
+1	Place	_	Action	_	_	0	_	_	Offset=198-203
+2	inner	_	Location	_	_	0	_	_	Offset=208-230
+3	around	_	Modifier	_	_	0	_	_	Offset=231-237
+4	sample	_	Location	_	_	0	_	_	Offset=242-253
+5	slide	_	Action	_	_	0	_	_	Offset=255-263
+6	appropriate	_	Modifier	_	_	0	_	_	Offset=270-281
+7	height	_	Measure-Type	_	_	0	_	_	Offset=282-288
+8	shrink	_	Action	_	_	0	_	_	Offset=411-417
+
+# sent_id = s3
+# text = Place the inner end-cap material around the sample tube, slide up to an appropriate height so that there is enough space for the carbon-fiber tube below, and so that the overall sample tube length is correct, and shrink it on.
+1	Shrink	_	Action	_	_	0	_	_	Offset=425-431
+2	middle	_	Location	_	_	0	_	_	Offset=436-459
+3	over	_	Modifier	_	_	0	_	_	Offset=460-464
+4	inner	_	Location	_	_	0	_	_	Offset=469-482
+
+# sent_id = s4
+# text = Shrink the middle end-cap material over the inner end-cap.
+1	Slide	_	Action	_	_	0	_	_	Offset=484-489
+2	sample	_	Location	_	_	0	_	_	Offset=494-505
+3	carbon	_	Location	_	_	0	_	_	Offset=515-532
+
+# sent_id = s5
+# text = Slide the sample tube into the carbon fiber tube.
+1	shrink	_	Action	_	_	0	_	_	Offset=545-551
+2	nner	_	Location	_	_	0	_	_	Offset=556-580
+3	sample	_	Location	_	_	4	Meronym	_	Offset=590-601
+4	carbon	_	Location	_	_	0	_	_	Offset=612-624
+
+# sent_id = s6
+# text = Similarly, shrink on inner and middle end-caps onto the sample tube below the carbon fiber.
+1	Shrink	_	Action	_	_	0	_	_	Offset=626-632
+
+# sent_id = s7
+# text = Shrink a single piece of FEP sheath material over the whole assembly.
+1	Cut	_	Action	_	_	0	_	_	Offset=696-699
+

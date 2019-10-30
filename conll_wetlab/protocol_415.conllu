@@ -1,0 +1,67 @@
+# sent_id = s1
+# text = Chlorophyll Extraction in Cyanobacteria
+1	Take	_	Action	_	_	0	_	_	Offset=40-44
+2	1	_	Amount	_	_	3	Measure	_	Offset=45-49
+3	sample	_	Reagent	_	_	6	Coreference-Link	_	Offset=50-56
+4	cyanobacteria	_	Reagent	_	_	3	Meronym	_	Offset=65-86
+5	spin	_	Action	_	_	0	_	_	Offset=91-95
+6	it	_	Mention	_	_	0	_	_	Offset=96-98
+7	14,000	_	Speed	_	_	0	_	_	Offset=107-117
+8	5	_	Time	_	_	0	_	_	Offset=122-127
+
+# sent_id = s2
+# text = Take 1 ml sample of your cyanobacteria culture and spin it down at 14,000 rpm for 5 min.
+1	Discard	_	Action	_	_	0	_	_	Offset=129-136
+2	0.9	_	Amount	_	_	3	Measure	_	Offset=137-143
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=151-162
+
+# sent_id = s3
+# text = Discard 0.9 ml of the supernatant.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=164-173
+2	pellet	_	Reagent	_	_	0	_	_	Offset=178-184
+3	remaining	_	Modifier	_	_	4	Mod-Link	_	Offset=192-201
+4	100	_	Amount	_	_	0	_	_	Offset=202-208
+
+# sent_id = s4
+# text = Resuspend the pellet in the remaining 100 µl.
+1	Add	_	Action	_	_	0	_	_	Offset=210-213
+2	0.9	_	Amount	_	_	4	Measure	_	Offset=214-220
+3	100%	_	Concentration	_	_	4	Measure	_	Offset=224-228
+4	methanol	_	Reagent	_	_	0	_	_	Offset=229-237
+5	sample	_	Reagent	_	_	0	_	_	Offset=245-252
+6	mix	_	Action	_	_	0	_	_	Offset=256-259
+7	thoroughly	_	Modifier	_	_	0	_	_	Offset=260-270
+8	vortexing	_	Action	_	_	0	_	_	Offset=274-283
+
+# sent_id = s5
+# text = Add 0.9 ml of 100% methanol to the sample and mix thoroughly by vortexing.
+1	Incubate	_	Action	_	_	0	_	_	Offset=285-293
+2	samples	_	Reagent	_	_	0	_	_	Offset=298-305
+3	dark	_	Location	_	_	0	_	_	Offset=313-317
+4	30	_	Time	_	_	0	_	_	Offset=322-328
+5	4	_	Temperature	_	_	0	_	_	Offset=332-336
+6	fridge	_	Device	_	_	0	_	_	Offset=344-350
+
+# sent_id = s6
+# text = Incubate the samples in the dark for 30 min at 4 °C in the fridge.
+1	Spin	_	Action	_	_	0	_	_	Offset=352-361
+2	samples	_	Reagent	_	_	0	_	_	Offset=362-369
+3	14,000	_	Speed	_	_	0	_	_	Offset=379-389
+4	5	_	Time	_	_	0	_	_	Offset=394-399
+
+# sent_id = s7
+# text = Spin down samples again at 14,000 rpm for 5 min.
+1	Transfer	_	Action	_	_	0	_	_	Offset=401-409
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=410-421
+3	cuvette	_	Device	_	_	0	_	_	Offset=429-436
+4	measure	_	Action	_	_	0	_	_	Offset=441-448
+5	extinction	_	Measure-Type	_	_	0	_	_	Offset=453-463
+6	665	_	Generic-Measure	_	_	0	_	_	Offset=467-473
+
+# sent_id = s8
+# text = Transfer supernatant into a cuvette and measure the extinction at 665 nm.
+1	Use	_	Action	_	_	0	_	_	Offset=475-478
+2	90%	_	Concentration	_	_	3	Measure	_	Offset=479-482
+3	methanol	_	Reagent	_	_	0	_	_	Offset=483-491
+4	reference	_	Reagent	_	_	0	_	_	Offset=499-517
+

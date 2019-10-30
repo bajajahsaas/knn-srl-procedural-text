@@ -1,0 +1,57 @@
+# sent_id = s1
+# text = DNA Precipitation Protocol
+1	Add	_	Action	_	_	0	_	_	Offset=27-30
+2	2	_	Amount	_	_	4	Measure	_	Offset=31-40
+3	ice	_	Temperature	_	_	0	_	_	Offset=44-52
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=53-60
+5	mix	_	Action	_	_	0	_	_	Offset=62-65
+6	well	_	Modifier	_	_	0	_	_	Offset=66-70
+
+# sent_id = s2
+# text = Add 2 volumes of ice cold ethanol, mix well.
+1	Let	_	Action	_	_	0	_	_	Offset=72-79
+2	ice	_	Temperature	_	_	0	_	_	Offset=83-86
+3	15-30	_	Time	_	_	0	_	_	Offset=87-100
+
+# sent_id = s3
+# text = Let sit on ice 15-30 minutes.  
+1	Microfuge	_	Action	_	_	0	_	_	Offset=104-113
+2	max	_	Speed	_	_	0	_	_	Offset=117-126
+3	20	_	Time	_	_	0	_	_	Offset=128-138
+
+# sent_id = s4
+# text = Microfuge at max speed, 20 minutes.
+1	remove	_	Action	_	_	0	_	_	Offset=150-156
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=157-168
+3	fill	_	Action	_	_	0	_	_	Offset=173-177
+4	tube	_	Location	_	_	0	_	_	Offset=178-182
+5	halfway	_	Generic-Measure	_	_	4	Measure	_	Offset=183-190
+6	70%	_	Concentration	_	_	7	Measure	_	Offset=196-199
+7	ethanol	_	Reagent	_	_	0	_	_	Offset=200-207
+
+# sent_id = s5
+# text = Carefully remove supernatant and fill tube halfway with 70% ethanol. 
+1	Spin	_	Action	_	_	0	_	_	Offset=210-214
+2	max	_	Speed	_	_	0	_	_	Offset=218-227
+3	2	_	Time	_	_	0	_	_	Offset=232-241
+
+# sent_id = s6
+# text = Spin at max speed for 2 minutes.
+1	wash	_	Action	_	_	0	_	_	Offset=283-287
+
+# sent_id = s7
+# text = Repeat the above step one time (2nd 70% wash).
+1	Remove	_	Action	_	_	0	_	_	Offset=290-296
+2	ethanol	_	Reagent	_	_	0	_	_	Offset=305-312
+3	370	_	Action	_	_	0	_	_	Offset=355-360;366
+4	tube	_	Location	_	_	0	_	_	Offset=361-365
+5	bench	_	Location	_	_	0	_	_	Offset=374-379
+6	~	_	Time	_	_	0	_	_	Offset=380-392
+
+# sent_id = s8
+# text = Remove as much ethanol as possible without disturbing the pellet Leave tube open on bench ~ 15 minutes.   
+1	Dissolve	_	Action	_	_	0	_	_	Offset=397-405
+2	TE	_	Reagent	_	_	0	_	_	Offset=409-418
+3	pH	_	Measure-Type	_	_	4	Of-Type	_	Offset=422-424
+4	7.6	_	Numerical	_	_	0	_	_	Offset=425-428
+

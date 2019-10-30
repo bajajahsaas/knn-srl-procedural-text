@@ -1,0 +1,59 @@
+# sent_id = s1
+# text = Isolation of temperate phages by plaque agar overlay
+1	Soft	_	Device	_	_	0	_	_	Offset=53-76
+2	melted	_	Action	_	_	0	_	_	Offset=81-87
+3	boiling	_	Modifier	_	_	4	Mod-Link	_	Offset=91-98
+4	water	_	Reagent	_	_	0	_	_	Offset=99-104
+5	placed	_	Action	_	_	0	_	_	Offset=109-115
+6	47°C	_	Modifier	_	_	7	Mod-Link	_	Offset=123-127
+7	water	_	Location	_	_	0	_	_	Offset=128-138
+
+# sent_id = s2
+# text = Soft agar overlay tubes are melted in boiling water and placed in the 47°C water bath.
+1	One	_	Amount	_	_	2	Measure	_	Offset=140-143
+2	tube	_	Device	_	_	0	_	_	Offset=144-148
+3	removed	_	Action	_	_	0	_	_	Offset=165-172
+4	water	_	Location	_	_	0	_	_	Offset=182-192
+
+# sent_id = s3
+# text = One tube of soft agar is removed from the water bath.
+1	1.0	_	Reagent	_	_	0	_	_	Offset=194-213
+2	1.0	_	Mention	_	_	0	_	_	Offset=225-228
+3	0.1	_	Reagent	_	_	0	_	_	Offset=232-256
+4	added	_	Action	_	_	0	_	_	Offset=260-265
+
+# sent_id = s4
+# text = 1.0 mL host culture and either 1.0 or 0.1 mL viral concentrate is added.
+1	contents	_	Reagent	_	_	0	_	_	Offset=271-279
+2	mixed	_	Action	_	_	0	_	_	Offset=295-300
+3	well	_	Modifier	_	_	0	_	_	Offset=301-305
+4	rolling	_	Method	_	_	0	_	_	Offset=309-331
+5	between	_	Location	_	_	0	_	_	Offset=332-349
+6	tube	_	Reagent	_	_	0	_	_	Offset=359-372
+7	immediately	_	Modifier	_	_	0	_	_	Offset=377-388
+8	emptied	_	Action	_	_	0	_	_	Offset=389-396
+9	agar	_	Location	_	_	0	_	_	Offset=405-415
+
+# sent_id = s5
+# text = The contents of the tube is mixed well by rolling back and forth between two hands, and the tube contents are immediately emptied onto an agar plate.
+1	top	_	Reagent	_	_	0	_	_	Offset=421-429
+2	gently	_	Modifier	_	_	0	_	_	Offset=433-439
+3	spread	_	Action	_	_	0	_	_	Offset=440-446
+4	agar	_	Location	_	_	0	_	_	Offset=456-468
+5	sliding	_	Action	_	_	0	_	_	Offset=472-479
+6	plate	_	Device	_	_	0	_	_	Offset=484-489
+7	bench	_	Location	_	_	0	_	_	Offset=497-510
+8	circular	_	Method	_	_	0	_	_	Offset=519-534
+
+# sent_id = s6
+# text = The top agar is gently spread over the agar surface by sliding the plate on the bench surface using a circular motion.
+1	top	_	Reagent	_	_	0	_	_	Offset=540-548
+2	harden	_	Action	_	_	0	_	_	Offset=563-569
+
+# sent_id = s7
+# text = The top agar is allowed to harden by not disturbing the plates for 30 min.
+1	plates	_	Device	_	_	0	_	_	Offset=615-621
+2	incubated	_	Action	_	_	0	_	_	Offset=626-635
+3	overnight	_	Time	_	_	0	_	_	Offset=657-666
+4	48	_	Time	_	_	0	_	_	Offset=670-674
+

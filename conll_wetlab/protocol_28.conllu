@@ -1,0 +1,101 @@
+# sent_id = s1
+# text = Transformation of E coli.
+1	Thaw	_	Action	_	_	0	_	_	Offset=42-46
+2	appropriate	_	Amount	_	_	3	Measure	_	Offset=51-69
+3	competent	_	Reagent	_	_	0	_	_	Offset=73-88
+4	ice	_	Location	_	_	0	_	_	Offset=92-95
+
+# sent_id = s2
+# text = with Heat Shock
+1	Pre-chill	_	Action	_	_	0	_	_	Offset=97-106
+2	empty	_	Modifier	_	_	4	Mod-Link	_	Offset=130-135
+3	1.5	_	Amount	_	_	4	Measure	_	Offset=136-142
+4	microcentrifuge	_	Location	_	_	0	_	_	Offset=143-164
+
+# sent_id = s3
+# text = Thaw the appropriate amount of competent cells on ice.
+1	Pipet	_	Action	_	_	0	_	_	Offset=166-171
+2	50	_	Amount	_	_	3	Measure	_	Offset=172-177
+3	aliquots	_	Reagent	_	_	0	_	_	Offset=178-195
+4	pre-chilled	_	Location	_	_	0	_	_	Offset=205-222
+
+# sent_id = s4
+# text = Pre-chill the required number of empty 1.5 ml microcentrifuge tubes.
+1	Add	_	Action	_	_	0	_	_	Offset=224-227
+2	5-10	_	Amount	_	_	3	Measure	_	Offset=228-235
+3	ligation	_	Reagent	_	_	0	_	_	Offset=241-262
+4	5	_	Amount	_	_	5	Measure	_	Offset=266-270
+5	pure	_	Reagent	_	_	0	_	_	Offset=274-290
+6	tube	_	Location	_	_	0	_	_	Offset=299-303
+
+# sent_id = s5
+# text = Pipet 50 µl aliquots of cells into the pre-chilled tubes.
+1	Mix	_	Action	_	_	0	_	_	Offset=305-308
+2	gently	_	Modifier	_	_	0	_	_	Offset=309-315
+
+# sent_id = s6
+# text = Add 5-10 µl of a ligation reaction mix or 5 ng of pure plasmid DNA to each tube.
+1	Incubate	_	Action	_	_	0	_	_	Offset=318-326
+2	tubes	_	Location	_	_	0	_	_	Offset=331-343
+3	30	_	Time	_	_	0	_	_	Offset=348-354
+
+# sent_id = s7
+# text = Mix gently!.
+1	Heat	_	Action	_	_	0	_	_	Offset=356-366
+2	cells	_	Reagent	_	_	0	_	_	Offset=371-376
+3	45	_	Time	_	_	0	_	_	Offset=381-387
+4	42°C	_	Temperature	_	_	0	_	_	Offset=391-395
+
+# sent_id = s8
+# text = Incubate the tubes of ice for 30 min.
+1	Place	_	Action	_	_	0	_	_	Offset=397-402
+2	tubes	_	Location	_	_	0	_	_	Offset=407-412
+3	immediately	_	Modifier	_	_	0	_	_	Offset=413-424
+4	ice	_	Location	_	_	0	_	_	Offset=428-431
+5	at	_	Modifier	_	_	6	Mod-Link	_	Offset=436-444
+6	2	_	Time	_	_	0	_	_	Offset=445-450
+
+# sent_id = s9
+# text = Heat shock the cells for 45 sec at 42°C.
+1	Add	_	Action	_	_	0	_	_	Offset=452-455
+2	800	_	Amount	_	_	3	Measure	_	Offset=456-462
+3	SOC	_	Reagent	_	_	0	_	_	Offset=466-476
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=480-484
+5	tube	_	Location	_	_	0	_	_	Offset=485-489
+6	incubate	_	Action	_	_	0	_	_	Offset=494-502
+7	1	_	Time	_	_	0	_	_	Offset=507-513
+8	37°C	_	Temperature	_	_	0	_	_	Offset=517-521
+
+# sent_id = s10
+# text = Place the tubes immediately on ice for at least 2 min.
+1	Transfer	_	Action	_	_	0	_	_	Offset=523-531
+2	cultures	_	Reagent	_	_	0	_	_	Offset=536-544
+3	1.5	_	Amount	_	_	4	Measure	_	Offset=548-554
+4	microcentrifuge	_	Location	_	_	0	_	_	Offset=555-576
+5	spin	_	Action	_	_	0	_	_	Offset=581-585
+6	1	_	Time	_	_	0	_	_	Offset=590-595
+7	6000	_	Speed	_	_	0	_	_	Offset=599-607
+
+# sent_id = s11
+# text = Add 800 µl of SOC medium to each tube and incubate for 1 hour at 37°C.
+1	Remove	_	Action	_	_	0	_	_	Offset=609-615
+2	800	_	Amount	_	_	3	Measure	_	Offset=616-622
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=630-641
+4	resuspend	_	Action	_	_	0	_	_	Offset=646-655
+5	pellet	_	Reagent	_	_	0	_	_	Offset=660-666
+
+# sent_id = s12
+# text = Transfer the cultures to 1.5 ml microcentrifuge tubes and spin for 1 min at 6000 rpm.
+1	Plate	_	Action	_	_	0	_	_	Offset=668-677
+2	suspension	_	Reagent	_	_	0	_	_	Offset=682-692
+3	LB	_	Location	_	_	5	Meronym	_	Offset=698-711
+4	appropriate	_	Modifier	_	_	5	Mod-Link	_	Offset=727-738
+5	antibiotic	_	Reagent	_	_	0	_	_	Offset=739-749
+
+# sent_id = s13
+# text = Remove 800 µl of the supernatant and resuspend the pellet.
+1	Incubate	_	Action	_	_	0	_	_	Offset=751-759
+2	plates	_	Location	_	_	0	_	_	Offset=764-770
+3	overnight	_	Time	_	_	0	_	_	Offset=771-780
+4	37°C	_	Temperature	_	_	0	_	_	Offset=784-788
+

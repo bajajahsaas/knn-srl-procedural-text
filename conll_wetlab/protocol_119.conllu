@@ -1,0 +1,113 @@
+# sent_id = s1
+# text = High Efficiency Transformation Protocol using NEB 10-beta Competent E. coli (C3019H)
+1	Thaw	_	Action	_	_	0	_	_	Offset=85-89
+2	tube	_	Location	_	_	3	Meronym	_	Offset=92-96
+3	NEB	_	Reagent	_	_	0	_	_	Offset=100-135
+4	ice	_	Location	_	_	0	_	_	Offset=139-142
+5	10	_	Time	_	_	0	_	_	Offset=147-157
+
+# sent_id = s2
+# text = Thaw a tube of NEB 10-beta Competent E. coli cells on ice for 10 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=159-162
+2	1-5	_	Amount	_	_	4	Measure	_	Offset=163-169
+3	1	_	Amount	_	_	4	Measure	_	Offset=181-192
+4	plasmid	_	Reagent	_	_	0	_	_	Offset=196-207
+5	cell	_	Reagent	_	_	0	_	_	Offset=215-227
+
+# sent_id = s3
+# text = Add 1-5 µl containing 1 pg-100 ng of plasmid DNA to the cell mixture.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=229-238
+2	flick	_	Action	_	_	0	_	_	Offset=239-244
+3	tube	_	Device	_	_	0	_	_	Offset=249-253
+4	4-5	_	Numerical	_	_	0	_	_	Offset=254-257
+5	mix	_	Action	_	_	0	_	_	Offset=267-270
+6	cells	_	Reagent	_	_	0	_	_	Offset=271-284
+
+# sent_id = s4
+# text = Carefully flick the tube 4-5 times to mix cells and DNA.
+1	Do	_	Action	_	_	0	_	_	Offset=286-299
+
+# sent_id = s5
+# text = Do not vortex.
+1	Place	_	Action	_	_	0	_	_	Offset=301-306
+2	mixture	_	Reagent	_	_	0	_	_	Offset=311-318
+3	ice	_	Location	_	_	0	_	_	Offset=322-325
+4	30	_	Time	_	_	0	_	_	Offset=330-340
+
+# sent_id = s6
+# text = Place the mixture on ice for 30 minutes.
+1	Do	_	Action	_	_	0	_	_	Offset=342-352
+
+# sent_id = s7
+# text = Do not mix.
+1	Heat	_	Action	_	_	0	_	_	Offset=354-364
+2	exactly	_	Modifier	_	_	3	Mod-Link	_	Offset=368-375
+3	42°C	_	Temperature	_	_	0	_	_	Offset=376-380
+4	exactly	_	Modifier	_	_	5	Mod-Link	_	Offset=385-392
+5	30	_	Time	_	_	0	_	_	Offset=393-403
+
+# sent_id = s8
+# text = Heat shock at exactly 42°C for exactly 30 seconds.
+1	Do	_	Action	_	_	0	_	_	Offset=405-415
+
+# sent_id = s9
+# text = Do not mix.
+1	Place	_	Action	_	_	0	_	_	Offset=417-422
+2	ice	_	Location	_	_	0	_	_	Offset=426-429
+3	5	_	Time	_	_	0	_	_	Offset=434-443
+
+# sent_id = s10
+# text = Place on ice for 5 minutes.
+1	Do	_	Action	_	_	0	_	_	Offset=445-455
+
+# sent_id = s11
+# text = Do not mix.
+1	Pipette	_	Action	_	_	0	_	_	Offset=457-464
+2	950	_	Amount	_	_	4	Measure	_	Offset=465-471
+3	room	_	Temperature	_	_	0	_	_	Offset=475-491
+4	SOC	_	Reagent	_	_	0	_	_	Offset=492-495
+5	mixture	_	Reagent	_	_	0	_	_	Offset=505-512
+
+# sent_id = s12
+# text = Pipette 950 µl of room temperature SOC into the mixture.
+1	Place	_	Action	_	_	0	_	_	Offset=514-519
+2	37°C	_	Temperature	_	_	0	_	_	Offset=523-527
+3	60	_	Time	_	_	0	_	_	Offset=532-542
+4	shaking	_	Action	_	_	0	_	_	Offset=545-552
+5	vigorously	_	Modifier	_	_	0	_	_	Offset=553-563
+6	250	_	Speed	_	_	0	_	_	Offset=565-572
+7	rotating	_	Method	_	_	0	_	_	Offset=577-585
+
+# sent_id = s13
+# text = Place at 37°C for 60 minutes., shaking vigorously (250 rpm) or rotating.
+1	Warm	_	Action	_	_	0	_	_	Offset=587-591
+2	selection	_	Location	_	_	0	_	_	Offset=592-608
+3	37°C	_	Temperature	_	_	0	_	_	Offset=612-616
+
+# sent_id = s14
+# text = Warm selection plates to 37°C.
+1	Mix	_	Action	_	_	0	_	_	Offset=618-621
+2	cells	_	Reagent	_	_	0	_	_	Offset=626-631
+3	thoroughly	_	Modifier	_	_	0	_	_	Offset=632-642
+4	flicking	_	Action	_	_	0	_	_	Offset=646-654
+5	tube	_	Location	_	_	0	_	_	Offset=659-663
+6	inverting	_	Action	_	_	0	_	_	Offset=668-677
+
+# sent_id = s15
+# text = Mix the cells thoroughly by flicking the tube and inverting.
+1	Perform	_	Action	_	_	0	_	_	Offset=679-686
+2	several	_	Numerical	_	_	0	_	_	Offset=687-694
+3	10-fold	_	Method	_	_	0	_	_	Offset=695-719
+4	SOC	_	Reagent	_	_	0	_	_	Offset=723-726
+
+# sent_id = s16
+# text = Perform several 10-fold serial dilutions in SOC.
+1	Spread	_	Action	_	_	0	_	_	Offset=728-734
+2	50-100	_	Amount	_	_	4	Measure	_	Offset=735-744
+3	each	_	Modifier	_	_	4	Mod-Link	_	Offset=748-752
+4	dilution	_	Reagent	_	_	0	_	_	Offset=753-761
+5	selection	_	Location	_	_	0	_	_	Offset=769-784
+6	Incubate	_	Action	_	_	0	_	_	Offset=785-793
+7	overnight	_	Time	_	_	0	_	_	Offset=794-803
+8	37°C	_	Temperature	_	_	0	_	_	Offset=807-811
+

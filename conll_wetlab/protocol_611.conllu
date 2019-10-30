@@ -1,0 +1,30 @@
+# sent_id = s1
+# text = PCR Using Q5® Hot Start High-Fidelity DNA Polymerase (M0493). 
+1	Gently	_	Modifier	_	_	0	_	_	Offset=477-483
+2	mix	_	Action	_	_	0	_	_	Offset=484-487
+3	reaction	_	Reagent	_	_	0	_	_	Offset=492-500
+
+# sent_id = s2
+# text = Set up the following reaction:
+1	Collect	_	Action	_	_	0	_	_	Offset=502-509
+2	all	_	Modifier	_	_	3	Mod-Link	_	Offset=510-513
+3	liquid	_	Reagent	_	_	0	_	_	Offset=514-520
+4	bottom	_	Location	_	_	0	_	_	Offset=528-534
+5	tube	_	Location	_	_	4	Meronym	_	Offset=542-546
+6	quick	_	Modifier	_	_	0	_	_	Offset=552-557
+7	spin	_	Action	_	_	0	_	_	Offset=558-562
+8	overlay	_	Action	_	_	0	_	_	Offset=580-587
+9	sample	_	Reagent	_	_	0	_	_	Offset=592-598
+10	mineral	_	Reagent	_	_	0	_	_	Offset=604-615
+11	PCR	_	Device	_	_	0	_	_	Offset=627-638
+12	heated	_	Modifier	_	_	13	Mod-Link	_	Offset=649-655
+13	lid	_	Seal	_	_	0	_	_	Offset=656-659
+
+# sent_id = s3
+# text = Component25 µl Reaction50 µl ReactionFinal Concentration5X Q5 Reaction Buffer5 µl10 µl1X10 mM dNTPs0.5 µl1 µl200 µM10 µM Forward Primer1.25 µl2.5 µl0.5 µM10 µM Reverse Primer1.25 µl2.5 µl0.5 µMTemplate DNAvariablevariable< 1,000 ngQ5 Hot Start High-Fidelity DNA Polymerase0.25 µl0.5 µl0.02 U/µl5X Q5 High GC Enhancer (optional)(5 µl)(10 µl)(1X)Nuclease-Free Waterto 25 µlto 50 µl.  
+1	Transfer	_	Action	_	_	0	_	_	Offset=661-669
+2	PCR	_	Location	_	_	0	_	_	Offset=670-679
+3	PCR	_	Device	_	_	0	_	_	Offset=685-696
+4	begin	_	Action	_	_	0	_	_	Offset=701-706
+5	thermocycling	_	Method	_	_	0	_	_	Offset=707-720
+

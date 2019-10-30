@@ -1,0 +1,196 @@
+# sent_id = s1
+# text = Viruses from Sulfolobus and close relatives
+1	one	_	Numerical	_	_	2	Measure	_	Offset=77-80
+2	anaerobic	_	Reagent	_	_	0	_	_	Offset=81-108
+3	prepared	_	Action	_	_	0	_	_	Offset=135-143
+
+# sent_id = s2
+# text = For each sample to be collected, one anaerobic collection vessel (Fig 1A in guidelines) is prepared.
+1	A	_	Amount	_	_	2	Measure	_	Offset=145-175
+2	elemental	_	Reagent	_	_	0	_	_	Offset=179-217
+3	placed	_	Action	_	_	0	_	_	Offset=221-227
+4	an	_	Location	_	_	0	_	_	Offset=231-248
+
+# sent_id = s3
+# text = A small amount (ca. 50–220 mg) of elemental sulfur (e.g., Riedel-deHaën) is placed in an anaerobic tube.
+1	0.1	_	Amount	_	_	3	Measure	_	Offset=250-256
+2	2%	_	Concentration	_	_	3	Measure	_	Offset=262-264
+3	resazurin	_	Reagent	_	_	0	_	_	Offset=265-283
+4	0.1	_	Amount	_	_	5	Measure	_	Offset=288-294
+5	water	_	Reagent	_	_	0	_	_	Offset=298-322
+6	added	_	Action	_	_	0	_	_	Offset=327-332
+
+# sent_id = s4
+# text = 0.1 mL of a 2% resazurin solution and 0.1 mL of water saturated with H2S are added.
+1	air	_	Reagent	_	_	0	_	_	Offset=338-341
+2	tube	_	Location	_	_	1	Meronym	_	Offset=349-353
+3	displaced	_	Action	_	_	0	_	_	Offset=357-366
+4	CO2	_	Reagent	_	_	0	_	_	Offset=372-375
+5	N2	_	Reagent	_	_	0	_	_	Offset=380-382
+6	Hungate	_	Method	_	_	0	_	_	Offset=390-407
+7	tube	_	Location	_	_	0	_	_	Offset=416-420
+8	stoppered	_	Action	_	_	0	_	_	Offset=424-433
+
+# sent_id = s5
+# text = The air in the tube is displaced with CO2 and N2 by the Hungate technique and the tube is stoppered (Hungate et al. 1966).
+1	cap	_	Seal	_	_	0	_	_	Offset=459-462
+2	placed	_	Action	_	_	0	_	_	Offset=466-472
+3	tube	_	Location	_	_	0	_	_	Offset=480-484
+4	assemblage	_	Reagent	_	_	0	_	_	Offset=493-503
+5	autoclaved	_	Action	_	_	0	_	_	Offset=504-514
+
+# sent_id = s6
+# text = A cap is placed on the tube and the assemblage autoclaved.
+1	Liquid	_	Reagent	_	_	0	_	_	Offset=516-547
+2	collected	_	Action	_	_	0	_	_	Offset=552-561
+3	turbid	_	Location	_	_	0	_	_	Offset=567-597
+4	high	_	Modifier	_	_	3	Mod-Link	_	Offset=603-619
+5	>	_	Temperature	_	_	4	Setting	_	Offset=620-626
+6	low	_	Modifier	_	_	3	Mod-Link	_	Offset=631-637
+7	<	_	pH	_	_	6	Setting	_	Offset=638-641
+
+# sent_id = s7
+# text = Liquid and wet sediment samples are collected from turbid terrestrial hot springs with high temperature > 70˚C and low pH < 4.
+1	Samples	_	Reagent	_	_	0	_	_	Offset=643-650
+2	collected	_	Action	_	_	0	_	_	Offset=655-664
+3	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=668-675
+4	50-mL	_	Size	_	_	5	Measure	_	Offset=676-681
+5	conical	_	Location	_	_	0	_	_	Offset=682-696
+6	end	_	Location	_	_	5	Meronym	_	Offset=704-707
+7	extendible	_	Location	_	_	6	Meronym	_	Offset=714-742
+
+# sent_id = s8
+# text = Samples are collected in sterile 50-mL conical flasks at the end of an extendible pole with a clamp (see Fig. 1A in guidelines).
+1	pH	_	Measure-Type	_	_	0	_	_	Offset=825-827
+2	liquid	_	Reagent	_	_	0	_	_	Offset=835-841
+3	adjusted	_	Action	_	_	0	_	_	Offset=855-863
+4	5.5	_	pH	_	_	0	_	_	Offset=871-874
+5	solid	_	Reagent	_	_	0	_	_	Offset=880-891
+6	slow	_	Method	_	_	0	_	_	Offset=895-908
+7	stirring	_	Method	_	_	0	_	_	Offset=913-921
+
+# sent_id = s9
+# text = After most of the sediment is allowed to settle, the pH of the liquid is carefully adjusted to ca. 5.5 with solid CaCO3 by slow addition and stirring.
+1	sample	_	Reagent	_	_	0	_	_	Offset=951-957
+2	transferred	_	Action	_	_	0	_	_	Offset=961-972
+3	pre-prepared	_	Location	_	_	0	_	_	Offset=978-1005
+4	syringe	_	Device	_	_	0	_	_	Offset=1014-1021
+
+# sent_id = s10
+# text = Once the pH is adjusted the sample is transferred to a pre-prepared anaerobic tube using a syringe (see above and Fig. 1A in guidelines).
+1	drops	_	Reagent	_	_	0	_	_	Offset=1105-1133
+2	added	_	Action	_	_	0	_	_	Offset=1138-1143
+
+# sent_id = s11
+# text = If the resazurin indicator changes to pink, drops of H2S-saturated water are added until the sample clears.
+1	Samples	_	Reagent	_	_	0	_	_	Offset=1169-1176
+2	maintained	_	Action	_	_	0	_	_	Offset=1184-1194
+3	up	_	Time	_	_	0	_	_	Offset=1199-1212
+4	room	_	Temperature	_	_	0	_	_	Offset=1216-1232
+
+# sent_id = s12
+# text = Samples can be maintained for up to 2 weeks at room temperature before enrichment.
+1	Samples	_	Reagent	_	_	0	_	_	Offset=1252-1259
+2	collected	_	Action	_	_	0	_	_	Offset=1260-1269
+3	anaerobic	_	Location	_	_	0	_	_	Offset=1280-1295
+4	filled	_	Location	_	_	3	Or	_	Offset=1299-1322
+5	diluted	_	Action	_	_	0	_	_	Offset=1327-1334
+6	1:50	_	Concentration	_	_	0	_	_	Offset=1335-1348
+7	Sulfolobus	_	Reagent	_	_	0	_	_	Offset=1352-1376
+
+# sent_id = s13
+# text = Samples collected either in anaerobic tubes or filled centrifuge tubes are diluted 1:50 or 1:100 in Sulfolobus growth medium* (Zillig et al. 1994).
+1	Incubate	_	Action	_	_	0	_	_	Offset=1400-1408
+2	samples	_	Reagent	_	_	0	_	_	Offset=1409-1416
+3	80˚C	_	Temperature	_	_	0	_	_	Offset=1420-1424
+4	shaking	_	Method	_	_	0	_	_	Offset=1430-1437
+5	150	_	Speed	_	_	0	_	_	Offset=1439-1446
+6	up	_	Time	_	_	0	_	_	Offset=1452-1465
+
+# sent_id = s14
+# text = Incubate samples at 80˚C with shaking (150 rpm) for up to 2 weeks.
+1	medium	_	Reagent	_	_	0	_	_	Offset=1471-1477
+2	buffered	_	Action	_	_	0	_	_	Offset=1482-1490
+3	0.7	_	Amount	_	_	4	Measure	_	Offset=1496-1501
+4	glycine	_	Reagent	_	_	0	_	_	Offset=1502-1509
+5	per	_	Modifier	_	_	3	Mod-Link	6:Mod-Link	Offset=1510-1513
+6	liter	_	Amount	_	_	0	_	_	Offset=1514-1519
+7	pH	_	Measure-Type	_	_	0	_	_	Offset=1528-1530
+8	adjusted	_	Action	_	_	0	_	_	Offset=1535-1543
+9	pH	_	pH	_	_	0	_	_	Offset=1547-1555
+10	1:2	_	Concentration	_	_	11	Measure	_	Offset=1561-1572
+11	sulfuric	_	Reagent	_	_	0	_	_	Offset=1573-1586
+
+# sent_id = s15
+# text = The medium was buffered with 0.7 g glycine per liter and the pH was adjusted to pH 3–3.5 with 1:2 diluted sulfuric acid.
+1	samples	_	Reagent	_	_	0	_	_	Offset=1898-1905
+2	plated	_	Action	_	_	0	_	_	Offset=1910-1916
+3	Gelrite®	_	Location	_	_	0	_	_	Offset=1920-1935
+4	rediluted	_	Concentration	_	_	1	Measure	_	Offset=1975-1989
+5	screened	_	Action	_	_	0	_	_	Offset=1995-2022
+6	spot-onlawn	_	Method	_	_	0	_	_	Offset=2028-2045
+7	electron	_	Method	_	_	0	_	_	Offset=2087-2106
+
+# sent_id = s16
+# text = For long-term 80˚C growth, our favorite bath liquid is PEG 400, which is a noncorrosive, nontoxic, water soluble compound that does not evaporate (see Fig. 1B in guidelines).
+1	second	_	Reagent	_	_	0	_	_	Offset=2149-2183
+2	plated	_	Action	_	_	0	_	_	Offset=2192-2198
+3	screened	_	Action	_	_	0	_	_	Offset=2203-2232
+
+# sent_id = s17
+# text = When growth is detected by either an increase in turbidity or production of a characteristic “damp sock” odor (W. Zillig pers. comm.), samples are plated on Gelrite® plates (see below and Fig. lC in guidelines), rediluted 1:50, and screened for VLP production by a spot-onlawn assay (see below and Fig. 1D in guidelines) or electron microscopy (see below and Fig. 2 in guidelines).
+1	Plates	_	Reagent	_	_	0	_	_	Offset=2234-2240
+2	made	_	Action	_	_	0	_	_	Offset=2245-2249
+3	adding	_	Action	_	_	0	_	_	Offset=2260-2266
+4	6–10	_	Concentration	_	_	5	Measure	_	Offset=2267-2279
+5	Gelrite	_	Reagent	_	_	0	_	_	Offset=2280-2295
+6	Sulfolobus	_	Reagent	_	_	0	_	_	Offset=2299-2315
+7	boiling	_	Action	_	_	0	_	_	Offset=2332-2339
+
+# sent_id = s18
+# text = The second round of enrichment culture is also plated and screened for virus production.
+1	Calcium	_	Reagent	_	_	0	_	_	Offset=2357-2375
+2	magnesium	_	Reagent	_	_	0	_	_	Offset=2380-2397
+3	added	_	Action	_	_	0	_	_	Offset=2402-2407
+4	1.5	_	Concentration	_	_	0	_	_	Offset=2436-2448
+5	stabilize	_	Action	_	_	0	_	_	Offset=2467-2476
+6	gel	_	Reagent	_	_	0	_	_	Offset=2481-2484
+
+# sent_id = s19
+# text = Plates are made by slowly adding 6–10 grams/L Gelrite (Kelco) to Sulfolobus media (see above) and boiling until dissolved.
+1	ca.	_	Amount	_	_	0	_	_	Offset=2513-2522
+2	poured	_	Action	_	_	0	_	_	Offset=2526-2532
+3	standard	_	Size	_	_	4	Measure	_	Offset=2538-2554
+4	Petri	_	Location	_	_	0	_	_	Offset=2555-2567
+5	cams	_	Device	_	_	0	_	_	Offset=2573-2577
+
+# sent_id = s20
+# text = Calcium (Ca(NO3)2) and magnesium (MgCl2) are added to a final concentration of 1.5 and 5 mM, respectively, to stabilize the gel.
+1	plates	_	Location	_	_	0	_	_	Offset=2609-2615
+2	stored	_	Action	_	_	0	_	_	Offset=2623-2629
+3	4˚C	_	Temperature	_	_	0	_	_	Offset=2633-2636
+4	indefinitely	_	Time	_	_	0	_	_	Offset=2637-2649
+
+# sent_id = s21
+# text = Before the gel solidifies, ca. 25 mL is poured into standard (90 mm) Petri plates with cams.
+1	0.1	_	Amount	_	_	3	Measure	_	Offset=2665-2671
+2	undiluted	_	Concentration	_	_	3	Measure	_	Offset=2678-2696
+3	enrichment	_	Reagent	_	_	0	_	_	Offset=2700-2719
+4	spread	_	Action	_	_	0	_	_	Offset=2724-2730
+5	Gelrite	_	Location	_	_	0	_	_	Offset=2734-2748
+6	presence	_	Reagent	_	_	10	Meronym	_	Offset=2756-2764
+7	absence	_	Reagent	_	_	6	Or	10:Meronym	Offset=2768-2775
+8	0.5	_	Amount	_	_	10	Measure	_	Offset=2779-2785
+9	0.2%	_	Concentration	_	_	10	Measure	_	Offset=2786-2790
+10	Gelrite	_	Reagent	_	_	0	_	_	Offset=2791-2798
+11	Sulfolobus	_	Reagent	_	_	10	Meronym	_	Offset=2812-2829
+
+# sent_id = s22
+# text = After the Gelrite solidifies, plates can be stored at 4˚C indefinitely.
+1	Plates	_	Location	_	_	0	_	_	Offset=2831-2837
+2	incubated	_	Action	_	_	0	_	_	Offset=2842-2851
+3	inverted	_	Modifier	_	_	0	_	_	Offset=2852-2860
+4	airtight	_	Location	_	_	0	_	_	Offset=2864-2889
+5	75–80˚C	_	Temperature	_	_	0	_	_	Offset=2893-2900
+6	approximately	_	Time	_	_	0	_	_	Offset=2905-2925
+

@@ -1,0 +1,160 @@
+# sent_id = s1
+# text = Saltwater BG-11 recipe
+1	Bring	_	Action	_	_	0	_	_	Offset=23-44
+2	1L	_	Amount	_	_	0	_	_	Offset=45-47
+
+# sent_id = s2
+# text = Bring final volume to 1L.
+1	Adjust	_	Action	_	_	0	_	_	Offset=49-58
+2	8.2	_	pH	_	_	0	_	_	Offset=81-84
+
+# sent_id = s3
+# text = Adjust pH of the final media to 8.2.
+1	add	_	Action	_	_	0	_	_	Offset=99-102
+2	K2HPO4	_	Reagent	_	_	0	_	_	Offset=103-109
+3	NaSiO3	_	Reagent	_	_	0	_	_	Offset=122-128
+4	add	_	Action	_	_	0	_	_	Offset=135-138
+5	the	_	Reagent	_	_	0	_	_	Offset=139-165
+
+# sent_id = s4
+# text = * Be sure to add K2HPO4 first, then NaSiO3, then add the others stock solutions to prevent precipitation.
+1	0.2	_	Amount	_	_	0	_	_	Offset=192-198
+2	filter	_	Action	_	_	0	_	_	Offset=199-215
+3	clean,	_	Location	_	_	0	_	_	Offset=221-249
+4	biosafety	_	Location	_	_	3	Meronym	_	Offset=255-269
+
+# sent_id = s5
+# text = 0.2 um filter sterilize into clean, autoclaved containers in a biosafety hood.
+1	Prepare	_	Action	_	_	0	_	_	Offset=352-359
+2	Conjugation	_	Location	_	_	4	Meronym	6:Meronym|8:Meronym	Offset=360-378
+3	1/2	_	Concentration	_	_	4	Measure	_	Offset=380-383
+4	BG-11	_	Reagent	_	_	0	_	_	Offset=384-389
+5	5%	_	Concentration	_	_	6	Measure	_	Offset=391-393
+6	LB	_	Reagent	_	_	0	_	_	Offset=394-396
+7	1%	_	Concentration	_	_	8	Measure	_	Offset=398-400
+8	agar	_	Reagent	_	_	0	_	_	Offset=401-405
+9	Dilute	_	Action	_	_	0	_	_	Offset=408-414
+10	Saltwater	_	Reagent	_	_	0	_	_	Offset=415-430
+11	1:1	_	Concentration	_	_	0	_	_	Offset=431-434
+12	ddH2O	_	Reagent	_	_	0	_	_	Offset=440-445
+
+# sent_id = s6
+# text = Do not autoclave the media as the silica will form precipitate and be cloudy!
+1	Add	_	Action	_	_	0	_	_	Offset=447-450
+2	50mL	_	Amount	_	_	4	Measure	_	Offset=451-455
+3	1x	_	Concentration	_	_	4	Measure	_	Offset=459-461
+4	LB	_	Reagent	_	_	0	_	_	Offset=462-464
+5	for	_	Modifier	_	_	0	_	_	Offset=465-517
+
+# sent_id = s7
+# text = To Prepare Conjugation Plates (1/2 BG-11, 5% LB, 1% agar): Dilute Saltwater BG-11 1:1 with ddH2O.
+1	Add	_	Action	_	_	0	_	_	Offset=519-522
+2	5g	_	Amount	_	_	3	Measure	_	Offset=523-525
+3	Bacto	_	Reagent	_	_	0	_	_	Offset=529-539
+4	1L	_	Size	_	_	5	Measure	_	Offset=545-547
+5	Earlenmeyer	_	Location	_	_	0	_	_	Offset=548-565
+6	for	_	Modifier	_	_	0	_	_	Offset=566-618
+
+# sent_id = s8
+# text = Add 50mL of 1x LB for each litre of Conjugation Plate media being made.
+1	Distribute	_	Action	_	_	0	_	_	Offset=620-630
+2	500	_	Amount	_	_	3	Measure	_	Offset=631-637
+3	Conjugation	_	Reagent	_	_	0	_	_	Offset=641-664
+4	each	_	Modifier	_	_	6	Mod-Link	_	Offset=668-673
+5	1L	_	Size	_	_	6	Measure	_	Offset=673-675
+6	Earlenmeyer	_	Location	_	_	0	_	_	Offset=676-692
+
+# sent_id = s9
+# text = Add 5g of Bacto Agar to a 1L Earlenmeyer flask for each 500mL of Conjugation Plate media being made.
+1	Cover	_	Action	_	_	0	_	_	Offset=695-700
+2	flask	_	Location	_	_	3	Meronym	_	Offset=706-711
+3	opening	_	Location	_	_	0	_	_	Offset=712-719
+4	aluminum	_	Seal	_	_	0	_	_	Offset=725-738
+5	autoclave	_	Action	_	_	0	_	_	Offset=743-752
+6	121C	_	Speed	_	_	0	_	_	Offset=756-760
+7	30	_	Time	_	_	0	_	_	Offset=765-775
+
+# sent_id = s10
+# text = Distribute 500 mL of Conjugation Plate media to each 1L Earlenmeyer flask.
+1	796	_	Action	_	_	0	_	_	Offset=777-782;789
+2	media	_	Reagent	_	_	0	_	_	Offset=783-788
+3	stirring	_	Action	_	_	0	_	_	Offset=803-811
+4	magnetic	_	Location	_	_	0	_	_	Offset=815-834
+
+# sent_id = s11
+# text = Cover with flask opening with aluminum foil and autoclave at 121C for 30 minutes.
+1	Pour	_	Action	_	_	0	_	_	Offset=977-981
+2	plates	_	Location	_	_	0	_	_	Offset=982-988
+3	allow	_	Action	_	_	0	_	_	Offset=993-1006
+4	overnight	_	Time	_	_	0	_	_	Offset=1007-1016
+
+# sent_id = s12
+# text = Allow media to cool while stirring on magnetic stir plate.
+1	Prepare	_	Action	_	_	0	_	_	Offset=1021-1028
+2	Selection	_	Location	_	_	4	Meronym	6:Meronym|7:Meronym	Offset=1029-1045
+3	1/2	_	Concentration	_	_	4	Measure	_	Offset=1047-1050
+4	BG-11	_	Reagent	_	_	0	_	_	Offset=1051-1056
+5	1%	_	Concentration	_	_	6	Measure	_	Offset=1058-1060
+6	agar	_	Reagent	_	_	0	_	_	Offset=1061-1065
+7	antibiotics	_	Reagent	_	_	0	_	_	Offset=1069-1080
+8	Dilute	_	Action	_	_	0	_	_	Offset=1083-1089
+9	Saltwater	_	Reagent	_	_	0	_	_	Offset=1090-1105
+10	1:1	_	Concentration	_	_	0	_	_	Offset=1106-1109
+11	ddH2O	_	Reagent	_	_	0	_	_	Offset=1115-1120
+
+# sent_id = s13
+# text = Make sure the stirring is not too vigorous as to cause bubbles.
+1	Add	_	Action	_	_	0	_	_	Offset=1122-1125
+2	5g	_	Amount	_	_	3	Measure	_	Offset=1126-1128
+3	Bacto	_	Reagent	_	_	0	_	_	Offset=1132-1142
+4	1L	_	Size	_	_	5	Measure	_	Offset=1151-1153
+5	Earlenmeyer	_	Location	_	_	0	_	_	Offset=1154-1171
+6	for	_	Modifier	_	_	0	_	_	Offset=1172-1222
+
+# sent_id = s14
+# text = It should cool enough to be able to touch, but not have the agar solidified.
+1	Distribute	_	Action	_	_	0	_	_	Offset=1224-1234
+2	500	_	Amount	_	_	3	Measure	_	Offset=1235-1241
+3	Selection	_	Reagent	_	_	0	_	_	Offset=1245-1266
+4	each	_	Modifier	_	_	6	Mod-Link	_	Offset=1270-1275
+5	1L	_	Size	_	_	6	Measure	_	Offset=1275-1277
+6	Earlenmeyer	_	Location	_	_	0	_	_	Offset=1278-1295
+
+# sent_id = s15
+# text = Pour plates and allow to cool overnight.
+1	Cover	_	Action	_	_	0	_	_	Offset=1297-1302
+2	flask	_	Location	_	_	3	Meronym	_	Offset=1303-1308
+3	opening	_	Location	_	_	0	_	_	Offset=1309-1316
+4	aluminum	_	Seal	_	_	0	_	_	Offset=1322-1335
+5	autoclave	_	Action	_	_	0	_	_	Offset=1340-1349
+6	121C	_	Speed	_	_	0	_	_	Offset=1353-1357
+7	30	_	Time	_	_	0	_	_	Offset=1362-1372
+
+# sent_id = s16
+# text = To Prepare Selection Plates (1/2 BG-11, 1% agar, + antibiotics): Dilute Saltwater BG-11 1:1 with ddH2O.
+1	1393	_	Action	_	_	0	_	_	Offset=1374-1379;1386
+2	media	_	Reagent	_	_	0	_	_	Offset=1380-1385
+3	stirring	_	Action	_	_	0	_	_	Offset=1400-1408
+4	magnetic	_	Location	_	_	0	_	_	Offset=1412-1431
+
+# sent_id = s17
+# text = Add 5g of Bacto Agar to to a 1L Earlenmeyer flask for each 500mL of Selection Plate media being made.
+1	Add	_	Action	_	_	0	_	_	Offset=1574-1577
+2	500ul	_	Amount	_	_	3	Measure	_	Offset=1578-1583
+3	antibiotics	_	Reagent	_	_	0	_	_	Offset=1600-1611
+4	Selection	_	Reagent	_	_	0	_	_	Offset=1619-1640
+
+# sent_id = s18
+# text = Distribute 500 mL of Selection Plate media to each 1L Earlenmeyer flask.
+1	1669	_	Action	_	_	0	_	_	Offset=1650-1654;1661
+2	500uL	_	Amount	_	_	0	_	_	Offset=1655-1660
+3	1000x	_	Concentration	_	_	4	Measure	_	Offset=1673-1678
+4	antibiotic	_	Reagent	_	_	0	_	_	Offset=1679-1696
+
+# sent_id = s19
+# text = Cover flask opening with aluminum foil and autoclave at 121C for 30 minutes.
+1	Pour	_	Action	_	_	0	_	_	Offset=1803-1807
+2	plates	_	Location	_	_	0	_	_	Offset=1808-1814
+3	allow	_	Action	_	_	0	_	_	Offset=1819-1832
+4	overnight	_	Time	_	_	0	_	_	Offset=1833-1842
+

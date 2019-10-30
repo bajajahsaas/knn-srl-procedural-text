@@ -1,0 +1,210 @@
+# sent_id = s1
+# text = Qiagen MinElute Gel Extraction
+1	Excise	_	Action	_	_	0	_	_	Offset=31-37
+2	DNA	_	Reagent	_	_	0	_	_	Offset=42-54
+3	agarose	_	Reagent	_	_	0	_	_	Offset=64-74
+4	clean,	_	Device	_	_	0	_	_	Offset=83-103
+
+# sent_id = s2
+# text = Excise the DNA fragment from the agarose gel with a clean, sharp scalpel.
+1	Weigh	_	Action	_	_	0	_	_	Offset=105-110
+2	gel	_	Reagent	_	_	0	_	_	Offset=115-124
+3	colorless	_	Location	_	_	0	_	_	Offset=130-144
+
+# sent_id = s3
+# text = Weigh the gel slice in a colorless tube.
+1	Add	_	Action	_	_	0	_	_	Offset=146-149
+2	3	_	Amount	_	_	3	Measure	_	Offset=150-159
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=160-169
+4	1	_	Amount	_	_	5	Measure	_	Offset=173-181
+5	gel	_	Reagent	_	_	0	_	_	Offset=182-185
+
+# sent_id = s4
+# text = Add 3 volumes Buffer QG to 1 volume gel (100 mg ~ 100 μl).
+1	>2%	_	Concentration	_	_	2	Measure	_	Offset=209-212
+2	agarose	_	Reagent	_	_	0	_	_	Offset=213-225
+3	add	_	Action	_	_	0	_	_	Offset=227-230
+4	6	_	Amount	_	_	5	Measure	_	Offset=231-240
+5	Buffer	_	Reagent	_	_	0	_	_	Offset=241-250
+
+# sent_id = s5
+# text = For >2% agarose gels, add 6 volumes Buffer QG.
+1	Incubate	_	Action	_	_	0	_	_	Offset=252-260
+2	50°C	_	Temperature	_	_	0	_	_	Offset=264-268
+3	10	_	Time	_	_	0	_	_	Offset=273-279
+
+# sent_id = s6
+# text = Incubate at 50°C for 10 min (or until the gel slice has completely dissolved).
+1	Vortex	_	Action	_	_	0	_	_	Offset=331-337
+2	tube	_	Location	_	_	0	_	_	Offset=342-346
+3	every	_	Time	_	_	0	_	_	Offset=347-360
+4	dissolve	_	Action	_	_	0	_	_	Offset=369-377
+5	gel	_	Reagent	_	_	0	_	_	Offset=378-381
+
+# sent_id = s7
+# text = Vortex the tube every 2–3 min to help dissolve gel.
+1	474	_	Action	_	_	0	_	_	Offset=429-449;465
+2	mixture	_	Reagent	_	_	0	_	_	Offset=457-464
+
+# sent_id = s8
+# text = After the gel slice has dissolved completely, check that the color of the mixture is yellow (similar to Buffer QG without dissolved agarose).
+1	add	_	Action	_	_	0	_	_	Offset=574-577
+2	10	_	Amount	_	_	4	Measure	_	Offset=578-583
+3	3	_	Concentration	_	_	4	Measure	_	Offset=584-587
+4	sodium	_	Reagent	_	_	0	_	_	Offset=588-602
+5	pH	_	pH	_	_	4	Measure	_	Offset=604-610
+6	mix	_	Action	_	_	0	_	_	Offset=616-619
+
+# sent_id = s9
+# text = If the color of the mixture is orange or violet, add 10 μl 3 M sodium acetate, pH 5.0, and mix.
+1	Add	_	Action	_	_	0	_	_	Offset=664-667
+2	1	_	Amount	_	_	3	Measure	_	Offset=668-680
+3	isopropanol	_	Reagent	_	_	0	_	_	Offset=684-695
+4	sample	_	Reagent	_	_	0	_	_	Offset=703-709
+5	mix	_	Action	_	_	0	_	_	Offset=714-717
+
+# sent_id = s10
+# text = The color of the mixture will turn yellow.
+1	Place	_	Action	_	_	0	_	_	Offset=719-724
+2	QIAquick	_	Location	_	_	0	_	_	Offset=727-747
+3	2	_	Size	_	_	4	Measure	_	Offset=764-768
+4	collection	_	Location	_	_	0	_	_	Offset=769-784
+
+# sent_id = s11
+# text = Add 1 gel volume of isopropanol to the sample and mix.
+1	bind	_	Action	_	_	0	_	_	Offset=789-793
+2	DNA	_	Reagent	_	_	0	_	_	Offset=794-797
+3	apply	_	Action	_	_	0	_	_	Offset=799-804
+4	sample	_	Reagent	_	_	0	_	_	Offset=809-815
+5	QIAquick	_	Location	_	_	0	_	_	Offset=823-838
+6	centrifuge	_	Action	_	_	0	_	_	Offset=843-853
+7	1	_	Time	_	_	0	_	_	Offset=858-863
+
+# sent_id = s12
+# text = Place a QIAquick spin column into a provided 2 ml collection tube.
+1	Discard	_	Action	_	_	0	_	_	Offset=865-872
+2	flow-through	_	Reagent	_	_	0	_	_	Offset=873-885
+3	place	_	Action	_	_	0	_	_	Offset=890-895
+4	QIAquick	_	Location	_	_	0	_	_	Offset=900-915
+5	same	_	Location	_	_	0	_	_	Offset=930-939
+
+# sent_id = s13
+# text = To bind DNA, apply the sample to the QIAquick column and centrifuge for 1 min.
+1	load	_	Action	_	_	0	_	_	Offset=972-976
+2	spin/apply	_	Action	_	_	0	_	_	Offset=981-998
+3	again	_	Modifier	_	_	0	_	_	Offset=999-1004
+
+# sent_id = s14
+# text = Discard flow-through and place the QIAquick column back into the same tube.
+1	add	_	Action	_	_	0	_	_	Offset=1102-1105
+2	0.5	_	Amount	_	_	3	Measure	_	Offset=1106-1112
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=1113-1122
+4	QIAquick	_	Location	_	_	0	_	_	Offset=1130-1145
+5	centrifuge	_	Action	_	_	0	_	_	Offset=1150-1160
+6	1	_	Time	_	_	0	_	_	Offset=1165-1170
+
+# sent_id = s15
+# text = For sample volumes of >800 μl, load and spin/apply vacuum again.
+1	Discard	_	Action	_	_	0	_	_	Offset=1172-1179
+2	flow-through	_	Reagent	_	_	0	_	_	Offset=1180-1192
+3	place	_	Action	_	_	0	_	_	Offset=1197-1202
+4	QIAquick	_	Location	_	_	0	_	_	Offset=1207-1221
+5	same	_	Location	_	_	0	_	_	Offset=1237-1246
+
+# sent_id = s16
+# text = If the DNA will subsequently be used for sequencing, in vitro transcription, or microinjection, add 0.5 ml Buffer QG to the QIAquick column and centrifuge for 1 min.
+1	wash	_	Action	_	_	0	_	_	Offset=1251-1255
+2	add	_	Action	_	_	0	_	_	Offset=1257-1260
+3	0.75	_	Amount	_	_	4	Measure	_	Offset=1261-1268
+4	Buffer	_	Reagent	_	_	0	_	_	Offset=1269-1278
+5	QIAquick	_	Location	_	_	0	_	_	Offset=1282-1297
+6	centrifuge	_	Action	_	_	0	_	_	Offset=1302-1312
+7	1	_	Time	_	_	0	_	_	Offset=1317-1322
+
+# sent_id = s17
+# text = Discard flow-through and place the QIAquick column back into the same tube.
+1	1448	_	Action	_	_	0	_	_	Offset=1428-1431;1443
+2	column	_	Reagent	_	_	0	_	_	Offset=1436-1442
+3	2–5	_	Time	_	_	0	_	_	Offset=1449-1456
+
+# sent_id = s18
+# text = To wash, add 0.75 ml Buffer PE to QIAquick column and centrifuge for 1 min.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1486-1496
+2	QIAquick	_	Location	_	_	0	_	_	Offset=1501-1516
+3	2	_	Size	_	_	4	Measure	_	Offset=1543-1547
+4	collection	_	Location	_	_	0	_	_	Offset=1548-1563
+5	1	_	Time	_	_	0	_	_	Offset=1568-1573
+6	17,900	_	Speed	_	_	0	_	_	Offset=1577-1600
+7	remove	_	Action	_	_	0	_	_	Offset=1604-1610
+8	residual	_	Location	_	_	0	_	_	Offset=1611-1631
+
+# sent_id = s19
+# text = Note: If the DNA will be used for salt-sensitive applications (e.g., sequencing, blunt-ended ligation), let the column stand 2–5 min after addition of Buffer PE.
+1	Place	_	Action	_	_	0	_	_	Offset=1633-1638
+2	QIAquick	_	Location	_	_	0	_	_	Offset=1639-1654
+3	1.5	_	Size	_	_	4	Measure	_	Offset=1668-1674
+4	microcentrifuge	_	Location	_	_	0	_	_	Offset=1675-1695
+
+# sent_id = s20
+# text = Centrifuge the QIAquick column once more in the provided 2 ml collection tube for 1 min at 17,900 x g (13,000 rpm) to remove residual wash buffer.
+1	elute	_	Action	_	_	0	_	_	Offset=1700-1705
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1706-1709
+3	add	_	Action	_	_	0	_	_	Offset=1711-1714
+4	10	_	Amount	_	_	5	Measure	_	Offset=1715-1720
+5	Buffer	_	Reagent	_	_	0	_	_	Offset=1724-1733
+6	10	_	Concentration	_	_	7	Measure	_	Offset=1735-1740
+7	Tris·Cl	_	Reagent	_	_	0	_	_	Offset=1741-1748
+8	pH	_	pH	_	_	7	Measure	_	Offset=1750-1756
+9	water	_	Reagent	_	_	5	Or	_	Offset=1761-1766
+10	center	_	Location	_	_	11	Meronym	_	Offset=1774-1780
+11	membrane	_	Location	_	_	0	_	_	Offset=1788-1796
+12	1818	_	Action	_	_	0	_	_	Offset=1798-1801;1813
+13	column	_	Location	_	_	0	_	_	Offset=1806-1812
+14	1	_	Time	_	_	0	_	_	Offset=1823-1828
+15	centrifuge	_	Action	_	_	0	_	_	Offset=1839-1849
+16	1	_	Time	_	_	0	_	_	Offset=1854-1859
+
+# sent_id = s21
+# text = Place QIAquick column into a clean 1.5 ml microcentrifuge tube.
+1	store	_	Action	_	_	0	_	_	Offset=2237-2242
+2	DNA	_	Reagent	_	_	0	_	_	Offset=2243-2246
+3	–20°C	_	Temperature	_	_	0	_	_	Offset=2250-2255
+
+# sent_id = s22
+# text = To elute DNA, add 10 µl of Buffer EB (10 mM Tris·Cl, pH 8.5) or water to the center of the membrane, let the column stand for 1 min, and then centrifuge for 1 min.
+1	purified	_	Reagent	_	_	0	_	_	Offset=2316-2328
+2	eluted	_	Action	_	_	0	_	_	Offset=2341-2347
+3	TE	_	Reagent	_	_	5	Meronym	7:Meronym	Offset=2351-2360
+4	10	_	Concentration	_	_	5	Measure	_	Offset=2362-2367
+5	Tris·Cl	_	Reagent	_	_	0	_	_	Offset=2368-2375
+6	1	_	Concentration	_	_	7	Measure	_	Offset=2377-2381
+7	EDTA	_	Reagent	_	_	0	_	_	Offset=2382-2386
+8	pH	_	pH	_	_	3	Measure	_	Offset=2388-2394
+
+# sent_id = s23
+# text = IMPORTANT: Ensure that the elution buffer is dispensed directly onto the center of the membrane for complete elution of bound DNA.
+1	add	_	Action	_	_	0	_	_	Offset=2502-2505
+2	1	_	Amount	_	_	3	Measure	_	Offset=2506-2514
+3	Loading	_	Reagent	_	_	0	_	_	Offset=2518-2529
+4	5	_	Amount	_	_	5	Measure	_	Offset=2533-2542
+5	purified	_	Reagent	_	_	0	_	_	Offset=2546-2558
+
+# sent_id = s24
+# text = The average eluate volume is 9 µl from 10 µl elution buffer volume.Elution efficiency is dependent on pH.
+1	Mix	_	Action	_	_	0	_	_	Offset=2560-2563
+2	solution	_	Reagent	_	_	0	_	_	Offset=2568-2576
+3	pipetting	_	Action	_	_	0	_	_	Offset=2580-2601
+
+# sent_id = s25
+# text = The maximum elution efficiency is achieved between pH 7.0 and 8.5.
+1	Loading	_	Reagent	_	_	2	Meronym	_	Offset=2626-2637
+2	3	_	Reagent	_	_	3	Meronym	4:Meronym|5:Meronym	Offset=2647-2660
+3	bromophenol	_	Reagent	_	_	0	_	_	Offset=2662-2678
+4	xylene	_	Reagent	_	_	0	_	_	Offset=2680-2693
+5	orange	_	Reagent	_	_	0	_	_	Offset=2699-2707
+
+# sent_id = s26
+# text = When using water, make sure that the pH value is within this range, and store DNA at –20°C as DNA may degrade in the absence of a buffering agent.
+1	identify	_	Action	_	_	0	_	_	Offset=2834-2842
+2	dyes	_	Reagent	_	_	0	_	_	Offset=2847-2851
+

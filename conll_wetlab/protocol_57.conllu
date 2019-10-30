@@ -1,0 +1,160 @@
+# sent_id = s1
+# text = DNA Extraction for college laboratory setting
+1	Harvest	_	Action	_	_	0	_	_	Offset=77-84
+2	2-3	_	Numerical	_	_	3	Measure	_	Offset=85-88
+3	seedlings	_	Reagent	_	_	0	_	_	Offset=89-98
+4	place	_	Action	_	_	0	_	_	Offset=103-108
+5	mortar	_	Device	_	_	0	_	_	Offset=114-120
+
+# sent_id = s2
+# text = Label	one tube for	each	plant.
+1	Fill	_	Action	_	_	0	_	_	Offset=122-126
+2	about	_	Modifier	_	_	3	Mod-Link	_	Offset=132-137
+3	50	_	Amount	_	_	4	Measure	_	Offset=138-143
+4	liquid	_	Reagent	_	_	0	_	_	Offset=147-162
+
+# sent_id = s3
+# text = Harvest 2-3 seedlings and place in a mortar.
+1	Grind	_	Action	_	_	0	_	_	Offset=164-169
+2	tissue	_	Reagent	_	_	0	_	_	Offset=170-176
+3	pestle	_	Device	_	_	0	_	_	Offset=182-188
+
+# sent_id = s4
+# text = Fill with about 50 ml of liquid nitrogen.
+1	Add	_	Action	_	_	0	_	_	Offset=190-193
+2	1	_	Amount	_	_	3	Measure	_	Offset=194-198
+3	extraction	_	Reagent	_	_	0	_	_	Offset=202-219
+4	tube	_	Location	_	_	0	_	_	Offset=227-231
+
+# sent_id = s5
+# text = Grind tissue with pestle.
+1	Add	_	Action	_	_	0	_	_	Offset=233-236
+2	120	_	Amount	_	_	4	Measure	_	Offset=237-243
+3	10%	_	Concentration	_	_	4	Measure	_	Offset=247-250
+4	SDS	_	Reagent	_	_	0	_	_	Offset=251-254
+
+# sent_id = s6
+# text = Add 1 ml of extraction buffer to the tube.
+1	Mix	_	Action	_	_	0	_	_	Offset=256-259
+2	inverting	_	Action	_	_	0	_	_	Offset=263-272
+
+# sent_id = s7
+# text = Add 120 µl of 10% SDS.
+1	Incubate	_	Action	_	_	0	_	_	Offset=274-282
+2	tube	_	Location	_	_	0	_	_	Offset=283-287
+3	65	_	Temperature	_	_	0	_	_	Offset=294-299
+4	20	_	Time	_	_	0	_	_	Offset=304-314
+
+# sent_id = s8
+# text = Mix by inverting.
+1	Add	_	Action	_	_	0	_	_	Offset=316-319
+2	300	_	Amount	_	_	4	Measure	_	Offset=320-326
+3	5M	_	Concentration	_	_	4	Measure	_	Offset=327-329
+4	KOAc	_	Reagent	_	_	0	_	_	Offset=330-334
+
+# sent_id = s9
+# text = Incubate tube(s) at 65 ˚C for 20 minutes.
+1	Mix	_	Action	_	_	0	_	_	Offset=336-339
+2	well	_	Modifier	_	_	0	_	_	Offset=340-344
+3	inverting	_	Action	_	_	0	_	_	Offset=348-357
+4	several	_	Numerical	_	_	0	_	_	Offset=358-365
+
+# sent_id = s10
+# text = Add 300 µl 5M KOAc.
+1	place	_	Action	_	_	0	_	_	Offset=392-397
+2	ice	_	Location	_	_	0	_	_	Offset=401-404
+3	5	_	Time	_	_	0	_	_	Offset=405-414
+
+# sent_id = s11
+# text = Mix well by inverting several times (important!
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=416-426
+
+# sent_id = s12
+# text = ), then place on ice 5 minutes.
+1	Pass	_	Action	_	_	0	_	_	Offset=478-482
+2	700	_	Amount	_	_	3	Measure	_	Offset=483-489
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=497-508
+4	miracloth	_	Device	_	_	0	_	_	Offset=519-535
+5	second	_	Modifier	_	_	6	Mod-Link	_	Offset=545-551
+6	tube	_	Location	_	_	0	_	_	Offset=552-556
+
+# sent_id = s13
+# text = Centrifuge	for	5	minutes	at	>12,000	rpm.
+1	Add	_	Action	_	_	0	_	_	Offset=558-561
+2	600	_	Amount	_	_	3	Measure	_	Offset=562-568
+3	isopropanol	_	Reagent	_	_	0	_	_	Offset=572-583
+
+# sent_id = s14
+# text = Label	a	second	tube.
+1	Mix	_	Action	_	_	0	_	_	Offset=585-588
+2	contents	_	Reagent	_	_	0	_	_	Offset=593-601
+3	thoroughly	_	Modifier	_	_	0	_	_	Offset=602-612
+4	inverting	_	Method	_	_	0	_	_	Offset=616-625
+
+# sent_id = s15
+# text = Pass 700 µl of the supernatant through a miracloth funnel into the second tube.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=661-670
+2	pour	_	Action	_	_	0	_	_	Offset=671-675
+3	discard	_	Action	_	_	0	_	_	Offset=684-691
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=696-707
+
+# sent_id = s16
+# text = Add 600 µl of isopropanol.
+1	P20	_	Device	_	_	0	_	_	Offset=715-718
+2	20	_	Amount	_	_	1	Setting	_	Offset=726-731
+3	remove	_	Action	_	_	0	_	_	Offset=735-741
+4	remaining	_	Modifier	_	_	5	Mod-Link	_	Offset=746-755
+5	drops	_	Reagent	_	_	0	_	_	Offset=756-771
+6	without	_	Action	_	_	0	_	_	Offset=772-790
+7	DNA	_	Reagent	_	_	0	_	_	Offset=795-805
+
+# sent_id = s17
+# text = Mix the contents thoroughly by inverting.
+1	Add	_	Action	_	_	0	_	_	Offset=807-810
+2	500	_	Amount	_	_	4	Measure	_	Offset=811-817
+3	70%	_	Concentration	_	_	4	Measure	_	Offset=821-824
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=825-832
+5	flick	_	Action	_	_	0	_	_	Offset=837-842
+6	tube	_	Location	_	_	0	_	_	Offset=847-851
+7	pellet	_	Reagent	_	_	0	_	_	Offset=862-868
+8	comes	_	Action	_	_	0	_	_	Offset=869-878
+9	bottom	_	Location	_	_	0	_	_	Offset=883-889
+
+# sent_id = s18
+# text = Spin	for	5	minutes	at	14,000	rpm.
+1	Spin	_	Action	_	_	0	_	_	Offset=891-895
+2	5	_	Time	_	_	0	_	_	Offset=896-905
+
+# sent_id = s19
+# text = Carefully pour off and discard the supernatant.
+1	Pour	_	Action	_	_	0	_	_	Offset=907-915
+2	ethanol	_	Reagent	_	_	0	_	_	Offset=920-927
+
+# sent_id = s20
+# text = Use a P20 set to 20 µl to remove the remaining drops of liquid without disturbing the DNA pellet.
+1	P20	_	Device	_	_	0	_	_	Offset=935-938
+2	20	_	Amount	_	_	1	Setting	_	Offset=946-951
+3	remove	_	Action	_	_	0	_	_	Offset=955-961
+4	remaining	_	Modifier	_	_	5	Mod-Link	_	Offset=966-975
+5	drops	_	Reagent	_	_	0	_	_	Offset=976-981
+6	without	_	Action	_	_	0	_	_	Offset=982-1000
+7	pellet	_	Reagent	_	_	0	_	_	Offset=1005-1011
+
+# sent_id = s21
+# text = Add 500 µl of 70% ethanol and flick the tube until the pellet comes off the bottom.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1075-1084
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1089-1092
+3	50	_	Amount	_	_	4	Measure	_	Offset=1096-1101
+4	TE	_	Reagent	_	_	0	_	_	Offset=1102-1104
+5	incubate	_	Action	_	_	0	_	_	Offset=1109-1117
+6	room	_	Temperature	_	_	0	_	_	Offset=1121-1137
+7	5	_	Time	_	_	0	_	_	Offset=1142-1151
+8	complete	_	Modifier	_	_	0	_	_	Offset=1156-1164
+9	resuspension	_	Action	_	_	0	_	_	Offset=1165-1177
+
+# sent_id = s22
+# text = Spin	5 minutes.
+1	Samples	_	Reagent	_	_	0	_	_	Offset=1179-1186
+2	frozen	_	Action	_	_	0	_	_	Offset=1197-1203
+3	storage	_	Reagent	_	_	0	_	_	Offset=1208-1215
+

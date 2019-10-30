@@ -1,0 +1,106 @@
+# sent_id = s1
+# text = Buccopharyngeal morphology of tadpoles in Scanning Electron Microscope
+1	Wash	_	Action	_	_	0	_	_	Offset=71-75
+2	quickly	_	Modifier	_	_	0	_	_	Offset=76-83
+3	specimens	_	Reagent	_	_	0	_	_	Offset=88-97
+4	tap	_	Reagent	_	_	0	_	_	Offset=101-110
+5	dissect	_	Action	_	_	0	_	_	Offset=115-122
+6	tadpoles	_	Reagent	_	_	0	_	_	Offset=123-131
+7	Wassersug	_	Method	_	_	0	_	_	Offset=142-166
+
+# sent_id = s2
+# text = Wash quickly the specimens in tap water and dissect tadpoles following Wassersug (1976: p. 4-5).
+1	Prepare	_	Action	_	_	0	_	_	Offset=168-175
+2	fixing	_	Reagent	_	_	0	_	_	Offset=180-195
+
+# sent_id = s3
+# text = Prepare the fixing solution. 
+1	Fix	_	Action	_	_	0	_	_	Offset=198-201
+2	dissections	_	Reagent	_	_	0	_	_	Offset=206-217
+3	4%	_	Concentration	_	_	4	Measure	_	Offset=221-223
+4	Glutaraldehyde	_	Reagent	_	_	0	_	_	Offset=224-238
+5	diluted	_	Action	_	_	0	_	_	Offset=239-246
+6	fixing	_	Reagent	_	_	0	_	_	Offset=254-269
+
+# sent_id = s4
+# text = Fix the dissections in 4% Glutaraldehyde diluted in the fixing solution. 
+1	Post	_	Action	_	_	0	_	_	Offset=272-280
+2	dissections	_	Reagent	_	_	0	_	_	Offset=285-296
+3	1%	_	Concentration	_	_	4	Measure	_	Offset=300-302
+4	Osmium	_	Reagent	_	_	0	_	_	Offset=303-328
+
+# sent_id = s5
+# text = Post fix the dissections in 1% Osmium tetroxide solution.
+1	Dehydrate	_	Action	_	_	0	_	_	Offset=330-339
+2	ascending	_	Measure-Type	_	_	0	_	_	Offset=346-362
+3	acetones	_	Reagent	_	_	0	_	_	Offset=366-374
+
+# sent_id = s6
+# text = Dehydrate in an ascending series of acetones, starting at 30%. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=394-402
+2	acetone	_	Reagent	_	_	0	_	_	Offset=406-413
+3	50%	_	Concentration	_	_	2	Measure	_	Offset=414-417
+
+# sent_id = s7
+# text = Transfer to acetone 50%. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=420-428
+2	acetone	_	Reagent	_	_	0	_	_	Offset=432-439
+3	70%	_	Concentration	_	_	2	Measure	_	Offset=440-443
+
+# sent_id = s8
+# text = Transfer to acetone 70%. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=446-454
+2	acetone	_	Reagent	_	_	0	_	_	Offset=458-465
+3	90%	_	Concentration	_	_	2	Measure	_	Offset=466-469
+
+# sent_id = s9
+# text = Transfer to acetone 90%. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=472-480
+2	acetone	_	Reagent	_	_	0	_	_	Offset=484-491
+3	95%	_	Concentration	_	_	2	Measure	_	Offset=492-495
+
+# sent_id = s10
+# text = Transfer to acetone 95%. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=498-506
+2	acetone	_	Reagent	_	_	0	_	_	Offset=530-537
+3	95%	_	Concentration	_	_	2	Measure	_	Offset=538-541
+
+# sent_id = s11
+# text = Transfer to another solution of acetone 95%. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=544-552
+2	acetone	_	Reagent	_	_	0	_	_	Offset=576-583
+3	95%	_	Concentration	_	_	2	Measure	_	Offset=584-587
+
+# sent_id = s12
+# text = Transfer to another solution of acetone 95%. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=590-598
+2	acetone	_	Reagent	_	_	0	_	_	Offset=602-609
+3	100%	_	Concentration	_	_	2	Measure	_	Offset=610-614
+
+# sent_id = s13
+# text = Transfer to acetone 100%. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=617-625
+2	acetone	_	Reagent	_	_	0	_	_	Offset=649-656
+3	100%	_	Concentration	_	_	2	Measure	_	Offset=657-661
+
+# sent_id = s14
+# text = Transfer to another solution of acetone 100%. 
+1	take	_	Action	_	_	0	_	_	Offset=668-672
+2	specimens	_	Reagent	_	_	0	_	_	Offset=678-687
+3	Critical	_	Device	_	_	0	_	_	Offset=693-713
+
+# sent_id = s15
+# text = Now take your specimens to a Critical Point Dryer. 
+1	Mount	_	Action	_	_	0	_	_	Offset=716-721
+2	specimens	_	Reagent	_	_	0	_	_	Offset=726-735
+3	stubs	_	Location	_	_	5	Coreference-Link	_	Offset=739-745
+4	attach	_	Action	_	_	0	_	_	Offset=749-755
+5	them	_	Mention	_	_	0	_	_	Offset=756-760
+6	double-sided	_	Seal	_	_	0	_	_	Offset=768-785
+
+# sent_id = s16
+# text = Mount the specimens on stubs and attach them with a double-sided tape. 
+1	Take	_	Action	_	_	0	_	_	Offset=788-792
+2	specimens	_	Reagent	_	_	0	_	_	Offset=797-806
+3	High	_	Device	_	_	0	_	_	Offset=814-832
+

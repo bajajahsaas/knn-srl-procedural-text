@@ -1,0 +1,124 @@
+# sent_id = s1
+# text = Transformation Protocol for BL21(DE3) Competent Cells (C2527I)
+1	Thaw	_	Action	_	_	0	_	_	Offset=63-67
+2	tube	_	Device	_	_	0	_	_	Offset=70-74
+3	BL21(DE3)	_	Reagent	_	_	0	_	_	Offset=78-111
+4	ice	_	Location	_	_	0	_	_	Offset=115-118
+5	last	_	Time	_	_	0	_	_	Offset=129-156
+
+# sent_id = s2
+# text = Thaw a tube of BL21(DE3) Competent E. coli cells on ice until the last ice crystals disappear.
+1	Mix	_	Action	_	_	0	_	_	Offset=158-161
+2	gently	_	Modifier	_	_	0	_	_	Offset=162-168
+3	carefully	_	Modifier	_	_	0	_	_	Offset=173-182
+4	pipette	_	Action	_	_	0	_	_	Offset=183-190
+5	50	_	Amount	_	_	6	Measure	_	Offset=191-196
+6	cells	_	Reagent	_	_	0	_	_	Offset=200-205
+7	transformation	_	Location	_	_	0	_	_	Offset=213-239
+
+# sent_id = s3
+# text = Mix gently and carefully pipette 50 µl of cells into a transformation tube on ice.
+1	Add	_	Action	_	_	0	_	_	Offset=241-244
+2	1–5	_	Amount	_	_	0	_	_	Offset=245-251
+3	1	_	Amount	_	_	4	Measure	_	Offset=263-274
+4	plasmid	_	Reagent	_	_	0	_	_	Offset=278-289
+5	cell	_	Location	_	_	0	_	_	Offset=297-309
+
+# sent_id = s4
+# text = Add 1–5 µl containing 1 pg–100 ng of plasmid DNA to the cell mixture.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=311-320
+2	flick	_	Action	_	_	0	_	_	Offset=321-326
+3	tube	_	Device	_	_	0	_	_	Offset=331-335
+4	4–5	_	Numerical	_	_	0	_	_	Offset=336-339
+5	mix	_	Action	_	_	0	_	_	Offset=349-352
+6	cells	_	Reagent	_	_	0	_	_	Offset=353-358
+7	DNA	_	Reagent	_	_	0	_	_	Offset=363-366
+
+# sent_id = s5
+# text = Carefully flick the tube 4–5 times to mix cells and DNA.
+1	Do	_	Action	_	_	0	_	_	Offset=368-381
+
+# sent_id = s6
+# text = Do not vortex.
+1	Place	_	Action	_	_	0	_	_	Offset=383-388
+2	mixture	_	Reagent	_	_	0	_	_	Offset=393-400
+3	ice	_	Location	_	_	0	_	_	Offset=404-407
+4	30	_	Time	_	_	0	_	_	Offset=412-422
+
+# sent_id = s7
+# text = Place the mixture on ice for 30 minutes.
+1	Do	_	Action	_	_	0	_	_	Offset=424-434
+
+# sent_id = s8
+# text = Do not mix.
+1	Heat	_	Action	_	_	0	_	_	Offset=436-440
+2	shock	_	Reagent	_	_	0	_	_	Offset=441-446
+3	42°C	_	Temperature	_	_	0	_	_	Offset=458-462
+4	10	_	Time	_	_	0	_	_	Offset=475-485
+
+# sent_id = s9
+# text = Heat shock at exactly 42°C for exactly 10 seconds.
+1	Do	_	Action	_	_	0	_	_	Offset=487-497
+
+# sent_id = s10
+# text = Do not mix.
+1	Place	_	Action	_	_	0	_	_	Offset=499-504
+2	ice	_	Location	_	_	0	_	_	Offset=508-511
+3	5	_	Time	_	_	0	_	_	Offset=516-525
+
+# sent_id = s11
+# text = Place on ice for 5 minutes.
+1	Do	_	Action	_	_	0	_	_	Offset=527-537
+
+# sent_id = s12
+# text = Do not mix.
+1	Pipette	_	Action	_	_	0	_	_	Offset=539-546
+2	950	_	Amount	_	_	3	Measure	_	Offset=547-553
+3	SOC	_	Reagent	_	_	0	_	_	Offset=574-577
+4	mixture	_	Location	_	_	0	_	_	Offset=587-594
+
+# sent_id = s13
+# text = Pipette 950 µl of room temperature SOC into the mixture.
+1	Place	_	Action	_	_	0	_	_	Offset=596-601
+2	37°C	_	Temperature	_	_	0	_	_	Offset=605-609
+3	60	_	Time	_	_	0	_	_	Offset=614-624
+
+# sent_id = s14
+# text = Place at 37°C for 60 minutes.
+1	Shake	_	Action	_	_	0	_	_	Offset=626-631
+2	vigorously	_	Modifier	_	_	0	_	_	Offset=632-642
+3	250	_	Speed	_	_	0	_	_	Offset=644-651
+4	rotate	_	Action	_	_	0	_	_	Offset=656-662
+
+# sent_id = s15
+# text = Shake vigorously (250 rpm) or rotate.
+1	Warm	_	Action	_	_	0	_	_	Offset=664-668
+2	selection	_	Device	_	_	0	_	_	Offset=669-685
+3	37°C	_	Temperature	_	_	0	_	_	Offset=689-693
+
+# sent_id = s16
+# text = Warm selection plates to 37°C.
+1	Mix	_	Action	_	_	0	_	_	Offset=695-698
+2	cells	_	Reagent	_	_	0	_	_	Offset=703-708
+3	thoroughly	_	Modifier	_	_	2	Mod-Link	_	Offset=709-719
+4	flicking	_	Action	_	_	0	_	_	Offset=723-731
+5	tube	_	Device	_	_	0	_	_	Offset=736-740
+6	inverting	_	Action	_	_	0	_	_	Offset=745-754
+
+# sent_id = s17
+# text = Mix the cells thoroughly by flicking the tube and inverting.
+1	Perform	_	Action	_	_	0	_	_	Offset=756-763
+2	several	_	Generic-Measure	_	_	0	_	_	Offset=764-771
+3	10-fold	_	Method	_	_	0	_	_	Offset=772-796
+4	SOC	_	Location	_	_	0	_	_	Offset=800-803
+
+# sent_id = s18
+# text = Perform several 10-fold serial dilutions in SOC.
+1	Spread	_	Action	_	_	0	_	_	Offset=805-811
+2	50–100	_	Amount	_	_	3	Measure	_	Offset=812-821
+3	dilution	_	Reagent	_	_	0	_	_	Offset=830-838
+4	selection	_	Location	_	_	0	_	_	Offset=846-861
+5	incubate	_	Action	_	_	0	_	_	Offset=866-874
+6	overnight	_	Time	_	_	0	_	_	Offset=875-884
+7	37°C	_	Temperature	_	_	0	_	_	Offset=888-892
+

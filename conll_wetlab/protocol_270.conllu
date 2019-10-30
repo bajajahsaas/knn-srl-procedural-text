@@ -1,0 +1,35 @@
+# sent_id = s1
+# text = Large (Klenow) Fragment Blunting (M0210)
+1	DNA	_	Reagent	_	_	0	_	_	Offset=41-44
+2	dissolved	_	Action	_	_	0	_	_	Offset=55-64
+3	1x	_	Concentration	_	_	4	Measure	_	Offset=68-70
+4	NEBuffer	_	Reagent	_	_	0	_	_	Offset=71-79
+5	T4	_	Reagent	_	_	4	Or	_	Offset=83-112
+6	supplemented	_	Action	_	_	0	_	_	Offset=113-125
+
+# sent_id = s2
+# text = DNA should be dissolved in 1x NEBuffer or T4 DNA Ligase Reaction buffer supplemented with 33 μM each dNTP.
+1	Add	_	Action	_	_	0	_	_	Offset=148-151
+2	1	_	Amount	_	_	3	Measure	_	Offset=152-158
+3	Klenow	_	Reagent	_	_	0	_	_	Offset=162-168
+
+# sent_id = s3
+# text = Add 1 unit of Klenow per microgram DNA.
+1	Incubate	_	Action	_	_	0	_	_	Offset=188-196
+2	15	_	Time	_	_	0	_	_	Offset=201-211
+3	25°C	_	Temperature	_	_	0	_	_	Offset=215-219
+
+# sent_id = s4
+# text = Incubate for 15 minutes at 25°C.
+1	Stop	_	Action	_	_	0	_	_	Offset=221-225
+2	reaction	_	Method	_	_	0	_	_	Offset=226-234
+3	adding	_	Action	_	_	0	_	_	Offset=238-244
+4	EDTA	_	Reagent	_	_	0	_	_	Offset=245-249
+5	10	_	Concentration	_	_	4	Measure	_	Offset=278-283
+
+# sent_id = s5
+# text = Stop reaction by adding EDTA to a final concentration of 10 mM.
+1	Heat	_	Action	_	_	0	_	_	Offset=285-289
+2	20	_	Time	_	_	0	_	_	Offset=294-304
+3	75°C	_	Temperature	_	_	0	_	_	Offset=308-312
+

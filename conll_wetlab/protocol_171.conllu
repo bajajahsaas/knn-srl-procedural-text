@@ -1,0 +1,54 @@
+# sent_id = s1
+# text = Phenol extraction of Chlorella cells
+1	Pellet	_	Action	_	_	0	_	_	Offset=37-43
+2	cells	_	Reagent	_	_	0	_	_	Offset=44-49
+
+# sent_id = s2
+# text = Pellet cells (~1/2 daily culture).
+1	Suspend	_	Action	_	_	0	_	_	Offset=72-79
+2	15	_	Amount	_	_	3	Measure	_	Offset=83-88
+3	liquid	_	Reagent	_	_	0	_	_	Offset=92-106
+
+# sent_id = s3
+# text = Suspend in 15 ml of liquid phenol.
+1	Add	_	Action	_	_	0	_	_	Offset=107-110
+2	0.2ml	_	Amount	_	_	4	Measure	_	Offset=117-122
+3	5%	_	Concentration	_	_	4	Measure	_	Offset=123-125
+4	cetylpyridium	_	Reagent	_	_	0	_	_	Offset=126-148
+5	facilitate	_	Action	_	_	0	_	_	Offset=173-183
+6	chlorophyll	_	Method	_	_	0	_	_	Offset=184-206
+
+# sent_id = s4
+# text = Add about 0.2ml 5% cetylpyridium chloride (cationic detergent) to facilitate chlorophyll extraction.
+1	Shake	_	Action	_	_	0	_	_	Offset=208-213
+2	suspension	_	Reagent	_	_	0	_	_	Offset=214-224
+
+# sent_id = s5
+# text = Shake suspension until green has been extracted from cells.
+1	Add	_	Action	_	_	0	_	_	Offset=268-271
+2	10	_	Amount	_	_	3	Measure	_	Offset=272-277
+3	toluene	_	Reagent	_	_	0	_	_	Offset=278-285
+
+# sent_id = s6
+# text = Add 10 ml toluene (to reduce density).
+1	Mix	_	Action	_	_	0	_	_	Offset=307-310
+
+# sent_id = s7
+# text = Mix.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=312-322
+2	wash	_	Action	_	_	0	_	_	Offset=327-331
+3	pellet	_	Reagent	_	_	0	_	_	Offset=332-338
+4	aqueous	_	Reagent	_	_	0	_	_	Offset=344-358
+
+# sent_id = s8
+# text = Centrifuge and wash pellet with aqueous buffer.
+1	Wash	_	Action	_	_	0	_	_	Offset=360-364
+2	pellet	_	Reagent	_	_	0	_	_	Offset=365-371
+3	5x	_	Numerical	_	_	0	_	_	Offset=378-380
+
+# sent_id = s9
+# text = Wash pellet about 5x.
+1	your	_	Device	_	_	0	_	_	Offset=386-395
+2	removal	_	Action	_	_	0	_	_	Offset=410-417
+3	phenol	_	Reagent	_	_	0	_	_	Offset=421-427
+

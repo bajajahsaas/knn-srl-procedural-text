@@ -1,0 +1,138 @@
+# sent_id = s1
+# text = Qiagen QIAquick PCR Purification Kit Protocol
+1	Add	_	Action	_	_	0	_	_	Offset=46-49
+2	5	_	Amount	_	_	3	Measure	_	Offset=50-59
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=63-72
+4	1	_	Amount	_	_	5	Measure	_	Offset=76-84
+5	PCR	_	Reagent	_	_	0	_	_	Offset=92-102
+6	mix	_	Action	_	_	0	_	_	Offset=107-110
+
+# sent_id = s2
+# text = Add 5 volumes of Buffer PB to 1 volume of the PCR sample and mix.
+1	add	_	Action	_	_	0	_	_	Offset=311-314
+2	10	_	Amount	_	_	4	Measure	_	Offset=315-320
+3	3	_	Concentration	_	_	4	Measure	_	Offset=324-327
+4	sodium	_	Reagent	_	_	0	_	_	Offset=328-342
+5	pH	_	pH	_	_	0	_	_	Offset=344-350
+6	mix	_	Action	_	_	0	_	_	Offset=356-359
+
+# sent_id = s3
+# text = It is not necessary to remove mineral oil or kerosene.
+1	Place	_	Action	_	_	0	_	_	Offset=407-412
+2	QIAquick	_	Location	_	_	0	_	_	Offset=415-435
+3	2	_	Amount	_	_	4	Measure	_	Offset=450-454
+4	collection	_	Location	_	_	0	_	_	Offset=455-470
+
+# sent_id = s4
+# text = If pH indicator I has beein added to Buffer PB, check that the color of the mixture is yellow.
+1	apply	_	Action	_	_	0	_	_	Offset=485-490
+2	sample	_	Reagent	_	_	0	_	_	Offset=495-501
+3	QIAquick	_	Location	_	_	0	_	_	Offset=509-524
+4	centrifuge	_	Action	_	_	0	_	_	Offset=529-539
+5	30–60	_	Time	_	_	0	_	_	Offset=544-551
+6	Discard	_	Action	_	_	0	_	_	Offset=553-560
+7	flow-through.	_	Reagent	_	_	0	_	_	Offset=561-574
+
+# sent_id = s5
+# text = If the color of the mixture is orange or violet, add 10 µl of 3 M sodium acetate, pH 5.0, and mix.
+1	Place	_	Action	_	_	0	_	_	Offset=575-580
+2	QIAquick	_	Location	_	_	0	_	_	Offset=585-600
+3	tube	_	Location	_	_	0	_	_	Offset=620-624
+
+# sent_id = s6
+# text = The color of the mixture will turn to yellow.
+1	add	_	Action	_	_	0	_	_	Offset=635-638
+2	0.75	_	Amount	_	_	3	Measure	_	Offset=639-646
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=647-656
+4	QIAquick	_	Location	_	_	0	_	_	Offset=664-679
+5	centrifuge	_	Action	_	_	0	_	_	Offset=684-694
+6	30–60	_	Time	_	_	0	_	_	Offset=699-706
+
+# sent_id = s7
+# text = Place a QIAquick spin column in a provided 2 ml collection tube.
+1	Discard	_	Action	_	_	0	_	_	Offset=709-716
+2	flow-through	_	Reagent	_	_	0	_	_	Offset=717-729
+3	place	_	Action	_	_	0	_	_	Offset=734-739
+4	QIAquick	_	Location	_	_	0	_	_	Offset=744-759
+5	tube	_	Location	_	_	0	_	_	Offset=777-781
+
+# sent_id = s8
+# text = To bind DNA, apply the sample to the QIAquick column and centrifuge for 30–60 s. Discard flow-through.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=783-793
+2	column	_	Location	_	_	0	_	_	Offset=798-804
+3	additional	_	Modifier	_	_	4	Mod-Link	_	Offset=812-822
+4	1	_	Time	_	_	0	_	_	Offset=823-828
+
+# sent_id = s9
+# text = Place the QIAquick column back into the same tube.
+1	a	_	Action	_	_	0	_	_	Offset=982-983
+2	QIAquick	_	Location	_	_	0	_	_	Offset=986-1001
+3	clean	_	Modifier	_	_	5	Mod-Link	_	Offset=1007-1012
+4	1.5	_	Amount	_	_	5	Measure	_	Offset=1013-1019
+5	microcentrifuge	_	Location	_	_	0	_	_	Offset=1020-1040
+
+# sent_id = s10
+# text = To wash, add 0.75 ml Buffer PE to the QIAquick column and centrifuge for 30–60 s. 
+1	elute	_	Reagent	_	_	0	_	_	Offset=1045-1054
+2	add	_	Action	_	_	0	_	_	Offset=1056-1059
+3	50	_	Amount	_	_	4	Measure	_	Offset=1060-1065
+4	Buffer	_	Reagent	_	_	6	Meronym	_	Offset=1066-1075
+5	10	_	Concentration	_	_	6	Measure	_	Offset=1077-1082
+6	Tris·Cl	_	Reagent	_	_	0	_	_	Offset=1083-1090
+7	pH	_	pH	_	_	6	Measure	_	Offset=1092-1098
+8	water	_	Reagent	_	_	4	Or	_	Offset=1103-1108
+9	pH	_	pH	_	_	8	Measure	_	Offset=1110-1120
+10	center	_	Location	_	_	0	_	_	Offset=1129-1135
+11	QIAquick	_	Location	_	_	10	Meronym	_	Offset=1143-1160
+12	centrifuge	_	Action	_	_	0	_	_	Offset=1165-1175
+13	column	_	Location	_	_	0	_	_	Offset=1180-1186
+14	1	_	Time	_	_	0	_	_	Offset=1191-1196
+
+# sent_id = s11
+# text = Discard flow-through and place the QIAquick column back in the same tube.
+1	add	_	Action	_	_	0	_	_	Offset=1246-1249
+2	30	_	Amount	_	_	3	Measure	_	Offset=1250-1255
+3	elution	_	Reagent	_	_	0	_	_	Offset=1256-1270
+4	center	_	Location	_	_	0	_	_	Offset=1278-1284
+5	QIAquick	_	Location	_	_	4	Meronym	_	Offset=1292-1309
+6	column	_	Location	_	_	0	_	_	Offset=1319-1325
+7	stand	_	Action	_	_	0	_	_	Offset=1326-1331
+8	1	_	Time	_	_	0	_	_	Offset=1336-1341
+9	centrifuge	_	Action	_	_	0	_	_	Offset=1352-1362
+
+# sent_id = s12
+# text = Centrifuge the column for an additional 1 min.
+1	store	_	Action	_	_	0	_	_	Offset=1774-1779
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1780-1783
+3	–20°C	_	Temperature	_	_	0	_	_	Offset=1787-1792
+
+# sent_id = s13
+# text = IMPORTANT: Residual ethanol from Buffer PE will not be completely removed unless the flow-through is discarded before this additional centrifugation.
+1	purified	_	Modifier	_	_	2	Mod-Link	_	Offset=1853-1861
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1862-1865
+3	eluted	_	Action	_	_	0	_	_	Offset=1878-1884
+4	TE	_	Reagent	_	_	6	Meronym	8:Meronym	Offset=1888-1897
+5	10	_	Concentration	_	_	6	Measure	_	Offset=1899-1904
+6	Tris·Cl	_	Reagent	_	_	0	_	_	Offset=1905-1912
+7	1	_	Concentration	_	_	8	Measure	_	Offset=1914-1918
+8	EDTA	_	Reagent	_	_	0	_	_	Offset=1919-1923
+9	pH	_	pH	_	_	8	Measure	_	Offset=1925-1931
+
+# sent_id = s14
+# text = Place QIAquick column in a clean 1.5 ml microcentrifuge tube.
+1	add	_	Action	_	_	0	_	_	Offset=2039-2042
+2	1	_	Amount	_	_	3	Measure	_	Offset=2043-2051
+3	Loading	_	Reagent	_	_	0	_	_	Offset=2055-2066
+4	5	_	Amount	_	_	6	Measure	_	Offset=2070-2079
+5	purified	_	Modifier	_	_	6	Mod-Link	_	Offset=2083-2091
+6	DNA	_	Reagent	_	_	0	_	_	Offset=2092-2095
+
+# sent_id = s15
+# text = To elute DNA, add 50 µl Buffer EB (10 mM Tris·Cl, pH 8.5) or water (pH 7.0–8.5) to the center of the QIAquick membrane and centrifuge the column for 1 min.
+1	Mix	_	Action	_	_	0	_	_	Offset=2097-2100
+2	solution	_	Reagent	_	_	0	_	_	Offset=2105-2113
+3	pipetting	_	Action	_	_	0	_	_	Offset=2117-2126
+4	up	_	Method	_	_	0	_	_	Offset=2127-2138
+5	loading	_	Action	_	_	0	_	_	Offset=2146-2153
+6	gel	_	Reagent	_	_	0	_	_	Offset=2158-2161
+

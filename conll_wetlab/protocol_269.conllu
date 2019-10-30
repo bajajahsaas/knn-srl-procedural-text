@@ -1,0 +1,245 @@
+# sent_id = s1
+# text = Stellaris® RNA FISH Simultaneous IF + FISH in Adherent Cells Protocol
+1	Grow	_	Action	_	_	0	_	_	Offset=224-228
+2	cells	_	Reagent	_	_	0	_	_	Offset=229-234
+3	18	_	Size	_	_	4	Measure	_	Offset=238-243
+4	round	_	Seal	_	_	0	_	_	Offset=244-263
+5	12-well	_	Location	_	_	0	_	_	Offset=269-295
+
+# sent_id = s2
+# text = NOTE: This protocol has been adapted for a 12-well plate system.
+1	Aspirate	_	Action	_	_	0	_	_	Offset=297-305
+2	growth	_	Reagent	_	_	0	_	_	Offset=306-319
+3	wash	_	Action	_	_	0	_	_	Offset=325-329
+4	1	_	Amount	_	_	6	Measure	_	Offset=335-339
+5	1X	_	Concentration	_	_	6	Measure	_	Offset=343-345
+6	PBS	_	Reagent	_	_	0	_	_	Offset=346-349
+
+# sent_id = s3
+# text = To adapt this protocol for your preferred system, volumesshould be adjusted accordingly.
+1	Add	_	Action	_	_	0	_	_	Offset=351-354
+2	1	_	Amount	_	_	3	Measure	_	Offset=355-359
+3	fixation	_	Reagent	_	_	0	_	_	Offset=363-378
+
+# sent_id = s4
+# text = Grow cells on 18 mm round #1 coverglass in a 12-well cell culture plate.
+1	Incubate	_	Action	_	_	0	_	_	Offset=380-388
+2	room	_	Temperature	_	_	0	_	_	Offset=392-408
+3	10	_	Time	_	_	0	_	_	Offset=413-423
+
+# sent_id = s5
+# text = Aspirate growth medium, and wash with 1 mL of 1X PBS.
+1	Wash	_	Action	_	_	0	_	_	Offset=425-429
+2	twice	_	Numerical	_	_	0	_	_	Offset=430-435
+3	1	_	Amount	_	_	5	Measure	_	Offset=441-445
+4	1X	_	Concentration	_	_	5	Measure	_	Offset=449-451
+5	PBS	_	Reagent	_	_	0	_	_	Offset=452-455
+
+# sent_id = s6
+# text = Add 1 mL of fixation buffer.
+1	permeabilize	_	Action	_	_	0	_	_	Offset=460-472
+2	cells	_	Reagent	_	_	0	_	_	Offset=473-478
+3	resuspend	_	Action	_	_	0	_	_	Offset=480-489
+4	cells	_	Reagent	_	_	0	_	_	Offset=490-495
+5	1	_	Amount	_	_	7	Measure	_	Offset=499-503
+6	70%	_	Concentration	_	_	7	Measure	_	Offset=507-510
+7	ethanol	_	Reagent	_	_	0	_	_	Offset=511-518
+8	at	_	Modifier	_	_	9	Mod-Link	_	Offset=523-531
+9	1	_	Time	_	_	0	_	_	Offset=532-538
+10	+2	_	Temperature	_	_	0	_	_	Offset=542-553
+
+# sent_id = s7
+# text = Incubate at room temperature for 10 minutes.
+1	Cells	_	Reagent	_	_	0	_	_	Offset=555-560
+2	stored	_	Action	_	_	0	_	_	Offset=568-574
+3	+2	_	Temperature	_	_	0	_	_	Offset=578-589
+4	70%	_	Concentration	_	_	5	Measure	_	Offset=593-596
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=597-604
+6	up	_	Modifier	_	_	7	Mod-Link	_	Offset=605-610
+7	week	_	Time	_	_	0	_	_	Offset=613-617
+
+# sent_id = s8
+# text = Wash twice with 1 mL of 1X PBS.
+1	warm	_	Action	_	_	0	_	_	Offset=664-668
+2	reconstituted	_	Reagent	_	_	0	_	_	Offset=673-701
+3	room	_	Temperature	_	_	0	_	_	Offset=705-721
+
+# sent_id = s9
+# text = To permeabilize cells, resuspend cells in 1 mL of 70% ethanol for at least 1 hour at +2 to +8 °C.
+1	Mix	_	Action	_	_	0	_	_	Offset=723-726
+2	well	_	Modifier	_	_	0	_	_	Offset=727-731
+3	vortexing	_	Method	_	_	0	_	_	Offset=735-744
+4	centrifuge	_	Action	_	_	0	_	_	Offset=751-761
+5	briefly	_	Modifier	_	_	0	_	_	Offset=762-769
+
+# sent_id = s10
+# text = Cells can be stored at +2 to +8 °C in 70% ethanol up to a week before hybridization.
+1	prepare	_	Action	_	_	0	_	_	Offset=774-781
+2	Hybridization	_	Reagent	_	_	3	Meronym	_	Offset=786-806
+3	probe	_	Device	_	_	0	_	_	Offset=818-823
+4	add	_	Action	_	_	0	_	_	Offset=825-828
+5	1	_	Amount	_	_	6	Measure	_	Offset=829-833
+6	probe	_	Reagent	_	_	0	_	_	Offset=837-857
+7	100	_	Amount	_	_	8	Measure	_	Offset=861-867
+8	Hybridization	_	Reagent	_	_	0	_	_	Offset=871-891
+9	vortex	_	Action	_	_	0	_	_	Offset=902-908
+10	centrifuge	_	Action	_	_	0	_	_	Offset=913-923
+
+# sent_id = s11
+# text = If frozen before using, warm the reconstituted probe solution to room temperature.
+1	Aspirate	_	Action	_	_	0	_	_	Offset=1050-1058
+2	70%	_	Concentration	_	_	3	Measure	_	Offset=1063-1066
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=1067-1074
+4	coverglass	_	Location	_	_	5	Meronym	_	Offset=1083-1093
+5	adherent	_	Reagent	_	_	0	_	_	Offset=1105-1119
+6	12-well	_	Location	_	_	0	_	_	Offset=1131-1144
+
+# sent_id = s12
+# text = Mix well by vortexing, then centrifuge briefly.
+1	Add	_	Action	_	_	0	_	_	Offset=1147-1150
+2	1	_	Amount	_	_	3	Measure	_	Offset=1151-1155
+3	Wash	_	Reagent	_	_	0	_	_	Offset=1159-1172
+4	incubate	_	Action	_	_	0	_	_	Offset=1197-1205
+5	room	_	Temperature	_	_	0	_	_	Offset=1209-1225
+6	2-5	_	Time	_	_	0	_	_	Offset=1230-1241
+
+# sent_id = s13
+# text = To prepare the Hybridization Buffer containing probe, add 1 μL of probe stock solution to 100 μL of Hybridization Buffer, and then vortex and centrifuge (enough for one coverglass).
+1	Assemble	_	Action	_	_	0	_	_	Offset=1243-1251
+2	humidified	_	Location	_	_	0	_	_	Offset=1252-1270
+3	150	_	Size	_	_	4	Measure	_	Offset=1272-1278
+4	tissue	_	Location	_	_	0	_	_	Offset=1279-1299
+5	bottom	_	Action	_	_	0	_	_	Offset=1301-1313
+6	evenly	_	Modifier	_	_	0	_	_	Offset=1314-1320
+7	flat	_	Modifier	_	_	9	Mod-Link	_	Offset=1328-1332
+8	water-saturated	_	Modifier	_	_	9	Mod-Link	_	Offset=1333-1348
+9	paper	_	Device	_	_	0	_	_	Offset=1349-1360
+10	single	_	Seal	_	_	0	_	_	Offset=1367-1391
+11	placed	_	Action	_	_	0	_	_	Offset=1392-1398
+12	top	_	Location	_	_	0	_	_	Offset=1402-1405
+13	paper	_	Location	_	_	12	Meronym	_	Offset=1413-1424
+
+# sent_id = s14
+# text = This creates a working probe solution of 125 nM.
+1	dispense	_	Action	_	_	0	_	_	Offset=1549-1557
+2	100	_	Amount	_	_	3	Measure	_	Offset=1558-1564
+3	Hybridization	_	Reagent	_	_	4	Meronym	_	Offset=1572-1592
+4	probe	_	Device	_	_	0	_	_	Offset=1604-1609
+5	appropriately	_	Modifier	_	_	6	Mod-Link	_	Offset=1615-1628
+6	diluted	_	Reagent	_	_	0	_	_	Offset=1629-1653
+7	Parafilm	_	Location	_	_	0	_	_	Offset=1664-1672
+
+# sent_id = s15
+# text = This solution will be used on steps  12 and 13.
+1	transfer	_	Action	_	_	0	_	_	Offset=1681-1689
+2	coverglass	_	Location	_	_	0	_	_	Offset=1694-1704
+3	100	_	Amount	_	_	4	Measure	_	Offset=1732-1738
+4	drop	_	Reagent	_	_	0	_	_	Offset=1739-1743
+5	Hybridization	_	Reagent	_	_	4	Meronym	6:Meronym|7:Meronym	Offset=1747-1767
+6	probe	_	Device	_	_	0	_	_	Offset=1779-1784
+7	primary	_	Reagent	_	_	0	_	_	Offset=1789-1805
+
+# sent_id = s16
+# text = Aspirate the 70% ethanol off the coverglass containing adherent cells within the 12-well plate. 
+1	Cover	_	Action	_	_	0	_	_	Offset=1807-1812
+2	humidified	_	Location	_	_	0	_	_	Offset=1817-1835
+3	tissue	_	Seal	_	_	0	_	_	Offset=1845-1864
+4	seal	_	Action	_	_	0	_	_	Offset=1869-1873
+5	Parafilm	_	Seal	_	_	0	_	_	Offset=1879-1887
+
+# sent_id = s17
+# text = Add 1 mL of Wash Buffer A (see recipe above), and incubate at room temperature for 2-5 minutes.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1889-1897
+2	dark	_	Location	_	_	0	_	_	Offset=1905-1909
+3	37	_	Temperature	_	_	0	_	_	Offset=1913-1918
+4	at	_	Modifier	_	_	5	Mod-Link	_	Offset=1923-1931
+5	4	_	Time	_	_	0	_	_	Offset=1932-1939
+
+# sent_id = s18
+# text = Assemble humidified chamber: 150 mm tissue culture plate; bottom lined evenly with a flat water-saturated paper towel and a single layer of Parafilm placed on top of the paper towel.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=1986-1992
+2	transfer	_	Action	_	_	0	_	_	Offset=1993-2001
+3	coverglass	_	Location	_	_	0	_	_	Offset=2006-2016
+4	fresh	_	Modifier	_	_	5	Mod-Link	_	Offset=2038-2043
+5	12-well	_	Location	_	_	7	Meronym	9:Meronym	Offset=2044-2057
+6	1	_	Amount	_	_	7	Measure	_	Offset=2069-2073
+7	Wash	_	Reagent	_	_	0	_	_	Offset=2077-2090
+8	appropriately	_	Modifier	_	_	9	Mod-Link	_	Offset=2096-2109
+9	diluted	_	Reagent	_	_	0	_	_	Offset=2110-2136
+
+# sent_id = s19
+# text = This chamber will help prevent evaporation of the probe solution from under the coverglass.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2138-2146
+2	dark	_	Location	_	_	0	_	_	Offset=2154-2158
+3	37	_	Temperature	_	_	0	_	_	Offset=2162-2167
+4	30	_	Time	_	_	0	_	_	Offset=2172-2182
+
+# sent_id = s20
+# text = Within the humidified chamber, dispense 100 μL of the Hybridization Buffer containing probe plus appropriately diluted primary antibody, onto the Parafilm.
+1	Aspirate	_	Action	_	_	0	_	_	Offset=2184-2192
+2	Wash	_	Reagent	_	_	0	_	_	Offset=2193-2206
+3	add	_	Action	_	_	0	_	_	Offset=2217-2220
+4	1	_	Amount	_	_	5	Measure	_	Offset=2221-2225
+5	DAPI	_	Reagent	_	_	0	_	_	Offset=2229-2247
+6	appropriately	_	Modifier	_	_	7	Mod-Link	_	Offset=2296-2309
+7	diluted	_	Reagent	_	_	0	_	_	Offset=2310-2336
+
+# sent_id = s21
+# text = Gently transfer the coverglass, cells side down, onto the 100 μL drop of Hybridization Buffer containing probe and primary antibody.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2338-2346
+2	dark	_	Location	_	_	0	_	_	Offset=2354-2358
+3	37	_	Temperature	_	_	0	_	_	Offset=2362-2367
+4	30	_	Time	_	_	0	_	_	Offset=2372-2382
+
+# sent_id = s22
+# text = Cover the humidified chamber with the tissue culture lid, and seal with Parafilm.
+1	Aspirate	_	Action	_	_	0	_	_	Offset=2384-2392
+2	DAPI	_	Reagent	_	_	0	_	_	Offset=2397-2417
+3	add	_	Action	_	_	0	_	_	Offset=2428-2431
+4	1	_	Amount	_	_	5	Measure	_	Offset=2432-2436
+5	Wash	_	Reagent	_	_	0	_	_	Offset=2440-2453
+
+# sent_id = s23
+# text = Incubate in the dark at 37 °C for at least 4 hours (Incubation can be continued up to 16 hours).
+1	Incubate	_	Action	_	_	0	_	_	Offset=2456-2464
+2	room	_	Temperature	_	_	0	_	_	Offset=2468-2484
+3	2-5	_	Time	_	_	0	_	_	Offset=2489-2500
+
+# sent_id = s24
+# text = Gently transfer the coverglass, cells side up, to a fresh 12-well plate containing 1 mL of Wash Buffer A plus appropriately diluted secondary antibody.
+1	Add	_	Action	_	_	0	_	_	Offset=2502-2505
+2	small	_	Modifier	_	_	3	Mod-Link	_	Offset=2508-2513
+3	drop	_	Reagent	_	_	0	_	_	Offset=2514-2518
+4	15	_	Amount	_	_	2	Setting	_	Offset=2534-2539
+5	Vectashield	_	Reagent	_	_	3	Meronym	_	Offset=2544-2571
+6	microscope	_	Location	_	_	0	_	_	Offset=2579-2595
+7	mount	_	Action	_	_	0	_	_	Offset=2601-2606
+8	coverglass	_	Location	_	_	0	_	_	Offset=2607-2617
+9	slide	_	Location	_	_	0	_	_	Offset=2627-2632
+
+# sent_id = s25
+# text = Incubate in the dark at 37 °C for 30 minutes.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=2651-2657
+2	wick	_	Action	_	_	0	_	_	Offset=2658-2667
+3	excess	_	Modifier	_	_	4	Mod-Link	_	Offset=2668-2674
+4	anti-fade	_	Reagent	_	_	0	_	_	Offset=2675-2684
+5	perimeter	_	Location	_	_	0	_	_	Offset=2694-2703
+6	coverglass	_	Location	_	_	5	Meronym	_	Offset=2711-2721
+
+# sent_id = s26
+# text = Aspirate Wash Buffer A, and then add 1 mL of DAPI nuclear stain (Wash Buffer A consisting of 5 ng/mL DAPI) plus appropriately diluted secondary antibody.
+1	Seal	_	Action	_	_	0	_	_	Offset=2723-2727
+2	coverglass	_	Location	_	_	0	_	_	Offset=2732-2752
+3	clear	_	Modifier	_	_	4	Mod-Link	_	Offset=2758-2763
+4	nail	_	Reagent	_	_	0	_	_	Offset=2764-2775
+5	dry	_	Action	_	_	0	_	_	Offset=2790-2793
+
+# sent_id = s27
+# text = Incubate in the dark at 37 °C for 30 minutes.
+1	gently	_	Modifier	_	_	0	_	_	Offset=2809-2815
+2	wipe	_	Action	_	_	0	_	_	Offset=2816-2825
+3	any	_	Modifier	_	_	4	Mod-Link	_	Offset=2826-2829
+4	dried	_	Reagent	_	_	0	_	_	Offset=2830-2840
+5	coverglass	_	Location	_	_	0	_	_	Offset=2849-2859
+6	water	_	Reagent	_	_	0	_	_	Offset=2866-2871
+

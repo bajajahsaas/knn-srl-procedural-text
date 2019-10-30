@@ -1,0 +1,185 @@
+# sent_id = s1
+# text = True-Nuclear™ Transcription Factor Staining Protocol for 96-Well, U-Bottom Plate
+1	Perform	_	Action	_	_	0	_	_	Offset=81-88
+2	cell	_	Method	_	_	0	_	_	Offset=89-110
+
+# sent_id = s2
+# text = Perform cell surface staining as described in BioLegend's Cell Surface Immunofluorescence Staining Protocol.
+1	discard	_	Action	_	_	0	_	_	Offset=211-218
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=223-234
+3	vortex	_	Action	_	_	0	_	_	Offset=247-253
+4	samples	_	Reagent	_	_	0	_	_	Offset=258-265
+
+# sent_id = s3
+# text = After the last wash, discard the supernatant, and gently vortex the samples to dissociate the cell pellet.
+1	Add	_	Action	_	_	0	_	_	Offset=297-300
+2	200	_	Amount	_	_	3	Measure	_	Offset=301-307
+3	351	_	Reagent	_	_	0	_	_	Offset=315-335;339
+4	1X	_	Concentration	_	_	3	Measure	_	Offset=336-338
+5	well	_	Location	_	_	0	_	_	Offset=360-364
+
+# sent_id = s4
+# text = Add 200 µL of the Transcription Factor 1X Fix solution to each well.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=366-372
+2	pipette	_	Action	_	_	0	_	_	Offset=373-380
+
+# sent_id = s5
+# text = Gently pipette to ensure cells are fully resuspended.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=420-430
+2	plate	_	Location	_	_	0	_	_	Offset=435-440
+3	300-400	_	Speed	_	_	0	_	_	Offset=444-455
+4	room	_	Temperature	_	_	0	_	_	Offset=459-475
+5	5	_	Time	_	_	0	_	_	Offset=480-489
+6	discard	_	Action	_	_	0	_	_	Offset=491-498
+7	supernatant	_	Reagent	_	_	0	_	_	Offset=503-514
+8	gently	_	Modifier	_	_	0	_	_	Offset=520-526
+9	vortex	_	Action	_	_	0	_	_	Offset=527-533
+
+# sent_id = s6
+# text = Centrifuge the plate at 300-400 x g at room temperature for 5 minutes, discard the supernatant, and gently vortex to dissociate the cell pellet.
+1	Add	_	Action	_	_	0	_	_	Offset=565-568
+2	200	_	Amount	_	_	3	Measure	_	Offset=569-575
+3	618	_	Reagent	_	_	0	_	_	Offset=583-603;607
+4	1X	_	Concentration	_	_	3	Measure	_	Offset=604-606
+5	well	_	Location	_	_	0	_	_	Offset=627-631
+
+# sent_id = s7
+# text = Add 200 µL of the Transcription Factor 1X Perm Buffer to each well. (wash 1/3) 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=645-655
+2	plate	_	Location	_	_	0	_	_	Offset=660-665
+3	300-400	_	Speed	_	_	0	_	_	Offset=669-680
+4	room	_	Temperature	_	_	0	_	_	Offset=684-700
+5	5	_	Time	_	_	0	_	_	Offset=705-714
+6	discard	_	Action	_	_	0	_	_	Offset=716-723
+7	supernatant	_	Reagent	_	_	0	_	_	Offset=728-739
+8	gently	_	Modifier	_	_	0	_	_	Offset=745-751
+9	vortex	_	Action	_	_	0	_	_	Offset=752-758
+
+# sent_id = s8
+# text = Centrifuge the plate at 300-400 x g at room temperature for 5 minutes, discard the supernatant, and gently vortex to dissociate the cell pellet. (wash 1/3) 
+1	Add	_	Action	_	_	0	_	_	Offset=802-805
+2	200	_	Amount	_	_	3	Measure	_	Offset=806-812
+3	855	_	Reagent	_	_	0	_	_	Offset=820-840;844
+4	1X	_	Concentration	_	_	3	Measure	_	Offset=841-843
+5	well	_	Location	_	_	0	_	_	Offset=864-868
+
+# sent_id = s9
+# text = Add 200 µL of the Transcription Factor 1X Perm Buffer to each well. (wash 2/3) 
+1	Add	_	Action	_	_	0	_	_	Offset=882-885
+2	appropriate	_	Generic-Measure	_	_	3	Measure	_	Offset=890-908
+3	fluorochrome	_	Reagent	_	_	0	_	_	Offset=912-944
+4	well	_	Location	_	_	0	_	_	Offset=995-999
+5	incubate	_	Action	_	_	0	_	_	Offset=1004-1012
+6	dark	_	Method	_	_	0	_	_	Offset=1020-1024
+7	room	_	Temperature	_	_	0	_	_	Offset=1028-1044
+8	30	_	Time	_	_	0	_	_	Offset=1058-1068
+
+# sent_id = s10
+# text = Add the appropriate amount of fluorochrome conjugated antibody for detection of intracellular antigen(s) to each well and incubate in the dark at room temperature for at least 30 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=1070-1073
+2	200	_	Amount	_	_	3	Measure	_	Offset=1074-1080
+3	1123	_	Reagent	_	_	0	_	_	Offset=1088-1108;1112
+4	1X	_	Concentration	_	_	3	Measure	_	Offset=1109-1111
+5	well	_	Location	_	_	0	_	_	Offset=1132-1136
+
+# sent_id = s11
+# text = Add 200 µL of the Transcription Factor 1X Perm Buffer to each well. (wash 1/3) 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1150-1160
+2	plate	_	Location	_	_	0	_	_	Offset=1165-1170
+3	300-400	_	Speed	_	_	0	_	_	Offset=1174-1185
+4	room	_	Temperature	_	_	0	_	_	Offset=1189-1205
+5	5	_	Time	_	_	0	_	_	Offset=1210-1219
+6	discard	_	Action	_	_	0	_	_	Offset=1221-1228
+7	supernatant	_	Reagent	_	_	0	_	_	Offset=1232-1243
+8	gently	_	Modifier	_	_	0	_	_	Offset=1249-1255
+9	vortex	_	Action	_	_	0	_	_	Offset=1256-1262
+
+# sent_id = s12
+# text = Centrifuge the plate at 300-400 x g at room temperature for 5 minutes, discard thesupernatant, and gently vortex to dissociate the cell pellet. (wash 1/3) 
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1306-1315
+2	cells	_	Reagent	_	_	0	_	_	Offset=1319-1324
+3	appropriate	_	Generic-Measure	_	_	4	Measure	_	Offset=1328-1346
+4	cell	_	Reagent	_	_	0	_	_	Offset=1350-1370
+5	acquire	_	Action	_	_	0	_	_	Offset=1375-1382
+6	samples	_	Reagent	_	_	0	_	_	Offset=1383-1390
+7	flowcytometer	_	Device	_	_	0	_	_	Offset=1396-1409
+
+# sent_id = s13
+# text = Resuspend in cells in appropriate volume of cell staining buffer and acquire samples on a flowcytometer.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1411-1419
+2	room	_	Temperature	_	_	0	_	_	Offset=1423-1439
+3	dark	_	Method	_	_	0	_	_	Offset=1447-1451
+4	30-60	_	Time	_	_	0	_	_	Offset=1456-1469
+
+# sent_id = s14
+# text = Incubate at room temperature in the dark for 30-60 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=1471-1474
+2	200	_	Amount	_	_	3	Measure	_	Offset=1475-1481
+3	1524	_	Reagent	_	_	0	_	_	Offset=1489-1509;1513
+4	1X	_	Concentration	_	_	3	Measure	_	Offset=1510-1512
+5	well	_	Location	_	_	0	_	_	Offset=1533-1537
+
+# sent_id = s15
+# text = Add 200 µL of the Transcription Factor 1X Perm Buffer to each well. (wash 3/3) 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1551-1561
+2	plate	_	Location	_	_	0	_	_	Offset=1566-1571
+3	300-400	_	Speed	_	_	0	_	_	Offset=1575-1586
+4	room	_	Temperature	_	_	0	_	_	Offset=1590-1606
+5	5	_	Time	_	_	0	_	_	Offset=1611-1620
+6	discard	_	Action	_	_	0	_	_	Offset=1622-1629
+7	supernatant	_	Reagent	_	_	0	_	_	Offset=1634-1645
+8	gently	_	Modifier	_	_	0	_	_	Offset=1651-1657
+9	vortex	_	Action	_	_	0	_	_	Offset=1658-1664
+
+# sent_id = s16
+# text = Centrifuge the plate at 300-400 x g at room temperature for 5 minutes, discard the supernatant, and gently vortex to dissociate the cell pellet. (wash 2/3) 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1708-1718
+2	plate	_	Location	_	_	0	_	_	Offset=1723-1728
+3	300-400	_	Speed	_	_	0	_	_	Offset=1732-1743
+4	room	_	Temperature	_	_	0	_	_	Offset=1747-1763
+5	5	_	Time	_	_	0	_	_	Offset=1768-1777
+6	discard	_	Action	_	_	0	_	_	Offset=1779-1786
+7	supernatant	_	Reagent	_	_	0	_	_	Offset=1791-1802
+8	gently	_	Modifier	_	_	0	_	_	Offset=1808-1814
+9	vortex	_	Action	_	_	0	_	_	Offset=1815-1821
+
+# sent_id = s17
+# text = Centrifuge the plate at 300-400 x g at room temperature for 5 minutes, discard the supernatant, and gently vortex to dissociate the cell pellet. (wash 3/3) 
+1	Add	_	Action	_	_	0	_	_	Offset=1865-1868
+2	200	_	Amount	_	_	3	Measure	_	Offset=1869-1875
+3	1918	_	Reagent	_	_	0	_	_	Offset=1883-1903;1907
+4	1X	_	Concentration	_	_	3	Measure	_	Offset=1904-1906
+5	well	_	Location	_	_	0	_	_	Offset=1927-1931
+
+# sent_id = s18
+# text = Add 200 µL of the Transcription Factor 1X Perm Buffer to each well. (wash 2/3) 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1945-1955
+2	plate	_	Location	_	_	0	_	_	Offset=1960-1965
+3	300-400	_	Speed	_	_	0	_	_	Offset=1969-1980
+4	room	_	Temperature	_	_	0	_	_	Offset=1984-2000
+5	5	_	Time	_	_	0	_	_	Offset=2005-2014
+6	discard	_	Action	_	_	0	_	_	Offset=2016-2023
+7	supernatant	_	Reagent	_	_	0	_	_	Offset=2027-2038
+8	gently	_	Modifier	_	_	0	_	_	Offset=2044-2050
+9	vortex	_	Action	_	_	0	_	_	Offset=2051-2057
+
+# sent_id = s19
+# text = Centrifuge the plate at 300-400 x g at room temperature for 5 minutes, discard thesupernatant, and gently vortex to dissociate the cell pellet. (wash 2/3) 
+1	Add	_	Action	_	_	0	_	_	Offset=2101-2104
+2	200	_	Amount	_	_	3	Measure	_	Offset=2105-2111
+3	2154	_	Reagent	_	_	0	_	_	Offset=2119-2139;2143
+4	1X	_	Concentration	_	_	3	Measure	_	Offset=2140-2142
+5	well	_	Location	_	_	0	_	_	Offset=2163-2167
+
+# sent_id = s20
+# text = Add 200 µL of the Transcription Factor 1X Perm Buffer to each well. (wash 3/3) 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2181-2191
+2	plate	_	Location	_	_	0	_	_	Offset=2196-2201
+3	300-400	_	Speed	_	_	0	_	_	Offset=2205-2216
+4	room	_	Temperature	_	_	0	_	_	Offset=2220-2236
+5	5	_	Time	_	_	0	_	_	Offset=2241-2250
+6	discard	_	Action	_	_	0	_	_	Offset=2252-2259
+7	supernatant	_	Reagent	_	_	0	_	_	Offset=2263-2274
+8	gently	_	Modifier	_	_	0	_	_	Offset=2280-2286
+9	vortex	_	Action	_	_	0	_	_	Offset=2287-2293
+

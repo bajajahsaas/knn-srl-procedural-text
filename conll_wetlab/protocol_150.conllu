@@ -1,0 +1,103 @@
+# sent_id = s1
+# text = CsCl Step Gradient to Purify Phage
+1	Make	_	Action	_	_	0	_	_	Offset=35-39
+2	phage	_	Reagent	_	_	0	_	_	Offset=45-50
+
+# sent_id = s2
+# text = Make your phage: author used to being at about 109-1010 /ml.
+1	Mix	_	Action	_	_	0	_	_	Offset=274-277
+2	cold	_	Location	_	_	0	_	_	Offset=285-289
+3	sit	_	Action	_	_	0	_	_	Offset=303-306
+4	1	_	Time	_	_	0	_	_	Offset=316-322
+5	phage	_	Reagent	_	_	0	_	_	Offset=350-355
+6	collected	_	Action	_	_	0	_	_	Offset=359-368
+7	resuspend	_	Action	_	_	0	_	_	Offset=405-414
+8	small	_	Amount	_	_	0	_	_	Offset=420-432
+
+# sent_id = s3
+# text = To put on the top of the gradient we use two methods.
+1	Prepare	_	Action	_	_	0	_	_	Offset=434-441
+
+# sent_id = s4
+# text = First, In the Beckman Ti45 1 hr 35K and second, PEG ppt using 10% PEG (6K) 0.5 M NaCl (Yamamoto 1970 Virology 40, 734-744).
+1	Make	_	Action	_	_	0	_	_	Offset=496-500
+
+# sent_id = s5
+# text = Mix in the cold and allow to sit at least 1 hour; recommended overnight The phage is collected by cfg, 8K GSA 20 min a waxy pellet resuspend in a small volume.
+1	Layer	_	Action	_	_	0	_	_	Offset=564-569
+2	Displace	_	Action	_	_	0	_	_	Offset=595-603
+
+# sent_id = s6
+# text = Prepare CsCl step gradient.
+1	Displace	_	Action	_	_	0	_	_	Offset=658-666
+
+# sent_id = s7
+# text = [Cammie's recipe unknown source]  Make gradient in a SW 28.1 Beckman ultra clear tube holding 17 mls.
+1	Slow	_	Modifier	_	_	0	_	_	Offset=701-705
+2	layer	_	Action	_	_	0	_	_	Offset=706-711
+3	sample	_	Reagent	_	_	0	_	_	Offset=712-718
+4	top	_	Location	_	_	0	_	_	Offset=722-725
+
+# sent_id = s8
+# text = Layer the lowest density first Displace it with the next heavier using a long canular needle.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=727-737
+2	2.5	_	Time	_	_	0	_	_	Offset=742-751
+3	24K	_	Speed	_	_	0	_	_	Offset=752-755
+4	SW	_	Device	_	_	0	_	_	Offset=763-770
+
+# sent_id = s9
+# text = Displace with the next heavier, and so on.
+1	Draw	_	Action	_	_	0	_	_	Offset=772-776
+
+# sent_id = s10
+# text = Slow layer sample on top.
+1	band	_	Reagent	_	_	0	_	_	Offset=817-838
+2	pulled	_	Action	_	_	0	_	_	Offset=846-856
+3	syringe	_	Device	_	_	0	_	_	Offset=864-871
+4	20	_	Size	_	_	5	Measure	_	Offset=876-878
+5	needle	_	Device	_	_	0	_	_	Offset=894-900
+
+# sent_id = s11
+# text = Centrifuge for 2.5 hours 24K in the SW 28.1.
+1	Put	_	Action	_	_	0	_	_	Offset=902-905
+
+# sent_id = s12
+# text = Draw a sketch of the layers in the tube.
+1	Plunge	_	Action	_	_	0	_	_	Offset=974-980
+2	syringe	_	Device	_	_	0	_	_	Offset=985-992
+3	few	_	Numerical	_	_	0	_	_	Offset=995-1004
+
+# sent_id = s13
+# text = The band between 1.4.-1.5 can be pulled out with a syringe and 20 or above gauge needle.
+1	Puncture	_	Action	_	_	0	_	_	Offset=1006-1014
+2	slowly	_	Modifier	_	_	0	_	_	Offset=1018-1024
+3	twisting	_	Action	_	_	0	_	_	Offset=1025-1033
+4	pushing	_	Action	_	_	0	_	_	Offset=1038-1045
+5	needle	_	Device	_	_	0	_	_	Offset=1050-1056
+6	few	_	Location	_	_	0	_	_	Offset=1077-1089
+7	bluish	_	Reagent	_	_	6	Meronym	_	Offset=1094-1111
+
+# sent_id = s14
+# text = Put a bit of stop cork grease on the tube and the middle of the needle.
+1	hole	_	Location	_	_	0	_	_	Offset=1136-1140
+2	needle	_	Device	_	_	1	Meronym	_	Offset=1152-1158
+3	sealed	_	Action	_	_	0	_	_	Offset=1162-1168
+4	grease	_	Reagent	_	_	0	_	_	Offset=1174-1180
+
+# sent_id = s15
+# text = Plunge the syringe a few times.
+1	Collect	_	Action	_	_	0	_	_	Offset=1182-1189
+2	band	_	Reagent	_	_	0	_	_	Offset=1194-1198
+3	slowly	_	Modifier	_	_	0	_	_	Offset=1202-1208
+4	moving	_	Action	_	_	0	_	_	Offset=1209-1215
+5	needle	_	Device	_	_	0	_	_	Offset=1220-1226
+
+# sent_id = s16
+# text = Puncture by slowly twisting and pushing the needle, beveled side up, a few mm below the bluish white band.
+1	Change	_	Action	_	_	0	_	_	Offset=1258-1264
+2	put	_	Action	_	_	0	_	_	Offset=1347-1350
+
+# sent_id = s17
+# text = Now through ensure the hole around the needle is sealed with grease.
+1	Dialyze	_	Action	_	_	0	_	_	Offset=1387-1394
+

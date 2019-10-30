@@ -1,0 +1,231 @@
+# sent_id = s1
+# text = Detecting Fungal Infections in Almonds
+1	Manually	_	Modifier	_	_	0	_	_	Offset=39-47
+2	select	_	Action	_	_	0	_	_	Offset=48-54
+3	almond	_	Reagent	_	_	0	_	_	Offset=55-76
+4	pasteurized	_	Modifier	_	_	0	_	_	Offset=86-97
+5	shelled	_	Modifier	_	_	0	_	_	Offset=102-109
+
+# sent_id = s2
+# text = Manually select almond kernel samples that are pasteurized and shelled.
+1	almond	_	Reagent	_	_	0	_	_	Offset=164-178
+2	collected	_	Action	_	_	0	_	_	Offset=189-198
+3	multiple	_	Modifier	_	_	0	_	_	Offset=204-212
+4	harvest	_	Method	_	_	0	_	_	Offset=213-227
+
+# sent_id = s3
+# text = As mentioned in the 'Before Start Instructions', the almond kernels should be collected from multiple harvest cycles.
+1	Record	_	Action	_	_	0	_	_	Offset=399-405
+2	weight	_	Measure-Type	_	_	0	_	_	Offset=406-412
+3	size	_	Measure-Type	_	_	0	_	_	Offset=417-421
+4	almond	_	Reagent	_	_	0	_	_	Offset=425-439
+5	Separate	_	Action	_	_	0	_	_	Offset=440-448
+6	samples	_	Reagent	_	_	0	_	_	Offset=453-460
+7	two	_	Numerical	_	_	0	_	_	Offset=466-469
+8	groups	_	Reagent	_	_	0	_	_	Offset=470-476
+
+# sent_id = s4
+# text = These particular samples were obtained from the 2012 and 2013 almond seasons.
+1	550	_	Numerical	_	_	0	_	_	Offset=489-492
+2	almond	_	Reagent	_	_	0	_	_	Offset=493-507
+3	460	_	Numerical	_	_	0	_	_	Offset=518-521
+4	those	_	Mention	_	_	0	_	_	Offset=525-530
+5	infected	_	Action	_	_	0	_	_	Offset=539-547
+6	two	_	Numerical	_	_	0	_	_	Offset=553-556
+7	types	_	Reagent	_	_	0	_	_	Offset=557-571
+
+# sent_id = s5
+# text = The samples should be shelled and should not have any type of physical damage or any marks.
+1	230	_	Numerical	_	_	0	_	_	Offset=607-610
+2	infected	_	Action	_	_	0	_	_	Offset=619-627
+3	A.	_	Reagent	_	_	0	_	_	Offset=633-642
+4	230	_	Numerical	_	_	0	_	_	Offset=655-658
+5	infected	_	Action	_	_	0	_	_	Offset=667-675
+6	A.	_	Reagent	_	_	0	_	_	Offset=681-695
+
+# sent_id = s6
+# text = Record weight and size of almond kernels Separate the samples into two groups.
+1	remaining	_	Modifier	_	_	0	_	_	Offset=701-710
+2	90	_	Numerical	_	_	0	_	_	Offset=711-713
+3	kernels	_	Reagent	_	_	0	_	_	Offset=714-721
+4	uninfected	_	Action	_	_	0	_	_	Offset=734-744
+
+# sent_id = s7
+# text = Out of the 550 almond kernels collected 460 of those will be infected with two types of fungi that commonly affect almond crops.
+1	Obtain	_	Action	_	_	0	_	_	Offset=780-786
+2	A.	_	Reagent	_	_	0	_	_	Offset=787-796
+3	A.	_	Modifier	_	_	0	_	_	Offset=801-824
+4	infect	_	Action	_	_	0	_	_	Offset=828-834
+5	almonds	_	Reagent	_	_	0	_	_	Offset=835-842
+
+# sent_id = s8
+# text = 230 will be infected with A. flavus and another 230 will be infected with A. parasiticus.
+1	two	_	Numerical	_	_	0	_	_	Offset=850-853
+2	types	_	Reagent	_	_	0	_	_	Offset=854-868
+
+# sent_id = s9
+# text = The remaining 90 kernels will remain uninfected and will serve as a control group.
+1	take	_	Action	_	_	0	_	_	Offset=974-978
+2	fungi	_	Reagent	_	_	0	_	_	Offset=983-997
+3	grow	_	Action	_	_	0	_	_	Offset=1002-1006
+4	them	_	Mention	_	_	0	_	_	Offset=1007-1011
+5	culture	_	Reagent	_	_	0	_	_	Offset=1015-1022
+
+# sent_id = s10
+# text = Obtain A. flavus and A. parasiticus isolates to infect almonds.
+1	5%	_	Concentration	_	_	0	_	_	Offset=1028-1030
+2	reconstituted	_	Modifier	_	_	0	_	_	Offset=1031-1044
+3	tomato	_	Reagent	_	_	0	_	_	Offset=1045-1062
+4	it	_	Mention	_	_	0	_	_	Offset=1077-1079
+5	V8	_	Reagent	_	_	0	_	_	Offset=1088-1101
+6	grow	_	Action	_	_	0	_	_	Offset=1107-1111
+7	each	_	Modifier	_	_	0	_	_	Offset=1112-1116
+8	isolate	_	Reagent	_	_	0	_	_	Offset=1117-1124
+9	6	_	Time	_	_	0	_	_	Offset=1129-1135
+10	31	_	Temperature	_	_	0	_	_	Offset=1156-1161
+11	dark	_	Location	_	_	0	_	_	Offset=1167-1183
+
+# sent_id = s11
+# text = These two types of fungi were chosen due to their well known colonization on the surface of almond kernels.
+1	fungal	_	Reagent	_	_	0	_	_	Offset=1190-1205
+2	grown	_	Action	_	_	0	_	_	Offset=1216-1221
+3	conidia	_	Reagent	_	_	0	_	_	Offset=1223-1230
+4	collected	_	Action	_	_	0	_	_	Offset=1234-1243
+5	sterilized	_	Modifier	_	_	0	_	_	Offset=1252-1262
+6	cotton	_	Device	_	_	0	_	_	Offset=1263-1274
+7	deposited	_	Action	_	_	0	_	_	Offset=1282-1291
+8	sterile	_	Modifier	_	_	0	_	_	Offset=1295-1302
+9	deionized	_	Modifier	_	_	0	_	_	Offset=1303-1312
+10	water	_	Reagent	_	_	0	_	_	Offset=1313-1318
+
+# sent_id = s12
+# text = Prior to inoculation, take the fungi isolates and grow them in culture.
+1	haemocytometer	_	Device	_	_	0	_	_	Offset=1322-1336
+2	quantify	_	Action	_	_	0	_	_	Offset=1353-1361
+3	water	_	Reagent	_	_	0	_	_	Offset=1366-1380
+4	conidia	_	Reagent	_	_	0	_	_	Offset=1386-1393
+5	it	_	Mention	_	_	0	_	_	Offset=1398-1400
+6	diluted	_	Action	_	_	0	_	_	Offset=1414-1421
+7	105	_	Generic-Measure	_	_	0	_	_	Offset=1444-1463
+
+# sent_id = s13
+# text = Use 5% reconstituted tomato juice agar, in this case it will be V8 juice agar, and grow each isolate for 6 days at a temperature of 31 °C in a dark environment.
+1	Create	_	Action	_	_	0	_	_	Offset=1465-1471
+2	bottom	_	Location	_	_	0	_	_	Offset=1488-1500
+3	almond	_	Reagent	_	_	0	_	_	Offset=1504-1518
+4	B-D®	_	Device	_	_	0	_	_	Offset=1527-1560
+
+# sent_id = s14
+# text = Once fungal isolates have been grown, conidia is collected using a sterilized cotton swab and is deposited in sterile deionized water.
+1	kernels	_	Reagent	_	_	0	_	_	Offset=1713-1720
+2	sterilized	_	Modifier	_	_	0	_	_	Offset=1729-1739
+3	submerging	_	Action	_	_	0	_	_	Offset=1743-1753
+4	10%	_	Concentration	_	_	0	_	_	Offset=1762-1765
+5	bleach	_	Reagent	_	_	0	_	_	Offset=1766-1781
+6	7	_	Time	_	_	0	_	_	Offset=1798-1807
+
+# sent_id = s15
+# text = A haemocytometer will be used to quantify the water solution with conidia and it will then be diluted to a concentration of 105 spores per ml-1.
+1	kernels	_	Reagent	_	_	0	_	_	Offset=1813-1820
+2	rinsed	_	Action	_	_	0	_	_	Offset=1834-1840
+3	three	_	Numerical	_	_	0	_	_	Offset=1841-1846
+4	sterile	_	Modifier	_	_	0	_	_	Offset=1858-1865
+5	deionized	_	Modifier	_	_	0	_	_	Offset=1866-1875
+6	water	_	Reagent	_	_	0	_	_	Offset=1876-1881
+7	submerged	_	Action	_	_	0	_	_	Offset=1894-1903
+8	Dichloran	_	Reagent	_	_	0	_	_	Offset=1925-1943
+9	2	_	Time	_	_	0	_	_	Offset=1948-1957
+
+# sent_id = s16
+# text = Create incision on the bottom right of almond kernels using a B-D® 16G1 Precision Glide® Needle.
+1	Remove	_	Action	_	_	0	_	_	Offset=1959-1965
+2	moisture	_	Reagent	_	_	0	_	_	Offset=1966-1974
+3	surface	_	Location	_	_	0	_	_	Offset=1980-1987
+4	almonds	_	Reagent	_	_	0	_	_	Offset=1991-1998
+5	blotting	_	Device	_	_	0	_	_	Offset=2002-2010
+6	them	_	Mention	_	_	0	_	_	Offset=2011-2015
+7	move	_	Action	_	_	0	_	_	Offset=2020-2024
+8	them	_	Mention	_	_	0	_	_	Offset=2025-2029
+9	biological	_	Location	_	_	0	_	_	Offset=2035-2060
+10	10	_	Time	_	_	0	_	_	Offset=2077-2093
+
+# sent_id = s17
+# text = This incision serves as the point of infection where the conidia in water would be placed.
+1	Inoculate	_	Action	_	_	0	_	_	Offset=2095-2104
+2	each	_	Modifier	_	_	0	_	_	Offset=2105-2109
+3	almond	_	Reagent	_	_	0	_	_	Offset=2110-2116
+4	5	_	Amount	_	_	0	_	_	Offset=2122-2126
+5	fungi	_	Reagent	_	_	0	_	_	Offset=2134-2148
+
+# sent_id = s18
+# text = After making the incision on the surface of the almond, the kernels will be sterilized by submerging them in 10% bleach solution for a period of 7 minutes.
+1	almonds	_	Reagent	_	_	0	_	_	Offset=2324-2331
+2	inoculated	_	Action	_	_	0	_	_	Offset=2342-2352
+3	add	_	Action	_	_	0	_	_	Offset=2354-2357
+4	deionized	_	Modifier	_	_	0	_	_	Offset=2358-2367
+5	water	_	Reagent	_	_	0	_	_	Offset=2368-2373
+6	container	_	Location	_	_	0	_	_	Offset=2381-2390
+7	incubate	_	Action	_	_	0	_	_	Offset=2418-2426
+8	them	_	Mention	_	_	0	_	_	Offset=2427-2431
+9	7	_	Time	_	_	0	_	_	Offset=2448-2454
+10	31°	_	Temperature	_	_	0	_	_	Offset=2475-2478
+11	dark	_	Location	_	_	0	_	_	Offset=2484-2494
+
+# sent_id = s19
+# text = The kernels will then be rinsed three times with sterile deionized water and will be submerged a second time into a Dichloran solution for 2 seconds.
+1	wash	_	Action	_	_	0	_	_	Offset=2532-2536
+2	almonds	_	Reagent	_	_	0	_	_	Offset=2537-2544
+3	deionized	_	Modifier	_	_	0	_	_	Offset=2550-2559
+4	water	_	Reagent	_	_	0	_	_	Offset=2560-2565
+5	remove	_	Action	_	_	0	_	_	Offset=2569-2575
+6	any	_	Modifier	_	_	0	_	_	Offset=2576-2579
+7	traces	_	Reagent	_	_	0	_	_	Offset=2580-2586
+8	fungi	_	Reagent	_	_	0	_	_	Offset=2590-2602
+9	surface	_	Location	_	_	0	_	_	Offset=2612-2619
+
+# sent_id = s20
+# text = Remove moisture from surface of almonds by blotting them and move them to a biological safety cabinet for a period of 10 to 15 minutes.
+1	Place	_	Action	_	_	0	_	_	Offset=2621-2626
+2	almond	_	Reagent	_	_	0	_	_	Offset=2627-2641
+3	fume	_	Device	_	_	0	_	_	Offset=2647-2656
+4	12	_	Time	_	_	0	_	_	Offset=2673-2681
+
+# sent_id = s21
+# text = Inoculate each almond with 5 μl of the fungi solution.
+1	12	_	Time	_	_	0	_	_	Offset=2692-2700
+2	keep	_	Action	_	_	0	_	_	Offset=2708-2712
+3	kernels	_	Reagent	_	_	0	_	_	Offset=2713-2720
+4	constant	_	Modifier	_	_	0	_	_	Offset=2726-2734
+5	2.6°C	_	Temperature	_	_	0	_	_	Offset=2750-2755
+
+# sent_id = s22
+# text = As mentioned earlier, almonds will be in two separate groups: infected and control.
+1	Take	_	Action	_	_	0	_	_	Offset=2757-2761
+2	almond	_	Reagent	_	_	0	_	_	Offset=2762-2768
+3	put	_	Action	_	_	0	_	_	Offset=2773-2776
+4	spectrophotometer	_	Device	_	_	0	_	_	Offset=2790-2807
+5	place	_	Action	_	_	0	_	_	Offset=2814-2819
+6	black	_	Device	_	_	0	_	_	Offset=2820-2836
+7	space	_	Location	_	_	0	_	_	Offset=2844-2857
+
+# sent_id = s23
+# text = The infected almonds will be inoculated with either A. flavus or A. parasiticus.
+1	Scan	_	Action	_	_	0	_	_	Offset=2869-2873
+2	surface	_	Location	_	_	0	_	_	Offset=2878-2885
+3	almond	_	Reagent	_	_	0	_	_	Offset=2893-2906
+4	spectrophotometer	_	Device	_	_	0	_	_	Offset=2917-2934
+5	each	_	Modifier	_	_	0	_	_	Offset=2940-2944
+6	individual	_	Modifier	_	_	0	_	_	Offset=2945-2955
+7	almond	_	Reagent	_	_	0	_	_	Offset=2956-2969
+8	take	_	Action	_	_	0	_	_	Offset=2970-2974
+9	32	_	Numerical	_	_	0	_	_	Offset=2975-2977
+10	scans	_	Device	_	_	0	_	_	Offset=2978-2983
+11	face	_	Location	_	_	0	_	_	Offset=2991-2995
+12	wavelength	_	Measure-Type	_	_	0	_	_	Offset=3005-3021
+13	400	_	Generic-Measure	_	_	0	_	_	Offset=3025-3042
+14	2-nm	_	Generic-Measure	_	_	0	_	_	Offset=3047-3051
+
+# sent_id = s24
+# text = Once the almonds have been inoculated, add deionized water to the container where they are located and incubate them for a period of 7 days at a temperature of 31° in a dark place.
+1	analyze	_	Action	_	_	0	_	_	Offset=3101-3108
+

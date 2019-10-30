@@ -1,0 +1,54 @@
+# sent_id = s1
+# text = Nitrite reagent for dissolved cobalt analyses
+1	Add	_	Action	_	_	0	_	_	Offset=46-49
+2	12.9	_	Amount	_	_	3	Measure	_	Offset=50-56
+3	sodium	_	Reagent	_	_	0	_	_	Offset=60-74
+4	per	_	Modifier	_	_	6	Mod-Link	_	Offset=75-78
+5	125	_	Amount	_	_	6	Measure	_	Offset=79-85
+6	Milli-Q	_	Reagent	_	_	0	_	_	Offset=89-96
+7	weighing	_	Action	_	_	0	_	_	Offset=101-109
+8	sodium	_	Reagent	_	_	0	_	_	Offset=114-128
+9	directly	_	Modifier	_	_	0	_	_	Offset=129-137
+10	large	_	Modifier	_	_	13	Mod-Link	_	Offset=145-150
+11	trace	_	Modifier	_	_	13	Mod-Link	_	Offset=151-162
+12	clean	_	Modifier	_	_	13	Mod-Link	_	Offset=163-168
+13	bottle	_	Location	_	_	0	_	_	Offset=169-175
+
+# sent_id = s2
+# text = Add 12.9 g of sodium nitrite per 125 mL of Milli-Q, by weighing the sodium nitrite directly into a large trace metal clean bottle.
+1	Add	_	Action	_	_	0	_	_	Offset=177-180
+2	125	_	Amount	_	_	3	Measure	_	Offset=181-187
+3	Milli-Q	_	Reagent	_	_	0	_	_	Offset=191-198
+4	bottle	_	Location	_	_	0	_	_	Offset=206-212
+5	weight	_	Method	_	_	0	_	_	Offset=216-222
+
+# sent_id = s3
+# text = Add 125 mL of Milli-Q to the bottle by weight.
+1	Add	_	Action	_	_	0	_	_	Offset=224-227
+2	clean	_	Modifier	_	_	3	Mod-Link	_	Offset=228-233
+3	Chelex-100	_	Reagent	_	_	0	_	_	Offset=234-250
+4	bottle	_	Location	_	_	6	Coreference-Link	_	Offset=258-264
+5	place	_	Action	_	_	0	_	_	Offset=269-274
+6	it	_	Mention	_	_	0	_	_	Offset=275-277
+7	shaker	_	Device	_	_	0	_	_	Offset=283-289
+8	overnight	_	Time	_	_	0	_	_	Offset=290-299
+9	Chelex	_	Reagent	_	_	0	_	_	Offset=314-320
+10	mixes	_	Action	_	_	0	_	_	Offset=321-326
+11	throughout	_	Modifier	_	_	0	_	_	Offset=327-337
+12	solution	_	Reagent	_	_	0	_	_	Offset=342-350
+
+# sent_id = s4
+# text = Add clean Chelex-100 resin to the bottle and place it on a shaker overnight to ensure the Chelex mixes throughout the solution.
+1	slowly	_	Modifier	_	_	0	_	_	Offset=375-381
+2	pour	_	Action	_	_	0	_	_	Offset=382-386
+3	solution	_	Reagent	_	_	0	_	_	Offset=391-399
+4	HPLC	_	Reagent	_	_	0	_	_	Offset=411-422
+5	frit	_	Device	_	_	0	_	_	Offset=430-434
+6	filter	_	Action	_	_	0	_	_	Offset=447-453
+7	chelex	_	Reagent	_	_	0	_	_	Offset=458-464
+8	solution	_	Reagent	_	_	0	_	_	Offset=479-487
+9	pass	_	Action	_	_	0	_	_	Offset=491-500
+10	trace	_	Modifier	_	_	12	Mod-Link	_	Offset=503-514
+11	clean	_	Modifier	_	_	12	Mod-Link	_	Offset=515-520
+12	bottle	_	Location	_	_	0	_	_	Offset=521-527
+

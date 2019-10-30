@@ -1,0 +1,184 @@
+# sent_id = s1
+# text = Transformation of Bacterial Cultures Using The Calcium Chloride Procedure
+1	Grow	_	Action	_	_	0	_	_	Offset=74-78
+2	5	_	Amount	_	_	3	Measure	_	Offset=79-83
+3	host	_	Reagent	_	_	0	_	_	Offset=91-101
+4	overnight	_	Time	_	_	0	_	_	Offset=102-111
+5	L	_	Reagent	_	_	0	_	_	Offset=115-122
+6	37°C	_	Temperature	_	_	0	_	_	Offset=126-130
+
+# sent_id = s2
+# text = Grow 5 mL of the host cells overnight in L broth at 37°C.
+1	Inoculate	_	Action	_	_	0	_	_	Offset=132-141
+2	100	_	Amount	_	_	3	Measure	_	Offset=142-148
+3	L	_	Reagent	_	_	0	_	_	Offset=152-159
+4	1	_	Amount	_	_	6	Measure	_	Offset=165-169
+5	overnight	_	Modifier	_	_	6	Mod-Link	_	Offset=177-186
+6	culture	_	Reagent	_	_	0	_	_	Offset=187-194
+
+# sent_id = s3
+# text = Inoculate 100 mL of L broth with 1 mL of the overnight culture.
+1	Grow	_	Action	_	_	0	_	_	Offset=196-200
+2	cells	_	Reagent	_	_	0	_	_	Offset=205-210
+3	shaking	_	Action	_	_	0	_	_	Offset=216-223
+4	37°C	_	Temperature	_	_	0	_	_	Offset=227-231
+5	density	_	Measure-Type	_	_	0	_	_	Offset=237-244
+6	approximately	_	Modifier	_	_	7	Mod-Link	_	Offset=248-261
+7	5	_	Generic-Measure	_	_	0	_	_	Offset=262-278
+
+# sent_id = s4
+# text = Grow the cells with shaking at 37°C to a density of approximately 5 X 107 cells/ml.
+1	Chill	_	Action	_	_	0	_	_	Offset=280-285
+2	culture	_	Reagent	_	_	0	_	_	Offset=290-297
+3	ice	_	Location	_	_	0	_	_	Offset=301-304
+4	10	_	Time	_	_	0	_	_	Offset=309-315
+
+# sent_id = s5
+# text = Chill the culture on ice for 10 min.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=317-327
+2	cell	_	Reagent	_	_	0	_	_	Offset=332-347
+3	Sorvall	_	Device	_	_	0	_	_	Offset=355-373
+4	4,000g	_	Speed	_	_	0	_	_	Offset=377-383
+5	5	_	Time	_	_	0	_	_	Offset=385-390
+6	4°C	_	Temperature	_	_	0	_	_	Offset=392-395
+
+# sent_id = s6
+# text = Centrifuge the cell suspension in the Sorvall SS34 rotor at 4,000g, 5 min, 4°C.
+1	Discard	_	Action	_	_	0	_	_	Offset=397-404
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=409-420
+
+# sent_id = s7
+# text = Discard the supernatant.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=422-431
+2	cells	_	Reagent	_	_	0	_	_	Offset=436-441
+3	1/2	_	Amount	_	_	7	Measure	_	Offset=447-470
+4	ice	_	Modifier	_	_	7	Mod-Link	_	Offset=479-482
+5	cold	_	Modifier	_	_	7	Mod-Link	_	Offset=483-487
+6	sterile	_	Modifier	_	_	7	Mod-Link	_	Offset=489-496
+7	solution	_	Reagent	_	_	9	Meronym	12:Meronym	Offset=497-505
+8	10	_	Concentration	_	_	9	Measure	_	Offset=509-514
+9	Tris-HCl	_	Reagent	_	_	0	_	_	Offset=515-523
+10	pH	_	pH	_	_	9	Measure	_	Offset=525-531
+11	50	_	Concentration	_	_	12	Measure	_	Offset=533-538
+12	CaCl2	_	Reagent	_	_	0	_	_	Offset=539-544
+
+# sent_id = s8
+# text = Resuspend the cells with 1/2 the original volume with an ice cold, sterile solution of 10 mM Tris-HCl, pH 8.0, 50 mM CaCl2.
+1	Place	_	Action	_	_	0	_	_	Offset=546-551
+2	cell	_	Reagent	_	_	0	_	_	Offset=556-571
+3	ice	_	Location	_	_	0	_	_	Offset=578-586
+4	15	_	Time	_	_	0	_	_	Offset=591-597
+
+# sent_id = s9
+# text = Place the cell suspension in an ice bath for 15 min.
+1	Discard	_	Action	_	_	0	_	_	Offset=599-606
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=611-622
+
+# sent_id = s10
+# text = Discard the supernatant.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=624-633
+2	cells	_	Reagent	_	_	0	_	_	Offset=638-643
+3	1/15	_	Amount	_	_	7	Measure	_	Offset=649-676
+4	ice	_	Modifier	_	_	7	Mod-Link	_	Offset=685-688
+5	cold	_	Modifier	_	_	7	Mod-Link	_	Offset=689-693
+6	sterile	_	Modifier	_	_	7	Mod-Link	_	Offset=695-702
+7	solution	_	Reagent	_	_	9	Meronym	12:Meronym	Offset=703-711
+8	10	_	Concentration	_	_	9	Measure	_	Offset=715-720
+9	Tris-HCl	_	Reagent	_	_	0	_	_	Offset=721-729
+10	pH	_	pH	_	_	9	Measure	_	Offset=731-737
+11	50	_	Concentration	_	_	12	Measure	_	Offset=739-744
+12	CaCl2	_	Reagent	_	_	0	_	_	Offset=745-750
+
+# sent_id = s11
+# text = Resuspend the cells with 1/15 of the original volume with an ice cold, sterile solution of 10 mM Tris-HCl, pH 8.0, 50 mM CaCl2.
+1	Dispense	_	Action	_	_	0	_	_	Offset=752-760
+2	0.2	_	Amount	_	_	3	Measure	_	Offset=761-767
+3	aliquots	_	Reagent	_	_	0	_	_	Offset=768-776
+4	prechilled	_	Modifier	_	_	5	Mod-Link	_	Offset=782-792
+5	microfuge	_	Location	_	_	0	_	_	Offset=793-808
+
+# sent_id = s12
+# text = Dispense 0.2 mL aliquots into prechilled microfuge tubes.
+1	Store	_	Action	_	_	0	_	_	Offset=810-815
+2	cells	_	Reagent	_	_	0	_	_	Offset=820-825
+3	4°C	_	Temperature	_	_	0	_	_	Offset=829-832
+4	12-24	_	Time	_	_	0	_	_	Offset=837-848
+
+# sent_id = s13
+# text = Store the cells at 4°C for 12-24 hours.
+1	Add	_	Action	_	_	0	_	_	Offset=850-853
+2	DNA	_	Reagent	_	_	0	_	_	Offset=858-861
+3	small	_	Amount	_	_	2	Measure	_	Offset=868-882
+4	1-2	_	Amount	_	_	5	Measure	_	Offset=896-902
+5	plate	_	Location	_	_	0	_	_	Offset=903-908
+
+# sent_id = s14
+# text = Add the DNA in as small a volume as possible (1-2 µL/plate).
+1	Mix	_	Action	_	_	0	_	_	Offset=911-914
+2	store	_	Action	_	_	0	_	_	Offset=919-924
+3	ice	_	Location	_	_	0	_	_	Offset=928-931
+4	30	_	Time	_	_	0	_	_	Offset=936-942
+
+# sent_id = s15
+# text = Mix and store on ice for 30 min.
+1	Transfer	_	Action	_	_	0	_	_	Offset=944-952
+2	mixtures	_	Reagent	_	_	0	_	_	Offset=957-965
+3	42°C	_	Temperature	_	_	0	_	_	Offset=969-973
+4	2	_	Time	_	_	0	_	_	Offset=978-983
+
+# sent_id = s16
+# text = Transfer the mixtures to 42°C for 2 min.
+1	Add	_	Action	_	_	0	_	_	Offset=985-988
+2	1.0	_	Amount	_	_	3	Measure	_	Offset=989-995
+3	L	_	Reagent	_	_	0	_	_	Offset=999-1006
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=1010-1014
+5	tube	_	Location	_	_	0	_	_	Offset=1015-1019
+6	incubate	_	Action	_	_	0	_	_	Offset=1024-1032
+7	37°C	_	Temperature	_	_	0	_	_	Offset=1036-1040
+8	30	_	Time	_	_	0	_	_	Offset=1045-1051
+9	60	_	Time	_	_	8	Or	_	Offset=1080-1086
+
+# sent_id = s17
+# text = Add 1.0 mL of L broth to each tube and incubate at 37°C for 30 min (tetracycline selection) or 60 min (ampicillin or kanamycin selection) without shaking.
+1	Spread	_	Action	_	_	0	_	_	Offset=1140-1146
+2	appropriate	_	Modifier	_	_	3	Mod-Link	_	Offset=1150-1161
+3	volume	_	Amount	_	_	5	Measure	_	Offset=1162-1168
+4	100-200	_	Amount	_	_	3	Or	_	Offset=1178-1188
+5	cells	_	Reagent	_	_	0	_	_	Offset=1193-1198
+6	selective	_	Reagent	_	_	0	_	_	Offset=1204-1219
+7	spread	_	Method	_	_	0	_	_	Offset=1240-1259
+8	agar	_	Method	_	_	7	Or	_	Offset=1267-1286
+
+# sent_id = s18
+# text = Spread an appropriate volume (usually 100-200 µL) of cells onto selective media by using either the spread plate method or the agar overlay method.
+1	Leave	_	Action	_	_	0	_	_	Offset=1288-1293
+2	plates	_	Location	_	_	0	_	_	Offset=1298-1304
+3	room	_	Temperature	_	_	0	_	_	Offset=1308-1324
+4	agar	_	Reagent	_	_	0	_	_	Offset=1335-1347
+5	solidified	_	Action	_	_	0	_	_	Offset=1352-1362
+6	liquid	_	Reagent	_	_	0	_	_	Offset=1370-1376
+7	absorbed	_	Action	_	_	0	_	_	Offset=1386-1394
+8	plate	_	Location	_	_	0	_	_	Offset=1404-1409
+
+# sent_id = s19
+# text = Leave the plates at room temperature until the agar overlay has solidified or the liquid has been absorbed into the plate.
+1	Invert	_	Action	_	_	0	_	_	Offset=1411-1417
+2	plates	_	Location	_	_	0	_	_	Offset=1422-1428
+3	incubate	_	Action	_	_	0	_	_	Offset=1433-1441
+4	37°C	_	Temperature	_	_	0	_	_	Offset=1445-1449
+
+# sent_id = s20
+# text = Invert the plates and incubate at 37°C.
+1	Colonies	_	Reagent	_	_	0	_	_	Offset=1451-1459
+2	appear	_	Action	_	_	0	_	_	Offset=1467-1473
+3	12-16	_	Time	_	_	0	_	_	Offset=1477-1488
+
+# sent_id = s21
+# text = Colonies should appear in 12-16 hours.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1490-1500
+2	suspension	_	Reagent	_	_	0	_	_	Offset=1505-1515
+3	Sorvall	_	Device	_	_	0	_	_	Offset=1523-1541
+4	4,000g	_	Speed	_	_	0	_	_	Offset=1545-1551
+5	5	_	Time	_	_	0	_	_	Offset=1553-1558
+6	4°C	_	Temperature	_	_	0	_	_	Offset=1560-1563
+

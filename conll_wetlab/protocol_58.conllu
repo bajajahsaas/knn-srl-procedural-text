@@ -1,0 +1,177 @@
+# sent_id = s1
+# text = Cas9 RNP nucleofection for cell lines using Lonza 4D Nucleofector
+1	Bring	_	Action	_	_	0	_	_	Offset=66-71
+2	100	_	Amount	_	_	3	Measure	_	Offset=72-80
+3	Cas9	_	Reagent	_	_	0	_	_	Offset=84-88
+4	final	_	Reagent	_	_	0	_	_	Offset=94-106
+5	5	_	Amount	_	_	4	Measure	_	Offset=110-114
+6	Cas9	_	Reagent	_	_	8	Meronym	11:Meronym|13:Meronym|15:Meronym	Offset=121-132
+7	20	_	Concentration	_	_	8	Measure	_	Offset=134-139
+8	HEPES-KOH	_	Reagent	_	_	0	_	_	Offset=140-149
+9	pH	_	pH	_	_	8	Measure	_	Offset=150-156
+10	150	_	Concentration	_	_	11	Measure	_	Offset=158-164
+11	KCl	_	Reagent	_	_	0	_	_	Offset=165-168
+12	10%	_	Concentration	_	_	13	Measure	_	Offset=170-173
+13	glycerol	_	Reagent	_	_	0	_	_	Offset=174-182
+14	1	_	Concentration	_	_	15	Measure	_	Offset=184-188
+15	TCEP	_	Reagent	_	_	0	_	_	Offset=189-193
+
+# sent_id = s2
+# text = Bring 100 pmol of Cas9 to a final volume of 5 µL using Cas9 buffer (20 mM HEPES-KOH pH 7.5, 150 mM KCl, 10% glycerol, 1 mM TCEP).
+1	Bring	_	Action	_	_	0	_	_	Offset=221-226
+2	120	_	Amount	_	_	3	Measure	_	Offset=227-235
+3	sgRNA	_	Reagent	_	_	0	_	_	Offset=236-241
+4	final	_	Reagent	_	_	0	_	_	Offset=247-259
+5	5	_	Amount	_	_	4	Measure	_	Offset=263-267
+6	Cas9	_	Reagent	_	_	0	_	_	Offset=274-285
+
+# sent_id = s3
+# text = For 40 µM stock: 2.5 µL.
+1	Add	_	Action	_	_	0	_	_	Offset=351-354
+2	Cas9	_	Reagent	_	_	0	_	_	Offset=355-359
+3	sgRNA	_	Reagent	_	_	0	_	_	Offset=363-368
+4	slowly	_	Modifier	_	_	0	_	_	Offset=369-375
+5	swirling	_	Action	_	_	0	_	_	Offset=382-390
+6	pipette	_	Device	_	_	0	_	_	Offset=391-402
+7	30s	_	Time	_	_	0	_	_	Offset=416-431
+
+# sent_id = s4
+# text = Bring 120 pmol sgRNA to a final volume of 5 µL using Cas9 buffer.
+1	RNP	_	Reagent	_	_	0	_	_	Offset=439-442
+2	form	_	Action	_	_	0	_	_	Offset=446-450
+3	10-20	_	Time	_	_	0	_	_	Offset=455-468
+
+# sent_id = s5
+# text = This means you will need a minimum sgRNA concentration of 24uM.
+1	Count	_	Action	_	_	0	_	_	Offset=470-475
+2	cells	_	Reagent	_	_	0	_	_	Offset=476-481
+
+# sent_id = s6
+# text = Add Cas9 to sgRNA slowly while swirling pipette tip, should take 30s to 1 minute.
+1	pipette	_	Action	_	_	0	_	_	Offset=532-539
+2	200k	_	Numerical	_	_	3	Measure	_	Offset=540-544
+3	cells	_	Reagent	_	_	0	_	_	Offset=545-550
+4	15	_	Amount	_	_	5	Measure	_	Offset=558-563
+5	conical	_	Location	_	_	0	_	_	Offset=564-571
+
+# sent_id = s7
+# text = Allow RNP to form for 10-20 minutes.
+1	Spin	_	Action	_	_	0	_	_	Offset=573-577
+2	100	_	Speed	_	_	0	_	_	Offset=578-585
+3	10	_	Time	_	_	0	_	_	Offset=590-600
+4	pellet	_	Action	_	_	0	_	_	Offset=604-610
+5	cells	_	Reagent	_	_	0	_	_	Offset=611-616
+6	softly	_	Modifier	_	_	0	_	_	Offset=617-623
+
+# sent_id = s8
+# text = Count cells.
+1	cells	_	Reagent	_	_	0	_	_	Offset=635-640
+2	spinning	_	Action	_	_	0	_	_	Offset=645-653
+3	prepare	_	Action	_	_	0	_	_	Offset=655-662
+4	plate	_	Location	_	_	0	_	_	Offset=663-668
+5	cuvette	_	Location	_	_	0	_	_	Offset=673-680
+
+# sent_id = s9
+# text = (Trypsinize as needed.).
+1	Prepare	_	Action	_	_	0	_	_	Offset=682-689
+2	12-well-plate	_	Location	_	_	5	Meronym	_	Offset=692-705
+3	1mL	_	Amount	_	_	4	Measure	_	Offset=711-714
+4	media	_	Reagent	_	_	0	_	_	Offset=715-720
+5	well	_	Location	_	_	4	Meronym	_	Offset=725-729
+6	pre-warm	_	Action	_	_	0	_	_	Offset=735-743
+7	incubator	_	Device	_	_	0	_	_	Offset=751-760
+
+# sent_id = s10
+# text = For each nucleofection, pipette 200k cells into a 15 mL conical.
+1	Prepare	_	Action	_	_	0	_	_	Offset=762-779
+2	wells	_	Location	_	_	0	_	_	Offset=780-785
+3	20uL	_	Amount	_	_	4	Measure	_	Offset=789-793
+4	nucleofection	_	Location	_	_	0	_	_	Offset=794-814
+
+# sent_id = s11
+# text = Spin 100 x g for 10 minutes to pellet cells softly.
+1	Configure	_	Action	_	_	0	_	_	Offset=816-825
+2	Lonza	_	Device	_	_	0	_	_	Offset=826-834
+3	recommended	_	Method	_	_	0	_	_	Offset=841-870
+
+# sent_id = s12
+# text = While the cells are spinning, prepare plate and cuvette.
+1	Pipette	_	Action	_	_	0	_	_	Offset=872-883
+2	media	_	Reagent	_	_	0	_	_	Offset=884-889
+3	cells	_	Reagent	_	_	0	_	_	Offset=895-900
+4	gently	_	Modifier	_	_	0	_	_	Offset=902-908
+5	completely	_	Modifier	_	_	0	_	_	Offset=913-923
+6	P200	_	Device	_	_	0	_	_	Offset=933-937
+
+# sent_id = s13
+# text = Prepare a 12-well-plate with 1mL media per well, and pre-warm in the incubator.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=978-987
+2	cells	_	Reagent	_	_	0	_	_	Offset=988-993
+3	20	_	Amount	_	_	4	Measure	_	Offset=997-1002
+4	nucleofector	_	Reagent	_	_	0	_	_	Offset=1006-1027
+5	P200	_	Device	_	_	0	_	_	Offset=1055-1059
+
+# sent_id = s14
+# text = Prepare and label wells on 20uL nucleofection strips.
+1	Add	_	Action	_	_	0	_	_	Offset=1061-1064
+2	entire	_	Modifier	_	_	4	Mod-Link	_	Offset=1069-1075
+3	10	_	Amount	_	_	4	Measure	_	Offset=1076-1081
+4	RNP	_	Reagent	_	_	0	_	_	Offset=1082-1089
+5	20	_	Amount	_	_	6	Measure	_	Offset=1097-1102
+6	resuspension	_	Reagent	_	_	0	_	_	Offset=1103-1115
+7	mix	_	Action	_	_	0	_	_	Offset=1120-1123
+
+# sent_id = s15
+# text = Configure Lonza 4d using recommended cell-type program.
+1	Add	_	Action	_	_	0	_	_	Offset=1125-1128
+2	1uL	_	Amount	_	_	4	Measure	_	Offset=1129-1132
+3	100uM	_	Concentration	_	_	4	Measure	_	Offset=1136-1141
+4	donor	_	Reagent	_	_	0	_	_	Offset=1142-1151
+5	100	_	Amount	_	_	4	Measure	_	Offset=1153-1163
+6	mix	_	Action	_	_	0	_	_	Offset=1169-1172
+7	well	_	Modifier	_	_	0	_	_	Offset=1173-1177
+
+# sent_id = s16
+# text = Pipette off media from cells, gently but completely, using a P200.
+1	Add	_	Action	_	_	0	_	_	Offset=1179-1182
+2	nucleofection	_	Reagent	_	_	0	_	_	Offset=1183-1202
+3	multiwell	_	Location	_	_	0	_	_	Offset=1210-1227
+4	cap	_	Action	_	_	0	_	_	Offset=1233-1236
+
+# sent_id = s17
+# text = The pellet is very soft so be careful.
+1	Insert	_	Action	_	_	0	_	_	Offset=1366-1372
+2	cuvette	_	Location	_	_	0	_	_	Offset=1373-1380
+3	nucleofector	_	Device	_	_	0	_	_	Offset=1386-1398
+4	zap	_	Action	_	_	0	_	_	Offset=1403-1406
+
+# sent_id = s18
+# text = Resuspend cells in 20 µL of nucleofector solution (usually SF media) using a P200.
+1	cells	_	Reagent	_	_	0	_	_	Offset=1414-1419
+2	sit	_	Action	_	_	0	_	_	Offset=1423-1426
+3	nucleofection	_	Location	_	_	0	_	_	Offset=1430-1450
+4	10	_	Time	_	_	0	_	_	Offset=1455-1465
+
+# sent_id = s19
+# text = Add the entire 10 µL RNP mix to the 20 µL resuspension and mix.
+1	Add	_	Action	_	_	0	_	_	Offset=1527-1530
+2	80uL	_	Amount	_	_	4	Measure	_	Offset=1531-1535
+3	pre-warmed	_	Modifier	_	_	4	Mod-Link	_	Offset=1539-1549
+4	media	_	Reagent	_	_	0	_	_	Offset=1550-1555
+5	each	_	Modifier	_	_	6	Mod-Link	_	Offset=1559-1563
+6	well	_	Location	_	_	0	_	_	Offset=1564-1568
+
+# sent_id = s20
+# text = Add 1uL of 100uM donor DNA (100 pmoles) and mix well.
+1	Pipette	_	Action	_	_	0	_	_	Offset=1570-1577
+2	mixture	_	Reagent	_	_	0	_	_	Offset=1578-1585
+3	P200	_	Device	_	_	0	_	_	Offset=1597-1601
+4	pre-warmed	_	Modifier	_	_	5	Mod-Link	_	Offset=1612-1622
+5	12-well	_	Location	_	_	0	_	_	Offset=1623-1636
+
+# sent_id = s21
+# text = Add nucleofection mixes to the multiwell cuvette, and cap.
+1	cells	_	Reagent	_	_	0	_	_	Offset=1779-1784
+2	24	_	Time	_	_	0	_	_	Offset=1785-1793
+3	settle	_	Action	_	_	0	_	_	Offset=1797-1815
+

@@ -1,0 +1,164 @@
+# sent_id = s1
+# text = Gel DNA Recovery
+1	Excise	_	Action	_	_	0	_	_	Offset=17-23
+2	up	_	Modifier	_	_	3	Mod-Link	_	Offset=24-29
+3	200	_	Amount	_	_	4	Measure	_	Offset=30-36
+4	gel	_	Reagent	_	_	5	Meronym	_	Offset=37-46
+5	DNA	_	Reagent	_	_	0	_	_	Offset=62-74
+6	clean	_	Modifier	_	_	7	Mod-Link	_	Offset=83-88
+7	scalpel	_	Device	_	_	0	_	_	Offset=89-96
+8	razor	_	Device	_	_	7	Or	_	Offset=100-111
+
+# sent_id = s2
+# text = Excise up to 200 mg gel slice containing the DNA fragment using a clean scalpel or razor blade.
+1	Cut	_	Action	_	_	0	_	_	Offset=113-116
+2	as	_	Generic-Measure	_	_	3	Measure	_	Offset=117-125
+3	DNA	_	Reagent	_	_	0	_	_	Offset=133-136
+4	minimize	_	Action	_	_	0	_	_	Offset=152-160
+5	gel	_	Reagent	_	_	0	_	_	Offset=165-175
+
+# sent_id = s3
+# text = Cut as close to the DNA as possible to minimize the gel volume.
+1	Place	_	Action	_	_	0	_	_	Offset=177-182
+2	gel	_	Reagent	_	_	0	_	_	Offset=187-196
+3	1.5	_	Amount	_	_	4	Measure	_	Offset=204-210
+4	tube	_	Location	_	_	0	_	_	Offset=211-215
+
+# sent_id = s4
+# text = Place the gel slice into a 1.5 mL tube.
+1	Add	_	Action	_	_	0	_	_	Offset=217-220
+2	200	_	Amount	_	_	3	Measure	_	Offset=221-227
+3	Extraction	_	Reagent	_	_	0	_	_	Offset=231-248
+
+# sent_id = s5
+# text = Add 200 µL of Extraction Buffer.
+1	Mix	_	Action	_	_	0	_	_	Offset=250-253
+2	thoroughly	_	Modifier	_	_	0	_	_	Offset=254-264
+3	pippeting	_	Action	_	_	0	_	_	Offset=268-277
+
+# sent_id = s6
+# text = Mix thoroughly by pippeting.
+1	Incubate	_	Action	_	_	0	_	_	Offset=279-287
+2	gel	_	Reagent	_	_	0	_	_	Offset=292-303
+3	50-58°C	_	Temperature	_	_	0	_	_	Offset=307-314
+4	10	_	Time	_	_	0	_	_	Offset=319-329
+5	gel	_	Reagent	_	_	0	_	_	Offset=343-352
+6	completely	_	Modifier	_	_	0	_	_	Offset=356-366
+7	dissolved	_	Action	_	_	0	_	_	Offset=367-376
+
+# sent_id = s7
+# text = Incubate the gel mixture at 50-58°C for 10 minutes or until the gel slice is completely dissolved.
+1	Mix	_	Action	_	_	0	_	_	Offset=378-381
+2	tube	_	Location	_	_	0	_	_	Offset=386-390
+3	inversion	_	Action	_	_	0	_	_	Offset=394-403
+4	every	_	Modifier	_	_	5	Mod-Link	_	Offset=404-409
+5	few	_	Time	_	_	0	_	_	Offset=410-421
+6	facilitate	_	Action	_	_	0	_	_	Offset=425-435
+7	melting	_	Method	_	_	0	_	_	Offset=440-455
+
+# sent_id = s8
+# text = Mix the tube by inversion every few minutes to facilitate the melting process.
+1	Add	_	Action	_	_	0	_	_	Offset=503-506
+2	200	_	Amount	_	_	3	Measure	_	Offset=507-513
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=517-524
+4	96-100%	_	Concentration	_	_	3	Measure	_	Offset=526-533
+5	mix	_	Action	_	_	0	_	_	Offset=539-542
+6	pipetting	_	Method	_	_	0	_	_	Offset=546-555
+
+# sent_id = s9
+# text = Ensure that the gel is completely dissolved. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=557-565
+2	mixture	_	Reagent	_	_	0	_	_	Offset=570-577
+3	DNA	_	Location	_	_	0	_	_	Offset=585-614
+4	preassembled	_	Action	_	_	0	_	_	Offset=615-627
+5	collection	_	Location	_	_	0	_	_	Offset=635-650
+
+# sent_id = s10
+# text = Add 200 µL of ethanol (96-100%) and mix by pipetting.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=652-662
+2	column	_	Location	_	_	0	_	_	Offset=667-673
+3	1	_	Time	_	_	0	_	_	Offset=678-686
+4	14,000	_	Speed	_	_	0	_	_	Offset=690-701
+
+# sent_id = s11
+# text = Transfer the mixture to the DNA Purification Micro Column preassembled with a collection tube.
+1	Discard	_	Action	_	_	0	_	_	Offset=703-710
+2	flow-through	_	Reagent	_	_	0	_	_	Offset=715-727
+
+# sent_id = s12
+# text = Centrifuge the column for 1 minute at 14,000 × g. 
+1	Place	_	Action	_	_	0	_	_	Offset=729-734
+2	DNA	_	Location	_	_	0	_	_	Offset=739-768
+3	collection	_	Location	_	_	0	_	_	Offset=783-798
+
+# sent_id = s13
+# text = Discard the flow-through.
+1	Add	_	Action	_	_	0	_	_	Offset=800-803
+2	200	_	Amount	_	_	3	Measure	_	Offset=804-810
+3	Prewash	_	Reagent	_	_	0	_	_	Offset=814-828
+4	DNA	_	Location	_	_	0	_	_	Offset=874-903
+5	centrifuge	_	Action	_	_	0	_	_	Offset=908-918
+6	1	_	Time	_	_	0	_	_	Offset=923-931
+7	14,000	_	Speed	_	_	0	_	_	Offset=935-945
+
+# sent_id = s14
+# text = Place the DNA Purification Micro Column back into the collection tube.
+1	Discard	_	Action	_	_	0	_	_	Offset=948-955
+2	flow-through	_	Reagent	_	_	0	_	_	Offset=960-972
+3	place	_	Action	_	_	0	_	_	Offset=977-982
+4	purification	_	Location	_	_	0	_	_	Offset=987-1006
+5	collection	_	Location	_	_	0	_	_	Offset=1021-1036
+
+# sent_id = s15
+# text = Add 200 µL of Prewash Buffer (supplemented with ethanol, see p. 3) to the DNA Purification Micro Column and centrifuge for 1 minute at 14,000 × g. 
+1	Add	_	Action	_	_	0	_	_	Offset=1038-1041
+2	700	_	Amount	_	_	3	Measure	_	Offset=1042-1048
+3	Wash	_	Reagent	_	_	0	_	_	Offset=1052-1063
+4	DNA	_	Location	_	_	0	_	_	Offset=1109-1138
+5	centrifuge	_	Action	_	_	0	_	_	Offset=1143-1153
+6	1	_	Time	_	_	0	_	_	Offset=1158-1166
+7	14,000	_	Speed	_	_	0	_	_	Offset=1170-1180
+
+# sent_id = s16
+# text = Discard the flow-through and place the purification column back into the collection tube.
+1	Discard	_	Action	_	_	0	_	_	Offset=1182-1189
+2	flow-through	_	Reagent	_	_	0	_	_	Offset=1194-1206
+3	place	_	Action	_	_	0	_	_	Offset=1211-1216
+4	purification	_	Location	_	_	0	_	_	Offset=1221-1240
+5	collection	_	Location	_	_	0	_	_	Offset=1255-1270
+
+# sent_id = s17
+# text = Add 700 µL of Wash Buffer (supplemented with ethanol, see p. 3) to the DNA Purification Micro Column and centrifuge for 1 minute at 14,000 × g.
+1	Repeat	_	Action	_	_	0	_	_	Offset=1272-1278
+2	step	_	Method	_	_	0	_	_	Offset=1279-1285
+3	Centrifuge	_	Action	_	_	0	_	_	Offset=1286-1296
+4	empty	_	Modifier	_	_	5	Mod-Link	_	Offset=1301-1306
+5	DNA	_	Location	_	_	0	_	_	Offset=1307-1336
+6	additional	_	Modifier	_	_	7	Mod-Link	_	Offset=1344-1355
+7	1	_	Time	_	_	0	_	_	Offset=1355-1363
+8	14,000	_	Speed	_	_	0	_	_	Offset=1367-1377
+9	completely	_	Modifier	_	_	0	_	_	Offset=1381-1391
+10	remove	_	Action	_	_	0	_	_	Offset=1392-1398
+11	residual	_	Modifier	_	_	12	Mod-Link	_	Offset=1399-1407
+12	Wash	_	Reagent	_	_	0	_	_	Offset=1408-1419
+
+# sent_id = s18
+# text = Discard the flow-through and place the purification column back into the collection tube.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1421-1429
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1434-1463
+3	clean	_	Modifier	_	_	5	Mod-Link	_	Offset=1471-1476
+4	1.8	_	Amount	_	_	5	Measure	_	Offset=1477-1483
+5	microcentrifugetube	_	Location	_	_	0	_	_	Offset=1484-1503
+6	Add	_	Action	_	_	0	_	_	Offset=1504-1507
+7	10	_	Amount	_	_	8	Measure	_	Offset=1508-1513
+8	Elution	_	Reagent	_	_	0	_	_	Offset=1517-1531
+9	DNA	_	Location	_	_	0	_	_	Offset=1539-1568
+
+# sent_id = s19
+# text = Repeat step 7 Centrifuge the empty DNA Purification Micro Column for an additional 1 minute at 14,000 × g to completely remove residual Wash Buffer.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1570-1580
+2	1	_	Time	_	_	0	_	_	Offset=1585-1593
+3	14,000	_	Speed	_	_	0	_	_	Offset=1597-1607
+4	elute	_	Action	_	_	0	_	_	Offset=1611-1616
+5	DNA	_	Reagent	_	_	0	_	_	Offset=1617-1620
+

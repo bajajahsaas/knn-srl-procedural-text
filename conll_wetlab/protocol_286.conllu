@@ -1,0 +1,63 @@
+# sent_id = s1
+# text = Cleaning of the Nuclear Fraction (FOCUS™ SubCell Kit)
+1	Resuspend	_	Action	_	_	0	_	_	Offset=54-63
+2	nuclear	_	Reagent	_	_	0	_	_	Offset=68-82
+3	300µl	_	Amount	_	_	4	Measure	_	Offset=86-91
+4	SubCell	_	Reagent	_	_	0	_	_	Offset=92-110
+
+# sent_id = s2
+# text = Resuspend the nuclear pellet in 300µl SubCell Buffer‐III.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=112-122
+2	tube	_	Location	_	_	0	_	_	Offset=127-131
+3	700x	_	Speed	_	_	0	_	_	Offset=135-141
+4	5	_	Time	_	_	0	_	_	Offset=146-155
+5	discard	_	Action	_	_	0	_	_	Offset=160-167
+6	supernatant	_	Reagent	_	_	0	_	_	Offset=172-183
+
+# sent_id = s3
+# text = Centrifuge the tube at 700x g for 5 minutes and discard the supernatant.
+1	Pipette	_	Action	_	_	0	_	_	Offset=296-303
+2	300µl	_	Amount	_	_	3	Measure	_	Offset=304-309
+3	SubCell	_	Reagent	_	_	0	_	_	Offset=310-327
+4	1.5ml	_	Amount	_	_	5	Measure	_	Offset=333-338
+5	centrifuge	_	Location	_	_	0	_	_	Offset=339-354
+
+# sent_id = s4
+# text = The pellet containing nuclei is clean enough for most purposes.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=356-365
+2	nuclear	_	Reagent	_	_	0	_	_	Offset=370-384
+3	100µl	_	Amount	_	_	4	Measure	_	Offset=388-393
+4	SubCell	_	Reagent	_	_	0	_	_	Offset=394-412
+
+# sent_id = s5
+# text = If further cleaning required, go to next step.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=414-423
+2	overlay	_	Action	_	_	0	_	_	Offset=424-431
+3	nuclear	_	Reagent	_	_	0	_	_	Offset=436-454
+4	surface	_	Location	_	_	0	_	_	Offset=462-469
+5	SubCell	_	Reagent	_	_	4	Meronym	_	Offset=473-490
+
+# sent_id = s6
+# text = Pipette 300µl SubCell Buffer‐IV to a 1.5ml centrifuge tube.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=492-502
+2	tube	_	Location	_	_	0	_	_	Offset=507-511
+3	1,000x	_	Speed	_	_	0	_	_	Offset=515-523
+4	10	_	Time	_	_	0	_	_	Offset=528-538
+
+# sent_id = s7
+# text = Resuspend the nuclear pellet in 100µl SubCell Buffer‐III.
+1	sharp	_	Modifier	_	_	2	Mod-Link	_	Offset=548-553
+2	pipette	_	Device	_	_	0	_	_	Offset=554-565
+3	remove	_	Action	_	_	0	_	_	Offset=567-573
+4	sticky	_	Modifier	_	_	5	Mod-Link	_	Offset=578-584
+5	lump	_	Reagent	_	_	0	_	_	Offset=585-589
+
+# sent_id = s8
+# text = Carefully overlay the nuclear suspension on the surface of SubCell Buffer‐IV.
+1	Remove	_	Action	_	_	0	_	_	Offset=656-662
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=667-678
+3	collect	_	Action	_	_	0	_	_	Offset=683-690
+4	very	_	Modifier	_	_	5	Mod-Link	_	Offset=695-705
+5	nuclear	_	Reagent	_	_	0	_	_	Offset=706-720
+6	tube	_	Location	_	_	0	_	_	Offset=728-732
+

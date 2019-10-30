@@ -1,0 +1,35 @@
+# sent_id = s1
+# text = 10x Tris-Glycine PAGE Running Buffer
+1	Fill	_	Action	_	_	0	_	_	Offset=37-41
+2	1L	_	Size	_	_	3	Measure	_	Offset=42-44
+3	pyrex	_	Location	_	_	0	_	_	Offset=45-57
+4	700mL	_	Amount	_	_	5	Measure	_	Offset=63-68
+5	dH20	_	Reagent	_	_	0	_	_	Offset=69-73
+
+# sent_id = s2
+# text = Fill 1L pyrex bottle with 700mL dH20. 
+1	Add	_	Action	_	_	0	_	_	Offset=76-79
+2	30.2g	_	Amount	_	_	3	Measure	_	Offset=80-85
+3	Tris	_	Reagent	_	_	0	_	_	Offset=86-95
+
+# sent_id = s3
+# text = Add 30.2g Tris base. 
+1	Add	_	Action	_	_	0	_	_	Offset=98-101
+2	144.2g	_	Amount	_	_	3	Measure	_	Offset=102-108
+3	glycine	_	Reagent	_	_	0	_	_	Offset=109-116
+4	pH	_	Measure-Type	_	_	6	Of-Type	_	Offset=117-119
+5	solution	_	Reagent	_	_	0	_	_	Offset=120-128
+6	8.80	_	Numerical	_	_	5	Measure	_	Offset=132-136
+
+# sent_id = s4
+# text = Add 144.2g glycine pH solution to 8.80 after disolution of tris and glycine.
+1	Add	_	Action	_	_	0	_	_	Offset=175-178
+2	10g	_	Amount	_	_	3	Measure	_	Offset=179-182
+3	SDS	_	Reagent	_	_	0	_	_	Offset=183-186
+
+# sent_id = s5
+# text = Add 10g SDS (1% final).  
+1	Fill	_	Action	_	_	0	_	_	Offset=201-205
+2	1L	_	Amount	_	_	0	_	_	Offset=209-211
+3	dH20	_	Reagent	_	_	0	_	_	Offset=217-221
+

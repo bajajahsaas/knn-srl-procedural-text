@@ -1,0 +1,125 @@
+# sent_id = s1
+# text = Dimethylglyoxime reagent for cobalt analyses
+1	Dissolve	_	Action	_	_	0	_	_	Offset=45-53
+2	0.2232	_	Amount	_	_	3	Measure	_	Offset=54-62
+3	EDTA	_	Reagent	_	_	0	_	_	Offset=66-70
+4	600	_	Amount	_	_	5	Measure	_	Offset=76-82
+5	Milli-Q	_	Reagent	_	_	0	_	_	Offset=86-93
+6	10-3	_	Generic-Measure	_	_	7	Measure	_	Offset=123-135
+7	EDTA	_	Reagent	_	_	0	_	_	Offset=136-140
+
+# sent_id = s2
+# text = Dissolve 0.2232 g of EDTA into 600 mL of Milli-Q for a final concentration of 10-3 mol L-1 EDTA.
+1	Weigh	_	Action	_	_	0	_	_	Offset=142-151
+2	approximately	_	Modifier	_	_	3	Mod-Link	_	Offset=152-165
+3	1.2	_	Amount	_	_	4	Measure	_	Offset=166-171
+4	DMG	_	Reagent	_	_	7	Coreference-Link	_	Offset=175-178
+5	weigh	_	Device	_	_	0	_	_	Offset=205-215
+6	combine	_	Action	_	_	0	_	_	Offset=221-228
+7	it	_	Mention	_	_	0	_	_	Offset=229-231
+8	EDTA	_	Reagent	_	_	0	_	_	Offset=241-254
+
+# sent_id = s3
+# text = Weigh out approximately 1.2 g of DMG (dimethylglyoxime) onto a weigh boat, and combine it into the EDTA solution.
+1	Heat	_	Action	_	_	0	_	_	Offset=432-436
+2	solution	_	Reagent	_	_	9	Coreference-Link	_	Offset=442-450
+3	microwave	_	Device	_	_	0	_	_	Offset=456-465
+4	50%	_	Generic-Measure	_	_	3	Setting	_	Offset=469-478
+5	DMG	_	Reagent	_	_	0	_	_	Offset=489-492
+6	fully	_	Modifier	_	_	0	_	_	Offset=496-501
+7	dissolved	_	Action	_	_	0	_	_	Offset=502-511
+8	stirring	_	Action	_	_	0	_	_	Offset=513-521
+9	it	_	Mention	_	_	0	_	_	Offset=522-524
+10	carefully	_	Modifier	_	_	0	_	_	Offset=525-534
+
+# sent_id = s4
+# text = Weigh what is left on the weigh boat (DMG is very sticky so not all of it will pour into the EDTA solution) and record the final weight that was placed into the EDTA solution.
+1	30	_	Time	_	_	0	_	_	Offset=615-625
+2	heat	_	Action	_	_	0	_	_	Offset=645-649
+3	it	_	Mention	_	_	0	_	_	Offset=650-652
+4	slowly	_	Modifier	_	_	0	_	_	Offset=653-659
+5	carefully	_	Modifier	_	_	0	_	_	Offset=664-673
+
+# sent_id = s5
+# text = Heat this solution in a microwave at 50% power until the DMG is fully dissolved, stirring it carefully in between microwaving, and trying to prevent it from boiling.
+1	Put	_	Action	_	_	0	_	_	Offset=675-678
+2	solution	_	Reagent	_	_	4	Coreference-Link	_	Offset=683-691
+3	ice	_	Location	_	_	0	_	_	Offset=695-698
+4	it	_	Mention	_	_	0	_	_	Offset=707-709
+5	recrystallize	_	Action	_	_	0	_	_	Offset=710-723
+6	overnight	_	Time	_	_	0	_	_	Offset=724-733
+7	refrigerator	_	Device	_	_	0	_	_	Offset=739-751
+
+# sent_id = s6
+# text = This takes up to 30 minutes, so be patient and heat it slowly and carefully.
+1	pour	_	Action	_	_	0	_	_	Offset=782-790
+2	slowly	_	Modifier	_	_	0	_	_	Offset=795-801
+3	pipette	_	Action	_	_	0	_	_	Offset=802-813
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=819-830
+5	little	_	Modifier	_	_	6	Mod-Link	_	Offset=849-855
+6	liquid	_	Reagent	_	_	0	_	_	Offset=856-862
+
+# sent_id = s7
+# text = Put the solution on ice and let it recrystallize overnight in a refrigerator.
+1	pour	_	Action	_	_	0	_	_	Offset=881-885
+2	remaining	_	Modifier	_	_	3	Mod-Link	_	Offset=890-899
+3	crystals	_	Reagent	_	_	0	_	_	Offset=900-908
+4	clean	_	Modifier	_	_	6	Mod-Link	_	Offset=916-921
+5	dry	_	Modifier	_	_	6	Mod-Link	_	Offset=923-926
+6	weigh	_	Device	_	_	0	_	_	Offset=927-937
+7	remaining	_	Modifier	_	_	8	Mod-Link	_	Offset=1009-1018
+8	liquid	_	Reagent	_	_	0	_	_	Offset=1019-1025
+9	evaporate	_	Action	_	_	0	_	_	Offset=1026-1035
+10	overnight	_	Time	_	_	0	_	_	Offset=1036-1045
+11	laminar	_	Location	_	_	0	_	_	Offset=1055-1072
+
+# sent_id = s8
+# text = After it has recrystallized, pour off (or slowly pipette off) the supernatant until there is as little liquid as possible.
+1	measure	_	Action	_	_	0	_	_	Offset=1111-1118
+2	weight	_	Device	_	_	0	_	_	Offset=1123-1134
+3	again	_	Modifier	_	_	0	_	_	Offset=1135-1140
+4	approximate	_	Modifier	_	_	5	Mod-Link	_	Offset=1151-1162
+5	amount	_	Amount	_	_	0	_	_	Offset=1182-1188
+6	DMG	_	Reagent	_	_	0	_	_	Offset=1192-1195
+
+# sent_id = s9
+# text = Then pour the remaining crystals into a clean, dry weigh boat (that you have weighed and noted the weight for later use) and let the remaining liquid evaporate overnight inside a laminar flow hood.
+1	Calculate	_	Action	_	_	0	_	_	Offset=1221-1230
+2	how	_	Amount	_	_	0	_	_	Offset=1231-1239
+3	methanol	_	Reagent	_	_	0	_	_	Offset=1240-1248
+4	add	_	Action	_	_	0	_	_	Offset=1262-1265
+5	DMG	_	Reagent	_	_	0	_	_	Offset=1273-1276
+6	0.1	_	Generic-Measure	_	_	7	Measure	_	Offset=1318-1329
+7	DMG	_	Reagent	_	_	0	_	_	Offset=1330-1333
+8	obtain	_	Action	_	_	0	_	_	Offset=1339-1345
+9	trace	_	Modifier	_	_	10	Mod-Link	_	Offset=1348-1365
+10	bottle	_	Location	_	_	0	_	_	Offset=1366-1372
+11	appropriate	_	Modifier	_	_	12	Mod-Link	_	Offset=1380-1391
+12	size	_	Size	_	_	10	Measure	_	Offset=1392-1396
+
+# sent_id = s10
+# text = After all the liquid has evaporated, measure the weight boat again to get an approximate measurement of the amount of DMG you have recrystallized.
+1	Weigh	_	Action	_	_	0	_	_	Offset=1398-1403
+2	clean	_	Modifier	_	_	3	Mod-Link	_	Offset=1408-1413
+3	bottle	_	Location	_	_	0	_	_	Offset=1414-1420
+4	carefully	_	Modifier	_	_	0	_	_	Offset=1431-1440
+5	transfer	_	Action	_	_	0	_	_	Offset=1441-1449
+6	recrystallized	_	Modifier	_	_	7	Mod-Link	_	Offset=1454-1468
+7	DMG	_	Reagent	_	_	0	_	_	Offset=1469-1472
+8	clean	_	Modifier	_	_	9	Mod-Link	_	Offset=1483-1488
+9	bottle	_	Location	_	_	0	_	_	Offset=1489-1495
+10	re-weigh	_	Action	_	_	0	_	_	Offset=1500-1508
+
+# sent_id = s11
+# text = Calculate how much methanol is needed to add to the DMG in order to get a final concentration of 0.1 mol L-1 DMG, and obtain a trace metal clean bottle of the appropriate size.
+1	recalculate	_	Action	_	_	0	_	_	Offset=1606-1617
+2	amount	_	Amount	_	_	0	_	_	Offset=1622-1628
+3	optima	_	Modifier	_	_	4	Mod-Link	_	Offset=1632-1638
+4	methanol	_	Reagent	_	_	0	_	_	Offset=1639-1647
+5	desired	_	Reagent	_	_	0	_	_	Offset=1666-1687
+6	0.1	_	Generic-Measure	_	_	5	Measure	_	Offset=1691-1702
+7	add	_	Action	_	_	0	_	_	Offset=1708-1711
+8	amount	_	Amount	_	_	10	Measure	_	Offset=1717-1723
+9	optima	_	Modifier	_	_	10	Mod-Link	_	Offset=1727-1733
+10	methanol	_	Reagent	_	_	0	_	_	Offset=1734-1742
+

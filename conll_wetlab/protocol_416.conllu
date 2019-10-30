@@ -1,0 +1,194 @@
+# sent_id = s1
+# text = Transformation of Bacterial Cultures Using Hexamine Cobalt Chloride
+1	Prepare	_	Action	_	_	0	_	_	Offset=68-75
+2	SOB	_	Reagent	_	_	0	_	_	Offset=80-90
+
+# sent_id = s2
+# text = Prepare the SOB medium.
+1	Prepare	_	Action	_	_	0	_	_	Offset=92-99
+2	SOC	_	Reagent	_	_	0	_	_	Offset=104-114
+3	SOB	_	Reagent	_	_	0	_	_	Offset=128-137
+4	supplemented	_	Action	_	_	0	_	_	Offset=138-150
+5	20mM	_	Concentration	_	_	6	Measure	_	Offset=156-160
+6	glucose	_	Reagent	_	_	0	_	_	Offset=161-168
+
+# sent_id = s3
+# text = Prepare the SOC medium by using the SOB media supplemented with 20mM glucose.
+1	Prepare	_	Action	_	_	0	_	_	Offset=170-177
+2	TFB	_	Reagent	_	_	0	_	_	Offset=182-192
+
+# sent_id = s4
+# text = Prepare the TFB buffer.
+1	Prepare	_	Action	_	_	0	_	_	Offset=194-201
+2	DTT	_	Reagent	_	_	0	_	_	Offset=206-218
+
+# sent_id = s5
+# text = Prepare the DTT solution.
+1	Grow	_	Action	_	_	0	_	_	Offset=220-224
+2	5	_	Amount	_	_	3	Measure	_	Offset=225-229
+3	host	_	Reagent	_	_	0	_	_	Offset=237-247
+4	overnight	_	Time	_	_	0	_	_	Offset=248-257
+5	SOB	_	Reagent	_	_	0	_	_	Offset=261-270
+6	37°C	_	Temperature	_	_	0	_	_	Offset=274-278
+
+# sent_id = s6
+# text = Grow 5 mL of the host cells overnight in SOB media at 37°C.
+1	Inoculate	_	Action	_	_	0	_	_	Offset=280-289
+2	40	_	Amount	_	_	3	Measure	_	Offset=290-295
+3	SOB	_	Reagent	_	_	0	_	_	Offset=299-309
+4	0.8	_	Amount	_	_	6	Measure	_	Offset=315-321
+5	overnight	_	Modifier	_	_	6	Mod-Link	_	Offset=329-338
+6	culture	_	Reagent	_	_	0	_	_	Offset=339-346
+
+# sent_id = s7
+# text = Inoculate 40 mL of SOB medium with 0.8 mL of the overnight culture.
+1	Grow	_	Action	_	_	0	_	_	Offset=348-352
+2	A550	_	Generic-Measure	_	_	0	_	_	Offset=359-376
+3	37°C	_	Temperature	_	_	0	_	_	Offset=380-384
+4	approximately	_	Modifier	_	_	5	Mod-Link	_	Offset=386-399
+5	3-4	_	Time	_	_	0	_	_	Offset=400-409
+
+# sent_id = s8
+# text = Grow to an A550 of 0.45-0.55 at 37°C (approximately 3-4 hours).
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=412-422
+2	cells	_	Reagent	_	_	0	_	_	Offset=427-432
+3	Sorvall	_	Device	_	_	0	_	_	Offset=440-458
+4	5,000	_	Speed	_	_	3	Setting	_	Offset=462-471
+5	5	_	Time	_	_	3	Setting	_	Offset=473-478
+6	4°C	_	Temperature	_	_	3	Setting	_	Offset=480-483
+
+# sent_id = s9
+# text = Centrifuge the cells in the Sorvall SS34 rotor at 5,000 rpm, 5 min, 4°C.
+1	Discard	_	Action	_	_	0	_	_	Offset=485-492
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=497-508
+
+# sent_id = s10
+# text = Discard the supernatant.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=510-519
+2	pellet	_	Reagent	_	_	0	_	_	Offset=524-530
+3	12.5	_	Amount	_	_	4	Measure	_	Offset=536-543
+4	TFB	_	Reagent	_	_	0	_	_	Offset=551-563
+
+# sent_id = s11
+# text = Resuspend the pellet with 12.5 mL of the TFB solution.
+1	Hold	_	Action	_	_	0	_	_	Offset=565-569
+2	remaining	_	Modifier	_	_	3	Mod-Link	_	Offset=574-583
+3	2.5	_	Amount	_	_	4	Measure	_	Offset=584-590
+4	TFB	_	Reagent	_	_	0	_	_	Offset=594-597
+
+# sent_id = s12
+# text = Hold the remaining 2.5 mL of TFB for use later.
+1	Chill	_	Action	_	_	0	_	_	Offset=613-618
+2	cells	_	Reagent	_	_	0	_	_	Offset=623-628
+3	ice	_	Location	_	_	0	_	_	Offset=632-635
+4	15	_	Time	_	_	0	_	_	Offset=640-646
+
+# sent_id = s13
+# text = Chill the cells on ice for 15 min.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=648-658
+2	cells	_	Reagent	_	_	0	_	_	Offset=663-668
+3	Sorvall	_	Device	_	_	0	_	_	Offset=676-694
+4	5,000	_	Speed	_	_	3	Setting	_	Offset=698-707
+5	5	_	Time	_	_	3	Setting	_	Offset=709-714
+6	4°C	_	Temperature	_	_	3	Setting	_	Offset=716-719
+
+# sent_id = s14
+# text = Centrifuge the cells in the Sorvall SS34 rotor at 5,000 rpm, 5 min, 4°C.
+1	Discard	_	Action	_	_	0	_	_	Offset=721-728
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=733-744
+
+# sent_id = s15
+# text = Discard the supernatant.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=746-755
+2	pellet	_	Reagent	_	_	0	_	_	Offset=760-766
+3	2.4	_	Amount	_	_	4	Measure	_	Offset=772-778
+4	TFB	_	Reagent	_	_	0	_	_	Offset=782-794
+
+# sent_id = s16
+# text = Resuspend the pellet with 2.4 mL of TFB solution.
+1	Add	_	Action	_	_	0	_	_	Offset=796-799
+2	DMSO	_	Reagent	_	_	0	_	_	Offset=800-804
+3	3.5%	_	Concentration	_	_	2	Measure	_	Offset=808-812
+4	84µL	_	Amount	_	_	2	Measure	_	Offset=814-818
+5	mix	_	Action	_	_	0	_	_	Offset=821-824
+6	chill	_	Action	_	_	0	_	_	Offset=829-834
+7	ice	_	Location	_	_	0	_	_	Offset=838-841
+8	5	_	Time	_	_	0	_	_	Offset=846-851
+
+# sent_id = s17
+# text = Add DMSO to 3.5% (84µL), mix and chill on ice for 5 min.
+1	Add	_	Action	_	_	0	_	_	Offset=853-856
+2	DTT	_	Reagent	_	_	0	_	_	Offset=857-869
+3	75	_	Concentration	_	_	2	Measure	_	Offset=873-878
+4	84	_	Amount	_	_	2	Measure	_	Offset=880-885
+5	i	_	Action	_	_	0	_	_	Offset=889-890
+6	chill	_	Action	_	_	0	_	_	Offset=896-901
+7	ice	_	Location	_	_	0	_	_	Offset=905-908
+8	10	_	Time	_	_	0	_	_	Offset=913-919
+
+# sent_id = s18
+# text = Add DTT solution to 75 mM (84 µL), mix and chill on ice for 10 min.
+1	Add	_	Action	_	_	0	_	_	Offset=921-924
+2	equal	_	Amount	_	_	3	Measure	_	Offset=928-940
+3	DMSO	_	Reagent	_	_	0	_	_	Offset=944-948
+4	84	_	Amount	_	_	2	Or	_	Offset=960-965
+5	mix	_	Action	_	_	0	_	_	Offset=968-971
+6	chill	_	Action	_	_	0	_	_	Offset=976-981
+7	ice	_	Location	_	_	0	_	_	Offset=985-988
+8	5	_	Time	_	_	0	_	_	Offset=993-998
+
+# sent_id = s19
+# text = Add an equal volume of DMSO as before (84 µL), mix and chill on ice for 5 min.
+1	Pipet	_	Action	_	_	0	_	_	Offset=1031-1036
+2	21	_	Amount	_	_	3	Measure	_	Offset=1037-1042
+3	competent	_	Reagent	_	_	0	_	_	Offset=1043-1058
+4	prechilled	_	Modifier	_	_	5	Mod-Link	_	Offset=1063-1073
+5	microfuge	_	Location	_	_	0	_	_	Offset=1074-1088
+
+# sent_id = s20
+# text = The cells are now "competent".
+1	Add	_	Action	_	_	0	_	_	Offset=1090-1093
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1098-1101
+3	mix	_	Action	_	_	0	_	_	Offset=1151-1154
+4	chill	_	Action	_	_	0	_	_	Offset=1159-1164
+5	ice	_	Location	_	_	0	_	_	Offset=1168-1171
+6	30	_	Time	_	_	0	_	_	Offset=1176-1182
+
+# sent_id = s21
+# text = Pipet 21 µL competent cells per prechilled microfuge tube.
+1	Heat	_	Action	_	_	0	_	_	Offset=1184-1194
+2	tubes	_	Location	_	_	0	_	_	Offset=1199-1204
+3	42°C	_	Temperature	_	_	0	_	_	Offset=1208-1212
+4	3	_	Time	_	_	0	_	_	Offset=1217-1222
+
+# sent_id = s22
+# text = Add the DNA (in as small a volume as possible, 1-2 µL/tube), mix and chill on ice for 30 min.
+1	Add	_	Action	_	_	0	_	_	Offset=1224-1227
+2	80	_	Amount	_	_	3	Measure	_	Offset=1228-1233
+3	SOC	_	Reagent	_	_	0	_	_	Offset=1237-1247
+4	tube	_	Location	_	_	0	_	_	Offset=1252-1256
+5	incubate	_	Action	_	_	0	_	_	Offset=1261-1269
+6	tubes	_	Location	_	_	0	_	_	Offset=1274-1279
+7	37°C	_	Temperature	_	_	0	_	_	Offset=1283-1287
+8	60	_	Time	_	_	0	_	_	Offset=1292-1298
+
+# sent_id = s23
+# text = Heat pulse the tubes at 42°C for 3 min.
+1	Spread	_	Action	_	_	0	_	_	Offset=1300-1306
+2	100	_	Amount	_	_	0	_	_	Offset=1307-1313
+3	each	_	Modifier	_	_	4	Mod-Link	_	Offset=1319-1323
+4	plate	_	Location	_	_	0	_	_	Offset=1324-1329
+
+# sent_id = s24
+# text = Add 80 µL of SOC medium per tube and incubate the tubes at 37°C for 60 min.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1331-1339
+2	plates	_	Location	_	_	0	_	_	Offset=1344-1350
+3	37°C	_	Temperature	_	_	0	_	_	Offset=1354-1358
+4	overnight	_	Time	_	_	0	_	_	Offset=1359-1368
+
+# sent_id = s25
+# text = Spread 100 µL onto each plate.
+1	chill	_	Action	_	_	0	_	_	Offset=1375-1380
+2	ice	_	Location	_	_	0	_	_	Offset=1384-1387
+3	2	_	Time	_	_	0	_	_	Offset=1392-1397
+

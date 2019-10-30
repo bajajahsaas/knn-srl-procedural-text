@@ -1,0 +1,126 @@
+# sent_id = s1
+# text = In vitro transcription of guide RNAs
+1	Incubate	_	Action	_	_	0	_	_	Offset=77-85
+2	transcription	_	Reagent	_	_	0	_	_	Offset=86-103
+3	~18	_	Time	_	_	0	_	_	Offset=108-117
+4	37˚	_	Temperature	_	_	0	_	_	Offset=121-124
+5	thermalcycler	_	Device	_	_	0	_	_	Offset=130-143
+
+# sent_id = s2
+# text = No PCR cleanup necessary at this point.
+1	Add	_	Action	_	_	0	_	_	Offset=146-149
+2	1	_	Amount	_	_	3	Measure	_	Offset=150-154
+3	RNase-free	_	Reagent	_	_	0	_	_	Offset=158-174
+4	incubated	_	Action	_	_	0	_	_	Offset=176-185
+5	20	_	Time	_	_	0	_	_	Offset=186-192
+6	room	_	Temperature	_	_	0	_	_	Offset=194-203
+
+# sent_id = s3
+# text = Incubate transcription mix for ~18 hours at 37˚ in a thermalcycler. 
+1	Bring	_	Action	_	_	0	_	_	Offset=207-212
+2	volume	_	Measure-Type	_	_	0	_	_	Offset=213-219
+3	150	_	Amount	_	_	0	_	_	Offset=223-229
+4	100%	_	Concentration	_	_	5	Measure	_	Offset=235-239
+5	EtOH	_	Reagent	_	_	0	_	_	Offset=240-244
+
+# sent_id = s4
+# text = Add 1 µl of RNase-free DNase; incubated 20 min, room Temp.  
+1	Add	_	Action	_	_	0	_	_	Offset=287-290
+2	5X	_	Concentration	_	_	0	_	_	Offset=291-293
+3	SPRI	_	Reagent	_	_	0	_	_	Offset=294-298
+
+# sent_id = s5
+# text = Bring volume to 150 uL with 100% EtOH (this helps binding of small fragments). 
+1	Pipette	_	Action	_	_	0	_	_	Offset=426-433
+2	mix	_	Action	_	_	0	_	_	Offset=437-440
+3	10	_	Numerical	_	_	0	_	_	Offset=441-443
+4	Incubate	_	Action	_	_	0	_	_	Offset=450-458
+5	5	_	Time	_	_	0	_	_	Offset=459-468
+6	room	_	Temperature	_	_	0	_	_	Offset=472-488
+
+# sent_id = s6
+# text = Add 5X SPRI (we use homemade SeraPure beads for RNA binding) 5*10 (IVT sgRNA) = 50 uL of SPRI Beads5*20 (IVT sgRNA) = 100 uL SPRI Beads.  
+1	Place	_	Action	_	_	0	_	_	Offset=492-497
+2	magnetic	_	Device	_	_	0	_	_	Offset=501-515
+3	5	_	Time	_	_	0	_	_	Offset=517-522
+
+# sent_id = s7
+# text = Pipette to mix 10 times Incubate 5 minutes at room temperature.  
+1	Discard	_	Action	_	_	0	_	_	Offset=525-532
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=533-544
+
+# sent_id = s8
+# text = Place on magnetic stand, 5 min. 
+1	Add	_	Action	_	_	0	_	_	Offset=554-557
+2	200	_	Amount	_	_	4	Measure	_	Offset=558-564
+3	80%	_	Concentration	_	_	4	Measure	_	Offset=566-569
+4	EtOH	_	Reagent	_	_	0	_	_	Offset=570-574
+
+# sent_id = s9
+# text = Discard supernatant. 
+1	Wait	_	Action	_	_	0	_	_	Offset=576-580
+2	2	_	Time	_	_	0	_	_	Offset=581-586
+
+# sent_id = s10
+# text = Wash#1 Add 200 uL, 80% EtOH.
+1	Remove	_	Action	_	_	0	_	_	Offset=588-594
+2	EtOH	_	Reagent	_	_	0	_	_	Offset=595-599
+
+# sent_id = s11
+# text = Wait 2 min.
+1	Add	_	Action	_	_	0	_	_	Offset=610-613
+2	200	_	Amount	_	_	4	Measure	_	Offset=614-620
+3	80%	_	Concentration	_	_	4	Measure	_	Offset=622-625
+4	EtOH	_	Reagent	_	_	0	_	_	Offset=626-630
+
+# sent_id = s12
+# text = Remove EtOH.
+1	Wait	_	Action	_	_	0	_	_	Offset=632-636
+2	2	_	Time	_	_	0	_	_	Offset=637-642
+
+# sent_id = s13
+# text = Wash #2: Add 200 uL, 80% EtOH.
+1	Remove	_	Action	_	_	0	_	_	Offset=644-650
+2	EtOH	_	Reagent	_	_	0	_	_	Offset=651-655
+
+# sent_id = s14
+# text = Wait 2 min.
+1	Air	_	Action	_	_	0	_	_	Offset=657-664
+2	5-10	_	Time	_	_	0	_	_	Offset=665-673
+
+# sent_id = s15
+# text = Remove EtOH.
+1	Elute	_	Action	_	_	0	_	_	Offset=728-733
+2	20	_	Amount	_	_	3	Measure	_	Offset=734-739
+3	water	_	Reagent	_	_	0	_	_	Offset=743-748
+4	TE	_	Reagent	_	_	3	Or	_	Offset=752-754
+
+# sent_id = s16
+# text = Air dry 5-10 min (pellet will change from a glossy/wet to matte/dry. )
+1	Pipette	_	Action	_	_	0	_	_	Offset=756-767
+2	10	_	Numerical	_	_	0	_	_	Offset=768-770
+
+# sent_id = s17
+# text = Elute 20 uL of water or TE.
+1	Incubate	_	Action	_	_	0	_	_	Offset=778-786
+2	2	_	Time	_	_	0	_	_	Offset=787-796
+3	room	_	Temperature	_	_	0	_	_	Offset=800-816
+
+# sent_id = s18
+# text = Pipette mix 10 times.
+1	Place	_	Action	_	_	0	_	_	Offset=819-824
+2	magnetic	_	Device	_	_	0	_	_	Offset=828-842
+3	5	_	Time	_	_	0	_	_	Offset=844-849
+
+# sent_id = s19
+# text = Incubate 2 minutes at room temperature. 
+1	Keep	_	Action	_	_	0	_	_	Offset=852-856
+2	Supernatant	_	Reagent	_	_	0	_	_	Offset=857-868
+
+# sent_id = s20
+# text = Place on magnetic stand, 5 min. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=870-878
+2	new	_	Modifier	_	_	3	Mod-Link	4:Mod-Link	Offset=884-887
+3	plate	_	Location	_	_	0	_	_	Offset=888-893
+4	tubes	_	Location	_	_	3	Or	_	Offset=896-901
+

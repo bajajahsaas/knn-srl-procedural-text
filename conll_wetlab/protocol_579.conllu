@@ -1,0 +1,33 @@
+# sent_id = s1
+# text = Blunting Protocol for NEB PCR Cloning Kit (E1202)
+1	Mix	_	Action	_	_	0	_	_	Offset=50-53
+2	following	_	Modifier	_	_	3	Mod-Link	_	Offset=58-67
+3	components	_	Reagent	_	_	0	_	_	Offset=68-78
+4	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=84-91
+5	microfuge	_	Location	_	_	0	_	_	Offset=92-106
+
+# sent_id = s2
+# text = Mix the following components in a sterile microfuge tube: 
+1	restriction	_	Reagent	_	_	0	_	_	Offset=130-161
+2	incubated	_	Action	_	_	0	_	_	Offset=166-175
+3	room	_	Temperature	_	_	0	_	_	Offset=179-195
+4	15	_	Time	_	_	0	_	_	Offset=200-210
+
+# sent_id = s3
+# text = Reactions containing restriction enzyme digested DNA are incubated at room temperature for 15 minutes.
+1	sheared/nebulized	_	Reagent	_	_	0	_	_	Offset=227-248
+2	PCR	_	Reagent	_	_	1	Or	_	Offset=252-264
+3	incubated	_	Action	_	_	0	_	_	Offset=269-278
+4	room	_	Temperature	_	_	0	_	_	Offset=282-298
+5	30	_	Time	_	_	0	_	_	Offset=303-313
+
+# sent_id = s4
+# text = Reactions with sheared/nebulized DNA or PCR products are incubated at room temperature for 30 minutes.
+1	Immediately	_	Modifier	_	_	0	_	_	Offset=315-326
+2	inactivate	_	Action	_	_	0	_	_	Offset=327-337
+3	enzyme	_	Reagent	_	_	0	_	_	Offset=338-344
+4	in	_	Modifier	_	_	3	Mod-Link	_	Offset=345-369
+5	heating	_	Action	_	_	0	_	_	Offset=373-380
+6	70°C	_	Temperature	_	_	0	_	_	Offset=384-388
+7	10	_	Time	_	_	0	_	_	Offset=393-403
+

@@ -1,0 +1,32 @@
+# sent_id = s1
+# text = ESAW Media for Marine Phytoplankton. 
+1	Bring	_	Action	_	_	0	_	_	Offset=93-101
+2	500	_	Amount	_	_	3	Measure	_	Offset=102-108
+3	MilliQ	_	Reagent	_	_	0	_	_	Offset=109-121
+
+# sent_id = s2
+# text = Na2SO4 NaCl KCL NaHCO3 KBr H3BO NaF  (2.7 g/L stock). 
+1	Bring	_	Action	_	_	0	_	_	Offset=263-271
+2	500	_	Amount	_	_	3	Measure	_	Offset=272-278
+3	MilliQ	_	Reagent	_	_	0	_	_	Offset=279-291
+
+# sent_id = s3
+# text = Bring to 500 mL MilliQ water MgCl2-6H2O CaCl2-2H2O SrCl2-6H2O Tris-HCL (pH 7.8) (1.0 M stock) Fe-EDTA K2HPO4  (10g/L stock) NaNO3 (550 mM stock) Selenite (10 μM stock). 
+1	Autoclave	_	Action	_	_	0	_	_	Offset=294-303
+2	Solution	_	Reagent	_	_	0	_	_	Offset=304-314
+3	Solution	_	Reagent	_	_	0	_	_	Offset=319-330
+4	separately	_	Modifier	_	_	0	_	_	Offset=331-341
+
+# sent_id = s4
+# text = Bring to 500 mL MilliQ water. 
+1	Combine	_	Action	_	_	0	_	_	Offset=344-351
+2	Solution	_	Reagent	_	_	0	_	_	Offset=352-362
+3	Solution	_	Reagent	_	_	0	_	_	Offset=367-378
+
+# sent_id = s5
+# text = Autoclave Solution I and Solution II separately. 
+1	Add	_	Action	_	_	0	_	_	Offset=381-384
+2	trace	_	Reagent	_	_	0	_	_	Offset=385-407
+3	Add	_	Action	_	_	0	_	_	Offset=408-411
+4	Vitamin	_	Reagent	_	_	0	_	_	Offset=412-428
+

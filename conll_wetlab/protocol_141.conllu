@@ -1,0 +1,428 @@
+# sent_id = s1
+# text = One-Step Growth Curves for Cyanophages
+1	split	_	Action	_	_	0	_	_	Offset=72-77
+2	cells	_	Reagent	_	_	0	_	_	Offset=78-83
+
+# sent_id = s2
+# text = From an already growing culture, split cells at the ratio you will be splitting for the one step experiment.
+1	take	_	Action	_	_	0	_	_	Offset=177-181
+2	'time	_	Modifier	_	_	3	Mod-Link	_	Offset=184-192
+3	growth	_	Generic-Measure	_	_	0	_	_	Offset=193-207
+4	plate	_	Device	_	_	0	_	_	Offset=216-228
+
+# sent_id = s3
+# text = Immediately after the split, take a 'time 0' growth reading using a plate reader.
+1	Continue	_	Action	_	_	0	_	_	Offset=230-254
+2	in	_	Modifier	_	_	0	_	_	Offset=255-266
+3	at	_	Modifier	_	_	4	Mod-Link	_	Offset=267-307
+4	21	_	Time	_	_	0	_	_	Offset=312-319
+
+# sent_id = s4
+# text = Continue taking readings in this way at approximately the same time every day for 21 days.
+1	Graph	_	Action	_	_	0	_	_	Offset=321-326
+2	determine	_	Action	_	_	0	_	_	Offset=353-362
+
+# sent_id = s5
+# text = Graph the results as you go and determine when exponential growth occurs!
+1	Repeat	_	Action	_	_	0	_	_	Offset=395-401
+2	414	_	Numerical	_	_	3	Setting	_	Offset=402-403;409
+3	more	_	Modifier	_	_	0	_	_	Offset=404-408
+
+# sent_id = s6
+# text = Repeat 2 more times to ensure the host growth is consistent.
+1	fix	_	Action	_	_	0	_	_	Offset=522-525
+2	1	_	Amount	_	_	3	Measure	_	Offset=526-530
+3	cells	_	Reagent	_	_	0	_	_	Offset=534-539
+4	5	_	Amount	_	_	6	Measure	_	Offset=545-549
+5	25%	_	Concentration	_	_	6	Measure	_	Offset=550-553
+6	glutaraldehyde	_	Reagent	_	_	0	_	_	Offset=554-568
+
+# sent_id = s7
+# text = During your 3rd growth curve when exponential growth is occuring, fix 1 ml of cells with 5 µl 25% glutaraldehyde.
+1	Flash	_	Action	_	_	0	_	_	Offset=570-582
+2	liquid	_	Reagent	_	_	0	_	_	Offset=586-601
+3	daily	_	Time	_	_	0	_	_	Offset=602-607
+
+# sent_id = s8
+# text = Flash freeze in liquid nitrogen daily.
+1	Store	_	Action	_	_	0	_	_	Offset=609-614
+2	-80°C	_	Temperature	_	_	0	_	_	Offset=618-623
+3	freezer	_	Location	_	_	0	_	_	Offset=624-631
+
+# sent_id = s9
+# text = Store in -80°C freezer.
+1	Determine	_	Action	_	_	0	_	_	Offset=633-642
+2	cell	_	Amount	_	_	0	_	_	Offset=647-657
+
+# sent_id = s10
+# text = Determine the cell count (using FCM or DAPI) that is associated with the culture fluorescence level during exponential growth.
+1	infect	_	Action	_	_	0	_	_	Offset=774-780
+2	host	_	Reagent	_	_	0	_	_	Offset=785-789
+3	in	_	Modifier	_	_	0	_	_	Offset=790-828
+
+# sent_id = s11
+# text = It is best to infect the host in late-exponential (log linear) phase.
+1	Do	_	Action	_	_	0	_	_	Offset=830-847
+2	determine	_	Action	_	_	0	_	_	Offset=851-860
+3	PFU/ml	_	Concentration	_	_	0	_	_	Offset=865-871
+4	lysate	_	Reagent	_	_	0	_	_	Offset=879-885
+
+# sent_id = s12
+# text = Do a plaque assay to determine the PFU/ml of the lysate you plan to use.
+1	Calculate	_	Action	_	_	0	_	_	Offset=903-912
+2	volume	_	Amount	_	_	3	Setting	_	Offset=917-923
+3	needed	_	Modifier	_	_	0	_	_	Offset=924-930
+4	107	_	Numerical	_	_	5	Measure	_	Offset=935-938
+5	phages	_	Reagent	_	_	0	_	_	Offset=939-945
+
+# sent_id = s13
+# text = Calculate the volume needed for 107 phages.
+1	Determine	_	Action	_	_	0	_	_	Offset=947-956
+2	length	_	Time	_	_	0	_	_	Offset=961-975
+
+# sent_id = s14
+# text = Determine the length of time to sample during the one-step experiement.
+1	Prepare	_	Action	_	_	0	_	_	Offset=1019-1026
+2	dilutions	_	Reagent	_	_	3	Meronym	4:Meronym	Offset=1027-1036
+3	free	_	Reagent	_	_	0	_	_	Offset=1041-1051
+4	total	_	Reagent	_	_	0	_	_	Offset=1056-1067
+5	following	_	Method	_	_	0	_	_	Offset=1071-1110
+
+# sent_id = s15
+# text = Prepare dilutions for free phage and total phage by following the table found in guidelines.
+1	Turn	_	Action	_	_	0	_	_	Offset=1112-1119
+2	water	_	Location	_	_	0	_	_	Offset=1120-1130
+3	35°C	_	Temperature	_	_	0	_	_	Offset=1134-1138
+4	Label	_	Action	_	_	0	_	_	Offset=1139-1144
+5	1L	_	Size	_	_	6	Measure	_	Offset=1147-1149
+6	flask	_	Location	_	_	0	_	_	Offset=1150-1155
+7	phage	_	Reagent	_	_	0	_	_	Offset=1165-1170
+8	host	_	Reagent	_	_	0	_	_	Offset=1172-1176
+9	your	_	Device	_	_	0	_	_	Offset=1182-1195
+
+# sent_id = s16
+# text = Turn on water bath to 35°C Label a 1L flask with the phage, host, and your initials.
+1	Add	_	Action	_	_	0	_	_	Offset=1197-1200
+2	396	_	Amount	_	_	3	Measure	_	Offset=1201-1207
+3	SN	_	Reagent	_	_	0	_	_	Offset=1208-1216
+4	however	_	Amount	_	_	2	Or	_	Offset=1221-1249
+5	1L	_	Size	_	_	6	Measure	_	Offset=1258-1260
+6	flask	_	Location	_	_	0	_	_	Offset=1261-1266
+
+# sent_id = s17
+# text = Add 396 ml SN media (or however much to q. to 400 ml) to the 1L flask.
+1	Label	_	Action	_	_	0	_	_	Offset=1268-1273
+2	1	_	Numerical	_	_	4	Measure	_	Offset=1274-1275
+3	15ml	_	Amount	_	_	4	Measure	_	Offset=1276-1280
+4	snap	_	Location	_	_	0	_	_	Offset=1281-1294
+5	the	_	Device	_	_	0	_	_	Offset=1295-1315
+
+# sent_id = s18
+# text = Label 1 15ml snap cap tube the "Infection Tube".
+1	Label	_	Action	_	_	0	_	_	Offset=1317-1322
+2	230	_	Numerical	_	_	4	Measure	_	Offset=1323-1326
+3	15ml	_	Amount	_	_	4	Measure	_	Offset=1327-1331
+4	snap	_	Location	_	_	0	_	_	Offset=1332-1346
+5	the	_	Device	_	_	0	_	_	Offset=1352-1376
+
+# sent_id = s19
+# text = Label 230 15ml snap cap tubes with the red, bolded text ids.
+1	Add	_	Action	_	_	0	_	_	Offset=1378-1381
+2	1ml	_	Amount	_	_	3	Measure	_	Offset=1382-1385
+3	host	_	Reagent	_	_	0	_	_	Offset=1386-1390
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=1394-1398
+5	tube	_	Location	_	_	0	_	_	Offset=1399-1403
+
+# sent_id = s20
+# text = Add 1ml host to each tube.
+1	pour	_	Action	_	_	0	_	_	Offset=1422-1426
+2	240	_	Numerical	_	_	3	Measure	_	Offset=1427-1430
+3	SN	_	Reagent	_	_	0	_	_	Offset=1431-1452
+4	2ml	_	Amount	_	_	5	Measure	_	Offset=1454-1457
+5	SN	_	Reagent	_	_	0	_	_	Offset=1458-1472
+6	plate	_	Location	_	_	0	_	_	Offset=1477-1482
+
+# sent_id = s21
+# text = Days in advance, pour 240 SN bottom agar plates (2ml SN bottom agar per plate).
+1	Lay	_	Action	_	_	0	_	_	Offset=1485-1492
+2	SN	_	Reagent	_	_	0	_	_	Offset=1497-1518
+
+# sent_id = s22
+# text = Lay out the SN bottom agar plates.
+1	Label	_	Action	_	_	0	_	_	Offset=1520-1525
+2	230	_	Numerical	_	_	3	Measure	_	Offset=1526-1529
+3	SN	_	Reagent	_	_	0	_	_	Offset=1530-1551
+4	the	_	Device	_	_	0	_	_	Offset=1557-1581
+
+# sent_id = s23
+# text = Label 230 SN bottom agar plates with the red, bolded text ids.
+1	Label	_	Action	_	_	0	_	_	Offset=1583-1588
+2	2	_	Numerical	_	_	3	Measure	_	Offset=1589-1590
+3	plates	_	Location	_	_	0	_	_	Offset=1591-1597
+4	"Host	_	Device	_	_	0	_	_	Offset=1598-1608
+5	Label	_	Action	_	_	0	_	_	Offset=1609-1614
+6	1.5µl	_	Size	_	_	7	Measure	_	Offset=1615-1620
+7	centrifuge	_	Location	_	_	0	_	_	Offset=1621-1637
+8	ALL	_	Device	_	_	0	_	_	Offset=1643-1654
+
+# sent_id = s24
+# text = Label 2 plates "Host (-)" Label 1.5µl centrifuge tubes with ALL THE IDS (See table 1 guidelines).
+1	Add	_	Action	_	_	0	_	_	Offset=1681-1684
+2	900µl	_	Amount	_	_	3	Measure	_	Offset=1685-1690
+3	SN	_	Reagent	_	_	0	_	_	Offset=1691-1699
+4	the	_	Location	_	_	0	_	_	Offset=1703-1732
+
+# sent_id = s25
+# text = Add 900µl SN media to the ids highlighted in yellow.
+1	Add	_	Action	_	_	0	_	_	Offset=1734-1737
+2	990µl	_	Amount	_	_	3	Measure	_	Offset=1738-1743
+3	SN	_	Reagent	_	_	0	_	_	Offset=1744-1752
+4	the	_	Location	_	_	0	_	_	Offset=1756-1783
+
+# sent_id = s26
+# text = Add 990µl SN media to the ids highlighted in blue.
+1	Microwave	_	Action	_	_	0	_	_	Offset=1785-1794
+2	SN	_	Reagent	_	_	0	_	_	Offset=1795-1806
+
+# sent_id = s27
+# text = Microwave SN top agar.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=1808-1815
+2	heated	_	Modifier	_	_	3	Mod-Link	_	Offset=1816-1822
+3	SN	_	Reagent	_	_	0	_	_	Offset=1823-1840
+4	50ml	_	Size	_	_	5	Measure	_	Offset=1846-1850
+5	conical	_	Location	_	_	0	_	_	Offset=1851-1864
+
+# sent_id = s28
+# text = Aliquot heated SN media top agar into 50ml conical tubes.
+1	Keep	_	Action	_	_	0	_	_	Offset=1866-1875
+2	35°C	_	Temperature	_	_	0	_	_	Offset=1883-1887
+3	water	_	Location	_	_	0	_	_	Offset=1888-1898
+
+# sent_id = s29
+# text = Keep warm in the 35°C water bath.
+1	Determine	_	Action	_	_	0	_	_	Offset=1900-1909
+2	concentration	_	Concentration	_	_	3	Measure	_	Offset=1914-1927
+3	culture	_	Reagent	_	_	0	_	_	Offset=1936-1943
+
+# sent_id = s30
+# text = Determine the concentration of your culture at the time you want to start the infection.
+1	Calculate	_	Action	_	_	0	_	_	Offset=1989-1998
+2	volume	_	Amount	_	_	3	Measure	_	Offset=2003-2009
+3	host	_	Reagent	_	_	0	_	_	Offset=2013-2025
+4	108	_	Numerical	_	_	5	Measure	_	Offset=2037-2040
+5	cells	_	Reagent	_	_	0	_	_	Offset=2041-2046
+6	2ml	_	Amount	_	_	0	_	_	Offset=2054-2057
+7	SN	_	Reagent	_	_	0	_	_	Offset=2063-2071
+
+# sent_id = s31
+# text = Calculate the volume of host culture needed for 108 cells (q. to 2ml with SN media).
+1	Pipet	_	Action	_	_	0	_	_	Offset=2074-2079
+2	this	_	Amount	_	_	0	_	_	Offset=2080-2091
+3	15	_	Size	_	_	4	Measure	_	Offset=2101-2106
+4	snap	_	Location	_	_	0	_	_	Offset=2107-2120
+5	labeled	_	Modifier	_	_	4	Mod-Link	_	Offset=2121-2145
+
+# sent_id = s32
+# text = Pipet this amount into the 15 ml snap cap tube labeled "Infection Tube".
+1	Add	_	Action	_	_	0	_	_	Offset=2147-2150
+2	107	_	Numerical	_	_	3	Measure	_	Offset=2151-2154
+3	phages	_	Reagent	_	_	0	_	_	Offset=2155-2161
+4	2ml	_	Amount	_	_	0	_	_	Offset=2169-2172
+5	SN	_	Reagent	_	_	0	_	_	Offset=2178-2186
+6	tube	_	Location	_	_	0	_	_	Offset=2195-2199
+
+# sent_id = s33
+# text = Add 107 phages (q. to 2ml with SN media) to the tube.
+1	2227	_	Action	_	_	0	_	_	Offset=2201-2206;2221
+2	phages	_	Reagent	_	_	0	_	_	Offset=2211-2217
+3	host	_	Reagent	_	_	0	_	_	Offset=2235-2245
+4	1	_	Time	_	_	0	_	_	Offset=2250-2256
+
+# sent_id = s34
+# text = Allow the phages to adsorb to the host cells for 1 hour.
+1	Put	_	Action	_	_	0	_	_	Offset=2258-2261
+2	4ml	_	Amount	_	_	3	Measure	_	Offset=2266-2269
+3	infection	_	Reagent	_	_	0	_	_	Offset=2270-2279
+4	396ml	_	Amount	_	_	5	Measure	_	Offset=2285-2290
+5	SN	_	Reagent	_	_	0	_	_	Offset=2291-2299
+6	1L	_	Size	_	_	7	Measure	_	Offset=2305-2307
+7	flask	_	Location	_	_	5	Meronym	_	Offset=2308-2313
+8	dilute	_	Action	_	_	0	_	_	Offset=2317-2323
+9	infection	_	Reagent	_	_	0	_	_	Offset=2328-2337
+10	1:100	_	Concentration	_	_	0	_	_	Offset=2341-2346
+
+# sent_id = s35
+# text = Put the 4ml infection into 396ml SN media in a 1L flask to dilute the infection to 1:100.
+1	Take	_	Action	_	_	0	_	_	Offset=2348-2361
+2	immediately	_	Time	_	_	0	_	_	Offset=2362-2388
+
+# sent_id = s36
+# text = Take a sample immediately after dilution - this is time 0.
+1	Remove	_	Action	_	_	0	_	_	Offset=2407-2413
+2	plunger	_	Seal	_	_	0	_	_	Offset=2418-2425
+3	1ml	_	Size	_	_	4	Setting	_	Offset=2429-2432
+4	luer-lock	_	Device	_	_	2	Meronym	_	Offset=2433-2450
+
+# sent_id = s37
+# text = Remove the plunger of 1ml luer-lock syringe.
+1	Add	_	Action	_	_	0	_	_	Offset=2452-2455
+2	0.2	_	Size	_	_	3	Measure	_	Offset=2458-2478
+3	syringe	_	Seal	_	_	0	_	_	Offset=2479-2493
+4	the	_	Location	_	_	0	_	_	Offset=2497-2512
+
+# sent_id = s38
+# text = Add a 0.2 µm 25mm diameter syringe filter to the syringe end.
+1	Pipet	_	Action	_	_	0	_	_	Offset=2514-2519
+2	1	_	Amount	_	_	0	_	_	Offset=2520-2524
+3	the	_	Location	_	_	0	_	_	Offset=2530-2539
+4	the	_	Location	_	_	0	_	_	Offset=2545-2556
+5	1	_	Size	_	_	6	Measure	_	Offset=2563-2567
+6	serological	_	Device	_	_	0	_	_	Offset=2568-2585
+
+# sent_id = s39
+# text = Pipet 1 ml from the flask into the syringe using 1 ml serological pipet.
+1	Add	_	Action	_	_	0	_	_	Offset=2587-2590
+2	plunger	_	Seal	_	_	0	_	_	Offset=2595-2602
+3	syringe	_	Location	_	_	0	_	_	Offset=2615-2622
+4	0.2µm	_	Size	_	_	0	_	_	Offset=2627-2632
+5	syringe	_	Seal	_	_	0	_	_	Offset=2633-2647
+6	1.5	_	Size	_	_	0	_	_	Offset=2664-2670
+7	centrifuge	_	Location	_	_	0	_	_	Offset=2671-2686
+
+# sent_id = s40
+# text = Add the plunger back to the syringe and 0.2µm syringe filter the 1 ml into a 1.5 ml centrifuge tube.
+1	Perform	_	Action	_	_	0	_	_	Offset=2688-2713
+2	dilute	_	Action	_	_	0	_	_	Offset=2717-2723
+3	sample	_	Reagent	_	_	0	_	_	Offset=2728-2734
+4	102	_	Concentration	_	_	0	_	_	Offset=2738-2764
+
+# sent_id = s41
+# text = Perform a serial dilution to dilute the sample to 102 per ml (10-3 dilution).
+1	Add	_	Action	_	_	0	_	_	Offset=2766-2769
+2	250µl	_	Amount	_	_	4	Measure	_	Offset=2770-2775
+3	10-3	_	Concentration	_	_	4	Measure	_	Offset=2783-2787
+4	dilution	_	Reagent	_	_	0	_	_	Offset=2788-2796
+5	250µl	_	Amount	_	_	7	Measure	_	Offset=2801-2806
+6	10-2	_	Concentration	_	_	7	Measure	_	Offset=2814-2818
+7	dilution	_	Reagent	_	_	0	_	_	Offset=2819-2827
+8	15ml	_	Size	_	_	9	Measure	_	Offset=2849-2853
+9	snap	_	Location	_	_	0	_	_	Offset=2854-2867
+10	1ml	_	Amount	_	_	11	Measure	_	Offset=2873-2876
+11	host	_	Reagent	_	_	0	_	_	Offset=2877-2881
+
+# sent_id = s42
+# text = Add 250µl of the 10-3 dilution and 250µl of the 10-2 dilution to the corresponding 15ml snap cap tube with 1ml host.
+1	2915	_	Action	_	_	0	_	_	Offset=2883-2888;2904
+2	phage	_	Reagent	_	_	0	_	_	Offset=2889-2894
+3	host	_	Reagent	_	_	0	_	_	Offset=2899-2903
+4	2	_	Time	_	_	0	_	_	Offset=2920-2927
+
+# sent_id = s43
+# text = Allow phage and host to incubate for 2 hours.
+1	Plate	_	Action	_	_	0	_	_	Offset=2929-2934
+2	4ml	_	Amount	_	_	3	Measure	_	Offset=2941-2944
+3	SN	_	Reagent	_	_	0	_	_	Offset=2945-2956
+4	per	_	Modifier	_	_	2	Mod-Link	_	Offset=2957-2966
+
+# sent_id = s44
+# text = Plate using 4ml SN top agar per plate.
+1	Pipette	_	Action	_	_	0	_	_	Offset=2968-2975
+2	1ml	_	Amount	_	_	0	_	_	Offset=2976-2979
+3	the	_	Location	_	_	0	_	_	Offset=2985-2994
+4	1.5ml	_	Size	_	_	5	Measure	_	Offset=3002-3007
+5	centrifuge	_	Location	_	_	0	_	_	Offset=3008-3023
+6	1ml	_	Size	_	_	7	Measure	_	Offset=3039-3042
+7	serological	_	Device	_	_	0	_	_	Offset=3043-3062
+
+# sent_id = s45
+# text = Pipette 1ml from the flask into a 1.5ml centrifuge tube using the same 1ml serological pipette.
+1	Perform	_	Action	_	_	0	_	_	Offset=3064-3089
+2	dilute	_	Action	_	_	0	_	_	Offset=3093-3099
+3	sample	_	Reagent	_	_	0	_	_	Offset=3104-3110
+4	102	_	Concentration	_	_	0	_	_	Offset=3114-3131
+
+# sent_id = s46
+# text = Perform a serial dilution to dilute the sample to 102 per ml (10-3).
+1	Add	_	Action	_	_	0	_	_	Offset=3133-3136
+2	250µl	_	Amount	_	_	0	_	_	Offset=3137-3142
+3	10-3	_	Concentration	_	_	0	_	_	Offset=3150-3154
+4	dilution	_	Reagent	_	_	0	_	_	Offset=3155-3163
+5	250µl	_	Amount	_	_	0	_	_	Offset=3168-3173
+6	10-2	_	Concentration	_	_	0	_	_	Offset=3181-3185
+7	dilution	_	Reagent	_	_	0	_	_	Offset=3186-3194
+8	15ml	_	Size	_	_	9	Measure	_	Offset=3216-3220
+9	snap	_	Location	_	_	0	_	_	Offset=3221-3234
+10	1ml	_	Amount	_	_	0	_	_	Offset=3240-3243
+11	host	_	Reagent	_	_	0	_	_	Offset=3244-3248
+
+# sent_id = s47
+# text = Add 250µl of the 10-3 dilution and 250µl of the 10-2 dilution to the corresponding 15ml snap cap tube with 1ml host.
+1	3282	_	Action	_	_	0	_	_	Offset=3250-3255;3274
+2	phage	_	Reagent	_	_	0	_	_	Offset=3256-3261
+3	host	_	Reagent	_	_	0	_	_	Offset=3266-3270
+4	plate	_	Action	_	_	0	_	_	Offset=3304-3309
+5	4ml	_	Amount	_	_	6	Measure	_	Offset=3316-3319
+6	SN	_	Reagent	_	_	0	_	_	Offset=3320-3331
+7	per	_	Modifier	_	_	5	Mod-Link	_	Offset=3332-3341
+
+# sent_id = s48
+# text = Allow phage and host to incubate for 2 hours and then plate using 4ml SN top agar per plate.
+1	Continue	_	Action	_	_	0	_	_	Offset=3343-3360
+2	in	_	Modifier	_	_	0	_	_	Offset=3361-3372
+3	16	_	Time	_	_	0	_	_	Offset=3377-3385
+4	sample	_	Action	_	_	0	_	_	Offset=3391-3397
+5	3411	_	Numerical	_	_	6	Setting	_	Offset=3398-3401;3407
+6	more	_	Modifier	_	_	0	_	_	Offset=3402-3406
+7	24	_	Time	_	_	0	_	_	Offset=3415-3421
+
+# sent_id = s49
+# text = Continue sampling in this way for 16 hours (and sample one more time at 24 hrs).
+1	more	_	Modifier	_	_	2	Mod-Link	_	Offset=3445-3449
+2	dilutions	_	Reagent	_	_	0	_	_	Offset=3450-3459
+3	plated	_	Action	_	_	0	_	_	Offset=3476-3482
+
+# sent_id = s50
+# text = At later time points more dilutions will need to be plated.
+1	count	_	Action	_	_	0	_	_	Offset=3627-3632
+2	plaques	_	Reagent	_	_	0	_	_	Offset=3637-3644
+3	plates	_	Location	_	_	2	Meronym	_	Offset=3652-3658
+4	that	_	Modifier	_	_	3	Mod-Link	_	Offset=3659-3695
+
+# sent_id = s51
+# text = Be generous with what you plate (i.e., plate 10-2, 10-3, 10-4, 10-5).
+1	Count	_	Action	_	_	0	_	_	Offset=3697-3708
+2	day	_	Time	_	_	0	_	_	Offset=3712-3718
+3	21	_	Time	_	_	0	_	_	Offset=3723-3725
+
+# sent_id = s52
+# text = The serial dilutions should be performed as shown below: 
+1	Calculate	_	Action	_	_	0	_	_	Offset=3727-3743
+2	each	_	Time	_	_	0	_	_	Offset=3747-3762
+3	centrifuged	_	Modifier	_	_	5	Mod-Link	_	Offset=3776-3805
+4	not	_	Modifier	_	_	5	Mod-Link	_	Offset=3810-3839
+5	samples	_	Reagent	_	_	0	_	_	Offset=3840-3847
+
+# sent_id = s53
+# text = In seven days, count the plaques on all plates that have a countable number of them.
+1	Graph	_	Action	_	_	0	_	_	Offset=3849-3866
+
+# sent_id = s54
+# text = Count again on day 14 and 21.
+1	Calculate	_	Action	_	_	0	_	_	Offset=3868-3888
+
+# sent_id = s55
+# text = Calculate PFU/ml at each time point for both the centrifuged (free phage only) and not centrifuged (total phage) samples.
+1	Take	_	Action	_	_	0	_	_	Offset=3890-3917
+
+# sent_id = s56
+# text = Graph the results.
+1	Take	_	Action	_	_	0	_	_	Offset=3974-4001
+
+# sent_id = s57
+# text = Calculate burst size.
+1	Subtract	_	Action	_	_	0	_	_	Offset=4057-4065
+
+# sent_id = s58
+# text = Take the FREE phage average of the time points on the plateau before the burst (A).
+1	Divide	_	Action	_	_	0	_	_	Offset=4124-4130
+

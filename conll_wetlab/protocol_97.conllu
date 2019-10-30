@@ -1,0 +1,12 @@
+# sent_id = s1
+# text = 0.5M EDTA
+1	46.525g	_	Amount	_	_	2	Measure	_	Offset=10-17
+2	EDTA	_	Reagent	_	_	0	_	_	Offset=18-36
+3	200ml	_	Amount	_	_	4	Measure	_	Offset=40-45
+4	MilliQ	_	Reagent	_	_	0	_	_	Offset=46-52
+5	Adjust	_	Action	_	_	0	_	_	Offset=53-59
+6	pH	_	pH	_	_	0	_	_	Offset=63-69
+7	NaOH	_	Reagent	_	_	0	_	_	Offset=75-87
+8	~5g	_	Amount	_	_	7	Measure	_	Offset=89-92
+9	Autoclave	_	Action	_	_	0	_	_	Offset=94-103
+

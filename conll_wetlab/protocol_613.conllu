@@ -1,0 +1,118 @@
+# sent_id = s1
+# text = A Non-Interfering™ (NI) Protein Assay Perform assays at room temperature.
+1	Use	_	Action	_	_	0	_	_	Offset=74-77
+2	2ml	_	Amount	_	_	3	Measure	_	Offset=78-81
+3	tubes	_	Location	_	_	0	_	_	Offset=82-87
+4	assay	_	Reagent	_	_	0	_	_	Offset=92-97
+
+# sent_id = s2
+# text = Use 2ml tubes for assay.
+1	p	_	Action	_	_	0	_	_	Offset=102-103
+2	set	_	Modifier	_	_	3	Mod-Link	_	Offset=109-112
+3	protein	_	Reagent	_	_	0	_	_	Offset=116-133
+4	supplied	_	Modifier	_	_	5	Mod-Link	_	Offset=144-152
+5	BSA	_	Reagent	_	_	0	_	_	Offset=153-156
+6	Non-Animal	_	Reagent	_	_	5	Or	_	Offset=160-187
+
+# sent_id = s3
+# text = Prepare a set of protein standards using the supplied BSA or Non-Animal Protein Standard as indicated in the table below: Tube #123456Protein Standard [2mg/ml] (µl)048122025Protein (µg)0816244050.  
+1	Add	_	Action	_	_	0	_	_	Offset=298-301
+2	1-50µl	_	Amount	_	_	3	Measure	_	Offset=302-308
+3	protein	_	Reagent	_	_	0	_	_	Offset=316-331
+4	2ml	_	Amount	_	_	5	Measure	_	Offset=349-352
+5	tubes	_	Location	_	_	0	_	_	Offset=353-358
+
+# sent_id = s4
+# text = Add 1-50µl of the protein samples to be assayed to 2ml tubes.
+1	Add	_	Action	_	_	0	_	_	Offset=360-363
+2	0.5ml	_	Amount	_	_	3	Measure	_	Offset=364-369
+3	UPPA™	_	Reagent	_	_	0	_	_	Offset=370-377
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=381-385
+5	tube	_	Location	_	_	0	_	_	Offset=386-390
+6	vortex	_	Action	_	_	0	_	_	Offset=395-401
+
+# sent_id = s5
+# text = Add 0.5ml UPPA™ I to each tube and vortex.
+1	Incubate	_	Action	_	_	0	_	_	Offset=403-411
+2	2-3	_	Time	_	_	0	_	_	Offset=416-427
+3	room	_	Temperature	_	_	0	_	_	Offset=431-447
+
+# sent_id = s6
+# text = Incubate for 2-3 minutes at room temperature.
+1	Add	_	Action	_	_	0	_	_	Offset=449-452
+2	0.5ml	_	Amount	_	_	3	Measure	_	Offset=453-458
+3	UPPA™	_	Reagent	_	_	0	_	_	Offset=459-467
+4	tubes	_	Location	_	_	0	_	_	Offset=475-480
+5	vortex	_	Action	_	_	0	_	_	Offset=485-491
+
+# sent_id = s7
+# text = Add 0.5ml UPPA™ II to the tubes and vortex.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=493-503
+2	tubes	_	Location	_	_	0	_	_	Offset=508-513
+3	~10,000xg	_	Speed	_	_	0	_	_	Offset=532-541
+4	5	_	Time	_	_	0	_	_	Offset=547-556
+5	pellet	_	Action	_	_	0	_	_	Offset=560-566
+6	precipitated	_	Modifier	_	_	7	Mod-Link	_	Offset=571-583
+7	protein	_	Reagent	_	_	0	_	_	Offset=584-591
+
+# sent_id = s8
+# text = Centrifuge the tubes at maximum speed (~10,000xg) for 5 minutes to pellet the precipitated protein.
+1	Decant	_	Action	_	_	0	_	_	Offset=593-603
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=608-619
+3	return	_	Action	_	_	0	_	_	Offset=621-627
+4	tubes	_	Location	_	_	0	_	_	Offset=632-637
+5	centrifuge	_	Device	_	_	0	_	_	Offset=645-655
+6	before	_	Method	_	_	0	_	_	Offset=659-665
+7	quickly	_	Modifier	_	_	0	_	_	Offset=667-674
+8	pulse	_	Action	_	_	0	_	_	Offset=675-680
+9	spin	_	Action	_	_	0	_	_	Offset=684-693
+10	residual	_	Modifier	_	_	11	Mod-Link	_	Offset=694-702
+11	liquid	_	Reagent	_	_	0	_	_	Offset=703-709
+12	remove	_	Action	_	_	0	_	_	Offset=714-720
+13	pipette	_	Device	_	_	0	_	_	Offset=728-735
+
+# sent_id = s9
+# text = Decant off the supernatant, return the tubes to the centrifuge as before, quickly pulse to spin down residual liquid and remove with a pipette.
+1	Add	_	Action	_	_	0	_	_	Offset=737-740
+2	100µl	_	Amount	_	_	3	Measure	_	Offset=741-746
+3	Copper	_	Reagent	_	_	0	_	_	Offset=747-762
+4	400µl	_	Amount	_	_	6	Measure	_	Offset=779-784
+5	deionized	_	Modifier	_	_	6	Mod-Link	_	Offset=785-794
+6	water	_	Reagent	_	_	0	_	_	Offset=795-800
+7	tubes	_	Location	_	_	0	_	_	Offset=808-813
+8	vortex	_	Action	_	_	0	_	_	Offset=818-824
+
+# sent_id = s10
+# text = Add 100µl Copper Solution (Reagent I) and 400µl deionized water to the tubes and vortex until the protein precipitate pellet dissolves.
+1	1ml	_	Amount	_	_	2	Setting	_	Offset=879-882
+2	pipette	_	Device	_	_	0	_	_	Offset=883-890
+3	rapidly	_	Modifier	_	_	0	_	_	Offset=892-899
+4	shoot	_	Action	_	_	0	_	_	Offset=900-905
+5	1ml	_	Amount	_	_	6	Measure	_	Offset=906-909
+6	Reagent	_	Reagent	_	_	0	_	_	Offset=910-920
+7	directly	_	Modifier	_	_	0	_	_	Offset=921-929
+8	each	_	Modifier	_	_	9	Mod-Link	_	Offset=935-939
+9	tube	_	Location	_	_	10	Meronym	11:Meronym|14:Coreference-Link	Offset=940-944
+10	Reagent	_	Reagent	_	_	0	_	_	Offset=956-965
+11	DI	_	Reagent	_	_	0	_	_	Offset=971-979
+12	immediately	_	Modifier	_	_	0	_	_	Offset=984-995
+13	mix	_	Action	_	_	0	_	_	Offset=996-999
+14	it	_	Mention	_	_	0	_	_	Offset=1000-1002
+15	inverting	_	Action	_	_	0	_	_	Offset=1006-1015
+16	tubes	_	Location	_	_	0	_	_	Offset=1020-1025
+
+# sent_id = s11
+# text = Using 1ml pipette, rapidly shoot 1ml Reagent II directly into each tube containing Reagent I plus DI Water and immediately mix it by inverting the tubes.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1027-1035
+2	room	_	Temperature	_	_	0	_	_	Offset=1039-1055
+3	15-20	_	Time	_	_	0	_	_	Offset=1060-1073
+4	immediately	_	Modifier	_	_	0	_	_	Offset=1083-1094
+5	read	_	Action	_	_	0	_	_	Offset=1095-1099
+6	absorbances	_	Measure-Type	_	_	0	_	_	Offset=1100-1111
+7	480nm	_	Generic-Measure	_	_	0	_	_	Offset=1115-1120
+8	DI	_	Reagent	_	_	0	_	_	Offset=1129-1137
+
+# sent_id = s12
+# text = Incubate at room temperature for 15-20 minutes and then immediately read absorbances at 480nm against DI water.
+1	Plot	_	Action	_	_	0	_	_	Offset=1139-1143
+

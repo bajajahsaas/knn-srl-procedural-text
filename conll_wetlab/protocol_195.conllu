@@ -1,0 +1,150 @@
+# sent_id = s1
+# text = Quick Fungal DNA Extraction
+1	Inoculate	_	Action	_	_	0	_	_	Offset=28-37
+2	fungal	_	Reagent	_	_	0	_	_	Offset=38-53
+3	300	_	Amount	_	_	4	Measure	_	Offset=59-65
+4	rich	_	Reagent	_	_	0	_	_	Offset=66-84
+5	2	_	Modifier	_	_	6	Mod-Link	_	Offset=90-94
+6	micro-centrifuge	_	Device	_	_	0	_	_	Offset=95-116
+7	Grow	_	Action	_	_	0	_	_	Offset=117-121
+8	RT	_	Temperature	_	_	0	_	_	Offset=125-127
+9	3-4	_	Time	_	_	0	_	_	Offset=132-140
+
+# sent_id = s2
+# text = Inoculate fungal material into 300 µL rich growth medium in a 2 mL micro-centrifuge tube.Grow at RT for 3-4 days.
+1	Freeze	_	Action	_	_	0	_	_	Offset=142-148
+2	culture	_	Reagent	_	_	0	_	_	Offset=149-162
+3	LN2Freeze	_	Reagent	_	_	0	_	_	Offset=166-175
+
+# sent_id = s3
+# text = Freeze culture tubes in LN2Freeze dry over night. 
+1	Add	_	Action	_	_	0	_	_	Offset=193-196
+2	50	_	Amount	_	_	4	Measure	_	Offset=197-202
+3	0.6mm	_	Modifier	_	_	4	Mod-Link	_	Offset=203-208
+4	glass	_	Reagent	_	_	0	_	_	Offset=209-220
+5	grind	_	Action	_	_	0	_	_	Offset=261-266
+6	Tissue-Lyser	_	Device	_	_	0	_	_	Offset=273-288
+7	5	_	Time	_	_	6	Setting	_	Offset=293-299
+8	50	_	Amount	_	_	6	Setting	_	Offset=303-308
+
+# sent_id = s4
+# text = Add 50 µL 0.6mm glass beads to freeze-dried sample in 2 mL tube and grind using Tissue-Lyser LT for 5 mins at 50 Hz. 
+1	Add	_	Action	_	_	0	_	_	Offset=311-314
+2	500	_	Amount	_	_	3	Measure	_	Offset=315-321
+3	lysis	_	Reagent	_	_	0	_	_	Offset=322-334
+
+# sent_id = s5
+# text = Add 500 µL lysis buffer to pulverised sample.
+1	Vortex	_	Action	_	_	0	_	_	Offset=357-363
+2	mix	_	Action	_	_	0	_	_	Offset=367-370
+3	45	_	Temperature	_	_	0	_	_	Offset=379-384
+4	5	_	Time	_	_	0	_	_	Offset=389-395
+5	shaking	_	Action	_	_	0	_	_	Offset=397-404
+6	1200	_	Speed	_	_	0	_	_	Offset=408-416
+
+# sent_id = s6
+# text = Vortex to mix Heat to 45 ˚C for 5 mins, shaking at 1200 rpm.
+1	Add	_	Action	_	_	0	_	_	Offset=418-421
+2	0.5	_	Amount	_	_	4	Measure	_	Offset=422-438
+3	3	_	Concentration	_	_	4	Measure	_	Offset=439-442
+4	Potassium	_	Reagent	_	_	0	_	_	Offset=443-460
+5	lysis	_	Reagent	_	_	0	_	_	Offset=464-473
+
+# sent_id = s7
+# text = Add 0.5 vol (250 µL) 3 M Potassium Acetate to lysis mix.
+1	Vortex	_	Action	_	_	0	_	_	Offset=475-481
+2	mix	_	Action	_	_	0	_	_	Offset=485-488
+
+# sent_id = s8
+# text = Vortex to mix.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=490-500
+2	12	_	Speed	_	_	0	_	_	Offset=504-512
+3	15	_	Time	_	_	0	_	_	Offset=530-540
+4	4˚C	_	Temperature	_	_	0	_	_	Offset=543-546
+
+# sent_id = s9
+# text = Centrifuge at 12 K rpm for a minimum of 15 minutes @ 4˚C.
+1	Transfer	_	Action	_	_	0	_	_	Offset=548-556
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=557-568
+3	1.5	_	Modifier	_	_	4	Mod-Link	_	Offset=589-595
+4	microcentrifuge	_	Device	_	_	0	_	_	Offset=596-616
+
+# sent_id = s10
+# text = Transfer supernatant (~ 650 µL) to fresh 1.5 mL microcentrifuge tube.
+1	Add	_	Action	_	_	0	_	_	Offset=618-621
+2	1	_	Amount	_	_	4	Measure	_	Offset=622-627
+3	chilled	_	Modifier	_	_	4	Mod-Link	_	Offset=628-635
+4	Isopropanol	_	Reagent	_	_	0	_	_	Offset=636-647
+5	mix	_	Action	_	_	0	_	_	Offset=681-684
+6	incubate	_	Action	_	_	0	_	_	Offset=691-699
+7	-20˚C	_	Temperature	_	_	0	_	_	Offset=700-705
+8	1hr	_	Time	_	_	0	_	_	Offset=710-713
+
+# sent_id = s11
+# text = Add 1 vol chilled Isopropanol ( ~ 700 µL ) to the supernatant, mix well, incubate -20˚C for 1hr.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=715-725
+2	12	_	Speed	_	_	0	_	_	Offset=729-737
+3	15	_	Time	_	_	0	_	_	Offset=755-765
+4	4°C	_	Temperature	_	_	0	_	_	Offset=769-772
+
+# sent_id = s12
+# text = Centrifuge at 12 K rpm for a minimum of 15 minutes at 4°C.
+1	Decant	_	Action	_	_	0	_	_	Offset=774-780
+2	aspirate	_	Action	_	_	0	_	_	Offset=791-799
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=800-811
+
+# sent_id = s13
+# text = Decant gently or aspirate supernatant.
+1	add	_	Action	_	_	0	_	_	Offset=827-830
+2	500	_	Amount	_	_	4	Measure	_	Offset=831-837
+3	70%	_	Concentration	_	_	4	Measure	_	Offset=838-841
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=842-849
+5	stored	_	Action	_	_	0	_	_	Offset=850-856
+6	-20°C	_	Temperature	_	_	0	_	_	Offset=860-865
+
+# sent_id = s14
+# text = To the pellet add 500 µL 70% ethanol stored at -20°C.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=867-877
+2	12	_	Speed	_	_	0	_	_	Offset=881-889
+3	3	_	Time	_	_	0	_	_	Offset=907-916
+4	4°C	_	Temperature	_	_	0	_	_	Offset=920-923
+
+# sent_id = s15
+# text = Centrifuge at 12 K rpm for a minimum of 3 minutes at 4°C.
+1	Discard	_	Action	_	_	0	_	_	Offset=925-932
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=933-944
+
+# sent_id = s16
+# text = Discard supernatant.
+1	Repeat	_	Action	_	_	0	_	_	Offset=946-952
+2	500	_	Amount	_	_	4	Measure	_	Offset=968-974
+3	70%	_	Concentration	_	_	4	Measure	_	Offset=983-986
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=987-994
+
+# sent_id = s17
+# text = Repeat wash step with 500 µL of cold 70% ethanol.
+1	Spin	_	Action	_	_	0	_	_	Offset=996-1000
+2	discard	_	Action	_	_	0	_	_	Offset=1005-1012
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=1013-1024
+
+# sent_id = s18
+# text = Spin and discard supernatant.
+1	Dry	_	Action	_	_	0	_	_	Offset=1026-1029
+2	pellet	_	Reagent	_	_	0	_	_	Offset=1030-1036
+3	45˚C	_	Temperature	_	_	0	_	_	Offset=1053-1057
+4	5-10	_	Time	_	_	0	_	_	Offset=1062-1074
+
+# sent_id = s19
+# text = Dry pellet in speed-vac at 45˚C for 5-10 minutes.
+1	Re-suspend	_	Action	_	_	0	_	_	Offset=1076-1086
+2	nuclease	_	Reagent	_	_	0	_	_	Offset=1097-1116
+3	TE	_	Reagent	_	_	0	_	_	Offset=1120-1129
+
+# sent_id = s20
+# text = Re-suspend pellet in nuclease free water or TE buffer (10 mM Tris pH 8.0, 1 mM EDTA pH 8.0).
+1	Add	_	Action	_	_	0	_	_	Offset=1169-1172
+2	50	_	Amount	_	_	4	Measure	_	Offset=1173-1178
+3	3M	_	Concentration	_	_	4	Measure	_	Offset=1179-1181
+4	Sodium	_	Reagent	_	_	0	_	_	Offset=1182-1196
+5	pH	_	pH	_	_	4	Measure	_	Offset=1197-1203
+

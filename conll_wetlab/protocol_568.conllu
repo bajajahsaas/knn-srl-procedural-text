@@ -1,0 +1,156 @@
+# sent_id = s1
+# text = Flex-T™ Tetramer and Cell Staining Protocol
+1	Bring	_	Action	_	_	0	_	_	Offset=44-49
+2	0°C	_	Temperature	_	_	0	_	_	Offset=66-69
+3	ice	_	Location	_	_	0	_	_	Offset=89-92
+
+# sent_id = s2
+# text = Bring all reagents to 0°C by putting them on ice.
+1	Dilute	_	Action	_	_	0	_	_	Offset=94-100
+2	10mM	_	Concentration	_	_	3	Measure	_	Offset=101-105
+3	stock	_	Reagent	_	_	0	_	_	Offset=106-133
+4	400μM	_	Concentration	_	_	0	_	_	Offset=147-152
+5	5μl	_	Amount	_	_	6	Measure	_	Offset=163-166
+6	peptide	_	Reagent	_	_	0	_	_	Offset=170-192
+7	120μl	_	Amount	_	_	8	Measure	_	Offset=198-203
+8	PBS	_	Reagent	_	_	0	_	_	Offset=204-207
+9	ice	_	Location	_	_	0	_	_	Offset=221-224
+
+# sent_id = s3
+# text = Dilute 10mM stock solutions of peptides of choice to 400μM by mixing 5μl of peptide stock solution with 120μl PBS, and keep on ice.
+1	Add	_	Action	_	_	0	_	_	Offset=226-229
+2	20μl	_	Amount	_	_	3	Measure	_	Offset=230-234
+3	diluted	_	Reagent	_	_	0	_	_	Offset=235-250
+4	20μl	_	Amount	_	_	0	_	_	Offset=263-267
+5	Flex-T™	_	Reagent	_	_	4	Or	_	Offset=280-295
+6	200μg/mL	_	Concentration	_	_	5	Measure	_	Offset=297-305
+7	96-well	_	Device	_	_	0	_	_	Offset=312-334
+
+# sent_id = s4
+# text = Add 20μl diluted peptide (400μM) and 20μl conditional Flex-T™ monomer (200μg/mL) into 96-well U-bottom plate.
+1	Mix	_	Action	_	_	0	_	_	Offset=336-339
+2	pipetting	_	Method	_	_	0	_	_	Offset=343-352
+
+# sent_id = s5
+# text = Mix by pipetting up and down.
+1	Seal	_	Action	_	_	0	_	_	Offset=366-370
+2	plate	_	Device	_	_	0	_	_	Offset=375-380
+3	centrifuge	_	Action	_	_	0	_	_	Offset=382-392
+4	3300xg	_	Speed	_	_	0	_	_	Offset=396-402
+5	2	_	Time	_	_	0	_	_	Offset=407-416
+6	4°C	_	Temperature	_	_	0	_	_	Offset=420-423
+
+# sent_id = s6
+# text = Seal the plate; centrifuge at 3300xg for 2 minutes at 4°C to collect the liquid down.
+1	Remove	_	Action	_	_	0	_	_	Offset=452-458
+2	seal	_	Device	_	_	0	_	_	Offset=463-467
+3	put	_	Action	_	_	0	_	_	Offset=469-472
+4	plate	_	Device	_	_	0	_	_	Offset=477-482
+5	illuminate	_	Action	_	_	0	_	_	Offset=494-504
+6	UV	_	Device	_	_	0	_	_	Offset=510-518
+7	30	_	Time	_	_	6	Setting	_	Offset=523-533
+
+# sent_id = s7
+# text = Remove the seal; put the plate on ice and illuminate with UV light for 30 minutes (the distance of the UVlamp to the samples should be 2-5 cm).
+1	Seal	_	Action	_	_	0	_	_	Offset=596-600
+2	plate	_	Device	_	_	0	_	_	Offset=605-610
+3	incubate	_	Action	_	_	0	_	_	Offset=612-620
+4	30	_	Time	_	_	0	_	_	Offset=625-635
+5	37°C	_	Temperature	_	_	0	_	_	Offset=639-643
+
+# sent_id = s8
+# text = Seal the plate; incubate for 30 minutes at 37°C in the dark.
+1	Transfer	_	Action	_	_	0	_	_	Offset=779-787
+2	30μl	_	Amount	_	_	3	Measure	_	Offset=788-792
+3	peptide-exchanged	_	Reagent	_	_	0	_	_	Offset=796-821
+4	new	_	Device	_	_	0	_	_	Offset=829-838
+5	3.3μl	_	Amount	_	_	6	Measure	_	Offset=849-854
+6	conjugated	_	Reagent	_	_	0	_	_	Offset=858-881
+7	mix	_	Action	_	_	0	_	_	Offset=883-886
+8	pipetting	_	Method	_	_	0	_	_	Offset=890-899
+
+# sent_id = s9
+# text = To evaluate the efficiency of the peptide exchange follow the Protocol for HLA class I ELISA to evaluatepeptide exchange.
+1	Incubate	_	Action	_	_	0	_	_	Offset=913-921
+2	ice	_	Location	_	_	0	_	_	Offset=925-928
+3	30	_	Time	_	_	0	_	_	Offset=945-955
+
+# sent_id = s10
+# text = Transfer 30μl of peptide-exchanged monomer into a new plate, then add 3.3μl of conjugated streptavidin, mix by pipetting up-and-down.
+1	adding	_	Action	_	_	0	_	_	Offset=1462-1468
+2	1.6μl	_	Amount	_	_	4	Measure	_	Offset=1469-1474
+3	50mM	_	Concentration	_	_	4	Measure	_	Offset=1475-1479
+4	D-Biotin	_	Reagent	_	_	0	_	_	Offset=1480-1488
+
+# sent_id = s11
+# text = Incubate on ice in the dark for 30 minutes.
+1	add	_	Action	_	_	0	_	_	Offset=1568-1571
+2	pipette	_	Action	_	_	0	_	_	Offset=1603-1610
+
+# sent_id = s12
+# text = This is enoughfor about 15 tests.
+1	Seal	_	Action	_	_	0	_	_	Offset=1645-1649
+2	plate	_	Device	_	_	0	_	_	Offset=1654-1659
+3	incubate	_	Action	_	_	0	_	_	Offset=1664-1672
+4	2	_	Temperature	_	_	0	_	_	Offset=1676-1683
+
+# sent_id = s13
+# text = Note: BioLegend fluorophore-conjugated streptavidin products are recommended.
+1	Prepare	_	Action	_	_	0	_	_	Offset=1941-1948
+2	cells	_	Reagent	_	_	0	_	_	Offset=1949-1954
+
+# sent_id = s14
+# text = For 30μl ofexchanged Flex-T™ monomer we suggest to use 3.3μl of BioLegend PE-streptavidin (Cat#405203) or APC- streptavidin (Cat#405207).
+1	centrifuge	_	Action	_	_	0	_	_	Offset=1996-2006
+2	plate	_	Device	_	_	0	_	_	Offset=2011-2016
+3	3300xg	_	Speed	_	_	0	_	_	Offset=2020-2026
+4	5	_	Time	_	_	0	_	_	Offset=2031-2040
+5	4°C	_	Temperature	_	_	0	_	_	Offset=2044-2047
+
+# sent_id = s15
+# text = For BV421-streptavidin conjugate (Cat#405225) use 1.3μl.
+1	Keep	_	Action	_	_	0	_	_	Offset=2049-2053
+2	ice	_	Location	_	_	0	_	_	Offset=2057-2060
+
+# sent_id = s16
+# text = For optimal reaction with other fluorophore-conjugated streptavidin products ensure that themonomer:streptavidin conjugate has a 6:1 molar ratio.
+1	Add	_	Action	_	_	0	_	_	Offset=2074-2077
+2	2	_	Amount	_	_	0	_	_	Offset=2078-2091
+3	96-well	_	Device	_	_	0	_	_	Offset=2097-2119
+4	12	_	Device	_	_	0	_	_	Offset=2123-2139
+
+# sent_id = s17
+# text = During the incubation, prepare blocking solution by adding 1.6μl 50mM D-Biotin and 6μl 10% (w/v) NaN3 to 192.4μl PBS, mix by vortexing.
+1	Adjust	_	Action	_	_	0	_	_	Offset=2141-2147
+2	200μl	_	Amount	_	_	0	_	_	Offset=2158-2163
+3	CellStaining	_	Reagent	_	_	0	_	_	Offset=2169-2188
+
+# sent_id = s18
+# text = After the incubation, add 2.4μl of blocking solution and pipette up and down to stop the reaction.
+1	Add	_	Action	_	_	0	_	_	Offset=2190-2193
+2	2μl	_	Amount	_	_	3	Measure	_	Offset=2194-2197
+3	Flex-T™	_	Reagent	_	_	0	_	_	Offset=2212-2227
+4	incubate	_	Action	_	_	0	_	_	Offset=2261-2269
+5	ice	_	Location	_	_	0	_	_	Offset=2273-2276
+6	30	_	Time	_	_	0	_	_	Offset=2292-2302
+
+# sent_id = s19
+# text = Seal the plate and incubate at 2 - 8°C overnight (or on ice for 30 minutes in the dark).
+1	Incubate	_	Action	_	_	0	_	_	Offset=2431-2439
+2	30	_	Time	_	_	0	_	_	Offset=2444-2454
+3	ice	_	Location	_	_	0	_	_	Offset=2458-2461
+
+# sent_id = s20
+# text = Note: We recommend Flex-T™ to be assembled with two different streptavidin conjugates inseparate reactions.
+1	Wash	_	Action	_	_	0	_	_	Offset=2475-2479
+2	Staining	_	Reagent	_	_	0	_	_	Offset=2495-2510
+
+# sent_id = s21
+# text = This allows for two-color staining with the same tetramer allele, ensuring thehighest specificity.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=2522-2531
+2	Staining	_	Reagent	_	_	0	_	_	Offset=2543-2558
+
+# sent_id = s22
+# text = Prepare cells of interest. 
+1	Acquire	_	Action	_	_	0	_	_	Offset=2560-2567
+

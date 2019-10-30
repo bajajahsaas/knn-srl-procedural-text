@@ -1,0 +1,123 @@
+# sent_id = s1
+# text = Anti-Neu5Gc Antibody Kit Protocol - Western blot
+1	Prepare	_	Action	_	_	0	_	_	Offset=49-56
+2	two	_	Amount	_	_	4	Measure	_	Offset=57-60
+3	identical	_	Modifier	_	_	4	Mod-Link	_	Offset=61-70
+4	SDS-PAGE	_	Reagent	_	_	0	_	_	Offset=71-84
+
+# sent_id = s2
+# text = Prepare two identical SDS-PAGE gels. 
+1	Load	_	Action	_	_	0	_	_	Offset=87-91
+2	run	_	Action	_	_	0	_	_	Offset=96-99
+3	samples	_	Reagent	_	_	0	_	_	Offset=100-107
+4	loading	_	Reagent	_	_	0	_	_	Offset=111-125
+
+# sent_id = s3
+# text = Load and run samples in loading buffer. 
+1	load	_	Action	_	_	0	_	_	Offset=140-144
+2	gel	_	Reagent	_	_	1	Meronym	1:Meronym|1:Meronym|1:Meronym|1:Meronym	Offset=151-154
+
+# sent_id = s4
+# text = Recommended loading of gel: 
+1	Lane	_	Location	_	_	2	Meronym	_	Offset=157-163
+2	Molecular	_	Reagent	_	_	0	_	_	Offset=165-188
+
+# sent_id = s5
+# text = Lane 1: Molecular Weight Marker.
+1	Lanes	_	Location	_	_	0	_	_	Offset=190-204
+
+# sent_id = s6
+# text = Lanes 2, 8, 10: Blank.
+1	Lanes	_	Location	_	_	2	Meronym	_	Offset=213-222
+2	Samples	_	Reagent	_	_	0	_	_	Offset=224-231
+
+# sent_id = s7
+# text = Lanes 3-6: Samples.
+1	Lane	_	Location	_	_	2	Meronym	_	Offset=233-239
+2	Positive	_	Reagent	_	_	0	_	_	Offset=241-257
+
+# sent_id = s8
+# text = Lane 7: Positive Control.
+1	Lane	_	Location	_	_	2	Meronym	_	Offset=259-265
+2	Negative	_	Reagent	_	_	0	_	_	Offset=267-283
+
+# sent_id = s9
+# text = Lane 9: Negative Control. 
+1	Confirm	_	Action	_	_	0	_	_	Offset=286-318
+2	gel	_	Reagent	_	_	0	_	_	Offset=322-325
+3	Coomassie	_	Reagent	_	_	0	_	_	Offset=329-361
+
+# sent_id = s10
+# text = Confirm the presence of proteins on gel by Coomassie Staining Blot proteins to membrane of choice. 
+1	Confirm	_	Action	_	_	0	_	_	Offset=386-410
+2	Ponceau	_	Method	_	_	0	_	_	Offset=414-421
+3	method	_	Method	_	_	0	_	_	Offset=431-447
+
+# sent_id = s11
+# text = Confirm protein transfer by Ponceau or other method of choice. 
+1	Block	_	Action	_	_	0	_	_	Offset=450-455
+2	each	_	Amount	_	_	3	Measure	_	Offset=456-460
+3	membrane	_	Reagent	_	_	0	_	_	Offset=461-469
+4	20	_	Amount	_	_	5	Measure	_	Offset=473-478
+5	TBS-T	_	Reagent	_	_	0	_	_	Offset=479-484
+6	200	_	Amount	_	_	8	Measure	_	Offset=490-496
+7	diluted	_	Modifier	_	_	8	Mod-Link	_	Offset=497-504
+8	Neu5Gc	_	Reagent	_	_	0	_	_	Offset=505-535
+9	gently	_	Modifier	_	_	0	_	_	Offset=537-543
+10	rocking	_	Action	_	_	0	_	_	Offset=544-551
+11	4°C	_	Temperature	_	_	0	_	_	Offset=555-558
+
+# sent_id = s12
+# text = Block each membrane in 20 ml TBS-T with 200 μl diluted Neu5Gc Assay Blocking Solution, gently rocking at 4°C.  
+1	Incubate	_	Action	_	_	0	_	_	Offset=562-570
+2	first	_	Reagent	_	_	0	_	_	Offset=571-581
+3	Primary	_	Reagent	_	_	0	_	_	Offset=585-601
+4	blot	_	Reagent	_	_	0	_	_	Offset=611-615
+5	Control	_	Reagent	_	_	0	_	_	Offset=619-635
+6	2	_	Time	_	_	0	_	_	Offset=640-647
+7	25°C	_	Temperature	_	_	0	_	_	Offset=651-655
+8	overnight	_	Time	_	_	6	Or	_	Offset=659-668
+9	4°C	_	Temperature	_	_	7	Or	_	Offset=672-675
+10	gentle	_	Modifier	_	_	0	_	_	Offset=681-687
+11	rocking	_	Action	_	_	0	_	_	Offset=688-695
+
+# sent_id = s13
+# text = Incubate first blot in Primary Antibody, and one blot in Control Antibody for 2 hours at 25°C or overnight at 4°C with gentle rocking. 
+1	Wash	_	Action	_	_	0	_	_	Offset=698-702
+2	blot	_	Reagent	_	_	0	_	_	Offset=703-707
+3	50	_	Amount	_	_	4	Measure	_	Offset=713-718
+4	TBS-T	_	Reagent	_	_	0	_	_	Offset=719-724
+5	5	_	Time	_	_	0	_	_	Offset=729-734
+6	25°C	_	Temperature	_	_	0	_	_	Offset=738-742
+7	gently	_	Modifier	_	_	0	_	_	Offset=744-750
+8	rocking	_	Action	_	_	0	_	_	Offset=751-758
+9	5	_	Numerical	_	_	0	_	_	Offset=759-760
+
+# sent_id = s14
+# text = Wash blot with 50 ml TBS-T for 5 min at 25°C, gently rocking 5 times.
+1	Incubate	_	Action	_	_	0	_	_	Offset=768-776
+2	blots	_	Reagent	_	_	0	_	_	Offset=777-782
+3	optimal	_	Concentration	_	_	4	Measure	_	Offset=788-804
+4	enzyme-conjugated	_	Reagent	_	_	0	_	_	Offset=808-844
+5	25°C	_	Temperature	_	_	0	_	_	Offset=858-862
+6	1	_	Time	_	_	0	_	_	Offset=867-873
+
+# sent_id = s15
+# text = Incubate blots with optimal dilution of enzyme-conjugated secondary antibody of choice at 25°C for 1 hour. 
+1	Wash	_	Action	_	_	0	_	_	Offset=876-880
+2	blot	_	Reagent	_	_	0	_	_	Offset=881-885
+3	50	_	Amount	_	_	4	Measure	_	Offset=891-896
+4	TBS-T	_	Reagent	_	_	0	_	_	Offset=897-902
+5	5	_	Time	_	_	0	_	_	Offset=907-912
+6	25°C	_	Temperature	_	_	0	_	_	Offset=916-920
+7	gently	_	Modifier	_	_	0	_	_	Offset=923-929
+8	rocking	_	Action	_	_	0	_	_	Offset=930-937
+9	5	_	Numerical	_	_	0	_	_	Offset=938-939
+
+# sent_id = s16
+# text = Wash blot with 50 ml TBS-T for 5 min at 25°C , gently rocking 5 times.
+1	Develop	_	Action	_	_	0	_	_	Offset=947-954
+2	each	_	Amount	_	_	3	Measure	_	Offset=955-959
+3	blot	_	Reagent	_	_	0	_	_	Offset=960-964
+4	appropriate	_	Reagent	_	_	0	_	_	Offset=974-995
+

@@ -1,0 +1,55 @@
+# sent_id = s1
+# text = Blue/White Screening of Bacterial Colonies X-Gal/IPTG Plates
+1	Cool	_	Action	_	_	0	_	_	Offset=61-65
+2	autoclaved	_	Modifier	_	_	3	Mod-Link	_	Offset=66-76
+3	growth	_	Reagent	_	_	0	_	_	Offset=77-94
+4	50°C	_	Temperature	_	_	0	_	_	Offset=98-102
+
+# sent_id = s2
+# text = Cool autoclaved growth media agar to 50°C.
+1	Add	_	Action	_	_	0	_	_	Offset=104-107
+2	10	_	Amount	_	_	3	Measure	_	Offset=108-113
+3	X-Gal	_	Reagent	_	_	0	_	_	Offset=114-128
+4	20	_	Concentration	_	_	3	Measure	_	Offset=130-138
+5	per	_	Modifier	_	_	7	Mod-Link	_	Offset=140-143
+6	1	_	Amount	_	_	7	Measure	_	Offset=144-148
+7	Media	_	Reagent	_	_	0	_	_	Offset=152-157
+8	2	_	Amount	_	_	9	Measure	_	Offset=161-165
+9	X-Gal	_	Reagent	_	_	3	Or	_	Offset=166-180
+10	100	_	Concentration	_	_	9	Measure	_	Offset=182-191
+
+# sent_id = s3
+# text = Add 10 µl X-Gal Solution (20 mg/ml) per 1 mL of Media(or 2 µl X-Gal Solution (100 mg/ml) per 1 mL of Media).
+1	Add	_	Action	_	_	0	_	_	Offset=213-216
+2	10	_	Amount	_	_	3	Measure	_	Offset=217-222
+3	IPTG	_	Reagent	_	_	0	_	_	Offset=223-227
+4	100mM	_	Concentration	_	_	3	Measure	_	Offset=229-234
+5	per	_	Modifier	_	_	7	Mod-Link	_	Offset=236-239
+6	1	_	Amount	_	_	7	Measure	_	Offset=240-244
+7	Media	_	Reagent	_	_	0	_	_	Offset=248-253
+8	1mM	_	Concentration	_	_	0	_	_	Offset=283-286
+
+# sent_id = s4
+# text = Add 10 µl IPTG (100mM) per 1 mL of Media for a final concentration of 1mM.
+1	Add	_	Action	_	_	0	_	_	Offset=288-291
+2	screening	_	Modifier	_	_	3	Mod-Link	_	Offset=292-301
+3	antibiotic	_	Reagent	_	_	4	Meronym	5:Meronym|6:Meronym	Offset=302-322
+4	Ampicillin	_	Reagent	_	_	0	_	_	Offset=324-334
+5	Kanamycin	_	Reagent	_	_	0	_	_	Offset=336-345
+6	Carbenicillin	_	Reagent	_	_	0	_	_	Offset=347-360
+
+# sent_id = s5
+# text = Add screening antibiotic of choice (Ampicillin, Kanamycin, Carbenicillin, etc).
+1	Pour	_	Action	_	_	0	_	_	Offset=368-372
+2	plates	_	Location	_	_	0	_	_	Offset=373-379
+3	cool	_	Action	_	_	0	_	_	Offset=393-397
+4	room	_	Temperature	_	_	0	_	_	Offset=401-417
+5	30	_	Time	_	_	0	_	_	Offset=436-446
+
+# sent_id = s6
+# text = Pour plates and allow to cool to room temperature (usually at least 30 minutes) before use.
+1	Spread	_	Action	_	_	0	_	_	Offset=460-466
+2	transformed	_	Modifier	_	_	3	Mod-Link	_	Offset=467-478
+3	competent	_	Reagent	_	_	0	_	_	Offset=479-494
+4	as	_	Method	_	_	0	_	_	Offset=495-505
+

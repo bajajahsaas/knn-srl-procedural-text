@@ -1,0 +1,159 @@
+# sent_id = s1
+# text = Purification of pooled PCR amplicon libraries using SPRI beads
+1	Vortex	_	Action	_	_	0	_	_	Offset=63-69
+2	AMPure	_	Reagent	_	_	0	_	_	Offset=70-79
+3	RXN	_	Reagent	_	_	2	Or	_	Offset=83-106
+4	resuspend	_	Action	_	_	0	_	_	Offset=110-119
+
+# sent_id = s2
+# text = Vortex AMPure XP or RXN pureplus SPRI beads to resuspend.
+1	Make	_	Action	_	_	0	_	_	Offset=121-125
+2	pooled	_	Reagent	_	_	0	_	_	Offset=131-145
+3	100	_	Amount	_	_	2	Measure	_	Offset=152-158
+
+# sent_id = s3
+# text = Make your pooled library up to 100 μl if necessary.
+1	Add	_	Action	_	_	0	_	_	Offset=173-176
+2	60	_	Amount	_	_	3	Measure	_	Offset=177-182
+3	resuspended	_	Reagent	_	_	0	_	_	Offset=183-205
+4	100	_	Amount	_	_	5	Measure	_	Offset=209-215
+5	pooled	_	Reagent	_	_	0	_	_	Offset=219-237
+
+# sent_id = s4
+# text = Add 60 μl resuspended SPRI beads to 100 μl of pooled PCR product.
+1	Mix	_	Action	_	_	0	_	_	Offset=239-242
+2	well	_	Modifier	_	_	0	_	_	Offset=243-247
+3	pipetting	_	Method	_	_	0	_	_	Offset=251-272
+4	at	_	Modifier	_	_	0	_	_	Offset=273-281
+5	10	_	Numerical	_	_	0	_	_	Offset=282-284
+
+# sent_id = s5
+# text = Mix well by pipetting up and down at least 10 times.
+1	Vortex	_	Action	_	_	0	_	_	Offset=292-298
+2	AMPure	_	Reagent	_	_	0	_	_	Offset=299-314
+3	resuspend	_	Action	_	_	0	_	_	Offset=318-327
+
+# sent_id = s6
+# text = Vortex AMPure XP beads to resuspend.
+1	Incubate	_	Action	_	_	0	_	_	Offset=329-337
+2	5	_	Time	_	_	0	_	_	Offset=342-351
+3	room	_	Temperature	_	_	0	_	_	Offset=355-371
+
+# sent_id = s7
+# text = Incubate for 5 minutes at room temperature.
+1	Quickly	_	Modifier	_	_	0	_	_	Offset=373-380
+2	spin	_	Action	_	_	0	_	_	Offset=381-385
+3	tube	_	Location	_	_	5	Coreference-Link	_	Offset=390-394
+4	place	_	Action	_	_	0	_	_	Offset=399-404
+5	it	_	Mention	_	_	0	_	_	Offset=405-407
+6	appropriate	_	Modifier	_	_	7	Mod-Link	_	Offset=414-425
+7	magnetic	_	Device	_	_	0	_	_	Offset=426-440
+8	beads	_	Reagent	_	_	0	_	_	Offset=453-458
+9	supernatan	_	Reagent	_	_	0	_	_	Offset=464-474
+
+# sent_id = s8
+# text = Quickly spin the tube and place it on an appropriate magnetic stand to separate beads from supernatant.
+1	carefully	_	Modifier	_	_	0	_	_	Offset=524-533
+2	remove	_	Action	_	_	0	_	_	Offset=534-540
+3	discard	_	Action	_	_	0	_	_	Offset=545-552
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=557-568
+
+# sent_id = s9
+# text = After the solution is clear (about 5 minutes), carefully remove and discard the supernatant.
+1	Add	_	Action	_	_	0	_	_	Offset=664-667
+2	200	_	Amount	_	_	4	Measure	_	Offset=668-674
+3	80%	_	Concentration	_	_	4	Measure	_	Offset=678-681
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=699-706
+5	tube	_	Location	_	_	0	_	_	Offset=714-718
+6	magnetic	_	Device	_	_	5	Meronym	_	Offset=732-746
+
+# sent_id = s10
+# text = Be careful not to disturb the beads that contain DNA targets (Caution: do not discard beads).
+1	Incubate	_	Action	_	_	0	_	_	Offset=748-756
+2	room	_	Temperature	_	_	0	_	_	Offset=760-776
+3	30	_	Time	_	_	0	_	_	Offset=781-791
+4	carefully	_	Modifier	_	_	0	_	_	Offset=802-811
+5	remove	_	Action	_	_	0	_	_	Offset=812-818
+6	discard	_	Action	_	_	0	_	_	Offset=823-830
+7	supernatant	_	Reagent	_	_	0	_	_	Offset=835-846
+
+# sent_id = s11
+# text = Add 200 μl of 80% freshly prepared ethanol to the tube while in the magnetic stand.
+1	Add	_	Action	_	_	0	_	_	Offset=848-851
+2	200	_	Amount	_	_	5	Measure	_	Offset=852-858
+3	80%	_	Concentration	_	_	5	Measure	_	Offset=862-865
+4	freshly	_	Modifier	_	_	5	Mod-Link	_	Offset=866-882
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=883-890
+6	tube	_	Location	_	_	0	_	_	Offset=898-902
+7	magnetic	_	Device	_	_	6	Meronym	_	Offset=916-930
+
+# sent_id = s12
+# text = Incubate at room temperature for 30 seconds, and then carefully remove and discard the supernatant.
+1	Incubate	_	Action	_	_	0	_	_	Offset=932-940
+2	room	_	Temperature	_	_	0	_	_	Offset=944-960
+3	30	_	Time	_	_	0	_	_	Offset=965-975
+4	carefully	_	Modifier	_	_	0	_	_	Offset=986-995
+5	remove	_	Action	_	_	0	_	_	Offset=996-1002
+6	discard	_	Action	_	_	0	_	_	Offset=1007-1014
+7	supernatant	_	Reagent	_	_	0	_	_	Offset=1019-1030
+
+# sent_id = s13
+# text = Add 200 μl of 80% freshly prepared ethanol to the tube while in the magnetic stand.
+1	Add	_	Action	_	_	0	_	_	Offset=1032-1035
+2	200	_	Amount	_	_	4	Measure	_	Offset=1036-1042
+3	80%	_	Concentration	_	_	4	Measure	_	Offset=1046-1049
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=1067-1074
+5	tube	_	Location	_	_	0	_	_	Offset=1082-1086
+6	magnetic	_	Device	_	_	5	Meronym	_	Offset=1100-1114
+
+# sent_id = s14
+# text = Incubate at room temperature for 30 seconds, and then carefully remove and discard the supernatant.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1116-1124
+2	room	_	Temperature	_	_	0	_	_	Offset=1128-1144
+3	30	_	Time	_	_	0	_	_	Offset=1149-1159
+4	remove	_	Action	_	_	0	_	_	Offset=1180-1186
+5	discard	_	Action	_	_	0	_	_	Offset=1191-1198
+6	supernatant	_	Reagent	_	_	0	_	_	Offset=1203-1214
+
+# sent_id = s15
+# text = Add 200 μl of 80% freshly prepared ethanol to the tube while in the magnetic stand.
+1	Air	_	Action	_	_	0	_	_	Offset=1216-1219
+2	dry	_	Reagent	_	_	0	_	_	Offset=1224-1233
+3	10	_	Time	_	_	0	_	_	Offset=1238-1248
+
+# sent_id = s16
+# text = Incubate at room temperature for 30 seconds, and then carefully remove and discard the supernatant.
+1	Elute	_	Action	_	_	0	_	_	Offset=1308-1313
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1318-1328
+3	beads	_	Reagent	_	_	0	_	_	Offset=1338-1343
+4	adding	_	Action	_	_	0	_	_	Offset=1347-1353
+5	30	_	Amount	_	_	7	Measure	_	Offset=1354-1359
+6	10	_	Concentration	_	_	7	Measure	_	Offset=1363-1368
+7	Tris-HCl	_	Reagent	_	_	0	_	_	Offset=1369-1377
+8	pH	_	Misc	_	_	0	_	_	Offset=1379-1385
+9	0.1X	_	Concentration	_	_	10	Measure	_	Offset=1389-1393
+10	TE	_	Reagent	_	_	0	_	_	Offset=1394-1396
+
+# sent_id = s17
+# text = Air the dry beads for 10 minutes while the tube is on the magnetic stand with the lid open.
+1	Mix	_	Action	_	_	0	_	_	Offset=1557-1560
+2	well	_	Modifier	_	_	0	_	_	Offset=1561-1565
+3	pipetting	_	Method	_	_	0	_	_	Offset=1569-1590
+4	vortex	_	Device	_	_	3	Or	_	Offset=1600-1612
+
+# sent_id = s18
+# text = Elute the DNA target from the beads by adding 30 μl of 10 mM Tris-HCl, pH 8.0 or 0.1X TE.Note: Be sure not to transfer any beads.
+1	Quickly	_	Modifier	_	_	0	_	_	Offset=1614-1621
+2	spin	_	Action	_	_	0	_	_	Offset=1622-1626
+3	tube	_	Location	_	_	5	Coreference-Link	_	Offset=1631-1635
+4	place	_	Action	_	_	0	_	_	Offset=1640-1645
+5	it	_	Mention	_	_	0	_	_	Offset=1646-1648
+6	magnetic	_	Device	_	_	0	_	_	Offset=1656-1670
+
+# sent_id = s19
+# text = Trace amounts of bead carry over may affect the optimal performance of the polymerase used in the subsequent PCR step.
+1	transfer	_	Action	_	_	0	_	_	Offset=1719-1727
+2	27ul	_	Amount	_	_	3	Measure	_	Offset=1728-1732
+3	PCR	_	Reagent	_	_	0	_	_	Offset=1739-1747
+4	amplification	_	Method	_	_	0	_	_	Offset=1752-1765
+

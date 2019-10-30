@@ -1,0 +1,99 @@
+# sent_id = s1
+# text = One Shot® TOP10 Chemically Competent E. coli Transformation
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=60-70
+2	vial(s)	_	Location	_	_	3	Meronym	_	Offset=75-82
+3	ligation	_	Reagent	_	_	0	_	_	Offset=98-118
+4	briefly	_	Modifier	_	_	0	_	_	Offset=119-126
+5	place	_	Action	_	_	0	_	_	Offset=131-136
+6	ice	_	Temperature	_	_	0	_	_	Offset=140-143
+
+# sent_id = s2
+# text = Centrifuge the vial(s) containing the ligation reaction(s) briefly and place on ice.
+1	Thaw	_	Action	_	_	0	_	_	Offset=145-149
+2	ice	_	Temperature	_	_	0	_	_	Offset=154-157
+3	50	_	Size	_	_	4	Measure	_	Offset=163-168
+4	vial	_	Location	_	_	0	_	_	Offset=169-173
+5	One	_	Reagent	_	_	4	Meronym	_	Offset=177-192
+
+# sent_id = s3
+# text = Thaw, on ice, one 50 μL vial of One Shot® cells for each ligation/transformation.
+1	Pipet	_	Action	_	_	0	_	_	Offset=227-232
+2	1–5	_	Amount	_	_	3	Measure	_	Offset=233-239
+3	ligation	_	Reagent	_	_	0	_	_	Offset=248-265
+4	vial	_	Location	_	_	0	_	_	Offset=284-288
+5	competent	_	Reagent	_	_	4	Meronym	_	Offset=292-307
+6	mix	_	Action	_	_	0	_	_	Offset=312-315
+7	tapping	_	Method	_	_	0	_	_	Offset=319-333
+
+# sent_id = s4
+# text = Pipet 1–5 μL of each ligation reaction directly into the vial of competent cells and mix by tapping gently.
+1	Incubate	_	Action	_	_	0	_	_	Offset=430-438
+2	vial(s)	_	Location	_	_	0	_	_	Offset=443-450
+3	ice	_	Location	_	_	0	_	_	Offset=454-457
+4	30	_	Time	_	_	0	_	_	Offset=462-472
+
+# sent_id = s5
+# text = Do not mix by pipetting up and down.
+1	Incubate	_	Action	_	_	0	_	_	Offset=474-482
+2	30	_	Time	_	_	0	_	_	Offset=495-505
+3	42°C	_	Temperature	_	_	4	Setting	_	Offset=513-517
+4	water	_	Device	_	_	0	_	_	Offset=518-528
+
+# sent_id = s6
+# text = The remaining ligation mixture(s) can be stored at −20°C.
+1	Remove	_	Action	_	_	0	_	_	Offset=551-557
+2	vial(s)	_	Location	_	_	6	Coreference-Link	_	Offset=558-565
+3	42°C	_	Temperature	_	_	4	Setting	_	Offset=575-579
+4	bath	_	Device	_	_	0	_	_	Offset=580-584
+5	place	_	Action	_	_	0	_	_	Offset=589-594
+6	them	_	Mention	_	_	0	_	_	Offset=595-599
+7	ice	_	Temperature	_	_	0	_	_	Offset=603-606
+
+# sent_id = s7
+# text = Incubate the vial(s) on ice for 30 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=608-611
+2	250	_	Amount	_	_	3	Measure	_	Offset=612-618
+3	S.O.C	_	Reagent	_	_	0	_	_	Offset=633-645
+4	vial	_	Location	_	_	0	_	_	Offset=654-658
+
+# sent_id = s8
+# text = Incubate for exactly 30 seconds in the 42°C water bath.
+1	Place	_	Action	_	_	0	_	_	Offset=744-749
+2	vial(s)	_	Location	_	_	0	_	_	Offset=754-761
+3	microcentrifuge	_	Location	_	_	0	_	_	Offset=767-787
+4	secure	_	Action	_	_	0	_	_	Offset=804-810
+5	tape	_	Device	_	_	0	_	_	Offset=816-820
+
+# sent_id = s9
+# text = Do not mix or shake.
+1	Shake	_	Action	_	_	0	_	_	Offset=851-856
+2	vial(s)	_	Location	_	_	0	_	_	Offset=861-868
+3	37°C	_	Temperature	_	_	0	_	_	Offset=872-876
+4	1	_	Time	_	_	0	_	_	Offset=889-895
+5	225	_	Speed	_	_	0	_	_	Offset=899-906
+6	shaking	_	Device	_	_	0	_	_	Offset=912-929
+
+# sent_id = s10
+# text = Remove vial(s) from the 42°C bath and place them on ice.
+1	Spread	_	Action	_	_	0	_	_	Offset=931-937
+2	20–200	_	Amount	_	_	3	Measure	_	Offset=938-947
+3	transformation	_	Reagent	_	_	0	_	_	Offset=958-972
+4	LB	_	Location	_	_	0	_	_	Offset=999-1013
+
+# sent_id = s11
+# text = Add 250 μL of pre-warmed S.O.C medium to each vial.
+1	Invert	_	Action	_	_	0	_	_	Offset=1110-1116
+2	plate(s)	_	Location	_	_	0	_	_	Offset=1121-1129
+3	incubate	_	Action	_	_	0	_	_	Offset=1134-1142
+4	37°C	_	Temperature	_	_	0	_	_	Offset=1146-1150
+5	overnight	_	Time	_	_	0	_	_	Offset=1151-1160
+
+# sent_id = s12
+# text = S.O.C is a rich medium; sterile technique must be practiced to avoid contamination.
+1	Select	_	Action	_	_	0	_	_	Offset=1162-1168
+2	colonies	_	Reagent	_	_	0	_	_	Offset=1169-1177
+3	analyze	_	Action	_	_	0	_	_	Offset=1182-1189
+4	plasmid	_	Method	_	_	0	_	_	Offset=1193-1210
+5	PCR	_	Method	_	_	4	Or	_	Offset=1212-1215
+6	sequencing	_	Method	_	_	5	Or	_	Offset=1220-1230
+

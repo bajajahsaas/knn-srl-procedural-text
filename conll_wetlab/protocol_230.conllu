@@ -1,0 +1,40 @@
+# sent_id = s1
+# text = Removal of Single-Stranded Extension using Mung Bean Nuclease (M0250)
+1	Suspend	_	Action	_	_	0	_	_	Offset=70-77
+2	DNA	_	Reagent	_	_	0	_	_	Offset=78-81
+3	0.1	_	Concentration	_	_	2	Measure	_	Offset=83-92
+4	1X	_	Concentration	_	_	5	Measure	_	Offset=97-99
+5	Mung	_	Reagent	_	_	0	_	_	Offset=100-125
+6	1X	_	Concentration	_	_	0	_	_	Offset=129-131
+7	NEBuffer	_	Reagent	_	_	0	_	_	Offset=132-144
+8	2.1	_	Reagent	_	_	7	Or	_	Offset=146-149
+9	CutSmart	_	Reagent	_	_	8	Or	_	Offset=153-161
+
+# sent_id = s2
+# text = Suspend DNA (0.1 μg/μl) in 1X Mung Bean Nuclease Buffer or 1X NEBuffer 1.1, 2.1 or CutSmart.
+1	Add	_	Action	_	_	0	_	_	Offset=163-166
+2	1.0	_	Amount	_	_	3	Measure	_	Offset=167-175
+3	Mung	_	Reagent	_	_	0	_	_	Offset=179-197
+4	per	_	Modifier	_	_	2	Mod-Link	_	Offset=198-208
+
+# sent_id = s3
+# text = Add 1.0 unit of Mung Bean Nuclease per μg DNA.
+1	Incubate	_	Action	_	_	0	_	_	Offset=210-218
+2	30°C	_	Temperature	_	_	0	_	_	Offset=222-226
+3	30	_	Time	_	_	0	_	_	Offset=231-241
+
+# sent_id = s4
+# text = Incubate at 30°C for 30 minutes.
+1	Inactivate	_	Action	_	_	0	_	_	Offset=243-253
+2	enzyme	_	Reagent	_	_	0	_	_	Offset=258-264
+3	phenol/chloroform	_	Method	_	_	0	_	_	Offset=268-296
+4	addition	_	Action	_	_	0	_	_	Offset=303-311
+5	SDS	_	Reagent	_	_	0	_	_	Offset=315-318
+6	0.01%	_	Concentration	_	_	0	_	_	Offset=322-327
+
+# sent_id = s5
+# text = Inactivate the enzyme by phenol/chloroform extraction or by addition of SDS to 0.01%.
+1	Recover	_	Action	_	_	0	_	_	Offset=329-336
+2	DNA	_	Reagent	_	_	0	_	_	Offset=341-344
+3	ethanol	_	Method	_	_	0	_	_	Offset=348-369
+

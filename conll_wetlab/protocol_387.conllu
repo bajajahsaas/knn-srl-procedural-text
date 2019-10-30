@@ -1,0 +1,185 @@
+# sent_id = s1
+# text = Immunofluorescence Microscopy Protocol
+1	Grow	_	Action	_	_	0	_	_	Offset=39-43
+2	cultured	_	Reagent	_	_	0	_	_	Offset=44-58
+3	cover	_	Location	_	_	0	_	_	Offset=62-73
+4	chamber	_	Location	_	_	3	Or	_	Offset=77-91
+5	overnight	_	Time	_	_	0	_	_	Offset=92-101
+6	add	_	Action	_	_	0	_	_	Offset=106-109
+7	appropriate	_	Modifier	_	_	8	Mod-Link	_	Offset=110-121
+8	amount	_	Amount	_	_	9	Measure	_	Offset=122-128
+9	cells	_	Reagent	_	_	0	_	_	Offset=132-137
+10	poly-L-lysine	_	Modifier	_	_	11	Mod-Link	_	Offset=141-161
+11	chamber	_	Location	_	_	0	_	_	Offset=162-176
+12	incubate	_	Action	_	_	0	_	_	Offset=181-189
+13	at	_	Modifier	_	_	14	Mod-Link	_	Offset=190-198
+14	30	_	Time	_	_	0	_	_	Offset=199-205
+15	37°C	_	Temperature	_	_	0	_	_	Offset=209-213
+16	fixation	_	Reagent	_	_	0	_	_	Offset=230-244
+17	~50%	_	Generic-Measure	_	_	16	Measure	_	Offset=255-269
+
+# sent_id = s2
+# text = Grow cultured cells on cover slips or chamber slides overnight, or add appropriate amount of cells to poly-L-lysine coated chamber slides and incubate at least 30 min at 37°C, at the time of fixation cells should be ~50% confluent.
+1	Rinse	_	Action	_	_	0	_	_	Offset=271-276
+2	cells	_	Reagent	_	_	0	_	_	Offset=277-282
+3	briefly	_	Modifier	_	_	2	Mod-Link	_	Offset=283-290
+4	PBS	_	Reagent	_	_	0	_	_	Offset=294-297
+
+# sent_id = s3
+# text = Rinse cells briefly in PBS.
+1	Fix	_	Action	_	_	0	_	_	Offset=299-302
+2	cells	_	Reagent	_	_	0	_	_	Offset=303-308
+3	incubation	_	Action	_	_	0	_	_	Offset=312-322
+4	4%	_	Concentration	_	_	5	Measure	_	Offset=328-330
+5	Paraformaldehyde	_	Reagent	_	_	0	_	_	Offset=331-347
+6	PBS	_	Reagent	_	_	0	_	_	Offset=352-355
+7	15	_	Time	_	_	0	_	_	Offset=360-366
+8	room	_	Temperature	_	_	0	_	_	Offset=370-386
+
+# sent_id = s4
+# text = Fix cells by incubation with 4% Paraformaldehyde, in PBS for 15 min at room temperature.
+1	Rinse	_	Action	_	_	0	_	_	Offset=388-393
+2	PBS	_	Reagent	_	_	0	_	_	Offset=397-400
+3	5	_	Time	_	_	0	_	_	Offset=405-410
+
+# sent_id = s5
+# text = Rinse in PBS for 5 min (1/3).
+1	Rinse	_	Action	_	_	0	_	_	Offset=418-423
+2	PBS	_	Reagent	_	_	0	_	_	Offset=427-430
+3	5	_	Time	_	_	0	_	_	Offset=435-440
+
+# sent_id = s6
+# text = Rinse in PBS for 5 min (2/3).
+1	Rinse	_	Action	_	_	0	_	_	Offset=448-453
+2	PBS	_	Reagent	_	_	0	_	_	Offset=457-460
+3	5	_	Time	_	_	0	_	_	Offset=465-470
+
+# sent_id = s7
+# text = Rinse in PBS for 5 min (3/3).
+1	Add	_	Action	_	_	0	_	_	Offset=478-481
+2	0.5%	_	Concentration	_	_	3	Measure	_	Offset=482-486
+3	Triton	_	Reagent	_	_	0	_	_	Offset=487-499
+4	PBS	_	Reagent	_	_	0	_	_	Offset=503-506
+5	incubate	_	Action	_	_	0	_	_	Offset=511-519
+6	room	_	Temperature	_	_	0	_	_	Offset=523-539
+7	three	_	Time	_	_	0	_	_	Offset=544-561
+
+# sent_id = s8
+# text = Add 0.5% Triton X-100 in PBS and incubate at room temperature for three to five min.
+1	Rinse	_	Action	_	_	0	_	_	Offset=563-568
+2	PBS	_	Reagent	_	_	0	_	_	Offset=572-575
+3	5	_	Time	_	_	0	_	_	Offset=580-585
+
+# sent_id = s9
+# text = Rinse in PBS for 5 min (1/3).
+1	Rinse	_	Action	_	_	0	_	_	Offset=593-598
+2	PBS	_	Reagent	_	_	0	_	_	Offset=602-605
+3	5	_	Time	_	_	0	_	_	Offset=610-615
+
+# sent_id = s10
+# text = Rinse in PBS for 5 min (2/3).
+1	Rinse	_	Action	_	_	0	_	_	Offset=623-628
+2	PBS	_	Reagent	_	_	0	_	_	Offset=632-635
+3	5	_	Time	_	_	0	_	_	Offset=640-645
+
+# sent_id = s11
+# text = Rinse in PBS for 5 min (3/3).
+1	Block	_	Action	_	_	0	_	_	Offset=653-658
+2	samples	_	Reagent	_	_	0	_	_	Offset=659-666
+3	5%	_	Concentration	_	_	4	Measure	_	Offset=670-672
+4	FBS	_	Reagent	_	_	0	_	_	Offset=673-676
+5	PBS	_	Reagent	_	_	0	_	_	Offset=680-683
+6	room	_	Temperature	_	_	0	_	_	Offset=687-703
+7	one	_	Time	_	_	0	_	_	Offset=708-716
+
+# sent_id = s12
+# text = Block samples in 5% FBS in PBS at room temperature for one hour.
+1	Dilute	_	Action	_	_	0	_	_	Offset=718-724
+2	primary	_	Reagent	_	_	0	_	_	Offset=729-745
+3	recommended	_	Modifier	_	_	4	Mod-Link	_	Offset=753-764
+4	concentration/dilution	_	Concentration	_	_	0	_	_	Offset=765-787
+5	5%	_	Concentration	_	_	6	Measure	_	Offset=791-793
+6	FBS/PBS	_	Reagent	_	_	0	_	_	Offset=794-801
+
+# sent_id = s13
+# text = Dilute the primary antibody to the recommended concentration/dilution in 5% FBS/PBS.
+1	Add	_	Action	_	_	0	_	_	Offset=803-806
+2	200	_	Amount	_	_	4	Measure	_	Offset=807-813
+3	per	_	Modifier	_	_	4	Mod-Link	_	Offset=814-817
+4	well	_	Location	_	_	0	_	_	Offset=818-822
+5	chamber	_	Location	_	_	0	_	_	Offset=840-854
+6	incubate	_	Action	_	_	0	_	_	Offset=859-867
+7	two	_	Time	_	_	0	_	_	Offset=868-886
+8	room	_	Temperature	_	_	0	_	_	Offset=890-906
+9	overnight	_	Time	_	_	7	Or	_	Offset=910-919
+10	4°C	_	Temperature	_	_	8	Or	_	Offset=923-926
+
+# sent_id = s14
+# text = Add 200 µl per well (8 wells) to the chamber slides and incubate two to three hours at room temperature or overnight at 4°C.
+1	Rinse	_	Action	_	_	0	_	_	Offset=928-933
+2	PBS	_	Reagent	_	_	0	_	_	Offset=937-940
+3	5	_	Time	_	_	0	_	_	Offset=945-950
+
+# sent_id = s15
+# text = Rinse in PBS for 5 min (1/3).
+1	Rinse	_	Action	_	_	0	_	_	Offset=958-963
+2	PBS	_	Reagent	_	_	0	_	_	Offset=967-970
+3	5	_	Time	_	_	0	_	_	Offset=975-980
+
+# sent_id = s16
+# text = Rinse in PBS for 5 min (2/3).
+1	Rinse	_	Action	_	_	0	_	_	Offset=988-993
+2	PBS	_	Reagent	_	_	0	_	_	Offset=997-1000
+3	5	_	Time	_	_	0	_	_	Offset=1005-1010
+
+# sent_id = s17
+# text = Rinse in PBS for 5 min (3/3).
+1	Prepare	_	Action	_	_	0	_	_	Offset=1018-1025
+2	fluorochrome-conjugated	_	Modifier	_	_	3	Mod-Link	_	Offset=1026-1049
+3	secondary	_	Reagent	_	_	0	_	_	Offset=1050-1068
+4	5%	_	Concentration	_	_	5	Measure	_	Offset=1072-1074
+5	FBS/PBS	_	Reagent	_	_	0	_	_	Offset=1075-1082
+6	recommended	_	Method	_	_	0	_	_	Offset=1100-1149
+7	add	_	Action	_	_	0	_	_	Offset=1155-1158
+8	200	_	Amount	_	_	10	Measure	_	Offset=1159-1165
+9	per	_	Modifier	_	_	10	Mod-Link	_	Offset=1166-1169
+10	well	_	Location	_	_	0	_	_	Offset=1170-1174
+11	chamber	_	Location	_	_	0	_	_	Offset=1192-1206
+
+# sent_id = s18
+# text = Prepare fluorochrome-conjugated secondary antibody in 5% FBS/PBS according to the recommended manufacturer specification data sheet, and add 200 µl per well (8 wells) to the chamber slides.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1208-1216
+2	samples	_	Reagent	_	_	0	_	_	Offset=1221-1228
+3	1	_	Time	_	_	0	_	_	Offset=1233-1236
+4	room	_	Temperature	_	_	0	_	_	Offset=1241-1257
+5	dark	_	Location	_	_	0	_	_	Offset=1266-1270
+
+# sent_id = s19
+# text = Incubate the samples for 1 h, at room temperature, in the dark.
+1	Rinse	_	Action	_	_	0	_	_	Offset=1272-1277
+2	PBS	_	Reagent	_	_	0	_	_	Offset=1281-1284
+3	5	_	Time	_	_	0	_	_	Offset=1289-1294
+
+# sent_id = s20
+# text = Rinse in PBS for 5 min (1/3).
+1	Rinse	_	Action	_	_	0	_	_	Offset=1302-1307
+2	PBS	_	Reagent	_	_	0	_	_	Offset=1311-1314
+3	5	_	Time	_	_	0	_	_	Offset=1319-1324
+
+# sent_id = s21
+# text = Rinse in PBS for 5 min (2/3).
+1	Rinse	_	Action	_	_	0	_	_	Offset=1332-1337
+2	PBS	_	Reagent	_	_	0	_	_	Offset=1341-1344
+3	5	_	Time	_	_	0	_	_	Offset=1349-1354
+
+# sent_id = s22
+# text = Rinse in PBS for 5 min (3/3).
+1	Coverslip	_	Action	_	_	0	_	_	Offset=1362-1371
+2	anti-fade	_	Reagent	_	_	0	_	_	Offset=1377-1402
+
+# sent_id = s23
+# text = Coverslip with anti-fade mounting medium.
+1	Seal	_	Action	_	_	0	_	_	Offset=1404-1408
+2	slides	_	Location	_	_	0	_	_	Offset=1409-1415
+3	nail	_	Seal	_	_	0	_	_	Offset=1421-1432
+

@@ -1,0 +1,456 @@
+# sent_id = s1
+# text = Cross-linking of IgG to Protein A or G Beads (S1425/S1430)
+1	Vortex	_	Action	_	_	0	_	_	Offset=59-65
+2	thoroughly	_	Modifier	_	_	0	_	_	Offset=70-80
+3	resuspend	_	Action	_	_	0	_	_	Offset=81-90
+4	Protein	_	Reagent	_	_	0	_	_	Offset=91-115
+
+# sent_id = s2
+# text = Vortex and thoroughly resuspend Protein A Magnetic Beads. 
+1	Aliquot	_	Action	_	_	0	_	_	Offset=118-125
+2	100	_	Amount	_	_	3	Measure	_	Offset=126-132
+3	bead	_	Reagent	_	_	0	_	_	Offset=136-151
+4	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=157-164
+5	microcentrifuge	_	Location	_	_	0	_	_	Offset=165-185
+
+# sent_id = s3
+# text = Aliquot 100 μl of bead suspension to a sterile microcentrifuge tube (wash #1). 
+1	Add	_	Action	_	_	0	_	_	Offset=198-201
+2	500	_	Amount	_	_	4	Measure	_	Offset=202-208
+3	0.1	_	Concentration	_	_	4	Measure	_	Offset=209-214
+4	NaPhosphate	_	Reagent	_	_	0	_	_	Offset=215-233
+5	pH	_	pH	_	_	4	Measure	_	Offset=235-241
+
+# sent_id = s4
+# text = Add 500 μl 0.1 M NaPhosphate Buffer (pH 8.0). 
+1	Vortex	_	Action	_	_	0	_	_	Offset=255-261
+2	resuspend	_	Action	_	_	0	_	_	Offset=265-274
+
+# sent_id = s5
+# text = (wash #1) Vortex to resuspend. 
+1	Apply	_	Action	_	_	0	_	_	Offset=287-292
+2	magnet	_	Device	_	_	0	_	_	Offset=293-299
+3	30	_	Time	_	_	0	_	_	Offset=304-314
+4	pull	_	Action	_	_	0	_	_	Offset=319-323
+5	beads	_	Reagent	_	_	0	_	_	Offset=324-329
+6	side	_	Location	_	_	0	_	_	Offset=337-341
+7	tube	_	Location	_	_	6	Meronym	_	Offset=349-353
+
+# sent_id = s6
+# text = (wash #1) Apply magnet for 30 seconds, to pull beads to the side of the tube. 
+1	Remove	_	Action	_	_	0	_	_	Offset=366-372
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=373-384
+
+# sent_id = s7
+# text = (wash #1) Remove supernatant. 
+1	Add	_	Action	_	_	0	_	_	Offset=397-400
+2	500	_	Amount	_	_	4	Measure	_	Offset=401-407
+3	0.1	_	Concentration	_	_	4	Measure	_	Offset=408-413
+4	NaPhosphate	_	Reagent	_	_	0	_	_	Offset=414-432
+5	pH	_	pH	_	_	4	Measure	_	Offset=434-440
+
+# sent_id = s8
+# text = (wash #2) Add 500 μl 0.1 M NaPhosphate Buffer (pH 8.0). 
+1	Vortex	_	Action	_	_	0	_	_	Offset=454-460
+2	resuspend	_	Action	_	_	0	_	_	Offset=464-473
+
+# sent_id = s9
+# text = (wash #2) Vortex to resuspend. 
+1	Apply	_	Action	_	_	0	_	_	Offset=486-491
+2	magnet	_	Device	_	_	0	_	_	Offset=492-498
+3	30	_	Time	_	_	0	_	_	Offset=503-513
+4	pull	_	Action	_	_	0	_	_	Offset=518-522
+5	beads	_	Reagent	_	_	0	_	_	Offset=523-528
+6	side	_	Location	_	_	0	_	_	Offset=536-540
+7	tube	_	Location	_	_	6	Meronym	_	Offset=548-552
+
+# sent_id = s10
+# text = (wash #2) Apply magnet for 30 seconds, to pull beads to the side of the tube. 
+1	Remove	_	Action	_	_	0	_	_	Offset=565-571
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=572-583
+
+# sent_id = s11
+# text = (wash #2) Remove supernatant. 
+1	Add	_	Action	_	_	0	_	_	Offset=586-589
+2	beads	_	Reagent	_	_	0	_	_	Offset=597-602
+3	80	_	Amount	_	_	5	Measure	_	Offset=603-608
+4	0.1	_	Concentration	_	_	5	Measure	_	Offset=612-617
+5	NaPhosphate	_	Reagent	_	_	0	_	_	Offset=618-636
+6	pH	_	pH	_	_	5	Measure	_	Offset=638-644
+
+# sent_id = s12
+# text = Add to the beads 80 μl of 0.1 M NaPhosphate Buffer (pH 8.0). 
+1	Add	_	Action	_	_	0	_	_	Offset=648-651
+2	15-25	_	Amount	_	_	3	Measure	_	Offset=652-660
+3	serum	_	Reagent	_	_	0	_	_	Offset=664-669
+4	20	_	Amount	_	_	6	Measure	_	Offset=673-678
+5	purified	_	Modifier	_	_	6	Mod-Link	_	Offset=679-687
+6	IgG	_	Reagent	_	_	3	Or	_	Offset=688-691
+7	maximum	_	Modifier	_	_	0	_	_	Offset=697-711
+8	30	_	Amount	_	_	7	Setting	_	Offset=715-720
+
+# sent_id = s13
+# text = Add 15-25 μl of serum OR 20 μg purified IgG in a maximum volume of 30 μl. 
+1	Mix	_	Action	_	_	0	_	_	Offset=723-726
+2	thoroughly	_	Modifier	_	_	0	_	_	Offset=727-737
+3	incubate	_	Action	_	_	0	_	_	Offset=742-750
+4	4°C	_	Temperature	_	_	0	_	_	Offset=754-757
+5	agitation	_	Method	_	_	0	_	_	Offset=763-772
+6	30	_	Time	_	_	0	_	_	Offset=777-787
+
+# sent_id = s14
+# text = Mix thoroughly and incubate at 4°C with agitation for 30 minutes. 
+1	Apply	_	Action	_	_	0	_	_	Offset=790-795
+2	magnet	_	Device	_	_	0	_	_	Offset=796-802
+3	remove	_	Action	_	_	0	_	_	Offset=807-813
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=814-825
+
+# sent_id = s15
+# text = Apply magnet and remove supernatant.
+1	Add	_	Action	_	_	0	_	_	Offset=837-840
+2	500	_	Amount	_	_	4	Measure	_	Offset=841-847
+3	0.1	_	Concentration	_	_	4	Measure	_	Offset=848-853
+4	NaPhosphate	_	Reagent	_	_	0	_	_	Offset=854-872
+5	pH	_	pH	_	_	4	Measure	_	Offset=874-880
+
+# sent_id = s16
+# text = (wash #1) Add 500 μl 0.1 M NaPhosphate Buffer (pH 8.0). 
+1	Vortex	_	Action	_	_	0	_	_	Offset=894-900
+2	resuspend	_	Action	_	_	0	_	_	Offset=904-913
+
+# sent_id = s17
+# text = (wash #1) Vortex to resuspend. 
+1	Apply	_	Action	_	_	0	_	_	Offset=926-931
+2	magnet	_	Device	_	_	0	_	_	Offset=932-938
+3	30	_	Time	_	_	0	_	_	Offset=943-953
+4	pull	_	Action	_	_	0	_	_	Offset=958-962
+5	beads	_	Reagent	_	_	0	_	_	Offset=963-968
+6	side	_	Location	_	_	0	_	_	Offset=976-980
+7	tube	_	Location	_	_	6	Meronym	_	Offset=988-992
+
+# sent_id = s18
+# text = (wash #1) Apply magnet for 30 seconds, to pull beads to the side of the tube. 
+1	Remove	_	Action	_	_	0	_	_	Offset=1005-1011
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1012-1023
+
+# sent_id = s19
+# text = (wash #1) Remove supernatant. 
+1	Add	_	Action	_	_	0	_	_	Offset=1036-1039
+2	500	_	Amount	_	_	4	Measure	_	Offset=1040-1046
+3	0.1	_	Concentration	_	_	4	Measure	_	Offset=1047-1052
+4	NaPhosphate	_	Reagent	_	_	0	_	_	Offset=1053-1071
+5	pH	_	pH	_	_	4	Measure	_	Offset=1073-1079
+
+# sent_id = s20
+# text = (wash #2) Add 500 μl 0.1 M NaPhosphate Buffer (pH 8.0). 
+1	Vortex	_	Action	_	_	0	_	_	Offset=1093-1099
+2	resuspend	_	Action	_	_	0	_	_	Offset=1103-1112
+
+# sent_id = s21
+# text = (wash #2) Vortex to resuspend. 
+1	Apply	_	Action	_	_	0	_	_	Offset=1125-1130
+2	magnet	_	Device	_	_	0	_	_	Offset=1131-1137
+3	30	_	Time	_	_	0	_	_	Offset=1142-1152
+4	pull	_	Action	_	_	0	_	_	Offset=1157-1161
+5	beads	_	Reagent	_	_	0	_	_	Offset=1162-1167
+6	side	_	Location	_	_	0	_	_	Offset=1175-1179
+7	tube	_	Location	_	_	6	Meronym	_	Offset=1187-1191
+
+# sent_id = s22
+# text = (wash #2) Apply magnet for 30 seconds, to pull beads to the side of the tube. 
+1	Remove	_	Action	_	_	0	_	_	Offset=1204-1210
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1211-1222
+
+# sent_id = s23
+# text = (wash #2) Remove supernatant. 
+1	Add	_	Action	_	_	0	_	_	Offset=1235-1238
+2	500	_	Amount	_	_	4	Measure	_	Offset=1239-1245
+3	0.1	_	Concentration	_	_	4	Measure	_	Offset=1246-1251
+4	NaPhosphate	_	Reagent	_	_	0	_	_	Offset=1252-1270
+5	pH	_	pH	_	_	4	Measure	_	Offset=1272-1278
+
+# sent_id = s24
+# text = (wash #3) Add 500 μl 0.1 M NaPhosphate Buffer (pH 8.0). 
+1	Vortex	_	Action	_	_	0	_	_	Offset=1292-1298
+2	resuspend	_	Action	_	_	0	_	_	Offset=1302-1311
+
+# sent_id = s25
+# text = (wash #3) Vortex to resuspend. 
+1	Apply	_	Action	_	_	0	_	_	Offset=1324-1329
+2	magnet	_	Device	_	_	0	_	_	Offset=1330-1336
+3	30	_	Time	_	_	0	_	_	Offset=1341-1351
+4	pull	_	Action	_	_	0	_	_	Offset=1356-1360
+5	beads	_	Reagent	_	_	0	_	_	Offset=1361-1366
+6	side	_	Location	_	_	0	_	_	Offset=1374-1378
+7	tube	_	Location	_	_	6	Meronym	_	Offset=1386-1390
+8	Remove	_	Action	_	_	0	_	_	Offset=1401-1407
+9	supernatant	_	Reagent	_	_	0	_	_	Offset=1408-1419
+
+# sent_id = s26
+# text = (wash #3) Apply magnet for 30 seconds, to pull beads to the side of the tube (wash #3) Remove supernatant. 
+1	Add	_	Action	_	_	0	_	_	Offset=1422-1425
+2	1	_	Amount	_	_	3	Measure	_	Offset=1426-1430
+3	Cross-linking	_	Reagent	_	_	5	Meronym	_	Offset=1434-1454
+4	0.2	_	Concentration	_	_	5	Measure	_	Offset=1456-1461
+5	triethanolamine	_	Reagent	_	_	0	_	_	Offset=1462-1477
+6	pH	_	pH	_	_	5	Measure	_	Offset=1480-1486
+7	Protein	_	Reagent	_	_	0	_	_	Offset=1496-1528
+
+# sent_id = s27
+# text = Add 1 ml of Cross-linking Buffer (0.2 M triethanolamine, [pH 8.2]) to the Protein A/G immobilized antibody. 
+1	Vortex	_	Action	_	_	0	_	_	Offset=1540-1546
+2	resuspend	_	Action	_	_	0	_	_	Offset=1550-1559
+
+# sent_id = s28
+# text = (wash a) Vortex to resuspend. 
+1	Apply	_	Action	_	_	0	_	_	Offset=1571-1576
+2	magnet	_	Device	_	_	0	_	_	Offset=1577-1583
+3	30	_	Time	_	_	0	_	_	Offset=1588-1598
+4	pull	_	Action	_	_	0	_	_	Offset=1603-1607
+5	beads	_	Reagent	_	_	0	_	_	Offset=1608-1613
+6	side	_	Location	_	_	0	_	_	Offset=1621-1625
+7	tube	_	Location	_	_	6	Meronym	_	Offset=1633-1637
+
+# sent_id = s29
+# text = (wash a) Apply magnet for 30 seconds, to pull beads to the side of the tube. 
+1	Remove	_	Action	_	_	0	_	_	Offset=1649-1655
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1656-1667
+
+# sent_id = s30
+# text = (wash a) Remove supernatant. 
+1	Add	_	Action	_	_	0	_	_	Offset=1679-1682
+2	1	_	Amount	_	_	3	Measure	_	Offset=1683-1687
+3	Cross-linking	_	Reagent	_	_	0	_	_	Offset=1691-1711
+4	0.2	_	Concentration	_	_	5	Measure	_	Offset=1713-1718
+5	triethanolamine	_	Reagent	_	_	0	_	_	Offset=1719-1734
+6	pH	_	pH	_	_	5	Measure	_	Offset=1737-1743
+7	Protein	_	Reagent	_	_	0	_	_	Offset=1753-1785
+
+# sent_id = s31
+# text = (wash a) Add 1 ml of Cross-linking Buffer (0.2 M triethanolamine, [pH 8.2]) to the Protein A/G immobilized antibody. 
+1	Vortex	_	Action	_	_	0	_	_	Offset=1797-1803
+2	resuspend	_	Reagent	_	_	0	_	_	Offset=1807-1816
+
+# sent_id = s32
+# text = (wash b) Vortex to resuspend. 
+1	Apply	_	Action	_	_	0	_	_	Offset=1828-1833
+2	magnet	_	Device	_	_	0	_	_	Offset=1834-1840
+3	30	_	Time	_	_	0	_	_	Offset=1845-1855
+4	pull	_	Action	_	_	0	_	_	Offset=1860-1864
+5	beads	_	Reagent	_	_	0	_	_	Offset=1865-1870
+6	side	_	Location	_	_	0	_	_	Offset=1878-1882
+7	tube	_	Location	_	_	6	Meronym	_	Offset=1890-1894
+
+# sent_id = s33
+# text = (wash b) Apply magnet for 30 seconds, to pull beads to the side of the tube.  
+1	Remove	_	Action	_	_	0	_	_	Offset=1907-1913
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1914-1925
+
+# sent_id = s34
+# text = (wash b) Remove supernatant. 
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1937-1946
+2	1	_	Amount	_	_	3	Measure	_	Offset=1950-1954
+3	Cross-linking	_	Reagent	_	_	5	Meronym	_	Offset=1955-1975
+4	25	_	Concentration	_	_	5	Measure	_	Offset=1987-1992
+5	DMP	_	Reagent	_	_	0	_	_	Offset=1993-1996
+6	6.5	_	Generic-Measure	_	_	0	_	_	Offset=1998-2021
+
+# sent_id = s35
+# text = (wash b) Resuspend in 1 ml Cross-linking Buffer containing 25 mM DMP (6.5 mg DMP/ml of buffer). 
+1	Mix	_	Action	_	_	0	_	_	Offset=2025-2028
+2	thoroughly	_	Modifier	_	_	0	_	_	Offset=2029-2039
+3	incubate	_	Action	_	_	0	_	_	Offset=2044-2052
+4	room	_	Temperature	_	_	0	_	_	Offset=2056-2072
+5	45	_	Time	_	_	0	_	_	Offset=2077-2087
+6	agitation	_	Method	_	_	0	_	_	Offset=2093-2102
+
+# sent_id = s36
+# text = Mix thoroughly and incubate at room temperature for 45 minutes with agitation. 
+1	Apply	_	Action	_	_	0	_	_	Offset=2105-2110
+2	magnet	_	Device	_	_	0	_	_	Offset=2111-2117
+3	30	_	Time	_	_	0	_	_	Offset=2122-2132
+4	pull	_	Action	_	_	0	_	_	Offset=2137-2141
+5	beads	_	Reagent	_	_	0	_	_	Offset=2142-2147
+6	side	_	Location	_	_	0	_	_	Offset=2155-2159
+7	tube	_	Location	_	_	6	Meronym	_	Offset=2167-2171
+
+# sent_id = s37
+# text = Apply magnet for 30 seconds, to pull beads to the side of the tube. 
+1	Remove	_	Action	_	_	0	_	_	Offset=2174-2180
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=2181-2192
+
+# sent_id = s38
+# text = Remove supernatant. 
+1	Add	_	Action	_	_	0	_	_	Offset=2195-2198
+2	1	_	Amount	_	_	3	Measure	_	Offset=2199-2203
+3	Blocking	_	Reagent	_	_	0	_	_	Offset=2204-2219
+4	0.1	_	Concentration	_	_	5	Measure	_	Offset=2221-2226
+5	ethanolamine	_	Reagent	_	_	0	_	_	Offset=2227-2239
+6	pH	_	pH	_	_	5	Measure	_	Offset=2242-2248
+
+# sent_id = s39
+# text = Add 1 ml Blocking Buffer (0.1 M ethanolamine, [pH 8.2]).   
+1	Vortex	_	Action	_	_	0	_	_	Offset=2255-2261
+2	resuspend	_	Reagent	_	_	0	_	_	Offset=2265-2274
+
+# sent_id = s40
+# text = Vortex to resuspend.  
+1	Apply	_	Action	_	_	0	_	_	Offset=2278-2283
+2	magnet	_	Device	_	_	0	_	_	Offset=2284-2290
+3	30	_	Time	_	_	0	_	_	Offset=2295-2305
+4	pull	_	Action	_	_	0	_	_	Offset=2310-2314
+5	beads	_	Reagent	_	_	0	_	_	Offset=2315-2320
+6	side	_	Location	_	_	0	_	_	Offset=2328-2332
+7	tube	_	Location	_	_	6	Meronym	_	Offset=2340-2344
+
+# sent_id = s41
+# text = Apply magnet for 30 seconds, to pull beads to the side of the tube. 
+1	Remove	_	Action	_	_	0	_	_	Offset=2347-2353
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=2354-2365
+
+# sent_id = s42
+# text = Remove supernatant. 
+1	Add	_	Action	_	_	0	_	_	Offset=2368-2371
+2	1	_	Amount	_	_	3	Measure	_	Offset=2372-2376
+3	Blocking	_	Reagent	_	_	0	_	_	Offset=2380-2395
+4	Vortex	_	Action	_	_	0	_	_	Offset=2396-2402
+5	resuspend	_	Action	_	_	0	_	_	Offset=2406-2415
+
+# sent_id = s43
+# text = Add 1 ml of Blocking Buffer Vortex to resuspend. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=2418-2426
+2	1	_	Time	_	_	0	_	_	Offset=2431-2437
+3	room	_	Temperature	_	_	0	_	_	Offset=2441-2457
+4	agitation	_	Method	_	_	0	_	_	Offset=2463-2472
+
+# sent_id = s44
+# text = Incubate for 1 hour at room temperature with agitation. 
+1	Apply	_	Action	_	_	0	_	_	Offset=2475-2480
+2	magnet	_	Device	_	_	0	_	_	Offset=2481-2487
+3	30	_	Time	_	_	0	_	_	Offset=2492-2502
+4	pull	_	Action	_	_	0	_	_	Offset=2507-2511
+5	beads	_	Reagent	_	_	0	_	_	Offset=2512-2517
+6	side	_	Location	_	_	0	_	_	Offset=2525-2529
+7	tube	_	Location	_	_	6	Meronym	_	Offset=2537-2541
+
+# sent_id = s45
+# text = Apply magnet for 30 seconds, to pull beads to the side of the tube. 
+1	Remove	_	Action	_	_	0	_	_	Offset=2544-2550
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=2551-2562
+
+# sent_id = s46
+# text = Remove supernatant. 
+1	Add	_	Action	_	_	0	_	_	Offset=2575-2578
+2	1	_	Amount	_	_	3	Measure	_	Offset=2579-2583
+3	PBS	_	Reagent	_	_	0	_	_	Offset=2587-2590
+
+# sent_id = s47
+# text = (wash #1) Add 1 ml of PBS. 
+1	Vortex	_	Action	_	_	0	_	_	Offset=2603-2609
+2	resuspend	_	Action	_	_	0	_	_	Offset=2613-2622
+
+# sent_id = s48
+# text = (wash #1) Vortex to resuspend. 
+1	Apply	_	Action	_	_	0	_	_	Offset=2635-2640
+2	magnet	_	Device	_	_	0	_	_	Offset=2641-2647
+3	30	_	Time	_	_	0	_	_	Offset=2652-2662
+4	pull	_	Action	_	_	0	_	_	Offset=2667-2671
+5	beads	_	Reagent	_	_	0	_	_	Offset=2672-2677
+6	side	_	Location	_	_	0	_	_	Offset=2685-2689
+7	tube	_	Location	_	_	6	Meronym	_	Offset=2697-2701
+
+# sent_id = s49
+# text = (wash #1) Apply magnet for 30 seconds, to pull beads to the side of the tube. 
+1	Remove	_	Action	_	_	0	_	_	Offset=2714-2720
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=2721-2732
+
+# sent_id = s50
+# text = (wash #1) Remove supernatant. 
+1	Add	_	Action	_	_	0	_	_	Offset=2745-2748
+2	1	_	Amount	_	_	3	Measure	_	Offset=2749-2753
+3	PBS	_	Reagent	_	_	0	_	_	Offset=2757-2760
+
+# sent_id = s51
+# text = (wash #2) Add 1 ml of PBS. 
+1	Vortex	_	Action	_	_	0	_	_	Offset=2774-2780
+2	resuspend	_	Action	_	_	0	_	_	Offset=2784-2793
+
+# sent_id = s52
+# text = (wash #2)  Vortex to resuspend. 
+1	Apply	_	Action	_	_	0	_	_	Offset=2806-2811
+2	magnet	_	Device	_	_	0	_	_	Offset=2812-2818
+3	30	_	Time	_	_	0	_	_	Offset=2823-2833
+4	pull	_	Action	_	_	0	_	_	Offset=2838-2842
+5	beads	_	Reagent	_	_	0	_	_	Offset=2843-2848
+6	side	_	Location	_	_	0	_	_	Offset=2856-2860
+7	tube	_	Location	_	_	6	Meronym	_	Offset=2868-2872
+8	Remove	_	Action	_	_	0	_	_	Offset=2883-2889
+9	supernatant	_	Reagent	_	_	0	_	_	Offset=2890-2901
+
+# sent_id = s53
+# text = (wash #2) Apply magnet for 30 seconds, to pull beads to the side of the tube (wash #2) Remove supernatant. 
+1	Add	_	Action	_	_	0	_	_	Offset=2914-2917
+2	1	_	Amount	_	_	3	Measure	_	Offset=2918-2922
+3	PBS	_	Reagent	_	_	0	_	_	Offset=2926-2929
+
+# sent_id = s54
+# text = (wash #3) Add 1 ml of PBS. 
+1	Vortex	_	Action	_	_	0	_	_	Offset=2943-2949
+2	resuspend	_	Action	_	_	0	_	_	Offset=2953-2962
+
+# sent_id = s55
+# text = (wash #3)  Vortex to resuspend. 
+1	Apply	_	Action	_	_	0	_	_	Offset=2976-2981
+2	magnet	_	Device	_	_	0	_	_	Offset=2982-2988
+3	30	_	Time	_	_	0	_	_	Offset=2993-3003
+4	pull	_	Action	_	_	0	_	_	Offset=3008-3012
+5	beads	_	Reagent	_	_	0	_	_	Offset=3013-3018
+6	side	_	Location	_	_	0	_	_	Offset=3026-3030
+7	tube	_	Location	_	_	6	Meronym	_	Offset=3038-3042
+
+# sent_id = s56
+# text = (wash #3)  Apply magnet for 30 seconds, to pull beads to the side of the tube. 
+1	Remove	_	Action	_	_	0	_	_	Offset=3055-3061
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=3062-3073
+
+# sent_id = s57
+# text = (wash #3) Remove supernatant. 
+1	Add	_	Action	_	_	0	_	_	Offset=3076-3079
+2	1	_	Amount	_	_	3	Measure	_	Offset=3080-3084
+3	Elution	_	Reagent	_	_	0	_	_	Offset=3085-3099
+4	0.1	_	Concentration	_	_	5	Measure	_	Offset=3101-3106
+5	glycine-HCl	_	Reagent	_	_	0	_	_	Offset=3107-3118
+6	pH	_	pH	_	_	5	Measure	_	Offset=3120-3126
+
+# sent_id = s58
+# text = Add 1 ml Elution Buffer (0.1 M glycine-HCl [pH 2.5]). 
+1	Vortex	_	Action	_	_	0	_	_	Offset=3131-3137
+2	resuspend	_	Action	_	_	0	_	_	Offset=3141-3150
+
+# sent_id = s59
+# text = Vortex to resuspend. 
+1	Apply	_	Action	_	_	0	_	_	Offset=3153-3158
+2	magnet	_	Device	_	_	0	_	_	Offset=3159-3165
+3	30	_	Time	_	_	0	_	_	Offset=3170-3180
+4	pull	_	Action	_	_	0	_	_	Offset=3185-3189
+5	beads	_	Reagent	_	_	0	_	_	Offset=3190-3195
+6	side	_	Location	_	_	0	_	_	Offset=3203-3207
+7	tube	_	Location	_	_	6	Meronym	_	Offset=3215-3219
+
+# sent_id = s60
+# text = Apply magnet for 30 seconds, to pull beads to the side of the tube. 
+1	Remove	_	Action	_	_	0	_	_	Offset=3222-3228
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=3229-3240
+
+# sent_id = s61
+# text = Remove supernatant. 
+1	Resuspend	_	Action	_	_	0	_	_	Offset=3243-3252
+2	store	_	Action	_	_	0	_	_	Offset=3257-3262
+3	beads	_	Reagent	_	_	0	_	_	Offset=3263-3268
+4	100	_	Amount	_	_	5	Measure	_	Offset=3272-3278
+5	PBS	_	Reagent	_	_	0	_	_	Offset=3279-3282
+6	0.1%	_	Concentration	_	_	7	Measure	_	Offset=3284-3288
+7	Tween	_	Reagent	_	_	0	_	_	Offset=3289-3297
+8	0.02%	_	Concentration	_	_	9	Measure	_	Offset=3299-3304
+9	sodium	_	Reagent	_	_	0	_	_	Offset=3305-3317
+

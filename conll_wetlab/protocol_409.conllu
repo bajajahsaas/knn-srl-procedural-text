@@ -1,0 +1,186 @@
+# sent_id = s1
+# text = Seydoux lab Cas9 preparation
+1	Transform	_	Action	_	_	0	_	_	Offset=29-38
+2	DE3	_	Reagent	_	_	0	_	_	Offset=39-72
+3	nm2973	_	Reagent	_	_	0	_	_	Offset=78-92
+4	plate	_	Action	_	_	0	_	_	Offset=113-118
+5	LB	_	Reagent	_	_	0	_	_	Offset=122-148
+
+# sent_id = s2
+# text = Transform DE3 GOLD (Agilent, #230132) cells with nm2973 plasmid (Fu et al 2014) and plate on LB + 50μg/mL Carbenicillin. 
+1	Inoculate	_	Action	_	_	0	_	_	Offset=151-160
+2	25mL	_	Amount	_	_	3	Measure	_	Offset=161-165
+3	LB	_	Reagent	_	_	0	_	_	Offset=166-193
+4	bacteria	_	Reagent	_	_	0	_	_	Offset=199-207
+5	incubate	_	Action	_	_	0	_	_	Offset=242-250
+6	37	_	Temperature	_	_	0	_	_	Offset=254-260
+7	overnight	_	Time	_	_	0	_	_	Offset=260-269
+
+# sent_id = s3
+# text = Inoculate 25mL LB + 50 μg/mL Carbenicillin with bacteria from the fresh transformation and incubate at 37 °C overnight.
+1	Transfer	_	Action	_	_	0	_	_	Offset=271-279
+2	5mL	_	Amount	_	_	4	Measure	_	Offset=280-283
+3	overnight	_	Modifier	_	_	4	Mod-Link	_	Offset=287-296
+4	culture	_	Reagent	_	_	0	_	_	Offset=297-304
+5	1L	_	Amount	_	_	6	Measure	_	Offset=308-310
+6	LB	_	Reagent	_	_	0	_	_	Offset=311-353
+
+# sent_id = s4
+# text = Transfer 5mL of overnight culture to 1L LB + 0.1% glucose + 50 μg/mL Carbenicillin.
+1	Grow	_	Action	_	_	0	_	_	Offset=355-359
+2	25	_	Temperature	_	_	0	_	_	Offset=363-368
+3	OD600=~0.5	_	Generic-Measure	_	_	0	_	_	Offset=372-382
+
+# sent_id = s5
+# text = Grow at 25 °C to OD600=~0.5.
+1	Shift	_	Action	_	_	0	_	_	Offset=384-389
+2	culture	_	Reagent	_	_	0	_	_	Offset=390-397
+3	18	_	Temperature	_	_	0	_	_	Offset=401-406
+4	15‐25	_	Time	_	_	0	_	_	Offset=411-424
+
+# sent_id = s6
+# text = Shift culture to 18 °C for 15‐25 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=426-429
+2	IPTG	_	Reagent	_	_	0	_	_	Offset=430-434
+3	0.2	_	Concentration	_	_	0	_	_	Offset=438-444
+4	incubate	_	Action	_	_	0	_	_	Offset=449-457
+5	overnight	_	Time	_	_	0	_	_	Offset=458-467
+
+# sent_id = s7
+# text = Add IPTG to 0.2 mM and incubate overnight.
+1	Pellet	_	Action	_	_	0	_	_	Offset=469-475
+2	culture	_	Reagent	_	_	0	_	_	Offset=476-483
+
+# sent_id = s8
+# text = Pellet culture and obtain wet weight.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=507-516
+2	~6	_	Generic-Measure	_	_	3	Measure	_	Offset=520-527
+3	cells	_	Reagent	_	_	0	_	_	Offset=528-533
+4	Buffer	_	Reagent	_	_	0	_	_	Offset=539-547
+5	protease	_	Reagent	_	_	0	_	_	Offset=550-568
+6	1mM	_	Concentration	_	_	7	Measure	_	Offset=593-596
+7	PMSF	_	Reagent	_	_	0	_	_	Offset=597-601
+
+# sent_id = s9
+# text = Resuspend at ~6 mL/g cells with Buffer A + protease inhibitor (Roche, #11836170001) + 1mM PMSF.
+1	Sonicate	_	Action	_	_	0	_	_	Offset=603-611
+2	6	_	Generic-Measure	_	_	0	_	_	Offset=612-619
+3	1	_	Time	_	_	0	_	_	Offset=675-683
+4	cooling	_	Action	_	_	0	_	_	Offset=684-691
+
+# sent_id = s10
+# text = Sonicate 6 x 45s (setting 3 at 30%, 1 second pulse‐2 second pause) with 1 minute cooling inbetween.
+1	Spin	_	Action	_	_	0	_	_	Offset=703-707
+2	lysate	_	Reagent	_	_	0	_	_	Offset=708-714
+3	30	_	Time	_	_	0	_	_	Offset=715-725
+4	16000xg	_	Speed	_	_	0	_	_	Offset=729-736
+5	transfer	_	Action	_	_	0	_	_	Offset=741-749
+6	supernatant	_	Reagent	_	_	0	_	_	Offset=750-761
+7	fresh	_	Modifier	_	_	8	Mod-Link	_	Offset=767-772
+8	tube	_	Location	_	_	0	_	_	Offset=773-777
+
+# sent_id = s11
+# text = Spin lysate 30 minutes at 16000xg and transfer supernatant to a fresh tube.
+1	Equilibrate	_	Action	_	_	0	_	_	Offset=779-790
+2	5mL	_	Amount	_	_	3	Measure	_	Offset=793-796
+3	Ni‐agarose	_	Reagent	_	_	0	_	_	Offset=797-807
+4	Buffer	_	Reagent	_	_	0	_	_	Offset=842-850
+5	at	_	Modifier	_	_	6	Mod-Link	_	Offset=852-860
+6	25mL	_	Amount	_	_	4	Measure	_	Offset=861-865
+
+# sent_id = s12
+# text = Equilibrate a 5mL Ni‐agarose (Qiagen, #30410) with column with Buffer A (at least 25mL).
+1	Batch	_	Action	_	_	0	_	_	Offset=868-878
+2	clarified	_	Modifier	_	_	3	Mod-Link	_	Offset=879-888
+3	lysate	_	Reagent	_	_	0	_	_	Offset=889-895
+4	Ni‐agarose	_	Reagent	_	_	0	_	_	Offset=901-911
+5	45	_	Time	_	_	0	_	_	Offset=912-922
+6	4	_	Temperature	_	_	0	_	_	Offset=926-930
+
+# sent_id = s13
+# text = Batch bind clarified lysate with Ni‐agarose 45 minutes at 4 °C.
+1	Wash	_	Action	_	_	0	_	_	Offset=932-936
+2	Ni‐agarose	_	Reagent	_	_	0	_	_	Offset=937-954
+3	100mL	_	Amount	_	_	4	Measure	_	Offset=960-965
+4	Buffer	_	Reagent	_	_	0	_	_	Offset=969-978
+
+# sent_id = s14
+# text = Wash Ni‐agarose column with 100mL of Buffer B. 
+1	Elute	_	Action	_	_	0	_	_	Offset=980-985
+2	protein	_	Reagent	_	_	0	_	_	Offset=986-993
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=999-1008
+
+# sent_id = s15
+# text = Elute protein with Buffer C. 
+1	Determine	_	Action	_	_	0	_	_	Offset=1010-1019
+2	fractions	_	Reagent	_	_	0	_	_	Offset=1020-1029
+3	Cas9	_	Reagent	_	_	0	_	_	Offset=1040-1052
+4	Bradford	_	Method	_	_	0	_	_	Offset=1059-1073
+5	running	_	Action	_	_	0	_	_	Offset=1080-1087
+6	small	_	Amount	_	_	7	Measure	_	Offset=1090-1102
+7	SDS‐PAGE	_	Reagent	_	_	0	_	_	Offset=1106-1118
+
+# sent_id = s16
+# text = Determine fractions that have Cas9 protein using Bradford assay or by running a small amount on SDS‐PAGE gel.
+1	Pool	_	Action	_	_	0	_	_	Offset=1120-1124
+2	fractions	_	Reagent	_	_	0	_	_	Offset=1125-1134
+
+# sent_id = s17
+# text = Pool fractions.
+1	Equilibrate	_	Action	_	_	0	_	_	Offset=1136-1147
+2	5mL	_	Amount	_	_	3	Measure	_	Offset=1150-1153
+3	Q	_	Reagent	_	_	0	_	_	Offset=1154-1188
+4	1M	_	Concentration	_	_	5	Measure	_	Offset=1194-1196
+5	KCl	_	Reagent	_	_	0	_	_	Offset=1197-1200
+6	25mL	_	Amount	_	_	5	Measure	_	Offset=1202-1206
+
+# sent_id = s18
+# text = Equilibrate a 5mL Q Sepharose (Sigma, #Q1126) column with 1M KCl (25mL, this charges the column).
+1	Equilibrate	_	Action	_	_	0	_	_	Offset=1234-1245
+2	Q	_	Reagent	_	_	0	_	_	Offset=1246-1264
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=1270-1278
+4	25mL	_	Amount	_	_	3	Measure	_	Offset=1280-1284
+
+# sent_id = s19
+# text = Equilibrate Q Sepharose column with Buffer C (25mL).
+1	Flow	_	Action	_	_	0	_	_	Offset=1287-1291
+2	eluent	_	Reagent	_	_	0	_	_	Offset=1292-1298
+3	Q	_	Reagent	_	_	0	_	_	Offset=1319-1337
+
+# sent_id = s20
+# text = Flow eluent (from step 17) over Q Sepharose column.
+1	Collect	_	Action	_	_	0	_	_	Offset=1339-1346
+2	flow‐through	_	Reagent	_	_	0	_	_	Offset=1347-1359
+3	dialyze	_	Action	_	_	0	_	_	Offset=1364-1371
+4	1L	_	Amount	_	_	5	Measure	_	Offset=1377-1379
+5	Buffer	_	Reagent	_	_	0	_	_	Offset=1380-1388
+6	5	_	Time	_	_	0	_	_	Offset=1393-1400
+7	4	_	Temperature	_	_	0	_	_	Offset=1404-1408
+
+# sent_id = s21
+# text = Collect flow‐through and dialyze into 1L Buffer D for 5 hours at 4 °C.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1410-1418
+2	1L	_	Amount	_	_	3	Measure	_	Offset=1424-1426
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=1427-1435
+4	dialyze	_	Action	_	_	0	_	_	Offset=1440-1447
+5	overnight	_	Time	_	_	0	_	_	Offset=1448-1457
+
+# sent_id = s22
+# text = Transfer into 1L Buffer D and dialyze overnight.
+1	Concentrate	_	Action	_	_	0	_	_	Offset=1459-1470
+2	protein	_	Reagent	_	_	0	_	_	Offset=1471-1478
+3	~10	_	Concentration	_	_	0	_	_	Offset=1482-1491
+4	100K	_	Device	_	_	0	_	_	Offset=1500-1523
+
+# sent_id = s23
+# text = Concentrate protein to ~10 mg/mL using a 100K centrifugal filter (Milipore, UFC910024).
+1	Aliquot	_	Action	_	_	0	_	_	Offset=1547-1554
+2	flash‐freeze	_	Action	_	_	0	_	_	Offset=1559-1571
+3	liquid	_	Reagent	_	_	0	_	_	Offset=1575-1590
+
+# sent_id = s24
+# text = Aliquot and flash‐freeze in liquid nitrogen.
+1	Store	_	Action	_	_	0	_	_	Offset=1592-1597
+2	aliquots	_	Reagent	_	_	0	_	_	Offset=1598-1606
+3	‐80°C	_	Temperature	_	_	0	_	_	Offset=1610-1615
+

@@ -1,0 +1,584 @@
+# sent_id = s1
+# text = Illumina Small RNA cloning protocol using Random Adapters
+1	Prepare	_	Action	_	_	0	_	_	Offset=120-127
+2	12%	_	Concentration	_	_	3	Measure	_	Offset=130-133
+3	polyacrylamide/urea	_	Reagent	_	_	0	_	_	Offset=134-157
+
+# sent_id = s2
+# text = Section I: Size selection and Gel purification of RNA sample.
+1	Spike	_	Action	_	_	0	_	_	Offset=272-277
+2	RNA	_	Reagent	_	_	0	_	_	Offset=278-289
+3	32P-labeled	_	Modifier	_	_	4	Mod-Link	_	Offset=295-306
+4	19,	_	Reagent	_	_	0	_	_	Offset=307-336
+
+# sent_id = s3
+# text = Prepare a 12% polyacrylamide/urea gel
+1	Load	_	Action	_	_	0	_	_	Offset=408-412
+2	sample(s)	_	Reagent	_	_	0	_	_	Offset=417-426
+3	run	_	Action	_	_	0	_	_	Offset=431-434
+4	gel	_	Reagent	_	_	0	_	_	Offset=439-442
+5	constant	_	Modifier	_	_	6	Mod-Link	_	Offset=446-454
+6	10W	_	Generic-Measure	_	_	0	_	_	Offset=455-458
+7	1-1.5	_	Time	_	_	0	_	_	Offset=463-472
+
+# sent_id = s4
+# text = (thickness will depend on the amount of total RNA being run.
+1	Add	_	Action	_	_	0	_	_	Offset=532-535
+2	equal	_	Amount	_	_	3	Measure	_	Offset=539-551
+3	Gel	_	Reagent	_	_	0	_	_	Offset=555-576
+4	1X	_	Concentration	_	_	3	Measure	_	Offset=578-580
+5	heat	_	Action	_	_	0	_	_	Offset=583-587
+6	samples	_	Reagent	_	_	0	_	_	Offset=588-595
+7	95C	_	Temperature	_	_	0	_	_	Offset=599-602
+8	5	_	Time	_	_	0	_	_	Offset=607-616
+
+# sent_id = s5
+# text = As a guide, we use 1.0mm for <20µg,1.5mm for >20µg).
+1	Chill	_	Action	_	_	0	_	_	Offset=618-623
+2	ice	_	Location	_	_	0	_	_	Offset=627-630
+3	1	_	Time	_	_	0	_	_	Offset=635-643
+
+# sent_id = s6
+# text = Spike RNA samples with 32P-labeled 19, 24, 28 and/or 33bp oligos (~10,000 counts per oligo, per minute) – depending on the application.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=645-654
+2	grind	_	Action	_	_	0	_	_	Offset=655-660
+3	gel	_	Reagent	_	_	0	_	_	Offset=661-671
+4	hand	_	Device	_	_	0	_	_	Offset=675-679
+5	pestle	_	Device	_	_	0	_	_	Offset=688-694
+
+# sent_id = s7
+# text = Load the sample(s) and run the gel at constant 10W for 1-1.5 hrs (until the first dye front reaches the middle of the gel).
+1	Expose	_	Action	_	_	0	_	_	Offset=696-702
+2	phosphor-screen	_	Device	_	_	0	_	_	Offset=705-720
+3	gel	_	Reagent	_	_	0	_	_	Offset=730-733
+4	10-15	_	Time	_	_	0	_	_	Offset=738-751
+5	Add	_	Action	_	_	0	_	_	Offset=829-832
+6	420µL	_	Amount	_	_	8	Measure	_	Offset=833-838
+7	0.4M	_	Concentration	_	_	8	Measure	_	Offset=842-846
+8	NaCl	_	Reagent	_	_	0	_	_	Offset=847-851
+
+# sent_id = s8
+# text = Add an equal amount of Gel Loading Buffer II (1X), heat samples at 95C for 5 minutes.
+1	Spin	_	Action	_	_	0	_	_	Offset=853-857
+2	briefly	_	Modifier	_	_	0	_	_	Offset=858-865
+3	centrifuge	_	Device	_	_	0	_	_	Offset=871-881
+4	maximum	_	Speed	_	_	0	_	_	Offset=885-898
+
+# sent_id = s9
+# text = Chill on ice for 1 minute.
+1	Flash	_	Action	_	_	0	_	_	Offset=900-912
+2	samples	_	Reagent	_	_	0	_	_	Offset=913-920
+3	1	_	Time	_	_	0	_	_	Offset=925-933
+4	bath	_	Location	_	_	5	Meronym	6:Meronym	Offset=939-943
+5	EtOH	_	Reagent	_	_	0	_	_	Offset=947-951
+6	dry	_	Reagent	_	_	0	_	_	Offset=956-963
+
+# sent_id = s10
+# text = Carefully grind gel slices by hand using a pestle.
+1	Transfer	_	Action	_	_	0	_	_	Offset=965-973
+2	eluant	_	Reagent	_	_	0	_	_	Offset=974-980
+3	fresh	_	Modifier	_	_	4	Mod-Link	_	Offset=986-991
+4	microcentrifuge	_	Location	_	_	0	_	_	Offset=992-1012
+
+# sent_id = s11
+# text = Expose a phosphor-screen over the gel for 10-15 minutes (time will vary depending on radioactivity intensity and imager sensitivity) Add 420µL of 0.4M NaCl.
+1	Add	_	Action	_	_	0	_	_	Offset=1014-1017
+2	20µg	_	Amount	_	_	3	Measure	_	Offset=1018-1022
+3	GlycoBlue	_	Reagent	_	_	0	_	_	Offset=1023-1032
+4	mix	_	Action	_	_	0	_	_	Offset=1034-1037
+5	add	_	Action	_	_	0	_	_	Offset=1043-1046
+6	2.5	_	Amount	_	_	8	Measure	_	Offset=1047-1058
+7	100%	_	Concentration	_	_	8	Measure	_	Offset=1062-1066
+8	EtOH	_	Reagent	_	_	0	_	_	Offset=1067-1071
+9	Spin	_	Action	_	_	0	_	_	Offset=1072-1076
+10	4C	_	Temperature	_	_	0	_	_	Offset=1080-1082
+11	30	_	Time	_	_	0	_	_	Offset=1087-1097
+
+# sent_id = s12
+# text = Spin briefly in a centrifuge at maximum speed.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1099-1107
+2	-20C	_	Temperature	_	_	0	_	_	Offset=1111-1115
+3	3-6+	_	Time	_	_	0	_	_	Offset=1120-1130
+
+# sent_id = s13
+# text = Flash freeze samples for 1 minute in a bath of EtOH and dry ice.
+1	Air	_	Action	_	_	0	_	_	Offset=1132-1139
+2	<5	_	Time	_	_	0	_	_	Offset=1144-1150
+3	resuspend	_	Action	_	_	0	_	_	Offset=1155-1164
+4	pellet	_	Reagent	_	_	0	_	_	Offset=1165-1171
+5	13µL	_	Amount	_	_	6	Measure	_	Offset=1175-1179
+6	DEPC-MilliQ	_	Reagent	_	_	0	_	_	Offset=1180-1195
+7	insert	_	Action	_	_	0	_	_	Offset=1210-1216
+8	gel	_	Reagent	_	_	0	_	_	Offset=1219-1228
+9	dialyzer	_	Location	_	_	0	_	_	Offset=1236-1249
+10	Novagen,	_	Device	_	_	9	Meronym	_	Offset=1251-1286
+11	3.5	_	Generic-Measure	_	_	10	Setting	_	Offset=1287-1294
+12	450ul	_	Amount	_	_	13	Measure	_	Offset=1326-1331
+13	water	_	Reagent	_	_	0	_	_	Offset=1335-1340
+
+# sent_id = s14
+# text = Transfer eluant to a fresh microcentrifuge tube.
+1	Reverse	_	Action	_	_	0	_	_	Offset=1342-1349
+2	poles	_	Device	_	_	0	_	_	Offset=1354-1359
+3	run	_	Action	_	_	0	_	_	Offset=1364-1367
+4	2	_	Time	_	_	0	_	_	Offset=1372-1381
+5	pull	_	Action	_	_	0	_	_	Offset=1385-1389
+6	sample	_	Reagent	_	_	0	_	_	Offset=1394-1400
+7	dialysis	_	Location	_	_	0	_	_	Offset=1409-1429
+
+# sent_id = s15
+# text = Add 20µg GlycoBlue, mix, and add 2.5 volumes of 100% EtOH Spin at 4C for 30 minutes.
+1	Position	_	Action	_	_	0	_	_	Offset=1431-1439
+2	dialyzer	_	Device	_	_	0	_	_	Offset=1444-1452
+3	gel	_	Location	_	_	0	_	_	Offset=1460-1467
+4	submerged	_	Action	_	_	0	_	_	Offset=1469-1478
+5	1xTAE	_	Reagent	_	_	0	_	_	Offset=1482-1487
+6	dialysis	_	Device	_	_	0	_	_	Offset=1503-1518
+7	current	_	Device	_	_	0	_	_	Offset=1527-1534
+8	running	_	Action	_	_	0	_	_	Offset=1535-1542
+9	perpendicularly	_	Location	_	_	0	_	_	Offset=1543-1558
+10	it	_	Mention	_	_	0	_	_	Offset=1567-1569
+
+# sent_id = s16
+# text = Incubate at -20C for 3-6+ hours.
+1	Pull	_	Action	_	_	0	_	_	Offset=1571-1579
+2	all	_	Modifier	_	_	3	Mod-Link	_	Offset=1580-1583
+3	water	_	Reagent	_	_	0	_	_	Offset=1591-1596
+4	fresh	_	Modifier	_	_	5	Mod-Link	_	Offset=1604-1609
+5	microcentrifuge	_	Location	_	_	0	_	_	Offset=1610-1630
+6	mix	_	Action	_	_	0	_	_	Offset=1632-1635
+7	20µg	_	Amount	_	_	8	Measure	_	Offset=1639-1643
+8	GlycoBlue	_	Reagent	_	_	0	_	_	Offset=1644-1653
+9	add	_	Action	_	_	0	_	_	Offset=1658-1661
+10	2.5	_	Amount	_	_	12	Measure	_	Offset=1662-1673
+11	100%	_	Concentration	_	_	12	Measure	_	Offset=1677-1681
+12	EtOH	_	Reagent	_	_	0	_	_	Offset=1682-1686
+13	Wash	_	Action	_	_	0	_	_	Offset=1687-1691
+14	70%	_	Concentration	_	_	15	Measure	_	Offset=1697-1700
+15	EtOH	_	Reagent	_	_	0	_	_	Offset=1701-1705
+16	remove	_	Action	_	_	0	_	_	Offset=1715-1721
+17	ALL	_	Modifier	_	_	18	Mod-Link	_	Offset=1722-1725
+18	EtOH	_	Reagent	_	_	0	_	_	Offset=1726-1730
+
+# sent_id = s17
+# text = Air dry for <5 min and resuspend pellet in 13µL DEPC-MilliQ H20 Here, one can insert a gel slice into a dialyzer tube (Novagen, D-Tube Dialyzer Midi, MWCO 3.5 kDA – Cat. No. 71506-3) along with 450ul of water.
+1	Spin	_	Action	_	_	0	_	_	Offset=1732-1736
+2	4C	_	Temperature	_	_	0	_	_	Offset=1740-1742
+3	30	_	Time	_	_	0	_	_	Offset=1747-1757
+4	Wash	_	Action	_	_	0	_	_	Offset=1758-1762
+5	70%	_	Concentration	_	_	6	Measure	_	Offset=1768-1771
+6	EtOH	_	Reagent	_	_	0	_	_	Offset=1772-1776
+7	remove	_	Action	_	_	0	_	_	Offset=1786-1792
+8	ALL	_	Modifier	_	_	9	Mod-Link	_	Offset=1793-1796
+9	EtOH	_	Reagent	_	_	0	_	_	Offset=1797-1801
+10	Air	_	Action	_	_	0	_	_	Offset=1802-1809
+11	<5	_	Time	_	_	0	_	_	Offset=1814-1820
+12	resuspend	_	Action	_	_	0	_	_	Offset=1825-1834
+13	pellet	_	Reagent	_	_	0	_	_	Offset=1835-1841
+14	13µL	_	Amount	_	_	15	Measure	_	Offset=1845-1849
+15	DEPC-MilliQ	_	Reagent	_	_	0	_	_	Offset=1850-1865
+
+# sent_id = s18
+# text = Reverse the poles and run for 2 minutes to pull the sample off the dialysis tubing wall.
+1	Run	_	Action	_	_	0	_	_	Offset=1867-1870
+2	100V	_	Generic-Measure	_	_	0	_	_	Offset=1874-1878
+3	18mins	_	Time	_	_	0	_	_	Offset=1883-1889
+
+# sent_id = s19
+# text = Position the dialyzer into a gel box, submerged in 1xTAE, such that the dialysis tubing has the current running perpendicularly through it.
+1	Set	_	Action	_	_	0	_	_	Offset=1891-1897
+2	ligation	_	Reagent	_	_	0	_	_	Offset=1902-1914
+3	cited	_	Method	_	_	0	_	_	Offset=1935-1952
+
+# sent_id = s20
+# text = Pull out all of the water into a fresh microcentrifuge tube, mix in 20µg GlycoBlue and add 2.5 volumes of 100% EtOH Wash with 70% EtOH and then remove ALL EtOH.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1954-1962
+2	37C	_	Temperature	_	_	0	_	_	Offset=1966-1969
+3	4	_	Time	_	_	0	_	_	Offset=1974-1981
+
+# sent_id = s21
+# text = Spin at 4C for 30 minutes Wash with 70% EtOH and then remove ALL EtOH Air dry for <5 min and resuspend pellet in 13µL DEPC-MilliQ H20.
+1	Add	_	Action	_	_	0	_	_	Offset=1983-1986
+2	20µl	_	Amount	_	_	3	Measure	_	Offset=1987-1991
+3	Gel	_	Reagent	_	_	0	_	_	Offset=1992-2013
+
+# sent_id = s22
+# text = Run at 100V for 18mins.
+1	Prepare	_	Action	_	_	0	_	_	Offset=2104-2111
+2	1.0mm	_	Size	_	_	4	Measure	_	Offset=2114-2119
+3	12%	_	Concentration	_	_	4	Measure	_	Offset=2121-2124
+4	polyacrylamide/urea	_	Reagent	_	_	0	_	_	Offset=2125-2148
+
+# sent_id = s23
+# text = Set up the ligation mix as described in the cited publication.
+1	Heat	_	Action	_	_	0	_	_	Offset=2150-2154
+2	inactivate	_	Reagent	_	_	0	_	_	Offset=2155-2165
+3	95C	_	Temperature	_	_	0	_	_	Offset=2169-2172
+4	5	_	Time	_	_	0	_	_	Offset=2177-2186
+
+# sent_id = s24
+# text = Incubate at 37C for 4 hours.
+1	Heat	_	Action	_	_	0	_	_	Offset=2188-2192
+2	samples	_	Reagent	_	_	0	_	_	Offset=2193-2200
+3	95C	_	Temperature	_	_	0	_	_	Offset=2204-2207
+4	5	_	Time	_	_	0	_	_	Offset=2212-2221
+
+# sent_id = s25
+# text = Add 20µl Gel Loading Buffer II.
+1	Chill	_	Action	_	_	0	_	_	Offset=2223-2228
+2	1	_	Time	_	_	0	_	_	Offset=2233-2241
+
+# sent_id = s26
+# text = Section II: 3’ linker ligation.
+1	Load	_	Action	_	_	0	_	_	Offset=2243-2247
+2	sample(s)	_	Reagent	_	_	0	_	_	Offset=2252-2261
+3	run	_	Action	_	_	0	_	_	Offset=2266-2269
+4	gel	_	Reagent	_	_	0	_	_	Offset=2274-2277
+5	constant	_	Modifier	_	_	6	Mod-Link	_	Offset=2281-2289
+6	10W	_	Generic-Measure	_	_	0	_	_	Offset=2290-2293
+7	1.5-2	_	Time	_	_	0	_	_	Offset=2298-2307
+
+# sent_id = s27
+# text = Section III: Gel purification of 3’ ligated RNA product.
+1	Expose	_	Action	_	_	0	_	_	Offset=2367-2373
+2	phosphorimager	_	Device	_	_	0	_	_	Offset=2376-2397
+3	gel	_	Reagent	_	_	0	_	_	Offset=2407-2410
+4	30-45	_	Time	_	_	0	_	_	Offset=2415-2428
+
+# sent_id = s28
+# text = Prepare a 1.0mm, 12% polyacrylamide/urea gel.
+1	Excise	_	Action	_	_	0	_	_	Offset=2458-2464
+2	desired	_	Size	_	_	0	_	_	Offset=2503-2515
+3	small	_	Reagent	_	_	0	_	_	Offset=2519-2528
+4	microcentrifuge	_	Location	_	_	0	_	_	Offset=2582-2602
+
+# sent_id = s29
+# text = Heat inactivate at 95C for 5 minutes.
+1	Spin	_	Action	_	_	0	_	_	Offset=2604-2608
+2	briefly	_	Modifier	_	_	0	_	_	Offset=2609-2616
+3	centrifuge	_	Device	_	_	0	_	_	Offset=2622-2632
+4	maximum	_	Speed	_	_	0	_	_	Offset=2636-2649
+
+# sent_id = s30
+# text = Heat samples at 95C for 5 minutes.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=2651-2660
+2	grind	_	Action	_	_	0	_	_	Offset=2661-2666
+3	gel	_	Reagent	_	_	0	_	_	Offset=2667-2677
+4	pestle	_	Device	_	_	0	_	_	Offset=2686-2692
+
+# sent_id = s31
+# text = Chill for 1 minute.
+1	Load	_	Action	_	_	0	_	_	Offset=2694-2698
+2	5ng	_	Amount	_	_	3	Measure	_	Offset=2699-2702
+3	32P-labeled	_	Reagent	_	_	0	_	_	Offset=2706-2731
+
+# sent_id = s32
+# text = Load the sample(s) and run the gel at constant 10W for 1.5-2 hrs (until the first dye front reaches the bottom of the gel).
+1	Add	_	Action	_	_	0	_	_	Offset=2750-2753
+2	420µL	_	Amount	_	_	4	Measure	_	Offset=2754-2759
+3	0.4M	_	Concentration	_	_	4	Measure	_	Offset=2763-2767
+4	NaCl	_	Reagent	_	_	0	_	_	Offset=2768-2772
+
+# sent_id = s33
+# text = Expose a phosphorimager screen over the gel for 30-45 minutes (time will vary) (Figure 2).
+1	Quickly	_	Modifier	_	_	0	_	_	Offset=2774-2781
+2	freeze	_	Action	_	_	0	_	_	Offset=2782-2788
+3	samples	_	Reagent	_	_	0	_	_	Offset=2789-2796
+4	1	_	Time	_	_	0	_	_	Offset=2801-2809
+5	bath	_	Location	_	_	6	Meronym	7:Meronym	Offset=2815-2819
+6	EtOH	_	Reagent	_	_	0	_	_	Offset=2823-2827
+7	dry	_	Reagent	_	_	0	_	_	Offset=2832-2839
+
+# sent_id = s34
+# text = Excise the precise band corresponding to the desired size of small RNA (including the ligated radiolabeled oligo(s)) into a microcentrifuge tube.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2841-2849
+2	overnight	_	Time	_	_	0	_	_	Offset=2850-2859
+3	room	_	Temperature	_	_	0	_	_	Offset=2863-2879
+4	RT	_	Temperature	_	_	3	Or	_	Offset=2881-2883
+5	agitation	_	Method	_	_	0	_	_	Offset=2890-2899
+
+# sent_id = s35
+# text = Spin briefly in a centrifuge at maximum speed.
+1	Spin	_	Action	_	_	0	_	_	Offset=2923-2927
+2	gel	_	Reagent	_	_	0	_	_	Offset=2928-2948
+3	micropore	_	Device	_	_	0	_	_	Offset=2957-2973
+4	full	_	Speed	_	_	0	_	_	Offset=2977-2987
+5	1	_	Time	_	_	0	_	_	Offset=2992-3000
+6	RT	_	Temperature	_	_	0	_	_	Offset=3004-3006
+
+# sent_id = s36
+# text = Carefully grind gel slices using a pestle.
+1	Transfer	_	Action	_	_	0	_	_	Offset=3008-3016
+2	eluant	_	Reagent	_	_	0	_	_	Offset=3017-3023
+3	microcentrifuge	_	Location	_	_	0	_	_	Offset=3029-3049
+
+# sent_id = s37
+# text = Load 5ng of 32P-labeled Decade Marker as a size marker.
+1	Add	_	Action	_	_	0	_	_	Offset=3051-3054
+2	20µg	_	Amount	_	_	3	Measure	_	Offset=3055-3059
+3	GlycoBlue	_	Reagent	_	_	0	_	_	Offset=3060-3069
+4	mix	_	Action	_	_	0	_	_	Offset=3071-3074
+5	add	_	Action	_	_	0	_	_	Offset=3080-3083
+6	2.5	_	Amount	_	_	8	Measure	_	Offset=3084-3095
+7	100%	_	Concentration	_	_	8	Measure	_	Offset=3099-3103
+8	EtOH	_	Reagent	_	_	0	_	_	Offset=3104-3108
+
+# sent_id = s38
+# text = Add 420µL of 0.4M NaCl.
+1	Incubate	_	Action	_	_	0	_	_	Offset=3110-3118
+2	-20C	_	Temperature	_	_	0	_	_	Offset=3122-3126
+3	3-6+	_	Time	_	_	0	_	_	Offset=3131-3141
+
+# sent_id = s39
+# text = Quickly freeze samples for 1 minute in a bath of EtOH and dry ice.
+1	Spin	_	Action	_	_	0	_	_	Offset=3143-3147
+2	4C	_	Temperature	_	_	0	_	_	Offset=3151-3153
+3	30	_	Time	_	_	0	_	_	Offset=3158-3168
+
+# sent_id = s40
+# text = Incubate overnight at room temperature (RT) with agitation (secured on a vortex).
+1	Wash	_	Action	_	_	0	_	_	Offset=3170-3174
+2	70%	_	Concentration	_	_	3	Measure	_	Offset=3180-3183
+3	EtOH	_	Reagent	_	_	0	_	_	Offset=3184-3188
+4	remove	_	Action	_	_	0	_	_	Offset=3198-3204
+5	ALL	_	Modifier	_	_	6	Mod-Link	_	Offset=3205-3208
+6	EtOH	_	Reagent	_	_	0	_	_	Offset=3209-3213
+
+# sent_id = s41
+# text = Spin gel slice homogenate through micropore filter at full speed for 1 minute at RT.
+1	Air	_	Action	_	_	0	_	_	Offset=3215-3222
+2	<5	_	Time	_	_	0	_	_	Offset=3227-3233
+3	resuspend	_	Action	_	_	0	_	_	Offset=3238-3247
+4	pellet	_	Reagent	_	_	0	_	_	Offset=3248-3254
+5	13µL	_	Amount	_	_	6	Measure	_	Offset=3258-3262
+6	DEPC-MilliQ	_	Reagent	_	_	0	_	_	Offset=3263-3278
+
+# sent_id = s42
+# text = Transfer eluant to a microcentrifuge tube.
+1	Set	_	Action	_	_	0	_	_	Offset=3312-3318
+2	linker	_	Reagent	_	_	0	_	_	Offset=3323-3351
+3	publication	_	Method	_	_	0	_	_	Offset=3372-3383
+
+# sent_id = s43
+# text = Add 20µg GlycoBlue, mix, and add 2.5 volumes of 100% EtOH.
+1	Incubate	_	Action	_	_	0	_	_	Offset=3385-3393
+2	37C	_	Temperature	_	_	0	_	_	Offset=3397-3400
+3	2	_	Time	_	_	0	_	_	Offset=3405-3412
+
+# sent_id = s44
+# text = Incubate at -20C for 3-6+ hours.
+1	Add	_	Action	_	_	0	_	_	Offset=3414-3417
+2	20µl	_	Amount	_	_	3	Measure	_	Offset=3418-3422
+3	Gel	_	Reagent	_	_	0	_	_	Offset=3423-3444
+
+# sent_id = s45
+# text = Spin at 4C for 30 minutes.
+1	Heat	_	Action	_	_	0	_	_	Offset=3446-3450
+2	inactivate	_	Reagent	_	_	0	_	_	Offset=3451-3461
+3	95C	_	Temperature	_	_	0	_	_	Offset=3465-3468
+4	5	_	Time	_	_	0	_	_	Offset=3473-3482
+
+# sent_id = s46
+# text = Wash with 70% EtOH and then remove ALL EtOH.
+1	Prepare	_	Action	_	_	0	_	_	Offset=3546-3553
+2	1.0mm	_	Size	_	_	4	Measure	_	Offset=3556-3561
+3	12%	_	Concentration	_	_	4	Measure	_	Offset=3563-3566
+4	polyacrylamide/urea	_	Reagent	_	_	0	_	_	Offset=3567-3590
+
+# sent_id = s47
+# text = Air dry for <5 min and resuspend pellet in 13µL DEPC-MilliQ H20.
+1	Load	_	Action	_	_	0	_	_	Offset=3592-3596
+2	2.5ng	_	Amount	_	_	3	Measure	_	Offset=3597-3602
+3	32P-labeled	_	Reagent	_	_	0	_	_	Offset=3606-3631
+
+# sent_id = s48
+# text = Section IV: 5’ linker ligation.
+1	Heat	_	Action	_	_	0	_	_	Offset=3650-3654
+2	samples	_	Reagent	_	_	0	_	_	Offset=3655-3662
+3	95C	_	Temperature	_	_	0	_	_	Offset=3666-3669
+4	5	_	Time	_	_	0	_	_	Offset=3674-3683
+
+# sent_id = s49
+# text = Set up the linker ligation reaction mix as described in the publication.
+1	Chill	_	Action	_	_	0	_	_	Offset=3685-3690
+2	1	_	Time	_	_	0	_	_	Offset=3695-3703
+
+# sent_id = s50
+# text = Incubate at 37C for 2 hours.
+1	Expose	_	Action	_	_	0	_	_	Offset=3705-3711
+2	phosphorimager	_	Device	_	_	0	_	_	Offset=3714-3735
+3	gel	_	Reagent	_	_	0	_	_	Offset=3745-3748
+4	1+	_	Time	_	_	0	_	_	Offset=3753-3761
+
+# sent_id = s51
+# text = Add 20µl Gel Loading Buffer II.
+1	Load	_	Action	_	_	0	_	_	Offset=3791-3795
+2	sample(s)	_	Reagent	_	_	0	_	_	Offset=3800-3809
+3	run	_	Action	_	_	0	_	_	Offset=3814-3817
+4	gel	_	Reagent	_	_	0	_	_	Offset=3822-3825
+5	constant	_	Modifier	_	_	6	Mod-Link	_	Offset=3829-3837
+6	10W	_	Generic-Measure	_	_	0	_	_	Offset=3838-3841
+7	2+	_	Time	_	_	0	_	_	Offset=3846-3852
+
+# sent_id = s52
+# text = Heat inactivate at 95C for 5 minutes.
+1	Spin	_	Action	_	_	0	_	_	Offset=3907-3911
+2	briefly	_	Modifier	_	_	0	_	_	Offset=3912-3919
+3	centrifuge	_	Device	_	_	0	_	_	Offset=3925-3935
+4	maximum	_	Speed	_	_	0	_	_	Offset=3939-3952
+
+# sent_id = s53
+# text = Section V: Gel purification of 5’ and 3’ ligated RNA product.
+1	Excise	_	Action	_	_	0	_	_	Offset=3954-3960
+
+# sent_id = s54
+# text = Prepare a 1.0mm, 12% polyacrylamide/urea gel.
+1	Spin	_	Action	_	_	0	_	_	Offset=4101-4105
+2	briefly	_	Modifier	_	_	0	_	_	Offset=4106-4113
+3	centrifuge	_	Device	_	_	0	_	_	Offset=4119-4129
+4	maximum	_	Speed	_	_	0	_	_	Offset=4133-4146
+
+# sent_id = s55
+# text = Load 2.5ng of 32P-labeled Decade Marker as a size marker.
+1	Add	_	Action	_	_	0	_	_	Offset=4148-4151
+2	420µL	_	Amount	_	_	4	Measure	_	Offset=4152-4157
+3	0.4M	_	Concentration	_	_	4	Measure	_	Offset=4161-4165
+4	NaCl	_	Reagent	_	_	0	_	_	Offset=4166-4170
+
+# sent_id = s56
+# text = Heat samples at 95C for 5 minutes.
+1	Quickly	_	Modifier	_	_	0	_	_	Offset=4172-4179
+2	freeze	_	Action	_	_	0	_	_	Offset=4180-4186
+3	samples	_	Reagent	_	_	0	_	_	Offset=4187-4194
+4	1	_	Time	_	_	0	_	_	Offset=4199-4207
+5	bath	_	Location	_	_	6	Meronym	7:Meronym	Offset=4213-4217
+6	EtOH	_	Reagent	_	_	0	_	_	Offset=4221-4225
+7	dry	_	Reagent	_	_	0	_	_	Offset=4230-4237
+
+# sent_id = s57
+# text = Chill for 1 minute.
+1	Spin	_	Action	_	_	0	_	_	Offset=4239-4243
+2	gel	_	Reagent	_	_	0	_	_	Offset=4244-4264
+3	micropore	_	Device	_	_	0	_	_	Offset=4273-4289
+4	full	_	Speed	_	_	0	_	_	Offset=4293-4303
+5	1	_	Time	_	_	0	_	_	Offset=4308-4316
+6	RT	_	Temperature	_	_	0	_	_	Offset=4320-4322
+
+# sent_id = s58
+# text = Expose a phosphorimager screen over the gel for 1+ hours (time will vary) (Figure 3).
+1	Transfer	_	Action	_	_	0	_	_	Offset=4324-4332
+2	eluant	_	Reagent	_	_	0	_	_	Offset=4333-4339
+3	microcentrifuge	_	Location	_	_	0	_	_	Offset=4345-4365
+
+# sent_id = s59
+# text = Load the sample(s) and run the gel at constant 10W for 2+ hrs (until first dye front passes the bottom of the gel).
+1	Add	_	Action	_	_	0	_	_	Offset=4367-4370
+2	20µg	_	Amount	_	_	3	Measure	_	Offset=4371-4375
+3	GlycoBlue	_	Reagent	_	_	0	_	_	Offset=4376-4385
+4	mix	_	Action	_	_	0	_	_	Offset=4387-4390
+5	add	_	Action	_	_	0	_	_	Offset=4396-4399
+6	2.5	_	Amount	_	_	8	Measure	_	Offset=4400-4411
+7	100%	_	Concentration	_	_	8	Measure	_	Offset=4415-4419
+8	EtOH	_	Reagent	_	_	0	_	_	Offset=4420-4424
+
+# sent_id = s60
+# text = Spin briefly in a centrifuge at maximum speed.
+1	Incubate	_	Action	_	_	0	_	_	Offset=4426-4434
+2	-20oC	_	Temperature	_	_	0	_	_	Offset=4438-4443
+3	3-6+	_	Time	_	_	0	_	_	Offset=4448-4458
+
+# sent_id = s61
+# text = Excise the precise band corresponding to the desired size of small RNAs (including the ligated radiolabeled oligo(s)) into a microcentrifuge tube.
+1	Spin	_	Action	_	_	0	_	_	Offset=4460-4464
+2	4C	_	Temperature	_	_	0	_	_	Offset=4468-4470
+3	30	_	Time	_	_	0	_	_	Offset=4475-4485
+
+# sent_id = s62
+# text = Spin briefly in a centrifuge at maximum speed.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=4487-4496
+2	grind	_	Action	_	_	0	_	_	Offset=4497-4502
+3	gel	_	Reagent	_	_	0	_	_	Offset=4503-4513
+4	pestle	_	Device	_	_	0	_	_	Offset=4522-4528
+
+# sent_id = s63
+# text = Add 420µL of 0.4M NaCl.
+1	Air	_	Action	_	_	0	_	_	Offset=4530-4537
+2	<5	_	Time	_	_	0	_	_	Offset=4542-4548
+3	resuspend	_	Action	_	_	0	_	_	Offset=4553-4562
+4	pellet	_	Reagent	_	_	0	_	_	Offset=4563-4569
+5	6.3µL	_	Amount	_	_	6	Measure	_	Offset=4573-4578
+6	DEPC-MilliQ	_	Reagent	_	_	0	_	_	Offset=4579-4594
+
+# sent_id = s64
+# text = Quickly freeze samples for 1 minute in a bath of EtOH and dry ice.
+1	Incubate	_	Action	_	_	0	_	_	Offset=4631-4639
+2	72C	_	Temperature	_	_	0	_	_	Offset=4643-4646
+3	2	_	Time	_	_	0	_	_	Offset=4651-4660
+
+# sent_id = s65
+# text = Spin gel slice homogenate through micropore filter at full speed for 1 minute at RT.
+1	Incubate	_	Action	_	_	0	_	_	Offset=4662-4670
+2	overnight	_	Time	_	_	0	_	_	Offset=4671-4680
+3	room	_	Temperature	_	_	0	_	_	Offset=4684-4700
+4	RT	_	Temperature	_	_	3	Or	_	Offset=4702-4704
+5	agitation	_	Method	_	_	0	_	_	Offset=4711-4720
+
+# sent_id = s66
+# text = Transfer eluant to a microcentrifuge tube.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=4744-4754
+2	RT	_	Temperature	_	_	0	_	_	Offset=4758-4760
+3	1	_	Time	_	_	0	_	_	Offset=4765-4773
+
+# sent_id = s67
+# text = Add 20µg GlycoBlue, mix, and add 2.5 volumes of 100% EtOH.
+1	Cool	_	Action	_	_	0	_	_	Offset=4775-4779
+2	ice	_	Location	_	_	0	_	_	Offset=4783-4786
+3	2	_	Time	_	_	0	_	_	Offset=4791-4800
+
+# sent_id = s68
+# text = Incubate at -20oC for 3-6+ hours.
+1	Add	_	Action	_	_	0	_	_	Offset=4802-4805
+2	8.4µL	_	Amount	_	_	3	Measure	_	Offset=4806-4811
+3	Reverse	_	Reagent	_	_	0	_	_	Offset=4812-4842
+
+# sent_id = s69
+# text = Spin at 4C for 30 minutes.
+1	Split	_	Action	_	_	0	_	_	Offset=4874-4879
+2	two	_	Numerical	_	_	3	Measure	_	Offset=4885-4888
+3	tubes	_	Location	_	_	0	_	_	Offset=4889-4894
+
+# sent_id = s70
+# text = Carefully grind gel slices using a pestle.
+1	Add	_	Action	_	_	0	_	_	Offset=4907-4910
+2	1µL	_	Amount	_	_	3	Measure	_	Offset=4918-4921
+3	Superscript	_	Reagent	_	_	0	_	_	Offset=4922-4940
+4	Invitrogen	_	Reagent	_	_	3	Meronym	_	Offset=4942-4952
+5	+RT	_	Generic-Measure	_	_	3	Measure	_	Offset=4955-4958
+6	1µL	_	Amount	_	_	7	Measure	_	Offset=4963-4966
+7	DEPC-MilliQ	_	Reagent	_	_	3	Or	_	Offset=4967-4982
+8	-RT	_	Generic-Measure	_	_	7	Measure	_	Offset=4984-4995
+
+# sent_id = s71
+# text = Air dry for <5 min and resuspend pellet in 6.3µL DEPC-MilliQ H20.
+1	Heat	_	Action	_	_	0	_	_	Offset=4998-5002
+2	70C	_	Temperature	_	_	0	_	_	Offset=5006-5009
+3	15	_	Time	_	_	0	_	_	Offset=5014-5024
+
+# sent_id = s72
+# text = Section VI: Reverse transcription.
+1	Store	_	Action	_	_	0	_	_	Offset=5026-5031
+2	-20C	_	Temperature	_	_	0	_	_	Offset=5035-5039
+
+# sent_id = s73
+# text = Incubate at 72C for 2 minutes.
+1	Incubate	_	Action	_	_	0	_	_	Offset=5051-5059
+2	50C	_	Temperature	_	_	0	_	_	Offset=5063-5066
+3	1	_	Time	_	_	0	_	_	Offset=5071-5077
+
+# sent_id = s74
+# text = Incubate overnight at room temperature (RT) with agitation (secured on a vortex).
+1	1.8X	_	Generic-Measure	_	_	0	_	_	Offset=5232-5242
+2	clean	_	Action	_	_	0	_	_	Offset=5244-5252
+3	PCR	_	Reagent	_	_	0	_	_	Offset=5257-5269
+4	manufacture’s	_	Method	_	_	0	_	_	Offset=5284-5310
+

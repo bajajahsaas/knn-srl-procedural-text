@@ -1,0 +1,107 @@
+# sent_id = s1
+# text = Treg Polarization of Mouse CD4+ Cells
+1	Harvest	_	Action	_	_	0	_	_	Offset=38-45
+2	lymph	_	Reagent	_	_	0	_	_	Offset=46-57
+3	mice	_	Reagent	_	_	0	_	_	Offset=134-138
+
+# sent_id = s2
+# text = Harvest lymph nodes (superficial cervical, mandibular, axillary, inguinal, and mesenteric) from mice.
+1	Tease	_	Action	_	_	0	_	_	Offset=140-145
+2	lymph	_	Reagent	_	_	0	_	_	Offset=146-157
+3	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=168-175
+4	70-µm	_	Generic-Measure	_	_	5	Measure	_	Offset=176-181
+5	nylon	_	Device	_	_	0	_	_	Offset=182-201
+6	obtain	_	Action	_	_	0	_	_	Offset=205-211
+7	single-cell	_	Reagent	_	_	0	_	_	Offset=212-235
+
+# sent_id = s3
+# text = Tease lymph nodes through a sterile 70-µm nylon cell strainer to obtain single-cell suspensions incomplete RPMI containing 10% FCS (complete medium).
+1	Resuspend	_	Action	_	_	0	_	_	Offset=290-299
+2	cells	_	Reagent	_	_	0	_	_	Offset=300-305
+3	complete	_	Reagent	_	_	0	_	_	Offset=309-324
+4	your	_	Method	_	_	0	_	_	Offset=333-353
+5	isolate	_	Action	_	_	0	_	_	Offset=357-364
+6	CD4+cells	_	Reagent	_	_	0	_	_	Offset=365-374
+
+# sent_id = s4
+# text = Resuspend cells in complete medium and use your favorite method to isolate CD4+cells.
+1	Plate	_	Action	_	_	0	_	_	Offset=421-426
+2	CD4+cells	_	Reagent	_	_	0	_	_	Offset=427-436
+3	1.0	_	Generic-Measure	_	_	0	_	_	Offset=440-458
+
+# sent_id = s5
+# text = Checkout Biocompare.com to find useful kits.
+1	Culture	_	Action	_	_	0	_	_	Offset=460-467
+2	cells	_	Reagent	_	_	0	_	_	Offset=468-473
+3	5	_	Time	_	_	0	_	_	Offset=478-484
+4	37°C	_	Temperature	_	_	0	_	_	Offset=488-492
+5	5%	_	Concentration	_	_	6	Measure	_	Offset=494-496
+6	CO2	_	Reagent	_	_	0	_	_	Offset=497-500
+7	ofanti-mouse	_	Reagent	_	_	0	_	_	Offset=518-535
+8	clone	_	Action	_	_	0	_	_	Offset=537-542
+9	37.51	_	Generic-Measure	_	_	10	Measure	_	Offset=543-558
+10	recombinant	_	Reagent	_	_	0	_	_	Offset=560-582
+11	5	_	Generic-Measure	_	_	10	Measure	_	Offset=584-591
+12	recombinanthuman	_	Reagent	_	_	0	_	_	Offset=598-621
+13	5	_	Generic-Measure	_	_	12	Measure	_	Offset=623-630
+
+# sent_id = s6
+# text = Plate CD4+cells at 1.0 x 106/1ml/well.
+1	add	_	Action	_	_	0	_	_	Offset=663-666
+2	2	_	Generic-Measure	_	_	3	Measure	_	Offset=667-676
+3	fresh	_	Reagent	_	_	0	_	_	Offset=680-692
+
+# sent_id = s7
+# text = Culture cells for 5 days at 37°C, 5% CO2, in the presence ofanti-mouse CD28, clone 37.51 (3 µg/mL), recombinant mouse IL-2 (5 ng/mL), and recombinanthuman TGF-β1 (5 ng/ml).
+1	coat	_	Action	_	_	0	_	_	Offset=765-769
+2	12-well	_	Location	_	_	0	_	_	Offset=770-783
+3	anti-mouse	_	Reagent	_	_	0	_	_	Offset=789-804
+4	clone	_	Action	_	_	0	_	_	Offset=806-811
+5	145-2C11	_	Reagent	_	_	0	_	_	Offset=812-820
+6	3	_	Generic-Measure	_	_	5	Measure	_	Offset=822-829
+
+# sent_id = s8
+# text = On day 3, if media is yellow, add 2 ml/well of fresh media.
+1	Incubate	_	Action	_	_	0	_	_	Offset=832-840
+2	37°C	_	Temperature	_	_	0	_	_	Offset=844-848
+3	2	_	Time	_	_	0	_	_	Offset=853-860
+
+# sent_id = s9
+# text = On day 5, after harvesting, the cells are ready for staining.
+1	incubate	_	Action	_	_	0	_	_	Offset=878-886
+2	4°C	_	Temperature	_	_	0	_	_	Offset=890-893
+3	overnight	_	Time	_	_	0	_	_	Offset=894-903
+
+# sent_id = s10
+# text = On day 0, coat 12-well plate with anti-mouse CD3ε, clone 145-2C11 (3 µg/ml).
+1	Aseptically	_	Modifier	_	_	0	_	_	Offset=906-917
+2	decant	_	Action	_	_	0	_	_	Offset=918-924
+3	antibody	_	Reagent	_	_	0	_	_	Offset=925-942
+4	plate	_	Location	_	_	0	_	_	Offset=952-957
+
+# sent_id = s11
+# text = Incubate at 37°C for 2 hours.
+1	Wash	_	Action	_	_	0	_	_	Offset=959-963
+2	plate	_	Location	_	_	0	_	_	Offset=964-969
+3	sterile	_	Modifier	_	_	4	Mod-Link	_	Offset=975-982
+4	PBS	_	Reagent	_	_	0	_	_	Offset=983-986
+
+# sent_id = s12
+# text = (Alternatively, incubate at 4°C overnight.)
+1	Wash	_	Action	_	_	0	_	_	Offset=999-1003
+2	plate	_	Location	_	_	0	_	_	Offset=1004-1009
+3	sterile	_	Modifier	_	_	4	Mod-Link	_	Offset=1015-1022
+4	PBS	_	Reagent	_	_	0	_	_	Offset=1023-1026
+
+# sent_id = s13
+# text = Aseptically decant antibody solution from the plate.
+1	Wash	_	Action	_	_	0	_	_	Offset=1039-1043
+2	plate	_	Location	_	_	0	_	_	Offset=1044-1049
+3	sterile	_	Modifier	_	_	4	Mod-Link	_	Offset=1055-1062
+4	PBS	_	Reagent	_	_	0	_	_	Offset=1063-1066
+
+# sent_id = s14
+# text = Wash plate with sterile PBS (wash 1/3).
+1	Discard	_	Action	_	_	0	_	_	Offset=1079-1086
+2	liquid	_	Reagent	_	_	0	_	_	Offset=1087-1093
+

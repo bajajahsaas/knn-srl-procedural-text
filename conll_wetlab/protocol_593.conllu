@@ -1,0 +1,51 @@
+# sent_id = s1
+# text = Red Blood Cell Lysis Protocol: Method II. 
+1	Dilute	_	Action	_	_	0	_	_	Offset=43-49
+2	10X	_	Reagent	_	_	0	_	_	Offset=54-74
+3	1X	_	Reagent	_	_	0	_	_	Offset=78-102
+4	deionized	_	Reagent	_	_	0	_	_	Offset=108-123
+
+# sent_id = s2
+# text = Dilute the 10X RBC Lysis Buffer to 1X working concentration with deionized water.
+1	Warm	_	Action	_	_	0	_	_	Offset=125-129
+2	1X	_	Reagent	_	_	0	_	_	Offset=134-145
+3	room	_	Modifier	_	_	0	_	_	Offset=149-165
+
+# sent_id = s3
+# text = Warm the 1X solution to room temperature prior to use.
+1	Add	_	Action	_	_	0	_	_	Offset=180-183
+2	2.0	_	Amount	_	_	3	Measure	_	Offset=184-190
+3	1X	_	Reagent	_	_	0	_	_	Offset=194-213
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=217-221
+5	tube	_	Device	_	_	0	_	_	Offset=222-226
+6	containing	_	Modifier	_	_	5	Mod-Link	_	Offset=227-265
+
+# sent_id = s4
+# text = Add 2.0 ml of 1X RBC Lysis Buffer to each tube containing up to 100 μl of whole blood.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=267-273
+2	vortex	_	Action	_	_	0	_	_	Offset=274-280
+3	each	_	Modifier	_	_	4	Mod-Link	_	Offset=281-285
+4	tube	_	Device	_	_	0	_	_	Offset=286-290
+
+# sent_id = s5
+# text = Gently vortex each tube immediately after adding the lysing solution.
+1	Incubate	_	Action	_	_	0	_	_	Offset=337-345
+2	room	_	Modifier	_	_	0	_	_	Offset=349-365
+3	protected	_	Modifier	_	_	0	_	_	Offset=367-387
+4	10-15	_	Time	_	_	0	_	_	Offset=393-406
+
+# sent_id = s6
+# text = Incubate at room temperature, protected from light, for 10-15 minutes.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=408-418
+2	350	_	Speed	_	_	0	_	_	Offset=419-426
+3	5	_	Time	_	_	0	_	_	Offset=431-440
+
+# sent_id = s7
+# text = Centrifuge 350 x g for 5 minutes.
+1	Aspirate	_	Action	_	_	0	_	_	Offset=442-450
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=451-462
+3	resuspend	_	Action	_	_	0	_	_	Offset=494-503
+4	pellet	_	Reagent	_	_	0	_	_	Offset=508-514
+5	appropriate	_	Modifier	_	_	6	Mod-Link	_	Offset=522-533
+6	buffer	_	Reagent	_	_	0	_	_	Offset=534-540
+

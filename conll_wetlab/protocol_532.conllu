@@ -1,0 +1,57 @@
+# sent_id = s1
+# text = Ethanol Fixation Protocol
+1	Prepare	_	Action	_	_	0	_	_	Offset=26-33
+2	70%	_	Concentration	_	_	3	Measure	_	Offset=34-37
+3	Ethanol	_	Reagent	_	_	0	_	_	Offset=38-45
+4	chill	_	Action	_	_	0	_	_	Offset=50-55
+5	-20°C	_	Temperature	_	_	0	_	_	Offset=59-64
+
+# sent_id = s2
+# text = Prepare 70% Ethanol and chill to -20°C(NOTE: Do not freeze ethanol for long-term storage).
+1	Prepare	_	Action	_	_	0	_	_	Offset=117-124
+2	target	_	Reagent	_	_	0	_	_	Offset=125-137
+3	wash	_	Action	_	_	0	_	_	Offset=154-158
+4	2X	_	Numerical	_	_	0	_	_	Offset=159-161
+5	PBS	_	Reagent	_	_	0	_	_	Offset=167-170
+6	centrifuging	_	Action	_	_	0	_	_	Offset=172-184
+7	350xg	_	Speed	_	_	0	_	_	Offset=188-193
+8	5	_	Time	_	_	0	_	_	Offset=198-207
+
+# sent_id = s3
+# text = Prepare target cells of interest and wash 2X with PBS, centrifuging at 350xg for 5 minutes.
+1	Discard	_	Action	_	_	0	_	_	Offset=209-216
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=217-228
+3	cell	_	Reagent	_	_	0	_	_	Offset=244-255
+4	vortexing	_	Action	_	_	0	_	_	Offset=259-268
+
+# sent_id = s4
+# text = Discard supernatant and loosen the cell pellet by vortexing.
+1	Add	_	Action	_	_	0	_	_	Offset=270-273
+2	3	_	Amount	_	_	5	Measure	_	Offset=274-278
+3	cold	_	Temperature	_	_	0	_	_	Offset=279-283
+4	70%	_	Concentration	_	_	5	Measure	_	Offset=284-287
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=288-295
+6	drop	_	Method	_	_	0	_	_	Offset=296-308
+7	cell	_	Reagent	_	_	0	_	_	Offset=316-327
+8	vortexing	_	Action	_	_	0	_	_	Offset=334-343
+
+# sent_id = s5
+# text = Add 3 ml cold 70% ethanol drop by drop to the cell pellet while vortexing.
+1	vortexing	_	Action	_	_	0	_	_	Offset=354-363
+2	30	_	Time	_	_	0	_	_	Offset=368-378
+
+# sent_id = s6
+# text = Continue vortexing for 30 seconds.
+1	Incubate	_	Action	_	_	0	_	_	Offset=380-388
+2	-20°C	_	Temperature	_	_	0	_	_	Offset=392-397
+3	1	_	Time	_	_	0	_	_	Offset=402-408
+
+# sent_id = s7
+# text = Incubate at -20°C for 1 hour. 
+1	Wash	_	Action	_	_	0	_	_	Offset=411-415
+2	2X	_	Numerical	_	_	0	_	_	Offset=416-418
+3	BioLegend	_	Reagent	_	_	0	_	_	Offset=424-454
+4	resuspend	_	Action	_	_	0	_	_	Offset=473-482
+5	cells	_	Reagent	_	_	0	_	_	Offset=483-488
+6	0.5-1.0	_	Concentration	_	_	0	_	_	Offset=492-514
+

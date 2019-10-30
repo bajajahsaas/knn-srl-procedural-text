@@ -1,0 +1,62 @@
+# sent_id = s1
+# text = Ligation of Sticky Ends with T4
+1	Thaw	_	Action	_	_	0	_	_	Offset=32-36
+2	T4	_	Reagent	_	_	0	_	_	Offset=41-61
+3	resuspended	_	Action	_	_	0	_	_	Offset=66-77
+4	room	_	Temperature	_	_	0	_	_	Offset=81-97
+
+# sent_id = s2
+# text = Thaw the T4 DNA Ligase Buffer and resuspended at room temperature.
+1	Set	_	Action	_	_	0	_	_	Offset=99-105
+2	following	_	Modifier	_	_	3	Mod-Link	_	Offset=110-119
+3	reaction	_	Reagent	_	_	0	_	_	Offset=120-136
+4	room	_	Temperature	_	_	0	_	_	Offset=140-149
+5	10x	_	Concentration	_	_	6	Measure	_	Offset=150-153
+6	T4	_	Reagent	_	_	0	_	_	Offset=155-175
+7	2	_	Amount	_	_	8	Measure	_	Offset=177-181
+8	Vector	_	Reagent	_	_	0	_	_	Offset=183-193
+9	0.020,	_	Generic-Measure	_	_	8	Measure	_	Offset=195-206
+
+# sent_id = s3
+# text = Set up the following reaction mixture at room temp:10x, T4 DNA Ligase Buffer; 2 ul, Vector DNA; 0.020, pmol.
+1	Insert	_	Action	_	_	0	_	_	Offset=208-214
+2	DNA	_	Reagent	_	_	0	_	_	Offset=215-218
+3	0.060	_	Generic-Measure	_	_	2	Measure	_	Offset=220-230
+4	Nuclease-free	_	Reagent	_	_	0	_	_	Offset=232-251
+5	20	_	Amount	_	_	4	Measure	_	Offset=255-260
+6	T4	_	Reagent	_	_	0	_	_	Offset=262-275
+7	1	_	Amount	_	_	6	Measure	_	Offset=277-281
+
+# sent_id = s4
+# text = Insert DNA, 0.060 pmol; Nuclease-free Water to 20 ul; T4 DNA Ligase, 1 ul. 
+1	Gently	_	Modifier	_	_	0	_	_	Offset=284-290
+2	mix	_	Action	_	_	0	_	_	Offset=291-294
+3	reaction	_	Reagent	_	_	0	_	_	Offset=299-307
+4	pipetting	_	Method	_	_	0	_	_	Offset=311-332
+5	microfuge	_	Action	_	_	0	_	_	Offset=337-346
+6	briefly	_	Modifier	_	_	0	_	_	Offset=347-354
+
+# sent_id = s5
+# text = Gently mix the reaction by pipetting up and down and microfuge briefly.
+1	sticky	_	Reagent	_	_	0	_	_	Offset=360-371
+2	incubate	_	Action	_	_	0	_	_	Offset=373-381
+3	22	_	Temperature	_	_	0	_	_	Offset=385-389
+4	10	_	Time	_	_	0	_	_	Offset=394-404
+
+# sent_id = s6
+# text = For sticky ends, incubate at 22 C for 10 minutes.
+1	Heat	_	Action	_	_	0	_	_	Offset=406-410
+2	inactivate	_	Reagent	_	_	0	_	_	Offset=411-421
+3	65	_	Temperature	_	_	0	_	_	Offset=425-437
+4	10	_	Time	_	_	0	_	_	Offset=442-452
+
+# sent_id = s7
+# text = Heat inactivate at 65 degrees C for 10 minutes.
+1	Chill	_	Action	_	_	0	_	_	Offset=454-459
+2	ice	_	Location	_	_	0	_	_	Offset=463-466
+3	transform	_	Action	_	_	0	_	_	Offset=471-480
+4	1-5	_	Amount	_	_	5	Measure	_	Offset=481-487
+5	reaction	_	Reagent	_	_	0	_	_	Offset=495-503
+6	50	_	Amount	_	_	7	Measure	_	Offset=509-514
+7	competent	_	Reagent	_	_	0	_	_	Offset=515-530
+

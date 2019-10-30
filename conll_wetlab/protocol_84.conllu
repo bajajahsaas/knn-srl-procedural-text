@@ -1,0 +1,385 @@
+# sent_id = s1
+# text = Preparation of Tara Sample DNA From Iron-Chloride Precipitates
+1	Locate	_	Action	_	_	0	_	_	Offset=63-69
+2	samples	_	Reagent	_	_	0	_	_	Offset=70-77
+3	record	_	Action	_	_	0	_	_	Offset=82-88
+4	inventory	_	Measure-Type	_	_	0	_	_	Offset=89-105
+
+# sent_id = s2
+# text = Locate samples and record inventory number and number of filters (or portions) used.
+1	Turn	_	Action	_	_	0	_	_	Offset=148-152
+2	filters	_	Device	_	_	0	_	_	Offset=157-164
+3	precipitate-side	_	Method	_	_	0	_	_	Offset=165-185
+4	bleached	_	Modifier	_	_	5	Mod-Link	_	Offset=191-199
+5	forceps	_	Device	_	_	0	_	_	Offset=200-207
+6	rinsed	_	Action	_	_	0	_	_	Offset=223-229
+7	water	_	Reagent	_	_	0	_	_	Offset=235-240
+8	use	_	Action	_	_	0	_	_	Offset=245-248
+9	aluminum	_	Device	_	_	0	_	_	Offset=249-270
+10	work	_	Location	_	_	0	_	_	Offset=274-286
+11	discarding	_	Action	_	_	0	_	_	Offset=288-298
+12	filter	_	Action	_	_	0	_	_	Offset=310-316
+
+# sent_id = s3
+# text = Turn the filters precipitate-side out with bleached forceps that have been rinsed with water and use aluminum foil squares as work surface, discarding after each filter.
+1	Remove	_	Action	_	_	0	_	_	Offset=318-324
+2	filter	_	Device	_	_	0	_	_	Offset=325-331
+3	50cc	_	Amount	_	_	4	Measure	_	Offset=337-341
+4	tube	_	Location	_	_	0	_	_	Offset=342-346
+5	refold	_	Action	_	_	0	_	_	Offset=351-357
+6	precipitate	_	Location	_	_	0	_	_	Offset=366-382
+7	contact	_	Action	_	_	0	_	_	Offset=392-399
+8	resuspension	_	Reagent	_	_	0	_	_	Offset=405-424
+9	Return	_	Action	_	_	0	_	_	Offset=425-431
+10	filter	_	Device	_	_	0	_	_	Offset=432-438
+11	tube	_	Location	_	_	0	_	_	Offset=442-446
+12	forceps	_	Device	_	_	0	_	_	Offset=453-460
+13	sterile	_	Modifier	_	_	14	Mod-Link	_	Offset=465-472
+14	applicator	_	Device	_	_	0	_	_	Offset=473-490
+
+# sent_id = s4
+# text = Remove filter from 50cc tube and refold so that precipitate side comes in contact with resuspension buffer Return filter to tube using forceps and sterile applicator sticks.
+1	Keep	_	Action	_	_	0	_	_	Offset=492-496
+2	filters	_	Device	_	_	0	_	_	Offset=497-504
+3	dark	_	Location	_	_	0	_	_	Offset=505-509
+4	refrigerated	_	Action	_	_	0	_	_	Offset=514-526
+5	suspend	_	Action	_	_	0	_	_	Offset=542-549
+
+# sent_id = s5
+# text = Keep filters dark and refrigerated until ready to suspend.
+1	Prepare	_	Action	_	_	0	_	_	Offset=551-558
+2	1x	_	Concentration	_	_	3	Or	_	Offset=559-561
+3	2x	_	Concentration	_	_	4	Measure	_	Offset=565-567
+4	resuspension	_	Reagent	_	_	0	_	_	Offset=568-587
+
+# sent_id = s6
+# text = Prepare 1x or 2x resuspension buffer.
+1	Prepare	_	Action	_	_	0	_	_	Offset=589-596
+2	20mL	_	Amount	_	_	4	Or	_	Offset=597-601
+3	1x	_	Concentration	_	_	5	Or	_	Offset=602-604
+4	10mL	_	Amount	_	_	6	Setting	_	Offset=608-612
+5	2x	_	Concentration	_	_	6	Measure	_	Offset=613-615
+6	filter	_	Device	_	_	0	_	_	Offset=620-626
+7	20L	_	Amount	_	_	8	Measure	_	Offset=632-635
+8	seawater	_	Reagent	_	_	0	_	_	Offset=639-647
+
+# sent_id = s7
+# text = Prepare 20mL 1x or 10mL 2x per filter from 20L of seawater.
+1	Add	_	Action	_	_	0	_	_	Offset=649-652
+2	resuspension	_	Reagent	_	_	0	_	_	Offset=653-672
+3	each	_	Modifier	_	_	4	Mod-Link	_	Offset=676-680
+4	filter	_	Seal	_	_	0	_	_	Offset=681-696
+5	tubes	_	Location	_	_	4	Meronym	_	Offset=701-706
+6	wrap	_	Action	_	_	0	_	_	Offset=711-715
+7	all	_	Modifier	_	_	8	Mod-Link	_	Offset=716-719
+8	them	_	Mention	_	_	0	_	_	Offset=723-727
+9	aluminum	_	Seal	_	_	0	_	_	Offset=731-744
+
+# sent_id = s8
+# text = Add resuspension buffer to each filter Parafilm the tubes and wrap all of them in aluminum foil.
+1	Put	_	Action	_	_	0	_	_	Offset=746-749
+2	foil	_	Seal	_	_	0	_	_	Offset=750-759
+3	tubes	_	Location	_	_	2	Meronym	_	Offset=763-768
+4	rotator	_	Device	_	_	0	_	_	Offset=772-779
+5	cold	_	Location	_	_	4	Meronym	_	Offset=784-793
+6	rubber	_	Device	_	_	0	_	_	Offset=801-813
+7	secure	_	Action	_	_	0	_	_	Offset=817-823
+8	rotate	_	Action	_	_	0	_	_	Offset=829-835
+9	slowly	_	Modifier	_	_	0	_	_	Offset=836-842
+10	overnight	_	Time	_	_	0	_	_	Offset=843-852
+
+# sent_id = s9
+# text = Put foil pack of tubes on rotator, in cold room, using rubber bands to secure, and rotate slowly overnight.
+1	recover	_	Action	_	_	0	_	_	Offset=857-864
+2	resuspended	_	Modifier	_	_	3	Mod-Link	_	Offset=865-876
+3	viruses	_	Reagent	_	_	0	_	_	Offset=877-884
+4	remove	_	Action	_	_	0	_	_	Offset=886-892
+5	liquid	_	Reagent	_	_	0	_	_	Offset=897-903
+6	bottom	_	Location	_	_	0	_	_	Offset=911-917
+7	5mL	_	Amount	_	_	8	Setting	_	Offset=926-929
+8	pipet	_	Device	_	_	0	_	_	Offset=930-935
+9	transfer	_	Action	_	_	0	_	_	Offset=940-948
+10	fresh	_	Modifier	_	_	13	Or	_	Offset=954-959
+11	15mL	_	Amount	_	_	12	Or	_	Offset=960-964
+12	50mL	_	Amount	_	_	15	Measure	_	Offset=968-972
+13	sterile	_	Modifier	_	_	15	Mod-Link	_	Offset=973-980
+14	labeled	_	Modifier	_	_	15	Mod-Link	_	Offset=982-989
+15	tube	_	Location	_	_	0	_	_	Offset=990-994
+
+# sent_id = s10
+# text = To recover resuspended viruses, remove the liquid at the bottom using a 5mL pipet and transfer to a fresh 15mL or 50mL sterile, labeled tube.
+1	bleached	_	Modifier	_	_	3	Mod-Link	_	Offset=1002-1010
+2	rinsed	_	Modifier	_	_	3	Mod-Link	_	Offset=1015-1021
+3	forceps	_	Device	_	_	5	Or	_	Offset=1022-1029
+4	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=1033-1040
+5	applicator	_	Device	_	_	0	_	_	Offset=1041-1058
+6	pull	_	Action	_	_	0	_	_	Offset=1060-1064
+7	edge	_	Location	_	_	0	_	_	Offset=1065-1069
+8	filter	_	Device	_	_	7	Meronym	_	Offset=1073-1079
+9	up	_	Method	_	_	0	_	_	Offset=1080-1091
+10	lip	_	Location	_	_	0	_	_	Offset=1092-1095
+11	tube	_	Location	_	_	10	Meronym	_	Offset=1099-1103
+12	secure	_	Action	_	_	0	_	_	Offset=1108-1114
+13	lid	_	Seal	_	_	0	_	_	Offset=1124-1127
+
+# sent_id = s11
+# text = Using bleached and rinsed forceps or sterile applicator sticks, pull edge of filter up and over lip of tube and secure with the lid.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1129-1139
+2	1000rpm	_	Speed	_	_	0	_	_	Offset=1140-1147
+3	5min	_	Time	_	_	0	_	_	Offset=1149-1153
+4	18°C	_	Temperature	_	_	0	_	_	Offset=1155-1159
+5	recover	_	Action	_	_	0	_	_	Offset=1163-1170
+6	liquid	_	Reagent	_	_	0	_	_	Offset=1171-1177
+7	left	_	Modifier	_	_	6	Mod-Link	_	Offset=1178-1182
+8	filter	_	Device	_	_	0	_	_	Offset=1186-1192
+
+# sent_id = s12
+# text = Centrifuge 1000rpm, 5min, 18°C to recover liquid left on filter.
+1	Remove	_	Action	_	_	0	_	_	Offset=1194-1200
+2	liquid	_	Reagent	_	_	0	_	_	Offset=1201-1207
+3	add	_	Action	_	_	0	_	_	Offset=1212-1215
+4	more	_	Modifier	_	_	5	Mod-Link	_	Offset=1216-1220
+5	buffer	_	Reagent	_	_	0	_	_	Offset=1221-1227
+6	filter	_	Device	_	_	0	_	_	Offset=1231-1237
+
+# sent_id = s13
+# text = Remove liquid and add more buffer if filter still has a lot of precipitate clinging to it.
+1	Rotate	_	Action	_	_	0	_	_	Offset=1285-1291
+2	several	_	Time	_	_	0	_	_	Offset=1296-1314
+
+# sent_id = s14
+# text = Rotate for several more hours.
+1	Repeat	_	Action	_	_	0	_	_	Offset=1316-1322
+2	removal	_	Action	_	_	0	_	_	Offset=1323-1330
+3	liquid	_	Reagent	_	_	0	_	_	Offset=1334-1340
+
+# sent_id = s15
+# text = Repeat removal of liquid.
+1	Dilute	_	Action	_	_	0	_	_	Offset=1342-1348
+2	stock	_	Reagent	_	_	0	_	_	Offset=1349-1360
+3	1:100	_	Generic-Measure	_	_	0	_	_	Offset=1361-1366
+4	10x	_	Concentration	_	_	5	Measure	_	Offset=1370-1373
+5	DNase	_	Reagent	_	_	0	_	_	Offset=1374-1386
+
+# sent_id = s16
+# text = Dilute stock DNase 1:100 in 10x DNase buffer (concentration = 400 U/mL).
+1	Add	_	Action	_	_	0	_	_	Offset=1415-1418
+2	1/10th	_	Amount	_	_	4	Measure	_	Offset=1419-1432
+3	diluted	_	Modifier	_	_	4	Mod-Link	_	Offset=1436-1443
+4	DNase	_	Reagent	_	_	0	_	_	Offset=1444-1449
+5	each	_	Modifier	_	_	6	Mod-Link	_	Offset=1453-1457
+6	sample	_	Location	_	_	8	Coreference-Link	_	Offset=1458-1479
+7	wrap	_	Action	_	_	0	_	_	Offset=1481-1485
+8	them	_	Mention	_	_	0	_	_	Offset=1486-1490
+9	aluminum	_	Seal	_	_	0	_	_	Offset=1494-1507
+10	attach	_	Action	_	_	0	_	_	Offset=1512-1518
+11	tube	_	Device	_	_	0	_	_	Offset=1522-1534
+12	rubber	_	Device	_	_	0	_	_	Offset=1540-1552
+
+# sent_id = s17
+# text = Add 1/10th volume of diluted DNase to each sample Parafilm tubes, wrap them in aluminum foil and attach to tube rotator with rubber bands.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1554-1562
+2	rotating	_	Action	_	_	0	_	_	Offset=1566-1574
+3	slowly	_	Modifier	_	_	0	_	_	Offset=1575-1581
+4	room	_	Temperature	_	_	0	_	_	Offset=1585-1601
+5	2	_	Time	_	_	0	_	_	Offset=1606-1613
+
+# sent_id = s18
+# text = Incubate by rotating slowly at room temperature for 2 hours.
+1	Inactivate	_	Action	_	_	0	_	_	Offset=1615-1625
+2	DNase	_	Reagent	_	_	0	_	_	Offset=1626-1631
+3	adding	_	Action	_	_	0	_	_	Offset=1635-1641
+4	EDTA	_	Reagent	_	_	0	_	_	Offset=1642-1646
+5	EGTA	_	Reagent	_	_	0	_	_	Offset=1651-1655
+6	0.1M	_	Concentration	_	_	7	Measure	_	Offset=1659-1663
+7	final	_	Reagent	_	_	0	_	_	Offset=1664-1683
+
+# sent_id = s19
+# text = Inactivate DNase by adding EDTA and EGTA to 0.1M final concentration each.
+1	Mix	_	Action	_	_	0	_	_	Offset=1690-1693
+2	inverting	_	Action	_	_	0	_	_	Offset=1697-1706
+3	tube	_	Location	_	_	0	_	_	Offset=1711-1715
+4	several	_	Numerical	_	_	0	_	_	Offset=1716-1723
+
+# sent_id = s20
+# text = Mix by inverting the tube several times.
+1	Add	_	Action	_	_	0	_	_	Offset=1731-1734
+2	DNase	_	Modifier	_	_	4	Mod-Link	_	Offset=1739-1752
+3	inactivated	_	Modifier	_	_	4	Mod-Link	_	Offset=1757-1768
+4	sample	_	Reagent	_	_	0	_	_	Offset=1769-1775
+5	top	_	Location	_	_	0	_	_	Offset=1783-1796
+6	Amicon	_	Device	_	_	5	Meronym	_	Offset=1800-1845
+
+# sent_id = s21
+# text = Add the DNase treated and inactivated sample to the top reservoir of Amicon Ultra 100kDA centrifugal concentrators.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1847-1857
+2	concentrators	_	Device	_	_	0	_	_	Offset=1862-1875
+3	1000	_	Speed	_	_	0	_	_	Offset=1879-1885
+4	5	_	Time	_	_	0	_	_	Offset=1890-1898
+5	intervals	_	Modifier	_	_	4	Mod-Link	_	Offset=1899-1908
+6	18°C	_	Temperature	_	_	0	_	_	Offset=1912-1916
+7	samples	_	Reagent	_	_	0	_	_	Offset=1923-1930
+8	less	_	Modifier	_	_	0	_	_	Offset=1938-1947
+9	2mL	_	Amount	_	_	0	_	_	Offset=1948-1951
+10	each	_	Modifier	_	_	0	_	_	Offset=1952-1956
+
+# sent_id = s22
+# text = Centrifuge the concentrators at 1000 g for 5 minute intervals at 18°C until samples are at less than 2mL each.
+1	Put	_	Action	_	_	0	_	_	Offset=1958-1961
+2	1mL	_	Amount	_	_	3	Measure	_	Offset=1962-1965
+3	resin	_	Reagent	_	_	0	_	_	Offset=1969-1974
+
+# sent_id = s23
+# text = Put 1mL of resin on one Wizard Prep column.
+1	Thoroughly	_	Modifier	_	_	0	_	_	Offset=2002-2012
+2	resuspend	_	Action	_	_	0	_	_	Offset=2013-2022
+3	resin	_	Reagent	_	_	0	_	_	Offset=2023-2028
+4	shaking	_	Action	_	_	0	_	_	Offset=2032-2039
+5	vigorously	_	Modifier	_	_	0	_	_	Offset=2040-2050
+
+# sent_id = s24
+# text = Thoroughly resuspend resin by shaking vigorously.
+1	Mix	_	Action	_	_	0	_	_	Offset=2052-2055
+2	1mL	_	Amount	_	_	0	_	_	Offset=2056-2059
+3	per	_	Modifier	_	_	5	Mod-Link	_	Offset=2060-2063
+4	0.5-1.0mL	_	Amount	_	_	5	Measure	_	Offset=2064-2073
+5	DNA	_	Reagent	_	_	0	_	_	Offset=2077-2080
+
+# sent_id = s25
+# text = Mix 1mL per 0.5-1.0mL of DNA.
+1	Add	_	Action	_	_	0	_	_	Offset=2082-2085
+2	each	_	Modifier	_	_	4	Mod-Link	_	Offset=2086-2090
+3	1mL	_	Amount	_	_	4	Measure	_	Offset=2091-2094
+4	resin	_	Reagent	_	_	0	_	_	Offset=2098-2103
+5	3mL	_	Amount	_	_	6	Setting	_	Offset=2109-2112
+6	luer	_	Device	_	_	0	_	_	Offset=2113-2130
+7	Wizard	_	Location	_	_	6	Meronym	_	Offset=2145-2158
+
+# sent_id = s26
+# text = Add each 1mL of resin to a 3mL luer lock syringe attached to a Wizard column.
+1	Push	_	Action	_	_	0	_	_	Offset=2160-2172
+2	5mL	_	Amount	_	_	3	Measure	_	Offset=2180-2183
+3	snap-cap	_	Location	_	_	0	_	_	Offset=2184-2197
+
+# sent_id = s27
+# text = Push through into a 5mL snap-cap tube.
+1	Save	_	Action	_	_	0	_	_	Offset=2199-2203
+2	tube	_	Location	_	_	0	_	_	Offset=2209-2213
+3	DNA	_	Method	_	_	0	_	_	Offset=2220-2238
+
+# sent_id = s28
+# text = Save this tube until DNA quantification.
+1	Remove	_	Action	_	_	0	_	_	Offset=2240-2246
+2	syringe	_	Device	_	_	0	_	_	Offset=2247-2254
+3	column	_	Location	_	_	0	_	_	Offset=2260-2266
+4	Remove	_	Action	_	_	0	_	_	Offset=2267-2273
+5	plunger	_	Device	_	_	0	_	_	Offset=2274-2281
+
+# sent_id = s29
+# text = Remove syringe from column Remove plunger.
+1	Reattach	_	Action	_	_	0	_	_	Offset=2283-2291
+2	syringe	_	Location	_	_	0	_	_	Offset=2292-2306
+3	column	_	Location	_	_	0	_	_	Offset=2310-2316
+
+# sent_id = s30
+# text = Reattach syringe barrel to column.
+1	Wash	_	Action	_	_	0	_	_	Offset=2318-2322
+2	columns	_	Location	_	_	0	_	_	Offset=2323-2330
+3	2mL	_	Amount	_	_	5	Measure	_	Offset=2336-2339
+4	80%	_	Concentration	_	_	5	Measure	_	Offset=2340-2343
+5	isopropanol	_	Reagent	_	_	0	_	_	Offset=2344-2355
+6	pushing	_	Action	_	_	0	_	_	Offset=2356-2371
+7	syringe	_	Location	_	_	0	_	_	Offset=2381-2395
+8	waste	_	Location	_	_	0	_	_	Offset=2403-2418
+
+# sent_id = s31
+# text = Wash columns with 2mL 80% isopropanol pushing through with the syringe barrel into a waste container.
+1	Put	_	Action	_	_	0	_	_	Offset=2420-2423
+2	columns	_	Location	_	_	0	_	_	Offset=2424-2431
+3	1.5mL	_	Amount	_	_	4	Measure	_	Offset=2437-2442
+4	centrifuge	_	Location	_	_	0	_	_	Offset=2443-2458
+5	centrifuge	_	Action	_	_	0	_	_	Offset=2463-2473
+6	10,000	_	Speed	_	_	0	_	_	Offset=2477-2485
+7	2.5	_	Time	_	_	0	_	_	Offset=2490-2501
+8	remove	_	Action	_	_	0	_	_	Offset=2505-2511
+9	residual	_	Modifier	_	_	10	Mod-Link	_	Offset=2512-2520
+10	alcohol	_	Reagent	_	_	0	_	_	Offset=2521-2528
+
+# sent_id = s32
+# text = Put columns into 1.5mL centrifuge tube and centrifuge at 10,000 g for 2.5 minutes to remove residual alcohol.
+1	Discard	_	Action	_	_	0	_	_	Offset=2530-2537
+2	tube	_	Location	_	_	0	_	_	Offset=2538-2542
+
+# sent_id = s33
+# text = Discard tube.
+1	Place	_	Action	_	_	0	_	_	Offset=2544-2549
+2	column	_	Location	_	_	0	_	_	Offset=2550-2556
+3	fresh	_	Modifier	_	_	5	Mod-Link	_	Offset=2564-2569
+4	1.5mL	_	Amount	_	_	5	Measure	_	Offset=2570-2575
+5	centrifuge	_	Reagent	_	_	0	_	_	Offset=2576-2591
+6	pipet	_	Action	_	_	0	_	_	Offset=2596-2601
+7	50-100µL	_	Amount	_	_	8	Measure	_	Offset=2605-2613
+8	TE	_	Reagent	_	_	0	_	_	Offset=2617-2619
+9	0.02µm	_	Size	_	_	10	Setting	_	Offset=2621-2627
+10	filtered	_	Modifier	_	_	8	Mod-Link	_	Offset=2628-2636
+11	heated	_	Modifier	_	_	8	Mod-Link	_	Offset=2641-2647
+12	80°C)	_	Temperature	_	_	11	Setting	_	Offset=2651-2656
+
+# sent_id = s34
+# text = Place column into a fresh 1.5mL centrifuge tube and pipet on 50-100µL of TE (0.02µm filtered and heated to 80°C).
+1	Vortex	_	Action	_	_	0	_	_	Offset=2658-2664
+2	gently	_	Modifier	_	_	0	_	_	Offset=2665-2671
+3	1400rpm	_	Speed	_	_	0	_	_	Offset=2673-2680
+4	let	_	Action	_	_	0	_	_	Offset=2686-2693
+5	1	_	Time	_	_	0	_	_	Offset=2694-2702
+
+# sent_id = s35
+# text = Vortex gently (1400rpm) and let sit 1 minute.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2704-2714
+2	10,000	_	Speed	_	_	0	_	_	Offset=2718-2726
+3	1	_	Time	_	_	0	_	_	Offset=2731-2739
+
+# sent_id = s36
+# text = Centrifuge at 10,000 g for 1 minute.
+1	Transfer	_	Action	_	_	0	_	_	Offset=2741-2749
+2	extracted	_	Modifier	_	_	3	Mod-Link	_	Offset=2750-2759
+3	DNA	_	Reagent	_	_	0	_	_	Offset=2760-2763
+4	Lo-bind	_	Reagent	_	_	0	_	_	Offset=2767-2778
+5	0.5mL	_	Amount	_	_	6	Measure	_	Offset=2779-2784
+6	tubes	_	Location	_	_	0	_	_	Offset=2785-2790
+
+# sent_id = s37
+# text = Transfer extracted DNA to Lo-bind DNA 0.5mL tubes.
+1	Repeat	_	Action	_	_	0	_	_	Offset=2792-2798
+2	elution	_	Method	_	_	0	_	_	Offset=2799-2806
+3	one	_	Numerical	_	_	0	_	_	Offset=2827-2830
+
+# sent_id = s38
+# text = Repeat elution above (steps 37-40) one more time.
+1	Use	_	Action	_	_	0	_	_	Offset=2842-2845
+2	1-2µL	_	Amount	_	_	3	Measure	_	Offset=2846-2851
+3	first	_	Reagent	_	_	0	_	_	Offset=2859-2872
+4	4-5µL	_	Amount	_	_	5	Measure	_	Offset=2877-2882
+5	second	_	Reagent	_	_	0	_	_	Offset=2890-2904
+6	Pico	_	Reagent	_	_	0	_	_	Offset=2913-2929
+7	quantify	_	Action	_	_	0	_	_	Offset=2933-2941
+8	extracted	_	Modifier	_	_	9	Mod-Link	_	Offset=2946-2955
+9	DNAQuant-iT	_	Reagent	_	_	0	_	_	Offset=2956-2994
+
+# sent_id = s39
+# text = Use 1-2µL of the first elution and 4-5µL of the second elution for the Pico Green assay to quantify the extracted DNAQuant-iT dsDNA Pico Green assay kit (Invitrogen).
+1	Store	_	Action	_	_	0	_	_	Offset=3079-3084
+2	-80°C	_	Temperature	_	_	0	_	_	Offset=3088-3093
+3	ultra-low	_	Modifier	_	_	4	Mod-Link	_	Offset=3094-3103
+4	freezer	_	Device	_	_	0	_	_	Offset=3104-3111
+
+# sent_id = s40
+# text = Use the Excel spreadsheet to calculate the ng/µL DNA for each sample.
+1	Label	_	Action	_	_	0	_	_	Offset=3113-3118
+2	tubes	_	Location	_	_	0	_	_	Offset=3119-3124
+3	date,	_	Method	_	_	0	_	_	Offset=3130-3168
+4	store	_	Action	_	_	0	_	_	Offset=3173-3178
+5	-80°C	_	Temperature	_	_	0	_	_	Offset=3182-3187
+6	ultra-low	_	Modifier	_	_	7	Mod-Link	_	Offset=3188-3197
+7	freezer	_	Device	_	_	0	_	_	Offset=3198-3205
+

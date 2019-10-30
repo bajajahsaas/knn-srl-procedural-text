@@ -1,0 +1,40 @@
+# sent_id = s1
+# text = PCR Using Q5® Hot Start High-Fidelity DNA Polymerase (M0493)
+1	25	_	Amount	_	_	2	Measure	_	Offset=101-106
+2	Reaction	_	Reagent	_	_	0	_	_	Offset=107-115
+3	50	_	Amount	_	_	4	Measure	_	Offset=115-120
+4	Reaction	_	Reagent	_	_	0	_	_	Offset=121-129
+5	5X	_	Concentration	_	_	6	Measure	_	Offset=148-150
+6	Q5	_	Reagent	_	_	0	_	_	Offset=151-169
+7	5	_	Amount	_	_	0	_	_	Offset=169-172
+8	10	_	Amount	_	_	0	_	_	Offset=173-178
+9	1X	_	Concentration	_	_	0	_	_	Offset=178-180
+10	10	_	Concentration	_	_	0	_	_	Offset=180-185
+11	dNTP	_	Reagent	_	_	0	_	_	Offset=186-190
+12	0.5	_	Amount	_	_	0	_	_	Offset=191-196
+13	1	_	Amount	_	_	0	_	_	Offset=197-201
+14	200	_	Concentration	_	_	0	_	_	Offset=201-207
+15	10	_	Concentration	_	_	0	_	_	Offset=207-212
+16	Forward	_	Reagent	_	_	0	_	_	Offset=213-227
+17	1.25	_	Amount	_	_	0	_	_	Offset=227-234
+18	2.5	_	Amount	_	_	0	_	_	Offset=234-240
+19	0.5	_	Concentration	_	_	0	_	_	Offset=240-246
+20	10	_	Concentration	_	_	0	_	_	Offset=246-251
+
+# sent_id = s2
+# text = Set up the following reaction:C
+1	mix	_	Action	_	_	0	_	_	Offset=482-485
+2	reaction	_	Reagent	_	_	0	_	_	Offset=490-498
+
+# sent_id = s3
+# text = omponent25 µl Reaction50 µl ReactionFinal Concentration5X Q5 Reaction Buffer5 µl10 µl1X10 mM dNTPs0.5 µl1 µl200 µM10 µM Forward Primer1.25 µl2.5 µl0.5 µM10 µM Reverse Primer1.25 µl2.5 µl0.5 µMTemplate DNAvariablevariable< 1,000 ngQ5 Hot Start High-Fidelity DNA Polymerase0.25 µl0.5 µl0.02 U/µl5X Q5 High GC Enhancer (optional)(5 µl)(10 µl)(1X)Nuclease-Free Waterto 25 µlto 50 µl.  
+1	Collect	_	Action	_	_	0	_	_	Offset=500-507
+2	overlay	_	Action	_	_	0	_	_	Offset=578-585
+
+# sent_id = s4
+# text = Gently mix the reaction.
+1	Transfer	_	Action	_	_	0	_	_	Offset=659-667
+2	PCR	_	Device	_	_	0	_	_	Offset=668-677
+3	PCR	_	Device	_	_	0	_	_	Offset=683-694
+4	thermocycling	_	Method	_	_	0	_	_	Offset=705-718
+

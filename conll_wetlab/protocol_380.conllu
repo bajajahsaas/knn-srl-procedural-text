@@ -1,0 +1,67 @@
+# sent_id = s1
+# text = One-Step Transformation of Yeast
+1	Add	_	Action	_	_	0	_	_	Offset=33-36
+2	90	_	Amount	_	_	4	Measure	_	Offset=37-42
+3	50%	_	Generic-Measure	_	_	4	Measure	_	Offset=46-49
+4	Polyethylene	_	Reagent	_	_	0	_	_	Offset=50-74
+5	1.5	_	Amount	_	_	6	Measure	_	Offset=80-86
+6	microcentrifuge	_	Location	_	_	0	_	_	Offset=87-107
+
+# sent_id = s2
+# text = Add 90 uL of 50% Polyethylene Glycol 3350 to a 1.5 mL microcentrifuge tube.
+1	Add	_	Action	_	_	0	_	_	Offset=109-112
+2	10	_	Amount	_	_	4	Measure	_	Offset=113-118
+3	0.2	_	Generic-Measure	_	_	4	Measure	_	Offset=122-127
+4	Lithium	_	Reagent	_	_	0	_	_	Offset=128-143
+5	microcentrifuge	_	Location	_	_	0	_	_	Offset=151-171
+
+# sent_id = s3
+# text = Add 10 uL of 0.2 N Lithium Acetate to the microcentrifuge tube.
+1	Pellet	_	Action	_	_	0	_	_	Offset=173-179
+2	yeast	_	Reagent	_	_	0	_	_	Offset=180-185
+3	1	_	Amount	_	_	4	Measure	_	Offset=191-195
+4	liquid	_	Location	_	_	0	_	_	Offset=196-210
+
+# sent_id = s4
+# text = Pellet yeast from 1 mL liquid culture or take a toothpick full of freshly grown yeast on a plate and resuspend in the solution.
+1	Add	_	Action	_	_	0	_	_	Offset=301-304
+2	1	_	Amount	_	_	3	Measure	_	Offset=305-309
+3	DNA	_	Reagent	_	_	0	_	_	Offset=313-316
+4	briefly	_	Modifier	_	_	0	_	_	Offset=321-328
+5	vortex	_	Action	_	_	0	_	_	Offset=329-335
+
+# sent_id = s5
+# text = Add 1 ug of DNA and briefly vortex.
+1	Incubate	_	Action	_	_	0	_	_	Offset=337-345
+2	45°C	_	Temperature	_	_	0	_	_	Offset=349-353
+3	30	_	Time	_	_	0	_	_	Offset=358-378
+4	vortexing	_	Action	_	_	0	_	_	Offset=380-389
+5	briefly	_	Modifier	_	_	0	_	_	Offset=390-397
+6	every	_	Modifier	_	_	0	_	_	Offset=398-403
+7	10	_	Time	_	_	0	_	_	Offset=404-414
+
+# sent_id = s6
+# text = Incubate at 45°C for 30 minutes to 1 hour, vortexing briefly every 10 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=416-419
+2	1	_	Amount	_	_	3	Measure	_	Offset=420-424
+3	water	_	Reagent	_	_	0	_	_	Offset=425-430
+4	tube	_	Location	_	_	0	_	_	Offset=438-442
+5	pipette	_	Action	_	_	0	_	_	Offset=447-454
+6	centrifuge	_	Action	_	_	0	_	_	Offset=468-478
+7	14,000	_	Speed	_	_	0	_	_	Offset=482-492
+8	15	_	Time	_	_	0	_	_	Offset=497-507
+
+# sent_id = s7
+# text = Add 1 mL water to the tube and pipette to mix, then centrifuge at 14,000 RPM for 15 seconds.
+1	Remove	_	Action	_	_	0	_	_	Offset=509-515
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=520-531
+3	resuspend	_	Action	_	_	0	_	_	Offset=536-545
+4	pellet	_	Reagent	_	_	0	_	_	Offset=550-556
+5	200	_	Amount	_	_	6	Measure	_	Offset=560-566
+6	water	_	Location	_	_	0	_	_	Offset=567-572
+7	spread	_	Action	_	_	0	_	_	Offset=579-585
+8	selective	_	Location	_	_	0	_	_	Offset=589-605
+9	incubate	_	Action	_	_	0	_	_	Offset=610-618
+10	30°C	_	Temperature	_	_	0	_	_	Offset=622-626
+11	3-6	_	Time	_	_	0	_	_	Offset=631-639
+

@@ -1,0 +1,67 @@
+# sent_id = s1
+# text = Crude Membrane protein extraction from tissues
+1	Thaw	_	Action	_	_	0	_	_	Offset=47-51
+2	20–50	_	Amount	_	_	3	Measure	_	Offset=52-60
+3	tissue	_	Reagent	_	_	0	_	_	Offset=64-70
+4	15CM	_	Amount	_	_	5	Measure	_	Offset=74-78
+5	dish	_	Reagent	_	_	3	Or	_	Offset=79-89
+6	1	_	Amount	_	_	8	Measure	_	Offset=93-97
+7	high	_	Modifier	_	_	8	Mod-Link	_	Offset=101-105
+8	salt	_	Location	_	_	0	_	_	Offset=106-117
+
+# sent_id = s2
+# text = Thaw 20–50 mg of tissue or 15CM dish cells in 1 mL of high salt buffer.
+1	Homogenize	_	Action	_	_	0	_	_	Offset=119-129
+2	tissues	_	Reagent	_	_	0	_	_	Offset=130-137
+3	IKA	_	Device	_	_	0	_	_	Offset=147-171
+4	∼25,000rpm	_	Speed	_	_	0	_	_	Offset=191-201
+5	30	_	Time	_	_	0	_	_	Offset=207-211
+
+# sent_id = s3
+# text = Homogenize tissues using an IKA Ultra Turbax blender at maximum speed ( ∼25,000rpm) for 30 s. 
+1	Ultracentrifuge	_	Action	_	_	0	_	_	Offset=214-229
+2	suspension	_	Reagent	_	_	0	_	_	Offset=234-244
+3	Beckman	_	Device	_	_	0	_	_	Offset=248-263
+4	100,000	_	Speed	_	_	0	_	_	Offset=267-276
+5	10	_	Time	_	_	0	_	_	Offset=281-287
+
+# sent_id = s4
+# text = Ultracentrifuge the suspension in Beckman MLA 130 at 100,000 g for 10 min.
+1	Discard	_	Action	_	_	0	_	_	Offset=351-358
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=363-374
+3	homogenize	_	Action	_	_	0	_	_	Offset=379-389
+4	pellets	_	Reagent	_	_	0	_	_	Offset=390-397
+5	1	_	Amount	_	_	6	Measure	_	Offset=401-405
+6	carbonate	_	Location	_	_	0	_	_	Offset=409-425
+7	step	_	Method	_	_	0	_	_	Offset=432-438
+
+# sent_id = s5
+# text = The tubes should be balanced to a difference less than 50 mg.
+1	Incubate	_	Action	_	_	0	_	_	Offset=441-449
+2	30	_	Time	_	_	0	_	_	Offset=454-460
+3	gentle	_	Modifier	_	_	0	_	_	Offset=466-472
+4	mixing	_	Action	_	_	0	_	_	Offset=473-479
+
+# sent_id = s6
+# text = Discard the supernatant and homogenize pellets in 1 mL of carbonate buffer as in step 2 .
+1	Collect	_	Action	_	_	0	_	_	Offset=481-488
+2	non-soluble	_	Modifier	_	_	3	Mod-Link	_	Offset=493-504
+3	material	_	Reagent	_	_	0	_	_	Offset=505-513
+4	centrifugation	_	Method	_	_	0	_	_	Offset=517-531
+
+# sent_id = s7
+# text = Incubate for 30 min with gentle mixing.
+1	Discard	_	Action	_	_	0	_	_	Offset=717-724
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=725-736
+3	resuspend	_	Action	_	_	0	_	_	Offset=741-750
+4	pellets	_	Reagent	_	_	0	_	_	Offset=751-758
+5	wash	_	Location	_	_	0	_	_	Offset=762-773
+6	step	_	Method	_	_	0	_	_	Offset=780-786
+
+# sent_id = s8
+# text = Collect the non-soluble material by centrifugation as in step 3 (If the content of integral membrane proteins in the purified membranes is not at least 30–40% of total identified proteins, steps 4–6 can be repeated two to three times).
+1	Collect	_	Action	_	_	0	_	_	Offset=789-796
+2	crude	_	Modifier	_	_	3	Mod-Link	_	Offset=801-806
+3	membranes	_	Reagent	_	_	0	_	_	Offset=807-816
+4	centrifugation	_	Method	_	_	0	_	_	Offset=820-834
+

@@ -1,0 +1,89 @@
+# sent_id = s1
+# text = Building an HPC blast pipeline
+1	Login	_	Action	_	_	0	_	_	Offset=31-36
+2	hpc	_	Location	_	_	0	_	_	Offset=44-47
+3	user	_	Reagent	_	_	0	_	_	Offset=89-98
+4	Create	_	Action	_	_	0	_	_	Offset=99-105
+5	directory	_	Reagent	_	_	0	_	_	Offset=108-117
+6	Go	_	Action	_	_	0	_	_	Offset=135-137
+7	hpc-blast	_	Location	_	_	0	_	_	Offset=145-164
+8	create	_	Action	_	_	0	_	_	Offset=169-175
+9	sub	_	Reagent	_	_	0	_	_	Offset=176-191
+
+# sent_id = s2
+# text = Login to the hpc (at the University of Arizona) with your user name Create a directory for the pipeline Go to the hpc-blast directory and create sub directories to hold std-err, std-out, data, blastdb, blast-results and scripts.
+1	Go	_	Action	_	_	0	_	_	Offset=260-262
+2	blastdb	_	Location	_	_	0	_	_	Offset=270-287
+3	create	_	Action	_	_	0	_	_	Offset=292-298
+4	blast	_	Reagent	_	_	0	_	_	Offset=303-317
+
+# sent_id = s3
+# text = Go to the blastdb directory and create the blast database.
+1	Copy	_	Action	_	_	0	_	_	Offset=319-323
+2	input	_	Reagent	_	_	0	_	_	Offset=328-339
+3	iPlant	_	Location	_	_	0	_	_	Offset=350-356
+
+# sent_id = s4
+# text = Copy the input files over from iPlant.
+1	Put	_	Action	_	_	0	_	_	Offset=504-507
+2	these	_	Mention	_	_	0	_	_	Offset=508-513
+3	scripts	_	Location	_	_	0	_	_	Offset=523-540
+
+# sent_id = s5
+# text = We will be using the day/night transcriptomes we discussed last week.
+1	create	_	Action	_	_	0	_	_	Offset=568-574
+2	config.sh	_	Reagent	_	_	0	_	_	Offset=579-595
+
+# sent_id = s6
+# text = You will use two of the Perl scripts from the homework in the hpc pipeline.
+1	create	_	Action	_	_	0	_	_	Offset=1150-1156
+2	"driver	_	Reagent	_	_	0	_	_	Offset=1161-1177
+
+# sent_id = s7
+# text = Put these into the scripts directory.
+1	Create	_	Action	_	_	0	_	_	Offset=1259-1265
+2	shell	_	Reagent	_	_	0	_	_	Offset=1268-1280
+3	fasta	_	Reagent	_	_	0	_	_	Offset=1295-1319
+
+# sent_id = s8
+# text = config.sh: Now we need to create the config.sh script.
+1	Create	_	Action	_	_	0	_	_	Offset=1335-1341
+2	shell	_	Reagent	_	_	0	_	_	Offset=1344-1356
+3	compute	_	Location	_	_	0	_	_	Offset=1378-1390
+
+# sent_id = s9
+# text = This script will contain all of the environmental variables that the user will be able to modify for running blast.
+1	Create	_	Action	_	_	0	_	_	Offset=1411-1417
+2	shell	_	Reagent	_	_	0	_	_	Offset=1420-1432
+3	compute	_	Location	_	_	0	_	_	Offset=1474-1486
+
+# sent_id = s10
+# text = The idea of this script is to give the user one place to make any changes they need to run their particular blast job.
+1	modify	_	Action	_	_	0	_	_	Offset=1523-1529
+2	blast	_	Reagent	_	_	0	_	_	Offset=1534-1553
+3	Update	_	Action	_	_	0	_	_	Offset=1554-1560
+4	e-value	_	Measure-Type	_	_	0	_	_	Offset=1565-1572
+5	less	_	Generic-Measure	_	_	0	_	_	Offset=1579-1593
+
+# sent_id = s11
+# text = The user should not have to go in and change any of the scripts in the 'scripts' directory.
+1	1719	_	Action	_	_	0	_	_	Offset=1685-1689;1709
+2	scripts	_	Reagent	_	_	0	_	_	Offset=1701-1708
+3	run	_	Action	_	_	0	_	_	Offset=1729-1732
+4	pipeline	_	Reagent	_	_	0	_	_	Offset=1737-1745
+
+# sent_id = s12
+# text = Instead, we will capture all of these variable here.
+1	add	_	Action	_	_	0	_	_	Offset=2077-2080
+2	step	_	Reagent	_	_	0	_	_	Offset=2091-2095
+3	puts	_	Action	_	_	0	_	_	Offset=2101-2105
+4	parsed	_	Reagent	_	_	0	_	_	Offset=2117-2136
+5	single	_	Location	_	_	0	_	_	Offset=2144-2155
+
+# sent_id = s13
+# text = * note the the config.sh script is in the hpc-blast directory (in the first part of the pipeline), where it is easy for the user to modify it.
+1	Commit	_	Action	_	_	0	_	_	Offset=2555-2561
+2	code	_	Reagent	_	_	0	_	_	Offset=2567-2571
+3	github	_	Location	_	_	0	_	_	Offset=2584-2608
+4	directory:hpc-blast	_	Reagent	_	_	0	_	_	Offset=2619-2638
+

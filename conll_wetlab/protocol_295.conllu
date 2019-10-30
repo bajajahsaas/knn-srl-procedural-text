@@ -1,0 +1,428 @@
+# sent_id = s1
+# text = Paraffin Embedding of Drosophila Pupal Tissues
+1	Puncture	_	Action	_	_	0	_	_	Offset=47-55
+2	posterior	_	Reagent	_	_	0	_	_	Offset=56-84
+3	dissecting	_	Device	_	_	0	_	_	Offset=90-109
+4	fine	_	Device	_	_	3	Or	_	Offset=111-124
+5	.22	_	Size	_	_	6	Measure	_	Offset=129-132
+6	gauge	_	Device	_	_	4	Or	_	Offset=133-145
+
+# sent_id = s2
+# text = Puncture posterior end of staged pupa with dissecting scissors, fine forcepts, or .22 gauge needle.
+1	Place	_	Action	_	_	0	_	_	Offset=147-152
+2	Eppendorf	_	Location	_	_	4	Meronym	_	Offset=158-172
+3	500	_	Amount	_	_	4	Measure	_	Offset=178-184
+4	FAAG	_	Reagent	_	_	0	_	_	Offset=188-192
+5	store	_	Action	_	_	0	_	_	Offset=197-202
+6	overnight	_	Time	_	_	0	_	_	Offset=203-212
+7	4	_	Temperature	_	_	0	_	_	Offset=216-233
+
+# sent_id = s3
+# text = Place into Eppendorf tube with 500 ul of FAAG and store overnight at 4 degrees Celsius. 
+1	Remove	_	Action	_	_	0	_	_	Offset=236-242
+2	FAAG	_	Reagent	_	_	0	_	_	Offset=243-247
+3	hood	_	Location	_	_	0	_	_	Offset=255-259
+4	dispose	_	Action	_	_	0	_	_	Offset=264-271
+5	"Aldehyde	_	Location	_	_	0	_	_	Offset=275-301
+
+# sent_id = s4
+# text = Remove FAAG in the hood and dispose in "Aldehyde Waste" container.
+1	Dehydrate	_	Action	_	_	0	_	_	Offset=303-312
+2	ethanol	_	Reagent	_	_	0	_	_	Offset=321-335
+3	clear	_	Action	_	_	0	_	_	Offset=340-345
+4	Xylenes	_	Reagent	_	_	0	_	_	Offset=349-356
+
+# sent_id = s5
+# text = Dehydrate through ethanol series and clear in Xylenes.
+1	Rotate	_	Action	_	_	0	_	_	Offset=358-364
+2	nutator	_	Device	_	_	0	_	_	Offset=368-375
+3	RT	_	Temperature	_	_	0	_	_	Offset=379-381
+
+# sent_id = s6
+# text = Rotate in nutator at RT.
+1	Replace	_	Action	_	_	0	_	_	Offset=918-925
+2	100%	_	Concentration	_	_	3	Measure	_	Offset=926-930
+3	Ethanol	_	Reagent	_	_	0	_	_	Offset=931-938
+4	500ul	_	Amount	_	_	5	Measure	_	Offset=944-949
+5	Xylenes	_	Reagent	_	_	0	_	_	Offset=950-957
+6	thirty	_	Time	_	_	0	_	_	Offset=962-976
+
+# sent_id = s7
+# text = Solution 1: 80% Ethanol 500 ul Dehydrate through ethanol series continued.
+1	Dispose	_	Action	_	_	0	_	_	Offset=978-985
+2	Xylenes	_	Reagent	_	_	0	_	_	Offset=989-996
+3	"Aldehyde	_	Location	_	_	0	_	_	Offset=1000-1026
+
+# sent_id = s8
+# text = Solution 2: 85% Ethanol 500 ul Dehydrate through ethanol series continued.
+1	Dispose	_	Action	_	_	0	_	_	Offset=1386-1393
+2	Xylenes	_	Reagent	_	_	0	_	_	Offset=1397-1404
+3	"Aldehyde	_	Location	_	_	0	_	_	Offset=1408-1434
+
+# sent_id = s9
+# text = Solution 3: 90% Ethanol 500 ul Dehydrate through ethanol series continued.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1458-1466
+2	pupae	_	Reagent	_	_	0	_	_	Offset=1467-1472
+3	scintillation	_	Location	_	_	5	Meronym	_	Offset=1476-1494
+4	2	_	Amount	_	_	5	Measure	_	Offset=1500-1504
+5	Xylenes	_	Reagent	_	_	0	_	_	Offset=1508-1515
+6	designated	_	Modifier	_	_	7	Mod-Link	_	Offset=1522-1532
+7	paintbrush	_	Device	_	_	0	_	_	Offset=1533-1543
+
+# sent_id = s10
+# text = Solution 4: 100% Ethanol 500 ul. 
+1	Mark	_	Action	_	_	0	_	_	Offset=1545-1549
+2	tube	_	Location	_	_	0	_	_	Offset=1574-1578
+
+# sent_id = s11
+# text = Repeat Step 5 Dehydrate through ethanol series continued.
+1	Add	_	Action	_	_	0	_	_	Offset=1580-1583
+2	~20	_	Numerical	_	_	3	Measure	_	Offset=1584-1587
+3	paraffin	_	Reagent	_	_	0	_	_	Offset=1588-1602
+4	melt	_	Action	_	_	0	_	_	Offset=1624-1628
+5	42	_	Temperature	_	_	6	Setting	_	Offset=1632-1649
+6	incubator	_	Device	_	_	0	_	_	Offset=1650-1659
+
+# sent_id = s12
+# text = Solution 4: 100% Ethanol 500 ul. 
+1	Leave	_	Action	_	_	0	_	_	Offset=1684-1689
+2	overnight	_	Time	_	_	0	_	_	Offset=1690-1699
+
+# sent_id = s13
+# text = Repeat Step 5 Dehydrate through ethanol series continued.
+1	500	_	Amount	_	_	2	Measure	_	Offset=1704-1710
+2	beaker	_	Location	_	_	0	_	_	Offset=1711-1717
+3	add	_	Action	_	_	0	_	_	Offset=1719-1722
+4	melted	_	Modifier	_	_	5	Mod-Link	_	Offset=1723-1729
+5	paraffin	_	Reagent	_	_	0	_	_	Offset=1730-1738
+6	incubate	_	Action	_	_	0	_	_	Offset=1743-1751
+7	56	_	Temperature	_	_	0	_	_	Offset=1755-1773
+8	tomorrow	_	Time	_	_	0	_	_	Offset=1782-1790
+
+# sent_id = s14
+# text = Solution 4: 100% Ethanol 500 ul. 
+1	Remove	_	Action	_	_	0	_	_	Offset=1792-1798
+2	Xylenes/Wax	_	Reagent	_	_	0	_	_	Offset=1799-1810
+3	place	_	Action	_	_	0	_	_	Offset=1815-1820
+4	wax	_	Location	_	_	0	_	_	Offset=1826-1840
+
+# sent_id = s15
+# text = Repeat Step 5 Dehydrate through ethanol series continued.
+1	Add	_	Action	_	_	0	_	_	Offset=1842-1845
+2	small	_	Amount	_	_	4	Measure	_	Offset=1848-1860
+3	melted	_	Modifier	_	_	4	Mod-Link	_	Offset=1864-1870
+4	paraffin	_	Reagent	_	_	0	_	_	Offset=1871-1879
+5	56	_	Temperature	_	_	0	_	_	Offset=1883-1901
+6	dilute	_	Action	_	_	0	_	_	Offset=1905-1911
+7	residual	_	Modifier	_	_	8	Mod-Link	_	Offset=1912-1920
+8	Xylene	_	Reagent	_	_	0	_	_	Offset=1921-1927
+9	remove	_	Action	_	_	0	_	_	Offset=1929-1935
+10	place	_	Action	_	_	0	_	_	Offset=1940-1945
+11	wax	_	Location	_	_	0	_	_	Offset=1951-1965
+
+# sent_id = s16
+# text = Solution 4: 100% Ethanol 500 ul. 
+1	Add	_	Action	_	_	0	_	_	Offset=1967-1970
+2	melted	_	Modifier	_	_	4	Mod-Link	_	Offset=1971-1977
+3	56	_	Temperature	_	_	0	_	_	Offset=1978-1995
+4	paraffin	_	Reagent	_	_	0	_	_	Offset=1996-2004
+5	incubate	_	Action	_	_	0	_	_	Offset=2005-2013
+6	1-2	_	Time	_	_	0	_	_	Offset=2018-2027
+
+# sent_id = s17
+# text = Replace 100% Ethanol with 500ul Xylenes for thirty minutes.
+1	Remove	_	Action	_	_	0	_	_	Offset=2029-2035
+2	paraffin	_	Reagent	_	_	0	_	_	Offset=2036-2044
+3	replace	_	Action	_	_	0	_	_	Offset=2049-2056
+4	fresh	_	Modifier	_	_	7	Mod-Link	_	Offset=2062-2068
+5	melted	_	Modifier	_	_	7	Mod-Link	_	Offset=2068-2074
+6	56	_	Temperature	_	_	0	_	_	Offset=2075-2092
+7	paraffin	_	Reagent	_	_	0	_	_	Offset=2093-2101
+8	incubate	_	Action	_	_	0	_	_	Offset=2102-2110
+9	1-2	_	Time	_	_	0	_	_	Offset=2115-2124
+
+# sent_id = s18
+# text = Dispose of Xylenes in "Aldehyde Waste" container. 
+1	Remove	_	Action	_	_	0	_	_	Offset=2126-2132
+2	paraffin	_	Reagent	_	_	0	_	_	Offset=2133-2141
+3	replace	_	Action	_	_	0	_	_	Offset=2146-2153
+4	fresh	_	Modifier	_	_	7	Mod-Link	_	Offset=2159-2164
+5	melted	_	Modifier	_	_	7	Mod-Link	_	Offset=2165-2171
+6	56	_	Temperature	_	_	0	_	_	Offset=2172-2189
+7	paraffin	_	Reagent	_	_	0	_	_	Offset=2190-2198
+8	fill	_	Action	_	_	0	_	_	Offset=2203-2207
+9	top	_	Location	_	_	0	_	_	Offset=2215-2218
+10	glass	_	Location	_	_	9	Meronym	_	Offset=2226-2236
+
+# sent_id = s19
+# text = Repeat Step 9: Remove Xylenes and replace with new 500ul Xylenes for thirty minutes.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2238-2246
+2	overnight	_	Time	_	_	0	_	_	Offset=2247-2256
+
+# sent_id = s20
+# text = Dispose of Xylenes in "Aldehyde Waste" container. 
+1	Make	_	Action	_	_	0	_	_	Offset=2258-2262
+2	mold	_	Reagent	_	_	0	_	_	Offset=2263-2267
+3	taping	_	Action	_	_	0	_	_	Offset=2271-2277
+4	ends	_	Location	_	_	0	_	_	Offset=2282-2286
+5	sides	_	Location	_	_	0	_	_	Offset=2291-2296
+6	cut	_	Location	_	_	4	Meronym	5:Meronym	Offset=2300-2315
+7	tape	_	Action	_	_	0	_	_	Offset=2320-2324
+8	ends	_	Location	_	_	0	_	_	Offset=2325-2329
+
+# sent_id = s21
+# text = Repeat Step 9: Remove Xylenes and replace with new 500ul Xylenes for thirty minutes.
+1	Pre-heat	_	Action	_	_	0	_	_	Offset=2348-2356
+2	hot	_	Location	_	_	0	_	_	Offset=2357-2366
+3	56	_	Temperature	_	_	0	_	_	Offset=2370-2388
+4	cover	_	Action	_	_	0	_	_	Offset=2393-2398
+5	completely	_	Modifier	_	_	0	_	_	Offset=2399-2409
+6	tin	_	Seal	_	_	0	_	_	Offset=2415-2423
+
+# sent_id = s22
+# text = Dispose of Xylenes in "Aldehyde Waste" container. 
+1	swirl	_	Action	_	_	0	_	_	Offset=2454-2459
+2	pupae	_	Reagent	_	_	0	_	_	Offset=2460-2465
+3	vial	_	Location	_	_	0	_	_	Offset=2473-2477
+4	quickly	_	Modifier	_	_	0	_	_	Offset=2482-2489
+5	pour	_	Action	_	_	0	_	_	Offset=2490-2494
+6	wax	_	Reagent	_	_	0	_	_	Offset=2495-2508
+7	mold	_	Location	_	_	0	_	_	Offset=2514-2518
+8	top	_	Location	_	_	7	Meronym	_	Offset=2522-2525
+9	hot	_	Location	_	_	8	Meronym	_	Offset=2529-2538
+
+# sent_id = s23
+# text = Repeat Step 9: Remove Xylenes and replace with new 500ul Xylenes for thirty minutes.
+1	Orient	_	Action	_	_	0	_	_	Offset=2540-2546
+2	samples	_	Reagent	_	_	0	_	_	Offset=2551-2558
+3	quickly	_	Modifier	_	_	0	_	_	Offset=2559-2566
+
+# sent_id = s24
+# text = Dispose of Xylenes in "Aldehyde Waste" container Paraffin Infiltration.
+1	Fill	_	Action	_	_	0	_	_	Offset=2591-2595
+2	remainder	_	Modifier	_	_	3	Mod-Link	_	Offset=2600-2609
+3	boat	_	Location	_	_	0	_	_	Offset=2617-2621
+4	melted	_	Modifier	_	_	5	Mod-Link	_	Offset=2627-2633
+5	paraffin	_	Reagent	_	_	0	_	_	Offset=2634-2642
+
+# sent_id = s25
+# text = Transfer pupae to scintillation vial with 2 ml of Xylenes using designated paintbrush.
+1	sit	_	Action	_	_	0	_	_	Offset=2648-2651
+2	15	_	Time	_	_	0	_	_	Offset=2656-2666
+
+# sent_id = s26
+# text = Mark the level of Xylenes on tube.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=2689-2698
+2	remove	_	Action	_	_	0	_	_	Offset=2699-2705
+3	boat	_	Reagent	_	_	0	_	_	Offset=2706-2710
+4	hot	_	Location	_	_	0	_	_	Offset=2716-2725
+5	coll	_	Action	_	_	0	_	_	Offset=2730-2734
+6	overnight	_	Time	_	_	0	_	_	Offset=2735-2744
+7	room	_	Temperature	_	_	0	_	_	Offset=2748-2757
+
+# sent_id = s27
+# text = Add ~20 paraffin chips (paraplast xtra) and melt in 42 degree Celsius incubator.
+1	Cut	_	Action	_	_	0	_	_	Offset=2759-2762
+2	wax	_	Reagent	_	_	0	_	_	Offset=2763-2766
+3	individual	_	Reagent	_	_	0	_	_	Offset=2772-2804
+4	razor	_	Device	_	_	0	_	_	Offset=2828-2839
+
+# sent_id = s28
+# text = (Volume should double) Leave overnight.
+1	Mount	_	Action	_	_	0	_	_	Offset=2841-2846
+2	blocks	_	Reagent	_	_	0	_	_	Offset=2847-2853
+3	chuck	_	Location	_	_	0	_	_	Offset=2859-2864
+4	melting	_	Action	_	_	0	_	_	Offset=2868-2875
+5	paraffin	_	Reagent	_	_	0	_	_	Offset=2876-2884
+6	heated	_	Modifier	_	_	7	Mod-Link	_	Offset=2890-2896
+7	flat	_	Device	_	_	0	_	_	Offset=2897-2909
+
+# sent_id = s29
+# text = In 500 ml beaker, add melted paraffin and incubate at 56 degrees celsius for use tomorrow.
+1	Cection	_	Action	_	_	0	_	_	Offset=2911-2918
+2	blocks	_	Reagent	_	_	0	_	_	Offset=2919-2925
+3	microtome	_	Device	_	_	0	_	_	Offset=2929-2938
+4	7um	_	Generic-Measure	_	_	3	Setting	_	Offset=2942-2945
+5	float	_	Action	_	_	0	_	_	Offset=2950-2955
+6	slides	_	Location	_	_	0	_	_	Offset=2961-2967
+7	water	_	Reagent	_	_	0	_	_	Offset=2973-2978
+8	pre-warmed	_	Action	_	_	0	_	_	Offset=2988-2998
+9	slide	_	Device	_	_	0	_	_	Offset=3002-3014
+10	42	_	Temperature	_	_	0	_	_	Offset=3018-3036
+
+# sent_id = s30
+# text = Remove Xylenes/Wax and place onto wax waste tray.
+1	sections	_	Reagent	_	_	0	_	_	Offset=3048-3056
+2	expand	_	Action	_	_	0	_	_	Offset=3060-3066
+3	slide	_	Device	_	_	0	_	_	Offset=3070-3082
+4	2-5	_	Time	_	_	0	_	_	Offset=3087-3098
+
+# sent_id = s31
+# text = Add a small amount of melted paraffin at 56 degrees Celsius to dilute residual Xylene, remove and place onto wax waste tray.
+1	Remove	_	Action	_	_	0	_	_	Offset=3100-3106
+2	water	_	Reagent	_	_	0	_	_	Offset=3107-3112
+3	wicking	_	Action	_	_	0	_	_	Offset=3116-3123
+4	kimwipe	_	Device	_	_	0	_	_	Offset=3131-3138
+
+# sent_id = s32
+# text = Add melted 56 degree Celsius paraffin incubate for 1-2 hours.
+1	Bake	_	Action	_	_	0	_	_	Offset=3140-3144
+2	slides	_	Location	_	_	0	_	_	Offset=3145-3151
+3	42	_	Temperature	_	_	0	_	_	Offset=3155-3172
+4	slide	_	Device	_	_	0	_	_	Offset=3173-3185
+5	overnight	_	Time	_	_	0	_	_	Offset=3186-3195
+
+# sent_id = s33
+# text = Remove paraffin and replace with fresh melted 56 degree Celsius paraffin incubate for 1-2 hours.
+1	Hydrate	_	Action	_	_	0	_	_	Offset=3197-3204
+2	samples	_	Reagent	_	_	0	_	_	Offset=3205-3212
+3	placing	_	Action	_	_	0	_	_	Offset=3216-3223
+4	Xylenes	_	Reagent	_	_	0	_	_	Offset=3227-3234
+5	3	_	Time	_	_	0	_	_	Offset=3253-3262
+
+# sent_id = s34
+# text = Remove paraffin and replace with fresh melted 56 degree Celsius paraffin and fill to the top of the glass vial.
+1	Hydrate	_	Action	_	_	0	_	_	Offset=3265-3272
+2	samples	_	Reagent	_	_	0	_	_	Offset=3273-3280
+3	placing	_	Action	_	_	0	_	_	Offset=3284-3291
+4	Xylenes	_	Reagent	_	_	0	_	_	Offset=3295-3302
+5	3	_	Time	_	_	0	_	_	Offset=3321-3330
+
+# sent_id = s35
+# text = Incubate overnight.
+1	Hydrate	_	Action	_	_	0	_	_	Offset=3333-3340
+2	samples	_	Reagent	_	_	0	_	_	Offset=3341-3348
+3	placing	_	Action	_	_	0	_	_	Offset=3352-3359
+4	100%	_	Concentration	_	_	5	Measure	_	Offset=3363-3367
+5	Ethanol	_	Reagent	_	_	0	_	_	Offset=3368-3376
+6	3	_	Time	_	_	0	_	_	Offset=3394-3403
+
+# sent_id = s36
+# text = Make mold by taping the ends and sides of cut index cards and tape ends to prevent leaks.
+1	Hydrate	_	Action	_	_	0	_	_	Offset=3406-3413
+2	samples	_	Reagent	_	_	0	_	_	Offset=3414-3421
+3	placing	_	Action	_	_	0	_	_	Offset=3425-3432
+4	100%	_	Concentration	_	_	5	Measure	_	Offset=3436-3440
+5	Ethanol	_	Reagent	_	_	0	_	_	Offset=3441-3449
+6	3	_	Time	_	_	0	_	_	Offset=3467-3476
+
+# sent_id = s37
+# text = Pre-heat hot block to 56 degrees Celsius and cover completely with tin foil.
+1	Hydrate	_	Action	_	_	0	_	_	Offset=3479-3486
+2	samples	_	Reagent	_	_	0	_	_	Offset=3487-3494
+3	placing	_	Action	_	_	0	_	_	Offset=3498-3505
+4	95%	_	Concentration	_	_	5	Measure	_	Offset=3509-3512
+5	Ethanol	_	Reagent	_	_	0	_	_	Offset=3513-3520
+6	3	_	Time	_	_	0	_	_	Offset=3525-3534
+
+# sent_id = s38
+# text = When hot block reaches temp, swirl pupae in the vial and quickly pour wax and pupae into mold on top of hot block.
+1	Hydrate	_	Action	_	_	0	_	_	Offset=3537-3544
+2	samples	_	Reagent	_	_	0	_	_	Offset=3545-3552
+3	placing	_	Action	_	_	0	_	_	Offset=3556-3563
+4	70%	_	Concentration	_	_	5	Measure	_	Offset=3567-3570
+5	Ethanol	_	Reagent	_	_	0	_	_	Offset=3571-3578
+6	3	_	Time	_	_	0	_	_	Offset=3583-3592
+
+# sent_id = s39
+# text = Orient the samples quickly before the wax hardens.
+1	Rinse	_	Action	_	_	0	_	_	Offset=3595-3600
+2	running	_	Reagent	_	_	0	_	_	Offset=3607-3624
+3	5	_	Time	_	_	0	_	_	Offset=3629-3636
+
+# sent_id = s40
+# text = Fill the remainder of the boat with melted paraffin.
+1	Rinse	_	Action	_	_	0	_	_	Offset=3703-3708
+2	running	_	Reagent	_	_	0	_	_	Offset=3715-3732
+3	5	_	Time	_	_	0	_	_	Offset=3737-3743
+
+# sent_id = s41
+# text = Let sit for 15 minutes to begin to solidify.
+1	Submerge	_	Action	_	_	0	_	_	Offset=3745-3753
+2	Pollak	_	Reagent	_	_	0	_	_	Offset=3757-3773
+3	7	_	Time	_	_	0	_	_	Offset=3778-3784
+
+# sent_id = s42
+# text = Carefully remove boat from hot block and coll overnight at room temp.
+1	Rinse	_	Action	_	_	0	_	_	Offset=3786-3791
+2	distilled	_	Modifier	_	_	3	Mod-Link	_	Offset=3795-3804
+3	water	_	Reagent	_	_	0	_	_	Offset=3805-3810
+4	approx	_	Modifier	_	_	5	Mod-Link	_	Offset=3815-3821
+5	10	_	Time	_	_	0	_	_	Offset=3822-3832
+6	remove	_	Action	_	_	0	_	_	Offset=3836-3842
+7	bulk	_	Reagent	_	_	0	_	_	Offset=3847-3864
+
+# sent_id = s43
+# text = Cut wax into individual pyramid shaped blocks for sectioning using a razor blade.
+1	Submerge	_	Action	_	_	0	_	_	Offset=3866-3874
+2	Acidified	_	Modifier	_	_	4	Mod-Link	_	Offset=3878-3887
+3	distilled	_	Modifier	_	_	4	Mod-Link	_	Offset=3888-3897
+4	water	_	Reagent	_	_	0	_	_	Offset=3898-3903
+5	10	_	Time	_	_	0	_	_	Offset=3908-3914
+
+# sent_id = s44
+# text = Mount blocks onto chuck by melting paraffin with heated flat spatula.
+1	Dip	_	Action	_	_	0	_	_	Offset=3966-3969
+2	slides	_	Location	_	_	0	_	_	Offset=3970-3976
+3	95%	_	Concentration	_	_	4	Measure	_	Offset=3982-3985
+4	Ethanol	_	Reagent	_	_	0	_	_	Offset=3986-3993
+5	3	_	Numerical	_	_	0	_	_	Offset=4008-4009
+
+# sent_id = s45
+# text = Cection blocks on microtome at 7um and float onto slides with water that are pre-warmed on slide warmer at 42 degrees Celsius.
+1	Submerge	_	Action	_	_	0	_	_	Offset=4018-4026
+2	slides	_	Location	_	_	0	_	_	Offset=4027-4033
+3	95%	_	Concentration	_	_	4	Measure	_	Offset=4039-4042
+4	Ethanol	_	Reagent	_	_	0	_	_	Offset=4043-4050
+5	3	_	Time	_	_	0	_	_	Offset=4069-4075
+
+# sent_id = s46
+# text = Allow the sections to expand on slide warmer for 2-5 minutes.
+1	Submerge	_	Action	_	_	0	_	_	Offset=4077-4085
+2	slides	_	Location	_	_	0	_	_	Offset=4086-4092
+3	100%	_	Concentration	_	_	4	Measure	_	Offset=4098-4102
+4	Ethanol	_	Reagent	_	_	0	_	_	Offset=4103-4110
+5	3	_	Time	_	_	0	_	_	Offset=4129-4135
+
+# sent_id = s47
+# text = Remove water by wicking with a kimwipe.
+1	Submerge	_	Action	_	_	0	_	_	Offset=4137-4145
+2	slides	_	Location	_	_	0	_	_	Offset=4146-4152
+3	100%	_	Concentration	_	_	4	Measure	_	Offset=4158-4162
+4	Ethanol	_	Reagent	_	_	0	_	_	Offset=4163-4170
+5	3	_	Time	_	_	0	_	_	Offset=4189-4195
+
+# sent_id = s48
+# text = Bake slides on 42 degree Celsius slide warmer overnight.
+1	Submerge	_	Action	_	_	0	_	_	Offset=4197-4205
+2	slides	_	Location	_	_	0	_	_	Offset=4206-4212
+3	Xylenes	_	Reagent	_	_	0	_	_	Offset=4218-4225
+4	3	_	Time	_	_	0	_	_	Offset=4244-4250
+
+# sent_id = s49
+# text = Hydrate samples by placing in Xylenes (container 1) for 3 minutes. 
+1	Submerge	_	Action	_	_	0	_	_	Offset=4252-4260
+2	slides	_	Location	_	_	0	_	_	Offset=4261-4267
+3	Xylenes	_	Reagent	_	_	0	_	_	Offset=4273-4281
+4	3	_	Time	_	_	0	_	_	Offset=4299-4305
+
+# sent_id = s50
+# text = Hydrate samples by placing in Xylenes (container 2) for 3 minutes. 
+1	Remove	_	Action	_	_	0	_	_	Offset=4307-4313
+2	slides	_	Location	_	_	0	_	_	Offset=4314-4320
+3	Xylenes	_	Reagent	_	_	0	_	_	Offset=4326-4333
+4	drain	_	Action	_	_	0	_	_	Offset=4338-4343
+5	2	_	Time	_	_	0	_	_	Offset=4348-4354
+6	paper	_	Device	_	_	0	_	_	Offset=4360-4371
+7	Use	_	Action	_	_	0	_	_	Offset=4372-4375
+8	78ul	_	Amount	_	_	9	Measure	_	Offset=4376-4380
+9	Permount	_	Reagent	_	_	0	_	_	Offset=4384-4392
+10	apply	_	Action	_	_	0	_	_	Offset=4419-4424
+11	coverslip	_	Seal	_	_	0	_	_	Offset=4425-4434
+
+# sent_id = s51
+# text = Hydrate samples by placing in 100% Ethanol (container 1) for 3 minutes. 
+1	slides	_	Location	_	_	0	_	_	Offset=4440-4446
+2	harden	_	Action	_	_	0	_	_	Offset=4447-4453
+3	overnight	_	Time	_	_	0	_	_	Offset=4454-4463
+

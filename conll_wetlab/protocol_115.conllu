@@ -1,0 +1,182 @@
+# sent_id = s1
+# text = Gel Electrophoresis
+1	Pour	_	Action	_	_	0	_	_	Offset=20-24
+2	50	_	Amount	_	_	4	Measure	_	Offset=25-30
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=34-36
+4	TAE	_	Reagent	_	_	0	_	_	Offset=37-47
+5	Erlenmeyer	_	Location	_	_	0	_	_	Offset=56-72
+
+# sent_id = s2
+# text = Pour 50 mL of 1X TAE Buffer into an Erlenmeyer Flask.
+1	Weigh	_	Action	_	_	0	_	_	Offset=74-83
+2	0.5	_	Amount	_	_	3	Measure	_	Offset=84-89
+3	Agarose	_	Reagent	_	_	5	Coreference-Link	_	Offset=90-97
+4	add	_	Action	_	_	0	_	_	Offset=102-105
+5	it	_	Mention	_	_	0	_	_	Offset=106-108
+6	Erlenmeyer	_	Location	_	_	0	_	_	Offset=116-132
+
+# sent_id = s3
+# text = Weigh out 0.5 g Agarose and add it to the Erlenmeyer Flask.
+1	Place	_	Action	_	_	0	_	_	Offset=134-139
+2	Erlenmeyer	_	Location	_	_	0	_	_	Offset=140-156
+3	microwave	_	Device	_	_	0	_	_	Offset=162-171
+4	two	_	Time	_	_	0	_	_	Offset=190-201
+5	solution	_	Reagent	_	_	0	_	_	Offset=211-219
+6	clear	_	Action	_	_	0	_	_	Offset=223-228
+7	agarose	_	Reagent	_	_	0	_	_	Offset=233-240
+8	completely	_	Modifier	_	_	0	_	_	Offset=244-254
+9	dissolved	_	Action	_	_	0	_	_	Offset=255-264
+
+# sent_id = s4
+# text = Place Erlenmeyer Flask in a microwave on high power for two minutes or until solution is clear and agarose is completely dissolved.
+1	Remove	_	Action	_	_	0	_	_	Offset=266-272
+2	Erlenmeyer	_	Location	_	_	4	Coreference-Link	10:Coreference-Link	Offset=273-289
+3	microwave	_	Device	_	_	0	_	_	Offset=295-304
+4	it	_	Mention	_	_	0	_	_	Offset=313-315
+5	sit	_	Action	_	_	0	_	_	Offset=316-319
+6	lab	_	Location	_	_	0	_	_	Offset=327-336
+7	cool	_	Action	_	_	0	_	_	Offset=340-344
+8	comfortably	_	Modifier	_	_	0	_	_	Offset=364-375
+9	pick	_	Action	_	_	0	_	_	Offset=376-380
+10	it	_	Mention	_	_	0	_	_	Offset=381-383
+
+# sent_id = s5
+# text = Remove Erlenmeyer Flask from microwave and let it sit on the lab bench to cool just until you can comfortably pick it up.
+1	Add	_	Action	_	_	0	_	_	Offset=388-391
+2	5	_	Amount	_	_	3	Measure	_	Offset=392-396
+3	Ethidium	_	Reagent	_	_	0	_	_	Offset=397-405
+4	flask	_	Location	_	_	0	_	_	Offset=415-420
+5	swirl	_	Action	_	_	0	_	_	Offset=425-430
+6	mix	_	Action	_	_	0	_	_	Offset=434-437
+
+# sent_id = s6
+# text = Add 5 uL Ethidium into the flask and swirl to mix, taking care not to introduce bubbles.
+1	Place	_	Action	_	_	0	_	_	Offset=477-482
+2	gel	_	Location	_	_	0	_	_	Offset=483-491
+3	clamp	_	Location	_	_	0	_	_	Offset=495-500
+4	clamp	_	Action	_	_	0	_	_	Offset=505-510
+5	securely	_	Modifier	_	_	0	_	_	Offset=511-519
+
+# sent_id = s7
+# text = Place gel tray on clamp and clamp securely.
+1	Add	_	Action	_	_	0	_	_	Offset=521-524
+2	well	_	Location	_	_	5	Coreference-Link	_	Offset=525-536
+3	where	_	Location	_	_	0	_	_	Offset=537-557
+4	level	_	Device	_	_	0	_	_	Offset=568-573
+5	it	_	Mention	_	_	0	_	_	Offset=584-586
+6	balanced	_	Action	_	_	0	_	_	Offset=590-598
+
+# sent_id = s8
+# text = Add well plates where you want wells and use a level to ensure it is balanced.
+1	Pour	_	Action	_	_	0	_	_	Offset=600-604
+2	contents	_	Reagent	_	_	0	_	_	Offset=605-613
+3	Erlemeyer	_	Location	_	_	2	Meronym	_	Offset=621-636
+4	gel	_	Location	_	_	5	Coreference-Link	_	Offset=646-654
+5	it	_	Mention	_	_	0	_	_	Offset=663-665
+6	sit	_	Action	_	_	0	_	_	Offset=666-669
+7	30	_	Time	_	_	0	_	_	Offset=674-684
+8	blue	_	Reagent	_	_	0	_	_	Offset=697-706
+9	appears	_	Action	_	_	0	_	_	Offset=707-714
+
+# sent_id = s9
+# text = Pour contents of the Erlemeyer Flask into the gel tray and let it sit for 30 minutes, or until a blue tint appears.
+1	Remove	_	Action	_	_	0	_	_	Offset=716-722
+2	well	_	Location	_	_	0	_	_	Offset=727-738
+3	carefully	_	Modifier	_	_	0	_	_	Offset=739-748
+4	not	_	Action	_	_	0	_	_	Offset=755-763
+5	gel	_	Reagent	_	_	0	_	_	Offset=768-771
+6	remove	_	Action	_	_	0	_	_	Offset=776-782
+7	tray	_	Location	_	_	0	_	_	Offset=787-791
+8	clamp	_	Device	_	_	0	_	_	Offset=801-806
+9	gel	_	Reagent	_	_	0	_	_	Offset=823-826
+10	remains	_	Action	_	_	0	_	_	Offset=827-834
+11	tray	_	Location	_	_	0	_	_	Offset=842-846
+
+# sent_id = s10
+# text = Remove the well plates carefully as to not tear the gel and remove the tray from the clamp, but ensure the gel remains in the tray.
+1	Place	_	Action	_	_	0	_	_	Offset=848-853
+2	gel	_	Location	_	_	0	_	_	Offset=854-862
+3	gel	_	Device	_	_	0	_	_	Offset=868-897
+
+# sent_id = s11
+# text = Place gel tray into gel electrophoresis apparatus with the wells closer to the negative/black end.
+1	Pour	_	Action	_	_	0	_	_	Offset=947-951
+2	additional	_	Modifier	_	_	3	Mod-Link	_	Offset=952-962
+3	TAE	_	Reagent	_	_	0	_	_	Offset=963-973
+4	fill	_	Action	_	_	0	_	_	Offset=977-981
+5	each	_	Modifier	_	_	6	Mod-Link	_	Offset=982-986
+6	side	_	Location	_	_	0	_	_	Offset=987-991
+7	apparatus	_	Device	_	_	6	Meronym	_	Offset=999-1008
+8	create	_	Action	_	_	0	_	_	Offset=1016-1022
+9	thin	_	Reagent	_	_	0	_	_	Offset=1025-1045
+10	covering	_	Action	_	_	0	_	_	Offset=1046-1054
+11	top	_	Location	_	_	0	_	_	Offset=1059-1062
+12	gel	_	Reagent	_	_	11	Meronym	_	Offset=1070-1073
+
+# sent_id = s12
+# text = Pour additional TAE Buffer to fill each side of the apparatus and to create a thin layer of buffer covering the top of the gel.
+1	Pipette	_	Action	_	_	0	_	_	Offset=1075-1082
+2	10	_	Amount	_	_	4	Measure	_	Offset=1083-1088
+3	1kb	_	Generic-Measure	_	_	4	Measure	_	Offset=1096-1099
+4	DNA	_	Reagent	_	_	5	Meronym	_	Offset=1100-1110
+5	Loading	_	Reagent	_	_	0	_	_	Offset=1116-1127
+6	well	_	Location	_	_	0	_	_	Offset=1135-1139
+
+# sent_id = s13
+# text = Pipette 10 uL of the 1kb DNA Ladder with Loading Dye into a well.
+1	Pipette	_	Action	_	_	0	_	_	Offset=1202-1209
+2	DNA	_	Reagent	_	_	3	Meronym	_	Offset=1215-1218
+3	Loading	_	Reagent	_	_	0	_	_	Offset=1224-1243
+4	another	_	Modifier	_	_	5	Mod-Link	_	Offset=1249-1256
+5	well	_	Location	_	_	0	_	_	Offset=1257-1261
+
+# sent_id = s14
+# text = Typically this is placed into one of the wells near an edge.
+1	Repeat	_	Action	_	_	0	_	_	Offset=1263-1269
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=1274-1278
+3	sample	_	Reagent	_	_	0	_	_	Offset=1279-1285
+
+# sent_id = s15
+# text = Pipette your DNA with Loading Dye mixture into another well.
+1	Place	_	Action	_	_	0	_	_	Offset=1287-1292
+2	lid	_	Seal	_	_	0	_	_	Offset=1293-1296
+3	apparatus	_	Device	_	_	0	_	_	Offset=1300-1309
+4	plug	_	Action	_	_	0	_	_	Offset=1314-1318
+5	cables	_	Device	_	_	0	_	_	Offset=1319-1325
+6	amplifier	_	Device	_	_	0	_	_	Offset=1331-1340
+
+# sent_id = s16
+# text = Repeat for each sample.
+1	Set	_	Action	_	_	0	_	_	Offset=1342-1345
+2	amplifier	_	Device	_	_	0	_	_	Offset=1346-1355
+3	constant	_	Measure-Type	_	_	4	Of-Type	_	Offset=1369-1385
+4	100	_	Generic-Measure	_	_	0	_	_	Offset=1389-1394
+5	run	_	Action	_	_	0	_	_	Offset=1400-1403
+6	30	_	Time	_	_	0	_	_	Offset=1408-1418
+7	loading	_	Reagent	_	_	0	_	_	Offset=1432-1443
+8	sufficiently	_	Modifier	_	_	0	_	_	Offset=1448-1460
+9	moved	_	Action	_	_	0	_	_	Offset=1461-1466
+
+# sent_id = s17
+# text = Place lid on apparatus and plug cables into amplifier.
+1	Remove	_	Action	_	_	0	_	_	Offset=1468-1474
+2	gel	_	Reagent	_	_	0	_	_	Offset=1475-1478
+3	gel	_	Location	_	_	0	_	_	Offset=1484-1492
+4	draining	_	Action	_	_	0	_	_	Offset=1499-1507
+5	excess	_	Modifier	_	_	6	Mod-Link	_	Offset=1508-1514
+6	TAE	_	Reagent	_	_	0	_	_	Offset=1515-1525
+7	place	_	Action	_	_	0	_	_	Offset=1530-1535
+8	plastic	_	Seal	_	_	0	_	_	Offset=1539-1551
+
+# sent_id = s18
+# text = Set amplifier to stay at a constant voltage of 100 V. Let run for 30 minutes or until the loading dye has sufficiently moved.
+1	Place	_	Action	_	_	0	_	_	Offset=1553-1558
+2	gel	_	Reagent	_	_	0	_	_	Offset=1559-1562
+3	plastic	_	Seal	_	_	2	Meronym	_	Offset=1568-1580
+4	UV	_	Device	_	_	0	_	_	Offset=1584-1591
+5	view	_	Action	_	_	0	_	_	Offset=1595-1599
+6	bands	_	Reagent	_	_	0	_	_	Offset=1600-1605
+7	store	_	Action	_	_	0	_	_	Offset=1610-1615
+8	plastic	_	Seal	_	_	0	_	_	Offset=1623-1635
+9	+4	_	Temperature	_	_	0	_	_	Offset=1639-1643
+

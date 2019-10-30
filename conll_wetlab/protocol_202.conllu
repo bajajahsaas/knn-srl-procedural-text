@@ -1,0 +1,479 @@
+# sent_id = s1
+# text = BMDM Salmonella Replication
+1	Inoculate	_	Action	_	_	0	_	_	Offset=44-53
+2	5	_	Amount	_	_	3	Measure	_	Offset=54-58
+3	TSB	_	Reagent	_	_	0	_	_	Offset=62-65
+4	1	_	Amount	_	_	5	Measure	_	Offset=71-79
+5	Salmonella	_	Reagent	_	_	0	_	_	Offset=83-105
+
+# sent_id = s2
+# text = The day before.
+1	Incubate	_	Action	_	_	0	_	_	Offset=107-115
+2	wheel	_	Location	_	_	0	_	_	Offset=123-128
+3	37C	_	Temperature	_	_	0	_	_	Offset=132-135
+4	overnight	_	Time	_	_	0	_	_	Offset=136-145
+
+# sent_id = s3
+# text = Inoculate 5 ml of TSB with 1 colony of Salmonella Typhimurium.
+1	Collect	_	Action	_	_	0	_	_	Offset=147-154
+2	BMDM	_	Reagent	_	_	0	_	_	Offset=155-159
+3	cell	_	Device	_	_	0	_	_	Offset=168-180
+
+# sent_id = s4
+# text = Incubate on the wheel at 37C overnight.
+1	Transfer	_	Action	_	_	0	_	_	Offset=182-190
+2	cells	_	Reagent	_	_	0	_	_	Offset=195-200
+3	one	_	Numerical	_	_	4	Measure	_	Offset=206-209
+4	Petri	_	Location	_	_	0	_	_	Offset=210-220
+5	50-ml	_	Size	_	_	6	Measure	_	Offset=226-231
+6	tube	_	Location	_	_	0	_	_	Offset=232-236
+
+# sent_id = s5
+# text = Collect BMDM using a cell scraper.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=238-248
+2	10	_	Time	_	_	0	_	_	Offset=249-255
+3	1200	_	Speed	_	_	0	_	_	Offset=259-267
+
+# sent_id = s6
+# text = Transfer the cells from one Petri dish to a 50-ml tube.
+1	Remove	_	Action	_	_	0	_	_	Offset=269-275
+2	discard	_	Action	_	_	0	_	_	Offset=280-287
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=292-303
+
+# sent_id = s7
+# text = Centrifuge 10 min at 1200 RPM.
+1	Re-suspend	_	Action	_	_	0	_	_	Offset=305-315
+2	cells	_	Reagent	_	_	0	_	_	Offset=320-325
+3	3-ml	_	Size	_	_	4	Measure	_	Offset=332-336
+4	syringe	_	Device	_	_	0	_	_	Offset=337-344
+5	needle	_	Device	_	_	0	_	_	Offset=349-355
+6	21	_	Size	_	_	5	Measure	_	Offset=370-372
+7	20	_	Size	_	_	5	Measure	_	Offset=376-384
+8	25	_	Size	_	_	5	Measure	_	Offset=408-416
+9	2	_	Amount	_	_	10	Measure	_	Offset=420-424
+10	RPMI	_	Reagent	_	_	0	_	_	Offset=425-429
+11	10%	_	Concentration	_	_	12	Measure	_	Offset=432-435
+12	FCS	_	Reagent	_	_	0	_	_	Offset=436-439
+
+# sent_id = s8
+# text = Remove and discard the supernatant.
+1	Count	_	Action	_	_	0	_	_	Offset=441-446
+2	BMDM	_	Reagent	_	_	0	_	_	Offset=447-451
+3	Coulter	_	Reagent	_	_	0	_	_	Offset=462-477
+4	1/5	_	Concentration	_	_	5	Measure	_	Offset=483-486
+5	dilution	_	Reagent	_	_	6	Meronym	_	Offset=487-495
+6	Turks	_	Reagent	_	_	0	_	_	Offset=501-506
+
+# sent_id = s9
+# text = Re-suspend the cells using 3-ml syringe and needle (start with a 21 or 20 gauge needle and finish with 25 gauge in 2 ml RPMI + 10% FCS.
+1	1.5ml	_	Amount	_	_	2	Measure	_	Offset=509-514
+2	Acetic	_	Reagent	_	_	0	_	_	Offset=515-526
+3	48.5	_	Amount	_	_	4	Measure	_	Offset=528-535
+4	H2O	_	Reagent	_	_	0	_	_	Offset=535-538
+5	Gentacin	_	Reagent	_	_	0	_	_	Offset=543-558
+
+# sent_id = s10
+# text = Count BMDM using the Coulter Counter or a 1/5 dilution with Turks.
+1	620	_	Action	_	_	0	_	_	Offset=569-575;607
+2	fresh	_	Reagent	_	_	0	_	_	Offset=581-606
+3	cells	_	Reagent	_	_	0	_	_	Offset=621-626
+4	1x10^6	_	Concentration	_	_	0	_	_	Offset=655-674
+
+# sent_id = s11
+# text = (1.5ml Acetic acid, 48.5 ddH2O and Gentacin Violet – trace).
+1	Aliquot	_	Action	_	_	0	_	_	Offset=676-683
+2	500	_	Amount	_	_	0	_	_	Offset=684-705
+3	well	_	Location	_	_	0	_	_	Offset=710-714
+4	24-well	_	Location	_	_	3	Meronym	_	Offset=721-734
+
+# sent_id = s12
+# text = Adjust with fresh cell culture medium the number of cells to a final concentration of 1x10^6 cells per ml.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=736-743
+2	3	_	Amount	_	_	0	_	_	Offset=744-763
+3	well	_	Location	_	_	0	_	_	Offset=768-772
+4	6-well	_	Location	_	_	3	Meronym	_	Offset=779-791
+
+# sent_id = s13
+# text = Aliquot 500 μL (5x10^5 cells) per well for a 24-well plate.
+1	100ul	_	Amount	_	_	0	_	_	Offset=797-802
+2	96	_	Location	_	_	0	_	_	Offset=807-820
+
+# sent_id = s14
+# text = Aliquot 3 mL (3x10^6 cells) per well for a 6-well plate.
+1	Incubate	_	Action	_	_	0	_	_	Offset=822-830
+2	37C	_	Temperature	_	_	0	_	_	Offset=838-841
+3	5%	_	Concentration	_	_	0	_	_	Offset=843-845
+4	CO2	_	Reagent	_	_	0	_	_	Offset=846-849
+
+# sent_id = s15
+# text = And 100ul for 96 well plate.
+1	Inoculate	_	Action	_	_	0	_	_	Offset=921-930
+2	50	_	Amount	_	_	3	Measure	_	Offset=931-936
+3	TSB	_	Reagent	_	_	0	_	_	Offset=940-943
+4	2	_	Amount	_	_	5	Measure	_	Offset=949-953
+5	the	_	Reagent	_	_	0	_	_	Offset=957-992
+
+# sent_id = s16
+# text = Incubate o/n at 37C, 5% CO2.
+1	Grow	_	Action	_	_	0	_	_	Offset=994-998
+2	37C	_	Temperature	_	_	0	_	_	Offset=1002-1005
+3	agitation	_	Method	_	_	0	_	_	Offset=1011-1020
+4	1054	_	Generic-Measure	_	_	0	_	_	Offset=1031-1042;1051
+5	90-120	_	Time	_	_	0	_	_	Offset=1073-1083
+
+# sent_id = s17
+# text = For LDH, all the samples are in triplicate.
+1	Place	_	Action	_	_	0	_	_	Offset=1086-1091
+2	bacterial	_	Reagent	_	_	0	_	_	Offset=1096-1113
+3	on	_	Location	_	_	0	_	_	Offset=1114-1120
+4	adjust	_	Action	_	_	0	_	_	Offset=1125-1138
+5	0.9	_	Generic-Measure	_	_	0	_	_	Offset=1142-1145
+6	if	_	Modifier	_	_	0	_	_	Offset=1146-1155
+
+# sent_id = s18
+# text = The day of the experiment:Inoculate 50 ml of TSB with 2 ml of the overnight culture of Salmonella.
+1	prepare	_	Action	_	_	0	_	_	Offset=1174-1181
+2	all	_	Reagent	_	_	0	_	_	Offset=1182-1195
+3	37C	_	Temperature	_	_	0	_	_	Offset=1221-1224
+4	Medium	_	Reagent	_	_	0	_	_	Offset=1224-1230
+5	add	_	Action	_	_	0	_	_	Offset=1243-1246
+6	bacteriaPBS	_	Reagent	_	_	0	_	_	Offset=1247-1258
+7	Gentamicin	_	Reagent	_	_	8	Meronym	10:Meronym	Offset=1273-1283
+8	RPMI	_	Reagent	_	_	0	_	_	Offset=1285-1289
+9	10%	_	Concentration	_	_	10	Measure	_	Offset=1290-1293
+10	FCSTitron	_	Reagent	_	_	0	_	_	Offset=1293-1302
+11	PBS	_	Reagent	_	_	0	_	_	Offset=1307-1310
+12	Centrifuge	_	Action	_	_	0	_	_	Offset=1321-1331
+13	two	_	Numerical	_	_	14	Measure	_	Offset=1332-1335
+14	tubes	_	Location	_	_	16	Meronym	_	Offset=1336-1341
+15	1	_	Amount	_	_	16	Measure	_	Offset=1345-1365
+16	bacterial	_	Reagent	_	_	0	_	_	Offset=1373-1390
+17	resuspend	_	Action	_	_	0	_	_	Offset=1395-1404
+18	1	_	Amount	_	_	19	Measure	_	Offset=1408-1412
+19	saline	_	Reagent	_	_	0	_	_	Offset=1416-1422
+20	PBS	_	Reagent	_	_	19	Meronym	_	Offset=1426-1429
+21	RPMI	_	Reagent	_	_	20	Meronym	_	Offset=1433-1437
+22	without	_	Modifier	_	_	21	Mod-Link	_	Offset=1438-1449
+
+# sent_id = s19
+# text = Grow at 37C with agitation until the OD at 600nm reaches 0.9 (it takes between 90-120 min).
+1	Use	_	Action	_	_	0	_	_	Offset=1451-1454
+2	Eppendorf	_	Location	_	_	0	_	_	Offset=1455-1469
+3	centrifuge	_	Action	_	_	0	_	_	Offset=1474-1484
+4	the	_	Location	_	_	0	_	_	Offset=1488-1501
+5	3-4	_	Time	_	_	0	_	_	Offset=1502-1509
+6	13000	_	Speed	_	_	0	_	_	Offset=1513-1522
+
+# sent_id = s20
+# text = Place the bacterial culture on ice and adjust the OD to 0.9 if needed.
+1	1556	_	Action	_	_	0	_	_	Offset=1524-1530;1545
+2	BMDM	_	Reagent	_	_	0	_	_	Offset=1540-1544
+3	microscope	_	Device	_	_	0	_	_	Offset=1567-1577
+
+# sent_id = s21
+# text = In the meantime, prepare all the media which need to be kept at 37CMedium in which to add bacteriaPBS for the washesGentamicin +RPMI+10%FCSTitron and PBS for lysis Centrifuge two tubes of 1 ml (5 x 10^8 bact) of the bacterial culture and resuspend in 1 ml of saline or PBS or RPMI without FCS.
+1	Remove	_	Action	_	_	0	_	_	Offset=1579-1585
+2	cell	_	Reagent	_	_	4	Coreference-Link	_	Offset=1590-1609
+3	replace	_	Action	_	_	0	_	_	Offset=1614-1621
+4	it	_	Mention	_	_	0	_	_	Offset=1622-1624
+5	RPMI	_	Reagent	_	_	0	_	_	Offset=1630-1634
+6	10%	_	Concentration	_	_	7	Measure	_	Offset=1639-1642
+7	FCS	_	Reagent	_	_	0	_	_	Offset=1643-1646
+8	6-well	_	Location	_	_	10	Meronym	12:Meronym|14:Meronym	Offset=1655-1667
+9	3	_	Amount	_	_	10	Measure	_	Offset=1669-1673
+10	RPMI	_	Reagent	_	_	0	_	_	Offset=1674-1678
+11	10%	_	Concentration	_	_	12	Measure	_	Offset=1680-1683
+12	FC	_	Reagent	_	_	0	_	_	Offset=1683-1685
+13	60ul	_	Amount	_	_	14	Measure	_	Offset=1691-1695
+14	bacteria	_	Reagent	_	_	0	_	_	Offset=1696-1704
+15	24-well	_	Location	_	_	17	Meronym	18:Meronym|20:Meronym	Offset=1704-1718
+16	500	_	Amount	_	_	17	Measure	_	Offset=1719-1725
+17	RPMI	_	Reagent	_	_	0	_	_	Offset=1726-1730
+18	FCS	_	Reagent	_	_	0	_	_	Offset=1732-1735
+19	10ul	_	Amount	_	_	20	Measure	_	Offset=1740-1744
+20	bacteria	_	Reagent	_	_	0	_	_	Offset=1745-1753
+21	96	_	Location	_	_	23	Meronym	25:Meronym|27:Meronym	Offset=1753-1766
+22	100ul	_	Amount	_	_	23	Measure	_	Offset=1768-1773
+23	RPMI	_	Reagent	_	_	0	_	_	Offset=1774-1778
+24	10%	_	Concentration	_	_	0	_	_	Offset=1779-1782
+25	FCS	_	Reagent	_	_	0	_	_	Offset=1782-1785
+26	2ul	_	Amount	_	_	27	Measure	_	Offset=1790-1793
+27	bacteria	_	Reagent	_	_	0	_	_	Offset=1794-1802
+
+# sent_id = s22
+# text = Use Eppendorf tube and centrifuge in the cold room 3-4 min at 13000 RPM.
+1	6-well	_	Location	_	_	0	_	_	Offset=1887-1899
+2	prepare	_	Action	_	_	0	_	_	Offset=1901-1908
+3	20	_	Amount	_	_	4	Measure	_	Offset=1909-1914
+4	culture	_	Reagent	_	_	0	_	_	Offset=1918-1932
+5	400	_	Amount	_	_	6	Measure	_	Offset=1935-1941
+6	washed	_	Reagent	_	_	0	_	_	Offset=1945-1960
+
+# sent_id = s23
+# text = Verify that the BMDM are healthy under the microscope.
+1	24-well	_	Location	_	_	0	_	_	Offset=1968-1981
+2	prepare	_	Action	_	_	0	_	_	Offset=1983-1990
+3	15	_	Amount	_	_	4	Measure	_	Offset=1991-1996
+4	culture	_	Reagent	_	_	0	_	_	Offset=2000-2014
+5	300	_	Amount	_	_	6	Measure	_	Offset=2017-2023
+6	washed	_	Reagent	_	_	0	_	_	Offset=2027-2042
+
+# sent_id = s24
+# text = Remove the cell culture medium and replace it with RPMI and 10% FCSPer well:6-well plate: 3 ml RPMI +10%FCS and 60ul bacteria24-well plate: 500 μL RPMI +FCS and 10ul bacteria96 well plate: 100ul RPMI+10%FCS and 2ul bacteria(10 μL corresponds approximately to 5x10^6 bacteria; MOI of 10 bacteria/cell).
+1	96	_	Location	_	_	0	_	_	Offset=2050-2063
+2	prepare	_	Action	_	_	0	_	_	Offset=2065-2072
+3	10ml	_	Amount	_	_	4	Measure	_	Offset=2073-2077
+4	culture	_	Reagent	_	_	0	_	_	Offset=2081-2095
+5	200ul	_	Amount	_	_	6	Measure	_	Offset=2100-2105
+6	washed	_	Reagent	_	_	0	_	_	Offset=2109-2124
+
+# sent_id = s25
+# text = For a 6-well plate, prepare 20 ml of culture medium + 400 μl of washed bacteria.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2219-2229
+2	500g	_	Speed	_	_	0	_	_	Offset=2233-2237
+3	5	_	Time	_	_	0	_	_	Offset=2242-2251
+4	25C	_	Temperature	_	_	0	_	_	Offset=2255-2258
+5	Incubate	_	Action	_	_	0	_	_	Offset=2259-2267
+6	45	_	Time	_	_	0	_	_	Offset=2268-2274
+7	37C	_	Temperature	_	_	0	_	_	Offset=2278-2281
+8	5%	_	Concentration	_	_	9	Measure	_	Offset=2283-2285
+9	CO2	_	Reagent	_	_	0	_	_	Offset=2286-2289
+
+# sent_id = s26
+# text = For a 24-well plate, prepare 15 ml of culture medium + 300 μl of washed bacteria.
+1	plate	_	Action	_	_	0	_	_	Offset=2319-2324
+2	infectious	_	Reagent	_	_	0	_	_	Offset=2329-2344
+3	10^-3	_	Amount	_	_	2	Measure	_	Offset=2345-2359
+4	10^-4	_	Amount	_	_	2	Measure	_	Offset=2361-2375
+5	10^-5	_	Amount	_	_	2	Measure	_	Offset=2380-2394
+
+# sent_id = s27
+# text = For a 96 well place, prepare 10ml of culture medium and 200ul of washed bacteria.
+1	remove	_	Action	_	_	0	_	_	Offset=2425-2431
+2	discard	_	Action	_	_	0	_	_	Offset=2436-2443
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=2448-2459
+
+# sent_id = s28
+# text = But for LDH, you only need to prepare enough for the Salmonella wells, not for all 96 wells.
+1	Wash	_	Action	_	_	0	_	_	Offset=2461-2465
+2	cells	_	Reagent	_	_	0	_	_	Offset=2470-2475
+3	twice	_	Numerical	_	_	0	_	_	Offset=2476-2481
+4	PBS	_	Reagent	_	_	0	_	_	Offset=2487-2490
+5	preheated	_	Action	_	_	0	_	_	Offset=2492-2501
+6	37C	_	Temperature	_	_	0	_	_	Offset=2505-2508
+7	prepared	_	Action	_	_	0	_	_	Offset=2511-2519
+8	before	_	Modifier	_	_	0	_	_	Offset=2520-2531
+9	500	_	Amount	_	_	4	Measure	_	Offset=2540-2546
+10	for	_	Modifier	_	_	9	Mod-Link	_	Offset=2547-2564
+11	10	_	Amount	_	_	4	Measure	_	Offset=2569-2574
+12	for	_	Modifier	_	_	11	Mod-Link	_	Offset=2575-2591
+13	100ul	_	Amount	_	_	4	Measure	_	Offset=2593-2598
+14	for	_	Modifier	_	_	13	Mod-Link	_	Offset=2599-2616
+
+# sent_id = s29
+# text = Centrifuge at 500g for 5 minutes at 25C Incubate 45 min at 37C, 5% CO2.
+1	Add	_	Action	_	_	0	_	_	Offset=2618-2621
+2	500	_	Amount	_	_	6	Measure	_	Offset=2622-2628
+3	24-well	_	Modifier	_	_	2	Mod-Link	_	Offset=2630-2643
+4	2	_	Amount	_	_	0	_	_	Offset=2648-2652
+5	6-well	_	Modifier	_	_	4	Mod-Link	3:Or	Offset=2654-2666
+6	RPMI	_	Reagent	_	_	8	Meronym	_	Offset=2668-2672
+7	10%	_	Concentration	_	_	8	Measure	_	Offset=2673-2676
+8	FCS	_	Reagent	_	_	0	_	_	Offset=2677-2680
+9	without	_	Modifier	_	_	8	Mod-Link	_	Offset=2681-2695
+10	LDH	_	Reagent	_	_	14	Meronym	_	Offset=2700-2703
+11	preheated	_	Action	_	_	0	_	_	Offset=2705-2714
+12	37C	_	Temperature	_	_	0	_	_	Offset=2718-2721
+13	100	_	Concentration	_	_	14	Measure	_	Offset=2734-2743
+14	gentamicin	_	Reagent	_	_	0	_	_	Offset=2744-2754
+
+# sent_id = s30
+# text = During the incubation time, plate the infectious dose 10^-3 (100 μl), 10^-4 (100 μl) and 10^-5 (100 μl).
+1	Add	_	Action	_	_	0	_	_	Offset=2756-2759
+2	extra	_	Reagent	_	_	0	_	_	Offset=2763-2779
+
+# sent_id = s31
+# text = After the incubation period, remove and discard the supernatant.
+1	a	_	Location	_	_	0	_	_	Offset=2796-2811
+2	prepare	_	Action	_	_	0	_	_	Offset=2813-2820
+3	15	_	Amount	_	_	4	Measure	_	Offset=2821-2826
+4	culture	_	Reagent	_	_	0	_	_	Offset=2830-2844
+5	150	_	Amount	_	_	6	Measure	_	Offset=2847-2853
+6	gentamicin	_	Reagent	_	_	0	_	_	Offset=2857-2867
+7	10	_	Concentration	_	_	0	_	_	Offset=2868-2876
+
+# sent_id = s32
+# text = Wash the cells twice with PBS (preheated at 37C) (prepared before hand) using: 500 μl for 24-well plate and 10 ml for 6-well plate. 100ul for 96 well plate.
+1	a	_	Location	_	_	0	_	_	Offset=2882-2896
+2	prepare	_	Action	_	_	0	_	_	Offset=2898-2905
+3	20	_	Amount	_	_	4	Measure	_	Offset=2906-2911
+4	culture	_	Reagent	_	_	0	_	_	Offset=2915-2929
+5	200	_	Amount	_	_	6	Measure	_	Offset=2932-2938
+6	gentamicin	_	Reagent	_	_	0	_	_	Offset=2945-2955
+7	10	_	Concentration	_	_	0	_	_	Offset=2956-2964
+
+# sent_id = s33
+# text = Add 500 μL (24-well plate) or 2 ml (6-well plate) RPMI 10% FCS without phenol for LDH (preheated at 37C) containing 100 μg/ml gentamicin.
+1	a	_	Location	_	_	0	_	_	Offset=2970-2985
+2	prepare	_	Action	_	_	0	_	_	Offset=2987-2994
+3	15ml	_	Amount	_	_	4	Measure	_	Offset=2995-2999
+4	culture	_	Reagent	_	_	0	_	_	Offset=3003-3017
+5	150ul	_	Amount	_	_	6	Measure	_	Offset=3020-3025
+6	gentamicin	_	Reagent	_	_	0	_	_	Offset=3029-3039
+7	10mg/ml	_	Concentration	_	_	0	_	_	Offset=3043-3050
+
+# sent_id = s34
+# text = Add an extra triplicate for medium.
+1	Start	_	Action	_	_	0	_	_	Offset=3088-3099
+2	45	_	Time	_	_	0	_	_	Offset=3120-3151
+
+# sent_id = s35
+# text = For a 24-well plate, prepare 15 ml of culture medium + 150 μl of gentamicin 10 mg/ml.
+1	spin	_	Action	_	_	0	_	_	Offset=3186-3190
+2	plate	_	Location	_	_	0	_	_	Offset=3191-3196
+3	250g	_	Speed	_	_	0	_	_	Offset=3200-3204
+4	4min	_	Time	_	_	0	_	_	Offset=3209-3213
+5	keep	_	Action	_	_	0	_	_	Offset=3215-3219
+6	on	_	Temperature	_	_	0	_	_	Offset=3220-3226
+
+# sent_id = s36
+# text = For a 6-well plate, prepare 20 ml of culture medium + 200 μl of of gentamicin 10 mg/ml.
+1	Take	_	Action	_	_	0	_	_	Offset=3230-3234
+2	50ul	_	Amount	_	_	3	Measure	_	Offset=3235-3239
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=3243-3254
+4	special	_	Location	_	_	0	_	_	Offset=3268-3286
+5	keep	_	Action	_	_	0	_	_	Offset=3313-3317
+6	on	_	Temperature	_	_	0	_	_	Offset=3318-3324
+
+# sent_id = s37
+# text = For a 96 well plate, prepare 15ml of culture medium + 150ul of gentamicin at 10mg/ml.
+1	Take	_	Action	_	_	0	_	_	Offset=3326-3330
+2	50ul	_	Amount	_	_	0	_	_	Offset=3331-3335
+
+# sent_id = s38
+# text = This corresponds to time 0 for LDH.
+1	Lyse	_	Action	_	_	0	_	_	Offset=3367-3371
+2	cells	_	Reagent	_	_	0	_	_	Offset=3372-3377
+3	100ul	_	Amount	_	_	6	Measure	_	Offset=3383-3388
+4	PBS	_	Reagent	_	_	6	Meronym	_	Offset=3392-3395
+5	1%	_	Concentration	_	_	4	Measure	_	Offset=3396-3398
+6	Titron	_	Reagent	_	_	0	_	_	Offset=3399-3405
+7	X-100	_	Concentration	_	_	6	Measure	_	Offset=3406-3411
+
+# sent_id = s39
+# text = Start timer for time points and 45 min prior to last time point for max rel.
+1	Tranfer	_	Action	_	_	0	_	_	Offset=3435-3442
+2	100ul	_	Amount	_	_	0	_	_	Offset=3443-3448
+3	2ml	_	Size	_	_	4	Measure	_	Offset=3452-3455
+4	push	_	Location	_	_	0	_	_	Offset=3456-3470
+
+# sent_id = s40
+# text = For all time points: spin plate at 250g for 4min *keep on ice*. 
+1	Dilute	_	Action	_	_	0	_	_	Offset=3484-3490
+2	50ul	_	Amount	_	_	0	_	_	Offset=3491-3495
+3	450ul	_	Amount	_	_	0	_	_	Offset=3499-3504
+
+# sent_id = s41
+# text = Take 50ul of supernatant for LDH into special LDH plates (can use multichanel) and keep on ice.
+1	Continue	_	Action	_	_	0	_	_	Offset=3577-3588
+2	Incubate	_	Action	_	_	0	_	_	Offset=3613-3621
+3	1	_	Time	_	_	0	_	_	Offset=3622-3628
+4	37C	_	Temperature	_	_	0	_	_	Offset=3632-3635
+5	5%	_	Concentration	_	_	6	Measure	_	Offset=3637-3639
+6	CO2	_	Reagent	_	_	0	_	_	Offset=3640-3643
+
+# sent_id = s42
+# text = Take 50ul for ELISA cytokine expression.
+1	remove	_	Action	_	_	0	_	_	Offset=3675-3681
+2	discard	_	Action	_	_	0	_	_	Offset=3686-3693
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=3698-3709
+
+# sent_id = s43
+# text = Lyse cells with 100ul of PBS-1% Titron X-100 (prepared in advance).
+1	Wash	_	Action	_	_	0	_	_	Offset=3711-3715
+2	cells	_	Reagent	_	_	0	_	_	Offset=3720-3725
+3	twice	_	Numerical	_	_	0	_	_	Offset=3726-3731
+4	PBS	_	Reagent	_	_	0	_	_	Offset=3737-3740
+5	preheated	_	Action	_	_	0	_	_	Offset=3742-3751
+6	37C	_	Temperature	_	_	0	_	_	Offset=3755-3758
+7	500	_	Amount	_	_	4	Measure	_	Offset=3766-3772
+
+# sent_id = s44
+# text = Tranfer 100ul to 2ml push cap tubes for plating.
+1	Add	_	Action	_	_	0	_	_	Offset=3812-3815
+2	500	_	Amount	_	_	4	Measure	_	Offset=3816-3822
+3	2	_	Amount	_	_	2	Or	_	Offset=3842-3846
+4	RPMI	_	Reagent	_	_	6	Meronym	_	Offset=3862-3866
+5	10%	_	Concentration	_	_	4	Measure	_	Offset=3867-3870
+6	FCS	_	Reagent	_	_	0	_	_	Offset=3871-3874
+7	preheated	_	Action	_	_	0	_	_	Offset=3876-3885
+8	37C	_	Temperature	_	_	0	_	_	Offset=3889-3892
+9	10	_	Concentration	_	_	0	_	_	Offset=3905-3913
+10	gentamicin	_	Reagent	_	_	0	_	_	Offset=3914-3924
+
+# sent_id = s45
+# text = Dilute 50ul in 450ul for 10^-1 and 10^-2#CFUs/50μl x 100 for LDH x dilution = CFUs per well.
+1	prepare	_	Action	_	_	0	_	_	Offset=3947-3954
+2	15	_	Amount	_	_	3	Measure	_	Offset=3955-3960
+3	culture	_	Reagent	_	_	0	_	_	Offset=3964-3978
+4	15	_	Amount	_	_	5	Measure	_	Offset=3981-3986
+5	gentamicin	_	Reagent	_	_	0	_	_	Offset=3990-4000
+6	10	_	Concentration	_	_	0	_	_	Offset=4000-4008
+
+# sent_id = s46
+# text = Continue on for Non LDH experiment: Incubate 1 hour at 37C, 5% CO2. 
+1	prepare	_	Action	_	_	0	_	_	Offset=4030-4037
+2	20	_	Amount	_	_	3	Measure	_	Offset=4038-4043
+3	culture	_	Reagent	_	_	0	_	_	Offset=4047-4061
+4	20	_	Amount	_	_	5	Measure	_	Offset=4064-4069
+5	gentamicin	_	Reagent	_	_	0	_	_	Offset=4076-4086
+6	10	_	Concentration	_	_	0	_	_	Offset=4087-4095
+
+# sent_id = s47
+# text = After the incubation period, remove and discard the supernatant.
+1	Pursue	_	Action	_	_	0	_	_	Offset=4097-4118
+2	1,	_	Time	_	_	0	_	_	Offset=4120-4133
+
+# sent_id = s48
+# text = Wash the cells twice with PBS (preheated at 37C) using 500 μl for 24-well plate ml for 6-well plate.
+1	collect	_	Action	_	_	0	_	_	Offset=4245-4252
+2	supernatants	_	Reagent	_	_	4	Coreference-Link	_	Offset=4257-4269
+3	freeze	_	Action	_	_	0	_	_	Offset=4307-4313
+4	them	_	Mention	_	_	0	_	_	Offset=4314-4318
+5	-80C	_	Temperature	_	_	0	_	_	Offset=4322-4326
+
+# sent_id = s49
+# text = Add 500 μL (24-well plate) or 2 ml (6-well plate) RPMI 10% FCS (preheated at 37C) containing 10 μg/ml gentamicin.
+1	Lyse	_	Action	_	_	0	_	_	Offset=4328-4332
+2	cells	_	Reagent	_	_	0	_	_	Offset=4337-4342
+3	500	_	Amount	_	_	4	Measure	_	Offset=4348-4354
+4	PBS	_	Reagent	_	_	6	Meronym	_	Offset=4355-4358
+5	1%	_	Concentration	_	_	4	Measure	_	Offset=4360-4362
+6	Triton	_	Reagent	_	_	0	_	_	Offset=4362-4368
+7	X-100	_	Concentration	_	_	6	Measure	_	Offset=4369-4374
+8	transfer	_	Action	_	_	0	_	_	Offset=4379-4387
+9	lysate	_	Reagent	_	_	0	_	_	Offset=4392-4398
+10	4-ml	_	Size	_	_	11	Measure	_	Offset=4402-4406
+11	push	_	Location	_	_	0	_	_	Offset=4407-4420
+
+# sent_id = s50
+# text = For a 24-well plate, prepare 15 ml of culture medium + 15 μl of gentamicin10 mg/ml.
+1	Dilute	_	Action	_	_	0	_	_	Offset=4422-4428
+2	lysate	_	Reagent	_	_	0	_	_	Offset=4433-4439
+3	10-1	_	Concentration	_	_	0	_	_	Offset=4441-4453
+
+# sent_id = s51
+# text = For a 6-well plate, prepare 20 ml of culture medium + 20 μl of of gentamicin 10 mg/ml.
+1	Spread	_	Action	_	_	0	_	_	Offset=4456-4462
+2	100	_	Amount	_	_	4	Measure	_	Offset=4463-4469
+3	10-2	_	Concentration	_	_	4	Measure	_	Offset=4473-4486
+4	dilutions	_	Reagent	_	_	0	_	_	Offset=4487-4496
+5	TSB	_	Location	_	_	0	_	_	Offset=4500-4516
+6	incubate	_	Action	_	_	0	_	_	Offset=4521-4529
+7	overnight	_	Time	_	_	0	_	_	Offset=4530-4539
+
+# sent_id = s52
+# text = Pursue the incubation (1, 2, and 4 h).
+1	Count	_	Action	_	_	0	_	_	Offset=4556-4561
+2	CFUs	_	Reagent	_	_	0	_	_	Offset=4566-4570
+

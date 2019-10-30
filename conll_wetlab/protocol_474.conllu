@@ -1,0 +1,271 @@
+# sent_id = s1
+# text = Irys NLRS DNA labeling and Data collection
+1	Equilibrate	_	Action	_	_	0	_	_	Offset=43-54
+2	DNA	_	Reagent	_	_	0	_	_	Offset=55-58
+3	~30	_	Time	_	_	0	_	_	Offset=59-66
+4	room	_	Temperature	_	_	0	_	_	Offset=70-79
+
+# sent_id = s2
+# text = Equilibrate DNA ~30 min at room temp.
+1	Pipet	_	Action	_	_	0	_	_	Offset=81-90
+2	3x	_	Numerical	_	_	0	_	_	Offset=91-93
+3	wide	_	Modifier	_	_	4	Mod-Link	_	Offset=99-103
+4	bore	_	Device	_	_	0	_	_	Offset=104-112
+
+# sent_id = s3
+# text = Pipet mix 3x with wide bore tip.
+1	Prepare	_	Action	_	_	0	_	_	Offset=114-121
+2	nicking	_	Reagent	_	_	0	_	_	Offset=122-140
+3	1μL	_	Amount	_	_	4	Measure	_	Offset=155-158
+4	buffer	_	Reagent	_	_	0	_	_	Offset=159-180
+5	200μL	_	Amount	_	_	7	Measure	_	Offset=184-189
+6	thin-wall	_	Modifier	_	_	7	Mod-Link	_	Offset=190-199
+7	PCR	_	Location	_	_	0	_	_	Offset=200-208
+
+# sent_id = s4
+# text = Prepare nicking master mix One 10μL rxn: 1μL buffer + DNA + enzyme in 200μL thin-wall PCR tube.
+1	Mix	_	Action	_	_	0	_	_	Offset=334-337
+2	4x	_	Numerical	_	_	0	_	_	Offset=338-340
+3	Xplorer	_	Device	_	_	0	_	_	Offset=346-367
+4	8μL	_	Amount	_	_	3	Setting	_	Offset=375-378
+5	lowest	_	Speed	_	_	0	_	_	Offset=382-394
+
+# sent_id = s5
+# text = Blood BspQI: 5-7u (BNG3)Cell line BspQI: 3-5u (BNG3)Other BspQI: 5-10u (BNG3)BbvCI: 4-8u (BNG2)Q+C: 3/2, 6/4, 9/6u (BNG2). 
+1	Pulse	_	Action	_	_	0	_	_	Offset=396-406
+2	2sec	_	Time	_	_	0	_	_	Offset=407-411
+
+# sent_id = s6
+# text = Mix 4x with Xplorer Plus Pipettor set to 8μL at lowest speed.
+1	Incubate	_	Action	_	_	0	_	_	Offset=413-421
+2	thermal	_	Device	_	_	5	Meronym	_	Offset=427-441
+3	2	_	Time	_	_	0	_	_	Offset=446-451
+4	37°C	_	Temperature	_	_	0	_	_	Offset=455-459
+5	heated-lid	_	Seal	_	_	0	_	_	Offset=465-475
+
+# sent_id = s7
+# text = Pulse spin 2sec.
+1	Prepare	_	Action	_	_	0	_	_	Offset=529-536
+2	Labeling	_	Reagent	_	_	0	_	_	Offset=541-560
+
+# sent_id = s8
+# text = Incubate in a thermal cycler for 2 hrs at 37°C with heated-lid. (For the rest of the protocol, protect from light).
+1	Add	_	Action	_	_	0	_	_	Offset=642-645
+2	5μL	_	Amount	_	_	3	Measure	_	Offset=646-649
+3	Labeling	_	Reagent	_	_	0	_	_	Offset=650-669
+
+# sent_id = s9
+# text = Prepare the Labeling Master Mix.
+1	Mix	_	Action	_	_	0	_	_	Offset=671-674
+2	4x	_	Numerical	_	_	0	_	_	Offset=675-677
+3	Xplorer	_	Device	_	_	0	_	_	Offset=683-704
+4	13μL	_	Amount	_	_	3	Setting	_	Offset=712-716
+5	lowest	_	Speed	_	_	0	_	_	Offset=720-732
+
+# sent_id = s10
+# text = reagentamount10x labeling buffer1.5μL10x labeling mix1.5μLTaq 5u/μL1μLH201μL.  
+1	Pulse	_	Action	_	_	0	_	_	Offset=734-744
+2	2sec	_	Time	_	_	0	_	_	Offset=745-749
+
+# sent_id = s11
+# text = Add 5μL Labeling Master Mix.
+1	Incubate	_	Action	_	_	0	_	_	Offset=751-759
+2	thermal	_	Device	_	_	5	Meronym	_	Offset=765-779
+3	60	_	Time	_	_	0	_	_	Offset=784-790
+4	72°C	_	Temperature	_	_	0	_	_	Offset=794-798
+5	heated-lid	_	Seal	_	_	0	_	_	Offset=804-814
+
+# sent_id = s12
+# text = Mix 4x with Xplorer Plus Pipettor set to 13μL at lowest speed.
+1	Prepare	_	Action	_	_	0	_	_	Offset=816-823
+2	Repair	_	Reagent	_	_	0	_	_	Offset=828-845
+
+# sent_id = s13
+# text = Pulse spin 2sec.
+1	Mix	_	Action	_	_	0	_	_	Offset=941-944
+2	4x	_	Numerical	_	_	0	_	_	Offset=945-947
+3	Xplorer	_	Device	_	_	0	_	_	Offset=953-974
+4	18μL	_	Amount	_	_	3	Setting	_	Offset=982-986
+5	lowest	_	Speed	_	_	0	_	_	Offset=990-1002
+
+# sent_id = s14
+# text = Incubate in a thermal cycler for 60 min at 72°C with heated-lid.
+1	Pulse	_	Action	_	_	0	_	_	Offset=1004-1014
+2	2sec	_	Time	_	_	0	_	_	Offset=1015-1019
+
+# sent_id = s15
+# text = Prepare the Repair Master Mix.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1021-1029
+2	thermal	_	Device	_	_	5	Meronym	_	Offset=1035-1049
+3	30	_	Time	_	_	0	_	_	Offset=1054-1060
+4	37°C	_	Temperature	_	_	0	_	_	Offset=1064-1068
+5	heated-lid	_	Seal	_	_	0	_	_	Offset=1074-1084
+
+# sent_id = s16
+# text = reagentamount10x Thermo Pol0.5μL50x Repair Mix0.4μL50mM NAD+0.4μLTaq DNA ligase1μLH202.7μL.  
+1	Place	_	Action	_	_	0	_	_	Offset=1086-1091
+2	NLR	_	Reagent	_	_	0	_	_	Offset=1092-1104
+3	ice	_	Location	_	_	0	_	_	Offset=1108-1111
+
+# sent_id = s17
+# text = Mix 4x with Xplorer Plus Pipettor set to 18μL at lowest speed.
+1	Add	_	Action	_	_	0	_	_	Offset=1113-1116
+2	1μL	_	Amount	_	_	3	Measure	_	Offset=1117-1120
+3	Stop	_	Reagent	_	_	0	_	_	Offset=1121-1134
+
+# sent_id = s18
+# text = Pulse spin 2sec.
+1	Mix	_	Action	_	_	0	_	_	Offset=1136-1139
+2	gently	_	Modifier	_	_	0	_	_	Offset=1143-1149
+3	stirring	_	Action	_	_	0	_	_	Offset=1150-1158
+4	5	_	Numerical	_	_	0	_	_	Offset=1159-1160
+5	pipet	_	Device	_	_	0	_	_	Offset=1176-1185
+
+# sent_id = s19
+# text = Incubate in a thermal cycler for 30 min at 37°C with heated-lid.
+1	Pulse	_	Action	_	_	0	_	_	Offset=1187-1197
+2	2sec	_	Time	_	_	0	_	_	Offset=1198-1202
+
+# sent_id = s20
+# text = Place NLR reaction on ice.
+1	Add	_	Action	_	_	0	_	_	Offset=1204-1207
+2	5μl	_	Amount	_	_	3	Measure	_	Offset=1208-1211
+3	Repair	_	Reagent	_	_	0	_	_	Offset=1219-1236
+
+# sent_id = s21
+# text = Add 1μL Stop Solution.
+1	Equilibrate	_	Action	_	_	0	_	_	Offset=1238-1249
+2	Staining	_	Reagent	_	_	0	_	_	Offset=1250-1280
+3	room	_	Temperature	_	_	0	_	_	Offset=1284-1293
+
+# sent_id = s22
+# text = Mix by gently stirring 5 times with the pipet tip.
+1	Prepare	_	Action	_	_	0	_	_	Offset=1295-1302
+2	Staining	_	Reagent	_	_	0	_	_	Offset=1307-1327
+
+# sent_id = s23
+# text = Pulse spin 2sec.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=1396-1403
+2	40μL	_	Amount	_	_	3	Measure	_	Offset=1404-1408
+3	Staining	_	Reagent	_	_	0	_	_	Offset=1416-1435
+4	0.6mL	_	Amount	_	_	5	Measure	_	Offset=1443-1448
+5	amber	_	Location	_	_	0	_	_	Offset=1449-1459
+
+# sent_id = s24
+# text = Add 5μl of the Repair Master Mix.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1461-1469
+2	NLR	_	Reagent	_	_	0	_	_	Offset=1470-1473
+3	Staining	_	Reagent	_	_	0	_	_	Offset=1477-1489
+4	standard	_	Device	_	_	0	_	_	Offset=1495-1508
+
+# sent_id = s25
+# text = Equilibrate Staining Master Mix components to room temp.
+1	Pulse	_	Action	_	_	0	_	_	Offset=1509-1519
+2	2	_	Time	_	_	0	_	_	Offset=1520-1526
+
+# sent_id = s26
+# text = Prepare the Staining Master Mix.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=1527-1533
+2	mix	_	Action	_	_	0	_	_	Offset=1534-1537
+3	NLRS	_	Reagent	_	_	0	_	_	Offset=1538-1546
+4	5x	_	Numerical	_	_	0	_	_	Offset=1547-1549
+5	wide	_	Modifier	_	_	6	Mod-Link	_	Offset=1555-1559
+6	bore	_	Device	_	_	0	_	_	Offset=1560-1568
+7	50μL	_	Amount	_	_	6	Setting	_	Offset=1576-1580
+
+# sent_id = s27
+# text = reagentamount4x flow buffer15μL1M DTT12μLDNA stain1.5μLH2O11.5μL.  
+1	Pulse	_	Action	_	_	0	_	_	Offset=1582-1592
+2	2	_	Time	_	_	0	_	_	Offset=1593-1598
+
+# sent_id = s28
+# text = Aliquot 40μL of the Staining Master Mix into a 0.6mL amber tube.
+1	Place	_	Action	_	_	0	_	_	Offset=1600-1605
+2	staining	_	Reagent	_	_	0	_	_	Offset=1606-1624
+3	4°C	_	Temperature	_	_	0	_	_	Offset=1628-1631
+4	overnight	_	Time	_	_	0	_	_	Offset=1632-1641
+5	uniform	_	Modifier	_	_	6	Mod-Link	_	Offset=1652-1659
+6	DNA	_	Reagent	_	_	0	_	_	Offset=1660-1672
+
+# sent_id = s29
+# text = Transfer NLR to Staining Mix with standard tip.
+1	Equilibrate	_	Action	_	_	0	_	_	Offset=1674-1685
+2	NLRS	_	Reagent	_	_	0	_	_	Offset=1686-1690
+3	room	_	Temperature	_	_	0	_	_	Offset=1694-1703
+4	~30	_	Time	_	_	0	_	_	Offset=1708-1715
+
+# sent_id = s30
+# text = Pulse spin 2 sec.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=1717-1723
+2	mix	_	Action	_	_	0	_	_	Offset=1724-1727
+3	DNA	_	Reagent	_	_	0	_	_	Offset=1728-1731
+4	3x	_	Numerical	_	_	0	_	_	Offset=1732-1734
+5	wide	_	Modifier	_	_	6	Mod-Link	_	Offset=1740-1744
+6	bore	_	Device	_	_	0	_	_	Offset=1745-1753
+7	50μL	_	Amount	_	_	6	Setting	_	Offset=1761-1765
+
+# sent_id = s31
+# text = Gently mix NLRS DNA 5x with wide bore tip set to 50μL.
+1	Pulse	_	Action	_	_	0	_	_	Offset=1767-1777
+2	2	_	Time	_	_	0	_	_	Offset=1778-1783
+
+# sent_id = s32
+# text = Pulse spin 2 sec.
+1	Remove	_	Action	_	_	0	_	_	Offset=1785-1791
+2	2μL	_	Amount	_	_	3	Measure	_	Offset=1792-1795
+3	aliquots	_	Reagent	_	_	0	_	_	Offset=1796-1804
+4	Top	_	Location	_	_	0	_	_	Offset=1814-1817
+5	Middle	_	Location	_	_	0	_	_	Offset=1819-1825
+6	Bottom	_	Location	_	_	0	_	_	Offset=1830-1836
+7	separate	_	Modifier	_	_	8	Mod-Link	_	Offset=1840-1848
+8	Qubit	_	Location	_	_	0	_	_	Offset=1849-1866
+
+# sent_id = s33
+# text = Place staining reactions at 4°C overnight to ensure uniform DNA staining.
+1	Add	_	Action	_	_	0	_	_	Offset=1868-1871
+2	18uL	_	Amount	_	_	3	Measure	_	Offset=1872-1876
+3	Qubit	_	Reagent	_	_	0	_	_	Offset=1880-1895
+
+# sent_id = s34
+# text = Equilibrate NLRS to room temp for ~30 min.
+1	Sonicate	_	Action	_	_	0	_	_	Offset=1897-1905
+2	10	_	Time	_	_	0	_	_	Offset=1906-1912
+3	bath	_	Device	_	_	0	_	_	Offset=1918-1932
+
+# sent_id = s35
+# text = Gently mix DNA 3x with wide bore tip set to 50μL.
+1	Add	_	Action	_	_	0	_	_	Offset=1934-1937
+2	180μL	_	Amount	_	_	3	Measure	_	Offset=1938-1943
+3	Qubit	_	Reagent	_	_	0	_	_	Offset=1944-1962
+
+# sent_id = s36
+# text = Pulse spin 2 sec.
+1	Vortex	_	Action	_	_	0	_	_	Offset=1963-1969
+2	5	_	Time	_	_	0	_	_	Offset=1970-1979
+
+# sent_id = s37
+# text = Remove 2μL aliquots from the Top, Middle and Bottom to separate Qubit Assay tubes.
+1	Pulse	_	Action	_	_	0	_	_	Offset=1981-1991
+2	2	_	Time	_	_	0	_	_	Offset=1992-1997
+
+# sent_id = s38
+# text = Add 18uL of Qubit HS Buffer.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1999-2007
+2	at	_	Modifier	_	_	3	Mod-Link	_	Offset=2008-2016
+3	2	_	Time	_	_	0	_	_	Offset=2017-2022
+4	room	_	Temperature	_	_	0	_	_	Offset=2026-2035
+
+# sent_id = s39
+# text = Sonicate 10 min in a bath sonicator.
+1	Quantitate	_	Action	_	_	0	_	_	Offset=2037-2047
+2	Qubit	_	Device	_	_	0	_	_	Offset=2053-2074
+
+# sent_id = s40
+# text = Add 180μL Qubit reagent mix.
+1	Load	_	Action	_	_	0	_	_	Offset=2112-2116
+2	sample	_	Reagent	_	_	0	_	_	Offset=2117-2123
+3	Irys	_	Location	_	_	0	_	_	Offset=2129-2138
+4	start	_	Action	_	_	0	_	_	Offset=2143-2164
+5	30-cycle	_	Generic-Measure	_	_	0	_	_	Offset=2172-2180
+6	irys	_	Device	_	_	0	_	_	Offset=2188-2199
+

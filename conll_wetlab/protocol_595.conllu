@@ -1,0 +1,63 @@
+# sent_id = s1
+# text = Seydoux lab Cas9 preparation test: 
+1	Tag	_	Action	_	_	0	_	_	Offset=36-39
+2	gtbp‐1	_	Reagent	_	_	0	_	_	Offset=40-46
+3	eGFP	_	Reagent	_	_	0	_	_	Offset=52-56
+4	mCherry	_	Reagent	_	_	2	Or	_	Offset=60-67
+5	dpy‐10	_	Reagent	_	_	3	Or	_	Offset=74-90
+
+# sent_id = s2
+# text = Tag gtbp‐1 with eGFP or mCherry using dpy‐10 co‐CRISPR. 
+1	Prepare	_	Action	_	_	0	_	_	Offset=93-100
+2	repair	_	Method	_	_	0	_	_	Offset=105-124
+
+# sent_id = s3
+# text = Prepare the repair PCR template as indicated in Reagents for gtbp‐1 eGFP and mCherry tagging (see guidelines) and Repair template synthesis.
+1	Make	_	Action	_	_	0	_	_	Offset=234-238
+2	injection	_	Reagent	_	_	0	_	_	Offset=243-256
+
+# sent_id = s4
+# text = Make the injection mix as indicated in injection mixes, part I.
+1	Use	_	Action	_	_	0	_	_	Offset=298-301
+2	crRNA	_	Reagent	_	_	0	_	_	Offset=306-321
+
+# sent_id = s5
+# text = Use the crRNA gtbp‐1 Ct (#728 in Table S3).
+1	Inject	_	Action	_	_	0	_	_	Offset=342-348
+2	15‐20	_	Numerical	_	_	4	Measure	_	Offset=349-354
+3	young	_	Modifier	_	_	4	Mod-Link	_	Offset=355-366
+4	N2	_	Reagent	_	_	0	_	_	Offset=367-375
+5	recover	_	Action	_	_	0	_	_	Offset=380-387
+
+# sent_id = s6
+# text = Inject 15‐20 young adult N2 worms and recover as described in Worm recovery and handling.
+1	Pool	_	Action	_	_	0	_	_	Offset=432-436
+2	recovered	_	Modifier	_	_	3	Mod-Link	_	Offset=441-450
+3	worms	_	Reagent	_	_	0	_	_	Offset=451-456
+4	one	_	Numerical	_	_	5	Measure	_	Offset=466-469
+5	plate	_	Location	_	_	0	_	_	Offset=470-475
+6	incubate	_	Action	_	_	0	_	_	Offset=480-488
+7	22‐23h	_	Time	_	_	0	_	_	Offset=493-499
+8	20	_	Temperature	_	_	0	_	_	Offset=503-508
+
+# sent_id = s7
+# text = Pool the recovered worms (P0s) on one plate and incubate for 22‐23h at 20 °C (day 1).
+1	Clone	_	Action	_	_	0	_	_	Offset=518-523
+2	P0s	_	Reagent	_	_	0	_	_	Offset=528-531
+3	individual	_	Modifier	_	_	4	Mod-Link	_	Offset=535-545
+4	OP50	_	Reagent	_	_	0	_	_	Offset=546-557
+5	incubate	_	Action	_	_	0	_	_	Offset=562-570
+6	20	_	Temperature	_	_	0	_	_	Offset=574-579
+7	4‐5	_	Time	_	_	0	_	_	Offset=584-592
+
+# sent_id = s8
+# text = Clone the P0s to individual OP50 plates and incubate at 20 °C for 4‐5 days (day 2).
+1	When	_	Time	_	_	0	_	_	Offset=602-636
+2	check	_	Action	_	_	0	_	_	Offset=638-643
+3	Rollers	_	Device	_	_	0	_	_	Offset=648-655
+
+# sent_id = s9
+# text = When the F1s reach the adult stage, check for Rollers.
+1	screen	_	Action	_	_	0	_	_	Offset=686-692
+2	Rollers	_	Device	_	_	0	_	_	Offset=697-704
+

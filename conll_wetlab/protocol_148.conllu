@@ -1,0 +1,125 @@
+# sent_id = s1
+# text = Intracellular Flow Cytometry Staining Protocol: For the Detection of Intracellular Cytokines and Other Intracellular Targets
+1	Resuspend	_	Action	_	_	0	_	_	Offset=125-134
+2	fixed	_	Reagent	_	_	0	_	_	Offset=135-146
+3	Intracellular	_	Reagent	_	_	0	_	_	Offset=150-189
+4	centrifuge	_	Action	_	_	0	_	_	Offset=194-204
+5	350	_	Speed	_	_	0	_	_	Offset=208-215
+6	5-10	_	Time	_	_	0	_	_	Offset=220-232
+
+# sent_id = s2
+# text = Resuspend fixed cells in Intracellular Staining Perm Wash Buffer and centrifuge at 350 x g for 5-10 minutes.
+1	perform	_	Action	_	_	0	_	_	Offset=303-340
+2	as	_	Modifier	_	_	0	_	_	Offset=341-418
+3	fix	_	Action	_	_	0	_	_	Offset=425-428
+4	cells	_	Reagent	_	_	0	_	_	Offset=429-434
+5	0.5	_	Amount	_	_	6	Measure	_	Offset=438-449
+6	Fixation	_	Reagent	_	_	0	_	_	Offset=450-493
+7	in	_	Modifier	_	_	0	_	_	Offset=494-505
+8	20	_	Time	_	_	0	_	_	Offset=510-520
+9	room	_	Temperature	_	_	0	_	_	Offset=524-540
+
+# sent_id = s3
+# text = (2/3) If staining intracellular antigens (e.g. IFN-γ or IL-4), first perform cell surface antigen staining as described in BioLegend’s Cell Surface Immunofluorescence Staining Protocol, then fix cells in 0.5 ml/tube Fixation Buffer (BioLegend Cat. No. 420801) in the dark for 20 minutes at room temperature.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=542-552
+2	350	_	Speed	_	_	0	_	_	Offset=556-563
+3	5	_	Time	_	_	0	_	_	Offset=568-577
+4	discard	_	Action	_	_	0	_	_	Offset=579-586
+5	supernatant	_	Reagent	_	_	0	_	_	Offset=587-598
+
+# sent_id = s4
+# text = Centrifuge at 350 x g for 5 minutes, discard supernatant.
+1	wash	_	Action	_	_	0	_	_	Offset=680-684
+2	cells	_	Reagent	_	_	0	_	_	Offset=685-690
+3	1x	_	Numerical	_	_	0	_	_	Offset=691-693
+4	Cell	_	Reagent	_	_	0	_	_	Offset=699-746
+
+# sent_id = s5
+# text = To put the experiment “on hold” at this point for future staining and analysis, wash cells 1x with Cell StainingBuffer (BioLegend Cat. No. 420201).
+1	Resuspend	_	Action	_	_	0	_	_	Offset=748-757
+2	store	_	Action	_	_	0	_	_	Offset=792-797
+
+# sent_id = s6
+# text = Resuspend cells in Cell Staining Buffer and store cells at 4°C (short term) or in 90% FCS/10% DMSO for storage at -80°C (long term, for fixed cells without surface antigen staining).
+1	Dilute	_	Action	_	_	0	_	_	Offset=931-937
+2	10X	_	Concentration	_	_	3	Measure	_	Offset=938-941
+3	Intracellular	_	Reagent	_	_	0	_	_	Offset=942-999
+4	1X	_	Concentration	_	_	0	_	_	Offset=1003-1005
+5	DI	_	Reagent	_	_	0	_	_	Offset=1009-1017
+
+# sent_id = s7
+# text = Dilute 10X Intracellular Staining Perm Wash Buffer (Cat. No. 421002) to 1X in DI water.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1019-1028
+2	fixed	_	Reagent	_	_	0	_	_	Offset=1029-1040
+3	Intracellular	_	Reagent	_	_	0	_	_	Offset=1044-1083
+4	centrifuge	_	Action	_	_	0	_	_	Offset=1088-1098
+5	350	_	Speed	_	_	0	_	_	Offset=1102-1109
+6	5-10	_	Time	_	_	0	_	_	Offset=1114-1126
+
+# sent_id = s8
+# text = Resuspend fixed cells in Intracellular Staining Perm Wash Buffer and centrifuge at 350 x g for 5-10 minutes.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1134-1143
+2	fixed/permeabilized	_	Reagent	_	_	0	_	_	Offset=1144-1169
+3	residual	_	Modifier	_	_	4	Mod-Link	_	Offset=1173-1181
+4	Intracellular	_	Reagent	_	_	0	_	_	Offset=1182-1221
+5	add	_	Action	_	_	0	_	_	Offset=1226-1229
+6	a	_	Concentration	_	_	7	Measure	_	Offset=1230-1267
+7	fluorophore-conjugated	_	Reagent	_	_	0	_	_	Offset=1271-1335
+8	an	_	Reagent	_	_	7	Or	_	Offset=1339-1370
+9	20	_	Time	_	_	0	_	_	Offset=1375-1385
+10	in	_	Modifier	_	_	0	_	_	Offset=1386-1397
+11	room	_	Temperature	_	_	0	_	_	Offset=1401-1417
+
+# sent_id = s9
+# text = (1/3) Resuspend fixed/permeabilized cells in residual Intracellular Staining Perm Wash Buffer and add a predetermined optimum concentration of fluorophore-conjugated antibody of interest (e.g. PE anti-IFN-γ) or an appropriate negative control for 20 minutes in the dark at room temperature.
+1	perform	_	Action	_	_	0	_	_	Offset=1494-1571
+2	Intracellular	_	Reagent	_	_	0	_	_	Offset=1575-1614
+
+# sent_id = s10
+# text = If primary intracellular antibody is biotinylated, it will be necessary to perform fluorophore conjugated Streptavidin incubations and subsequent washes in Intracellular Staining Perm Wash Buffer.
+1	Wash	_	Action	_	_	0	_	_	Offset=1616-1620
+2	2	_	Amount	_	_	3	Measure	_	Offset=1626-1630
+3	Intracellular	_	Reagent	_	_	0	_	_	Offset=1634-1673
+4	centrifuge	_	Action	_	_	0	_	_	Offset=1678-1688
+5	350	_	Speed	_	_	0	_	_	Offset=1692-1699
+6	5	_	Time	_	_	0	_	_	Offset=1704-1713
+
+# sent_id = s11
+# text = Wash with 2 ml of Intracellular Staining Perm Wash Buffer and centrifuge at 350 x g for 5 minutes.
+1	Wash	_	Action	_	_	0	_	_	Offset=1721-1725
+2	2	_	Amount	_	_	3	Measure	_	Offset=1731-1735
+3	Intracellular	_	Reagent	_	_	0	_	_	Offset=1739-1778
+4	centrifuge	_	Action	_	_	0	_	_	Offset=1783-1793
+5	350	_	Speed	_	_	0	_	_	Offset=1797-1804
+6	5	_	Time	_	_	0	_	_	Offset=1809-1818
+
+# sent_id = s12
+# text = (1/2) Wash with 2 ml of Intracellular Staining Perm Wash Buffer and centrifuge at 350 x g for 5 minutes.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1826-1835
+2	fixed	_	Reagent	_	_	0	_	_	Offset=1836-1875
+3	0.5	_	Amount	_	_	4	Measure	_	Offset=1879-1885
+4	Cell	_	Reagent	_	_	0	_	_	Offset=1886-1906
+5	analyze	_	Action	_	_	0	_	_	Offset=1911-1918
+6	appropriate	_	Reagent	_	_	0	_	_	Offset=1924-1944
+
+# sent_id = s13
+# text = (2/2) Resuspend fixed and intracellularly labeled cells in 0.5 ml Cell Staining Buffer and analyze with appropriate controls.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1946-1955
+2	fixed	_	Reagent	_	_	0	_	_	Offset=1956-1967
+3	Intracellular	_	Reagent	_	_	0	_	_	Offset=1971-2010
+4	centrifuge	_	Action	_	_	0	_	_	Offset=2015-2025
+5	350	_	Speed	_	_	0	_	_	Offset=2029-2036
+6	5-10	_	Time	_	_	0	_	_	Offset=2041-2053
+
+# sent_id = s14
+# text = Resuspend fixed cells in Intracellular Staining Perm Wash Buffer and centrifuge at 350 x g for 5-10 minutes.
+1	Set	_	Action	_	_	0	_	_	Offset=2061-2093
+2	cell	_	Reagent	_	_	0	_	_	Offset=2100-2130
+
+# sent_id = s15
+# text = (3/3) Set PMT voltage and compensation using cell surface staining controls.
+1	Set	_	Action	_	_	0	_	_	Offset=2132-2152
+2	blocking	_	Reagent	_	_	0	_	_	Offset=2162-2179
+3	isotype	_	Reagent	_	_	2	Or	_	Offset=2181-2197
+4	unstained	_	Reagent	_	_	3	Or	_	Offset=2202-2217
+

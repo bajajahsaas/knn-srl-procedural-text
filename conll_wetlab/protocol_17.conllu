@@ -1,0 +1,191 @@
+# sent_id = s1
+# text = Modified Qiagen QIAprep Spin Miniprep
+1	Resuspend	_	Action	_	_	0	_	_	Offset=38-47
+2	pelleted	_	Reagent	_	_	0	_	_	Offset=48-72
+3	250μl	_	Amount	_	_	4	Measure	_	Offset=76-81
+4	Buffer	_	Reagent	_	_	0	_	_	Offset=82-91
+5	transfer	_	Action	_	_	0	_	_	Offset=96-104
+6	micro-centrifuge	_	Location	_	_	0	_	_	Offset=110-131
+
+# sent_id = s2
+# text = Resuspend pelleted bacterial cells in 250μl Buffer P1 and transfer to a micro-centrifuge tube.
+1	RNase	_	Reagent	_	_	0	_	_	Offset=145-152
+2	added	_	Action	_	_	0	_	_	Offset=162-167
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=171-180
+
+# sent_id = s3
+# text = Ensure that RNase A has been added to Buffer P1.
+1	vigorously	_	Modifier	_	_	0	_	_	Offset=298-308
+2	shake	_	Action	_	_	0	_	_	Offset=309-314
+3	buffer	_	Location	_	_	0	_	_	Offset=319-332
+
+# sent_id = s4
+# text = No cell clumps should be visible after resuspension of the pellet.
+1	bacteria	_	Reagent	_	_	0	_	_	Offset=392-400
+2	resuspended	_	Action	_	_	0	_	_	Offset=411-422
+3	completely	_	Modifier	_	_	0	_	_	Offset=423-433
+4	vortexing	_	Method	_	_	0	_	_	Offset=437-446
+5	pipetting	_	Method	_	_	4	Or	_	Offset=450-471
+6	no	_	Modifier	_	_	0	_	_	Offset=478-480
+7	cell	_	Reagent	_	_	0	_	_	Offset=481-492
+8	remain	_	Action	_	_	0	_	_	Offset=493-499
+
+# sent_id = s5
+# text = If LyseBlue reagent has been added to Buffer P1, vigorously shake the buffer bottle to ensure LyseBlue particles are completely dissolved.
+1	Add	_	Action	_	_	0	_	_	Offset=501-504
+2	250	_	Amount	_	_	3	Measure	_	Offset=505-511
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=512-521
+4	mix	_	Action	_	_	0	_	_	Offset=526-529
+5	thoroughly	_	Modifier	_	_	0	_	_	Offset=530-540
+6	inverting	_	Method	_	_	0	_	_	Offset=544-553
+7	tube	_	Location	_	_	0	_	_	Offset=558-562
+8	4–6	_	Numerical	_	_	0	_	_	Offset=563-566
+
+# sent_id = s6
+# text = The bacteria should be resuspended completely by vortexing or pipetting up and down until no cell clumps remain.
+1	Mix	_	Action	_	_	0	_	_	Offset=574-577
+2	gently	_	Modifier	_	_	0	_	_	Offset=578-584
+3	inverting	_	Method	_	_	0	_	_	Offset=588-597
+4	tube	_	Location	_	_	0	_	_	Offset=602-606
+
+# sent_id = s7
+# text = Add 250 μl Buffer P2 and mix thoroughly by inverting the tube 4–6 times.
+1	continue	_	Modifier	_	_	0	_	_	Offset=685-693
+2	inverting	_	Action	_	_	0	_	_	Offset=694-703
+3	tube	_	Location	_	_	0	_	_	Offset=708-712
+4	solution	_	Reagent	_	_	0	_	_	Offset=723-731
+5	slightly	_	Modifier	_	_	0	_	_	Offset=752-760
+6	clear	_	Action	_	_	0	_	_	Offset=761-766
+
+# sent_id = s8
+# text = Mix gently by inverting the tube.
+1	Mixing	_	Action	_	_	0	_	_	Offset=936-942
+2	homogeneously	_	Reagent	_	_	0	_	_	Offset=962-994
+
+# sent_id = s9
+# text = Do not vortex, as this will result in shearing of genomic DNA.
+1	mixing	_	Action	_	_	0	_	_	Offset=1106-1112
+2	solution	_	Reagent	_	_	0	_	_	Offset=1117-1125
+3	homogeneously	_	Reagent	_	_	0	_	_	Offset=1134-1166
+
+# sent_id = s10
+# text = If necessary, continue inverting the tube until the solution becomes viscous and slightly clear.
+1	Add	_	Action	_	_	0	_	_	Offset=1180-1183
+2	350	_	Amount	_	_	3	Measure	_	Offset=1184-1190
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=1191-1200
+4	mix	_	Action	_	_	0	_	_	Offset=1205-1208
+5	immediately	_	Modifier	_	_	0	_	_	Offset=1209-1220
+6	thoroughly	_	Modifier	_	_	0	_	_	Offset=1225-1235
+7	inverting	_	Action	_	_	0	_	_	Offset=1239-1248
+8	tube	_	Location	_	_	0	_	_	Offset=1253-1257
+9	4–6	_	Numerical	_	_	0	_	_	Offset=1258-1261
+
+# sent_id = s11
+# text = Do not allow the lysis reaction to proceed for more than 5 min.
+1	mix	_	Action	_	_	0	_	_	Offset=1303-1306
+2	solution	_	Reagent	_	_	0	_	_	Offset=1311-1319
+3	thoroughly	_	Modifier	_	_	0	_	_	Offset=1320-1330
+4	immediately	_	Modifier	_	_	0	_	_	Offset=1332-1343
+5	addition	_	Action	_	_	0	_	_	Offset=1350-1358
+6	Buffer	_	Reagent	_	_	0	_	_	Offset=1362-1371
+
+# sent_id = s12
+# text = If LyseBlue has been added to Buffer P1 the cell suspension will turn blue after addition of Buffer P2.
+1	suspension	_	Reagent	_	_	0	_	_	Offset=1520-1530
+2	mixed	_	Action	_	_	0	_	_	Offset=1541-1546
+
+# sent_id = s13
+# text = Mixing should result in a homogeneously colored suspension.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1708-1718
+2	10	_	Time	_	_	0	_	_	Offset=1723-1729
+3	13,000	_	Speed	_	_	0	_	_	Offset=1733-1743
+4	~17,900	_	Speed	_	_	3	Or	_	Offset=1745-1756
+5	table-top	_	Device	_	_	0	_	_	Offset=1763-1788
+
+# sent_id = s14
+# text = If the suspension contains localized colorless regions or if brownish cell clumps are still visible, continue mixing the solution until a homogeneously colored suspension is achieved.
+1	Apply	_	Action	_	_	0	_	_	Offset=1824-1829
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=1834-1846
+3	QIAprep	_	Location	_	_	0	_	_	Offset=1866-1885
+4	decanting	_	Method	_	_	0	_	_	Offset=1889-1898
+5	pipetting	_	Method	_	_	4	Or	_	Offset=1902-1911
+
+# sent_id = s15
+# text = Add 350 μl Buffer N3 and mix immediately and thoroughly by inverting the tube 4–6 times.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1913-1923
+2	30–60	_	Time	_	_	0	_	_	Offset=1928-1935
+3	Place	_	Action	_	_	0	_	_	Offset=1937-1942
+4	flow	_	Reagent	_	_	0	_	_	Offset=1943-1955
+5	spin	_	Location	_	_	0	_	_	Offset=1970-1981
+
+# sent_id = s16
+# text = To avoid localized precipitation, mix the solution thoroughly, immediately after addition of Buffer N3.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1983-1993
+2	30–60	_	Time	_	_	0	_	_	Offset=1998-2005
+3	Discard	_	Action	_	_	0	_	_	Offset=2007-2014
+4	flow-through	_	Reagent	_	_	0	_	_	Offset=2019-2031
+
+# sent_id = s17
+# text = Large culture volumes (e.g.
+1	Wash	_	Action	_	_	0	_	_	Offset=2033-2037
+2	QIAprep	_	Location	_	_	0	_	_	Offset=2042-2061
+3	adding	_	Action	_	_	0	_	_	Offset=2065-2071
+4	0.5	_	Amount	_	_	5	Measure	_	Offset=2072-2078
+5	Buffer	_	Reagent	_	_	0	_	_	Offset=2079-2088
+6	centrifuging	_	Action	_	_	0	_	_	Offset=2093-2105
+7	30–60	_	Time	_	_	0	_	_	Offset=2110-2117
+8	Discard	_	Action	_	_	0	_	_	Offset=2119-2126
+9	flow-through	_	Reagent	_	_	0	_	_	Offset=2131-2143
+
+# sent_id = s18
+# text = ≥5 ml) may require inverting up to 10 times.
+1	Wash	_	Action	_	_	0	_	_	Offset=2459-2463
+2	QIAprep	_	Location	_	_	0	_	_	Offset=2464-2483
+3	adding	_	Action	_	_	0	_	_	Offset=2487-2493
+4	0.75	_	Amount	_	_	5	Measure	_	Offset=2494-2501
+5	Buffer	_	Reagent	_	_	0	_	_	Offset=2502-2511
+6	centrifuging	_	Action	_	_	0	_	_	Offset=2516-2528
+7	30–60	_	Time	_	_	0	_	_	Offset=2533-2540
+8	Discard	_	Action	_	_	0	_	_	Offset=2542-2549
+9	flow-through	_	Reagent	_	_	0	_	_	Offset=2554-2566
+10	centrifuge	_	Action	_	_	0	_	_	Offset=2572-2582
+11	full	_	Speed	_	_	0	_	_	Offset=2586-2596
+12	additional	_	Modifier	_	_	13	Mod-Link	_	Offset=2604-2614
+13	1	_	Time	_	_	0	_	_	Offset=2615-2620
+14	remove	_	Action	_	_	0	_	_	Offset=2624-2630
+15	residual	_	Reagent	_	_	0	_	_	Offset=2631-2651
+
+# sent_id = s19
+# text = The solution should become cloudy.
+1	Place	_	Action	_	_	0	_	_	Offset=2868-2873
+2	QIAprep	_	Location	_	_	0	_	_	Offset=2878-2892
+3	clean	_	Modifier	_	_	5	Mod-Link	_	Offset=2898-2903
+4	1.5	_	Amount	_	_	5	Measure	_	Offset=2904-2910
+5	microcentrifuge	_	Location	_	_	0	_	_	Offset=2911-2931
+
+# sent_id = s20
+# text = If LyseBlue reagent has been used, the suspension should be mixed until all trace of blue has gone and the suspension is colorless.
+1	elute	_	Action	_	_	0	_	_	Offset=2936-2941
+2	DNA	_	Reagent	_	_	0	_	_	Offset=2942-2945
+3	add	_	Action	_	_	0	_	_	Offset=2947-2950
+4	20	_	Amount	_	_	5	Measure	_	Offset=2951-2956
+5	water	_	Reagent	_	_	0	_	_	Offset=2957-2962
+6	center	_	Location	_	_	0	_	_	Offset=2970-3004
+7	stand	_	Action	_	_	0	_	_	Offset=3010-3015
+8	1	_	Time	_	_	0	_	_	Offset=3020-3025
+9	centrifuge	_	Action	_	_	0	_	_	Offset=3031-3041
+10	1	_	Time	_	_	0	_	_	Offset=3046-3051
+
+# sent_id = s21
+# text = A homogeneous colorless sus- pension indicates that the SDS has been effectively precipitated.
+1	Elute	_	Action	_	_	0	_	_	Offset=3053-3058
+2	DNA	_	Reagent	_	_	0	_	_	Offset=3059-3062
+3	add	_	Action	_	_	0	_	_	Offset=3064-3067
+4	30	_	Amount	_	_	5	Measure	_	Offset=3068-3073
+5	water	_	Reagent	_	_	0	_	_	Offset=3074-3079
+6	center	_	Location	_	_	0	_	_	Offset=3087-3121
+7	stand	_	Action	_	_	0	_	_	Offset=3127-3132
+8	1	_	Time	_	_	0	_	_	Offset=3137-3142
+9	centrifuge	_	Action	_	_	0	_	_	Offset=3148-3158
+10	1	_	Time	_	_	0	_	_	Offset=3163-3168
+

@@ -1,0 +1,289 @@
+# sent_id = s1
+# text = Optiprep gradient preparation for virus separation
+1	Label	_	Action	_	_	0	_	_	Offset=198-203
+2	5	_	Numerical	_	_	4	Measure	_	Offset=204-205
+3	15ml	_	Amount	_	_	4	Measure	_	Offset=206-210
+4	falcon	_	Location	_	_	0	_	_	Offset=211-223
+5	25%,	_	Method	_	_	0	_	_	Offset=229-262
+
+# sent_id = s2
+# text = Optiprep preparation UV and sterilize class II cabinet with reagent alcohol.
+1	Label	_	Action	_	_	0	_	_	Offset=264-269
+2	50	_	Amount	_	_	3	Measure	_	Offset=272-277
+3	falcon	_	Location	_	_	0	_	_	Offset=278-289
+4	Optiprep	_	Method	_	_	0	_	_	Offset=291-299
+
+# sent_id = s3
+# text = Work with gloves and sleeve guards to prevent contaminating the hood.
+1	Remove	_	Action	_	_	0	_	_	Offset=302-308
+2	OptiPrep	_	Reagent	_	_	0	_	_	Offset=309-326
+3	fridge	_	Device	_	_	0	_	_	Offset=336-342
+4	wipe	_	Action	_	_	0	_	_	Offset=347-356
+5	sides	_	Location	_	_	0	_	_	Offset=357-362
+6	cap	_	Seal	_	_	0	_	_	Offset=364-367
+7	septum	_	Reagent	_	_	0	_	_	Offset=372-378
+8	alcohol	_	Reagent	_	_	0	_	_	Offset=384-391
+
+# sent_id = s4
+# text = Label 5 15ml falcon tubes with 25%, 30%, 35%, 40% and 45% labels.
+1	Pierce	_	Action	_	_	0	_	_	Offset=393-399
+2	septum	_	Reagent	_	_	0	_	_	Offset=400-406
+3	needle	_	Device	_	_	0	_	_	Offset=412-418
+4	20	_	Generic-Measure	_	_	3	Setting	_	Offset=420-428
+5	1/2	_	Size	_	_	3	Measure	_	Offset=429-437
+6	appropriately-sized	_	Modifier	_	_	7	Mod-Link	_	Offset=469-488
+7	syringe	_	Device	_	_	3	Meronym	_	Offset=489-496
+8	aseptically	_	Modifier	_	_	0	_	_	Offset=501-512
+9	remove	_	Action	_	_	0	_	_	Offset=513-519
+10	15-16	_	Amount	_	_	11	Measure	_	Offset=520-528
+11	OptiPrep	_	Reagent	_	_	0	_	_	Offset=532-540
+
+# sent_id = s5
+# text = Label a 50 ml falcon tube "Optiprep".
+1	Place	_	Action	_	_	0	_	_	Offset=583-588
+2	Optiprep	_	Reagent	_	_	0	_	_	Offset=589-597
+3	sterile	_	Modifier	_	_	4	Mod-Link	_	Offset=605-612
+4	50	_	Amount	_	_	5	Measure	_	Offset=613-618
+5	falcon	_	Location	_	_	0	_	_	Offset=619-630
+
+# sent_id = s6
+# text = Remove OptiPrep solution from the fridge and wipe down sides, cap and septum with alcohol.
+1	Make	_	Action	_	_	0	_	_	Offset=632-636
+2	25%	_	Concentration	_	_	7	Measure	_	Offset=637-640
+3	30%	_	Concentration	_	_	7	Measure	_	Offset=642-645
+4	35%	_	Concentration	_	_	7	Measure	_	Offset=647-650
+5	40%	_	Concentration	_	_	7	Measure	_	Offset=652-655
+6	45%	_	Concentration	_	_	7	Measure	_	Offset=660-663
+7	Optiprep	_	Reagent	_	_	0	_	_	Offset=664-682
+8	labeled	_	Modifier	_	_	9	Mod-Link	_	Offset=690-697
+9	falcon	_	Location	_	_	0	_	_	Offset=698-710
+
+# sent_id = s7
+# text = Pierce septum with needle (20 gauge 1/2 inch needles work best) attached to appropriately-sized syringe and aseptically remove 15-16 ml of OptiPrep for every 2 gradients you intend to make.
+1	Mix	_	Action	_	_	0	_	_	Offset=787-790
+2	well	_	Modifier	_	_	0	_	_	Offset=791-795
+
+# sent_id = s8
+# text = Place Optiprep in the sterile 50 ml falcon tube.
+1	Make	_	Action	_	_	0	_	_	Offset=1073-1077
+2	loading	_	Reagent	_	_	0	_	_	Offset=1080-1094
+3	centrifuge	_	Location	_	_	0	_	_	Offset=1103-1119
+4	attaching	_	Action	_	_	0	_	_	Offset=1123-1132
+5	thin	_	Location	_	_	0	_	_	Offset=1137-1145
+6	pasteur	_	Device	_	_	5	Meronym	_	Offset=1151-1164
+7	5	_	Amount	_	_	8	Setting	_	Offset=1170-1174
+8	syringe	_	Device	_	_	0	_	_	Offset=1175-1182
+9	parafilm	_	Seal	_	_	0	_	_	Offset=1188-1196
+10	rubber	_	Seal	_	_	9	Or	_	Offset=1202-1213
+
+# sent_id = s9
+# text = Make 25%, 30%, 35%, 40% and 45% Optiprep solutions in the labeled falcon tubes.
+1	Hold	_	Action	_	_	0	_	_	Offset=1215-1219
+2	syringe	_	Device	_	_	0	_	_	Offset=1224-1231
+3	ring	_	Device	_	_	0	_	_	Offset=1239-1249
+4	end	_	Location	_	_	0	_	_	Offset=1262-1265
+5	Pasteur	_	Device	_	_	4	Meronym	_	Offset=1273-1290
+6	hovers	_	Action	_	_	0	_	_	Offset=1291-1297
+7	just	_	Modifier	_	_	0	_	_	Offset=1298-1308
+8	bottom	_	Location	_	_	0	_	_	Offset=1313-1319
+9	tube	_	Location	_	_	8	Meronym	_	Offset=1327-1331
+
+# sent_id = s10
+# text = You will need 2.5 ml of each solution for every gradient you plan to make.
+1	Pipette	_	Action	_	_	0	_	_	Offset=1333-1340
+2	2.4	_	Amount	_	_	4	Measure	_	Offset=1341-1347
+3	25%	_	Concentration	_	_	4	Measure	_	Offset=1351-1354
+4	solution	_	Reagent	_	_	0	_	_	Offset=1355-1363
+5	syringe	_	Device	_	_	0	_	_	Offset=1373-1380
+
+# sent_id = s11
+# text = Mix well.
+1	flow	_	Action	_	_	0	_	_	Offset=1399-1403
+2	centrifuge	_	Location	_	_	0	_	_	Offset=1413-1428
+3	gravity	_	Method	_	_	0	_	_	Offset=1433-1440
+
+# sent_id = s12
+# text = For example, if you are making 2 gradients, you will prepare 5 ml of each solution as follows: 25% = 3 ml media + 2 ml Optiprep30% = 2.5 ml media + 2.5 ml OptiPrep35% = 2.1 ml media + 2.9 ml OptiPrep40% = 1.7 ml media + 3.3 ml OptiPrep45% = 1.25 ml media + 3.75 ml OptiPrep. 
+1	add	_	Action	_	_	0	_	_	Offset=1493-1496
+2	2.4	_	Amount	_	_	3	Measure	_	Offset=1497-1503
+3	30%	_	Reagent	_	_	0	_	_	Offset=1511-1514
+
+# sent_id = s13
+# text = Make a loading system for the centrifuge tubes by attaching the thin end of a pasteur pipet to a 5 ml syringe with parafilm or a rubber tube.
+1	Repeat	_	Action	_	_	0	_	_	Offset=1516-1522
+2	all	_	Modifier	_	_	3	Mod-Link	_	Offset=1527-1530
+3	solutions	_	Reagent	_	_	0	_	_	Offset=1531-1540
+
+# sent_id = s14
+# text = Hold the syringe with a ring clamp so that the end of the Pasteur pipet tip hovers just above the bottom of the tube.
+1	not	_	Modifier	_	_	0	_	_	Offset=1552-1558
+2	syringe	_	Device	_	_	0	_	_	Offset=1567-1574
+3	run	_	Action	_	_	0	_	_	Offset=1575-1582
+4	introduce	_	Action	_	_	0	_	_	Offset=1594-1603
+5	air	_	Reagent	_	_	0	_	_	Offset=1604-1615
+6	tube	_	Location	_	_	0	_	_	Offset=1625-1629
+7	disrupting	_	Action	_	_	0	_	_	Offset=1634-1644
+8	reagent	_	Reagent	_	_	0	_	_	Offset=1649-1656
+
+# sent_id = s15
+# text = Pipette 2.4 ml of 25% solution into the syringe.
+1	restart	_	Action	_	_	0	_	_	Offset=1683-1690
+2	flow	_	Method	_	_	0	_	_	Offset=1695-1699
+3	placing	_	Action	_	_	0	_	_	Offset=1703-1710
+4	thumb	_	Device	_	_	0	_	_	Offset=1716-1721
+5	top	_	Location	_	_	0	_	_	Offset=1729-1732
+6	syringe	_	Device	_	_	5	Meronym	_	Offset=1740-1747
+7	generate	_	Action	_	_	0	_	_	Offset=1751-1759
+8	seal	_	Action	_	_	0	_	_	Offset=1764-1768
+9	move	_	Action	_	_	0	_	_	Offset=1778-1782
+10	thumb	_	Device	_	_	0	_	_	Offset=1788-1793
+11	up	_	Method	_	_	0	_	_	Offset=1794-1805
+
+# sent_id = s16
+# text = It will begin to flow into the centrifuge tube via gravity.
+1	seal	_	Action	_	_	0	_	_	Offset=1918-1922
+2	top	_	Location	_	_	0	_	_	Offset=1927-1930
+3	parafilm	_	Seal	_	_	0	_	_	Offset=1936-1944
+4	place	_	Action	_	_	0	_	_	Offset=1949-1954
+5	tubes	_	Location	_	_	0	_	_	Offset=1959-1964
+6	fridge	_	Device	_	_	0	_	_	Offset=1972-1978
+
+# sent_id = s17
+# text = When nearly all the solution has left the syringe, add 2.4 ml of the 30%.
+1	tubes	_	Location	_	_	0	_	_	Offset=1990-1995
+2	sit	_	Action	_	_	0	_	_	Offset=1999-2002
+3	overnight	_	Time	_	_	0	_	_	Offset=2003-2012
+4	continuous	_	Reagent	_	_	0	_	_	Offset=2023-2042
+
+# sent_id = s18
+# text = Repeat for all solutions.
+1	Tubes	_	Location	_	_	0	_	_	Offset=2051-2056
+2	sit	_	Action	_	_	0	_	_	Offset=2061-2064
+3	fridge	_	Device	_	_	0	_	_	Offset=2072-2078
+4	several	_	Time	_	_	0	_	_	Offset=2083-2096
+
+# sent_id = s19
+# text = NOTE: Try not to let the syringe run dry as it will introduce air bubbles into the tube and disrupting the reagent.
+1	pipette	_	Action	_	_	0	_	_	Offset=2211-2218
+2	0.5	_	Amount	_	_	3	Measure	_	Offset=2219-2229
+3	viral	_	Reagent	_	_	0	_	_	Offset=2238-2255
+4	each	_	Reagent	_	_	0	_	_	Offset=2261-2274
+
+# sent_id = s20
+# text = If this happens, you can restart the flow by placing your thumb on the top of the syringe to generate and seal and then move your thumb up and down to increase the pressure in the syringe.
+1	Balance	_	Action	_	_	0	_	_	Offset=2276-2283
+2	tubes	_	Location	_	_	0	_	_	Offset=2288-2293
+3	sterile	_	Modifier	_	_	4	Mod-Link	_	Offset=2300-2307
+4	growth	_	Reagent	_	_	0	_	_	Offset=2308-2321
+
+# sent_id = s21
+# text = Once all tube has been poured (all percent solutions have been added), seal the top with parafilm and place the tubes in the fridge.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2392-2402
+2	tubes	_	Location	_	_	0	_	_	Offset=2407-2412
+3	swinging	_	Device	_	_	0	_	_	Offset=2418-2439
+4	Beckman	_	Device	_	_	3	Meronym	_	Offset=2447-2468
+5	max	_	Modifier	_	_	6	Mod-Link	_	Offset=2493-2502
+6	40,000	_	Speed	_	_	4	Setting	_	Offset=2504-2514
+7	at	_	Modifier	_	_	8	Mod-Link	_	Offset=2520-2528
+8	4	_	Time	_	_	4	Setting	_	Offset=2529-2536
+9	8˚C	_	Temperature	_	_	4	Setting	_	Offset=2540-2543
+
+# sent_id = s22
+# text = Allow the tubes to sit overnight to form a continuous gradient.
+1	spin	_	Action	_	_	0	_	_	Offset=2581-2585
+2	longer	_	Modifier	_	_	3	Mod-Link	_	Offset=2590-2601
+3	4	_	Time	_	_	0	_	_	Offset=2602-2609
+4	achieve	_	Method	_	_	0	_	_	Offset=2613-2631
+
+# sent_id = s23
+# text = NOTE:  Tubes may sit in the fridge for several weeks and will still be good as long as they are sealed.
+1	Remove	_	Action	_	_	0	_	_	Offset=2694-2700
+2	tubes	_	Location	_	_	6	Coreference-Link	_	Offset=2705-2710
+3	carefully	_	Modifier	_	_	0	_	_	Offset=2711-2720
+4	rotor	_	Device	_	_	0	_	_	Offset=2732-2737
+5	place	_	Action	_	_	0	_	_	Offset=2742-2747
+6	them	_	Mention	_	_	0	_	_	Offset=2748-2752
+7	standing	_	Location	_	_	0	_	_	Offset=2758-2772
+8	visualize	_	Action	_	_	0	_	_	Offset=2776-2785
+9	bands	_	Reagent	_	_	0	_	_	Offset=2790-2795
+
+# sent_id = s24
+# text = Separating viruses on the Optiprep gradient.
+1	suspend	_	Action	_	_	0	_	_	Offset=2850-2857
+2	tubes	_	Location	_	_	7	Coreference-Link	_	Offset=2862-2867
+3	beaker	_	Location	_	_	4	Meronym	_	Offset=2873-2879
+4	water	_	Reagent	_	_	0	_	_	Offset=2883-2888
+5	remove	_	Action	_	_	0	_	_	Offset=2890-2896
+6	back	_	Action	_	_	0	_	_	Offset=2901-2911
+7	them	_	Mention	_	_	0	_	_	Offset=2912-2916
+
+# sent_id = s25
+# text = The next morning, pipette 0.5 - 4 ml of your viral concentrate onto each gradient.
+1	Extract	_	Action	_	_	0	_	_	Offset=2936-2943
+2	bands	_	Reagent	_	_	0	_	_	Offset=2948-2953
+3	separately	_	Modifier	_	_	0	_	_	Offset=2954-2964
+4	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=2971-2978
+5	needles	_	Device	_	_	0	_	_	Offset=2979-2986
+6	3	_	Amount	_	_	7	Setting	_	Offset=2993-2997
+7	syringe	_	Device	_	_	0	_	_	Offset=2998-3005
+
+# sent_id = s26
+# text = Balance the tubes using sterile growth medium if necessary (or whatever solution the virus sample is suspended in).
+1	20	_	Generic-Measure	_	_	3	Setting	_	Offset=3026-3034
+2	half-inch	_	Size	_	_	3	Setting	_	Offset=3035-3044
+3	needles	_	Device	_	_	0	_	_	Offset=3045-3052
+4	avoid	_	Action	_	_	0	_	_	Offset=3070-3086
+5	both	_	Modifier	_	_	6	Mod-Link	_	Offset=3087-3091
+6	walls	_	Location	_	_	0	_	_	Offset=3092-3097
+7	tube	_	Location	_	_	6	Meronym	_	Offset=3105-3109
+
+# sent_id = s27
+# text = Centrifuge the tubes in a swinging bucket rotor in the Beckman Advanti J30-I (use rotor JS-25.15) at max speed (40,000 rpm) for at least 4 hours at 8˚C.
+1	Do	_	Action	_	_	0	_	_	Offset=3111-3121
+2	any	_	Modifier	_	_	3	Mod-Link	_	Offset=3122-3125
+3	needles	_	Device	_	_	0	_	_	Offset=3126-3133
+4	½	_	Size	_	_	3	Setting	_	Offset=3146-3147
+
+# sent_id = s28
+# text = NOTE: Occasionally you will need to spin for longer than 4 hours to achieve separation.
+1	Wipe	_	Action	_	_	0	_	_	Offset=3150-3154
+2	sides	_	Location	_	_	0	_	_	Offset=3159-3164
+3	tube	_	Location	_	_	2	Meronym	_	Offset=3172-3181
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=3187-3194
+
+# sent_id = s29
+# text = In these cases an overnight or 24 hour spin may be required.
+1	Place	_	Action	_	_	0	_	_	Offset=3196-3201
+2	syringe	_	Device	_	_	0	_	_	Offset=3206-3213
+3	just	_	Modifier	_	_	4	Mod-Link	_	Offset=3214-3218
+4	below	_	Location	_	_	0	_	_	Offset=3219-3224
+5	band	_	Reagent	_	_	4	Meronym	_	Offset=3229-3233
+6	puncture	_	Action	_	_	0	_	_	Offset=3238-3246
+7	wall	_	Location	_	_	0	_	_	Offset=3251-3255
+
+# sent_id = s30
+# text = Remove the tubes carefully out of the rotor and place them on a standing clamp to visualize the bands.
+1	Aspirate	_	Action	_	_	0	_	_	Offset=3257-3265
+2	remove	_	Action	_	_	0	_	_	Offset=3270-3276
+3	band	_	Reagent	_	_	0	_	_	Offset=3281-3285
+4	syringe	_	Device	_	_	0	_	_	Offset=3295-3302
+
+# sent_id = s31
+# text = NOTE:  Sometimes the bands are not visible until you suspend the tubes in a beaker of water, remove and back light them.
+1	Place	_	Action	_	_	0	_	_	Offset=3388-3393
+2	piece	_	Seal	_	_	0	_	_	Offset=3396-3416
+3	hole	_	Location	_	_	0	_	_	Offset=3426-3430
+4	tube	_	Location	_	_	3	Meronym	_	Offset=3438-3442
+5	prevent	_	Action	_	_	0	_	_	Offset=3446-3453
+6	gradient	_	Reagent	_	_	0	_	_	Offset=3458-3466
+7	leaking	_	Method	_	_	0	_	_	Offset=3472-3483
+
+# sent_id = s32
+# text = Extracting bands.
+1	Place	_	Action	_	_	0	_	_	Offset=3485-3490
+2	sample	_	Reagent	_	_	0	_	_	Offset=3495-3501
+3	1.5	_	Amount	_	_	4	Measure	_	Offset=3509-3515
+4	centrifuge	_	Location	_	_	0	_	_	Offset=3516-3531
+5	store	_	Action	_	_	0	_	_	Offset=3536-3541
+6	4˚C	_	Temperature	_	_	0	_	_	Offset=3545-3548
+

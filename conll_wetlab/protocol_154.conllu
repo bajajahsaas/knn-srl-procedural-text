@@ -1,0 +1,205 @@
+# sent_id = s1
+# text = High quality DNA extraction from Fungi_small scale
+1	Collect	_	Action	_	_	0	_	_	Offset=51-58
+2	tissue/spores	_	Reagent	_	_	0	_	_	Offset=59-72
+3	2ml	_	Amount	_	_	4	Measure	_	Offset=88-91
+4	eppendorf	_	Location	_	_	0	_	_	Offset=92-106
+5	one	_	Numerical	_	_	6	Measure	_	Offset=112-115
+6	metal	_	Device	_	_	0	_	_	Offset=116-126
+
+# sent_id = s2
+# text = Collect tissue/spores (10-20mg) in a 2ml eppendorf tube with one metal bead.
+1	lyse	_	Action	_	_	0	_	_	Offset=128-132
+2	tissue/spores	_	Reagent	_	_	0	_	_	Offset=133-146
+3	liquid	_	Reagent	_	_	0	_	_	Offset=152-167
+4	precooled	_	Modifier	_	_	5	Mod-Link	_	Offset=173-182
+5	tissuelycer	_	Device	_	_	0	_	_	Offset=183-194
+
+# sent_id = s3
+# text = lyse tissue/spores with liquid nitrogen in a precooled tissuelycer.
+1	using	_	Action	_	_	0	_	_	Offset=196-201
+2	50Hz	_	Generic-Measure	_	_	0	_	_	Offset=202-206
+3	1min	_	Time	_	_	0	_	_	Offset=211-215
+
+# sent_id = s4
+# text = using 50Hz for 1min.
+1	lysis	_	Reagent	_	_	0	_	_	Offset=222-234
+2	mixing	_	Action	_	_	0	_	_	Offset=238-244
+3	buffer	_	Reagent	_	_	0	_	_	Offset=245-257
+4	briefly	_	Modifier	_	_	0	_	_	Offset=290-297
+5	heat	_	Action	_	_	0	_	_	Offset=298-302
+6	64	_	Temperature	_	_	0	_	_	Offset=306-311
+
+# sent_id = s5
+# text = Make lysis buffer by mixing buffer A+B+C (2.5:2.5:1 + 0.1%PVP final) and briefly heat to 64 °C.
+1	cool	_	Action	_	_	0	_	_	Offset=317-321
+2	room	_	Temperature	_	_	0	_	_	Offset=325-341
+3	add	_	Action	_	_	0	_	_	Offset=343-346
+4	RNAse	_	Reagent	_	_	0	_	_	Offset=347-355
+5	lysis	_	Reagent	_	_	0	_	_	Offset=359-371
+
+# sent_id = s6
+# text = Let cool to room temperature, add RNAse T1 to lysis buffer according to 1:1750 of RNAse T1: lysis buffer ratio.
+1	Add	_	Action	_	_	0	_	_	Offset=425-428
+2	500ul	_	Amount	_	_	3	Measure	_	Offset=429-434
+3	lysis	_	Reagent	_	_	0	_	_	Offset=435-447
+4	powder	_	Reagent	_	_	0	_	_	Offset=457-463
+5	briefly	_	Modifier	_	_	0	_	_	Offset=465-472
+6	vortex	_	Action	_	_	0	_	_	Offset=473-479
+7	incubate	_	Action	_	_	0	_	_	Offset=481-489
+8	64oC	_	Temperature	_	_	0	_	_	Offset=493-497
+9	30	_	Time	_	_	0	_	_	Offset=502-509
+10	Cool	_	Action	_	_	0	_	_	Offset=510-514
+11	ice	_	Location	_	_	0	_	_	Offset=518-521
+12	5	_	Time	_	_	0	_	_	Offset=526-532
+
+# sent_id = s7
+# text = Add 500ul lysis buffer into the powder, briefly vortex, incubate at 64oC for 30 mins Cool on ice for 5 mins.
+1	Add	_	Action	_	_	0	_	_	Offset=534-537
+2	100	_	Amount	_	_	3	Measure	_	Offset=538-544
+3	KAc	_	Reagent	_	_	0	_	_	Offset=558-561
+4	5M	_	Concentration	_	_	3	Measure	_	Offset=562-564
+5	mix	_	Action	_	_	0	_	_	Offset=566-569
+6	inversion	_	Method	_	_	0	_	_	Offset=573-582
+7	incubate	_	Action	_	_	0	_	_	Offset=584-592
+8	ice	_	Location	_	_	0	_	_	Offset=596-599
+9	max	_	Modifier	_	_	10	Mod-Link	_	Offset=604-607
+10	5	_	Time	_	_	0	_	_	Offset=608-614
+
+# sent_id = s8
+# text = Add 100 ul (0.2 vol) of KAc 5M, mix by inversion, incubate on ice for max 5 mins.
+1	Spin	_	Action	_	_	0	_	_	Offset=616-620
+2	4oC	_	Temperature	_	_	0	_	_	Offset=624-627
+3	max	_	Speed	_	_	0	_	_	Offset=631-640
+4	10	_	Time	_	_	0	_	_	Offset=645-652
+
+# sent_id = s9
+# text = Spin at 4oC at max speed for 10 mins.
+1	Transfer	_	Action	_	_	0	_	_	Offset=654-662
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=663-674
+3	fresh	_	Modifier	_	_	4	Mod-Link	_	Offset=678-683
+4	eppendorf	_	Location	_	_	6	Meronym	_	Offset=684-698
+5	500ul	_	Amount	_	_	6	Measure	_	Offset=710-715
+6	P/C/I	_	Reagent	_	_	0	_	_	Offset=724-729
+7	mix	_	Action	_	_	0	_	_	Offset=735-738
+8	inversion	_	Method	_	_	0	_	_	Offset=742-751
+9	2	_	Time	_	_	0	_	_	Offset=756-762
+
+# sent_id = s10
+# text = Transfer supernatant to fresh eppendorf tube containing 500ul (1vol) (P/C/I) and mix by inversion for 2 mins.
+1	Spin	_	Action	_	_	0	_	_	Offset=764-768
+2	4	_	Temperature	_	_	0	_	_	Offset=772-776
+3	max	_	Speed	_	_	0	_	_	Offset=781-790
+4	10	_	Time	_	_	0	_	_	Offset=795-802
+
+# sent_id = s11
+# text = Spin at 4 °C and max speed for 10 mins.
+1	Transfer	_	Action	_	_	0	_	_	Offset=804-812
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=813-824
+3	~400ul	_	Amount	_	_	2	Measure	_	Offset=826-832
+4	fresh	_	Modifier	_	_	5	Mod-Link	_	Offset=837-842
+5	eppendorf	_	Location	_	_	8	Meronym	_	Offset=843-857
+6	500ul	_	Amount	_	_	8	Measure	_	Offset=869-874
+7	RT	_	Modifier	_	_	8	Mod-Link	_	Offset=875-877
+8	isopropanol	_	Reagent	_	_	0	_	_	Offset=878-889
+
+# sent_id = s12
+# text = Transfer supernatant (~400ul) to fresh eppendorf tube containing 500ul RT isopropanol.
+1	Incubate	_	Action	_	_	0	_	_	Offset=891-899
+2	RT	_	Temperature	_	_	0	_	_	Offset=903-905
+3	5-10mins	_	Time	_	_	0	_	_	Offset=910-918
+
+# sent_id = s13
+# text = Incubate at RT for 5-10mins.
+1	Spin	_	Action	_	_	0	_	_	Offset=920-924
+2	4	_	Temperature	_	_	0	_	_	Offset=928-932
+3	max	_	Speed	_	_	0	_	_	Offset=937-946
+4	30	_	Time	_	_	0	_	_	Offset=951-958
+
+# sent_id = s14
+# text = Spin at 4 °C and max speed for 30 mins.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=960-969
+2	remove	_	Action	_	_	0	_	_	Offset=970-976
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=977-988
+4	pipette	_	Device	_	_	0	_	_	Offset=994-1001
+5	wash	_	Action	_	_	0	_	_	Offset=1006-1010
+6	1mL	_	Amount	_	_	9	Measure	_	Offset=1016-1019
+7	fresh	_	Modifier	_	_	9	Mod-Link	_	Offset=1020-1025
+8	70%	_	Concentration	_	_	9	Measure	_	Offset=1026-1029
+9	Ethanol	_	Reagent	_	_	0	_	_	Offset=1030-1037
+10	invert	_	Action	_	_	0	_	_	Offset=1039-1045
+11	several	_	Numerical	_	_	0	_	_	Offset=1046-1053
+12	dislodge	_	Action	_	_	0	_	_	Offset=1063-1071
+13	pellet	_	Reagent	_	_	0	_	_	Offset=1072-1078
+
+# sent_id = s15
+# text = Carefully remove supernatant with pipette and wash with 1mL fresh 70% Ethanol, invert several times to dislodge pellet.
+1	Spin	_	Action	_	_	0	_	_	Offset=1080-1084
+2	table	_	Device	_	_	0	_	_	Offset=1088-1108
+3	5mins	_	Time	_	_	0	_	_	Offset=1113-1118
+4	13000g	_	Speed	_	_	0	_	_	Offset=1122-1128
+
+# sent_id = s16
+# text = Spin in table top centrifuge for 5mins at 13000g.
+1	Remove	_	Action	_	_	0	_	_	Offset=1130-1136
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1137-1148
+3	pipette	_	Device	_	_	0	_	_	Offset=1154-1161
+4	wash	_	Action	_	_	0	_	_	Offset=1166-1170
+5	1mL	_	Amount	_	_	8	Measure	_	Offset=1176-1179
+6	fresh	_	Modifier	_	_	8	Mod-Link	_	Offset=1180-1185
+7	70%	_	Concentration	_	_	8	Measure	_	Offset=1186-1189
+8	Ethanol	_	Reagent	_	_	0	_	_	Offset=1190-1197
+9	invert	_	Action	_	_	0	_	_	Offset=1199-1205
+10	several	_	Numerical	_	_	0	_	_	Offset=1206-1213
+11	dislodge	_	Action	_	_	0	_	_	Offset=1223-1231
+12	pellet	_	Reagent	_	_	0	_	_	Offset=1232-1238
+
+# sent_id = s17
+# text = Remove supernatant with pipette and wash with 1mL fresh 70% Ethanol, invert several times to dislodge pellet.
+1	Spin	_	Action	_	_	0	_	_	Offset=1240-1244
+2	table	_	Device	_	_	0	_	_	Offset=1248-1268
+3	5mins	_	Time	_	_	0	_	_	Offset=1273-1278
+4	13000g	_	Speed	_	_	0	_	_	Offset=1282-1288
+
+# sent_id = s18
+# text = Spin in table top centrifuge for 5mins at 13000g.
+1	Remove	_	Action	_	_	0	_	_	Offset=1290-1296
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1297-1308
+3	pipette	_	Device	_	_	0	_	_	Offset=1314-1321
+
+# sent_id = s19
+# text = Remove supernatant with pipette.
+1	Spin	_	Action	_	_	0	_	_	Offset=1323-1327
+2	table	_	Device	_	_	0	_	_	Offset=1331-1351
+3	1min	_	Time	_	_	0	_	_	Offset=1356-1360
+4	13000g	_	Speed	_	_	0	_	_	Offset=1364-1370
+
+# sent_id = s20
+# text = Spin in table top centrifuge for 1min at 13000g.
+1	Remove	_	Action	_	_	0	_	_	Offset=1372-1378
+2	remaining	_	Modifier	_	_	3	Mod-Link	_	Offset=1383-1392
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=1393-1400
+4	pipette	_	Device	_	_	0	_	_	Offset=1406-1413
+
+# sent_id = s21
+# text = Remove the remaining ethanol with pipette.
+1	Air-dry	_	Action	_	_	0	_	_	Offset=1415-1422
+2	pellet	_	Reagent	_	_	0	_	_	Offset=1423-1429
+3	7mins	_	Time	_	_	0	_	_	Offset=1434-1439
+
+# sent_id = s22
+# text = Air-dry pellet for 7mins.
+1	Add	_	Action	_	_	0	_	_	Offset=1441-1444
+2	50ul	_	Amount	_	_	3	Measure	_	Offset=1445-1449
+3	TE	_	Reagent	_	_	0	_	_	Offset=1453-1462
+4	flick	_	Action	_	_	0	_	_	Offset=1467-1472
+5	tube	_	Location	_	_	0	_	_	Offset=1477-1481
+6	slightly	_	Modifier	_	_	0	_	_	Offset=1482-1490
+7	mixing	_	Action	_	_	0	_	_	Offset=1495-1501
+
+# sent_id = s23
+# text = Add 50ul of TE buffer and flick the tube slightly for mixing.
+1	DO	_	Action	_	_	0	_	_	Offset=1503-1516
+2	Store	_	Action	_	_	0	_	_	Offset=1534-1539
+3	-20oC	_	Temperature	_	_	0	_	_	Offset=1543-1548
+

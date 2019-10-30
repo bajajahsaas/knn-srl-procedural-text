@@ -1,0 +1,126 @@
+# sent_id = s1
+# text = Th17 Polarization of Mouse CD4+ Cells
+1	Harvest	_	Action	_	_	0	_	_	Offset=38-45
+2	lymph	_	Reagent	_	_	0	_	_	Offset=46-57
+3	mice	_	Reagent	_	_	0	_	_	Offset=134-138
+
+# sent_id = s2
+# text = Harvest lymph nodes (superficial cervical, mandibular, axillary, inguinal, and mesenteric) from mice.
+1	Tease	_	Action	_	_	0	_	_	Offset=140-145
+2	lymph	_	Reagent	_	_	0	_	_	Offset=146-157
+3	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=168-175
+4	70-µm	_	Size	_	_	5	Setting	_	Offset=176-181
+5	nylon	_	Device	_	_	0	_	_	Offset=182-201
+6	single-cell	_	Reagent	_	_	8	Meronym	_	Offset=212-251
+7	10%	_	Concentration	_	_	8	Measure	_	Offset=263-266
+8	FCS	_	Reagent	_	_	0	_	_	Offset=267-270
+
+# sent_id = s3
+# text = Tease lymph nodes through a sterile 70-µm nylon cell strainer to obtain single-cell suspensions incomplete RPMI containing 10% FCS (complete medium).
+1	Resuspend	_	Action	_	_	0	_	_	Offset=290-299
+2	cells	_	Reagent	_	_	0	_	_	Offset=300-305
+3	complete	_	Reagent	_	_	0	_	_	Offset=309-324
+4	your	_	Method	_	_	0	_	_	Offset=333-353
+5	isolate	_	Action	_	_	0	_	_	Offset=357-364
+6	CD4+	_	Reagent	_	_	0	_	_	Offset=365-376
+
+# sent_id = s4
+# text = Resuspend cells in complete medium and use your favorite method to isolate CD4+ cells.
+1	coat	_	Action	_	_	0	_	_	Offset=432-436
+2	60	_	Size	_	_	0	_	_	Offset=437-447
+3	plastic	_	Location	_	_	0	_	_	Offset=451-471
+4	anti-mouse	_	Reagent	_	_	0	_	_	Offset=477-508
+5	5	_	Concentration	_	_	0	_	_	Offset=510-518
+
+# sent_id = s5
+# text = Checkout Biocompare.com to find useful kits.
+1	Incubate	_	Action	_	_	0	_	_	Offset=520-528
+2	37°C	_	Temperature	_	_	0	_	_	Offset=532-536
+3	2	_	Time	_	_	0	_	_	Offset=541-548
+
+# sent_id = s6
+# text = On day 0, coat 60 × 15 mm of plastic petri dishes with anti-mouse CD3ε, clone 145-2C11 (5 µg/ml).
+1	incubate	_	Action	_	_	0	_	_	Offset=566-574
+2	4°C	_	Temperature	_	_	0	_	_	Offset=578-581
+3	overnight	_	Time	_	_	0	_	_	Offset=582-591
+
+# sent_id = s7
+# text = Incubate at 37°C for 2 hours.
+1	Aseptically	_	Modifier	_	_	0	_	_	Offset=594-605
+2	decant	_	Action	_	_	0	_	_	Offset=606-612
+3	antibody	_	Reagent	_	_	0	_	_	Offset=613-630
+4	plate	_	Location	_	_	0	_	_	Offset=640-645
+
+# sent_id = s8
+# text = (Alternatively, incubate at 4°C overnight.)
+1	Wash	_	Action	_	_	0	_	_	Offset=647-651
+2	plate	_	Location	_	_	0	_	_	Offset=652-657
+3	sterile	_	Modifier	_	_	0	_	_	Offset=663-670
+4	PBS	_	Reagent	_	_	0	_	_	Offset=671-674
+
+# sent_id = s9
+# text = Aseptically decant antibody solution from the plate.
+1	Wash	_	Action	_	_	0	_	_	Offset=687-691
+2	plate	_	Location	_	_	0	_	_	Offset=692-697
+3	sterile	_	Modifier	_	_	0	_	_	Offset=703-710
+4	PBS	_	Reagent	_	_	0	_	_	Offset=711-714
+
+# sent_id = s10
+# text = Wash plate with sterile PBS (wash 1/3).
+1	Wash	_	Action	_	_	0	_	_	Offset=727-731
+2	plate	_	Location	_	_	0	_	_	Offset=732-737
+3	sterile	_	Modifier	_	_	0	_	_	Offset=743-750
+4	PBS	_	Reagent	_	_	0	_	_	Offset=751-754
+
+# sent_id = s11
+# text = Wash plate with sterile PBS (wash 2/3).
+1	Discard	_	Action	_	_	0	_	_	Offset=767-774
+2	liquid	_	Reagent	_	_	0	_	_	Offset=775-781
+
+# sent_id = s12
+# text = Wash plate with sterile PBS (wash 3/3).
+1	Plate	_	Action	_	_	0	_	_	Offset=783-788
+2	CD4+	_	Reagent	_	_	0	_	_	Offset=789-799
+3	1.0	_	Generic-Measure	_	_	0	_	_	Offset=803-822
+
+# sent_id = s13
+# text = Discard liquid.
+1	Culture	_	Action	_	_	0	_	_	Offset=824-831
+2	cells	_	Reagent	_	_	0	_	_	Offset=832-837
+3	4	_	Time	_	_	0	_	_	Offset=842-848
+4	anti-mouse	_	Reagent	_	_	0	_	_	Offset=868-896
+5	5	_	Concentration	_	_	0	_	_	Offset=898-905
+6	recombinant	_	Reagent	_	_	0	_	_	Offset=908-930
+7	50	_	Concentration	_	_	0	_	_	Offset=932-940
+8	recombinant	_	Reagent	_	_	0	_	_	Offset=943-967
+9	1	_	Concentration	_	_	0	_	_	Offset=969-976
+10	recombinant	_	Reagent	_	_	0	_	_	Offset=979-1002
+11	5	_	Concentration	_	_	0	_	_	Offset=1004-1011
+12	anti-mouse	_	Reagent	_	_	0	_	_	Offset=1014-1029
+13	10	_	Concentration	_	_	0	_	_	Offset=1031-1039
+14	anti-mouse	_	Reagent	_	_	0	_	_	Offset=1046-1062
+15	10	_	Concentration	_	_	0	_	_	Offset=1064-1072
+
+# sent_id = s14
+# text = Plate CD4+ cells at 1.0 x 106 /1ml/well.
+1	slowly	_	Modifier	_	_	0	_	_	Offset=1085-1091
+2	add	_	Action	_	_	0	_	_	Offset=1092-1095
+3	5	_	Amount	_	_	0	_	_	Offset=1096-1100
+4	fresh	_	Modifier	_	_	5	Mod-Link	_	Offset=1104-1109
+5	media	_	Reagent	_	_	0	_	_	Offset=1110-1115
+6	antibodies/cytokines	_	Reagent	_	_	0	_	_	Offset=1153-1173
+
+# sent_id = s15
+# text = Culture cells for 4 days in the presence of anti-mouse CD28, clone 37.51 (5 µg/mL), recombinant mouse IL-6 (50 ng/mL), recombinant human TGF-β1 (1 ng/mL), recombinant mouse IL-23 (5 ng/ml), anti-mouse IL-4 (10 µg/mL), and anti-mouse IFN-γ (10 µg/mL).
+1	wash	_	Action	_	_	0	_	_	Offset=1202-1206
+2	cells	_	Reagent	_	_	0	_	_	Offset=1207-1212
+3	once	_	Numerical	_	_	0	_	_	Offset=1213-1217
+4	restimulate	_	Action	_	_	0	_	_	Offset=1227-1238
+5	complete	_	Reagent	_	_	0	_	_	Offset=1242-1257
+6	500	_	Concentration	_	_	7	Measure	_	Offset=1263-1272
+7	PMA	_	Reagent	_	_	0	_	_	Offset=1273-1276
+8	500	_	Concentration	_	_	9	Measure	_	Offset=1281-1290
+9	ionomycin	_	Reagent	_	_	0	_	_	Offset=1291-1300
+10	Brefeldin	_	Reagent	_	_	0	_	_	Offset=1321-1332
+11	4	_	Time	_	_	0	_	_	Offset=1393-1404
+

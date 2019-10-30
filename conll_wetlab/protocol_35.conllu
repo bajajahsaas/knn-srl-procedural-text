@@ -1,0 +1,182 @@
+# sent_id = s1
+# text = Making spike-in transcripts for mRNA normalization
+1	Grow	_	Action	_	_	0	_	_	Offset=51-55
+2	DH5alpha	_	Reagent	_	_	0	_	_	Offset=56-76
+3	overnight	_	Time	_	_	0	_	_	Offset=77-86
+4	pSP64	_	Reagent	_	_	5	Meronym	_	Offset=92-113
+5	inserted	_	Reagent	_	_	0	_	_	Offset=125-151
+
+# sent_id = s2
+# text = Grow DH5alpha ecoli cells overnight with pSP64 poly(A) plasmid containing inserted spike-in sequence.
+1	Set	_	Action	_	_	0	_	_	Offset=212-218
+2	digestion	_	Reagent	_	_	0	_	_	Offset=223-241
+3	50ul	_	Amount	_	_	5	Measure	_	Offset=245-249
+4	1x	_	Concentration	_	_	5	Measure	_	Offset=250-252
+5	EcoRI	_	Reagent	_	_	0	_	_	Offset=253-276
+6	~3ug	_	Amount	_	_	7	Measure	_	Offset=282-286
+7	pSP64-NSERT-poly(A)	_	Reagent	_	_	0	_	_	Offset=287-306
+8	5ul	_	Amount	_	_	9	Measure	_	Offset=311-314
+9	EcoRI	_	Reagent	_	_	0	_	_	Offset=315-320
+
+# sent_id = s3
+# text = Miniprep plasmids, quantify.
+1	Incubate	_	Action	_	_	0	_	_	Offset=322-330
+2	2	_	Time	_	_	0	_	_	Offset=331-338
+3	37C	_	Temperature	_	_	0	_	_	Offset=345-348
+
+# sent_id = s4
+# text = You'll need a lot of plasmid.
+1	Pour	_	Action	_	_	0	_	_	Offset=387-391
+2	1%	_	Concentration	_	_	3	Measure	_	Offset=394-396
+3	agarose	_	Reagent	_	_	0	_	_	Offset=397-408
+4	run	_	Action	_	_	0	_	_	Offset=413-416
+5	~100ng	_	Amount	_	_	6	Measure	_	Offset=417-423
+6	digest	_	Reagent	_	_	0	_	_	Offset=427-456
+7	check	_	Method	_	_	0	_	_	Offset=461-478
+
+# sent_id = s5
+# text = Set up the digestion reaction in 50ul 1x EcoRI compatible buffer with ~3ug pSP64-NSERT-poly(A) and 5ul EcoRI.
+1	clean	_	Action	_	_	0	_	_	Offset=521-529
+2	reactions	_	Reagent	_	_	0	_	_	Offset=530-539
+3	PCR	_	Reagent	_	_	0	_	_	Offset=546-562
+4	pooling	_	Action	_	_	0	_	_	Offset=564-571
+5	repeats	_	Reagent	_	_	0	_	_	Offset=572-606
+
+# sent_id = s6
+# text = Incubate 2 hours each, 37C.
+1	Quantify	_	Action	_	_	0	_	_	Offset=622-630
+2	nanodrop	_	Device	_	_	0	_	_	Offset=637-645
+3	concentration	_	Measure-Type	_	_	0	_	_	Offset=666-679
+
+# sent_id = s7
+# text = Save some plasmid for the gel below.
+1	Set	_	Action	_	_	0	_	_	Offset=681-687
+2	SP6	_	Reagent	_	_	0	_	_	Offset=688-711
+
+# sent_id = s8
+# text = Pour a 1% agarose gel and run ~100ng of digest and undigested plasmid, to check for cutting.
+1	Make	_	Action	_	_	0	_	_	Offset=932-936
+2	new	_	Modifier	_	_	3	Mod-Link	_	Offset=937-940
+3	tubes	_	Location	_	_	0	_	_	Offset=941-946
+4	6.25ul	_	Amount	_	_	5	Measure	_	Offset=950-956
+5	linarized	_	Reagent	_	_	0	_	_	Offset=960-981
+
+# sent_id = s9
+# text = Assuming you observe complete digestion, clean up reactions using PCR clean up kit, pooling repeats of the same plasmid digest at this stage.
+1	kit	_	Reagent	_	_	0	_	_	Offset=989-1009
+2	dilute	_	Action	_	_	0	_	_	Offset=1011-1017
+3	1ul	_	Amount	_	_	4	Measure	_	Offset=1018-1021
+4	provided	_	Reagent	_	_	0	_	_	Offset=1029-1046
+5	5.25ul	_	Amount	_	_	6	Measure	_	Offset=1052-1058
+6	water	_	Reagent	_	_	0	_	_	Offset=1062-1067
+
+# sent_id = s10
+# text = Quantify using nanodrop to have an idea for concentration.
+1	Add	_	Action	_	_	0	_	_	Offset=1125-1128
+2	13.75ul	_	Amount	_	_	3	Measure	_	Offset=1129-1136
+3	SP6	_	Reagent	_	_	0	_	_	Offset=1140-1163
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=1167-1171
+5	tube	_	Location	_	_	0	_	_	Offset=1172-1176
+6	linearized	_	Reagent	_	_	5	Meronym	_	Offset=1180-1194
+
+# sent_id = s11
+# text = Set up SP6 reaction master mix, from the kit reagents: 1x5xTxn optimized 5x buffer4ul 20ulDTT (100mM)2ul 10ulRecombinant RNasin0.75ul 3.75ul10mM rATP1ul 5ul10mM rUTP1ul 5ul10mM rCTP1ul 5ul10mM rGTP1ul 5ul4tUTP (10mM)2ul 10ulSP6 RNA Polymerase1ul 5ul.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1196-1204
+2	1-2hr	_	Time	_	_	0	_	_	Offset=1205-1210
+3	30/37C	_	Temperature	_	_	4	Setting	_	Offset=1214-1220
+4	water	_	Device	_	_	0	_	_	Offset=1221-1231
+
+# sent_id = s12
+# text = Make new tubes of 6.25ul of linarized plasmid DNA.
+1	Remove	_	Action	_	_	0	_	_	Offset=1233-1239
+2	2ul	_	Amount	_	_	4	Measure	_	Offset=1240-1243
+3	PCR	_	Location	_	_	0	_	_	Offset=1249-1258
+4	later	_	Reagent	_	_	0	_	_	Offset=1263-1272
+
+# sent_id = s13
+# text = For a kit positive control, dilute 1ul of the provided standard with 5.25ul of water.
+1	add	_	Action	_	_	0	_	_	Offset=1287-1290
+2	1ul	_	Amount	_	_	3	Measure	_	Offset=1291-1294
+3	RQ1	_	Reagent	_	_	0	_	_	Offset=1298-1318
+
+# sent_id = s14
+# text = Concentrations should be in the range of 100-200 ng/ul.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1320-1328
+2	15min	_	Time	_	_	0	_	_	Offset=1329-1334
+3	37C	_	Temperature	_	_	0	_	_	Offset=1338-1341
+
+# sent_id = s15
+# text = Add 13.75ul of SP6 reaction master mix to each tube of linearized DNA.
+1	each	_	Reagent	_	_	0	_	_	Offset=1346-1359
+2	add	_	Action	_	_	0	_	_	Offset=1361-1364
+3	40ul	_	Amount	_	_	4	Measure	_	Offset=1365-1369
+4	Ampure	_	Reagent	_	_	0	_	_	Offset=1370-1385
+5	mix	_	Action	_	_	0	_	_	Offset=1390-1393
+6	well	_	Modifier	_	_	0	_	_	Offset=1394-1398
+7	pipette	_	Device	_	_	0	_	_	Offset=1404-1411
+
+# sent_id = s16
+# text = Incubate 1-2hr in 30/37C water bath.
+1	sit	_	Action	_	_	0	_	_	Offset=1417-1420
+2	RT	_	Temperature	_	_	0	_	_	Offset=1421-1423
+3	5min	_	Time	_	_	0	_	_	Offset=1428-1432
+
+# sent_id = s17
+# text = Remove 2ul into PCR tubes for later gel.
+1	Add	_	Action	_	_	0	_	_	Offset=1506-1509
+2	~500ul	_	Amount	_	_	4	Measure	_	Offset=1510-1516
+3	80%	_	Concentration	_	_	4	Measure	_	Offset=1517-1520
+4	etOH	_	Reagent	_	_	0	_	_	Offset=1521-1525
+5	beads	_	Reagent	_	_	0	_	_	Offset=1531-1536
+
+# sent_id = s18
+# text = To the rest, add 1ul of RQ1 RNase-Free DNase.
+1	sit	_	Action	_	_	0	_	_	Offset=1542-1545
+2	~30	_	Time	_	_	0	_	_	Offset=1546-1557
+3	aspirate	_	Action	_	_	0	_	_	Offset=1564-1572
+
+# sent_id = s19
+# text = Incubate 15min at 37C.
+1	Add	_	Action	_	_	0	_	_	Offset=1578-1581
+2	~500ul	_	Amount	_	_	4	Measure	_	Offset=1582-1588
+3	80%	_	Concentration	_	_	4	Measure	_	Offset=1589-1592
+4	etOH	_	Reagent	_	_	0	_	_	Offset=1593-1597
+5	beads	_	Reagent	_	_	0	_	_	Offset=1603-1608
+
+# sent_id = s20
+# text = To each reaction, add 40ul Ampure XP beads and mix well with pipette.
+1	sit	_	Action	_	_	0	_	_	Offset=1614-1617
+2	~30	_	Time	_	_	0	_	_	Offset=1618-1629
+3	aspirate	_	Action	_	_	0	_	_	Offset=1636-1644
+
+# sent_id = s21
+# text = Let sit RT for 5min.
+1	beads	_	Reagent	_	_	0	_	_	Offset=1721-1726
+2	dry	_	Action	_	_	0	_	_	Offset=1727-1730
+3	rack	_	Location	_	_	0	_	_	Offset=1738-1742
+4	kimwipe	_	Device	_	_	0	_	_	Offset=1750-1757
+5	10min	_	Time	_	_	0	_	_	Offset=1779-1784
+6	RT	_	Temperature	_	_	0	_	_	Offset=1785-1787
+
+# sent_id = s22
+# text = Collected beads to side in a magnetic rack.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1789-1798
+2	beads	_	Reagent	_	_	0	_	_	Offset=1799-1804
+3	20ul	_	Amount	_	_	4	Measure	_	Offset=1808-1812
+4	hyclone	_	Reagent	_	_	0	_	_	Offset=1813-1825
+
+# sent_id = s23
+# text = Aspirated supernatant, all.
+1	Run	_	Action	_	_	0	_	_	Offset=1827-1830
+2	~3ul	_	Amount	_	_	4	Measure	_	Offset=1831-1835
+3	1%	_	Concentration	_	_	4	Measure	_	Offset=1839-1841
+4	agarose	_	Reagent	_	_	0	_	_	Offset=1842-1857
+5	20min	_	Time	_	_	0	_	_	Offset=1868-1873
+6	100V	_	Generic-Measure	_	_	0	_	_	Offset=1877-1881
+7	NEB	_	Device	_	_	0	_	_	Offset=1891-1905
+
+# sent_id = s24
+# text = Add ~500ul 80% etOH onto beads.
+1	Quantify	_	Action	_	_	0	_	_	Offset=1963-1971
+2	qubit	_	Device	_	_	0	_	_	Offset=1975-1980
+

@@ -1,0 +1,68 @@
+# sent_id = s1
+# text = Protein Coomassie Blue Staining
+1	Submerge	_	Action	_	_	0	_	_	Offset=32-40
+2	protein	_	Reagent	_	_	0	_	_	Offset=41-63
+3	coomassie	_	Reagent	_	_	0	_	_	Offset=67-87
+4	shake	_	Action	_	_	0	_	_	Offset=92-97
+5	room	_	Temperature	_	_	0	_	_	Offset=101-117
+6	two	_	Time	_	_	0	_	_	Offset=122-131
+
+# sent_id = s2
+# text = Submerge protein acrylamide gel in coomassie blue stain and shake at room temperature for two hours.
+1	Pour	_	Action	_	_	0	_	_	Offset=133-141
+2	stain	_	Reagent	_	_	0	_	_	Offset=142-147
+3	bottle	_	Location	_	_	0	_	_	Offset=155-161
+4	wash	_	Action	_	_	0	_	_	Offset=194-198
+5	gel	_	Reagent	_	_	0	_	_	Offset=199-202
+6	water	_	Reagent	_	_	0	_	_	Offset=208-213
+7	pour	_	Action	_	_	0	_	_	Offset=220-224
+8	more	_	Amount	_	_	9	Measure	_	Offset=225-229
+9	stain	_	Reagent	_	_	0	_	_	Offset=230-235
+10	shake	_	Action	_	_	0	_	_	Offset=243-248
+11	room	_	Temperature	_	_	0	_	_	Offset=252-268
+12	another	_	Time	_	_	0	_	_	Offset=273-290
+
+# sent_id = s3
+# text = Pour off stain into a bottle (you can reuse it a few times), wash gel with water, then pour more stain on and shake at room temperature for another two hours.
+1	Pour	_	Action	_	_	0	_	_	Offset=292-300
+2	stain	_	Reagent	_	_	0	_	_	Offset=301-306
+3	bottle	_	Location	_	_	0	_	_	Offset=314-320
+4	wash	_	Action	_	_	0	_	_	Offset=322-326
+5	gel	_	Reagent	_	_	0	_	_	Offset=327-330
+6	water	_	Reagent	_	_	0	_	_	Offset=336-341
+7	take	_	Action	_	_	0	_	_	Offset=405-419
+8	pour	_	Action	_	_	0	_	_	Offset=426-430
+9	more	_	Amount	_	_	10	Measure	_	Offset=431-435
+10	stain	_	Reagent	_	_	0	_	_	Offset=436-441
+11	shake	_	Action	_	_	0	_	_	Offset=449-454
+12	room	_	Temperature	_	_	0	_	_	Offset=458-474
+13	overnight	_	Time	_	_	0	_	_	Offset=475-484
+
+# sent_id = s4
+# text = Pour off stain into a bottle, wash gel with water, you should be able to see a little something at this point so take a picture, then pour more stain on and shake at room temperature overnight.
+1	Pour	_	Action	_	_	0	_	_	Offset=486-494
+2	stain	_	Reagent	_	_	0	_	_	Offset=495-500
+3	take	_	Action	_	_	0	_	_	Offset=505-519
+4	protein	_	Reagent	_	_	0	_	_	Offset=527-540
+
+# sent_id = s5
+# text = Pour off stain and take a picture of the protein bands.
+1	Submerge	_	Action	_	_	0	_	_	Offset=542-550
+2	gel	_	Reagent	_	_	0	_	_	Offset=551-554
+3	destain	_	Reagent	_	_	5	Meronym	7:Meronym|9:Meronym	Offset=558-572
+4	50	_	Amount	_	_	5	Measure	_	Offset=574-579
+5	Acetic	_	Reagent	_	_	0	_	_	Offset=580-591
+6	100	_	Amount	_	_	7	Measure	_	Offset=593-599
+7	Methanol	_	Reagent	_	_	0	_	_	Offset=600-608
+8	350	_	Amount	_	_	9	Measure	_	Offset=610-616
+9	Water	_	Reagent	_	_	0	_	_	Offset=617-622
+10	hour	_	Time	_	_	0	_	_	Offset=631-635
+11	shake	_	Action	_	_	0	_	_	Offset=640-645
+12	room	_	Temperature	_	_	0	_	_	Offset=649-665
+
+# sent_id = s6
+# text = Submerge gel in destain buffer (50 mL Acetic Acid, 100 mL Methanol, 350 mL Water) for an hour and shake at room temperature.
+1	Wash	_	Action	_	_	0	_	_	Offset=667-671
+2	water	_	Reagent	_	_	0	_	_	Offset=677-682
+3	repeat	_	Action	_	_	0	_	_	Offset=688-701
+

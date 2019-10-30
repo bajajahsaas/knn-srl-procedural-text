@@ -1,0 +1,39 @@
+# sent_id = s1
+# text = Basic Illumina Sequence Quality Control
+1	Remove	_	Action	_	_	0	_	_	Offset=97-103
+2	increase	_	Action	_	_	0	_	_	Offset=129-137
+3	average	_	Measure-Type	_	_	0	_	_	Offset=138-159
+4	reads	_	Reagent	_	_	0	_	_	Offset=163-168
+5	28	_	Numerical	_	_	0	_	_	Offset=175-177
+6	sequencing	_	Reagent	_	_	0	_	_	Offset=190-208
+7	5'	_	Reagent	_	_	0	_	_	Offset=214-220
+8	Illumina	_	Reagent	_	_	0	_	_	Offset=232-249
+9	primers	_	Reagent	_	_	0	_	_	Offset=254-261
+10	removed	_	Action	_	_	0	_	_	Offset=262-269
+
+# sent_id = s2
+# text = Assess raw FASTQ sequences using the program FastQCGoal.
+1	Remove	_	Action	_	_	0	_	_	Offset=412-418
+2	Illumina	_	Reagent	_	_	0	_	_	Offset=419-445
+3	3'	_	Reagent	_	_	0	_	_	Offset=451-470
+4	preserve	_	Action	_	_	0	_	_	Offset=484-493
+5	reads	_	Reagent	_	_	0	_	_	Offset=493-498
+6	0	_	Generic-Measure	_	_	0	_	_	Offset=502-510
+
+# sent_id = s3
+# text = Remove low quality sequences to increase average quality score of reads above 28 For current sequencing centers, the 5' end of has had Illumina adapters and primers removed.
+1	Repeat	_	Action	_	_	0	_	_	Offset=512-518
+2	step	_	Method	_	_	0	_	_	Offset=519-523
+
+# sent_id = s4
+# text = But there can be inclusion of the 3' end Illumina adapter in DNA fragments with length less than the number of the cycles for the sequencer.
+1	Assess	_	Action	_	_	0	_	_	Offset=548-554
+2	Cutadapt	_	Measure-Type	_	_	0	_	_	Offset=555-571
+3	FastQC	_	Device	_	_	0	_	_	Offset=577-583
+
+# sent_id = s5
+# text = Remove Illumina adaptor sequences from 3' end of sequences - be sure to preserve reads of 0 length.
+1	Remove	_	Action	_	_	0	_	_	Offset=585-591
+2	low	_	Reagent	_	_	0	_	_	Offset=592-614
+3	sequences	_	Reagent	_	_	0	_	_	Offset=620-629
+

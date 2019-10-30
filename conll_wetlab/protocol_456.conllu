@@ -1,0 +1,33 @@
+# sent_id = s1
+# text = How to make a 20 mg/mL X-Gluc Stock Solution
+1	Weigh	_	Action	_	_	0	_	_	Offset=45-50
+2	30	_	Amount	_	_	3	Measure	_	Offset=51-56
+3	X-Gluc	_	Reagent	_	_	0	_	_	Offset=60-66
+
+# sent_id = s2
+# text = Weigh 30 mg of X-Gluc. 
+1	Add	_	Action	_	_	0	_	_	Offset=69-72
+2	1.5	_	Amount	_	_	3	Measure	_	Offset=73-79
+3	DMF	_	Reagent	_	_	0	_	_	Offset=83-86
+
+# sent_id = s3
+# text = Add 1.5 mL of DMF.
+1	Vortex	_	Action	_	_	0	_	_	Offset=88-94
+2	dissolve	_	Action	_	_	0	_	_	Offset=98-106
+3	completely	_	Modifier	_	_	0	_	_	Offset=107-117
+
+# sent_id = s4
+# text = Vortex to dissolve completely. 
+1	Wrap	_	Action	_	_	0	_	_	Offset=120-124
+2	foil	_	Seal	_	_	0	_	_	Offset=128-132
+3	store	_	Action	_	_	0	_	_	Offset=137-142
+4	dark	_	Location	_	_	0	_	_	Offset=150-154
+5	-20°C	_	Temperature	_	_	0	_	_	Offset=158-163
+
+# sent_id = s5
+# text = Wrap in foil and store in the dark at -20°C.
+1	Stocks	_	Reagent	_	_	0	_	_	Offset=165-171
+2	may	_	Modifier	_	_	0	_	_	Offset=172-178
+3	kept	_	Action	_	_	0	_	_	Offset=179-183
+4	1	_	Time	_	_	0	_	_	Offset=188-194
+

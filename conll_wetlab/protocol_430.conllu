@@ -1,0 +1,288 @@
+# sent_id = s1
+# text = Protocol for Pulsed Field Gel Electrophoresis
+1	Concentrate	_	Action	_	_	0	_	_	Offset=196-207
+2	150-200	_	Amount	_	_	0	_	_	Offset=215-225
+3	30	_	Generic-Measure	_	_	4	Setting	_	Offset=232-237
+4	MWC	_	Device	_	_	0	_	_	Offset=238-271
+
+# sent_id = s2
+# text = A 15-20 liter natural seawater sample is passed through a glass fiber pre-filter (Gelman A/E) and a 0.22 μm pore size membrane (Durapore, Millipore).
+1	Transfer	_	Action	_	_	0	_	_	Offset=279-287
+2	SCC	_	Reagent	_	_	0	_	_	Offset=292-305
+3	Centriprep	_	Device	_	_	0	_	_	Offset=309-323
+
+# sent_id = s3
+# text = Concentrate to ca. 150-200 ml using 30 kD MWC Spiral Cartridge Concentrator (SCC).
+1	Store	_	Action	_	_	0	_	_	Offset=326-331
+2	balance	_	Reagent	_	_	0	_	_	Offset=332-354
+3	refrigerator	_	Device	_	_	0	_	_	Offset=358-370
+
+# sent_id = s4
+# text = Transfer the SCC retentate to Centriprep 30’s.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=372-382
+2	IEC-HN	_	Reagent	_	_	0	_	_	Offset=386-398
+3	full	_	Speed	_	_	0	_	_	Offset=402-412
+4	15	_	Time	_	_	0	_	_	Offset=417-427
+
+# sent_id = s5
+# text = Store balance of concentrate in refrigerator.
+1	Empty	_	Action	_	_	0	_	_	Offset=459-464
+2	central	_	Location	_	_	0	_	_	Offset=465-482
+3	without	_	Method	_	_	0	_	_	Offset=483-500
+4	repeat	_	Action	_	_	0	_	_	Offset=505-511
+5	centrifugation	_	Method	_	_	0	_	_	Offset=512-531
+
+# sent_id = s6
+# text = Centrifuge in IEC-HN SE II at full speed for 15 minutes (in refrigerator if possible).
+1	Empty	_	Action	_	_	0	_	_	Offset=533-538
+2	refill	_	Action	_	_	0	_	_	Offset=543-549
+3	keeping	_	Method	_	_	0	_	_	Offset=550-571
+4	maximize	_	Action	_	_	0	_	_	Offset=584-592
+5	filtration	_	Location	_	_	0	_	_	Offset=593-608
+6	Centripreps	_	Device	_	_	5	Meronym	_	Offset=612-623
+7	balance	_	Device	_	_	5	Meronym	_	Offset=628-641
+
+# sent_id = s7
+# text = Empty central reservoir without refilling and repeat centrifugation step.
+1	Remove	_	Action	_	_	0	_	_	Offset=714-720
+2	central	_	Reagent	_	_	0	_	_	Offset=721-735
+3	2	_	Numerical	_	_	4	Measure	_	Offset=741-742
+4	units	_	Location	_	_	0	_	_	Offset=746-751
+5	replace	_	Action	_	_	0	_	_	Offset=753-760
+6	caps	_	Seal	_	_	0	_	_	Offset=761-765
+7	spin	_	Action	_	_	0	_	_	Offset=771-775
+8	retentate	_	Device	_	_	0	_	_	Offset=776-793
+9	briefly	_	Modifier	_	_	0	_	_	Offset=794-801
+10	recover	_	Action	_	_	0	_	_	Offset=805-812
+11	droplets	_	Reagent	_	_	0	_	_	Offset=813-821
+12	sides	_	Location	_	_	0	_	_	Offset=827-832
+
+# sent_id = s8
+# text = Empty and refill keeping volumes equal in order to maximize filtration area of Centripreps and balance rotor.
+1	Make	_	Action	_	_	0	_	_	Offset=984-988
+2	1%	_	Concentration	_	_	3	Measure	_	Offset=991-993
+3	agarose	_	Reagent	_	_	0	_	_	Offset=994-1005
+4	combining	_	Action	_	_	0	_	_	Offset=1009-1018
+5	1	_	Amount	_	_	6	Measure	_	Offset=1019-1022
+6	Bio-Rad	_	Reagent	_	_	0	_	_	Offset=1023-1054
+7	99ml	_	Amount	_	_	9	Measure	_	Offset=1060-1064
+8	0.5x	_	Concentration	_	_	9	Measure	_	Offset=1065-1069
+9	TBE	_	Reagent	_	_	0	_	_	Offset=1070-1073
+
+# sent_id = s9
+# text = Continue to spin and empty until no more water enters central chamber.
+1	Assemble	_	Action	_	_	0	_	_	Offset=1132-1140
+2	mold	_	Reagent	_	_	0	_	_	Offset=1141-1145
+3	backing	_	Location	_	_	0	_	_	Offset=1151-1164
+4	pour	_	Action	_	_	0	_	_	Offset=1178-1182
+5	liquid	_	Reagent	_	_	0	_	_	Offset=1186-1192
+
+# sent_id = s10
+# text = Remove central insert from 2 of units, replace caps, and spin retentate chamber briefly to recover droplets from sides.
+1	fill	_	Action	_	_	0	_	_	Offset=1214-1218
+2	electrophoresis	_	Location	_	_	0	_	_	Offset=1219-1242
+3	2	_	Amount	_	_	5	Measure	_	Offset=1248-1256
+4	0.5x	_	Concentration	_	_	5	Measure	_	Offset=1257-1261
+5	TBE	_	Reagent	_	_	0	_	_	Offset=1262-1265
+
+# sent_id = s11
+# text = Combine retentate into 2, and finally one Centriprep unit, by gentle pipetting.
+1	Turn	_	Action	_	_	0	_	_	Offset=1267-1274
+2	pump	_	Device	_	_	0	_	_	Offset=1275-1291
+3	set	_	Action	_	_	0	_	_	Offset=1297-1300
+4	14°C	_	Temperature	_	_	0	_	_	Offset=1316-1320
+
+# sent_id = s12
+# text = When all have been combined and spun, the final volume is ca. 500 μl.
+1	remove	_	Action	_	_	0	_	_	Offset=1339-1345
+2	comb	_	Location	_	_	0	_	_	Offset=1346-1350
+3	sides	_	Location	_	_	0	_	_	Offset=1355-1360
+4	mold	_	Reagent	_	_	2	Meronym	3:Meronym	Offset=1364-1368
+5	slide	_	Action	_	_	0	_	_	Offset=1374-1379
+6	backing	_	Location	_	_	0	_	_	Offset=1380-1393
+7	gel	_	Reagent	_	_	0	_	_	Offset=1400-1403
+
+# sent_id = s13
+# text = Make a 1% agarose gel by combining 1 g Bio-Rad Molecular Grade Agarose with 99ml 0.5x TBE, and heating until completely clear of unmelted material.
+1	Place	_	Action	_	_	0	_	_	Offset=1427-1432
+2	gel	_	Reagent	_	_	0	_	_	Offset=1433-1436
+3	backing	_	Location	_	_	2	Meronym	_	Offset=1442-1455
+4	receiver	_	Location	_	_	0	_	_	Offset=1461-1469
+5	electrophoresis	_	Location	_	_	4	Meronym	_	Offset=1473-1496
+6	let	_	Action	_	_	0	_	_	Offset=1565-1574
+
+# sent_id = s14
+# text = Assemble mold with backing plate in place and pour in liquid.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1576-1584
+2	aliquots	_	Reagent	_	_	0	_	_	Offset=1585-1593
+3	Microcons	_	Device	_	_	0	_	_	Offset=1599-1608
+4	30	_	Generic-Measure	_	_	3	Setting	_	Offset=1610-1626
+
+# sent_id = s15
+# text = Let set.
+1	Place	_	Action	_	_	0	_	_	Offset=1629-1634
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=1635-1639
+3	aliquot	_	Reagent	_	_	0	_	_	Offset=1640-1647
+4	separate	_	Modifier	_	_	5	Mod-Link	_	Offset=1653-1661
+5	Microcon	_	Device	_	_	0	_	_	Offset=1662-1670
+6	spin	_	Action	_	_	0	_	_	Offset=1675-1679
+7	1000	_	Speed	_	_	0	_	_	Offset=1683-1691
+8	20	_	Time	_	_	0	_	_	Offset=1696-1706
+9	4000	_	Speed	_	_	10	Setting	_	Offset=1714-1722
+10	Eppendorf	_	Device	_	_	0	_	_	Offset=1726-1745
+
+# sent_id = s16
+# text = Meanwhile, fill electrophoresis chamber with 2 liters 0.5x TBE.
+1	add	_	Action	_	_	0	_	_	Offset=2052-2055
+2	50	_	Amount	_	_	4	Measure	_	Offset=2056-2061
+3	1:10	_	Generic-Measure	_	_	4	Measure	_	Offset=2062-2066
+4	TE	_	Reagent	_	_	0	_	_	Offset=2067-2069
+5	each	_	Modifier	_	_	6	Mod-Link	_	Offset=2073-2077
+6	tube	_	Location	_	_	0	_	_	Offset=2078-2082
+7	spin	_	Action	_	_	0	_	_	Offset=2140-2144
+
+# sent_id = s17
+# text = Turn on pump and chiller, and set temperature to 14°C.
+1	Repeat	_	Action	_	_	0	_	_	Offset=2188-2194
+2	step	_	Method	_	_	0	_	_	Offset=2195-2202
+
+# sent_id = s18
+# text = When gel is set, remove comb and sides of mold, and slide backing plate, with gel attached, out of mold.
+1	Repeat	_	Action	_	_	0	_	_	Offset=2204-2210
+2	step	_	Method	_	_	0	_	_	Offset=2211-2218
+
+# sent_id = s19
+# text = Place gel with backing plate into receiver in electrophoresis chamber, taking care not to dislodge gel from plate, with wells in rear and let chill.
+1	add	_	Action	_	_	0	_	_	Offset=2230-2233
+2	20	_	Amount	_	_	4	Measure	_	Offset=2234-2239
+3	0.5x	_	Concentration	_	_	4	Measure	_	Offset=2240-2244
+4	TBE	_	Reagent	_	_	0	_	_	Offset=2245-2248
+5	membrane	_	Location	_	_	0	_	_	Offset=2252-2260
+6	elute	_	Action	_	_	0	_	_	Offset=2264-2269
+7	viruses	_	Reagent	_	_	0	_	_	Offset=2270-2277
+
+# sent_id = s20
+# text = Transfer aliquots into Microcons (30 or 100 kD MWC).
+1	Invert	_	Action	_	_	0	_	_	Offset=2320-2326
+2	cartridge	_	Reagent	_	_	0	_	_	Offset=2327-2336
+3	place	_	Action	_	_	0	_	_	Offset=2338-2346
+4	fresh	_	Modifier	_	_	5	Mod-Link	_	Offset=2347-2352
+5	tube	_	Location	_	_	0	_	_	Offset=2353-2357
+6	spin	_	Action	_	_	0	_	_	Offset=2363-2367
+7	5	_	Time	_	_	0	_	_	Offset=2372-2381
+8	1000	_	Speed	_	_	0	_	_	Offset=2385-2393
+
+# sent_id = s21
+# text = Place each aliquot in a separate Microcon and spin at 1000 x g for 20 minutes (about 4000 RPM in Eppendorf Microfuge) to near dryness (most of the Microcon membrane is dry, and only a small ring of liquid remains around edge).
+1	Place	_	Action	_	_	0	_	_	Offset=2406-2411
+2	tubes	_	Location	_	_	4	Meronym	_	Offset=2412-2417
+3	recovered	_	Modifier	_	_	4	Mod-Link	_	Offset=2429-2438
+4	viruses	_	Reagent	_	_	0	_	_	Offset=2439-2446
+5	60°C	_	Temperature	_	_	6	Setting	_	Offset=2450-2454
+6	water	_	Device	_	_	0	_	_	Offset=2455-2465
+7	10	_	Time	_	_	6	Setting	_	Offset=2470-2480
+
+# sent_id = s22
+# text = As they reach the proper volume, smaller volume aliquots can be removed and stored in the refrigerator until the larger have been reduced to the proper volume.
+1	Remove	_	Action	_	_	0	_	_	Offset=2482-2488
+2	tubes	_	Location	_	_	0	_	_	Offset=2489-2494
+3	place	_	Action	_	_	0	_	_	Offset=2499-2504
+4	immediately	_	Modifier	_	_	0	_	_	Offset=2505-2516
+5	ice	_	Location	_	_	0	_	_	Offset=2520-2523
+6	2	_	Time	_	_	0	_	_	Offset=2528-2537
+
+# sent_id = s23
+# text = When all samples have been reduced, add 50 μl 1:10 TE to each tube, taking care not to touch membrane with pipette tip, and spin again to reduce volume as described above.
+1	Transfer	_	Action	_	_	0	_	_	Offset=2539-2547
+2	microfuge	_	Device	_	_	0	_	_	Offset=2551-2560
+3	spin	_	Action	_	_	0	_	_	Offset=2565-2569
+4	briefly	_	Modifier	_	_	0	_	_	Offset=2570-2577
+5	recover	_	Action	_	_	0	_	_	Offset=2581-2588
+6	condensation	_	Reagent	_	_	0	_	_	Offset=2589-2601
+7	walls	_	Location	_	_	0	_	_	Offset=2607-2612
+8	tubes	_	Location	_	_	7	Meronym	_	Offset=2616-2621
+
+# sent_id = s24
+# text = Repeat step 22.
+1	Prepare	_	Action	_	_	0	_	_	Offset=2623-2630
+2	molecular	_	Reagent	_	_	0	_	_	Offset=2631-2655
+3	combining	_	Action	_	_	0	_	_	Offset=2659-2668
+4	100-200	_	Amount	_	_	5	Measure	_	Offset=2669-2679
+5	marker	_	Reagent	_	_	0	_	_	Offset=2683-2695
+6	0.5x	_	Concentration	_	_	7	Measure	_	Offset=2699-2703
+7	TBE	_	Reagent	_	_	0	_	_	Offset=2704-2707
+8	20	_	Amount	_	_	2	Measure	_	Offset=2729-2734
+
+# sent_id = s25
+# text = Repeat step 22 again.
+1	Add	_	Action	_	_	0	_	_	Offset=2736-2739
+2	10	_	Amount	_	_	3	Measure	_	Offset=2740-2745
+3	PFGE	_	Reagent	_	_	0	_	_	Offset=2746-2765
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=2769-2773
+5	tube	_	Location	_	_	0	_	_	Offset=2774-2778
+
+# sent_id = s26
+# text = Now add 20 μl 0.5x TBE to membrane to elute viruses, again taking care not to touch membrane.
+1	Mix	_	Action	_	_	0	_	_	Offset=2780-2783
+2	simultaneously	_	Modifier	_	_	0	_	_	Offset=2787-2801
+3	inverting	_	Action	_	_	0	_	_	Offset=2802-2811
+4	several	_	Numerical	_	_	0	_	_	Offset=2812-2819
+5	slowly	_	Modifier	_	_	0	_	_	Offset=2826-2832
+6	rolling	_	Method	_	_	0	_	_	Offset=2840-2878
+
+# sent_id = s27
+# text = Invert cartridge, place in fresh tube, and spin for 5 minutes at 1000 x g to recover.
+1	Turn	_	Action	_	_	0	_	_	Offset=2880-2884
+2	chiller	_	Device	_	_	0	_	_	Offset=2885-2901
+3	off	_	Generic-Measure	_	_	2	Setting	_	Offset=2902-2905
+
+# sent_id = s28
+# text = Place tubes containing recovered viruses in 60°C water bath for 10 minutes.
+1	Load	_	Action	_	_	0	_	_	Offset=2907-2911
+2	samples	_	Reagent	_	_	0	_	_	Offset=2912-2919
+
+# sent_id = s29
+# text = Remove tubes and place immediately on ice for 2 minutes.
+1	Turn	_	Action	_	_	0	_	_	Offset=2921-2925
+2	pump	_	Device	_	_	0	_	_	Offset=2926-2930
+3	on	_	Generic-Measure	_	_	2	Setting	_	Offset=2931-2933
+4	turn	_	Action	_	_	0	_	_	Offset=2940-2944
+5	chiller	_	Device	_	_	0	_	_	Offset=2945-2952
+6	on	_	Generic-Measure	_	_	5	Setting	_	Offset=2953-2955
+
+# sent_id = s30
+# text = Transfer to microfuge and spin briefly to recover condensation from walls of tubes.
+1	Close	_	Action	_	_	0	_	_	Offset=2957-2962
+2	lid	_	Seal	_	_	0	_	_	Offset=2963-2966
+
+# sent_id = s31
+# text = Prepare molecular weight markers by combining 100-200 ng of marker stock to 0.5x TBE to a final volume of 20 μl.
+1	Set	_	Action	_	_	0	_	_	Offset=3019-3022
+2	voltage	_	Measure-Type	_	_	3	Of-Type	_	Offset=3023-3030
+3	6V	_	Generic-Measure	_	_	0	_	_	Offset=3034-3036
+
+# sent_id = s32
+# text = Add 10 μl PFGE loading buffer to each tube.
+1	Set	_	Action	_	_	0	_	_	Offset=3038-3041
+2	initial	_	Measure-Type	_	_	3	Of-Type	_	Offset=3042-3061
+3	1s	_	Generic-Measure	_	_	0	_	_	Offset=3065-3067
+
+# sent_id = s33
+# text = Mix by simultaneously inverting several times slowly, while rolling between index finger and thumb.
+1	Set	_	Action	_	_	0	_	_	Offset=3069-3072
+2	final	_	Measure-Type	_	_	3	Of-Type	_	Offset=3073-3090
+3	10s	_	Generic-Measure	_	_	0	_	_	Offset=3094-3097
+
+# sent_id = s34
+# text = Turn chiller and pump off.
+1	Set	_	Action	_	_	0	_	_	Offset=3099-3102
+2	run	_	Measure-Type	_	_	3	Of-Type	_	Offset=3103-3111
+3	18h	_	Generic-Measure	_	_	0	_	_	Offset=3115-3118
+
+# sent_id = s35
+# text = Load samples.
+1	10	_	Time	_	_	0	_	_	Offset=3138-3148
+2	check	_	Action	_	_	0	_	_	Offset=3150-3155
+3	actual	_	Measure-Type	_	_	4	Or	_	Offset=3169-3187
+4	14	_	Generic-Measure	_	_	0	_	_	Offset=3207-3218
+

@@ -1,0 +1,30 @@
+# sent_id = s1
+# text = Adsorbing Viruses on TEM Grids
+1	grid	_	Reagent	_	_	0	_	_	Offset=50-54
+2	prep	_	Action	_	_	0	_	_	Offset=55-59
+3	glow	_	Method	_	_	0	_	_	Offset=65-79
+4	render	_	Action	_	_	0	_	_	Offset=83-107
+
+# sent_id = s2
+# text = On the same day as grid prep, use glow discharge to render grids hydrophylic.
+1	Holding	_	Action	_	_	0	_	_	Offset=109-116
+2	grid	_	Reagent	_	_	0	_	_	Offset=121-125
+3	tweezers	_	Device	_	_	0	_	_	Offset=133-141
+4	place	_	Action	_	_	0	_	_	Offset=143-148
+5	5	_	Amount	_	_	6	Measure	_	Offset=149-153
+6	viral	_	Reagent	_	_	0	_	_	Offset=157-169
+7	shiny	_	Location	_	_	0	_	_	Offset=179-189
+8	grid	_	Reagent	_	_	7	Meronym	_	Offset=197-201
+
+# sent_id = s3
+# text = Holding the grid in the tweezers, place 5 µl of viral lysate onto the shiny side of the grid (Figure 1).
+1	sample	_	Reagent	_	_	0	_	_	Offset=222-228
+2	sit	_	Action	_	_	0	_	_	Offset=229-232
+3	~3	_	Time	_	_	0	_	_	Offset=237-247
+
+# sent_id = s4
+# text = Let the sample sit for ~3 minutes to allow the viruses to adsorb to the grid.
+1	Stain	_	Action	_	_	0	_	_	Offset=292-297
+2	viruses	_	Reagent	_	_	0	_	_	Offset=302-309
+3	Positive	_	Method	_	_	0	_	_	Offset=330-384
+

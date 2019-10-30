@@ -1,0 +1,48 @@
+# sent_id = s1
+# text = Generation of DNA fragments by sonication
+1	placing	_	Action	_	_	0	_	_	Offset=100-107
+2	microcentrifuge	_	Location	_	_	3	Meronym	_	Offset=110-130
+3	buffered	_	Reagent	_	_	0	_	_	Offset=146-165
+4	ice-water	_	Location	_	_	0	_	_	Offset=174-188
+5	cup-horn	_	Device	_	_	4	Meronym	_	Offset=194-212
+
+# sent_id = s2
+# text = Generation of DNA fragments by sonication is performed by placing a microcentrifuge tube containing the buffered DNA sample into an ice-water bath in a cup-horn sonicator.
+1	Sonication	_	Action	_	_	0	_	_	Offset=214-224
+2	10	_	Time	_	_	0	_	_	Offset=262-273
+3	using	_	Modifier	_	_	0	_	_	Offset=274-315
+
+# sent_id = s3
+# text = Sonication is conducted for a varying number of 10 s bursts using maximum output and continuous power.
+1	100	_	Amount	_	_	2	Measure	_	Offset=462-468
+2	DNA	_	Reagent	_	_	0	_	_	Offset=469-472
+3	TE	_	Reagent	_	_	2	Meronym	_	Offset=476-485
+4	split	_	Action	_	_	0	_	_	Offset=489-494
+5	10	_	Numerical	_	_	6	Measure	_	Offset=500-502
+6	aliquots	_	Reagent	_	_	0	_	_	Offset=503-511
+7	35	_	Amount	_	_	6	Measure	_	Offset=515-520
+
+# sent_id = s4
+# text = Exact conditions for sonication should be empirically determined for a given DNA sample before a preparative sonication is performed.
+1	5	_	Numerical	_	_	2	Measure	_	Offset=522-523
+2	aliquots	_	Reagent	_	_	0	_	_	Offset=524-532
+3	subjected	_	Action	_	_	0	_	_	Offset=537-560
+4	10	_	Time	_	_	0	_	_	Offset=587-598
+
+# sent_id = s5
+# text = Typically, 100 µg DNA in TE buffer is split into 10 aliquots of 35 µL.
+1	Aliquots	_	Reagent	_	_	0	_	_	Offset=600-608
+2	from	_	Modifier	_	_	1	Mod-Link	_	Offset=609-629
+3	run	_	Action	_	_	0	_	_	Offset=634-637
+4	agarose	_	Reagent	_	_	0	_	_	Offset=644-655
+5	determine	_	Action	_	_	0	_	_	Offset=659-682
+6	DNA	_	Reagent	_	_	0	_	_	Offset=683-696
+
+# sent_id = s6
+# text = 5 aliquots are subjected to sonication for increasing numbers of 10 s bursts.
+1	remaining	_	Numerical	_	_	2	Measure	_	Offset=762-773
+2	aliquots	_	Reagent	_	_	0	_	_	Offset=774-782
+3	approximately	_	Amount	_	_	2	Measure	_	Offset=784-802
+4	sonicated	_	Action	_	_	0	_	_	Offset=808-817
+5	according	_	Modifier	_	_	0	_	_	Offset=818-861
+

@@ -1,0 +1,118 @@
+# sent_id = s1
+# text = Sampling for RNA / Protein/ dissolved nutrients from phage infection experiments
+1	collect	_	Action	_	_	0	_	_	Offset=101-108
+2	10ml	_	Amount	_	_	4	Measure	_	Offset=109-113
+3	each	_	Modifier	_	_	4	Mod-Link	_	Offset=119-124
+4	experimental	_	Location	_	_	0	_	_	Offset=124-148
+5	15ml	_	Amount	_	_	6	Measure	_	Offset=156-160
+6	conical	_	Location	_	_	0	_	_	Offset=161-173
+7	serological	_	Device	_	_	0	_	_	Offset=183-200
+
+# sent_id = s2
+# text = At each time point, collect 10ml from each experimental bottle/tube into a 15ml conical tube, using a serological pipet.
+1	Collect	_	Action	_	_	0	_	_	Offset=202-209
+2	one	_	Numerical	_	_	4	Measure	_	Offset=210-213
+3	10ml	_	Amount	_	_	5	Measure	_	Offset=214-218
+4	sample	_	Reagent	_	_	0	_	_	Offset=219-225
+5	RNA	_	Reagent	_	_	0	_	_	Offset=230-233
+6	one	_	Numerical	_	_	8	Measure	_	Offset=238-241
+7	10ml	_	Amount	_	_	9	Measure	_	Offset=242-246
+8	sample	_	Reagent	_	_	0	_	_	Offset=247-253
+9	protein	_	Reagent	_	_	0	_	_	Offset=258-265
+
+# sent_id = s3
+# text = Collect one 10ml sample for RNA and one 10ml sample for protein.
+1	Spin	_	Action	_	_	0	_	_	Offset=267-271
+2	tubes	_	Location	_	_	0	_	_	Offset=272-277
+3	15	_	Time	_	_	5	Setting	_	Offset=282-292
+4	4700	_	Speed	_	_	5	Setting	_	Offset=296-304
+5	swinging	_	Device	_	_	0	_	_	Offset=321-342
+
+# sent_id = s4
+# text = Spin tubes for 15 minutes at 4700 rpm (4816 x g) in a swinging bucket rotor.
+1	decant	_	Action	_	_	0	_	_	Offset=472-478
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=479-491
+3	labeled	_	Modifier	_	_	6	Mod-Link	_	Offset=497-504
+4	sterile	_	Modifier	_	_	6	Mod-Link	_	Offset=505-513
+5	50	_	Amount	_	_	6	Measure	_	Offset=513-518
+6	conical	_	Location	_	_	0	_	_	Offset=519-532
+
+# sent_id = s5
+# text = If you wish to collect the cell-free fraction (e.g.
+1	pool	_	Action	_	_	0	_	_	Offset=537-541
+2	RNA	_	Reagent	_	_	0	_	_	Offset=546-549
+3	protein	_	Reagent	_	_	0	_	_	Offset=554-574
+4	20ml	_	Amount	_	_	5	Measure	_	Offset=599-603
+5	combined	_	Reagent	_	_	0	_	_	Offset=604-624
+
+# sent_id = s6
+# text = for analyzing dissolved inorganic or organic nutrients or phage particles): decant supernatants into labeled sterile 50 ml conical tubes.
+1	decant	_	Action	_	_	0	_	_	Offset=680-686
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=687-698
+3	waste	_	Location	_	_	0	_	_	Offset=704-719
+
+# sent_id = s7
+# text = We pool the RNA and protein supernatants together resulting in a 20ml combined supernatant.
+1	Flash-freeze	_	Action	_	_	0	_	_	Offset=721-733
+2	cell	_	Reagent	_	_	0	_	_	Offset=734-746
+3	15	_	Amount	_	_	4	Measure	_	Offset=750-755
+4	tubes	_	Location	_	_	0	_	_	Offset=756-761
+5	liquid	_	Reagent	_	_	0	_	_	Offset=768-783
+6	store	_	Action	_	_	0	_	_	Offset=785-790
+7	pellets	_	Reagent	_	_	0	_	_	Offset=791-798
+8	-80°C	_	Temperature	_	_	9	Setting	_	Offset=802-807
+9	freezer	_	Device	_	_	0	_	_	Offset=808-815
+
+# sent_id = s8
+# text = If you do not wish to collect the cell-free fraction: decant supernatant into waste container.
+1	Remove	_	Action	_	_	0	_	_	Offset=959-965
+2	plunger	_	Reagent	_	_	0	_	_	Offset=970-977
+3	20ml	_	Amount	_	_	5	Measure	_	Offset=985-989
+4	clean	_	Modifier	_	_	5	Mod-Link	_	Offset=990-995
+5	syringe	_	Device	_	_	0	_	_	Offset=996-1003
+
+# sent_id = s9
+# text = Flash-freeze cell pellets in 15 ml tubes using liquid nitrogen; store pellets in -80°C freezer until later analysis.
+1	Attach	_	Action	_	_	0	_	_	Offset=1005-1011
+2	new	_	Modifier	_	_	4	Mod-Link	_	Offset=1014-1017
+3	0.2µm	_	Size	_	_	4	Measure	_	Offset=1018-1023
+4	syringe	_	Device	_	_	0	_	_	Offset=1024-1038
+5	syringe	_	Device	_	_	0	_	_	Offset=1046-1053
+
+# sent_id = s10
+# text = If you are not collecting the cell-free fraction, stop here.
+1	Pour	_	Action	_	_	0	_	_	Offset=1055-1059
+2	20ml	_	Amount	_	_	3	Measure	_	Offset=1065-1069
+3	combined	_	Reagent	_	_	0	_	_	Offset=1070-1090
+4	barrel	_	Location	_	_	0	_	_	Offset=1100-1106
+5	syringe	_	Device	_	_	4	Meronym	_	Offset=1114-1121
+
+# sent_id = s11
+# text = If you are collecting the cell-free fraction, go to Step 5.
+1	Replace	_	Action	_	_	0	_	_	Offset=1123-1130
+2	plunger	_	Device	_	_	0	_	_	Offset=1131-1138
+3	syringe	_	Device	_	_	2	Meronym	_	Offset=1146-1153
+4	filter	_	Action	_	_	0	_	_	Offset=1158-1164
+5	20ml	_	Amount	_	_	6	Measure	_	Offset=1170-1175
+6	supernatant	_	Reagent	_	_	0	_	_	Offset=1175-1186
+7	appropriate	_	Modifier	_	_	8	Mod-Link	_	Offset=1192-1204
+8	tubes	_	Location	_	_	0	_	_	Offset=1204-1209
+
+# sent_id = s12
+# text = Remove the plunger from a 20ml clean syringe.
+1	Repeat	_	Action	_	_	0	_	_	Offset=1319-1325
+2	step	_	Method	_	_	0	_	_	Offset=1326-1332
+3	each	_	Modifier	_	_	4	Mod-Link	_	Offset=1337-1341
+4	sample	_	Reagent	_	_	0	_	_	Offset=1342-1348
+
+# sent_id = s13
+# text = Attach a new 0.2µm syringe filter to the syringe.
+1	Store	_	Action	_	_	0	_	_	Offset=1429-1434
+2	0.2µm	_	Size	_	_	3	Measure	_	Offset=1435-1440
+3	filtered	_	Reagent	_	_	0	_	_	Offset=1441-1457
+4	-20ºC	_	Temperature	_	_	0	_	_	Offset=1461-1466
+
+# sent_id = s14
+# text = Pour your 20ml combined supernatant into the barrel of the syringe.
+1	store	_	Action	_	_	0	_	_	Offset=1530-1535
+

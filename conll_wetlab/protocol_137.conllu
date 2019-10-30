@@ -1,0 +1,61 @@
+# sent_id = s1
+# text = Nile Red Staining of Drosophila Larval Tissues
+1	Dissect	_	Action	_	_	0	_	_	Offset=47-54
+2	tissues	_	Reagent	_	_	0	_	_	Offset=55-62
+3	ice	_	Location	_	_	0	_	_	Offset=66-79
+4	keeping	_	Action	_	_	0	_	_	Offset=80-87
+5	samples	_	Reagent	_	_	0	_	_	Offset=88-95
+6	ice	_	Location	_	_	0	_	_	Offset=99-102
+7	until	_	Time	_	_	0	_	_	Offset=103-141
+
+# sent_id = s2
+# text = Dissect tissues in ice cold PBS, keeping samples on ice until required sample size is obtained.
+1	Fix	_	Action	_	_	0	_	_	Offset=143-146
+2	tissues	_	Reagent	_	_	0	_	_	Offset=147-154
+3	4%	_	Reagent	_	_	0	_	_	Offset=158-164
+4	20	_	Time	_	_	0	_	_	Offset=169-179
+
+# sent_id = s3
+# text = Fix tissues in 4% PFA for 20 minutes.
+1	Wash	_	Action	_	_	0	_	_	Offset=181-185
+2	tissues	_	Reagent	_	_	0	_	_	Offset=186-193
+3	3x	_	Numerical	_	_	0	_	_	Offset=194-196
+4	PBS	_	Reagent	_	_	0	_	_	Offset=200-203
+
+# sent_id = s4
+# text = Wash tissues 3x in PBS.
+1	Stain	_	Action	_	_	0	_	_	Offset=205-210
+2	samples	_	Reagent	_	_	0	_	_	Offset=211-218
+3	Nile	_	Reagent	_	_	0	_	_	Offset=222-230
+4	0.5	_	Concentration	_	_	0	_	_	Offset=234-243
+5	diluted	_	Action	_	_	0	_	_	Offset=244-251
+6	PBS	_	Reagent	_	_	0	_	_	Offset=255-258
+7	1	_	Time	_	_	0	_	_	Offset=263-269
+
+# sent_id = s5
+# text = Stain samples in Nile Red at 0.5 ug/mL diluted in PBS for 1 hour.
+1	Wash	_	Action	_	_	0	_	_	Offset=271-275
+2	tissues	_	Reagent	_	_	0	_	_	Offset=276-283
+3	3x	_	Numerical	_	_	0	_	_	Offset=284-286
+4	PBS	_	Reagent	_	_	0	_	_	Offset=290-293
+
+# sent_id = s6
+# text = Wash tissues 3x in PBS.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=295-304
+2	replace	_	Action	_	_	0	_	_	Offset=305-312
+3	PBS	_	Reagent	_	_	0	_	_	Offset=317-320
+4	mounting	_	Reagent	_	_	0	_	_	Offset=326-341
+5	transferring	_	Action	_	_	0	_	_	Offset=349-361
+6	samples	_	Reagent	_	_	0	_	_	Offset=362-369
+7	slides	_	Location	_	_	0	_	_	Offset=373-379
+8	imaging	_	Action	_	_	0	_	_	Offset=384-391
+
+# sent_id = s7
+# text = Carefully replace the PBS with mounting medium before transferring samples to slides and imaging.
+1	Image	_	Action	_	_	0	_	_	Offset=393-398
+2	immediately	_	Modifier	_	_	0	_	_	Offset=399-410
+3	temporarily	_	Modifier	_	_	0	_	_	Offset=415-426
+4	store	_	Action	_	_	0	_	_	Offset=427-432
+5	slides	_	Device	_	_	0	_	_	Offset=433-439
+6	4°C	_	Temperature	_	_	0	_	_	Offset=443-446
+

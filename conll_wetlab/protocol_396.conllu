@@ -1,0 +1,40 @@
+# sent_id = s1
+# text = Fixation of marine samples for flow cytometry analysis
+1	Prefilter	_	Action	_	_	0	_	_	Offset=55-64
+2	seawater	_	Reagent	_	_	0	_	_	Offset=65-80
+3	200	_	Generic-Measure	_	_	4	Setting	_	Offset=86-92
+4	mesh	_	Device	_	_	0	_	_	Offset=93-97
+
+# sent_id = s2
+# text = Prefilter seawater sample onto 200 µm mesh. 
+1	Add	_	Action	_	_	0	_	_	Offset=100-103
+2	1.5	_	Amount	_	_	4	Measure	_	Offset=104-110
+3	prefiltered	_	Modifier	_	_	4	Mod-Link	_	Offset=114-125
+4	seawater	_	Reagent	_	_	0	_	_	Offset=126-141
+5	2	_	Amount	_	_	6	Measure	_	Offset=147-151
+6	cryotube	_	Location	_	_	0	_	_	Offset=152-160
+
+# sent_id = s3
+# text = Add 1.5 mL of prefiltered seawater sample to a 2 mL cryotube. 
+1	Add	_	Action	_	_	0	_	_	Offset=163-166
+2	Glutaraldehyde	_	Reagent	_	_	0	_	_	Offset=167-181
+
+# sent_id = s4
+# text = Add Glutaraldehyde. 
+1	Add	_	Action	_	_	0	_	_	Offset=184-187
+2	Pluronic	_	Reagent	_	_	0	_	_	Offset=188-196
+
+# sent_id = s5
+# text = Add Pluronic (facultative). 
+1	Vortex	_	Action	_	_	0	_	_	Offset=213-219
+
+# sent_id = s6
+# text = Vortex. 
+1	Wait	_	Action	_	_	0	_	_	Offset=222-226
+2	10	_	Time	_	_	0	_	_	Offset=227-233
+
+# sent_id = s7
+# text = Wait 10 min. 
+1	Flash	_	Action	_	_	0	_	_	Offset=236-248
+2	liquid	_	Location	_	_	0	_	_	Offset=252-272
+

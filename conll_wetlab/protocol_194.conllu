@@ -1,0 +1,176 @@
+# sent_id = s1
+# text = Generating Cas9-mediated fluorescent protein knock-ins with a self-excising selection cassette (SEC)
+1	Digest	_	Action	_	_	0	_	_	Offset=506-512
+2	miniprep	_	Amount	_	_	3	Measure	_	Offset=523-531
+3	FP–SEC	_	Reagent	_	_	0	_	_	Offset=535-548
+4	37°C	_	Temperature	_	_	0	_	_	Offset=562-566
+
+# sent_id = s2
+# text = See the Guidelines for: 1.
+1	Purify	_	Action	_	_	0	_	_	Offset=626-632
+2	PCR	_	Device	_	_	0	_	_	Offset=661-684
+3	remove	_	Action	_	_	0	_	_	Offset=688-694
+4	enzymes	_	Reagent	_	_	0	_	_	Offset=699-706
+
+# sent_id = s3
+# text = Choosing the Cas9 targets site 2.
+1	Process	_	Action	_	_	0	_	_	Offset=708-715
+2	digested	_	Reagent	_	_	0	_	_	Offset=727-742
+3	do	_	Action	_	_	0	_	_	Offset=758-772
+
+# sent_id = s4
+# text = Adding the target sequence to the Cas9–sgRNA construct 3.
+1	stored	_	Action	_	_	0	_	_	Offset=842-848
+2	4°C	_	Temperature	_	_	0	_	_	Offset=852-855
+3	few	_	Time	_	_	0	_	_	Offset=871-881
+4	construct	_	Action	_	_	0	_	_	Offset=896-905
+5	repair	_	Reagent	_	_	0	_	_	Offset=915-931
+
+# sent_id = s5
+# text = Designing primers to add homology arms to an FP–SEC vector Grow bacteria carrying the FP–SEC vector and miniprep the plasmid DNA.
+1	Generate	_	Action	_	_	0	_	_	Offset=933-941
+2	two	_	Amount	_	_	3	Measure	_	Offset=942-945
+3	PCR	_	Reagent	_	_	0	_	_	Offset=946-958
+4	genomic	_	Reagent	_	_	0	_	_	Offset=985-996
+
+# sent_id = s6
+# text = Note that, prior to replacing the ccdB elements with homology arms, FP–SEC vectors must be grown in cells that are resistant to ccdB (ccdB Survival cells).
+1	Mix	_	Action	_	_	0	_	_	Offset=1049-1052
+2	two	_	Amount	_	_	3	Measure	_	Offset=1057-1060
+3	PCR	_	Reagent	_	_	0	_	_	Offset=1061-1073
+4	purify	_	Action	_	_	0	_	_	Offset=1078-1084
+
+# sent_id = s7
+# text = Digest an entire miniprep of FP–SEC vector overnight at 37°C (consult Table P1 for which construct and enzymes to use).
+1	Mix	_	Action	_	_	0	_	_	Offset=1136-1139
+2	1	_	Amount	_	_	3	Measure	_	Offset=1140-1144
+3	vector	_	Reagent	_	_	0	_	_	Offset=1148-1154
+4	4	_	Amount	_	_	5	Measure	_	Offset=1156-1160
+5	homology	_	Reagent	_	_	0	_	_	Offset=1164-1177
+6	5	_	Amount	_	_	7	Measure	_	Offset=1182-1186
+7	isothemal	_	Reagent	_	_	0	_	_	Offset=1190-1219
+
+# sent_id = s8
+# text = Purify the digested vector using a PCR cleanup spin column to remove the enzymes.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1271-1279
+2	1h	_	Time	_	_	0	_	_	Offset=1280-1282
+3	@	_	Temperature	_	_	0	_	_	Offset=1283-1289
+
+# sent_id = s9
+# text = Process the entire digested vector as one sample; do not attempt to gel purify individual bands.
+1	Transform	_	Action	_	_	0	_	_	Offset=1333-1342
+2	2	_	Amount	_	_	3	Measure	_	Offset=1343-1347
+3	reaction	_	Reagent	_	_	0	_	_	Offset=1355-1363
+
+# sent_id = s10
+# text = The digested, purified vector may be stored at 4°C for at least a few months and reused to construct multiple repair templates.
+1	Isolate	_	Action	_	_	0	_	_	Offset=1393-1400
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1401-1404
+3	sequence	_	Action	_	_	0	_	_	Offset=1425-1433
+
+# sent_id = s11
+# text = Generate two PCR products (the homology arms) using genomic DNA as the template and the primers you designed above.
+1	Prepare	_	Action	_	_	0	_	_	Offset=1521-1528
+2	injection	_	Reagent	_	_	0	_	_	Offset=1532-1545
+3	10	_	Amount	_	_	4	Measure	_	Offset=1572-1580
+4	homologous	_	Reagent	_	_	0	_	_	Offset=1581-1607
+5	50	_	Amount	_	_	6	Measure	_	Offset=1609-1617
+6	Cas9-sgRNA	_	Reagent	_	_	0	_	_	Offset=1618-1628
+7	10	_	Amount	_	_	8	Measure	_	Offset=1738-1746
+8	pGH8	_	Reagent	_	_	0	_	_	Offset=1747-1751
+
+# sent_id = s12
+# text = Mix the two PCR products and purify them together on a single PCR cleanup spin column.
+1	Prepare	_	Action	_	_	0	_	_	Offset=1988-1995
+2	plasmid	_	Reagent	_	_	0	_	_	Offset=1996-2007
+3	Invitrogen’s	_	Device	_	_	0	_	_	Offset=2014-2050
+
+# sent_id = s13
+# text = Mix 1 µL of vector, 4 µL of homology arms and 5 µL of isothemal assembly enzyme mix (we use NEBuilder HiFi DNA assembly mix from NEB).
+1	Inject	_	Action	_	_	0	_	_	Offset=2092-2098
+2	50-60	_	Amount	_	_	3	Measure	_	Offset=2130-2135
+3	young	_	Reagent	_	_	0	_	_	Offset=2136-2153
+
+# sent_id = s14
+# text = Incubate 1h @ 50°C or as directed by the enzyme manufacturer.
+1	Transfer	_	Action	_	_	0	_	_	Offset=2204-2212
+2	injected	_	Reagent	_	_	0	_	_	Offset=2217-2231
+3	seeded	_	Device	_	_	0	_	_	Offset=2239-2252
+
+# sent_id = s15
+# text = Transform 2 µL of the reaction to suitable competent cells.
+1	Use	_	Action	_	_	0	_	_	Offset=2304-2307
+2	NGM	_	Device	_	_	0	_	_	Offset=2316-2326
+
+# sent_id = s16
+# text = Isolate DNA from 3-6 clones and sequence with M13 Forward and Reverse primers to verify correct insertion of the homology arms.
+1	make	_	Action	_	_	0	_	_	Offset=2357-2361
+2	control	_	Device	_	_	0	_	_	Offset=2364-2377
+
+# sent_id = s17
+# text = Prepare an injection mix containing the following: 10 ng/µL homologous repair template, 50 ng/µL Cas9-sgRNA construct with your targeting sequence Fluorescent co-injection markers (to label extrachromosomal arrays),  10 ng/µL pGH8 (Prab-3::mCherry neuronal co-injection marker; Addgene #19359), 5 ng/µL pCFJ104 (Pmyo-3::mCherry body wall muscle co-injection marker; Addgene #19328), 2.5 ng/µL pCFJ90 (Pmyo-2::mCherry pharyngeal co-injection marker; Addgene #19327). 
+1	Put	_	Action	_	_	0	_	_	Offset=2476-2479
+2	plates	_	Device	_	_	0	_	_	Offset=2484-2490
+3	25°C	_	Temperature	_	_	0	_	_	Offset=2494-2498
+4	let	_	Action	_	_	0	_	_	Offset=2503-2506
+
+# sent_id = s18
+# text = Prepare plasmid DNA using Invitrogen’s PureLink mini-prep kit, which gives high injection efficiencies.
+1	Prepare	_	Action	_	_	0	_	_	Offset=2558-2565
+2	filter	_	Action	_	_	0	_	_	Offset=2570-2576
+3	5	_	Amount	_	_	4	Measure	_	Offset=2589-2596
+4	hygromycin	_	Reagent	_	_	0	_	_	Offset=2597-2616
+
+# sent_id = s19
+# text = Inject the mixture into the gonads of 50-60 young adult worms of strain N2 (or substitute any strain you like).
+1	6	_	Generic-Measure	_	_	2	Measure	_	Offset=2631-2635
+2	plates	_	Device	_	_	0	_	_	Offset=2636-2642
+3	10	_	Modifier	_	_	4	Mod-Link	_	Offset=2655-2660
+4	agar	_	Device	_	_	0	_	_	Offset=2661-2672
+5	pipet	_	Action	_	_	0	_	_	Offset=2674-2679
+6	500	_	Amount	_	_	7	Measure	_	Offset=2680-2686
+7	drug	_	Reagent	_	_	0	_	_	Offset=2690-2694
+8	~250	_	Concentration	_	_	7	Measure	_	Offset=2765-2775
+
+# sent_id = s20
+# text = Transfer the injected worms to new seeded plates (three animals per plate works well in our hands).
+1	Swirl	_	Action	_	_	0	_	_	Offset=2841-2846
+2	covers	_	Action	_	_	0	_	_	Offset=2875-2881
+3	dry	_	Action	_	_	0	_	_	Offset=2927-2930
+
+# sent_id = s21
+# text = Use regular NGM plates (no drug) at this stage.
+1	Put	_	Action	_	_	0	_	_	Offset=2932-2935
+2	25ºC	_	Temperature	_	_	0	_	_	Offset=2954-2958
+
+# sent_id = s22
+# text = Also make a control plate with uninjected worms, so that when you do the drug selection it can serve as a negative control.
+1	Examine	_	Action	_	_	0	_	_	Offset=2960-2967
+
+# sent_id = s23
+# text = Put the plates at 25°C and let the worms lay eggs without selection for 2-3 days.
+1	Pick	_	Action	_	_	0	_	_	Offset=3391-3395
+2	6-8	_	Amount	_	_	3	Measure	_	Offset=3396-3399
+3	L1/L2	_	Reagent	_	_	0	_	_	Offset=3400-3412
+
+# sent_id = s24
+# text = Prepare and filter sterilize a 5 mg/mL hygromycin solution in water.
+1	perform	_	Action	_	_	0	_	_	Offset=3460-3467
+
+# sent_id = s25
+# text = For 6 cm plates poured with 10 mL agar plates, pipet 500 µL of drug onto the surface of each plate of worms, for a final concentration of ~250 µg/mL (if using different size plates, adjust the volume accordingly).
+1	Heat	_	Action	_	_	0	_	_	Offset=3615-3625
+2	plates	_	Device	_	_	0	_	_	Offset=3630-3636
+3	34°C	_	Temperature	_	_	2	Setting	_	Offset=3640-3644
+4	4	_	Time	_	_	2	Setting	_	Offset=3649-3656
+5	activate	_	Action	_	_	0	_	_	Offset=3707-3726
+
+# sent_id = s26
+# text = Swirl gently so that the solution covers the entire surface of the plate, then let it dry.
+1	Return	_	Action	_	_	0	_	_	Offset=3739-3745
+2	20°C	_	Temperature	_	_	0	_	_	Offset=3760-3772
+
+# sent_id = s27
+# text = Put the worms back at 25ºC.
+1	Pick	_	Action	_	_	0	_	_	Offset=3774-3778
+

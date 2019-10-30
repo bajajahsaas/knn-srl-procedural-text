@@ -1,0 +1,38 @@
+# sent_id = s1
+# text = Bottle cleaning procedure for dissolved cobalt analyses
+1	Obtain	_	Action	_	_	0	_	_	Offset=56-62
+2	60	_	Size	_	_	3	Measure	_	Offset=63-68
+3	narrow-mouth	_	Location	_	_	0	_	_	Offset=69-114
+
+# sent_id = s2
+# text = Obtain 60 mL narrow-mouth low density polyethylene bottles (LDPE) for this procedure.
+1	Bottles	_	Location	_	_	0	_	_	Offset=142-149
+2	soaked	_	Action	_	_	0	_	_	Offset=154-160
+3	10	_	Time	_	_	0	_	_	Offset=165-172
+4	Citranox	_	Reagent	_	_	0	_	_	Offset=198-206
+5	rotated	_	Action	_	_	0	_	_	Offset=212-219
+6	after	_	Time	_	_	0	_	_	Offset=220-246
+
+# sent_id = s3
+# text = Bottles are soaked for 10 days in the acidic detergent, Citranox, and rotated after approximately 5 days to make sure all sides of the bottles have been coated with soap.
+1	rinsed	_	Action	_	_	0	_	_	Offset=334-340
+2	Milli-Q	_	Reagent	_	_	0	_	_	Offset=357-370
+3	5	_	Numerical	_	_	0	_	_	Offset=380-387
+4	filled	_	Action	_	_	0	_	_	Offset=426-432
+5	10%	_	Concentration	_	_	6	Measure	_	Offset=438-441
+6	HCl	_	Reagent	_	_	0	_	_	Offset=442-445
+7	soak	_	Action	_	_	0	_	_	Offset=459-463
+8	10	_	Time	_	_	0	_	_	Offset=468-475
+9	rotated	_	Action	_	_	0	_	_	Offset=488-495
+10	5	_	Time	_	_	0	_	_	Offset=502-508
+
+# sent_id = s4
+# text = The bottles are then rinsed thoroughly with Milli-Q water (usually 5 times, or until all soap is gone), and then filled with 10% HCl (new HCl) to soak for 10 days (also being rotated after 5 days).
+1	bottle	_	Location	_	_	0	_	_	Offset=516-522
+2	rinsed	_	Action	_	_	0	_	_	Offset=531-537
+3	pH	_	Measure-Type	_	_	4	Of-Type	_	Offset=554-556
+4	2	_	Numerical	_	_	5	Measure	_	Offset=557-558
+5	Milli-Q	_	Reagent	_	_	0	_	_	Offset=559-566
+6	double-bagged	_	Action	_	_	0	_	_	Offset=572-585
+7	stored	_	Action	_	_	0	_	_	Offset=590-596
+

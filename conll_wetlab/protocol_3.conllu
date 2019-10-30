@@ -1,0 +1,71 @@
+# sent_id = s1
+# text = Standard RNA Synthesis (E2050)
+1	Thaw	_	Action	_	_	0	_	_	Offset=31-35
+2	necessary	_	Modifier	_	_	3	Mod-Link	_	Offset=40-49
+3	kit	_	Reagent	_	_	0	_	_	Offset=50-64
+
+# sent_id = s2
+# text = Thaw the necessary kit components.
+1	Mix	_	Action	_	_	0	_	_	Offset=66-69
+2	pulse-spin	_	Action	_	_	0	_	_	Offset=74-84
+3	microfuge	_	Device	_	_	0	_	_	Offset=88-97
+4	collect	_	Action	_	_	0	_	_	Offset=101-108
+5	solutions	_	Reagent	_	_	0	_	_	Offset=109-118
+6	bottoms	_	Location	_	_	0	_	_	Offset=126-133
+7	tubes	_	Location	_	_	6	Meronym	_	Offset=137-142
+
+# sent_id = s3
+# text = Mix and pulse-spin in microfuge to collect solutions to the bottoms of tubes.
+1	Keep	_	Action	_	_	0	_	_	Offset=144-148
+2	ice	_	Location	_	_	0	_	_	Offset=152-155
+
+# sent_id = s4
+# text = Keep on ice.
+1	Assemble	_	Action	_	_	0	_	_	Offset=157-165
+2	reaction	_	Reagent	_	_	0	_	_	Offset=170-178
+3	room	_	Temperature	_	_	0	_	_	Offset=182-198
+
+# sent_id = s5
+# text = Assemble the reaction at room temperature in the following order:.
+1	Mix	_	Action	_	_	0	_	_	Offset=224-227
+2	thoroughly	_	Modifier	_	_	0	_	_	Offset=228-238
+3	pulse-spin	_	Action	_	_	0	_	_	Offset=243-253
+4	microfuge	_	Device	_	_	0	_	_	Offset=259-268
+
+# sent_id = s6
+# text = Mix thoroughly and pulse-spin in a microfuge.
+1	Incubate	_	Action	_	_	0	_	_	Offset=270-278
+2	37°C	_	Temperature	_	_	0	_	_	Offset=282-286
+3	2	_	Time	_	_	0	_	_	Offset=291-298
+
+# sent_id = s7
+# text = Incubate at 37°C for 2 hours.
+1	DNase	_	Method	_	_	0	_	_	Offset=315-330
+2	remove	_	Action	_	_	0	_	_	Offset=334-340
+3	DNA	_	Reagent	_	_	0	_	_	Offset=341-353
+
+# sent_id = s8
+# text = Optional step: DNase treatment to remove DNA template.
+1	remove	_	Action	_	_	0	_	_	Offset=358-364
+2	template	_	Reagent	_	_	0	_	_	Offset=365-377
+3	add	_	Action	_	_	0	_	_	Offset=379-382
+4	30	_	Amount	_	_	5	Measure	_	Offset=383-388
+5	nuclease-free	_	Reagent	_	_	0	_	_	Offset=389-408
+6	each	_	Modifier	_	_	8	Mod-Link	_	Offset=412-416
+7	20	_	Amount	_	_	8	Measure	_	Offset=417-422
+8	reaction	_	Reagent	_	_	0	_	_	Offset=423-431
+9	2	_	Amount	_	_	10	Measure	_	Offset=445-449
+10	DNase	_	Reagent	_	_	0	_	_	Offset=453-473
+11	mix	_	Action	_	_	0	_	_	Offset=475-478
+12	incubate	_	Action	_	_	0	_	_	Offset=483-491
+13	15	_	Time	_	_	0	_	_	Offset=496-506
+14	37°C	_	Temperature	_	_	0	_	_	Offset=510-514
+
+# sent_id = s9
+# text = To remove template DNA, add 30 μl nuclease-free water to each 20 μl reaction, followed by 2 μl of DNase I (RNase-free), mix and incubate for 15 minutes at 37°C.
+1	purification	_	Action	_	_	0	_	_	Offset=529-541
+2	synthesized	_	Reagent	_	_	0	_	_	Offset=545-560
+3	analysis	_	Action	_	_	0	_	_	Offset=564-572
+4	transcription	_	Reagent	_	_	0	_	_	Offset=576-598
+5	gel	_	Method	_	_	0	_	_	Offset=602-621
+

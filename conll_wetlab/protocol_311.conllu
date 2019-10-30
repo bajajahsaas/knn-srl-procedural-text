@@ -1,0 +1,79 @@
+# sent_id = s1
+# text = Preparation of NC64A “Ghosts”
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=30-40
+2	NC64A	_	Reagent	_	_	0	_	_	Offset=45-60
+3	Sorvall	_	Device	_	_	0	_	_	Offset=68-86
+4	5,000	_	Speed	_	_	3	Setting	_	Offset=90-99
+5	5	_	Time	_	_	3	Setting	_	Offset=101-106
+6	4°C	_	Temperature	_	_	3	Setting	_	Offset=108-111
+
+# sent_id = s2
+# text = Centrifuge the NC64A chlorella in the Sorvall centrifuge at 5,000 rpm, 5 min, 4°C if fresh cells are used.
+1	thaw	_	Action	_	_	0	_	_	Offset=163-167
+2	pellets	_	Reagent	_	_	0	_	_	Offset=172-179
+3	suspend	_	Action	_	_	0	_	_	Offset=184-191
+4	50	_	Concentration	_	_	5	Measure	_	Offset=197-202
+5	Tris-HCl	_	Reagent	_	_	0	_	_	Offset=203-211
+6	pH	_	pH	_	_	5	Measure	_	Offset=213-219
+
+# sent_id = s3
+# text = If frozen cells are used, thaw the pellets and suspend with 50 mM Tris-HCl, pH 7.8.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=221-231
+2	cells	_	Reagent	_	_	0	_	_	Offset=236-241
+3	Sorvall	_	Device	_	_	0	_	_	Offset=249-267
+4	HB-4	_	Device	_	_	3	Or	_	Offset=271-281
+5	5,000	_	Speed	_	_	3	Setting	4:Setting	Offset=285-294
+6	5	_	Time	_	_	3	Setting	4:Setting	Offset=296-301
+7	4°C	_	Temperature	_	_	3	Setting	4:Setting	Offset=303-306
+
+# sent_id = s4
+# text = Centrifuge the cells in the Sorvall SS34 rotor or HB-4 rotor at 5,000 rpm, 5 min, 4°C.
+1	Decant	_	Action	_	_	0	_	_	Offset=308-314
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=319-331
+
+# sent_id = s5
+# text = Decant the supernatants.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=333-343
+2	cells	_	Reagent	_	_	0	_	_	Offset=348-353
+3	Sorvall	_	Device	_	_	0	_	_	Offset=361-379
+4	HB-4	_	Device	_	_	3	Or	_	Offset=383-393
+5	5,000	_	Speed	_	_	3	Setting	4:Setting	Offset=397-406
+6	5	_	Time	_	_	3	Setting	4:Setting	Offset=408-413
+7	4°C	_	Temperature	_	_	3	Setting	4:Setting	Offset=415-418
+
+# sent_id = s6
+# text = Centrifuge the cells in the Sorvall SS34 rotor or HB-4 rotor at 5,000 rpm, 5 min, 4°C.
+1	Repeat	_	Action	_	_	0	_	_	Offset=420-426
+2	70%	_	Concentration	_	_	3	Measure	_	Offset=431-434
+3	methanol	_	Reagent	_	_	0	_	_	Offset=435-443
+4	washes	_	Action	_	_	0	_	_	Offset=444-450
+5	5-6	_	Numerical	_	_	0	_	_	Offset=451-454
+6	desired	_	Amount	_	_	7	Measure	_	Offset=474-488
+7	pigment	_	Reagent	_	_	0	_	_	Offset=492-499
+8	removed	_	Action	_	_	0	_	_	Offset=509-516
+9	cells	_	Reagent	_	_	0	_	_	Offset=526-531
+
+# sent_id = s7
+# text = Repeat the 70% methanol washes 5-6 times or until the desired amount of pigment has been removed from the cells.
+1	Store	_	Action	_	_	0	_	_	Offset=533-538
+2	chlorella	_	Reagent	_	_	0	_	_	Offset=543-561
+3	4°C	_	Temperature	_	_	0	_	_	Offset=565-568
+4	70%	_	Concentration	_	_	5	Measure	_	Offset=572-575
+5	methanol	_	Reagent	_	_	0	_	_	Offset=576-584
+
+# sent_id = s8
+# text = Store the chlorella “ghosts” at 4°C in 70% methanol.
+1	Add	_	Action	_	_	0	_	_	Offset=586-589
+2	10-15	_	Amount	_	_	0	_	_	Offset=590-598
+3	70%	_	Concentration	_	_	4	Measure	_	Offset=602-605
+4	methanol	_	Reagent	_	_	0	_	_	Offset=606-614
+5	chlorella	_	Reagent	_	_	0	_	_	Offset=622-639
+6	resuspend	_	Action	_	_	0	_	_	Offset=644-653
+7	cells	_	Reagent	_	_	0	_	_	Offset=658-663
+8	completely	_	Modifier	_	_	0	_	_	Offset=664-674
+
+# sent_id = s9
+# text = Add 10-15 mL of 70% methanol to the chlorella pellets and resuspend the cells completely.
+1	Decant	_	Action	_	_	0	_	_	Offset=676-682
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=687-699
+

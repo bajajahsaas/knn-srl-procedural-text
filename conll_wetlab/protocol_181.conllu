@@ -1,0 +1,185 @@
+# sent_id = s1
+# text = Direct delivery CRISPR-HDR editing protocol for C. elegans
+1	Cas9::NLS	_	Reagent	_	_	0	_	_	Offset=59-68
+2	purified	_	Action	_	_	0	_	_	Offset=76-84
+3	E.	_	Reagent	_	_	0	_	_	Offset=90-97
+
+# sent_id = s2
+# text = Cas9::NLS can be purified from E. coli (see our protocol) or purchased from commercial sources.
+1	Order	_	Action	_	_	0	_	_	Offset=155-160
+2	tracrRNA	_	Reagent	_	_	0	_	_	Offset=161-169
+3	briefly	_	Modifier	_	_	0	_	_	Offset=188-195
+4	spin	_	Action	_	_	0	_	_	Offset=196-200
+5	tubes	_	Location	_	_	0	_	_	Offset=205-210
+
+# sent_id = s3
+# text = Order tracrRNA and upon receipt, briefly spin the tubes.
+1	Reconstitute	_	Action	_	_	0	_	_	Offset=212-224
+2	tracrRNA	_	Reagent	_	_	0	_	_	Offset=225-233
+3	4μg/μl	_	Concentration	_	_	0	_	_	Offset=237-243
+4	add	_	Action	_	_	0	_	_	Offset=259-262
+5	29.8μl	_	Amount	_	_	6	Measure	_	Offset=263-269
+6	Tris	_	Reagent	_	_	0	_	_	Offset=273-277
+7	pH	_	Measure-Type	_	_	8	Of-Type	_	Offset=278-280
+8	7.5	_	Numerical	_	_	6	Measure	_	Offset=281-284
+9	5nmol	_	Amount	_	_	2	Measure	_	Offset=292-297
+
+# sent_id = s4
+# text = Reconstitute tracrRNA at 4μg/μl (0.17nmol/μl): add 29.8μl of Tris pH 7.5 to the 5nmol provided (U‐002000‐05).
+1	Order	_	Action	_	_	0	_	_	Offset=322-327
+2	crRNA	_	Reagent	_	_	0	_	_	Offset=347-352
+
+# sent_id = s5
+# text = Order your gene specific crRNA (see the guidelines for crRNA notes).
+1	briefly	_	Modifier	_	_	0	_	_	Offset=405-412
+2	spin	_	Action	_	_	0	_	_	Offset=413-417
+3	tubes	_	Location	_	_	0	_	_	Offset=422-427
+
+# sent_id = s6
+# text = Upon receipt, briefly spin the tubes.
+1	Reconstitute	_	Action	_	_	0	_	_	Offset=429-441
+2	crRNA	_	Reagent	_	_	0	_	_	Offset=442-447
+3	8μg/μl	_	Concentration	_	_	2	Measure	_	Offset=451-457
+4	add	_	Action	_	_	0	_	_	Offset=472-475
+5	33.8μl	_	Amount	_	_	6	Measure	_	Offset=476-482
+6	Tris	_	Reagent	_	_	0	_	_	Offset=486-490
+7	pH	_	Measure-Type	_	_	8	Of-Type	_	Offset=491-493
+8	7.5	_	Numerical	_	_	6	Measure	_	Offset=494-497
+9	20nmol	_	Amount	_	_	2	Measure	_	Offset=505-511
+
+# sent_id = s7
+# text = Reconstitute crRNA at 8μg/μl (0.6nmol/μl): add 33.8μl of Tris pH 7.5 to the 20nmol provided.
+1	single‐stranded	_	Reagent	_	_	0	_	_	Offset=526-558
+2	200nt	_	Size	_	_	1	Measure	_	Offset=568-573
+3	4nM	_	Concentration	_	_	1	Measure	_	Offset=588-591
+4	ordered	_	Action	_	_	0	_	_	Offset=613-620
+
+# sent_id = s8
+# text = Use single‐stranded oligonucleotides (ssODNs, 200nt maximum size, 4nM ultramer, salt free) ordered from IDT.
+1	Reconstitute	_	Action	_	_	0	_	_	Offset=710-722
+2	ssODN	_	Reagent	_	_	0	_	_	Offset=723-728
+3	1μg/μl	_	Concentration	_	_	0	_	_	Offset=732-738
+
+# sent_id = s9
+# text = (this is for small edits <100nt; see the guidelines for large edits 100bp-2kb) Reconstitute ssODN at 1μg/μl according to the amount provided by the manufacturer.
+1	Add	_	Action	_	_	0	_	_	Offset=872-875
+2	injection	_	Reagent	_	_	0	_	_	Offset=898-911
+3	0.5ml	_	Size	_	_	4	Measure	_	Offset=917-922
+4	tube	_	Location	_	_	0	_	_	Offset=923-927
+
+# sent_id = s10
+# text = (this is for small edits <100nt; see the guidelines for large edits 100bp-2kb) Add each component of the injection mix in a 0.5ml tube (add Cas9 last).
+1	Place	_	Action	_	_	0	_	_	Offset=979-984
+2	0.5ml	_	Size	_	_	3	Measure	_	Offset=989-994
+3	tube	_	Location	_	_	0	_	_	Offset=995-999
+4	1.5ml	_	Size	_	_	5	Measure	_	Offset=1005-1010
+5	eppendorf	_	Location	_	_	0	_	_	Offset=1011-1025
+6	spin	_	Action	_	_	0	_	_	Offset=1030-1034
+7	2min	_	Time	_	_	0	_	_	Offset=1039-1043
+8	13000rpm	_	Speed	_	_	0	_	_	Offset=1047-1055
+
+# sent_id = s11
+# text = [this if for "one locus editing"] Place the 0.5ml tube in a 1.5ml eppendorf tube and spin for 2min at 13000rpm.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1057-1065
+2	37°C	_	Temperature	_	_	0	_	_	Offset=1069-1073
+3	10‐15min	_	Time	_	_	0	_	_	Offset=1078-1086
+4	Immediately	_	Modifier	_	_	0	_	_	Offset=1087-1098
+5	load	_	Action	_	_	0	_	_	Offset=1099-1103
+6	injection	_	Device	_	_	0	_	_	Offset=1108-1125
+7	injection	_	Action	_	_	0	_	_	Offset=1141-1150
+
+# sent_id = s12
+# text = Incubate at 37°C for 10‐15min Immediately load the injection needles and process to injection.
+1	Inject	_	Action	_	_	0	_	_	Offset=1152-1158
+2	young	_	Reagent	_	_	0	_	_	Offset=1172-1198
+3	few	_	Generic-Measure	_	_	4	Measure	_	Offset=1207-1210
+4	embryos	_	Reagent	_	_	0	_	_	Offset=1211-1218
+
+# sent_id = s13
+# text = Inject both arms of young adult hermaphrodites (with a few embryos).
+1	Add	_	Action	_	_	0	_	_	Offset=1233-1236
+2	1X	_	Concentration	_	_	3	Measure	_	Offset=1237-1239
+3	M9	_	Reagent	_	_	0	_	_	Offset=1240-1242
+
+# sent_id = s14
+# text = Recovery A.
+1	Add	_	Action	_	_	0	_	_	Offset=1415-1418
+2	1X	_	Concentration	_	_	3	Measure	_	Offset=1419-1421
+3	M9	_	Reagent	_	_	0	_	_	Offset=1422-1424
+4	5μl	_	Amount	_	_	3	Measure	_	Offset=1425-1428
+
+# sent_id = s15
+# text = Add 1X M9.
+1	Add	_	Action	_	_	0	_	_	Offset=1442-1445
+2	1X	_	Concentration	_	_	3	Measure	_	Offset=1446-1448
+3	M9	_	Reagent	_	_	0	_	_	Offset=1449-1451
+4	10μl	_	Amount	_	_	3	Measure	_	Offset=1453-1457
+
+# sent_id = s16
+# text = 5μl (30min to 1h after injection, recover the injected hermaphrodites (P0s) as follows: Every 5‐10min, add: 5μl / 5μl / 10μl /10μl /20μl /20μl/ 40μl of 1X M9)
+1	Add	_	Action	_	_	0	_	_	Offset=1471-1474
+2	1X	_	Concentration	_	_	3	Measure	_	Offset=1475-1477
+3	M9	_	Reagent	_	_	0	_	_	Offset=1478-1480
+4	10μl	_	Amount	_	_	3	Measure	_	Offset=1482-1486
+
+# sent_id = s17
+# text = Recovery B: Add 1X M9 5μl.
+1	Add	_	Action	_	_	0	_	_	Offset=1500-1503
+2	1X	_	Concentration	_	_	3	Measure	_	Offset=1504-1506
+3	M9	_	Reagent	_	_	0	_	_	Offset=1507-1509
+4	20μl	_	Amount	_	_	3	Measure	_	Offset=1511-1515
+
+# sent_id = s18
+# text = Recovery C: Add 1X M9: 10μl.
+1	Add	_	Action	_	_	0	_	_	Offset=1529-1532
+2	1X	_	Concentration	_	_	3	Measure	_	Offset=1533-1535
+3	M9	_	Reagent	_	_	0	_	_	Offset=1536-1538
+4	20μl	_	Amount	_	_	3	Measure	_	Offset=1540-1544
+
+# sent_id = s19
+# text = Recovery D: Add 1X M9: 10μl.
+1	Add	_	Action	_	_	0	_	_	Offset=1558-1561
+2	1X	_	Concentration	_	_	3	Measure	_	Offset=1562-1564
+3	M9	_	Reagent	_	_	0	_	_	Offset=1565-1567
+4	40μl	_	Amount	_	_	3	Measure	_	Offset=1569-1573
+
+# sent_id = s20
+# text = Recovery E: Add 1X M9: 20μl.
+1	Clone	_	Action	_	_	0	_	_	Offset=1575-1584
+2	P0s	_	Reagent	_	_	0	_	_	Offset=1589-1592
+3	NNGM	_	Location	_	_	0	_	_	Offset=1598-1609
+4	20°C	_	Temperature	_	_	0	_	_	Offset=1630-1634
+
+# sent_id = s21
+# text = Recovery F: Add 1X M9: 20μl.
+1	Use	_	Action	_	_	0	_	_	Offset=1637-1640
+2	fresh	_	Modifier	_	_	3	Mod-Link	_	Offset=1641-1646
+3	NNGM	_	Location	_	_	4	Meronym	_	Offset=1647-1658
+4	OP50	_	Reagent	_	_	0	_	_	Offset=1680-1693
+
+# sent_id = s22
+# text = Recovery G: Add 1X M9: 40μl.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1858-1866
+2	P0s	_	Reagent	_	_	0	_	_	Offset=1871-1874
+3	second	_	Location	_	_	0	_	_	Offset=1878-1890
+
+# sent_id = s23
+# text = Clone out the P0s onto NNGM plates (1 P0 per plate, at 20°C).
+1	Examine	_	Action	_	_	0	_	_	Offset=1915-1922
+2	F1s	_	Reagent	_	_	0	_	_	Offset=1927-1930
+3	4‐5	_	Time	_	_	0	_	_	Offset=1943-1951
+
+# sent_id = s24
+# text = Use fresh NNGM plates with a thin layer of OP50 bacteria at the center to facilitate screening for Rollers.
+1	Determine	_	Action	_	_	0	_	_	Offset=1975-1984
+2	number	_	Numerical	_	_	0	_	_	Offset=1989-1995
+3	Roller	_	Reagent	_	_	0	_	_	Offset=1999-2009
+4	select	_	Action	_	_	0	_	_	Offset=2021-2027
+5	3	_	Numerical	_	_	0	_	_	Offset=2032-2033
+6	P0s	_	Reagent	_	_	0	_	_	Offset=2034-2037
+
+# sent_id = s25
+# text = It is important to avoid that the P0s touch the mineral oil on the injection pad because the oil will kill them.
+1	Clone	_	Action	_	_	0	_	_	Offset=2096-2101
+2	Roller	_	Reagent	_	_	0	_	_	Offset=2110-2120
+

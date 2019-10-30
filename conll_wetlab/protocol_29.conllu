@@ -1,0 +1,127 @@
+# sent_id = s1
+# text = Anti-BrdU Staining Using 70% Ethanol and 2N HCl
+1	Pulse	_	Action	_	_	0	_	_	Offset=48-53
+2	actively	_	Reagent	_	_	0	_	_	Offset=54-77
+3	BrdU	_	Reagent	_	_	0	_	_	Offset=83-87
+4	cell	_	Reagent	_	_	0	_	_	Offset=99-117
+5	pulsed	_	Action	_	_	0	_	_	Offset=125-131
+6	adding	_	Action	_	_	0	_	_	Offset=135-141
+7	10-40	_	Concentration	_	_	8	Measure	_	Offset=142-150
+8	BrdU	_	Reagent	_	_	0	_	_	Offset=154-158
+9	1-2	_	Time	_	_	0	_	_	Offset=163-172
+
+# sent_id = s2
+# text = Pulse actively dividing cells with BrdU (in vitro, cell culture media can be pulsed by adding 10-40 μM of BrdU for 1-2 hours).
+1	Harvest	_	Action	_	_	0	_	_	Offset=175-182
+2	cells	_	Reagent	_	_	0	_	_	Offset=183-188
+3	centrifuge	_	Action	_	_	0	_	_	Offset=193-203
+4	5	_	Time	_	_	0	_	_	Offset=208-217
+5	1200-1500	_	Speed	_	_	0	_	_	Offset=221-234
+6	200-300	_	Speed	_	_	5	Or	_	Offset=236-247
+
+# sent_id = s3
+# text = Harvest cells and centrifuge for 5 minutes at 1200-1500 rpm (200-300 x g).
+1	Wash	_	Action	_	_	0	_	_	Offset=250-254
+2	cells	_	Reagent	_	_	0	_	_	Offset=255-260
+3	1x	_	Concentration	_	_	4	Measure	_	Offset=264-266
+4	PBS	_	Reagent	_	_	0	_	_	Offset=267-270
+
+# sent_id = s4
+# text = Wash cells in 1x PBS (PBS, 10x Concentrate, Cat.
+1	centrifuge	_	Action	_	_	0	_	_	Offset=315-325
+2	5	_	Time	_	_	0	_	_	Offset=330-339
+3	1200-1500	_	Speed	_	_	0	_	_	Offset=343-356
+4	200-300	_	Speed	_	_	3	Or	_	Offset=358-369
+
+# sent_id = s5
+# text = No.
+1	Discard	_	Action	_	_	0	_	_	Offset=372-379
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=380-391
+
+# sent_id = s6
+# text = 926201) and centrifuge for 5 minutes at 1200-1500 rpm (200-300 x g).
+1	Dislodge	_	Action	_	_	0	_	_	Offset=602-610
+2	cell	_	Reagent	_	_	0	_	_	Offset=611-622
+3	add	_	Action	_	_	0	_	_	Offset=627-630
+4	5	_	Amount	_	_	8	Measure	_	Offset=631-635
+5	ice-cold	_	Modifier	_	_	8	Mod-Link	_	Offset=639-647
+6	-20⁰C	_	Temperature	_	_	0	_	_	Offset=649-654
+7	70%	_	Concentration	_	_	8	Measure	_	Offset=656-659
+8	Ethanol	_	Reagent	_	_	0	_	_	Offset=660-667
+9	1-2	_	Generic-Measure	_	_	10	Measure	_	Offset=671-680
+10	cells	_	Reagent	_	_	0	_	_	Offset=681-686
+11	vortexing	_	Action	_	_	0	_	_	Offset=709-718
+
+# sent_id = s7
+# text = Discard supernatant.
+1	Incubate	_	Action	_	_	0	_	_	Offset=720-728
+2	-20⁰C	_	Temperature	_	_	0	_	_	Offset=732-737
+3	at	_	Modifier	_	_	4	Mod-Link	_	Offset=742-750
+4	2	_	Time	_	_	0	_	_	Offset=751-758
+
+# sent_id = s8
+# text = NOTE: The combined presence of proteins and HCl in downstream steps may cause aggregation.
+1	Cells	_	Reagent	_	_	0	_	_	Offset=760-765
+2	stored	_	Action	_	_	0	_	_	Offset=773-779
+3	several	_	Time	_	_	0	_	_	Offset=784-796
+
+# sent_id = s9
+# text = As such, it is highly recommended that wash steps utilize PBS without any protein additive until otherwise indicated.
+1	Dislodge	_	Action	_	_	0	_	_	Offset=819-827
+2	cell	_	Reagent	_	_	0	_	_	Offset=828-839
+3	add	_	Action	_	_	0	_	_	Offset=844-847
+4	2	_	Amount	_	_	6	Measure	_	Offset=848-852
+5	2	_	Concentration	_	_	6	Measure	_	Offset=856-859
+6	HCl	_	Reagent	_	_	0	_	_	Offset=860-863
+7	incubate	_	Action	_	_	0	_	_	Offset=868-876
+8	20	_	Time	_	_	0	_	_	Offset=881-891
+9	room	_	Temperature	_	_	0	_	_	Offset=895-911
+
+# sent_id = s10
+# text = Dislodge cell pellet and add 5 ml of ice-cold (-20⁰C) 70% Ethanol to 1-2 X 107 cells dropwise while slowly vortexing.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=928-937
+2	cells	_	Reagent	_	_	0	_	_	Offset=938-943
+3	concentration	_	Measure-Type	_	_	4	Of-Type	_	Offset=949-962
+4	1	_	Generic-Measure	_	_	2	Measure	_	Offset=966-986
+5	staining	_	Reagent	_	_	0	_	_	Offset=990-1005
+6	aliquot	_	Action	_	_	0	_	_	Offset=1010-1017
+7	100	_	Amount	_	_	8	Measure	_	Offset=1018-1024
+8	tube	_	Location	_	_	0	_	_	Offset=1029-1033
+
+# sent_id = s11
+# text = Incubate at -20⁰C for at least 2 hours.
+1	Add	_	Action	_	_	0	_	_	Offset=1035-1038
+2	anti-BrdU	_	Reagent	_	_	0	_	_	Offset=1039-1057
+3	appropriate	_	Concentration	_	_	2	Measure	_	Offset=1061-1086
+4	incubate	_	Action	_	_	0	_	_	Offset=1091-1099
+5	20	_	Time	_	_	0	_	_	Offset=1104-1114
+6	room	_	Temperature	_	_	0	_	_	Offset=1118-1134
+
+# sent_id = s12
+# text = Cells may be stored for several days.
+1	Wash	_	Action	_	_	0	_	_	Offset=1136-1140
+2	cells	_	Reagent	_	_	0	_	_	Offset=1141-1146
+3	Cell	_	Reagent	_	_	0	_	_	Offset=1150-1170
+
+# sent_id = s13
+# text = Repeat step 3 twice.
+1	centrifuge	_	Action	_	_	0	_	_	Offset=1193-1203
+2	5	_	Time	_	_	0	_	_	Offset=1208-1217
+3	1200-1500	_	Speed	_	_	0	_	_	Offset=1221-1234
+
+# sent_id = s14
+# text = Dislodge cell pellet and add 2 ml of 2 N HCl and incubate for 20 minutes at room temperature.
+1	Stain	_	Action	_	_	0	_	_	Offset=1250-1255
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1256-1259
+3	adding	_	Action	_	_	0	_	_	Offset=1263-1269
+4	1	_	Amount	_	_	5	Measure	_	Offset=1270-1274
+5	7-AAD	_	Reagent	_	_	0	_	_	Offset=1285-1290
+
+# sent_id = s15
+# text = Repeat step 3.
+1	Wait	_	Action	_	_	0	_	_	Offset=1336-1340
+2	5	_	Time	_	_	0	_	_	Offset=1345-1354
+3	acquiring	_	Action	_	_	0	_	_	Offset=1364-1373
+4	samples	_	Reagent	_	_	0	_	_	Offset=1374-1381
+5	flow	_	Device	_	_	0	_	_	Offset=1385-1399
+

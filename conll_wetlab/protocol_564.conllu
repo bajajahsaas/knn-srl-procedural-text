@@ -1,0 +1,78 @@
+# sent_id = s1
+# text = Transformation Protocol
+1	Thaw	_	Action	_	_	0	_	_	Offset=24-28
+2	cells	_	Reagent	_	_	0	_	_	Offset=39-44
+3	ice	_	Location	_	_	0	_	_	Offset=48-51
+
+# sent_id = s2
+# text = Thaw competent cells on ice. 
+1	Chill	_	Action	_	_	0	_	_	Offset=54-59
+2	2	_	Amount	_	_	3	Measure	_	Offset=80-84
+3	ligation	_	Reagent	_	_	0	_	_	Offset=93-109
+4	1.5	_	Modifier	_	_	0	_	_	Offset=115-121
+5	microcentrifuge	_	Device	_	_	0	_	_	Offset=122-142
+
+# sent_id = s3
+# text = Chill approximately 5 ng (2 μl) of the ligation mixture in a 1.5 ml microcentrifuge tube.
+1	Add	_	Action	_	_	0	_	_	Offset=144-147
+2	50	_	Amount	_	_	3	Measure	_	Offset=148-153
+3	competent	_	Reagent	_	_	0	_	_	Offset=157-172
+4	DNA	_	Reagent	_	_	0	_	_	Offset=180-183
+
+# sent_id = s4
+# text = Add 50 µl of competent cells to the DNA.
+1	Mix	_	Action	_	_	0	_	_	Offset=185-188
+2	pipetting	_	Method	_	_	0	_	_	Offset=199-208
+3	cells	_	Reagent	_	_	0	_	_	Offset=263-276
+
+# sent_id = s5
+# text = Mix gently by pipetting up and down or flicking the tube 4–5 times to mix the cells and DNA.
+1	Place	_	Action	_	_	0	_	_	Offset=293-298
+2	mixture	_	Reagent	_	_	0	_	_	Offset=303-310
+3	ice	_	Location	_	_	0	_	_	Offset=314-317
+4	30	_	Time	_	_	0	_	_	Offset=322-332
+
+# sent_id = s6
+# text = Do not vortex.
+1	Heat	_	Action	_	_	0	_	_	Offset=346-356
+2	42°C	_	Temperature	_	_	0	_	_	Offset=360-364
+3	30	_	Time	_	_	0	_	_	Offset=369-379
+
+# sent_id = s7
+# text = Place the mixture on ice for 30 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=393-396
+2	950	_	Amount	_	_	4	Measure	_	Offset=397-403
+3	room	_	Temperature	_	_	0	_	_	Offset=407-423
+4	media	_	Reagent	_	_	0	_	_	Offset=424-429
+5	tube	_	Location	_	_	0	_	_	Offset=437-441
+
+# sent_id = s8
+# text = Do not mix.
+1	Place	_	Action	_	_	0	_	_	Offset=443-448
+2	tube	_	Device	_	_	0	_	_	Offset=449-453
+3	37°C	_	Temperature	_	_	0	_	_	Offset=457-461
+4	60	_	Time	_	_	0	_	_	Offset=466-476
+
+# sent_id = s9
+# text = Heat shock at 42°C for 30 seconds.
+1	Shake	_	Action	_	_	0	_	_	Offset=478-483
+2	250	_	Speed	_	_	0	_	_	Offset=496-503
+3	rotate	_	Action	_	_	0	_	_	Offset=508-514
+
+# sent_id = s10
+# text = Do not mix.
+1	Warm	_	Action	_	_	0	_	_	Offset=516-520
+2	plates	_	Device	_	_	0	_	_	Offset=531-537
+3	37°C	_	Temperature	_	_	0	_	_	Offset=541-545
+
+# sent_id = s11
+# text = Add 950 µl of room temperature media to the tube.
+1	Spread	_	Action	_	_	0	_	_	Offset=547-553
+2	50–100	_	Amount	_	_	0	_	_	Offset=554-563
+3	cells	_	Reagent	_	_	0	_	_	Offset=571-597
+
+# sent_id = s12
+# text = Place tube at 37°C for 60 minutes.
+1	Incubate	_	Action	_	_	0	_	_	Offset=615-623
+2	37°C	_	Temperature	_	_	0	_	_	Offset=637-641
+

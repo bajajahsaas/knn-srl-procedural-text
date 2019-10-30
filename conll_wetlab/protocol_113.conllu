@@ -1,0 +1,54 @@
+# sent_id = s1
+# text = Protein Expression Using BL21(DE3) (C2527)
+1	Transform	_	Action	_	_	0	_	_	Offset=43-52
+2	expression	_	Reagent	_	_	0	_	_	Offset=53-71
+3	BL21	_	Reagent	_	_	0	_	_	Offset=77-81
+4	DE3	_	Reagent	_	_	3	Or	_	Offset=82-85
+
+# sent_id = s2
+# text = Transform expression plasmid into BL21(DE3).
+1	Plate	_	Action	_	_	0	_	_	Offset=88-93
+2	antibiotic	_	Location	_	_	0	_	_	Offset=97-124
+
+# sent_id = s3
+# text = Plate on antibiotic selection plates.
+1	Incubate	_	Action	_	_	0	_	_	Offset=126-134
+2	overnight	_	Time	_	_	0	_	_	Offset=135-144
+3	37°C	_	Temperature	_	_	0	_	_	Offset=148-152
+
+# sent_id = s4
+# text = Incubate overnight at 37°C.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=154-163
+2	single	_	Reagent	_	_	0	_	_	Offset=166-179
+3	10	_	Amount	_	_	4	Measure	_	Offset=183-188
+4	liquid	_	Reagent	_	_	0	_	_	Offset=189-219
+
+# sent_id = s5
+# text = Resuspend a single colony in 10 ml liquid culture with antibiotic.
+1	Incubate	_	Action	_	_	0	_	_	Offset=221-229
+2	37°C	_	Temperature	_	_	0	_	_	Offset=233-237
+3	OD600	_	Measure-Type	_	_	0	_	_	Offset=244-249
+4	reaches	_	Action	_	_	0	_	_	Offset=250-257
+5	0.4–0.8	_	Numerical	_	_	0	_	_	Offset=258-265
+
+# sent_id = s6
+# text = Incubate at 37°C until OD600 reaches 0.4–0.8.
+1	Induce	_	Action	_	_	0	_	_	Offset=267-273
+2	4	_	Numerical	_	_	3	Or	_	Offset=279-280
+3	40	_	Amount	_	_	5	Measure	_	Offset=284-289
+4	100	_	Concentration	_	_	5	Measure	_	Offset=295-301
+5	IPTG	_	Reagent	_	_	0	_	_	Offset=311-315
+6	final	_	Reagent	_	_	0	_	_	Offset=317-336
+7	40	_	Numerical	_	_	8	Or	_	Offset=340-342
+8	400	_	Concentration	_	_	6	Measure	_	Offset=346-352
+9	Induce	_	Action	_	_	0	_	_	Offset=355-361
+10	3	_	Time	_	_	0	_	_	Offset=366-378
+11	37°C	_	Temperature	_	_	0	_	_	Offset=382-386
+
+# sent_id = s7
+# text = Induce with 4 or 40 µl of a 100 mM stock of IPTG (final concentration of 40 or 400 µM)  Induce for 3 to 5 hours at 37°C.
+1	Check	_	Action	_	_	0	_	_	Offset=388-408
+2	Coomassie	_	Reagent	_	_	0	_	_	Offset=419-448
+3	Western	_	Reagent	_	_	2	Or	_	Offset=450-462
+4	activity	_	Reagent	_	_	3	Or	_	Offset=466-480
+

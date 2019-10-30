@@ -1,0 +1,302 @@
+# sent_id = s1
+# text = 96-well DNA Extraction Protocol from 25mm 0.2µm filters
+1	Prepare	_	Action	_	_	0	_	_	Offset=56-63
+2	lysis	_	Reagent	_	_	0	_	_	Offset=64-76
+
+# sent_id = s2
+# text = Prepare lysis buffer. 
+1	Prepare	_	Action	_	_	0	_	_	Offset=79-86
+2	Lysozyme	_	Reagent	_	_	0	_	_	Offset=87-95
+3	RNase	_	Reagent	_	_	0	_	_	Offset=98-103
+
+# sent_id = s3
+# text = Prepare Lysozyme & RNase Aliquot. 
+1	Prepare	_	Action	_	_	0	_	_	Offset=114-121
+2	ProK	_	Reagent	_	_	0	_	_	Offset=122-126
+
+# sent_id = s4
+# text = Prepare ProK Aliquot. 
+1	Thaw	_	Action	_	_	0	_	_	Offset=137-141
+2	filters	_	Reagent	_	_	0	_	_	Offset=142-149
+3	on	_	Temperature	_	_	0	_	_	Offset=150-156
+
+# sent_id = s5
+# text = Thaw filters on ice. 
+1	Do	_	Action	_	_	0	_	_	Offset=159-177
+
+# sent_id = s6
+# text = Do quick spin down. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=180-188
+2	filter	_	Reagent	_	_	0	_	_	Offset=194-200
+3	screw	_	Location	_	_	0	_	_	Offset=204-238
+4	on	_	Temperature	_	_	0	_	_	Offset=245-251
+
+# sent_id = s7
+# text = Transfer each filter to screw top, O-ringed eppendorf tube, also on ice. 
+1	Add	_	Action	_	_	0	_	_	Offset=254-257
+2	250	_	Amount	_	_	3	Measure	_	Offset=258-264
+3	lysis	_	Reagent	_	_	4	Meronym	5:Meronym	Offset=265-277
+4	RNase	_	Reagent	_	_	0	_	_	Offset=283-288
+5	lysozyme	_	Reagent	_	_	0	_	_	Offset=293-301
+6	tube	_	Location	_	_	0	_	_	Offset=310-314
+
+# sent_id = s8
+# text = Add 250 µl lysis buffer with RNase and lysozyme to each tube. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=317-325
+2	37°C	_	Temperature	_	_	0	_	_	Offset=326-330
+3	30	_	Time	_	_	0	_	_	Offset=335-341
+4	rotating	_	Modifier	_	_	0	_	_	Offset=344-374
+
+# sent_id = s9
+# text = Incubate 37°C for 30 min., rotating end over end at angle, for optimal mixing with minimal frothing. 
+1	Add	_	Action	_	_	0	_	_	Offset=419-422
+2	18.75	_	Amount	_	_	3	Measure	_	Offset=423-431
+3	Proteinase	_	Reagent	_	_	5	Meronym	_	Offset=435-456
+4	10	_	Concentration	_	_	3	Measure	_	Offset=458-466
+5	lysis	_	Reagent	_	_	0	_	_	Offset=478-490
+6	0.65	_	Concentration	_	_	0	_	_	Offset=512-522
+
+# sent_id = s10
+# text = Add 18.75 µl of Proteinase K solution (10 mg/ml made up in lysis buffer) to a final conc. of 0.65 mg/ml. 
+1	Add	_	Action	_	_	0	_	_	Offset=525-528
+2	29.9	_	Amount	_	_	4	Measure	_	Offset=529-536
+3	10%	_	Concentration	_	_	4	Measure	_	Offset=537-540
+4	SDS	_	Reagent	_	_	0	_	_	Offset=541-544
+5	1%	_	Concentration	_	_	0	_	_	Offset=565-567
+
+# sent_id = s11
+# text = Add 29.9 µl 10% SDS to a final conc. of 1%. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=570-578
+2	55°C	_	Temperature	_	_	0	_	_	Offset=582-586
+3	2	_	Time	_	_	0	_	_	Offset=591-598
+4	rotating	_	Method	_	_	0	_	_	Offset=600-630
+
+# sent_id = s12
+# text = Incubate at 55°C for 2 hours, rotating end over end at angle. 
+1	turn	_	Action	_	_	0	_	_	Offset=659-666
+2	heat	_	Device	_	_	0	_	_	Offset=667-677
+3	hyb	_	Device	_	_	2	Or	_	Offset=681-689
+4	70°C	_	Temperature	_	_	0	_	_	Offset=693-697
+
+# sent_id = s13
+# text = Towards end of this time, turn on heat block or hyb oven to 70°C. 
+1	Put	_	Action	_	_	0	_	_	Offset=700-703
+2	elution	_	Reagent	_	_	3	Meronym	_	Offset=704-718
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=720-729
+4	water	_	Reagent	_	_	3	Or	_	Offset=733-738
+5	70°C	_	Temperature	_	_	0	_	_	Offset=745-749
+6	preheat	_	Action	_	_	0	_	_	Offset=753-760
+
+# sent_id = s14
+# text = Put elution liquid (Buffer AE or water) into 70°C to preheat. 
+1	Add	_	Action	_	_	0	_	_	Offset=763-766
+2	300	_	Amount	_	_	3	Measure	_	Offset=767-773
+3	Buffer	_	Reagent	_	_	4	Meronym	_	Offset=774-783
+4	Buffer	_	Reagent	_	_	0	_	_	Offset=786-797
+5	without	_	Modifier	_	_	4	Mod-Link	_	Offset=798-823
+
+# sent_id = s15
+# text = Add 300 µl Buffer AL (=Buffer AL/E without the ethanol added). 
+1	Mix	_	Action	_	_	0	_	_	Offset=827-830
+2	thoroughly	_	Modifier	_	_	0	_	_	Offset=831-841
+3	vortexing	_	Method	_	_	0	_	_	Offset=845-854
+4	spin	_	Action	_	_	0	_	_	Offset=859-868
+5	quickly	_	Modifier	_	_	0	_	_	Offset=869-876
+
+# sent_id = s16
+# text = Mix thoroughly by vortexing and spin down quickly.  
+1	Incubate	_	Action	_	_	0	_	_	Offset=880-888
+2	70°C	_	Temperature	_	_	0	_	_	Offset=889-893
+3	10	_	Time	_	_	0	_	_	Offset=898-905
+
+# sent_id = s17
+# text = Incubate 70°C for 10 mins.
+1	Add	_	Action	_	_	0	_	_	Offset=907-910
+2	300	_	Amount	_	_	4	Measure	_	Offset=911-917
+3	96-100%	_	Concentration	_	_	4	Measure	_	Offset=918-925
+4	EtOH	_	Reagent	_	_	0	_	_	Offset=926-930
+
+# sent_id = s18
+# text = Add 300 µl 96-100% EtOH. 
+1	Mix	_	Action	_	_	0	_	_	Offset=933-936
+2	vortexing	_	Method	_	_	0	_	_	Offset=940-949
+3	vigorously	_	Modifier	_	_	0	_	_	Offset=950-960
+4	spin	_	Action	_	_	0	_	_	Offset=965-974
+5	quickly	_	Modifier	_	_	0	_	_	Offset=975-982
+
+# sent_id = s19
+# text = Mix by vortexing vigorously and spin down quickly. 
+1	Check	_	Action	_	_	0	_	_	Offset=985-993
+2	lysate	_	Reagent	_	_	0	_	_	Offset=997-1003
+3	<7	_	pH	_	_	2	Measure	_	Offset=1013-1015
+
+# sent_id = s20
+# text = Check pH of lysate, must be <7 to get max. binding efficiency to column. 
+1	Pipet	_	Action	_	_	0	_	_	Offset=1059-1064
+2	96	_	Location	_	_	0	_	_	Offset=1070-1090
+
+# sent_id = s21
+# text = Pipet onto 96 well spin columns, making sure not to wet the rims to avoid cross contamination. 
+1	Place	_	Action	_	_	0	_	_	Offset=1155-1160
+2	96	_	Location	_	_	0	_	_	Offset=1165-1185
+3	S-block	_	Location	_	_	0	_	_	Offset=1195-1202
+
+# sent_id = s22
+# text = Place the 96 well column plate onto the S-block for flow through collection. 
+1	Seal	_	Action	_	_	0	_	_	Offset=1233-1237
+2	plate	_	Location	_	_	0	_	_	Offset=1238-1243
+3	Airpore	_	Seal	_	_	0	_	_	Offset=1249-1267
+4	Spin	_	Action	_	_	0	_	_	Offset=1268-1272
+5	5788	_	Speed	_	_	0	_	_	Offset=1273-1280
+6	10	_	Time	_	_	0	_	_	Offset=1285-1291
+7	40­°C	_	Temperature	_	_	0	_	_	Offset=1296-1301
+
+# sent_id = s23
+# text = Seal plate with Airpore tape sheet Spin 5788 xg for 10 min. at 40­°C. 
+1	Discard	_	Action	_	_	0	_	_	Offset=1304-1311
+2	flow	_	Reagent	_	_	0	_	_	Offset=1312-1324
+
+# sent_id = s24
+# text = Discard flow through. 
+1	Place	_	Action	_	_	0	_	_	Offset=1327-1332
+2	new	_	Location	_	_	0	_	_	Offset=1336-1355
+
+# sent_id = s25
+# text = Place in new collection tray.  
+1	Add	_	Action	_	_	0	_	_	Offset=1359-1362
+2	lysate	_	Reagent	_	_	0	_	_	Offset=1374-1380
+3	repeat	_	Action	_	_	0	_	_	Offset=1395-1406
+
+# sent_id = s26
+# text = Add additional lysate if needed and repeat spin, etc.
+1	Add	_	Action	_	_	0	_	_	Offset=1413-1416
+2	500	_	Amount	_	_	3	Measure	_	Offset=1417-1423
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=1424-1434
+4	reseal	_	Action	_	_	0	_	_	Offset=1436-1442
+5	plate	_	Location	_	_	0	_	_	Offset=1443-1448
+6	Spin	_	Action	_	_	0	_	_	Offset=1449-1453
+7	5788	_	Speed	_	_	0	_	_	Offset=1454-1461
+8	5	_	Time	_	_	0	_	_	Offset=1466-1471
+9	40°C	_	Temperature	_	_	0	_	_	Offset=1476-1480
+
+# sent_id = s27
+# text = Add 500 µl Buffer AW1, reseal plate Spin 5788 xg for 5 min. at 40°C. 
+1	Add	_	Action	_	_	0	_	_	Offset=1483-1486
+2	500	_	Amount	_	_	3	Measure	_	Offset=1487-1493
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=1494-1504
+4	reseal	_	Action	_	_	0	_	_	Offset=1506-1512
+5	plate	_	Location	_	_	0	_	_	Offset=1513-1518
+6	i	_	Action	_	_	0	_	_	Offset=1521-1522
+7	5788	_	Speed	_	_	0	_	_	Offset=1524-1531
+8	5	_	Time	_	_	0	_	_	Offset=1536-1541
+9	40°C	_	Temperature	_	_	0	_	_	Offset=1546-1550
+
+# sent_id = s28
+# text = Add 500 µl Buffer AW2, reseal plate Spin 5788 xg for 5 min. at 40°C. 
+1	dry	_	Action	_	_	0	_	_	Offset=1556-1559
+2	columns	_	Location	_	_	0	_	_	Offset=1560-1567
+3	reseal	_	Action	_	_	0	_	_	Offset=1576-1582
+4	plate	_	Location	_	_	0	_	_	Offset=1583-1588
+5	sheet	_	Seal	_	_	0	_	_	Offset=1598-1603
+6	spin	_	Action	_	_	0	_	_	Offset=1608-1612
+7	5600	_	Speed	_	_	0	_	_	Offset=1613-1620
+8	15	_	Time	_	_	0	_	_	Offset=1625-1631
+9	40°C	_	Temperature	_	_	0	_	_	Offset=1636-1640
+10	atop	_	Location	_	_	11	Meronym	_	Offset=1641-1645
+11	new	_	Location	_	_	0	_	_	Offset=1648-1667
+12	incubate	_	Action	_	_	0	_	_	Offset=1671-1679
+13	hyb	_	Device	_	_	0	_	_	Offset=1683-1691
+14	70°C	_	Temperature	_	_	0	_	_	Offset=1695-1699
+15	15	_	Time	_	_	0	_	_	Offset=1704-1710
+
+# sent_id = s29
+# text = To dry columns, either reseal plate with new sheet and spin 5600 xg for 15 min. at 40°C atop a new collection tray or incubate in hyb oven at 70°C for 15 min.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1712-1720
+2	column	_	Location	_	_	0	_	_	Offset=1721-1733
+3	top	_	Location	_	_	4	Meronym	_	Offset=1737-1740
+4	rack	_	Location	_	_	5	Meronym	_	Offset=1744-1748
+5	"elution	_	Location	_	_	0	_	_	Offset=1752-1776
+
+# sent_id = s30
+# text = Transfer column plate to top of rack of "elution microtubes RS". 
+1	Add	_	Action	_	_	0	_	_	Offset=1778-1781
+2	200	_	Amount	_	_	4	Measure	_	Offset=1782-1788
+3	pre-heated	_	Temperature	_	_	0	_	_	Offset=1789-1804
+4	Buffer	_	Reagent	_	_	0	_	_	Offset=1805-1814
+5	water	_	Reagent	_	_	4	Or	_	Offset=1818-1823
+6	reseal	_	Action	_	_	0	_	_	Offset=1825-1831
+7	plate	_	Location	_	_	0	_	_	Offset=1832-1837
+8	Incubate	_	Action	_	_	0	_	_	Offset=1838-1846
+9	1	_	Time	_	_	0	_	_	Offset=1847-1852
+10	RT	_	Temperature	_	_	0	_	_	Offset=1857-1859
+
+# sent_id = s31
+# text = Add 200 µl pre-heated 70°C Buffer AE or water, reseal plate Incubate 1 min. at RT.  
+1	Spin	_	Action	_	_	0	_	_	Offset=1863-1867
+2	5788	_	Speed	_	_	0	_	_	Offset=1868-1875
+3	2	_	Time	_	_	0	_	_	Offset=1876-1882
+4	elute	_	Action	_	_	0	_	_	Offset=1886-1891
+
+# sent_id = s32
+# text = Spin 5788 xg 2 min. to elute. 
+1	Repeat	_	Action	_	_	0	_	_	Offset=1894-1900
+2	200	_	Amount	_	_	0	_	_	Offset=1913-1919
+3	200	_	Amount	_	_	4	Measure	_	Offset=2025-2031
+4	elution	_	Reagent	_	_	0	_	_	Offset=2032-2039
+5	heat	_	Action	_	_	0	_	_	Offset=2041-2045
+6	it	_	Mention	_	_	0	_	_	Offset=2046-2048
+7	70°C	_	Temperature	_	_	0	_	_	Offset=2057-2061
+8	pass	_	Action	_	_	0	_	_	Offset=2067-2071
+9	it	_	Mention	_	_	0	_	_	Offset=2072-2074
+10	column	_	Location	_	_	0	_	_	Offset=2087-2093
+
+# sent_id = s33
+# text = Repeat with second 200 µl (will increase total yield up to 25%) or if you wanted to keep the column small, you could use the first 200 µl elution, heat it back to 70°C, and pass it through the column again (will increase total yield approx. 15%). 
+1	freeze	_	Action	_	_	0	_	_	Offset=2146-2152
+2	elutants	_	Reagent	_	_	0	_	_	Offset=2153-2161
+3	break	_	Action	_	_	0	_	_	Offset=2166-2171
+4	overnight	_	Time	_	_	0	_	_	Offset=2177-2186
+5	for	_	Time	_	_	0	_	_	Offset=2191-2202
+
+# sent_id = s34
+# text = Can freeze elutants and break here overnight, or for a while, before proceeding with Final DNA clean up step, particularly if DNA is in Buffer AE which is TE, so will keep the DNA relatively stable. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=2342-2350
+2	eluted	_	Reagent	_	_	0	_	_	Offset=2355-2365
+3	96	_	Location	_	_	0	_	_	Offset=2373-2403
+
+# sent_id = s35
+# text = Transfer the eluted DNA to the 96 well PCR purification plate (no more than 300 µl at a time). 
+1	Apply	_	Action	_	_	0	_	_	Offset=2438-2443
+2	vacuum	_	Device	_	_	0	_	_	Offset=2444-2450
+3	20	_	Generic-Measure	_	_	0	_	_	Offset=2454-2466
+4	~20-30	_	Time	_	_	0	_	_	Offset=2478-2488
+
+# sent_id = s36
+# text = Apply vacuum at 20 inches Hg until dry (~20-30 min.)
+1	Rinse	_	Action	_	_	0	_	_	Offset=2491-2496
+2	DNA	_	Reagent	_	_	0	_	_	Offset=2497-2500
+3	100	_	Amount	_	_	4	Measure	_	Offset=2506-2512
+4	Ambion	_	Reagent	_	_	0	_	_	Offset=2513-2525
+5	apply	_	Action	_	_	0	_	_	Offset=2527-2532
+6	vacuum	_	Device	_	_	0	_	_	Offset=2533-2539
+7	5-10	_	Time	_	_	0	_	_	Offset=2540-2548
+
+# sent_id = s37
+# text = Rinse DNA with 100 µl Ambion water, apply vacuum 5-10 min. until dry. 
+1	Rinse	_	Action	_	_	0	_	_	Offset=2562-2567
+2	water	_	Reagent	_	_	0	_	_	Offset=2587-2592
+
+# sent_id = s38
+# text = Rinse a second time with water if you want to make sure all Buffer TE removed. 
+1	Add	_	Action	_	_	0	_	_	Offset=2642-2645
+2	20	_	Amount	_	_	0	_	_	Offset=2646-2651
+3	dilute	_	Reagent	_	_	0	_	_	Offset=2652-2661
+
+# sent_id = s39
+# text = Add 20 µl dilute TE. 
+1	Pipette	_	Action	_	_	0	_	_	Offset=2664-2671
+2	up	_	Modifier	_	_	0	_	_	Offset=2672-2683
+3	20	_	Numerical	_	_	0	_	_	Offset=2684-2692
+4	transfer	_	Action	_	_	0	_	_	Offset=2697-2705
+5	clean	_	Location	_	_	0	_	_	Offset=2711-2730
+

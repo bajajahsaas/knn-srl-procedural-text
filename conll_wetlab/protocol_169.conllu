@@ -1,0 +1,270 @@
+# sent_id = s1
+# text = General protocol for the concentration of virioplankton from a large volume (>20 L) water sample
+1	Prefilter	_	Action	_	_	0	_	_	Offset=97-106
+2	ambient	_	Reagent	_	_	0	_	_	Offset=107-127
+3	25-µm	_	Size	_	_	5	Setting	_	Offset=135-140
+4	wound	_	Modifier	_	_	5	Mod-Link	_	Offset=141-146
+5	polypropylene	_	Device	_	_	0	_	_	Offset=147-176
+6	peristaltic	_	Modifier	_	_	7	Or	_	Offset=210-221
+7	diaphragm	_	Modifier	_	_	8	Mod-Link	_	Offset=225-234
+8	pump	_	Location	_	_	0	_	_	Offset=235-239
+
+# sent_id = s2
+# text = Prefilter ambient water sample with a 25-µm wound polypropylene sediment filter before any concentration using a peristaltic or diaphragm pump.
+1	Rinse	_	Action	_	_	0	_	_	Offset=241-246
+2	concentration	_	Reagent	_	_	0	_	_	Offset=251-264
+3	container	_	Location	_	_	2	Meronym	_	Offset=265-274
+4	three	_	Numerical	_	_	0	_	_	Offset=275-280
+5	prefiltered	_	Modifier	_	_	6	Mod-Link	_	Offset=292-303
+6	water	_	Reagent	_	_	0	_	_	Offset=304-309
+7	filling	_	Action	_	_	0	_	_	Offset=317-324
+8	prefiltered	_	Modifier	_	_	9	Mod-Link	_	Offset=330-341
+9	sample	_	Reagent	_	_	0	_	_	Offset=342-354
+
+# sent_id = s3
+# text = Rinse the concentration container three times with prefiltered water before filling with prefiltered sample water.
+1	arrange	_	Action	_	_	0	_	_	Offset=433-440
+2	tubing	_	Location	_	_	0	_	_	Offset=445-451
+3	tangential	_	Action	_	_	0	_	_	Offset=456-482
+
+# sent_id = s4
+# text = Once the concentration container is full of 25 µm prefiltered ambient water, arrange the tubing for tangential flow filtration (TFF).
+1	Attach	_	Action	_	_	0	_	_	Offset=490-496
+2	0.22-µm	_	Size	_	_	3	Measure	_	Offset=501-508
+3	tangential	_	Location	_	_	0	_	_	Offset=509-553
+4	retentate	_	Action	_	_	0	_	_	Offset=558-567
+5	tubing	_	Location	_	_	0	_	_	Offset=568-574
+6	TFF	_	Location	_	_	0	_	_	Offset=582-623
+
+# sent_id = s5
+# text = Attach the 0.22-µm tangential flow filtration (TFF) filter feed and retentate tubing to the TFF filter housing inlet and outlet ports, respectively.
+1	Attach	_	Action	_	_	0	_	_	Offset=639-645
+2	permeate	_	Location	_	_	0	_	_	Offset=650-665
+3	permeate	_	Location	_	_	0	_	_	Offset=673-686
+4	TFF	_	Location	_	_	3	Meronym	_	Offset=694-712
+5	direct	_	Action	_	_	0	_	_	Offset=717-723
+6	separate	_	Location	_	_	0	_	_	Offset=731-749
+7	catch	_	Action	_	_	0	_	_	Offset=753-758
+8	virus	_	Reagent	_	_	0	_	_	Offset=759-764
+9	water	_	Reagent	_	_	8	Meronym	_	Offset=776-781
+
+# sent_id = s6
+# text = Attach the permeate tubing to the permeate port of the TFF filter housing and direct into a separate container to catch virus-containing water.
+1	Run	_	Action	_	_	0	_	_	Offset=783-786
+2	feed	_	Location	_	_	0	_	_	Offset=791-802
+3	large	_	Size	_	_	0	_	_	Offset=813-818
+4	peristaltic	_	Location	_	_	0	_	_	Offset=819-840
+
+# sent_id = s7
+# text = Run the feed tubing through a large peristaltic pump head.
+1	peristaltic	_	Location	_	_	0	_	_	Offset=849-870
+2	set	_	Action	_	_	0	_	_	Offset=897-900
+3	maximal	_	Generic-Measure	_	_	0	_	_	Offset=907-924
+4	prime	_	Action	_	_	0	_	_	Offset=933-938
+5	0.22-µm	_	Size	_	_	6	Measure	_	Offset=943-950
+6	TFF	_	Location	_	_	0	_	_	Offset=951-961
+7	remove	_	Action	_	_	0	_	_	Offset=966-972
+8	air	_	Reagent	_	_	0	_	_	Offset=977-980
+
+# sent_id = s8
+# text = If the peristaltic pump head has an occlusion setting, set it to maximal occlusion to help prime the 0.22-µm TFF filter and remove all air.
+1	Turn	_	Action	_	_	0	_	_	Offset=982-986
+2	peristatic	_	Location	_	_	0	_	_	Offset=991-1006
+3	on	_	Generic-Measure	_	_	0	_	_	Offset=1007-1009
+4	increase	_	Action	_	_	0	_	_	Offset=1014-1022
+5	peristaltic	_	Location	_	_	0	_	_	Offset=1027-1043
+6	20%	_	Speed	_	_	0	_	_	Offset=1053-1056
+7	prime	_	Action	_	_	0	_	_	Offset=1060-1065
+8	tubing	_	Location	_	_	0	_	_	Offset=1070-1076
+9	remove	_	Action	_	_	0	_	_	Offset=1081-1087
+10	excess	_	Reagent	_	_	0	_	_	Offset=1088-1098
+
+# sent_id = s9
+# text = Turn the peristatic pump on and increase the peristaltic pump speed to 20% to prime the tubing and remove excess air.
+1	adjust	_	Action	_	_	0	_	_	Offset=1161-1167
+2	occlusion	_	Measure-Type	_	_	3	Of-Type	_	Offset=1172-1181
+3	looser	_	Numerical	_	_	0	_	_	Offset=1192-1206
+4	prevent	_	Action	_	_	0	_	_	Offset=1210-1239
+
+# sent_id = s10
+# text = Once the tubing and filter are completely filled with water, adjust the occlusion knob to a looser setting to prevent excessive tubing wear.
+1	increase	_	Action	_	_	0	_	_	Offset=1248-1256
+2	pump	_	Location	_	_	0	_	_	Offset=1261-1265
+3	45%	_	Speed	_	_	0	_	_	Offset=1275-1278
+
+# sent_id = s11
+# text = Slowly increase the pump speed to 45%.
+1	open	_	Action	_	_	0	_	_	Offset=1327-1331
+2	permeate	_	Location	_	_	0	_	_	Offset=1336-1350
+3	0.22-µm	_	Size	_	_	4	Measure	_	Offset=1358-1365
+4	TFF	_	Location	_	_	2	Meronym	_	Offset=1366-1376
+5	~20°	_	Generic-Measure	_	_	0	_	_	Offset=1402-1406
+
+# sent_id = s12
+# text = Once the system is running smoothly, partially open the permeate valve on the 0.22-µm TFF filter to the second tick mark (~20° open).
+1	Collect	_	Action	_	_	0	_	_	Offset=1414-1421
+2	0.22	_	Amount	_	_	3	Measure	_	Offset=1427-1434
+3	permeate	_	Reagent	_	_	0	_	_	Offset=1435-1443
+4	appropriately	_	Size	_	_	5	Measure	_	Offset=1452-1471
+5	carboy	_	Location	_	_	0	_	_	Offset=1472-1478
+
+# sent_id = s13
+# text = Collect the <0.22 µm permeate into an appropriately sized carboy.
+1	prepare	_	Action	_	_	0	_	_	Offset=1552-1559
+2	30-kD	_	Generic-Measure	_	_	3	Measure	_	Offset=1564-1569
+3	TFF	_	Location	_	_	0	_	_	Offset=1570-1580
+4	viral	_	Action	_	_	0	_	_	Offset=1585-1604
+
+# sent_id = s14
+# text = When the permeate carboy is more than half full with <0.22 µm permeate, prepare the 30-kD TFF filter for viral concentration.
+1	Slow	_	Action	_	_	0	_	_	Offset=1606-1610
+2	large	_	Size	_	_	3	Measure	_	Offset=1615-1620
+3	peristaltic	_	Location	_	_	0	_	_	Offset=1621-1637
+4	10%.	_	Speed	_	_	0	_	_	Offset=1647-1651
+
+# sent_id = s15
+# text = Slow the large peristaltic pump speed to 10%.
+1	Attach	_	Action	_	_	0	_	_	Offset=1652-1658
+2	feed	_	Location	_	_	0	_	_	Offset=1663-1667
+3	retentate	_	Location	_	_	0	_	_	Offset=1672-1688
+4	appropriate	_	Location	_	_	0	_	_	Offset=1696-1713
+5	30-kD	_	Generic-Measure	_	_	6	Measure	_	Offset=1721-1726
+6	TFF	_	Location	_	_	4	Meronym	_	Offset=1727-1730
+
+# sent_id = s16
+# text = Attach the feed and retentate tubing to the appropriate ports on the 30-kD TFF.
+1	Direct	_	Action	_	_	0	_	_	Offset=1732-1738
+2	permeate	_	Location	_	_	0	_	_	Offset=1743-1758
+3	30-kD	_	Generic-Measure	_	_	4	Measure	_	Offset=1768-1773
+4	TFF	_	Location	_	_	2	Meronym	_	Offset=1774-1784
+5	clean	_	Modifier	_	_	6	Mod-Link	_	Offset=1792-1797
+6	carboy	_	Location	_	_	0	_	_	Offset=1798-1804
+7	collect	_	Action	_	_	0	_	_	Offset=1808-1815
+8	ultrafiltrate	_	Reagent	_	_	0	_	_	Offset=1816-1829
+
+# sent_id = s17
+# text = Direct the permeate tubing from the 30-kD TFF filter into a clean carboy to collect ultrafiltrate (UF; virus-free water).
+1	work	_	Action	_	_	0	_	_	Offset=1864-1868
+2	feed	_	Location	_	_	0	_	_	Offset=1873-1884
+3	second	_	Location	_	_	0	_	_	Offset=1894-1910
+4	large	_	Size	_	_	5	Measure	_	Offset=1918-1923
+5	peristaltic	_	Location	_	_	3	Meronym	_	Offset=1924-1940
+
+# sent_id = s18
+# text = Carefully work the feed tubing into the second pump head of the large peristaltic pump.
+1	Increase	_	Action	_	_	0	_	_	Offset=1942-1950
+2	large	_	Size	_	_	3	Measure	_	Offset=1955-1960
+3	peristaltic	_	Location	_	_	0	_	_	Offset=1961-1977
+4	20%	_	Speed	_	_	0	_	_	Offset=1987-1990
+
+# sent_id = s19
+# text = Increase the large peristaltic pump speed to 20%.
+1	tighten	_	Action	_	_	0	_	_	Offset=1999-2006
+2	occlusion	_	Device	_	_	0	_	_	Offset=2011-2025
+3	pump	_	Location	_	_	2	Meronym	_	Offset=2033-2042
+4	prime	_	Action	_	_	0	_	_	Offset=2046-2051
+5	30-kD	_	Generic-Measure	_	_	6	Measure	_	Offset=2056-2061
+6	TFF	_	Location	_	_	0	_	_	Offset=2062-2072
+7	remove	_	Action	_	_	0	_	_	Offset=2077-2083
+8	air	_	Reagent	_	_	0	_	_	Offset=2088-2091
+
+# sent_id = s20
+# text = Again, tighten the occlusion knob on the pump head to prime the 30-kD TFF filter and remove all air.
+1	loosen	_	Action	_	_	0	_	_	Offset=2136-2142
+2	pump	_	Location	_	_	3	Meronym	_	Offset=2147-2156
+3	occlusion	_	Device	_	_	0	_	_	Offset=2157-2171
+
+# sent_id = s21
+# text = Once the filter and lines are fully primed loosen the pump head occlusion knob.
+1	Slowly	_	Modifier	_	_	0	_	_	Offset=2173-2179
+2	increase	_	Action	_	_	0	_	_	Offset=2180-2188
+3	pump	_	Location	_	_	0	_	_	Offset=2193-2197
+4	45%	_	Speed	_	_	0	_	_	Offset=2207-2210
+
+# sent_id = s22
+# text = Slowly increase the pump speed to 45%.
+1	Slowly	_	Modifier	_	_	0	_	_	Offset=2212-2218
+2	close	_	Action	_	_	0	_	_	Offset=2219-2224
+3	backpressure	_	Device	_	_	0	_	_	Offset=2229-2246
+4	30-kD	_	Generic-Measure	_	_	5	Measure	_	Offset=2254-2259
+5	TFF	_	Location	_	_	0	_	_	Offset=2260-2270
+
+# sent_id = s23
+# text = Slowly close the backpressure knob on the 30-kD TFF filter until permeate begins to flow.
+1	Monitor	_	Action	_	_	0	_	_	Offset=2302-2309
+2	level	_	Measure-Type	_	_	0	_	_	Offset=2314-2319
+
+# sent_id = s24
+# text = Monitor the level of <0.22 µm water in the <0.22 µm permeate carboy.
+1	Collect	_	Action	_	_	0	_	_	Offset=2468-2475
+
+# sent_id = s25
+# text = The level should be maintained at half full until the pre filtered ambient water is nearly gone.
+1	release	_	Action	_	_	0	_	_	Offset=2643-2650
+2	pump	_	Location	_	_	0	_	_	Offset=2655-2664
+3	remove	_	Action	_	_	0	_	_	Offset=2669-2675
+4	0.22-µm	_	Size	_	_	5	Measure	_	Offset=2680-2687
+5	TFF	_	Location	_	_	0	_	_	Offset=2688-2710
+6	large	_	Location	_	_	0	_	_	Offset=2720-2742
+
+# sent_id = s26
+# text = Collect 1 L of ultra filtrate (30 kD TFF permeate) in a 2-L bottle for rinsing of the 30-kD TFF filter.
+1	run	_	Action	_	_	0	_	_	Offset=2756-2759
+2	30-kD	_	Generic-Measure	_	_	3	Measure	_	Offset=2764-2769
+3	TFF	_	Location	_	_	0	_	_	Offset=2770-2780
+
+# sent_id = s27
+# text = When ~5 L of 25 µm filtered ambient water remains in the large carboy, release the pump head and remove the 0.22-µm TFF filter feed tubing from the large peristaltic pump.
+1	stop	_	Action	_	_	0	_	_	Offset=2876-2880
+2	large	_	Size	_	_	3	Measure	_	Offset=2885-2890
+3	peristaltic	_	Location	_	_	0	_	_	Offset=2891-2907
+4	drain	_	Action	_	_	0	_	_	Offset=2912-2917
+5	30-kD	_	Generic-Measure	_	_	6	Measure	_	Offset=2922-2927
+6	TFF	_	Location	_	_	0	_	_	Offset=2928-2938
+7	<0.22	_	Size	_	_	8	Measure	_	Offset=2948-2956
+8	water	_	Location	_	_	0	_	_	Offset=2957-2969
+
+# sent_id = s28
+# text = Continue to run the 30-kD TFF filter until ~1 L of <0.22 µm water remains in the carboy.
+1	Slowly	_	Modifier	_	_	0	_	_	Offset=2971-2977
+2	prime	_	Action	_	_	0	_	_	Offset=2978-2983
+3	30-kD	_	Generic-Measure	_	_	4	Measure	_	Offset=2988-2993
+4	TFF	_	Location	_	_	0	_	_	Offset=2994-3004
+5	1	_	Amount	_	_	6	Measure	_	Offset=3014-3017
+6	collected	_	Reagent	_	_	0	_	_	Offset=3021-3033
+7	recirculate	_	Action	_	_	0	_	_	Offset=3056-3067
+8	feed	_	Action	_	_	0	_	_	Offset=3069-3073
+9	retentate	_	Action	_	_	0	_	_	Offset=3075-3084
+10	permeate	_	Action	_	_	0	_	_	Offset=3089-3097
+11	lines	_	Location	_	_	0	_	_	Offset=3098-3103
+12	30-kD	_	Generic-Measure	_	_	13	Measure	_	Offset=3111-3116
+13	filter	_	Location	_	_	11	Meronym	_	Offset=3117-3123
+14	1L	_	Amount	_	_	15	Measure	_	Offset=3131-3133
+15	UF	_	Reagent	_	_	0	_	_	Offset=3137-3139
+16	UF	_	Reagent	_	_	0	_	_	Offset=3145-3147
+17	30%	_	Speed	_	_	0	_	_	Offset=3151-3154
+18	5	_	Time	_	_	0	_	_	Offset=3170-3175
+
+# sent_id = s29
+# text = When 1L or less of <0.22 µm water remains, stop the large peristaltic pump and drain the 30-kD TFF filter into the <0.22 µm water carboy.
+1	Stop	_	Action	_	_	0	_	_	Offset=3177-3181
+2	release	_	Action	_	_	0	_	_	Offset=3192-3199
+3	drain	_	Action	_	_	0	_	_	Offset=3219-3224
+
+# sent_id = s30
+# text = Slowly prime the 30-kD TFF filter from the 1 L of collected UF from step 22 and then recirculate (feed, retentate and permeate lines of the 30-kD filter in the 1L of UF) the UF at 30% pump speed for 5 min.
+1	Pool	_	Action	_	_	0	_	_	Offset=3260-3264
+
+# sent_id = s31
+# text = Stop the pump, release the pump head, and drain all tubing into the 2-L UF bottle.
+1	reduced	_	Action	_	_	0	_	_	Offset=3435-3442
+
+# sent_id = s32
+# text = Pool the recirculated UF with the ~1 L of retentate from the primary viral concentration through the 30-kD TFF filter.
+1	store	_	Action	_	_	0	_	_	Offset=3545-3550
+
+# sent_id = s33
+# text = The volume of the ~2 L viral concentrate can be further reduced by using a small-scale TFF ultrafilter.
+1	closed	_	Action	_	_	0	_	_	Offset=3715-3721
+2	priming	_	Action	_	_	0	_	_	Offset=3734-3741
+

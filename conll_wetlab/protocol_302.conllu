@@ -1,0 +1,57 @@
+# sent_id = s1
+# text = Prophage Induction in Natural Populations of Heterotrophic Bacteria
+1	unconcentrated	_	Modifier	_	_	2	Mod-Link	_	Offset=72-86
+2	seawater	_	Reagent	_	_	0	_	_	Offset=87-103
+3	add	_	Action	_	_	0	_	_	Offset=105-108
+4	25	_	Amount	_	_	2	Measure	_	Offset=109-114
+5	each	_	Modifier	_	_	2	Mod-Link	_	Offset=115-119
+6	control	_	Reagent	_	_	0	_	_	Offset=125-132
+7	treatment	_	Reagent	_	_	6	Meronym	_	Offset=136-145
+8	50-mL	_	Amount	_	_	11	Measure	_	Offset=147-152
+9	sterile	_	Modifier	_	_	11	Mod-Link	_	Offset=153-160
+10	conical	_	Modifier	_	_	11	Mod-Link	_	Offset=162-169
+11	centrifuge	_	Location	_	_	0	_	_	Offset=170-186
+
+# sent_id = s2
+# text = For unconcentrated seawater samples, add 25 mL each to a control or treatment, 50-mL sterile, conical centrifuge tubes.
+1	additional	_	Modifier	_	_	2	Mod-Link	_	Offset=196-206
+2	sample	_	Reagent	_	_	0	_	_	Offset=207-213
+3	25	_	Amount	_	_	2	Measure	_	Offset=215-220
+4	fix	_	Action	_	_	0	_	_	Offset=226-229
+5	1%	_	Concentration	_	_	7	Measure	_	Offset=235-237
+6	0.02-µm	_	Generic-Measure	_	_	7	Measure	_	Offset=238-254
+7	formalin	_	Reagent	_	_	0	_	_	Offset=255-263
+
+# sent_id = s3
+# text = Take an additional sample (25 mL) and fix with 1% 0.02-µm filtered formalin.
+1	treatment	_	Reagent	_	_	0	_	_	Offset=273-290
+2	add	_	Action	_	_	0	_	_	Offset=292-295
+3	1	_	Concentration	_	_	4	Measure	_	Offset=296-303
+4	mitomycin	_	Reagent	_	_	0	_	_	Offset=304-315
+5	0.5	_	Concentration	_	_	3	Or	_	Offset=320-329
+
+# sent_id = s4
+# text = For the treatment samples, add 1 µg/mL mitomycin C (or 0.5 µg/mL in oligotrophic environments).
+1	incubated	_	Action	_	_	0	_	_	Offset=377-386
+2	16–24	_	Time	_	_	0	_	_	Offset=391-398
+3	room	_	Temperature	_	_	0	_	_	Offset=402-418
+4	fixed	_	Action	_	_	0	_	_	Offset=423-428
+5	2%	_	Concentration	_	_	6	Measure	_	Offset=441-443
+6	glutaraldehyde	_	Reagent	_	_	0	_	_	Offset=444-458
+7	1%	_	Concentration	_	_	8	Measure	_	Offset=470-472
+8	formalin	_	Reagent	_	_	6	Or	_	Offset=473-481
+9	1%	_	Concentration	_	_	10	Measure	_	Offset=515-517
+10	formalin	_	Reagent	_	_	8	Or	_	Offset=518-526
+11	0.5%	_	Concentration	_	_	12	Measure	_	Offset=527-531
+12	glutaraldehyde	_	Reagent	_	_	10	Or	_	Offset=532-546
+
+# sent_id = s5
+# text = The samples are incubated for 16–24 h at room temperature and fixed with either 2% glutaraldehyde (for TEM), 1% formalin (epifluorescence microscopy), or 1% formalin/0.5% glutaraldehyde (flow cytometry [FCM]).
+1	Samples	_	Reagent	_	_	0	_	_	Offset=571-578
+2	enumeration	_	Action	_	_	0	_	_	Offset=583-594
+3	epifluorescence	_	Method	_	_	0	_	_	Offset=598-624
+4	counted	_	Action	_	_	0	_	_	Offset=635-642
+5	within	_	Modifier	_	_	6	Mod-Link	_	Offset=643-649
+6	24	_	Time	_	_	0	_	_	Offset=650-654
+7	stored	_	Action	_	_	0	_	_	Offset=672-678
+

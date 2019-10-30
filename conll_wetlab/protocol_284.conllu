@@ -1,0 +1,123 @@
+# sent_id = s1
+# text = Haemolymph extraction of adult Drosophila
+1	Sting	_	Action	_	_	0	_	_	Offset=42-47
+2	3	_	Numerical	_	_	3	Measure	_	Offset=48-49
+3	holes	_	Reagent	_	_	0	_	_	Offset=50-55
+4	0.5ml	_	Amount	_	_	5	Measure	_	Offset=61-66
+5	Eppendorf	_	Location	_	_	0	_	_	Offset=67-80
+6	put	_	Action	_	_	0	_	_	Offset=85-88
+7	15ml	_	Amount	_	_	8	Measure	_	Offset=94-98
+8	Eppendorf	_	Location	_	_	0	_	_	Offset=99-112
+
+# sent_id = s2
+# text = Sting 3 holes in a 0.5ml Eppendorf cap and put into 15ml Eppendorf cap with removed lid.
+1	Remove	_	Action	_	_	0	_	_	Offset=131-137
+2	flies’	_	Reagent	_	_	0	_	_	Offset=142-154
+3	spear	_	Action	_	_	0	_	_	Offset=156-161
+4	fly’s	_	Reagent	_	_	0	_	_	Offset=166-178
+5	peaked	_	Device	_	_	0	_	_	Offset=188-201
+
+# sent_id = s3
+# text = Remove the flies’ wings, spear the fly’s thorax with the peaked stylus.
+1	Collect	_	Action	_	_	0	_	_	Offset=203-210
+2	20	_	Numerical	_	_	3	Measure	_	Offset=211-213
+3	speared	_	Reagent	_	_	0	_	_	Offset=214-227
+4	0.5ml	_	Amount	_	_	5	Measure	_	Offset=235-240
+5	Eppendorf	_	Location	_	_	0	_	_	Offset=241-265
+6	ice	_	Location	_	_	0	_	_	Offset=270-273
+
+# sent_id = s4
+# text = Collect 20 speared flies in the 0.5ml Eppendorf cap with holes, on ice.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=275-285
+2	0.5ml	_	Amount	_	_	3	Measure	_	Offset=290-295
+3	Eppendorf	_	Location	_	_	0	_	_	Offset=296-309
+4	1.5ml	_	Amount	_	_	5	Measure	_	Offset=321-326
+5	one	_	Location	_	_	0	_	_	Offset=327-330
+6	1	_	Time	_	_	0	_	_	Offset=332-337
+7	5000	_	Speed	_	_	0	_	_	Offset=339-347
+8	4°C	_	Temperature	_	_	0	_	_	Offset=352-355
+
+# sent_id = s5
+# text = Centrifuge the 0.5ml Eppendorf cap within the 1.5ml one (1 min, 5000 rpm, at 4°C).
+1	Discard	_	Action	_	_	0	_	_	Offset=358-365
+2	0.5ml	_	Amount	_	_	3	Measure	_	Offset=370-375
+3	Eppendorf	_	Location	_	_	0	_	_	Offset=376-389
+4	soak	_	Action	_	_	0	_	_	Offset=391-395
+5	pellet	_	Reagent	_	_	0	_	_	Offset=400-406
+6	capillary	_	Location	_	_	0	_	_	Offset=414-423
+
+# sent_id = s6
+# text = Discard the 0.5ml Eppendorf cap, soak the pellet with a capillary.
+1	Record	_	Action	_	_	0	_	_	Offset=425-431
+
+# sent_id = s7
+# text = Record the amount of soaked haemolymph (to fill up the 0.5μl you need around 50 flies).
+1	haemolymph	_	Reagent	_	_	0	_	_	Offset=517-527
+2	capillary	_	Location	_	_	0	_	_	Offset=537-546
+3	transferred	_	Action	_	_	0	_	_	Offset=554-565
+4	suction	_	Device	_	_	0	_	_	Offset=575-586
+5	anywhere	_	Modifier	_	_	0	_	_	Offset=587-595
+
+# sent_id = s8
+# text = The haemolymph from the capillary can be transferred with the suction cup anywhere.
+1	Add	_	Action	_	_	0	_	_	Offset=597-600
+2	19.5µl	_	Amount	_	_	4	Measure	_	Offset=601-607
+3	cold	_	Modifier	_	_	4	Mod-Link	_	Offset=608-612
+4	PBS	_	Reagent	_	_	0	_	_	Offset=613-616
+5	0.5µl	_	Amount	_	_	6	Measure	_	Offset=620-625
+6	haemolymph	_	Reagent	_	_	0	_	_	Offset=626-636
+
+# sent_id = s9
+# text = Add 19.5µl cold PBS to 0.5µl haemolymph.
+1	Add	_	Action	_	_	0	_	_	Offset=638-641
+2	10µl	_	Amount	_	_	3	Measure	_	Offset=642-646
+3	mixture	_	Reagent	_	_	0	_	_	Offset=655-662
+4	30µl	_	Amount	_	_	5	Measure	_	Offset=666-670
+5	Citrate	_	Reagent	_	_	0	_	_	Offset=671-690
+6	10µl	_	Amount	_	_	8	Measure	_	Offset=695-699
+7	3%	_	Concentration	_	_	8	Measure	_	Offset=705-707
+8	Trehalase-Citrate	_	Reagent	_	_	0	_	_	Offset=708-746
+
+# sent_id = s10
+# text = Add 10µl of this mixture to 30µl Citrate Acid Buffer and 10µl of a 3% Trehalase-Citrate acid buffer solution.
+1	Incubate	_	Action	_	_	0	_	_	Offset=748-756
+2	over	_	Time	_	_	0	_	_	Offset=757-767
+3	37°C	_	Temperature	_	_	0	_	_	Offset=771-775
+
+# sent_id = s11
+# text = Incubate over night at 37°C.
+1	Add	_	Action	_	_	0	_	_	Offset=777-780
+2	50µl	_	Amount	_	_	3	Measure	_	Offset=781-785
+3	Tris	_	Reagent	_	_	0	_	_	Offset=786-797
+
+# sent_id = s12
+# text = Add 50µl Tris Buffer.
+1	80µ	_	Amount	_	_	2	Measure	_	Offset=799-802
+2	mixture	_	Reagent	_	_	0	_	_	Offset=811-818
+3	added	_	Action	_	_	0	_	_	Offset=823-828
+4	156.8µ	_	Amount	_	_	5	Measure	_	Offset=832-838
+5	Glucose	_	Reagent	_	_	0	_	_	Offset=839-854
+6	3.2µl	_	Amount	_	_	7	Measure	_	Offset=884-889
+7	o-Dianisidine	_	Reagent	_	_	0	_	_	Offset=890-903
+
+# sent_id = s13
+# text = 80µ of this mixture are added to 156.8µ Glucose oxidase (aliquot in the freezer) and 3.2µl o-Dianisidine (freshly added from the fridge).
+1	Incubate	_	Action	_	_	0	_	_	Offset=937-945
+2	exactly	_	Modifier	_	_	3	Mod-Link	_	Offset=950-957
+3	30	_	Time	_	_	0	_	_	Offset=958-964
+4	37°C	_	Temperature	_	_	0	_	_	Offset=968-972
+
+# sent_id = s14
+# text = Incubate for exactly 30 min at 37°C.
+1	Stop	_	Action	_	_	0	_	_	Offset=974-978
+2	reaction	_	Method	_	_	0	_	_	Offset=979-987
+3	adding	_	Action	_	_	0	_	_	Offset=991-997
+4	160µl	_	Amount	_	_	5	Measure	_	Offset=998-1003
+5	Sulfuric	_	Reagent	_	_	0	_	_	Offset=1004-1017
+
+# sent_id = s15
+# text = Stop reaction by adding 160µl Sulfuric Acid.
+1	Measure	_	Action	_	_	0	_	_	Offset=1019-1026
+2	540nm	_	Generic-Measure	_	_	0	_	_	Offset=1030-1035
+3	spectrometer	_	Device	_	_	0	_	_	Offset=1054-1066
+

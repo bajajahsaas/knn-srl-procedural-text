@@ -1,0 +1,81 @@
+# sent_id = s1
+# text = Preparation of Virus DNA from Seawater for Metagenomics
+1	Precipitate	_	Action	_	_	0	_	_	Offset=56-67
+2	0.2µm	_	Amount	_	_	3	Measure	_	Offset=68-73
+3	filtered	_	Reagent	_	_	0	_	_	Offset=74-91
+4	iron	_	Reagent	_	_	0	_	_	Offset=97-110
+5	store	_	Action	_	_	0	_	_	Offset=115-120
+6	filters	_	Device	_	_	0	_	_	Offset=125-132
+7	4°C	_	Temperature	_	_	0	_	_	Offset=136-139
+
+# sent_id = s2
+# text = Precipitate 0.2µm filtered seawater with iron chloride and store the filters at 4°C. 
+1	Resuspend	_	Action	_	_	0	_	_	Offset=142-151
+2	precipitated	_	Reagent	_	_	0	_	_	Offset=156-174
+3	215	_	Reagent	_	_	0	_	_	Offset=178-195;209
+4	Oxalate	_	Reagent	_	_	3	Or	_	Offset=200-207
+
+# sent_id = s3
+# text = Resuspend the precipitated virus in Mg-EDTA-Ascorbate (or Oxalate) buffer just prior to DNA extraction (also see Ferric Chloride Resuspension Buffer protocol). 
+1	Treat	_	Action	_	_	0	_	_	Offset=303-308
+2	resuspended	_	Reagent	_	_	0	_	_	Offset=313-342
+3	DNase	_	Reagent	_	_	0	_	_	Offset=348-355
+4	2	_	Time	_	_	0	_	_	Offset=360-367
+5	room	_	Temperature	_	_	0	_	_	Offset=371-387
+
+# sent_id = s4
+# text = Treat the resuspended virus preparation with DNase I for 2 hours at room temperature. 
+1	Inactivate	_	Action	_	_	0	_	_	Offset=390-400
+2	enzyme	_	Reagent	_	_	0	_	_	Offset=405-411
+3	EDTA	_	Reagent	_	_	0	_	_	Offset=417-421
+4	EGTA	_	Reagent	_	_	0	_	_	Offset=426-430
+
+# sent_id = s5
+# text = Inactivate the enzyme with EDTA and EGTA.  
+1	Concentrate	_	Action	_	_	0	_	_	Offset=434-445
+2	resuspended	_	Reagent	_	_	0	_	_	Offset=450-479
+3	centrifugal	_	Device	_	_	0	_	_	Offset=486-511
+4	3-5	_	Amount	_	_	0	_	_	Offset=520-526
+5	1-2	_	Amount	_	_	4	Or	_	Offset=573-579
+
+# sent_id = s6
+# text = Concentrate the resuspended virus preparation using centrifugal concentrators down to 3-5 ml total volume if performing CsCl cleanup or to 1-2 ml total volume if proceeding directly to DNA extraction.  
+1	Remove	_	Action	_	_	0	_	_	Offset=637-643
+2	concentrate	_	Reagent	_	_	0	_	_	Offset=648-659
+3	tube	_	Location	_	_	0	_	_	Offset=671-675
+
+# sent_id = s7
+# text = Remove the concentrate to a fresh tube. 
+1	Rinse	_	Action	_	_	0	_	_	Offset=678-683
+2	membrane	_	Reagent	_	_	0	_	_	Offset=688-696
+3	0.5-1	_	Amount	_	_	4	Measure	_	Offset=716-724
+4	resuspension	_	Reagent	_	_	0	_	_	Offset=725-744
+5	pipetting	_	Method	_	_	0	_	_	Offset=748-769
+
+# sent_id = s8
+# text = Rinse the membrane with an additional 0.5-1 ml resuspension buffer by pipetting up and down along the membrane.  
+1	Pool	_	Action	_	_	0	_	_	Offset=792-801
+2	concentrated	_	Reagent	_	_	0	_	_	Offset=806-825
+
+# sent_id = s9
+# text = Pool with the concentrated sample.
+1	layer	_	Action	_	_	0	_	_	Offset=849-854
+2	this	_	Mention	_	_	0	_	_	Offset=855-859
+3	premade	_	Reagent	_	_	0	_	_	Offset=865-887
+4	isolate	_	Action	_	_	0	_	_	Offset=892-899
+5	virus	_	Reagent	_	_	0	_	_	Offset=904-918
+6	protocol	_	Method	_	_	0	_	_	Offset=936-984
+7	Cesium	_	Method	_	_	6	Or	_	Offset=1004-1071
+8	Wizard	_	Method	_	_	7	Or	_	Offset=1096-1127
+
+# sent_id = s10
+# text = At this point, either layer this onto premade CsCl gradients and isolate the virus fraction according to the protocol Cesium Chloride Purification of Viruses (or alternatively, Cesium Chloride DNA Extraction of Viruses using Wizard Prep Columns) or proceed directly to Wizard Prep purification of DNA.
+1	Extract	_	Action	_	_	0	_	_	Offset=1129-1136
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1141-1144
+3	Wizard	_	Location	_	_	0	_	_	Offset=1151-1170
+4	resin	_	Reagent	_	_	0	_	_	Offset=1175-1180
+5	Calculate	_	Action	_	_	0	_	_	Offset=1181-1190
+6	amount	_	Measure-Type	_	_	0	_	_	Offset=1195-1201
+7	DNA	_	Reagent	_	_	0	_	_	Offset=1205-1208
+8	Quant-iT	_	Method	_	_	0	_	_	Offset=1225-1260
+

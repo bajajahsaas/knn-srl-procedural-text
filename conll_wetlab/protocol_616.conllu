@@ -1,0 +1,323 @@
+# sent_id = s1
+# text = Stellaris® RNA FISH Cells in Suspension Protocol. 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=51-61
+2	suspension	_	Reagent	_	_	0	_	_	Offset=62-78
+3	2	_	Generic-Measure	_	_	2	Measure	_	Offset=80-91
+4	15	_	Amount	_	_	5	Measure	_	Offset=104-109
+5	conical	_	Location	_	_	0	_	_	Offset=110-122
+
+# sent_id = s2
+# text = Centrifuge suspension cells (2 – 5 x 106 cells) in a 15 mL conical tube.
+1	Aspirate	_	Action	_	_	0	_	_	Offset=124-132
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=133-144
+3	leaving	_	Action	_	_	0	_	_	Offset=146-153
+4	cells	_	Reagent	_	_	0	_	_	Offset=154-159
+5	pellet	_	Reagent	_	_	0	_	_	Offset=165-171
+6	base	_	Location	_	_	0	_	_	Offset=175-179
+7	tube	_	Location	_	_	6	Meronym	_	Offset=183-187
+
+# sent_id = s3
+# text = Aspirate supernatant, leaving cells in a pellet at base of tube.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=189-195
+2	resuspend	_	Action	_	_	0	_	_	Offset=196-205
+3	cells	_	Reagent	_	_	0	_	_	Offset=206-211
+4	1	_	Amount	_	_	6	Measure	_	Offset=215-219
+5	1X	_	Concentration	_	_	6	Measure	_	Offset=223-225
+6	PBS	_	Reagent	_	_	0	_	_	Offset=226-229
+7	centrifuge	_	Action	_	_	0	_	_	Offset=235-245
+8	pellet	_	Action	_	_	0	_	_	Offset=249-255
+9	cell	_	Reagent	_	_	0	_	_	Offset=256-271
+
+# sent_id = s4
+# text = Gently resuspend cells in 1 mL of 1X PBS, and centrifuge to pellet cell suspension.
+1	Aspirate	_	Action	_	_	0	_	_	Offset=273-281
+2	1X	_	Concentration	_	_	3	Measure	_	Offset=286-288
+3	PBS	_	Reagent	_	_	0	_	_	Offset=289-292
+4	gently	_	Modifier	_	_	0	_	_	Offset=298-304
+5	resuspend	_	Action	_	_	0	_	_	Offset=305-314
+6	cells	_	Reagent	_	_	0	_	_	Offset=315-320
+7	1	_	Amount	_	_	8	Measure	_	Offset=324-328
+8	fixation	_	Reagent	_	_	0	_	_	Offset=332-347
+
+# sent_id = s5
+# text = Aspirate the 1X PBS, and gently resuspend cells in 1 mL of fixation buffer.
+1	Mix	_	Action	_	_	0	_	_	Offset=349-352
+2	well	_	Modifier	_	_	0	_	_	Offset=353-357
+3	pipetting	_	Method	_	_	0	_	_	Offset=361-383
+4	tube	_	Location	_	_	0	_	_	Offset=388-392
+
+# sent_id = s6
+# text = Mix well by pipetting or inverting the tube.
+1	Incubate	_	Action	_	_	0	_	_	Offset=394-402
+2	room	_	Temperature	_	_	0	_	_	Offset=406-422
+3	10	_	Time	_	_	0	_	_	Offset=427-437
+
+# sent_id = s7
+# text = Incubate at room temperature for 10 minutes.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=439-449
+2	pellet	_	Action	_	_	0	_	_	Offset=453-459
+3	cell	_	Reagent	_	_	0	_	_	Offset=460-475
+
+# sent_id = s8
+# text = Centrifuge to pellet cell suspension.
+1	Aspirate	_	Action	_	_	0	_	_	Offset=477-485
+2	fixation	_	Reagent	_	_	0	_	_	Offset=486-501
+3	wash	_	Action	_	_	0	_	_	Offset=507-511
+4	cells	_	Reagent	_	_	0	_	_	Offset=512-517
+5	three	_	Numerical	_	_	0	_	_	Offset=518-523
+6	1	_	Amount	_	_	8	Measure	_	Offset=535-539
+7	1X	_	Concentration	_	_	8	Measure	_	Offset=543-545
+8	PBS	_	Reagent	_	_	0	_	_	Offset=546-549
+
+# sent_id = s9
+# text = Aspirate fixation buffer, and wash cells three times with 1 mL of 1X PBS.
+1	Mix	_	Action	_	_	0	_	_	Offset=551-554
+2	well	_	Modifier	_	_	0	_	_	Offset=555-559
+3	gently	_	Modifier	_	_	0	_	_	Offset=563-569
+4	pipetting	_	Method	_	_	0	_	_	Offset=570-591
+5	resuspend	_	Action	_	_	0	_	_	Offset=595-604
+6	pellet	_	Reagent	_	_	0	_	_	Offset=605-611
+
+# sent_id = s10
+# text = Mix well by gently pipetting up and down to resuspend pellet.
+1	permeabilize	_	Reagent	_	_	0	_	_	Offset=616-634
+2	resuspend	_	Action	_	_	0	_	_	Offset=636-645
+3	cells	_	Reagent	_	_	0	_	_	Offset=646-651
+4	1	_	Amount	_	_	6	Measure	_	Offset=655-659
+5	70%	_	Concentration	_	_	6	Measure	_	Offset=663-666
+6	ethanol	_	Reagent	_	_	0	_	_	Offset=667-674
+7	at	_	Modifier	_	_	8	Mod-Link	_	Offset=679-687
+8	1	_	Time	_	_	0	_	_	Offset=688-694
+9	+2	_	Temperature	_	_	0	_	_	Offset=698-709
+
+# sent_id = s11
+# text = To permeabilize cells, resuspend cells in 1 mL of 70% ethanol for at least 1 hour at +2 to +8 °C.
+1	Cells	_	Reagent	_	_	0	_	_	Offset=711-716
+2	stored	_	Action	_	_	0	_	_	Offset=724-730
+3	+2	_	Temperature	_	_	0	_	_	Offset=734-745
+4	70%	_	Concentration	_	_	5	Measure	_	Offset=749-752
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=753-760
+6	week	_	Time	_	_	0	_	_	Offset=769-773
+
+# sent_id = s12
+# text = Cells can be stored at +2 to +8 °C in 70% ethanol up to a week before hybridization.
+1	Mix	_	Action	_	_	0	_	_	Offset=879-882
+2	well	_	Modifier	_	_	0	_	_	Offset=883-887
+3	vortexing	_	Action	_	_	0	_	_	Offset=891-900
+4	centrifuge	_	Action	_	_	0	_	_	Offset=907-917
+5	briefly	_	Modifier	_	_	0	_	_	Offset=918-925
+
+# sent_id = s13
+# text = If frozen before using, warm the reconstituted probe solution to room temperature.
+1	Hybridization	_	Reagent	_	_	2	Meronym	_	Offset=942-962
+2	probe	_	Reagent	_	_	0	_	_	Offset=974-979
+3	add	_	Action	_	_	0	_	_	Offset=981-984
+4	1	_	Amount	_	_	5	Measure	_	Offset=985-989
+5	probe	_	Reagent	_	_	0	_	_	Offset=993-1013
+6	100	_	Amount	_	_	7	Measure	_	Offset=1017-1023
+7	Hybridization	_	Reagent	_	_	0	_	_	Offset=1027-1047
+8	vortex	_	Action	_	_	0	_	_	Offset=1058-1064
+9	centrifuge	_	Action	_	_	0	_	_	Offset=1069-1079
+
+# sent_id = s14
+# text = Mix well by vortexing, then centrifuge briefly.
+1	Invert	_	Action	_	_	0	_	_	Offset=1197-1203
+2	tube	_	Location	_	_	3	Meronym	_	Offset=1204-1208
+3	fixed	_	Reagent	_	_	0	_	_	Offset=1214-1254
+4	several	_	Numerical	_	_	0	_	_	Offset=1255-1262
+5	resuspend	_	Action	_	_	0	_	_	Offset=1272-1281
+6	cells	_	Reagent	_	_	0	_	_	Offset=1282-1287
+
+# sent_id = s15
+# text = To prepare the Hybridization Buffer containing probe, add 1 μL of probe stock solution to 100 μL of Hybridization Buffer, and then vortex and centrifuge (enough for one coverglass).
+1	place	_	Action	_	_	0	_	_	Offset=1294-1299
+2	50-	_	Amount	_	_	3	Measure	_	Offset=1300-1310
+3	cells	_	Reagent	_	_	0	_	_	Offset=1314-1319
+4	microcentrifuge	_	Location	_	_	0	_	_	Offset=1354-1374
+
+# sent_id = s16
+# text = This creates a working probe solution of 125 nM.
+1	Centrifuge	_	Method	_	_	0	_	_	Offset=1597-1607
+2	pellet	_	Action	_	_	0	_	_	Offset=1611-1617
+3	cells	_	Reagent	_	_	0	_	_	Offset=1618-1623
+4	aspirate	_	Action	_	_	0	_	_	Offset=1628-1636
+5	70%	_	Concentration	_	_	6	Measure	_	Offset=1637-1640
+6	ethanol	_	Reagent	_	_	0	_	_	Offset=1641-1648
+
+# sent_id = s17
+# text = This solution will be used on step 13.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=1650-1656
+2	resuspend	_	Action	_	_	0	_	_	Offset=1657-1666
+3	cells	_	Reagent	_	_	0	_	_	Offset=1667-1672
+4	500	_	Amount	_	_	5	Measure	_	Offset=1676-1682
+5	Wash	_	Reagent	_	_	0	_	_	Offset=1686-1699
+
+# sent_id = s18
+# text = Invert tube with fixed and permeabilized suspension cells several times to resuspend cells.
+1	Centrifuge	_	Method	_	_	0	_	_	Offset=1720-1730
+2	pellet	_	Action	_	_	0	_	_	Offset=1734-1740
+3	cells	_	Reagent	_	_	0	_	_	Offset=1741-1746
+4	aspirate	_	Action	_	_	0	_	_	Offset=1751-1759
+5	Wash	_	Reagent	_	_	0	_	_	Offset=1760-1773
+
+# sent_id = s19
+# text = Then place 50- 500 μL of cells (depending on concentration) in a microcentrifuge tube.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1776-1785
+2	cells	_	Reagent	_	_	0	_	_	Offset=1786-1791
+3	100	_	Amount	_	_	4	Measure	_	Offset=1795-1801
+4	Hybridization	_	Reagent	_	_	5	Meronym	_	Offset=1805-1825
+5	probe	_	Reagent	_	_	0	_	_	Offset=1837-1842
+
+# sent_id = s20
+# text = Alternatively, at this step you can use poly-L-lysine or cytospin to adhere the fixed and permeabilized suspension cells to a round #1 coverglass after which you can perform RNA FISH following the Adherent Cell Protocol.
+1	Mix	_	Action	_	_	0	_	_	Offset=1844-1847
+2	well	_	Modifier	_	_	0	_	_	Offset=1848-1852
+3	pipetting	_	Method	_	_	0	_	_	Offset=1856-1877
+
+# sent_id = s21
+# text = Centrifuge to pellet cells and aspirate 70% ethanol.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1879-1887
+2	microcentrifuge	_	Location	_	_	0	_	_	Offset=1888-1908
+3	dark	_	Location	_	_	0	_	_	Offset=1916-1920
+4	37	_	Temperature	_	_	0	_	_	Offset=1924-1929
+5	~16	_	Time	_	_	0	_	_	Offset=1941-1950
+
+# sent_id = s22
+# text = Gently resuspend cells in 500 μL of Wash Buffer A (see recipe above).
+1	Centrifuge	_	Method	_	_	0	_	_	Offset=1953-1963
+2	pellet	_	Action	_	_	0	_	_	Offset=1967-1973
+3	cells	_	Reagent	_	_	0	_	_	Offset=1974-1979
+4	aspirate	_	Action	_	_	0	_	_	Offset=1984-1992
+5	50%	_	Amount	_	_	6	Measure	_	Offset=1999-2002
+6	Hybridization	_	Reagent	_	_	7	Meronym	_	Offset=2010-2030
+7	probe	_	Reagent	_	_	0	_	_	Offset=2042-2047
+
+# sent_id = s23
+# text = Centrifuge to pellet cells and aspirate Wash Buffer A. 
+1	Add	_	Action	_	_	0	_	_	Offset=2107-2110
+2	500	_	Amount	_	_	3	Measure	_	Offset=2111-2117
+3	Wash	_	Reagent	_	_	0	_	_	Offset=2121-2134
+
+# sent_id = s24
+# text = Resuspend cells in 100 μL of Hybridization Buffer containing probe.
+1	Centrifuge	_	Method	_	_	0	_	_	Offset=2136-2146
+2	pellet	_	Action	_	_	0	_	_	Offset=2150-2156
+3	cells	_	Reagent	_	_	0	_	_	Offset=2157-2162
+4	aspirate	_	Action	_	_	0	_	_	Offset=2167-2175
+5	solution	_	Reagent	_	_	0	_	_	Offset=2176-2184
+
+# sent_id = s25
+# text = Mix well by pipetting up and down.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=2224-2233
+2	cells	_	Reagent	_	_	0	_	_	Offset=2234-2239
+3	500	_	Amount	_	_	4	Measure	_	Offset=2243-2249
+4	Wash	_	Reagent	_	_	0	_	_	Offset=2253-2266
+
+# sent_id = s26
+# text = Incubate microcentrifuge tube in the dark at 37 °C overnight (~16 hours).
+1	Incubate	_	Action	_	_	0	_	_	Offset=2269-2277
+2	dark	_	Location	_	_	0	_	_	Offset=2285-2289
+3	37	_	Temperature	_	_	0	_	_	Offset=2293-2298
+4	30	_	Time	_	_	0	_	_	Offset=2303-2313
+
+# sent_id = s27
+# text = Centrifuge to pellet cells and aspirate about 50% of the Hybridization Buffer containing probe.
+1	Centrifuge	_	Method	_	_	0	_	_	Offset=2315-2325
+2	pellet	_	Action	_	_	0	_	_	Offset=2329-2335
+3	cells	_	Reagent	_	_	0	_	_	Offset=2336-2341
+4	aspirate	_	Action	_	_	0	_	_	Offset=2346-2354
+5	Wash	_	Reagent	_	_	0	_	_	Offset=2355-2368
+
+# sent_id = s28
+# text = The pellet is very fluffy and easy to lose at this point.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=2371-2380
+2	cells	_	Reagent	_	_	0	_	_	Offset=2381-2386
+3	500	_	Amount	_	_	4	Measure	_	Offset=2390-2396
+4	DAPI	_	Reagent	_	_	6	Meronym	8:Meronym	Offset=2400-2418
+5	1X	_	Concentration	_	_	6	Measure	_	Offset=2420-2422
+6	Wash	_	Reagent	_	_	0	_	_	Offset=2423-2436
+7	5	_	Concentration	_	_	8	Measure	_	Offset=2451-2458
+8	DAPI	_	Reagent	_	_	0	_	_	Offset=2459-2463
+9	counterstain	_	Action	_	_	0	_	_	Offset=2468-2480
+10	nuclei	_	Reagent	_	_	0	_	_	Offset=2485-2491
+
+# sent_id = s29
+# text = Add 500 μL of Wash Buffer A.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2493-2501
+2	dark	_	Location	_	_	0	_	_	Offset=2509-2513
+3	37	_	Temperature	_	_	0	_	_	Offset=2517-2522
+4	30	_	Time	_	_	0	_	_	Offset=2527-2537
+
+# sent_id = s30
+# text = Centrifuge to pellet cells and aspirate solution.
+1	Centrifuge	_	Method	_	_	0	_	_	Offset=2539-2549
+2	pellet	_	Action	_	_	0	_	_	Offset=2553-2559
+3	cells	_	Reagent	_	_	0	_	_	Offset=2560-2565
+4	aspirate	_	Action	_	_	0	_	_	Offset=2570-2578
+5	DAPI	_	Reagent	_	_	0	_	_	Offset=2579-2597
+
+# sent_id = s31
+# text = Be careful not to disturb the pellet.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=2599-2608
+2	cells	_	Reagent	_	_	0	_	_	Offset=2609-2614
+3	500	_	Amount	_	_	4	Measure	_	Offset=2618-2624
+4	Wash	_	Reagent	_	_	0	_	_	Offset=2628-2641
+
+# sent_id = s32
+# text = Resuspend cells in 500 μL of Wash Buffer A. 
+1	Centrifuge	_	Method	_	_	0	_	_	Offset=2643-2653
+2	pellet	_	Action	_	_	0	_	_	Offset=2657-2663
+3	cells	_	Reagent	_	_	0	_	_	Offset=2664-2669
+4	aspirate	_	Action	_	_	0	_	_	Offset=2674-2682
+5	Wash	_	Reagent	_	_	0	_	_	Offset=2683-2696
+
+# sent_id = s33
+# text = Incubate in the dark at 37 °C for 30 minutes.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=2699-2708
+2	cells	_	Reagent	_	_	0	_	_	Offset=2709-2714
+3	small	_	Modifier	_	_	4	Mod-Link	_	Offset=2720-2725
+4	drop	_	Reagent	_	_	0	_	_	Offset=2726-2730
+5	30	_	Amount	_	_	4	Measure	_	Offset=2746-2751
+6	Vectashield	_	Reagent	_	_	4	Meronym	_	Offset=2756-2783
+
+# sent_id = s34
+# text = Centrifuge to pellet cells and aspirate Wash Buffer A. 
+1	Place	_	Action	_	_	0	_	_	Offset=2785-2790
+2	5-10	_	Amount	_	_	3	Measure	_	Offset=2791-2798
+3	cell	_	Reagent	_	_	0	_	_	Offset=2802-2817
+4	clean	_	Modifier	_	_	5	Mod-Link	_	Offset=2823-2828
+5	glass	_	Location	_	_	0	_	_	Offset=2829-2851
+6	place	_	Action	_	_	0	_	_	Offset=2861-2866
+7	18	_	Size	_	_	8	Measure	_	Offset=2870-2880
+8	square	_	Seal	_	_	0	_	_	Offset=2881-2901
+9	cells	_	Reagent	_	_	0	_	_	Offset=2911-2916
+10	spread	_	Action	_	_	0	_	_	Offset=2920-2926
+11	solution	_	Reagent	_	_	0	_	_	Offset=2931-2939
+
+# sent_id = s35
+# text = Resuspend cells in 500 μL of DAPI nuclear stain (1X Wash Buffer A consisting of 5 ng/mL DAPI) to counterstain the nuclei.
+1	Place	_	Action	_	_	0	_	_	Offset=2941-2946
+2	Kimwipe	_	Device	_	_	0	_	_	Offset=2949-2956
+3	coverglass	_	Location	_	_	0	_	_	Offset=2966-2976
+4	gentle	_	Modifier	_	_	0	_	_	Offset=2987-2993
+5	pressure	_	Action	_	_	0	_	_	Offset=2994-3002
+6	surface	_	Location	_	_	9	Coreference-Link	_	Offset=3012-3019
+7	coverglass	_	Seal	_	_	6	Meronym	_	Offset=3027-3037
+8	pressing	_	Action	_	_	0	_	_	Offset=3039-3047
+9	it	_	Mention	_	_	0	_	_	Offset=3048-3050
+10	firmly	_	Modifier	_	_	0	_	_	Offset=3051-3057
+11	surface	_	Location	_	_	0	_	_	Offset=3067-3074
+12	slide	_	Location	_	_	11	Meronym	_	Offset=3082-3087
+
+# sent_id = s36
+# text = Incubate in the dark at 37 °C for 30 minutes.
+1	Seal	_	Action	_	_	0	_	_	Offset=3253-3257
+2	coverglass	_	Location	_	_	0	_	_	Offset=3262-3282
+3	clear	_	Modifier	_	_	4	Mod-Link	_	Offset=3288-3293
+4	nail	_	Seal	_	_	0	_	_	Offset=3294-3305
+5	dry	_	Action	_	_	0	_	_	Offset=3320-3323
+
+# sent_id = s37
+# text = Centrifuge to pellet cells and aspirate DAPI nuclear stain.
+1	Proceed	_	Action	_	_	0	_	_	Offset=3325-3332
+

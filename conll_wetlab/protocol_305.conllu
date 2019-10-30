@@ -1,0 +1,98 @@
+# sent_id = s1
+# text = SDS-PAGE for Identifying nonmucin protein in BSM
+1	prepare	_	Action	_	_	0	_	_	Offset=80-87
+2	mucin	_	Reagent	_	_	0	_	_	Offset=92-105
+
+# sent_id = s2
+# text = Prepare the sample solutions: 
+1	Assign	_	Action	_	_	0	_	_	Offset=108-114
+
+# sent_id = s3
+# text = prepare the mucin samples. 
+1	Add	_	Action	_	_	0	_	_	Offset=180-183
+2	DDI	_	Reagent	_	_	0	_	_	Offset=184-193
+3	samples	_	Reagent	_	_	0	_	_	Offset=201-208
+4	tube	_	Location	_	_	0	_	_	Offset=219-223
+5	30ul	_	Amount	_	_	0	_	_	Offset=228-232
+
+# sent_id = s4
+# text = Assign different volume for each sample, 10ul,20ul,30ul, respectively. 
+1	Add	_	Action	_	_	0	_	_	Offset=243-246
+2	loading	_	Reagent	_	_	0	_	_	Offset=247-261
+3	each	_	Modifier	_	_	4	Mod-Link	_	Offset=265-269
+4	sample	_	Reagent	_	_	0	_	_	Offset=270-276
+
+# sent_id = s5
+# text = Add DDI water to the samples, let each tube has 30ul solution.
+1	Heating	_	Action	_	_	0	_	_	Offset=278-285
+2	95	_	Temperature	_	_	0	_	_	Offset=294-303
+3	10min	_	Time	_	_	0	_	_	Offset=308-313
+
+# sent_id = s6
+# text = Add loading buffer to each sample.
+1	Loading	_	Action	_	_	0	_	_	Offset=315-322
+2	running	_	Reagent	_	_	0	_	_	Offset=327-341
+
+# sent_id = s7
+# text = Heating them in 95 degree for 10min.
+1	Add	_	Action	_	_	0	_	_	Offset=343-346
+2	running	_	Reagent	_	_	0	_	_	Offset=352-366
+3	electrophrosis	_	Device	_	_	0	_	_	Offset=376-395
+
+# sent_id = s8
+# text = Loading the running buffer.
+1	peel	_	Action	_	_	0	_	_	Offset=397-401
+2	green	_	Reagent	_	_	0	_	_	Offset=406-417
+3	bottom	_	Location	_	_	0	_	_	Offset=425-431
+4	take	_	Action	_	_	0	_	_	Offset=436-445
+5	top	_	Seal	_	_	0	_	_	Offset=450-473
+6	set	_	Action	_	_	0	_	_	Offset=475-478
+7	gel	_	Reagent	_	_	0	_	_	Offset=483-486
+8	electrophorsis	_	Device	_	_	0	_	_	Offset=494-513
+
+# sent_id = s9
+# text = Add some running buffer into the electrophrosis cell.
+1	Fill	_	Action	_	_	0	_	_	Offset=515-519
+2	inner	_	Location	_	_	0	_	_	Offset=524-555
+3	running	_	Reagent	_	_	0	_	_	Offset=561-576
+
+# sent_id = s10
+# text = peel the green paste at the bottom and take away the top green plastic cover, set the gel in the electrophorsis cell.
+1	Load	_	Action	_	_	0	_	_	Offset=744-748
+2	protein	_	Reagent	_	_	0	_	_	Offset=753-767
+3	gel	_	Reagent	_	_	0	_	_	Offset=775-778
+
+# sent_id = s11
+# text = Fill the inner and outer buffer chambers with running buffer.
+1	Connect	_	Action	_	_	0	_	_	Offset=780-787
+2	electrophoresis	_	Device	_	_	0	_	_	Offset=792-812
+3	power	_	Device	_	_	0	_	_	Offset=820-832
+4	perform	_	Action	_	_	0	_	_	Offset=837-844
+5	electrophores	_	Method	_	_	0	_	_	Offset=845-858
+6	150	_	Generic-Measure	_	_	0	_	_	Offset=878-889
+
+# sent_id = s12
+# text = Make sure that the level of the running buffer above the top of the gel and there is no leakage from the inner buffer chamber to the outer.
+1	Wash	_	Action	_	_	0	_	_	Offset=969-973
+2	gels	_	Reagent	_	_	0	_	_	Offset=974-978
+3	DI	_	Reagent	_	_	0	_	_	Offset=982-988
+
+# sent_id = s13
+# text = Performing electrophorsis.
+1	Remove	_	Action	_	_	0	_	_	Offset=990-996
+2	all	_	Modifier	_	_	3	Mod-Link	_	Offset=997-1000
+3	water	_	Reagent	_	_	0	_	_	Offset=1001-1006
+4	staining	_	Location	_	_	0	_	_	Offset=1012-1030
+5	add	_	Action	_	_	0	_	_	Offset=1035-1038
+6	stain	_	Reagent	_	_	0	_	_	Offset=1039-1044
+7	agitate	_	Action	_	_	0	_	_	Offset=1057-1064
+8	overnight	_	Time	_	_	0	_	_	Offset=1065-1074
+
+# sent_id = s14
+# text = Load the protein sample on the gel.
+1	Wash	_	Action	_	_	0	_	_	Offset=1077-1081
+2	gel	_	Reagent	_	_	0	_	_	Offset=1082-1085
+3	DI	_	Reagent	_	_	0	_	_	Offset=1092-1100
+4	keep	_	Action	_	_	0	_	_	Offset=1205-1209
+5	agitate	_	Action	_	_	0	_	_	Offset=1230-1237
+

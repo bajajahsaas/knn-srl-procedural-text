@@ -1,0 +1,69 @@
+# sent_id = s1
+# text = Sampling for extracellular phage quantification by qPCR and MPN assays
+1	Place	_	Action	_	_	0	_	_	Offset=71-76
+2	filter	_	Location	_	_	0	_	_	Offset=77-89
+3	receiver	_	Location	_	_	0	_	_	Offset=107-129
+4	without	_	Action	_	_	0	_	_	Offset=130-146
+5	bottom	_	Location	_	_	0	_	_	Offset=151-157
+6	sterile	_	Modifier	_	_	7	Mod-Link	_	Offset=165-172
+7	filter	_	Location	_	_	5	Meronym	_	Offset=173-185
+
+# sent_id = s2
+# text = Place filter plate (MSGVN2210) onto receiver 96-well plate without touching the bottom of the sterile filter plate.
+1	Transfer	_	Action	_	_	0	_	_	Offset=279-287
+2	250	_	Amount	_	_	3	Measure	_	Offset=288-294
+3	sample	_	Reagent	_	_	0	_	_	Offset=298-304
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=310-314
+5	experimental	_	Location	_	_	0	_	_	Offset=315-339
+6	empty	_	Modifier	_	_	7	Mod-Link	_	Offset=345-350
+7	wells	_	Location	_	_	0	_	_	Offset=351-356
+8	filter	_	Location	_	_	7	Meronym	_	Offset=364-376
+
+# sent_id = s3
+# text = Keep a log of your sample layout (which samples are in which wells).
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=511-521
+2	1000	_	Speed	_	_	0	_	_	Offset=525-533
+3	3	_	Time	_	_	0	_	_	Offset=538-543
+
+# sent_id = s4
+# text = Plate-Setup Template:  Transfer 250 µL of sample from each experimental bottle/tube into empty wells on the filter plate in duplicate.
+1	balance	_	Action	_	_	0	_	_	Offset=556-563
+2	centrifuge	_	Device	_	_	0	_	_	Offset=568-578
+
+# sent_id = s5
+# text = It is not necessary to fill the entire plate; we will continue to use the same plate over the course of the experiment.
+1	store	_	Action	_	_	0	_	_	Offset=598-603
+2	stacked	_	Modifier	_	_	3	Mod-Link	_	Offset=604-611
+3	filter/filtrate	_	Location	_	_	0	_	_	Offset=612-634
+4	4°C	_	Temperature	_	_	0	_	_	Offset=638-641
+5	covered	_	Action	_	_	0	_	_	Offset=643-650
+6	plate	_	Seal	_	_	0	_	_	Offset=658-667
+
+# sent_id = s6
+# text = Centrifuge at 1000 x g for 3 min.
+1	Do	_	Action	_	_	0	_	_	Offset=669-683
+2	stacked	_	Modifier	_	_	3	Mod-Link	_	Offset=688-695
+3	plates	_	Location	_	_	0	_	_	Offset=696-702
+4	avoid	_	Action	_	_	0	_	_	Offset=707-712
+5	cross-contamination	_	Method	_	_	0	_	_	Offset=713-732
+
+# sent_id = s7
+# text = Be sure to balance the centrifuge.
+1	filling	_	Action	_	_	0	_	_	Offset=754-761
+2	entire	_	Modifier	_	_	3	Mod-Link	_	Offset=766-772
+3	plate	_	Location	_	_	0	_	_	Offset=773-778
+4	remove	_	Action	_	_	0	_	_	Offset=780-786
+5	filter	_	Location	_	_	0	_	_	Offset=791-803
+6	discard	_	Action	_	_	0	_	_	Offset=808-815
+
+# sent_id = s8
+# text = Between sampling, store stacked filter/filtrate plates at 4°C, covered with a plate lid.
+1	Store	_	Action	_	_	0	_	_	Offset=817-822
+2	filtrate	_	Location	_	_	0	_	_	Offset=827-841
+3	4°C	_	Temperature	_	_	0	_	_	Offset=845-848
+4	covered	_	Action	_	_	0	_	_	Offset=850-857
+5	plate	_	Seal	_	_	0	_	_	Offset=865-874
+6	wrapped	_	Action	_	_	0	_	_	Offset=879-886
+7	well	_	Location	_	_	0	_	_	Offset=887-891
+8	parafilm	_	Seal	_	_	0	_	_	Offset=897-905
+

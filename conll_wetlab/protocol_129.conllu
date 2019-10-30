@@ -1,0 +1,190 @@
+# sent_id = s1
+# text = Construction of shotgun libraries from RNA virus assemblages
+1	Cesium	_	Method	_	_	0	_	_	Offset=61-85
+2	purify	_	Action	_	_	0	_	_	Offset=102-108
+3	viruses	_	Reagent	_	_	0	_	_	Offset=109-116
+4	viral	_	Location	_	_	3	Meronym	_	Offset=122-151
+
+# sent_id = s2
+# text = Cesium chloride gradient is conducted to purify viruses from viral concentrate of seawater as described in others chapters of this book (Wommack et al. 2010, this volume; Steward and Culley 2010, this volume).
+1	density	_	Reagent	_	_	0	_	_	Offset=276-292
+2	extracted	_	Action	_	_	0	_	_	Offset=301-310
+3	QIAamp	_	Device	_	_	0	_	_	Offset=320-345
+
+# sent_id = s3
+# text = Each density fraction is then extracted with the QIAamp Viral RNA Mini kit (Qiagen) as directed by the manufacturer with the following exception (see annotation).
+1	Remove	_	Action	_	_	0	_	_	Offset=434-440
+2	contaminating	_	Modifier	_	_	3	Mod-Link	_	Offset=441-454
+3	DNA	_	Reagent	_	_	0	_	_	Offset=455-458
+4	RNA	_	Reagent	_	_	0	_	_	Offset=464-480
+5	Turbo	_	Device	_	_	0	_	_	Offset=490-507
+
+# sent_id = s4
+# text = Remove contaminating DNA from RNA preparations with the Turbo DNAfree kit (Applied Biosystems) as described in the protocol provided with the kit.
+1	10	_	Reagent	_	_	0	_	_	Offset=616-649
+2	mixed	_	Action	_	_	0	_	_	Offset=653-658
+3	final	_	Reagent	_	_	0	_	_	Offset=666-690
+4	0.2	_	Modifier	_	_	3	Mod-Link	_	Offset=694-771
+
+# sent_id = s5
+# text = In preparation for cDNA synthesis, 10 µL purified RNA viral template is mixed with a final dNTP concentration of 0.2 mM and 1 µM and 5 nM final concentrations of FR26RV-N and FR40RV-T primer, respectively.
+1	reaction	_	Reagent	_	_	0	_	_	Offset=791-799
+2	heated	_	Action	_	_	0	_	_	Offset=803-809
+3	65°C	_	Temperature	_	_	0	_	_	Offset=813-817
+4	cooled	_	Action	_	_	0	_	_	Offset=823-829
+5	ice	_	Location	_	_	0	_	_	Offset=833-836
+
+# sent_id = s6
+# text = The reaction is heated to 65°C then cooled on ice to allow the primers to anneal.
+1	ice	_	Location	_	_	0	_	_	Offset=884-887
+2	DTT	_	Reagent	_	_	0	_	_	Offset=889-892
+3	added	_	Action	_	_	0	_	_	Offset=917-922
+4	reaction	_	Reagent	_	_	0	_	_	Offset=930-938
+
+# sent_id = s7
+# text = While still on ice, DTT (0.5 mM final conc.) is added to the reaction as an enzyme stabilization reagent with 40 U RNase OUT (Invitrogen) to protect the sample form RNAse activity.
+1	complementary	_	Reagent	_	_	0	_	_	Offset=1054-1078
+2	synthesized	_	Action	_	_	0	_	_	Offset=1082-1093
+3	200	_	Amount	_	_	4	Measure	_	Offset=1099-1104
+4	Superscript	_	Reagent	_	_	0	_	_	Offset=1108-1158
+
+# sent_id = s8
+# text = The complementary DNA strand is synthesized with 200 U of Superscript III (Invitrogen) reverse transcriptase.
+1	reaction	_	Reagent	_	_	0	_	_	Offset=1164-1172
+2	incubated	_	Action	_	_	0	_	_	Offset=1176-1187
+3	initially	_	Modifier	_	_	0	_	_	Offset=1186-1195
+4	25°C	_	Temperature	_	_	0	_	_	Offset=1199-1203
+5	10	_	Time	_	_	0	_	_	Offset=1208-1214
+
+# sent_id = s9
+# text = The reaction is incubated initially at 25°C for 10 min so that the hexamer 3′ end of primer FR26RV-N and the poly(T)20 3′ end of primer FR40RV-T remain annealed to the template while cDNA synthesis commences.
+1	increased	_	Action	_	_	0	_	_	Offset=1393-1402
+2	50°C	_	Temperature	_	_	0	_	_	Offset=1406-1410
+3	60	_	Time	_	_	0	_	_	Offset=1484-1490
+
+# sent_id = s10
+# text = The temperature is then increased to 50°C, the temperature at which Superscript III’s processivity is highest, for 60 min.
+1	hour-long	_	Time	_	_	0	_	_	Offset=1502-1511
+2	incubation	_	Action	_	_	0	_	_	Offset=1512-1522
+3	50°C	_	Temperature	_	_	0	_	_	Offset=1526-1530
+4	first	_	Reagent	_	_	0	_	_	Offset=1536-1567
+5	heated	_	Action	_	_	0	_	_	Offset=1571-1577
+6	immediately	_	Modifier	_	_	7	Mod-Link	_	Offset=1578-1589
+7	94°C	_	Temperature	_	_	0	_	_	Offset=1593-1597
+8	3	_	Time	_	_	0	_	_	Offset=1602-1607
+9	rapidly	_	Modifier	_	_	0	_	_	Offset=1617-1624
+10	cooled	_	Action	_	_	0	_	_	Offset=1625-1631
+11	ice	_	Location	_	_	0	_	_	Offset=1635-1638
+
+# sent_id = s11
+# text = After the hour-long incubation at 50°C, the first strand synthesis reaction is heated immediately to 94°C for 3 min and then rapidly cooled on ice.
+1	complementary	_	Reagent	_	_	0	_	_	Offset=1642-1669
+2	synthesized	_	Action	_	_	0	_	_	Offset=1686-1697
+3	37°C	_	Temperature	_	_	0	_	_	Offset=1701-1705
+4	60	_	Time	_	_	0	_	_	Offset=1710-1716
+
+# sent_id = s12
+# text = A complementary second strand is subsequently synthesized at 37°C for 60 min with the addition of 2.5 U of Klenow Fragment, 3′-5′ exo – (New England Biolabs).
+1	Klenow	_	Reagent	_	_	0	_	_	Offset=1803-1818
+2	terminated	_	Action	_	_	0	_	_	Offset=1822-1832
+3	final	_	Modifier	_	_	4	Mod-Link	_	Offset=1840-1845
+4	incubation	_	Reagent	_	_	0	_	_	Offset=1846-1856
+5	75°C	_	Temperature	_	_	0	_	_	Offset=1860-1864
+6	10	_	Time	_	_	0	_	_	Offset=1869-1875
+
+# sent_id = s13
+# text = The Klenow reaction is terminated with a final incubation at 75°C for 10 min.
+1	reaction	_	Reagent	_	_	0	_	_	Offset=2176-2184
+2	incubated	_	Action	_	_	0	_	_	Offset=2188-2197
+3	94°C	_	Temperature	_	_	0	_	_	Offset=2201-2205
+4	10	_	Time	_	_	0	_	_	Offset=2210-2216
+5	fully	_	Modifier	_	_	0	_	_	Offset=2220-2225
+6	denature	_	Action	_	_	0	_	_	Offset=2226-2234
+7	template	_	Reagent	_	_	0	_	_	Offset=2239-2247
+8	activate	_	Action	_	_	0	_	_	Offset=2252-2260
+9	hot	_	Reagent	_	_	0	_	_	Offset=2265-2281
+
+# sent_id = s14
+# text = One PCR reaction contains 5 µL of template taken directly from the second strand synthesis reaction, 40 pM of FR20RV primer (see Table 1), a final dNTP concentration of 0.2 mM, 1 × Gold buffer, 2.5 mM MgCl2, and 2.5 U of Ampligold DNA polymerase (Applied Biosystems) in a final volume of 50 µL.
+1	35	_	Numerical	_	_	0	_	_	Offset=2295-2297
+2	denaturation	_	Action	_	_	0	_	_	Offset=2308-2320
+3	94°C	_	Temperature	_	_	0	_	_	Offset=2324-2328
+4	1	_	Time	_	_	0	_	_	Offset=2333-2338
+
+# sent_id = s15
+# text = The reaction is incubated at 94°C for 10 min to fully denature the template and activate the hot start enzyme.
+1	Annealing	_	Action	_	_	0	_	_	Offset=2340-2349
+2	65°C	_	Temperature	_	_	0	_	_	Offset=2353-2357
+3	1	_	Time	_	_	0	_	_	Offset=2362-2367
+
+# sent_id = s16
+# text = Followed by 35 cycles of denaturation at 94°C for 1 min.
+1	Extension	_	Action	_	_	0	_	_	Offset=2369-2378
+2	72°C	_	Temperature	_	_	0	_	_	Offset=2382-2386
+3	2	_	Time	_	_	0	_	_	Offset=2391-2396
+
+# sent_id = s17
+# text = Annealing at 65°C for 1 min.
+1	final	_	Method	_	_	0	_	_	Offset=2400-2415
+2	13	_	Time	_	_	0	_	_	Offset=2420-2426
+3	completion	_	Action	_	_	0	_	_	Offset=2444-2454
+
+# sent_id = s18
+# text = Extension at 72°C for 2 min.
+1	Before	_	Time	_	_	0	_	_	Offset=2490-2511
+2	purify	_	Action	_	_	0	_	_	Offset=2516-2522
+3	concentrate	_	Action	_	_	0	_	_	Offset=2527-2538
+4	PCR	_	Reagent	_	_	0	_	_	Offset=2543-2556
+5	MinElute	_	Device	_	_	0	_	_	Offset=2564-2591
+6	as	_	Method	_	_	0	_	_	Offset=2601-2633
+
+# sent_id = s19
+# text = A final extension for 13 min that permits the completion of complementary strand synthesis.
+1	Purified	_	Modifier	_	_	2	Mod-Link	_	Offset=2635-2643
+2	PCR	_	Reagent	_	_	0	_	_	Offset=2644-2656
+3	loaded	_	Action	_	_	0	_	_	Offset=2661-2667
+4	1%	_	Location	_	_	5	Meronym	6:Meronym	Offset=2675-2689
+5	1	_	Reagent	_	_	0	_	_	Offset=2701-2720
+6	0.5	_	Reagent	_	_	0	_	_	Offset=2738-2754
+
+# sent_id = s20
+# text = Before gel separation, we purify and concentrate the PCR reactions with a MinElute PCR cleanup column (Qiagen) as described by the manufacturer.
+1	Bands	_	Reagent	_	_	0	_	_	Offset=2756-2768
+2	appropriate	_	Modifier	_	_	1	Mod-Link	_	Offset=2776-2798
+3	excised	_	Action	_	_	0	_	_	Offset=2803-2810
+4	purified	_	Action	_	_	0	_	_	Offset=2815-2823
+5	MinElute	_	Method	_	_	0	_	_	Offset=2831-2867
+
+# sent_id = s21
+# text = Purified PCR products are loaded onto a 1% agarose gel containing 1 × SYBR safe stain (Invitrogen) and 0.5 × TBE buffer.
+1	eluting	_	Action	_	_	0	_	_	Offset=2980-2987
+2	DNA	_	Reagent	_	_	0	_	_	Offset=2988-2991
+3	column	_	Location	_	_	0	_	_	Offset=3001-3007
+4	three	_	Method	_	_	0	_	_	Offset=3013-3025
+5	10	_	Amount	_	_	6	Measure	_	Offset=3029-3034
+6	nuclease-free	_	Reagent	_	_	0	_	_	Offset=3035-3054
+
+# sent_id = s22
+# text = Bands of DNA of the appropriate size range are excised and purified with a MinElute Gel Extraction kit (Qiagen) according to the manufacturer’s instructions.
+1	relevant	_	Modifier	_	_	2	Mod-Link	_	Offset=3345-3353
+2	virus-containing	_	Reagent	_	_	0	_	_	Offset=3354-3389
+3	collected	_	Action	_	_	0	_	_	Offset=3394-3403
+
+# sent_id = s23
+# text = If the sample is to be cloned for Sanger sequencing, we recommend eluting DNA from the column with three washes of 10 µL nuclease-free water in preparation for the PCRTerminator (Lucigen) end repair reaction.
+1	CsCl	_	Reagent	_	_	0	_	_	Offset=3409-3413
+2	Virus-containing	_	Location	_	_	0	_	_	Offset=3421-3456
+3	removed	_	Action	_	_	0	_	_	Offset=3461-3468
+4	buffer	_	Method	_	_	0	_	_	Offset=3472-3487
+5	centrifugal	_	Device	_	_	0	_	_	Offset=3496-3528
+6	nominal	_	Modifier	_	_	5	Mod-Link	_	Offset=3536-3567
+7	30	_	Generic-Measure	_	_	6	Setting	_	Offset=3571-3586
+
+# sent_id = s24
+# text = For the cloning protocol, please refer to the “Cloning and sequencing” section of "A degenerate primer reverse transcriptionpolymerase chain reaction–based protocol to determine the diversity of picorna-like viruses".
+1	Viruses	_	Reagent	_	_	0	_	_	Offset=3683-3690
+2	recovered	_	Action	_	_	0	_	_	Offset=3700-3709
+3	eluting	_	Action	_	_	0	_	_	Offset=3713-3720
+4	3	_	Amount	_	_	5	Measure	_	Offset=3724-3733
+5	0.02-filtered	_	Location	_	_	0	_	_	Offset=3737-3760
+

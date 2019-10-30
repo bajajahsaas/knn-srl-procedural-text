@@ -1,0 +1,52 @@
+# sent_id = s1
+# text = Plaque Assay Protocol for Pseudoalteromonas. 	
+1	autoclave	_	Action	_	_	0	_	_	Offset=54-63
+2	top	_	Reagent	_	_	0	_	_	Offset=68-76
+
+# sent_id = s2
+# text = First, autoclave the top agar to melt it. 
+1	Aliquot	_	Action	_	_	0	_	_	Offset=245-252
+2	agar	_	Reagent	_	_	0	_	_	Offset=257-261
+3	tubes	_	Location	_	_	0	_	_	Offset=267-272
+4	place	_	Action	_	_	0	_	_	Offset=277-282
+5	40°C	_	Location	_	_	0	_	_	Offset=286-301
+
+# sent_id = s3
+# text = While the autoclave is running: 
+1	Pipet	_	Action	_	_	0	_	_	Offset=306-311
+2	100	_	Amount	_	_	3	Measure	_	Offset=312-318
+3	phage	_	Reagent	_	_	0	_	_	Offset=327-339
+4	plate	_	Location	_	_	0	_	_	Offset=349-354
+
+# sent_id = s4
+# text = a. Let your plates warm to room temperature and label them 
+1	Remove	_	Action	_	_	0	_	_	Offset=358-364
+2	agar	_	Location	_	_	0	_	_	Offset=369-378
+3	water	_	Location	_	_	0	_	_	Offset=388-398
+
+# sent_id = s5
+# text = b. Make whatever dilutions of your phages you plan to plate. 
+1	Add	_	Action	_	_	0	_	_	Offset=426-429
+2	3.5	_	Amount	_	_	3	Measure	_	Offset=430-436
+3	agar/host	_	Reagent	_	_	0	_	_	Offset=444-461
+
+# sent_id = s6
+# text = Aliquot the agar into tubes and place in 40°C water bath.   
+1	Swirl	_	Action	_	_	0	_	_	Offset=464-469
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=470-474
+3	plate	_	Device	_	_	0	_	_	Offset=475-480
+
+# sent_id = s7
+# text = Pipet 100 μl of your phage sample onto the plate.  
+1	Leave	_	Action	_	_	0	_	_	Offset=512-517
+2	plates	_	Device	_	_	0	_	_	Offset=522-528
+3	bench	_	Location	_	_	0	_	_	Offset=536-541
+4	overnight	_	Time	_	_	0	_	_	Offset=542-551
+
+# sent_id = s8
+# text = Remove the agar tube from the water bath and add the host to it.   
+1	Count	_	Action	_	_	0	_	_	Offset=554-559
+2	pick	_	Action	_	_	0	_	_	Offset=563-567
+3	plaques	_	Location	_	_	0	_	_	Offset=568-575
+4	next	_	Time	_	_	0	_	_	Offset=580-588
+

@@ -1,0 +1,141 @@
+# sent_id = s1
+# text = Extinction dilution cloning for isolation of viruses infecting protists
+1	Prepare	_	Action	_	_	0	_	_	Offset=72-79
+2	9	_	Amount	_	_	3	Measure	_	Offset=80-81
+3	tubes	_	Location	_	_	0	_	_	Offset=82-87
+4	4.5	_	Amount	_	_	5	Measure	_	Offset=110-116
+5	medium	_	Reagent	_	_	0	_	_	Offset=117-123
+
+# sent_id = s2
+# text = Prepare 9 tubes (numbered #1–#9) with 4.5 mL medium.
+1	Add	_	Action	_	_	0	_	_	Offset=125-128
+2	500	_	Amount	_	_	3	Measure	_	Offset=129-135
+3	virus	_	Reagent	_	_	0	_	_	Offset=143-157
+4	tube	_	Location	_	_	0	_	_	Offset=183-190
+5	vortex	_	Action	_	_	0	_	_	Offset=195-201
+
+# sent_id = s3
+# text = Add 500 μL of the virus filtrate (virus size fraction) to tube #1 and vortex.
+1	Change	_	Action	_	_	0	_	_	Offset=203-209
+2	pipette	_	Device	_	_	0	_	_	Offset=214-225
+3	transfer	_	Action	_	_	0	_	_	Offset=230-238
+4	500	_	Amount	_	_	5	Measure	_	Offset=239-245
+5	suspension	_	Reagent	_	_	0	_	_	Offset=249-262
+6	tube	_	Location	_	_	0	_	_	Offset=266-273
+7	vortex	_	Action	_	_	0	_	_	Offset=278-284
+
+# sent_id = s4
+# text = Change the pipette tip and transfer 500 μL of suspension #1 to tube #2 and vortex.
+1	Repeat	_	Action	_	_	0	_	_	Offset=286-292
+2	procedure	_	Method	_	_	0	_	_	Offset=297-306
+3	tube	_	Location	_	_	0	_	_	Offset=310-317
+
+# sent_id = s5
+# text = Repeat the procedure to tube #8.
+1	Pour	_	Action	_	_	0	_	_	Offset=319-323
+2	algal	_	Reagent	_	_	0	_	_	Offset=343-361
+3	reservoir	_	Location	_	_	0	_	_	Offset=371-385
+4	fill	_	Action	_	_	0	_	_	Offset=387-391
+5	pipetter	_	Device	_	_	0	_	_	Offset=396-404
+6	add	_	Action	_	_	0	_	_	Offset=409-412
+7	150	_	Amount	_	_	8	Measure	_	Offset=413-419
+8	culture	_	Reagent	_	_	0	_	_	Offset=420-427
+9	each	_	Modifier	_	_	10	Mod-Link	_	Offset=431-435
+10	well	_	Location	_	_	0	_	_	Offset=436-440
+11	lines	_	Location	_	_	10	Meronym	_	Offset=444-453
+12	96-well	_	Location	_	_	11	Meronym	_	Offset=459-485
+
+# sent_id = s6
+# text = Pour vigorously growing algal host culture into the reservoir tray, fill the pipetter and add 150 μL culture to each well in lines 1–9 of a 96-well cell culture plate.
+1	Fill	_	Action	_	_	0	_	_	Offset=487-491
+2	pipetter	_	Device	_	_	0	_	_	Offset=496-504
+3	add	_	Action	_	_	0	_	_	Offset=509-512
+4	150	_	Amount	_	_	5	Measure	_	Offset=513-519
+5	culture	_	Reagent	_	_	0	_	_	Offset=520-527
+6	each	_	Modifier	_	_	7	Mod-Link	_	Offset=531-535
+7	well	_	Location	_	_	0	_	_	Offset=536-540
+8	lines	_	Location	_	_	7	Meronym	_	Offset=544-553
+9	96-well	_	Location	_	_	8	Meronym	_	Offset=559-585
+
+# sent_id = s7
+# text = Fill the pipetter and add 150 μL culture to each well in lines 1–9 of a 96-well cell culture plate.
+1	Empty	_	Action	_	_	0	_	_	Offset=587-592
+2	tray	_	Location	_	_	0	_	_	Offset=597-601
+
+# sent_id = s8
+# text = Empty the tray.
+1	Pour	_	Action	_	_	0	_	_	Offset=603-607
+2	dilution	_	Location	_	_	3	Meronym	_	Offset=608-624
+3	control	_	Reagent	_	_	0	_	_	Offset=626-640
+4	reservoir	_	Location	_	_	0	_	_	Offset=661-675
+
+# sent_id = s9
+# text = Pour dilution tube #9 (control medium, no virus) into the reservoir tray.
+1	Fill	_	Action	_	_	0	_	_	Offset=677-681
+2	pipetter	_	Device	_	_	0	_	_	Offset=686-694
+3	add	_	Action	_	_	0	_	_	Offset=699-702
+4	100	_	Amount	_	_	0	_	_	Offset=703-709
+5	each	_	Modifier	_	_	6	Mod-Link	_	Offset=716-720
+6	well	_	Location	_	_	0	_	_	Offset=721-725
+7	line	_	Location	_	_	6	Meronym	_	Offset=729-735
+
+# sent_id = s10
+# text = Fill the pipetter and add 100 μL of to each well in line 9.
+1	Empty	_	Action	_	_	0	_	_	Offset=737-742
+2	tray	_	Location	_	_	0	_	_	Offset=747-751
+
+# sent_id = s11
+# text = Empty the tray.
+1	Repeat	_	Action	_	_	0	_	_	Offset=753-759
+2	steps	_	Method	_	_	0	_	_	Offset=760-773
+3	dilution	_	Location	_	_	0	_	_	Offset=778-797
+4	fill	_	Action	_	_	0	_	_	Offset=802-806
+5	respective	_	Modifier	_	_	6	Mod-Link	_	Offset=811-821
+6	well	_	Location	_	_	0	_	_	Offset=822-832
+7	culture	_	Location	_	_	6	Meronym	_	Offset=840-853
+
+# sent_id = s12
+# text = Repeat steps 7 and 8 for dilution tube #8–#1 and fill the respective well lines in the culture plate.
+1	Put	_	Action	_	_	0	_	_	Offset=855-861
+2	lid	_	Seal	_	_	0	_	_	Offset=866-869
+3	seal	_	Action	_	_	0	_	_	Offset=874-878
+4	tightly	_	Modifier	_	_	0	_	_	Offset=879-886
+5	plastic	_	Seal	_	_	0	_	_	Offset=892-904
+6	avoid	_	Action	_	_	0	_	_	Offset=908-920
+
+# sent_id = s13
+# text = Put on the lid and seal tightly with plastic tape to avoid drying.
+1	Incubate	_	Action	_	_	0	_	_	Offset=922-930
+
+# sent_id = s14
+# text = Incubate under appropriate conditions.
+1	inverted	_	Device	_	_	0	_	_	Offset=968-987
+2	inspect	_	Action	_	_	0	_	_	Offset=992-999
+3	culture	_	Location	_	_	0	_	_	Offset=1004-1018
+4	regular	_	Time	_	_	0	_	_	Offset=1046-1063
+
+# sent_id = s15
+# text = Use an inverted microscope and inspect the culture plates for signs of cell lysis at regular intervals.
+1	Mark	_	Action	_	_	0	_	_	Offset=1065-1069
+2	wells	_	Location	_	_	0	_	_	Offset=1070-1075
+3	incubation	_	Action	_	_	0	_	_	Offset=1117-1127
+4	daily	_	Time	_	_	0	_	_	Offset=1133-1138
+5	inspections	_	Action	_	_	0	_	_	Offset=1139-1150
+
+# sent_id = s16
+# text = Mark wells where lysis is observed and continue the incubation with daily inspections until no more lysis occurs.
+1	Prepare	_	Action	_	_	0	_	_	Offset=1179-1186
+2	extinction	_	Reagent	_	_	0	_	_	Offset=1196-1215
+3	virus	_	Reagent	_	_	0	_	_	Offset=1221-1226
+4	most-diluted	_	Modifier	_	_	5	Mod-Link	_	Offset=1236-1248
+5	well	_	Location	_	_	3	Meronym	_	Offset=1249-1253
+
+# sent_id = s17
+# text = Prepare a second extinction dilution with virus from the most-diluted well.
+1	Propagate	_	Action	_	_	0	_	_	Offset=1255-1264
+2	virus	_	Reagent	_	_	0	_	_	Offset=1265-1276
+3	most	_	Modifier	_	_	4	Mod-Link	_	Offset=1286-1298
+4	well	_	Location	_	_	2	Meronym	_	Offset=1299-1303
+5	larger	_	Reagent	_	_	0	_	_	Offset=1309-1322
+6	store	_	Action	_	_	0	_	_	Offset=1327-1332
+

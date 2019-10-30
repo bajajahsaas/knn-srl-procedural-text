@@ -1,0 +1,157 @@
+# sent_id = s1
+# text = Phenol-chloroform extraction with ethanol precipitation
+1	viral	_	Reagent	_	_	0	_	_	Offset=63-79
+2	0.6	_	Amount	_	_	1	Measure	_	Offset=82-88
+3	2-mL	_	Amount	_	_	4	Measure	_	Offset=93-97
+4	microcentrifuge	_	Location	_	_	0	_	_	Offset=98-118
+5	add	_	Action	_	_	0	_	_	Offset=149-152
+6	equal	_	Amount	_	_	7	Measure	_	Offset=156-168
+7	PCI	_	Reagent	_	_	0	_	_	Offset=172-175
+8	shake	_	Action	_	_	0	_	_	Offset=180-185
+9	emulsify	_	Action	_	_	0	_	_	Offset=189-197
+
+# sent_id = s2
+# text = To the viral suspension (≤0.6 mL per 2-mL microcentrifuge tube, scale up for larger volumes) add an equal volume of PCI and shake to emulsify.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=199-209
+2	10,000g	_	Speed	_	_	0	_	_	Offset=213-220
+3	5	_	Time	_	_	0	_	_	Offset=225-230
+4	organic	_	Reagent	_	_	0	_	_	Offset=263-270
+5	aqueous	_	Reagent	_	_	0	_	_	Offset=275-289
+
+# sent_id = s3
+# text = Centrifuge at 10,000g for 5 min to facilitate separation of the organic and aqueous phases.
+1	Transfer	_	Action	_	_	0	_	_	Offset=291-299
+2	DNA-containing	_	Reagent	_	_	0	_	_	Offset=304-332
+3	new	_	Modifier	_	_	4	Mod-Link	_	Offset=346-349
+4	tube	_	Location	_	_	0	_	_	Offset=350-354
+5	aspiration	_	Action	_	_	0	_	_	Offset=358-368
+6	pipette	_	Device	_	_	0	_	_	Offset=376-383
+
+# sent_id = s4
+# text = Transfer the DNA-containing aqueous phase (upper) to a new tube by aspiration with a pipette, being careful to avoid material at the interface.
+1	Add	_	Action	_	_	0	_	_	Offset=592-595
+2	equal	_	Amount	_	_	3	Measure	_	Offset=599-611
+3	CI	_	Reagent	_	_	0	_	_	Offset=615-617
+4	aqueous	_	Reagent	_	_	0	_	_	Offset=625-638
+5	shake	_	Action	_	_	0	_	_	Offset=643-648
+6	emulsify	_	Action	_	_	0	_	_	Offset=652-660
+
+# sent_id = s5
+# text = Repeat steps 1–3 as needed until the interface appears to be free of extracted material (one extraction may suffice for relatively pure viral preparations).
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=662-672
+2	step	_	Method	_	_	0	_	_	Offset=679-685
+3	separate	_	Action	_	_	0	_	_	Offset=689-704
+
+# sent_id = s6
+# text = Add an equal volume of CI to the aqueous phase and shake to emulsify.
+1	Transfer	_	Action	_	_	0	_	_	Offset=706-714
+2	aqueous	_	Reagent	_	_	0	_	_	Offset=719-732
+3	new	_	Modifier	_	_	4	Mod-Link	_	Offset=746-749
+4	tube	_	Location	_	_	0	_	_	Offset=750-754
+
+# sent_id = s7
+# text = Centrifuge as in step 2 to separate phases.
+1	Add	_	Action	_	_	0	_	_	Offset=756-759
+2	1	_	Amount	_	_	3	Measure	_	Offset=760-764
+3	polyacryl	_	Reagent	_	_	0	_	_	Offset=765-782
+
+# sent_id = s8
+# text = Transfer the aqueous phase (upper) to a new tube.
+1	Add	_	Action	_	_	0	_	_	Offset=784-787
+2	1/10	_	Amount	_	_	3	Measure	_	Offset=788-804
+3	sodium	_	Reagent	_	_	0	_	_	Offset=808-822
+4	invert	_	Action	_	_	0	_	_	Offset=827-833
+5	tube	_	Location	_	_	0	_	_	Offset=834-838
+6	vortex	_	Action	_	_	0	_	_	Offset=842-848
+7	mix	_	Action	_	_	0	_	_	Offset=852-855
+
+# sent_id = s9
+# text = Add 1 µL polyacryl carrier.
+1	Add	_	Action	_	_	0	_	_	Offset=857-860
+2	2	_	Amount	_	_	3	Measure	_	Offset=861-870
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=874-881
+4	invert	_	Action	_	_	0	_	_	Offset=886-892
+5	tube	_	Location	_	_	0	_	_	Offset=893-897
+6	mix	_	Action	_	_	0	_	_	Offset=901-904
+
+# sent_id = s10
+# text = Add 1/10 of a volume of sodium acetate and invert tube or vortex to mix.
+1	Incubate	_	Action	_	_	0	_	_	Offset=906-914
+2	sample	_	Reagent	_	_	0	_	_	Offset=915-921
+3	ice	_	Location	_	_	0	_	_	Offset=925-928
+4	10	_	Time	_	_	0	_	_	Offset=933-939
+
+# sent_id = s11
+# text = Add 2 volumes of ethanol and invert tube to mix.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=941-951
+2	10	_	Time	_	_	0	_	_	Offset=956-969
+3	0–4°C	_	Temperature	_	_	0	_	_	Offset=973-978
+
+# sent_id = s12
+# text = Incubate sample on ice for 10 min.
+1	Aspirate	_	Action	_	_	0	_	_	Offset=992-1000
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1015-1026
+3	not	_	Action	_	_	0	_	_	Offset=1042-1056
+4	pellet	_	Reagent	_	_	0	_	_	Offset=1061-1067
+
+# sent_id = s13
+# text = Centrifuge for 10 to 30 min, at 0–4°C if possible.
+1	Add	_	Action	_	_	0	_	_	Offset=1069-1072
+2	500	_	Amount	_	_	5	Measure	_	Offset=1073-1079
+3	ice-cold	_	Modifier	_	_	5	Mod-Link	_	Offset=1080-1088
+4	70%	_	Concentration	_	_	5	Measure	_	Offset=1089-1092
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=1093-1100
+
+# sent_id = s14
+# text = Aspirate or decant the supernatant, being careful not to disturb the pellet.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1102-1112
+2	10,000g	_	Speed	_	_	0	_	_	Offset=1116-1123
+3	10	_	Time	_	_	0	_	_	Offset=1128-1134
+
+# sent_id = s15
+# text = Add 500 µL ice-cold 70% ethanol.
+1	Decant	_	Action	_	_	0	_	_	Offset=1136-1142
+2	aspirate	_	Action	_	_	0	_	_	Offset=1146-1154
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=1155-1166
+4	not	_	Action	_	_	0	_	_	Offset=1208-1222
+5	pellet	_	Reagent	_	_	0	_	_	Offset=1227-1233
+
+# sent_id = s16
+# text = Centrifuge at 10,000g for 10 min.
+1	residual	_	Reagent	_	_	0	_	_	Offset=1241-1256
+2	tube	_	Location	_	_	1	Meronym	_	Offset=1264-1268
+3	evaporate	_	Action	_	_	0	_	_	Offset=1272-1281
+4	air-drying	_	Action	_	_	0	_	_	Offset=1285-1295
+5	cap	_	Seal	_	_	0	_	_	Offset=1305-1308
+6	tube	_	Location	_	_	0	_	_	Offset=1322-1326
+7	placing	_	Action	_	_	0	_	_	Offset=1345-1352
+8	briefly	_	Modifier	_	_	0	_	_	Offset=1353-1360
+9	centrifugal	_	Device	_	_	0	_	_	Offset=1366-1397
+10	SpeedVac	_	Device	_	_	9	Or	_	Offset=1405-1426
+11	Thermo	_	Device	_	_	10	Or	_	Offset=1428-1445
+12	Concentrator	_	Device	_	_	11	Or	_	Offset=1447-1475
+
+# sent_id = s17
+# text = Decant or aspirate supernatant as completely as possible, being careful not to disturb the pellet.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1478-1487
+2	dried	_	Modifier	_	_	3	Mod-Link	_	Offset=1492-1497
+3	pellet	_	Reagent	_	_	0	_	_	Offset=1498-1504
+4	small	_	Amount	_	_	5	Measure	_	Offset=1510-1522
+5	Tris	_	Reagent	_	_	0	_	_	Offset=1526-1530
+6	10	_	Concentration	_	_	5	Measure	_	Offset=1532-1537
+7	pH	_	pH	_	_	5	Measure	_	Offset=1539-1543
+8	TE	_	Reagent	_	_	5	Or	_	Offset=1548-1557
+
+# sent_id = s18
+# text = Allow residual liquid in the tube to evaporate by air-drying with the cap open and the tube upside down or by placing briefly in a centrifugal vacuum concentrator (e.g., SpeedVac concentrator, Thermo Scientific; Concentrator plus, Eppendorf).
+1	purified	_	Modifier	_	_	3	Mod-Link	_	Offset=1563-1571
+2	solubilized	_	Modifier	_	_	3	Mod-Link	_	Offset=1573-1584
+3	DNA	_	Reagent	_	_	0	_	_	Offset=1585-1588
+4	stored	_	Action	_	_	0	_	_	Offset=1596-1602
+5	4°C	_	Temperature	_	_	0	_	_	Offset=1606-1609
+6	short	_	Time	_	_	0	_	_	Offset=1614-1635
+7	–20°C	_	Temperature	_	_	5	Or	_	Offset=1640-1645
+8	long	_	Time	_	_	6	Or	_	Offset=1650-1670
+9	–80°C	_	Temperature	_	_	7	Or	_	Offset=1679-1684
+10	indefinitely	_	Time	_	_	8	Or	_	Offset=1685-1697
+

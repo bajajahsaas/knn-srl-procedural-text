@@ -1,0 +1,137 @@
+# sent_id = s1
+# text = MojoSort™ Negative Selection Columns Protocol
+1	Prepare	_	Action	_	_	0	_	_	Offset=46-53
+2	single	_	Modifier	_	_	3	Mod-Link	_	Offset=56-62
+3	cell	_	Reagent	_	_	0	_	_	Offset=63-78
+4	resuspend	_	Action	_	_	0	_	_	Offset=83-92
+5	cells	_	Reagent	_	_	0	_	_	Offset=97-102
+6	ice	_	Modifier	_	_	7	Mod-Link	_	Offset=108-116
+7	cell	_	Reagent	_	_	0	_	_	Offset=117-139
+
+# sent_id = s2
+# text = Prepare a single cell suspension and resuspend the cells with ice cold cell separation buffer (MojoSort™buffer recommended).
+1	Pass	_	Action	_	_	0	_	_	Offset=171-175
+2	cells	_	Reagent	_	_	0	_	_	Offset=180-185
+3	70	_	Size	_	_	4	Setting	_	Offset=196-201
+4	filter	_	Device	_	_	0	_	_	Offset=202-208
+5	centrifuge	_	Action	_	_	0	_	_	Offset=210-220
+6	300	_	Speed	_	_	0	_	_	Offset=222-229
+7	5	_	Time	_	_	0	_	_	Offset=234-243
+8	discard	_	Action	_	_	0	_	_	Offset=246-253
+9	supernatant	_	Reagent	_	_	0	_	_	Offset=258-269
+10	resuspend	_	Action	_	_	0	_	_	Offset=274-283
+11	cells	_	Reagent	_	_	0	_	_	Offset=288-293
+12	cell	_	Reagent	_	_	0	_	_	Offset=297-319
+
+# sent_id = s3
+# text = Pass the cells through a 70 μm filter, centrifuge (300 x g for 5 minutes), discard the supernatant and resuspend the cells in cell separation buffer.
+1	Adjust	_	Action	_	_	0	_	_	Offset=321-327
+2	cell	_	Measure-Type	_	_	0	_	_	Offset=332-350
+3	1	_	Generic-Measure	_	_	0	_	_	Offset=354-370
+
+# sent_id = s4
+# text = Adjust the cell concentration to 1 x 108 cells/mL.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=372-379
+2	100	_	Amount	_	_	3	Or	_	Offset=380-386
+3	107	_	Numerical	_	_	4	Measure	_	Offset=388-391
+4	cells	_	Reagent	_	_	0	_	_	Offset=392-397
+5	new	_	Modifier	_	_	6	Mod-Link	_	Offset=406-409
+6	tube	_	Location	_	_	0	_	_	Offset=410-414
+
+# sent_id = s5
+# text = Aliquot 100 μL (107 cells) into a new tube.
+1	Add	_	Action	_	_	0	_	_	Offset=416-419
+2	10	_	Amount	_	_	4	Measure	_	Offset=420-425
+3	pre-diluted	_	Modifier	_	_	4	Mod-Link	_	Offset=433-444
+4	Biotin-Antibody	_	Reagent	_	_	0	_	_	Offset=445-469
+5	mix	_	Action	_	_	0	_	_	Offset=471-474
+6	well	_	Modifier	_	_	0	_	_	Offset=475-479
+7	incubate	_	Action	_	_	0	_	_	Offset=484-492
+8	ice	_	Location	_	_	0	_	_	Offset=496-499
+9	15	_	Time	_	_	0	_	_	Offset=504-514
+
+# sent_id = s6
+# text = Add 10 μL of the pre-diluted Biotin-Antibody Cocktail, mix well and incubate on ice for 15 minutes.
+1	add	_	Action	_	_	0	_	_	Offset=575-578
+2	100	_	Amount	_	_	4	Measure	_	Offset=579-585
+3	pre-diluted	_	Modifier	_	_	4	Mod-Link	_	Offset=589-600
+4	antibody	_	Reagent	_	_	0	_	_	Offset=601-618
+5	separating	_	Action	_	_	0	_	_	Offset=623-633
+6	1	_	Generic-Measure	_	_	7	Measure	_	Offset=634-641
+7	cells	_	Reagent	_	_	0	_	_	Offset=642-647
+8	1ml	_	Amount	_	_	9	Measure	_	Offset=651-654
+9	buffer	_	Reagent	_	_	0	_	_	Offset=658-664
+
+# sent_id = s7
+# text = Scale up the volume if separating more cells.
+1	Add	_	Action	_	_	0	_	_	Offset=741-744
+2	cell	_	Reagent	_	_	0	_	_	Offset=745-767
+3	up	_	Modifier	_	_	4	Mod-Link	_	Offset=768-773
+4	4	_	Amount	_	_	2	Measure	_	Offset=774-778
+5	centrifuge	_	Action	_	_	0	_	_	Offset=780-790
+6	cells	_	Reagent	_	_	0	_	_	Offset=795-800
+7	300	_	Speed	_	_	0	_	_	Offset=804-811
+8	5	_	Time	_	_	0	_	_	Offset=816-825
+
+# sent_id = s8
+# text = For example, add 100 μL of pre-diluted antibody cocktail for separating 1 x 108 cells in 1ml of buffer.
+1	Discard	_	Action	_	_	0	_	_	Offset=827-834
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=835-846
+3	resuspend	_	Action	_	_	0	_	_	Offset=851-860
+4	100	_	Amount	_	_	5	Measure	_	Offset=864-870
+5	buffer	_	Reagent	_	_	0	_	_	Offset=874-880
+
+# sent_id = s9
+# text = When working withless than 107 cells, use indicated volumes for 107 cells.
+1	Vortex	_	Action	_	_	0	_	_	Offset=882-888
+2	Streptavidin	_	Modifier	_	_	3	Mod-Link	_	Offset=893-916
+3	Nanobeads	_	Reagent	_	_	0	_	_	Offset=917-926
+4	max	_	Speed	_	_	0	_	_	Offset=945-954
+5	5	_	Generic-Measure	_	_	0	_	_	Offset=956-965
+6	prepare	_	Action	_	_	0	_	_	Offset=971-978
+7	dilutions	_	Reagent	_	_	0	_	_	Offset=983-992
+
+# sent_id = s10
+# text = Add cell separation buffer up to 4 mL; centrifuge the cells at 300 x g for 5 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=1002-1005
+2	10	_	Amount	_	_	4	Measure	_	Offset=1006-1011
+3	pre-diluted	_	Modifier	_	_	4	Mod-Link	_	Offset=1015-1026
+4	Streptavidin	_	Reagent	_	_	0	_	_	Offset=1027-1049
+
+# sent_id = s11
+# text = Discard supernatant and resuspend in 100 μL of buffer.
+1	Mix	_	Action	_	_	0	_	_	Offset=1051-1054
+2	well	_	Modifier	_	_	0	_	_	Offset=1055-1059
+3	incubate	_	Action	_	_	0	_	_	Offset=1064-1072
+4	ice	_	Location	_	_	0	_	_	Offset=1076-1079
+5	15	_	Time	_	_	0	_	_	Offset=1084-1094
+
+# sent_id = s12
+# text = Vortex the Streptavidin conjugated Nanobeads (to resuspend) at max speed, 5 touches, and prepare the dilutions to test.
+1	add	_	Action	_	_	0	_	_	Offset=1167-1170
+2	100	_	Amount	_	_	4	Measure	_	Offset=1171-1177
+3	pre-diluted	_	Modifier	_	_	4	Mod-Link	_	Offset=1181-1192
+4	Nanobeads	_	Reagent	_	_	0	_	_	Offset=1193-1202
+5	separating	_	Action	_	_	0	_	_	Offset=1207-1217
+6	1	_	Generic-Measure	_	_	7	Measure	_	Offset=1218-1225
+7	cells	_	Reagent	_	_	0	_	_	Offset=1226-1231
+8	1ml	_	Amount	_	_	9	Measure	_	Offset=1235-1238
+9	buffer	_	Reagent	_	_	0	_	_	Offset=1242-1248
+
+# sent_id = s13
+# text = Add 10 μL of pre-diluted Streptavidin Nanobeads.
+1	maximize	_	Action	_	_	0	_	_	Offset=1464-1472
+2	disrupt	_	Action	_	_	0	_	_	Offset=1488-1495
+3	aggregates	_	Reagent	_	_	0	_	_	Offset=1500-1510
+4	pipetting	_	Action	_	_	0	_	_	Offset=1514-1523
+5	solution	_	Reagent	_	_	0	_	_	Offset=1528-1536
+6	up	_	Method	_	_	0	_	_	Offset=1537-1548
+
+# sent_id = s14
+# text = Mix well and incubate on ice for 15 minutes.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1550-1559
+2	cells	_	Reagent	_	_	0	_	_	Offset=1564-1569
+3	appropriate	_	Modifier	_	_	4	Mod-Link	_	Offset=1573-1584
+4	amount	_	Amount	_	_	5	Measure	_	Offset=1585-1591
+5	buffer	_	Reagent	_	_	0	_	_	Offset=1595-1601
+

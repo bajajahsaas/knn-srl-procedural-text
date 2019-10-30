@@ -1,0 +1,112 @@
+# sent_id = s1
+# text = Schistocephalus solidus culturing
+1	each	_	Modifier	_	_	2	Mod-Link	_	Offset=38-42
+2	culture	_	Location	_	_	0	_	_	Offset=43-55
+3	fill	_	Action	_	_	0	_	_	Offset=56-60
+4	half	_	Generic-Measure	_	_	5	Measure	_	Offset=61-72
+5	horse	_	Reagent	_	_	0	_	_	Offset=78-89
+6	fill	_	Action	_	_	0	_	_	Offset=99-103
+7	RPMI	_	Reagent	_	_	0	_	_	Offset=112-116
+8	leaving	_	Action	_	_	0	_	_	Offset=119-126
+9	2	_	Generic-Measure	_	_	10	Measure	_	Offset=133-141
+10	top	_	Location	_	_	0	_	_	Offset=151-154
+
+# sent_id = s2
+# text = For each culture tube fill half way up with horse serum and then fill up with RPMI – leaving about 2 cm gap from the top.
+1	Add	_	Action	_	_	0	_	_	Offset=156-159
+2	500µl	_	Amount	_	_	3	Measure	_	Offset=160-165
+3	penicillium	_	Reagent	_	_	0	_	_	Offset=169-180
+4	blunt	_	Modifier	_	_	5	Mod-Link	_	Offset=196-201
+5	forceps	_	Device	_	_	0	_	_	Offset=202-209
+6	gently	_	Modifier	_	_	0	_	_	Offset=210-216
+7	open	_	Action	_	_	0	_	_	Offset=217-221
+8	top	_	Location	_	_	0	_	_	Offset=226-229
+9	dialysis	_	Location	_	_	8	Meronym	_	Offset=233-250
+10	place	_	Action	_	_	0	_	_	Offset=255-260
+11	worm	_	Reagent	_	_	0	_	_	Offset=265-269
+12	membrane	_	Location	_	_	0	_	_	Offset=279-287
+
+# sent_id = s3
+# text = Add 500µl of penicillium With a pair of blunt forceps gently open the top of dialysis membrane and place the worm into the membrane.
+1	Screw	_	Action	_	_	0	_	_	Offset=289-294
+2	top	_	Location	_	_	0	_	_	Offset=299-302
+3	tube	_	Location	_	_	2	Meronym	_	Offset=313-317
+4	loosen	_	Action	_	_	0	_	_	Offset=324-330
+5	slightly	_	Modifier	_	_	0	_	_	Offset=331-339
+6	place	_	Action	_	_	0	_	_	Offset=344-349
+7	shaking	_	Modifier	_	_	9	Mod-Link	_	Offset=359-366
+8	40°C	_	Temperature	_	_	9	Setting	_	Offset=367-371
+9	water	_	Device	_	_	0	_	_	Offset=372-382
+
+# sent_id = s4
+# text = Screw the top on to the tube – and loosen slightly and place into the shaking 40°C water bath 
+1	Remove	_	Action	_	_	0	_	_	Offset=618-624
+2	dialysis	_	Location	_	_	5	Coreference-Link	_	Offset=629-646
+3	culture	_	Location	_	_	0	_	_	Offset=656-668
+4	cut	_	Action	_	_	0	_	_	Offset=673-676
+5	it	_	Mention	_	_	0	_	_	Offset=677-679
+6	flush	_	Action	_	_	0	_	_	Offset=709-718
+7	petri	_	Location	_	_	0	_	_	Offset=726-736
+8	ddH20	_	Reagent	_	_	0	_	_	Offset=743-748
+
+# sent_id = s5
+# text = Check the worms each day – the worms may start to shed eggs after day 5 so can be collected after day 6 – if not collect eggs on day 7 – if the worms are left longer they may dissolve and the eggs will be difficult to collect cleanly
+1	Fill	_	Action	_	_	0	_	_	Offset=750-754
+2	petri	_	Location	_	_	0	_	_	Offset=759-769
+3	about	_	Modifier	_	_	4	Mod-Link	_	Offset=773-778
+4	¼	_	Generic-Measure	_	_	5	Measure	_	Offset=779-785
+5	ddH20	_	Reagent	_	_	0	_	_	Offset=789-794
+
+# sent_id = s6
+# text = Remove the dialysis membrane from the culture tube and cut it open above any visible eggs, flush out onto a petri dish using ddH20.
+1	Collect	_	Action	_	_	0	_	_	Offset=905-912
+2	egg	_	Reagent	_	_	0	_	_	Offset=917-926
+3	glass	_	Device	_	_	0	_	_	Offset=934-947
+4	transfer	_	Action	_	_	0	_	_	Offset=952-960
+5	fresh	_	Modifier	_	_	6	Mod-Link	_	Offset=964-969
+6	petri	_	Location	_	_	0	_	_	Offset=970-982
+
+# sent_id = s7
+# text = Fill the petri dish to about ¼ full of ddH20
+1	Fill	_	Action	_	_	0	_	_	Offset=1026-1030
+2	all	_	Modifier	_	_	3	Mod-Link	_	Offset=1031-1034
+3	plates	_	Location	_	_	0	_	_	Offset=1039-1045
+4	up	_	Modifier	_	_	5	Mod-Link	_	Offset=1046-1051
+5	half	_	Generic-Measure	_	_	6	Measure	_	Offset=1058-1067
+6	ddH20	_	Reagent	_	_	0	_	_	Offset=1073-1078
+7	original	_	Modifier	_	_	8	Mod-Link	_	Offset=1093-1101
+8	petri	_	Location	_	_	0	_	_	Offset=1102-1112
+
+# sent_id = s8
+# text = Under the stereo microscope with cold light source tilt the plate and the eggs should line up on the surface.
+1	Label	_	Action	_	_	0	_	_	Offset=1114-1119
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=1120-1124
+3	plate	_	Location	_	_	0	_	_	Offset=1125-1130
+4	identification	_	Method	_	_	0	_	_	Offset=1139-1165
+
+# sent_id = s9
+# text = Collect the egg layer with a glass pipette and transfer to fresh petri dishes – up to 4 depending on the number of eggs.
+1	Wrap	_	Action	_	_	0	_	_	Offset=1166-1170
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=1171-1175
+3	plate	_	Location	_	_	0	_	_	Offset=1176-1181
+4	individually	_	Modifier	_	_	3	Mod-Link	_	Offset=1182-1194
+5	foil	_	Seal	_	_	0	_	_	Offset=1198-1202
+6	label	_	Action	_	_	0	_	_	Offset=1207-1212
+7	outside	_	Location	_	_	0	_	_	Offset=1217-1224
+8	same	_	Modifier	_	_	9	Or	_	Offset=1234-1238
+9	identification	_	Method	_	_	0	_	_	Offset=1239-1272
+
+# sent_id = s10
+# text = Fill all the plates up to about half full with ddH20 including the original petri dish.
+1	Place	_	Action	_	_	0	_	_	Offset=1274-1279
+2	wrapped	_	Modifier	_	_	3	Mod-Link	_	Offset=1284-1291
+3	plates	_	Location	_	_	0	_	_	Offset=1292-1298
+4	20°C	_	Temperature	_	_	5	Setting	_	Offset=1306-1310
+5	incubator	_	Device	_	_	7	Coreference-Link	_	Offset=1311-1320
+6	leave	_	Action	_	_	0	_	_	Offset=1325-1330
+7	there	_	Mention	_	_	0	_	_	Offset=1334-1339
+8	at	_	Modifier	_	_	9	Mod-Link	_	Offset=1344-1352
+9	21	_	Time	_	_	0	_	_	Offset=1353-1360
+10	checking	_	Action	_	_	0	_	_	Offset=1368-1376
+11	hatching	_	Method	_	_	0	_	_	Offset=1381-1389
+

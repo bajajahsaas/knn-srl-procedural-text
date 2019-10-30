@@ -1,0 +1,28 @@
+# sent_id = s1
+# text = Lysis Buffer (10mM Tris-HCl, 2mM EDTA, 1% SDS). 
+1	Add	_	Action	_	_	0	_	_	Offset=49-52
+2	2.5ml	_	Amount	_	_	4	Measure	_	Offset=53-58
+3	1M	_	Generic-Measure	_	_	4	Measure	_	Offset=59-61
+4	Tris-HCl	_	Reagent	_	_	0	_	_	Offset=62-70
+5	7.5	_	pH	_	_	4	Measure	_	Offset=74-77
+6	autoclaved	_	Location	_	_	0	_	_	Offset=84-101
+
+# sent_id = s2
+# text = Add 2.5ml 1M Tris-HCl pH 7.5 to an autoclaved bottle. 
+1	Add	_	Action	_	_	0	_	_	Offset=104-107
+2	1ml	_	Amount	_	_	4	Measure	_	Offset=108-111
+3	0.5M	_	Generic-Measure	_	_	4	Measure	_	Offset=112-116
+4	EDTA	_	Reagent	_	_	0	_	_	Offset=117-121
+
+# sent_id = s3
+# text = Add 1ml 0.5M EDTA. 
+1	Add	_	Action	_	_	0	_	_	Offset=124-127
+2	2.5g	_	Amount	_	_	3	Measure	_	Offset=128-132
+3	SDS	_	Reagent	_	_	0	_	_	Offset=133-136
+
+# sent_id = s4
+# text = Add 2.5g SDS. 
+1	Adjust	_	Action	_	_	0	_	_	Offset=139-145
+2	250ml	_	Amount	_	_	0	_	_	Offset=162-167
+3	MilliQ	_	Device	_	_	0	_	_	Offset=173-179
+

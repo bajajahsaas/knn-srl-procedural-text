@@ -1,0 +1,376 @@
+# sent_id = s1
+# text = Bulk gDNA extraction from coral samples
+1	Acquire	_	Action	_	_	0	_	_	Offset=40-47
+2	sample	_	Reagent	_	_	0	_	_	Offset=48-63
+
+# sent_id = s2
+# text = Acquire sample material.
+1	Add	_	Action	_	_	0	_	_	Offset=201-204
+2	sample	_	Reagent	_	_	0	_	_	Offset=205-211
+3	500	_	Amount	_	_	5	Measure	_	Offset=215-221
+4	1%	_	Concentration	_	_	5	Measure	_	Offset=222-224
+5	SDS	_	Reagent	_	_	0	_	_	Offset=225-228
+6	DNAB	_	Reagent	_	_	5	Meronym	_	Offset=232-236
+7	microcentrifuge	_	Location	_	_	6	Meronym	_	Offset=242-262
+
+# sent_id = s3
+# text = Small amounts of coral tissue, with or without skeleton, may be obtained by clipping off branch tips, scraping with a razor blade, etc.
+1	Incubate	_	Action	_	_	0	_	_	Offset=317-325
+2	sample	_	Reagent	_	_	0	_	_	Offset=326-332
+3	60-90	_	Time	_	_	0	_	_	Offset=337-350
+4	65°C	_	Temperature	_	_	0	_	_	Offset=354-358
+
+# sent_id = s4
+# text = Add sample to 500 µL 1% SDS in DNAB in a microcentrifuge tube.
+1	Add	_	Action	_	_	0	_	_	Offset=537-540
+2	25	_	Amount	_	_	3	Measure	_	Offset=541-546
+3	Proteinase	_	Reagent	_	_	0	_	_	Offset=547-559
+4	10	_	Concentration	_	_	3	Measure	_	Offset=561-569
+5	sample	_	Reagent	_	_	0	_	_	Offset=574-588
+6	vortex	_	Action	_	_	0	_	_	Offset=593-599
+7	well	_	Modifier	_	_	0	_	_	Offset=600-604
+
+# sent_id = s5
+# text = Be sure that sample is fully immersed in the buffer.
+1	Incubate	_	Action	_	_	0	_	_	Offset=606-614
+2	overnight	_	Time	_	_	0	_	_	Offset=615-624
+3	37°C	_	Temperature	_	_	0	_	_	Offset=628-632
+4	6-7	_	Time	_	_	2	Or	_	Offset=638-647
+5	45°C	_	Temperature	_	_	3	Or	_	Offset=651-655
+6	2-3	_	Time	_	_	4	Or	_	Offset=664-673
+7	55°C	_	Temperature	_	_	5	Or	_	Offset=677-681
+
+# sent_id = s6
+# text = Incubate sample for 60-90 minutes at 65°C.
+1	Prepare	_	Action	_	_	0	_	_	Offset=683-690
+2	new	_	Modifier	_	_	4	Mod-Link	_	Offset=693-696
+3	1.5	_	Amount	_	_	4	Measure	_	Offset=704-710
+4	tubes	_	Location	_	_	0	_	_	Offset=711-716
+5	samples	_	Reagent	_	_	0	_	_	Offset=725-732
+6	process	_	Action	_	_	0	_	_	Offset=747-754
+7	add	_	Action	_	_	0	_	_	Offset=760-763
+8	100	_	Amount	_	_	0	_	_	Offset=764-770
+9	each	_	Modifier	_	_	10	Mod-Link	_	Offset=774-779
+10	sample	_	Reagent	_	_	0	_	_	Offset=779-793
+11	1%	_	Concentration	_	_	12	Measure	_	Offset=798-800
+12	SDS	_	Reagent	_	_	10	Meronym	_	Offset=801-804
+13	DNAB	_	Reagent	_	_	12	Meronym	_	Offset=808-812
+14	new	_	Modifier	_	_	15	Mod-Link	_	Offset=821-824
+15	tubes	_	Location	_	_	0	_	_	Offset=832-837
+
+# sent_id = s7
+# text = Sample is now stabilized for storage at room temperature, and can be treated as an "archive" for future use.
+1	Return	_	Action	_	_	0	_	_	Offset=839-845
+2	remainder	_	Generic-Measure	_	_	3	Measure	_	Offset=850-859
+3	sample	_	Reagent	_	_	0	_	_	Offset=867-881
+4	storage	_	Location	_	_	0	_	_	Offset=885-892
+
+# sent_id = s8
+# text = These archives can be used for multiple attempts at DNA extraction.
+1	Defrost	_	Action	_	_	0	_	_	Offset=894-901
+2	CTAB	_	Reagent	_	_	0	_	_	Offset=902-910
+3	stored	_	Action	_	_	0	_	_	Offset=912-918
+4	-20°C	_	Temperature	_	_	0	_	_	Offset=922-927
+5	add	_	Action	_	_	0	_	_	Offset=933-936
+6	twice	_	Amount	_	_	0	_	_	Offset=937-949
+7	200	_	Amount	_	_	6	Or	_	Offset=951-957
+8	each	_	Modifier	_	_	9	Mod-Link	_	Offset=962-966
+9	sample	_	Reagent	_	_	0	_	_	Offset=967-973
+
+# sent_id = s9
+# text = Add 25 µL Proteinase K (10 mg/mL) to sample archive and vortex well.
+1	Vortex	_	Action	_	_	0	_	_	Offset=975-981
+2	incubate	_	Action	_	_	0	_	_	Offset=986-994
+3	65°C	_	Temperature	_	_	0	_	_	Offset=998-1002
+4	30-60	_	Time	_	_	0	_	_	Offset=1007-1020
+
+# sent_id = s10
+# text = Incubate overnight at 37°C, for 6-7 hours at 45°C, or for 2-3 hours at 55°C.
+1	samples	_	Reagent	_	_	0	_	_	Offset=1028-1035
+2	cool	_	Action	_	_	0	_	_	Offset=1039-1043
+
+# sent_id = s11
+# text = Prepare a new set of 1.5 mL tubes for the samples you intend to process, and add 100 µL of each sample archive (in 1% SDS in DNAB) to the new set of tubes.
+1	fume	_	Device	_	_	0	_	_	Offset=1048-1057
+2	add	_	Action	_	_	0	_	_	Offset=1059-1062
+3	equal	_	Amount	_	_	4	Or	_	Offset=1063-1075
+4	300	_	Amount	_	_	5	Measure	_	Offset=1077-1083
+5	chloroform	_	Reagent	_	_	0	_	_	Offset=1088-1098
+
+# sent_id = s12
+# text = Return the remainder of the sample archive to storage.
+1	charge	_	Action	_	_	0	_	_	Offset=1112-1118
+2	fill	_	Action	_	_	0	_	_	Offset=1127-1131
+3	empty	_	Action	_	_	0	_	_	Offset=1136-1141
+4	pipette	_	Device	_	_	0	_	_	Offset=1142-1153
+5	chloroform	_	Reagent	_	_	0	_	_	Offset=1159-1169
+6	2	_	Numerical	_	_	0	_	_	Offset=1170-1176
+7	pipette	_	Device	_	_	0	_	_	Offset=1188-1199
+
+# sent_id = s13
+# text = Defrost CTAB mix (stored at -20°C) and add twice volume (200 µL) to each sample.
+1	Vortex	_	Action	_	_	0	_	_	Offset=1252-1258
+2	sample	_	Reagent	_	_	0	_	_	Offset=1259-1265
+3	invert	_	Action	_	_	0	_	_	Offset=1270-1276
+4	several	_	Numerical	_	_	0	_	_	Offset=1277-1284
+
+# sent_id = s14
+# text = Vortex and incubate at 65°C for 30-60 minutes.
+1	Put	_	Action	_	_	0	_	_	Offset=1379-1382
+2	rack	_	Location	_	_	0	_	_	Offset=1386-1390
+3	rotating	_	Device	_	_	2	Meronym	_	Offset=1394-1411
+4	2-3	_	Time	_	_	0	_	_	Offset=1416-1426
+
+# sent_id = s15
+# text = Allow samples to cool.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1427-1437
+2	10,000g	_	Speed	_	_	0	_	_	Offset=1441-1448
+3	10	_	Time	_	_	0	_	_	Offset=1459-1469
+
+# sent_id = s16
+# text = In fume hood, add equal volume (300 µL) of chloroform.
+1	Align	_	Action	_	_	0	_	_	Offset=1471-1476
+2	tubes	_	Location	_	_	0	_	_	Offset=1477-1482
+3	centrifuge	_	Device	_	_	0	_	_	Offset=1486-1496
+
+# sent_id = s17
+# text = Be sure to ‘charge’ (i.e., fill and empty pipette tip with chloroform 2 to 3 times) the pipette tip before first use, or your tip will leak chloroform.
+1	prepare	_	Action	_	_	0	_	_	Offset=1548-1555
+2	new	_	Modifier	_	_	5	Mod-Link	_	Offset=1558-1561
+3	labeled	_	Modifier	_	_	5	Mod-Link	_	Offset=1569-1576
+4	1.5	_	Amount	_	_	5	Measure	_	Offset=1577-1583
+5	tubes	_	Location	_	_	0	_	_	Offset=1584-1589
+
+# sent_id = s18
+# text = Vortex sample and invert several times, but be careful that caps are tight – leaking chloroform will erase your sample labels!
+1	Remove	_	Action	_	_	0	_	_	Offset=1591-1597
+2	samples	_	Reagent	_	_	0	_	_	Offset=1598-1605
+3	centrifuge	_	Device	_	_	0	_	_	Offset=1611-1621
+4	very	_	Modifier	_	_	0	_	_	Offset=1626-1640
+5	pipette	_	Action	_	_	0	_	_	Offset=1641-1652
+6	~250	_	Amount	_	_	0	_	_	Offset=1657-1664
+7	new	_	Modifier	_	_	8	Mod-Link	_	Offset=1670-1673
+8	tube	_	Location	_	_	0	_	_	Offset=1674-1678
+
+# sent_id = s19
+# text = Put in rack on rotating platform for 2-3 hours.
+1	Dispose	_	Action	_	_	0	_	_	Offset=1680-1687
+2	rest	_	Reagent	_	_	0	_	_	Offset=1692-1696
+3	contents	_	Reagent	_	_	2	Meronym	_	Offset=1704-1712
+4	appropriate	_	Modifier	_	_	5	Mod-Link	_	Offset=1718-1729
+5	waste	_	Location	_	_	0	_	_	Offset=1730-1745
+
+# sent_id = s20
+# text = Centrifuge at 10,000g (RCF) for 10 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=1747-1750
+2	twice	_	Amount	_	_	3	Or	_	Offset=1751-1763
+3	500	_	Amount	_	_	5	Measure	_	Offset=1765-1771
+4	100%	_	Concentration	_	_	5	Measure	_	Offset=1776-1780
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=1793-1800
+6	EtOH	_	Reagent	_	_	5	Or	_	Offset=1802-1806
+
+# sent_id = s21
+# text = Align tubes in centrifuge so that hinges are on the outside.
+1	caps	_	Location	_	_	0	_	_	Offset=1816-1820
+2	shut	_	Action	_	_	0	_	_	Offset=1825-1829
+3	tightly	_	Modifier	_	_	0	_	_	Offset=1830-1837
+4	invert	_	Action	_	_	0	_	_	Offset=1842-1848
+5	samples	_	Reagent	_	_	0	_	_	Offset=1849-1856
+6	rack	_	Location	_	_	0	_	_	Offset=1866-1870
+7	several	_	Numerical	_	_	0	_	_	Offset=1871-1878
+8	brief	_	Modifier	_	_	0	_	_	Offset=1906-1911
+9	shakes	_	Action	_	_	0	_	_	Offset=1912-1918
+10	samples	_	Reagent	_	_	0	_	_	Offset=1932-1939
+11	well	_	Modifier	_	_	0	_	_	Offset=1944-1948
+12	mixed	_	Action	_	_	0	_	_	Offset=1949-1954
+
+# sent_id = s22
+# text = While spinning, prepare a new set of labeled 1.5 mL tubes.
+1	Put	_	Action	_	_	0	_	_	Offset=1956-1959
+2	samples	_	Reagent	_	_	0	_	_	Offset=1960-1967
+3	freezer	_	Device	_	_	0	_	_	Offset=1971-1978
+4	at	_	Modifier	_	_	5	Mod-Link	_	Offset=1983-1991
+5	2	_	Time	_	_	0	_	_	Offset=1992-1999
+6	promote	_	Action	_	_	0	_	_	Offset=2003-2010
+7	DNA	_	Method	_	_	0	_	_	Offset=2011-2028
+
+# sent_id = s23
+# text = Remove samples from centrifuge and very carefully pipette off top ~250 µL into new tube.
+1	EtOH	_	Reagent	_	_	3	Coreference-Link	_	Offset=2037-2041
+2	leave	_	Action	_	_	0	_	_	Offset=2066-2071
+3	it	_	Mention	_	_	0	_	_	Offset=2072-2074
+4	-20°C	_	Temperature	_	_	5	Setting	_	Offset=2082-2087
+5	freezer	_	Device	_	_	0	_	_	Offset=2088-2095
+6	only	_	Modifier	_	_	7	Mod-Link	_	Offset=2100-2104
+7	1/2	_	Time	_	_	5	Setting	_	Offset=2107-2115
+
+# sent_id = s24
+# text = Dispose the rest of the contents into appropriate waste container.
+1	Put	_	Action	_	_	0	_	_	Offset=2117-2120
+2	samples	_	Reagent	_	_	0	_	_	Offset=2121-2128
+3	centrifuge	_	Device	_	_	0	_	_	Offset=2132-2142
+4	ensuring	_	Action	_	_	0	_	_	Offset=2144-2152
+5	hinges	_	Location	_	_	0	_	_	Offset=2162-2168
+6	tubes	_	Location	_	_	5	Meronym	_	Offset=2176-2181
+7	outside	_	Location	_	_	0	_	_	Offset=2193-2200
+8	spin	_	Action	_	_	0	_	_	Offset=2206-2210
+9	10	_	Time	_	_	0	_	_	Offset=2215-2225
+10	10,000g	_	Speed	_	_	0	_	_	Offset=2229-2236
+
+# sent_id = s25
+# text = Add twice volume (500 µL) of 100% (200-proof) ethanol (EtOH).
+1	Remove	_	Action	_	_	0	_	_	Offset=2244-2250
+2	samples	_	Reagent	_	_	0	_	_	Offset=2251-2258
+3	centrifuge	_	Device	_	_	0	_	_	Offset=2264-2274
+4	carefully	_	Modifier	_	_	0	_	_	Offset=2279-2288
+5	decant	_	Action	_	_	0	_	_	Offset=2289-2299
+6	ethanol	_	Reagent	_	_	0	_	_	Offset=2300-2307
+7	all	_	Modifier	_	_	8	Mod-Link	_	Offset=2313-2316
+8	tubes	_	Location	_	_	0	_	_	Offset=2321-2326
+9	waste	_	Location	_	_	0	_	_	Offset=2334-2349
+
+# sent_id = s26
+# text = Ensure caps are shut tightly and invert samples in their rack several times, together with a few brief shakes to make sure samples are well mixed.
+1	DNA	_	Reagent	_	_	0	_	_	Offset=2355-2365
+2	remain	_	Action	_	_	0	_	_	Offset=2373-2385
+3	inside	_	Location	_	_	0	_	_	Offset=2393-2399
+4	tube	_	Location	_	_	3	Meronym	_	Offset=2407-2411
+
+# sent_id = s27
+# text = Put samples in freezer for at least 2 hours to promote DNA precipitation.
+1	Put	_	Action	_	_	0	_	_	Offset=2413-2416
+2	tubes	_	Location	_	_	3	Meronym	_	Offset=2417-2422
+3	caps	_	Seal	_	_	0	_	_	Offset=2435-2439
+4	open	_	Action	_	_	0	_	_	Offset=2440-2444
+5	Vacufuge/Speedvac	_	Device	_	_	0	_	_	Offset=2453-2470
+
+# sent_id = s28
+# text = If the EtOH is pre-chilled, you can leave it in the -20°C freezer for only a 1/2 hour.
+1	putting	_	Action	_	_	0	_	_	Offset=2488-2495
+2	tubes	_	Location	_	_	0	_	_	Offset=2500-2505
+3	don’t	_	Action	_	_	0	_	_	Offset=2513-2524
+4	inside	_	Location	_	_	0	_	_	Offset=2529-2535
+5	caps	_	Seal	_	_	4	Meronym	_	Offset=2543-2547
+
+# sent_id = s29
+# text = Put samples in centrifuge (ensuring that the hinges of the tubes are on the outside) and spin for 10 minutes at 10,000g (RCF).
+1	Speedvac	_	Action	_	_	0	_	_	Offset=2549-2557
+2	45°C	_	Temperature	_	_	0	_	_	Offset=2561-2565
+3	30-60	_	Time	_	_	0	_	_	Offset=2570-2583
+
+# sent_id = s30
+# text = Remove samples from centrifuge and carefully decant off ethanol from all the tubes into a waste container.
+1	Remove	_	Action	_	_	0	_	_	Offset=2585-2591
+2	samples	_	Reagent	_	_	0	_	_	Offset=2592-2599
+3	vacufuge	_	Device	_	_	0	_	_	Offset=2605-2613
+4	add	_	Action	_	_	0	_	_	Offset=2618-2621
+5	100	_	Amount	_	_	7	Measure	_	Offset=2622-2628
+6	0.3	_	Concentration	_	_	7	Measure	_	Offset=2632-2637
+7	NaOAc	_	Reagent	_	_	0	_	_	Offset=2638-2643
+
+# sent_id = s31
+# text = The DNA pellet should remain stuck to the inside of the tube.
+1	Vortex	_	Action	_	_	0	_	_	Offset=2682-2688
+2	sample	_	Reagent	_	_	0	_	_	Offset=2689-2695
+3	well	_	Modifier	_	_	0	_	_	Offset=2696-2700
+4	dissolve	_	Action	_	_	0	_	_	Offset=2704-2712
+5	pellet	_	Reagent	_	_	0	_	_	Offset=2713-2719
+
+# sent_id = s32
+# text = Put tubes, with their caps open, in the Vacufuge/Speedvac.
+1	bounce	_	Action	_	_	0	_	_	Offset=2795-2801
+
+# sent_id = s33
+# text = Be careful when putting the tubes in and don’t touch the inside of the caps.
+1	add	_	Action	_	_	0	_	_	Offset=2868-2871
+2	200uL	_	Amount	_	_	4	Measure	_	Offset=2872-2877
+3	100%	_	Concentration	_	_	4	Measure	_	Offset=2881-2885
+4	Ethanol	_	Reagent	_	_	0	_	_	Offset=2886-2893
+5	vortex	_	Action	_	_	0	_	_	Offset=2895-2901
+6	invert	_	Action	_	_	0	_	_	Offset=2906-2912
+7	several	_	Numerical	_	_	0	_	_	Offset=2913-2920
+8	put	_	Action	_	_	0	_	_	Offset=2931-2934
+9	freezer	_	Device	_	_	0	_	_	Offset=2938-2945
+10	at	_	Modifier	_	_	11	Mod-Link	_	Offset=2950-2958
+11	2hrs	_	Time	_	_	0	_	_	Offset=2959-2963
+
+# sent_id = s34
+# text = Speedvac at 45°C for 30-60 minutes.
+1	Remove	_	Action	_	_	0	_	_	Offset=2965-2971
+2	samples	_	Reagent	_	_	0	_	_	Offset=2972-2979
+3	freezer	_	Device	_	_	0	_	_	Offset=2985-2992
+4	centrifuge	_	Action	_	_	0	_	_	Offset=2998-3008
+5	10	_	Time	_	_	0	_	_	Offset=3013-3023
+6	10,000g	_	Speed	_	_	0	_	_	Offset=3027-3034
+
+# sent_id = s35
+# text = Remove samples from vacufuge and add 100 µL of 0.3 M NaOAc (do not use the stock 3 M solution!).
+1	Decant	_	Action	_	_	0	_	_	Offset=3042-3048
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=3049-3060
+3	appropriate	_	Modifier	_	_	4	Mod-Link	_	Offset=3066-3077
+4	waste	_	Location	_	_	0	_	_	Offset=3078-3093
+
+# sent_id = s36
+# text = Vortex sample well to dissolve pellet.
+1	Add	_	Action	_	_	0	_	_	Offset=3095-3098
+2	100	_	Amount	_	_	4	Measure	_	Offset=3099-3105
+3	70%	_	Concentration	_	_	4	Measure	_	Offset=3109-3112
+4	Ethanol	_	Reagent	_	_	0	_	_	Offset=3113-3120
+5	vortex	_	Action	_	_	0	_	_	Offset=3126-3132
+6	thoroughly	_	Modifier	_	_	0	_	_	Offset=3133-3143
+
+# sent_id = s37
+# text = When the pellet is dissolved the sample will appear “syrupy” and will not bounce around as droplets inside the tube.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=3179-3189
+2	10	_	Time	_	_	0	_	_	Offset=3194-3204
+3	10,000g	_	Speed	_	_	0	_	_	Offset=3208-3215
+4	again	_	Modifier	_	_	0	_	_	Offset=3227-3232
+5	decant	_	Action	_	_	0	_	_	Offset=3233-3239
+6	supernatant	_	Reagent	_	_	0	_	_	Offset=3240-3251
+7	appropriate	_	Modifier	_	_	8	Mod-Link	_	Offset=3257-3268
+8	waste	_	Location	_	_	0	_	_	Offset=3269-3284
+
+# sent_id = s38
+# text = Once the pellet is dissolved, add 200uL of 100% Ethanol, vortex and invert several times and put in freezer for at least 2hrs.
+1	Put	_	Action	_	_	0	_	_	Offset=3286-3289
+2	samples	_	Reagent	_	_	0	_	_	Offset=3290-3297
+3	Vacufuge	_	Device	_	_	0	_	_	Offset=3301-3309
+4	caps	_	Seal	_	_	0	_	_	Offset=3319-3323
+5	open	_	Action	_	_	0	_	_	Offset=3324-3328
+6	speedvac	_	Action	_	_	0	_	_	Offset=3334-3342
+7	45°C	_	Temperature	_	_	0	_	_	Offset=3346-3350
+8	30-60	_	Time	_	_	0	_	_	Offset=3355-3368
+9	thoroughly	_	Modifier	_	_	0	_	_	Offset=3372-3382
+10	dry	_	Action	_	_	0	_	_	Offset=3383-3386
+11	pellet	_	Reagent	_	_	0	_	_	Offset=3391-3397
+
+# sent_id = s39
+# text = Remove samples from freezer, and centrifuge for 10 minutes at 10,000g (RCF).
+1	Take	_	Action	_	_	0	_	_	Offset=3399-3403
+2	samples	_	Reagent	_	_	0	_	_	Offset=3404-3411
+3	centrifuge	_	Device	_	_	0	_	_	Offset=3419-3429
+4	add	_	Action	_	_	0	_	_	Offset=3434-3437
+5	50-100	_	Amount	_	_	6	Measure	_	Offset=3438-3447
+6	TE	_	Reagent	_	_	0	_	_	Offset=3448-3457
+
+# sent_id = s40
+# text = Decant supernatant into appropriate waste container.
+1	Vortex	_	Action	_	_	0	_	_	Offset=3459-3465
+2	briefly	_	Modifier	_	_	0	_	_	Offset=3466-3473
+3	mix	_	Action	_	_	0	_	_	Offset=3477-3480
+4	store	_	Action	_	_	0	_	_	Offset=3485-3490
+5	-20°C	_	Temperature	_	_	0	_	_	Offset=3494-3499
+6	freezer	_	Device	_	_	0	_	_	Offset=3503-3510
+
+# sent_id = s41
+# text = Add 100 µL of 70% Ethanol, and vortex thoroughly (this is the “Ethanol Wash” step).
+1	Sample	_	Reagent	_	_	0	_	_	Offset=3512-3518
+2	ready	_	Action	_	_	0	_	_	Offset=3526-3531
+3	PCR	_	Method	_	_	0	_	_	Offset=3536-3539
+
+# sent_id = s42
+# text = Centrifuge for 10 minutes at 10,000g (RCF), and again decant supernatant into appropriate waste container.
+1	Store	_	Action	_	_	0	_	_	Offset=3541-3546
+2	DNA	_	Reagent	_	_	0	_	_	Offset=3547-3558
+3	-20°C	_	Temperature	_	_	0	_	_	Offset=3562-3567
+

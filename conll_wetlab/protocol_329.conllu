@@ -1,0 +1,129 @@
+# sent_id = s1
+# text = Transcriptomics During One-Step Growth Curves for Cellulophaga Phages
+1	plaque	_	Method	_	_	0	_	_	Offset=75-87
+2	determine	_	Action	_	_	0	_	_	Offset=91-111
+3	lysate	_	Reagent	_	_	0	_	_	Offset=119-125
+
+# sent_id = s2
+# text = Do a plaque assay to determine the PFU/ml of the lysate you plan to use. 
+1	Inoculate	_	Action	_	_	0	_	_	Offset=144-153
+2	new	_	Reagent	_	_	0	_	_	Offset=156-167
+3	pick	_	Action	_	_	0	_	_	Offset=175-179
+4	colony	_	Reagent	_	_	0	_	_	Offset=182-188
+5	125	_	Size	_	_	6	Measure	_	Offset=196-202
+6	flask	_	Location	_	_	7	Meronym	_	Offset=203-208
+7	MLB	_	Reagent	_	_	0	_	_	Offset=220-229
+
+# sent_id = s3
+# text = Inoculate a new culture; i.e., pick a colony into a 125 ml flask containing MLB media. 
+1	transfer	_	Action	_	_	0	_	_	Offset=246-254
+2	10	_	Amount	_	_	3	Measure	_	Offset=255-260
+3	culture	_	Reagent	_	_	0	_	_	Offset=269-276
+4	500	_	Amount	_	_	5	Measure	_	Offset=280-286
+5	new	_	Reagent	_	_	0	_	_	Offset=290-299
+6	Fernbach	_	Location	_	_	5	Meronym	_	Offset=305-319
+
+# sent_id = s4
+# text = The next day, transfer 10 ml of this culture to 500 ml of new media in a Fernbach flask (short and fat 2800 ml). 
+1	Inoculate	_	Action	_	_	0	_	_	Offset=346-355
+2	enough	_	Amount	_	_	4	Measure	_	Offset=356-362
+3	500	_	Size	_	_	4	Measure	_	Offset=363-369
+4	cultures	_	Reagent	_	_	0	_	_	Offset=370-378
+
+# sent_id = s5
+# text = Inoculate enough 500 ml cultures for your experiment. 
+1	take	_	Action	_	_	0	_	_	Offset=433-463
+
+# sent_id = s6
+# text = Immediately after the transfer, take a 'time 0' growth reading. 
+1	taking	_	Action	_	_	0	_	_	Offset=475-490
+2	periodically	_	Time	_	_	0	_	_	Offset=503-515
+
+# sent_id = s7
+# text = Continue taking readings in this way periodically.  
+1	Graph	_	Action	_	_	0	_	_	Offset=519-524
+2	results	_	Measure-Type	_	_	0	_	_	Offset=529-536
+
+# sent_id = s8
+# text = Graph the results as you go!
+1	Determine	_	Action	_	_	0	_	_	Offset=548-575
+2	culture	_	Reagent	_	_	0	_	_	Offset=584-591
+
+# sent_id = s9
+# text = Determine the concentration of your culture at the time you want to start the infection. 
+1	Calculate	_	Action	_	_	0	_	_	Offset=638-647
+2	number	_	Measure-Type	_	_	0	_	_	Offset=658-664
+3	cells	_	Reagent	_	_	0	_	_	Offset=668-673
+4	each	_	Amount	_	_	6	Measure	_	Offset=677-681
+5	500	_	Size	_	_	6	Measure	_	Offset=690-696
+6	cultures	_	Reagent	_	_	0	_	_	Offset=697-705
+
+# sent_id = s10
+# text = Calculate the total number of cells in each of your 500 ml cultures.  
+1	Calculate	_	Action	_	_	0	_	_	Offset=709-718
+2	how	_	Measure-Type	_	_	0	_	_	Offset=719-727
+3	phages	_	Reagent	_	_	0	_	_	Offset=728-734
+
+# sent_id = s11
+# text = Calculate how many phages you should add for MOI 3.  
+1	Add	_	Action	_	_	0	_	_	Offset=763-766
+2	phages	_	Reagent	_	_	0	_	_	Offset=767-773
+3	experimental	_	Location	_	_	0	_	_	Offset=781-799
+4	equal	_	Amount	_	_	5	Measure	_	Offset=807-819
+5	MSM	_	Reagent	_	_	0	_	_	Offset=823-826
+6	control	_	Location	_	_	0	_	_	Offset=834-847
+7	start	_	Action	_	_	0	_	_	Offset=852-857
+8	timer	_	Device	_	_	0	_	_	Offset=863-868
+
+# sent_id = s12
+# text = Add phages to the experimental flask and an equal volume of MSM to the control flask and start your timer. 
+1	dilute	_	Action	_	_	0	_	_	Offset=884-890
+2	infection	_	Reagent	_	_	0	_	_	Offset=895-904
+3	1:1	_	Concentration	_	_	0	_	_	Offset=905-908
+4	MLB	_	Reagent	_	_	0	_	_	Offset=912-921
+5	add	_	Action	_	_	0	_	_	Offset=929-932
+6	500	_	Amount	_	_	7	Measure	_	Offset=933-939
+7	fresh	_	Reagent	_	_	0	_	_	Offset=940-951
+8	each	_	Amount	_	_	9	Measure	_	Offset=955-959
+9	flask	_	Location	_	_	0	_	_	Offset=960-965
+10	swirl	_	Action	_	_	0	_	_	Offset=970-975
+11	mix	_	Action	_	_	0	_	_	Offset=979-982
+
+# sent_id = s13
+# text = Immediately, dilute the infection 1:1 in MLB media; i.e., add 500 ml fresh media to each flask and swirl to mix.  
+1	Take	_	Action	_	_	0	_	_	Offset=986-990
+2	sample	_	Reagent	_	_	0	_	_	Offset=993-999
+
+# sent_id = s14
+# text = Take a sample immediately after dilution. 
+1	sampling	_	Action	_	_	0	_	_	Offset=1038-1046
+2	8	_	Temperature	_	_	0	_	_	Offset=1063-1070
+
+# sent_id = s15
+# text = Continue sampling in this way for 8 hours. 
+1	count	_	Action	_	_	0	_	_	Offset=1087-1092
+2	plaques	_	Reagent	_	_	0	_	_	Offset=1097-1104
+3	plates	_	Location	_	_	0	_	_	Offset=1112-1118
+
+# sent_id = s16
+# text = The next day, count the plaques on all plates that have a countable number of them.  
+1	count	_	Action	_	_	0	_	_	Offset=1173-1178
+2	new	_	Reagent	_	_	0	_	_	Offset=1183-1194
+3	add	_	Action	_	_	0	_	_	Offset=1215-1247
+
+# sent_id = s17
+# text = The next day, count any new plaques that have appeared; add these to your original count.  
+1	Count	_	Action	_	_	0	_	_	Offset=1251-1256
+
+# sent_id = s18
+# text = Count again on the third day. 
+1	Calculate	_	Action	_	_	0	_	_	Offset=1282-1291
+2	PFU/ml	_	Measure-Type	_	_	0	_	_	Offset=1292-1298
+3	samples	_	Reagent	_	_	0	_	_	Offset=1395-1402
+
+# sent_id = s19
+# text = Calculate PFU/ml at each time point for both the centrifuged (free phage only) and not centrifuged (total phage) samples.  
+1	Graph	_	Action	_	_	0	_	_	Offset=1406-1423
+2	Calculate	_	Action	_	_	0	_	_	Offset=1424-1433
+3	burst	_	Measure-Type	_	_	0	_	_	Offset=1434-1444
+

@@ -1,0 +1,107 @@
+# sent_id = s1
+# text = Isolation of Mitochondria from Animal Cells using the FOCUS™ Mitochondria Kit
+1	Pellet	_	Action	_	_	0	_	_	Offset=243-249
+2	harvested	_	Reagent	_	_	0	_	_	Offset=254-269
+3	centrifugation	_	Method	_	_	0	_	_	Offset=273-287
+4	~800	_	Speed	_	_	0	_	_	Offset=291-299
+5	1	_	Time	_	_	0	_	_	Offset=304-312
+
+# sent_id = s2
+# text = OPTIONAL: Add appropriate protease inhibitor cocktail (e.g. G-Biosciences’ Protease Arrest, Cat# 786-108) to SubCell Buffer-I just before use.
+1	remove	_	Action	_	_	0	_	_	Offset=324-330
+2	discard	_	Action	_	_	0	_	_	Offset=335-342
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=347-358
+
+# sent_id = s3
+# text = Use fresh cells only.
+1	Add	_	Action	_	_	0	_	_	Offset=360-363
+2	500µl	_	Amount	_	_	4	Measure	_	Offset=364-369
+3	ice	_	Temperature	_	_	0	_	_	Offset=373-381
+4	SubCell	_	Reagent	_	_	0	_	_	Offset=382-398
+
+# sent_id = s4
+# text = Pellet the harvested cells by centrifugation at ~800 x g for 1 minute.
+1	vortex	_	Action	_	_	0	_	_	Offset=407-413
+2	cells	_	Reagent	_	_	0	_	_	Offset=429-434
+3	incubate	_	Action	_	_	0	_	_	Offset=439-447
+4	ice	_	Temperature	_	_	0	_	_	Offset=451-454
+5	10	_	Time	_	_	0	_	_	Offset=459-469
+
+# sent_id = s5
+# text = Carefully remove and discard the supernatant.
+1	20	_	Size	_	_	2	Measure	_	Offset=527-535
+2	syringe	_	Device	_	_	0	_	_	Offset=537-551
+3	591	_	Action	_	_	0	_	_	Offset=560-564;580
+4	suspension	_	Reagent	_	_	0	_	_	Offset=569-579
+5	10-30	_	Numerical	_	_	0	_	_	Offset=592-603
+
+# sent_id = s6
+# text = Add 500µl of ice cold SubCell Buffer-I.
+1	Add	_	Action	_	_	0	_	_	Offset=683-686
+2	250µl	_	Amount	_	_	4	Measure	_	Offset=687-692
+3	3X	_	Concentration	_	_	4	Measure	_	Offset=693-695
+4	SubCell	_	Reagent	_	_	0	_	_	Offset=696-713
+5	mix	_	Action	_	_	0	_	_	Offset=756-759
+6	inverting	_	Method	_	_	0	_	_	Offset=763-772
+
+# sent_id = s7
+# text = Gently vortex to suspend the cells and incubate on ice for 10 minutes.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=836-846
+2	tube	_	Location	_	_	0	_	_	Offset=851-855
+3	700x	_	Speed	_	_	0	_	_	Offset=859-865
+4	10	_	Time	_	_	0	_	_	Offset=870-880
+
+# sent_id = s8
+# text = Perform this lysis step on ice.
+1	Transfer	_	Action	_	_	0	_	_	Offset=903-911
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=916-927
+3	tube	_	Location	_	_	0	_	_	Offset=937-941
+
+# sent_id = s9
+# text = Using a narrow opening (20 gauge) syringe needle, gently pull the suspension up and down 10-30 times.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=943-953
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=954-965
+3	12,000x	_	Speed	_	_	0	_	_	Offset=969-978
+4	15	_	Time	_	_	0	_	_	Offset=983-993
+
+# sent_id = s10
+# text = (Alternatively, use Dounce homogenizer as described in the annotation below.)
+1	Transfer	_	Action	_	_	0	_	_	Offset=1029-1037
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1042-1053
+3	tube	_	Location	_	_	0	_	_	Offset=1082-1086
+
+# sent_id = s11
+# text = Add 250µl 3X SubCell Buffer-II (350µl if Dounce homogenizer is used) and mix by inverting.
+1	Add	_	Action	_	_	0	_	_	Offset=1088-1091
+2	500µl	_	Amount	_	_	4	Measure	_	Offset=1092-1097
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=1098-1100
+4	SubCell	_	Reagent	_	_	0	_	_	Offset=1101-1118
+5	pellet	_	Reagent	_	_	0	_	_	Offset=1126-1132
+6	centrifuge	_	Action	_	_	0	_	_	Offset=1138-1148
+7	12,000	_	Speed	_	_	0	_	_	Offset=1158-1168
+8	5	_	Time	_	_	0	_	_	Offset=1173-1182
+
+# sent_id = s12
+# text = This generates a 1X final concentration of SubCell Buffer-II.
+1	Discard	_	Action	_	_	0	_	_	Offset=1184-1191
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1196-1207
+
+# sent_id = s13
+# text = Centrifuge the tube at 700x g for 10 minutes to pellet the nuclei.
+1	Suspend	_	Action	_	_	0	_	_	Offset=1209-1216
+2	mitochondrial	_	Reagent	_	_	0	_	_	Offset=1221-1241
+3	50-100µl	_	Amount	_	_	1	Measure	_	Offset=1245-1253
+
+# sent_id = s14
+# text = Transfer the supernatant to a new tube.
+1	Working	_	Reagent	_	_	0	_	_	Offset=1256-1291
+2	keep	_	Action	_	_	0	_	_	Offset=1296-1300
+3	suspension	_	Reagent	_	_	0	_	_	Offset=1305-1315
+4	ice	_	Temperature	_	_	0	_	_	Offset=1319-1322
+
+# sent_id = s15
+# text = Centrifuge supernatant at 12,000x g for 15 minutes.
+1	stored	_	Action	_	_	0	_	_	Offset=1375-1381
+2	ice	_	Temperature	_	_	0	_	_	Offset=1385-1388
+3	48	_	Time	_	_	0	_	_	Offset=1399-1407
+

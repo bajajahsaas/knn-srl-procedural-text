@@ -1,0 +1,44 @@
+# sent_id = s1
+# text = Plant Protoplast Encapsulation
+1	Gently	_	Modifier	_	_	0	_	_	Offset=31-37
+2	load	_	Action	_	_	0	_	_	Offset=38-42
+3	plant	_	Reagent	_	_	0	_	_	Offset=43-71
+4	hamilton	_	Device	_	_	0	_	_	Offset=77-103
+
+# sent_id = s2
+# text = Gently load plant protoplast suspensions into hamilton gas-tight syringe.
+1	Load	_	Action	_	_	0	_	_	Offset=105-109
+2	2.5%	_	Generic-Measure	_	_	4	Measure	_	Offset=110-114
+3	wt%	_	Measure-Type	_	_	2	Of-Type	_	Offset=115-118
+4	Pico-Surf(TM)	_	Reagent	_	_	0	_	_	Offset=119-147
+5	hamilton	_	Device	_	_	0	_	_	Offset=153-179
+
+# sent_id = s3
+# text = Load 2.5% wt% Pico-Surf(TM) 1in Novec 7500 into hamilton gas-tight syringe.
+1	Place	_	Action	_	_	0	_	_	Offset=181-186
+2	microfluidic	_	Device	_	_	0	_	_	Offset=191-210
+3	stage	_	Location	_	_	0	_	_	Offset=218-223
+4	bright-field	_	Device	_	_	3	Meronym	_	Offset=227-259
+
+# sent_id = s4
+# text = Place the microfluidic device to the stage of bright-field inverted microscope which connects with a high-speed camera.
+1	Connect	_	Action	_	_	0	_	_	Offset=301-308
+2	syringes	_	Device	_	_	0	_	_	Offset=313-321
+3	corresponding	_	Modifier	_	_	4	Mod-Link	_	Offset=329-342
+4	inlets	_	Location	_	_	0	_	_	Offset=343-349
+5	microfluidic	_	Device	_	_	4	Meronym	_	Offset=357-374
+6	PTFE	_	Method	_	_	0	_	_	Offset=379-395
+
+# sent_id = s5
+# text = Connect the syringes to the corresponding inlets of the microfluidic chip via PTFE microtubing.
+1	Load	_	Action	_	_	0	_	_	Offset=397-401
+2	Harvard	_	Device	_	_	0	_	_	Offset=407-447
+3	start	_	Action	_	_	0	_	_	Offset=452-457
+4	infusing	_	Method	_	_	0	_	_	Offset=458-466
+
+# sent_id = s6
+# text = Load onto Harvard Apparatus, PHD 2000 syringe pump and start infusing.
+1	Image	_	Action	_	_	0	_	_	Offset=574-579
+2	plant	_	Reagent	_	_	0	_	_	Offset=584-613
+3	Andor	_	Device	_	_	0	_	_	Offset=619-646
+

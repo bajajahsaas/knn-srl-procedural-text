@@ -1,0 +1,47 @@
+# sent_id = s1
+# text = DNase I Treatment
+1	Dilute	_	Action	_	_	0	_	_	Offset=106-112
+2	stock	_	Reagent	_	_	0	_	_	Offset=113-127
+3	1:40	_	Generic-Measure	_	_	0	_	_	Offset=128-132
+4	10x	_	Concentration	_	_	5	Measure	_	Offset=136-139
+5	reaction	_	Reagent	_	_	0	_	_	Offset=140-155
+6	1,000	_	Generic-Measure	_	_	0	_	_	Offset=158-168
+7	1	_	Generic-Measure	_	_	0	_	_	Offset=171-177
+
+# sent_id = s2
+# text = DNase I made up to 40,000 U/ml in storage buffer (-20°C freezer door) = stock solution.
+1	Use	_	Action	_	_	0	_	_	Offset=198-201
+2	1:10	_	Generic-Measure	_	_	0	_	_	Offset=207-211
+3	dilution	_	Action	_	_	0	_	_	Offset=212-220
+4	1μl	_	Amount	_	_	0	_	_	Offset=222-225
+5	9	_	Amount	_	_	6	Measure	_	Offset=230-234
+6	solution	_	Reagent	_	_	0	_	_	Offset=235-243
+
+# sent_id = s3
+# text = Dilute stock solution 1:40 in 10x reaction buffer = 1,000 U/ml = 1 U/ul = working dilution.
+1	Incubate	_	Action	_	_	0	_	_	Offset=259-267
+2	room	_	Temperature	_	_	0	_	_	Offset=271-287
+3	2hr	_	Time	_	_	0	_	_	Offset=292-295
+
+# sent_id = s4
+# text = Use at a 1:10 dilution: 1μl per 9 μl solution to be treated.
+1	Prepare	_	Action	_	_	0	_	_	Offset=297-304
+2	1M	_	Concentration	_	_	3	Measure	_	Offset=305-307
+3	EDTA	_	Reagent	_	_	0	_	_	Offset=308-336
+
+# sent_id = s5
+# text = Incubate at room temperature for 2hr.
+1	Prepare	_	Action	_	_	0	_	_	Offset=338-345
+2	1M	_	Concentration	_	_	3	Measure	_	Offset=346-348
+3	EGTA	_	Reagent	_	_	0	_	_	Offset=349-370
+
+# sent_id = s6
+# text = Prepare 1M EDTA disodium salt dihydrate.
+1	Inactivate	_	Action	_	_	0	_	_	Offset=372-382
+2	DNase	_	Reagent	_	_	0	_	_	Offset=383-388
+3	adding	_	Action	_	_	0	_	_	Offset=392-398
+4	100	_	Concentration	_	_	5	Measure	_	Offset=399-405
+5	EDTA	_	Reagent	_	_	0	_	_	Offset=406-410
+6	100	_	Concentration	_	_	7	Measure	_	Offset=411-417
+7	EGTA	_	Reagent	_	_	0	_	_	Offset=418-422
+

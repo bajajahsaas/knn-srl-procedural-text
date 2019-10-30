@@ -1,0 +1,102 @@
+# sent_id = s1
+# text = Glass Bead Transformation of Chlamydomonas
+1	Grow	_	Action	_	_	0	_	_	Offset=43-47
+2	cell	_	Reagent	_	_	0	_	_	Offset=48-60
+3	OD750	_	Measure-Type	_	_	4	Of-Type	_	Offset=67-72
+4	0.15	_	Numerical	_	_	2	Measure	_	Offset=76-87
+
+# sent_id = s2
+# text = Grow cell culture to an OD750 of 0.15 to 0.4. 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=90-100
+2	400g	_	Speed	_	_	0	_	_	Offset=104-108
+3	5	_	Time	_	_	0	_	_	Offset=113-122
+4	room	_	Temperature	_	_	0	_	_	Offset=126-142
+
+# sent_id = s3
+# text = Centrifuge at 400g for 5 minutes at room temperature. 
+1	Resuspend	_	Action	_	_	0	_	_	Offset=145-154
+2	1/100th	_	Amount	_	_	3	Measure	_	Offset=158-185
+3	TAP	_	Reagent	_	_	0	_	_	Offset=189-192
+
+# sent_id = s4
+# text = Resuspend in 1/100th the original volume of TAP. 
+1	Mix	_	Action	_	_	0	_	_	Offset=320-323
+2	pipette	_	Reagent	_	_	0	_	_	Offset=331-338
+3	Vortex	_	Action	_	_	0	_	_	Offset=339-345
+4	max	_	Speed	_	_	0	_	_	Offset=349-358
+5	15	_	Time	_	_	0	_	_	Offset=363-373
+
+# sent_id = s5
+# text = Add the following: 8000, PEG to 5% final conc., 3 ug of DNA, 0.3g of 500, micron glass beads 0.4mL, Chlamy cell suspension. 
+1	Take	_	Action	_	_	0	_	_	Offset=376-380
+2	25uL	_	Amount	_	_	3	Measure	_	Offset=381-385
+3	cell	_	Reagent	_	_	0	_	_	Offset=393-408
+4	add	_	Action	_	_	0	_	_	Offset=413-416
+5	100uL	_	Amount	_	_	6	Measure	_	Offset=420-425
+6	TAP	_	Reagent	_	_	0	_	_	Offset=429-432
+7	appropriate	_	Modifier	_	_	8	Mod-Link	_	Offset=441-452
+8	antibiotic	_	Reagent	_	_	0	_	_	Offset=453-463
+
+# sent_id = s6
+# text = Mix with a pipette Vortex at max speed for 15 seconds. 
+1	Spread	_	Action	_	_	0	_	_	Offset=466-472
+2	TAP	_	Location	_	_	0	_	_	Offset=478-481
+3	YA	_	Location	_	_	2	Or	_	Offset=485-493
+4	appropriate	_	Modifier	_	_	5	Mod-Link	_	Offset=503-514
+5	antibiotic	_	Reagent	_	_	0	_	_	Offset=515-525
+6	large	_	Modifier	_	_	7	Mod-Link	_	Offset=533-538
+7	glass	_	Device	_	_	0	_	_	Offset=539-550
+
+# sent_id = s7
+# text = Take 25uL of the cell suspension and add to 100uL of TAP with an appropriate antibiotic. 
+1	liquid	_	Reagent	_	_	0	_	_	Offset=563-569
+2	dry	_	Action	_	_	0	_	_	Offset=573-576
+
+# sent_id = s8
+# text = Spread on a TAP or YA plate, with an appropriate antibiotic, using large glass beads. 
+1	Seal	_	Action	_	_	0	_	_	Offset=600-604
+2	plates	_	Reagent	_	_	0	_	_	Offset=609-615
+3	parafilm	_	Seal	_	_	0	_	_	Offset=621-629
+
+# sent_id = s9
+# text = Allow the liquid to dry while avoiding light. 
+1	colonies	_	Reagent	_	_	0	_	_	Offset=642-650
+2	grow	_	Action	_	_	0	_	_	Offset=654-658
+
+# sent_id = s10
+# text = Seal the plates with parafilm. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=697-705
+2	remaining	_	Modifier	_	_	3	Mod-Link	_	Offset=710-719
+3	cell/vortex	_	Reagent	_	_	0	_	_	Offset=720-739
+4	125mL	_	Amount	_	_	5	Measure	_	Offset=745-750
+5	flask	_	Location	_	_	0	_	_	Offset=751-756
+6	20mL	_	Amount	_	_	7	Measure	_	Offset=762-766
+7	TAP	_	Reagent	_	_	0	_	_	Offset=770-773
+
+# sent_id = s11
+# text = Allow the colonies to grow (colonies will appear in 1-3 weeks). 
+1	Incubate	_	Action	_	_	0	_	_	Offset=791-799
+2	6	_	Time	_	_	0	_	_	Offset=804-811
+3	orbital	_	Device	_	_	0	_	_	Offset=818-832
+4	70rpm	_	Speed	_	_	0	_	_	Offset=836-841
+
+# sent_id = s12
+# text = Transfer the remaining cell/vortex culture to a 125mL flask with 20mL of TAP. 
+1	Add	_	Action	_	_	0	_	_	Offset=844-847
+2	antibiotic	_	Reagent	_	_	0	_	_	Offset=848-858
+3	appropriate	_	Modifier	_	_	4	Mod-Link	_	Offset=865-876
+4	concentration	_	Concentration	_	_	2	Measure	_	Offset=877-890
+
+# sent_id = s13
+# text = w/o antibiotic Incubate for 6 hours on an orbital shaker at 70rpm. 
+1	Take	_	Action	_	_	0	_	_	Offset=893-897
+2	50uL	_	Amount	_	_	3	Measure	_	Offset=898-902
+3	cell	_	Reagent	_	_	0	_	_	Offset=910-925
+4	spread	_	Action	_	_	0	_	_	Offset=930-936
+5	TAP	_	Location	_	_	0	_	_	Offset=942-945
+6	YA	_	Location	_	_	5	Or	_	Offset=949-957
+7	appropriate	_	Modifier	_	_	8	Mod-Link	_	Offset=966-977
+8	antibiotic	_	Reagent	_	_	0	_	_	Offset=978-988
+9	large	_	Modifier	_	_	10	Mod-Link	_	Offset=994-999
+10	glass	_	Device	_	_	0	_	_	Offset=1000-1011
+

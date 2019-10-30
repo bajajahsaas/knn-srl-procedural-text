@@ -1,0 +1,565 @@
+# sent_id = s1
+# text = High sensitivity (low input) miRNA Illumina library preparation protocol by TailorMix miRNA Sample Preparation Kit
+1	Thaw	_	Action	_	_	0	_	_	Offset=115-119
+2	Mix	_	Reagent	_	_	0	_	_	Offset=120-128
+3	-20°C	_	Temperature	_	_	0	_	_	Offset=134-139
+4	storage	_	Location	_	_	0	_	_	Offset=140-147
+
+# sent_id = s2
+# text = Thaw Mix C300 from -20°C storage.
+1	it	_	Mention	_	_	0	_	_	Offset=155-157
+2	equilibrate	_	Action	_	_	0	_	_	Offset=161-172
+3	room	_	Temperature	_	_	0	_	_	Offset=176-192
+4	minimum	_	Modifier	_	_	5	Mod-Link	_	Offset=199-206
+5	30	_	Time	_	_	0	_	_	Offset=210-220
+
+# sent_id = s3
+# text = Allow it to equilibrate to room temperature for a minimum of 30 minutes before use.
+1	Pre-heat	_	Action	_	_	0	_	_	Offset=233-241
+2	thermal	_	Device	_	_	0	_	_	Offset=246-260
+3	70°C	_	Temperature	_	_	0	_	_	Offset=264-268
+4	pre-heat	_	Action	_	_	0	_	_	Offset=273-281
+5	another	_	Modifier	_	_	6	Mod-Link	_	Offset=282-289
+6	thermal	_	Device	_	_	0	_	_	Offset=290-304
+7	25°C	_	Temperature	_	_	0	_	_	Offset=308-312
+
+# sent_id = s4
+# text = Pre-heat the thermal cycler to 70°C and pre-heat another thermal cycler to 25°C if available.
+1	Denature	_	Action	_	_	0	_	_	Offset=327-335
+2	RNA	_	Reagent	_	_	0	_	_	Offset=340-350
+3	assembling	_	Action	_	_	0	_	_	Offset=354-364
+4	following	_	Reagent	_	_	0	_	_	Offset=369-389
+5	sterile	_	Modifier	_	_	7	Mod-Link	_	Offset=395-402
+6	200	_	Amount	_	_	7	Measure	_	Offset=403-409
+7	PCR	_	Location	_	_	0	_	_	Offset=410-418
+8	ice	_	Location	_	_	7	Meronym	_	Offset=422-425
+9	RNA	_	Reagent	_	_	0	_	_	Offset=427-437
+10	6μL	_	Amount	_	_	9	Measure	_	Offset=438-441
+11	Mix	_	Reagent	_	_	0	_	_	Offset=443-451
+12	2μL	_	Amount	_	_	11	Measure	_	Offset=452-455
+
+# sent_id = s5
+# text = Denature the RNA Sample by assembling the following components in a sterile 200 μL PCR tube on ice: RNA Sample,6μL; Mix A300 2μL;
+1	Vortex	_	Action	_	_	0	_	_	Offset=457-463
+2	mix	_	Reagent	_	_	0	_	_	Offset=464-467
+3	thoroughly	_	Modifier	_	_	0	_	_	Offset=468-478
+4	incubate	_	Action	_	_	0	_	_	Offset=483-491
+5	70°C	_	Temperature	_	_	0	_	_	Offset=495-499
+6	1	_	Time	_	_	0	_	_	Offset=504-512
+7	place	_	Action	_	_	0	_	_	Offset=522-527
+8	tube	_	Location	_	_	0	_	_	Offset=532-536
+9	ice	_	Location	_	_	0	_	_	Offset=540-543
+
+# sent_id = s6
+# text = Vortex mix thoroughly and incubate at 70°C for 1 minute and then place the tube on ice.
+1	Set	_	Action	_	_	0	_	_	Offset=545-551
+2	3’	_	Reagent	_	_	0	_	_	Offset=566-594
+3	ice	_	Location	_	_	0	_	_	Offset=598-601
+4	Denatured	_	Reagent	_	_	0	_	_	Offset=603-620
+5	8μL	_	Amount	_	_	4	Measure	_	Offset=634-637
+6	Mix	_	Reagent	_	_	0	_	_	Offset=639-647
+7	2μL	_	Amount	_	_	6	Measure	_	Offset=649-652
+8	Mix	_	Reagent	_	_	0	_	_	Offset=654-662
+9	6.5μL	_	Amount	_	_	8	Measure	_	Offset=664-669
+
+# sent_id = s7
+# text = Set up the following 3’ Adapter Ligation reaction on ice: Denatured RNA mix from step 4, 8μL; Mix B300, 2μL; Mix C300, 6.5μL;  
+1	Vortex	_	Action	_	_	0	_	_	Offset=673-679
+2	mix	_	Reagent	_	_	0	_	_	Offset=680-683
+3	thoroughly	_	Modifier	_	_	0	_	_	Offset=684-694
+4	pulse	_	Action	_	_	0	_	_	Offset=699-709
+
+# sent_id = s8
+# text = Vortex mix thoroughly and pulse spin.
+1	Incubate	_	Action	_	_	0	_	_	Offset=711-719
+2	25°C	_	Temperature	_	_	0	_	_	Offset=723-727
+3	1	_	Time	_	_	0	_	_	Offset=732-738
+
+# sent_id = s9
+# text = Incubate at 25°C for 1 hour.
+1	Vortex	_	Action	_	_	0	_	_	Offset=740-746
+2	TailorMag	_	Reagent	_	_	4	Coreference-Link	_	Offset=751-779
+3	TPB	_	Reagent	_	_	2	Or	_	Offset=781-784
+4	they	_	Mention	_	_	0	_	_	Offset=792-796
+5	evenly	_	Modifier	_	_	0	_	_	Offset=801-807
+6	suspended	_	Action	_	_	0	_	_	Offset=808-817
+
+# sent_id = s10
+# text = Vortex the TailorMag Purification Beads (TPB) until they are evenly suspended.
+1	Prepare	_	Action	_	_	0	_	_	Offset=819-826
+2	80%	_	Concentration	_	_	3	Measure	_	Offset=827-830
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=831-838
+4	rinse	_	Method	_	_	0	_	_	Offset=843-853
+
+# sent_id = s11
+# text = Prepare 80% ethanol for rinse step.
+1	Add	_	Action	_	_	0	_	_	Offset=855-858
+2	30	_	Amount	_	_	3	Measure	_	Offset=859-864
+3	TPB	_	Reagent	_	_	5	Meronym	_	Offset=868-871
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=877-881
+5	3’-adapter	_	Reagent	_	_	0	_	_	Offset=882-907
+6	Step	_	Method	_	_	0	_	_	Offset=913-919
+
+# sent_id = s12
+# text = Add 30 μL of TPB with each 3’-adapter ligated sample from Step 6.
+1	Vortex	_	Action	_	_	0	_	_	Offset=921-927
+2	mix	_	Reagent	_	_	0	_	_	Offset=928-931
+3	thoroughly	_	Modifier	_	_	0	_	_	Offset=932-942
+4	pulse	_	Action	_	_	0	_	_	Offset=947-957
+
+# sent_id = s13
+# text = Vortex mix thoroughly and pulse spin.
+1	Incubate	_	Action	_	_	0	_	_	Offset=959-967
+2	room	_	Temperature	_	_	0	_	_	Offset=971-987
+3	15	_	Time	_	_	0	_	_	Offset=992-1002
+4	following	_	Reagent	_	_	0	_	_	Offset=1007-1016
+5	3’-adapter	_	Reagent	_	_	0	_	_	Offset=1018-1043
+6	16.5μL	_	Amount	_	_	5	Measure	_	Offset=1057-1063
+7	TailorMag	_	Reagent	_	_	0	_	_	Offset=1065-1093
+8	TPB	_	Reagent	_	_	7	Or	_	Offset=1095-1098
+9	30μL	_	Amount	_	_	7	Measure	_	Offset=1101-1105
+
+# sent_id = s14
+# text = Incubate at room temperature for 15 minutes the following: 3’-adapter ligated sample from Step 6, 16.5μL; TailorMag Purification Beads (TPB), 30μL;  
+1	Place	_	Action	_	_	0	_	_	Offset=1109-1114
+2	sample	_	Location	_	_	0	_	_	Offset=1119-1130
+3	magnetic	_	Device	_	_	0	_	_	Offset=1138-1152
+4	room	_	Temperature	_	_	0	_	_	Offset=1156-1172
+5	5	_	Time	_	_	0	_	_	Offset=1177-1186
+
+# sent_id = s15
+# text = Place the sample tube on the magnetic stand at room temperature for 5 minutes.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=1188-1197
+2	remove	_	Action	_	_	0	_	_	Offset=1198-1204
+3	discard	_	Action	_	_	0	_	_	Offset=1209-1216
+4	40	_	Amount	_	_	5	Measure	_	Offset=1217-1222
+5	supernatant	_	Reagent	_	_	0	_	_	Offset=1230-1241
+
+# sent_id = s16
+# text = Carefully remove and discard 40 μL of the supernatant.
+1	Keep	_	Action	_	_	0	_	_	Offset=1243-1247
+2	sample	_	Location	_	_	0	_	_	Offset=1248-1259
+3	magnetic	_	Device	_	_	0	_	_	Offset=1267-1281
+
+# sent_id = s17
+# text = Keep sample tube on the magnetic stand.
+1	Gently	_	Modifier	_	_	0	_	_	Offset=1283-1289
+2	rinse	_	Action	_	_	0	_	_	Offset=1290-1295
+3	TPB	_	Reagent	_	_	0	_	_	Offset=1300-1310
+4	150	_	Amount	_	_	6	Measure	_	Offset=1316-1322
+5	80%	_	Concentration	_	_	6	Measure	_	Offset=1326-1329
+6	ethanol	_	Reagent	_	_	0	_	_	Offset=1330-1337
+7	without	_	Action	_	_	0	_	_	Offset=1338-1356
+8	TPB	_	Reagent	_	_	0	_	_	Offset=1361-1371
+
+# sent_id = s18
+# text = Gently rinse the TPB pellet with 150 μL of 80% ethanol without disrupting the TPB pellet.
+1	Discard	_	Action	_	_	0	_	_	Offset=1373-1380
+2	rinse	_	Reagent	_	_	0	_	_	Offset=1385-1399
+
+# sent_id = s19
+# text = Discard the rinse solution.
+1	Air	_	Action	_	_	0	_	_	Offset=1401-1408
+2	sample	_	Reagent	_	_	0	_	_	Offset=1409-1420
+3	room	_	Temperature	_	_	0	_	_	Offset=1424-1440
+
+# sent_id = s20
+# text = Air dry sample tube at room temperature.
+1	Remove	_	Action	_	_	0	_	_	Offset=1442-1448
+2	sample	_	Location	_	_	0	_	_	Offset=1449-1460
+3	magnetic	_	Device	_	_	0	_	_	Offset=1470-1484
+
+# sent_id = s21
+# text = Remove sample tube from the magnetic stand.
+1	Add	_	Action	_	_	0	_	_	Offset=1486-1489
+2	7	_	Amount	_	_	3	Measure	_	Offset=1490-1494
+3	nuclease	_	Reagent	_	_	0	_	_	Offset=1498-1517
+4	dried	_	Modifier	_	_	5	Mod-Link	_	Offset=1525-1530
+5	TPB	_	Reagent	_	_	0	_	_	Offset=1531-1541
+
+# sent_id = s22
+# text = Add 7 μL of nuclease free water to the dried TPB pellet.
+1	Vortex	_	Action	_	_	0	_	_	Offset=1543-1549
+2	resuspend	_	Action	_	_	0	_	_	Offset=1553-1562
+3	pulse	_	Action	_	_	0	_	_	Offset=1567-1577
+
+# sent_id = s23
+# text = Vortex to resuspend and pulse spin.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1579-1587
+2	sample	_	Reagent	_	_	0	_	_	Offset=1588-1607
+3	room	_	Temperature	_	_	0	_	_	Offset=1611-1627
+4	2	_	Time	_	_	0	_	_	Offset=1632-1641
+
+# sent_id = s24
+# text = Incubate sample resuspension at room temperature for 2 minutes.
+1	Set	_	Action	_	_	0	_	_	Offset=1643-1649
+2	following	_	Reagent	_	_	5	Meronym	7:Meronym|9:Meronym	Offset=1654-1663
+3	5’	_	Reagent	_	_	0	_	_	Offset=1664-1692
+4	ice	_	Location	_	_	0	_	_	Offset=1696-1699
+5	3’	_	Reagent	_	_	0	_	_	Offset=1701-1723
+6	7μL	_	Amount	_	_	5	Measure	_	Offset=1738-1741
+7	Mix	_	Reagent	_	_	0	_	_	Offset=1743-1751
+8	3μL	_	Amount	_	_	7	Measure	_	Offset=1753-1756
+9	Mix	_	Reagent	_	_	0	_	_	Offset=1758-1766
+10	2μL	_	Amount	_	_	9	Measure	_	Offset=1768-1771
+
+# sent_id = s25
+# text = Set up the following 5’ Adapter Ligation reaction on ice: 3’ Adapter Ligated RNA from step 18, 7μL; Mix D300, 3μL; Mix E300, 2μL;  
+1	Gently	_	Modifier	_	_	0	_	_	Offset=1775-1781
+2	pipette	_	Action	_	_	0	_	_	Offset=1782-1789
+3	mix	_	Reagent	_	_	0	_	_	Offset=1790-1793
+4	thoroughly	_	Modifier	_	_	0	_	_	Offset=1794-1804
+5	incubate	_	Action	_	_	0	_	_	Offset=1809-1817
+6	25°C	_	Temperature	_	_	0	_	_	Offset=1821-1825
+7	1	_	Time	_	_	0	_	_	Offset=1830-1836
+8	place	_	Action	_	_	0	_	_	Offset=1846-1851
+9	tube	_	Location	_	_	0	_	_	Offset=1856-1860
+10	ice	_	Location	_	_	0	_	_	Offset=1864-1867
+
+# sent_id = s26
+# text = Gently pipette mix thoroughly and incubate at 25°C for 1 hour and then place the tube on ice.
+1	Pre-heat	_	Action	_	_	0	_	_	Offset=1869-1877
+2	thermal	_	Device	_	_	0	_	_	Offset=1882-1896
+3	50°C	_	Temperature	_	_	0	_	_	Offset=1900-1904
+
+# sent_id = s27
+# text = Pre-heat the thermal cycler to 50°C.
+1	Set	_	Action	_	_	0	_	_	Offset=1906-1912
+2	cDNA	_	Reagent	_	_	0	_	_	Offset=1927-1950
+3	ice	_	Location	_	_	0	_	_	Offset=1954-1957
+4	3’	_	Reagent	_	_	0	_	_	Offset=1959-1988
+5	12μL	_	Amount	_	_	4	Measure	_	Offset=2017-2021
+6	Mix	_	Reagent	_	_	0	_	_	Offset=2023-2031
+7	2μL	_	Amount	_	_	6	Measure	_	Offset=2033-2036
+8	Mix	_	Reagent	_	_	0	_	_	Offset=2038-2046
+9	1μL	_	Amount	_	_	8	Measure	_	Offset=2047-2050
+
+# sent_id = s28
+# text = Set up the following cDNA Synthesis reaction on ice: 3’ and 5’ Adapter Ligated RNA from Step 16(contains TPB), 12μL; Mix F300, 2μL; Mix G300 1μL;  
+1	Vortex	_	Action	_	_	0	_	_	Offset=2054-2060
+2	mix	_	Reagent	_	_	0	_	_	Offset=2061-2064
+3	thoroughly	_	Modifier	_	_	0	_	_	Offset=2065-2075
+4	pulse	_	Action	_	_	0	_	_	Offset=2080-2090
+
+# sent_id = s29
+# text = Vortex mix thoroughly and pulse spin.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2092-2100
+2	50°C	_	Temperature	_	_	0	_	_	Offset=2104-2108
+3	1	_	Time	_	_	0	_	_	Offset=2113-2119
+4	place	_	Action	_	_	0	_	_	Offset=2129-2134
+5	tube	_	Location	_	_	0	_	_	Offset=2139-2143
+6	ice	_	Location	_	_	0	_	_	Offset=2147-2150
+
+# sent_id = s30
+# text = Incubate at 50°C for 1 hour and then place the tube on ice.
+1	Set	_	Action	_	_	0	_	_	Offset=2152-2158
+2	PCR	_	Reagent	_	_	0	_	_	Offset=2173-2185
+3	fresh	_	Modifier	_	_	6	Mod-Link	_	Offset=2191-2196
+4	sterile	_	Modifier	_	_	6	Mod-Link	_	Offset=2197-2204
+5	200	_	Amount	_	_	6	Measure	_	Offset=2205-2211
+6	PCR	_	Location	_	_	0	_	_	Offset=2212-2220
+7	ice	_	Location	_	_	6	Meronym	_	Offset=2224-2227
+8	First	_	Reagent	_	_	0	_	_	Offset=2229-2246
+9	5μL	_	Amount	_	_	8	Measure	_	Offset=2275-2278
+10	Mix	_	Reagent	_	_	0	_	_	Offset=2280-2288
+11	18μL	_	Amount	_	_	10	Measure	_	Offset=2290-2294
+12	PCR	_	Reagent	_	_	0	_	_	Offset=2295-2305
+13	1μL	_	Amount	_	_	12	Measure	_	Offset=2306-2309
+14	Index	_	Reagent	_	_	0	_	_	Offset=2310-2322
+15	1μL	_	Amount	_	_	14	Measure	_	Offset=2325-2328
+
+# sent_id = s31
+# text = Set up the following PCR reaction in a fresh sterile 200 µl PCR tube on ice: First strand cDNA from Step 19(contains TPB), 5μL; Mix H300, 18μL PCR Primer 1μL Index Primer*, 1μL;
+1	Vortex	_	Action	_	_	0	_	_	Offset=2385-2391
+2	mix	_	Reagent	_	_	0	_	_	Offset=2392-2395
+3	thoroughly	_	Modifier	_	_	0	_	_	Offset=2396-2406
+4	pulse	_	Action	_	_	0	_	_	Offset=2411-2421
+
+# sent_id = s32
+# text = Only one of the Index primers is used for each sample.
+1	Amplify	_	Action	_	_	0	_	_	Offset=2423-2430
+2	samples	_	Reagent	_	_	0	_	_	Offset=2435-2442
+3	thermal	_	Device	_	_	0	_	_	Offset=2450-2464
+4	PCR	_	Action	_	_	0	_	_	Offset=2485-2496
+5	98°C	_	Temperature	_	_	0	_	_	Offset=2509-2513
+6	30	_	Time	_	_	0	_	_	Offset=2518-2528
+7	15	_	Generic-Measure	_	_	0	_	_	Offset=2530-2539
+8	98°C	_	Temperature	_	_	0	_	_	Offset=2544-2548
+9	5	_	Time	_	_	0	_	_	Offset=2553-2562
+10	60°C	_	Temperature	_	_	0	_	_	Offset=2564-2568
+11	15	_	Time	_	_	0	_	_	Offset=2573-2583
+12	72°C	_	Temperature	_	_	0	_	_	Offset=2585-2589
+13	1	_	Time	_	_	0	_	_	Offset=2594-2602
+14	72°C	_	Temperature	_	_	0	_	_	Offset=2604-2608
+15	5	_	Time	_	_	0	_	_	Offset=2613-2622
+
+# sent_id = s33
+# text = Vortex mix thoroughly and pulse spin.
+1	Hold	_	Action	_	_	0	_	_	Offset=2624-2628
+2	4°C	_	Temperature	_	_	0	_	_	Offset=2632-2635
+
+# sent_id = s34
+# text = Amplify the samples in the thermal cycler using the following PCR cycling conditions: 98°C for 30 seconds; 15 cycles of: 98°C for 5 seconds; 60°C for 15 seconds; 72°C for 1 minute; 72°C for 5 minutes.
+1	PCR	_	Reagent	_	_	0	_	_	Offset=2637-2646
+2	monitored	_	Action	_	_	0	_	_	Offset=2654-2663
+3	running	_	Action	_	_	0	_	_	Offset=2667-2674
+4	Agilent	_	Reagent	_	_	0	_	_	Offset=2678-2724
+5	dilution	_	Action	_	_	0	_	_	Offset=2733-2741
+6	1	_	Amount	_	_	7	Measure	_	Offset=2745-2749
+7	PCR	_	Reagent	_	_	0	_	_	Offset=2753-2764
+8	9	_	Amount	_	_	9	Measure	_	Offset=2769-2773
+9	nuclease-free	_	Reagent	_	_	0	_	_	Offset=2777-2796
+
+# sent_id = s35
+# text = Hold at 4°C.
+1	Determine	_	Action	_	_	0	_	_	Offset=2886-2895
+2	volume	_	Amount	_	_	0	_	_	Offset=2900-2906
+3	TBE	_	Reagent	_	_	0	_	_	Offset=2910-2920
+4	dilute	_	Action	_	_	0	_	_	Offset=2932-2938
+5	5X	_	Concentration	_	_	6	Measure	_	Offset=2939-2941
+6	TBE	_	Reagent	_	_	0	_	_	Offset=2942-2952
+7	1X	_	Concentration	_	_	0	_	_	Offset=2956-2958
+8	gel	_	Method	_	_	0	_	_	Offset=2970-2989
+
+# sent_id = s36
+# text = PCR yield can be monitored by running an Agilent BioAnalyzer High Sensitivity DNA assay using a dilution of 1 μL of PCR product and 9 μL of nuclease-free water.
+1	Assemble	_	Action	_	_	0	_	_	Offset=2991-2999
+2	gel	_	Device	_	_	0	_	_	Offset=3004-3033
+
+# sent_id = s37
+# text = A typical result shows a distinct peak at approximately 140bp (Figure 2 in Guidelines).
+1	Mix	_	Action	_	_	0	_	_	Offset=3035-3038
+2	2	_	Amount	_	_	3	Measure	_	Offset=3039-3043
+3	Custom	_	Reagent	_	_	0	_	_	Offset=3047-3060
+4	2	_	Amount	_	_	5	Measure	_	Offset=3066-3070
+5	Hi-Density	_	Reagent	_	_	0	_	_	Offset=3074-3102
+
+# sent_id = s38
+# text = Determine the volume of TBE buffer needed and dilute 5X TBE Buffer to 1X for use in gel electrophoresis.
+1	Mix	_	Action	_	_	0	_	_	Offset=3115-3118
+2	1	_	Amount	_	_	4	Measure	_	Offset=3119-3123
+3	100bp	_	Generic-Measure	_	_	4	Measure	_	Offset=3127-3132
+4	DNA	_	Reagent	_	_	0	_	_	Offset=3133-3143
+5	1	_	Amount	_	_	6	Measure	_	Offset=3149-3153
+6	Hi-Density	_	Reagent	_	_	0	_	_	Offset=3157-3185
+
+# sent_id = s39
+# text = Assemble the gel electrophoresis apparatus.
+1	Add	_	Action	_	_	0	_	_	Offset=3187-3190
+2	2.5	_	Amount	_	_	3	Measure	_	Offset=3191-3197
+3	Hi-Density	_	Reagent	_	_	0	_	_	Offset=3201-3229
+4	25	_	Amount	_	_	5	Measure	_	Offset=3233-3238
+5	PCR	_	Reagent	_	_	0	_	_	Offset=3242-3253
+6	pipette	_	Action	_	_	0	_	_	Offset=3258-3265
+7	mix	_	Reagent	_	_	0	_	_	Offset=3266-3269
+8	thoroughly	_	Modifier	_	_	0	_	_	Offset=3270-3280
+
+# sent_id = s40
+# text = Mix 2 μL of Custom Ladder with 2 μL of Hi-Density TBE Sample Buffer.
+1	Load	_	Action	_	_	0	_	_	Offset=3282-3286
+2	25	_	Amount	_	_	3	Measure	_	Offset=3287-3292
+3	PCR	_	Reagent	_	_	0	_	_	Offset=3300-3329
+4	one	_	Numerical	_	_	5	Measure	_	Offset=3335-3338
+5	well	_	Location	_	_	6	Meronym	_	Offset=3339-3343
+6	middle	_	Location	_	_	0	_	_	Offset=3351-3357
+7	8%	_	Concentration	_	_	8	Measure	_	Offset=3365-3367
+8	PAGE	_	Reagent	_	_	6	Meronym	_	Offset=3368-3376
+
+# sent_id = s41
+# text = (Optional) Mix 1 μL of 100bp DNA ladder with 1 μL of Hi-Density TBE Sample Buffer.
+1	Load	_	Action	_	_	0	_	_	Offset=3426-3430
+2	2	_	Amount	_	_	3	Measure	_	Offset=3431-3435
+3	custom	_	Reagent	_	_	0	_	_	Offset=3443-3456
+4	dye	_	Reagent	_	_	0	_	_	Offset=3461-3468
+5	neighboring	_	Modifier	_	_	6	Mod-Link	_	Offset=3478-3489
+6	wells	_	Location	_	_	7	Meronym	_	Offset=3490-3495
+7	PCR	_	Reagent	_	_	0	_	_	Offset=3503-3515
+
+# sent_id = s42
+# text = Add 2.5 μL of Hi-Density TBE Sample Buffer to 25 μL of PCR product and pipette mix thoroughly.
+1	Load	_	Action	_	_	0	_	_	Offset=3528-3532
+2	2	_	Amount	_	_	4	Measure	_	Offset=3533-3537
+3	100bp	_	Generic-Measure	_	_	4	Measure	_	Offset=3545-3550
+4	DNA	_	Reagent	_	_	0	_	_	Offset=3551-3561
+5	dye	_	Reagent	_	_	0	_	_	Offset=3566-3573
+6	separate	_	Modifier	_	_	7	Mod-Link	_	Offset=3581-3589
+7	well	_	Location	_	_	0	_	_	Offset=3590-3594
+
+# sent_id = s43
+# text = Load 25 μL of the PCR product-Sample Buffer mix into one well in the middle of the 8% PAGE gel.
+1	Run	_	Action	_	_	0	_	_	Offset=3596-3599
+2	gel	_	Reagent	_	_	0	_	_	Offset=3604-3607
+3	75	_	Time	_	_	0	_	_	Offset=3612-3622
+4	145V	_	Generic-Measure	_	_	0	_	_	Offset=3626-3630
+5	immediately	_	Modifier	_	_	0	_	_	Offset=3635-3646
+6	remove	_	Action	_	_	0	_	_	Offset=3647-3653
+7	gel	_	Reagent	_	_	0	_	_	Offset=3658-3661
+8	apparatus	_	Device	_	_	0	_	_	Offset=3671-3680
+
+# sent_id = s44
+# text = Refer to Figure 3 in Guidelines for an example.
+1	Prepare	_	Action	_	_	0	_	_	Offset=3682-3689
+2	TE	_	Reagent	_	_	0	_	_	Offset=3690-3699
+3	0.1%	_	Concentration	_	_	4	Measure	_	Offset=3705-3709
+4	Tween-20	_	Reagent	_	_	5	Meronym	7:Meronym	Offset=3710-3718
+5	TE	_	Reagent	_	_	0	_	_	Offset=3720-3729
+6	9,990μL	_	Amount	_	_	5	Measure	_	Offset=3731-3738
+7	Tween-20	_	Reagent	_	_	0	_	_	Offset=3740-3748
+8	10μL	_	Amount	_	_	7	Measure	_	Offset=3749-3753
+
+# sent_id = s45
+# text = Load 2 μL of the custom ladder and dye mix into the neighboring wells of the PCR products.
+1	Open	_	Action	_	_	0	_	_	Offset=3757-3761
+2	gel	_	Location	_	_	0	_	_	Offset=3766-3778
+3	stain	_	Action	_	_	0	_	_	Offset=3783-3788
+4	1μg/mL	_	Concentration	_	_	5	Measure	_	Offset=3794-3800
+5	ethidium	_	Reagent	_	_	0	_	_	Offset=3801-3826
+6	manufacturer’s	_	Method	_	_	0	_	_	Offset=3844-3871
+
+# sent_id = s46
+# text = (Optional) Load 2 μL of the 100bp DNA ladder and dye mix into a separate well.
+1	Place	_	Action	_	_	0	_	_	Offset=3873-3878
+2	gel	_	Reagent	_	_	0	_	_	Offset=3883-3886
+3	UV	_	Device	_	_	0	_	_	Offset=3892-3911
+4	observe	_	Action	_	_	0	_	_	Offset=3916-3923
+5	banding	_	Reagent	_	_	0	_	_	Offset=3928-3943
+
+# sent_id = s47
+# text = Run the gel for 75 minutes at 145V and immediately remove the gel from the apparatus.
+1	Stain	_	Action	_	_	0	_	_	Offset=3984-3989
+2	gel	_	Reagent	_	_	0	_	_	Offset=3990-3993
+3	Sybr	_	Reagent	_	_	0	_	_	Offset=3999-4008
+4	manufacturer’s	_	Method	_	_	0	_	_	Offset=4026-4053
+5	observe	_	Action	_	_	0	_	_	Offset=4058-4065
+6	banding	_	Reagent	_	_	0	_	_	Offset=4070-4085
+7	Dark	_	Device	_	_	0	_	_	Offset=4091-4119
+
+# sent_id = s48
+# text = Prepare TE buffer with 0.1% Tween-20: TE buffer, 9,990μL; Tween-20 10μL;  
+1	Place	_	Action	_	_	0	_	_	Offset=4121-4126
+2	gel	_	Location	_	_	0	_	_	Offset=4131-4147
+3	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=4155-4162
+4	1.5mL	_	Amount	_	_	5	Measure	_	Offset=4163-4168
+5	microcentrifuge	_	Location	_	_	0	_	_	Offset=4169-4189
+
+# sent_id = s49
+# text = Open the gel cassette and stain with 1μg/mL ethidium bromide solution according to the manufacturer’s instructions.
+1	excise	_	Action	_	_	0	_	_	Offset=4268-4274
+2	140bp	_	Generic-Measure	_	_	3	Measure	_	Offset=4279-4284
+3	band	_	Reagent	_	_	0	_	_	Offset=4285-4289
+4	align	_	Action	_	_	0	_	_	Offset=4291-4296
+5	center	_	Location	_	_	0	_	_	Offset=4301-4307
+6	gel	_	Device	_	_	5	Meronym	_	Offset=4315-4330
+7	140	_	Generic-Measure	_	_	8	Measure	_	Offset=4340-4346
+8	band	_	Reagent	_	_	0	_	_	Offset=4347-4351
+
+# sent_id = s50
+# text = Place the gel on a UV Transilluminator and observe the banding pattern (Figure 3 in Guidelines).
+1	Press	_	Action	_	_	0	_	_	Offset=4399-4409
+2	firmly	_	Modifier	_	_	0	_	_	Offset=4410-4416
+3	gel	_	Reagent	_	_	0	_	_	Offset=4426-4429
+4	excise	_	Action	_	_	0	_	_	Offset=4434-4440
+5	gel	_	Reagent	_	_	0	_	_	Offset=4445-4457
+
+# sent_id = s51
+# text = (Alternative) Stain gel with Sybr Gold according to the manufacturer’s instructions and observe the banding pattern on a Dark Reader Transilluminator.
+1	Insert	_	Action	_	_	0	_	_	Offset=4459-4465
+2	gel	_	Device	_	_	3	Meronym	_	Offset=4470-4485
+3	gel	_	Reagent	_	_	0	_	_	Offset=4501-4510
+4	gel	_	Location	_	_	0	_	_	Offset=4520-4536
+
+# sent_id = s52
+# text = Place the gel breaker tube into a sterile 1.5mL microcentrifuge tube.
+1	Pulse-spin	_	Action	_	_	0	_	_	Offset=4538-4548
+2	gel	_	Device	_	_	0	_	_	Offset=4553-4563
+3	gel	_	Location	_	_	0	_	_	Offset=4568-4588
+4	minifuge	_	Device	_	_	0	_	_	Offset=4594-4602
+
+# sent_id = s53
+# text = The 140bp band represents the highest concentration of micro RNA library.
+1	gel	_	Reagent	_	_	0	_	_	Offset=4618-4627
+2	collected	_	Action	_	_	0	_	_	Offset=4631-4640
+3	gel	_	Location	_	_	0	_	_	Offset=4648-4664
+
+# sent_id = s54
+# text = To excise the 140bp band, align the center of the gel cutter tool with the 140 bp band of the custom ladder (Figure 4 in Guidelines).
+1	Remove	_	Action	_	_	0	_	_	Offset=4666-4672
+2	gel	_	Device	_	_	0	_	_	Offset=4673-4683
+3	assembly	_	Location	_	_	0	_	_	Offset=4693-4701
+4	discard	_	Action	_	_	0	_	_	Offset=4706-4713
+
+# sent_id = s55
+# text = Press down firmly into the gel and excise the gel fragment.
+1	Add	_	Action	_	_	0	_	_	Offset=4715-4718
+2	30	_	Amount	_	_	3	Measure	_	Offset=4719-4724
+3	TE	_	Reagent	_	_	5	Meronym	_	Offset=4728-4737
+4	0.1%	_	Concentration	_	_	5	Measure	_	Offset=4743-4747
+5	Tween-20	_	Reagent	_	_	0	_	_	Offset=4748-4756
+6	gel	_	Location	_	_	7	Meronym	_	Offset=4764-4780
+7	gel	_	Reagent	_	_	0	_	_	Offset=4796-4805
+
+# sent_id = s56
+# text = Insert the gel cutter tool containing the gel slice into the gel breaker tube.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=4807-4817
+2	gel	_	Location	_	_	0	_	_	Offset=4822-4842
+3	bench	_	Device	_	_	0	_	_	Offset=4848-4868
+4	maximum	_	Speed	_	_	0	_	_	Offset=4872-4885
+5	approximately	_	Modifier	_	_	6	Mod-Link	_	Offset=4887-4900
+6	13,000x	_	Speed	_	_	4	Or	_	Offset=4901-4910
+7	two	_	Time	_	_	0	_	_	Offset=4916-4927
+8	room	_	Temperature	_	_	0	_	_	Offset=4931-4947
+
+# sent_id = s57
+# text = Pulse-spin the gel cutter and gel breaker assembly in a minifuge.
+1	all	_	Modifier	_	_	2	Mod-Link	_	Offset=4961-4964
+2	gel	_	Reagent	_	_	0	_	_	Offset=4972-4975
+3	moved	_	Action	_	_	0	_	_	Offset=4980-4985
+4	through	_	Modifier	_	_	0	_	_	Offset=4986-4993
+5	holes	_	Location	_	_	0	_	_	Offset=4998-5003
+6	collection	_	Location	_	_	0	_	_	Offset=5013-5028
+
+# sent_id = s58
+# text = Make sure the gel slice is collected in the gel breaker tube.
+1	Elute	_	Action	_	_	0	_	_	Offset=5030-5035
+2	micro	_	Reagent	_	_	0	_	_	Offset=5040-5057
+3	shaking	_	Action	_	_	0	_	_	Offset=5061-5068
+4	tube	_	Location	_	_	0	_	_	Offset=5073-5077
+5	600	_	Speed	_	_	0	_	_	Offset=5081-5088
+6	room	_	Temperature	_	_	0	_	_	Offset=5092-5108
+7	overnight	_	Time	_	_	0	_	_	Offset=5109-5118
+
+# sent_id = s59
+# text = Remove gel cutter from the assembly and discard.
+1	collect	_	Action	_	_	0	_	_	Offset=5123-5130
+2	micro	_	Reagent	_	_	0	_	_	Offset=5135-5152
+3	spin	_	Action	_	_	0	_	_	Offset=5154-5158
+4	gel	_	Reagent	_	_	0	_	_	Offset=5163-5170
+5	maximum	_	Speed	_	_	0	_	_	Offset=5174-5187
+6	approximately	_	Modifier	_	_	7	Mod-Link	_	Offset=5189-5202
+7	13,000x	_	Speed	_	_	5	Or	_	Offset=5203-5212
+8	2	_	Time	_	_	0	_	_	Offset=5218-5227
+
+# sent_id = s60
+# text = Add 30 μL of TE buffer with 0.1% Tween-20 to the gel breaker tube containing the gel slice.
+1	P10	_	Device	_	_	0	_	_	Offset=5236-5247
+2	gently	_	Modifier	_	_	0	_	_	Offset=5249-5255
+3	transfer	_	Action	_	_	0	_	_	Offset=5256-5264
+4	20-25	_	Amount	_	_	5	Measure	_	Offset=5265-5273
+5	eluate	_	Reagent	_	_	0	_	_	Offset=5277-5283
+6	gel	_	Reagent	_	_	0	_	_	Offset=5289-5296
+7	fresh	_	Modifier	_	_	9	Mod-Link	_	Offset=5302-5307
+8	1.5ml	_	Amount	_	_	9	Measure	_	Offset=5308-5313
+9	tube	_	Location	_	_	0	_	_	Offset=5314-5318
+
+# sent_id = s61
+# text = Centrifuge the gel breaker assembly in a bench top centrifuge at maximum speed (approximately 13,000x G) for two minutes at room temperature.
+1	1	_	Amount	_	_	3	Measure	_	Offset=5441-5445
+2	resuspended	_	Modifier	_	_	3	Mod-Link	_	Offset=5449-5460
+3	construct	_	Reagent	_	_	0	_	_	Offset=5461-5470
+4	High	_	Device	_	_	0	_	_	Offset=5489-5514
+5	check	_	Action	_	_	0	_	_	Offset=5518-5523
+6	size	_	Measure-Type	_	_	0	_	_	Offset=5528-5532
+7	purity	_	Measure-Type	_	_	0	_	_	Offset=5534-5540
+8	concentration	_	Measure-Type	_	_	0	_	_	Offset=5545-5558
+9	sample	_	Reagent	_	_	0	_	_	Offset=5566-5572
+

@@ -1,0 +1,30 @@
+# sent_id = s1
+# text = Gibson Assembly® Protocol (E5510)
+1	Incubate	_	Action	_	_	0	_	_	Offset=34-42
+2	samples	_	Reagent	_	_	0	_	_	Offset=43-50
+3	thermocycler	_	Device	_	_	0	_	_	Offset=56-68
+4	50°C	_	Temperature	_	_	0	_	_	Offset=72-76
+5	15	_	Time	_	_	0	_	_	Offset=81-91
+6	2	_	Numerical	_	_	8	Measure	_	Offset=97-98
+7	3	_	Numerical	_	_	6	Or	_	Offset=102-103
+8	fragments	_	Reagent	_	_	0	_	_	Offset=104-113
+9	assembled	_	Action	_	_	0	_	_	Offset=124-133
+10	60	_	Time	_	_	0	_	_	Offset=137-147
+11	4-6	_	Numerical	_	_	12	Measure	_	Offset=153-156
+12	fragments	_	Reagent	_	_	0	_	_	Offset=157-166
+13	assembled	_	Action	_	_	0	_	_	Offset=177-186
+
+# sent_id = s2
+# text = Incubate samples in a thermocycler at 50°C for 15 minutes when 2 or 3 fragments are being assembled or 60 minutes when 4-6 fragments are being assembled.
+1	Store	_	Action	_	_	0	_	_	Offset=188-193
+2	samples	_	Reagent	_	_	0	_	_	Offset=194-201
+3	ice	_	Location	_	_	0	_	_	Offset=205-208
+4	–20°C	_	Temperature	_	_	3	Or	_	Offset=215-220
+
+# sent_id = s3
+# text = Store samples on ice or at –20°C for subsequent transformation.
+1	Transform	_	Action	_	_	0	_	_	Offset=252-261
+2	NEB	_	Reagent	_	_	0	_	_	Offset=262-297
+3	2	_	Amount	_	_	4	Measure	_	Offset=327-331
+4	assembly	_	Reagent	_	_	0	_	_	Offset=339-356
+

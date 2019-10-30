@@ -1,0 +1,245 @@
+# sent_id = s1
+# text = Chlorovirus Purification
+1	Inoculate	_	Action	_	_	0	_	_	Offset=25-34
+2	flasks	_	Location	_	_	0	_	_	Offset=35-41
+3	NC64A	_	Reagent	_	_	2	Meronym	_	Offset=47-62
+4	MBBM	_	Reagent	_	_	0	_	_	Offset=66-70
+5	incubate	_	Action	_	_	0	_	_	Offset=111-119
+6	several	_	Time	_	_	0	_	_	Offset=124-136
+7	25oC	_	Temperature	_	_	0	_	_	Offset=140-144
+8	light	_	Device	_	_	0	_	_	Offset=161-166
+9	shaking	_	Action	_	_	0	_	_	Offset=171-178
+
+# sent_id = s2
+# text = Inoculate flasks with NC64A chlorella in MBBM (or Pbi in FES, SAG 241-80 in MBBM) and incubate for several days at 25oC with continuous light and shaking.
+1	Infect	_	Action	_	_	0	_	_	Offset=180-186
+2	flasks	_	Location	_	_	0	_	_	Offset=191-197
+3	chlorella	_	Reagent	_	_	2	Meronym	_	Offset=201-210
+4	virus	_	Reagent	_	_	0	_	_	Offset=216-221
+5	moi	_	Generic-Measure	_	_	0	_	_	Offset=228-248
+
+# sent_id = s3
+# text = Infect the flasks of chlorella with virus at an moi of 0.01 to 0.001.
+1	Incubate	_	Action	_	_	0	_	_	Offset=250-258
+2	flasks	_	Reagent	_	_	0	_	_	Offset=263-269
+3	48-72	_	Time	_	_	0	_	_	Offset=274-285
+4	25°C	_	Temperature	_	_	0	_	_	Offset=289-293
+5	light	_	Device	_	_	0	_	_	Offset=310-315
+6	shaking	_	Action	_	_	0	_	_	Offset=320-327
+
+# sent_id = s4
+# text = Incubate the flasks for 48-72 hours at 25°C with continuous light and shaking.
+1	Add	_	Action	_	_	0	_	_	Offset=329-332
+2	Triton	_	Reagent	_	_	0	_	_	Offset=333-345
+3	lysate	_	Reagent	_	_	0	_	_	Offset=353-372
+4	final	_	Reagent	_	_	0	_	_	Offset=378-397
+5	1%	_	Concentration	_	_	4	Measure	_	Offset=401-403
+
+# sent_id = s5
+# text = Add Triton X-100 to the lysate supernatants to a final concentration of 1%.
+1	Stir	_	Action	_	_	0	_	_	Offset=460-464
+2	solution	_	Reagent	_	_	0	_	_	Offset=470-478
+3	room	_	Temperature	_	_	0	_	_	Offset=482-498
+4	at	_	Modifier	_	_	5	Mod-Link	_	Offset=503-511
+5	one	_	Time	_	_	0	_	_	Offset=512-520
+
+# sent_id = s6
+# text = This solubilizes the green pigment in the supernatant.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=522-532
+2	lysate	_	Reagent	_	_	0	_	_	Offset=537-543
+3	Sorvall	_	Device	_	_	0	_	_	Offset=551-568
+4	5,000	_	Speed	_	_	0	_	_	Offset=572-581
+5	5	_	Time	_	_	0	_	_	Offset=595-600
+6	4°C	_	Temperature	_	_	0	_	_	Offset=602-605
+
+# sent_id = s7
+# text = Stir this solution at room temperature for at least one hour.
+1	Discard	_	Action	_	_	0	_	_	Offset=607-614
+2	pellets	_	Reagent	_	_	0	_	_	Offset=619-626
+
+# sent_id = s8
+# text = Centrifuge the lysate in the Sorvall GSA rotor at 5,000 rpm (4,000 rcf), 5 min, 4°C.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=628-638
+2	lysate	_	Reagent	_	_	0	_	_	Offset=643-649
+3	Beckman	_	Device	_	_	0	_	_	Offset=657-694
+4	17,000	_	Speed	_	_	0	_	_	Offset=698-708
+5	50	_	Time	_	_	0	_	_	Offset=723-729
+6	4°C	_	Temperature	_	_	0	_	_	Offset=734-737
+
+# sent_id = s9
+# text = Discard the pellets.
+1	Discard	_	Action	_	_	0	_	_	Offset=739-746
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=751-763
+
+# sent_id = s10
+# text = Centrifuge the lysate in the Beckman Type 19 ultracentrifuge rotor at 17,000 rpm (43,000 rcf), 50 min, at 4°C.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=765-774
+2	virus	_	Reagent	_	_	0	_	_	Offset=779-792
+3	small	_	Amount	_	_	5	Measure	_	Offset=800-812
+4	50	_	Concentration	_	_	5	Measure	_	Offset=816-821
+5	Tris-HCl	_	Reagent	_	_	0	_	_	Offset=822-830
+6	pH	_	pH	_	_	5	Measure	_	Offset=832-838
+
+# sent_id = s11
+# text = Discard the supernatants.
+1	Adjust	_	Action	_	_	0	_	_	Offset=840-846
+2	resuspended	_	Reagent	_	_	0	_	_	Offset=851-877
+3	Protease	_	Reagent	_	_	0	_	_	Offset=883-893
+4	0.02	_	Concentration	_	_	0	_	_	Offset=897-907
+5	incubate	_	Action	_	_	0	_	_	Offset=912-920
+6	45oC	_	Temperature	_	_	0	_	_	Offset=924-928
+7	at	_	Modifier	_	_	8	Mod-Link	_	Offset=933-941
+8	one	_	Time	_	_	0	_	_	Offset=942-951
+
+# sent_id = s12
+# text = Resuspend the virus pellets with a small volume of 50 mM Tris-HCl, pH 7.8.
+1	Layer	_	Action	_	_	0	_	_	Offset=986-991
+2	virus	_	Reagent	_	_	0	_	_	Offset=996-1012
+3	100-400	_	Concentration	_	_	4	Measure	_	Offset=1018-1031
+4	linear	_	Reagent	_	_	0	_	_	Offset=1046-1078
+5	equilibrated	_	Action	_	_	0	_	_	Offset=1079-1091
+6	50	_	Concentration	_	_	7	Measure	_	Offset=1097-1102
+7	Tris-HCl	_	Reagent	_	_	0	_	_	Offset=1103-1111
+8	pH	_	pH	_	_	7	Measure	_	Offset=1113-1119
+9	Beckman	_	Location	_	_	0	_	_	Offset=1132-1156
+
+# sent_id = s13
+# text = Adjust the resuspended virus material with Protease K to 0.02 mg/mL and incubate at 45oC for at least one hours.
+1	Layer	_	Action	_	_	0	_	_	Offset=1186-1191
+2	virus	_	Reagent	_	_	0	_	_	Offset=1196-1212
+3	~100-400	_	Concentration	_	_	4	Measure	_	Offset=1218-1232
+4	linear	_	Reagent	_	_	0	_	_	Offset=1233-1259
+5	equilibrated	_	Action	_	_	0	_	_	Offset=1260-1272
+6	50	_	Concentration	_	_	7	Measure	_	Offset=1278-1283
+7	Tris-HCl	_	Reagent	_	_	0	_	_	Offset=1284-1292
+8	pH	_	pH	_	_	7	Measure	_	Offset=1294-1300
+9	Beckman	_	Location	_	_	0	_	_	Offset=1313-1337
+
+# sent_id = s14
+# text = For NC64A and Pbi virus lysates: Layer the virus suspension onto 100-400 mg/mL (10-40%, w/v) linear sucrose density gradients equilibrated with 50 mM Tris-HCl, pH 7.8, made up in Beckman SW28 rotor tubes.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1339-1349
+2	gradients	_	Reagent	_	_	0	_	_	Offset=1354-1363
+3	Beckman	_	Device	_	_	0	_	_	Offset=1369-1381
+4	SW32	_	Device	_	_	3	Or	_	Offset=1385-1395
+5	20,000	_	Speed	_	_	0	_	_	Offset=1399-1409
+6	72,000	_	Speed	_	_	5	Or	_	Offset=1411-1424
+7	20	_	Time	_	_	0	_	_	Offset=1427-1433
+8	4°C	_	Temperature	_	_	0	_	_	Offset=1435-1438
+
+# sent_id = s15
+# text = For SAG 3.83 virus lysates: Layer the virus suspension onto ~100-400 mg/mL linear iodixanol gradients equilibrated with 50 mM Tris-HCl, pH 7.8, made up in Beckman SW28 rotor tubes.
+1	Remove	_	Action	_	_	0	_	_	Offset=1440-1446
+2	virus	_	Reagent	_	_	0	_	_	Offset=1451-1462
+3	gradients	_	Reagent	_	_	0	_	_	Offset=1472-1481
+4	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=1487-1494
+5	bent	_	Device	_	_	0	_	_	Offset=1495-1507
+6	30	_	Amount	_	_	7	Measure	_	Offset=1584-1589
+7	polypropylene	_	Location	_	_	0	_	_	Offset=1590-1609
+
+# sent_id = s16
+# text = Centrifuge the gradients in a Beckman SW28 or SW32 rotor at 20,000 rpm (72,000 rcfmax), 20 min, 4°C.
+1	Split	_	Action	_	_	0	_	_	Offset=1611-1616
+2	virus	_	Reagent	_	_	0	_	_	Offset=1621-1626
+
+# sent_id = s17
+# text = Remove the virus bands from the gradients with sterile bent needles via top (or via side puncture with sterile needle and syringe) to oak ridge 30 mL polypropylene tubes.
+1	Slowly	_	Modifier	_	_	0	_	_	Offset=1661-1667
+2	dilute	_	Action	_	_	0	_	_	Offset=1668-1674
+3	virus	_	Reagent	_	_	0	_	_	Offset=1679-1684
+4	tube	_	Amount	_	_	0	_	_	Offset=1692-1703
+5	50	_	Concentration	_	_	6	Measure	_	Offset=1709-1714
+6	Tris-HCl	_	Reagent	_	_	0	_	_	Offset=1715-1723
+7	pH	_	pH	_	_	6	Measure	_	Offset=1725-1732
+
+# sent_id = s18
+# text = Split the virus from 3 gradients between 2 tubes.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1733-1743
+2	tubes	_	Location	_	_	0	_	_	Offset=1748-1753
+3	Beckman	_	Device	_	_	0	_	_	Offset=1757-1778
+4	27,000	_	Speed	_	_	0	_	_	Offset=1782-1792
+5	~44,000	_	Speed	_	_	4	Or	_	Offset=1794-1805
+6	3	_	Time	_	_	0	_	_	Offset=1808-1815
+7	4°C	_	Temperature	_	_	0	_	_	Offset=1817-1820
+
+# sent_id = s19
+# text = Slowly dilute the virus to the tube volume with 50 mM Tris-HCl, pH 7.8.
+1	Discard	_	Action	_	_	0	_	_	Offset=1822-1829
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=1834-1846
+
+# sent_id = s20
+# text = Centrifuge the tubes in Beckman Ti 50.2 rotor at 27,000 rpm (~44,000 rcf), 3 hours, 4°C.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1848-1857
+2	virus	_	Reagent	_	_	0	_	_	Offset=1862-1875
+3	small	_	Amount	_	_	5	Measure	_	Offset=1883-1895
+4	50	_	Concentration	_	_	5	Measure	_	Offset=1899-1904
+5	Tris-HCl	_	Reagent	_	_	0	_	_	Offset=1905-1913
+6	pH	_	pH	_	_	5	Measure	_	Offset=1915-1921
+
+# sent_id = s21
+# text = Discard the supernatants.
+1	Store	_	Action	_	_	0	_	_	Offset=1923-1928
+2	virus	_	Reagent	_	_	0	_	_	Offset=1933-1938
+3	4°C	_	Temperature	_	_	0	_	_	Offset=1942-1945
+
+# sent_id = s22
+# text = Resuspend the virus pellets with a small volume of 50 mM Tris-HCl, pH 7.8.
+1	Layer	_	Action	_	_	0	_	_	Offset=1962-1967
+2	virus	_	Reagent	_	_	0	_	_	Offset=1972-1988
+3	10-40%,	_	Generic-Measure	_	_	4	Measure	_	Offset=1994-2005
+4	linear	_	Reagent	_	_	0	_	_	Offset=2006-2051
+5	equilibrated	_	Action	_	_	0	_	_	Offset=2052-2064
+6	50mM	_	Concentration	_	_	7	Measure	_	Offset=2070-2074
+7	Tris-HCl	_	Reagent	_	_	0	_	_	Offset=2075-2083
+8	pH	_	pH	_	_	7	Measure	_	Offset=2085-2091
+9	Beckman	_	Location	_	_	0	_	_	Offset=2103-2127
+
+# sent_id = s23
+# text = Store the virus at 4°C.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2129-2139
+2	gradients	_	Reagent	_	_	0	_	_	Offset=2144-2153
+3	Beckman	_	Device	_	_	0	_	_	Offset=2157-2176
+4	20,000	_	Speed	_	_	0	_	_	Offset=2180-2190
+5	4	_	Time	_	_	0	_	_	Offset=2192-2199
+6	25oC	_	Temperature	_	_	0	_	_	Offset=2201-2205
+
+# sent_id = s24
+# text = Do not freeze.
+1	Remove	_	Action	_	_	0	_	_	Offset=2207-2213
+2	virus	_	Reagent	_	_	0	_	_	Offset=2218-2229
+3	gradients	_	Reagent	_	_	0	_	_	Offset=2239-2248
+4	sterile	_	Device	_	_	0	_	_	Offset=2254-2274
+5	30	_	Amount	_	_	6	Measure	_	Offset=2351-2356
+6	polypropylene	_	Location	_	_	0	_	_	Offset=2357-2376
+
+# sent_id = s25
+# text = Layer the virus suspension onto 10-40%, w/v linear iodixanol or sucrose density gradients equilibrated with 50mM Tris-HCl, pH 7.8 made up in Beckman SW28 rotor tubes.
+1	Split	_	Action	_	_	0	_	_	Offset=2378-2383
+2	virus	_	Reagent	_	_	0	_	_	Offset=2388-2393
+3	2	_	Numerical	_	_	4	Measure	_	Offset=2419-2420
+4	tubes	_	Location	_	_	0	_	_	Offset=2421-2426
+
+# sent_id = s26
+# text = Centrifuge the gradients in Beckman SW28 rotors at 20,000 rpm, 4 hours, 25oC.
+1	Slowly	_	Modifier	_	_	0	_	_	Offset=2428-2434
+2	dilute	_	Action	_	_	0	_	_	Offset=2435-2441
+3	virus	_	Reagent	_	_	0	_	_	Offset=2446-2451
+4	tube	_	Amount	_	_	0	_	_	Offset=2459-2470
+5	50	_	Concentration	_	_	6	Measure	_	Offset=2476-2481
+6	Tris-HCl	_	Reagent	_	_	0	_	_	Offset=2482-2490
+7	pH	_	pH	_	_	6	Measure	_	Offset=2492-2498
+
+# sent_id = s27
+# text = Remove the virus bands from the gradients with sterile bent needles via top (or via side puncture with sterile needle and syringe) to oak ridge 30 mL polypropylene tubes.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=2500-2510
+2	tubes	_	Location	_	_	0	_	_	Offset=2515-2520
+3	Beckman	_	Device	_	_	0	_	_	Offset=2524-2545
+4	27,000	_	Speed	_	_	0	_	_	Offset=2549-2559
+5	~44,000	_	Speed	_	_	4	Or	_	Offset=2561-2572
+6	3	_	Time	_	_	0	_	_	Offset=2575-2582
+7	4°C	_	Temperature	_	_	0	_	_	Offset=2584-2587
+
+# sent_id = s28
+# text = Split the virus from 3 gradients between 2 tubes.
+1	Discard	_	Action	_	_	0	_	_	Offset=2589-2596
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=2601-2613
+

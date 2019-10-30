@@ -1,0 +1,196 @@
+# sent_id = s1
+# text = Clean-up using AMPure XP beads
+1	Mix	_	Action	_	_	0	_	_	Offset=31-34
+2	reagent	_	Reagent	_	_	0	_	_	Offset=39-46
+3	well	_	Modifier	_	_	0	_	_	Offset=47-51
+
+# sent_id = s2
+# text = Mix the reagent well so that the reagent appears homogeneous and consistent in color.
+1	Add	_	Action	_	_	0	_	_	Offset=117-120
+2	117	_	Amount	_	_	4	Measure	_	Offset=121-127
+3	homogenous	_	Modifier	_	_	4	Mod-Link	_	Offset=131-141
+4	AMPure	_	Reagent	_	_	0	_	_	Offset=142-157
+5	each	_	Modifier	_	_	7	Mod-Link	_	Offset=161-165
+6	adaptor	_	Modifier	_	_	7	Mod-Link	_	Offset=166-181
+7	DNA	_	Reagent	_	_	0	_	_	Offset=182-192
+8	1.5	_	Amount	_	_	9	Measure	_	Offset=204-210
+9	LoBind	_	Location	_	_	7	Meronym	_	Offset=211-223
+10	0.2	_	Amount	_	_	11	Measure	_	Offset=227-233
+11	LoBind	_	Location	_	_	9	Or	_	Offset=234-246
+
+# sent_id = s3
+# text = Add 117 μL of homogenous AMPure XP beads to each adaptor ligated DNA sample (in either 1.5 mL LoBind tubes or 0.2 mL LoBind tubes).
+1	Mix	_	Action	_	_	0	_	_	Offset=249-252
+2	well	_	Modifier	_	_	0	_	_	Offset=253-257
+3	pipetting	_	Action	_	_	0	_	_	Offset=261-270
+4	up	_	Method	_	_	0	_	_	Offset=271-282
+5	at	_	Modifier	_	_	6	Or	_	Offset=283-291
+6	10	_	Numerical	_	_	0	_	_	Offset=292-294
+
+# sent_id = s4
+# text = Mix well by pipetting up and down at least 10 times.
+1	Incubate	_	Action	_	_	0	_	_	Offset=302-310
+2	room	_	Temperature	_	_	0	_	_	Offset=314-330
+3	5	_	Time	_	_	0	_	_	Offset=335-340
+
+# sent_id = s5
+# text = Incubate at room temperature for 5 min.
+1	Put	_	Action	_	_	0	_	_	Offset=342-345
+2	tube	_	Location	_	_	0	_	_	Offset=350-354
+3	magnetic	_	Device	_	_	0	_	_	Offset=362-376
+4	wait	_	Action	_	_	0	_	_	Offset=381-385
+5	solution	_	Reagent	_	_	0	_	_	Offset=394-402
+6	clear	_	Action	_	_	0	_	_	Offset=406-411
+7	approximately	_	Modifier	_	_	8	Mod-Link	_	Offset=431-444
+8	3–5	_	Time	_	_	0	_	_	Offset=445-452
+
+# sent_id = s6
+# text = Put the tube in the magnetic stand and wait for the solution to clear (which should take approximately 3–5 min).
+1	Keep	_	Action	_	_	0	_	_	Offset=455-459
+2	tube	_	Location	_	_	0	_	_	Offset=464-468
+3	magnetic	_	Device	_	_	0	_	_	Offset=476-490
+
+# sent_id = s7
+# text = Keep the tube in the magnetic stand.
+1	Do	_	Action	_	_	0	_	_	Offset=492-504
+2	beads	_	Reagent	_	_	0	_	_	Offset=509-514
+3	carefully	_	Modifier	_	_	0	_	_	Offset=525-534
+4	discard	_	Action	_	_	0	_	_	Offset=535-542
+5	cleared	_	Reagent	_	_	0	_	_	Offset=547-563
+6	tubes	_	Location	_	_	0	_	_	Offset=573-578
+
+# sent_id = s8
+# text = Do not touch the beads while you carefully discard the cleared solution from the tubes.
+1	keep	_	Action	_	_	0	_	_	Offset=592-596
+2	tube	_	Location	_	_	0	_	_	Offset=601-605
+3	magnetic	_	Device	_	_	0	_	_	Offset=613-632
+4	adding	_	Action	_	_	0	_	_	Offset=640-646
+5	500	_	Amount	_	_	8	Or	_	Offset=647-653
+6	1.5	_	Amount	_	_	7	Measure	_	Offset=655-661
+7	LoBind	_	Location	_	_	0	_	_	Offset=662-674
+8	200	_	Amount	_	_	12	Measure	_	Offset=679-685
+9	0.2mL	_	Amount	_	_	10	Measure	_	Offset=687-692
+10	LobBind	_	Location	_	_	0	_	_	Offset=693-706
+11	70%	_	Concentration	_	_	12	Measure	_	Offset=711-714
+12	ethanol	_	Reagent	_	_	0	_	_	Offset=715-722
+13	each	_	Modifier	_	_	14	Mod-Link	_	Offset=726-730
+14	tube	_	Location	_	_	0	_	_	Offset=731-735
+
+# sent_id = s9
+# text = Continue to keep the tube in the magnetic stand/rack whilst adding 500 μL (1.5 mL LoBind tubes) or 200 μL (0.2mL LobBind tubes) of 70% ethanol to each tube.
+1	tube	_	Location	_	_	0	_	_	Offset=757-761
+2	sit	_	Action	_	_	0	_	_	Offset=762-765
+3	1	_	Time	_	_	0	_	_	Offset=770-775
+4	disturbed	_	Modifier	_	_	5	Mod-Link	_	Offset=789-798
+5	beads	_	Reagent	_	_	0	_	_	Offset=799-804
+6	settle	_	Action	_	_	0	_	_	Offset=808-814
+7	remove	_	Action	_	_	0	_	_	Offset=820-826
+8	ethanol	_	Reagent	_	_	0	_	_	Offset=831-838
+
+# sent_id = s10
+# text = (wash 1/2).
+1	keep	_	Action	_	_	0	_	_	Offset=864-868
+2	tube	_	Location	_	_	0	_	_	Offset=873-877
+3	magnetic	_	Device	_	_	0	_	_	Offset=885-904
+4	adding	_	Action	_	_	0	_	_	Offset=912-918
+5	500	_	Amount	_	_	6	Or	_	Offset=919-925
+6	200	_	Amount	_	_	8	Measure	_	Offset=951-957
+7	70%	_	Concentration	_	_	8	Measure	_	Offset=983-986
+8	ethanol	_	Reagent	_	_	0	_	_	Offset=987-994
+9	tube	_	Location	_	_	0	_	_	Offset=1003-1007
+
+# sent_id = s11
+# text = Let the tube sit for 1 min to allow any disturbed beads to settle, and remove the ethanol.
+1	tube	_	Location	_	_	0	_	_	Offset=1029-1033
+2	sit	_	Action	_	_	0	_	_	Offset=1034-1037
+3	1	_	Time	_	_	0	_	_	Offset=1042-1047
+4	disturbed	_	Modifier	_	_	5	Mod-Link	_	Offset=1061-1070
+5	beads	_	Reagent	_	_	0	_	_	Offset=1071-1076
+6	settle	_	Action	_	_	0	_	_	Offset=1080-1086
+7	remove	_	Action	_	_	0	_	_	Offset=1092-1098
+8	ethanol	_	Reagent	_	_	0	_	_	Offset=1103-1110
+
+# sent_id = s12
+# text = (wash 1/2).
+1	Seal	_	Action	_	_	0	_	_	Offset=1124-1128
+2	tube	_	Location	_	_	0	_	_	Offset=1133-1137
+3	plate	_	Location	_	_	2	Or	_	Offset=1141-1146
+4	centrifuge	_	Action	_	_	0	_	_	Offset=1151-1161
+5	briefly	_	Modifier	_	_	0	_	_	Offset=1162-1169
+6	260	_	Speed	_	_	5	Setting	_	Offset=1171-1178
+7	30	_	Time	_	_	5	Setting	_	Offset=1183-1189
+
+# sent_id = s13
+# text = Continue to keep the tube in the magnetic stand/rack whilst adding 500 μL (1.5 mL LoBind tubes) or 200 μL (0.2mL LobBind tubes) of 70% ethanol to each tube.
+1	Return	_	Action	_	_	0	_	_	Offset=1192-1198
+2	tube	_	Location	_	_	0	_	_	Offset=1203-1207
+3	magnetic	_	Device	_	_	0	_	_	Offset=1215-1234
+4	wait	_	Action	_	_	0	_	_	Offset=1239-1243
+5	1	_	Time	_	_	0	_	_	Offset=1244-1249
+
+# sent_id = s14
+# text = (wash 2/2).
+1	Remove	_	Action	_	_	0	_	_	Offset=1251-1257
+2	any	_	Modifier	_	_	4	Mod-Link	_	Offset=1258-1261
+3	remaining	_	Modifier	_	_	4	Mod-Link	_	Offset=1262-1271
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=1272-1279
+5	P20	_	Device	_	_	0	_	_	Offset=1288-1307
+6	not	_	Action	_	_	0	_	_	Offset=1323-1335
+7	bead	_	Reagent	_	_	0	_	_	Offset=1340-1351
+
+# sent_id = s15
+# text = Let the tube sit for 1 min to allow any disturbed beads to settle, and remove the ethanol.
+1	Dry	_	Action	_	_	0	_	_	Offset=1353-1356
+2	samples	_	Reagent	_	_	0	_	_	Offset=1361-1368
+3	37	_	Temperature	_	_	4	Setting	_	Offset=1374-1379
+4	heat	_	Device	_	_	0	_	_	Offset=1380-1390
+5	3–5	_	Time	_	_	0	_	_	Offset=1395-1402
+6	residual	_	Modifier	_	_	7	Mod-Link	_	Offset=1416-1424
+7	ethanol	_	Reagent	_	_	0	_	_	Offset=1425-1432
+8	completely	_	Modifier	_	_	0	_	_	Offset=1433-1443
+9	evaporates	_	Action	_	_	0	_	_	Offset=1444-1454
+
+# sent_id = s16
+# text = (wash 2/2).
+1	Add	_	Action	_	_	0	_	_	Offset=1512-1515
+2	32	_	Amount	_	_	3	Measure	_	Offset=1516-1521
+3	nuclease-free	_	Reagent	_	_	0	_	_	Offset=1522-1541
+4	directly	_	Modifier	_	_	0	_	_	Offset=1542-1550
+5	bead	_	Reagent	_	_	0	_	_	Offset=1558-1569
+6	mix	_	Action	_	_	0	_	_	Offset=1571-1574
+7	well	_	Modifier	_	_	0	_	_	Offset=1575-1579
+8	pipetting	_	Action	_	_	0	_	_	Offset=1583-1592
+9	up	_	Method	_	_	0	_	_	Offset=1593-1604
+10	at	_	Modifier	_	_	0	_	_	Offset=1605-1613
+11	10	_	Numerical	_	_	0	_	_	Offset=1614-1616
+
+# sent_id = s17
+# text = Seal the tube or plate and centrifuge briefly (260 x g for 30 sec).
+1	Incubate	_	Action	_	_	0	_	_	Offset=1624-1632
+2	3	_	Time	_	_	0	_	_	Offset=1637-1642
+3	room	_	Temperature	_	_	0	_	_	Offset=1646-1662
+
+# sent_id = s18
+# text = Return the tube to the magnetic stand/rack and wait 1 min.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1664-1674
+2	briefly	_	Modifier	_	_	0	_	_	Offset=1675-1682
+3	consolidate	_	Action	_	_	0	_	_	Offset=1686-1697
+4	sample	_	Reagent	_	_	0	_	_	Offset=1702-1708
+5	place	_	Action	_	_	0	_	_	Offset=1713-1718
+6	magnetic	_	Device	_	_	0	_	_	Offset=1724-1743
+7	2–3	_	Time	_	_	0	_	_	Offset=1748-1755
+
+# sent_id = s19
+# text = Remove any remaining ethanol using a P20 pipette and tip, being careful not to touch the bead pellet.
+1	Remove	_	Action	_	_	0	_	_	Offset=1788-1794
+2	30	_	Amount	_	_	3	Measure	_	Offset=1795-1800
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=1808-1819
+4	transfer	_	Action	_	_	0	_	_	Offset=1824-1832
+5	fresh	_	Modifier	_	_	6	Mod-Link	_	Offset=1838-1843
+6	LoBind	_	Location	_	_	0	_	_	Offset=1844-1855
+
+# sent_id = s20
+# text = Dry the samples on a 37 °C heat block for 3–5 min or until the residual ethanol completely evaporates.
+1	beads	_	Reagent	_	_	0	_	_	Offset=1861-1866
+2	discarded	_	Action	_	_	0	_	_	Offset=1874-1883
+

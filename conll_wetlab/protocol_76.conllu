@@ -1,0 +1,174 @@
+# sent_id = s1
+# text = Stellaris® RNA FISH 96 Well Glass Bottom Plate Protocol
+1	Grow	_	Action	_	_	0	_	_	Offset=56-60
+2	cells	_	Reagent	_	_	0	_	_	Offset=61-66
+3	96-well	_	Modifier	_	_	5	Mod-Link	_	Offset=72-79
+4	glass	_	Modifier	_	_	5	Mod-Link	_	Offset=80-85
+5	bottom	_	Location	_	_	0	_	_	Offset=86-111
+
+# sent_id = s2
+# text = Grow cells in a 96-well glass bottom cell culture plate.
+1	Decant	_	Action	_	_	0	_	_	Offset=113-119
+2	growth	_	Reagent	_	_	0	_	_	Offset=120-133
+3	wash	_	Action	_	_	0	_	_	Offset=139-143
+4	200	_	Amount	_	_	5	Measure	_	Offset=149-155
+5	1X	_	Reagent	_	_	0	_	_	Offset=159-165
+
+# sent_id = s3
+# text = Decant growth medium, and wash with 200 μL of 1X PBS.
+1	add	_	Action	_	_	0	_	_	Offset=181-184
+2	200	_	Amount	_	_	4	Measure	_	Offset=185-191
+3	3.7%	_	Generic-Measure	_	_	4	Measure	_	Offset=195-199
+4	Formaldehyde	_	Reagent	_	_	0	_	_	Offset=200-230
+
+# sent_id = s4
+# text = To fix cells, add 200 μL of 3.7% Formaldehyde fixation solution.
+1	Incubate	_	Action	_	_	0	_	_	Offset=232-240
+2	room	_	Generic-Measure	_	_	0	_	_	Offset=244-260
+3	10	_	Time	_	_	0	_	_	Offset=265-275
+
+# sent_id = s5
+# text = Incubate at room temperature for 10 minutes.
+1	Wash	_	Action	_	_	0	_	_	Offset=277-281
+2	200	_	Amount	_	_	3	Measure	_	Offset=287-293
+3	1X	_	Reagent	_	_	0	_	_	Offset=297-303
+
+# sent_id = s6
+# text = Wash with 200 μL of 1X PBS.
+1	Wash	_	Action	_	_	0	_	_	Offset=305-309
+2	200	_	Amount	_	_	3	Measure	_	Offset=315-321
+3	1X	_	Reagent	_	_	0	_	_	Offset=325-331
+
+# sent_id = s7
+# text = Wash with 200 μL of 1X PBS.
+1	Grow	_	Action	_	_	0	_	_	Offset=444-448
+2	cells	_	Reagent	_	_	0	_	_	Offset=449-454
+3	96-well	_	Generic-Measure	_	_	5	Measure	_	Offset=460-467
+4	glass	_	Modifier	_	_	5	Mod-Link	_	Offset=468-473
+5	bottom	_	Location	_	_	0	_	_	Offset=474-499
+
+# sent_id = s8
+# text = The Alternative Fixation steps are an alternative to the standard fixation and are not meant to be sequential.
+1	Decant	_	Action	_	_	0	_	_	Offset=502-508
+2	growth	_	Reagent	_	_	0	_	_	Offset=509-521
+3	wash	_	Action	_	_	0	_	_	Offset=527-531
+4	200	_	Amount	_	_	5	Measure	_	Offset=537-543
+5	1X	_	Reagent	_	_	0	_	_	Offset=547-553
+6	add	_	Action	_	_	0	_	_	Offset=585-588
+7	200	_	Amount	_	_	8	Measure	_	Offset=589-595
+8	649	_	Reagent	_	_	0	_	_	Offset=599-619;632
+
+# sent_id = s9
+# text = Grow cells in a 96-well glass bottom cell culture plate. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=651-659
+2	room	_	Generic-Measure	_	_	0	_	_	Offset=663-679
+3	10	_	Time	_	_	0	_	_	Offset=684-694
+
+# sent_id = s10
+# text = Decant growth media, and wash with 200 μL of 1X PBS To fix and permeabilize cells, add 200 μL of methanol-acetic acid (MeOH-AcOH) fixation solution.
+1	Mix	_	Action	_	_	0	_	_	Offset=923-926
+2	well	_	Modifier	_	_	0	_	_	Offset=927-931
+3	vortexing	_	Action	_	_	0	_	_	Offset=935-944
+4	centrifuge	_	Action	_	_	0	_	_	Offset=951-961
+5	briefly	_	Modifier	_	_	0	_	_	Offset=962-969
+
+# sent_id = s11
+# text = Incubate at room temperature for 10 minutes.
+1	add	_	Action	_	_	0	_	_	Offset=1025-1028
+2	1.5	_	Amount	_	_	3	Measure	_	Offset=1029-1035
+3	probe	_	Reagent	_	_	0	_	_	Offset=1039-1059
+4	75	_	Amount	_	_	5	Measure	_	Offset=1063-1068
+5	Hybridization	_	Reagent	_	_	0	_	_	Offset=1072-1092
+6	vortex	_	Action	_	_	0	_	_	Offset=1103-1109
+7	centrifuge	_	Action	_	_	0	_	_	Offset=1113-1123
+
+# sent_id = s12
+# text = Cells can be stored at +2 to +8 °C in MeOH-AcOH up to 48 hours before hybridization.
+1	Decant	_	Action	_	_	0	_	_	Offset=1235-1241
+2	MeOH-AcOH	_	Reagent	_	_	0	_	_	Offset=1242-1251
+3	70%	_	Generic-Measure	_	_	4	Measure	_	Offset=1255-1258
+4	ethanol	_	Reagent	_	_	2	Or	_	Offset=1259-1266
+5	wells	_	Location	_	_	0	_	_	Offset=1272-1303
+
+# sent_id = s13
+# text = Do not use a well if the MeOH-AcOH has completely evaporated.
+1	Add	_	Action	_	_	0	_	_	Offset=1305-1308
+2	200	_	Amount	_	_	3	Measure	_	Offset=1309-1315
+3	Wash	_	Reagent	_	_	0	_	_	Offset=1319-1332
+4	incubate	_	Action	_	_	0	_	_	Offset=1357-1365
+5	room	_	Generic-Measure	_	_	0	_	_	Offset=1369-1385
+6	2-5	_	Time	_	_	0	_	_	Offset=1390-1401
+
+# sent_id = s14
+# text = If frozen before using, warm the reconstituted probe stock to room temperature.
+1	Decant	_	Action	_	_	0	_	_	Offset=1403-1409
+2	Wash	_	Reagent	_	_	0	_	_	Offset=1410-1423
+3	Add	_	Action	_	_	0	_	_	Offset=1424-1427
+4	75	_	Amount	_	_	5	Measure	_	Offset=1428-1433
+5	Hybridization	_	Reagent	_	_	0	_	_	Offset=1437-1457
+6	containing	_	Modifier	_	_	5	Mod-Link	_	Offset=1458-1474
+7	each	_	Modifier	_	_	8	Mod-Link	_	Offset=1480-1484
+8	well	_	Location	_	_	0	_	_	Offset=1485-1489
+
+# sent_id = s15
+# text = Mix well by vortexing, then centrifuge briefly.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1491-1499
+2	dark	_	Location	_	_	0	_	_	Offset=1507-1511
+3	37	_	Temperature	_	_	0	_	_	Offset=1515-1520
+4	4	_	Time	_	_	0	_	_	Offset=1525-1537
+
+# sent_id = s16
+# text = To prepare the Hybridization Buffer containing probe, add 1.5 μL of probe stock solution to 75 μL of Hybridization Buffer, and then vortexand centrifuge (enough for one well).
+1	Aspirate	_	Action	_	_	0	_	_	Offset=1696-1704
+2	Hybridization	_	Reagent	_	_	0	_	_	Offset=1709-1729
+3	containing	_	Modifier	_	_	2	Mod-Link	_	Offset=1730-1746
+4	add	_	Action	_	_	0	_	_	Offset=1752-1755
+5	200	_	Amount	_	_	6	Measure	_	Offset=1756-1762
+6	Wash	_	Reagent	_	_	0	_	_	Offset=1766-1779
+
+# sent_id = s17
+# text = This creates a working probe solution of 250 nM.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1781-1789
+2	dark	_	Location	_	_	0	_	_	Offset=1797-1801
+3	37	_	Temperature	_	_	0	_	_	Offset=1805-1810
+4	30	_	Time	_	_	0	_	_	Offset=1815-1825
+
+# sent_id = s18
+# text = This solution will be used on step 17.
+1	Decant	_	Action	_	_	0	_	_	Offset=1827-1833
+2	Wash	_	Reagent	_	_	0	_	_	Offset=1834-1847
+3	add	_	Action	_	_	0	_	_	Offset=1858-1861
+4	200	_	Amount	_	_	5	Measure	_	Offset=1862-1868
+5	DAPI	_	Reagent	_	_	0	_	_	Offset=1872-1890
+
+# sent_id = s19
+# text = Decant MeOH-AcOH or 70% ethanol from wells containing adherent cells.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1962-1970
+2	dark	_	Location	_	_	0	_	_	Offset=1978-1982
+3	37	_	Temperature	_	_	0	_	_	Offset=1986-1991
+4	30	_	Time	_	_	0	_	_	Offset=1996-2006
+
+# sent_id = s20
+# text = Add 200 μL of Wash Buffer A (see recipe above), and incubate at room temperature for 2-5 minutes.
+1	Decant	_	Action	_	_	0	_	_	Offset=2008-2014
+2	DAPI	_	Reagent	_	_	0	_	_	Offset=2015-2035
+3	add	_	Action	_	_	0	_	_	Offset=2046-2049
+4	200	_	Amount	_	_	5	Measure	_	Offset=2050-2056
+5	Wash	_	Reagent	_	_	0	_	_	Offset=2060-2073
+
+# sent_id = s21
+# text = Decant Wash Buffer A Add 75 μL of Hybridization Buffer containing Probe into each well.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2075-2083
+2	room	_	Temperature	_	_	0	_	_	Offset=2087-2103
+3	2-5	_	Time	_	_	0	_	_	Offset=2108-2119
+
+# sent_id = s22
+# text = Incubate in the dark at 37 °C for 4 to 16 hoursa).
+1	Add	_	Action	_	_	0	_	_	Offset=2121-2124
+2	30	_	Amount	_	_	3	Measure	_	Offset=2125-2130
+3	VectaShield	_	Reagent	_	_	0	_	_	Offset=2134-2161
+4	well	_	Location	_	_	0	_	_	Offset=2169-2173
+5	top	_	Action	_	_	0	_	_	Offset=2178-2181
+6	30	_	Amount	_	_	7	Measure	_	Offset=2187-2192
+7	Mineral	_	Reagent	_	_	0	_	_	Offset=2196-2215
+

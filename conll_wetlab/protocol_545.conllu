@@ -1,0 +1,65 @@
+# sent_id = s1
+# text = Construction of U6-based sgRNA expression vectors
+1	Mix	_	Action	_	_	0	_	_	Offset=648-651
+2	1µl	_	Amount	_	_	4	Measure	_	Offset=652-655
+3	100µM	_	Concentration	_	_	4	Measure	_	Offset=656-661
+4	stock	_	Reagent	_	_	0	_	_	Offset=662-667
+5	20µl	_	Amount	_	_	7	Measure	_	Offset=678-682
+6	1x	_	Concentration	_	_	7	Measure	_	Offset=683-685
+7	NEB	_	Reagent	_	_	0	_	_	Offset=686-698
+
+# sent_id = s2
+# text = Order a pair of U6 vector-specific, 23nt targeting primers for each target For each target (GN19), order a forward primer TTCGN19 for the U6 promoter vectors; order a reverse primer AAACN19. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=701-709
+2	mixture	_	Reagent	_	_	0	_	_	Offset=714-721
+3	95	_	Temperature	_	_	0	_	_	Offset=734-739
+4	5	_	Time	_	_	0	_	_	Offset=744-749
+5	50	_	Temperature	_	_	0	_	_	Offset=764-769
+6	50	_	Temperature	_	_	0	_	_	Offset=785-790
+7	10	_	Time	_	_	0	_	_	Offset=795-801
+8	4	_	Temperature	_	_	0	_	_	Offset=811-815
+9	normal	_	Generic-Measure	_	_	0	_	_	Offset=819-836
+
+# sent_id = s3
+# text = Note that the N19 in the reverse primers is reverse complementary to that in the forward primer. 
+1	Mix	_	Action	_	_	0	_	_	Offset=839-842
+2	following	_	Reagent	_	_	0	_	_	Offset=847-867
+
+# sent_id = s4
+# text = To order primers compatible with both the pU6x-sgRNA vectors and pT7-gRNA (Add gene plasmid #4675; (JAO et al 2013)), order degenerate primers WTMGGN18 (forward) and AMMCN18C (reverse), where M=A or C, W=A or T. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=995-1003
+2	37	_	Temperature	_	_	0	_	_	Offset=1007-1012
+3	20	_	Time	_	_	0	_	_	Offset=1017-1023
+
+# sent_id = s5
+# text = Again, the N18 in the reverse primers is reverse complementary to that in the forward primer. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=1026-1034
+2	16	_	Temperature	_	_	0	_	_	Offset=1038-1043
+3	15	_	Time	_	_	0	_	_	Offset=1048-1054
+
+# sent_id = s6
+# text = Mix 1µl 100µM stock each in a 20µl 1x NEB buffer 2. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=1057-1065
+2	37	_	Temperature	_	_	0	_	_	Offset=1069-1074
+3	10	_	Time	_	_	0	_	_	Offset=1079-1085
+
+# sent_id = s7
+# text = Incubate the mixture as follows: 95 °C for 5 min, ramp down to 50 °C at 0.1 °C/sec, 50 °C for 10 min chill to 4 °C at normal ramp speed. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=1088-1096
+2	55	_	Temperature	_	_	0	_	_	Offset=1100-1105
+3	15	_	Time	_	_	0	_	_	Offset=1110-1116
+
+# sent_id = s8
+# text = Mix the following components to ligate the annealed oligos to the U6 vector of choice (pU6x-sgRNA #1-#5, see diagrams and plasmid list in the Guidelines). 
+1	Incubate	_	Action	_	_	0	_	_	Offset=1119-1127
+2	80	_	Temperature	_	_	0	_	_	Offset=1131-1136
+3	15	_	Time	_	_	0	_	_	Offset=1141-1147
+
+# sent_id = s9
+# text = Incubate at 37 °C for 20 min. 
+1	Transform	_	Action	_	_	0	_	_	Offset=1265-1274
+2	spread	_	Action	_	_	0	_	_	Offset=1279-1285
+3	spectinomycin	_	Reagent	_	_	0	_	_	Offset=1291-1304
+4	50µg/ml	_	Concentration	_	_	3	Measure	_	Offset=1306-1313
+5	plates	_	Location	_	_	3	Meronym	_	Offset=1315-1321
+

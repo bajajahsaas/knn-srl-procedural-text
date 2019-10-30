@@ -1,0 +1,242 @@
+# sent_id = s1
+# text = SYBR Staining - Jenn's Method
+1	Remove	_	Action	_	_	0	_	_	Offset=30-36
+2	10,000x	_	Concentration	_	_	3	Measure	_	Offset=37-44
+3	SYBR-Gold	_	Reagent	_	_	0	_	_	Offset=45-54
+4	Anti-fade	_	Reagent	_	_	0	_	_	Offset=59-78
+5	-20°C	_	Temperature	_	_	6	Setting	_	Offset=84-89
+6	freezer	_	Device	_	_	0	_	_	Offset=90-97
+
+# sent_id = s2
+# text = Remove 10,000x SYBR-Gold and Anti-fade solutions from -20°C freezer.
+1	Keep	_	Action	_	_	0	_	_	Offset=99-103
+2	SYBR	_	Reagent	_	_	0	_	_	Offset=104-108
+3	dark	_	Location	_	_	0	_	_	Offset=116-120
+
+# sent_id = s3
+# text = Keep SYBR in the dark.
+1	Keep	_	Action	_	_	0	_	_	Offset=122-126
+2	SYBR	_	Reagent	_	_	0	_	_	Offset=127-131
+3	dark	_	Location	_	_	0	_	_	Offset=139-143
+
+# sent_id = s4
+# text = Keep SYBR in the dark.
+1	Have	_	Action	_	_	0	_	_	Offset=145-149
+2	0.02	_	Size	_	_	3	Measure	_	Offset=150-157
+3	filtered	_	Reagent	_	_	0	_	_	Offset=158-169
+4	dilution	_	Reagent	_	_	0	_	_	Offset=171-186
+5	water	_	Reagent	_	_	0	_	_	Offset=191-196
+6	make	_	Action	_	_	0	_	_	Offset=215-219
+7	dilutions	_	Reagent	_	_	0	_	_	Offset=220-229
+8	wet	_	Reagent	_	_	0	_	_	Offset=234-245
+
+# sent_id = s5
+# text = Have 0.02 μm filtered TE, dilution buffer and water on hand enough to make dilutions and wet filters.
+1	Prepare	_	Action	_	_	0	_	_	Offset=247-254
+2	dilutions	_	Reagent	_	_	0	_	_	Offset=255-264
+3	sample	_	Reagent	_	_	0	_	_	Offset=268-274
+
+# sent_id = s6
+# text = Prepare dilutions of sample.
+1	Mix	_	Action	_	_	0	_	_	Offset=279-282
+2	inverting	_	Action	_	_	0	_	_	Offset=286-295
+3	tube	_	Location	_	_	0	_	_	Offset=296-300
+4	up	_	Method	_	_	0	_	_	Offset=301-312
+
+# sent_id = s7
+# text = ** Mix by inverting tube up and down.
+1	Label	_	Action	_	_	0	_	_	Offset=314-319
+2	frosted	_	Location	_	_	0	_	_	Offset=320-334
+3	get	_	Action	_	_	0	_	_	Offset=339-346
+4	coverslips	_	Seal	_	_	0	_	_	Offset=347-357
+
+# sent_id = s8
+# text = Label frosted slides and get out coverslips.
+1	Cut	_	Action	_	_	0	_	_	Offset=359-362
+2	scotch	_	Seal	_	_	0	_	_	Offset=363-374
+3	half	_	Amount	_	_	0	_	_	Offset=378-382
+4	taping	_	Action	_	_	0	_	_	Offset=387-398
+5	coverslips	_	Seal	_	_	0	_	_	Offset=399-409
+
+# sent_id = s9
+# text = Cut scotch tape in half for taping down coverslips.
+1	Dilute	_	Action	_	_	0	_	_	Offset=432-438
+2	SYBR	_	Reagent	_	_	0	_	_	Offset=439-443
+3	1:10	_	Generic-Measure	_	_	0	_	_	Offset=444-448
+4	5	_	Amount	_	_	2	Measure	_	Offset=455-459
+5	45μl	_	Amount	_	_	6	Measure	_	Offset=463-467
+6	TE	_	Reagent	_	_	0	_	_	Offset=468-470
+
+# sent_id = s10
+# text = Turn off the lights.
+1	Put	_	Action	_	_	0	_	_	Offset=472-475
+2	10	_	Amount	_	_	3	Measure	_	Offset=476-481
+3	drop	_	Reagent	_	_	0	_	_	Offset=482-499
+4	coverslips	_	Location	_	_	0	_	_	Offset=505-515
+
+# sent_id = s11
+# text = Dilute SYBR 1:10 using 5 μl in 45μl TE.
+1	Pipet	_	Action	_	_	0	_	_	Offset=593-598
+2	2.5	_	Amount	_	_	4	Measure	_	Offset=599-605
+3	diluted	_	Modifier	_	_	4	Mod-Link	_	Offset=606-613
+4	SYBR	_	Reagent	_	_	0	_	_	Offset=614-618
+5	top	_	Location	_	_	0	_	_	Offset=625-628
+6	bottom	_	Location	_	_	0	_	_	Offset=633-646
+7	petri	_	Location	_	_	6	Meronym	5:Meronym	Offset=650-660
+8	add	_	Action	_	_	0	_	_	Offset=684-687
+9	97.5	_	Amount	_	_	10	Measure	_	Offset=688-695
+10	TE	_	Reagent	_	_	0	_	_	Offset=696-698
+
+# sent_id = s12
+# text = Put 10 μl drop of Anti-fade onto coverslips.
+1	Turn	_	Action	_	_	0	_	_	Offset=700-704
+2	vacuum	_	Device	_	_	0	_	_	Offset=705-716
+3	do	_	Action	_	_	0	_	_	Offset=725-736
+4	vacuum	_	Device	_	_	0	_	_	Offset=740-764
+
+# sent_id = s13
+# text = Label petri dishes:  mark in half and use arrow or number to designate top.
+1	Pipet	_	Action	_	_	0	_	_	Offset=766-771
+2	water	_	Reagent	_	_	0	_	_	Offset=772-777
+3	top	_	Location	_	_	0	_	_	Offset=783-786
+4	frosted	_	Location	_	_	3	Meronym	_	Offset=790-805
+
+# sent_id = s14
+# text = Pipet 2.5 μl diluted SYBR on to top and bottom halves of petri dish (2 drops per dish) and add 97.5 μl TE.
+1	Place	_	Action	_	_	0	_	_	Offset=807-812
+2	backing	_	Device	_	_	0	_	_	Offset=815-829
+3	top	_	Location	_	_	0	_	_	Offset=833-836
+4	tower	_	Location	_	_	3	Meronym	_	Offset=840-853
+5	open	_	Action	_	_	0	_	_	Offset=858-862
+6	vacuum	_	Device	_	_	0	_	_	Offset=863-869
+7	evenly	_	Modifier	_	_	0	_	_	Offset=873-879
+8	lay	_	Action	_	_	0	_	_	Offset=880-888
+9	filter	_	Device	_	_	0	_	_	Offset=889-895
+
+# sent_id = s15
+# text = Turn vacuum pump on, but do not turn on vacuum to tower supports.
+1	Turn	_	Action	_	_	0	_	_	Offset=897-905
+2	vacuum	_	Device	_	_	0	_	_	Offset=906-912
+
+# sent_id = s16
+# text = Pipet water onto top of frosted support.
+1	Place	_	Action	_	_	0	_	_	Offset=914-919
+2	another	_	Amount	_	_	3	Measure	_	Offset=920-932
+3	water	_	Reagent	_	_	0	_	_	Offset=936-941
+4	top	_	Location	_	_	0	_	_	Offset=945-948
+5	filter	_	Device	_	_	0	_	_	Offset=952-958
+6	place	_	Action	_	_	0	_	_	Offset=963-968
+7	25	_	Amount	_	_	0	_	_	Offset=969-974
+8	0.02	_	Device	_	_	0	_	_	Offset=975-997
+9	top	_	Location	_	_	0	_	_	Offset=1001-1004
+
+# sent_id = s17
+# text = Place a backing filter on top of tower support and open vacuum to evenly lay down filter.
+1	Turn	_	Action	_	_	0	_	_	Offset=1006-1013
+2	vacuum	_	Device	_	_	0	_	_	Offset=1014-1020
+
+# sent_id = s18
+# text = Turn off vacuum.
+1	Clamp	_	Action	_	_	0	_	_	Offset=1022-1027
+2	tower	_	Device	_	_	0	_	_	Offset=1028-1033
+3	support	_	Location	_	_	0	_	_	Offset=1037-1044
+
+# sent_id = s19
+# text = Place another drop of water on top of filter and place 25 mm 0.02 μm Anodisc filter on top.
+1	Pipet	_	Action	_	_	0	_	_	Offset=1046-1051
+2	sample	_	Reagent	_	_	0	_	_	Offset=1055-1061
+3	bringing	_	Action	_	_	0	_	_	Offset=1062-1070
+4	tip	_	Device	_	_	0	_	_	Offset=1071-1074
+5	filter	_	Device	_	_	0	_	_	Offset=1089-1095
+
+# sent_id = s20
+# text = Turn on vacuum.
+1	filter	_	Device	_	_	0	_	_	Offset=1101-1107
+2	dry	_	Action	_	_	0	_	_	Offset=1108-1111
+3	~30	_	Time	_	_	0	_	_	Offset=1113-1120
+
+# sent_id = s21
+# text = Clamp tower to support.
+1	carefully	_	Modifier	_	_	0	_	_	Offset=1150-1159
+2	remove	_	Action	_	_	0	_	_	Offset=1160-1166
+3	filter	_	Device	_	_	0	_	_	Offset=1167-1173
+4	place	_	Action	_	_	0	_	_	Offset=1178-1183
+5	drop	_	Amount	_	_	6	Measure	_	Offset=1187-1191
+6	SYBR	_	Reagent	_	_	0	_	_	Offset=1195-1199
+7	petri	_	Location	_	_	0	_	_	Offset=1203-1213
+
+# sent_id = s22
+# text = Pipet in sample bringing tip very close to filter.
+1	Stain	_	Action	_	_	0	_	_	Offset=1215-1220
+2	15	_	Time	_	_	0	_	_	Offset=1225-1231
+
+# sent_id = s23
+# text = Let filter dry (~30 sec).
+1	Turn	_	Action	_	_	0	_	_	Offset=1233-1241
+2	vacuum	_	Device	_	_	0	_	_	Offset=1242-1248
+
+# sent_id = s24
+# text = With vacuum still running, carefully remove filter and place on drop of SYBR in petri dish.
+1	place	_	Action	_	_	0	_	_	Offset=1318-1323
+2	0.5	_	Amount	_	_	3	Measure	_	Offset=1324-1330
+3	water	_	Reagent	_	_	0	_	_	Offset=1331-1336
+4	backing	_	Location	_	_	0	_	_	Offset=1340-1354
+
+# sent_id = s25
+# text = Stain for 15 min.
+1	Pick	_	Action	_	_	0	_	_	Offset=1356-1363
+2	stained	_	Device	_	_	0	_	_	Offset=1364-1378
+3	forceps	_	Device	_	_	0	_	_	Offset=1384-1391
+4	place	_	Action	_	_	0	_	_	Offset=1396-1401
+5	top	_	Location	_	_	0	_	_	Offset=1405-1408
+6	water	_	Reagent	_	_	5	Meronym	_	Offset=1412-1425
+
+# sent_id = s26
+# text = Turn off vacuum.
+1	Turn	_	Action	_	_	0	_	_	Offset=1427-1434
+2	vacuum	_	Device	_	_	0	_	_	Offset=1435-1441
+3	~30	_	Time	_	_	0	_	_	Offset=1446-1453
+4	dry	_	Action	_	_	0	_	_	Offset=1457-1460
+5	filter	_	Device	_	_	0	_	_	Offset=1461-1467
+
+# sent_id = s27
+# text = Repeat steps 18 - 23 until all samples are stained.
+1	Remove	_	Action	_	_	0	_	_	Offset=1469-1475
+2	filter	_	Device	_	_	0	_	_	Offset=1476-1482
+3	place	_	Action	_	_	0	_	_	Offset=1508-1513
+4	coverslip	_	Seal	_	_	0	_	_	Offset=1514-1523
+5	anti-fade	_	Reagent	_	_	0	_	_	Offset=1529-1538
+6	top	_	Location	_	_	0	_	_	Offset=1542-1545
+
+# sent_id = s28
+# text = After staining, place 0.5 ml water on backing filter.
+1	Set	_	Action	_	_	0	_	_	Offset=1547-1555
+2	forceps	_	Device	_	_	0	_	_	Offset=1556-1563
+3	place	_	Action	_	_	0	_	_	Offset=1568-1573
+4	filter	_	Device	_	_	0	_	_	Offset=1574-1580
+5	coverslip	_	Seal	_	_	0	_	_	Offset=1585-1594
+6	slide	_	Location	_	_	0	_	_	Offset=1600-1605
+
+# sent_id = s29
+# text = Pick up stained filter with forceps and place on top of water droplet.
+1	Tape	_	Action	_	_	0	_	_	Offset=1607-1616
+2	one	_	Location	_	_	0	_	_	Offset=1617-1624
+
+# sent_id = s30
+# text = Turn on vacuum for ~30 sec to dry filter.
+1	Put	_	Action	_	_	0	_	_	Offset=1626-1629
+2	2	_	Numerical	_	_	3	Measure	_	Offset=1630-1631
+3	coverslips	_	Seal	_	_	0	_	_	Offset=1632-1642
+4	slide	_	Location	_	_	0	_	_	Offset=1647-1652
+5	tape	_	Seal	_	_	0	_	_	Offset=1657-1661
+6	middle	_	Location	_	_	0	_	_	Offset=1669-1675
+7	hold	_	Action	_	_	0	_	_	Offset=1679-1688
+8	coverslips	_	Seal	_	_	0	_	_	Offset=1689-1699
+
+# sent_id = s31
+# text = Remove filter with vacuum still on and place coverslip with anti-fade on top.
+1	place	_	Action	_	_	0	_	_	Offset=1724-1729
+2	freezer	_	Device	_	_	0	_	_	Offset=1733-1740
+3	1	_	Time	_	_	0	_	_	Offset=1745-1749
+4	improve	_	Action	_	_	0	_	_	Offset=1753-1769
+

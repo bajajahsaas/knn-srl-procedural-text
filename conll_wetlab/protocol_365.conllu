@@ -1,0 +1,459 @@
+# sent_id = s1
+# text = Seamless editing of the C. elegans genome using CRISPR/Cas9
+1	Design	_	Action	_	_	0	_	_	Offset=60-66
+2	sgRNAs	_	Reagent	_	_	0	_	_	Offset=71-77
+3	order	_	Action	_	_	0	_	_	Offset=82-87
+4	primers	_	Reagent	_	_	0	_	_	Offset=92-99
+
+# sent_id = s2
+# text = Design the sgRNAs and order the primers (see the guidelines).
+1	Clone	_	Action	_	_	0	_	_	Offset=122-127
+2	sgRNAs	_	Reagent	_	_	0	_	_	Offset=132-138
+3	pDD162	_	Reagent	_	_	0	_	_	Offset=142-148
+4	Q5	_	Reagent	_	_	0	_	_	Offset=155-173
+
+# sent_id = s3
+# text = Clone the sgRNAs in pDD162 using Q5 mutagenesis kit (NEB).
+1	Mix	_	Action	_	_	0	_	_	Offset=181-184
+2	Prepare	_	Action	_	_	0	_	_	Offset=209-216
+3	negative	_	Reagent	_	_	0	_	_	Offset=219-239
+4	Forward	_	Reagent	_	_	0	_	_	Offset=252-266
+
+# sent_id = s4
+# text = Mix together the following: Prepare a negative control mix without the Forward primer.
+1	Digest	_	Action	_	_	0	_	_	Offset=268-279
+2	pDD162	_	Reagent	_	_	0	_	_	Offset=280-286
+3	5min	_	Time	_	_	0	_	_	Offset=291-295
+4	RT	_	Temperature	_	_	0	_	_	Offset=299-301
+5	1ul	_	Amount	_	_	6	Measure	_	Offset=308-311
+6	Q5	_	Reagent	_	_	0	_	_	Offset=315-321
+7	5ul	_	Amount	_	_	8	Measure	_	Offset=322-325
+8	KLD	_	Reagent	_	_	0	_	_	Offset=329-342
+9	1ul	_	Amount	_	_	10	Measure	_	Offset=343-346
+10	KLD	_	Reagent	_	_	0	_	_	Offset=350-364
+11	3ul	_	Amount	_	_	12	Measure	_	Offset=365-368
+12	H2O	_	Reagent	_	_	0	_	_	Offset=372-375
+
+# sent_id = s5
+# text = Digest away pDD162 for 5min at RT with: 1ul of Q5 PCR 5ul of KLD 2X buffer 1ul of KLD 10X enzyme 3ul of H2O.
+1	Add	_	Action	_	_	0	_	_	Offset=377-380
+2	5ul	_	Amount	_	_	4	Measure	_	Offset=381-384
+3	digested	_	Modifier	_	_	4	Mod-Link	_	Offset=392-400
+4	reaction	_	Reagent	_	_	0	_	_	Offset=401-409
+5	50ul	_	Amount	_	_	7	Measure	_	Offset=413-417
+6	kit‐provided	_	Modifier	_	_	7	Mod-Link	_	Offset=421-433
+7	competent	_	Reagent	_	_	0	_	_	Offset=434-449
+
+# sent_id = s6
+# text = Add 5ul of the digested reaction to 50ul of kit‐provided competent cells. 
+1	Heat	_	Action	_	_	0	_	_	Offset=452-462
+2	42°C	_	Temperature	_	_	0	_	_	Offset=466-470
+3	30s	_	Time	_	_	0	_	_	Offset=475-478
+
+# sent_id = s7
+# text = Heat shock at 42°C for 30s. 
+1	Add	_	Action	_	_	0	_	_	Offset=481-484
+2	950ul	_	Amount	_	_	3	Measure	_	Offset=485-490
+3	SOC	_	Reagent	_	_	0	_	_	Offset=494-504
+4	shake	_	Action	_	_	0	_	_	Offset=509-514
+5	1h	_	Time	_	_	0	_	_	Offset=519-521
+6	37°C	_	Temperature	_	_	0	_	_	Offset=525-529
+
+# sent_id = s8
+# text = Add 950ul of SOC medium and shake for 1h at 37°C.
+1	Plate	_	Action	_	_	0	_	_	Offset=531-536
+2	25ul	_	Amount	_	_	3	Measure	_	Offset=537-541
+3	Carb	_	Location	_	_	0	_	_	Offset=545-555
+
+# sent_id = s9
+# text = Plate 25ul on Carb plate.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=557-567
+2	remaining	_	Modifier	_	_	3	Mod-Link	_	Offset=572-581
+3	975ul	_	Amount	_	_	0	_	_	Offset=582-587
+4	3min	_	Time	_	_	0	_	_	Offset=592-596
+5	5K	_	Speed	_	_	0	_	_	Offset=600-602
+6	plate	_	Action	_	_	0	_	_	Offset=612-617
+7	pellet	_	Reagent	_	_	0	_	_	Offset=622-628
+
+# sent_id = s10
+# text = Centrifuge the remaining 975ul for 3min at 5K and also plate the pellet.
+1	Pick	_	Action	_	_	0	_	_	Offset=698-702
+2	6	_	Numerical	_	_	3	Measure	_	Offset=703-704
+3	colonies	_	Reagent	_	_	0	_	_	Offset=705-713
+4	grow	_	Action	_	_	0	_	_	Offset=717-721
+5	each	_	Modifier	_	_	0	_	_	Offset=722-726
+6	2ml	_	Amount	_	_	7	Measure	_	Offset=730-733
+7	bacterial	_	Reagent	_	_	0	_	_	Offset=737-754
+
+# sent_id = s11
+# text = One half (or more) of the colonies will have the correct insertion.
+1	Miniprep	_	Action	_	_	0	_	_	Offset=756-764
+2	Qiagen	_	Reagent	_	_	3	Meronym	_	Offset=766-776
+3	PB	_	Reagent	_	_	0	_	_	Offset=790-797
+4	elute	_	Action	_	_	0	_	_	Offset=799-804
+5	50ul	_	Amount	_	_	6	Measure	_	Offset=808-812
+6	H2O	_	Reagent	_	_	0	_	_	Offset=816-819
+7	send	_	Action	_	_	0	_	_	Offset=825-829
+8	sequencing	_	Action	_	_	0	_	_	Offset=833-843
+9	forward	_	Reagent	_	_	0	_	_	Offset=854-879
+10	guidelines	_	Method	_	_	0	_	_	Offset=887-897
+
+# sent_id = s12
+# text = Pick 6 colonies to grow each in 2ml of bacterial culture.
+1	Design	_	Action	_	_	0	_	_	Offset=899-905
+2	order	_	Action	_	_	0	_	_	Offset=910-915
+3	repair	_	Reagent	_	_	0	_	_	Offset=920-933
+4	guidelines	_	Method	_	_	0	_	_	Offset=954-964
+
+# sent_id = s13
+# text = Miniprep (Qiagen kit, include the PB wash, elute in 50ul of H2O) and send to sequencing using the forward sequencing primer in the guidelines.
+1	Reconstitute	_	Action	_	_	0	_	_	Offset=966-978
+2	oligo	_	Reagent	_	_	0	_	_	Offset=979-984
+3	1ug/ul	_	Concentration	_	_	0	_	_	Offset=988-994
+4	amount	_	Amount	_	_	0	_	_	Offset=1012-1018
+5	provided	_	Action	_	_	0	_	_	Offset=1019-1027
+6	manufacturer	_	Method	_	_	0	_	_	Offset=1035-1047
+
+# sent_id = s14
+# text = Design and order the repair ssODNs as described in the guidelines.
+1	Amplify	_	Action	_	_	0	_	_	Offset=1049-1056
+2	GFP	_	Reagent	_	_	0	_	_	Offset=1061-1080
+3	primers	_	Reagent	_	_	5	Meronym	_	Offset=1109-1116
+4	desired	_	Modifier	_	_	5	Mod-Link	_	Offset=1132-1139
+5	flanking	_	Reagent	_	_	0	_	_	Offset=1140-1156
+
+# sent_id = s15
+# text = Reconstitute oligo at 1ug/ul according to the amount provided by the manufacturer.
+1	PCRs	_	Action	_	_	0	_	_	Offset=1219-1223
+2	Phusion	_	Reagent	_	_	0	_	_	Offset=1244-1269
+3	45s	_	Time	_	_	0	_	_	Offset=1277-1280
+4	elongation	_	Measure-Type	_	_	0	_	_	Offset=1281-1296
+5	30	_	Numerical	_	_	0	_	_	Offset=1298-1300
+6	cycles	_	Measure-Type	_	_	5	Of-Type	_	Offset=1301-1307
+7	50ul	_	Amount	_	_	8	Measure	_	Offset=1309-1313
+8	reaction	_	Reagent	_	_	0	_	_	Offset=1314-1322
+
+# sent_id = s16
+# text = Amplify the GFP plasmid pCM1.53 (available at Addgene) with primers containing the desired flanking regions (~30‐60 bp), mutations in the sgRNA site(s) and GFP sequence.
+1	Annealing	_	Action	_	_	0	_	_	Offset=1324-1333
+2	gradient	_	Measure-Type	_	_	0	_	_	Offset=1355-1363
+3	60°C	_	Temperature	_	_	0	_	_	Offset=1369-1381
+
+# sent_id = s17
+# text = PCRs are performed using Phusion taq 2X Master Mix (NEB), 45s elongation step, 30 cycles, 50ul reaction.
+1	Run	_	Action	_	_	0	_	_	Offset=1383-1386
+2	PCR	_	Reagent	_	_	0	_	_	Offset=1387-1400
+3	agarose	_	Reagent	_	_	0	_	_	Offset=1404-1415
+
+# sent_id = s18
+# text = Annealing step is done using a gradient from 60°C to 72°C.
+1	Pool	_	Action	_	_	0	_	_	Offset=1447-1451
+2	positive	_	Reagent	_	_	0	_	_	Offset=1452-1465
+3	purify	_	Action	_	_	0	_	_	Offset=1498-1504
+4	minelute	_	Reagent	_	_	0	_	_	Offset=1513-1542
+
+# sent_id = s19
+# text = Run PCR reactions on agarose gel to confirm the amplification. 
+1	Pool	_	Action	_	_	0	_	_	Offset=1579-1583
+2	reactions	_	Reagent	_	_	0	_	_	Offset=1588-1597
+3	purify	_	Action	_	_	0	_	_	Offset=1602-1608
+4	them	_	Mention	_	_	0	_	_	Offset=1609-1613
+5	one	_	Numerical	_	_	6	Measure	_	Offset=1620-1623
+6	minelute	_	Location	_	_	0	_	_	Offset=1624-1656
+7	measure	_	Action	_	_	0	_	_	Offset=1661-1668
+8	concentration	_	Measure-Type	_	_	0	_	_	Offset=1673-1686
+
+# sent_id = s20
+# text = Pool positive PCRs (typically three reactions) and purify using a minelute PCR purification kit (Qiagen, elution with 10ul of H2O).
+1	Miniprep	_	Action	_	_	0	_	_	Offset=1939-1947
+2	3ml	_	Amount	_	_	3	Measure	_	Offset=1953-1956
+3	bacterial	_	Reagent	_	_	0	_	_	Offset=1960-1977
+4	Cas9/sgRNA	_	Reagent	_	_	0	_	_	Offset=1990-2008
+
+# sent_id = s21
+# text = Pool the reactions and purify them using one minelute PCR purification column and measure the concentration.
+1	Add	_	Action	_	_	0	_	_	Offset=2059-2062
+2	H2O	_	Reagent	_	_	0	_	_	Offset=2063-2066
+3	15ul	_	Amount	_	_	0	_	_	Offset=2070-2074
+4	Centrifuge	_	Action	_	_	0	_	_	Offset=2075-2085
+5	13K	_	Speed	_	_	0	_	_	Offset=2089-2092
+6	15min	_	Time	_	_	0	_	_	Offset=2097-2102
+7	tabletop	_	Device	_	_	0	_	_	Offset=2106-2125
+
+# sent_id = s22
+# text = The DNA concentration should be >500ng/ul (at this concentration, the amount of PCR oligo remaining in the mixture will be low enough to avoid any toxicity).
+1	Load	_	Action	_	_	0	_	_	Offset=2127-2131
+2	injection	_	Device	_	_	0	_	_	Offset=2132-2149
+3	injection	_	Reagent	_	_	0	_	_	Offset=2159-2172
+
+# sent_id = s23
+# text = We use pRF4 roller plasmid at 120ng/ul, but you can use any marker that you find convenient.
+1	Bleach	_	Action	_	_	0	_	_	Offset=2174-2180
+2	large	_	Modifier	_	_	3	Mod-Link	_	Offset=2183-2188
+3	plate	_	Location	_	_	4	Meronym	_	Offset=2189-2194
+4	worms	_	Reagent	_	_	0	_	_	Offset=2198-2203
+
+# sent_id = s24
+# text = Miniprep from 3ml of bacterial culture, as for the Cas9/sgRNA plasmid.
+1	wash	_	Action	_	_	0	_	_	Offset=2212-2216
+2	M9	_	Reagent	_	_	0	_	_	Offset=2222-2224
+
+# sent_id = s25
+# text = Do not let cultures grow for more than 16 hours.
+1	wash	_	Action	_	_	0	_	_	Offset=2233-2237
+2	M9	_	Reagent	_	_	0	_	_	Offset=2243-2245
+
+# sent_id = s26
+# text = Add H2O to 15ul Centrifuge at 13K for 15min on tabletop centrifuge.
+1	Plate	_	Action	_	_	0	_	_	Offset=2247-2252
+2	embryos	_	Reagent	_	_	0	_	_	Offset=2253-2260
+3	NA22	_	Location	_	_	0	_	_	Offset=2281-2297
+
+# sent_id = s27
+# text = Load injection needles with the injection mix.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2343-2351
+2	multiple	_	Numerical	_	_	3	Measure	_	Offset=2352-2360
+3	plates	_	Location	_	_	0	_	_	Offset=2361-2367
+4	different	_	Temperature	_	_	0	_	_	Offset=2371-2393
+5	at	_	Modifier	_	_	6	Or	_	Offset=2412-2420
+6	one	_	Numerical	_	_	7	Measure	_	Offset=2421-2424
+7	young	_	Reagent	_	_	0	_	_	Offset=2430-2442
+
+# sent_id = s28
+# text = Bleach a large plate of worms 
+1	Inject	_	Action	_	_	0	_	_	Offset=2616-2622
+2	30‐40	_	Numerical	_	_	3	Measure	_	Offset=2623-2628
+3	worms	_	Reagent	_	_	0	_	_	Offset=2629-2634
+
+# sent_id = s29
+# text = WashA: wash with M9.
+1	add	_	Action	_	_	0	_	_	Offset=2649-2652
+2	5ul	_	Amount	_	_	3	Measure	_	Offset=2653-2656
+3	M9	_	Reagent	_	_	0	_	_	Offset=2660-2662
+4	adding	_	Action	_	_	0	_	_	Offset=2670-2676
+5	M9	_	Reagent	_	_	0	_	_	Offset=2677-2679
+6	every	_	Modifier	_	_	7	Mod-Link	_	Offset=2680-2685
+7	5-10	_	Time	_	_	0	_	_	Offset=2686-2698
+8	1h	_	Time	_	_	0	_	_	Offset=2706-2708
+9	worms	_	Reagent	_	_	0	_	_	Offset=2719-2724
+10	put	_	Action	_	_	0	_	_	Offset=2735-2738
+11	recovery	_	Reagent	_	_	0	_	_	Offset=2742-2757
+
+# sent_id = s30
+# text = WashB: wash with M9.
+1	add	_	Action	_	_	0	_	_	Offset=2773-2776
+2	5ul	_	Amount	_	_	3	Measure	_	Offset=2777-2780
+3	M9	_	Reagent	_	_	0	_	_	Offset=2784-2786
+
+# sent_id = s31
+# text = Plate embryos (less than 2000) on NA22 large plate.
+1	add	_	Action	_	_	0	_	_	Offset=2801-2804
+2	5ul	_	Amount	_	_	3	Measure	_	Offset=2805-2808
+3	M9	_	Reagent	_	_	0	_	_	Offset=2812-2814
+
+# sent_id = s32
+# text = (NOT completely covered with NA22 bacteria) Incubate multiple plates at different temperatures to ensure to have at least one with young adults (few embryos /one embryo row) on the day of injection.
+1	add	_	Action	_	_	0	_	_	Offset=2829-2832
+2	10ul	_	Amount	_	_	3	Measure	_	Offset=2833-2837
+3	M9	_	Reagent	_	_	0	_	_	Offset=2841-2843
+
+# sent_id = s33
+# text = Pick hermaphrodites with a sharp pick from areas of the plate where there are no bacteria and place on injection pad.
+1	add	_	Action	_	_	0	_	_	Offset=2859-2862
+2	10ul	_	Amount	_	_	3	Measure	_	Offset=2863-2867
+3	M9	_	Reagent	_	_	0	_	_	Offset=2871-2873
+
+# sent_id = s34
+# text = Inject 30‐40 worms.
+1	add	_	Action	_	_	0	_	_	Offset=2888-2891
+2	15ul	_	Amount	_	_	3	Measure	_	Offset=2892-2896
+3	M9	_	Reagent	_	_	0	_	_	Offset=2900-2902
+
+# sent_id = s35
+# text = AddingM9 #1: add 5ul of M9 (Start adding M9 every 5-10 minutes, about 1h after the worms have been put in recovery buffer).
+1	add	_	Action	_	_	0	_	_	Offset=2917-2920
+2	15ul	_	Amount	_	_	3	Measure	_	Offset=2921-2925
+3	M9	_	Reagent	_	_	0	_	_	Offset=2929-2931
+
+# sent_id = s36
+# text = AddingM9 #2: add 5ul of M9.
+1	add	_	Action	_	_	0	_	_	Offset=2946-2949
+2	15ul	_	Amount	_	_	3	Measure	_	Offset=2950-2954
+3	M9	_	Reagent	_	_	0	_	_	Offset=2958-2960
+
+# sent_id = s37
+# text = AddingM9 #3: add 5ul of M9.
+1	add	_	Action	_	_	0	_	_	Offset=2975-2978
+2	20ul	_	Amount	_	_	3	Measure	_	Offset=2979-2983
+3	M9	_	Reagent	_	_	0	_	_	Offset=2987-2989
+
+# sent_id = s38
+# text = AddingM9 #4: add 10ul of M9. 
+1	add	_	Action	_	_	0	_	_	Offset=3005-3008
+2	20ul	_	Amount	_	_	3	Measure	_	Offset=3009-3013
+3	M9	_	Reagent	_	_	0	_	_	Offset=3017-3019
+
+# sent_id = s39
+# text = AddingM9 #5: add 10ul of M9.
+1	Put	_	Action	_	_	0	_	_	Offset=3022-3025
+2	drop	_	Reagent	_	_	0	_	_	Offset=3028-3032
+3	20ul	_	Amount	_	_	4	Measure	_	Offset=3036-3040
+4	M9	_	Reagent	_	_	2	Meronym	_	Offset=3044-3046
+5	new	_	Modifier	_	_	6	Mod-Link	_	Offset=3052-3055
+6	OP50	_	Location	_	_	8	Meronym	_	Offset=3056-3066
+7	outside	_	Location	_	_	0	_	_	Offset=3068-3075
+8	bacteria	_	Reagent	_	_	7	Meronym	_	Offset=3080-3094
+
+# sent_id = s40
+# text = AddingM9 #6: add 15ul of M9.
+1	pick	_	Device	_	_	0	_	_	Offset=3103-3107
+2	transfer	_	Action	_	_	0	_	_	Offset=3109-3117
+3	5	_	Numerical	_	_	5	Measure	_	Offset=3118-3125
+4	injected	_	Modifier	_	_	5	Mod-Link	_	Offset=3126-3134
+5	worms	_	Reagent	_	_	9	Coreference-Link	_	Offset=3135-3140
+6	recovery	_	Reagent	_	_	0	_	_	Offset=3150-3165
+7	M9	_	Reagent	_	_	0	_	_	Offset=3173-3180
+8	push	_	Action	_	_	0	_	_	Offset=3185-3189
+9	them	_	Mention	_	_	0	_	_	Offset=3190-3194
+10	M9	_	Reagent	_	_	0	_	_	Offset=3209-3216
+11	food	_	Reagent	_	_	0	_	_	Offset=3229-3233
+
+# sent_id = s41
+# text = AddingM9 #7: add 15ul of M9.
+1	Repeat	_	Action	_	_	0	_	_	Offset=3235-3241
+2	all	_	Modifier	_	_	3	Mod-Link	_	Offset=3248-3251
+3	worms	_	Reagent	_	_	0	_	_	Offset=3256-3261
+4	transferred	_	Action	_	_	0	_	_	Offset=3266-3277
+
+# sent_id = s42
+# text = AddingM9 #8: add 15ul of M9.
+1	Leave	_	Action	_	_	0	_	_	Offset=3396-3401
+2	injected	_	Modifier	_	_	3	Mod-Link	_	Offset=3406-3414
+3	worms	_	Reagent	_	_	0	_	_	Offset=3415-3420
+4	OP50	_	Location	_	_	0	_	_	Offset=3424-3435
+5	room	_	Temperature	_	_	0	_	_	Offset=3439-3455
+6	5h	_	Time	_	_	0	_	_	Offset=3460-3462
+7	transfer	_	Action	_	_	0	_	_	Offset=3472-3480
+8	each	_	Modifier	_	_	9	Mod-Link	_	Offset=3481-3485
+9	worm	_	Reagent	_	_	0	_	_	Offset=3486-3490
+10	new	_	Modifier	_	_	11	Mod-Link	_	Offset=3501-3504
+11	OP50	_	Location	_	_	0	_	_	Offset=3505-3515
+
+# sent_id = s43
+# text = AddingM9 #9: add 20ul of M9.
+1	P0s	_	Reagent	_	_	0	_	_	Offset=3544-3547
+2	lay	_	Action	_	_	0	_	_	Offset=3551-3554
+3	eggs	_	Reagent	_	_	0	_	_	Offset=3555-3559
+4	20°C	_	Temperature	_	_	0	_	_	Offset=3563-3567
+5	1	_	Time	_	_	0	_	_	Offset=3572-3583
+
+# sent_id = s44
+# text = AddingM9 #10: add 20ul of M9. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=3585-3593
+2	P0s	_	Reagent	_	_	0	_	_	Offset=3598-3601
+3	fresh	_	Modifier	_	_	4	Mod-Link	_	Offset=3605-3610
+4	OP50	_	Location	_	_	0	_	_	Offset=3611-3622
+
+# sent_id = s45
+# text = Put a drop of 20ul of M9 on a new OP50 plate, outside the bacteria layer.
+1	F1s	_	Reagent	_	_	0	_	_	Offset=3665-3668
+2	grow	_	Action	_	_	0	_	_	Offset=3669-3673
+3	20°C	_	Temperature	_	_	0	_	_	Offset=3677-3681
+
+# sent_id = s46
+# text = With a pick, transfer 5 to 10 injected worms from the recovery buffer to the M9 drop and push them away from the M9 drop towards the food.
+1	screen	_	Action	_	_	0	_	_	Offset=3841-3847
+2	directly	_	Modifier	_	_	0	_	_	Offset=3848-3856
+3	GFP	_	Measure-Type	_	_	0	_	_	Offset=3861-3875
+4	F1	_	Reagent	_	_	0	_	_	Offset=3883-3901
+
+# sent_id = s47
+# text = Repeat until all the worms are transferred.
+1	Transfer	_	Action	_	_	0	_	_	Offset=3918-3926
+2	F1	_	Reagent	_	_	0	_	_	Offset=3931-3941
+3	non‐roller	_	Reagent	_	_	0	_	_	Offset=3952-3974
+4	new	_	Modifier	_	_	5	Mod-Link	_	Offset=3978-3981
+5	plates	_	Location	_	_	0	_	_	Offset=3982-3988
+
+# sent_id = s48
+# text = Even if the worms look inert at this or the next step, they are worth transferring as they may yield edited progeny.
+1	F1	_	Reagent	_	_	0	_	_	Offset=4036-4038
+2	lay	_	Action	_	_	0	_	_	Offset=4039-4042
+3	eggs	_	Reagent	_	_	0	_	_	Offset=4043-4047
+4	24h	_	Time	_	_	0	_	_	Offset=4052-4055
+5	20°C	_	Temperature	_	_	0	_	_	Offset=4059-4063
+
+# sent_id = s49
+# text = Leave the injected worms on OP50 plates at room temperature for 5h and then transfer each worm (P0) to a new OP50 plate (1 P0 per plate).
+1	Lyse	_	Action	_	_	0	_	_	Offset=4065-4069
+2	F1s	_	Reagent	_	_	0	_	_	Offset=4074-4077
+3	10	_	Amount	_	_	4	Measure	_	Offset=4095-4100
+4	tube	_	Location	_	_	5	Meronym	_	Offset=4101-4105
+5	lysis	_	Reagent	_	_	0	_	_	Offset=4109-4121
+6	put	_	Action	_	_	0	_	_	Offset=4123-4126
+7	2	_	Numerical	_	_	8	Measure	_	Offset=4127-4133
+8	F1s	_	Reagent	_	_	0	_	_	Offset=4134-4137
+
+# sent_id = s50
+# text = Allow the P0s to lay eggs at 20°C for 1 or 2 days.
+1	Clone	_	Action	_	_	0	_	_	Offset=4267-4272
+2	F2/3s	_	Reagent	_	_	0	_	_	Offset=4277-4282
+3	positive	_	Modifier	_	_	4	Mod-Link	_	Offset=4288-4296
+4	F1	_	Location	_	_	0	_	_	Offset=4297-4306
+
+# sent_id = s51
+# text = Transfer the P0s to fresh OP50 plates between the first and second day.
+1	clone	_	Action	_	_	0	_	_	Offset=4456-4461
+2	16	_	Numerical	_	_	3	Measure	_	Offset=4462-4464
+3	F2s	_	Reagent	_	_	0	_	_	Offset=4465-4468
+
+# sent_id = s52
+# text = Let the F1s grow at 20°C.
+1	chunk	_	Action	_	_	0	_	_	Offset=4502-4507
+2	starved	_	Modifier	_	_	3	Mod-Link	_	Offset=4512-4519
+3	plate	_	Location	_	_	0	_	_	Offset=4520-4525
+4	clone	_	Action	_	_	0	_	_	Offset=4543-4548
+5	24	_	Numerical	_	_	6	Measure	_	Offset=4549-4557
+6	F2/F3s	_	Reagent	_	_	0	_	_	Offset=4558-4564
+
+# sent_id = s53
+# text = When all the F1s have reached the young adult stage (4 days at 20°C), check for rollers.
+1	Lyse	_	Action	_	_	0	_	_	Offset=4566-4570
+2	PCR	_	Action	_	_	0	_	_	Offset=4575-4578
+3	F2/3s	_	Reagent	_	_	0	_	_	Offset=4579-4584
+4	same	_	Method	_	_	0	_	_	Offset=4595-4607
+
+# sent_id = s54
+# text = GFP fusions: if you know what you are looking for, it is possible to screen directly for GFP expression in the F1 (or F2) animals.
+1	PCR	_	Reagent	_	_	0	_	_	Offset=4718-4729
+2	sequencing	_	Action	_	_	0	_	_	Offset=4734-4744
+3	Clean	_	Action	_	_	0	_	_	Offset=4746-4751
+4	25ul	_	Amount	_	_	5	Measure	_	Offset=4752-4756
+5	PCR	_	Reagent	_	_	0	_	_	Offset=4764-4776
+6	Qiagen	_	Reagent	_	_	0	_	_	Offset=4783-4802
+7	elute	_	Action	_	_	0	_	_	Offset=4804-4809
+8	10ul	_	Amount	_	_	9	Measure	_	Offset=4815-4819
+9	H2O	_	Reagent	_	_	0	_	_	Offset=4823-4826
+
+# sent_id = s55
+# text = PCR screening: Transfer the F1 rollers and their non‐roller F1 siblings to new plates (2 to 8 F1s per plate).
+1	clone	_	Action	_	_	0	_	_	Offset=4988-4993
+2	4	_	Numerical	_	_	3	Measure	_	Offset=4994-4995
+3	worms	_	Reagent	_	_	0	_	_	Offset=4996-5001
+4	new	_	Modifier	_	_	5	Mod-Link	_	Offset=5011-5014
+5	plates	_	Location	_	_	0	_	_	Offset=5015-5021
+6	verify	_	Action	_	_	0	_	_	Offset=5029-5035
+
+# sent_id = s56
+# text = PCR Screening: Let the F1 lay eggs for 24h at 20°C.
+1	Freeze	_	Action	_	_	0	_	_	Offset=5096-5102
+2	worms	_	Reagent	_	_	0	_	_	Offset=5107-5112
+
+# sent_id = s57
+# text = Lyse the F1s for PCR: In each 10 uL tube of lysis buffer, put 2 to 8 F1s.
+1	freezing	_	Action	_	_	0	_	_	Offset=5127-5135
+2	at	_	Modifier	_	_	5	Mod-Link	_	Offset=5136-5144
+3	two	_	Numerical	_	_	5	Measure	_	Offset=5145-5148
+4	independent	_	Modifier	_	_	5	Mod-Link	_	Offset=5149-5160
+5	lines	_	Reagent	_	_	0	_	_	Offset=5161-5166
+

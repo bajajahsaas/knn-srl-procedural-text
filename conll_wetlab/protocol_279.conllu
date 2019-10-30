@@ -1,0 +1,33 @@
+# sent_id = s1
+# text = Dephosphorylation using rSAP in Restriction Enzyme Reaction(M0371)
+1	Digest	_	Action	_	_	0	_	_	Offset=67-73
+2	1–5	_	Amount	_	_	3	Measure	_	Offset=74-80
+3	plasmid	_	Reagent	_	_	0	_	_	Offset=84-95
+4	20	_	Amount	_	_	5	Measure	_	Offset=101-106
+5	reaction	_	Reagent	_	_	0	_	_	Offset=107-115
+6	Incubate	_	Action	_	_	0	_	_	Offset=128-136
+7	37°C	_	Temperature	_	_	0	_	_	Offset=140-144
+8	60	_	Time	_	_	0	_	_	Offset=149-159
+
+# sent_id = s2
+# text = Digest 1–5 μg of plasmid DNA in a 20 μl reaction as follows: Incubate at 37°C for 60 minutes or follow manufacturer’s recommendations.
+1	Add	_	Action	_	_	0	_	_	Offset=202-205
+2	1	_	Amount	_	_	3	Measure	_	Offset=206-212
+3	rSAP	_	Reagent	_	_	0	_	_	Offset=216-220
+4	1	_	Amount	_	_	5	Measure	_	Offset=231-237
+5	DNA	_	Reagent	_	_	0	_	_	Offset=241-249
+
+# sent_id = s3
+# text = Add 1 unit of rSAP for every 1 pmol of DNA ends (about 1 μg of a 3 kb plasmid).
+1	Incubate	_	Action	_	_	0	_	_	Offset=282-290
+2	37°C	_	Temperature	_	_	0	_	_	Offset=294-298
+3	30–60	_	Time	_	_	0	_	_	Offset=303-316
+
+# sent_id = s4
+# text = Incubate at 37°C for 30–60 minutes.
+1	Stop	_	Action	_	_	0	_	_	Offset=318-322
+2	reaction	_	Method	_	_	0	_	_	Offset=323-331
+3	heat-inactivation	_	Action	_	_	0	_	_	Offset=335-352
+4	rSAP	_	Reagent	_	_	0	_	_	Offset=356-360
+5	restriction	_	Reagent	_	_	0	_	_	Offset=365-383
+

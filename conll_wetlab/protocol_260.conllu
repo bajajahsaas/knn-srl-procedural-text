@@ -1,0 +1,176 @@
+# sent_id = s1
+# text = DNA/RNA Extractions from Sterivex Filters
+1	Thaw	_	Action	_	_	0	_	_	Offset=42-46
+2	sterivex	_	Device	_	_	0	_	_	Offset=47-63
+3	ice	_	Location	_	_	0	_	_	Offset=67-70
+
+# sent_id = s2
+# text = Thaw sterivex filters on ice.
+1	Add	_	Action	_	_	0	_	_	Offset=72-75
+2	40µL	_	Amount	_	_	3	Measure	_	Offset=76-80
+3	lysozyme	_	Reagent	_	_	0	_	_	Offset=81-98
+4	add	_	Action	_	_	0	_	_	Offset=100-103
+5	2	_	Amount	_	_	6	Measure	_	Offset=104-108
+6	lysozyme	_	Reagent	_	_	0	_	_	Offset=109-117
+7	40	_	Amount	_	_	8	Measure	_	Offset=121-126
+8	Lysis	_	Reagent	_	_	0	_	_	Offset=127-139
+
+# sent_id = s3
+# text = Add 40µL lysozyme solution (add 2 mg lysozyme to 40 µl Lysis Buffer) to filter.
+1	Incubate	_	Action	_	_	0	_	_	Offset=152-160
+2	37°C	_	Temperature	_	_	0	_	_	Offset=164-168
+3	rotating	_	Action	_	_	0	_	_	Offset=175-183
+4	45	_	Time	_	_	0	_	_	Offset=188-198
+
+# sent_id = s4
+# text = Incubate at 37°C while rotating for 45 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=200-203
+2	100µL	_	Amount	_	_	3	Measure	_	Offset=204-209
+3	Proteinase	_	Reagent	_	_	0	_	_	Offset=210-231
+4	1mg	_	Amount	_	_	5	Measure	_	Offset=233-236
+5	Proteinase	_	Reagent	_	_	0	_	_	Offset=237-249
+6	100	_	Amount	_	_	7	Measure	_	Offset=253-259
+7	Lysis	_	Reagent	_	_	0	_	_	Offset=260-272
+8	100µL	_	Amount	_	_	10	Measure	_	Offset=278-283
+9	20%	_	Concentration	_	_	10	Measure	_	Offset=284-287
+10	SDS	_	Reagent	_	_	0	_	_	Offset=288-291
+
+# sent_id = s5
+# text = Add 100µL Proteinase K solution (1mg Proteinase K in 100 µl Lysis Buffer) and 100µL 20% SDS.
+1	Incubate	_	Action	_	_	0	_	_	Offset=293-301
+2	55°C	_	Temperature	_	_	0	_	_	Offset=305-309
+3	rotating	_	Action	_	_	0	_	_	Offset=316-324
+4	2	_	Time	_	_	0	_	_	Offset=329-336
+
+# sent_id = s6
+# text = Incubate at 55°C while rotating for 2 hours.
+1	Transfer	_	Action	_	_	0	_	_	Offset=338-346
+2	lysate	_	Reagent	_	_	0	_	_	Offset=347-353
+3	15	_	Amount	_	_	4	Measure	_	Offset=359-364
+4	conical	_	Location	_	_	0	_	_	Offset=365-377
+5	sterile	_	Modifier	_	_	7	Mod-Link	_	Offset=386-393
+6	3	_	Amount	_	_	7	Setting	_	Offset=394-398
+7	syringe	_	Device	_	_	0	_	_	Offset=399-406
+
+# sent_id = s7
+# text = Transfer lysate to a 15 mL conical tube using a sterile 3 mL syringe.
+1	Add	_	Action	_	_	0	_	_	Offset=408-411
+2	1	_	Amount	_	_	3	Measure	_	Offset=412-416
+3	Lysis	_	Reagent	_	_	0	_	_	Offset=417-429
+4	wash	_	Action	_	_	0	_	_	Offset=444-448
+5	55°C	_	Temperature	_	_	0	_	_	Offset=452-456
+6	15	_	Time	_	_	0	_	_	Offset=461-471
+
+# sent_id = s8
+# text = Add 1 mL Lysis Buffer to filter and wash at 55°C for 15 minutes.
+1	Pool	_	Action	_	_	0	_	_	Offset=473-477
+2	above	_	Modifier	_	_	3	Mod-Link	_	Offset=483-488
+3	lysate	_	Reagent	_	_	0	_	_	Offset=489-495
+
+# sent_id = s9
+# text = Pool with above lysate.
+1	Add	_	Action	_	_	0	_	_	Offset=497-500
+2	3	_	Amount	_	_	3	Measure	_	Offset=501-505
+3	Phenol:Chloroform:IAA	_	Reagent	_	_	0	_	_	Offset=506-527
+4	25:24:1	_	Generic-Measure	_	_	3	Measure	_	Offset=529-536
+5	pH	_	pH	_	_	3	Measure	_	Offset=538-544
+
+# sent_id = s10
+# text = Add 3 mL Phenol:Chloroform:IAA (25:24:1; pH 8.0).
+1	Vortex	_	Action	_	_	0	_	_	Offset=547-553
+2	10	_	Time	_	_	0	_	_	Offset=558-568
+
+# sent_id = s11
+# text = Vortex for 10 seconds.
+1	Spin	_	Action	_	_	0	_	_	Offset=570-574
+2	5	_	Time	_	_	0	_	_	Offset=579-588
+3	2500g	_	Speed	_	_	0	_	_	Offset=592-597
+
+# sent_id = s12
+# text = Spin for 5 minutes at 2500g (speed 8).
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=609-618
+2	transfer	_	Action	_	_	0	_	_	Offset=619-627
+3	aqueous	_	Reagent	_	_	0	_	_	Offset=628-641
+4	new	_	Modifier	_	_	6	Mod-Link	_	Offset=647-650
+5	15	_	Amount	_	_	6	Measure	_	Offset=651-656
+6	conical	_	Location	_	_	0	_	_	Offset=657-669
+
+# sent_id = s13
+# text = Carefully transfer aqueous phase to a new 15 mL conical tube.
+1	Add	_	Action	_	_	0	_	_	Offset=671-674
+2	3	_	Amount	_	_	3	Measure	_	Offset=675-679
+3	Chloroform:IAA	_	Reagent	_	_	0	_	_	Offset=680-694
+4	24:1	_	Generic-Measure	_	_	3	Measure	_	Offset=696-700
+5	Vortex	_	Action	_	_	0	_	_	Offset=702-708
+6	10	_	Time	_	_	0	_	_	Offset=713-723
+
+# sent_id = s14
+# text = Add 3 mL Chloroform:IAA (24:1) Vortex for 10 seconds.
+1	Spin	_	Action	_	_	0	_	_	Offset=725-729
+2	5	_	Time	_	_	0	_	_	Offset=734-743
+3	2500g	_	Speed	_	_	0	_	_	Offset=747-752
+
+# sent_id = s15
+# text = Spin for 5 minutes at 2500g (speed 8).
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=764-773
+2	transfer	_	Action	_	_	0	_	_	Offset=774-782
+3	aqueous	_	Reagent	_	_	0	_	_	Offset=783-796
+4	centricon	_	Device	_	_	0	_	_	Offset=802-815
+
+# sent_id = s16
+# text = Carefully transfer aqueous phase to a centricon 100.
+1	Spin	_	Action	_	_	0	_	_	Offset=883-887
+2	Centricon	_	Device	_	_	0	_	_	Offset=888-897
+3	1000xg	_	Speed	_	_	2	Setting	_	Offset=901-907
+4	20	_	Time	_	_	2	Setting	_	Offset=921-931
+
+# sent_id = s17
+# text = All of the remaining volume should be transferred to an epi tube.
+1	Add	_	Action	_	_	0	_	_	Offset=933-936
+2	remaining	_	Amount	_	_	0	_	_	Offset=937-953
+3	epi	_	Location	_	_	0	_	_	Offset=959-967
+4	centricon	_	Device	_	_	0	_	_	Offset=971-980
+
+# sent_id = s18
+# text = Spin Centricon at 1000xg (speed4) for 20 minutes.
+1	Spin	_	Action	_	_	0	_	_	Offset=982-986
+2	100µL	_	Amount	_	_	3	Measure	_	Offset=998-1011
+3	aqueous	_	Reagent	_	_	0	_	_	Offset=1015-1028
+4	is	_	Action	_	_	0	_	_	Offset=1029-1036
+5	Centricon	_	Device	_	_	0	_	_	Offset=1040-1049
+
+# sent_id = s19
+# text = Add remaining volume from epi tube to centricon.
+1	Add	_	Action	_	_	0	_	_	Offset=1051-1054
+2	1	_	Amount	_	_	3	Measure	_	Offset=1055-1059
+3	TE	_	Reagent	_	_	0	_	_	Offset=1060-1069
+4	Repeat	_	Action	_	_	0	_	_	Offset=1070-1076
+5	step	_	Method	_	_	0	_	_	Offset=1077-1084
+
+# sent_id = s20
+# text = Spin until only 100µL - 500µL of aqueous phase is left in Centricon.
+1	Spin	_	Action	_	_	0	_	_	Offset=1086-1090
+2	100	_	Amount	_	_	0	_	_	Offset=1102-1117
+3	left	_	Action	_	_	0	_	_	Offset=1118-1122
+4	Centricon	_	Device	_	_	0	_	_	Offset=1126-1135
+
+# sent_id = s21
+# text = Add 1 mL TE Buffer Repeat step 20.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=1137-1146
+2	remove	_	Action	_	_	0	_	_	Offset=1147-1153
+3	liquid	_	Reagent	_	_	0	_	_	Offset=1154-1160
+4	without	_	Action	_	_	0	_	_	Offset=1161-1177
+5	membrane	_	Reagent	_	_	0	_	_	Offset=1182-1190
+
+# sent_id = s22
+# text = Spin until only 100 µL - 150 µL left in Centricon.
+1	Wash	_	Action	_	_	0	_	_	Offset=1192-1196
+2	membrane	_	Reagent	_	_	0	_	_	Offset=1197-1205
+3	well	_	Modifier	_	_	0	_	_	Offset=1206-1210
+4	40µL	_	Amount	_	_	5	Measure	_	Offset=1216-1220
+5	TE	_	Reagent	_	_	0	_	_	Offset=1224-1233
+6	Pool	_	Action	_	_	0	_	_	Offset=1234-1238
+7	membrane	_	Reagent	_	_	0	_	_	Offset=1243-1251
+8	same	_	Modifier	_	_	9	Mod-Link	_	Offset=1259-1263
+9	epi	_	Location	_	_	0	_	_	Offset=1264-1272
+

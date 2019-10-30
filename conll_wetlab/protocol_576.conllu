@@ -1,0 +1,105 @@
+# sent_id = s1
+# text = MojoSort™ Human CD4 Memory T Cells Isolation Kit Protocol
+1	Place	_	Action	_	_	0	_	_	Offset=58-63
+2	tube	_	Location	_	_	0	_	_	Offset=68-72
+3	magnet	_	Location	_	_	0	_	_	Offset=80-86
+4	5	_	Time	_	_	0	_	_	Offset=91-100
+
+# sent_id = s2
+# text = Place the tube in the magnet for 5 minutes.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=102-111
+2	cells	_	Reagent	_	_	0	_	_	Offset=116-121
+3	3	_	Amount	_	_	4	Measure	_	Offset=125-129
+4	MojoSort™	_	Reagent	_	_	0	_	_	Offset=133-149
+
+# sent_id = s3
+# text = Resuspend the cells in 3 mL of MojoSort™ Buffer.
+1	Prepare	_	Action	_	_	0	_	_	Offset=296-303
+2	cells	_	Reagent	_	_	0	_	_	Offset=304-309
+3	tissue	_	Reagent	_	_	0	_	_	Offset=320-338
+4	without	_	Modifier	_	_	0	_	_	Offset=339-366
+
+# sent_id = s4
+# text = Note: If you observe aggregates, filter the suspension.
+1	In	_	Modifier	_	_	0	_	_	Offset=368-412
+2	resuspend	_	Action	_	_	0	_	_	Offset=414-423
+3	cells	_	Reagent	_	_	0	_	_	Offset=428-433
+4	MojoSort™	_	Reagent	_	_	0	_	_	Offset=437-453
+5	adding	_	Action	_	_	0	_	_	Offset=457-463
+6	4mL	_	Amount	_	_	4	Measure	_	Offset=470-473
+7	12	_	Size	_	_	8	Measure	_	Offset=485-495
+8	polystyrene	_	Location	_	_	0	_	_	Offset=497-513
+
+# sent_id = s5
+# text = To maximize yield, you can disrupt the aggregates by pipetting the solution up and down.
+1	Filter	_	Action	_	_	0	_	_	Offset=576-582
+2	cells	_	Reagent	_	_	0	_	_	Offset=587-592
+3	70	_	Size	_	_	4	Measure	_	Offset=600-605
+4	cell	_	Device	_	_	0	_	_	Offset=606-619
+5	centrifuge	_	Action	_	_	0	_	_	Offset=621-631
+6	300	_	Speed	_	_	0	_	_	Offset=635-642
+7	5	_	Time	_	_	0	_	_	Offset=647-656
+8	resuspend	_	Action	_	_	0	_	_	Offset=662-671
+9	MojoSort™	_	Reagent	_	_	0	_	_	Offset=699-715
+
+# sent_id = s6
+# text = Prepare cells from your tissue of interest without lysing erythrocytes.
+1	Count	_	Action	_	_	0	_	_	Offset=717-722
+2	adjust	_	Action	_	_	0	_	_	Offset=727-733
+3	cell	_	Measure-Type	_	_	0	_	_	Offset=738-756
+4	1	_	Concentration	_	_	0	_	_	Offset=760-776
+
+# sent_id = s7
+# text = In the final wash of your sample preparation, resuspend the cells in MojoSort™ Buffer by adding up to 4mL in a 5 mL (12 x 75 mm) polystyrene tube.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=778-785
+2	100	_	Amount	_	_	3	Measure	_	Offset=786-792
+3	cell	_	Reagent	_	_	0	_	_	Offset=796-811
+4	new	_	Modifier	_	_	5	Mod-Link	_	Offset=831-834
+5	tube	_	Location	_	_	0	_	_	Offset=835-839
+
+# sent_id = s8
+# text = Note: Keep MojoSort™ Buffer on ice throughout the procedure.
+1	Add	_	Action	_	_	0	_	_	Offset=841-844
+2	10	_	Amount	_	_	3	Measure	_	Offset=845-850
+3	Biotin-Antibody	_	Reagent	_	_	0	_	_	Offset=858-882
+4	mix	_	Action	_	_	0	_	_	Offset=883-886
+5	well	_	Modifier	_	_	0	_	_	Offset=887-891
+6	incubate	_	Action	_	_	0	_	_	Offset=896-904
+7	on	_	Location	_	_	0	_	_	Offset=905-911
+8	15	_	Time	_	_	0	_	_	Offset=916-926
+
+# sent_id = s9
+# text = Filter the cells with a 70 μm cell strainer, centrifuge at 300 x g for 5 minutes, and resuspend in anappropriate volume of MojoSort™ Buffer.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1208-1217
+2	beads	_	Reagent	_	_	0	_	_	Offset=1222-1227
+3	vortexing	_	Action	_	_	0	_	_	Offset=1231-1240
+4	maximum	_	Speed	_	_	0	_	_	Offset=1242-1255
+5	5	_	Generic-Measure	_	_	0	_	_	Offset=1257-1266
+
+# sent_id = s10
+# text = Count and adjust the cell concentration to 1 x 108 cells/mL.
+1	Add	_	Action	_	_	0	_	_	Offset=1268-1271
+2	10	_	Amount	_	_	3	Measure	_	Offset=1272-1277
+3	Streptavidin	_	Reagent	_	_	0	_	_	Offset=1281-1303
+
+# sent_id = s11
+# text = Aliquot 100 μL of cell suspension (107 cells) into a new tube.
+1	Mix	_	Action	_	_	0	_	_	Offset=1305-1308
+2	well	_	Modifier	_	_	0	_	_	Offset=1309-1313
+3	incubate	_	Action	_	_	0	_	_	Offset=1318-1326
+4	on	_	Location	_	_	0	_	_	Offset=1327-1333
+5	15	_	Time	_	_	0	_	_	Offset=1338-1348
+
+# sent_id = s12
+# text = Add 10 μL of the Biotin-Antibody Cocktail,mix well and incubate on ice for 15 minutes.
+1	Wash	_	Action	_	_	0	_	_	Offset=1527-1531
+2	cells	_	Reagent	_	_	0	_	_	Offset=1536-1541
+3	adding	_	Action	_	_	0	_	_	Offset=1545-1551
+4	3	_	Amount	_	_	5	Measure	_	Offset=1552-1556
+5	MojoSort™	_	Reagent	_	_	0	_	_	Offset=1560-1576
+6	centrifuge	_	Action	_	_	0	_	_	Offset=1578-1588
+7	300	_	Speed	_	_	0	_	_	Offset=1592-1599
+8	5	_	Time	_	_	0	_	_	Offset=1604-1613
+9	discard	_	Action	_	_	0	_	_	Offset=1615-1622
+10	supernatant	_	Reagent	_	_	0	_	_	Offset=1622-1633
+

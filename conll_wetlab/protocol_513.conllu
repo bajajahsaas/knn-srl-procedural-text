@@ -1,0 +1,162 @@
+# sent_id = s1
+# text = MojoSort™ Human CD4 T Cell Selection Protocol
+1	Prepare	_	Action	_	_	0	_	_	Offset=46-53
+2	cells	_	Reagent	_	_	0	_	_	Offset=54-59
+
+# sent_id = s2
+# text = Prepare cells from your tissue of interest without lysing erythrocytes.
+1	resuspend	_	Action	_	_	0	_	_	Offset=164-173
+2	cells	_	Reagent	_	_	0	_	_	Offset=178-183
+3	MojoSort™	_	Reagent	_	_	0	_	_	Offset=187-203
+4	4mL	_	Amount	_	_	3	Measure	_	Offset=220-223
+5	5	_	Size	_	_	6	Measure	_	Offset=229-246
+6	polystyrene	_	Location	_	_	0	_	_	Offset=247-263
+
+# sent_id = s3
+# text = In the final wash of your sample preparation, resuspend the cells in MojoSort™ Buffer by adding up to 4mL in a 5 mL (12 x 75 mm) polystyrene tube.
+1	Keep	_	Action	_	_	0	_	_	Offset=271-275
+2	MojoSort™	_	Reagent	_	_	0	_	_	Offset=276-292
+3	ice	_	Temperature	_	_	0	_	_	Offset=296-299
+
+# sent_id = s4
+# text = Note: Keep MojoSort™ Buffer on ice throughout the procedure.
+1	Filter	_	Action	_	_	0	_	_	Offset=326-332
+2	cells	_	Reagent	_	_	0	_	_	Offset=337-342
+3	70	_	Size	_	_	4	Setting	_	Offset=350-355
+4	cell	_	Device	_	_	0	_	_	Offset=356-369
+5	centrifuge	_	Action	_	_	0	_	_	Offset=371-381
+6	300	_	Speed	_	_	0	_	_	Offset=385-392
+7	5	_	Time	_	_	0	_	_	Offset=397-406
+8	resuspend	_	Action	_	_	0	_	_	Offset=412-421
+9	appropriate	_	Generic-Measure	_	_	10	Measure	_	Offset=427-445
+10	MojoSort™	_	Reagent	_	_	0	_	_	Offset=449-465
+
+# sent_id = s5
+# text = Filter the cells with a 70 μm cell strainer, centrifuge at 300 x g for 5 minutes, and resuspend in anappropriate volume of MojoSort™ Buffer.
+1	Count	_	Action	_	_	0	_	_	Offset=467-472
+2	adjust	_	Action	_	_	0	_	_	Offset=477-483
+3	cell	_	Reagent	_	_	0	_	_	Offset=488-492
+4	concentration	_	Measure-Type	_	_	0	_	_	Offset=493-506
+5	1	_	Concentration	_	_	3	Measure	_	Offset=510-526
+
+# sent_id = s6
+# text = Count and adjust the cell concentration to 1 x 108 cells/mL.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=528-535
+2	100	_	Amount	_	_	3	Measure	_	Offset=536-542
+3	cell	_	Reagent	_	_	0	_	_	Offset=546-561
+4	new	_	Location	_	_	0	_	_	Offset=581-589
+
+# sent_id = s7
+# text = Aliquot 100 μL of cell suspension (107 cells) into a new tube.
+1	Add	_	Action	_	_	0	_	_	Offset=591-594
+2	5	_	Amount	_	_	3	Measure	_	Offset=595-599
+3	biotin	_	Reagent	_	_	0	_	_	Offset=607-638
+4	mix	_	Action	_	_	0	_	_	Offset=640-643
+5	well	_	Modifier	_	_	0	_	_	Offset=644-648
+6	incubate	_	Action	_	_	0	_	_	Offset=653-661
+7	ice	_	Temperature	_	_	0	_	_	Offset=665-668
+8	15	_	Time	_	_	0	_	_	Offset=673-683
+
+# sent_id = s8
+# text = Add 5 μL of the biotin anti-human CD14 antibody, mix well and incubate on ice for 15 minutes.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=941-950
+2	Streptavidin	_	Reagent	_	_	0	_	_	Offset=955-977
+3	vortexing	_	Method	_	_	0	_	_	Offset=981-990
+4	maximum	_	Generic-Measure	_	_	0	_	_	Offset=992-1005
+5	5	_	Numerical	_	_	0	_	_	Offset=1007-1016
+
+# sent_id = s9
+# text = Scale up the volume accordingly if separatingmore cells.
+1	add	_	Action	_	_	0	_	_	Offset=1035-1038
+2	10	_	Amount	_	_	3	Measure	_	Offset=1039-1044
+3	Nanobeads	_	Reagent	_	_	0	_	_	Offset=1048-1057
+4	mix	_	Action	_	_	0	_	_	Offset=1059-1062
+5	well	_	Modifier	_	_	0	_	_	Offset=1063-1067
+6	incubate	_	Action	_	_	0	_	_	Offset=1072-1080
+7	ice	_	Temperature	_	_	0	_	_	Offset=1084-1087
+8	15	_	Temperature	_	_	0	_	_	Offset=1092-1102
+
+# sent_id = s10
+# text = For example, add 50 μL for 1 x 108 cells.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1281-1290
+2	cells	_	Reagent	_	_	0	_	_	Offset=1295-1300
+3	3	_	Amount	_	_	4	Measure	_	Offset=1304-1308
+4	MojoSort™	_	Reagent	_	_	0	_	_	Offset=1312-1328
+
+# sent_id = s11
+# text = When working with less than 107 cells, use indicatedvolumes for 107 cells.
+1	Place	_	Action	_	_	0	_	_	Offset=1330-1335
+2	tube	_	Location	_	_	0	_	_	Offset=1340-1344
+3	magnet	_	Device	_	_	0	_	_	Offset=1352-1358
+4	5	_	Time	_	_	0	_	_	Offset=1363-1372
+
+# sent_id = s12
+# text = Optional: Take an aliquot before adding the antibody to monitor purity and yield.
+1	Collect	_	Action	_	_	0	_	_	Offset=1374-1381
+2	liquid	_	Reagent	_	_	0	_	_	Offset=1386-1392
+3	new	_	Location	_	_	0	_	_	Offset=1398-1406
+
+# sent_id = s13
+# text = Resuspend the Streptavidin Nanobeads by vortexing, maximum speed, 5 touches.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1465-1475
+2	300	_	Speed	_	_	0	_	_	Offset=1479-1486
+3	5	_	Time	_	_	0	_	_	Offset=1491-1500
+
+# sent_id = s14
+# text = Without washing, add 10 μL of Nanobeads, mix well and incubate on ice for 15 minutes.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1523-1532
+2	flicking	_	Method	_	_	0	_	_	Offset=1536-1544
+3	100	_	Amount	_	_	4	Measure	_	Offset=1551-1557
+4	MojoSort™	_	Reagent	_	_	2	Or	_	Offset=1561-1577
+
+# sent_id = s15
+# text = Scale up the volume accordingly if separating more cells; for example, add 100 μL for 1 x 108 cells.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1579-1588
+2	CD4	_	Reagent	_	_	0	_	_	Offset=1593-1606
+3	vortexing	_	Method	_	_	0	_	_	Offset=1610-1619
+4	maximum	_	Generic-Measure	_	_	0	_	_	Offset=1621-1634
+5	5	_	Numerical	_	_	0	_	_	Offset=1636-1645
+
+# sent_id = s16
+# text = When working with less than 107 cells, use indicated volumes for 107 cells.
+1	Add	_	Action	_	_	0	_	_	Offset=1647-1650
+2	10	_	Amount	_	_	3	Measure	_	Offset=1651-1656
+3	Nanobeads	_	Reagent	_	_	0	_	_	Offset=1660-1669
+4	mix	_	Action	_	_	0	_	_	Offset=1671-1674
+5	well	_	Modifier	_	_	0	_	_	Offset=1675-1679
+6	incubate	_	Action	_	_	0	_	_	Offset=1684-1692
+7	ice	_	Temperature	_	_	0	_	_	Offset=1696-1699
+8	15	_	Time	_	_	0	_	_	Offset=1704-1714
+
+# sent_id = s17
+# text = Resuspend the cells in 3 mL of MojoSort™ Buffer.
+1	Add	_	Action	_	_	0	_	_	Offset=1896-1899
+2	3	_	Amount	_	_	3	Measure	_	Offset=1900-1904
+3	MojoSort™	_	Reagent	_	_	0	_	_	Offset=1908-1924
+
+# sent_id = s18
+# text = Place the tube in the magnet for 5 minutes.
+1	Place	_	Action	_	_	0	_	_	Offset=1926-1931
+2	tube	_	Location	_	_	0	_	_	Offset=1936-1940
+3	magnet	_	Device	_	_	0	_	_	Offset=1948-1954
+4	5	_	Time	_	_	0	_	_	Offset=1959-1968
+
+# sent_id = s19
+# text = Collect the liquid in a new tube.
+1	Pour	_	Action	_	_	0	_	_	Offset=1970-1978
+2	liquid	_	Reagent	_	_	0	_	_	Offset=1983-1989
+
+# sent_id = s20
+# text = This fraction contains the CD4+ T Cells; DO NOT DISCARD.
+1	Recover	_	Action	_	_	0	_	_	Offset=1991-1998
+2	tube	_	Location	_	_	0	_	_	Offset=2003-2007
+3	resuspend	_	Action	_	_	0	_	_	Offset=2012-2021
+4	cells	_	Reagent	_	_	0	_	_	Offset=2026-2031
+5	appropriate	_	Generic-Measure	_	_	6	Measure	_	Offset=2035-2053
+6	buffer	_	Reagent	_	_	0	_	_	Offset=2057-2063
+
+# sent_id = s21
+# text = Centrifuge at 300 x g for 5 minutes, discard supernatant.
+1	Repeat	_	Action	_	_	0	_	_	Offset=2093-2099
+2	2	_	Numerical	_	_	0	_	_	Offset=2138-2150
+

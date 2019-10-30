@@ -1,0 +1,142 @@
+# sent_id = s1
+# text = Immunofluorescent Staining of Foxp3 in Frozen Sections
+1	Thaw	_	Action	_	_	0	_	_	Offset=55-59
+2	frozen	_	Modifier	_	_	3	Mod-Link	_	Offset=60-66
+3	sections	_	Reagent	_	_	0	_	_	Offset=67-75
+4	sealed	_	Modifier	_	_	5	Mod-Link	_	Offset=81-87
+5	environment	_	Location	_	_	0	_	_	Offset=88-99
+6	Approximately	_	Modifier	_	_	7	Mod-Link	_	Offset=142-155
+7	1	_	Time	_	_	0	_	_	Offset=156-162
+
+# sent_id = s2
+# text = Thaw frozen sections in a sealed environment to avoid damage by frozen watercrystals. (Approximately 1 hour.)
+1	Fix	_	Action	_	_	0	_	_	Offset=165-168
+2	5	_	Time	_	_	0	_	_	Offset=173-182
+3	acetone	_	Reagent	_	_	0	_	_	Offset=186-193
+4	-20°C	_	Temperature	_	_	0	_	_	Offset=195-200
+
+# sent_id = s3
+# text = Fix for 5 minutes in acetone (-20°C) (note: do not use more often than 5 times).
+1	Dry	_	Action	_	_	0	_	_	Offset=246-249
+2	10	_	Time	_	_	0	_	_	Offset=254-264
+3	room	_	Temperature	_	_	0	_	_	Offset=268-284
+
+# sent_id = s4
+# text = Dry for 10 minutes at room temperature.
+1	Incubate	_	Action	_	_	0	_	_	Offset=286-294
+2	sections	_	Reagent	_	_	0	_	_	Offset=295-303
+3	TBS-T	_	Reagent	_	_	0	_	_	Offset=307-312
+4	50	_	Amount	_	_	5	Measure	_	Offset=314-319
+5	Tris	_	Reagent	_	_	0	_	_	Offset=320-324
+6	150	_	Amount	_	_	7	Measure	_	Offset=326-332
+7	NaCl	_	Reagent	_	_	0	_	_	Offset=333-337
+8	adjust	_	Action	_	_	0	_	_	Offset=339-345
+9	364	_	pH	_	_	0	_	_	Offset=346-348;361
+10	HCl	_	Reagent	_	_	0	_	_	Offset=354-357
+11	0.05%	_	Concentration	_	_	12	Measure	_	Offset=370-375
+12	Tween	_	Reagent	_	_	0	_	_	Offset=376-384
+13	15	_	Time	_	_	0	_	_	Offset=390-400
+
+# sent_id = s5
+# text = Incubate sections in TBS-T (50 mM Tris, 150 mM NaCl, adjust pH with HCl to 7.6 with 0.05% Tween 20) for 15 minutes.
+1	Perform	_	Action	_	_	0	_	_	Offset=416-423
+2	antigen	_	Method	_	_	0	_	_	Offset=424-441
+3	enzyme	_	Method	_	_	2	Or	_	Offset=445-461
+
+# sent_id = s6
+# text = Pretreatment: Perform antigen retrieval or enzyme digestion if needed.
+1	Wash	_	Action	_	_	0	_	_	Offset=473-477
+2	twice	_	Numerical	_	_	0	_	_	Offset=478-483
+3	2	_	Time	_	_	0	_	_	Offset=488-497
+4	each	_	Modifier	_	_	3	Mod-Link	_	Offset=498-502
+5	TBS-T	_	Reagent	_	_	0	_	_	Offset=508-513
+6	staining	_	Method	_	_	0	_	_	Offset=525-551
+7	performed	_	Action	_	_	0	_	_	Offset=559-568
+
+# sent_id = s7
+# text = Wash twice for 2 minutes each with TBS-T (Optional: staining of surface marker can be performed before “Cleaning” step)
+1	Incubate	_	Action	_	_	0	_	_	Offset=603-611
+2	sections	_	Reagent	_	_	0	_	_	Offset=612-620
+3	1%	_	Concentration	_	_	4	Measure	_	Offset=626-628
+4	Triton	_	Reagent	_	_	0	_	_	Offset=629-641
+5	diluted	_	Action	_	_	0	_	_	Offset=642-649
+6	TBS	_	Reagent	_	_	0	_	_	Offset=653-656
+7	30	_	Time	_	_	0	_	_	Offset=661-671
+8	room	_	Temperature	_	_	0	_	_	Offset=675-691
+
+# sent_id = s8
+# text = Cleaning: Incubate sections with 1% Triton X-100 diluted in TBS for 30 minutes at room temperature.
+1	incubate	_	Action	_	_	0	_	_	Offset=869-877
+2	sections	_	Reagent	_	_	0	_	_	Offset=878-886
+3	directly	_	Modifier	_	_	0	_	_	Offset=887-895
+4	5%	_	Concentration	_	_	5	Measure	_	Offset=901-903
+5	normal	_	Reagent	_	_	0	_	_	Offset=904-951
+6	30	_	Time	_	_	0	_	_	Offset=956-966
+7	room	_	Temperature	_	_	0	_	_	Offset=970-986
+
+# sent_id = s9
+# text = This step will help to reduce background staining (longer incubationmay be more effective, especially for sections thicker than 10 μm).
+1	Wash	_	Action	_	_	0	_	_	Offset=1077-1081
+2	three	_	Numerical	_	_	0	_	_	Offset=1082-1093
+3	2	_	Time	_	_	0	_	_	Offset=1098-1107
+4	each	_	Modifier	_	_	3	Mod-Link	_	Offset=1108-1112
+5	TBS-T	_	Reagent	_	_	0	_	_	Offset=1118-1123
+
+# sent_id = s10
+# text = Normal Serum Blocking: Without washing, incubate sections directly with 5% normal mouse/rat/rabbit serum blocking solution for 30 minutes at room temperature.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1157-1165
+2	sections	_	Reagent	_	_	0	_	_	Offset=1166-1174
+3	3%	_	Concentration	_	_	4	Measure	_	Offset=1180-1182
+4	H2O2	_	Reagent	_	_	0	_	_	Offset=1183-1187
+5	TBS	_	Reagent	_	_	0	_	_	Offset=1191-1194
+6	10	_	Time	_	_	0	_	_	Offset=1199-1209
+
+# sent_id = s11
+# text = Note: Normal serum should be the same species of which the secondary antibody is raised.
+1	Wash	_	Action	_	_	0	_	_	Offset=1308-1312
+2	3	_	Numerical	_	_	0	_	_	Offset=1313-1320
+3	2	_	Time	_	_	0	_	_	Offset=1325-1334
+4	each	_	Modifier	_	_	3	Mod-Link	_	Offset=1335-1339
+5	TBS-T	_	Reagent	_	_	0	_	_	Offset=1345-1350
+
+# sent_id = s12
+# text = Wash three times for 2 minutes each with TBS-T.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1370-1378
+2	sections	_	Reagent	_	_	0	_	_	Offset=1379-1387
+3	primary	_	Reagent	_	_	0	_	_	Offset=1393-1409
+4	optimaldilution	_	Concentration	_	_	3	Measure	_	Offset=1417-1432
+5	antibodydilution	_	Reagent	_	_	0	_	_	Offset=1495-1518
+6	30-60	_	Time	_	_	0	_	_	Offset=1524-1537
+7	room	_	Temperature	_	_	0	_	_	Offset=1541-1557
+
+# sent_id = s13
+# text = Endogenous Peroxidase Blocking: Incubate sections with 3% H2O2 in TBS for 10 minutes to block endogenous peroxidise. (Recommended for liver sections, but optional for other tissues.)
+1	Using	_	Action	_	_	0	_	_	Offset=1565-1570
+2	purifiedunconjugated	_	Modifier	_	_	3	Mod-Link	_	Offset=1573-1593
+3	antibody	_	Reagent	_	_	0	_	_	Offset=1594-1602
+4	secondary	_	Reagent	_	_	0	_	_	Offset=1616-1633
+
+# sent_id = s14
+# text = Wash 3 times for 2 minutes each with TBS-T.
+1	Wash	_	Action	_	_	0	_	_	Offset=1682-1686
+2	twice	_	Numerical	_	_	0	_	_	Offset=1687-1692
+3	2	_	Time	_	_	0	_	_	Offset=1697-1706
+4	TBS-T	_	Reagent	_	_	0	_	_	Offset=1712-1717
+
+# sent_id = s15
+# text = Primary Antibody: Incubate sections with primary antibody at its optimaldilution (Mouse Foxp3-Alexa Fluor® 647, clone MF-14, cat # 126408) in “antibodydilution buffer“ for 30-60 minutes at room temperature.
+1	Counterstain	_	Action	_	_	0	_	_	Offset=1719-1731
+2	twice	_	Numerical	_	_	0	_	_	Offset=1732-1737
+3	3	_	Time	_	_	0	_	_	Offset=1742-1751
+4	each	_	Modifier	_	_	3	Mod-Link	_	Offset=1752-1756
+5	DAPI	_	Reagent	_	_	0	_	_	Offset=1762-1771
+6	twice	_	Numerical	_	_	0	_	_	Offset=1772-1777
+7	2	_	Time	_	_	0	_	_	Offset=1782-1791
+8	TBS-T	_	Reagent	_	_	0	_	_	Offset=1797-1802
+
+# sent_id = s16
+# text = Note: Using a purifiedunconjugated antibody along with a secondary reagent may improve staining due tosignal amplifcation.
+1	Coverslip	_	Action	_	_	0	_	_	Offset=1804-1813
+2	Mowiol	_	Reagent	_	_	0	_	_	Offset=1819-1825
+3	mounting	_	Reagent	_	_	2	Or	_	Offset=1829-1844
+

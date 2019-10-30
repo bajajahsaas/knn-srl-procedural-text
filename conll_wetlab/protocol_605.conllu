@@ -1,0 +1,86 @@
+# sent_id = s1
+# text = Monterey Wharf II Weekly Phytoplankton Monitoring Sample Collection and Processing. 
+1	vertical	_	Reagent	_	_	0	_	_	Offset=93-109
+2	collected	_	Action	_	_	0	_	_	Offset=113-122
+3	25µm	_	Size	_	_	4	Setting	_	Offset=131-135
+4	mesh	_	Device	_	_	0	_	_	Offset=136-153
+5	200mL	_	Amount	_	_	6	Measure	_	Offset=161-166
+6	cod-end	_	Reagent	_	_	0	_	_	Offset=167-180
+7	depth	_	Location	_	_	0	_	_	Offset=186-191
+8	5	_	Generic-Measure	_	_	7	Measure	_	Offset=195-198
+
+# sent_id = s2
+# text = Notes A vertical net tow is collected using a 25µm mesh plankton net with a 200mL cod-end piece at a depth of 5 m. 
+1	phytoplankton	_	Measure-Type	_	_	0	_	_	Offset=207-228
+2	estimated	_	Action	_	_	0	_	_	Offset=232-241
+3	in	_	Method	_	_	0	_	_	Offset=247-278
+4	dark	_	Modifier	_	_	6	Mod-Link	_	Offset=282-286
+5	adapted	_	Modifier	_	_	6	Mod-Link	_	Offset=287-294
+6	net	_	Device	_	_	0	_	_	Offset=295-298
+7	whole	_	Reagent	_	_	0	_	_	Offset=303-322
+8	calibrated	_	Modifier	_	_	9	Mod-Link	_	Offset=331-341
+9	Aquaflor	_	Device	_	_	0	_	_	Offset=342-362
+
+# sent_id = s3
+# text = Total phytoplankton biomass is estimated from in vivo chlorphyll fluorescence on dark adapted net and whole water samples using a calibrated Aquaflor fluorometer (Turner Designs).
+1	Vertical	_	Reagent	_	_	0	_	_	Offset=381-409
+2	collected	_	Action	_	_	0	_	_	Offset=414-423
+3	VanDorn	_	Device	_	_	0	_	_	Offset=432-439
+4	1m	_	Generic-Measure	_	_	0	_	_	Offset=452-454
+5	intervals	_	Modifier	_	_	4	Mod-Link	_	Offset=455-464
+6	integrated	_	Action	_	_	0	_	_	Offset=469-479
+7	5m	_	Generic-Measure	_	_	0	_	_	Offset=485-487
+
+# sent_id = s4
+# text = Vertical whole water samples are collected using a VanDorn at discreet 1m intervals and integrated over 5m.
+1	Species	_	Measure-Type	_	_	0	_	_	Offset=489-515
+2	assessed	_	Action	_	_	0	_	_	Offset=519-527
+3	microscopically	_	Method	_	_	0	_	_	Offset=528-543
+4	1%	_	Concentration	_	_	5	Measure	_	Offset=549-551
+5	glutaraldehyde	_	Reagent	_	_	0	_	_	Offset=552-584
+6	quantified	_	Action	_	_	0	_	_	Offset=585-595
+7	nanoplankton	_	Device	_	_	0	_	_	Offset=601-630
+
+# sent_id = s5
+# text = Species relative abundance is assessed microscopically from 1% glutaraldehyde preserved samples quantified on a nanoplankton counting chamber (Phycotech).
+1	Whole	_	Reagent	_	_	0	_	_	Offset=724-735
+2	passed	_	Action	_	_	0	_	_	Offset=739-745
+3	0.2	_	Size	_	_	4	Setting	_	Offset=756-762
+4	syringe	_	Device	_	_	0	_	_	Offset=763-777
+5	stored	_	Action	_	_	0	_	_	Offset=782-788
+6	-20°C	_	Time	_	_	0	_	_	Offset=792-797
+
+# sent_id = s6
+# text = The following samples are processed and archived for later analysis:
+1	50	_	Amount	_	_	2	Measure	_	Offset=814-820
+2	net	_	Reagent	_	_	0	_	_	Offset=828-842
+3	filtered	_	Action	_	_	0	_	_	Offset=847-855
+4	1.2µm	_	Size	_	_	5	Setting	_	Offset=864-869
+5	Isopore	_	Device	_	_	0	_	_	Offset=870-893
+6	extracted	_	Action	_	_	0	_	_	Offset=910-919
+7	Trizol	_	Reagent	_	_	0	_	_	Offset=925-931
+8	archived	_	Action	_	_	0	_	_	Offset=958-966
+9	-80°C	_	Temperature	_	_	0	_	_	Offset=970-975
+
+# sent_id = s7
+# text = Nutrients: Whole water is passed through a 0.2 µm syringe filter and stored at -20°C.
+1	50mLs	_	Amount	_	_	2	Measure	_	Offset=1002-1007
+2	net	_	Reagent	_	_	0	_	_	Offset=1015-1022
+3	filtered	_	Action	_	_	0	_	_	Offset=1027-1035
+4	2µm	_	Size	_	_	5	Setting	_	Offset=1044-1047
+5	Isopore	_	Device	_	_	0	_	_	Offset=1048-1071
+6	extracted	_	Action	_	_	0	_	_	Offset=1088-1097
+7	80%	_	Concentration	_	_	8	Measure	_	Offset=1103-1106
+8	Methanol	_	Reagent	_	_	0	_	_	Offset=1107-1115
+9	archived	_	Action	_	_	0	_	_	Offset=1129-1137
+10	-80°C	_	Temperature	_	_	0	_	_	Offset=1141-1146
+
+# sent_id = s8
+# text = Nucleic Acids: 50 mLs of the net tow sample are filtered through 1.2µm Isopore membrane filter (Millipore) and extracted into Trizol (Invitrogen) before being archived at -80°C.
+1	25mLs	_	Amount	_	_	2	Measure	_	Offset=1157-1162
+2	net	_	Reagent	_	_	0	_	_	Offset=1170-1177
+3	filtered	_	Action	_	_	0	_	_	Offset=1182-1190
+4	Glass	_	Device	_	_	0	_	_	Offset=1199-1223
+5	archived	_	Action	_	_	0	_	_	Offset=1238-1246
+6	-80°C	_	Temperature	_	_	0	_	_	Offset=1250-1255
+

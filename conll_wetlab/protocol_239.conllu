@@ -1,0 +1,156 @@
+# sent_id = s1
+# text = Titration of AmPure XP Beads for Removal of Fragments <400bp
+1	Label	_	Action	_	_	0	_	_	Offset=61-66
+2	11x1.5	_	Size	_	_	3	Measure	_	Offset=67-76
+3	tubes	_	Location	_	_	0	_	_	Offset=77-82
+4	40-45-50-55	_	Modifier	_	_	0	_	_	Offset=83-94
+
+# sent_id = s2
+# text = Label 11x1.5 ml tubes 40-45-50-55 etc.
+1	Mix	_	Action	_	_	0	_	_	Offset=132-135
+2	48μl	_	Amount	_	_	3	Measure	_	Offset=136-140
+3	NEB	_	Reagent	_	_	0	_	_	Offset=141-144
+4	100bp	_	Size	_	_	5	Setting	_	Offset=145-150
+5	ladder	_	Device	_	_	0	_	_	Offset=151-157
+6	1152μl	_	Amount	_	_	7	Measure	_	Offset=163-169
+7	Molecular	_	Reagent	_	_	0	_	_	Offset=170-192
+
+# sent_id = s3
+# text = to 90 (= ratio of beads to DNA) Mix 48μl NEB 100bp ladder with 1152μl Molecular Biology Water.
+1	Pipet	_	Action	_	_	0	_	_	Offset=195-200
+2	100μl	_	Amount	_	_	3	Measure	_	Offset=201-206
+3	mixture	_	Reagent	_	_	0	_	_	Offset=210-217
+4	each	_	Modifier	_	_	6	Mod-Link	_	Offset=223-227
+5	11	_	Numerical	_	_	6	Measure	_	Offset=235-237
+6	tubes	_	Location	_	_	0	_	_	Offset=238-243
+
+# sent_id = s4
+# text = Pipet 100μl of mixture into each of the 11 tubes.
+1	Vortex	_	Action	_	_	0	_	_	Offset=245-251
+2	bottle	_	Location	_	_	3	Meronym	_	Offset=252-258
+3	AmPure	_	Reagent	_	_	0	_	_	Offset=262-277
+4	dispense	_	Action	_	_	0	_	_	Offset=282-290
+5	800μl	_	Amount	_	_	3	Measure	_	Offset=291-296
+6	fresh	_	Location	_	_	0	_	_	Offset=302-312
+
+# sent_id = s5
+# text = Vortex bottle of AmPure XP beads and dispense 800μl into fresh tube.
+1	pipettor	_	Device	_	_	0	_	_	Offset=325-333
+2	pipet	_	Action	_	_	0	_	_	Offset=352-357
+3	volume	_	Amount	_	_	4	Measure	_	Offset=358-364
+4	beads	_	Reagent	_	_	0	_	_	Offset=368-373
+5	each	_	Modifier	_	_	6	Mod-Link	_	Offset=379-383
+6	tube	_	Location	_	_	0	_	_	Offset=384-388
+7	40μl	_	Amount	_	_	0	_	_	Offset=396-400
+8	tube	_	Location	_	_	0	_	_	Offset=406-410
+9	labled	_	Modifier	_	_	8	Mod-Link	_	Offset=411-420
+10	45μl	_	Amount	_	_	0	_	_	Offset=422-426
+11	tube	_	Location	_	_	0	_	_	Offset=432-436
+12	labed	_	Modifier	_	_	11	Mod-Link	_	Offset=437-445
+
+# sent_id = s6
+# text = Using same pipettor used for step #3, pipet volume of beads into each tube (i.e., 40μl into tube labled 40, 45μl into tube labed 45, etc.)
+1	Close	_	Action	_	_	0	_	_	Offset=453-458
+2	lids	_	Seal	_	_	0	_	_	Offset=459-463
+3	vortex	_	Action	_	_	0	_	_	Offset=465-471
+4	tubes	_	Location	_	_	0	_	_	Offset=472-477
+5	incubate	_	Action	_	_	0	_	_	Offset=482-490
+6	5	_	Time	_	_	0	_	_	Offset=491-500
+7	room	_	Temperature	_	_	0	_	_	Offset=504-520
+
+# sent_id = s7
+# text = Close lids, vortex tubes and incubate 5 minutes at room temperature.
+1	Place	_	Action	_	_	0	_	_	Offset=522-527
+2	tubes	_	Location	_	_	0	_	_	Offset=528-533
+3	MPC	_	Location	_	_	0	_	_	Offset=537-545
+4	581	_	Action	_	_	0	_	_	Offset=547-551;575
+5	5	_	Time	_	_	0	_	_	Offset=552-561
+6	beads	_	Reagent	_	_	0	_	_	Offset=566-571
+7	magnet	_	Location	_	_	0	_	_	Offset=585-596
+8	tubes	_	Location	_	_	7	Meronym	_	Offset=600-605
+
+# sent_id = s8
+# text = Place tubes in MPC rack; wait 5 minutes for beads to adhere to magnet side of tubes.
+1	Pipet	_	Action	_	_	0	_	_	Offset=607-616
+2	supers	_	Reagent	_	_	4	Coreference-Link	_	Offset=617-623
+3	discard	_	Action	_	_	0	_	_	Offset=628-635
+4	them	_	Mention	_	_	0	_	_	Offset=636-640
+
+# sent_id = s9
+# text = Pipet off supers and discard them.
+1	Wash	_	Action	_	_	0	_	_	Offset=642-646
+2	beads	_	Reagent	_	_	0	_	_	Offset=651-656
+3	2x	_	Numerical	_	_	0	_	_	Offset=657-659
+4	500μl	_	Amount	_	_	7	Measure	_	Offset=665-670
+5	each	_	Modifier	_	_	7	Mod-Link	_	Offset=671-675
+6	70%	_	Concentration	_	_	7	Measure	_	Offset=676-679
+7	ethanol	_	Reagent	_	_	0	_	_	Offset=680-687
+8	30	_	Time	_	_	0	_	_	Offset=693-702
+9	incubation	_	Action	_	_	0	_	_	Offset=703-713
+
+# sent_id = s10
+# text = Wash the beads 2x with 500μl each 70% ethanol with 30 second incubation.
+1	Remove	_	Action	_	_	0	_	_	Offset=715-721
+2	supers	_	Reagent	_	_	0	_	_	Offset=726-732
+3	tubes	_	Location	_	_	0	_	_	Offset=738-743
+
+# sent_id = s11
+# text = Remove all supers from tubes.
+1	Place	_	Action	_	_	0	_	_	Offset=745-750
+2	tubes	_	Location	_	_	3	Meronym	_	Offset=751-756
+3	caps	_	Seal	_	_	0	_	_	Offset=763-767
+4	open	_	Modifier	_	_	3	Mod-Link	_	Offset=768-772
+5	37°C	_	Temperature	_	_	0	_	_	Offset=779-783
+6	heat	_	Location	_	_	0	_	_	Offset=784-794
+7	dry	_	Action	_	_	0	_	_	Offset=798-801
+8	beads	_	Reagent	_	_	0	_	_	Offset=802-807
+9	evaporate	_	Action	_	_	0	_	_	Offset=809-818
+10	residual	_	Amount	_	_	11	Measure	_	Offset=819-827
+11	ethanol	_	Reagent	_	_	0	_	_	Offset=828-835
+
+# sent_id = s12
+# text = Place tubes (with caps open) into 37°C heat block to dry beads (evaporate residual ethanol).
+1	Add	_	Action	_	_	0	_	_	Offset=838-841
+2	10μl	_	Amount	_	_	3	Measure	_	Offset=842-846
+3	Qiagen	_	Reagent	_	_	0	_	_	Offset=847-856
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=860-864
+5	u	_	Location	_	_	0	_	_	Offset=866-867
+6	close	_	Action	_	_	0	_	_	Offset=871-876
+7	lids	_	Seal	_	_	0	_	_	Offset=877-881
+
+# sent_id = s13
+# text = Add 10μl Qiagen EB to each tube, close lids.
+1	Vortex	_	Action	_	_	0	_	_	Offset=883-889
+2	resuspend	_	Reagent	_	_	0	_	_	Offset=893-908
+
+# sent_id = s14
+# text = Vortex to resuspend beads.
+1	Place	_	Action	_	_	0	_	_	Offset=910-915
+2	tubes	_	Location	_	_	0	_	_	Offset=916-921
+3	MPC	_	Location	_	_	0	_	_	Offset=932-940
+4	961	_	Action	_	_	0	_	_	Offset=945-948;955
+5	beads	_	Reagent	_	_	0	_	_	Offset=949-954
+6	magnet	_	Location	_	_	0	_	_	Offset=965-977
+7	tubes	_	Location	_	_	6	Meronym	_	Offset=981-986
+
+# sent_id = s15
+# text = Place tubes back into MPC rack and let beads adhere to magnet sides of tubes.
+1	Pipet	_	Action	_	_	0	_	_	Offset=988-997
+2	supers	_	Reagent	_	_	3	Meronym	_	Offset=998-1004
+3	eluted	_	Reagent	_	_	0	_	_	Offset=1017-1027
+4	fresh	_	Location	_	_	0	_	_	Offset=1034-1045
+
+# sent_id = s16
+# text = Pipet off supers (containing eluted DNA) into fresh tubes.
+1	Run	_	Action	_	_	0	_	_	Offset=1047-1050
+2	samples	_	Reagent	_	_	0	_	_	Offset=1051-1058
+3	2%	_	Concentration	_	_	4	Measure	_	Offset=1062-1064
+4	agarose	_	Reagent	_	_	6	Meronym	_	Offset=1065-1076
+5	1x	_	Concentration	_	_	6	Measure	_	Offset=1078-1080
+6	TAE	_	Reagent	_	_	0	_	_	Offset=1081-1084
+7	5μl	_	Amount	_	_	8	Measure	_	Offset=1092-1095
+8	DNA	_	Reagent	_	_	0	_	_	Offset=1096-1099
+9	1μl	_	Amount	_	_	11	Measure	_	Offset=1104-1107
+10	6x	_	Concentration	_	_	11	Measure	_	Offset=1108-1110
+11	gel	_	Reagent	_	_	0	_	_	Offset=1111-1129
+

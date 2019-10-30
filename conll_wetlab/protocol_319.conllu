@@ -1,0 +1,53 @@
+# sent_id = s1
+# text = In vitro digestion of DNA with Cas9 Nuclease, S. pyogenes (M0386)
+1	Prepare	_	Action	_	_	0	_	_	Offset=66-73
+2	300nM	_	Concentration	_	_	3	Measure	_	Offset=74-79
+3	sgRNA	_	Reagent	_	_	0	_	_	Offset=80-85
+4	diluting	_	Action	_	_	0	_	_	Offset=89-97
+5	stock	_	Reagent	_	_	0	_	_	Offset=102-107
+6	nuclease-free	_	Modifier	_	_	7	Mod-Link	_	Offset=113-126
+7	water	_	Reagent	_	_	0	_	_	Offset=127-132
+8	ice	_	Location	_	_	0	_	_	Offset=136-139
+
+# sent_id = s2
+# text = Prepare 300nM sgRNA by diluting the stock with nuclease-free water on ice.
+1	Prepare	_	Action	_	_	0	_	_	Offset=141-148
+2	30nM	_	Concentration	_	_	3	Measure	_	Offset=149-153
+3	substrate	_	Reagent	_	_	0	_	_	Offset=154-167
+4	diluting	_	Action	_	_	0	_	_	Offset=201-209
+5	stock	_	Reagent	_	_	0	_	_	Offset=214-219
+6	nuclease-free	_	Modifier	_	_	7	Mod-Link	_	Offset=225-238
+7	water	_	Reagent	_	_	0	_	_	Offset=239-244
+8	ice	_	Location	_	_	0	_	_	Offset=248-251
+
+# sent_id = s3
+# text = Prepare 30nM substrate DNA with a single target sequence by diluting the stock with nuclease-free water on ice.
+1	Assemble	_	Action	_	_	0	_	_	Offset=253-261
+2	reaction	_	Reagent	_	_	0	_	_	Offset=266-274
+3	room	_	Temperature	_	_	0	_	_	Offset=278-294
+
+# sent_id = s4
+# text = Assemble the reaction at room temperature in the following order (total volume 30 µl). 
+1	Pre-incubate	_	Action	_	_	0	_	_	Offset=341-353
+2	10	_	Time	_	_	0	_	_	Offset=358-368
+3	37⁰C	_	Temperature	_	_	0	_	_	Offset=372-376
+
+# sent_id = s5
+# text = Pre-incubate for 10 minutes at 37⁰C. 
+1	Add	_	Action	_	_	0	_	_	Offset=379-382
+2	30nM	_	Concentration	_	_	3	Measure	_	Offset=383-387
+3	substrate	_	Reagent	_	_	0	_	_	Offset=388-401
+4	Mix	_	Action	_	_	0	_	_	Offset=402-405
+5	thoroughly	_	Modifier	_	_	0	_	_	Offset=406-416
+
+# sent_id = s6
+# text = Add 30nM substrate DNA Mix thoroughly.
+1	Incubate	_	Action	_	_	0	_	_	Offset=418-426
+2	37°C	_	Temperature	_	_	0	_	_	Offset=430-434
+3	1	_	Time	_	_	0	_	_	Offset=439-445
+
+# sent_id = s7
+# text = Incubate at 37°C for 1 hour.
+1	Proceed	_	Action	_	_	0	_	_	Offset=447-454
+2	fragment	_	Method	_	_	0	_	_	Offset=460-477
+

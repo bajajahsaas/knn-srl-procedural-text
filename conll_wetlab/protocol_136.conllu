@@ -1,0 +1,179 @@
+# sent_id = s1
+# text = Iron Chloride Precipitation of Viruses from Seawater
+1	Assemble	_	Action	_	_	0	_	_	Offset=53-61
+2	two	_	Numerical	_	_	3	Measure	_	Offset=62-65
+3	142mm	_	Device	_	_	0	_	_	Offset=66-88
+4	attach	_	Action	_	_	0	_	_	Offset=93-99
+5	filter	_	Device	_	_	0	_	_	Offset=104-120
+6	peristaltic	_	Location	_	_	0	_	_	Offset=126-142
+7	pressure	_	Device	_	_	0	_	_	Offset=150-164
+
+# sent_id = s2
+# text = Assemble two 142mm filtering towers and attach the filter apparatus to a peristaltic pump with a pressure gauge (maximum pressure = 15 psi).
+1	Pre-filter	_	Action	_	_	0	_	_	Offset=194-204
+2	20L	_	Amount	_	_	3	Measure	_	Offset=205-208
+3	seawater	_	Reagent	_	_	0	_	_	Offset=212-220
+4	150mm	_	Device	_	_	0	_	_	Offset=229-254
+
+# sent_id = s3
+# text = Pre-filter 20L of seawater using a 150mm Whatman GF/A filter.
+1	Filter	_	Action	_	_	0	_	_	Offset=256-262
+2	again	_	Modifier	_	_	0	_	_	Offset=263-268
+3	remove	_	Action	_	_	0	_	_	Offset=272-278
+4	bacteria	_	Reagent	_	_	0	_	_	Offset=279-287
+5	0.22um,	_	Device	_	_	0	_	_	Offset=296-340
+
+# sent_id = s4
+# text = Filter again to remove bacteria using a 0.22um, 142mm Millipore Express Plus filter.
+1	Treat	_	Action	_	_	0	_	_	Offset=341-346
+2	virus	_	Reagent	_	_	0	_	_	Offset=351-365
+3	FeCl3	_	Reagent	_	_	0	_	_	Offset=389-394
+4	precipitate	_	Action	_	_	0	_	_	Offset=398-409
+5	viruses	_	Reagent	_	_	0	_	_	Offset=414-421
+6	adding	_	Action	_	_	0	_	_	Offset=425-431
+7	1ml	_	Amount	_	_	8	Measure	_	Offset=432-435
+8	10g/L	_	Reagent	_	_	0	_	_	Offset=439-462
+9	each	_	Modifier	_	_	10	Mod-Link	11:Mod-Link	Offset=466-470
+10	20L	_	Amount	_	_	0	_	_	Offset=471-474
+11	filtrate	_	Reagent	_	_	0	_	_	Offset=478-486
+
+# sent_id = s5
+# text = Treat the virus fraction (0.22μm filtrate) with FeCl3 to precipitate the viruses by adding 1ml of 10g/L Fe Stock Solution to each 20L of filtrate.
+1	Shake	_	Action	_	_	0	_	_	Offset=488-493
+2	vigorously	_	Modifier	_	_	0	_	_	Offset=494-504
+3	1	_	Time	_	_	0	_	_	Offset=509-517
+
+# sent_id = s6
+# text = Shake vigorously for 1 minute.
+1	Add	_	Action	_	_	0	_	_	Offset=519-522
+2	additional	_	Modifier	_	_	4	Mod-Link	_	Offset=526-536
+3	1ml	_	Amount	_	_	4	Measure	_	Offset=537-540
+4	10g/L	_	Reagent	_	_	0	_	_	Offset=544-567
+5	each	_	Modifier	_	_	7	Mod-Link	_	Offset=571-575
+6	20L	_	Amount	_	_	7	Measure	_	Offset=576-579
+7	filtrate	_	Reagent	_	_	0	_	_	Offset=583-591
+
+# sent_id = s7
+# text = Add an additional 1ml of 10g/L Fe stock solution to each 20L of filtrate (for a total of 2ml Fe Stock Solution per 20L filtrate).
+1	Shake	_	Action	_	_	0	_	_	Offset=649-654
+2	vigorously	_	Modifier	_	_	0	_	_	Offset=655-665
+3	1	_	Time	_	_	0	_	_	Offset=670-678
+
+# sent_id = s8
+# text = Shake vigorously for 1 minute.
+1	FeCl3	_	Modifier	_	_	2	Mod-Link	_	Offset=688-701
+2	filtrate	_	Reagent	_	_	0	_	_	Offset=702-710
+3	sit	_	Action	_	_	0	_	_	Offset=711-714
+4	1	_	Time	_	_	0	_	_	Offset=719-725
+5	room	_	Temperature	_	_	0	_	_	Offset=729-745
+
+# sent_id = s9
+# text = Let the FeCl3 treated filtrate sit for 1 hour at room temperature.
+1	Filter	_	Action	_	_	0	_	_	Offset=747-753
+2	FeCl3	_	Modifier	_	_	3	Mod-Link	_	Offset=758-771
+3	filtrate	_	Reagent	_	_	0	_	_	Offset=772-780
+4	1.0μm,	_	Device	_	_	0	_	_	Offset=789-837
+5	0.8μm,	_	Device	_	_	0	_	_	Offset=850-878
+6	attaching	_	Action	_	_	0	_	_	Offset=883-892
+7	filter	_	Device	_	_	0	_	_	Offset=897-913
+8	peristaltic	_	Location	_	_	0	_	_	Offset=919-935
+9	pressure	_	Device	_	_	0	_	_	Offset=943-957
+
+# sent_id = s10
+# text = Filter the FeCl3 treated filtrate using a 1.0μm, 142mm, polycarbonate (PC) membrane filter on top of a 0.8μm, 142mm, support filter and attaching the filter apparatus to a peristaltic pump with a pressure gauge (maximum pressure = 15 psi).
+1	Place	_	Action	_	_	0	_	_	Offset=987-992
+2	all	_	Modifier	_	_	0	_	_	Offset=993-996
+3	olycarbonate	_	Device	_	_	0	_	_	Offset=1005-1025
+4	20L	_	Location	_	_	0	_	_	Offset=1035-1038
+5	50ml	_	Location	_	_	0	_	_	Offset=1046-1066
+6	careful	_	Modifier	_	_	0	_	_	Offset=1073-1080
+7	scrape	_	Action	_	_	0	_	_	Offset=1088-1098
+8	FeCl3	_	Reagent	_	_	0	_	_	Offset=1110-1115
+9	edge	_	Location	_	_	10	Meronym	_	Offset=1123-1127
+10	tube	_	Location	_	_	0	_	_	Offset=1135-1139
+
+# sent_id = s11
+# text = Place all of the polycarbonate filters from the 20L into a 50ml centrifuge tube being careful not to scrape off any of the FeCl3 on the edge of the tube (having precipitate facing out aids in dissolving the precipitate).
+1	Discard	_	Action	_	_	0	_	_	Offset=1208-1215
+2	Supor	_	Device	_	_	0	_	_	Offset=1220-1240
+
+# sent_id = s12
+# text = Discard the Supor support filter.
+1	Prepare	_	Action	_	_	0	_	_	Offset=1242-1249
+2	fresh	_	Modifier	_	_	3	Mod-Link	4:Mod-Link|5:Mod-Link	Offset=1250-1255
+3	0.1M	_	Reagent	_	_	0	_	_	Offset=1256-1265
+4	0.2M	_	Reagent	_	_	0	_	_	Offset=1267-1277
+5	0.2M	_	Reagent	_	_	0	_	_	Offset=1279-1300
+6	6.5	_	pH	_	_	5	Measure	_	Offset=1304-1307
+
+# sent_id = s13
+# text = Prepare fresh 0.1M EDTA; 0.2M MgCl2; 0.2M Ascorbate Buffer, pH6.5.
+1	Add	_	Action	_	_	0	_	_	Offset=1309-1312
+2	1ml	_	Reagent	_	_	0	_	_	Offset=1313-1323
+3	each	_	Amount	_	_	0	_	_	Offset=1328-1339
+
+# sent_id = s14
+# text = Add 1ml buffer for each 1mg Fe, which is 20ml of 1x buffer for the 20L seawater precipitate (10ml of a 2X concentrated buffer).
+1	Shake	_	Action	_	_	0	_	_	Offset=1437-1442
+2	tube	_	Device	_	_	0	_	_	Offset=1447-1451
+3	vigorously	_	Modifier	_	_	0	_	_	Offset=1452-1462
+
+# sent_id = s15
+# text = Shake the tube vigorously.
+1	Place	_	Action	_	_	0	_	_	Offset=1464-1469
+2	tubes	_	Device	_	_	0	_	_	Offset=1470-1475
+3	rotator	_	Location	_	_	0	_	_	Offset=1481-1488
+4	rotate	_	Action	_	_	0	_	_	Offset=1493-1499
+5	4°C	_	Temperature	_	_	0	_	_	Offset=1503-1506
+6	overnight	_	Time	_	_	0	_	_	Offset=1507-1516
+
+# sent_id = s16
+# text = Place tubes on a rotator and rotate at 4°C overnight.
+1	Leave	_	Action	_	_	0	_	_	Offset=1518-1523
+2	stored	_	Location	_	_	0	_	_	Offset=1524-1530
+3	4°C	_	Temperature	_	_	0	_	_	Offset=1534-1537
+4	until	_	Time	_	_	0	_	_	Offset=1538-1549
+5	analyze	_	Action	_	_	0	_	_	Offset=1553-1560
+6	further	_	Modifier	_	_	0	_	_	Offset=1564-1571
+7	purify	_	Action	_	_	0	_	_	Offset=1572-1578
+8	viral	_	Reagent	_	_	0	_	_	Offset=1583-1598
+
+# sent_id = s17
+# text = Leave stored at 4°C until ready to analyze or further purify the viral fraction.
+1	open	_	Action	_	_	0	_	_	Offset=1639-1643
+2	tube	_	Device	_	_	0	_	_	Offset=1648-1652
+3	collect	_	Action	_	_	0	_	_	Offset=1657-1664
+4	liquid	_	Reagent	_	_	0	_	_	Offset=1665-1671
+5	fresh	_	Modifier	_	_	6	Mod-Link	_	Offset=1679-1684
+6	tube	_	Location	_	_	0	_	_	Offset=1685-1689
+
+# sent_id = s18
+# text = To collect the resuspended precipitate, open the tube and collect liquid into a fresh tube.
+1	sterile	_	Device	_	_	0	_	_	Offset=1699-1712
+2	applicator	_	Device	_	_	0	_	_	Offset=1714-1730
+3	bleached	_	Device	_	_	0	_	_	Offset=1735-1762
+4	pull	_	Action	_	_	0	_	_	Offset=1763-1767
+5	edge	_	Location	_	_	0	_	_	Offset=1771-1775
+6	filter	_	Device	_	_	5	Meronym	_	Offset=1783-1789
+7	tube	_	Location	_	_	0	_	_	Offset=1799-1808
+
+# sent_id = s19
+# text = Using a sterile pipet, applicator stick, or bleached and rinsed forceps pull an edge of the filter onto the tube edge so it is caught in the lid when secured.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1850-1860
+2	low	_	Speed	_	_	0	_	_	Offset=1864-1873
+3	3-5	_	Time	_	_	0	_	_	Offset=1899-1910
+4	recover	_	Action	_	_	0	_	_	Offset=1914-1921
+5	more	_	Modifier	_	_	6	Mod-Link	_	Offset=1922-1926
+6	buffer	_	Reagent	_	_	0	_	_	Offset=1927-1933
+
+# sent_id = s20
+# text = Centrifuge at low speed (less than 1000 rpm) for 3-5 minutes to recover more buffer.
+1	add	_	Action	_	_	0	_	_	Offset=1972-1975
+2	more	_	Modifier	_	_	3	Mod-Link	_	Offset=1976-1980
+3	buffer	_	Reagent	_	_	0	_	_	Offset=1981-1987
+4	incubate	_	Action	_	_	0	_	_	Offset=1989-1997
+5	again	_	Modifier	_	_	0	_	_	Offset=1998-2003
+6	a	_	Time	_	_	0	_	_	Offset=2008-2022
+7	collect	_	Action	_	_	0	_	_	Offset=2028-2035
+8	liquid	_	Reagent	_	_	0	_	_	Offset=2036-2042
+

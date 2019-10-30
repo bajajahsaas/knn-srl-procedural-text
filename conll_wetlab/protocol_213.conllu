@@ -1,0 +1,90 @@
+# sent_id = s1
+# text = LB agar plate, 1.5%
+1	Pour	_	Action	_	_	0	_	_	Offset=20-24
+2	1.5%	_	Concentration	_	_	3	Measure	_	Offset=25-46
+3	bacteriological	_	Reagent	_	_	0	_	_	Offset=47-73
+4	autoclave	_	Location	_	_	0	_	_	Offset=82-106
+5	500mL	_	Amount	_	_	0	_	_	Offset=149-154
+6	LB	_	Reagent	_	_	0	_	_	Offset=161-169
+7	Stir	_	Action	_	_	0	_	_	Offset=170-174
+8	vigorously	_	Modifier	_	_	0	_	_	Offset=175-185
+9	room	_	Temperature	_	_	0	_	_	Offset=189-205
+
+# sent_id = s2
+# text = Pour 1.5% w/v (7.5g/500mL) bacteriological grade agar into an autoclave safe container capable of holding at least 500mL q.s. to 500mL using LB media Stir vigorously at room temperature until particulates are no longer visible. 
+1	cap	_	Action	_	_	0	_	_	Offset=257-260
+2	bottle	_	Location	_	_	0	_	_	Offset=261-267
+3	autoclave	_	Action	_	_	0	_	_	Offset=277-286
+4	30	_	Time	_	_	0	_	_	Offset=304-314
+5	45	_	Time	_	_	4	Or	_	Offset=328-338
+6	slow	_	Method	_	_	0	_	_	Offset=359-386
+
+# sent_id = s3
+# text = Loosely cap bottle and then autoclave for a minimum of 30 minutes (increase to 45 minutes if making 1L) using slow exhaust (liquid) cycle. 
+1	Remove	_	Action	_	_	0	_	_	Offset=389-395
+2	autoclave	_	Device	_	_	0	_	_	Offset=401-410
+3	let	_	Action	_	_	0	_	_	Offset=415-423
+4	20-40	_	Time	_	_	0	_	_	Offset=428-441
+5	until	_	Time	_	_	4	Or	_	Offset=445-468
+
+# sent_id = s4
+# text = Remove from autoclave and let cool for 20-40 minutes or until sufficiently cool to permit handling with simple nitrile/latex gloves or bare handed (about 40-60C).
+1	Cool	_	Action	_	_	0	_	_	Offset=564-568
+2	55C	_	Temperature	_	_	0	_	_	Offset=572-575
+3	water	_	Location	_	_	0	_	_	Offset=576-586
+
+# sent_id = s5
+# text = [Optional]: Cool in 55C water bath to avoid having the agar cool too much prior to pouring.
+1	Add	_	Action	_	_	0	_	_	Offset=644-647
+2	antibiotic	_	Reagent	_	_	0	_	_	Offset=648-668
+
+# sent_id = s6
+# text = Add antibiotic selection after agar has cooled down and mix well. 
+1	pour	_	Action	_	_	0	_	_	Offset=721-725
+2	20-25mL	_	Amount	_	_	3	Measure	_	Offset=732-739
+3	LB	_	Reagent	_	_	0	_	_	Offset=743-750
+4	10cm	_	Size	_	_	5	Measure	_	Offset=756-760
+5	Petri	_	Location	_	_	0	_	_	Offset=761-773
+
+# sent_id = s7
+# text = Carefully pour about 20-25mL of LB agar into 10cm Petri dishes (about 20-25 plates). 
+1	810	_	Action	_	_	0	_	_	Offset=797-800;806
+2	agar	_	Reagent	_	_	0	_	_	Offset=801-805
+3	placing	_	Action	_	_	0	_	_	Offset=818-825
+4	lid	_	Seal	_	_	0	_	_	Offset=826-829
+5	top	_	Location	_	_	0	_	_	Offset=833-836
+6	inverting	_	Action	_	_	0	_	_	Offset=841-850
+7	plate	_	Location	_	_	0	_	_	Offset=851-856
+
+# sent_id = s8
+# text = Let agar cool before placing lid on top and inverting plate.
+1	place	_	Action	_	_	0	_	_	Offset=873-878
+2	lid	_	Seal	_	_	0	_	_	Offset=879-882
+3	open	_	Modifier	_	_	0	_	_	Offset=883-908
+4	allow	_	Action	_	_	0	_	_	Offset=912-933
+
+# sent_id = s9
+# text = Alternatively, place lid open slightly to the side to allow for evaporation as the agar cools.
+1	Wrap	_	Action	_	_	0	_	_	Offset=953-957
+2	plates	_	Location	_	_	0	_	_	Offset=958-964
+3	plastic	_	Seal	_	_	0	_	_	Offset=968-980
+4	store	_	Action	_	_	0	_	_	Offset=984-989
+5	plastic	_	Location	_	_	0	_	_	Offset=1000-1011
+6	1045	_	Action	_	_	0	_	_	Offset=1015-1022;1030
+7	plates	_	Location	_	_	0	_	_	Offset=1023-1029
+
+# sent_id = s10
+# text = Wrap plates in plastic wrap or store sealed in plastic bag to prevent plates from drying out.
+1	Wrap	_	Action	_	_	0	_	_	Offset=1047-1051
+2	aluminum	_	Seal	_	_	0	_	_	Offset=1055-1068
+3	prevent	_	Action	_	_	0	_	_	Offset=1072-1091
+4	light-sensitive	_	Reagent	_	_	5	Meronym	_	Offset=1095-1122
+5	ampicillin	_	Reagent	_	_	0	_	_	Offset=1129-1139
+
+# sent_id = s11
+# text = Wrap in aluminum foil to prevent degradation of light-sensitive antibiotics, e.g. ampicillin.
+1	Store	_	Action	_	_	0	_	_	Offset=1141-1146
+2	plates	_	Location	_	_	0	_	_	Offset=1147-1153
+3	4C	_	Temperature	_	_	0	_	_	Offset=1157-1159
+4	inverted	_	Modifier	_	_	0	_	_	Offset=1161-1169
+

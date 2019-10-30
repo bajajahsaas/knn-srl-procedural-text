@@ -1,0 +1,79 @@
+# sent_id = s1
+# text = PhosphoThreonine Western Blotting
+1	Run	_	Action	_	_	0	_	_	Offset=34-37
+2	40%	_	Concentration	_	_	3	Measure	_	Offset=38-41
+3	IP	_	Reagent	_	_	0	_	_	Offset=45-54
+4	10%	_	Concentration	_	_	5	Measure	_	Offset=58-61
+5	gel	_	Reagent	_	_	0	_	_	Offset=62-78
+
+# sent_id = s2
+# text = Run 40% of IP eluate on 10% gel Tris-Glycine. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=81-89
+2	protein	_	Reagent	_	_	0	_	_	Offset=90-97
+3	PVDF	_	Reagent	_	_	0	_	_	Offset=101-114
+4	1hr	_	Time	_	_	0	_	_	Offset=119-122
+5	RT	_	Temperature	_	_	0	_	_	Offset=126-128
+6	ice	_	Device	_	_	0	_	_	Offset=134-142
+7	100V	_	Generic-Measure	_	_	6	Setting	_	Offset=144-148
+
+# sent_id = s3
+# text = Transfer protein to PVDF membrane for 1hr at RT with ice pack (100V). 
+1	Cut	_	Action	_	_	0	_	_	Offset=152-155
+2	membrane	_	Reagent	_	_	0	_	_	Offset=156-164
+3	180kD	_	Generic-Measure	_	_	0	_	_	Offset=176-181
+
+# sent_id = s4
+# text = Cut membrane just below 180kD (top MW marker on benchmark prestained ladder). 
+1	Cut	_	Action	_	_	0	_	_	Offset=231-234
+2	Membrane	_	Reagent	_	_	0	_	_	Offset=235-243
+3	~82kD	_	Generic-Measure	_	_	0	_	_	Offset=247-252
+
+# sent_id = s5
+# text = Cut Membrane at ~82kD (the blue band above the pink band using benchmark prestained ladder).
+1	~115	_	Generic-Measure	_	_	0	_	_	Offset=358-366
+
+# sent_id = s6
+# text = **Note, the GST-tagged protein is ~115 kD.
+1	Block	_	Action	_	_	0	_	_	Offset=615-620
+2	membrane	_	Reagent	_	_	0	_	_	Offset=621-629
+3	5%	_	Concentration	_	_	4	Measure	_	Offset=635-637
+4	BSA	_	Reagent	_	_	5	Meronym	6:Meronym	Offset=638-641
+5	IgG	_	Reagent	_	_	0	_	_	Offset=643-646
+6	Protease-Free	_	Reagent	_	_	0	_	_	Offset=651-664
+7	TBST	_	Reagent	_	_	4	Or	_	Offset=666-670
+8	2hrs	_	Time	_	_	0	_	_	Offset=675-679
+9	RT	_	Temperature	_	_	0	_	_	Offset=683-685
+
+# sent_id = s7
+# text = Cutting the membrane in the places will help reduce non-specific binding.
+1	Probe	_	Action	_	_	0	_	_	Offset=688-693
+2	membrane	_	Reagent	_	_	0	_	_	Offset=694-702
+3	phospho-threonine-HRP	_	Reagent	_	_	0	_	_	Offset=708-738
+4	IgG-Free	_	Reagent	_	_	0	_	_	Offset=742-750
+5	Protease-Free	_	Reagent	_	_	4	Or	_	Offset=751-768
+6	TBST	_	Reagent	_	_	5	Or	_	Offset=769-773
+7	1:1000	_	Generic-Measure	_	_	4	Measure	_	Offset=775-781
+
+# sent_id = s8
+# text = Also, running a ladder in the middle of the gel will help you cut straight across the membrane in the event that the gel is transferred at an angle relative to the membrane.
+1	Probe	_	Action	_	_	0	_	_	Offset=784-789
+2	overnight	_	Time	_	_	0	_	_	Offset=790-799
+3	4C	_	Temperature	_	_	0	_	_	Offset=803-805
+4	cold	_	Location	_	_	5	Meronym	_	Offset=809-818
+5	tilting	_	Device	_	_	0	_	_	Offset=822-834
+
+# sent_id = s9
+# text = Block membrane with 5% BSA (IgG and Protease-Free)/TBST for 2hrs at RT. 
+1	Rinse	_	Action	_	_	0	_	_	Offset=836-841
+2	membrane	_	Reagent	_	_	0	_	_	Offset=842-850
+3	8x	_	Concentration	_	_	2	Measure	_	Offset=851-853
+4	2hrs	_	Time	_	_	0	_	_	Offset=873-877
+5	1x	_	Concentration	_	_	6	Measure	_	Offset=883-885
+6	TBST	_	Reagent	_	_	0	_	_	Offset=886-890
+
+# sent_id = s10
+# text = Probe membrane with phospho-threonine-HRP antibody in IgG-Free/Protease-Free BSA/TBST (1:1000).
+1	Activate	_	Action	_	_	0	_	_	Offset=893-901
+2	membrane	_	Reagent	_	_	0	_	_	Offset=902-910
+3	pico	_	Reagent	_	_	0	_	_	Offset=916-924
+

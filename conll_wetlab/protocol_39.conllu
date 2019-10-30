@@ -1,0 +1,57 @@
+# sent_id = s1
+# text = Induction of Chloramphenicol acetyltransferase recombinant protein
+1	Inoculate	_	Action	_	_	0	_	_	Offset=67-76
+2	E.	_	Reagent	_	_	3	Meronym	_	Offset=77-96
+3	recombinant	_	Reagent	_	_	0	_	_	Offset=112-168
+4	5mL	_	Amount	_	_	5	Measure	_	Offset=172-175
+5	LB	_	Reagent	_	_	7	Meronym	_	Offset=176-192
+6	100ug/mL	_	Concentration	_	_	0	_	_	Offset=205-213
+7	ampicillin	_	Reagent	_	_	6	Or	_	Offset=214-224
+8	37	_	Temperature	_	_	0	_	_	Offset=227-231
+9	shaking	_	Action	_	_	0	_	_	Offset=232-239
+10	culture	_	Action	_	_	0	_	_	Offset=244-251
+11	overnight	_	Time	_	_	0	_	_	Offset=252-261
+
+# sent_id = s2
+# text = Inoculate E. coli BL21 strain containing the recombinant protein of chloramphenicol acetyltransferase in 5mL LB liquid medium (containing 100ug/mL ampicillin), 37 ℃ shaking and culture overnight.
+1	Transfer	_	Action	_	_	0	_	_	Offset=263-271
+2	1mL	_	Amount	_	_	4	Measure	_	Offset=272-275
+3	overnight	_	Modifier	_	_	4	Mod-Link	_	Offset=276-285
+4	cultures	_	Reagent	_	_	0	_	_	Offset=286-294
+5	100	_	Amount	_	_	8	Measure	_	Offset=298-304
+6	100ug/mL	_	Concentration	_	_	7	Measure	_	Offset=317-325
+7	ampicillin	_	Reagent	_	_	0	_	_	Offset=326-336
+8	LB	_	Reagent	_	_	7	Meronym	_	Offset=338-354
+9	37	_	Temperature	_	_	0	_	_	Offset=356-360
+10	shake	_	Action	_	_	0	_	_	Offset=361-366
+11	culture	_	Reagent	_	_	0	_	_	Offset=367-374
+12	OD600	_	Generic-Measure	_	_	0	_	_	Offset=381-398
+
+# sent_id = s3
+# text = Transfer 1mL overnight cultures in 100 mL (containing 100ug/mL ampicillin) LB liquid medium; 37 ℃ shake culture until OD600 = 0.6 - 0.8.
+1	10ul	_	Amount	_	_	2	Measure	_	Offset=405-409
+2	samples	_	Reagent	_	_	0	_	_	Offset=410-417
+3	SDS-PAGE	_	Action	_	_	0	_	_	Offset=422-439
+
+# sent_id = s4
+# text = Take 10ul samples for SDS-PAGE analysis.
+1	Add	_	Action	_	_	0	_	_	Offset=441-444
+2	IPTG	_	Reagent	_	_	0	_	_	Offset=445-449
+3	final	_	Reagent	_	_	0	_	_	Offset=455-474
+4	0.5	_	Concentration	_	_	3	Measure	_	Offset=478-488
+5	culture	_	Action	_	_	0	_	_	Offset=490-497
+6	1-3h	_	Time	_	_	0	_	_	Offset=498-502
+7	37	_	Temperature	_	_	0	_	_	Offset=506-510
+
+# sent_id = s5
+# text = Add IPTG to a final concentration of 0.5 mmol/l, culture 1-3h at 37 ℃.
+1	12,000rpm	_	Speed	_	_	0	_	_	Offset=512-521
+2	centrifugation	_	Action	_	_	0	_	_	Offset=522-536
+3	10	_	Time	_	_	0	_	_	Offset=541-547
+4	discard	_	Action	_	_	0	_	_	Offset=549-556
+5	supernatant	_	Reagent	_	_	0	_	_	Offset=561-572
+6	store	_	Action	_	_	0	_	_	Offset=574-579
+7	cell	_	Reagent	_	_	0	_	_	Offset=580-596
+8	-20	_	Temperature	_	_	0	_	_	Offset=600-605
+9	-70	_	Temperature	_	_	8	Or	_	Offset=609-614
+

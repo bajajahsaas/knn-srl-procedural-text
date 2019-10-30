@@ -1,0 +1,225 @@
+# sent_id = s1
+# text = Rig Filtration of SPOT 0m Water
+1	Soak	_	Action	_	_	0	_	_	Offset=32-36
+2	all	_	Modifier	_	_	4	Mod-Link	_	Offset=37-40
+3	small	_	Modifier	_	_	4	Mod-Link	_	Offset=41-46
+4	rig	_	Reagent	_	_	0	_	_	Offset=47-61
+5	10%	_	Concentration	_	_	6	Measure	_	Offset=65-68
+6	acid	_	Reagent	_	_	0	_	_	Offset=69-73
+7	minimum	_	Modifier	_	_	8	Mod-Link	_	Offset=80-87
+8	30	_	Time	_	_	0	_	_	Offset=91-101
+
+# sent_id = s2
+# text = Soak all small rig components in 10% acid for a minimum of 30 minutes. 
+1	Rinse	_	Action	_	_	0	_	_	Offset=104-109
+2	all	_	Modifier	_	_	3	Mod-Link	_	Offset=110-113
+3	components	_	Reagent	_	_	0	_	_	Offset=114-124
+4	thoroughly	_	Modifier	_	_	0	_	_	Offset=125-135
+5	MilliQ	_	Reagent	_	_	0	_	_	Offset=142-148
+
+# sent_id = s3
+# text = Rinse all components thoroughly using MilliQ (hold disks on edges).
+1	Place	_	Action	_	_	0	_	_	Offset=172-177
+2	rig	_	Location	_	_	0	_	_	Offset=181-184
+
+# sent_id = s4
+# text = Place on rig once rinsed.
+1	Rinse	_	Action	_	_	0	_	_	Offset=198-203
+2	red	_	Location	_	_	0	_	_	Offset=204-213
+3	large	_	Modifier	_	_	5	Mod-Link	_	Offset=218-223
+4	plastic	_	Modifier	_	_	5	Mod-Link	_	Offset=224-231
+5	Erlenmeyer	_	Location	_	_	0	_	_	Offset=232-248
+6	MilliQ	_	Reagent	_	_	0	_	_	Offset=254-260
+
+# sent_id = s5
+# text = Rinse red tubes and large plastic Erlenmeyer flask with MilliQ.
+1	Assemble	_	Action	_	_	0	_	_	Offset=262-270
+2	pump	_	Device	_	_	0	_	_	Offset=271-275
+3	rig	_	Location	_	_	0	_	_	Offset=279-282
+4	red	_	Location	_	_	0	_	_	Offset=289-298
+5	large	_	Modifier	_	_	7	Mod-Link	_	Offset=303-308
+6	plastic	_	Modifier	_	_	7	Mod-Link	_	Offset=309-316
+7	Erlenmeyer	_	Location	_	_	0	_	_	Offset=317-333
+
+# sent_id = s6
+# text = Assemble pump to rig using red tubes and large plastic Erlenmeyer flask.
+1	Attach	_	Action	_	_	0	_	_	Offset=335-341
+2	tube	_	Location	_	_	0	_	_	Offset=342-346
+3	right	_	Location	_	_	0	_	_	Offset=350-360
+4	pump	_	Device	_	_	3	Meronym	_	Offset=364-368
+
+# sent_id = s7
+# text = Attach tube to right side of pump for vacuum.
+1	Remove	_	Action	_	_	0	_	_	Offset=438-444
+2	filter	_	Location	_	_	0	_	_	Offset=445-465
+3	place	_	Action	_	_	0	_	_	Offset=470-475
+4	upside	_	Modifier	_	_	0	_	_	Offset=476-487
+5	bench	_	Location	_	_	0	_	_	Offset=491-496
+
+# sent_id = s8
+# text = Right knob on pump controls vacuum, loosen all the way. 
+1	Remove	_	Action	_	_	0	_	_	Offset=499-505
+2	micropore	_	Device	_	_	0	_	_	Offset=506-523
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=529-536
+4	rinse	_	Action	_	_	0	_	_	Offset=541-546
+5	well	_	Modifier	_	_	0	_	_	Offset=547-551
+6	MilliQ	_	Reagent	_	_	0	_	_	Offset=557-563
+
+# sent_id = s9
+# text = Remove filter top component and place upside down on bench. 
+1	Hold	_	Action	_	_	0	_	_	Offset=565-569
+2	new	_	Modifier	_	_	4	Mod-Link	_	Offset=575-578
+3	sterile	_	Modifier	_	_	4	Mod-Link	_	Offset=579-586
+4	Falcon	_	Location	_	_	0	_	_	Offset=587-598
+
+# sent_id = s10
+# text = Remove micropore forceps from ethanol and rinse well with MilliQ.
+1	micropore	_	Device	_	_	0	_	_	Offset=618-635
+2	remove	_	Action	_	_	0	_	_	Offset=636-642
+3	0.8μm	_	Size	_	_	4	Setting	_	Offset=643-648
+4	backing	_	Device	_	_	0	_	_	Offset=649-661
+5	between	_	Location	_	_	0	_	_	Offset=667-674
+6	blue	_	Device	_	_	5	Meronym	_	Offset=675-685
+7	place	_	Action	_	_	0	_	_	Offset=690-695
+8	each	_	Modifier	_	_	9	Mod-Link	_	Offset=699-703
+9	rig	_	Device	_	_	0	_	_	Offset=704-714
+
+# sent_id = s11
+# text = Hold in a new sterile Falcon tube during use. 
+1	micropore	_	Device	_	_	0	_	_	Offset=733-750
+2	remove	_	Action	_	_	0	_	_	Offset=751-757
+3	0.2μm	_	Size	_	_	4	Setting	_	Offset=758-763
+4	filter	_	Device	_	_	0	_	_	Offset=764-775
+5	between	_	Location	_	_	0	_	_	Offset=781-788
+6	blue	_	Device	_	_	5	Meronym	_	Offset=789-799
+7	place	_	Action	_	_	0	_	_	Offset=804-809
+8	carefully	_	Modifier	_	_	0	_	_	Offset=810-819
+9	top	_	Location	_	_	0	_	_	Offset=823-826
+10	each	_	Modifier	_	_	12	Mod-Link	_	Offset=830-834
+11	0.8μm	_	Size	_	_	12	Setting	_	Offset=835-840
+12	disk	_	Device	_	_	9	Meronym	_	Offset=841-845
+
+# sent_id = s12
+# text = Using micropore forceps remove 0.8μm backing disk from between blue disks and place on each rig filter. 
+1	Place	_	Action	_	_	0	_	_	Offset=906-911
+2	top	_	Location	_	_	0	_	_	Offset=912-925
+3	each	_	Modifier	_	_	4	Mod-Link	_	Offset=937-941
+4	filter	_	Device	_	_	0	_	_	Offset=942-948
+5	twist	_	Action	_	_	0	_	_	Offset=953-958
+
+# sent_id = s13
+# text = Again using the micropore forceps remove 0.2μm filter disk from between blue disks and place carefully on top of each 0.8μm disk.
+1	Open	_	Action	_	_	0	_	_	Offset=963-967
+2	each	_	Modifier	_	_	3	Mod-Link	_	Offset=968-972
+3	rig	_	Device	_	_	0	_	_	Offset=973-983
+4	turning	_	Action	_	_	0	_	_	Offset=987-994
+5	orange	_	Device	_	_	0	_	_	Offset=995-1006
+6	verticle	_	Method	_	_	0	_	_	Offset=1010-1027
+
+# sent_id = s14
+# text = Make sure they are centered and do not have holes or rips.
+1	serological	_	Device	_	_	0	_	_	Offset=1037-1054
+2	sterile	_	Modifier	_	_	3	Mod-Link	_	Offset=1059-1066
+3	glass	_	Device	_	_	0	_	_	Offset=1067-1082
+4	remove	_	Action	_	_	0	_	_	Offset=1083-1089
+5	desired	_	Amount	_	_	6	Measure	_	Offset=1090-1104
+6	bucket	_	Location	_	_	0	_	_	Offset=1110-1116
+7	pipet	_	Action	_	_	0	_	_	Offset=1121-1126
+8	directly	_	Modifier	_	_	0	_	_	Offset=1127-1135
+9	disks	_	Device	_	_	0	_	_	Offset=1141-1146
+
+# sent_id = s15
+# text = Place top component back on to each filter and twist on.
+1	turn	_	Action	_	_	0	_	_	Offset=1328-1335
+2	pump	_	Device	_	_	0	_	_	Offset=1336-1340
+
+# sent_id = s16
+# text = Open each rig filter by turning orange knob to verticle position.
+1	Adujst	_	Action	_	_	0	_	_	Offset=1342-1348
+2	top	_	Device	_	_	0	_	_	Offset=1349-1363
+3	pump	_	Device	_	_	2	Meronym	_	Offset=1367-1371
+
+# sent_id = s17
+# text = Using a serological pipet and sterile glass pipet tip remove desired amount from bucket and pipet directly onto disks.
+1	turn	_	Action	_	_	0	_	_	Offset=1555-1559
+2	orange	_	Device	_	_	0	_	_	Offset=1560-1571
+3	horizontal	_	Method	_	_	0	_	_	Offset=1586-1605
+
+# sent_id = s18
+# text = There should be 6 filtrations/filters of 10ml and 1 each of 20ml, 30ml, 40ml, 50ml, 60ml and 100ml.
+1	turn	_	Action	_	_	0	_	_	Offset=1670-1678
+2	pump	_	Device	_	_	0	_	_	Offset=1679-1683
+
+# sent_id = s19
+# text = Once desired amount of sample water is placed on filter and knobs are vertical, turn on pump.
+1	Twist	_	Action	_	_	0	_	_	Offset=1685-1694
+2	top	_	Location	_	_	0	_	_	Offset=1695-1708
+3	rig	_	Device	_	_	2	Meronym	_	Offset=1712-1722
+4	place	_	Action	_	_	0	_	_	Offset=1727-1732
+5	upside	_	Method	_	_	0	_	_	Offset=1733-1744
+6	bench	_	Location	_	_	0	_	_	Offset=1748-1753
+
+# sent_id = s20
+# text = Adujst top right knob on pump so that the arrow on the top right guage is slightly above 0.
+1	micropore	_	Device	_	_	0	_	_	Offset=1765-1782
+2	carefully	_	Modifier	_	_	0	_	_	Offset=1783-1792
+3	remove	_	Action	_	_	0	_	_	Offset=1793-1799
+4	top	_	Location	_	_	0	_	_	Offset=1809-1812
+5	0.2μm	_	Size	_	_	6	Setting	_	Offset=1813-1818
+6	filter	_	Device	_	_	4	Meronym	_	Offset=1819-1830
+7	place	_	Action	_	_	0	_	_	Offset=1835-1840
+8	labeled	_	Modifier	_	_	9	Mod-Link	_	Offset=1846-1853
+9	TCBS	_	Location	_	_	0	_	_	Offset=1854-1869
+
+# sent_id = s21
+# text = Allow vacuum to work until most of the water has passed through the filters.
+1	sweeping	_	Method	_	_	0	_	_	Offset=1877-1904
+2	place	_	Action	_	_	0	_	_	Offset=1908-1913
+3	filter	_	Device	_	_	0	_	_	Offset=1914-1920
+4	flat	_	Modifier	_	_	0	_	_	Offset=1921-1925
+5	plate	_	Location	_	_	0	_	_	Offset=1929-1934
+
+# sent_id = s22
+# text = Once all water has passed through a filter, turn orange knob closed to the horizontal position.
+1	Repeat	_	Action	_	_	0	_	_	Offset=1936-1942
+2	Step	_	Method	_	_	0	_	_	Offset=1943-1950
+3	6	_	Numerical	_	_	4	Setting	_	Offset=1959-1960
+4	filters	_	Device	_	_	0	_	_	Offset=1961-1968
+5	separate	_	Modifier	_	_	6	Mod-Link	_	Offset=1974-1982
+6	plates	_	Location	_	_	0	_	_	Offset=1983-1989
+
+# sent_id = s23
+# text = Once all filtration has finished and all knobs are horizontal, turn off pump.
+1	Repeat	_	Action	_	_	0	_	_	Offset=1992-1998
+2	Steps	_	Method	_	_	0	_	_	Offset=1999-2009
+3	remaining	_	Amount	_	_	4	Measure	_	Offset=2014-2031
+4	water	_	Reagent	_	_	0	_	_	Offset=2035-2040
+
+# sent_id = s24
+# text = Twist off top component of rig filter and place upside down on bench.
+1	0.8μm	_	Size	_	_	2	Setting	_	Offset=2046-2051
+2	filter	_	Device	_	_	0	_	_	Offset=2052-2064
+3	remain	_	Action	_	_	0	_	_	Offset=2069-2075
+4	filters	_	Device	_	_	0	_	_	Offset=2083-2090
+5	new	_	Modifier	_	_	7	Mod-Link	_	Offset=2097-2100
+6	0.2μm	_	Size	_	_	7	Setting	_	Offset=2101-2106
+7	filter	_	Device	_	_	0	_	_	Offset=2107-2119
+
+# sent_id = s25
+# text = Using the micropore forceps carefully remove only the top 0.2μm filter disk and place on a labeled TCBS Agar plate.
+1	Leave	_	Action	_	_	0	_	_	Offset=2142-2147
+2	plates	_	Location	_	_	0	_	_	Offset=2148-2154
+3	right	_	Method	_	_	0	_	_	Offset=2155-2168
+4	room	_	Temperature	_	_	0	_	_	Offset=2172-2188
+5	bench	_	Location	_	_	0	_	_	Offset=2192-2197
+6	at	_	Modifier	_	_	7	Mod-Link	_	Offset=2202-2210
+7	10	_	Time	_	_	0	_	_	Offset=2211-2221
+
+# sent_id = s26
+# text = Use a sweeping or dragging motion to place filter flat on plate.
+1	place	_	Action	_	_	0	_	_	Offset=2228-2233
+2	upside	_	Method	_	_	0	_	_	Offset=2234-2245
+3	grow	_	Action	_	_	0	_	_	Offset=2259-2263
+4	at	_	Modifier	_	_	5	Mod-Link	_	Offset=2268-2276
+5	24	_	Time	_	_	0	_	_	Offset=2277-2285
+

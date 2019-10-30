@@ -1,0 +1,31 @@
+# sent_id = s1
+# text = Single-temperature Double Digest
+1	Set	_	Action	_	_	0	_	_	Offset=33-39
+2	reaction	_	Reagent	_	_	0	_	_	Offset=54-62
+
+# sent_id = s2
+# text = Set up the following reaction (total reaction volume 50 µl).
+1	Mix	_	Action	_	_	0	_	_	Offset=94-97
+2	components	_	Reagent	_	_	0	_	_	Offset=98-108
+3	pipetting	_	Action	_	_	0	_	_	Offset=112-121
+4	reaction	_	Reagent	_	_	2	Meronym	_	Offset=126-134
+5	flicking	_	Action	_	_	0	_	_	Offset=163-171
+6	tube	_	Location	_	_	4	Meronym	_	Offset=186-190
+
+# sent_id = s3
+# text = Mix components by pipetting the reaction mixture up and down, or by "flicking" the reaction tube.
+1	Quick	_	Modifier	_	_	0	_	_	Offset=192-197
+2	spin-down	_	Action	_	_	0	_	_	Offset=208-217
+3	microcentrifuge	_	Device	_	_	0	_	_	Offset=223-238
+
+# sent_id = s4
+# text = Quick ("touch") spin-down in a microcentrifuge.
+1	Do	_	Action	_	_	0	_	_	Offset=240-253
+2	reaction	_	Reagent	_	_	0	_	_	Offset=258-266
+
+# sent_id = s5
+# text = Do not vortex the reaction.
+1	Incubate	_	Action	_	_	0	_	_	Offset=268-276
+2	1	_	Time	_	_	0	_	_	Offset=281-287
+3	enzyme-specific	_	Temperature	_	_	0	_	_	Offset=295-334
+

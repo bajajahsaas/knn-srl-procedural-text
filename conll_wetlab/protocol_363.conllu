@@ -1,0 +1,54 @@
+# sent_id = s1
+# text = Ligation Protocol WITH T4 DNA Ligase (M0202)
+1	Thaw	_	Action	_	_	0	_	_	Offset=45-49
+2	T4	_	Reagent	_	_	0	_	_	Offset=54-74
+3	resuspended	_	Action	_	_	0	_	_	Offset=79-90
+4	room	_	Temperature	_	_	0	_	_	Offset=94-110
+
+# sent_id = s2
+# text = Thaw the T4 DNA Ligase Buffer and resuspended at room temperature.
+1	Set	_	Action	_	_	0	_	_	Offset=112-118
+2	reaction	_	Reagent	_	_	0	_	_	Offset=123-131
+3	microcentrifuge	_	Location	_	_	0	_	_	Offset=137-157
+4	ice	_	Reagent	_	_	3	Meronym	_	Offset=161-164
+
+# sent_id = s3
+# text = Set up the reaction in a microcentrifuge tube on ice.
+1	mix	_	Action	_	_	0	_	_	Offset=173-176
+2	reaction	_	Reagent	_	_	0	_	_	Offset=181-189
+3	pipetting	_	Action	_	_	0	_	_	Offset=193-202
+4	microfuge	_	Action	_	_	0	_	_	Offset=219-228
+5	briefly	_	Modifier	_	_	0	_	_	Offset=229-236
+
+# sent_id = s4
+# text = Gently mix the reaction by pipetting up and down and microfuge briefly.
+1	incubate	_	Action	_	_	0	_	_	Offset=266-274
+2	16°C	_	Temperature	_	_	0	_	_	Offset=278-282
+3	overnight	_	Time	_	_	0	_	_	Offset=283-292
+4	room	_	Temperature	_	_	2	Or	_	Offset=296-312
+5	10	_	Time	_	_	3	Or	_	Offset=317-327
+
+# sent_id = s5
+# text = For cohesive (sticky) ends, incubate at 16°C overnight or room temperature for 10 minutes.
+1	incubate	_	Action	_	_	0	_	_	Offset=370-378
+2	16°C	_	Temperature	_	_	0	_	_	Offset=382-386
+3	overnight	_	Time	_	_	0	_	_	Offset=387-396
+4	room	_	Temperature	_	_	2	Or	_	Offset=400-416
+5	2	_	Time	_	_	3	Or	_	Offset=421-428
+
+# sent_id = s6
+# text = For blunt ends or single base overhangs, incubate at 16°C overnight or room temperature for 2 hours.
+1	Heat	_	Action	_	_	0	_	_	Offset=430-445
+2	65	_	Temperature	_	_	0	_	_	Offset=449-461
+3	10	_	Time	_	_	0	_	_	Offset=466-476
+
+# sent_id = s7
+# text = Heat inactivate at 65 degrees C for 10 minutes.
+1	Chill	_	Action	_	_	0	_	_	Offset=478-483
+2	ice	_	Reagent	_	_	0	_	_	Offset=487-490
+3	transform	_	Action	_	_	0	_	_	Offset=495-504
+4	1-5	_	Amount	_	_	5	Measure	_	Offset=505-511
+5	reaction	_	Reagent	_	_	0	_	_	Offset=519-527
+6	50	_	Amount	_	_	7	Measure	_	Offset=533-538
+7	competent	_	Reagent	_	_	0	_	_	Offset=539-554
+

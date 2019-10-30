@@ -1,0 +1,195 @@
+# sent_id = s1
+# text = Diatom Chloroplast Isolation Steps
+1	Grow	_	Action	_	_	0	_	_	Offset=35-39
+2	diatom	_	Reagent	_	_	0	_	_	Offset=40-54
+3	autoclaved	_	Reagent	_	_	0	_	_	Offset=58-83
+
+# sent_id = s2
+# text = Grow diatom culture in autoclaved seawater media (e.g. f/2 media).
+1	filter	_	Action	_	_	0	_	_	Offset=269-275
+2	culture	_	Reagent	_	_	0	_	_	Offset=276-283
+3	2	_	Size	_	_	5	Setting	_	Offset=294-298
+4	47	_	Size	_	_	5	Setting	_	Offset=299-304
+5	filter	_	Device	_	_	0	_	_	Offset=305-311
+
+# sent_id = s3
+# text = [Protocol was developed with cells grown in f/2 medium to a density of ~1x106 cells/mL - optimization may be necessary for cells achieving a lower cell density]Gently filter culture through a 2 μm 47 mM filter.
+1	place	_	Action	_	_	0	_	_	Offset=385-390
+2	filters	_	Device	_	_	0	_	_	Offset=391-398
+3	50	_	Amount	_	_	4	Measure	_	Offset=402-407
+4	media	_	Reagent	_	_	0	_	_	Offset=411-416
+
+# sent_id = s4
+# text = Periodically, as filtration slows due to growing biomass on the filter, place filters in 50 ml of media used for growth to gently was cells from filter.
+1	Remove	_	Action	_	_	0	_	_	Offset=526-532
+2	filters	_	Device	_	_	0	_	_	Offset=533-540
+3	tubes	_	Location	_	_	0	_	_	Offset=546-551
+4	centrifuge	_	Action	_	_	0	_	_	Offset=556-566
+5	1200	_	Speed	_	_	0	_	_	Offset=569-577
+6	5	_	Time	_	_	0	_	_	Offset=582-591
+
+# sent_id = s5
+# text = Repeat until all culture is filtered and cells resuspended.
+1	decant	_	Action	_	_	0	_	_	Offset=616-622
+2	media	_	Reagent	_	_	0	_	_	Offset=623-628
+
+# sent_id = s6
+# text = Remove filters from tubes and centrifuge @ 1200 x g for 5 minutes to pellet cells.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=630-639
+2	pellet	_	Reagent	_	_	0	_	_	Offset=640-646
+3	~7ml	_	Amount	_	_	5	Measure	_	Offset=650-654
+4	10M	_	Concentration	_	_	5	Measure	_	Offset=655-658
+5	NH4F	_	Reagent	_	_	0	_	_	Offset=659-663
+
+# sent_id = s7
+# text = Gently decant media.
+1	Vortex	_	Action	_	_	0	_	_	Offset=666-672
+2	periodically	_	Generic-Measure	_	_	0	_	_	Offset=673-685
+3	incubating	_	Action	_	_	0	_	_	Offset=692-702
+4	tube	_	Location	_	_	0	_	_	Offset=703-707
+5	ice	_	Temperature	_	_	0	_	_	Offset=711-714
+6	10	_	Time	_	_	0	_	_	Offset=719-729
+
+# sent_id = s8
+# text = Resuspend pellet in ~7ml 10M NH4F. 
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=731-741
+2	1200	_	Speed	_	_	0	_	_	Offset=743-751
+3	4°C	_	Temperature	_	_	0	_	_	Offset=754-757
+4	5	_	Time	_	_	0	_	_	Offset=762-767
+5	pour	_	Action	_	_	0	_	_	Offset=772-780
+6	NH4F	_	Reagent	_	_	0	_	_	Offset=781-785
+
+# sent_id = s9
+# text = Vortex periodically while incubating tube on ice for 10 minutes.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=787-796
+2	rinse	_	Action	_	_	0	_	_	Offset=801-806
+3	pellet	_	Reagent	_	_	0	_	_	Offset=807-813
+4	3x	_	Numerical	_	_	0	_	_	Offset=814-816
+5	isolation	_	Reagent	_	_	0	_	_	Offset=822-838
+6	5-7	_	Amount	_	_	5	Measure	_	Offset=840-847
+7	centrifuge	_	Action	_	_	0	_	_	Offset=850-860
+8	1200	_	Speed	_	_	0	_	_	Offset=862-870
+9	4°C	_	Temperature	_	_	0	_	_	Offset=872-875
+
+# sent_id = s10
+# text = Centrifuge @1200 x g @ 4°C for 5 min and pour off NH4F.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=895-904
+2	pellet	_	Reagent	_	_	0	_	_	Offset=905-911
+3	1	_	Amount	_	_	5	Measure	_	Offset=915-919
+4	cold	_	Temperature	_	_	0	_	_	Offset=920-924
+5	isolation	_	Reagent	_	_	0	_	_	Offset=925-941
+
+# sent_id = s11
+# text = Resuspend and rinse pellet 3x with isolation buffer (5-7 mls), centrifuge @1200 x g @4°C in between rinses.
+1	Sonicate	_	Action	_	_	0	_	_	Offset=943-951
+2	10	_	Numerical	_	_	0	_	_	Offset=954-956
+3	W	_	Measure-Type	_	_	2	Of-Type	_	Offset=956-957
+4	10	_	Time	_	_	0	_	_	Offset=962-966
+
+# sent_id = s12
+# text = Resuspend pellet in 1 ml cold isolation buffer.
+1	Prepare	_	Action	_	_	0	_	_	Offset=969-976
+2	2	_	Numerical	_	_	0	_	_	Offset=977-978
+3	two-step	_	Generic-Measure	_	_	4	Measure	_	Offset=979-987
+4	Percoll	_	Reagent	_	_	0	_	_	Offset=988-1005
+5	15	_	Size	_	_	6	Measure	_	Offset=1010-1015
+6	COREX	_	Location	_	_	0	_	_	Offset=1016-1027
+
+# sent_id = s13
+# text = Sonicate @ 10W for 10 s. 
+1	Add	_	Action	_	_	0	_	_	Offset=1030-1033
+2	2	_	Amount	_	_	3	Measure	_	Offset=1034-1038
+3	Bottom	_	Reagent	_	_	5	Meronym	_	Offset=1039-1060
+4	80%	_	Concentration	_	_	5	Measure	_	Offset=1062-1065
+5	Percoll	_	Reagent	_	_	0	_	_	Offset=1066-1073
+6	15	_	Size	_	_	7	Measure	_	Offset=1078-1083
+7	corex	_	Location	_	_	0	_	_	Offset=1084-1094
+
+# sent_id = s14
+# text = Prepare 2 two-step Percoll gradients (in 15 ml COREX tubes).
+1	Apply	_	Action	_	_	0	_	_	Offset=1096-1101
+2	10	_	Amount	_	_	3	Measure	_	Offset=1102-1107
+3	gel	_	Reagent	_	_	0	_	_	Offset=1111-1126
+4	Top	_	Reagent	_	_	6	Meronym	_	Offset=1131-1149
+5	40%	_	Concentration	_	_	6	Measure	_	Offset=1151-1154
+6	Percoll	_	Reagent	_	_	0	_	_	Offset=1155-1162
+7	add	_	Action	_	_	0	_	_	Offset=1175-1178
+8	4	_	Amount	_	_	9	Measure	_	Offset=1179-1183
+9	Top	_	Reagent	_	_	0	_	_	Offset=1184-1193
+10	80%	_	Concentration	_	_	11	Measure	_	Offset=1201-1204
+11	Percoll	_	Reagent	_	_	0	_	_	Offset=1205-1218
+12	Pasteur	_	Device	_	_	0	_	_	Offset=1227-1242
+
+# sent_id = s15
+# text = Add 2 ml Bottom Layer Solution (80% Percoll) to 15 ml corex tube.
+1	Load	_	Action	_	_	0	_	_	Offset=1244-1248
+2	homogenate	_	Reagent	_	_	0	_	_	Offset=1249-1259
+3	top	_	Location	_	_	0	_	_	Offset=1318-1321
+4	two-step	_	Generic-Measure	_	_	5	Measure	_	Offset=1330-1338
+5	Percoll	_	Reagent	_	_	3	Meronym	_	Offset=1339-1355
+6	Pasteur	_	Device	_	_	0	_	_	Offset=1363-1378
+
+# sent_id = s16
+# text = Apply 10 μl of gel loading dye the Top Layer Solution (40% Percoll) and gently add 4 ml Top Layer to the 80% Percoll layer using a Pasteur Pipette.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1380-1390
+2	swing-out	_	Device	_	_	0	_	_	Offset=1394-1409
+3	1500	_	Speed	_	_	0	_	_	Offset=1413-1421
+4	ten	_	Time	_	_	0	_	_	Offset=1426-1437
+5	brake	_	Method	_	_	0	_	_	Offset=1438-1447
+6	4°C	_	Temperature	_	_	0	_	_	Offset=1450-1453
+
+# sent_id = s17
+# text = Load homogenate from step 9 (Silica Frustrule Removal) carefully onto the top of each two-step Percoll gradient with a Pasteur pipette.
+1	ecover	_	Action	_	_	0	_	_	Offset=1457-1463
+2	intact	_	Reagent	_	_	0	_	_	Offset=1464-1483
+3	bottom	_	Location	_	_	0	_	_	Offset=1485-1497
+4	Pasteur	_	Device	_	_	0	_	_	Offset=1507-1522
+
+# sent_id = s18
+# text = Centrifuge in swing-out rotor at 1500 x g for ten minutes brake off (@4°C).R
+1	Add	_	Action	_	_	0	_	_	Offset=1524-1527
+2	sterile	_	Modifier	_	_	4	Mod-Link	_	Offset=1531-1538
+3	15	_	Size	_	_	4	Measure	_	Offset=1539-1544
+4	corex	_	Location	_	_	0	_	_	Offset=1545-1555
+
+# sent_id = s19
+# text = ecover intact chloroplasts (bottom layer) using a Pasteur Pipette.
+1	Wash	_	Action	_	_	0	_	_	Offset=1557-1561
+2	twice	_	Numerical	_	_	0	_	_	Offset=1562-1567
+3	cold	_	Temperature	_	_	0	_	_	Offset=1573-1577
+4	isolation	_	Reagent	_	_	0	_	_	Offset=1578-1594
+
+# sent_id = s20
+# text = Add to sterile 15 ml corex tube.
+1	Add	_	Action	_	_	0	_	_	Offset=1625-1628
+2	buffer	_	Reagent	_	_	0	_	_	Offset=1629-1635
+
+# sent_id = s21
+# text = Wash twice with cold isolation buffer (without added BSA) as below:
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1637-1647
+2	swing	_	Device	_	_	0	_	_	Offset=1653-1668
+3	1000	_	Speed	_	_	0	_	_	Offset=1672-1680
+4	4°C	_	Temperature	_	_	0	_	_	Offset=1682-1685
+5	five	_	Time	_	_	0	_	_	Offset=1690-1702
+6	brake	_	Method	_	_	0	_	_	Offset=1704-1712
+
+# sent_id = s22
+# text = Add buffer.
+1	Discard	_	Action	_	_	0	_	_	Offset=1715-1722
+2	Supernatant	_	Reagent	_	_	0	_	_	Offset=1723-1734
+
+# sent_id = s23
+# text = Centrifuge in a swing out rotor at 1000 x g @4°C for five minutes (brake on).
+1	soft	_	Device	_	_	0	_	_	Offset=1742-1757
+2	resuspend	_	Action	_	_	0	_	_	Offset=1771-1780
+3	pelleted	_	Reagent	_	_	0	_	_	Offset=1781-1798
+4	small	_	Generic-Measure	_	_	6	Measure	_	Offset=1804-1816
+5	cold	_	Temperature	_	_	0	_	_	Offset=1820-1824
+6	isolation	_	Reagent	_	_	0	_	_	Offset=1825-1841
+7	alternate	_	Reagent	_	_	6	Or	_	Offset=1846-1890
+
+# sent_id = s24
+# text = Discard Supernatant.
+1	phase	_	Method	_	_	0	_	_	Offset=1987-2012
+2	visualize	_	Action	_	_	0	_	_	Offset=2016-2025
+

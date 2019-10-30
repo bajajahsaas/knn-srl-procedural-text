@@ -1,0 +1,56 @@
+# sent_id = s1
+# text = Sea stars bacterial sampling
+1	Collect	_	Action	_	_	0	_	_	Offset=29-36
+2	sea	_	Reagent	_	_	0	_	_	Offset=39-48
+3	by	_	Method	_	_	0	_	_	Offset=49-56
+
+# sent_id = s2
+# text = Collected sea stars by hand.
+1	Rinse	_	Action	_	_	0	_	_	Offset=58-63
+2	location	_	Location	_	_	0	_	_	Offset=68-76
+3	sampling	_	Action	_	_	0	_	_	Offset=81-89
+4	star	_	Reagent	_	_	0	_	_	Offset=97-101
+5	sterile	_	Modifier	_	_	6	Mod-Link	_	Offset=107-114
+6	seawater	_	Reagent	_	_	0	_	_	Offset=115-123
+7	remove	_	Action	_	_	0	_	_	Offset=127-133
+8	any	_	Modifier	_	_	9	Mod-Link	_	Offset=134-137
+9	transient	_	Reagent	_	_	0	_	_	Offset=138-156
+
+# sent_id = s3
+# text = Rinse the location for sampling of the star with sterile seawater to remove any transient microbes.
+1	Remove	_	Action	_	_	0	_	_	Offset=437-443
+2	clean	_	Modifier	_	_	3	Mod-Link	_	Offset=446-451
+3	sterile	_	Reagent	_	_	4	Coreference-Link	_	Offset=452-464
+4	its	_	Mention	_	_	5	Meronym	_	Offset=470-473
+5	wrapping	_	Location	_	_	0	_	_	Offset=474-482
+6	cotton	_	Reagent	_	_	0	_	_	Offset=491-501
+7	applied	_	Action	_	_	0	_	_	Offset=512-519
+8	previously	_	Modifier	_	_	9	Mod-Link	_	Offset=527-544
+9	sample	_	Location	_	_	0	_	_	Offset=545-560
+
+# sent_id = s4
+# text = This is important since the stars are in constant contact with environmental microbes and our sequencing technique is very sensitive; therefore, rinsing reduces noise.
+1	swab	_	Reagent	_	_	0	_	_	Offset=566-570
+2	pulled	_	Action	_	_	0	_	_	Offset=581-594
+3	sample	_	Location	_	_	0	_	_	Offset=599-614
+4	moderate	_	Method	_	_	0	_	_	Offset=620-637
+
+# sent_id = s5
+# text = For healthy individuals the sampling site (where the swabbing will occur) should be approximately 15 by 10 cm.
+1	swab	_	Reagent	_	_	0	_	_	Offset=733-737
+2	placed	_	Action	_	_	0	_	_	Offset=748-754
+3	labeled	_	Modifier	_	_	5	Mod-Link	_	Offset=762-769
+4	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=770-777
+5	screw	_	Location	_	_	8	Coreference-Link	_	Offset=778-792
+6	kept	_	Action	_	_	0	_	_	Offset=802-806
+7	ice	_	Location	_	_	0	_	_	Offset=810-813
+8	it	_	Mention	_	_	0	_	_	Offset=820-822
+9	frozen	_	Action	_	_	0	_	_	Offset=830-836
+10	-80°	_	Temperature	_	_	0	_	_	Offset=840-844
+
+# sent_id = s6
+# text = Remove a clean sterile swab from its wrapping and the cotton tip should be applied to the previously rinsed sample location.
+1	Swabs	_	Reagent	_	_	0	_	_	Offset=846-851
+2	ready	_	Action	_	_	0	_	_	Offset=861-866
+3	DNA	_	Method	_	_	0	_	_	Offset=871-885
+

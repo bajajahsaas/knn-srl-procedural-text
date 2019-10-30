@@ -1,0 +1,50 @@
+# sent_id = s1
+# text = Plant Protoplast Encapsulation. 
+1	Gently	_	Modifier	_	_	0	_	_	Offset=33-39
+2	load	_	Action	_	_	0	_	_	Offset=40-44
+3	plant	_	Reagent	_	_	0	_	_	Offset=45-73
+4	hamilton	_	Location	_	_	0	_	_	Offset=79-105
+
+# sent_id = s2
+# text = Gently load plant protoplast suspensions into hamilton gas-tight syringe.
+1	Load	_	Action	_	_	0	_	_	Offset=107-111
+2	2.5%	_	Generic-Measure	_	_	4	Measure	_	Offset=112-116
+3	wt%	_	Generic-Measure	_	_	4	Measure	_	Offset=117-120
+4	Pico-Surf(TM)	_	Reagent	_	_	0	_	_	Offset=121-149
+5	hamilton	_	Location	_	_	0	_	_	Offset=155-181
+
+# sent_id = s3
+# text = Load 2.5% wt% Pico-Surf(TM) 1in Novec 7500 into hamilton gas-tight syringe.
+1	Place	_	Action	_	_	0	_	_	Offset=183-188
+2	microfluidic	_	Device	_	_	0	_	_	Offset=193-212
+3	stage	_	Method	_	_	0	_	_	Offset=220-261
+
+# sent_id = s4
+# text = Place the microfluidic device to the stage of bright-field inverted microscope which connects with a high-speed camera.
+1	Connect	_	Action	_	_	0	_	_	Offset=303-310
+2	syringes	_	Device	_	_	0	_	_	Offset=315-323
+3	corresponding	_	Modifier	_	_	4	Mod-Link	_	Offset=331-351
+4	microfluidic	_	Device	_	_	0	_	_	Offset=359-376
+5	PTFE	_	Method	_	_	0	_	_	Offset=381-397
+
+# sent_id = s5
+# text = Connect the syringes to the corresponding inlets of the microfluidic chip via PTFE microtubing.
+1	Load	_	Action	_	_	0	_	_	Offset=399-403
+2	Harvard	_	Modifier	_	_	3	Mod-Link	_	Offset=409-426
+3	PHD	_	Device	_	_	0	_	_	Offset=428-449
+4	start	_	Action	_	_	0	_	_	Offset=454-468
+
+# sent_id = s6
+# text = Load onto Harvard Apparatus, PHD 2000 syringe pump and start infusing.
+1	Record	_	Action	_	_	0	_	_	Offset=470-476
+2	encapsulation	_	Device	_	_	0	_	_	Offset=481-501
+3	fast	_	Device	_	_	0	_	_	Offset=511-522
+4	manufacturer's	_	Device	_	_	0	_	_	Offset=551-574
+
+# sent_id = s7
+# text = Record the encapsulation videos with the fast camera (PHANTOM MIROEX4) using the manufacturer's software.
+1	Image	_	Action	_	_	0	_	_	Offset=576-581
+2	plant	_	Reagent	_	_	0	_	_	Offset=586-603
+3	in	_	Method	_	_	0	_	_	Offset=604-615
+4	Andor	_	Device	_	_	0	_	_	Offset=621-648
+

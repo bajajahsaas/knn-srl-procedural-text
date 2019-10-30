@@ -1,0 +1,18 @@
+# sent_id = s1
+# text = Radioactive Labeling with T4 PNK (M0201S)
+1	Set-up	_	Action	_	_	0	_	_	Offset=42-48
+2	reaction	_	Reagent	_	_	0	_	_	Offset=63-71
+
+# sent_id = s2
+# text = Set-up the following reaction: 
+1	Incubate	_	Action	_	_	0	_	_	Offset=74-82
+2	37°C	_	Temperature	_	_	0	_	_	Offset=86-90
+3	30	_	Time	_	_	0	_	_	Offset=95-105
+
+# sent_id = s3
+# text = Incubate at 37°C for 30 minutes.
+1	Heat	_	Action	_	_	0	_	_	Offset=107-122
+2	incubating	_	Action	_	_	0	_	_	Offset=126-136
+3	65°C	_	Temperature	_	_	0	_	_	Offset=140-144
+4	20	_	Time	_	_	0	_	_	Offset=149-159
+

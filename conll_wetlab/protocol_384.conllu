@@ -1,0 +1,230 @@
+# sent_id = s1
+# text = OmniPrep™ For High Quality Genomic DNA Extraction From Fungal Tissue
+1	Collect	_	Action	_	_	0	_	_	Offset=69-76
+2	fungal	_	Reagent	_	_	0	_	_	Offset=77-90
+3	liquid	_	Reagent	_	_	0	_	_	Offset=96-110
+4	wash	_	Action	_	_	0	_	_	Offset=115-119
+5	2-3	_	Numerical	_	_	0	_	_	Offset=120-123
+6	sterile	_	Modifier	_	_	7	Mod-Link	_	Offset=133-140
+7	water	_	Reagent	_	_	0	_	_	Offset=141-146
+
+# sent_id = s2
+# text = Collect fungal tissue from liquid culture and wash 2-3 times in sterile water.
+1	grinding	_	Action	_	_	0	_	_	Offset=282-290
+2	samples	_	Reagent	_	_	0	_	_	Offset=291-298
+3	liquid	_	Reagent	_	_	2	Meronym	_	Offset=302-317
+4	fine	_	Reagent	_	_	0	_	_	Offset=323-334
+5	quickly	_	Modifier	_	_	0	_	_	Offset=339-346
+6	add	_	Action	_	_	0	_	_	Offset=347-350
+7	appropriate	_	Modifier	_	_	8	Mod-Link	_	Offset=357-368
+8	volume	_	Amount	_	_	9	Measure	_	Offset=369-375
+9	Genomic	_	Reagent	_	_	0	_	_	Offset=379-399
+
+# sent_id = s3
+# text = Fungal mycelia are best prepared by grinding samples using Molecular Grinding Resin™ in Genomic Lysis Buffer.
+1	Add	_	Action	_	_	0	_	_	Offset=416-419
+2	10-20mg	_	Amount	_	_	3	Measure	_	Offset=420-427
+3	fungal	_	Reagent	_	_	0	_	_	Offset=428-442
+4	microcentrifuge	_	Location	_	_	6	Meronym	_	Offset=448-468
+5	500µl	_	Amount	_	_	6	Measure	_	Offset=480-485
+6	Genomic	_	Reagent	_	_	0	_	_	Offset=486-506
+
+# sent_id = s4
+# text = For fungal teliospores, grinding samples in liquid nitrogen to a fine powder and quickly add to an appropriate volume of Genomic Lysis Buffer is recommended.
+1	Add	_	Action	_	_	0	_	_	Offset=508-511
+2	30µl	_	Amount	_	_	3	Measure	_	Offset=512-516
+3	Molecular	_	Reagent	_	_	0	_	_	Offset=517-541
+4	wide	_	Modifier	_	_	5	Mod-Link	_	Offset=551-560
+5	pipette	_	Device	_	_	0	_	_	Offset=561-573
+6	grind	_	Action	_	_	0	_	_	Offset=578-583
+7	microcentrifuge	_	Device	_	_	0	_	_	Offset=591-613
+
+# sent_id = s5
+# text = Add 10-20mg fungal mycelia to a microcentrifuge tube containing 500µl Genomic Lysis Buffer.
+1	add	_	Action	_	_	0	_	_	Offset=631-634
+2	ground	_	Reagent	_	_	0	_	_	Offset=635-648
+3	500µl	_	Amount	_	_	4	Measure	_	Offset=652-657
+4	Genomic	_	Reagent	_	_	0	_	_	Offset=658-678
+5	vortex	_	Action	_	_	0	_	_	Offset=683-689
+6	wet	_	Reagent	_	_	0	_	_	Offset=693-703
+
+# sent_id = s6
+# text = Add 30µl Molecular Grinding Resin™ using a wide bore pipette tips and grind with a microcentrifuge pestle.
+1	sample	_	Reagent	_	_	0	_	_	Offset=715-721
+2	cool	_	Action	_	_	0	_	_	Offset=725-729
+3	room	_	Temperature	_	_	0	_	_	Offset=733-749
+
+# sent_id = s7
+# text = For teliospoes, add ground powder to 500µl Genomic Lysis Buffer and vortex to wet sample.
+1	Add	_	Action	_	_	0	_	_	Offset=751-754
+2	200µl	_	Amount	_	_	3	Measure	_	Offset=755-760
+3	chloroform	_	Reagent	_	_	0	_	_	Offset=761-771
+4	mix	_	Action	_	_	0	_	_	Offset=776-779
+5	inverting	_	Method	_	_	0	_	_	Offset=783-792
+6	tube	_	Location	_	_	0	_	_	Offset=797-801
+7	several	_	Numerical	_	_	0	_	_	Offset=802-809
+
+# sent_id = s8
+# text = Allow the sample to cool to room temperature.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=817-827
+2	10	_	Time	_	_	0	_	_	Offset=832-842
+3	14,000xg	_	Speed	_	_	0	_	_	Offset=846-854
+4	carefully	_	Modifier	_	_	0	_	_	Offset=859-868
+5	remove	_	Action	_	_	0	_	_	Offset=869-875
+6	upper	_	Reagent	_	_	0	_	_	Offset=880-891
+7	clean	_	Modifier	_	_	8	Mod-Link	_	Offset=897-902
+8	microcentrifuge	_	Location	_	_	0	_	_	Offset=903-923
+
+# sent_id = s9
+# text = Add 200µl chloroform and mix by inverting the tube several times.
+1	Add	_	Action	_	_	0	_	_	Offset=925-928
+2	50µl	_	Amount	_	_	3	Measure	_	Offset=929-933
+3	DNA	_	Reagent	_	_	0	_	_	Offset=934-956
+4	sample	_	Reagent	_	_	0	_	_	Offset=964-970
+5	invert	_	Action	_	_	0	_	_	Offset=975-981
+6	several	_	Numerical	_	_	0	_	_	Offset=982-989
+7	mix	_	Action	_	_	0	_	_	Offset=999-1002
+
+# sent_id = s10
+# text = Centrifuge for 10 minutes at 14,000xg and carefully remove the upper phase to a clean microcentrifuge tube.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1004-1012
+2	sample	_	Reagent	_	_	0	_	_	Offset=1017-1023
+3	5-10	_	Time	_	_	0	_	_	Offset=1028-1040
+4	60°C	_	Temperature	_	_	0	_	_	Offset=1044-1048
+
+# sent_id = s11
+# text = Add 50µl DNA Stripping Solution to the sample and invert several times to mix.
+1	Add	_	Action	_	_	0	_	_	Offset=1050-1053
+2	100µl	_	Amount	_	_	3	Measure	_	Offset=1054-1059
+3	Precipitation	_	Reagent	_	_	0	_	_	Offset=1060-1082
+4	mix	_	Action	_	_	0	_	_	Offset=1087-1090
+5	inverting	_	Action	_	_	0	_	_	Offset=1094-1103
+6	tube	_	Location	_	_	0	_	_	Offset=1108-1112
+7	several	_	Numerical	_	_	0	_	_	Offset=1113-1120
+
+# sent_id = s12
+# text = Incubate the sample for 5-10 minutes at 60°C.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1128-1138
+2	sample	_	Reagent	_	_	0	_	_	Offset=1143-1149
+3	14,000xg	_	Speed	_	_	0	_	_	Offset=1153-1161
+4	5	_	Time	_	_	0	_	_	Offset=1166-1175
+
+# sent_id = s13
+# text = Add 100µl Precipitation Solution and mix by inverting the tube several times.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1177-1185
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1190-1201
+3	clean	_	Modifier	_	_	4	Mod-Link	_	Offset=1207-1212
+4	tube	_	Location	_	_	0	_	_	Offset=1213-1217
+5	precipitate	_	Action	_	_	0	_	_	Offset=1222-1233
+6	genomic	_	Reagent	_	_	0	_	_	Offset=1238-1249
+7	500µl	_	Amount	_	_	8	Measure	_	Offset=1255-1260
+8	isopropanol	_	Reagent	_	_	0	_	_	Offset=1261-1272
+
+# sent_id = s14
+# text = Centrifuge the sample at 14,000xg for 5 minutes.
+1	Invert	_	Action	_	_	0	_	_	Offset=1274-1280
+2	tubes	_	Location	_	_	0	_	_	Offset=1285-1290
+3	10	_	Numerical	_	_	0	_	_	Offset=1291-1293
+4	precipitate	_	Action	_	_	0	_	_	Offset=1303-1314
+5	DNA	_	Reagent	_	_	0	_	_	Offset=1319-1322
+
+# sent_id = s15
+# text = Transfer the supernatant to a clean tube and precipitate the genomic DNA with 500µl isopropanol.
+1	add	_	Action	_	_	0	_	_	Offset=1362-1365
+2	2µl	_	Amount	_	_	3	Measure	_	Offset=1366-1369
+3	Mussel	_	Reagent	_	_	0	_	_	Offset=1370-1385
+
+# sent_id = s16
+# text = Invert the tubes 10 times to precipitate the DNA.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1404-1414
+2	14,000xg	_	Speed	_	_	0	_	_	Offset=1418-1426
+3	5	_	Time	_	_	0	_	_	Offset=1431-1440
+4	pellet	_	Action	_	_	0	_	_	Offset=1444-1450
+5	genomic	_	Reagent	_	_	0	_	_	Offset=1451-1462
+
+# sent_id = s17
+# text = OPTIONAL: For increased DNA recovery, add 2µl Mussel Glycogen as a DNA carrier.
+1	Remove	_	Action	_	_	0	_	_	Offset=1464-1470
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1475-1486
+
+# sent_id = s18
+# text = Centrifuge at 14,000xg for 5 minutes to pellet genomic DNA.
+1	Add	_	Action	_	_	0	_	_	Offset=1488-1491
+2	700µl	_	Amount	_	_	4	Measure	_	Offset=1492-1497
+3	70%	_	Concentration	_	_	4	Measure	_	Offset=1498-1501
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=1502-1509
+5	tube	_	Location	_	_	0	_	_	Offset=1517-1521
+6	invert	_	Action	_	_	0	_	_	Offset=1526-1532
+7	several	_	Numerical	_	_	0	_	_	Offset=1533-1540
+8	wash	_	Action	_	_	0	_	_	Offset=1550-1554
+9	DNA	_	Reagent	_	_	0	_	_	Offset=1559-1569
+
+# sent_id = s19
+# text = Remove the supernatant.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1571-1581
+2	1	_	Time	_	_	0	_	_	Offset=1586-1594
+3	14,000xg	_	Speed	_	_	0	_	_	Offset=1598-1606
+
+# sent_id = s20
+# text = Add 700µl 70% ethanol to the tube and invert several times to wash the DNA pellet.
+1	Decant	_	Action	_	_	0	_	_	Offset=1608-1614
+2	pipette	_	Action	_	_	0	_	_	Offset=1618-1629
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=1634-1646
+
+# sent_id = s21
+# text = Centrifuge for 1 minute at 14,000xg.
+1	Invert	_	Action	_	_	0	_	_	Offset=1650-1656
+2	tube	_	Location	_	_	0	_	_	Offset=1661-1665
+3	clean	_	Modifier	_	_	4	Mod-Link	_	Offset=1671-1676
+4	absorbent	_	Location	_	_	0	_	_	Offset=1677-1694
+5	several	_	Time	_	_	0	_	_	Offset=1699-1714
+6	any	_	Modifier	_	_	8	Mod-Link	_	Offset=1724-1727
+7	excess	_	Modifier	_	_	8	Mod-Link	_	Offset=1728-1734
+8	ethanol	_	Reagent	_	_	0	_	_	Offset=1735-1742
+9	drain	_	Action	_	_	0	_	_	Offset=1746-1757
+
+# sent_id = s22
+# text = Decant or pipette off the ethanol wash.  
+1	Add	_	Action	_	_	0	_	_	Offset=1758-1761
+2	50µl	_	Amount	_	_	3	Measure	_	Offset=1762-1766
+3	TE	_	Reagent	_	_	0	_	_	Offset=1767-1776
+4	pellet	_	Reagent	_	_	0	_	_	Offset=1784-1790
+
+# sent_id = s23
+# text = Invert the tube on a clean absorbent surface for several minutes to allow any excess ethanol to drain away.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1792-1800
+2	room	_	Temperature	_	_	0	_	_	Offset=1804-1820
+3	at	_	Modifier	_	_	4	Mod-Link	_	Offset=1825-1833
+4	15	_	Time	_	_	0	_	_	Offset=1834-1844
+5	rehydrate	_	Action	_	_	0	_	_	Offset=1848-1857
+
+# sent_id = s24
+# text = Add 50µl TE Buffer to the pellet.
+1	Store	_	Action	_	_	0	_	_	Offset=1943-1948
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1949-1952
+3	4°C	_	Temperature	_	_	0	_	_	Offset=1956-1959
+4	long	_	Reagent	_	_	0	_	_	Offset=1965-1982
+5	store	_	Action	_	_	0	_	_	Offset=1983-1988
+6	-20°C	_	Temperature	_	_	0	_	_	Offset=1992-1997
+7	-80°C	_	Temperature	_	_	6	Or	_	Offset=2001-2006
+
+# sent_id = s25
+# text = Incubate at room temperature for at least 15 minutes to rehydrate.
+1	Add	_	Action	_	_	0	_	_	Offset=2008-2011
+2	1µl	_	Amount	_	_	3	Measure	_	Offset=2012-2015
+3	Proteinase	_	Reagent	_	_	0	_	_	Offset=2016-2037
+4	every	_	Modifier	_	_	6	Mod-Link	_	Offset=2042-2047
+5	100µl	_	Amount	_	_	6	Measure	_	Offset=2048-2053
+6	Lysis	_	Reagent	_	_	0	_	_	Offset=2054-2066
+7	incubate	_	Action	_	_	0	_	_	Offset=2071-2079
+8	60°C	_	Temperature	_	_	0	_	_	Offset=2083-2087
+9	1-2	_	Time	_	_	0	_	_	Offset=2092-2101
+
+# sent_id = s26
+# text = OPTIONAL: 1µl LongLife™ RNase for every 100µl TE Buffer can be added at this stage.
+1	Invert	_	Action	_	_	0	_	_	Offset=2103-2109
+2	tube	_	Location	_	_	0	_	_	Offset=2114-2118
+3	periodically	_	Modifier	_	_	0	_	_	Offset=2119-2131
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=2132-2136
+5	hour	_	Time	_	_	0	_	_	Offset=2137-2141
+

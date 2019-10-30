@@ -1,0 +1,196 @@
+# sent_id = s1
+# text = RNA Extraction from Drosophila Tissues using TRIzol Reagent
+1	Add	_	Action	_	_	0	_	_	Offset=60-63
+2	1	_	Amount	_	_	3	Measure	_	Offset=64-68
+3	TRIzol	_	Reagent	_	_	0	_	_	Offset=69-83
+4	50-100	_	Amount	_	_	5	Measure	_	Offset=87-96
+5	frozen	_	Reagent	_	_	0	_	_	Offset=100-124
+6	1.5	_	Size	_	_	7	Measure	_	Offset=130-136
+7	microcentrifuge	_	Location	_	_	5	Meronym	_	Offset=137-157
+8	homogenize	_	Action	_	_	0	_	_	Offset=163-173
+9	a	_	Device	_	_	0	_	_	Offset=191-218
+
+# sent_id = s2
+# text = Add 1 mL TRIzol Reagent to 50-100 mg of frozen Drosophila tissue in a 1.5 mL microcentrifuge tube, and homogenize immediately with a disposable plastic pestle.
+1	Centifuge	_	Action	_	_	0	_	_	Offset=220-229
+2	sample	_	Reagent	_	_	0	_	_	Offset=234-240
+3	12,000	_	Speed	_	_	0	_	_	Offset=244-254
+4	10	_	Time	_	_	0	_	_	Offset=259-269
+5	4˚C	_	Temperature	_	_	0	_	_	Offset=273-276
+
+# sent_id = s3
+# text = Centifuge the sample at 12,000 x g for 10 minutes at 4˚C.
+1	Pellet	_	Reagent	_	_	2	Meronym	3:Meronym|4:Meronym	Offset=279-285
+2	ECM	_	Reagent	_	_	0	_	_	Offset=295-298
+3	polysaccharides	_	Reagent	_	_	0	_	_	Offset=300-315
+4	high	_	Reagent	_	_	0	_	_	Offset=321-346
+5	supernatant	_	Reagent	_	_	6	Meronym	_	Offset=348-359
+6	RNA	_	Reagent	_	_	0	_	_	Offset=373-376
+
+# sent_id = s4
+# text = *Pellet contains ECM, polysaccharides, and high molecular weight DNA; supernatant contains the RNA.
+1	Remove	_	Action	_	_	0	_	_	Offset=446-452
+2	discard	_	Action	_	_	0	_	_	Offset=457-464
+3	the	_	Reagent	_	_	0	_	_	Offset=465-480
+
+# sent_id = s5
+# text = In high fat samples, a layer of fat collects above the supernatant.
+1	Transfer	_	Action	_	_	0	_	_	Offset=482-490
+2	cleared	_	Reagent	_	_	0	_	_	Offset=495-514
+3	new	_	Location	_	_	0	_	_	Offset=520-528
+
+# sent_id = s6
+# text = Remove and discard the fatty layer.
+1	Incubate	_	Action	_	_	0	_	_	Offset=530-538
+2	sample	_	Reagent	_	_	0	_	_	Offset=543-549
+3	5	_	Time	_	_	0	_	_	Offset=554-563
+4	room	_	Temperature	_	_	0	_	_	Offset=567-583
+
+# sent_id = s7
+# text = Transfer the cleared supernatant to a new tube.
+1	Add	_	Action	_	_	0	_	_	Offset=585-588
+2	0.2	_	Amount	_	_	3	Measure	_	Offset=589-595
+3	chloroform	_	Reagent	_	_	0	_	_	Offset=599-609
+4	cap	_	Action	_	_	0	_	_	Offset=615-618
+5	tube	_	Location	_	_	0	_	_	Offset=623-627
+6	securely	_	Modifier	_	_	0	_	_	Offset=628-636
+
+# sent_id = s8
+# text = Incubate the sample for 5 minutes at room temperature.
+1	Shake	_	Action	_	_	0	_	_	Offset=638-643
+2	tube	_	Location	_	_	0	_	_	Offset=648-652
+3	vigorously	_	Modifier	_	_	0	_	_	Offset=653-664
+4	by	_	Modifier	_	_	0	_	_	Offset=664-671
+5	15	_	Time	_	_	0	_	_	Offset=676-686
+
+# sent_id = s9
+# text = Add 0.2 mL of chloroform, and cap the tube securely.
+1	Incubate	_	Action	_	_	0	_	_	Offset=688-696
+2	2-3	_	Time	_	_	0	_	_	Offset=701-712
+3	room	_	Temperature	_	_	0	_	_	Offset=716-732
+
+# sent_id = s10
+# text = Shake the tube vigorously by hand for 15 seconds.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=734-744
+2	sample	_	Reagent	_	_	0	_	_	Offset=749-755
+3	12,000	_	Speed	_	_	0	_	_	Offset=759-769
+4	15	_	Time	_	_	0	_	_	Offset=774-784
+5	4˚C	_	Temperature	_	_	0	_	_	Offset=788-791
+
+# sent_id = s11
+# text = Incubate for 2-3 minutes at room temperature.
+1	Remove	_	Action	_	_	0	_	_	Offset=977-983
+2	aqueous	_	Reagent	_	_	0	_	_	Offset=988-1001
+3	sample	_	Reagent	_	_	2	Meronym	_	Offset=1009-1015
+4	angling	_	Action	_	_	0	_	_	Offset=1019-1026
+5	tube	_	Location	_	_	0	_	_	Offset=1031-1035
+6	at	_	Generic-Measure	_	_	0	_	_	Offset=1036-1042
+7	1073	_	Action	_	_	0	_	_	Offset=1047-1056;1070
+8	solution	_	Reagent	_	_	0	_	_	Offset=1061-1069
+
+# sent_id = s12
+# text = Centrifuge the sample at 12,000 x g for 15 minutes at 4˚C.
+1	Place	_	Action	_	_	0	_	_	Offset=1075-1080
+2	aqueous	_	Reagent	_	_	0	_	_	Offset=1085-1098
+3	new	_	Location	_	_	0	_	_	Offset=1106-1114
+
+# sent_id = s13
+# text = *The mixture separates into a lower red phenol-chloroform phase, an interphase, and a colorless upper aqueous phase.
+1	The	_	Reagent	_	_	0	_	_	Offset=1189-1240
+2	saved	_	Action	_	_	0	_	_	Offset=1248-1253
+3	overnight	_	Time	_	_	0	_	_	Offset=1301-1310
+4	4˚C	_	Temperature	_	_	0	_	_	Offset=1314-1317
+
+# sent_id = s14
+# text = RNA remains in colorless aqueous phase (~50% of the total volume).
+1	Add	_	Action	_	_	0	_	_	Offset=1450-1453
+2	0.5	_	Amount	_	_	4	Measure	_	Offset=1454-1460
+3	100%	_	Concentration	_	_	4	Measure	_	Offset=1464-1468
+4	isopropanol	_	Reagent	_	_	0	_	_	Offset=1469-1480
+5	aqueous	_	Reagent	_	_	0	_	_	Offset=1488-1501
+
+# sent_id = s15
+# text = Remove the aqueous phase of the sample by angling the tube at 45˚ and pipetting the solution out.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1503-1511
+2	sample	_	Reagent	_	_	0	_	_	Offset=1512-1518
+3	room	_	Temperature	_	_	0	_	_	Offset=1522-1538
+4	10	_	Time	_	_	0	_	_	Offset=1543-1553
+
+# sent_id = s16
+# text = Place the aqueous phase into a new tube.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1555-1565
+2	12,000	_	Speed	_	_	0	_	_	Offset=1569-1579
+3	10	_	Time	_	_	0	_	_	Offset=1584-1594
+4	4˚C	_	Temperature	_	_	0	_	_	Offset=1598-1601
+
+# sent_id = s17
+# text = *Avoid drawing any of the interphase or organic layer into the pipette.
+1	Remove	_	Action	_	_	0	_	_	Offset=1710-1716
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1721-1732
+3	tube	_	Location	_	_	0	_	_	Offset=1742-1746
+4	the	_	Reagent	_	_	0	_	_	Offset=1756-1770
+
+# sent_id = s18
+# text = *The interphase and organic phenol-chloroform phases can be saved for DNA or protein isolation if desired (saved overnight at 4˚C); however, the protocols for these procedures will not be discussed here.
+1	Wash	_	Action	_	_	0	_	_	Offset=1772-1776
+2	pellet	_	Reagent	_	_	0	_	_	Offset=1781-1787
+3	1	_	Amount	_	_	5	Measure	_	Offset=1793-1797
+4	75%	_	Concentration	_	_	5	Measure	_	Offset=1798-1801
+5	ethanol	_	Reagent	_	_	0	_	_	Offset=1802-1809
+
+# sent_id = s19
+# text = Please refer to the manufacturer's TRIzol Reagent manual.
+1	RNA	_	Reagent	_	_	0	_	_	Offset=1812-1815
+2	stored	_	Action	_	_	0	_	_	Offset=1823-1829
+3	75%	_	Concentration	_	_	4	Measure	_	Offset=1833-1836
+4	ethanol	_	Reagent	_	_	0	_	_	Offset=1837-1844
+5	1	_	Time	_	_	0	_	_	Offset=1854-1860
+6	-20˚C	_	Temperature	_	_	0	_	_	Offset=1864-1869
+7	1	_	Time	_	_	5	Or	_	Offset=1883-1889
+8	4˚C	_	Temperature	_	_	6	Or	_	Offset=1893-1896
+
+# sent_id = s20
+# text = Add 0.5 mL of 100% isopropanol to the aqueous phase.
+1	Briefly	_	Modifier	_	_	0	_	_	Offset=1898-1906
+2	vortex	_	Action	_	_	0	_	_	Offset=1906-1912
+3	sample	_	Reagent	_	_	0	_	_	Offset=1917-1923
+4	Centrifuge	_	Action	_	_	0	_	_	Offset=1924-1934
+5	tube	_	Location	_	_	0	_	_	Offset=1939-1943
+6	7,500	_	Speed	_	_	0	_	_	Offset=1947-1956
+7	5	_	Time	_	_	0	_	_	Offset=1961-1970
+8	4˚C	_	Temperature	_	_	0	_	_	Offset=1974-1977
+9	Discard	_	Action	_	_	0	_	_	Offset=1978-1985
+10	wash	_	Reagent	_	_	0	_	_	Offset=1990-1994
+
+# sent_id = s21
+# text = Incubate sample at room temperature for 10 minutes.
+1	Vacuum	_	Action	_	_	0	_	_	Offset=1996-2002
+2	air	_	Action	_	_	0	_	_	Offset=2006-2013
+3	RNA	_	Reagent	_	_	0	_	_	Offset=2018-2028
+4	5-10	_	Time	_	_	0	_	_	Offset=2033-2045
+
+# sent_id = s22
+# text = Centrifuge at 12,000 x g for 10 minutes at 4˚C.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=2133-2143
+2	RNA	_	Reagent	_	_	0	_	_	Offset=2147-2157
+3	RNase-free	_	Reagent	_	_	0	_	_	Offset=2161-2177
+4	passing	_	Action	_	_	0	_	_	Offset=2181-2188
+5	solution	_	Reagent	_	_	0	_	_	Offset=2193-2201
+6	up	_	Modifier	_	_	0	_	_	Offset=2202-2213
+7	several	_	Numerical	_	_	0	_	_	Offset=2214-2227
+8	pipette	_	Device	_	_	0	_	_	Offset=2238-2249
+
+# sent_id = s23
+# text = *RNA is often visible prior to centrifugation, and forms a gel-like pellet on the side and bottom of tube.
+1	Incubate	_	Action	_	_	0	_	_	Offset=2251-2259
+2	water	_	Location	_	_	0	_	_	Offset=2265-2275
+3	heat	_	Location	_	_	2	Or	_	Offset=2279-2293
+4	55-60˚C	_	Temperature	_	_	0	_	_	Offset=2297-2304
+5	10-15	_	Time	_	_	0	_	_	Offset=2309-2322
+
+# sent_id = s24
+# text = Remove all supernatant from the tube, leaving the RNA pellet.
+1	Proceed	_	Action	_	_	0	_	_	Offset=2324-2358
+2	store	_	Action	_	_	0	_	_	Offset=2406-2411
+3	-70˚C	_	Temperature	_	_	0	_	_	Offset=2415-2420
+

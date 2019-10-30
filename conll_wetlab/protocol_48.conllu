@@ -1,0 +1,93 @@
+# sent_id = s1
+# text = LB Agar Plates
+1	Weigh	_	Action	_	_	0	_	_	Offset=15-20
+2	1L	_	Amount	_	_	3	Measure	_	Offset=46-48
+3	Erlenmeyer	_	Location	_	_	0	_	_	Offset=49-65
+4	5g	_	Amount	_	_	5	Measure	_	Offset=67-69
+5	NaCl	_	Reagent	_	_	0	_	_	Offset=70-74
+
+# sent_id = s2
+# text = Weigh out the following into a 1L Erlenmeyer flask: 5g NaCl.
+1	add	_	Action	_	_	0	_	_	Offset=120-123
+2	dH2O	_	Reagent	_	_	0	_	_	Offset=125-129
+3	500mL	_	Amount	_	_	0	_	_	Offset=134-139
+
+# sent_id = s3
+# text = 5g Tryptone.
+1	Swirl	_	Action	_	_	0	_	_	Offset=141-146
+2	mix	_	Action	_	_	0	_	_	Offset=150-153
+
+# sent_id = s4
+# text = 2.5g Yeast Extract.
+1	Cover	_	Action	_	_	0	_	_	Offset=155-160
+2	top	_	Location	_	_	0	_	_	Offset=165-168
+3	flask	_	Location	_	_	2	Meronym	_	Offset=176-181
+4	aluminum	_	Seal	_	_	0	_	_	Offset=187-200
+5	label	_	Action	_	_	0	_	_	Offset=205-210
+6	autoclave	_	Seal	_	_	0	_	_	Offset=216-230
+
+# sent_id = s5
+# text = 7.5g Agar.
+1	Autoclave	_	Action	_	_	0	_	_	Offset=232-241
+2	liquid	_	Generic-Measure	_	_	0	_	_	Offset=249-263
+3	20	_	Time	_	_	0	_	_	Offset=268-278
+
+# sent_id = s6
+# text = add (dH2O) to 500mL.
+1	removing	_	Action	_	_	0	_	_	Offset=334-342
+2	solution	_	Reagent	_	_	0	_	_	Offset=347-355
+3	autoclave	_	Device	_	_	0	_	_	Offset=365-374
+4	agar	_	Reagent	_	_	0	_	_	Offset=386-399
+5	cool	_	Action	_	_	0	_	_	Offset=403-407
+6	55°C	_	Temperature	_	_	0	_	_	Offset=411-415
+
+# sent_id = s7
+# text = Swirl to mix.
+1	Add	_	Action	_	_	0	_	_	Offset=417-420
+2	appropriate	_	Amount	_	_	4	Measure	_	Offset=425-443
+3	desired	_	Modifier	_	_	4	Mod-Link	_	Offset=447-454
+4	antibiotic	_	Reagent	_	_	0	_	_	Offset=455-465
+5	solution	_	Reagent	_	_	0	_	_	Offset=473-481
+6	500μL	_	Amount	_	_	5	Measure	_	Offset=483-488
+7	1,000x	_	Concentration	_	_	8	Measure	_	Offset=508-514
+8	antibiotic	_	Reagent	_	_	0	_	_	Offset=515-531
+9	swirl	_	Action	_	_	0	_	_	Offset=537-542
+10	mix	_	Action	_	_	0	_	_	Offset=546-549
+
+# sent_id = s8
+# text = Cover the top of the flask with aluminum foil and label with autoclave tape.
+1	Pour	_	Action	_	_	0	_	_	Offset=551-555
+2	~20mL	_	Amount	_	_	3	Measure	_	Offset=556-561
+3	LB	_	Reagent	_	_	0	_	_	Offset=565-572
+4	10cm	_	Amount	_	_	5	Measure	_	Offset=577-581
+5	polystyrene	_	Location	_	_	0	_	_	Offset=582-604
+
+# sent_id = s9
+# text = Autoclave on the liquid setting for 20 minutes or according to your autoclave's specifications.
+1	Place	_	Action	_	_	0	_	_	Offset=606-611
+2	lids	_	Seal	_	_	0	_	_	Offset=616-620
+3	plates	_	Location	_	_	4	Coreference-Link	_	Offset=628-634
+4	them	_	Mention	_	_	0	_	_	Offset=645-649
+5	cool	_	Action	_	_	0	_	_	Offset=653-657
+6	30-60	_	Time	_	_	0	_	_	Offset=662-675
+
+# sent_id = s10
+# text = After removing the solution from the autoclave, allow the agar solution to cool to 55°C.
+1	Invert	_	Action	_	_	0	_	_	Offset=696-702
+2	plates	_	Location	_	_	0	_	_	Offset=707-713
+3	sit	_	Action	_	_	0	_	_	Offset=722-725
+4	several	_	Time	_	_	0	_	_	Offset=730-748
+5	overnight	_	Time	_	_	4	Or	_	Offset=752-761
+
+# sent_id = s11
+# text = Add the appropriate amount of desired antibiotic to the solution (500μL if you are using a 1,000x antibiotic stock) and swirl to mix.
+1	Label	_	Action	_	_	0	_	_	Offset=763-768
+2	bottom	_	Location	_	_	0	_	_	Offset=773-779
+3	plates	_	Location	_	_	2	Meronym	_	Offset=783-789
+4	antibiotic	_	Reagent	_	_	0	_	_	Offset=795-805
+5	store	_	Action	_	_	0	_	_	Offset=819-824
+6	plastic	_	Location	_	_	0	_	_	Offset=828-840
+7	sealed	_	Action	_	_	0	_	_	Offset=844-850
+8	parafilm	_	Seal	_	_	0	_	_	Offset=856-864
+9	4°C	_	Temperature	_	_	0	_	_	Offset=868-871
+

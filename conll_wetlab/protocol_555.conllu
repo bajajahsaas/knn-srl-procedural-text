@@ -1,0 +1,160 @@
+# sent_id = s1
+# text = Methyltransferase Assay
+1	Set	_	Action	_	_	0	_	_	Offset=24-30
+2	assays	_	Reagent	_	_	5	Meronym	_	Offset=35-41
+3	50.0	_	Amount	_	_	5	Measure	_	Offset=54-61
+4	per	_	Modifier	_	_	5	Mod-Link	_	Offset=68-71
+5	assay	_	Reagent	_	_	0	_	_	Offset=72-77
+6	3	_	Amount	_	_	7	Measure	_	Offset=83-87
+7	DNA	_	Reagent	_	_	0	_	_	Offset=91-94
+8	2	_	Generic-Measure	_	_	9	Measure	10:Measure	Offset=99-104
+9	Adenosyl-L-Methionine	_	Reagent	_	_	0	_	_	Offset=108-129
+10	S-Methyl	_	Reagent	_	_	0	_	_	Offset=131-144
+11	enzyme	_	Reagent	_	_	0	_	_	Offset=154-173
+
+# sent_id = s2
+# text = Set up the assays, to contain 50.0 µL total per assay with 3 µg of DNA and 2 µCi of Adenosyl-L-Methionine, S-Methyl (3H), and the enzyme to be tested.
+1	Incubate	_	Action	_	_	0	_	_	Offset=175-183
+2	assays	_	Reagent	_	_	0	_	_	Offset=188-194
+3	37°C	_	Temperature	_	_	0	_	_	Offset=198-202
+4	2	_	Time	_	_	0	_	_	Offset=207-214
+
+# sent_id = s3
+# text = Incubate the assays at 37°C for 2 hours.
+1	Add	_	Action	_	_	0	_	_	Offset=216-219
+2	30	_	Amount	_	_	3	Measure	_	Offset=220-225
+3	proteinase	_	Reagent	_	_	0	_	_	Offset=237-249
+4	each	_	Modifier	_	_	5	Mod-Link	_	Offset=253-257
+5	assay	_	Reagent	_	_	0	_	_	Offset=258-263
+
+# sent_id = s4
+# text = Add 30 µL (60 µg) of proteinase K to each assay.
+1	Incubate	_	Action	_	_	0	_	_	Offset=265-273
+2	65°C	_	Temperature	_	_	0	_	_	Offset=277-281
+3	20	_	Time	_	_	0	_	_	Offset=286-292
+
+# sent_id = s5
+# text = Incubate at 65°C for 20 min.
+1	Add	_	Action	_	_	0	_	_	Offset=294-297
+2	4	_	Amount	_	_	3	Measure	_	Offset=298-302
+3	ss	_	Reagent	_	_	0	_	_	Offset=314-333
+
+# sent_id = s6
+# text = Add 4 µL (20 µg) of ss salmon sperm DNA as a carrier.
+1	Add	_	Action	_	_	0	_	_	Offset=348-351
+2	84	_	Amount	_	_	4	Measure	_	Offset=369-374
+3	20%	_	Concentration	_	_	4	Measure	_	Offset=379-382
+4	TCA	_	Reagent	_	_	0	_	_	Offset=383-386
+5	incubate	_	Action	_	_	0	_	_	Offset=391-399
+6	4°C	_	Temperature	_	_	0	_	_	Offset=403-406
+7	10	_	Time	_	_	0	_	_	Offset=411-417
+8	precipitate	_	Action	_	_	0	_	_	Offset=421-432
+9	samples	_	Reagent	_	_	0	_	_	Offset=437-444
+
+# sent_id = s7
+# text = Add an equal volume (84 µL) of 20% TCA and incubate at 4°C for 10 min to precipitate the samples.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=446-456
+2	assays	_	Reagent	_	_	0	_	_	Offset=461-467
+3	microfuge	_	Device	_	_	0	_	_	Offset=475-484
+4	5	_	Time	_	_	3	Setting	_	Offset=489-494
+5	4°C	_	Temperature	_	_	3	Setting	_	Offset=498-501
+
+# sent_id = s8
+# text = Centrifuge the assays in the microfuge for 5 min at 4°C.
+1	Discard	_	Action	_	_	0	_	_	Offset=503-510
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=515-527
+
+# sent_id = s9
+# text = Discard the supernatants.
+1	Wash	_	Action	_	_	0	_	_	Offset=529-533
+2	pellets	_	Reagent	_	_	0	_	_	Offset=538-545
+3	2X	_	Numerical	_	_	0	_	_	Offset=546-548
+4	200	_	Amount	_	_	6	Measure	_	Offset=554-560
+5	5%	_	Concentration	_	_	6	Measure	_	Offset=564-566
+6	TCA	_	Reagent	_	_	0	_	_	Offset=567-570
+7	microfuge	_	Device	_	_	0	_	_	Offset=578-587
+8	5	_	Time	_	_	7	Setting	_	Offset=592-597
+9	4°C	_	Temperature	_	_	7	Setting	_	Offset=601-604
+
+# sent_id = s10
+# text = Wash the pellets 2X with 200 µL of 5% TCA in the microfuge for 5 min at 4°C.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=606-615
+2	pellets	_	Reagent	_	_	0	_	_	Offset=620-627
+3	500	_	Amount	_	_	6	Measure	_	Offset=633-639
+4	each	_	Modifier	_	_	2	Mod-Link	_	Offset=640-644
+5	500	_	Concentration	_	_	6	Measure	_	Offset=648-654
+6	NaOH	_	Reagent	_	_	0	_	_	Offset=655-659
+
+# sent_id = s11
+# text = Resuspend the pellets with 500 µL each of 500 mM NaOH.
+1	Incubate	_	Action	_	_	0	_	_	Offset=661-669
+2	assays	_	Reagent	_	_	0	_	_	Offset=674-680
+3	65°C	_	Temperature	_	_	0	_	_	Offset=684-688
+4	20	_	Time	_	_	0	_	_	Offset=693-699
+
+# sent_id = s12
+# text = Incubate the assays at 65°C for 20 min.
+1	Precipitate	_	Action	_	_	0	_	_	Offset=701-712
+2	samples	_	Reagent	_	_	0	_	_	Offset=717-724
+3	500	_	Amount	_	_	5	Measure	_	Offset=730-736
+4	20%	_	Concentration	_	_	5	Measure	_	Offset=740-743
+5	TCA	_	Reagent	_	_	0	_	_	Offset=744-747
+6	10	_	Time	_	_	0	_	_	Offset=752-758
+7	4°C	_	Temperature	_	_	0	_	_	Offset=762-765
+
+# sent_id = s13
+# text = Precipitate the samples with 500 µL of 20% TCA for 10 min at 4°C.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=767-777
+2	samples	_	Reagent	_	_	0	_	_	Offset=782-789
+3	microfuge	_	Device	_	_	0	_	_	Offset=797-806
+4	5	_	Time	_	_	3	Setting	_	Offset=811-816
+5	4°C	_	Temperature	_	_	3	Setting	_	Offset=820-823
+
+# sent_id = s14
+# text = Centrifuge the samples in the microfuge for 5 min at 4°C.
+1	Wash	_	Action	_	_	0	_	_	Offset=825-829
+2	pellets	_	Reagent	_	_	0	_	_	Offset=834-841
+3	2X	_	Numerical	_	_	0	_	_	Offset=842-844
+4	200	_	Amount	_	_	6	Measure	_	Offset=850-856
+5	5%	_	Concentration	_	_	6	Measure	_	Offset=860-862
+6	TCA	_	Reagent	_	_	0	_	_	Offset=863-866
+7	microfuge	_	Device	_	_	0	_	_	Offset=874-883
+8	5	_	Time	_	_	7	Setting	_	Offset=888-893
+9	4°C	_	Temperature	_	_	7	Setting	_	Offset=897-900
+
+# sent_id = s15
+# text = Wash the pellets 2X with 200 µL of 5% TCA in the microfuge for 5 min at 4°C.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=902-911
+2	pellet	_	Reagent	_	_	0	_	_	Offset=916-922
+3	500	_	Amount	_	_	5	Measure	_	Offset=928-934
+4	5%	_	Concentration	_	_	5	Measure	_	Offset=938-940
+5	TCA	_	Reagent	_	_	0	_	_	Offset=941-944
+
+# sent_id = s16
+# text = Resuspend the pellet with 500 µL of 5% TCA.
+1	Incubate	_	Action	_	_	0	_	_	Offset=946-954
+2	boiling	_	Reagent	_	_	0	_	_	Offset=958-971
+3	30	_	Time	_	_	0	_	_	Offset=976-982
+4	loosen	_	Action	_	_	0	_	_	Offset=984-990
+5	caps	_	Seal	_	_	0	_	_	Offset=995-999
+6	puncture	_	Action	_	_	0	_	_	Offset=1003-1011
+7	caps	_	Seal	_	_	0	_	_	Offset=1016-1020
+8	tubes	_	Location	_	_	7	Meronym	5:Meronym	Offset=1028-1033
+
+# sent_id = s17
+# text = Incubate in boiling water for 30 min (loosen the caps or puncture the caps of the tubes).
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1036-1046
+2	samples	_	Reagent	_	_	0	_	_	Offset=1051-1058
+3	microfuge	_	Device	_	_	0	_	_	Offset=1066-1075
+4	5	_	Time	_	_	3	Setting	_	Offset=1080-1085
+5	4°C	_	Temperature	_	_	3	Setting	_	Offset=1089-1092
+6	remove	_	Action	_	_	0	_	_	Offset=1096-1102
+7	insoluble	_	Reagent	_	_	0	_	_	Offset=1107-1125
+
+# sent_id = s18
+# text = Centrifuge the samples in the microfuge for 5 min at 4°C to remove the insoluble material.
+1	Count	_	Action	_	_	0	_	_	Offset=1127-1132
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=1137-1149
+3	10	_	Amount	_	_	4	Measure	_	Offset=1153-1158
+4	triton-toluene	_	Reagent	_	_	0	_	_	Offset=1162-1194
+

@@ -1,0 +1,34 @@
+# sent_id = s1
+# text = Electron Microscopy of Haloviruses
+1	sample	_	Reagent	_	_	0	_	_	Offset=37-43
+2	virus	_	Reagent	_	_	1	Meronym	_	Offset=47-52
+3	placed	_	Action	_	_	0	_	_	Offset=56-62
+4	sterile	_	Modifier	_	_	5	Mod-Link	_	Offset=68-75
+5	surface	_	Location	_	_	0	_	_	Offset=76-83
+6	grid	_	Location	_	_	0	_	_	Offset=92-96
+7	plastic-coated	_	Method	_	_	0	_	_	Offset=98-122
+8	placed	_	Action	_	_	0	_	_	Offset=124-130
+9	droplet	_	Reagent	_	_	0	_	_	Offset=138-145
+10	1.5–2	_	Time	_	_	0	_	_	Offset=150-159
+
+# sent_id = s2
+# text = A sample of virus is placed on a sterile surface and the grid, plastic-coated side down, placed on the droplet for 1.5–2 min.
+1	grid	_	Location	_	_	0	_	_	Offset=165-169
+2	placed	_	Action	_	_	0	_	_	Offset=178-184
+3	1–1.5	_	Time	_	_	0	_	_	Offset=190-199
+4	drop	_	Reagent	_	_	0	_	_	Offset=206-210
+5	freshly	_	Modifier	_	_	7	Mod-Link	_	Offset=214-230
+6	2%	_	Concentration	_	_	7	Measure	_	Offset=231-237
+7	uranyl	_	Reagent	_	_	4	Meronym	_	Offset=238-252
+8	excess	_	Modifier	_	_	9	Mod-Link	_	Offset=257-263
+9	stain	_	Reagent	_	_	0	_	_	Offset=264-269
+10	removed	_	Action	_	_	0	_	_	Offset=270-277
+11	filter	_	Device	_	_	0	_	_	Offset=283-295
+
+# sent_id = s3
+# text = The grid is then placed, for 1–1.5 min, on a drop of freshly filtered 2% w/v uranyl acetate and excess stain removed with filter paper.
+1	grids	_	Location	_	_	0	_	_	Offset=315-320
+2	may	_	Modifier	_	_	0	_	_	Offset=321-327
+3	examined	_	Action	_	_	0	_	_	Offset=328-336
+4	transmission	_	Method	_	_	0	_	_	Offset=340-372
+

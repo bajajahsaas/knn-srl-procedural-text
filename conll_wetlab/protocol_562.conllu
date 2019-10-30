@@ -1,0 +1,110 @@
+# sent_id = s1
+# text = Conjugation on filters
+1	Inoculate	_	Action	_	_	0	_	_	Offset=23-32
+2	small	_	Modifier	_	_	4	Mod-Link	_	Offset=33-38
+3	2	_	Amount	_	_	2	Setting	_	Offset=40-49
+4	cultures	_	Reagent	_	_	0	_	_	Offset=51-59
+5	donor	_	Reagent	_	_	4	Meronym	_	Offset=68-95
+6	appropriate	_	Modifier	_	_	7	Mod-Link	_	Offset=102-113
+7	antibiotics	_	Reagent	_	_	0	_	_	Offset=114-125
+8	lysogeny	_	Reagent	_	_	7	Meronym	_	Offset=130-144
+
+# sent_id = s2
+# text = Inoculate small (2 or 3 ml) cultures of your donor and recipient strains, with appropriate antibiotics, in lysogeny broth (LB).
+1	Take	_	Action	_	_	0	_	_	Offset=223-227
+2	1	_	Amount	_	_	3	Measure	_	Offset=228-232
+3	donor	_	Reagent	_	_	0	_	_	Offset=236-263
+4	centrifuge	_	Action	_	_	0	_	_	Offset=268-278
+5	10,000	_	Speed	_	_	0	_	_	Offset=282-292
+6	2	_	Time	_	_	0	_	_	Offset=297-306
+7	pellet	_	Action	_	_	0	_	_	Offset=310-316
+8	bacteria	_	Reagent	_	_	0	_	_	Offset=321-329
+
+# sent_id = s3
+# text = Do this late in the day, the day before you want to do the conjugation.
+1	Aspirate	_	Action	_	_	0	_	_	Offset=331-339
+2	discard	_	Action	_	_	0	_	_	Offset=344-351
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=356-367
+4	resuspend	_	Action	_	_	0	_	_	Offset=372-381
+5	bacterial	_	Reagent	_	_	0	_	_	Offset=386-402
+6	fresh	_	Modifier	_	_	7	Mod-Link	_	Offset=406-411
+7	LB	_	Reagent	_	_	0	_	_	Offset=412-434
+
+# sent_id = s4
+# text = Take 1 ml of donor and recipient culture and centrifuge at 10,000 rcf for 2 minutes to pellet the bacteria.
+1	place	_	Action	_	_	0	_	_	Offset=494-499
+2	sterilised	_	Modifier	_	_	4	Mod-Link	_	Offset=500-510
+3	0.2	_	Size	_	_	4	Setting	_	Offset=511-517
+4	pore	_	Device	_	_	0	_	_	Offset=518-535
+5	L-agar	_	Location	_	_	0	_	_	Offset=542-554
+
+# sent_id = s5
+# text = Aspirate and discard the supernatant and resuspend the bacterial pellet in fresh LB with no antibiotics.
+1	Use	_	Action	_	_	0	_	_	Offset=576-579
+2	aseptic	_	Method	_	_	0	_	_	Offset=580-597
+
+# sent_id = s6
+# text = First thing in the morning on the day of the conjugation, place sterilised 0.2 um pore size filters on an L-agar plate without antibiotics.
+1	Pipette	_	Action	_	_	0	_	_	Offset=714-721
+2	10	_	Amount	_	_	4	Measure	_	Offset=722-727
+3	resuspended	_	Modifier	_	_	4	Mod-Link	_	Offset=735-746
+4	donor	_	Reagent	_	_	0	_	_	Offset=747-774
+5	same	_	Location	_	_	0	_	_	Offset=782-792
+6	filter	_	Device	_	_	5	Meronym	_	Offset=798-804
+7	sitting	_	Action	_	_	0	_	_	Offset=806-813
+8	agar	_	Location	_	_	0	_	_	Offset=821-831
+
+# sent_id = s7
+# text = Use aseptic technique.
+1	Incubate	_	Action	_	_	0	_	_	Offset=886-894
+2	plate	_	Location	_	_	0	_	_	Offset=899-904
+3	upside	_	Modifier	_	_	0	_	_	Offset=905-916
+4	37	_	Temperature	_	_	0	_	_	Offset=944-962
+
+# sent_id = s8
+# text = You will need one filter for each conjugation you're setting up, plus one for each strain on its own as a control.
+1	take	_	Action	_	_	0	_	_	Offset=995-999
+2	plate	_	Location	_	_	0	_	_	Offset=1004-1009
+3	incubator	_	Device	_	_	0	_	_	Offset=1021-1030
+
+# sent_id = s9
+# text = Pipette 10 ul of the resuspended donor and recipient strains in the same place on a filter, sitting on the agar plate.
+1	aseptic	_	Method	_	_	0	_	_	Offset=1038-1055
+2	pick	_	Action	_	_	0	_	_	Offset=1057-1061
+3	each	_	Modifier	_	_	4	Mod-Link	_	Offset=1062-1066
+4	filter	_	Device	_	_	8	Coreference-Link	_	Offset=1067-1073
+5	plate	_	Location	_	_	0	_	_	Offset=1082-1087
+6	forceps	_	Device	_	_	0	_	_	Offset=1094-1101
+7	place	_	Action	_	_	0	_	_	Offset=1106-1111
+8	it	_	Mention	_	_	0	_	_	Offset=1112-1114
+9	1.5	_	Amount	_	_	10	Measure	_	Offset=1120-1126
+10	tube	_	Location	_	_	13	Meronym	_	Offset=1127-1131
+11	1	_	Amount	_	_	13	Measure	_	Offset=1143-1147
+12	sterile	_	Modifier	_	_	13	Mod-Link	_	Offset=1151-1158
+13	PBS	_	Reagent	_	_	0	_	_	Offset=1159-1162
+
+# sent_id = s10
+# text = Do the same for each strain on its own as a control.
+1	Vortex	_	Action	_	_	0	_	_	Offset=1164-1170
+2	tubes	_	Location	_	_	0	_	_	Offset=1175-1180
+3	free	_	Action	_	_	0	_	_	Offset=1184-1188
+4	bacteria	_	Reagent	_	_	0	_	_	Offset=1193-1201
+5	filter	_	Device	_	_	0	_	_	Offset=1211-1217
+
+# sent_id = s11
+# text = Incubate the plate upside down (agar suface facing up) at 37 degrees Celsius.
+1	Remove	_	Action	_	_	0	_	_	Offset=1219-1225
+2	discard	_	Action	_	_	0	_	_	Offset=1230-1237
+3	filters	_	Device	_	_	0	_	_	Offset=1242-1249
+4	tubes	_	Location	_	_	0	_	_	Offset=1259-1264
+5	aseptic	_	Method	_	_	0	_	_	Offset=1271-1288
+
+# sent_id = s12
+# text = Near the end of your work day, take the plate out of the incubator.
+1	Plate	_	Action	_	_	0	_	_	Offset=1290-1295
+2	desired	_	Amount	_	_	3	Measure	_	Offset=1296-1311
+3	bacterial	_	Reagent	_	_	0	_	_	Offset=1319-1339
+4	selective	_	Reagent	_	_	0	_	_	Offset=1343-1364
+5	incubate	_	Action	_	_	0	_	_	Offset=1369-1377
+6	over	_	Time	_	_	0	_	_	Offset=1378-1389
+

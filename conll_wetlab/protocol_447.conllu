@@ -1,0 +1,156 @@
+# sent_id = s1
+# text = Tangential flow filtration (TFF) concentration of phytoplankton
+1	Remove	_	Action	_	_	0	_	_	Offset=176-182
+2	clamps	_	Device	_	_	0	_	_	Offset=187-193
+3	Set	_	Action	_	_	0	_	_	Offset=194-197
+4	pump	_	Device	_	_	0	_	_	Offset=202-206
+5	maximum	_	Speed	_	_	0	_	_	Offset=210-223
+
+# sent_id = s2
+# text = Get Vivaflow catridge out of storage Mount Vivaflow catridge as Fig.
+1	Rinse	_	Action	_	_	0	_	_	Offset=375-380
+2	cartridge	_	Location	_	_	0	_	_	Offset=385-394
+3	250	_	Amount	_	_	0	_	_	Offset=406-412
+4	MilliQ	_	Reagent	_	_	0	_	_	Offset=416-428
+
+# sent_id = s3
+# text = 1 (image de C. Brussaard) in open circuit.
+1	Replace	_	Action	_	_	0	_	_	Offset=480-487
+2	MilliQ	_	Reagent	_	_	0	_	_	Offset=488-500
+3	sample	_	Device	_	_	0	_	_	Offset=504-510
+4	6	_	Amount	_	_	0	_	_	Offset=514-517
+5	bottle	_	Location	_	_	0	_	_	Offset=518-524
+
+# sent_id = s4
+# text = Remove the clamps Set the pump to maximum speed.
+1	Take	_	Action	_	_	0	_	_	Offset=527-531
+2	sample	_	Reagent	_	_	0	_	_	Offset=532-538
+3	flow	_	Method	_	_	0	_	_	Offset=543-557
+4	compute	_	Action	_	_	0	_	_	Offset=561-568
+5	concentration	_	Measure-Type	_	_	0	_	_	Offset=569-589
+
+# sent_id = s5
+# text = Manometer should be at about 2.5 bars (with a new cassette sometimes the manometer get stuck, if the value is too low there is a leak in the system).
+1	Rinse	_	Action	_	_	0	_	_	Offset=591-596
+2	cartridge	_	Location	_	_	0	_	_	Offset=597-606
+3	about	_	Modifier	_	_	0	_	_	Offset=612-617
+4	250	_	Amount	_	_	0	_	_	Offset=618-624
+5	sample	_	Reagent	_	_	0	_	_	Offset=628-634
+
+# sent_id = s6
+# text = Rinse the cartridge with about 250 mL of MilliQ water (longer is cartridge has been stored in ethanol). 
+1	Put	_	Action	_	_	0	_	_	Offset=637-640
+2	retentate	_	Device	_	_	0	_	_	Offset=645-659
+3	sample	_	Location	_	_	0	_	_	Offset=669-682
+
+# sent_id = s7
+# text = Replace MilliQ water by sample in 6 L bottle. 
+1	Record	_	Action	_	_	0	_	_	Offset=715-721
+2	sample	_	Measure-Type	_	_	0	_	_	Offset=722-735
+3	start	_	Action	_	_	0	_	_	Offset=740-745
+4	pump	_	Device	_	_	0	_	_	Offset=746-750
+5	increasing	_	Modifier	_	_	0	_	_	Offset=751-761
+6	macimum	_	Speed	_	_	0	_	_	Offset=765-778
+
+# sent_id = s8
+# text = Take sample for flow cytometry to compute concentration factor.
+1	Clamp	_	Action	_	_	0	_	_	Offset=780-785
+2	retentate	_	Device	_	_	0	_	_	Offset=790-804
+3	increase	_	Action	_	_	0	_	_	Offset=808-816
+
+# sent_id = s9
+# text = Rinse cartridge with about 250 mL of sample. 
+1	Concentrate	_	Action	_	_	0	_	_	Offset=870-881
+2	sample	_	Reagent	_	_	0	_	_	Offset=882-888
+3	250	_	Amount	_	_	0	_	_	Offset=901-907
+4	remains	_	Action	_	_	0	_	_	Offset=908-915
+
+# sent_id = s10
+# text = Put the retentate line into the sample bottle (Fig. 2B - Recirculation mode).
+1	Transfer	_	Action	_	_	0	_	_	Offset=944-952
+2	sample	_	Reagent	_	_	0	_	_	Offset=953-960
+3	smaller	_	Modifier	_	_	0	_	_	Offset=965-972
+4	bottle	_	Location	_	_	0	_	_	Offset=973-979
+5	250	_	Amount	_	_	0	_	_	Offset=981-987
+6	50	_	Amount	_	_	0	_	_	Offset=1007-1012
+7	tube	_	Location	_	_	0	_	_	Offset=1013-1017
+8	conical	_	Location	_	_	0	_	_	Offset=1023-1037
+
+# sent_id = s11
+# text = Record sample volume and start pump increasing to macimum speed.
+1	concentrate	_	Action	_	_	0	_	_	Offset=1052-1063
+2	very	_	Modifier	_	_	0	_	_	Offset=1064-1078
+3	lowering	_	Action	_	_	0	_	_	Offset=1080-1088
+4	pump	_	Speed	_	_	0	_	_	Offset=1093-1103
+5	sample	_	Measure-Type	_	_	0	_	_	Offset=1114-1127
+6	reduced	_	Action	_	_	0	_	_	Offset=1131-1138
+7	15-20	_	Amount	_	_	0	_	_	Offset=1142-1150
+
+# sent_id = s12
+# text = Clamp the retentate line to increase filtrate flow so that Manometer gets up to 2.5 bars.
+1	clamp	_	Action	_	_	0	_	_	Offset=1187-1192
+2	filtrate	_	Location	_	_	0	_	_	Offset=1193-1206
+3	recirculate	_	Action	_	_	0	_	_	Offset=1211-1222
+4	slowly	_	Modifier	_	_	0	_	_	Offset=1223-1229
+
+# sent_id = s13
+# text = Concentrate sample until about 250 mL remains (6 L takes about one hour).
+1	Leaving	_	Action	_	_	0	_	_	Offset=1272-1279
+2	filtrate	_	Location	_	_	0	_	_	Offset=1284-1297
+3	get	_	Action	_	_	0	_	_	Offset=1307-1310
+4	feed	_	Device	_	_	0	_	_	Offset=1315-1324
+5	sample	_	Reagent	_	_	0	_	_	Offset=1336-1342
+6	get	_	Action	_	_	0	_	_	Offset=1355-1363
+7	total	_	Amount	_	_	0	_	_	Offset=1368-1380
+8	concentrated	_	Modifier	_	_	0	_	_	Offset=1384-1396
+9	sample	_	Reagent	_	_	0	_	_	Offset=1397-1403
+
+# sent_id = s14
+# text = Transfer sample to a smaller bottle (250 mL) then finally to a 50 mL tube with conical bottom. 
+1	Take	_	Action	_	_	0	_	_	Offset=1406-1410
+2	sample	_	Reagent	_	_	0	_	_	Offset=1411-1417
+3	flow	_	Method	_	_	0	_	_	Offset=1422-1436
+4	count	_	Action	_	_	0	_	_	Offset=1437-1442
+
+# sent_id = s15
+# text = Continue to concentrate very carefully, lowering the pump speed until the sample volume is reduced to 15-20 mL. 
+1	Store	_	Action	_	_	0	_	_	Offset=1527-1532
+
+# sent_id = s16
+# text = When final volume is about 10 mL, clamp filtrate tube and recirculate slowly (no change of volume should take place). 
+1	Rinse	_	Action	_	_	0	_	_	Offset=1664-1669
+
+# sent_id = s17
+# text = Leaving the filtrate tube clamped, get the feed line out of the sample in order to get back the total volume of concentrated sample. 
+1	Rinse	_	Action	_	_	0	_	_	Offset=1702-1707
+
+# sent_id = s18
+# text = Take sample for flow cytometry count (to compare with original sample concnetration and estimate concentration factor). 
+1	Rinse	_	Action	_	_	0	_	_	Offset=1737-1742
+
+# sent_id = s19
+# text = Store concentrated sample for later use (e.g. flow cytometry sorting, culture etc...). 
+1	Put	_	Action	_	_	0	_	_	Offset=1767-1770
+2	feed,	_	Action	_	_	0	_	_	Offset=1788-1813
+
+# sent_id = s20
+# text = Go back to Fig. 1 configuration (Open circuit). 
+1	Recirculate	_	Action	_	_	0	_	_	Offset=1849-1860
+
+# sent_id = s21
+# text = Rinse 1 min with filtered sea water. 
+1	Rinse	_	Action	_	_	0	_	_	Offset=1925-1930
+
+# sent_id = s22
+# text = Rinse 1 min with distilled water. 
+1	Stop	_	Action	_	_	0	_	_	Offset=1970-1974
+2	clamp	_	Action	_	_	0	_	_	Offset=1988-1993
+
+# sent_id = s23
+# text = Rinse with 50 mL NaOH 0.1 M. 
+1	Store	_	Action	_	_	0	_	_	Offset=2012-2017
+
+# sent_id = s24
+# text = Put all three tubes (feed, retentate, filtrate) in bottle containing NaOH 0.1 M. 
+1	store	_	Action	_	_	0	_	_	Offset=2054-2059
+

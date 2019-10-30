@@ -1,0 +1,24 @@
+# sent_id = s1
+# text = NEBuilder HiFi DNA Assembly Reaction (E2621)
+1	Incubate	_	Action	_	_	0	_	_	Offset=460-468
+2	samples	_	Reagent	_	_	0	_	_	Offset=469-476
+3	thermocycler	_	Device	_	_	0	_	_	Offset=482-494
+4	50°C	_	Temperature	_	_	0	_	_	Offset=498-502
+5	15	_	Time	_	_	0	_	_	Offset=507-517
+6	60	_	Time	_	_	0	_	_	Offset=565-575
+
+# sent_id = s2
+# text = Set up the following reaction on ice (to 20μl total volume): 
+1	store	_	Action	_	_	0	_	_	Offset=640-645
+2	samples	_	Reagent	_	_	0	_	_	Offset=646-653
+3	ice	_	Location	_	_	0	_	_	Offset=657-660
+4	–20°C	_	Temperature	_	_	0	_	_	Offset=667-672
+
+# sent_id = s3
+# text = Recommended Amount of Fragments Used for Assembly2–3 Fragment Assembly*4–6 Fragment Assembly**Positive Control✝Recommended DNA Ratiovector:insert = 1:2vector:insert = 1:1 Total Amount of Fragments0.03–0.2 pmols*X μl0.2–0.5 pmols**X μl10 μlNEBuilderHiFi DNA Assembly Master Mix10 μl10 μl10 μlDeionized H2O10-X μl10-X μl0Total Volume20 μl✝✝20 μl✝✝20 μl. 
+1	Transform	_	Action	_	_	0	_	_	Offset=704-713
+2	NEB	_	Reagent	_	_	0	_	_	Offset=714-749
+3	2	_	Amount	_	_	0	_	_	Offset=818-822
+4	assembled	_	Modifier	_	_	0	_	_	Offset=830-839
+5	product	_	Reagent	_	_	0	_	_	Offset=840-847
+

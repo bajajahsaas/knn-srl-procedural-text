@@ -1,0 +1,281 @@
+# sent_id = s1
+# text = Chlorovirus DNA Miniprep Procedure
+1	Infect	_	Action	_	_	0	_	_	Offset=35-41
+2	appropriate	_	Modifier	_	_	3	Mod-Link	_	Offset=42-53
+3	host	_	Reagent	_	_	0	_	_	Offset=54-58
+4	desired	_	Modifier	_	_	5	Mod-Link	_	Offset=64-71
+5	Chlorovirus	_	Reagent	_	_	0	_	_	Offset=72-91
+6	moi	_	Generic-Measure	_	_	0	_	_	Offset=95-113
+
+# sent_id = s2
+# text = Infect appropriate host with desired Chlorovirus species at moi of ~0.001-0.01.
+1	Incubate	_	Action	_	_	0	_	_	Offset=115-123
+2	samples	_	Reagent	_	_	0	_	_	Offset=128-135
+3	25°C	_	Temperature	_	_	0	_	_	Offset=139-143
+4	24-72	_	Time	_	_	0	_	_	Offset=148-159
+5	continuous	_	Method	_	_	0	_	_	Offset=166-194
+
+# sent_id = s3
+# text = Incubate the samples at 25°C for 24-72 hours, with continuous light and shaking.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=196-206
+2	30	_	Amount	_	_	3	Measure	_	Offset=207-212
+3	lysates	_	Reagent	_	_	0	_	_	Offset=220-227
+4	Sorvall	_	Device	_	_	0	_	_	Offset=235-253
+5	5,000	_	Speed	_	_	0	_	_	Offset=257-266
+6	5	_	Time	_	_	0	_	_	Offset=280-285
+7	4°C	_	Temperature	_	_	0	_	_	Offset=287-290
+
+# sent_id = s4
+# text = Centrifuge 30 mL of the lysates in the Sorvall SS34 rotor at 5,000 rpm (3,000 rcf), 5 min, 4°C.
+1	Add	_	Action	_	_	0	_	_	Offset=292-295
+2	10%	_	Concentration	_	_	3	Measure	_	Offset=296-299
+3	NP-40	_	Reagent	_	_	0	_	_	Offset=300-305
+4	Triton	_	Reagent	_	_	3	Or	_	Offset=310-322
+5	lysate	_	Reagent	_	_	0	_	_	Offset=331-350
+6	final	_	Measure-Type	_	_	0	_	_	Offset=357-376
+7	1%	_	Concentration	_	_	0	_	_	Offset=380-382
+
+# sent_id = s5
+# text = Add 10% NP-40 (or Triton X-100) to the lysate supernatants for a final concentration of 1%.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=384-394
+2	material	_	Reagent	_	_	0	_	_	Offset=399-407
+3	Beckman	_	Device	_	_	0	_	_	Offset=413-434
+4	15,000	_	Speed	_	_	0	_	_	Offset=438-448
+5	75	_	Time	_	_	0	_	_	Offset=467-473
+6	4°C	_	Temperature	_	_	0	_	_	Offset=475-478
+
+# sent_id = s6
+# text = Centrifuge the material in a Beckman Ti 50.2 rotor at 15,000 rpm (~27,000 rcfmax), 75 min, 4°C.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=480-489
+2	virus	_	Reagent	_	_	0	_	_	Offset=494-507
+3	1.0	_	Amount	_	_	5	Measure	_	Offset=513-519
+4	50	_	Concentration	_	_	5	Measure	_	Offset=523-528
+5	Tris-HCl	_	Reagent	_	_	0	_	_	Offset=529-537
+6	pH	_	pH	_	_	5	Measure	_	Offset=539-545
+7	10	_	Concentration	_	_	8	Measure	_	Offset=547-552
+8	MgCl2	_	Reagent	_	_	0	_	_	Offset=553-558
+
+# sent_id = s7
+# text = Resuspend the virus pellets with 1.0 mL of 50 mM Tris-HCl, pH 7.5, 10 mM MgCl2.
+1	Transfer	_	Action	_	_	0	_	_	Offset=560-568
+2	500	_	Amount	_	_	4	Measure	_	Offset=569-575
+3	resuspended	_	Modifier	_	_	4	Mod-Link	_	Offset=583-594
+4	virus	_	Reagent	_	_	0	_	_	Offset=595-600
+5	1.5	_	Amount	_	_	6	Measure	_	Offset=604-610
+6	screw-cap	_	Location	_	_	0	_	_	Offset=611-636
+
+# sent_id = s8
+# text = Transfer 500 µL of the resuspended virus to 1.5 ml screw-cap microfuge tubes.
+1	Add	_	Action	_	_	0	_	_	Offset=638-641
+2	9	_	Amount	_	_	3	Measure	_	Offset=642-646
+3	DNAse	_	Reagent	_	_	0	_	_	Offset=650-657
+4	mix	_	Action	_	_	0	_	_	Offset=662-665
+
+# sent_id = s9
+# text = Add 9 µL of DNAse I and mix.
+1	Add	_	Action	_	_	0	_	_	Offset=667-670
+2	6.0	_	Amount	_	_	4	Measure	_	Offset=671-677
+3	500	_	Concentration	_	_	4	Measure	_	Offset=681-687
+4	EDTA	_	Reagent	_	_	0	_	_	Offset=688-692
+5	pH	_	pH	_	_	4	Measure	_	Offset=694-700
+6	samples	_	Reagent	_	_	0	_	_	Offset=708-715
+7	mix	_	Action	_	_	0	_	_	Offset=720-723
+
+# sent_id = s10
+# text = Add 6.0 µL of 500 mM EDTA, pH 8.0 to the samples and mix.
+1	Add	_	Action	_	_	0	_	_	Offset=725-728
+2	300	_	Amount	_	_	3	Measure	_	Offset=729-735
+3	buffer-saturated	_	Reagent	_	_	0	_	_	Offset=739-762
+4	300	_	Amount	_	_	5	Measure	_	Offset=767-773
+5	CHCl3:Isoamyl	_	Reagent	_	_	0	_	_	Offset=777-798
+6	24:1	_	Generic-Measure	_	_	5	Measure	_	Offset=800-804
+7	tubes	_	Location	_	_	0	_	_	Offset=813-818
+
+# sent_id = s11
+# text = Add 300 µL of buffer-saturated phenol and 300 µL of CHCl3:Isoamyl alcohol (24:1) to the tubes.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=820-830
+2	microfuge	_	Device	_	_	0	_	_	Offset=838-847
+3	maximum	_	Speed	_	_	0	_	_	Offset=851-864
+4	5	_	Time	_	_	0	_	_	Offset=869-874
+5	4°C	_	Temperature	_	_	0	_	_	Offset=878-881
+
+# sent_id = s12
+# text = Centrifuge in the microfuge at maximum speed for 5 min at 4°C.
+1	Remove	_	Action	_	_	0	_	_	Offset=883-889
+2	upper	_	Reagent	_	_	0	_	_	Offset=894-914
+3	clean	_	Modifier	_	_	4	Mod-Link	_	Offset=918-923
+4	tubes	_	Location	_	_	0	_	_	Offset=924-929
+
+# sent_id = s13
+# text = Remove the upper aqueous layers to clean tubes.
+1	Add	_	Action	_	_	0	_	_	Offset=931-934
+2	600	_	Amount	_	_	3	Measure	_	Offset=935-941
+3	CHCl3:Isoamyl	_	Reagent	_	_	0	_	_	Offset=945-966
+4	24:1	_	Generic-Measure	_	_	3	Measure	_	Offset=968-972
+5	tubes	_	Location	_	_	0	_	_	Offset=981-986
+
+# sent_id = s14
+# text = Add 600 µL of CHCl3:Isoamyl alcohol (24:1) to the tubes.
+1	Remove	_	Action	_	_	0	_	_	Offset=988-994
+2	upper	_	Reagent	_	_	0	_	_	Offset=999-1019
+3	clean	_	Modifier	_	_	4	Mod-Link	_	Offset=1023-1028
+4	tubes	_	Location	_	_	0	_	_	Offset=1029-1034
+5	repeat	_	Action	_	_	0	_	_	Offset=1039-1045
+6	CHCl3:Isoamyl	_	Method	_	_	0	_	_	Offset=1050-1082
+7	1X	_	Numerical	_	_	0	_	_	Offset=1083-1085
+
+# sent_id = s15
+# text = Remove the upper aqueous layers to clean tubes and repeat the CHCl3:Isoamyl alcohol extraction 1X.
+1	Add	_	Action	_	_	0	_	_	Offset=1087-1090
+2	66	_	Amount	_	_	4	Measure	_	Offset=1091-1096
+3	3	_	Concentration	_	_	4	Measure	_	Offset=1100-1103
+4	NaOAc	_	Reagent	_	_	0	_	_	Offset=1104-1109
+5	each	_	Modifier	_	_	6	Mod-Link	_	Offset=1113-1117
+6	tube	_	Location	_	_	0	_	_	Offset=1118-1122
+
+# sent_id = s16
+# text = Add 66 µL of 3 M NaOAc to each tube.
+1	Precipitate	_	Action	_	_	0	_	_	Offset=1124-1135
+2	DNAs	_	Reagent	_	_	0	_	_	Offset=1140-1144
+3	2X	_	Modifier	_	_	7	Mod-Link	_	Offset=1150-1160
+4	approximately	_	Modifier	_	_	5	Mod-Link	_	Offset=1162-1175
+5	1350	_	Amount	_	_	7	Measure	3:Setting	Offset=1176-1183
+6	100%	_	Concentration	_	_	7	Measure	_	Offset=1188-1192
+7	EtOH	_	Reagent	_	_	0	_	_	Offset=1193-1197
+
+# sent_id = s17
+# text = Precipitate the DNAs with 2X volumes (approximately 1350 µL) of 100% EtOH.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1199-1209
+2	tubes	_	Location	_	_	0	_	_	Offset=1214-1219
+3	microfuge	_	Device	_	_	0	_	_	Offset=1227-1236
+4	10-15	_	Time	_	_	0	_	_	Offset=1241-1250
+5	4°C	_	Temperature	_	_	0	_	_	Offset=1254-1257
+6	pellet	_	Action	_	_	0	_	_	Offset=1261-1267
+7	DNAs	_	Reagent	_	_	0	_	_	Offset=1272-1276
+
+# sent_id = s18
+# text = Centrifuge the tubes in the microfuge for 10-15 min at 4°C to pellet the DNAs.
+1	Wash	_	Action	_	_	0	_	_	Offset=1278-1282
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1287-1298
+3	1X	_	Concentration	_	_	2	Measure	_	Offset=1299-1301
+4	1000	_	Amount	_	_	6	Measure	_	Offset=1307-1314
+5	70%	_	Concentration	_	_	6	Measure	_	Offset=1318-1321
+6	EtOH	_	Reagent	_	_	0	_	_	Offset=1322-1326
+7	microfuge	_	Device	_	_	0	_	_	Offset=1334-1343
+8	5	_	Time	_	_	0	_	_	Offset=1348-1353
+9	4°C	_	Temperature	_	_	0	_	_	Offset=1357-1360
+
+# sent_id = s19
+# text = Wash the DNA pellets 1X with 1000 µL of 70% EtOH in the microfuge for 5 min at 4°C.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=1362-1371
+2	DNAs	_	Reagent	_	_	0	_	_	Offset=1376-1380
+3	approximately	_	Modifier	_	_	4	Mod-Link	_	Offset=1386-1399
+4	60	_	Amount	_	_	6	Measure	_	Offset=1400-1405
+5	1X	_	Concentration	_	_	6	Measure	_	Offset=1409-1411
+6	TE	_	Reagent	_	_	0	_	_	Offset=1412-1421
+
+# sent_id = s20
+# text = Resuspend the DNAs with approximately 60 µL of 1X TE buffer.
+1	Store	_	Action	_	_	0	_	_	Offset=1423-1428
+2	DNAs	_	Reagent	_	_	0	_	_	Offset=1433-1437
+3	4°C	_	Temperature	_	_	0	_	_	Offset=1441-1444
+
+# sent_id = s21
+# text = Store the DNAs at 4°C.
+1	Add	_	Action	_	_	0	_	_	Offset=1446-1449
+2	57	_	Amount	_	_	3	Measure	_	Offset=1450-1455
+3	proteinase	_	Reagent	_	_	0	_	_	Offset=1459-1471
+4	29	_	Amount	_	_	6	Measure	_	Offset=1476-1481
+5	10%	_	Concentration	_	_	6	Measure	_	Offset=1485-1488
+6	Na	_	Reagent	_	_	0	_	_	Offset=1489-1500
+7	mix	_	Action	_	_	0	_	_	Offset=1505-1508
+
+# sent_id = s22
+# text = Add 57 µL of proteinase K and 29 µL of 10% Na sarcosyl and mix.
+1	Dry	_	Action	_	_	0	_	_	Offset=1510-1513
+2	pellets	_	Reagent	_	_	0	_	_	Offset=1518-1525
+3	briefly	_	Modifier	_	_	2	Mod-Link	_	Offset=1526-1533
+4	10-15	_	Time	_	_	3	Setting	_	Offset=1535-1544
+5	vacuum	_	Device	_	_	0	_	_	Offset=1553-1570
+6	remove	_	Action	_	_	0	_	_	Offset=1574-1580
+7	EtOH	_	Reagent	_	_	0	_	_	Offset=1585-1589
+
+# sent_id = s23
+# text = Dry the pellets briefly (10-15 min) in the vacuum desiccator to remove the EtOH.
+1	Save	_	Action	_	_	0	_	_	Offset=1591-1595
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=1600-1612
+
+# sent_id = s24
+# text = Save the supernatants.
+1	Discard	_	Action	_	_	0	_	_	Offset=1614-1621
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=1626-1638
+
+# sent_id = s25
+# text = Discard the supernatants.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1640-1648
+2	room	_	Temperature	_	_	0	_	_	Offset=1652-1668
+3	60	_	Time	_	_	0	_	_	Offset=1673-1680
+
+# sent_id = s26
+# text = Incubate at room temperature for 60 min.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1681-1689
+2	samples	_	Reagent	_	_	0	_	_	Offset=1694-1701
+3	60-65°C	_	Temperature	_	_	0	_	_	Offset=1705-1712
+4	60	_	Time	_	_	0	_	_	Offset=1717-1723
+
+# sent_id = s27
+# text = Incubate the samples at 60-65°C for 60 min.
+1	Mix	_	Action	_	_	0	_	_	Offset=1725-1728
+2	inversion	_	Method	_	_	0	_	_	Offset=1732-1741
+
+# sent_id = s28
+# text = Mix by inversion.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1743-1753
+2	5	_	Time	_	_	0	_	_	Offset=1758-1763
+3	4°C	_	Temperature	_	_	0	_	_	Offset=1767-1770
+4	microfuge	_	Device	_	_	0	_	_	Offset=1778-1787
+
+# sent_id = s29
+# text = Centrifuge for 5 min at 4°C in the microfuge.
+1	Mix	_	Action	_	_	0	_	_	Offset=1789-1792
+2	inversion	_	Method	_	_	0	_	_	Offset=1796-1805
+
+# sent_id = s30
+# text = Mix by inversion.
+1	Place	_	Action	_	_	0	_	_	Offset=1807-1812
+2	last	_	Reagent	_	_	0	_	_	Offset=1817-1832
+3	2.0	_	Amount	_	_	4	Measure	_	Offset=1838-1844
+4	microfuge	_	Location	_	_	0	_	_	Offset=1845-1860
+
+# sent_id = s31
+# text = Place the last extraction into 2.0 mL microfuge tubes.
+1	Mix	_	Action	_	_	0	_	_	Offset=1862-1865
+2	well	_	Modifier	_	_	0	_	_	Offset=1866-1870
+3	hold	_	Action	_	_	0	_	_	Offset=1875-1879
+4	-20°C	_	Temperature	_	_	0	_	_	Offset=1883-1888
+5	overnight	_	Time	_	_	0	_	_	Offset=1889-1898
+
+# sent_id = s32
+# text = Mix well and hold at -20°C overnight.
+1	Discard	_	Action	_	_	0	_	_	Offset=1900-1907
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=1912-1924
+
+# sent_id = s33
+# text = Discard the supernatants.
+1	centrifuge	_	Action	_	_	0	_	_	Offset=1973-1983
+2	microfuge	_	Device	_	_	0	_	_	Offset=1991-2000
+3	15	_	Time	_	_	0	_	_	Offset=2005-2011
+4	4°C	_	Temperature	_	_	0	_	_	Offset=2015-2018
+
+# sent_id = s34
+# text = If the DNA doesn’t go into solution overnight, centrifuge in the microfuge for 15 min at 4°C.
+1	Remove	_	Action	_	_	0	_	_	Offset=2020-2026
+2	supernatants	_	Reagent	_	_	0	_	_	Offset=2031-2043
+3	clean	_	Modifier	_	_	4	Mod-Link	_	Offset=2047-2052
+4	tubes	_	Location	_	_	0	_	_	Offset=2053-2058
+
+# sent_id = s35
+# text = Remove the supernatants to clean tubes.
+1	Discard	_	Action	_	_	0	_	_	Offset=2060-2067
+2	pellets	_	Location	_	_	0	_	_	Offset=2072-2079
+

@@ -1,0 +1,248 @@
+# sent_id = s1
+# text = Nutrient deplete/replete algal culture for elemental analysis
+1	Initiate	_	Action	_	_	0	_	_	Offset=165-173
+2	experimental	_	Reagent	_	_	0	_	_	Offset=177-197
+3	at	_	Modifier	_	_	4	Mod-Link	_	Offset=211-219
+4	7	_	Generic-Measure	_	_	0	_	_	Offset=220-233
+5	characterized	_	Modifier	_	_	6	Mod-Link	_	Offset=237-250
+6	exponential	_	Reagent	_	_	0	_	_	Offset=251-269
+
+# sent_id = s2
+# text = Culture Preparation/GrowthComparative measurements depend on having well-characterized culture growth.
+1	Monitor	_	Action	_	_	0	_	_	Offset=350-357
+2	growth	_	Measure-Type	_	_	0	_	_	Offset=358-364
+3	transfer/dilution	_	Action	_	_	0	_	_	Offset=382-399
+4	pre-determined	_	Modifier	_	_	0	_	_	Offset=403-417
+5	mid-exponential	_	Modifier	_	_	0	_	_	Offset=418-433
+6	density	_	Measure-Type	_	_	0	_	_	Offset=434-441
+7	target	_	Reagent	_	_	0	_	_	Offset=480-494
+8	reached	_	Action	_	_	0	_	_	Offset=498-505
+
+# sent_id = s3
+# text = Initiate an experimental culture to allow for at least 7 generations of characterized exponential growth (10 generations is the gold standard) prior to centrifugation and resuspension.
+1	increasing	_	Action	_	_	0	_	_	Offset=703-713
+2	culture	_	Reagent	_	_	0	_	_	Offset=714-721
+3	volume	_	Amount	_	_	2	Measure	_	Offset=722-728
+4	ramping	_	Action	_	_	0	_	_	Offset=753-763
+5	target	_	Reagent	_	_	0	_	_	Offset=767-781
+
+# sent_id = s4
+# text = Monitor growth daily, including transfer/dilution to pre-determined mid-exponential density (i.e., semi-continuous culture) until target biomass is reached.
+1	Fit	_	Action	_	_	0	_	_	Offset=1814-1817
+2	centrifuge	_	Device	_	_	3	Meronym	_	Offset=1818-1828
+3	large	_	Device	_	_	0	_	_	Offset=1834-1845
+
+# sent_id = s5
+# text = A safe estimate for the target biomass is to assume ~10% recovery of cells after centrifugation and washing (this is strain dependent).
+1	Place	_	Action	_	_	0	_	_	Offset=1950-1955
+2	paired	_	Modifier	_	_	3	Mod-Link	_	Offset=1956-1962
+3	bottles	_	Location	_	_	0	_	_	Offset=1963-1970
+4	rotor	_	Device	_	_	0	_	_	Offset=2001-2006
+5	tighten	_	Action	_	_	0	_	_	Offset=2011-2018
+6	lid	_	Seal	_	_	0	_	_	Offset=2023-2026
+
+# sent_id = s6
+# text = Ensure cell density remains within the exponential range by increasing culture volume (not cell density) when ramping up to target biomass.
+1	carefully	_	Modifier	_	_	0	_	_	Offset=2328-2337
+2	transport	_	Action	_	_	0	_	_	Offset=2338-2347
+3	bottles	_	Location	_	_	0	_	_	Offset=2352-2359
+4	hood	_	Location	_	_	0	_	_	Offset=2368-2372
+5	resuspend	_	Action	_	_	0	_	_	Offset=2393-2402
+6	cell	_	Reagent	_	_	0	_	_	Offset=2407-2426
+
+# sent_id = s7
+# text = Example Ostreococcus lucimarinus (CCMP2972A) culture preparation:
+1	Gently	_	Modifier	_	_	0	_	_	Offset=2428-2434
+2	pour	_	Action	_	_	0	_	_	Offset=2435-2443
+3	supernatant	_	Reagent	_	_	0	_	_	Offset=2448-2459
+4	waste	_	Location	_	_	0	_	_	Offset=2467-2482
+5	disturb	_	Action	_	_	0	_	_	Offset=2494-2501
+6	cell	_	Reagent	_	_	0	_	_	Offset=2506-2516
+
+# sent_id = s8
+# text = Growth conditions: 18°C, 14:10 hour light:dark cycle, light irradiance of ~100 µE m-2 s-1.
+1	Resuspend/wash	_	Action	_	_	0	_	_	Offset=2540-2554
+2	cells	_	Reagent	_	_	0	_	_	Offset=2555-2560
+3	volume	_	Amount	_	_	4	Measure	_	Offset=2568-2574
+4	nutrient	_	Reagent	_	_	0	_	_	Offset=2578-2601
+5	initial	_	Amount	_	_	3	Or	_	Offset=2620-2642
+6	each	_	Modifier	_	_	7	Mod-Link	_	Offset=2646-2650
+7	bottle	_	Location	_	_	0	_	_	Offset=2651-2657
+
+# sent_id = s9
+# text = Growth media: L1 with natural seawater base.
+1	Run	_	Action	_	_	0	_	_	Offset=2785-2788
+2	sample	_	Reagent	_	_	0	_	_	Offset=2791-2797
+3	cell	_	Reagent	_	_	2	Meronym	_	Offset=2805-2821
+4	Accuri	_	Device	_	_	0	_	_	Offset=2829-2835
+5	determine	_	Action	_	_	0	_	_	Offset=2839-2848
+6	density	_	Measure-Type	_	_	0	_	_	Offset=2849-2856
+
+# sent_id = s10
+# text = Exponential range: 7x105 – 2x107 cells/mL Day12345678910.
+1	Store	_	Action	_	_	0	_	_	Offset=2858-2863
+2	cells	_	Reagent	_	_	0	_	_	Offset=2864-2869
+3	normal	_	Generic-Measure	_	_	2	Measure	_	Offset=2873-2897
+4	Accuri	_	Device	_	_	0	_	_	Offset=2905-2911
+5	run	_	Action	_	_	0	_	_	Offset=2912-2915
+6	calculations	_	Action	_	_	0	_	_	Offset=2920-2932
+
+# sent_id = s11
+# text = Initial density (mL-1)3x107Skip1.5x1071x1079x1068x1061x1079x1061x1071.4x107.
+1	Calculate	_	Action	_	_	0	_	_	Offset=2967-2976
+2	appropriate	_	Modifier	_	_	3	Mod-Link	_	Offset=2977-2988
+3	volume	_	Amount	_	_	0	_	_	Offset=2989-2995
+4	inoculate	_	Action	_	_	0	_	_	Offset=3027-3036
+5	experimental	_	Reagent	_	_	0	_	_	Offset=3037-3058
+6	replete	_	Action	_	_	0	_	_	Offset=3059-3066
+7	deplete	_	Action	_	_	0	_	_	Offset=3071-3078
+8	culture	_	Location	_	_	0	_	_	Offset=3079-3093
+9	cell	_	Reagent	_	_	0	_	_	Offset=3103-3119
+
+# sent_id = s12
+# text = Growth Rate   (d-1)NA0.5270.6280.5580.3840.7200.6390.5540.261.
+1	Adjust	_	Action	_	_	0	_	_	Offset=3267-3273
+2	achieve	_	Action	_	_	0	_	_	Offset=3287-3294
+
+# sent_id = s13
+# text = Dilution/ TransferTransDilDilTransDilDilDilNA. 
+1	mix	_	Action	_	_	0	_	_	Offset=3375-3378
+2	sample	_	Reagent	_	_	0	_	_	Offset=3383-3389
+3	monitor	_	Action	_	_	0	_	_	Offset=3425-3432
+
+# sent_id = s14
+# text = Final density (mL-1)5x1065x1065x1065x1065x1065x1065x1061x107. 
+1	Transfer	_	Action	_	_	0	_	_	Offset=3822-3830
+2	1	_	Amount	_	_	3	Measure	_	Offset=3831-3835
+3	culture	_	Reagent	_	_	0	_	_	Offset=3839-3846
+4	sterile	_	Modifier	_	_	6	Mod-Link	_	Offset=3852-3859
+5	1.2	_	Amount	_	_	6	Measure	_	Offset=3860-3866
+6	cryovial	_	Location	_	_	0	_	_	Offset=3867-3880
+
+# sent_id = s15
+# text = Volume (mL)30x386x3172x380x9125x9257x9401x9401x93.6 L (use!)~7 generations of growth prior to centrifugation.
+1	Add	_	Action	_	_	0	_	_	Offset=3882-3885
+2	10	_	Amount	_	_	4	Measure	_	Offset=3886-3891
+3	25%	_	Concentration	_	_	4	Measure	_	Offset=3892-3895
+4	glutaraldehyde	_	Reagent	_	_	0	_	_	Offset=3896-3910
+5	gently	_	Modifier	_	_	0	_	_	Offset=3934-3940
+6	vortex	_	Action	_	_	0	_	_	Offset=3941-3947
+7	mix	_	Action	_	_	0	_	_	Offset=3951-3954
+
+# sent_id = s16
+# text = NOTE: Extra-large volumes used for omics experiment Concentration and Resuspension.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=3956-3963
+2	500	_	Amount	_	_	0	_	_	Offset=3964-3970
+3	duplicate	_	Modifier	_	_	4	Mod-Link	_	Offset=3976-3985
+4	cryovial	_	Location	_	_	0	_	_	Offset=3986-3994
+
+# sent_id = s17
+# text = When target culture biomass has been reached, split volume evenly among 2 or 4 acid-cleaned and autoclaved centrifuge bottles.
+1	Snap	_	Action	_	_	0	_	_	Offset=3996-4000
+2	cryovials	_	Location	_	_	0	_	_	Offset=4001-4010
+3	cryocanes	_	Device	_	_	0	_	_	Offset=4016-4025
+4	incubate	_	Action	_	_	0	_	_	Offset=4030-4038
+5	4°C	_	Temperature	_	_	0	_	_	Offset=4042-4045
+6	30	_	Time	_	_	0	_	_	Offset=4050-4060
+7	dark	_	Location	_	_	0	_	_	Offset=4068-4072
+
+# sent_id = s18
+# text = Weigh and balance bottles by removing volume until bottle pairs are within 0.01 g of each other.
+1	Flash	_	Action	_	_	0	_	_	Offset=4074-4086
+2	liquid	_	Reagent	_	_	0	_	_	Offset=4090-4105
+
+# sent_id = s19
+# text = Only open bottles in hood to maintain axenicity!
+1	Store	_	Action	_	_	0	_	_	Offset=4107-4112
+2	-80°C	_	Temperature	_	_	0	_	_	Offset=4116-4121
+
+# sent_id = s20
+# text = Carry bottles over to Sorvall RC 26 Plus centrifuge.
+1	Apply	_	Action	_	_	0	_	_	Offset=4579-4584
+2	20-40	_	Amount	_	_	3	Measure	4:Measure	Offset=4585-4593
+3	media	_	Reagent	_	_	0	_	_	Offset=4597-4602
+4	culture	_	Reagent	_	_	3	Or	_	Offset=4606-4613
+5	filter	_	Device	_	_	0	_	_	Offset=4621-4634
+6	turn	_	Action	_	_	0	_	_	Offset=4639-4646
+7	vacuum	_	Device	_	_	0	_	_	Offset=4651-4657
+8	filter	_	Device	_	_	0	_	_	Offset=4668-4674
+9	dry	_	Action	_	_	0	_	_	Offset=4678-4681
+
+# sent_id = s21
+# text = Fit centrifuge with large rotor (accomodates 4 centrifuge bottles).
+1	ethanol-cleaned	_	Modifier	_	_	2	Mod-Link	_	Offset=4687-4702
+2	forceps	_	Device	_	_	0	_	_	Offset=4703-4710
+3	fold	_	Action	_	_	0	_	_	Offset=4714-4718
+4	filter	_	Device	_	_	0	_	_	Offset=4719-4725
+5	half	_	Generic-Measure	_	_	0	_	_	Offset=4729-4733
+6	collect	_	Action	_	_	0	_	_	Offset=4738-4745
+7	12-well	_	Location	_	_	0	_	_	Offset=4751-4764
+8	piece	_	Location	_	_	7	Or	_	Offset=4768-4773
+9	combusted	_	Modifier	_	_	10	Mod-Link	_	Offset=4777-4786
+10	aluminum	_	Seal	_	_	8	Meronym	_	Offset=4787-4800
+
+# sent_id = s22
+# text = Make sure pins are offset when rotor is placed into the centrifuge.
+1	Pour	_	Action	_	_	0	_	_	Offset=4802-4806
+2	filtrate	_	Reagent	_	_	0	_	_	Offset=4807-4815
+3	acid-cleaned	_	Modifier	_	_	5	Mod-Link	_	Offset=4824-4836
+4	50	_	Amount	_	_	5	Measure	_	Offset=4837-4842
+5	conical	_	Location	_	_	0	_	_	Offset=4843-4855
+
+# sent_id = s23
+# text = Place paired bottles opposite of each other in the rotor and tighten the lid.
+1	Repeat	_	Action	_	_	0	_	_	Offset=4857-4863
+2	sample	_	Reagent	_	_	0	_	_	Offset=4868-4874
+
+# sent_id = s24
+# text = Spin at the following settings: Rotor = GS-3 (choose option code “03”), Speed = 7300 RPM (equivalent to 10,000 rcf with this large rotor), Time = 0:32 minutes (includes 2 minute ramp up), *strain specificTemp = +20/+25°C, (will try to maintain lower temp, and shut down at max temp).
+1	Rinse	_	Action	_	_	0	_	_	Offset=4886-4891
+2	filter	_	Device	_	_	0	_	_	Offset=4892-4904
+3	MilliQ	_	Reagent	_	_	0	_	_	Offset=4910-4916
+
+# sent_id = s25
+# text = After the spin, carefully transport the bottles back to hood, taking care not to resuspend the cell pellets/smears.
+1	Store	_	Action	_	_	0	_	_	Offset=4934-4939
+2	filters	_	Device	_	_	0	_	_	Offset=4940-4947
+3	filtrate	_	Action	_	_	0	_	_	Offset=4952-4960
+4	-20°C	_	Temperature	_	_	0	_	_	Offset=4964-4969
+
+# sent_id = s26
+# text = Gently pour off the supernatant into a waste container, trying to disturb the cell smear as little as possible.
+1	Transfer	_	Action	_	_	0	_	_	Offset=5039-5047
+2	1	_	Amount	_	_	3	Measure	_	Offset=5048-5052
+3	culture	_	Reagent	_	_	0	_	_	Offset=5056-5063
+4	sterile	_	Modifier	_	_	6	Mod-Link	_	Offset=5067-5074
+5	1.2	_	Amount	_	_	6	Measure	_	Offset=5075-5081
+6	cryovial	_	Location	_	_	0	_	_	Offset=5082-5095
+
+# sent_id = s27
+# text = Resuspend/wash cells with a volume of nutrient deplete medium equivalent to the initial culture volume in each bottle.
+1	chemical	_	Location	_	_	0	_	_	Offset=5104-5117
+2	add	_	Action	_	_	0	_	_	Offset=5119-5122
+3	100	_	Amount	_	_	5	Measure	_	Offset=5123-5129
+4	37%	_	Concentration	_	_	5	Measure	_	Offset=5133-5136
+5	formaldehyde	_	Reagent	_	_	0	_	_	Offset=5137-5149
+6	3.7%	_	Concentration	_	_	5	Measure	_	Offset=5151-5155
+7	mix	_	Action	_	_	0	_	_	Offset=5172-5175
+8	inverting	_	Method	_	_	0	_	_	Offset=5179-5188
+
+# sent_id = s28
+# text = Repeat 2-8.Resuspend cells with a volume of nutrient deplete medium that is ~5% of the initial culture volume in each bottle.
+1	Do	_	Action	_	_	0	_	_	Offset=5190-5203
+
+# sent_id = s29
+# text = Run a sample of the cell concentrate in the Accuri to determine density.
+1	Snap	_	Action	_	_	0	_	_	Offset=5205-5209
+2	cryovials	_	Location	_	_	0	_	_	Offset=5210-5219
+3	cryocanes	_	Device	_	_	0	_	_	Offset=5225-5234
+4	incubate	_	Action	_	_	0	_	_	Offset=5239-5247
+5	room	_	Temperature	_	_	0	_	_	Offset=5251-5260
+6	15	_	Time	_	_	0	_	_	Offset=5265-5275
+7	dark	_	Location	_	_	0	_	_	Offset=5284-5288
+
+# sent_id = s30
+# text = Store cells at normal growth conditions during Accuri run and calculations.
+1	Store	_	Action	_	_	0	_	_	Offset=5291-5296
+2	4°C	_	Temperature	_	_	0	_	_	Offset=5300-5303
+

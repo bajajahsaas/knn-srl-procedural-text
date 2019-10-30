@@ -1,0 +1,197 @@
+# sent_id = s1
+# text = Stellaris® RNA FISH  Protocol for Adherent Cells
+1	Grow	_	Action	_	_	0	_	_	Offset=49-53
+2	cells	_	Reagent	_	_	0	_	_	Offset=54-59
+3	18	_	Generic-Measure	_	_	4	Measure	_	Offset=63-68
+4	round	_	Device	_	_	0	_	_	Offset=69-88
+5	12-well	_	Modifier	_	_	6	Mod-Link	_	Offset=94-114
+6	plate	_	Device	_	_	0	_	_	Offset=115-120
+
+# sent_id = s2
+# text = Grow cells on 18 mm round #1 coverglass in a 12-well cell culture plate.
+1	Aspirate	_	Action	_	_	0	_	_	Offset=122-130
+2	growth	_	Reagent	_	_	0	_	_	Offset=131-144
+3	wash	_	Action	_	_	0	_	_	Offset=150-154
+4	1	_	Amount	_	_	5	Measure	_	Offset=160-164
+5	1X	_	Reagent	_	_	0	_	_	Offset=168-174
+
+# sent_id = s3
+# text = Aspirate growth medium, and wash with 1 mL of 1X PBS.
+1	Add	_	Action	_	_	0	_	_	Offset=176-179
+2	1	_	Amount	_	_	3	Measure	_	Offset=180-184
+3	fixation	_	Reagent	_	_	0	_	_	Offset=188-203
+
+# sent_id = s4
+# text = Add 1 mL of fixation buffer.
+1	Incubate	_	Action	_	_	0	_	_	Offset=205-213
+2	room	_	Temperature	_	_	0	_	_	Offset=217-233
+3	10	_	Time	_	_	0	_	_	Offset=238-248
+
+# sent_id = s5
+# text = Incubate at room temperature for 10 minutes.
+1	Wash	_	Action	_	_	0	_	_	Offset=250-254
+2	1	_	Amount	_	_	0	_	_	Offset=260-264
+3	1X	_	Reagent	_	_	0	_	_	Offset=268-274
+
+# sent_id = s6
+# text = Wash with 1 mL of 1X PBS.
+1	Wash	_	Action	_	_	0	_	_	Offset=276-280
+2	1	_	Amount	_	_	3	Measure	_	Offset=292-296
+3	1X	_	Reagent	_	_	0	_	_	Offset=300-306
+
+# sent_id = s7
+# text = Wash again with 1 mL of 1X PBS.
+1	immerse	_	Action	_	_	0	_	_	Offset=325-332
+2	cells	_	Reagent	_	_	0	_	_	Offset=333-338
+3	1	_	Amount	_	_	1	Measure	_	Offset=342-346
+4	70%	_	Concentration	_	_	1	Measure	_	Offset=350-353
+
+# sent_id = s8
+# text = To permeabilize, immerse cells in 1 mL of 70% (vol./vol.)
+1	ethanol	_	Reagent	_	_	0	_	_	Offset=366-373
+2	1	_	Time	_	_	0	_	_	Offset=387-393
+3	+2	_	Temperature	_	_	0	_	_	Offset=397-408
+
+# sent_id = s9
+# text = ethanol for at least 1 hour at +2 to +8 °C.
+1	warm	_	Action	_	_	0	_	_	Offset=434-438
+2	reconstituted	_	Reagent	_	_	0	_	_	Offset=443-471
+3	room	_	Temperature	_	_	0	_	_	Offset=475-491
+
+# sent_id = s10
+# text = If frozen before using, warm the reconstituted probe solution to room temperature.
+1	Mix	_	Action	_	_	0	_	_	Offset=493-496
+2	vortexing	_	Method	_	_	0	_	_	Offset=505-514
+3	centrifuge	_	Method	_	_	0	_	_	Offset=521-531
+
+# sent_id = s11
+# text = Mix well by vortexing, then centrifuge briefly.
+1	prepare	_	Action	_	_	0	_	_	Offset=544-551
+2	hybridization	_	Reagent	_	_	0	_	_	Offset=556-576
+3	add	_	Action	_	_	0	_	_	Offset=595-598
+4	1	_	Amount	_	_	5	Measure	_	Offset=599-603
+5	probe	_	Reagent	_	_	0	_	_	Offset=607-627
+6	100	_	Amount	_	_	7	Measure	_	Offset=631-637
+7	hybridization	_	Reagent	_	_	0	_	_	Offset=641-661
+8	vortex	_	Action	_	_	0	_	_	Offset=672-678
+9	centrifuge	_	Action	_	_	0	_	_	Offset=683-693
+
+# sent_id = s12
+# text = To prepare the hybridization buffer containing probe, add 1 µL of probe stock solution to 100 µL of hybridization buffer, and then vortex and centrifuge, which is enough for one coverslip.
+1	Aspirate	_	Action	_	_	0	_	_	Offset=826-834
+2	70%	_	Concentration	_	_	3	Measure	_	Offset=839-842
+3	ethanol	_	Reagent	_	_	0	_	_	Offset=843-850
+
+# sent_id = s13
+# text = This creates a working probe solution of 125 nM.
+1	Add	_	Action	_	_	0	_	_	Offset=922-925
+2	1	_	Amount	_	_	3	Measure	_	Offset=926-930
+3	Wash	_	Reagent	_	_	0	_	_	Offset=934-947
+4	incubate	_	Action	_	_	0	_	_	Offset=980-988
+5	room	_	Temperature	_	_	0	_	_	Offset=992-1008
+6	2-5	_	Time	_	_	0	_	_	Offset=1013-1024
+
+# sent_id = s14
+# text = This solution will be used in the steps below.
+1	Assemble	_	Action	_	_	0	_	_	Offset=1026-1034
+2	150	_	Amount	_	_	3	Setting	_	Offset=1055-1061
+3	tissue	_	Device	_	_	0	_	_	Offset=1062-1082
+4	water-saturated	_	Modifier	_	_	5	Mod-Link	_	Offset=1116-1131
+5	paper	_	Reagent	_	_	0	_	_	Offset=1132-1143
+6	single	_	Amount	_	_	7	Measure	_	Offset=1150-1162
+7	Parafilm®	_	Device	_	_	0	_	_	Offset=1166-1175
+
+# sent_id = s15
+# text = Aspirate the 70% ethanol off the coverglass containing adherent cells within the 12-well plate.
+1	dispense	_	Action	_	_	0	_	_	Offset=1241-1249
+2	100	_	Amount	_	_	3	Measure	_	Offset=1250-1256
+3	Hybridization	_	Reagent	_	_	0	_	_	Offset=1264-1284
+
+# sent_id = s16
+# text = Add 1 mL of Wash Buffer A (see recipe in guidelines), and incubate at room temperature for 2-5 minutes.
+1	transfer	_	Action	_	_	0	_	_	Offset=1328-1336
+2	coverglass	_	Device	_	_	0	_	_	Offset=1341-1351
+3	100	_	Amount	_	_	4	Measure	_	Offset=1379-1385
+4	hybridization	_	Reagent	_	_	0	_	_	Offset=1394-1414
+
+# sent_id = s17
+# text = Assemble humidified chamber: 150 mm tissue culture plate; bottom lined evenly with a flat water-saturated paper towel and a single layer of Parafilm® placed on top of the paper towel.
+1	Cover	_	Action	_	_	0	_	_	Offset=1433-1438
+2	tissue	_	Device	_	_	0	_	_	Offset=1471-1489
+3	seal	_	Action	_	_	0	_	_	Offset=1495-1499
+4	Parafilm	_	Device	_	_	0	_	_	Offset=1505-1513
+
+# sent_id = s18
+# text = Within the humidified chamber, dispense 100 μL of the Hybridization Buffer containing probe onto the Parafilm.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1515-1523
+2	37	_	Temperature	_	_	0	_	_	Offset=1539-1544
+3	4	_	Time	_	_	0	_	_	Offset=1558-1565
+
+# sent_id = s19
+# text = Gently transfer the coverglass, cells side down, onto the 100 μL drop of hybridization buffer containing probe.
+1	transfer	_	Action	_	_	0	_	_	Offset=1574-1582
+2	coverglass	_	Device	_	_	0	_	_	Offset=1587-1597
+3	1	_	Amount	_	_	4	Measure	_	Offset=1650-1654
+4	Wash	_	Reagent	_	_	0	_	_	Offset=1658-1671
+
+# sent_id = s20
+# text = Cover the humidified chamber with the tissue culture lid, and seal with Parafilm.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1674-1682
+2	37	_	Temperature	_	_	0	_	_	Offset=1698-1703
+3	30	_	Time	_	_	0	_	_	Offset=1708-1718
+
+# sent_id = s21
+# text = Incubate in the dark at 37 °C for at least 4 hours.
+1	Aspirate	_	Action	_	_	0	_	_	Offset=1720-1728
+2	wash	_	Reagent	_	_	0	_	_	Offset=1733-1744
+3	add	_	Action	_	_	0	_	_	Offset=1755-1758
+4	1	_	Amount	_	_	5	Measure	_	Offset=1759-1763
+5	DAPI	_	Reagent	_	_	0	_	_	Offset=1767-1785
+6	counterstain	_	Action	_	_	0	_	_	Offset=1832-1844
+7	nuclei	_	Reagent	_	_	0	_	_	Offset=1849-1855
+
+# sent_id = s22
+# text = Gently transfer the coverglass, cells side up, to a fresh 12-well plate containing 1 mL of Wash Buffer A. 
+1	Incubate	_	Action	_	_	0	_	_	Offset=1857-1865
+2	37	_	Temperature	_	_	0	_	_	Offset=1881-1886
+3	30	_	Time	_	_	0	_	_	Offset=1891-1901
+
+# sent_id = s23
+# text = Incubate in the dark at 37 °C for 30 minutes.
+1	Aspirate	_	Action	_	_	0	_	_	Offset=1903-1911
+2	DAPI	_	Reagent	_	_	0	_	_	Offset=1916-1936
+3	add	_	Action	_	_	0	_	_	Offset=1947-1950
+4	1	_	Amount	_	_	5	Measure	_	Offset=1951-1955
+5	Wash	_	Reagent	_	_	0	_	_	Offset=1959-1972
+
+# sent_id = s24
+# text = Aspirate the wash buffer, and then add 1 mL of DAPI nuclear stain (Wash Buffer A consisting of 5 ng/mL DAPI) to counterstain the nuclei.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1975-1983
+2	room	_	Temperature	_	_	0	_	_	Offset=1987-2003
+3	2-5	_	Time	_	_	0	_	_	Offset=2008-2019
+
+# sent_id = s25
+# text = Incubate in the dark at 37 °C for 30 minutes.
+1	Add	_	Action	_	_	0	_	_	Offset=2021-2024
+2	Vectashield	_	Reagent	_	_	0	_	_	Offset=2063-2090
+3	mount	_	Action	_	_	0	_	_	Offset=2120-2125
+4	coverglass	_	Device	_	_	0	_	_	Offset=2126-2136
+
+# sent_id = s26
+# text = Aspirate the DAPI staining buffer, and then add 1 mL of Wash Buffer B. 
+1	wick	_	Action	_	_	0	_	_	Offset=2177-2186
+2	anti-fade	_	Reagent	_	_	0	_	_	Offset=2194-2203
+3	coverglass	_	Device	_	_	0	_	_	Offset=2230-2240
+
+# sent_id = s27
+# text = Incubate at room temperature for 2-5 minutes.
+1	Seal	_	Action	_	_	0	_	_	Offset=2242-2246
+2	coverglass	_	Device	_	_	0	_	_	Offset=2251-2261
+3	dry	_	Action	_	_	0	_	_	Offset=2309-2312
+
+# sent_id = s28
+# text = Add a small drop (approximately 15 µL) of Vectashield Mounting Medium onto a microscope slide, and mount coverglass onto the slide, cells side down.
+1	wipe	_	Action	_	_	0	_	_	Offset=2335-2344
+2	dried	_	Reagent	_	_	0	_	_	Offset=2349-2359
+3	water	_	Device	_	_	0	_	_	Offset=2384-2389
+

@@ -1,0 +1,152 @@
+# sent_id = s1
+# text = Wet-mount Method for Enumeration of Aquatic Viruses
+1	Place	_	Action	_	_	0	_	_	Offset=52-57
+2	1	_	Amount	_	_	3	Measure	_	Offset=58-62
+3	sample	_	Reagent	_	_	0	_	_	Offset=66-72
+4	1.5	_	Size	_	_	5	Measure	_	Offset=80-86
+5	microcentrifuge	_	Location	_	_	0	_	_	Offset=87-107
+
+# sent_id = s2
+# text = Place 1 mL of sample into a 1.5 mL microcentrifuge tube.
+1	Add	_	Action	_	_	0	_	_	Offset=109-112
+2	1	_	Amount	_	_	3	Measure	_	Offset=113-117
+3	Iron	_	Reagent	_	_	0	_	_	Offset=118-140
+4	vortex	_	Action	_	_	0	_	_	Offset=145-151
+
+# sent_id = s3
+# text = Add 1 μL Iron Chloride Solution and vortex to mix.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=160-170
+2	sample	_	Reagent	_	_	0	_	_	Offset=175-181
+3	~14K	_	Speed	_	_	0	_	_	Offset=185-193
+4	20	_	Time	_	_	0	_	_	Offset=198-208
+
+# sent_id = s4
+# text = Centrifuge the sample at ~14K RCF for 20 minutes.
+1	Remove	_	Action	_	_	0	_	_	Offset=210-216
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=217-228
+3	pipette	_	Device	_	_	0	_	_	Offset=237-244
+
+# sent_id = s5
+# text = Remove supernatant using a pipette, leaving a small, undisturbed pellet of Fe oxyhydroxides behind (Figure 2).
+1	Dissolve	_	Action	_	_	0	_	_	Offset=321-329
+2	pellet	_	Reagent	_	_	0	_	_	Offset=334-340
+3	10	_	Amount	_	_	4	Measure	_	Offset=344-349
+4	Ascorbic-EDTA	_	Reagent	_	_	0	_	_	Offset=353-373
+
+# sent_id = s6
+# text = Dissolve the pellet in 10 μL of Ascorbic-EDTA Buffer, creating a 100-fold concentration of the original sample.
+1	Vortex	_	Action	_	_	0	_	_	Offset=433-439
+2	pipette	_	Action	_	_	0	_	_	Offset=449-468
+
+# sent_id = s7
+# text = Vortex and then pipette up and down to ensure complete dissolution.
+1	Vortex	_	Action	_	_	0	_	_	Offset=501-507
+2	pipette	_	Action	_	_	0	_	_	Offset=517-536
+
+# sent_id = s8
+# text = Vortex and then pipette up and down to ensure complete dissolution.
+1	Combine	_	Action	_	_	0	_	_	Offset=569-576
+2	10	_	Amount	_	_	3	Measure	_	Offset=577-582
+3	sample	_	Reagent	_	_	0	_	_	Offset=583-589
+4	2	_	Amount	_	_	5	Measure	_	Offset=627-631
+5	SYBR	_	Reagent	_	_	0	_	_	Offset=632-655
+6	vortex	_	Action	_	_	0	_	_	Offset=657-663
+7	place	_	Action	_	_	0	_	_	Offset=676-681
+8	dark	_	Method	_	_	0	_	_	Offset=685-689
+9	15	_	Time	_	_	0	_	_	Offset=694-704
+
+# sent_id = s9
+# text = Combine 10 μL sample (concentrated or unconcentrated) and 2 μL SYBR Gold Working Stock, vortex to mix, and place in dark for 15 minutes.
+1	add	_	Action	_	_	0	_	_	Offset=735-738
+2	1	_	Amount	_	_	3	Measure	_	Offset=739-743
+3	Ascorbic	_	Reagent	_	_	0	_	_	Offset=747-778
+
+# sent_id = s10
+# text = If sample is unconcentrated, add 1 μL of Ascorbic Acid Antifade Solution.
+1	Add	_	Action	_	_	0	_	_	Offset=780-783
+2	5	_	Amount	_	_	3	Measure	_	Offset=784-788
+3	glycerol	_	Reagent	_	_	0	_	_	Offset=792-800
+4	stained	_	Reagent	_	_	0	_	_	Offset=804-818
+5	vortex	_	Action	_	_	0	_	_	Offset=823-829
+
+# sent_id = s11
+# text = Add 5 μL of glycerol to stained sample and vortex to mix.
+1	Add	_	Action	_	_	0	_	_	Offset=838-841
+2	2	_	Amount	_	_	3	Measure	_	Offset=842-846
+3	Working	_	Reagent	_	_	0	_	_	Offset=847-868
+4	sample	_	Reagent	_	_	0	_	_	Offset=872-878
+
+# sent_id = s12
+# text = Add 2 µL Working Bead Solution to sample.
+1	Clean	_	Action	_	_	0	_	_	Offset=880-885
+2	glass	_	Location	_	_	0	_	_	Offset=886-898
+3	cover	_	Location	_	_	0	_	_	Offset=903-914
+4	isopropanol	_	Reagent	_	_	0	_	_	Offset=920-931
+5	Kimwipes	_	Device	_	_	0	_	_	Offset=936-944
+
+# sent_id = s13
+# text = Clean glass slides and cover slips with isopropanol and Kimwipes.
+1	Thoroughly	_	Modifier	_	_	0	_	_	Offset=946-956
+2	mix	_	Action	_	_	0	_	_	Offset=957-960
+3	sample/bead	_	Reagent	_	_	0	_	_	Offset=965-984
+4	pipetting	_	Method	_	_	0	_	_	Offset=988-1009
+5	immediately	_	Modifier	_	_	0	_	_	Offset=1016-1027
+6	pipette	_	Action	_	_	0	_	_	Offset=1028-1035
+7	10	_	Amount	_	_	8	Measure	_	Offset=1036-1041
+8	it	_	Mention	_	_	0	_	_	Offset=1045-1047
+9	glass	_	Location	_	_	0	_	_	Offset=1055-1077
+
+# sent_id = s14
+# text = Thoroughly mix the sample/bead mixture by pipetting up and down, then immediately pipette 10 μL of it onto a glass microscope slide.
+1	Place	_	Action	_	_	0	_	_	Offset=1079-1084
+2	coverslip	_	Seal	_	_	0	_	_	Offset=1087-1096
+3	mixture	_	Reagent	_	_	0	_	_	Offset=1106-1113
+
+# sent_id = s15
+# text = Place a coverslip over the mixture and avoid trapping air under the coverslip.
+1	Place	_	Action	_	_	0	_	_	Offset=1158-1163
+2	coverslip	_	Seal	_	_	0	_	_	Offset=1166-1175
+3	mixture	_	Reagent	_	_	0	_	_	Offset=1185-1192
+
+# sent_id = s16
+# text = Place a coverslip over the mixture and avoid trapping air under the coverslip.
+1	View	_	Action	_	_	0	_	_	Offset=1237-1241
+2	viruses	_	Reagent	_	_	0	_	_	Offset=1242-1249
+3	~495	_	Method	_	_	0	_	_	Offset=1256-1274
+4	1000X	_	Method	_	_	0	_	_	Offset=1278-1297
+5	epifluorescence	_	Method	_	_	0	_	_	Offset=1307-1333
+
+# sent_id = s17
+# text = View viruses under ~495 nm excitation at 1000X magnification using an epifluorescence microscope.
+1	Count	_	Action	_	_	0	_	_	Offset=1335-1340
+2	viruses	_	Reagent	_	_	0	_	_	Offset=1355-1362
+
+# sent_id = s18
+# text = Count the number of viruses in one defined field of view.
+1	switch	_	Action	_	_	0	_	_	Offset=1408-1418
+2	excitation	_	Device	_	_	0	_	_	Offset=1423-1433
+3	turn	_	Action	_	_	0	_	_	Offset=1438-1445
+4	microscope	_	Device	_	_	0	_	_	Offset=1469-1479
+5	count	_	Action	_	_	0	_	_	Offset=1483-1488
+6	beads	_	Reagent	_	_	0	_	_	Offset=1493-1498
+
+# sent_id = s19
+# text = Once complete, switch off the excitation and turn on the white light of the microscope to count the beads in the same field of view (Figure 3).
+1	counting	_	Action	_	_	0	_	_	Offset=1560-1568
+2	viruses	_	Reagent	_	_	0	_	_	Offset=1569-1576
+3	beads	_	Reagent	_	_	0	_	_	Offset=1581-1586
+
+# sent_id = s20
+# text = Repeat Step 14 & 15 by counting viruses and beads in multiple fields until at least 100 of each have been counted.
+1	concentration	_	Concentration	_	_	2	Measure	_	Offset=1656-1669
+2	viruses	_	Reagent	_	_	0	_	_	Offset=1673-1680
+3	determined	_	Action	_	_	0	_	_	Offset=1693-1703
+
+# sent_id = s21
+# text = The concentration of viruses can then be determined with the following equation
+1	stored	_	Action	_	_	0	_	_	Offset=1756-1762
+2	-20ºC	_	Temperature	_	_	0	_	_	Offset=1766-1771
+3	microcentrifuge	_	Location	_	_	0	_	_	Offset=1786-1806
+4	mounted	_	Action	_	_	0	_	_	Offset=1848-1858
+5	slides	_	Location	_	_	0	_	_	Offset=1859-1865
+

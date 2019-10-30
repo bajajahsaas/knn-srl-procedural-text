@@ -1,0 +1,82 @@
+# sent_id = s1
+# text = Anti-Neu5Gc Antibody Kit Protocol - ELISA
+1	Coat	_	Action	_	_	0	_	_	Offset=42-46
+2	96-well	_	Location	_	_	0	_	_	Offset=51-70
+3	target	_	Reagent	_	_	0	_	_	Offset=80-95
+4	50	_	Concentration	_	_	5	Measure	_	Offset=99-104
+5	sodium	_	Reagent	_	_	0	_	_	Offset=105-140
+6	pH	_	pH	_	_	5	Measure	_	Offset=142-148
+7	at	_	Modifier	_	_	8	Mod-Link	_	Offset=213-221
+8	2	_	Time	_	_	0	_	_	Offset=222-229
+9	ambient	_	Temperature	_	_	0	_	_	Offset=233-252
+10	overnight	_	Time	_	_	8	Or	_	Offset=256-265
+11	4°C	_	Temperature	_	_	9	Or	_	Offset=269-272
+
+# sent_id = s2
+# text = Coat the 96-well ELISA plate with the target molecule in 50 mM sodium carbonate-bicarbonate buffer, pH 9.5 (up to 1 μg/well in 100 μl carbonate buffer, in triplicate) for at least 2 hours at ambient temperature or overnight at 4°C.
+1	Wash	_	Action	_	_	0	_	_	Offset=274-278
+2	wells	_	Location	_	_	0	_	_	Offset=283-288
+3	3	_	Generic-Measure	_	_	0	_	_	Offset=289-301
+4	PBS	_	Reagent	_	_	0	_	_	Offset=307-310
+
+# sent_id = s3
+# text = Wash the wells 3 to 5 times with PBS.
+1	Block	_	Action	_	_	0	_	_	Offset=312-317
+2	wells	_	Location	_	_	0	_	_	Offset=318-323
+3	PBS-T	_	Reagent	_	_	0	_	_	Offset=329-334
+4	200	_	Generic-Measure	_	_	3	Measure	_	Offset=336-347
+5	1	_	Time	_	_	0	_	_	Offset=353-359
+6	room	_	Temperature	_	_	0	_	_	Offset=363-379
+
+# sent_id = s4
+# text = Block wells with PBS-T (200 μl/well) for 1 hour at room temperature.
+1	Add	_	Action	_	_	0	_	_	Offset=381-384
+2	anti-Neu5Gc	_	Reagent	_	_	0	_	_	Offset=389-409
+3	diluted	_	Action	_	_	0	_	_	Offset=446-453
+4	PBS-T	_	Reagent	_	_	0	_	_	Offset=457-462
+5	appropriate	_	Modifier	_	_	6	Mod-Link	_	Offset=471-482
+6	well(s)	_	Location	_	_	0	_	_	Offset=483-490
+7	incubate	_	Action	_	_	0	_	_	Offset=495-503
+8	2	_	Time	_	_	0	_	_	Offset=508-515
+9	room	_	Temperature	_	_	0	_	_	Offset=519-535
+
+# sent_id = s5
+# text = Add the anti-Neu5Gc antibody (or the negative control antibody), diluted in PBS-T, to the appropriate well(s) and incubate for 2 hours at room temperature.
+1	Wash	_	Action	_	_	0	_	_	Offset=537-541
+2	wells	_	Location	_	_	0	_	_	Offset=542-547
+3	PBS-T	_	Reagent	_	_	0	_	_	Offset=563-568
+
+# sent_id = s6
+# text = Wash wells as before with PBS-T. 
+1	Add	_	Action	_	_	0	_	_	Offset=571-574
+2	enzyme-conjugated	_	Reagent	_	_	0	_	_	Offset=575-611
+3	each	_	Modifier	_	_	4	Mod-Link	_	Offset=663-667
+4	well	_	Location	_	_	0	_	_	Offset=668-672
+5	incubate	_	Action	_	_	0	_	_	Offset=677-685
+6	1	_	Time	_	_	0	_	_	Offset=690-696
+7	room	_	Temperature	_	_	0	_	_	Offset=700-716
+
+# sent_id = s7
+# text = Add enzyme-conjugated secondary antibody (donkey-anti-chicken antibody, 1:10,000 in PBS) to each well and incubate for 1 hour at room temperature.
+1	Wash	_	Action	_	_	0	_	_	Offset=718-722
+2	wells	_	Location	_	_	0	_	_	Offset=723-728
+3	again	_	Modifier	_	_	0	_	_	Offset=729-734
+4	PBS-T.	_	Reagent	_	_	0	_	_	Offset=740-746
+
+# sent_id = s8
+# text = Wash wells again with PBS-T. 
+1	Add	_	Action	_	_	0	_	_	Offset=748-751
+2	enzyme	_	Reagent	_	_	0	_	_	Offset=752-768
+3	wells	_	Location	_	_	0	_	_	Offset=780-785
+4	develop	_	Action	_	_	0	_	_	Offset=789-796
+5	quench	_	Action	_	_	0	_	_	Offset=798-804
+6	reaction	_	Reagent	_	_	0	_	_	Offset=809-817
+
+# sent_id = s9
+# text = Add enzyme substrate, allow the wells to develop; quench the reaction if necessary.
+1	Read	_	Action	_	_	0	_	_	Offset=832-836
+2	absorbance	_	Measure-Type	_	_	0	_	_	Offset=837-847
+3	ELISA	_	Device	_	_	0	_	_	Offset=854-872
+4	appropriate	_	Modifier	_	_	5	Mod-Link	_	Offset=880-891
+5	wavelength	_	Generic-Measure	_	_	3	Setting	_	Offset=892-902
+

@@ -1,0 +1,141 @@
+# sent_id = s1
+# text = Modified Qiagen Plasmid Midi
+1	Harvest	_	Action	_	_	0	_	_	Offset=29-36
+2	centrifuging	_	Action	_	_	0	_	_	Offset=68-80
+3	4000	_	Speed	_	_	0	_	_	Offset=84-92
+4	15	_	Time	_	_	0	_	_	Offset=97-103
+5	4°C	_	Temperature	_	_	0	_	_	Offset=107-110
+
+# sent_id = s2
+# text = Harvest overnight bacterial culture by centrifuging at 4000 x g for 15 min at 4°C.
+1	Resuspend	_	Action	_	_	0	_	_	Offset=112-121
+2	bacterial	_	Reagent	_	_	0	_	_	Offset=126-142
+3	4	_	Amount	_	_	0	_	_	Offset=146-150
+4	Buffer	_	Reagent	_	_	3	Or	_	Offset=151-160
+
+# sent_id = s3
+# text = Resuspend the bacterial pellet in 4 ml Buffer P1.
+1	Add	_	Action	_	_	0	_	_	Offset=162-165
+2	4	_	Amount	_	_	3	Measure	_	Offset=166-170
+3	Buffer	_	Reagent	_	_	0	_	_	Offset=171-180
+4	mix	_	Action	_	_	0	_	_	Offset=182-185
+5	inverting	_	Method	_	_	0	_	_	Offset=211-220
+6	incubate	_	Action	_	_	0	_	_	Offset=236-244
+7	15–25°C	_	Temperature	_	_	0	_	_	Offset=266-273
+8	5	_	Time	_	_	0	_	_	Offset=279-284
+
+# sent_id = s4
+# text = Add 4 ml Buffer P2, mix thoroughly by vigorously inverting 4–6 times, and incubate at room temperature (15–25°C) for 5 min.
+1	Add	_	Action	_	_	0	_	_	Offset=342-345
+2	4	_	Amount	_	_	3	Measure	_	Offset=346-350
+3	prechilled	_	Reagent	_	_	0	_	_	Offset=351-371
+4	mix	_	Action	_	_	0	_	_	Offset=373-376
+5	inverting	_	Method	_	_	0	_	_	Offset=402-411
+
+# sent_id = s5
+# text = If using LyseBlue reagent, the solution will turn blue.
+1	Incubate	_	Action	_	_	0	_	_	Offset=423-431
+2	ice	_	Location	_	_	0	_	_	Offset=435-438
+3	15	_	Time	_	_	0	_	_	Offset=443-449
+
+# sent_id = s6
+# text = Add 4 ml prechilled Buffer P3, mix thoroughly by vigorously inverting 4–6 times.
+1	LyseBlue	_	Reagent	_	_	0	_	_	Offset=460-477
+2	mix	_	Action	_	_	0	_	_	Offset=478-481
+
+# sent_id = s7
+# text = Incubate on ice for 15 min.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=518-528
+2	14,000	_	Speed	_	_	0	_	_	Offset=532-542
+3	45	_	Time	_	_	0	_	_	Offset=547-553
+4	4°C	_	Temperature	_	_	0	_	_	Offset=557-560
+
+# sent_id = s8
+# text = If using LyseBlue reagent, mix the solution until it is colorless.
+1	Equilibrate	_	Action	_	_	0	_	_	Offset=562-573
+2	QIAGEN-tip	_	Device	_	_	0	_	_	Offset=576-590
+3	applying	_	Action	_	_	0	_	_	Offset=594-602
+4	4	_	Amount	_	_	5	Measure	_	Offset=603-607
+5	Buffer	_	Reagent	_	_	0	_	_	Offset=608-618
+
+# sent_id = s9
+# text = Centrifuge at 14,000 x g for 45 min at 4°C.
+1	Apply	_	Action	_	_	0	_	_	Offset=663-668
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=673-684
+3	QIAGEN-tip	_	Device	_	_	0	_	_	Offset=704-714
+
+# sent_id = s10
+# text = Equilibrate a QIAGEN-tip 100 by applying 4 ml Buffer QBT, and allow column to empty by gravity flow.
+1	Wash	_	Action	_	_	0	_	_	Offset=764-768
+2	QIAGEN-tip	_	Device	_	_	0	_	_	Offset=773-783
+3	2	_	Amount	_	_	4	Measure	_	Offset=789-798
+4	Buffer	_	Reagent	_	_	0	_	_	Offset=799-808
+
+# sent_id = s11
+# text = Apply the supernatant from step 5 to the QIAGEN-tip and allow it to enter the resin by gravity flow.
+1	Buffer	_	Reagent	_	_	0	_	_	Offset=816-825
+2	move	_	Action	_	_	0	_	_	Offset=829-841
+3	QIAGEN-tip	_	Device	_	_	0	_	_	Offset=846-856
+
+# sent_id = s12
+# text = Wash the QIAGEN-tip with 2 x 10 ml Buffer QC.
+1	Elute	_	Action	_	_	0	_	_	Offset=874-879
+2	DNA	_	Reagent	_	_	0	_	_	Offset=880-883
+3	5	_	Amount	_	_	4	Measure	_	Offset=889-893
+4	Buffer	_	Reagent	_	_	0	_	_	Offset=894-903
+5	15	_	Modifier	_	_	6	Mod-Link	_	Offset=917-922
+6	vessel	_	Device	_	_	0	_	_	Offset=923-929
+
+# sent_id = s13
+# text = Allow Buffer QC to move through the QIAGEN-tip by gravity flow.
+1	prewarming	_	Action	_	_	0	_	_	Offset=965-975
+2	elution	_	Reagent	_	_	0	_	_	Offset=980-994
+3	65°C	_	Temperature	_	_	0	_	_	Offset=998-1002
+
+# sent_id = s14
+# text = Elute DNA with 5 ml Buffer QF into a clean 15 ml vessel.
+1	Precipitate	_	Action	_	_	0	_	_	Offset=1035-1046
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1047-1050
+3	3.5	_	Amount	_	_	5	Measure	_	Offset=1061-1067
+4	room-temperature	_	Temperature	_	_	0	_	_	Offset=1068-1084
+5	isopropanol	_	Reagent	_	_	0	_	_	Offset=1085-1096
+6	DNA	_	Reagent	_	_	0	_	_	Offset=1111-1114
+7	mix	_	Action	_	_	0	_	_	Offset=1119-1122
+
+# sent_id = s15
+# text = For constructs larger than 45 kb, prewarming the elution buffer to 65°C may help to increase the yield.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=1124-1134
+2	4,000	_	Speed	_	_	0	_	_	Offset=1138-1147
+3	60	_	Time	_	_	0	_	_	Offset=1152-1158
+4	4°C	_	Temperature	_	_	0	_	_	Offset=1162-1165
+
+# sent_id = s16
+# text = Precipitate DNA by adding 3.5 ml room-temperature isopropanol to the eluted DNA and mix.
+1	decant	_	Action	_	_	0	_	_	Offset=1177-1183
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1188-1199
+
+# sent_id = s17
+# text = Centrifuge at 4,000 x g for 60 min at 4°C.
+1	Wash	_	Action	_	_	0	_	_	Offset=1201-1205
+2	DNA	_	Reagent	_	_	0	_	_	Offset=1210-1220
+3	2	_	Amount	_	_	6	Measure	_	Offset=1226-1230
+4	room-temperature	_	Temperature	_	_	0	_	_	Offset=1231-1247
+5	70%	_	Concentration	_	_	6	Measure	_	Offset=1248-1251
+6	ethanol	_	Reagent	_	_	0	_	_	Offset=1252-1259
+7	centrifuge	_	Action	_	_	0	_	_	Offset=1264-1274
+8	4,000	_	Speed	_	_	0	_	_	Offset=1278-1287
+9	10	_	Time	_	_	0	_	_	Offset=1292-1298
+
+# sent_id = s18
+# text = Carefully decant the supernatant.
+1	decant	_	Action	_	_	0	_	_	Offset=1310-1316
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1317-1328
+
+# sent_id = s19
+# text = Wash the DNA pellet with 2 ml room-temperature 70% ethanol and centrifuge at 4,000 x g for 10 min.
+1	Air-dry	_	Action	_	_	0	_	_	Offset=1330-1337
+2	pellet	_	Reagent	_	_	0	_	_	Offset=1338-1344
+3	5–10	_	Time	_	_	0	_	_	Offset=1349-1357
+4	redissolve	_	Action	_	_	0	_	_	Offset=1362-1372
+5	DNA	_	Reagent	_	_	0	_	_	Offset=1373-1376
+

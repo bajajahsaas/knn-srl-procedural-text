@@ -1,0 +1,47 @@
+# sent_id = s1
+# text = Multi-temperature Double Digest (single buffer)
+1	Set	_	Action	_	_	0	_	_	Offset=48-54
+2	reaction	_	Reagent	_	_	0	_	_	Offset=69-77
+3	Enzyme	_	Reagent	_	_	0	_	_	Offset=83-92
+4	50	_	Amount	_	_	3	Measure	_	Offset=116-121
+
+# sent_id = s2
+# text = Set up the following reaction with Enzyme #1 (total reaction volume 50 µl).
+1	Mix	_	Action	_	_	0	_	_	Offset=124-127
+2	components	_	Reagent	_	_	0	_	_	Offset=128-138
+3	pipetting	_	Action	_	_	0	_	_	Offset=142-151
+4	reaction	_	Reagent	_	_	0	_	_	Offset=156-172
+5	up	_	Method	_	_	0	_	_	Offset=173-184
+6	flicking	_	Action	_	_	0	_	_	Offset=193-201
+7	reaction	_	Location	_	_	0	_	_	Offset=207-220
+
+# sent_id = s3
+# text = Mix components by pipetting the reaction mixture up and down, or by "flicking" the reaction tube.
+1	Quick	_	Modifier	_	_	0	_	_	Offset=222-227
+2	spin-down	_	Action	_	_	0	_	_	Offset=238-247
+3	microcentrifuge	_	Device	_	_	0	_	_	Offset=253-268
+
+# sent_id = s4
+# text = Quick ("touch") spin-down in a microcentrifuge.
+1	Do	_	Action	_	_	0	_	_	Offset=270-283
+2	reaction	_	Reagent	_	_	0	_	_	Offset=288-296
+
+# sent_id = s5
+# text = Do not vortex the reaction.
+1	Incubate	_	Action	_	_	0	_	_	Offset=298-306
+2	1	_	Time	_	_	0	_	_	Offset=311-317
+3	enzyme-specific	_	Modifier	_	_	4	Mod-Link	_	Offset=325-352
+4	temperature	_	Temperature	_	_	0	_	_	Offset=353-364
+
+# sent_id = s6
+# text = Incubate for 1 hour at the enzyme-specific appropriate temperature.
+1	Add	_	Action	_	_	0	_	_	Offset=366-369
+2	second	_	Reagent	_	_	0	_	_	Offset=374-387
+
+# sent_id = s7
+# text = Add the second enzyme.
+1	Incubate	_	Action	_	_	0	_	_	Offset=389-397
+2	1	_	Time	_	_	0	_	_	Offset=402-408
+3	enzyme-specific	_	Modifier	_	_	4	Mod-Link	_	Offset=416-443
+4	temperature	_	Temperature	_	_	0	_	_	Offset=444-455
+

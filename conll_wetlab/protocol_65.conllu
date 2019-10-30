@@ -1,0 +1,131 @@
+# sent_id = s1
+# text = Adsorption of phage to cyanobacteria
+1	everything	_	Reagent	_	_	0	_	_	Offset=42-52
+2	perform	_	Action	_	_	0	_	_	Offset=62-69
+3	plaque	_	Method	_	_	0	_	_	Offset=70-82
+4	Plating	_	Modifier	_	_	5	Mod-Link	_	Offset=86-93
+5	cells	_	Reagent	_	_	0	_	_	Offset=94-99
+6	aliquoted	_	Action	_	_	0	_	_	Offset=101-110
+7	set	_	Action	_	_	0	_	_	Offset=116-119
+8	aside	_	Location	_	_	0	_	_	Offset=120-125
+
+# sent_id = s2
+# text = Have everything ready to perform plaque assay:a. Plating cells, aliquoted, and set aside.
+1	Bottom	_	Modifier	_	_	2	Mod-Link	_	Offset=130-136
+2	plates	_	Location	_	_	0	_	_	Offset=137-143
+
+# sent_id = s3
+# text = b.
+1	Top	_	Reagent	_	_	0	_	_	Offset=170-178
+2	aliquoted	_	Action	_	_	0	_	_	Offset=179-188
+3	temperature	_	Temperature	_	_	0	_	_	Offset=193-204
+4	equilibrated	_	Action	_	_	0	_	_	Offset=205-217
+
+# sent_id = s4
+# text = Bottom plates labeled (24 + plates).
+1	Dilution	_	Location	_	_	3	Meronym	_	Offset=222-236
+2	1.5	_	Amount	_	_	3	Measure	_	Offset=251-257
+3	media	_	Reagent	_	_	0	_	_	Offset=258-263
+4	labeled	_	Action	_	_	0	_	_	Offset=265-272
+5	kept	_	Action	_	_	0	_	_	Offset=277-281
+6	ice	_	Location	_	_	0	_	_	Offset=285-288
+
+# sent_id = s5
+# text = c. Top agar aliquoted and temperature equilibrated.
+1	Cyanophage	_	Reagent	_	_	0	_	_	Offset=293-309
+2	diluted	_	Action	_	_	0	_	_	Offset=310-317
+3	1–5	_	Amount	_	_	4	Measure	_	Offset=323-329
+4	media	_	Reagent	_	_	0	_	_	Offset=330-335
+
+# sent_id = s6
+# text = d. Dilution tubes—these contain 1.5 mL media, labeled and kept on ice.
+1	Set	_	Action	_	_	0	_	_	Offset=337-343
+
+# sent_id = s7
+# text = e. Cyanophage stock diluted into 1–5 mL media.
+1	Set	_	Action	_	_	0	_	_	Offset=398-404
+2	adsorption	_	Reagent	_	_	0	_	_	Offset=405-424
+3	250	_	Amount	_	_	5	Measure	_	Offset=432-438
+4	polycarbonate	_	Modifier	_	_	5	Mod-Link	_	Offset=439-452
+5	Erlenmeyer	_	Location	_	_	6	Meronym	_	Offset=453-470
+6	screw	_	Seal	_	_	0	_	_	Offset=476-485
+
+# sent_id = s8
+# text = Set up a table to record times such as Table 1 (guidelines).
+1	Fill	_	Action	_	_	0	_	_	Offset=488-492
+2	flask	_	Location	_	_	0	_	_	Offset=493-498
+3	100	_	Amount	_	_	4	Measure	_	Offset=504-510
+4	host	_	Reagent	_	_	0	_	_	Offset=511-521
+
+# sent_id = s9
+# text = Set up adsorption cultures (e.g., 250 mL polycarbonate Erlenmeyer flasks with screw cap).
+1	Add	_	Action	_	_	0	_	_	Offset=523-526
+2	cyanophage	_	Reagent	_	_	0	_	_	Offset=527-543
+3	known	_	Concentration	_	_	2	Measure	_	Offset=547-558
+4	host	_	Reagent	_	_	0	_	_	Offset=562-566
+
+# sent_id = s10
+# text = Fill flask with 100 mL host cells.
+1	quickly	_	Modifier	_	_	0	_	_	Offset=593-600
+2	mix	_	Action	_	_	0	_	_	Offset=601-604
+3	disperse	_	Action	_	_	0	_	_	Offset=608-616
+4	virus	_	Reagent	_	_	0	_	_	Offset=621-626
+
+# sent_id = s11
+# text = Add cyanophage stock of known titer to host at an MOI of ca.
+1	Immediately	_	Modifier	_	_	0	_	_	Offset=628-639
+2	remove	_	Action	_	_	0	_	_	Offset=640-646
+3	subsample	_	Reagent	_	_	0	_	_	Offset=649-658
+4	dilute	_	Action	_	_	0	_	_	Offset=663-669
+5	100×	_	Concentration	_	_	0	_	_	Offset=670-674
+6	time	_	Time	_	_	0	_	_	Offset=679-688
+7	Transfer	_	Action	_	_	0	_	_	Offset=690-698
+8	15	_	Amount	_	_	0	_	_	Offset=699-704
+9	tube	_	Location	_	_	12	Meronym	_	Offset=710-714
+10	1.5	_	Amount	_	_	12	Measure	_	Offset=726-732
+11	ice	_	Modifier	_	_	12	Mod-Link	_	Offset=736-744
+12	media	_	Reagent	_	_	0	_	_	Offset=745-750
+
+# sent_id = s12
+# text = 0.01 and quickly mix to disperse the virus.
+1	Vortex	_	Action	_	_	0	_	_	Offset=752-758
+2	mix	_	Action	_	_	0	_	_	Offset=762-765
+
+# sent_id = s13
+# text = Immediately remove a subsample and dilute 100× for time zero: Transfer 15 µL to a tube containing 1.5 mL of ice cold media.
+1	Pellet	_	Action	_	_	0	_	_	Offset=767-773
+2	host	_	Reagent	_	_	0	_	_	Offset=774-778
+3	5	_	Time	_	_	0	_	_	Offset=783-788
+
+# sent_id = s14
+# text = Vortex to mix.
+1	16,000g	_	Speed	_	_	0	_	_	Offset=796-803
+2	4°C	_	Temperature	_	_	0	_	_	Offset=808-811
+
+# sent_id = s15
+# text = Pellet host for 5 min at ca.
+1	Carefully	_	Modifier	_	_	0	_	_	Offset=828-837
+2	remove	_	Action	_	_	0	_	_	Offset=838-844
+3	small	_	Amount	_	_	4	Or	_	Offset=847-860
+4	50	_	Amount	_	_	5	Measure	_	Offset=862-867
+5	supernatant	_	Reagent	_	_	0	_	_	Offset=876-887
+6	new	_	Modifier	_	_	7	Mod-Link	_	Offset=893-896
+7	tube	_	Location	_	_	0	_	_	Offset=897-901
+8	keep	_	Action	_	_	0	_	_	Offset=906-915
+
+# sent_id = s16
+# text = 16,000g and 4°C; note the time.
+1	Place	_	Action	_	_	0	_	_	Offset=945-950
+2	adsorption	_	Reagent	_	_	0	_	_	Offset=951-970
+
+# sent_id = s17
+# text = Carefully remove a small aliquot (50 µL) of the supernatant to a new tube and keep cold for plaque assay; note time.
+1	Repeat	_	Action	_	_	0	_	_	Offset=1018-1024
+2	sampling	_	Method	_	_	0	_	_	Offset=1025-1033
+3	15	_	Time	_	_	0	_	_	Offset=1037-1053
+4	1	_	Time	_	_	0	_	_	Offset=1058-1068
+5	Determine	_	Action	_	_	0	_	_	Offset=1070-1079
+6	concentration	_	Measure-Type	_	_	0	_	_	Offset=1084-1097
+7	viruses	_	Reagent	_	_	0	_	_	Offset=1101-1108
+8	supernatant	_	Reagent	_	_	7	Meronym	_	Offset=1126-1137
+

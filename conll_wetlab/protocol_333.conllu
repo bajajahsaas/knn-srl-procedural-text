@@ -1,0 +1,271 @@
+# sent_id = s1
+# text = ELISA protocol
+1	Incubate	_	Action	_	_	0	_	_	Offset=15-23
+2	120	_	Time	_	_	0	_	_	Offset=28-39
+3	37	_	Temperature	_	_	0	_	_	Offset=43-49
+
+# sent_id = s2
+# text = Incubate for 120 minutes at 37 ⁰C.
+1	Invert	_	Action	_	_	0	_	_	Offset=50-56
+2	plate	_	Location	_	_	0	_	_	Offset=61-66
+3	pat	_	Action	_	_	0	_	_	Offset=71-74
+4	thick	_	Reagent	_	_	0	_	_	Offset=86-113
+
+# sent_id = s3
+# text = Invert the plate and pat it against thick clean absorbent paper.
+1	Incubate	_	Action	_	_	0	_	_	Offset=115-123
+2	60	_	Time	_	_	0	_	_	Offset=128-138
+3	37°C.	_	Temperature	_	_	0	_	_	Offset=142-147
+
+# sent_id = s4
+# text = Incubate for 60 minutes at 37°C.
+1	Aspirate	_	Action	_	_	0	_	_	Offset=159-167
+2	each	_	Location	_	_	0	_	_	Offset=168-177
+3	wash	_	Action	_	_	0	_	_	Offset=182-186
+4	filling	_	Action	_	_	0	_	_	Offset=190-197
+5	each	_	Location	_	_	0	_	_	Offset=198-207
+6	Wash	_	Reagent	_	_	0	_	_	Offset=213-224
+7	400µL	_	Amount	_	_	6	Measure	_	Offset=240-245
+
+# sent_id = s5
+# text = (wash 1/5) Aspirate each well and wash by filling each well with Wash Buffer (approximately 400µL).  
+1	Aspirate	_	Action	_	_	0	_	_	Offset=261-269
+2	each	_	Location	_	_	0	_	_	Offset=270-279
+3	wash	_	Action	_	_	0	_	_	Offset=284-288
+4	filling	_	Action	_	_	0	_	_	Offset=292-299
+5	each	_	Location	_	_	0	_	_	Offset=300-309
+6	Wash	_	Reagent	_	_	0	_	_	Offset=315-326
+7	400µL	_	Amount	_	_	6	Measure	_	Offset=342-347
+
+# sent_id = s6
+# text = (wash 2/5) Aspirate each well and wash by filling each well with Wash Buffer (approximately 400µL).  
+1	Aspirate	_	Action	_	_	0	_	_	Offset=363-371
+2	each	_	Location	_	_	0	_	_	Offset=372-381
+3	wash	_	Action	_	_	0	_	_	Offset=386-390
+4	filling	_	Action	_	_	0	_	_	Offset=394-401
+5	each	_	Location	_	_	0	_	_	Offset=402-411
+6	Wash	_	Reagent	_	_	0	_	_	Offset=417-428
+7	400µL	_	Amount	_	_	6	Measure	_	Offset=444-449
+
+# sent_id = s7
+# text = (wash 3/5) Aspirate each well and wash by filling each well with Wash Buffer (approximately 400µL).  
+1	Aspirate	_	Action	_	_	0	_	_	Offset=465-473
+2	each	_	Location	_	_	0	_	_	Offset=474-483
+3	wash	_	Action	_	_	0	_	_	Offset=488-492
+4	filling	_	Action	_	_	0	_	_	Offset=496-503
+5	each	_	Location	_	_	0	_	_	Offset=504-513
+6	Wash	_	Reagent	_	_	0	_	_	Offset=519-530
+7	400µL	_	Amount	_	_	6	Measure	_	Offset=546-551
+
+# sent_id = s8
+# text = (wash 4/5) Aspirate each well and wash by filling each well with Wash Buffer (approximately 400µL). 
+1	Aspirate	_	Action	_	_	0	_	_	Offset=566-574
+2	each	_	Location	_	_	0	_	_	Offset=575-584
+3	wash	_	Action	_	_	0	_	_	Offset=589-593
+4	filling	_	Action	_	_	0	_	_	Offset=597-604
+5	each	_	Location	_	_	0	_	_	Offset=605-614
+6	Wash	_	Reagent	_	_	0	_	_	Offset=620-631
+7	400µL	_	Amount	_	_	6	Measure	_	Offset=647-652
+
+# sent_id = s9
+# text = (wash 5/5) Aspirate each well and wash by filling each well with Wash Buffer (approximately 400µL).  
+1	Complete	_	Modifier	_	_	0	_	_	Offset=657-665
+2	removal	_	Action	_	_	0	_	_	Offset=666-673
+3	liquid	_	Reagent	_	_	0	_	_	Offset=677-683
+
+# sent_id = s10
+# text = Complete removal of liquid at each step is essential.
+1	Add	_	Action	_	_	0	_	_	Offset=711-714
+2	50µL	_	Amount	_	_	3	Measure	_	Offset=715-719
+3	Stop	_	Reagent	_	_	0	_	_	Offset=723-736
+4	each	_	Location	_	_	0	_	_	Offset=740-749
+
+# sent_id = s11
+# text = Add 50µL of Stop Solution to each well.
+1	tap	_	Action	_	_	0	_	_	Offset=799-802
+2	plate	_	Location	_	_	0	_	_	Offset=807-812
+3	thorough	_	Modifier	_	_	0	_	_	Offset=823-831
+4	mixing	_	Action	_	_	0	_	_	Offset=832-838
+
+# sent_id = s12
+# text = If color change does not appear uniform, gently tap the plate to ensure thorough mixing.
+1	Determine	_	Action	_	_	0	_	_	Offset=840-849
+2	optical	_	Measure-Type	_	_	0	_	_	Offset=854-869
+3	each	_	Location	_	_	0	_	_	Offset=884-893
+4	microplatereader	_	Device	_	_	0	_	_	Offset=911-927
+5	450	_	Generic-Measure	_	_	4	Setting	_	Offset=935-941
+
+# sent_id = s13
+# text = Determine the optical density (OD value) of each well at once, using a microplatereader set to 450 nm.
+1	open	_	Action	_	_	0	_	_	Offset=955-959
+2	micro-plate	_	Device	_	_	4	Coreference-Link	_	Offset=964-982
+3	preheat	_	Action	_	_	0	_	_	Offset=995-1002
+4	instrument	_	Mention	_	_	0	_	_	Offset=1007-1017
+5	set	_	Action	_	_	0	_	_	Offset=1023-1049
+
+# sent_id = s14
+# text = User should open the micro-plate reader in advance, preheat the instrument, and set the testing parameters.
+1	store	_	Action	_	_	0	_	_	Offset=1069-1074
+2	all	_	Reagent	_	_	0	_	_	Offset=1075-1087
+3	specified	_	Temperature	_	_	0	_	_	Offset=1105-1134
+
+# sent_id = s15
+# text = After experiment, store all reagents according to the specified storage temperature respectively until their expiry.
+1	Add	_	Action	_	_	0	_	_	Offset=1168-1171
+2	100µL	_	Amount	_	_	3	Measure	4:Measure|5:Measure	Offset=1172-1177
+3	Standard	_	Reagent	_	_	0	_	_	Offset=1181-1189
+4	Blank	_	Reagent	_	_	3	Or	_	Offset=1191-1196
+5	Sample	_	Reagent	_	_	4	Or	_	Offset=1201-1207
+6	well	_	Location	_	_	0	_	_	Offset=1212-1216
+
+# sent_id = s16
+# text = Add 100µL of Standard, Blank, or Sample per well.
+1	blank	_	Location	_	_	0	_	_	Offset=1222-1232
+2	added	_	Action	_	_	0	_	_	Offset=1236-1241
+3	Sample	_	Reagent	_	_	0	_	_	Offset=1247-1261
+
+# sent_id = s17
+# text = The blank well is added with Sample diluent.
+1	Solutions	_	Reagent	_	_	0	_	_	Offset=1263-1272
+2	added	_	Action	_	_	0	_	_	Offset=1277-1282
+3	bottom	_	Location	_	_	0	_	_	Offset=1290-1296
+4	micro	_	Location	_	_	3	Meronym	_	Offset=1300-1322
+5	avoid	_	Action	_	_	0	_	_	Offset=1324-1362
+
+# sent_id = s18
+# text = Solutions are added to the bottom of micro ELISA plate well, avoid inside wall touching and foaming as possible.
+1	Mix	_	Action	_	_	0	_	_	Offset=1376-1379
+2	gently	_	Modifier	_	_	0	_	_	Offset=1383-1389
+
+# sent_id = s19
+# text = Mix it gently.
+1	Cover	_	Action	_	_	0	_	_	Offset=1391-1396
+2	plate	_	Location	_	_	0	_	_	Offset=1401-1406
+3	sealer	_	Seal	_	_	0	_	_	Offset=1412-1418
+
+# sent_id = s20
+# text = Cover the plate with sealer we provided.
+1	Remove	_	Action	_	_	0	_	_	Offset=1432-1438
+2	liquid	_	Reagent	_	_	0	_	_	Offset=1443-1449
+3	each	_	Location	_	_	0	_	_	Offset=1455-1464
+4	don't	_	Action	_	_	0	_	_	Offset=1466-1476
+
+# sent_id = s21
+# text = Remove the liquid from each well, don't wash. 
+1	Add	_	Action	_	_	0	_	_	Offset=1479-1482
+2	100µL	_	Amount	_	_	3	Measure	_	Offset=1483-1488
+3	Detection	_	Reagent	_	_	0	_	_	Offset=1492-1528
+4	each	_	Location	_	_	0	_	_	Offset=1532-1541
+
+# sent_id = s22
+# text = Add 100µL of Detection Reagent A working solution to each well.
+1	Cover	_	Action	_	_	0	_	_	Offset=1543-1548
+2	Plate	_	Seal	_	_	0	_	_	Offset=1558-1570
+
+# sent_id = s23
+# text = Cover with the Plate sealer.
+1	tap	_	Action	_	_	0	_	_	Offset=1579-1582
+2	plate	_	Location	_	_	0	_	_	Offset=1587-1592
+3	thorough	_	Modifier	_	_	0	_	_	Offset=1603-1611
+4	mixing	_	Action	_	_	0	_	_	Offset=1612-1618
+
+# sent_id = s24
+# text = Gently tap the plate to ensure thorough mixing.
+1	Incubate	_	Action	_	_	0	_	_	Offset=1620-1628
+2	1	_	Time	_	_	0	_	_	Offset=1633-1639
+3	37°C	_	Temperature	_	_	0	_	_	Offset=1643-1647
+
+# sent_id = s25
+# text = Incubate for 1 hour at 37°C.
+1	Aspirate	_	Action	_	_	0	_	_	Offset=1660-1668
+2	each	_	Location	_	_	0	_	_	Offset=1669-1678
+3	wash	_	Action	_	_	0	_	_	Offset=1683-1687
+4	filling	_	Action	_	_	0	_	_	Offset=1691-1698
+5	each	_	Location	_	_	0	_	_	Offset=1699-1708
+6	Wash	_	Reagent	_	_	0	_	_	Offset=1714-1725
+7	400µL	_	Amount	_	_	6	Measure	_	Offset=1741-1746
+
+# sent_id = s26
+# text = (wash 1/3) Aspirate each well and wash by filling each well with Wash Buffer (approximately 400µL)
+1	Aspirate	_	Action	_	_	0	_	_	Offset=1759-1767
+2	each	_	Location	_	_	0	_	_	Offset=1768-1777
+3	wash	_	Action	_	_	0	_	_	Offset=1782-1786
+4	filling	_	Action	_	_	0	_	_	Offset=1790-1797
+5	each	_	Location	_	_	0	_	_	Offset=1798-1807
+6	Wash	_	Reagent	_	_	0	_	_	Offset=1813-1824
+7	400µL	_	Amount	_	_	6	Measure	_	Offset=1840-1845
+
+# sent_id = s27
+# text = (wash 2/3) Aspirate each well and wash by filling each well with Wash Buffer (approximately 400µL).  
+1	Aspirate	_	Action	_	_	0	_	_	Offset=1861-1869
+2	each	_	Location	_	_	0	_	_	Offset=1870-1879
+3	wash	_	Action	_	_	0	_	_	Offset=1884-1888
+4	filling	_	Action	_	_	0	_	_	Offset=1892-1899
+5	each	_	Location	_	_	0	_	_	Offset=1900-1909
+6	Wash	_	Reagent	_	_	0	_	_	Offset=1915-1926
+7	400µL	_	Amount	_	_	6	Measure	_	Offset=1942-1947
+
+# sent_id = s28
+# text = (wash 3/3) Aspirate each well and wash by filling each well with Wash Buffer (approximately 400µL).  
+1	Complete	_	Modifier	_	_	0	_	_	Offset=2045-2053
+2	removal	_	Action	_	_	0	_	_	Offset=2054-2061
+3	liquid	_	Reagent	_	_	0	_	_	Offset=2065-2071
+
+# sent_id = s29
+# text =  (a squirt bottle, multi-channel pipette, manifold dispenser orautomated washer are needed).
+1	remove	_	Action	_	_	0	_	_	Offset=2131-2137
+2	remaining	_	Reagent	_	_	0	_	_	Offset=2138-2159
+3	aspirating	_	Action	_	_	0	_	_	Offset=2163-2173
+4	decanting	_	Action	_	_	0	_	_	Offset=2177-2186
+
+# sent_id = s30
+# text = Complete removal of liquid at each step is essential.
+1	Add	_	Action	_	_	0	_	_	Offset=2188-2191
+2	100µL	_	Amount	_	_	3	Measure	_	Offset=2192-2197
+3	Detection	_	Reagent	_	_	0	_	_	Offset=2201-2237
+4	each	_	Location	_	_	0	_	_	Offset=2241-2251
+
+# sent_id = s31
+# text = After the last wash, completely remove remaining Wash Buffer by aspirating or decanting.
+1	Cover	_	Action	_	_	0	_	_	Offset=2252-2257
+2	Plate	_	Seal	_	_	0	_	_	Offset=2266-2278
+
+# sent_id = s32
+# text = Add 100µL of Detection Reagent B working solution to each well.
+1	Add	_	Action	_	_	0	_	_	Offset=2280-2283
+2	90µL	_	Amount	_	_	3	Measure	_	Offset=2284-2288
+3	Substrate	_	Reagent	_	_	0	_	_	Offset=2292-2310
+4	each	_	Location	_	_	0	_	_	Offset=2314-2323
+
+# sent_id = s33
+# text = Cover withthe Plate sealer.
+1	Cover	_	Action	_	_	0	_	_	Offset=2325-2330
+2	new	_	Seal	_	_	0	_	_	Offset=2338-2354
+3	incubate	_	Action	_	_	0	_	_	Offset=2359-2367
+4	15-30	_	Time	_	_	0	_	_	Offset=2371-2384
+5	37°C	_	Temperature	_	_	0	_	_	Offset=2388-2392
+
+# sent_id = s34
+# text = Add 90µL of Substrate Solution to each well.
+1	Protect	_	Action	_	_	0	_	_	Offset=2394-2401
+2	plate	_	Location	_	_	0	_	_	Offset=2406-2411
+
+# sent_id = s35
+# text = Cover with a new Plate sealer and incubatefor 15-30 minutes at 37°C.
+1	terminate	_	Action	_	_	0	_	_	Offset=2619-2628
+2	reaction	_	Reagent	_	_	0	_	_	Offset=2633-2641
+
+# sent_id = s36
+# text = Protect the plate from light.
+1	remove	_	Action	_	_	0	_	_	Offset=2675-2681
+2	remaining	_	Reagent	_	_	0	_	_	Offset=2682-2703
+3	aspirating	_	Action	_	_	0	_	_	Offset=2707-2717
+4	decanting	_	Action	_	_	0	_	_	Offset=2721-2730
+
+# sent_id = s37
+# text = The reaction time can be shortened orextended according to the actual color change, but this should not exceed more than 30 minutes.
+1	Invert	_	Action	_	_	0	_	_	Offset=2732-2738
+2	plate	_	Location	_	_	0	_	_	Offset=2743-2748
+3	pat	_	Action	_	_	0	_	_	Offset=2753-2756
+4	thick	_	Reagent	_	_	0	_	_	Offset=2768-2795
+

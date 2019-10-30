@@ -1,0 +1,119 @@
+# sent_id = s1
+# text = EpiQuik™ Total Histone Extraction Kit for Tissues (Treated and Untreated
+1	Re-suspend	_	Action	_	_	0	_	_	Offset=73-83
+2	cell/tissue	_	Reagent	_	_	0	_	_	Offset=84-102
+3	3	_	Amount	_	_	0	_	_	Offset=106-115
+4	200	_	Amount	_	_	3	Or	_	Offset=131-147
+5	100	_	Amount	_	_	4	Or	_	Offset=151-157
+6	Lysis	_	Reagent	_	_	0	_	_	Offset=172-184
+7	incubate	_	Action	_	_	0	_	_	Offset=189-197
+8	ice	_	Reagent	_	_	0	_	_	Offset=201-204
+9	30	_	Time	_	_	0	_	_	Offset=209-215
+
+# sent_id = s2
+# text = Re-suspend cell/tissue pellet in 3 volumes (approximately 200 µl/107 cells or 100 mg of tissue) of Lysis Buffer and incubate on ice for 30 min.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=217-227
+2	12,000	_	Speed	_	_	0	_	_	Offset=231-241
+3	5	_	Time	_	_	0	_	_	Offset=246-251
+4	4°C	_	Temperature	_	_	0	_	_	Offset=255-258
+5	transfer	_	Action	_	_	0	_	_	Offset=263-271
+6	supernatant	_	Reagent	_	_	0	_	_	Offset=276-296
+7	vial	_	Location	_	_	0	_	_	Offset=343-347
+
+# sent_id = s3
+# text = Centrifuge at 12,000 rpm for 5 min at 4°C and transfer the supernatant fraction (containing acid-soluble proteins) into a new vial.
+1	Prepare	_	Action	_	_	0	_	_	Offset=349-356
+2	Balance-DTT	_	Reagent	_	_	0	_	_	Offset=357-375
+3	adding	_	Action	_	_	0	_	_	Offset=379-385
+4	DTT	_	Reagent	_	_	0	_	_	Offset=386-398
+5	Balance	_	Reagent	_	_	0	_	_	Offset=402-416
+6	1:500	_	Concentration	_	_	0	_	_	Offset=422-427
+
+# sent_id = s4
+# text = Prepare Balance-DTT Buffer by adding DTT Solution to Balance Buffer at a 1:500 ratio (e.g., 1 µl of DTT Solution + 500 µl of Balance Buffer).
+1	Add	_	Action	_	_	0	_	_	Offset=491-494
+2	0.3	_	Amount	_	_	3	Measure	_	Offset=495-506
+3	Balance-DTT	_	Reagent	_	_	0	_	_	Offset=514-532
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=540-551
+5	immediately	_	Modifier	_	_	0	_	_	Offset=552-563
+
+# sent_id = s5
+# text = Add 0.3 volumes of the Balance-DTT Buffer to the supernatant immediately (e.g., 0.3 ml of Balance-DTT Buffer to 1 ml of supernatant).
+1	Quantify	_	Action	_	_	0	_	_	Offset=625-633
+2	protein	_	Reagent	_	_	0	_	_	Offset=638-645
+3	concentration	_	Measure-Type	_	_	0	_	_	Offset=646-659
+4	OD	_	Method	_	_	0	_	_	Offset=668-678
+
+# sent_id = s6
+# text = Quantify the protein concentration with an OD reading.
+1	Aliquot	_	Action	_	_	0	_	_	Offset=711-718
+2	store	_	Action	_	_	0	_	_	Offset=723-728
+3	extract	_	Reagent	_	_	0	_	_	Offset=733-740
+4	–20°C	_	Temperature	_	_	0	_	_	Offset=744-749
+5	several	_	Time	_	_	0	_	_	Offset=754-766
+6	–80°C	_	Temperature	_	_	4	Or	_	Offset=771-776
+
+# sent_id = s7
+# text = BSA can be used as a standard.
+1	Weigh	_	Action	_	_	0	_	_	Offset=837-842
+2	sample	_	Reagent	_	_	0	_	_	Offset=847-853
+3	cut	_	Action	_	_	0	_	_	Offset=858-861
+4	sample	_	Reagent	_	_	0	_	_	Offset=866-872
+5	small	_	Amount	_	_	0	_	_	Offset=878-890
+6	scalpel	_	Device	_	_	0	_	_	Offset=909-916
+7	scissors	_	Device	_	_	6	Or	_	Offset=920-928
+
+# sent_id = s8
+# text = Aliquot and store the extract at –20°C for several days, or –80°C for long-term storage.
+1	Transfer	_	Action	_	_	0	_	_	Offset=930-938
+2	tissue	_	Reagent	_	_	0	_	_	Offset=939-952
+3	Dounce	_	Device	_	_	0	_	_	Offset=958-976
+
+# sent_id = s9
+# text = Avoid repeated thawing and freezing.
+1	Dilute	_	Action	_	_	0	_	_	Offset=978-984
+2	10X	_	Concentration	_	_	3	Measure	_	Offset=985-988
+3	Pre-Lysis	_	Reagent	_	_	0	_	_	Offset=989-1005
+4	1X	_	Concentration	_	_	5	Measure	_	Offset=1011-1013
+5	Pre-Lysis	_	Reagent	_	_	0	_	_	Offset=1014-1030
+6	distilled	_	Reagent	_	_	0	_	_	Offset=1036-1051
+7	1:10	_	Concentration	_	_	0	_	_	Offset=1057-1061
+
+# sent_id = s10
+# text = Weigh the sample and cut the sample into small pieces (1-2 mm3 ) with a scalpel or scissors.
+1	Add	_	Action	_	_	0	_	_	Offset=1122-1125
+2	Diluted	_	Modifier	_	_	4	Mod-Link	_	Offset=1130-1137
+3	1X	_	Concentration	_	_	4	Measure	_	Offset=1138-1140
+4	Pre-Lysis	_	Reagent	_	_	0	_	_	Offset=1141-1157
+5	disaggregate	_	Action	_	_	0	_	_	Offset=1192-1204
+6	tissue	_	Reagent	_	_	0	_	_	Offset=1205-1218
+7	50-60	_	Generic-Measure	_	_	0	_	_	Offset=1222-1235
+
+# sent_id = s11
+# text = Transfer tissue pieces to a Dounce homogenizer.
+1	Transfer	_	Action	_	_	0	_	_	Offset=1237-1245
+2	homogenized	_	Modifier	_	_	3	Mod-Link	_	Offset=1246-1257
+3	mixture	_	Reagent	_	_	0	_	_	Offset=1258-1265
+4	15	_	Size	_	_	5	Measure	_	Offset=1271-1276
+5	conical	_	Location	_	_	0	_	_	Offset=1277-1289
+6	centrifuge	_	Action	_	_	0	_	_	Offset=1294-1304
+7	3000	_	Speed	_	_	0	_	_	Offset=1308-1316
+8	5	_	Time	_	_	0	_	_	Offset=1321-1326
+9	4°C	_	Temperature	_	_	0	_	_	Offset=1330-1333
+
+# sent_id = s12
+# text = Dilute 10X Pre-Lysis Buffer into 1X Pre-Lysis Buffer with distilled water at a 1:10 ratio (e.g., 1 ml of 10X Pre-Lysis Buffer + 9 ml of water).
+1	Remove	_	Action	_	_	0	_	_	Offset=1335-1341
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=1342-1353
+
+# sent_id = s13
+# text = Add the Diluted 1X Pre-Lysis Buffer at 1 ml per 200 mg of tissue, and disaggregate tissue pieces by 50-60 strokes.
+1	transfer	_	Action	_	_	0	_	_	Offset=1398-1406
+2	mixture	_	Reagent	_	_	0	_	_	Offset=1407-1414
+3	2	_	Size	_	_	4	Measure	_	Offset=1420-1424
+4	vial	_	Location	_	_	0	_	_	Offset=1425-1429
+5	centrifuge	_	Action	_	_	0	_	_	Offset=1434-1444
+6	10,000	_	Speed	_	_	0	_	_	Offset=1448-1458
+7	1	_	Time	_	_	0	_	_	Offset=1463-1468
+8	4°C.	_	Temperature	_	_	0	_	_	Offset=1472-1476
+

@@ -1,0 +1,114 @@
+# sent_id = s1
+# text = Immunopurification — Small Scale using Epitope Tag Affinity Matrices
+1	Combine	_	Action	_	_	0	_	_	Offset=69-76
+2	affinity	_	Reagent	_	_	0	_	_	Offset=77-92
+3	IP	_	Reagent	_	_	0	_	_	Offset=97-106
+4	microfuge	_	Location	_	_	0	_	_	Offset=112-126
+5	1:5	_	Concentration	_	_	0	_	_	Offset=132-144
+
+# sent_id = s2
+# text = Combine affinity matrix and IP Buffer in a microfuge tube at a 1:5 dilution.
+1	Add	_	Action	_	_	0	_	_	Offset=146-149
+2	tagged	_	Reagent	_	_	0	_	_	Offset=150-164
+3	mixture	_	Reagent	_	_	0	_	_	Offset=168-175
+
+# sent_id = s3
+# text = Add tagged protein to mixture.
+1	Gently	_	Action	_	_	0	_	_	Offset=177-188
+2	aliquots	_	Reagent	_	_	0	_	_	Offset=189-197
+3	one	_	Time	_	_	0	_	_	Offset=202-210
+4	4°C	_	Temperature	_	_	0	_	_	Offset=214-217
+
+# sent_id = s4
+# text = Gently rock aliquots for one hour at 4°C.
+1	Centrifuge	_	Action	_	_	0	_	_	Offset=219-229
+2	mixture	_	Reagent	_	_	0	_	_	Offset=230-237
+3	10,000g	_	Speed	_	_	0	_	_	Offset=241-248
+4	20	_	Time	_	_	0	_	_	Offset=253-263
+5	4°C	_	Temperature	_	_	0	_	_	Offset=267-270
+
+# sent_id = s5
+# text = Centrifuge mixture at 10,000g for 20 seconds at 4°C.
+1	Remove	_	Action	_	_	0	_	_	Offset=272-278
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=279-290
+3	without	_	Modifier	_	_	0	_	_	Offset=291-315
+
+# sent_id = s6
+# text = Remove supernatant without disturbing beads.
+1	Add	_	Action	_	_	0	_	_	Offset=317-320
+2	anequal	_	Amount	_	_	3	Measure	_	Offset=321-335
+3	IP	_	Reagent	_	_	0	_	_	Offset=339-353
+4	beads	_	Reagent	_	_	0	_	_	Offset=361-366
+5	re-suspend	_	Action	_	_	0	_	_	Offset=371-381
+6	matrix	_	Reagent	_	_	0	_	_	Offset=382-388
+
+# sent_id = s7
+# text = Add anequal volume of IP Wash Buffer to the beads and re-suspend matrix.
+1	Gently	_	Action	_	_	0	_	_	Offset=390-401
+2	aliquots	_	Reagent	_	_	0	_	_	Offset=402-410
+3	20	_	Time	_	_	0	_	_	Offset=415-421
+
+# sent_id = s8
+# text = Gently rock aliquots for 20 min.
+1	4°C	_	Temperature	_	_	0	_	_	Offset=426-429
+2	Keep	_	Action	_	_	0	_	_	Offset=430-434
+3	portion	_	Amount	_	_	4	Measure	_	Offset=437-444
+4	supernatant	_	Reagent	_	_	0	_	_	Offset=452-463
+
+# sent_id = s9
+# text = at 4°C.Keep a portion of the supernatant from each rinse step to use in Western blot analysis.
+1	Repeat	_	Action	_	_	0	_	_	Offset=518-531
+2	four	_	Numerical	_	_	0	_	_	Offset=532-542
+
+# sent_id = s10
+# text = Repeat step 2 four times.
+1	Elute	_	Action	_	_	0	_	_	Offset=544-549
+2	bound	_	Reagent	_	_	0	_	_	Offset=554-567
+3	appropriate	_	Reagent	_	_	9	Meronym	6:Meronym|11:Meronym	Offset=577-604
+4	1	_	Concentration	_	_	3	Measure	_	Offset=608-629
+5	50	_	Concentration	_	_	6	Measure	_	Offset=633-638
+6	Tris	_	Reagent	_	_	0	_	_	Offset=639-647
+7	pH	_	pH	_	_	6	Measure	_	Offset=648-654
+8	50	_	Concentration	_	_	9	Measure	_	Offset=657-662
+9	NaCl	_	Reagent	_	_	0	_	_	Offset=663-667
+10	1	_	Concentration	_	_	11	Measure	_	Offset=669-673
+11	EDTA	_	Reagent	_	_	0	_	_	Offset=674-678
+12	pH	_	pH	_	_	11	Measure	_	Offset=680-686
+
+# sent_id = s11
+# text = Elute the bound protein with the appropriate epitope peptide at 1 mg/ml concentration in 50 mm Tris HCl(pH 7.5), 50 mM NaCl, 1 mM EDTA (pH 8.0).
+1	Resuspend	_	Action	_	_	0	_	_	Offset=689-698
+2	beads	_	Reagent	_	_	0	_	_	Offset=699-704
+3	incubate	_	Action	_	_	0	_	_	Offset=706-714
+4	centrifuge	_	Action	_	_	0	_	_	Offset=716-726
+5	withdraw	_	Action	_	_	0	_	_	Offset=731-739
+6	supernatant	_	Reagent	_	_	0	_	_	Offset=739-750
+7	as	_	Modifier	_	_	0	_	_	Offset=751-763
+8	repeating	_	Action	_	_	0	_	_	Offset=765-774
+9	four	_	Numerical	_	_	0	_	_	Offset=790-803
+
+# sent_id = s12
+# text = Resuspend beads, incubate, centrifuge and withdrawsupernatant as in step 2, repeating for a total of four elutions.
+1	Recover	_	Action	_	_	0	_	_	Offset=805-812
+2	848	_	Amount	_	_	3	Measure	_	Offset=813-820;835
+3	eluate	_	Reagent	_	_	0	_	_	Offset=828-834
+
+# sent_id = s13
+# text = Recover as much of the eluate as possibleat each stage.
+1	elution	_	Reagent	_	_	0	_	_	Offset=870-884
+2	prepare	_	Action	_	_	0	_	_	Offset=886-893
+3	1:1	_	Concentration	_	_	0	_	_	Offset=897-909
+4	reducing	_	Reagent	_	_	0	_	_	Offset=915-942
+
+# sent_id = s14
+# text = For each elution sample, prepare at 1:1 dilution with reducing gel loading buffer.
+1	Boil	_	Action	_	_	0	_	_	Offset=944-948
+2	tubes	_	Reagent	_	_	0	_	_	Offset=949-954
+3	3	_	Time	_	_	0	_	_	Offset=959-964
+
+# sent_id = s15
+# text = Boil tubes for 3 min.
+1	Analyze	_	Action	_	_	0	_	_	Offset=966-973
+2	supernatant	_	Reagent	_	_	0	_	_	Offset=978-997
+3	Western	_	Method	_	_	0	_	_	Offset=1001-1013
+
