@@ -13,6 +13,7 @@ EMBEDDING_SIZE = 768
 NUM_EPOCHS = 10
 num_classes = 9
 BATCH_SIZE = 16
+GRAD_MAXNORM = 100
 
 with open('dataset.pkl', 'rb') as f:
     data = pickle.load(f)
@@ -29,12 +30,16 @@ def get_batches(data):
         qh = torch.from_numpy(qh).unsqueeze(0)
         qt = torch.from_numpy(qt).unsqueeze(0)
         ql = torch.from_numpy(ql).unsqueeze(0)
+        if torch.isnan(torch.stack([qh,qt])).any():
+            continue
         if type(cl) != np.ndarray:
             mask = None
         else:
             ch = torch.from_numpy(ch).unsqueeze(0)
             cl = torch.from_numpy(cl).unsqueeze(0)
             ct = torch.from_numpy(ct).unsqueeze(0)
+            if torch.isnan(torch.stack([ch,ct])).any():
+                continue
             mask = torch.from_numpy(np.ones_like(cl))
         yield (qh, qt), (ch, ct), cl, ql, mask
 
@@ -42,9 +47,7 @@ loss = nn.NLLLoss()
 model = CopyEditor(EMBEDDING_SIZE, num_classes)
 learning_rate = 1e-4
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate,\
-                             weight_decay=0)
-GRAD_MAXNORM = 100
-BATCH_SIZE = 8 
+                             weight_decay=1e-4)
 
 for epoch in range(NUM_EPOCHS):
     print('Epoch #%d'%epoch)
@@ -67,9 +70,9 @@ for epoch in range(NUM_EPOCHS):
         mean_loss = torch.mean(torch.stack(losses))
         optimizer.zero_grad()
         mean_loss.backward()
-        # nn.utils.clip_grad_norm_(model.parameters(), GRAD_MAXNORM)
+        nn.utils.clip_grad_norm_(model.parameters(), GRAD_MAXNORM)
         optimizer.step()
-        if bno %1 == 0:
+        if bno %100 == 0:
             print('Loss after batch #%d = %f'%(bno, mean_loss.data))
         bno+=1
 
