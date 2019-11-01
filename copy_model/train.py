@@ -44,7 +44,7 @@ learning_rate = 1e-4
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate,\
                              weight_decay=0)
 GRAD_MAXNORM = 100
-BATCH_SIZE = 128 
+BATCH_SIZE = 8 
 
 for epoch in range(NUM_EPOCHS):
     print('Epoch #%d'%epoch)
@@ -69,7 +69,7 @@ for epoch in range(NUM_EPOCHS):
         mean_loss.backward()
         # nn.utils.clip_grad_norm_(model.parameters(), GRAD_MAXNORM)
         optimizer.step()
-        if bno %10 == 0:
+        if bno %1 == 0:
             print('Loss after batch #%d = %f'%(bno, mean_loss.data))
         bno+=1
 

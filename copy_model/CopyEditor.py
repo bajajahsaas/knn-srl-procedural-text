@@ -28,7 +28,7 @@ class AttentionDist(nn.Module):
         l_softmax = F.log_softmax(dotprod, dim = -1)
 
         # Batch x n x context_size
-        context_vector = torch.sum(l_softmax.unsqueeze(-1) * context.unsqueeze(1), dim = 2)
+        context_vector = torch.sum(torch.exp(l_softmax.unsqueeze(-1)) * context.unsqueeze(1), dim = 2)
 
         # Batch x n x (num_classes+1)
         _, n, __ = l_softmax.size()
@@ -38,7 +38,7 @@ class AttentionDist(nn.Module):
         onehot_logprobs[torch.where(onehot_labels == 0)] = -float('Inf')
 
 
-        l_softmax_classes = torch.logsumexp(onehot_logprobs, axis = 2)
+        l_softmax_classes = torch.logsumexp(onehot_logprobs, dim = 2)
         return context_vector, l_softmax_classes
 
 class RelationEmbedding(nn.Module):
