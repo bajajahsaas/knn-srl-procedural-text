@@ -25,16 +25,21 @@ class AttentionDist(nn.Module):
         # Batch x n x context_size
         dotprod = torch.sum(queries.unsqueeze(2) * context.unsqueeze(1), dim=-1) * mask.unsqueeze(1)# \
                         # +(1.0-mask.unsqueeze(1))*(-np.inf)
-        softmax = F.softmax(dotprod, dim = -1)
+        l_softmax = F.log_softmax(dotprod, dim = -1)
 
         # Batch x n x context_size
-        context_vector = torch.sum(softmax.unsqueeze(-1) * context.unsqueeze(1), dim = 2)
+        context_vector = torch.sum(l_softmax.unsqueeze(-1) * context.unsqueeze(1), dim = 2)
 
         # Batch x n x (num_classes+1)
-        softmax_classes = torch.sum(F.one_hot(context_labels,\
-                                             self.num_classes+1).unsqueeze(1) *
-                                softmax.unsqueeze(-1), axis = 2)
-        return context_vector, softmax_classes
+        _, n, __ = l_softmax.size()
+        onehot_labels =\
+            F.one_hot(context_labels, self.num_classes+1).unsqueeze(1).repeat((1,n,1,1))
+        onehot_logprobs = onehot_labels * l_softmax.unsqueeze(-1)
+        onehot_logprobs[torch.where(onehot_labels == 0)] = -float('Inf')
+
+
+        l_softmax_classes = torch.logsumexp(onehot_logprobs, axis = 2)
+        return context_vector, l_softmax_classes
 
 class RelationEmbedding(nn.Module):
     def __init__(self, input_dim, output_dim, hidden_dims = []):
@@ -69,8 +74,10 @@ class ShouldCopy(nn.Module): # MLP to get probability of copying vs generating
         #
         # output: Batch x n
         concat = torch.cat((query, context), -1)
-        prob = F.sigmoid(self.network(concat).squeeze(-1))
-        return prob
+        logits = self.network(concat).squeeze(-1)
+        prob = F.logsigmoid(logits)
+        neg_prob = F.logsigmoid(-logits)
+        return prob, neg_prob
         
 
 
@@ -89,7 +96,7 @@ class MultiClass(nn.Module):
 
     def forward(self, rel_emb):
         logits = self.network(rel_emb)
-        return F.softmax(logits, dim = -1)
+        return F.log_softmax(logits, dim = -1)
 
 
 class CopyEditor(nn.Module):
@@ -116,7 +123,7 @@ class CopyEditor(nn.Module):
         # Batch x n x dim
         query_embedding = self.rel_embedding(query_vectors[0], \
                                              query_vectors[1])
-        gen_probs = self.multiclass(query_embedding)
+        gen_dist = self.multiclass(query_embedding)
 
         # Batch x context_size x dim
         if context_labels is not None: # if no context return just generated probability
@@ -125,13 +132,18 @@ class CopyEditor(nn.Module):
             #Batch x n x dim, Batch x n x num_classes+1
             context_vec, copy_dist = self.attention(query_embedding, context_embedding, \
                                              context_labels, mask)
-            copy_prob = self.should_copy(query_embedding, \
-                                         context_vec).unsqueeze(-1)
+            # log probabilities
+            copy_prob, gen_prob = self.should_copy(query_embedding, \
+                                         context_vec)
+            copy_prob = copy_prob.unsqueeze(-1)
+            gen_prob = gen_prob.unsqueeze(-1)
 
             # Batch x n x num_classes+1
-            final_probs = copy_prob * copy_dist + (1-copy_prob) * gen_probs
+            log_probs = torch.stack([copy_prob + copy_dist, gen_prob +
+                                     gen_dist], dim = -1)
+            final_probs = torch.logsumexp(log_probs, dim = -1)
         else:
-            final_probs = gen_probs
+            final_probs = gen_dist
         return final_probs 
 
 

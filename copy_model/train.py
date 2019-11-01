@@ -40,19 +40,36 @@ def get_batches(data):
 
 loss = nn.NLLLoss()
 model = CopyEditor(EMBEDDING_SIZE, num_classes)
-learning_rate = 1e-5
-optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+learning_rate = 1e-4
+optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate,\
+                             weight_decay=0)
+GRAD_MAXNORM = 100
+BATCH_SIZE = 128 
 
 for epoch in range(NUM_EPOCHS):
-    for q, cxt, cxt_labels, q_labels, mask in get_batches(data):
-        
-        with autograd.detect_anomaly():
-            prediction = model(q,cxt,cxt_labels, mask).view(-1, num_classes+1)
-            l = loss(torch.log(prediction), q_labels.view(-1))  
-            print(l)
-            optimizer.zero_grad()
-            l.backward()
-            optimizer.step()
-
-        
+    print('Epoch #%d'%epoch)
+    bno = 0
+    data_gen = get_batches(data)
+    while(1):
+        count = 0
+        losses = []
+        for i in range(BATCH_SIZE):
+            try:
+                q, cxt, cxt_labels, q_labels, mask  = data_gen.__next__()
+                prediction = model(q,cxt,cxt_labels, mask).view(-1, num_classes+1)
+                l = loss(prediction, q_labels.view(-1))  
+                losses.append(l)
+                count += 1
+            except StopIteration:
+                break
+        if count < BATCH_SIZE:
+            break
+        mean_loss = torch.mean(torch.stack(losses))
+        optimizer.zero_grad()
+        mean_loss.backward()
+        # nn.utils.clip_grad_norm_(model.parameters(), GRAD_MAXNORM)
+        optimizer.step()
+        if bno %10 == 0:
+            print('Loss after batch #%d = %f'%(bno, mean_loss.data))
+        bno+=1
 
