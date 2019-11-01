@@ -1,0 +1,1017 @@
+0	O	0	O	NN	Phenol	O	O	O
+0	O	1	O	NN	extraction	O	O	O
+0	O	2	O	IN	of	O	O	O
+0	O	3	O	NNS	proteins	O	O	O
+0	O	4	O	TO	To	O	O	O
+0	Amount	5	O	CD/NN	100/µl	O	O	O
+0	O	6	O	IN	of	O	O	O
+0	Reagent	7	O	NN	PBCV-1	O	O	O
+0	O	8	O	IN	in	O	O	O
+0	O	9	O	DT	a	O	O	O
+0	Size	10	O	CD	1.5	O	O	O
+0	Location	11	O	JJ/NN/NN/NN	conical/plastic/centrifuge/tube	O	O	O
+0	Action	12	O	VBP	add	O	O	O
+0	Amount	13	O	CD/NN	150/µl	O	O	O
+0	O	14	O	IN	of	O	O	O
+0	Reagent	15	O	NN	phenol	O	O	O
+0	O	16	O	.	.	O	O	O
+
+11	10	Measure
+7	5	Measure
+15	13	Measure
+7	11	Meronym
+
+1	Action	0	O	VB	Add	O	O	O
+1	Reagent	1	O	NN	DTT	O	O	O
+1	O	2	O	-LRB-	-LRB-	O	O	O
+1	Amount	3	O	NN/CD/NN	~/10/µl	O	O	O
+1	O	4	O	-RRB-	-RRB-	O	O	O
+1	O	5	O	,	,	O	O	O
+1	Concentration	6	O	CD/NN	10/%	O	O	O
+1	Reagent	7	O	NN	SDS	O	O	O
+1	O	8	O	-LRB-	-LRB-	O	O	O
+1	Amount	9	O	NN/CD/NN	~/20/µl	O	O	O
+1	O	10	O	-RRB-	-RRB-	O	O	O
+1	O	11	O	,	,	O	O	O
+1	Concentration	12	O	NN	10M	O	O	O
+1	Reagent	13	O	NN	LiCl	O	O	O
+1	O	14	O	-LRB-	-LRB-	O	O	O
+1	Amount	15	O	NN/CD/NN	~/15/µl	O	O	O
+1	O	16	O	-RRB-	-RRB-	O	O	O
+1	O	17	O	CC	and	O	O	O
+1	Reagent	18	O	NNP/NN	Ponceau/S	O	O	O
+1	O	19	O	-LRB-	-LRB-	O	O	O
+1	Amount	20	O	NN/CD/NN	~/10/µl	O	O	O
+1	O	21	O	-RRB-	-RRB-	O	O	O
+1	O	22	O	.	.	O	O	O
+
+18	20	Measure
+13	15	Measure
+13	12	Measure
+7	9	Measure
+7	6	Measure
+1	3	Measure
+
+2	Action	0	O	NN	Heat	O	O	O
+2	Time	1	O	CD/NN	5/min	O	O	O
+2	O	2	O	IN	at	O	O	O
+2	Temperature	3	O	CD/NN	75/°C	O	O	O
+2	O	4	O	,	,	O	O	O
+2	Action	5	O	NN	mix	O	O	O
+2	O	6	O	RB	thoroughly	O	O	O
+2	O	7	O	.	.	O	O	O
+
+
+3	Action	0	O	VB/TO/VB	Allow/to/cool	O	O	O
+3	O	1	O	,	,	O	O	O
+3	Action	2	O	NN	centrifuge	O	O	O
+3	Time	3	O	CD/NN	1/min	O	O	O
+3	O	4	O	-LRB-	-LRB-	O	O	O
+3	Speed	5	O	NN	5K	O	O	O
+3	O	6	O	-RRB-	-RRB-	O	O	O
+3	O	7	O	.	.	O	O	O
+
+
+4	Action	0	O	VB/RP	Draw/off	O	O	O
+4	Reagent	1	O	JJR/-LRB-/JJ/-RRB-/NN	lower/-LRB-/clear/-RRB-/phase	O	O	O
+4	O	2	O	IN	into	O	O	O
+4	Size	3	O	CD	1.5	O	O	O
+4	Location	4	O	JJ/NN/NN/NN	conical/plastic/centrifuge/tube	O	O	O
+4	O	5	O	.	.	O	O	O
+
+4	3	Measure
+
+5	Action	0	O	VB	Add	O	O	O
+5	Amount	1	O	CD/NN	1/ml	O	O	O
+5	Reagent	2	O	NN	acetone	O	O	O
+5	O	3	O	CC	and	O	O	O
+5	O	4	O	RB	then	O	O	O
+5	Amount	5	O	CD/NN	5/µl	O	O	O
+5	O	6	O	IN	of	O	O	O
+5	Concentration	7	O	CD/NN	1/%	O	O	O
+5	Reagent	8	O	NN	Ficoll	O	O	O
+5	O	9	O	,	,	O	O	O
+5	Action	10	O	NN	mix	O	O	O
+5	O	11	O	.	.	O	O	O
+
+2	1	Measure
+8	7	Measure
+8	5	Measure
+
+6	Action	0	O	NNP	Store	O	O	O
+6	Time	1	O	CD/NN	20/min	O	O	O
+6	O	2	O	IN	at	O	O	O
+6	Temperature	3	O	CD/NN	-20/°C	O	O	O
+6	O	4	O	.	.	O	O	O
+
+
+7	Action	0	O	NN	Centrifuge	O	O	O
+7	Time	1	O	CD/NN	1/min	O	O	O
+7	O	2	O	-LRB-	-LRB-	O	O	O
+7	Speed	3	O	NN	6K	O	O	O
+7	O	4	O	-RRB-	-RRB-	O	O	O
+7	O	5	O	.	.	O	O	O
+
+
+8	Action	0	O	VB	Discard	O	O	O
+8	Reagent	1	O	NN	supernatant	O	O	O
+8	O	2	O	,	,	O	O	O
+8	Action	3	O	NN	drain	O	O	O
+8	Location	4	O	NN	tube	O	O	O
+8	O	5	O	,	,	O	O	O
+8	Action	6	O	NN	wash	O	O	O
+8	Reagent	7	O	NN	ppt	O	O	O
+8	Numerical	8	O	RB	once	O	O	O
+8	O	9	O	IN	with	O	O	O
+8	Reagent	10	O	NN	acetone	O	O	O
+8	O	11	O	-LRB-	-LRB-	O	O	O
+8	O	12	O	NN	ppt	O	O	O
+8	O	13	O	VBZ	sticks	O	O	O
+8	O	14	O	TO	to	O	O	O
+8	O	15	O	NN	tube	O	O	O
+8	O	16	O	-RRB-	-RRB-	O	O	O
+8	O	17	O	CC	and	O	O	O
+8	Action	18	O	JJ	dry	O	O	O
+8	O	19	O	.	.	O	O	O
+
+
+9	Action	0	O	VB	Dissolve	O	O	O
+9	Reagent	1	O	NN	pellet	O	O	O
+9	O	2	O	IN	in	O	O	O
+9	Amount	3	O	NN/CD/NN	~/50/µl	O	O	O
+9	Reagent	4	O	VBG/NN	cracking/buffer	O	O	O
+9	O	5	O	-LRB-	-LRB-	O	O	O
+9	Concentration	6	O	CD/NN	1/%	O	O	O
+9	Reagent	7	O	NN	SDS	O	O	O
+9	O	8	O	:	;	O	O	O
+9	Concentration	9	O	CD/NN	5/%	O	O	O
+9	Reagent	10	O	NN	glycerol	O	O	O
+9	O	11	O	:	;	O	O	O
+9	Concentration	12	O	CD/NN	0.03125/M	O	O	O
+9	Reagent	13	O	NN	Tris-HCl	O	O	O
+9	O	14	O	,	,	O	O	O
+9	Ph	15	O	NN/CD	pH/6.8	O	O	O
+9	O	16	O	:	;	O	O	O
+9	Reagent	17	O	NN/NN	bromophenol/blue-trace	O	O	O
+9	O	18	O	-RRB-	-RRB-	O	O	O
+9	O	19	O	.	.	O	O	O
+
+7	6	Measure
+10	9	Measure
+13	12	Measure
+13	15	Measure
+17	4	Meronym
+13	4	Meronym
+10	4	Meronym
+7	4	Meronym
+4	3	Measure
+
+10	O	0	O	NN	Extraction	O	O	O
+10	O	1	O	IN	of	O	O	O
+10	O	2	O	JJ	surface-community	O	O	O
+10	O	3	O	NN	DNA	O	O	O
+10	O	4	O	IN	from	O	O	O
+10	O	5	O	NNP	Ulva	O	O	O
+10	O	6	O	NNP	sp.	O	O	O
+10	O	7	O	.	.	O	O	O
+
+
+11	O	0	O	DT	This	O	O	O
+11	O	1	O	NN	method	O	O	O
+11	O	2	O	VBZ	performs	O	O	O
+11	O	3	O	DT	a	O	O	O
+11	O	4	O	JJ	direct	O	O	O
+11	O	5	O	NN	lysis	O	O	O
+11	O	6	O	IN	of	O	O	O
+11	O	7	O	DT	the	O	O	O
+11	O	8	O	JJ	microbial	O	O	O
+11	O	9	O	NN	community	O	O	O
+11	O	10	O	IN	on	O	O	O
+11	O	11	O	DT	the	O	O	O
+11	O	12	O	JJ	algal	O	O	O
+11	O	13	O	NN	surface	O	O	O
+11	O	14	O	VBN	followed	O	O	O
+11	O	15	O	IN	by	O	O	O
+11	O	16	O	DT	an	O	O	O
+11	O	17	O	JJ	organic	O	O	O
+11	O	18	O	NN	extraction	O	O	O
+11	O	19	O	CC	and	O	O	O
+11	O	20	O	NN	precipitation	O	O	O
+11	O	21	O	IN	of	O	O	O
+11	O	22	O	DT	the	O	O	O
+11	O	23	O	JJ	microbial	O	O	O
+11	O	24	O	NN	DNA	O	O	O
+11	O	25	O	.	.	O	O	O
+
+
+12	O	0	O	NNP	Ulva	O	O	O
+12	O	1	O	NNS	plants	O	O	O
+12	O	2	O	VBP	do	O	O	O
+12	O	3	O	VB	get	O	O	O
+12	O	4	O	VBN	damaged	O	O	O
+12	O	5	O	IN	during	O	O	O
+12	O	6	O	DT	the	O	O	O
+12	O	7	O	NN	treatment	O	O	O
+12	O	8	O	,	,	O	O	O
+12	O	9	O	RB	however	O	O	O
+12	O	10	O	JJ	eukaryotic	O	O	O
+12	O	11	O	NNS	microbes	O	O	O
+12	O	12	O	MD	might	O	O	O
+12	O	13	O	VB	be	O	O	O
+12	O	14	O	VBN	lysed	O	O	O
+12	O	15	O	.	.	O	O	O
+
+
+13	O	0	O	RB	Therefore	O	O	O
+13	O	1	O	JJ	microscopic	O	O	O
+13	O	2	O	NN	check	O	O	O
+13	O	3	O	IN	of	O	O	O
+13	O	4	O	DT	the	O	O	O
+13	O	5	O	JJ	algal	O	O	O
+13	O	6	O	NN	surface	O	O	O
+13	O	7	O	IN	before	O	O	O
+13	O	8	O	NN	treatment	O	O	O
+13	O	9	O	CC	and	O	O	O
+13	O	10	O	NN	removal	O	O	O
+13	O	11	O	IN	of	O	O	O
+13	O	12	O	JJ	basal	O	O	O
+13	O	13	O	NNS	parts	O	O	O
+13	O	14	O	-LRB-	-LRB-	O	O	O
+13	O	15	O	JJ	old	O	O	O
+13	O	16	O	CC	and	O	O	O
+13	O	17	O	RBS	most	O	O	O
+13	O	18	O	JJ	likely	O	O	O
+13	O	19	O	VBN	covered	O	O	O
+13	O	20	O	IN	by	O	O	O
+13	O	21	O	JJ	secondary	O	O	O
+13	O	22	O	NNS	colonisers	O	O	O
+13	O	23	O	-RRB-	-RRB-	O	O	O
+13	O	24	O	VBZ	is	O	O	O
+13	O	25	O	JJ	necessary	O	O	O
+13	O	26	O	.	.	O	O	O
+
+
+14	Action	0	O	VB	Collect	O	O	O
+14	Amount	1	O	JJ	several	O	O	O
+14	Reagent	2	O	NNP/NN/NNS	Ulva/sp./plants	O	O	O
+14	Method	3	O	IN/NN	by/hand	O	O	O
+14	O	4	O	IN	from	O	O	O
+14	Location	5	O	JJ/NN	intertidal/pool	O	O	O
+14	O	6	O	CC	and	O	O	O
+14	Action	7	O	NN	transfer	O	O	O
+14	O	8	O	IN	into	O	O	O
+14	O	9	O	DT	a	O	O	O
+14	Location	10	O	JJ/NN/NN	plastic/bag/container	O	O	O
+14	Modifier	11	O	IN/NN/NN	with/sea/water	O	O	O
+14	O	12	O	-LRB-	-LRB-	O	O	O
+14	O	13	O	IN	from	O	O	O
+14	O	14	O	DT	the	O	O	O
+14	O	15	O	JJ	same	O	O	O
+14	O	16	O	NN	site	O	O	O
+14	O	17	O	-RRB-	-RRB-	O	O	O
+14	O	18	O	.	.	O	O	O
+
+2	1	Measure
+7	11	Mod-Link
+
+15	Action	0	O	NN	Transfer	O	O	O
+15	O	1	O	IN	into	O	O	O
+15	O	2	O	DT	the	O	O	O
+15	Location	3	O	NN	laboratory	O	O	O
+15	Modifier	4	O	NN	asap	O	O	O
+15	O	5	O	.	.	O	O	O
+
+0	4	Mod-Link
+
+16	Action	0	O	NN	Transfer	O	O	O
+16	Reagent	1	O	NNS	plants	O	O	O
+16	O	2	O	IN	into	O	O	O
+16	Location	3	O	JJ/VBG/NN/NN	sterile/washing/bowl/container	O	O	O
+16	O	4	O	IN	with	O	O	O
+16	O	5	O	DT	a	O	O	O
+16	O	6	O	NN	bit	O	O	O
+16	O	7	O	IN	of	O	O	O
+16	Reagent	8	O	NN	CMFSW	O	O	O
+16	O	9	O	CC	and	O	O	O
+16	Action	10	O	VB/RP	cut/off	O	O	O
+16	O	11	O	DT	the	O	O	O
+16	Modifier	12	O	NN/NN	buttom/part	O	O	O
+16	O	13	O	-LRB-	-LRB-	O	O	O
+16	O	14	O	CD	2-3	O	O	O
+16	O	15	O	NN	cm	O	O	O
+16	O	16	O	-RRB-	-RRB-	O	O	O
+16	O	17	O	IN	of	O	O	O
+16	O	18	O	DT	the	O	O	O
+16	Reagent	19	O	NN	plant	O	O	O
+16	O	20	O	IN	with	O	O	O
+16	O	21	O	DT	a	O	O	O
+16	Device	22	O	JJ/NN	sterile/knife	O	O	O
+16	O	23	O	CC	and	O	O	O
+16	Device	24	O	NNS	forceps	O	O	O
+16	O	25	O	.	.	O	O	O
+
+19	12	Mod-Link
+
+17	Action	0	O	VB	Chop	O	O	O
+17	O	1	O	DT	the	O	O	O
+17	Reagent	2	O	NN	plant	O	O	O
+17	O	3	O	IN	into	O	O	O
+17	O	4	O	NN	piece	O	O	O
+17	O	5	O	IN	of	O	O	O
+17	O	6	O	RB	roughly	O	O	O
+17	Size	7	O	CD/NN/NN/NN	2-4/cm/length/width	O	O	O
+17	O	8	O	.	.	O	O	O
+
+0	7	Setting
+
+18	Action	0	O	NNP	Wash	O	O	O
+18	Reagent	1	O	NN	plant	O	O	O
+18	O	2	O	NNS	pieces	O	O	O
+18	Numerical	3	O	CD	3	O	O	O
+18	O	4	O	NNS	times	O	O	O
+18	O	5	O	IN	for	O	O	O
+18	Time	6	O	CD/NN	1-2/min	O	O	O
+18	O	7	O	IN	with	O	O	O
+18	Reagent	8	O	NN	CMFSW	O	O	O
+18	O	9	O	:	;	O	O	O
+18	O	10	O	VB	make	O	O	O
+18	O	11	O	JJ	sure	O	O	O
+18	O	12	O	JJR	smaller	O	O	O
+18	O	13	O	NNS	bits	O	O	O
+18	O	14	O	CC	and	O	O	O
+18	O	15	O	JJ	non-plant	O	O	O
+18	O	16	O	NN	material	O	O	O
+18	O	17	O	VB	get	O	O	O
+18	O	18	O	VB	wash	O	O	O
+18	O	19	O	RB	away	O	O	O
+18	O	20	O	.	.	O	O	O
+
+0	6	Setting
+
+19	Action	0	O	VB	Take	O	O	O
+19	O	1	O	DT	a	O	O	O
+19	Amount	2	O	NN	couple	O	O	O
+19	O	3	O	IN	of	O	O	O
+19	Modifier	4	O	JJ	random	O	O	O
+19	Reagent	5	O	NNS	pieces	O	O	O
+19	O	6	O	CC	and	O	O	O
+19	Action	7	O	VB	perform	O	O	O
+19	O	8	O	DT	a	O	O	O
+19	Method	9	O	JJ/NN	microscopic/observation	O	O	O
+19	O	10	O	IN	on	O	O	O
+19	O	11	O	PRP	it	O	O	O
+19	O	12	O	:	:	O	O	O
+19	Action	13	O	NN	place	O	O	O
+19	Reagent	14	O	NNP	Ulva	O	O	O
+19	O	15	O	NN	piece	O	O	O
+19	O	16	O	IN	onto	O	O	O
+19	Location	17	O	NN/NN	glass/slidecover	O	O	O
+19	O	18	O	NNP	Ulva	O	O	O
+19	O	19	O	NN	piece	O	O	O
+19	O	20	O	IN	with	O	O	O
+19	O	21	O	RB	approx.	O	O	O
+19	O	22	O	CD	10	O	O	O
+19	O	23	O	NN	µl	O	O	O
+19	O	24	O	IN	of	O	O	O
+19	O	25	O	JJ	live	O	O	O
+19	O	26	O	VBP	stain	O	O	O
+19	O	27	O	.	.	O	O	O
+
+2	4	Mod-Link
+5	4	Mod-Link
+
+20	Action	0	O	NN	Place	O	O	O
+20	O	1	O	IN	on	O	O	O
+20	Location	2	O	NN/NN	cover/slip	O	O	O
+20	O	3	O	CC	and	O	O	O
+20	Action	4	O	NN	drain	O	O	O
+20	Modifier	5	O	JJ	excessive	O	O	O
+20	Reagent	6	O	NN	liquid	O	O	O
+20	O	7	O	IN	with	O	O	O
+20	O	8	O	DT	a	O	O	O
+20	Device	9	O	NN	tissue	O	O	O
+20	O	10	O	.	.	O	O	O
+
+6	5	Mod-Link
+
+21	Action	0	O	VB	Observe	O	O	O
+21	O	1	O	IN	under	O	O	O
+21	Modifier	2	O	JJ	fluorescent	O	O	O
+21	Location	3	O	NN	microscope	O	O	O
+21	O	4	O	.	.	O	O	O
+
+3	2	Mod-Link
+
+22	Action	0	O	VB	Describe	O	O	O
+22	O	1	O	CC	and	O	O	O
+22	Action	2	O	VB	note	O	O	O
+22	Generic-measure	3	O	NN/NN	surface/coverage	O	O	O
+22	O	4	O	IN	of	O	O	O
+22	Reagent	5	O	NNS	cells	O	O	O
+22	O	6	O	.	.	O	O	O
+
+5	3	Measure
+
+23	Action	0	O	VBG	Using	O	O	O
+23	O	1	O	DT	a	O	O	O
+23	Device	2	O	NN	balance	O	O	O
+23	Action	3	O	VB	weigh	O	O	O
+23	O	4	O	RP	out	O	O	O
+23	Amount	5	O	CD/NN	12/g	O	O	O
+23	O	6	O	IN	of	O	O	O
+23	Reagent	7	O	NN/JJ	plant/wet-weight	O	O	O
+23	O	8	O	-LRB-	-LRB-	O	O	O
+23	O	9	O	NN	drip	O	O	O
+23	O	10	O	JJ	dry	O	O	O
+23	O	11	O	-RRB-	-RRB-	O	O	O
+23	O	12	O	IN	into	O	O	O
+23	O	13	O	DT	a	O	O	O
+23	Device	14	O	JJ/NN	petri/dish	O	O	O
+23	O	15	O	.	.	O	O	O
+
+7	5	Measure
+
+24	Action	0	O	NN	Transfer	O	O	O
+24	Amount	1	O	CD/NN	12/g	O	O	O
+24	O	2	O	IN	of	O	O	O
+24	Reagent	3	O	NN	plant	O	O	O
+24	O	4	O	IN	into	O	O	O
+24	O	5	O	DT	a	O	O	O
+24	Modifier	6	O	JJ	sterile	O	O	O
+24	Location	7	O	CD/NN/NNP/NN	50/ml/Falcon/tube	O	O	O
+24	O	8	O	IN	with	O	O	O
+24	Amount	9	O	CD/NN	30/ml	O	O	O
+24	O	10	O	IN	of	O	O	O
+24	Reagent	11	O	NN	CMFSW	O	O	O
+24	O	12	O	CC	and	O	O	O
+24	Amount	13	O	CD/NN	300/µl	O	O	O
+24	O	14	O	IN	of	O	O	O
+24	Reagent	15	O	NNP/NNP/NNP/NNP	3M/Multi/Enzyme/Cleaner	O	O	O
+24	O	16	O	:	;	O	O	O
+24	Action	17	O	VB	shake	O	O	O
+24	Modifier	18	O	RB	gently	O	O	O
+24	O	19	O	TO	to	O	O	O
+24	O	20	O	VB	make	O	O	O
+24	O	21	O	JJ	sure	O	O	O
+24	O	22	O	DT	the	O	O	O
+24	Location	23	O	NN/NN	plant/surface	O	O	O
+24	O	24	O	VBZ	is	O	O	O
+24	Action	25	O	VBN	covered	O	O	O
+24	O	26	O	IN	with	O	O	O
+24	O	27	O	DT	the	O	O	O
+24	Reagent	28	O	NNP/JJR/NN	CMFSW/cleaner/mix	O	O	O
+24	O	29	O	.	.	O	O	O
+
+3	1	Measure
+7	6	Mod-Link
+11	9	Measure
+15	13	Measure
+17	18	Mod-Link
+
+25	Action	0	O	VB	Incubate	O	O	O
+25	O	1	O	IN	at	O	O	O
+25	Temperature	2	O	NN/NN	room/temperature	O	O	O
+25	O	3	O	.	.	O	O	O
+
+0	2	Setting
+
+26	Action	0	O	VB	Perform	O	O	O
+26	Method	1	O	NN	microscopy	O	O	O
+26	O	2	O	IN	after	O	O	O
+26	Time	3	O	CD/NN	30/min	O	O	O
+26	O	4	O	-LRB-	-LRB-	O	O	O
+26	O	5	O	VB	see	O	O	O
+26	O	6	O	NN	point	O	O	O
+26	O	7	O	CD	6	O	O	O
+26	O	8	O	-RRB-	-RRB-	O	O	O
+26	O	9	O	.	.	O	O	O
+
+0	3	Setting
+
+27	O	0	O	IN	If	O	O	O
+27	O	1	O	NN	surface	O	O	O
+27	O	2	O	VBZ	shows	O	O	O
+27	O	3	O	JJ	little	O	O	O
+27	O	4	O	NNS	cells	O	O	O
+27	O	5	O	VBD	left	O	O	O
+27	O	6	O	CC	or	O	O	O
+27	O	7	O	VBZ	is	O	O	O
+27	O	8	O	VBN	cleared	O	O	O
+27	O	9	O	,	,	O	O	O
+27	O	10	O	RB	then	O	O	O
+27	O	11	O	VB	go	O	O	O
+27	O	12	O	TO	to	O	O	O
+27	O	13	O	VB	point	O	O	O
+27	O	14	O	CD	12	O	O	O
+27	O	15	O	.	.	O	O	O
+
+
+28	O	0	O	RB	Otherwise	O	O	O
+28	Action	1	O	VB	continue	O	O	O
+28	Method	2	O	NN	incubation	O	O	O
+28	O	3	O	-LRB-	-LRB-	O	O	O
+28	O	4	O	NN	total	O	O	O
+28	O	5	O	CD	1	O	O	O
+28	O	6	O	NN	hour	O	O	O
+28	O	7	O	CC	or	O	O	O
+28	O	8	O	CD	2	O	O	O
+28	O	9	O	NNS	hours	O	O	O
+28	O	10	O	-RRB-	-RRB-	O	O	O
+28	O	11	O	,	,	O	O	O
+28	Time	12	O	IN/JJS/NNS/IN/DT/NN/NN/VBP/VB/.	until/most/cells/on/the/plant/surface/are/remove/.	O	O	O
+
+
+29	Action	0	O	NN	Transfer	O	O	O
+29	Reagent	1	O	NN	liquid	O	O	O
+29	O	2	O	IN	into	O	O	O
+29	Numerical	3	O	CD	1	O	O	O
+29	O	4	O	CC	or	O	O	O
+29	Numerical	5	O	CD	2	O	O	O
+29	Modifier	6	O	JJ	new	O	O	O
+29	Location	7	O	CD/NN/NNP/NNS	50/ml/Falcon/tubes	O	O	O
+29	O	8	O	-LRB-	-LRB-	O	O	O
+29	O	9	O	NN	file	O	O	O
+29	O	10	O	NNS	tubes	O	O	O
+29	O	11	O	RB	not	O	O	O
+29	O	12	O	RBR	more	O	O	O
+29	O	13	O	IN	than	O	O	O
+29	O	14	O	CD	20	O	O	O
+29	O	15	O	NN	ml	O	O	O
+29	O	16	O	-RRB-	-RRB-	O	O	O
+29	O	17	O	:	;	O	O	O
+29	O	18	O	VB	make	O	O	O
+29	O	19	O	JJ	sure	O	O	O
+29	O	20	O	DT	no	O	O	O
+29	O	21	O	NN	plant	O	O	O
+29	O	22	O	NN	material	O	O	O
+29	O	23	O	VBZ	is	O	O	O
+29	O	24	O	VBG	being	O	O	O
+29	O	25	O	VBN	transferred	O	O	O
+29	O	26	O	,	,	O	O	O
+29	O	27	O	JJ	optional	O	O	O
+29	O	28	O	DT	the	O	O	O
+29	O	29	O	NN	liquid	O	O	O
+29	O	30	O	MD	can	O	O	O
+29	O	31	O	VB	be	O	O	O
+29	O	32	O	VBN	filtered	O	O	O
+29	O	33	O	IN	through	O	O	O
+29	O	34	O	DT	a	O	O	O
+29	O	35	O	JJ	sterile	O	O	O
+29	O	36	O	CD	125	O	O	O
+29	O	37	O	NN	µm	O	O	O
+29	O	38	O	NN	sieve	O	O	O
+29	O	39	O	IN	of	O	O	O
+29	O	40	O	DT	a	O	O	O
+29	O	41	O	CD	0.8	O	O	O
+29	O	42	O	NN	µm	O	O	O
+29	O	43	O	NN	filter	O	O	O
+29	O	44	O	.	.	O	O	O
+
+7	5	Measure
+7	3	Measure
+7	6	Mod-Link
+
+30	Action	0	O	VB	Add	O	O	O
+30	O	1	O	DT	an	O	O	O
+30	Modifier	2	O	JJ	equal	O	O	O
+30	Amount	3	O	NN	volume	O	O	O
+30	O	4	O	IN	of	O	O	O
+30	Reagent	5	O	NN/NN/NN/NN	phenol/chloroform/isoamyl/alcohol	O	O	O
+30	O	6	O	-LRB-	-LRB-	O	O	O
+30	O	7	O	CD	25:24:1	O	O	O
+30	O	8	O	-RRB-	-RRB-	O	O	O
+30	O	9	O	TO	to	O	O	O
+30	O	10	O	DT	the	O	O	O
+30	Reagent	11	O	NN	supernatant	O	O	O
+30	O	12	O	CC	and	O	O	O
+30	Action	13	O	VB	shake	O	O	O
+30	Modifier	14	O	RB	gently	O	O	O
+30	O	15	O	CC	but	O	O	O
+30	Modifier	16	O	RB	thoroughly	O	O	O
+30	O	17	O	.	.	O	O	O
+
+5	3	Measure
+3	2	Mod-Link
+13	14	Mod-Link
+13	16	Mod-Link
+
+31	Action	0	O	NNP	Centrifuge	O	O	O
+31	O	1	O	IN	for	O	O	O
+31	Time	2	O	CD/NN	5/min	O	O	O
+31	O	3	O	IN	at	O	O	O
+31	Speed	4	O	CD/CC	2000/x	O	O	O
+31	O	5	O	NNP	g.	O	O	O
+31	Action	6	O	NN	Transfer	O	O	O
+31	Reagent	7	O	JJ/NN	aqueous/phase	O	O	O
+31	O	8	O	IN	into	O	O	O
+31	O	9	O	DT	a	O	O	O
+31	Location	10	O	NN/NNS	SS34/tubes	O	O	O
+31	O	11	O	.	.	O	O	O
+
+0	2	Setting
+0	4	Setting
+
+32	Action	0	O	VB	Add	O	O	O
+32	Amount	1	O	CD/NN	1/10/volume	O	O	O
+32	O	2	O	IN	of	O	O	O
+32	Reagent	3	O	NNP/NN/NN	3M/sodium/acetate	O	O	O
+32	O	4	O	CC	and	O	O	O
+32	Amount	5	O	CD/NNS	3/volumes	O	O	O
+32	O	6	O	IN	of	O	O	O
+32	Reagent	7	O	CD/NN/NN	95/%/ethanol	O	O	O
+32	O	8	O	.	.	O	O	O
+
+3	1	Measure
+7	5	Measure
+
+33	Action	0	O	NNP	Shake	O	O	O
+33	Modifier	1	O	RB	gently	O	O	O
+33	O	2	O	CC	but	O	O	O
+33	Modifier	3	O	RB	thoroughly	O	O	O
+33	O	4	O	:	;	O	O	O
+33	O	5	O	NN	note	O	O	O
+33	O	6	O	:	:	O	O	O
+33	O	7	O	DT	a	O	O	O
+33	O	8	O	JJ	white	O	O	O
+33	O	9	O	NN	precipitate	O	O	O
+33	O	10	O	MD	will	O	O	O
+33	O	11	O	VB	become	O	O	O
+33	O	12	O	JJ	visible	O	O	O
+33	O	13	O	.	.	O	O	O
+
+0	1	Mod-Link
+0	3	Mod-Link
+
+34	Action	0	O	VB	Incubate	O	O	O
+34	O	1	O	IN	at	O	O	O
+34	Temperature	2	O	:/NN	--/20oC	O	O	O
+34	O	3	O	IN	for	O	O	O
+34	Modifier	4	O	IN/JJS	at/least	O	O	O
+34	Time	5	O	CD/NNS	2/hours	O	O	O
+34	O	6	O	.	.	O	O	O
+
+0	2	Setting
+5	4	Mod-Link
+0	5	Setting
+
+35	Action	0	O	NNP	Centrifuge	O	O	O
+35	O	1	O	IN	for	O	O	O
+35	Time	2	O	CD/NN	30/min	O	O	O
+35	O	3	O	IN	at	O	O	O
+35	Speed	4	O	CD/CD/NN	20/000/x	O	O	O
+35	O	5	O	NNP	g.	O	O	O
+35	Action	6	O	VB	Remove	O	O	O
+35	Reagent	7	O	NN	supernatant	O	O	O
+35	O	8	O	.	.	O	O	O
+
+0	2	Setting
+0	4	Setting
+
+36	Action	0	O	VB	Add	O	O	O
+36	Amount	1	O	CD/NN	10/ml	O	O	O
+36	O	2	O	IN	of	O	O	O
+36	Reagent	3	O	CD/NN/NN	70/%/ethanol	O	O	O
+36	O	4	O	TO	to	O	O	O
+36	Location	5	O	NN	pellet	O	O	O
+36	O	6	O	.	.	O	O	O
+
+3	1	Measure
+
+37	Action	0	O	NNP	Centrifuge	O	O	O
+37	O	1	O	IN	for	O	O	O
+37	Time	2	O	CD/NN	5/min	O	O	O
+37	O	3	O	IN	at	O	O	O
+37	Speed	4	O	CD/CD/NN	20/000/x	O	O	O
+37	O	5	O	NN	g.	O	O	O
+37	Action	6	O	VB	Remove	O	O	O
+37	Reagent	7	O	JJ	supernatant	O	O	O
+37	O	8	O	CC	and	O	O	O
+37	Action	9	O	JJ	air-dry	O	O	O
+37	Reagent	10	O	NN	pellet	O	O	O
+37	O	11	O	.	.	O	O	O
+
+
+38	Action	0	O	NNP	Resuspend	O	O	O
+38	Reagent	1	O	NN	pellet	O	O	O
+38	O	2	O	IN	in	O	O	O
+38	Reagent	3	O	CD/NN/JJ/NN	0.5/ml/sterile/water	O	O	O
+38	O	4	O	CC	and	O	O	O
+38	Action	5	O	NN	transfer	O	O	O
+38	O	6	O	IN	into	O	O	O
+38	Location	7	O	CD/NN/NN/NN	2/ml/microcentrifuge/tube	O	O	O
+38	O	8	O	.	.	O	O	O
+
+
+39	Action	0	O	VB	Add	O	O	O
+39	Amount	1	O	CD/NN	1/10/volume	O	O	O
+39	O	2	O	IN	of	O	O	O
+39	Reagent	3	O	NNP/NN/NN	3M/sodium/acetate	O	O	O
+39	O	4	O	CC	and	O	O	O
+39	Amount	5	O	CD/NNS	3/volumes	O	O	O
+39	O	6	O	IN	of	O	O	O
+39	Reagent	7	O	CD/NN/NN	95/%/ethanol	O	O	O
+39	O	8	O	.	.	O	O	O
+
+3	1	Measure
+7	5	Measure
+
+40	Action	0	O	NNP	Shake	O	O	O
+40	Modifier	1	O	RB	gently	O	O	O
+40	O	2	O	CC	but	O	O	O
+40	Modifier	3	O	RB	thoroughly	O	O	O
+40	O	4	O	:	;	O	O	O
+40	O	5	O	NN	note	O	O	O
+40	O	6	O	:	:	O	O	O
+40	O	7	O	DT	a	O	O	O
+40	O	8	O	JJ	white	O	O	O
+40	O	9	O	NN	precipitate	O	O	O
+40	O	10	O	MD	will	O	O	O
+40	O	11	O	VB	become	O	O	O
+40	O	12	O	JJ	visible	O	O	O
+40	O	13	O	.	.	O	O	O
+
+0	1	Mod-Link
+0	3	Mod-Link
+
+41	Action	0	O	VB	Incubate	O	O	O
+41	O	1	O	IN	at	O	O	O
+41	Temperature	2	O	:/NN	--/20oC	O	O	O
+41	O	3	O	IN	for	O	O	O
+41	Modifier	4	O	IN/JJS	at/least	O	O	O
+41	Time	5	O	CD/NNS	2/hours	O	O	O
+41	O	6	O	.	.	O	O	O
+
+0	2	Setting
+4	5	Setting
+0	5	Setting
+
+42	Action	0	O	NNP	Centrifuge	O	O	O
+42	O	1	O	IN	for	O	O	O
+42	Time	2	O	CD/NN	30/min	O	O	O
+42	O	3	O	IN	at	O	O	O
+42	Speed	4	O	CD/CD/NN	20/000/x	O	O	O
+42	O	5	O	NNP	g.	O	O	O
+42	Action	6	O	VB	Remove	O	O	O
+42	Reagent	7	O	NN	supernatant	O	O	O
+42	O	8	O	.	.	O	O	O
+
+0	2	Setting
+0	4	Setting
+
+43	Action	0	O	VB	Add	O	O	O
+43	Amount	1	O	CD	1	O	O	O
+43	O	2	O	NN	ml	O	O	O
+43	O	3	O	IN	of	O	O	O
+43	Reagent	4	O	CD/NN/NN	70/%/ethanol	O	O	O
+43	O	5	O	TO	to	O	O	O
+43	Location	6	O	NN	pellet	O	O	O
+43	O	7	O	.	.	O	O	O
+
+4	1	Measure
+
+44	Action	0	O	NNP	Centrifuge	O	O	O
+44	O	1	O	IN	for	O	O	O
+44	Time	2	O	CD/NN	5/min	O	O	O
+44	O	3	O	IN	at	O	O	O
+44	Speed	4	O	CD/CD/NN	20/000/x	O	O	O
+44	O	5	O	NN	g.	O	O	O
+44	Action	6	O	VB	Remove	O	O	O
+44	Reagent	7	O	JJ	supernatant	O	O	O
+44	O	8	O	CC	and	O	O	O
+44	Action	9	O	JJ	air-dry	O	O	O
+44	Reagent	10	O	NN	pellet	O	O	O
+44	O	11	O	.	.	O	O	O
+
+0	2	Setting
+0	4	Setting
+
+45	Action	0	O	NNP	Resuspend	O	O	O
+45	Reagent	1	O	NN	pellet	O	O	O
+45	O	2	O	IN	into	O	O	O
+45	Reagent	3	O	JJ/NN	50-100µl/TE-buffer	O	O	O
+45	O	4	O	.	.	O	O	O
+
+
+46	Action	0	O	VB	Check	O	O	O
+46	O	1	O	RB	approx.	O	O	O
+46	Amount	2	O	JJ	1µl	O	O	O
+46	O	3	O	IN	on	O	O	O
+46	Reagent	4	O	NN/NN/.	agarose/gel/.	O	O	O
+
+4	2	Measure
+
+47	O	0	O	NN	Cloning	O	O	O
+47	O	1	O	IN	with	O	O	O
+47	O	2	O	NNP	NEB	O	O	O
+47	O	3	O	JJ	Instant	O	O	O
+47	O	4	O	NN	Sticky-end	O	O	O
+47	O	5	O	NNP	Ligase	O	O	O
+47	O	6	O	NNP	Master	O	O	O
+47	O	7	O	NNP	Mix	O	O	O
+47	O	8	O	-LRB-	-LRB-	O	O	O
+47	O	9	O	NN	M0370	O	O	O
+47	O	10	O	-RRB-	-RRB-	O	O	O
+47	Action	11	O	NN	Place	O	O	O
+47	Location	12	O	NN/NN/NN	master/mix/tube	O	O	O
+47	O	13	O	IN	on	O	O	O
+47	Location	14	O	NN	ice	O	O	O
+47	O	15	O	CC	and	O	O	O
+47	Action	16	O	NN	flick	O	O	O
+47	O	17	O	DT	a	O	O	O
+47	Numerical	18	O	JJ	few	O	O	O
+47	O	19	O	NNS	times	O	O	O
+47	O	20	O	TO	to	O	O	O
+47	Action	21	O	VB	mix	O	O	O
+47	O	22	O	.	.	O	O	O
+
+
+48	Action	0	O	VB	Combine	O	O	O
+48	Generic-measure	1	O	CD/:/CD/NN	20/--/100/ng	O	O	O
+48	O	2	O	IN	of	O	O	O
+48	Reagent	3	O	NN	vector	O	O	O
+48	O	4	O	IN	with	O	O	O
+48	O	5	O	DT	a	O	O	O
+48	Reagent	6	O	JJ/JJ/NN/IN/NN	3-fold/molar/excess/of/insert	O	O	O
+48	O	7	O	CC	and	O	O	O
+48	Action	8	O	NN	q.s.	O	O	O
+48	O	9	O	TO	to	O	O	O
+48	Amount	10	O	JJ	5μl	O	O	O
+48	O	11	O	IN	with	O	O	O
+48	Reagent	12	O	NN	dH2O	O	O	O
+48	O	13	O	.	.	O	O	O
+
+3	1	Measure
+
+49	Action	0	O	VB	Add	O	O	O
+49	Amount	1	O	CD/NN	5/μl	O	O	O
+49	O	2	O	IN	of	O	O	O
+49	Modifier	3	O	JJ	Instant	O	O	O
+49	Modifier	4	O	JJ	Sticky-end	O	O	O
+49	Reagent	5	O	NNP/NNP/NNP	Ligase/Master/Mix	O	O	O
+49	O	6	O	,	,	O	O	O
+49	Action	7	O	NN	mix	O	O	O
+49	Modifier	8	O	RB	thoroughly	O	O	O
+49	O	9	O	IN	by	O	O	O
+49	Method	10	O	VBG/RP/CC/RP	pipetting/up/and/down	O	O	O
+49	Numerical	11	O	CD	7-10	O	O	O
+49	O	12	O	NNS	times	O	O	O
+49	O	13	O	,	,	O	O	O
+49	O	14	O	CC	and	O	O	O
+49	Action	15	O	NN	place	O	O	O
+49	O	16	O	IN	on	O	O	O
+49	Location	17	O	NN	ice	O	O	O
+49	O	18	O	.	.	O	O	O
+
+5	4	Mod-Link
+5	3	Mod-Link
+5	1	Measure
+7	8	Mod-Link
+
+50	O	0	O	DT	The	O	O	O
+50	O	1	O	NN	sample	O	O	O
+50	O	2	O	VBZ	is	O	O	O
+50	O	3	O	RB	now	O	O	O
+50	O	4	O	JJ	ready	O	O	O
+50	O	5	O	TO	to	O	O	O
+50	O	6	O	VB	be	O	O	O
+50	O	7	O	VBN	used	O	O	O
+50	O	8	O	IN	for	O	O	O
+50	O	9	O	NN	transformation	O	O	O
+50	O	10	O	.	.	O	O	O
+
+
+51	Action	0	O	VB	Thaw	O	O	O
+51	Modifier	1	O	JJ	competent	O	O	O
+51	Reagent	2	O	NNS	cells	O	O	O
+51	O	3	O	IN	on	O	O	O
+51	Location	4	O	NN	ice	O	O	O
+51	O	5	O	.	.	O	O	O
+
+2	1	Mod-Link
+
+52	Action	0	O	NNP	Aliquot	O	O	O
+52	Amount	1	O	CD/NN	50/μl	O	O	O
+52	O	2	O	IN	of	O	O	O
+52	Reagent	3	O	NNS	cells	O	O	O
+52	O	4	O	IN	into	O	O	O
+52	O	5	O	DT	a	O	O	O
+52	Amount	6	O	CD/NN	1.5/ml	O	O	O
+52	Location	7	O	NN/NN	microcentrifuge/tube	O	O	O
+52	O	8	O	.	.	O	O	O
+
+7	6	Measure
+3	1	Measure
+
+53	Action	0	O	VB	Add	O	O	O
+53	Amount	1	O	CD/NN	2/μl	O	O	O
+53	O	2	O	IN	of	O	O	O
+53	O	3	O	DT	the	O	O	O
+53	Reagent	4	O	NN/NN	ligation/reaction	O	O	O
+53	O	5	O	TO	to	O	O	O
+53	O	6	O	DT	the	O	O	O
+53	Reagent	7	O	NNS	cells	O	O	O
+53	O	8	O	CC	and	O	O	O
+53	Action	9	O	NN	mix	O	O	O
+53	O	10	O	IN	by	O	O	O
+53	Method	11	O	JJ	finger-flicking	O	O	O
+53	O	12	O	.	.	O	O	O
+
+4	1	Measure
+
+54	Action	0	O	VB/RB/NN	Do/not/vortex	O	O	O
+54	O	1	O	DT	the	O	O	O
+54	Location	2	O	NN	tube	O	O	O
+54	O	3	O	.	.	O	O	O
+
+
+55	Action	0	O	VB	Incubate	O	O	O
+55	O	1	O	DT	the	O	O	O
+55	Location	2	O	NN	tube	O	O	O
+55	O	3	O	IN	on	O	O	O
+55	Location	4	O	NN	ice	O	O	O
+55	O	5	O	IN	for	O	O	O
+55	Time	6	O	CD/NNS	30/minutes	O	O	O
+55	O	7	O	.	.	O	O	O
+
+0	6	Setting
+
+56	Action	0	O	VBP/RB/VB	Do/not/mix	O	O	O
+56	O	1	O	.	.	O	O	O
+
+
+57	Action	0	O	NN/NN	Heat/shock	O	O	O
+57	O	1	O	IN	at	O	O	O
+57	Temperature	2	O	CD/NN	42/°C	O	O	O
+57	O	3	O	IN	for	O	O	O
+57	Time	4	O	CD/NNS	30/seconds	O	O	O
+57	O	5	O	.	.	O	O	O
+
+0	2	Setting
+0	4	Setting
+
+58	Action	0	O	NN	Return	O	O	O
+58	Location	1	O	NN	tube	O	O	O
+58	O	2	O	TO	to	O	O	O
+58	Location	3	O	NN	ice	O	O	O
+58	O	4	O	IN	for	O	O	O
+58	Time	5	O	CD/NNS	2/minutes	O	O	O
+58	O	6	O	.	.	O	O	O
+
+0	5	Setting
+
+59	Action	0	O	VB	Add	O	O	O
+59	Amount	1	O	CD/NN	950/μl	O	O	O
+59	Reagent	2	O	NN/NNS	recovery/media	O	O	O
+59	O	3	O	-LRB-	-LRB-	O	O	O
+59	O	4	O	FW	e.g.	O	O	O
+59	O	5	O	FW	SOC	O	O	O
+59	O	6	O	-RRB-	-RRB-	O	O	O
+59	O	7	O	TO	to	O	O	O
+59	O	8	O	DT	the	O	O	O
+59	Location	9	O	NN	tube	O	O	O
+59	O	10	O	.	.	O	O	O
+
+2	1	Measure
+
+60	Action	0	O	VB	Incubate	O	O	O
+60	O	1	O	IN	for	O	O	O
+60	Time	2	O	CD/NN	one/hour	O	O	O
+60	O	3	O	IN	at	O	O	O
+60	Temperature	4	O	CD/NN	37/°C	O	O	O
+60	O	5	O	IN	with	O	O	O
+60	Method	6	O	NN/CC/VBG	rotation/or/shaking	O	O	O
+60	O	7	O	-LRB-	-LRB-	O	O	O
+60	Speed	8	O	CD/:/CD/NN	200/--/250/rpm	O	O	O
+60	O	9	O	-RRB-	-RRB-	O	O	O
+60	O	10	O	.	.	O	O	O
+
+0	2	Setting
+0	4	Setting
+0	8	Setting
+
+61	Action	0	O	NN	Spread	O	O	O
+61	Amount	1	O	CD/NN	100/μl	O	O	O
+61	O	2	O	IN	of	O	O	O
+61	O	3	O	DT	the	O	O	O
+61	Reagent	4	O	NN	outgrowth	O	O	O
+61	O	5	O	-LRB-	-LRB-	O	O	O
+61	Action	6	O	JJ/CC/JJ	undiluted/or/diluted	O	O	O
+61	Generic-measure	7	O	CD	1:5	O	O	O
+61	O	8	O	IN	with	O	O	O
+61	Reagent	9	O	NN/NNS	recovery/media	O	O	O
+61	O	10	O	-RRB-	-RRB-	O	O	O
+61	O	11	O	IN	onto	O	O	O
+61	Modifier	12	O	JJ	appropriate	O	O	O
+61	Location	13	O	JJ/NN/NNS	antibiotic/selection/plates	O	O	O
+61	O	14	O	CC	and	O	O	O
+61	Action	15	O	VB	incubate	O	O	O
+61	Time	16	O	JJ	overnight	O	O	O
+61	O	17	O	IN	at	O	O	O
+61	Temperature	18	O	CD/NN	37/°C	O	O	O
+61	O	19	O	.	.	O	O	O
+
+4	1	Measure
+13	12	Mod-Link
+15	16	Setting
+15	18	Setting
+

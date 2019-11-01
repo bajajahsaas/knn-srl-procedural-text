@@ -45,6 +45,8 @@ def get_sentences(docs):
             for linktype in annotation.links:
                 for tail in annotation.links[linktype]:
                     sent = annotation.words[0].sentkey
+                    if sent != tail.words[0].sentkey:
+                        continue
                     sentinfo[sent]['relations'].append({'head': {'text': get_words(annotation),
                                                'type': \
                                                list(annotation.labels.keys())[0],

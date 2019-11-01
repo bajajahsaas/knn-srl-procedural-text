@@ -1,3 +1,14 @@
 wlpdata/
 *.annoy
 nohup.out
+**/*.pkl
+**/*.json
+**/*.txt
+*.pkl
+*.json
+*.txt
+**/*ckpt*
+**/*.pdf
+**/*.pyc
+output/
+**/*.zip
