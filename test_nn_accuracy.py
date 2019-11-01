@@ -41,6 +41,6 @@ for iter in range(count):
     ans += inner_mean
     print('Mean distance after iter', iter + 1, ans / (iter + 1))
     # Annoy uses Euclidean distance of normalized vectors for its angular distance, which for two vectors u, v is equal to sqrt(2(1-cos(u, v)))
-
+    # Min value = 0, Max value = root(2)
 # Final Mean distance after 100  iterations ~ 0.6
 print('Final Mean distance after', count, 'iterations = ', ans/count)

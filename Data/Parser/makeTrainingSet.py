@@ -2,9 +2,24 @@ import json
 import os
 import re
 
+import nltk
+
+
+def checkJaccadSimilarity(querytitle, corpusTitles, threshold=0.95):
+    for title in corpusTitles:
+        jd = nltk.jaccard_distance(set(querytitle), set(title))
+        jsim = 1 - jd
+        if jsim > threshold:
+            # found another title which is similar
+            if title != querytitle:
+                print('Original:', title)
+                print('Query:', querytitle)
+                print()
+            return True
+    return False
+
 
 print('Preprocessing')
-
 wetlabsdir = '/Users/Admin/Documents/UMassMSCS/Courses/692/692Project/Data/WLP-Dataset/protocol-data'
 protocolsdir = '/Users/Admin/Documents/UMassMSCS/Courses/692/692Project/Data/protocols/data'
 
@@ -24,12 +39,16 @@ for i, fil in enumerate(wetlabsfiles):
 print('Found', len(protocolsfiles),'protocols files')
 print('Size of titles list', len(titles))
 
-# Try removing using jaccard similarity
-c = 0
+stringMatch_count = 0
+jaccardSim_count = 0
+
 for i, fil in enumerate(protocolsfiles):
     with open(os.path.join(protocolsdir, fil), "r") as read_file:
         data = json.load(read_file)
-        if data['title'].lower() in titles:
-            c += 1
+        queryTitle = data['title'].lower()
+        if queryTitle in titles:
+            stringMatch_count += 1
+        if checkJaccadSimilarity(queryTitle, titles):
+            jaccardSim_count += 1
 
-print(c)
+print(stringMatch_count, jaccardSim_count)
