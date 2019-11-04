@@ -5,6 +5,7 @@ import os
 import numpy as np
 import csv
 import re
+import random
 import pickle
 from annoy import AnnoyIndex
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -14,6 +15,7 @@ r = RepoModel('wlpdata')
 print('Preprocessing')
 
 documents = list(r.documents.keys())
+random.shuffle(documents)
 trainlen = int(len(documents) * 0.8)
 traindata = documents[:trainlen]
 testdata = documents[trainlen:]
