@@ -74,7 +74,6 @@ def _createannotationobjects(annotations):
                  for span in u" ".join(split[1:]).split(";")]
 
         targets[key] = Annotation(key, repr, spans, [label])
-
     return targets
 
 
@@ -94,14 +93,14 @@ def _find_t(e, annotations):
 
     if len(e) > 1:
 
-        targetkeys = [y for y in [x.split(":")[1] for x in e[1:]]]
+        targetrelkeys = [y for y in [x.split(":") for x in e[1:]]]
 
-        for key in targetkeys:
+        for rel, key in targetrelkeys:
             if key[0] == "E":
-                keys.append(annotations['E'][key[1:]].split()[0].split(":")[1])
+                keys.append([rel,annotations['E'][key[1:]].split()[0].split(":")[1]])
 
             if key[0] == "T":
-                keys.append(key)
+                keys.append([rel,key])
 
     return keys
 
@@ -132,6 +131,8 @@ def _evaluate_annotations(annotations):
     the dictionary "T" as key "14".
 
     :return: a dictionary of Annotation objects.
+    #### Modified by Daivik to add all event links as links from action to
+    targets rather than other way around
     """
 
     # Create the annotation objects
@@ -169,11 +170,12 @@ def _evaluate_annotations(annotations):
         origintype, originkey = e.split()[0].split(":")
         originkey = originkey[1:]
 
-        targets = [x[1:] for x in targetkeys]
+        #targets = [x[1:] for x in targetkeys]
 
-        for x in targets:
+        for rel, x in targetkeys:
             t = annotationobjects[originkey]
-            annotationobjects[x].links[origintype].append(t)
+            # annotationobjects[x].links[origintype].append(t)
+            t.links[rel].append(annotationobjects[x[1:]])
 
     # "R" annotations
     for r in annotations["R"].values():

@@ -1,4 +1,5 @@
 from bratreader.word import Word
+import re
 
 
 class Sentence(object):
@@ -15,17 +16,19 @@ class Sentence(object):
         self.words = []
         self.start = start
         self.end = start + len(line)
-
-        for windex, w in enumerate(line.split()):
-
-            start = start
-            end = start+len(w)
+        
+        sent_start = start
+        ## There are double spaces
+        wlist = [(m.group(0), m.start(), m.end()) for m in re.finditer(r'\S+', line)]
+        for windex, wobj in enumerate(wlist):
+            w, start, end = wobj
+            start = start + sent_start
+            end = end + sent_start
             self.words.append(Word(key=windex,
                                    sentkey=self.key,
                                    form=w,
                                    start=start,
                                    end=end))
-            start = end+1
 
     def getwordsinspan(self, start, end):
         """

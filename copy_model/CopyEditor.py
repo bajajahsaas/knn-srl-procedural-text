@@ -124,6 +124,7 @@ class CopyEditor(nn.Module):
         query_embedding = self.rel_embedding(query_vectors[0], \
                                              query_vectors[1])
         gen_dist = self.multiclass(query_embedding)
+        # return gen_dist
 
         # Batch x context_size x dim
         if context_labels is not None: # if no context return just generated probability
