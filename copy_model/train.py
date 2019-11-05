@@ -29,6 +29,7 @@ with open(args.traindata, 'rb') as f:
 with open(args.valdata, 'rb') as f:
     valdata = pickle.load(f)
 
+
 def get_batches(data):
     # only batch size 1 for now
     perm = np.random.permutation(len(data))
@@ -73,19 +74,19 @@ def accuracy(data, model):
                                 dim=-1).view(-1)
             all_target.append(q_labels.view(-1).data.detach().cpu().numpy().copy())
             all_pred.append(pred.data.detach().cpu().numpy().copy())
-        
+
         all_pred = np.concatenate(all_pred, 0)
         all_target = np.concatenate(all_target, 0)
-        
+
         for i in range(num_classes+1):
             print('%d %d %d'%(i, np.sum(np.equal(all_target, i)),\
                               np.sum(np.equal(all_pred, i))))
-        
+
         existing_relations = np.not_equal(all_target, num_labels)
         total_accuracy = np.mean(np.equal(all_pred, all_target))
         num_rel_correct = np.sum(existing_relations * np.equal(all_target,\
                                     all_pred))
-        accuracy_existing_relations = num_rel_correct/np.sum(existing_relations) 
+        accuracy_existing_relations = num_rel_correct/np.sum(existing_relations)
         return total_accuracy, accuracy_existing_relations
 
 
@@ -104,7 +105,6 @@ optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate,\
                              weight_decay=weight_decay)
 
 
-
 for epoch in range(NUM_EPOCHS):
     print('Epoch #%d'%epoch)
     acc1, acc2 = accuracy(valdata, model)
@@ -118,7 +118,7 @@ for epoch in range(NUM_EPOCHS):
             try:
                 q, cxt, cxt_labels, q_labels, mask  = data_gen.__next__()
                 prediction = model(q,cxt,cxt_labels, mask).view(-1, num_classes+1)
-                l = loss(prediction, q_labels.view(-1))  
+                l = loss(prediction, q_labels.view(-1))
                 losses.append(l)
                 count += 1
             except StopIteration:

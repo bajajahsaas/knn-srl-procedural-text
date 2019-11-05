@@ -41,6 +41,7 @@ class AttentionDist(nn.Module):
         l_softmax_classes = torch.logsumexp(onehot_logprobs, dim = 2)
         return context_vector, l_softmax_classes
 
+
 class RelationEmbedding(nn.Module):
     def __init__(self, input_dim, output_dim, hidden_dims = []):
         super(RelationEmbedding, self).__init__()
@@ -60,7 +61,8 @@ class RelationEmbedding(nn.Module):
         tail = tail.view(-1, self.input_dim)
         concat = torch.cat((head, tail), dim = -1)
         mapped = self.network(concat)
-        return torch.reshape(mapped, final_shape) 
+        return torch.reshape(mapped, final_shape)
+
 
 class ShouldCopy(nn.Module): # MLP to get probability of copying vs generating
     # input: context vector, query embedding
@@ -78,7 +80,7 @@ class ShouldCopy(nn.Module): # MLP to get probability of copying vs generating
         prob = F.logsigmoid(logits)
         neg_prob = F.logsigmoid(-logits)
         return prob, neg_prob
-        
+
 
 
 class MultiClass(nn.Module):
@@ -112,7 +114,6 @@ class CopyEditor(nn.Module):
                         # embeddings between query and context
         self.should_copy = ShouldCopy(emb_dim)
         self.multiclass = MultiClass(emb_dim, num_classes, [])
-        
 
     def forward(self, query_vectors, context_vectors, context_labels,  mask):
         # query_vector: (head, tail) each of Batch x n x dim
@@ -126,7 +127,7 @@ class CopyEditor(nn.Module):
         # Batch x n x dim
         query_embedding = self.rel_embedding(query_vectors[0], \
                                              query_vectors[1])
-        
+
         context_vec, copy_dist = None, None
         if self.generate:
             gen_dist = self.multiclass(query_embedding)
@@ -139,11 +140,10 @@ class CopyEditor(nn.Module):
                 context_vec, copy_dist = self.attention(query_embedding, context_embedding, \
                                                  context_labels, mask)
 
-
         # if generate is enabled and copy is disabled or no cotext provided
         if self.generate and (not self.copy or copy_dist is None):
             return gen_dist
-        #if copy is enabled but not generate 
+        #if copy is enabled but not generate
         elif self.copy and not self.generate:
             # If no context provided we are stuck since we do not generate
             # In this case always return norel
@@ -168,7 +168,7 @@ class CopyEditor(nn.Module):
             log_probs = torch.stack([copy_prob + copy_dist, gen_prob +
                                      gen_dist], dim = -1)
             final_probs = torch.logsumexp(log_probs, dim = -1)
-            return final_probs 
+            return final_probs
 
 
 
