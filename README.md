@@ -23,17 +23,22 @@ python uppperbound_recall.py
 ```python 
 python preprocess_wetlabs.py
 ```
+This creates files wetlabs_train.json and wetlabs_test.json
 
-### Using wetlabs_train.json to build annoy files and replaced_$model$.pkl file of vectorizer for KNN retrieval
+### Using wetlabs_train.json to build annoy files and vectorizer files for KNN retrieval
 ```python 
 python build_index_from_json.py
 ```
+This creates files original.annoy, replaced.annoy, original_tfidf.pkl and replaced_tfidf.pkl
 
-### Generate embeddings of training data using BERT (or bioBERT). Writes into train_embedding_data.pkl
+### Generate embeddings of training data using BERT (or bioBERT).
 ```python 
 python copy_model/prepare_data.py wetlabs_train.json
 ```
+This writes into train_embedding_data.pkl
+
 ### Using pre-generated annoy, vectorizer, BERT embeddings to pre-compute nearest neighbors (for edit model)
 ```python 
 python copy_model/prepare_context.py replaced.annoy replaced_tfidf.pkl train_embedding_data.pkl
 ```
+This writes into dataset.pkl to be used for retrieve-and-edit model
