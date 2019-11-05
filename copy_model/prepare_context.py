@@ -3,6 +3,7 @@ import numpy as np
 import os
 from annoy import AnnoyIndex
 import pickle
+import re
 
 annoy_file = sys.argv[1]
 vectorizer_file = sys.argv[2]
@@ -22,7 +23,8 @@ relations = set()
 for s in data:
     for r in s['relations']:
         # print(r)
-        relations.add(r[2])
+        relation_without_trailing = re.sub('\d+$','',r[2]) 
+        relations.add(relation_without_trailing)
 relations = list(relations)
 print(relations)
 print(len(relations))
@@ -47,7 +49,7 @@ for s in data:
         for h,tl,typ in cs['relations']:
             context_head.append(cs['entities'][h][1])
             context_tail.append(cs['entities'][tl][1])
-            context_label.append(rel_dic[typ])
+            context_label.append(rel_dic[re.sub('\d+$','',typ)])
             num_context += 1
     if num_context == 0:
         context_head = None
@@ -67,7 +69,7 @@ for s in data:
             if i == j or (i, j) in relset:
                 continue
             norels.append((i,j,'No relation'))
-    all_rels = [(a,b,rel_dic[c]) for a,b,c in s['relations'] + norels]
+    all_rels = [(a,b,rel_dic[re.sub('\d+$','',c)]) for a,b,c in s['relations'] + norels]
     if len(all_rels) == 0:
         continue
     query_head = np.stack([s['entities'][x[0]][1] for x in all_rels])

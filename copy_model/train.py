@@ -16,7 +16,7 @@ if sys.argv[1] == 'nocopy':
     nocopy = True
 EMBEDDING_SIZE = 768
 NUM_EPOCHS = 50
-num_classes = 9
+num_classes = 14
 BATCH_SIZE = 16
 GRAD_MAXNORM = 100
 
@@ -70,7 +70,7 @@ def accuracy(data, model):
             print('%d %d %d'%(i, np.sum(np.equal(all_target, i)),\
                               np.sum(np.equal(all_pred, i))))
         
-        existing_relations = np.not_equal(all_target, 9)
+        existing_relations = np.not_equal(all_target, 14)
         total_accuracy = np.mean(np.equal(all_pred, all_target))
         num_rel_correct = np.sum(existing_relations * np.equal(all_target,\
                                     all_pred))
