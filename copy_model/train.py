@@ -51,6 +51,16 @@ def get_batches(data):
             if torch.isnan(torch.stack([ch,ct])).any():
                 continue
             mask = torch.from_numpy(np.ones_like(cl))
+        if args.gpu:
+            qh = qh.cuda()
+            qt = qt.cuda()
+            ql = ql.cuda()
+            if ch is not None:
+                ch = ch.cuda()
+                cl = cl.cuda()
+                ct = ct.cuda()
+                mask = mask.cuda()
+
         yield (qh, qt), (ch, ct), cl, ql, mask
 
 
@@ -61,8 +71,8 @@ def accuracy(data, model):
         for q, cxt, cxt_labels, q_labels, mask  in get_batches(data):
             pred = torch.argmax(model(q, cxt, cxt_labels, mask), \
                                 dim=-1).view(-1)
-            all_target.append(q_labels.view(-1).data.detach().numpy().copy())
-            all_pred.append(pred.data.detach().numpy().copy())
+            all_target.append(q_labels.view(-1).data.detach().cpu().numpy().copy())
+            all_pred.append(pred.data.detach().cpu().numpy().copy())
         
         all_pred = np.concatenate(all_pred, 0)
         all_target = np.concatenate(all_target, 0)
@@ -81,9 +91,13 @@ def accuracy(data, model):
 
 weights = torch.ones(num_classes+1)
 weights[-1] = 1.0/20
+if args.gpu:
+    weights = weights.cuda()
 loss = nn.NLLLoss(weights)
 model = CopyEditor(EMBEDDING_SIZE, num_classes, copy=args.copy,
                    generate=args.generate)
+if args.gpu:
+        model = model.cuda()
 learning_rate = args.lr
 weight_decay = args.weight_decay
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate,\
@@ -113,9 +127,17 @@ for epoch in range(NUM_EPOCHS):
             break
         mean_loss = torch.mean(torch.stack(losses))
         optimizer.zero_grad()
-        mean_loss.backward()
-        nn.utils.clip_grad_norm_(model.parameters(), GRAD_MAXNORM)
-        optimizer.step()
+
+        # This is required for when --no-generate is set and No context is
+        # avalable. The is no gradient function for the loss in this case.
+        try:
+            mean_loss.backward()
+            nn.utils.clip_grad_norm_(model.parameters(), GRAD_MAXNORM)
+            optimizer.step()
+        except:
+            print('No grad batch')
+            pass
+
         if bno %100 == 0:
             print('Loss after batch #%d = %f'%(bno, mean_loss.data))
         bno+=1

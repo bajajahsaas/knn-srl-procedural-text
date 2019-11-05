@@ -12,6 +12,8 @@ nohup.out
 **/*.pyc
 output/
 **/*.zip
-**/*.pt
 **/*.log
 *.pkl
+**/*.pt
+**/*.log
+**/*.err

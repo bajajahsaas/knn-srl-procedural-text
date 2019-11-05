@@ -147,10 +147,12 @@ class CopyEditor(nn.Module):
         elif self.copy and not self.generate:
             # If no context provided we are stuck since we do not generate
             # In this case always return norel
-            if copy_dist == None:
-                # If no context always return P(norel) = 1.0
-                probs = torch.ones(query_embedding.size()[0],self.num_classes+1)*(-np.inf)
-                zeros[-1] = 0 
+            if copy_dist is None:
+                # If no context always return P(norel) = 0.99 # using 1.0 causes loss to be Inf
+                probs = torch.ones(query_embedding.size()[0],query_embedding.size()[1],self.num_classes+1)*(np.log(0.01/self.num_classes))
+                probs[:,:,-1] = np.log(0.99)
+                if query_embedding.is_cuda:
+                    probs = probs.cuda()
                 return probs
             # Else return just the copy distribution
             else:
