@@ -16,7 +16,7 @@ if sys.argv[1] == 'nocopy':
     nocopy = True
 EMBEDDING_SIZE = 768
 NUM_EPOCHS = 50
-num_classes = 9
+num_classes = 31
 num_labels = 31
 BATCH_SIZE = 16
 GRAD_MAXNORM = 100
