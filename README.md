@@ -51,10 +51,10 @@ This generates train.pkl and test.pkl to be used by retrieve and edit model
 
 ### Training using copy and generate mode
 ```python 
-python python copy_model/train.py --copy --output.pt
+python python copy_model/train.py copy output.pt
 ```
 
 ### Training using generate mode
 ```python 
-python python copy_model/train.py --nocopy --output.pt
+python python copy_model/train.py nocopy output.pt
 ```
