@@ -100,8 +100,11 @@ class MultiClass(nn.Module):
 
 
 class CopyEditor(nn.Module):
-    def __init__(self, emb_dim, num_classes):
+    def __init__(self, emb_dim, num_classes, copy=True, generate=True):
         super(CopyEditor, self).__init__()
+        assert copy or generate, 'Either copy or generate must be true'
+        self.copy = copy
+        self.generate = generate
         self.emb_dim = emb_dim
         self.num_classes = num_classes
         self.attention = AttentionDist(emb_dim, num_classes)
@@ -123,17 +126,37 @@ class CopyEditor(nn.Module):
         # Batch x n x dim
         query_embedding = self.rel_embedding(query_vectors[0], \
                                              query_vectors[1])
-        gen_dist = self.multiclass(query_embedding)
-        # return gen_dist
+        
+        context_vec, copy_dist = None, None
+        if self.generate:
+            gen_dist = self.multiclass(query_embedding)
+        if self.copy:
+            # Batch x context_size x dim
+            if context_labels is not None: # if contex
+                context_embedding = self.rel_embedding(context_vectors[0], \
+                                                       context_vectors[1])
+                #Batch x n x dim, Batch x n x num_classes+1
+                context_vec, copy_dist = self.attention(query_embedding, context_embedding, \
+                                                 context_labels, mask)
 
-        # Batch x context_size x dim
-        if context_labels is not None: # if no context return just generated probability
-            context_embedding = self.rel_embedding(context_vectors[0], \
-                                                   context_vectors[1])
-            #Batch x n x dim, Batch x n x num_classes+1
-            context_vec, copy_dist = self.attention(query_embedding, context_embedding, \
-                                             context_labels, mask)
-            # log probabilities
+
+        # if generate is enabled and copy is disabled or no cotext provided
+        if self.generate and (not self.copy or copy_dist is None):
+            return gen_dist
+        #if copy is enabled but not generate 
+        elif self.copy and not self.generate:
+            # If no context provided we are stuck since we do not generate
+            # In this case always return norel
+            if copy_dist == None:
+                # If no context always return P(norel) = 1.0
+                probs = torch.ones(query_embedding.size()[0],self.num_classes+1)*(-np.inf)
+                zeros[-1] = 0 
+                return probs
+            # Else return just the copy distribution
+            else:
+                return copy_dist
+        # if both are enabled and context is available
+        else:
             copy_prob, gen_prob = self.should_copy(query_embedding, \
                                          context_vec)
             copy_prob = copy_prob.unsqueeze(-1)
@@ -143,9 +166,7 @@ class CopyEditor(nn.Module):
             log_probs = torch.stack([copy_prob + copy_dist, gen_prob +
                                      gen_dist], dim = -1)
             final_probs = torch.logsumexp(log_probs, dim = -1)
-        else:
-            final_probs = gen_dist
-        return final_probs 
+            return final_probs 
 
 
 

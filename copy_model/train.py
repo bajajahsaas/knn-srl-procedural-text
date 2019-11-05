@@ -9,24 +9,24 @@ from CopyEditor import CopyEditor
 import pickle
 import torch.optim as optim
 import sys
+from argparser import args
 
 
-nocopy=False
-if sys.argv[1] == 'nocopy':
-    nocopy = True
-MODEL_PATH = sys.argv[2]
+copy = args.copy
+generate = args.generate
+MODEL_PATH = args.model_path
 
 EMBEDDING_SIZE = 768
-NUM_EPOCHS = 50
-num_classes = 14
-num_labels = 14
-BATCH_SIZE = 16
-GRAD_MAXNORM = 100
+NUM_EPOCHS = args.epochs
+num_classes = args.classes
+num_labels = args.classes
+BATCH_SIZE = args.batch_size
+GRAD_MAXNORM = args.grad_maxnorm
 
-with open('train.pkl', 'rb') as f:
+with open(args.traindata, 'rb') as f:
     traindata = pickle.load(f)
 
-with open('val.pkl', 'rb') as f:
+with open(args.valdata, 'rb') as f:
     valdata = pickle.load(f)
 
 def get_batches(data):
@@ -42,10 +42,8 @@ def get_batches(data):
         ql = torch.from_numpy(ql).unsqueeze(0)
         if torch.isnan(torch.stack([qh,qt])).any():
             continue
-        if nocopy:
-            ch=cl=ct=mask=None
         elif type(cl) != np.ndarray:
-            mask = None
+            ch,ct,cl,mask = None, None, None, None
         else:
             ch = torch.from_numpy(ch).unsqueeze(0)
             cl = torch.from_numpy(cl).unsqueeze(0)
@@ -84,10 +82,12 @@ def accuracy(data, model):
 weights = torch.ones(num_classes+1)
 weights[-1] = 1.0/20
 loss = nn.NLLLoss(weights)
-model = CopyEditor(EMBEDDING_SIZE, num_classes)
-learning_rate = 1e-4
+model = CopyEditor(EMBEDDING_SIZE, num_classes, copy=args.copy,
+                   generate=args.generate)
+learning_rate = args.lr
+weight_decay = args.weight_decay
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate,\
-                             weight_decay=1e-4)
+                             weight_decay=weight_decay)
 
 
 
