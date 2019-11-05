@@ -42,3 +42,19 @@ This writes into train_embedding_data.pkl
 python copy_model/prepare_context.py replaced.annoy replaced_tfidf.pkl train_embedding_data.pkl
 ```
 This writes into dataset.pkl to be used for retrieve-and-edit model
+
+### Split dataset.pkl into train and test
+```python 
+python python copy_model/split_data.py dataset.pkl
+```
+This generates train.pkl and test.pkl to be used by retrieve and edit model
+
+### Training using copy and generate mode
+```python 
+python python copy_model/train.py --copy --output.pt
+```
+
+### Training using generate mode
+```python 
+python python copy_model/train.py --nocopy --output.pt
+```
