@@ -10,7 +10,6 @@ import pickle
 import torch.optim as optim
 import sys
 
-
 nocopy=False
 if sys.argv[1] == 'nocopy':
     nocopy = True
@@ -18,16 +17,12 @@ MODEL_PATH = sys.argv[2]
 
 EMBEDDING_SIZE = 768
 NUM_EPOCHS = 50
-num_classes = 14
-num_labels = 14
-BATCH_SIZE = 16
-GRAD_MAXNORM = 100
-
-with open('train.pkl', 'rb') as f:
-    traindata = pickle.load(f)
+num_classes = 31
+num_labels = 31
 
 with open('val.pkl', 'rb') as f:
     valdata = pickle.load(f)
+
 
 def get_batches(data):
     # only batch size 1 for now
@@ -89,35 +84,10 @@ learning_rate = 1e-4
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate,\
                              weight_decay=1e-4)
 
+model = CopyEditor(EMBEDDING_SIZE, num_classes)
+model.load_state_dict(torch.load(MODEL_PATH))
+model.eval()
 
 
-for epoch in range(NUM_EPOCHS):
-    print('Epoch #%d'%epoch)
-    acc1, acc2 = accuracy(valdata, model)
-    print('Accuracy on val set = %f, Accuracy excluding norel=%f'%(acc1, acc2))
-    bno = 0
-    data_gen = get_batches(traindata)
-    while(1):
-        count = 0
-        losses = []
-        for i in range(BATCH_SIZE):
-            try:
-                q, cxt, cxt_labels, q_labels, mask  = data_gen.__next__()
-                prediction = model(q,cxt,cxt_labels, mask).view(-1, num_classes+1)
-                l = loss(prediction, q_labels.view(-1))  
-                losses.append(l)
-                count += 1
-            except StopIteration:
-                break
-        if count < BATCH_SIZE:
-            break
-        mean_loss = torch.mean(torch.stack(losses))
-        optimizer.zero_grad()
-        mean_loss.backward()
-        nn.utils.clip_grad_norm_(model.parameters(), GRAD_MAXNORM)
-        optimizer.step()
-        if bno %100 == 0:
-            print('Loss after batch #%d = %f'%(bno, mean_loss.data))
-        bno+=1
-
-torch.save(model.state_dict(), MODEL_PATH)
+acc1, acc2 = accuracy(valdata, model)
+print('Accuracy on val set = %f, Accuracy excluding norel=%f'%(acc1, acc2))

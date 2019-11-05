@@ -5,7 +5,7 @@ import sys
 import os
 import torch
 from transformers import *
-
+# from biobert import tokenizer, model
 # for each sentence compute embeddings of all entities 
 
 traindata = sys.argv[1]
