@@ -35,7 +35,7 @@ This creates files original.annoy, replaced.annoy, original_tfidf.pkl and replac
 ```python 
 python copy_model/prepare_data.py wetlabs_train.json
 ```
-This writes into train_embedding_data.pkl
+This writes into train_embedding_data.pkl. Use argument (biobert) if want to generate embeddings from bioBERT
 
 ### Using pre-generated annoy, vectorizer, BERT embeddings to pre-compute nearest neighbors (for edit model)
 ```python 
