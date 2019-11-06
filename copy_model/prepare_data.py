@@ -2,18 +2,27 @@ import json
 import numpy as np
 import pickle
 import sys
-import os
 import torch
-from transformers import *
-# from biobert import tokenizer, model
+from biobert import *
+
 # for each sentence compute embeddings of all entities 
 
 traindata = sys.argv[1]
+
+usebiobert=False
+if sys.argv[2] == 'biobert':
+    usebiobert = True
+
 with open(traindata, 'r') as f:
     data = json.load(f)
 
-tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-model = BertModel.from_pretrained('bert-base-uncased')
+if usebiobert:
+    tokenizer, model = getbiobertmodel()
+else:
+    tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+    model = BertModel.from_pretrained('bert-base-uncased')
+
+# else default ones imported from biobert
 
 embedded_data = []
 
