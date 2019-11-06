@@ -71,7 +71,8 @@ def accuracy(data, model):
         all_pred = np.concatenate(all_pred, 0)
         all_target = np.concatenate(all_target, 0)
         # both of these have lengths = num_labels + 1
-
+        print('Prediction list size = ', len(list(set(all_pred))))
+        print('Target list size = ', len(list(set(all_target))))
         labels = [x for x in range(num_labels + 1)]
 
         print('Micro precision is %f' % precision_score(all_target, all_pred, labels= labels, average="micro"))
@@ -101,7 +102,7 @@ def accuracy(data, model):
 
 model = CopyEditor(EMBEDDING_SIZE, num_classes, copy=args.copy,
                    generate=args.generate)
-model.load_state_dict(torch.load(MODEL_PATH))
+model.load_state_dict(torch.load(MODEL_PATH, map_location=torch.device('cpu')))
 model.eval()
 
 acc1, acc2 = accuracy(valdata, model)
