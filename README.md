@@ -49,12 +49,18 @@ python copy_model/split_data.py dataset.pkl
 ```
 This generates train.pkl and val.pkl to be used by retrieve and edit model
 
+
 ### Training using copy and generate mode
+```python
+python copy_model/train.py --copy --generate
+```
+
+### Training using copy mode
 ```python 
-python copy_model/train.py copy output.pt
+python copy_model/train.py --copy --no-generate
 ```
 
 ### Training using generate mode
 ```python 
-python copy_model/train.py nocopy output.pt
+python copy_model/train.py --generate --no-copy
 ```
