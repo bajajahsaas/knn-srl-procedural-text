@@ -32,13 +32,13 @@ def get_annotation_map(doc):
 
         if text not in annotation_map:
             annotation_map[text] = dict()
-            annotation_map[text][entity_type] = len(entity_spans)
+            annotation_map[text][entity_type] = 1
 
         elif entity_type not in annotation_map[text]:
-            annotation_map[text][entity_type] = len(entity_spans)
+            annotation_map[text][entity_type] = 1
 
         else:
-            annotation_map[text][entity_type] +=  len(entity_spans)
+            annotation_map[text][entity_type] +=  1
     return annotation_map
 
 def get_words(annotation):
@@ -116,11 +116,11 @@ test_json = get_sentences(testdata)
 print('Corrected annotations', corrected_ann)
 print('Corrected Docs', docs_corrected_ann)
 
-# with open('wetlabs_completed_train.json', 'w') as f:
-#     json.dump(train_json, f, indent = 4)
-#
-# with open('wetlabs_completed_test.json', 'w') as f:
-#     json.dump(test_json, f, indent = 4)
+with open('wetlabs_train.json', 'w') as f:
+    json.dump(train_json, f, indent = 4)
+
+with open('wetlabs_test.json', 'w') as f:
+    json.dump(test_json, f, indent = 4)
 
 
 

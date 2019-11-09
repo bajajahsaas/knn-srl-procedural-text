@@ -33,7 +33,7 @@ This creates files original.annoy, replaced.annoy, original_tfidf.pkl and replac
 
 ### Generate embeddings of training data using BERT (or bioBERT).
 ```python 
-python copy_model/prepare_data.py wetlabs_train.json
+python copy_model/prepare_data.py wetlabs_train.json biobert
 ```
 This writes into train_embedding_data.pkl. Use argument (biobert) if want to generate embeddings from bioBERT
 
