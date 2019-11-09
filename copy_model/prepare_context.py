@@ -46,6 +46,9 @@ for s in data:
         relation_without_trailing = re.sub('\d+$','',r[2]) 
         relations.add(relation_without_trailing)
 relations = list(relations)
+with open('relations.txt', 'w') as f:
+    f.write('\n'.join(relations))
+
 print(relations)
 print(len(relations))
 relations.append('No relation')
@@ -81,7 +84,8 @@ for s in data:
         context_head, context_tail, context_label = None, None, None
 
     query_head, query_tail, query_labels = get_relations_embeddings(s)
-    
+    if query_head is None:
+        continue
     dataset.append({
                         'query_head': query_head,
                         'query_tail': query_tail,
