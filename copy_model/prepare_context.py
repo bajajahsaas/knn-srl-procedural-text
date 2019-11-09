@@ -5,6 +5,26 @@ from annoy import AnnoyIndex
 import pickle
 import re
 
+def get_relations_embeddings(s):
+    # Get all relations including no relation
+    relset = set([(a,b) for a, b, _ in s['relations']])
+    norels = []
+    if len(s['entities']) <= 1:
+        return None, None, None
+    for i in range(len(s['entities'])):
+        for j in range(len(s['entities'])):
+            if i == j or (i, j) in relset:
+                continue
+            norels.append((i,j,'No relation'))
+    all_rels = [(a,b,rel_dic[re.sub('\d+$','',c)]) for a,b,c in s['relations'] + norels]
+    head = np.stack([s['entities'][x[0]][1] for x in all_rels])
+    tail = np.stack([s['entities'][x[1]][1] for x in all_rels])
+    labels = np.stack([x[2] for x in all_rels])
+    return head, tail, labels
+
+
+
+
 annoy_file = sys.argv[1]
 vectorizer_file = sys.argv[2]
 bert_data = sys.argv[3]
@@ -46,35 +66,21 @@ for s in data:
     num_context = 0
     for nn_id in nns:
         cs = data[nn_id]
-        for h,tl,typ in cs['relations']:
-            context_head.append(cs['entities'][h][1])
-            context_tail.append(cs['entities'][tl][1])
-            context_label.append(rel_dic[re.sub('\d+$','',typ)])
+        head, tail, labels = get_relations_embeddings(cs)
+        if head is not None:
             num_context += 1
-    if num_context == 0:
-        context_head = None
-        context_tail = None
-        context_labels = None
-        # print('No context')
-        # print([data[x] for x in nns])
+            context_head.append(head)
+            context_tail.append(tail)
+            context_label.append(labels)
+    
+    if num_context > 0:
+        context_head = np.concatenate(context_head, axis=0)
+        context_tail = np.concatenate(context_tail, axis=0)
+        context_label = np.concatenate(context_label, axis = 0)
     else:
-        context_head = np.stack(context_head, axis=0)
-        context_tail = np.stack(context_tail, axis=0)
-        context_labels = np.asarray(context_label)
-        # print('Context')
-    relset = set([(a,b) for a, b, _ in s['relations']])
-    norels = []
-    for i in range(len(s['entities'])):
-        for j in range(len(s['entities'])):
-            if i == j or (i, j) in relset:
-                continue
-            norels.append((i,j,'No relation'))
-    all_rels = [(a,b,rel_dic[re.sub('\d+$','',c)]) for a,b,c in s['relations'] + norels]
-    if len(all_rels) == 0:
-        continue
-    query_head = np.stack([s['entities'][x[0]][1] for x in all_rels])
-    query_tail = np.stack([s['entities'][x[1]][1] for x in all_rels])
-    query_labels = np.stack([x[2] for x in all_rels])
+        context_head, context_tail, context_label = None, None, None
+
+    query_head, query_tail, query_labels = get_relations_embeddings(s)
     
     dataset.append({
                         'query_head': query_head,
@@ -82,7 +88,7 @@ for s in data:
                         'query_labels': query_labels,
                         'context_head' : context_head,
                         'context_tail' : context_tail,
-                        'context_labels' : context_labels
+                        'context_labels' : context_label
                     })
 
 with open('dataset.pkl', 'wb') as f:
