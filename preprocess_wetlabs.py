@@ -22,7 +22,7 @@ def get_words(annotation):
 
 def preprocess_linktype(linktype):
     # remove trailing numbers
-    return re.sub('\d+$','',c)
+    return re.sub('\d+$','',linktype)
 
 def get_sentences(directory):
     r = RepoModel(directory)

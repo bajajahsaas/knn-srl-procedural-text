@@ -17,10 +17,12 @@ def get_relations_embeddings(s):
                 continue
             norels.append((i,j,'No relation'))
     all_rels = [(a,b,rel_dic[re.sub('\d+$','',c)]) for a,b,c in s['relations'] + norels]
-    head = np.stack([s['entities'][x[0]][1] for x in all_rels])
-    tail = np.stack([s['entities'][x[1]][1] for x in all_rels])
+    head = np.stack([s['entities'][x[0]][2] for x in all_rels])
+    head_type = np.stack([ent_dic[s['entities'][x[0]][1]] for x in all_rels])
+    tail = np.stack([s['entities'][x[1]][2] for x in all_rels])
+    tail_type = np.stack([ent_dic[s['entities'][x[1]][1]] for x in all_rels])
     labels = np.stack([x[2] for x in all_rels])
-    return head, tail, labels
+    return head, head_type, tail, tail_type, labels
 
 
 
@@ -28,9 +30,13 @@ def get_relations_embeddings(s):
 annoy_file = sys.argv[1]
 vectorizer_file = sys.argv[2]
 bert_data = sys.argv[3]
+bert_data_target = sys.argv[4]
 
 with open(bert_data, 'rb') as f:
-    data = pickle.load(f)
+    data_src = pickle.load(f)
+
+with open(bert_data_target, 'rb') as f:
+    data_tgt = pickle.load(f)
 
 with open(vectorizer_file, 'rb') as f:
     vect = pickle.load(f)
@@ -40,60 +46,87 @@ t.load(annoy_file)
 K = 5 # 5 nearest neighbors
 
 relations = set()
-for s in data:
+entity_types = set()
+for s in data_src:
     for r in s['relations']:
         # print(r)
         relation_without_trailing = re.sub('\d+$','',r[2]) 
         relations.add(relation_without_trailing)
+    for e in s['entities']:
+        entity_types.add(e[1])
+
+
 relations = list(relations)
 with open('relations.txt', 'w') as f:
     f.write('\n'.join(relations))
-
 print(relations)
 print(len(relations))
 relations.append('No relation')
 rel_dic = {r:i for i, r in enumerate(relations)}
 
+entity_types = list(entity_types)
+with open('entity_types.txt', 'w') as f:
+    f.write('\n'.join(entity_types))
+print(entity_types)
+print(len(entity_types))
+ent_dic = {e:i for i, e in enumerate(entity_types)}
+
 
 dataset = []
 cnt = 0
-for s in data:
+for s in data_tgt:
     print('%d / %d done'%(cnt, len(data)))
     cnt += 1
     vector = vect.transform([s['replaced']]).toarray()[0]
-    nns = t.get_nns_by_vector(vector, K+1)[1:] #1st one will be the same
+    if bert_data == bert_data_target: # on training data, we are bound to find
+                                      # same sentence, so we exclude the top
+                                      # match
+        nns = t.get_nns_by_vector(vector, K+1)[1:] #1st one will be the same
                                                 # sentence
+    else: # on held out data, we needn't exclude the top match
+        nns = t.get_nns_by_vector(vector, K+1) 
+
     context_head = []
+    context_head_type = []
     context_tail = []
+    context_tail_type = []
     context_label = []
     num_context = 0
     for nn_id in nns:
-        cs = data[nn_id]
-        head, tail, labels = get_relations_embeddings(cs)
+        cs = data_src[nn_id]
+        head, head_type, tail, tail_type, labels = get_relations_embeddings(cs)
         if head is not None:
             num_context += 1
             context_head.append(head)
             context_tail.append(tail)
             context_label.append(labels)
+            context_head_type.append(head_type)
+            context_tail_type.append(tail_type)
     
     if num_context > 0:
         context_head = np.concatenate(context_head, axis=0)
         context_tail = np.concatenate(context_tail, axis=0)
         context_label = np.concatenate(context_label, axis = 0)
+        context_head_type = np.concatenate(context_head_type, axis = 0)
+        context_tail_type = np.concatenate(context_tail_type, axis = 0)
     else:
-        context_head, context_tail, context_label = None, None, None
+        context_head, context_head_type, context_tail, context_tail_type, context_label = None, None, None
 
-    query_head, query_tail, query_labels = get_relations_embeddings(s)
+    query_head, query_head_type, query_tail, query_tail_type, query_labels = get_relations_embeddings(s)
     if query_head is None:
         continue
     dataset.append({
                         'query_head': query_head,
+                        'query_head_type': query_head_type,
                         'query_tail': query_tail,
+                        'query_tail_type': query_tail_type,
                         'query_labels': query_labels,
                         'context_head' : context_head,
+                        'context_head_type': context_head_type,
                         'context_tail' : context_tail,
+                        'context_tail_type': context_tail_type,
                         'context_labels' : context_label
                     })
 
-with open('dataset.pkl', 'wb') as f:
+with open(sys.argv[5], 'wb') as f:
     pickle.dump(dataset, f)

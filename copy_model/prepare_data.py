@@ -36,13 +36,13 @@ count = 0
 for sent in data:
     print('%d / %d done'%(count, len(data)))
     count += 1
-    all_entities = list(set([r['head']['text'] for r in \
-                         sent['relations']]+[r['tail']['text'] \
+    all_entities = list(set([(r['head']['text'], r['head']['type']) for r in \
+                         sent['relations']]+[(r['tail']['text'],r['tail']['type']) \
                                                         for r in sent['relations']]))
-    entities = [x for x in all_entities if x in sent['sentence']]
+    entities = [x for x in all_entities if x[0] in sent['sentence']]
     entity_dic = {e:i for i, e in enumerate(entities)}
     sent_text = sent['sentence']
-    bert_tokens_entities = [tokenizer.encode(e, add_special_tokens=False) for e in entities]
+    bert_tokens_entities = [tokenizer.encode(e[0], add_special_tokens=False) for e in entities]
     bert_tokens_sentence = tokenizer.encode(sent_text, add_special_tokens=True)
     entity_spans = []
     filtered_entities = []
@@ -66,9 +66,13 @@ for sent in data:
         if x['head']['text'] in entity_dic and x['tail']['text'] in entity_dic:
             relations.append((entity_dic[x['head']['text']], entity_dic[x['tail']['text']],\
                     x['relation_type']))
-    embedded_data.append({'entities': list(zip(entities, entity_embeddings)),
+    if len(entities) == 0:
+        entity_text, entity_type = [], []
+    else:
+        entity_text, entity_type = zip(*entities)
+    embedded_data.append({'entities': list(zip(entity_text, entity_type, entity_embeddings)),
                           'relations' : relations, 'sentence' :
                           sent['sentence'], 'replaced' : sent['replaced']})
 
-with open('train_embedding_data.pkl', 'wb') as f:
+with open(sys.argv[3], 'wb') as f:
     pickle.dump(embedded_data, f)
