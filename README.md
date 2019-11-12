@@ -49,7 +49,7 @@ This computes nearest neighbors in the training set for each sentence in the tra
 
 ### Training using copy and generate mode
 ```python
-python copy_model/train.py &mdash copy \--generate --traindata PATH/TO/train.pkl --valdata PATH/TO/val.pkl --modelpath OUTPUTDIR/model.pt
+python copy_model/train.py --copy \--generate --traindata PATH/TO/train.pkl --valdata PATH/TO/val.pkl --modelpath OUTPUTDIR/model.pt
 ```
 
 ### Training using copy mode
