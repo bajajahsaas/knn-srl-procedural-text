@@ -17,27 +17,43 @@ num_labels = args.classes
 with open(args.valdata, 'rb') as f:
     valdata = pickle.load(f)
 
+relations = ['Measure-Type-Link',
+             'Of-Type',
+             'Coreference-Link',
+             'Count',
+             'Or',
+             'Using',
+             'Acts-on',
+             'Meronym',
+             'Site',
+             'Setting',
+             'Mod-Link',
+             'Measure',
+             'Creates',
+             'Misc-Link',
+             'No-Rel']
+
 
 def get_batches(data):
     # only batch size 1 for now
     perm = np.random.permutation(len(data))
     for x in perm:
         datum = data[x]
-        qh, qt, ql, ch, ct, cl = datum['query_head'], datum['query_tail'],\
-                        datum['query_labels'], datum['context_head'], \
-                        datum['context_tail'], datum['context_labels']
+        qh, qt, ql, ch, ct, cl = datum['query_head'], datum['query_tail'], \
+                                 datum['query_labels'], datum['context_head'], \
+                                 datum['context_tail'], datum['context_labels']
         qh = torch.from_numpy(qh).unsqueeze(0)
         qt = torch.from_numpy(qt).unsqueeze(0)
         ql = torch.from_numpy(ql).unsqueeze(0)
-        if torch.isnan(torch.stack([qh,qt])).any():
+        if torch.isnan(torch.stack([qh, qt])).any():
             continue
         elif type(cl) != np.ndarray:
-            ch,ct,cl,mask = None, None, None, None
+            ch, ct, cl, mask = None, None, None, None
         else:
             ch = torch.from_numpy(ch).unsqueeze(0)
             cl = torch.from_numpy(cl).unsqueeze(0)
             ct = torch.from_numpy(ct).unsqueeze(0)
-            if torch.isnan(torch.stack([ch,ct])).any():
+            if torch.isnan(torch.stack([ch, ct])).any():
                 continue
             mask = torch.from_numpy(np.ones_like(cl))
         if args.gpu:
@@ -55,8 +71,14 @@ def get_batches(data):
 
 def accuracy(data, model):
     with torch.no_grad():
+        labels = [x for x in range(num_labels)]  # All possible output labels for multiclass problem
+
         all_pred = []
         all_target = []
+        precision_sentences = []
+        recall_sentences = []
+        f1_sentences = []
+
         for q, cxt, cxt_labels, q_labels, mask in get_batches(data):
             pred = torch.argmax(model(q, cxt, cxt_labels, mask), \
                                 dim=-1).view(-1)
@@ -64,28 +86,46 @@ def accuracy(data, model):
             this_target = q_labels.view(-1).data.detach().numpy().copy()
             this_pred = pred.data.detach().numpy().copy()
 
+            precision_sentences.append(precision_score(this_target, this_pred, labels=labels, average="micro"))
+            recall_sentences.append(recall_score(this_target, this_pred, labels=labels, average="micro"))
+            f1_sentences.append(f1_score(this_target, this_pred, labels=labels, average="micro"))
+
             all_target.append(this_target)
             all_pred.append(this_pred)
-
 
         all_pred = np.concatenate(all_pred, 0)
         all_target = np.concatenate(all_target, 0)
         # both of these have lengths = num_labels + 1
         print('Prediction list size = ', len(list(set(all_pred))))
         print('Target list size = ', len(list(set(all_target))))
-        labels = [x for x in range(num_labels + 1)]
 
-        print('Micro precision is %f' % precision_score(all_target, all_pred, labels= labels, average="micro"))
-        print('Macro precision is %f' % precision_score(all_target, all_pred, labels= labels, average="macro"))
-        print('Per class precision is\n', precision_score(all_target, all_pred, labels= labels, average=None))
+        print('Micro precision is %f' % precision_score(all_target, all_pred, labels=labels, average="micro"))
+        print('Macro precision is %f' % precision_score(all_target, all_pred, labels=labels, average="macro"))
+        precisionlist = precision_score(all_target, all_pred, labels=labels, average=None)
+        # print('Macro precision excluding no rel', np.mean(precisionlist[:len(precisionlist) - 1]))
+
+        # print('Per class precision is')
+        # for rel, precision in zip(relations, precisionlist):
+        #     print(rel, precision)
 
         print('Micro recall is %f' % recall_score(all_target, all_pred, labels=labels, average="micro"))
         print('Macro recall is %f' % recall_score(all_target, all_pred, labels=labels, average="macro"))
-        print('Per class recall is\n', recall_score(all_target, all_pred, labels=labels, average=None))
+
+        recalllist = recall_score(all_target, all_pred, labels=labels, average=None)
+        # print('Macro recall excluding no rel', np.mean(recalllist[:len(recalllist) - 1]))
+
+        # print('Per class recall is')
+        # for rel, recall in zip(relations, recalllist):
+        #     print(rel, recall)
 
         print('Micro F1 score is %f' % f1_score(all_target, all_pred, labels=labels, average="micro"))
         print('Macro F1 score is %f' % f1_score(all_target, all_pred, labels=labels, average="macro"))
-        print('Per class F1 score is\n', f1_score(all_target, all_pred, labels=labels, average=None))
+        f1list = f1_score(all_target, all_pred, labels=labels, average=None)
+        # print('Macro f1 excluding no rel', np.mean(f1list[:len(f1list) - 1]))
+
+        # print('Per class F1 score is')
+        # for rel, f1 in zip(relations, f1list):
+        #     print(rel, f1)
 
         # for i in range(num_classes+1):
         #     print('%d %d %d'%(i, np.sum(np.equal(all_target, i)),\
@@ -94,9 +134,13 @@ def accuracy(data, model):
         # value = num_label means "no-rel"
         existing_relations = np.not_equal(all_target, num_labels)
         total_accuracy = np.mean(np.equal(all_pred, all_target))
-        num_rel_correct = np.sum(existing_relations * np.equal(all_target, \
-                                                               all_pred))
+        num_rel_correct = np.sum(existing_relations * np.equal(all_target, all_pred))
         accuracy_existing_relations = num_rel_correct / np.sum(existing_relations)
+
+        print('Macro Average Precision on Sentences', np.mean(precision_sentences))
+        print('Macro Average Recall on Sentences', np.mean(recall_sentences))
+        print('Macro Average F1 on Sentences', np.mean(f1_sentences))
+
         return total_accuracy, accuracy_existing_relations
 
 
