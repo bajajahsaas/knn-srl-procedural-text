@@ -1,20 +1,25 @@
 # Learning-to-understand-scientific-experiments
 
-## Crawling
+### Crawling
 ```
 python crawl.py
 ```
 
 
-## Nearest neighbors in tf-idf space
+### Nearest neighbors in tf-idf space
 ```python 
 python build_index.py
 python test_nn.py replaced_tfidf.pkl replaced.annoy replaced_sentences.txt original_sentences.txt
 ```
-## Test upper bound performance
+### Test upper bound performance
 ```python 
 python test_upperbound.py
 python uppperbound_recall.py
+```
+
+## Majority Class prediction
+```python
+ppython majority_class.py wetlabs_train.json wetlabs_val.json
 ```
 
 ## Retrieve and Edit Model
