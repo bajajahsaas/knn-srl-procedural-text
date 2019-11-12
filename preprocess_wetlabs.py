@@ -10,22 +10,24 @@ import pickle
 from annoy import AnnoyIndex
 from sklearn.feature_extraction.text import TfidfVectorizer
 from bratreader.repomodel import RepoModel
-r = RepoModel('wlpdata')
 
-print('Preprocessing')
+train = 'WLP-Dataset/train'
+test = 'WLP-Dataset/test'
+val = 'WLP-Dataset/dev'
 
-documents = list(r.documents.keys())
-random.shuffle(documents)
-trainlen = int(len(documents) * 0.8)
-traindata = documents[:trainlen]
-testdata = documents[trainlen:]
+# r = RepoModel('wlpdata')
 
 def get_words(annotation):
     return ' '.join([x.form for x in annotation.words])
 
-def get_sentences(docs):
+def preprocess_linktype(linktype):
+    # remove trailing numbers
+    return re.sub('\d+$','',c)
+
+def get_sentences(directory):
+    r = RepoModel(directory)
     all_docs = []
-    for fil in docs:
+    for fil in r.documents:
         doc = r.documents[fil]
         sentinfo = []
         for s in doc.sentences:
@@ -57,13 +59,14 @@ def get_sentences(docs):
                                                'type': \
                                                list(tail.labels.keys())[0],
                                                'spans': tail.spans},
-                                      'relation_type': linktype})
+                                      'relation_type': preprocess_linktype(linktype)})
         all_docs.extend(sentinfo)
     return all_docs
 
 
-train_json = get_sentences(traindata)
-test_json = get_sentences(testdata)
+train_json = get_sentences(train)
+test_json = get_sentences(test)
+val_json = get_sentences(val)
 
 
 with open('wetlabs_train.json', 'w') as f:
@@ -72,3 +75,5 @@ with open('wetlabs_train.json', 'w') as f:
 with open('wetlabs_test.json', 'w') as f:
     json.dump(test_json, f, indent = 4)
 
+with open('wetlabs_val.json', 'w') as f:
+    json.dump(val_json, f, indent = 4)
