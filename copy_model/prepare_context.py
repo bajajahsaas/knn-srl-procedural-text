@@ -10,7 +10,7 @@ def get_relations_embeddings(s):
     relset = set([(a,b) for a, b, _ in s['relations']])
     norels = []
     if len(s['entities']) <= 1:
-        return None, None, None
+        return None, None, None, None, None
     for i in range(len(s['entities'])):
         for j in range(len(s['entities'])):
             if i == j or (i, j) in relset:
@@ -45,28 +45,32 @@ t = AnnoyIndex(len(vect.get_feature_names()), 'angular')
 t.load(annoy_file)
 K = 5 # 5 nearest neighbors
 
-relations = set()
-entity_types = set()
-for s in data_src:
-    for r in s['relations']:
-        # print(r)
-        relation_without_trailing = re.sub('\d+$','',r[2]) 
-        relations.add(relation_without_trailing)
-    for e in s['entities']:
-        entity_types.add(e[1])
 
-
-relations = list(relations)
-with open('relations.txt', 'w') as f:
-    f.write('\n'.join(relations))
+if os.path.exists('relations.txt') and os.path.exists('entity_types.txt'):
+    with open('relations.txt', 'r') as f:
+        relations = f.read().splitlines()
+    with open('entity_types.txt', 'r') as f:
+        entity_types = f.read().splitlines()
+else:
+    relations = set()
+    entity_types = set()
+    for s in data_src:
+        for r in s['relations']:
+            print(r)
+            relation_without_trailing = re.sub('\d+$','',r[2]) 
+            relations.add(relation_without_trailing)
+        for e in s['entities']:
+            entity_types.add(e[1])
+    relations = list(relations)
+    entity_types = list(entity_types)
+    with open('relations.txt', 'w') as f:
+        f.write('\n'.join(relations))
+    with open('entity_types.txt', 'w') as f:
+        f.write('\n'.join(entity_types))
 print(relations)
 print(len(relations))
 relations.append('No relation')
 rel_dic = {r:i for i, r in enumerate(relations)}
-
-entity_types = list(entity_types)
-with open('entity_types.txt', 'w') as f:
-    f.write('\n'.join(entity_types))
 print(entity_types)
 print(len(entity_types))
 ent_dic = {e:i for i, e in enumerate(entity_types)}
@@ -75,7 +79,7 @@ ent_dic = {e:i for i, e in enumerate(entity_types)}
 dataset = []
 cnt = 0
 for s in data_tgt:
-    print('%d / %d done'%(cnt, len(data)))
+    print('%d / %d done'%(cnt, len(data_tgt)))
     cnt += 1
     vector = vect.transform([s['replaced']]).toarray()[0]
     if bert_data == bert_data_target: # on training data, we are bound to find
@@ -110,7 +114,8 @@ for s in data_tgt:
         context_head_type = np.concatenate(context_head_type, axis = 0)
         context_tail_type = np.concatenate(context_tail_type, axis = 0)
     else:
-        context_head, context_head_type, context_tail, context_tail_type, context_label = None, None, None
+        context_head, context_head_type, context_tail, context_tail_type, \
+                context_label = None, None, None, None, None
 
     query_head, query_head_type, query_tail, query_tail_type, query_labels = get_relations_embeddings(s)
     if query_head is None:

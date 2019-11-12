@@ -63,9 +63,10 @@ for sent in data:
                             start, end in entity_spans]
     relations = []
     for x in sent['relations']:
-        if x['head']['text'] in entity_dic and x['tail']['text'] in entity_dic:
-            relations.append((entity_dic[x['head']['text']], entity_dic[x['tail']['text']],\
-                    x['relation_type']))
+        if (x['head']['text'], x['head']['type']) in entity_dic and (x['tail']['text'], x['tail']['type']) in entity_dic:
+            relations.append((entity_dic[(x['head']['text'], x['head']['type'])],\
+                              entity_dic[(x['tail']['text'], x['tail']['type'])], \
+                                x['relation_type']))
     if len(entities) == 0:
         entity_text, entity_type = [], []
     else:
