@@ -10,7 +10,7 @@ import pickle
 import torch.optim as optim
 import sys
 from argparser import args
-
+from matplotlib.pyplot import plot
 
 copy = args.copy
 generate = args.generate
@@ -104,8 +104,9 @@ weight_decay = args.weight_decay
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate,\
                              weight_decay=weight_decay)
 
-
+loss_to_plot = []
 for epoch in range(NUM_EPOCHS):
+    epoch_loss = 0.0
     print('Epoch #%d'%epoch)
     acc1, acc2 = accuracy(valdata, model)
     print('Accuracy on val set = %f, Accuracy excluding norel=%f'%(acc1, acc2))
@@ -140,6 +141,11 @@ for epoch in range(NUM_EPOCHS):
 
         if bno %100 == 0:
             print('Loss after batch #%d = %f'%(bno, mean_loss.data))
+
+        epoch_loss += mean_loss.data*BATCH_SIZE
         bno+=1
 
+    loss_to_plot.append(epoch_loss/len(traindata))
+
+plot(loss_to_plot)
 torch.save(model.state_dict(), MODEL_PATH)

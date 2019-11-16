@@ -99,8 +99,9 @@ def accuracy(data, model):
         print('Prediction list size = ', len(list(set(all_pred))))
         print('Target list size = ', len(list(set(all_target))))
 
-        print('Micro precision is %f' % precision_score(all_target, all_pred, labels=labels, average="micro"))
-        print('Macro precision is %f' % precision_score(all_target, all_pred, labels=labels, average="macro"))
+        print('Micro precision is ', str(round(precision_score(all_target, all_pred, labels=labels, average="micro"), 2)))
+        print('Macro precision is ', str(round(precision_score(all_target, all_pred, labels=labels, average="macro"), 2)))
+
         precisionlist = precision_score(all_target, all_pred, labels=labels, average=None)
         # print('Macro precision excluding no rel', np.mean(precisionlist[:len(precisionlist) - 1]))
 
@@ -108,8 +109,8 @@ def accuracy(data, model):
         # for rel, precision in zip(relations, precisionlist):
         #     print(rel, precision)
 
-        print('Micro recall is %f' % recall_score(all_target, all_pred, labels=labels, average="micro"))
-        print('Macro recall is %f' % recall_score(all_target, all_pred, labels=labels, average="macro"))
+        print('Micro recall is ', str(round(recall_score(all_target, all_pred, labels=labels, average="micro"),2)))
+        print('Macro recall is ', str(round(recall_score(all_target, all_pred, labels=labels, average="macro"),2)))
 
         recalllist = recall_score(all_target, all_pred, labels=labels, average=None)
         # print('Macro recall excluding no rel', np.mean(recalllist[:len(recalllist) - 1]))
@@ -118,8 +119,9 @@ def accuracy(data, model):
         # for rel, recall in zip(relations, recalllist):
         #     print(rel, recall)
 
-        print('Micro F1 score is %f' % f1_score(all_target, all_pred, labels=labels, average="micro"))
-        print('Macro F1 score is %f' % f1_score(all_target, all_pred, labels=labels, average="macro"))
+        print('Micro F1 score is ', str(round(f1_score(all_target, all_pred, labels=labels, average="micro"), 2)))
+        print('Macro F1 score is ', str(round(f1_score(all_target, all_pred, labels=labels, average="macro"), 2)))
+
         f1list = f1_score(all_target, all_pred, labels=labels, average=None)
         # print('Macro f1 excluding no rel', np.mean(f1list[:len(f1list) - 1]))
 
@@ -137,9 +139,9 @@ def accuracy(data, model):
         num_rel_correct = np.sum(existing_relations * np.equal(all_target, all_pred))
         accuracy_existing_relations = num_rel_correct / np.sum(existing_relations)
 
-        print('Macro Average Precision on Sentences', np.mean(precision_sentences))
-        print('Macro Average Recall on Sentences', np.mean(recall_sentences))
-        print('Macro Average F1 on Sentences', np.mean(f1_sentences))
+        print('Macro Average Precision on Sentences ', str(round(np.mean(precision_sentences),2)))
+        print('Macro Average Recall on Sentences ', str(round(np.mean(recall_sentences),2)))
+        print('Macro Average F1 on Sentences ', str(round(np.mean(f1_sentences),2)))
 
         return total_accuracy, accuracy_existing_relations
 
@@ -150,4 +152,4 @@ model.load_state_dict(torch.load(MODEL_PATH, map_location=torch.device('cpu')))
 model.eval()
 
 acc1, acc2 = accuracy(valdata, model)
-print('Accuracy on val set = %f, Accuracy excluding norel=%f' % (acc1, acc2))
+print('Accuracy on val set = ', str(round(acc1, 2)), 'Accuracy excluding norel ', str(round(acc2,2)))
