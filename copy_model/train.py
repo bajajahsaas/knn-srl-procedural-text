@@ -10,7 +10,7 @@ import pickle
 import torch.optim as optim
 import sys
 from argparser import args
-from matplotlib.pyplot import plot
+import matplotlib.pyplot as plt
 
 copy = args.copy
 generate = args.generate
@@ -147,5 +147,6 @@ for epoch in range(NUM_EPOCHS):
 
     loss_to_plot.append(epoch_loss/len(traindata))
 
-plot(loss_to_plot)
+plt.plot(loss_to_plot)
+plt.savefig("logs/loss_plot.png")
 torch.save(model.state_dict(), MODEL_PATH)
