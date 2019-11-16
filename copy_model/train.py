@@ -29,6 +29,19 @@ with open(args.traindata, 'rb') as f:
 with open(args.valdata, 'rb') as f:
     valdata = pickle.load(f)
 
+weights = torch.ones(num_classes+1)
+weights[-1] = 1.0/20
+if args.gpu:
+    weights = weights.cuda()
+loss = nn.NLLLoss(weights)
+model = CopyEditor(EMBEDDING_SIZE, num_classes, copy=args.copy,
+                   generate=args.generate)
+if args.gpu:
+        model = model.cuda()
+learning_rate = args.lr
+weight_decay = args.weight_decay
+optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate,\
+                             weight_decay=weight_decay)
 
 def get_batches(data):
     # only batch size 1 for now
@@ -69,14 +82,18 @@ def accuracy(data, model):
     with torch.no_grad():
         all_pred = []
         all_target = []
+        losses = []
         for q, cxt, cxt_labels, q_labels, mask  in get_batches(data):
             pred = torch.argmax(model(q, cxt, cxt_labels, mask), \
                                 dim=-1).view(-1)
             all_target.append(q_labels.view(-1).data.detach().cpu().numpy().copy())
             all_pred.append(pred.data.detach().cpu().numpy().copy())
+            valloss = loss(pred, q_labels.view(-1))
+            losses.append(valloss)
 
         all_pred = np.concatenate(all_pred, 0)
         all_target = np.concatenate(all_target, 0)
+        mean_valloss = torch.mean(torch.stack(losses))
 
         for i in range(num_classes+1):
             print('%d %d %d'%(i, np.sum(np.equal(all_target, i)),\
@@ -87,28 +104,16 @@ def accuracy(data, model):
         num_rel_correct = np.sum(existing_relations * np.equal(all_target,\
                                     all_pred))
         accuracy_existing_relations = num_rel_correct/np.sum(existing_relations)
-        return total_accuracy, accuracy_existing_relations
+        return total_accuracy, accuracy_existing_relations, mean_valloss
 
-
-weights = torch.ones(num_classes+1)
-weights[-1] = 1.0/20
-if args.gpu:
-    weights = weights.cuda()
-loss = nn.NLLLoss(weights)
-model = CopyEditor(EMBEDDING_SIZE, num_classes, copy=args.copy,
-                   generate=args.generate)
-if args.gpu:
-        model = model.cuda()
-learning_rate = args.lr
-weight_decay = args.weight_decay
-optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate,\
-                             weight_decay=weight_decay)
 
 loss_to_plot = []
+val_loss_to_plot = []
 for epoch in range(NUM_EPOCHS):
     epoch_loss = 0.0
     print('Epoch #%d'%epoch)
-    acc1, acc2 = accuracy(valdata, model)
+    acc1, acc2, valloss = accuracy(valdata, model)
+    val_loss_to_plot.append(valloss)
     print('Accuracy on val set = %f, Accuracy excluding norel=%f'%(acc1, acc2))
     bno = 0
     data_gen = get_batches(traindata)
@@ -148,5 +153,12 @@ for epoch in range(NUM_EPOCHS):
     loss_to_plot.append(epoch_loss/len(traindata))
 
 plt.plot(loss_to_plot)
-plt.savefig("logs/loss_plot.png")
+plt.xlabel('Epochs')
+plt.ylabel('Training Loss')
+plt.savefig("logs/trainloss_plot.png")
+
+plt.plot(val_loss_to_plot)
+plt.xlabel('Epochs')
+plt.ylabel('Validation Loss')
+plt.savefig("logs/valloss_plot.png")
 torch.save(model.state_dict(), MODEL_PATH)
