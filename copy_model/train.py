@@ -12,6 +12,7 @@ import torch.optim as optim
 import sys
 from argparser import args
 import matplotlib.pyplot as plt
+from pytorchtools import EarlyStopping
 
 copy = args.copy
 generate = args.generate
@@ -43,6 +44,7 @@ learning_rate = args.lr
 weight_decay = args.weight_decay
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate,\
                              weight_decay=weight_decay)
+early_stopping = EarlyStopping(patience=20, verbose=True)
 
 def get_batches(data):
     # only batch size 1 for now
@@ -80,6 +82,7 @@ def get_batches(data):
 
 
 def accuracy(data, model):
+    model.eval()
     with torch.no_grad():
         all_pred = []
         all_target = []
@@ -108,7 +111,7 @@ def accuracy(data, model):
                                     all_pred))
         accuracy_existing_relations = num_rel_correct/np.sum(existing_relations)
         labels = [x for x in range(num_labels)]  # All possible output labels for multiclass problem
-        f1 = round(f1_score(all_target, all_pred, labels=labels, average="micro"), 2)
+        f1 = f1_score(all_target, all_pred, labels=labels, average="micro")
         return total_accuracy, accuracy_existing_relations, mean_valloss, f1
 
 
@@ -119,6 +122,7 @@ for epoch in range(NUM_EPOCHS):
     epoch_loss = 0.0
     print('Epoch #%d'%epoch)
     acc1, acc2, valloss, f1score = accuracy(valdata, model)
+    model.train()
     val_loss_to_plot.append(valloss)
     f1_to_plot.append(f1score)
     print('Accuracy on val set = %f, Accuracy excluding norel=%f'%(acc1, acc2))
@@ -159,16 +163,25 @@ for epoch in range(NUM_EPOCHS):
 
     loss_to_plot.append(epoch_loss/len(traindata))
 
+    early_stopping(valloss, model)
+
+    if early_stopping.early_stop:
+        print("Early stopping")
+        break
+
+model.load_state_dict(torch.load('checkpoint.pt'))
 torch.save(model.state_dict(), MODEL_PATH)
 
 plt.subplot(2, 1, 1)
 plt.plot(loss_to_plot, 'b', label='Training Loss')
 plt.plot(val_loss_to_plot, 'r', label='Validation Loss')
+plt.legend()
 plt.xlabel('Epochs')
 plt.ylabel('Loss')
 
 plt.subplot(2, 1, 2)
 plt.plot(f1_to_plot, 'o', label='Validation F1 score')
+plt.legend()
 plt.xlabel('Epochs')
 plt.ylabel('F1 Score')
 
