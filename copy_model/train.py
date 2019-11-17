@@ -3,6 +3,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
+from sklearn.metrics import f1_score
 from torch import autograd
 from torch.utils.data import TensorDataset
 from CopyEditor import CopyEditor
@@ -106,16 +107,20 @@ def accuracy(data, model):
         num_rel_correct = np.sum(existing_relations * np.equal(all_target,\
                                     all_pred))
         accuracy_existing_relations = num_rel_correct/np.sum(existing_relations)
-        return total_accuracy, accuracy_existing_relations, mean_valloss
+        labels = [x for x in range(num_labels)]  # All possible output labels for multiclass problem
+        f1 = round(f1_score(all_target, all_pred, labels=labels, average="micro"), 2)
+        return total_accuracy, accuracy_existing_relations, mean_valloss, f1
 
 
 loss_to_plot = []
 val_loss_to_plot = []
+f1_to_plot = []
 for epoch in range(NUM_EPOCHS):
     epoch_loss = 0.0
     print('Epoch #%d'%epoch)
-    acc1, acc2, valloss = accuracy(valdata, model)
+    acc1, acc2, valloss, f1score = accuracy(valdata, model)
     val_loss_to_plot.append(valloss)
+    f1_to_plot.append(f1score)
     print('Accuracy on val set = %f, Accuracy excluding norel=%f'%(acc1, acc2))
     bno = 0
     data_gen = get_batches(traindata)
@@ -154,13 +159,18 @@ for epoch in range(NUM_EPOCHS):
 
     loss_to_plot.append(epoch_loss/len(traindata))
 
-plt.plot(loss_to_plot)
-plt.xlabel('Epochs')
-plt.ylabel('Training Loss')
-plt.savefig("logs/trainloss_plot.png")
-
-plt.plot(val_loss_to_plot)
-plt.xlabel('Epochs')
-plt.ylabel('Validation Loss')
-plt.savefig("logs/valloss_plot.png")
 torch.save(model.state_dict(), MODEL_PATH)
+
+plt.subplot(2, 1, 1)
+plt.plot(loss_to_plot, 'b', label='Training Loss')
+plt.plot(val_loss_to_plot, 'r', label='Validation Loss')
+plt.xlabel('Epochs')
+plt.ylabel('Loss')
+
+plt.subplot(2, 1, 2)
+plt.plot(f1_to_plot, 'o', label='Validation F1 score')
+plt.xlabel('Epochs')
+plt.ylabel('F1 Score')
+
+plt.savefig("logs/loss_plot.png")
+
