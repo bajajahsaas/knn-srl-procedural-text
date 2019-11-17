@@ -13,10 +13,12 @@ import sys
 from argparser import args
 import matplotlib.pyplot as plt
 from pytorchtools import EarlyStopping
+import os
 
 copy = args.copy
 generate = args.generate
 MODEL_PATH = args.model_path
+PLOT_PATH = args.plot_path
 
 EMBEDDING_SIZE = 768
 NUM_EPOCHS = args.epochs
@@ -24,6 +26,10 @@ num_classes = args.classes
 num_labels = args.classes
 BATCH_SIZE = args.batch_size
 GRAD_MAXNORM = args.grad_maxnorm
+
+# Creates folder for all logs (incl plots)
+if not os.path.exists(PLOT_PATH):
+    os.makedirs(PLOT_PATH)
 
 with open(args.traindata, 'rb') as f:
     traindata = pickle.load(f)
@@ -185,5 +191,5 @@ plt.legend()
 plt.xlabel('Epochs')
 plt.ylabel('F1 Score')
 
-plt.savefig("logs/loss_plot.png")
+plt.savefig(PLOT_PATH + "/loss_plot.png")
 
