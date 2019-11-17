@@ -84,11 +84,13 @@ def accuracy(data, model):
         all_target = []
         losses = []
         for q, cxt, cxt_labels, q_labels, mask  in get_batches(data):
-            pred = torch.argmax(model(q, cxt, cxt_labels, mask), \
-                                dim=-1).view(-1)
+            model_pred = model(q, cxt, cxt_labels, mask)
+            pred = torch.argmax(model_pred, dim=-1).view(-1)
             all_target.append(q_labels.view(-1).data.detach().cpu().numpy().copy())
             all_pred.append(pred.data.detach().cpu().numpy().copy())
-            valloss = loss(pred, q_labels.view(-1))
+
+            log_prob = model_pred.view(-1, num_classes + 1)
+            valloss = loss(log_prob, q_labels.view(-1))
             losses.append(valloss)
 
         all_pred = np.concatenate(all_pred, 0)
