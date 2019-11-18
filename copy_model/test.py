@@ -1,4 +1,5 @@
 import numpy as np
+import csv
 import torch
 from CopyEditor import CopyEditor
 import pickle
@@ -17,28 +18,34 @@ num_labels = args.classes
 with open(args.valdata, 'rb') as f:
     valdata = pickle.load(f)
 
-relations = ['Measure-Type-Link',
-             'Of-Type',
-             'Coreference-Link',
-             'Count',
-             'Or',
-             'Using',
-             'Acts-on',
-             'Meronym',
-             'Site',
-             'Setting',
-             'Mod-Link',
-             'Measure',
-             'Creates',
-             'Misc-Link',
-             'No-Rel']
+# relations = ['Measure-Type-Link',
+#              'Of-Type',
+#              'Coreference-Link',
+#              'Count',
+#              'Or',
+#              'Using',
+#              'Acts-on',
+#              'Meronym',
+#              'Site',
+#              'Setting',
+#              'Mod-Link',
+#              'Measure',
+#              'Creates',
+#              'Misc-Link',
+#              'No-Rel']
+
+relations = open('relations.txt', 'r').read().splitlines() + ['No-Rel']
 
 
 def get_batches(data):
     # only batch size 1 for now
-    perm = np.random.permutation(len(data))
-    for x in perm:
+    # no permutation
+    # perm = np.random.permutation(len(data))
+    for x in range(len(data)):
         datum = data[x]
+        q_sent, qh_text, qt_text, ch_text, ct_text = datum['query_sent'], \
+                datum['query_head_text'], datum['query_tail_text'],\
+            datum['context_head_text'], datum['context_tail_text']
         qh, qt, ql, ch, ct, cl = datum['query_head'], datum['query_tail'], \
                                  datum['query_labels'], datum['context_head'], \
                                  datum['context_tail'], datum['context_labels']
@@ -66,7 +73,7 @@ def get_batches(data):
                 ct = ct.cuda()
                 mask = mask.cuda()
 
-        yield (qh, qt), (ch, ct), cl, ql, mask
+        yield q_sent, (qh_text, qt_text), (ch_text, ct_text), (qh, qt), (ch, ct), cl, ql, mask
 
 
 def accuracy(data, model):
@@ -79,7 +86,32 @@ def accuracy(data, model):
         recall_sentences = []
         f1_sentences = []
 
-        for q, cxt, cxt_labels, q_labels, mask in get_batches(data):
+        f = open(args.test_output_path, 'w')
+        writer = csv.writer(f)
+        writer.writerow(['Sentence', 'Relations in context', 'Head', 'Tail',
+                         'Target', 'Prediction'])
+
+        def write_csv_row(writer, sent, qtext, qlabels, ctext, clabels, pred):
+            qlabels = qlabels.view(-1)
+            if clabels is not None:
+                clabels = clabels.view(-1)
+            pred = pred.view(-1)
+            qh,qt = qtext
+            ch,ct = ctext
+            if clabels is not None:
+                # copyable = '\n'.join(['%s \t\t %s \t\t %s'%(a,relations[b], c) for
+                #                   (a,b,c) in zip(ch,clabels, ct)])
+                copyable = '|'.join(list(set([relations[x] for x in clabels])))
+            else:
+                copyable = 'No Context found'
+            for a,b,c,d in zip(qh,qt,qlabels, pred):
+                writer.writerow([sent, copyable, a, b, relations[c], relations[d]])
+
+
+
+
+
+        for sent, q_text, cxt_text, q, cxt, cxt_labels, q_labels, mask in get_batches(data):
             pred = torch.argmax(model(q, cxt, cxt_labels, mask), \
                                 dim=-1).view(-1)
 
@@ -92,7 +124,8 @@ def accuracy(data, model):
 
             all_target.append(this_target)
             all_pred.append(this_pred)
-
+            write_csv_row(writer,sent, q_text, q_labels, cxt_text, cxt_labels, pred)
+        f.close()
         all_pred = np.concatenate(all_pred, 0)
         all_target = np.concatenate(all_target, 0)
         # both of these have lengths = num_labels + 1

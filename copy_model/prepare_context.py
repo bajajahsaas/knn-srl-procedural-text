@@ -10,7 +10,7 @@ def get_relations_embeddings(s):
     relset = set([(a,b) for a, b, _ in s['relations']])
     norels = []
     if len(s['entities']) <= 1:
-        return None, None, None, None, None
+        return None, None, None, None, None, None, None
     for i in range(len(s['entities'])):
         for j in range(len(s['entities'])):
             if i == j or (i, j) in relset:
@@ -18,11 +18,13 @@ def get_relations_embeddings(s):
             norels.append((i,j,'No relation'))
     all_rels = [(a,b,rel_dic[re.sub('\d+$','',c)]) for a,b,c in s['relations'] + norels]
     head = np.stack([s['entities'][x[0]][2] for x in all_rels])
+    head_text = [s['entities'][x[0]][0] for x in all_rels]
     head_type = np.stack([ent_dic[s['entities'][x[0]][1]] for x in all_rels])
     tail = np.stack([s['entities'][x[1]][2] for x in all_rels])
+    tail_text = [s['entities'][x[1]][0] for x in all_rels]
     tail_type = np.stack([ent_dic[s['entities'][x[1]][1]] for x in all_rels])
     labels = np.stack([x[2] for x in all_rels])
-    return head, head_type, tail, tail_type, labels
+    return head_text, head, head_type, tail_text, tail, tail_type, labels
 
 
 
@@ -91,18 +93,22 @@ for s in data_tgt:
         nns = t.get_nns_by_vector(vector, K+1) 
 
     context_head = []
+    context_head_text = []
     context_head_type = []
     context_tail = []
+    context_tail_text = []
     context_tail_type = []
     context_label = []
     num_context = 0
     for nn_id in nns:
         cs = data_src[nn_id]
-        head, head_type, tail, tail_type, labels = get_relations_embeddings(cs)
+        head_text, head, head_type, tail_text, tail, tail_type, labels = get_relations_embeddings(cs)
         if head is not None:
             num_context += 1
             context_head.append(head)
+            context_head_text.extend(head_text)
             context_tail.append(tail)
+            context_tail_text.extend(tail_text)
             context_label.append(labels)
             context_head_type.append(head_type)
             context_tail_type.append(tail_type)
@@ -117,18 +123,25 @@ for s in data_tgt:
         context_head, context_head_type, context_tail, context_tail_type, \
                 context_label = None, None, None, None, None
 
-    query_head, query_head_type, query_tail, query_tail_type, query_labels = get_relations_embeddings(s)
+    query_head_text, query_head, query_head_type, query_tail_text, query_tail, query_tail_type, query_labels = get_relations_embeddings(s)
     if query_head is None:
         continue
     dataset.append({
+                        'query_sent' : s['sentence'],
+                        'context_sents' : [data_src[x]['sentence'] for x in \
+                                           nns],
                         'query_head': query_head,
+                        'query_head_text' : query_head_text,
                         'query_head_type': query_head_type,
                         'query_tail': query_tail,
+                        'query_tail_text' : query_tail_text,
                         'query_tail_type': query_tail_type,
                         'query_labels': query_labels,
                         'context_head' : context_head,
+                        'context_head_text' : context_head_text,
                         'context_head_type': context_head_type,
                         'context_tail' : context_tail,
+                        'context_tail_text' : context_tail_text,
                         'context_tail_type': context_tail_type,
                         'context_labels' : context_label
                     })

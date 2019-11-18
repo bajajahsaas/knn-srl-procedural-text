@@ -21,6 +21,9 @@ parser.add_argument('--testdata', action='store', dest='testfile', type=str,
 parser.add_argument('--model_path', action='store', dest='model_path', type=str,
                     help='File to save pytorch model parameters',
                     default='model.pt')
+parser.add_argument('--test_output_path', action='store', dest='test_output_path', type=str,
+                    help='File to save test csv',
+                    default='test_output.csv')
 parser.add_argument('--epochs', action='store', dest='epochs', type=int,
                     help='Number of epochs', default=50)
 parser.add_argument('--classes', action='store', dest='classes', type=int,

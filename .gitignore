@@ -1,4 +1,5 @@
 wlpdata/
+**/*.csv
 *.annoy
 nohup.out
 **/*.pkl

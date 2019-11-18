@@ -121,7 +121,7 @@ class CopyEditor(nn.Module):
         # Context_labels: Batch x Context_size
         # mask : Batch x context_size
         #
-        # output: Batch x (Num_classes+1) distribution
+        # output: Batch x (Num_classes+1) log distribution
 
 
         # Batch x n x dim
@@ -137,8 +137,23 @@ class CopyEditor(nn.Module):
                 context_embedding = self.rel_embedding(context_vectors[0], \
                                                        context_vectors[1])
                 #Batch x n x dim, Batch x n x num_classes+1
-                context_vec, copy_dist = self.attention(query_embedding, context_embedding, \
+                context_vec, copy_dist_unsmooth = self.attention(query_embedding, context_embedding, \
                                                  context_labels, mask)
+                # We need to smooth since copy can assign p(relation) = 0 if it
+                # does not exist in context. This is not an issue in
+                # Copy&Generate but if Generate is turned off, this makes
+                # NLL=-log(P(y)) -> inf.
+
+
+                # P_smooth = 0.99 * P_copy + 0.01 * p_uniform
+                # we stay in log space to avoid nans due to overflow
+                # log(P_smooth) = logsumexp(log(0.99)+log(p_copy),log(0.01)+log(1/N))
+                # TODO: smoothing with actual distribution of labels rather
+                # than uniform
+                copy_dist = torch.logsumexp(torch.stack((copy_dist_unsmooth +
+                                                               np.log(0.99),
+                                                               torch.ones_like(copy_dist_unsmooth)*np.log(0.01/(self.num_classes+1))),
+                                                               dim=-1), dim = -1)
 
         # if generate is enabled and copy is disabled or no cotext provided
         if self.generate and (not self.copy or copy_dist is None):
