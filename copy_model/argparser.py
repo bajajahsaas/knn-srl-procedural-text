@@ -39,4 +39,7 @@ parser.add_argument('--lr', action='store', dest='lr',
 parser.add_argument('--weight_decay', action='store', dest='weight_decay',
                     type=float, help='Weight decay parameter',
                     default=1e-4)
+parser.add_argument('--plot_path', action='store', dest='plot_path',
+                    type=str, help='Path for plot',
+                    default='logs')
 args = parser.parse_args()
