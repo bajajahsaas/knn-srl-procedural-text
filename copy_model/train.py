@@ -48,6 +48,8 @@ if args.gpu:
         model = model.cuda()
 learning_rate = args.lr
 weight_decay = args.weight_decay
+print('parameters:')
+print(model.parameters)
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate,\
                              weight_decay=weight_decay)
 early_stopping = EarlyStopping(patience=20, model_path=MODEL_PATH,minmax = \
