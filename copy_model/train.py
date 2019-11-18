@@ -12,8 +12,8 @@ import torch.optim as optim
 import sys
 from argparser import args
 import matplotlib.pyplot as plt
-from pytorchtools import EarlyStopping
 import os
+from EarlyStopping import EarlyStopping
 
 copy = args.copy
 generate = args.generate
@@ -38,7 +38,7 @@ with open(args.valdata, 'rb') as f:
     valdata = pickle.load(f)
 
 weights = torch.ones(num_classes+1)
-weights[-1] = 1.0/20
+weights[-1] = 1.0/10
 if args.gpu:
     weights = weights.cuda()
 loss = nn.NLLLoss(weights)
@@ -50,7 +50,8 @@ learning_rate = args.lr
 weight_decay = args.weight_decay
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate,\
                              weight_decay=weight_decay)
-early_stopping = EarlyStopping(patience=20, verbose=True)
+early_stopping = EarlyStopping(patience=20, model_path=MODEL_PATH,minmax = \
+                               'max')
 
 def get_batches(data):
     # only batch size 1 for now
@@ -105,7 +106,7 @@ def accuracy(data, model):
 
         all_pred = np.concatenate(all_pred, 0)
         all_target = np.concatenate(all_target, 0)
-        mean_valloss = torch.mean(torch.stack(losses))
+        total_valloss = torch.sum(torch.stack(losses))
 
         for i in range(num_classes+1):
             print('%d %d %d'%(i, np.sum(np.equal(all_target, i)),\
@@ -118,7 +119,7 @@ def accuracy(data, model):
         accuracy_existing_relations = num_rel_correct/np.sum(existing_relations)
         labels = [x for x in range(num_labels)]  # All possible output labels for multiclass problem
         f1 = f1_score(all_target, all_pred, labels=labels, average="micro")
-        return total_accuracy, accuracy_existing_relations, mean_valloss, f1
+        return total_accuracy, accuracy_existing_relations, total_valloss, f1
 
 
 loss_to_plot = []
@@ -127,11 +128,7 @@ f1_to_plot = []
 for epoch in range(NUM_EPOCHS):
     epoch_loss = 0.0
     print('Epoch #%d'%epoch)
-    acc1, acc2, valloss, f1score = accuracy(valdata, model)
     model.train()
-    val_loss_to_plot.append(valloss)
-    f1_to_plot.append(f1score)
-    print('Accuracy on val set = %f, Accuracy excluding norel=%f'%(acc1, acc2))
     bno = 0
     data_gen = get_batches(traindata)
     while(1):
@@ -148,13 +145,13 @@ for epoch in range(NUM_EPOCHS):
                 break
         if count < BATCH_SIZE:
             break
-        mean_loss = torch.mean(torch.stack(losses))
+        total_loss = torch.sum(torch.stack(losses))
         optimizer.zero_grad()
 
         # This is required for when --no-generate is set and No context is
         # avalable. The is no gradient function for the loss in this case.
         try:
-            mean_loss.backward()
+            total_loss.backward()
             nn.utils.clip_grad_norm_(model.parameters(), GRAD_MAXNORM)
             optimizer.step()
         except:
@@ -162,21 +159,23 @@ for epoch in range(NUM_EPOCHS):
             pass
 
         if bno %100 == 0:
-            print('Loss after batch #%d = %f'%(bno, mean_loss.data))
+            print('Loss after batch #%d = %f'%(bno, total_loss.data))
 
-        epoch_loss += mean_loss.data*BATCH_SIZE
+        epoch_loss += total_loss.data
         bno+=1
 
-    loss_to_plot.append(epoch_loss/len(traindata))
+    loss_to_plot.append(epoch_loss)
+    acc1, acc2, valloss, f1score = accuracy(valdata, model)
+    print('Accuracy on val set = %f, Accuracy excluding norel=%f'%(acc1, acc2))
+    val_loss_to_plot.append(valloss)
+    f1_to_plot.append(f1score)
 
-    early_stopping(valloss, model)
+    early_stopping.step(f1score, model)
 
     if early_stopping.early_stop:
         print("Early stopping")
         break
 
-model.load_state_dict(torch.load('checkpoint.pt'))
-torch.save(model.state_dict(), MODEL_PATH)
 
 plt.subplot(2, 1, 1)
 plt.plot(loss_to_plot, 'b', label='Training Loss')
