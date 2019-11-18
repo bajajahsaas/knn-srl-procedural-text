@@ -27,14 +27,19 @@ for datum in data_src:
         labels.add(r['relation_type'])
 
 majority_class = {}
+k = 6
 for ht in relations_counts:
     sorted_rels = sorted(relations_counts[ht].items(), key=operator.itemgetter(1))
-    majority_class[ht] = sorted_rels[-1][0]
+    rels = []
+    for i in range(1, min(len(sorted_rels) + 1, k)):
+        rels.append(sorted_rels[-i][0])
+    majority_class[ht] = rels
 
 with open('majority_results.txt', 'w') as f:
     f.write('Head\tTail\tClass\n')
-    for it in majority_class.items():
-        f.write('%s\t%s\t%s\n'%(it[0][0],it[0][1],it[1]))
+    for k,v in majority_class.items():
+        f.write('%s\t%s\t%s\n' % (k[0], k[1], ','.join(v)))
+
 labels = list(labels)
 print(majority_class)
 print(labels)
@@ -55,7 +60,7 @@ for datum  in data_tgt:
             relset.add((entity_dic[(r['head']['text'],r['head']['type'])],\
                    entity_dic[(r['tail']['text'],r['tail']['type'])]))
             relations.append((r['head']['type'], r['tail']['type'], r['relation_type']))
-        
+
     for i in range(len(entities)):
         for j in range(len(entities)):
             if i == j or (i,j) in relset:
@@ -63,18 +68,18 @@ for datum  in data_tgt:
             relations.append((entities[i][1],entities[j][1],'No relation'))
 
     all_target.extend([x[2] for x in relations])
-    all_pred.extend([majority_class.get((x[0],x[1]), 'No relation') for x in \
+    all_pred.extend([majority_class.get((x[0],x[1]), 'No relation')[0] for x in \
                      relations])
 
 
-print('Micro precision is %f' % precision_score(all_target, all_pred, labels= labels, average="micro"))
-print('Macro precision is %f' % precision_score(all_target, all_pred, labels= labels, average="macro"))
-print('Per class precision is\n', precision_score(all_target, all_pred, labels= labels, average=None))
+print('Micro precision is ', str(round(precision_score(all_target, all_pred, labels= labels, average="micro"),2)))
+print('Macro precision is ', str(round(precision_score(all_target, all_pred, labels= labels, average="macro"),2)))
+print('Per class precision is\n', str(round(precision_score(all_target, all_pred, labels= labels, average=None),2)))
 
-print('Micro recall is %f' % recall_score(all_target, all_pred, labels=labels, average="micro"))
-print('Macro recall is %f' % recall_score(all_target, all_pred, labels=labels, average="macro"))
-print('Per class recall is\n', recall_score(all_target, all_pred, labels=labels, average=None))
+print('Micro recall is ', str(round(recall_score(all_target, all_pred, labels=labels, average="micro"),2)))
+print('Macro recall is ', str(round(recall_score(all_target, all_pred, labels=labels, average="macro"),2)))
+print('Per class recall is\n', str(round(recall_score(all_target, all_pred, labels=labels, average=None),2)))
 
-print('Micro F1 score is %f' % f1_score(all_target, all_pred, labels=labels, average="micro"))
-print('Macro F1 score is %f' % f1_score(all_target, all_pred, labels=labels, average="macro"))
-print('Per class F1 score is\n', f1_score(all_target, all_pred, labels=labels, average=None))
+print('Micro F1 score is ', str(round(f1_score(all_target, all_pred, labels=labels, average="micro"),2)))
+print('Macro F1 score is ', str(round(f1_score(all_target, all_pred, labels=labels, average="macro"),2)))
+print('Per class F1 score is\n', str(round(f1_score(all_target, all_pred, labels=labels, average=None),2)))
