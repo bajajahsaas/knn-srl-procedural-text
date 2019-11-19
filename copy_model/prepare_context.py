@@ -37,7 +37,7 @@ def get_relations_entity_spans(s):
                     ent_dic[s['entities'][t][1]]]
         relations_list.append([head, tail])
     labels = [x[2] for x in all_rels]
-    return np.asarray(s['sent_tokens']), np.asarray(relations_list), np.asarray(labels)
+    return s['sent_tokens'], np.asarray(relations_list), np.asarray(labels)
 
 
 

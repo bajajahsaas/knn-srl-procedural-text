@@ -52,7 +52,7 @@ print('parameters:')
 print(model.parameters)
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate,\
                              weight_decay=weight_decay)
-early_stopping = EarlyStopping(patience=20, model_path=MODEL_PATH,minmax = \
+early_stopping = EarlyStopping(patience=5, model_path=MODEL_PATH,minmax = \
                                'max')
 
 def get_batches(data):
@@ -64,18 +64,14 @@ def get_batches(data):
             datum['query_relations'], datum['query_labels']
         ctokens, crelations, clabels = datum['context_tokens'], \
             datum['context_relations'], datum['context_labels']
-        qtokens = torch.from_numpy(qtokens)
         qrelations = torch.from_numpy(qrelations)
         qlabels = torch.from_numpy(qlabels)
-        ctokens = [torch.from_numpy(x) for x in ctokens]
         crelations = [torch.from_numpy(x) for x in crelations]
         clabels = [torch.from_numpy(x) for x in clabels]
         if args.gpu:
-            qtokens = qtokens.cuda()
             qrelations = qrelations.cuda()
             qlabels = qlabels.cuda()
             for i in range(len(ctokens)):
-                ctokens[i] = ctokens[i].cuda()
                 crelations[i] = crelations[i].cuda()
                 clabels[i] = clabels[i].cuda()
 
@@ -125,8 +121,6 @@ for epoch in range(NUM_EPOCHS):
     model.train()
     bno = 0
     data_gen = get_batches(traindata)
-    acc1, acc2, valloss, f1score = accuracy(valdata, model)
-    print('Accuracy on val set = %f, Accuracy excluding norel=%f'%(acc1, acc2))
     while(1):
         count = 0
         losses = []
@@ -135,7 +129,6 @@ for epoch in range(NUM_EPOCHS):
                 qt, qr, ql, ct, cr, cl  = data_gen.__next__()
                 prediction,_ = model(qt, qr, ct, cr, cl)
                 l = loss(prediction.view(-1, num_classes+1), ql.view(-1))
-                print(l)
                 losses.append(l)
                 count += 1
             except StopIteration:
@@ -149,14 +142,13 @@ for epoch in range(NUM_EPOCHS):
         # avalable. The is no gradient function for the loss in this case.
         try:
             total_loss.backward()
-            print(model.copy_editor.should_copy.network.weight.grad)
             nn.utils.clip_grad_norm_(model.parameters(), GRAD_MAXNORM)
             optimizer.step()
         except KeyboardInterrupt:
             print('No grad batch')
             pass
 
-        if bno %100 == 0:
+        if bno %1 == 0:
             print('Loss after batch #%d = %f'%(bno, total_loss.data))
 
         epoch_loss += total_loss.data

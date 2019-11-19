@@ -196,10 +196,12 @@ class CopyEditorBertWrapper(nn.Module):
         self.copy_editor = CopyEditor(emb_dim, num_classes, copy=copy,\
                                       generate=generate)
         self.bert_transformer = BertModel.from_pretrained('../../biobert')  
+        self.bert_tokenizer = BertTokenizer.from_pretrained('../../biobert')
+        self.bert_transformer.eval()
     
-    def get_vectors(self, tokens, spans):
+    def get_vectors(self, bert_embeddings, spans):
         N = spans.size()[0]
-        bert_embeddings = self.bert_transformer(tokens.unsqueeze(0))[-2].squeeze(0)
+        # bert_embeddings = self.bert_transformer(tokens.unsqueeze(0))[-2].squeeze(0)
         head_embeddings = []
         tail_embeddings = []
         for i in range(N):
@@ -210,16 +212,23 @@ class CopyEditorBertWrapper(nn.Module):
             tail_embeddings.append(torch.mean(bert_embeddings[tstart:tend+1,:],\
                                              dim=0))
         head_embeddings = torch.stack(head_embeddings, dim=0)
-        print(head_embeddings.size())
         tail_embeddings = torch.stack(tail_embeddings, dim=0)
         return (head_embeddings.unsqueeze(0), tail_embeddings.unsqueeze(0))
 
     def forward(self,query_tokens, query_spans, context_tokens, context_spans, context_labels):
-        query_vectors = self.get_vectors(query_tokens, query_spans)
+        cat = [query_tokens] + context_tokens
+        mxlen = max([len(x) for x in cat])
+        for x in cat:
+            x.extend([self.bert_tokenizer.pad_token_id] * (mxlen - len(x)))
+        cat_tensor = torch.tensor(cat)
+        if query_spans.is_cuda:
+            cat_tensor = cat_tensor.cuda()
+        bert_embeddings = self.bert_transformer(cat_tensor)[-2]
+        query_vectors = self.get_vectors(bert_embeddings[0,:], query_spans)
         context_heads = []
         context_tails = []
-        for tokens, spans in zip(context_tokens, context_spans):
-            ch,ct = self.get_vectors(tokens, spans)
+        for i, spans in enumerate(context_spans):
+            ch,ct = self.get_vectors(bert_embeddings[i+1,:], spans)
             context_heads.append(ch)
             context_tails.append(ct)
         if len(context_heads) > 0:
@@ -229,8 +238,14 @@ class CopyEditorBertWrapper(nn.Module):
         else:
             context_heads, context_tails, context_labels = None, None, None
         context_vectors = (context_heads, context_tails)
+        if context_heads is not None:
+            mask = torch.ones(context_heads.size()[:-1])
+        else:
+            mask = None
+        if mask is not None and query_spans.is_cuda:
+            mask = mask.cuda()
         return self.copy_editor(query_vectors, context_vectors, context_labels,\
-                                torch.ones(context_heads.size()[:-1]))
+                                mask)
 
         
 
