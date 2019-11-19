@@ -6,7 +6,7 @@ import torch.optim as optim
 from sklearn.metrics import f1_score
 from torch import autograd
 from torch.utils.data import TensorDataset
-from CopyEditor import CopyEditor
+from CopyEditor import CopyEditorBertWrapper
 import pickle
 import torch.optim as optim
 import sys
@@ -37,12 +37,12 @@ with open(args.traindata, 'rb') as f:
 with open(args.valdata, 'rb') as f:
     valdata = pickle.load(f)
 
-weights = torch.ones(num_classes+1)
-weights[-1] = 1.0/10
-if args.gpu:
-    weights = weights.cuda()
-loss = nn.NLLLoss(weights)
-model = CopyEditor(EMBEDDING_SIZE, num_classes, copy=args.copy,
+# weights = torch.ones(num_classes+1)
+# weights[-1] = 1.0/10
+# if args.gpu:
+#     weights = weights.cuda()
+loss = nn.NLLLoss()
+model = CopyEditorBertWrapper(EMBEDDING_SIZE, num_classes, copy=args.copy,
                    generate=args.generate)
 if args.gpu:
         model = model.cuda()
@@ -58,34 +58,26 @@ def get_batches(data):
     perm = np.random.permutation(len(data))
     for x in perm:
         datum = data[x]
-        qh, qt, ql, ch, ct, cl = datum['query_head'], datum['query_tail'],\
-                        datum['query_labels'], datum['context_head'], \
-                        datum['context_tail'], datum['context_labels']
-        qh = torch.from_numpy(qh).unsqueeze(0)
-        qt = torch.from_numpy(qt).unsqueeze(0)
-        ql = torch.from_numpy(ql).unsqueeze(0)
-        if torch.isnan(torch.stack([qh,qt])).any():
-            continue
-        elif type(cl) != np.ndarray:
-            ch,ct,cl,mask = None, None, None, None
-        else:
-            ch = torch.from_numpy(ch).unsqueeze(0)
-            cl = torch.from_numpy(cl).unsqueeze(0)
-            ct = torch.from_numpy(ct).unsqueeze(0)
-            if torch.isnan(torch.stack([ch,ct])).any():
-                continue
-            mask = torch.from_numpy(np.ones_like(cl))
+        qtokens, qrelations, qlabels = datum['query_tokens'], \
+            datum['query_relations'], datum['query_labels']
+        ctokens, crelations, clabels = datum['context_tokens'], \
+            datum['context_relations'], datum['context_labels']
+        qtokens = torch.from_numpy(qtokens)
+        qrelations = torch.from_numpy(qrelations)
+        qlabels = torch.from_numpy(qlabels)
+        ctokens = [torch.from_numpy(x) for x in ctokens]
+        crelations = [torch.from_numpy(x) for x in crelations]
+        clabels = [torch.from_numpy(x) for x in clabels]
         if args.gpu:
-            qh = qh.cuda()
-            qt = qt.cuda()
-            ql = ql.cuda()
-            if ch is not None:
-                ch = ch.cuda()
-                cl = cl.cuda()
-                ct = ct.cuda()
-                mask = mask.cuda()
+            qtokens = qtokens.cuda()
+            qrelations = qrelations.cuda()
+            qlabels = qlabels.cuda()
+            for i in range(len(ctokens)):
+                ctokens[i] = ctokens[i].cuda()
+                crelations[i] = crelations[i].cuda()
+                clabels[i] = clabels[i].cuda()
 
-        yield (qh, qt), (ch, ct), cl, ql, mask
+        yield qtokens, qrelations, qlabels, ctokens, crelations, clabels
 
 
 def accuracy(data, model):
@@ -94,14 +86,14 @@ def accuracy(data, model):
         all_pred = []
         all_target = []
         losses = []
-        for q, cxt, cxt_labels, q_labels, mask  in get_batches(data):
-            model_pred = model(q, cxt, cxt_labels, mask)
+        for qt, qr,ql,ct, cr, cl  in get_batches(data):
+            model_pred, _ = model(qt, qr, ct, cr, cl)
             pred = torch.argmax(model_pred, dim=-1).view(-1)
-            all_target.append(q_labels.view(-1).data.detach().cpu().numpy().copy())
+            all_target.append(ql.view(-1).data.detach().cpu().numpy().copy())
             all_pred.append(pred.data.detach().cpu().numpy().copy())
 
             log_prob = model_pred.view(-1, num_classes + 1)
-            valloss = loss(log_prob, q_labels.view(-1))
+            valloss = loss(log_prob, ql.view(-1))
             losses.append(valloss)
 
         all_pred = np.concatenate(all_pred, 0)
@@ -131,14 +123,17 @@ for epoch in range(NUM_EPOCHS):
     model.train()
     bno = 0
     data_gen = get_batches(traindata)
+    acc1, acc2, valloss, f1score = accuracy(valdata, model)
+    print('Accuracy on val set = %f, Accuracy excluding norel=%f'%(acc1, acc2))
     while(1):
         count = 0
         losses = []
         for i in range(BATCH_SIZE):
             try:
-                q, cxt, cxt_labels, q_labels, mask  = data_gen.__next__()
-                prediction = model(q,cxt,cxt_labels, mask).view(-1, num_classes+1)
-                l = loss(prediction, q_labels.view(-1))
+                qt, qr, ql, ct, cr, cl  = data_gen.__next__()
+                prediction,_ = model(qt, qr, ct, cr, cl)
+                l = loss(prediction.view(-1, num_classes+1), ql.view(-1))
+                print(l)
                 losses.append(l)
                 count += 1
             except StopIteration:
@@ -152,9 +147,10 @@ for epoch in range(NUM_EPOCHS):
         # avalable. The is no gradient function for the loss in this case.
         try:
             total_loss.backward()
+            print(model.copy_editor.should_copy.network.weight.grad)
             nn.utils.clip_grad_norm_(model.parameters(), GRAD_MAXNORM)
             optimizer.step()
-        except:
+        except KeyboardInterrupt:
             print('No grad batch')
             pass
 

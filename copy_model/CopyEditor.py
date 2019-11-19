@@ -1,4 +1,5 @@
 import numpy as np
+from transformers import *
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -127,7 +128,8 @@ class CopyEditor(nn.Module):
         # Batch x n x dim
         query_embedding = self.rel_embedding(query_vectors[0], \
                                              query_vectors[1])
-
+        B, n, dim = query_vectors[0].size()
+        copy_prob = torch.zeros(B, n)
         context_vec, copy_dist = None, None
         if self.generate:
             gen_dist = self.multiclass(query_embedding)
@@ -157,7 +159,7 @@ class CopyEditor(nn.Module):
 
         # if generate is enabled and copy is disabled or no cotext provided
         if self.generate and (not self.copy or copy_dist is None):
-            return gen_dist
+            return gen_dist, copy_prob
         #if copy is enabled but not generate
         elif self.copy and not self.generate:
             # If no context provided we are stuck since we do not generate
@@ -168,10 +170,10 @@ class CopyEditor(nn.Module):
                 probs[:,:,-1] = np.log(0.99)
                 if query_embedding.is_cuda:
                     probs = probs.cuda()
-                return probs
+                return probs, copy_prob
             # Else return just the copy distribution
             else:
-                return copy_dist
+                return copy_dist, copy_prob
         # if both are enabled and context is available
         else:
             copy_prob, gen_prob = self.should_copy(query_embedding, \
@@ -183,8 +185,52 @@ class CopyEditor(nn.Module):
             log_probs = torch.stack([copy_prob + copy_dist, gen_prob +
                                      gen_dist], dim = -1)
             final_probs = torch.logsumexp(log_probs, dim = -1)
-            return final_probs
+            return final_probs, copy_prob
 
 
 
+class CopyEditorBertWrapper(nn.Module):
+    def __init__(self,emb_dim, num_classes, copy=True, generate=True):
+        super(CopyEditorBertWrapper, self).__init__()
+        self.emb_dim = emb_dim
+        self.copy_editor = CopyEditor(emb_dim, num_classes, copy=copy,\
+                                      generate=generate)
+        self.bert_transformer = BertModel.from_pretrained('../../biobert')  
+    
+    def get_vectors(self, tokens, spans):
+        N = spans.size()[0]
+        bert_embeddings = self.bert_transformer(tokens.unsqueeze(0))[-2].squeeze(0)
+        head_embeddings = []
+        tail_embeddings = []
+        for i in range(N):
+            hstart, hend = spans[i][0][0], spans[i][0][1]
+            tstart, tend = spans[i][1][0], spans[i][1][1]
+            head_embeddings.append(torch.mean(bert_embeddings[hstart:hend+1,:],\
+                                             dim=0))
+            tail_embeddings.append(torch.mean(bert_embeddings[tstart:tend+1,:],\
+                                             dim=0))
+        head_embeddings = torch.stack(head_embeddings, dim=0)
+        print(head_embeddings.size())
+        tail_embeddings = torch.stack(tail_embeddings, dim=0)
+        return (head_embeddings.unsqueeze(0), tail_embeddings.unsqueeze(0))
+
+    def forward(self,query_tokens, query_spans, context_tokens, context_spans, context_labels):
+        query_vectors = self.get_vectors(query_tokens, query_spans)
+        context_heads = []
+        context_tails = []
+        for tokens, spans in zip(context_tokens, context_spans):
+            ch,ct = self.get_vectors(tokens, spans)
+            context_heads.append(ch)
+            context_tails.append(ct)
+        if len(context_heads) > 0:
+            context_heads = torch.cat(context_heads, dim=1)
+            context_tails = torch.cat(context_tails, dim=1)
+            context_labels = torch.cat(context_labels).unsqueeze(0)
+        else:
+            context_heads, context_tails, context_labels = None, None, None
+        context_vectors = (context_heads, context_tails)
+        return self.copy_editor(query_vectors, context_vectors, context_labels,\
+                                torch.ones(context_heads.size()[:-1]))
+
+        
 

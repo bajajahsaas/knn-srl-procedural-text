@@ -20,11 +20,10 @@ if usebiobert:
     tokenizer, model = getbiobertmodel()
 else:
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-    model = BertModel.from_pretrained('bert-base-uncased')
 
 # else default ones imported from biobert
 
-embedded_data = []
+entity_data = []
 
 def find_indices(lis, sublist):
     for i in range(len(lis) - len(sublist) +1):
@@ -56,11 +55,6 @@ for sent in data:
             print(entities[i])
         end = start + len(tokenized_entity) -1
         entity_spans.append((start, end))
-    with torch.no_grad():
-        bert_embeddings = \
-            model(torch.tensor([bert_tokens_sentence]))[0].squeeze(0).numpy() 
-    entity_embeddings = [np.mean(bert_embeddings[start:end+1], axis=0) for \
-                            start, end in entity_spans]
     relations = []
     for x in sent['relations']:
         if (x['head']['text'], x['head']['type']) in entity_dic and (x['tail']['text'], x['tail']['type']) in entity_dic:
@@ -71,9 +65,11 @@ for sent in data:
         entity_text, entity_type = [], []
     else:
         entity_text, entity_type = zip(*entities)
-    embedded_data.append({'entities': list(zip(entity_text, entity_type, entity_embeddings)),
+    entity_data.append({'entities': list(zip(entity_text, entity_type, entity_spans)),
                           'relations' : relations, 'sentence' :
-                          sent['sentence'], 'replaced' : sent['replaced']})
+                          sent['sentence'], 'replaced' : sent['replaced'],
+                          'sent_tokens' : bert_tokens_sentence})
 
+print(entity_data[500])
 with open(sys.argv[3], 'wb') as f:
-    pickle.dump(embedded_data, f)
+    pickle.dump(entity_data, f)
