@@ -16,10 +16,16 @@ python test_nn.py replaced_tfidf.pkl replaced.annoy replaced_sentences.txt origi
 python test_upperbound.py
 python uppperbound_recall.py
 ```
+## Baselines
 
-## Majority Class prediction
+### Relation Frequency
 ```python
-ppython majority_class.py wetlabs_train.json wetlabs_val.json
+python baselines/relation_counts.py wetlabs_train.json wetlabs_val.json wetlabs_test.json
+```
+
+### Majority Class prediction
+```python
+python baselines/majority_class.py wetlabs_train.json wetlabs_val.json
 ```
 
 ## Retrieve and Edit Model
