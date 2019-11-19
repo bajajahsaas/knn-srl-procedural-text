@@ -24,9 +24,6 @@ class EarlyStopping:
 
         self.history = self.history[1:] + [value]
 
-        if len(self.history) < self.patience:
-            return
-
         if self.minmax == 'min':
             historybest = min(self.history)
             if historybest > self.best:
