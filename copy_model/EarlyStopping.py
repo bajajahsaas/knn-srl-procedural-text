@@ -18,6 +18,10 @@ class EarlyStopping:
             self.best = value
             print('Saving model')
             self.save(model)
+        if len(self.history) < self.patience:
+            self.history = self.history + [value]
+            return
+
         self.history = self.history[1:] + [value]
 
         if len(self.history) < self.patience:
