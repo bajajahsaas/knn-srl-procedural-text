@@ -37,11 +37,12 @@ with open(args.traindata, 'rb') as f:
 with open(args.valdata, 'rb') as f:
     valdata = pickle.load(f)
 
-weights = torch.ones(num_classes+1)
-weights[-1] = 1.0/10
-if args.gpu:
-    weights = weights.cuda()
-loss = nn.NLLLoss(weights)
+# weights = torch.ones(num_classes+1)
+# weights[-1] = 1.0/10
+# if args.gpu:
+#     weights = weights.cuda()
+# loss = nn.NLLLoss(weights)
+loss = nn.NLLLoss()
 model = CopyEditor(EMBEDDING_SIZE, num_classes, copy=args.copy,
                    generate=args.generate)
 if args.gpu:

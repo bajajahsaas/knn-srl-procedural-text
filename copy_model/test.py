@@ -158,9 +158,9 @@ def accuracy(data, model):
         f1list = f1_score(all_target, all_pred, labels=labels, average=None)
         # print('Macro f1 excluding no rel', np.mean(f1list[:len(f1list) - 1]))
 
-        # print('Per class F1 score is')
-        # for rel, f1 in zip(relations, f1list):
-        #     print(rel, f1)
+        print('Per class F1 score is')
+        for rel, f1 in zip(relations, f1list):
+            print(rel, str(round(f1, 2)))
 
         # for i in range(num_classes+1):
         #     print('%d %d %d'%(i, np.sum(np.equal(all_target, i)),\
@@ -185,4 +185,4 @@ model.load_state_dict(torch.load(MODEL_PATH, map_location=torch.device('cpu')))
 model.eval()
 
 acc1, acc2 = accuracy(valdata, model)
-print('Accuracy on val set = ', str(round(acc1, 2)), 'Accuracy excluding norel ', str(round(acc2,2)))
+print('Accuracy on val set = ', str(round(acc1, 2)), 'Accuracy excluding norel ', str(round(acc2, 2)))
