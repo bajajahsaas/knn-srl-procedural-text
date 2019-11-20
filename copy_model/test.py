@@ -1,3 +1,5 @@
+import os
+
 import numpy as np
 import csv
 import torch
@@ -86,7 +88,7 @@ def accuracy(data, model):
         recall_sentences = []
         f1_sentences = []
 
-        f = open(args.test_output_path, 'w')
+        f = open(os.path.join(args.test_output_path,'predictions.csv'), 'w')
         writer = csv.writer(f)
         writer.writerow(['Sentence', 'Relations in context', 'Head', 'Tail',
                          'Target', 'Prediction'])
@@ -132,8 +134,12 @@ def accuracy(data, model):
         print('Prediction list size = ', len(list(set(all_pred))))
         print('Target list size = ', len(list(set(all_target))))
 
-        print('Micro precision is ', str(round(precision_score(all_target, all_pred, labels=labels, average="micro"), 2)))
-        print('Macro precision is ', str(round(precision_score(all_target, all_pred, labels=labels, average="macro"), 2)))
+        f = open(os.path.join(args.test_output_path, 'scores.csv'), 'w')
+        writer_sc = csv.writer(f)
+        writer_sc.writerow(['Averaging', 'Precision', 'Recall', 'F1 Score'])
+
+        micro_prec =  str(round(precision_score(all_target, all_pred, labels=labels, average="micro"), 2))
+        macro_prec = str(round(precision_score(all_target, all_pred, labels=labels, average="macro"), 2))
 
         precisionlist = precision_score(all_target, all_pred, labels=labels, average=None)
         # print('Macro precision excluding no rel', np.mean(precisionlist[:len(precisionlist) - 1]))
@@ -142,8 +148,8 @@ def accuracy(data, model):
         # for rel, precision in zip(relations, precisionlist):
         #     print(rel, precision)
 
-        print('Micro recall is ', str(round(recall_score(all_target, all_pred, labels=labels, average="micro"),2)))
-        print('Macro recall is ', str(round(recall_score(all_target, all_pred, labels=labels, average="macro"),2)))
+        micro_rec =  str(round(recall_score(all_target, all_pred, labels=labels, average="micro"),2))
+        macro_rec = str(round(recall_score(all_target, all_pred, labels=labels, average="macro"),2))
 
         recalllist = recall_score(all_target, all_pred, labels=labels, average=None)
         # print('Macro recall excluding no rel', np.mean(recalllist[:len(recalllist) - 1]))
@@ -152,15 +158,11 @@ def accuracy(data, model):
         # for rel, recall in zip(relations, recalllist):
         #     print(rel, recall)
 
-        print('Micro F1 score is ', str(round(f1_score(all_target, all_pred, labels=labels, average="micro"), 2)))
-        print('Macro F1 score is ', str(round(f1_score(all_target, all_pred, labels=labels, average="macro"), 2)))
+        micro_f1 = str(round(f1_score(all_target, all_pred, labels=labels, average="micro"), 2))
+        macro_f1 = str(round(f1_score(all_target, all_pred, labels=labels, average="macro"), 2))
 
         f1list = f1_score(all_target, all_pred, labels=labels, average=None)
         # print('Macro f1 excluding no rel', np.mean(f1list[:len(f1list) - 1]))
-
-        print('Per class F1 score is')
-        for rel, f1 in zip(relations, f1list):
-            print(rel, str(round(f1, 2)))
 
         # for i in range(num_classes+1):
         #     print('%d %d %d'%(i, np.sum(np.equal(all_target, i)),\
@@ -172,9 +174,22 @@ def accuracy(data, model):
         num_rel_correct = np.sum(existing_relations * np.equal(all_target, all_pred))
         accuracy_existing_relations = num_rel_correct / np.sum(existing_relations)
 
-        print('Macro Average Precision on Sentences ', str(round(np.mean(precision_sentences),2)))
-        print('Macro Average Recall on Sentences ', str(round(np.mean(recall_sentences),2)))
-        print('Macro Average F1 on Sentences ', str(round(np.mean(f1_sentences),2)))
+        macro_sent_prec = str(round(np.mean(precision_sentences),2))
+        macro_sent_rec = str(round(np.mean(recall_sentences),2))
+        macro_sent_f1 = str(round(np.mean(f1_sentences),2))
+
+        writer_sc.writerow(['microaverage', micro_prec, micro_rec, micro_f1])
+        writer_sc.writerow(['macroaverage', macro_prec, macro_rec, macro_f1])
+        writer_sc.writerow(['microaverage_sent', macro_sent_prec, macro_sent_rec, macro_sent_f1])
+
+        # print('Per class F1 score is')
+        writer_sc.writerow(['\t', '\t', '\t', '\t'])
+        writer_sc.writerow(['Relation', relations[:len(relations) - 1]]) #No-rel accuracy is not returned
+        f1_class = []
+        for rel, f1 in zip(relations, f1list):
+            f1_class.append(str(round(f1, 2)))
+
+        writer_sc.writerow(['F1 score', f1_class])
 
         return total_accuracy, accuracy_existing_relations
 
