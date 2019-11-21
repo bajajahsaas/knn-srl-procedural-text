@@ -26,8 +26,19 @@ parser.add_argument('--test_output_path', action='store', dest='test_output_path
                     default='test_output.csv')
 parser.add_argument('--epochs', action='store', dest='epochs', type=int,
                     help='Number of epochs', default=50)
+parser.add_argument('--shouldcopy_hidden_dims', action='store',
+                    dest='shouldcopy_hidden_dims', type=list,
+                    help='hidden dimensions for mlp for copyprob', default=[256,128,64])
+parser.add_argument('--relation_hidden_dims', action='store',
+                    dest='relation_hidden_dims', type=list,
+                    help='hidden dims for relation embedding', default=[512,256])
+parser.add_argument('--relation_output_dim', action='store',
+                    dest='relation_output_dim', type=int,
+                    help='output dim of relation embedding', default=256)
 parser.add_argument('--classes', action='store', dest='classes', type=int,
-                    help='Number of classes', default=14)
+                    help='Number of classes', default=13)
+parser.add_argument('--num_entities', action='store', dest='num_entities', type=int,
+                    help='Number of Entities', default=19)
 parser.add_argument('--batch_size', action='store', dest='batch_size', type=int,
                     help='Batch size', default=16)
 parser.add_argument('--grad_maxnorm', action='store', dest='grad_maxnorm',

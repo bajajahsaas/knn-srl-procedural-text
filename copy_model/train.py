@@ -37,13 +37,12 @@ with open(args.traindata, 'rb') as f:
 with open(args.valdata, 'rb') as f:
     valdata = pickle.load(f)
 
-weights = torch.ones(num_classes+1)
-weights[-1] = 1.0/10
-if args.gpu:
-    weights = weights.cuda()
-loss = nn.NLLLoss(weights)
-model = CopyEditor(EMBEDDING_SIZE, num_classes, copy=args.copy,
-                   generate=args.generate)
+# weights = torch.ones(num_classes+1)
+# weights[-1] = 1.0/10
+# if args.gpu:
+#     weights = weights.cuda()
+loss = nn.NLLLoss()
+model = CopyEditor(EMBEDDING_SIZE, args)
 if args.gpu:
         model = model.cuda()
 learning_rate = args.lr
@@ -63,17 +62,21 @@ def get_batches(data):
         qh, qt, ql, ch, ct, cl = datum['query_head'], datum['query_tail'],\
                         datum['query_labels'], datum['context_head'], \
                         datum['context_tail'], datum['context_labels']
+        qht, qtt, cht, ctt = datum['query_head_type'], datum['query_tail_type'],\
+                datum['context_head_type'], datum['context_tail_type']
         qh = torch.from_numpy(qh).unsqueeze(0)
         qt = torch.from_numpy(qt).unsqueeze(0)
         ql = torch.from_numpy(ql).unsqueeze(0)
         if torch.isnan(torch.stack([qh,qt])).any():
             continue
         elif type(cl) != np.ndarray:
-            ch,ct,cl,mask = None, None, None, None
+            ch,ct,cl,cht,ctt,mask = None, None, None, None, None, None
         else:
             ch = torch.from_numpy(ch).unsqueeze(0)
             cl = torch.from_numpy(cl).unsqueeze(0)
             ct = torch.from_numpy(ct).unsqueeze(0)
+            ctt = torch.from_numpy(ctt).unsqueeze(0)
+            cht = torch.from_numpy(cht).unsqueeze(0)
             if torch.isnan(torch.stack([ch,ct])).any():
                 continue
             mask = torch.from_numpy(np.ones_like(cl))
@@ -81,13 +84,17 @@ def get_batches(data):
             qh = qh.cuda()
             qt = qt.cuda()
             ql = ql.cuda()
+            qtt = torch.from_numpy(qtt).unsqueeze(0)
+            qht = torch.from_numpy(qht).unsqueeze(0)
             if ch is not None:
                 ch = ch.cuda()
                 cl = cl.cuda()
                 ct = ct.cuda()
+                cht = cht.cuda()
+                ctt = ctt.cuda()
                 mask = mask.cuda()
 
-        yield (qh, qt), (ch, ct), cl, ql, mask
+        yield ((qh, qht), (qt, qtt)), ((ch, cht), (ct, ctt)), cl, ql, mask
 
 
 def accuracy(data, model):

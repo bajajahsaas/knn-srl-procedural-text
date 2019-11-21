@@ -47,6 +47,8 @@ t = AnnoyIndex(len(vect.get_feature_names()), 'angular')
 t.load(annoy_file)
 K = 5 # 5 nearest neighbors
 
+bad_relations = set(['Misc-Link'])
+
 
 if os.path.exists('relations.txt') and os.path.exists('entity_types.txt'):
     with open('relations.txt', 'r') as f:
@@ -63,7 +65,7 @@ else:
             relations.add(relation_without_trailing)
         for e in s['entities']:
             entity_types.add(e[1])
-    relations = list(relations)
+    relations = list(relations - bad_relations)
     entity_types = list(entity_types)
     with open('relations.txt', 'w') as f:
         f.write('\n'.join(relations))
@@ -73,6 +75,8 @@ print(relations)
 print(len(relations))
 relations.append('No relation')
 rel_dic = {r:i for i, r in enumerate(relations)}
+for r in bad_relations:
+    rel_dic[r] = len(relations) -1 # norelation
 print(entity_types)
 print(len(entity_types))
 ent_dic = {e:i for i, e in enumerate(entity_types)}

@@ -5,6 +5,20 @@ import torch.nn.functional as F
 import torch.optim as optim
 from torch.utils.data import TensorDataset
 
+class MLP(nn.Module):
+    def __init__(self, input_dim, hidden_dims, output_dims):
+        super(MLP, self).__init__()
+        all_dims = [input_dims] + hidden_dims + [output_dims]
+        layers = []
+        for i in range(len(hidden_dims)):
+            layers.append(nn.Linear(all_dims[i], all_dims[i+1]))
+            layers.append(nn.ReLU())
+        layers.append(nn.Linear(all_dims[-2], all_dims[-1]))
+        self.network = nn.Sequential(*layers)
+
+    def forward(self, input):
+        return self.network(input)
+
 
 class AttentionDist(nn.Module):
     def __init__(self, dim, num_classes):
@@ -43,33 +57,57 @@ class AttentionDist(nn.Module):
 
 
 class RelationEmbedding(nn.Module):
-    def __init__(self, input_dim, output_dim, hidden_dims = []):
+    def __init__(self, emb_dim,num_entities,type_embedding_dim, output_dim,
+                 hidden_dims = [], use_entity=False):
         super(RelationEmbedding, self).__init__()
-        self.input_dim = input_dim
+        self.emb_dim = emb_dim
+        self.use_entity = use_entity
         self.output_dim = output_dim
+        self.entity_embedding_dim = entity_embedding_dim
+        layers = []     
+        if use_entity:
+            total_input_dim = 2*emb_dim + 2*type_embedding_dim
+            self.type_embeddings = nn.Embedding(num_entities,
+                                                type_embedding_dim)
+        else:
+            total_input_dim = 2*emb_dim
 
-        self.network = nn.Linear(2*input_dim,output_dim) # experiment with mlp,
+        self.network = MLP(total_input_dim, hidden_dims,
+                           output_dim) 
+            
+            
+            # experiment with mlp,
+                    
                     # non linearity
 
-    def forward(self, head, tail):
+    def forward(self, headtail):
         # head, tail : * x input_dim
         #
         # output : * x output_dim
+        head_emb_type, tail_emb_type = headtail
+        head, headtype = head_emb_type
+        tail, tailtype = tail_emb_type
         init_shape = head.size()
         final_shape = tuple(list(init_shape)[:-1] + [self.output_dim])
         head = head.view(-1, self.input_dim)
         tail = tail.view(-1, self.input_dim)
-        concat = torch.cat((head, tail), dim = -1)
+        if self.use_entity:
+            head_type_embedding = self.type_embeddings(headtype)
+            tail_type_embedding = self.type_embeddings(tailtype)
+            concat = torch.cat((head, tail, headtype, tailtype), dim = -1)
+        else:
+            concat = torch.cat((head, tail), dim = -1)
+
         mapped = self.network(concat)
         return torch.reshape(mapped, final_shape)
 
 
 class ShouldCopy(nn.Module): # MLP to get probability of copying vs generating
     # input: context vector, query embedding
-    def __init__(self, dim):
+    def __init__(self, dim, hidden_dims = []):
         super(ShouldCopy, self).__init__()
         self.dim = dim
-        self.network = nn.Linear(2*dim, 1)
+        self.network = MLP(2*dim, hidden_dims, 1)
 
     def forward(self, query, context):
         # query, context: Batch x n x dim
@@ -84,17 +122,12 @@ class ShouldCopy(nn.Module): # MLP to get probability of copying vs generating
 
 
 class MultiClass(nn.Module):
-    def __init__(self, dim, num_classes, num_hidden):
+    def __init__(self, dim, num_classes, hidden_dims):
         super(MultiClass, self).__init__()
         self.dim = dim
         self.num_classes = num_classes
         layers = []
-        dims = [dim] + num_hidden
-        for i in range(len(dims) - 1):
-            layers.append(nn.Linear(dims[i], dims[i+1]))
-            layers.append(nn.ReLU())
-        layers.append(nn.Linear(dims[-1], num_classes +1))
-        self.network = nn.Sequential(*layers)
+        self.network = MLP(dim, hidden_dims, num_classes +1)
 
     def forward(self, rel_emb):
         logits = self.network(rel_emb)
@@ -102,18 +135,21 @@ class MultiClass(nn.Module):
 
 
 class CopyEditor(nn.Module):
-    def __init__(self, emb_dim, num_classes, copy=True, generate=True):
+    def __init__(self, emb_dim, args):
         super(CopyEditor, self).__init__()
         assert copy or generate, 'Either copy or generate must be true'
-        self.copy = copy
-        self.generate = generate
+        self.copy = args.copy
+        self.generate = args.generate
         self.emb_dim = emb_dim
-        self.num_classes = num_classes
-        self.attention = AttentionDist(emb_dim, num_classes)
-        self.rel_embedding = RelationEmbedding(emb_dim, emb_dim) # share
+        self.num_classes = args.classes
+        self.attention = AttentionDist(args.relation_output_dim, args.num_classes)
+        self.rel_embedding = RelationEmbedding(emb_dim, args.relation_output_dim,
+                                args.relation_hidden_dims, args.use_entity) # share
                         # embeddings between query and context
-        self.should_copy = ShouldCopy(emb_dim)
-        self.multiclass = MultiClass(emb_dim, num_classes, [])
+        self.should_copy = ShouldCopy(args.relation_output_dim)
+        self.multiclass = MultiClass(args.relation_output_dim,
+                                     self.num_classes,
+                                     args.relation_hidden_dims)
 
     def forward(self, query_vectors, context_vectors, context_labels,  mask):
         # query_vector: (head, tail) each of Batch x n x dim
@@ -125,8 +161,7 @@ class CopyEditor(nn.Module):
 
 
         # Batch x n x dim
-        query_embedding = self.rel_embedding(query_vectors[0], \
-                                             query_vectors[1])
+        query_embedding = self.rel_embedding(query_vectors)
 
         context_vec, copy_dist = None, None
         if self.generate:
@@ -134,8 +169,7 @@ class CopyEditor(nn.Module):
         if self.copy:
             # Batch x context_size x dim
             if context_labels is not None: # if contex
-                context_embedding = self.rel_embedding(context_vectors[0], \
-                                                       context_vectors[1])
+                context_embedding = self.rel_embedding(context_vectors)
                 #Batch x n x dim, Batch x n x num_classes+1
                 context_vec, copy_dist_unsmooth = self.attention(query_embedding, context_embedding, \
                                                  context_labels, mask)
