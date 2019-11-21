@@ -67,6 +67,8 @@ def get_batches(data):
         qh = torch.from_numpy(qh).unsqueeze(0)
         qt = torch.from_numpy(qt).unsqueeze(0)
         ql = torch.from_numpy(ql).unsqueeze(0)
+        qht = torch.from_numpy(qht).unsqueeze(0)
+        qtt = torch.from_numpy(qtt).unsqueeze(0)
         if torch.isnan(torch.stack([qh,qt])).any():
             continue
         elif type(cl) != np.ndarray:
@@ -84,8 +86,8 @@ def get_batches(data):
             qh = qh.cuda()
             qt = qt.cuda()
             ql = ql.cuda()
-            qtt = torch.from_numpy(qtt).unsqueeze(0)
-            qht = torch.from_numpy(qht).unsqueeze(0)
+            qtt = qtt.cuda()
+            qht = qht.cuda()
             if ch is not None:
                 ch = ch.cuda()
                 cl = cl.cuda()

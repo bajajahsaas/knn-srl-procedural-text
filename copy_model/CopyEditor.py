@@ -6,7 +6,7 @@ import torch.optim as optim
 from torch.utils.data import TensorDataset
 
 class MLP(nn.Module):
-    def __init__(self, input_dim, hidden_dims, output_dims):
+    def __init__(self, input_dims, hidden_dims, output_dims):
         super(MLP, self).__init__()
         all_dims = [input_dims] + hidden_dims + [output_dims]
         layers = []
@@ -63,7 +63,7 @@ class RelationEmbedding(nn.Module):
         self.emb_dim = emb_dim
         self.use_entity = use_entity
         self.output_dim = output_dim
-        self.entity_embedding_dim = entity_embedding_dim
+        self.type_embedding_dim = type_embedding_dim
         layers = []     
         if use_entity:
             total_input_dim = 2*emb_dim + 2*type_embedding_dim
@@ -71,7 +71,6 @@ class RelationEmbedding(nn.Module):
                                                 type_embedding_dim)
         else:
             total_input_dim = 2*emb_dim
-
         self.network = MLP(total_input_dim, hidden_dims,
                            output_dim) 
             
@@ -89,12 +88,13 @@ class RelationEmbedding(nn.Module):
         tail, tailtype = tail_emb_type
         init_shape = head.size()
         final_shape = tuple(list(init_shape)[:-1] + [self.output_dim])
-        head = head.view(-1, self.input_dim)
-        tail = tail.view(-1, self.input_dim)
+        head = head.view(-1, self.emb_dim)
+        tail = tail.view(-1, self.emb_dim)
         if self.use_entity:
-            head_type_embedding = self.type_embeddings(headtype)
-            tail_type_embedding = self.type_embeddings(tailtype)
-            concat = torch.cat((head, tail, headtype, tailtype), dim = -1)
+            head_type_embedding = self.type_embeddings(headtype).squeeze(0)
+            tail_type_embedding = self.type_embeddings(tailtype).squeeze(0)
+            concat = torch.cat((head, tail, head_type_embedding,
+                                tail_type_embedding), dim = -1)
         else:
             concat = torch.cat((head, tail), dim = -1)
 
@@ -137,16 +137,17 @@ class MultiClass(nn.Module):
 class CopyEditor(nn.Module):
     def __init__(self, emb_dim, args):
         super(CopyEditor, self).__init__()
-        assert copy or generate, 'Either copy or generate must be true'
+        assert args.copy or args.generate, 'Either copy or generate must be true'
         self.copy = args.copy
         self.generate = args.generate
         self.emb_dim = emb_dim
         self.num_classes = args.classes
-        self.attention = AttentionDist(args.relation_output_dim, args.num_classes)
-        self.rel_embedding = RelationEmbedding(emb_dim, args.relation_output_dim,
-                                args.relation_hidden_dims, args.use_entity) # share
+        self.attention = AttentionDist(args.relation_output_dim, args.classes)
+        self.rel_embedding = RelationEmbedding(emb_dim,args.num_entities, args.type_dim, \
+                        args.relation_output_dim, args.relation_hidden_dims, args.use_entity) # share
                         # embeddings between query and context
-        self.should_copy = ShouldCopy(args.relation_output_dim)
+        self.should_copy = ShouldCopy(args.relation_output_dim,
+                                      args.shouldcopy_hidden_dims)
         self.multiclass = MultiClass(args.relation_output_dim,
                                      self.num_classes,
                                      args.relation_hidden_dims)

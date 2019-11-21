@@ -1,6 +1,9 @@
 import argparse
 
 parser = argparse.ArgumentParser(description='Settings for training')
+parser.add_argument('--entity', dest='use_entity', action='store_true')
+parser.add_argument('--no-entity', dest='use_entity', action='store_false')
+parser.set_defaults(use_entity=True)
 parser.add_argument('--copy', dest='copy', action='store_true', help='Copy')
 parser.add_argument('--no-copy', dest='copy', action='store_false',
                     help='Don\'t copy')
@@ -35,6 +38,9 @@ parser.add_argument('--relation_hidden_dims', action='store',
 parser.add_argument('--relation_output_dim', action='store',
                     dest='relation_output_dim', type=int,
                     help='output dim of relation embedding', default=256)
+parser.add_argument('--type_embedding_dim', action='store',
+                    dest='type_dim', type=int,
+                    help='Embedding size of type embedding', default=128)
 parser.add_argument('--classes', action='store', dest='classes', type=int,
                     help='Number of classes', default=13)
 parser.add_argument('--num_entities', action='store', dest='num_entities', type=int,
