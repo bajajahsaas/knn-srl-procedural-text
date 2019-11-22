@@ -28,7 +28,7 @@ parser.add_argument('--test_output_path', action='store', dest='test_output_path
                     help='File to save test csv',
                     default='test_output.csv')
 parser.add_argument('--epochs', action='store', dest='epochs', type=int,
-                    help='Number of epochs', default=100)
+                    help='Number of epochs', default=200)
 parser.add_argument('--shouldcopy_hidden_dims', action='store',
                     dest='shouldcopy_hidden_dims', type=list,
                     help='hidden dimensions for mlp for copyprob', default=[256,128,64])
