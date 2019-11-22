@@ -45,36 +45,45 @@ def get_batches(data):
         datum = data[x]
         q_sent, qh_text, qt_text, ch_text, ct_text = datum['query_sent'], \
                 datum['query_head_text'], datum['query_tail_text'],\
-            datum['context_head_text'], datum['context_tail_text']
-        qh, qt, ql, ch, ct, cl = datum['query_head'], datum['query_tail'], \
-                                 datum['query_labels'], datum['context_head'], \
-                                 datum['context_tail'], datum['context_labels']
+                datum['context_head_text'], datum['context_tail_text']
+        qh, qt, ql, ch, ct, cl = datum['query_head'], datum['query_tail'],\
+                        datum['query_labels'], datum['context_head'], \
+                        datum['context_tail'], datum['context_labels']
+        qht, qtt, cht, ctt = datum['query_head_type'], datum['query_tail_type'],\
+                datum['context_head_type'], datum['context_tail_type']
         qh = torch.from_numpy(qh).unsqueeze(0)
         qt = torch.from_numpy(qt).unsqueeze(0)
         ql = torch.from_numpy(ql).unsqueeze(0)
-        if torch.isnan(torch.stack([qh, qt])).any():
+        qht = torch.from_numpy(qht).unsqueeze(0)
+        qtt = torch.from_numpy(qtt).unsqueeze(0)
+        if torch.isnan(torch.stack([qh,qt])).any():
             continue
         elif type(cl) != np.ndarray:
-            ch, ct, cl, mask = None, None, None, None
+            ch,ct,cl,cht,ctt,mask = None, None, None, None, None, None
         else:
             ch = torch.from_numpy(ch).unsqueeze(0)
             cl = torch.from_numpy(cl).unsqueeze(0)
             ct = torch.from_numpy(ct).unsqueeze(0)
-            if torch.isnan(torch.stack([ch, ct])).any():
+            ctt = torch.from_numpy(ctt).unsqueeze(0)
+            cht = torch.from_numpy(cht).unsqueeze(0)
+            if torch.isnan(torch.stack([ch,ct])).any():
                 continue
             mask = torch.from_numpy(np.ones_like(cl))
         if args.gpu:
             qh = qh.cuda()
             qt = qt.cuda()
             ql = ql.cuda()
+            qtt = qtt.cuda()
+            qht = qht.cuda()
             if ch is not None:
                 ch = ch.cuda()
                 cl = cl.cuda()
                 ct = ct.cuda()
+                cht = cht.cuda()
+                ctt = ctt.cuda()
                 mask = mask.cuda()
 
-        yield q_sent, (qh_text, qt_text), (ch_text, ct_text), (qh, qt), (ch, ct), cl, ql, mask
-
+        yield q_sent, (qh_text, qt_text), (ch_text, ct_text), ((qh, qht), (qt, qtt)), ((ch, cht), (ct, ctt)), cl, ql, mask
 
 def accuracy(data, model):
     with torch.no_grad():
@@ -89,7 +98,7 @@ def accuracy(data, model):
         f = open(args.test_output_path, 'w')
         writer = csv.writer(f)
         writer.writerow(['Sentence', 'Relations in context', 'Head', 'Tail',
-                         'Target', 'Prediction'])
+                         'Target', 'Prediction', 'correct'])
 
         def write_csv_row(writer, sent, qtext, qlabels, ctext, clabels, pred):
             qlabels = qlabels.view(-1)
@@ -105,7 +114,8 @@ def accuracy(data, model):
             else:
                 copyable = 'No Context found'
             for a,b,c,d in zip(qh,qt,qlabels, pred):
-                writer.writerow([sent, copyable, a, b, relations[c], relations[d]])
+                writer.writerow([sent, copyable, a, b, relations[c],
+                                 relations[d], c==d])
 
 
 
@@ -179,8 +189,7 @@ def accuracy(data, model):
         return total_accuracy, accuracy_existing_relations
 
 
-model = CopyEditor(EMBEDDING_SIZE, num_classes, copy=args.copy,
-                   generate=args.generate)
+model = CopyEditor(EMBEDDING_SIZE, args)
 model.load_state_dict(torch.load(MODEL_PATH, map_location=torch.device('cpu')))
 model.eval()
 
