@@ -83,7 +83,7 @@ def get_batches(data):
         yield ((qh, qht), (qt, qtt)), ((ch, cht), (ct, ctt)), cl, ql, mask
 
 
-def accuracy(data, model):
+def accuracy(data, model, loss):
     model.eval()
     with torch.no_grad():
         all_pred = []
@@ -191,7 +191,7 @@ def gridSearchDownSample():
                 f1_to_plot[downsample] = []
 
             loss_to_plot[downsample].append(epoch_loss)
-            acc1, acc2, valloss, f1score = accuracy(valdata, model)
+            acc1, acc2, valloss, f1score = accuracy(valdata, model, loss)
             print('Accuracy on val set = %f, Accuracy excluding norel=%f' % (acc1, acc2))
             val_loss_to_plot[downsample].append(valloss)
             f1_to_plot[downsample].append(f1score)
@@ -202,7 +202,7 @@ def gridSearchDownSample():
                 print("Early stopping")
                 break
 
-        _, _, _, f1score = accuracy(valdata, model)
+        _, _, _, f1score = accuracy(valdata, model, loss)
         print("Downsampling with ", downsample, " F1 Score = ", f1score)
         if f1score > bestf1:
             bestf1 = f1score
@@ -287,7 +287,7 @@ def noGridSearch(downsample):
             bno += 1
 
         loss_to_plot.append(epoch_loss)
-        acc1, acc2, valloss, f1score = accuracy(valdata, model)
+        acc1, acc2, valloss, f1score = accuracy(valdata, model, loss)
         print('Accuracy on val set = %f, Accuracy excluding norel=%f' % (acc1, acc2))
         val_loss_to_plot.append(valloss)
         f1_to_plot.append(f1score)
