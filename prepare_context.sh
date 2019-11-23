@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-#SBATCH --job-name=copy
+#SBATCH --job-name=prepare_context
 #SBATCH --output=logsprepcontext/copy_%j.txt  # output file
 #SBATCH -e logsprepcontext/copy_%j.err        # File to which STDERR will be written
 #SBATCH --gres=gpu:1

@@ -45,7 +45,6 @@ with open(vectorizer_file, 'rb') as f:
 
 t = AnnoyIndex(len(vect.get_feature_names()), 'angular')
 t.load(annoy_file)
-K = 5 # 5 nearest neighbors
 
 bad_relations = set(['Misc-Link'])
 
@@ -81,74 +80,77 @@ print(entity_types)
 print(len(entity_types))
 ent_dic = {e:i for i, e in enumerate(entity_types)}
 
+nns = [5, 10, 20]
+# choice for nearest neighbors
 
-dataset = []
-cnt = 0
-for s in data_tgt:
-    print('%d / %d done'%(cnt, len(data_tgt)))
-    cnt += 1
-    vector = vect.transform([s['replaced']]).toarray()[0]
-    if bert_data == bert_data_target: # on training data, we are bound to find
-                                      # same sentence, so we exclude the top
-                                      # match
-        nns = t.get_nns_by_vector(vector, K+1)[1:] #1st one will be the same
-                                                # sentence
-    else: # on held out data, we needn't exclude the top match
-        nns = t.get_nns_by_vector(vector, K+1) 
+for K in nns:
+    dataset = []
+    cnt = 0
+    for s in data_tgt:
+        print('%d / %d done'%(cnt, len(data_tgt)))
+        cnt += 1
+        vector = vect.transform([s['replaced']]).toarray()[0]
+        if bert_data == bert_data_target: # on training data, we are bound to find
+                                          # same sentence, so we exclude the top
+                                          # match
+            nns = t.get_nns_by_vector(vector, K+1)[1:] #1st one will be the same
+                                                    # sentence
+        else: # on held out data, we needn't exclude the top match
+            nns = t.get_nns_by_vector(vector, K+1)
 
-    context_head = []
-    context_head_text = []
-    context_head_type = []
-    context_tail = []
-    context_tail_text = []
-    context_tail_type = []
-    context_label = []
-    num_context = 0
-    for nn_id in nns:
-        cs = data_src[nn_id]
-        head_text, head, head_type, tail_text, tail, tail_type, labels = get_relations_embeddings(cs)
-        if head is not None:
-            num_context += 1
-            context_head.append(head)
-            context_head_text.extend(head_text)
-            context_tail.append(tail)
-            context_tail_text.extend(tail_text)
-            context_label.append(labels)
-            context_head_type.append(head_type)
-            context_tail_type.append(tail_type)
-    
-    if num_context > 0:
-        context_head = np.concatenate(context_head, axis=0)
-        context_tail = np.concatenate(context_tail, axis=0)
-        context_label = np.concatenate(context_label, axis = 0)
-        context_head_type = np.concatenate(context_head_type, axis = 0)
-        context_tail_type = np.concatenate(context_tail_type, axis = 0)
-    else:
-        context_head, context_head_type, context_tail, context_tail_type, \
-                context_label = None, None, None, None, None
+        context_head = []
+        context_head_text = []
+        context_head_type = []
+        context_tail = []
+        context_tail_text = []
+        context_tail_type = []
+        context_label = []
+        num_context = 0
+        for nn_id in nns:
+            cs = data_src[nn_id]
+            head_text, head, head_type, tail_text, tail, tail_type, labels = get_relations_embeddings(cs)
+            if head is not None:
+                num_context += 1
+                context_head.append(head)
+                context_head_text.extend(head_text)
+                context_tail.append(tail)
+                context_tail_text.extend(tail_text)
+                context_label.append(labels)
+                context_head_type.append(head_type)
+                context_tail_type.append(tail_type)
 
-    query_head_text, query_head, query_head_type, query_tail_text, query_tail, query_tail_type, query_labels = get_relations_embeddings(s)
-    if query_head is None:
-        continue
-    dataset.append({
-                        'query_sent' : s['sentence'],
-                        'context_sents' : [data_src[x]['sentence'] for x in \
-                                           nns],
-                        'query_head': query_head,
-                        'query_head_text' : query_head_text,
-                        'query_head_type': query_head_type,
-                        'query_tail': query_tail,
-                        'query_tail_text' : query_tail_text,
-                        'query_tail_type': query_tail_type,
-                        'query_labels': query_labels,
-                        'context_head' : context_head,
-                        'context_head_text' : context_head_text,
-                        'context_head_type': context_head_type,
-                        'context_tail' : context_tail,
-                        'context_tail_text' : context_tail_text,
-                        'context_tail_type': context_tail_type,
-                        'context_labels' : context_label
-                    })
+        if num_context > 0:
+            context_head = np.concatenate(context_head, axis=0)
+            context_tail = np.concatenate(context_tail, axis=0)
+            context_label = np.concatenate(context_label, axis = 0)
+            context_head_type = np.concatenate(context_head_type, axis = 0)
+            context_tail_type = np.concatenate(context_tail_type, axis = 0)
+        else:
+            context_head, context_head_type, context_tail, context_tail_type, \
+                    context_label = None, None, None, None, None
 
-with open(sys.argv[5], 'wb') as f:
-    pickle.dump(dataset, f)
+        query_head_text, query_head, query_head_type, query_tail_text, query_tail, query_tail_type, query_labels = get_relations_embeddings(s)
+        if query_head is None:
+            continue
+        dataset.append({
+                            'query_sent' : s['sentence'],
+                            'context_sents' : [data_src[x]['sentence'] for x in \
+                                               nns],
+                            'query_head': query_head,
+                            'query_head_text' : query_head_text,
+                            'query_head_type': query_head_type,
+                            'query_tail': query_tail,
+                            'query_tail_text' : query_tail_text,
+                            'query_tail_type': query_tail_type,
+                            'query_labels': query_labels,
+                            'context_head' : context_head,
+                            'context_head_text' : context_head_text,
+                            'context_head_type': context_head_type,
+                            'context_tail' : context_tail,
+                            'context_tail_text' : context_tail_text,
+                            'context_tail_type': context_tail_type,
+                            'context_labels' : context_label
+                        })
+
+    with open(sys.argv[5] + '_K' + str(K), 'wb') as f:
+        pickle.dump(dataset, f)
