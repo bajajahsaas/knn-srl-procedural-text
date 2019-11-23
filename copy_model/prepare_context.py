@@ -151,6 +151,7 @@ for K in nns:
                             'context_tail_type': context_tail_type,
                             'context_labels' : context_label
                         })
-
-    with open(sys.argv[5] + '_K' + str(K), 'wb') as f:
+    fil = sys.argv[5]
+    st = fil[:len(fil) - 4] + "_K" + str(K) + fil[len(fil) - 4:]
+    with open(st, 'wb') as f:
         pickle.dump(dataset, f)
