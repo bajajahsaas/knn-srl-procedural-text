@@ -43,6 +43,8 @@ parser.add_argument('--type_embedding_dim', action='store',
                     help='Embedding size of type embedding', default=128)
 parser.add_argument('--classes', action='store', dest='classes', type=int,
                     help='Number of classes', default=13)
+parser.add_argument('--downsample', action='store', dest='downsample', type=int,
+                    help='Number of classes', default=1)
 parser.add_argument('--num_entities', action='store', dest='num_entities', type=int,
                     help='Number of Entities', default=19)
 parser.add_argument('--batch_size', action='store', dest='batch_size', type=int,
