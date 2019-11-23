@@ -10,6 +10,7 @@ import pickle
 from annoy import AnnoyIndex
 from sklearn.feature_extraction.text import TfidfVectorizer
 from bratreader.repomodel import RepoModel
+from random import sample
 
 train = 'WLP-Dataset/train'
 test = 'WLP-Dataset/test'
@@ -65,12 +66,21 @@ def get_sentences(directory):
 
 
 train_json = get_sentences(train)
+print('Training Sentences', len(train_json))
 test_json = get_sentences(test)
+print('Testing Sentences', len(test_json))
 val_json = get_sentences(val)
+print('Validation Sentences', len(val_json))
 
+percentage = [5, 10, 20, 50, 100]
+total_train_size = len(train_json)
 
-with open('wetlabs_train.json', 'w') as f:
-    json.dump(train_json, f, indent = 4)
+for per in percentage:
+    train_size = int(per * total_train_size / 100)
+    train_set = sample(train_json, train_size)
+    print('Writing training subset with length = ', len(train_set))
+    with open('wetlabs_train' + str(per) + '.json', 'w') as f:
+        json.dump(train_set, f, indent = 4)
 
 with open('wetlabs_test.json', 'w') as f:
     json.dump(test_json, f, indent = 4)
