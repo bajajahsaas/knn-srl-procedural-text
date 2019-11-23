@@ -11,7 +11,7 @@
 
 python -u train.py --traindata train5.pkl --valdata val5.pkl --model_path models/copygen5.pt --plot_path logscopygen_exp_train/5  --gpu
 python -u train.py --traindata train10.pkl --valdata val10.pkl --model_path models/copygen10.pt --plot_path logscopygen_exp_train/10 --gpu
-python -u train.py --traindata train20.pkl --valdata val20.pkl --model_path models/copygen20.pt --plot_path logscopygen_exp_train/20 --gpu
-python -u train.py --traindata train50.pkl --valdata val50.pkl --model_path models/copygen50.pt --plot_path logscopygen_exp_train/50 --gpu
+#python -u train.py --traindata train20.pkl --valdata val20.pkl --model_path models/copygen20.pt --plot_path logscopygen_exp_train/20 --gpu
+#python -u train.py --traindata train50.pkl --valdata val50.pkl --model_path models/copygen50.pt --plot_path logscopygen_exp_train/50 --gpu
 #sleep 1
 exit
