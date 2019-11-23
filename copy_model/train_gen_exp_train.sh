@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-#SBATCH --job-name=copy
+#SBATCH --job-name=generate
 #SBATCH --output=logsgen_exp_train/copy_%j.txt  # output file
 #SBATCH -e logsgen_exp_train/copy_%j.err        # File to which STDERR will be written
 #SBATCH --gres=gpu:1
