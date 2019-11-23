@@ -10,7 +10,7 @@
 
 
 #python -u copy_model/prepare_context.py replaced100.annoy replaced_tfidf100.pkl train_embeddings100.pkl train_embeddings100.pkl train100.pkl
-python -u copy_model/prepare_context.py replaced100.annoy replaced_tfidf100.pkl train_embeddings100.pkl test_embeddings.pkl test100.pkl
+#python -u copy_model/prepare_context.py replaced100.annoy replaced_tfidf100.pkl train_embeddings100.pkl test_embeddings.pkl test100.pkl
 python -u copy_model/prepare_context.py replaced100.annoy replaced_tfidf100.pkl train_embeddings100.pkl val_embeddings.pkl val100.pkl
 
 exit
