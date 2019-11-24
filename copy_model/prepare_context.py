@@ -80,7 +80,7 @@ print(entity_types)
 print(len(entity_types))
 ent_dic = {e:i for i, e in enumerate(entity_types)}
 
-nns = [10]
+nns = [20]
 # choice for nearest neighbors
 
 for K in nns:
