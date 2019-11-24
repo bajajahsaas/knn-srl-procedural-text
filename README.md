@@ -1,5 +1,8 @@
 # Learning-to-understand-scientific-experiments
 
+## Overview
+The goal of the project is to parse scientific experiment texts (recipes) into machine readable format. Proposed methods to extract a mini knowledge graph from carefully crafted biology or chemistry “recipes”.
+
 ### Crawling
 ```
 python crawl.py
