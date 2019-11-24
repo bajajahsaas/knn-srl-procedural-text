@@ -10,8 +10,8 @@
 #SBATCH --ntasks=1
 
 
-python -u train.py --traindata train100_K10.pkl --valdata val100_K10.pkl --model_path models/copygen100_K10.pt --plot_path logscopygen_exp_k/10 --gpu
-#python -u train.py --traindata train100_K20.pkl --valdata val100_K20.pkl --model_path models/copygen100_K20.pt --plot_path logscopygen_exp_k/20 --gpu
+#python -u train.py --traindata train100_K10.pkl --valdata val100_K10.pkl --model_path models/copygen100_K10.pt --plot_path logscopygen_exp_k/10 --gpu
+python -u train.py --traindata train100_K20.pkl --valdata val100_K20.pkl --model_path models/copygen100_K20.pt --plot_path logscopygen_exp_k/20 --gpu
 
 #sleep 1
 exit
