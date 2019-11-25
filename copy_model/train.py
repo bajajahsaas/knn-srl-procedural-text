@@ -59,9 +59,10 @@ def get_batches(data):
     perm = np.random.permutation(len(data))
     for x in perm:
         datum = data[x]
-        qh, qt, ql, ch, ct, cl = datum['query_head'], datum['query_tail'],\
+        qh, qt, ql, ch, ct, cl,qpos,cpos = datum['query_head'], datum['query_tail'],\
                         datum['query_labels'], datum['context_head'], \
-                        datum['context_tail'], datum['context_labels']
+                        datum['context_tail'], datum['context_labels'],\
+                        datum['query_posdiff'], datum['context_posdiff']
         qht, qtt, cht, ctt = datum['query_head_type'], datum['query_tail_type'],\
                 datum['context_head_type'], datum['context_tail_type']
         qh = torch.from_numpy(qh).unsqueeze(0)
@@ -69,16 +70,18 @@ def get_batches(data):
         ql = torch.from_numpy(ql).unsqueeze(0)
         qht = torch.from_numpy(qht).unsqueeze(0)
         qtt = torch.from_numpy(qtt).unsqueeze(0)
+        qpos = torch.from_numpy(qpos).unsqueeze(0)
         if torch.isnan(torch.stack([qh,qt])).any():
             continue
         elif type(cl) != np.ndarray:
-            ch,ct,cl,cht,ctt,mask = None, None, None, None, None, None
+            ch,ct,cl,cht,ctt,mask,cpos = None, None, None, None, None, None, None
         else:
             ch = torch.from_numpy(ch).unsqueeze(0)
             cl = torch.from_numpy(cl).unsqueeze(0)
             ct = torch.from_numpy(ct).unsqueeze(0)
             ctt = torch.from_numpy(ctt).unsqueeze(0)
             cht = torch.from_numpy(cht).unsqueeze(0)
+            cpos = torch.from_numpy(cpos).unsqueeze(0)
             if torch.isnan(torch.stack([ch,ct])).any():
                 continue
             mask = torch.from_numpy(np.ones_like(cl))
@@ -88,6 +91,7 @@ def get_batches(data):
             ql = ql.cuda()
             qtt = qtt.cuda()
             qht = qht.cuda()
+            qpos = qpos.cuda()
             if ch is not None:
                 ch = ch.cuda()
                 cl = cl.cuda()
@@ -95,8 +99,9 @@ def get_batches(data):
                 cht = cht.cuda()
                 ctt = ctt.cuda()
                 mask = mask.cuda()
+                cpos = cpos.cuda()
 
-        yield ((qh, qht), (qt, qtt)), ((ch, cht), (ct, ctt)), cl, ql, mask
+        yield ((qh, qht), (qt, qtt), qpos), ((ch, cht), (ct, ctt), cpos), cl, ql, mask
 
 
 def accuracy(data, model):

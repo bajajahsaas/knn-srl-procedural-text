@@ -71,9 +71,11 @@ for sent in data:
         entity_text, entity_type = [], []
     else:
         entity_text, entity_type = zip(*entities)
-    embedded_data.append({'entities': list(zip(entity_text, entity_type, entity_embeddings)),
+    embedded_data.append({'entities': list(zip(entity_text, entity_type,
+                                               entity_embeddings, entity_spans)),
                           'relations' : relations, 'sentence' :
-                          sent['sentence'], 'replaced' : sent['replaced']})
+                          sent['sentence'], 'replaced' : sent['replaced'], 
+                            'length': len(bert_tokens_sentence)})
 
 with open(sys.argv[3], 'wb') as f:
     pickle.dump(embedded_data, f)

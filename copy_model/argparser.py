@@ -41,10 +41,15 @@ parser.add_argument('--relation_output_dim', action='store',
 parser.add_argument('--type_embedding_dim', action='store',
                     dest='type_dim', type=int,
                     help='Embedding size of type embedding', default=128)
+parser.add_argument('--pos_embedding_dim', action='store',
+                    dest='pos_dim', type=int,
+                    help='Embedding size of position embedding', default=128)
 parser.add_argument('--classes', action='store', dest='classes', type=int,
                     help='Number of classes', default=13)
 parser.add_argument('--num_entities', action='store', dest='num_entities', type=int,
                     help='Number of Entities', default=19)
+parser.add_argument('--num_buckets', action='store', dest='num_buckets', type=int,
+                    help='Number of buckets', default=10)
 parser.add_argument('--batch_size', action='store', dest='batch_size', type=int,
                     help='Batch size', default=16)
 parser.add_argument('--grad_maxnorm', action='store', dest='grad_maxnorm',

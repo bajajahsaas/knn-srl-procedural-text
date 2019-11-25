@@ -57,20 +57,27 @@ class AttentionDist(nn.Module):
 
 
 class RelationEmbedding(nn.Module):
-    def __init__(self, emb_dim,num_entities,type_embedding_dim, output_dim,
-                 hidden_dims = [], use_entity=False):
+    def __init__(self,
+                 emb_dim,num_entities,num_buckets,type_embedding_dim,pos_embedding_dim,output_dim,
+                 hidden_dims = [], use_entity=True, use_pos = True):
         super(RelationEmbedding, self).__init__()
         self.emb_dim = emb_dim
         self.use_entity = use_entity
+        self.use_pos = use_pos
         self.output_dim = output_dim
         self.type_embedding_dim = type_embedding_dim
+        self.pos_embedding_dim = pos_embedding_dim
         layers = []     
+        total_input_dim = 2*emb_dim
         if use_entity:
-            total_input_dim = 2*emb_dim + 2*type_embedding_dim
+            total_input_dim += 2*type_embedding_dim
             self.type_embeddings = nn.Embedding(num_entities,
                                                 type_embedding_dim)
-        else:
-            total_input_dim = 2*emb_dim
+
+        if use_pos:
+            self.pos_embeddings = nn.Embedding(num_buckets,
+                                               pos_embedding_dim)
+            total_input_dim += pos_embedding_dim
         self.network = MLP(total_input_dim, hidden_dims,
                            output_dim) 
             
@@ -83,21 +90,23 @@ class RelationEmbedding(nn.Module):
         # head, tail : * x input_dim
         #
         # output : * x output_dim
-        head_emb_type, tail_emb_type = headtail
+        head_emb_type, tail_emb_type, pos = headtail
         head, headtype = head_emb_type
         tail, tailtype = tail_emb_type
         init_shape = head.size()
         final_shape = tuple(list(init_shape)[:-1] + [self.output_dim])
         head = head.view(-1, self.emb_dim)
         tail = tail.view(-1, self.emb_dim)
+        features = [head, tail]
         if self.use_entity:
             head_type_embedding = self.type_embeddings(headtype).squeeze(0)
             tail_type_embedding = self.type_embeddings(tailtype).squeeze(0)
-            concat = torch.cat((head, tail, head_type_embedding,
-                                tail_type_embedding), dim = -1)
-        else:
-            concat = torch.cat((head, tail), dim = -1)
+            features.extend([head_type_embedding, tail_type_embedding])
+        if self.use_pos:
+            pos_embeddings = self.pos_embeddings(pos).squeeze(0)
+            features.append(pos_embeddings)
 
+        concat = torch.cat(features, dim = -1)
         mapped = self.network(concat)
         return torch.reshape(mapped, final_shape)
 
@@ -143,8 +152,10 @@ class CopyEditor(nn.Module):
         self.emb_dim = emb_dim
         self.num_classes = args.classes
         self.attention = AttentionDist(args.relation_output_dim, args.classes)
-        self.rel_embedding = RelationEmbedding(emb_dim,args.num_entities, args.type_dim, \
-                        args.relation_output_dim, args.relation_hidden_dims, args.use_entity) # share
+        self.rel_embedding = RelationEmbedding(emb_dim,args.num_entities,\
+                        args.num_buckets, args.type_dim, args.pos_dim, \
+                        args.relation_output_dim, args.relation_hidden_dims,\
+                                               args.use_entity, args.use_pos) # share
                         # embeddings between query and context
         self.should_copy = ShouldCopy(args.relation_output_dim,
                                       args.shouldcopy_hidden_dims)

@@ -1,16 +1,19 @@
 import sys
+import math
 import numpy as np
 import os
 from annoy import AnnoyIndex
 import pickle
 import re
+from buckets import Buckets
+
 
 def get_relations_embeddings(s):
     # Get all relations including no relation
     relset = set([(a,b) for a, b, _ in s['relations']])
     norels = []
     if len(s['entities']) <= 1:
-        return None, None, None, None, None, None, None
+        return None, None, None, None, None, None, None, None
     for i in range(len(s['entities'])):
         for j in range(len(s['entities'])):
             if i == j or (i, j) in relset:
@@ -24,7 +27,10 @@ def get_relations_embeddings(s):
     tail_text = [s['entities'][x[1]][0] for x in all_rels]
     tail_type = np.stack([ent_dic[s['entities'][x[1]][1]] for x in all_rels])
     labels = np.stack([x[2] for x in all_rels])
-    return head_text, head, head_type, tail_text, tail, tail_type, labels
+    posdiff = np.asarray([buckets.get_bucket(abs(s['entities'][t][3][0] -
+                                             s['entities'][h][3][0])) \
+                                for h,t,_ in all_rels])
+    return head_text, head, head_type, tail_text, tail, tail_type, labels, posdiff
 
 
 
@@ -71,6 +77,20 @@ else:
         f.write('\n'.join(relations))
     with open('entity_types.txt', 'w') as f:
         f.write('\n'.join(entity_types))
+
+if os.path.exists('buckets.pkl'):
+    with open('buckets.pkl', 'rb') as f:
+        buckets = pickle.load(f)
+else:
+    lengths = [s['length'] for s in data_src]
+    sorted_lengths = sorted(lengths)
+    # take 90th percentile to avoid outlier sentences
+    mx = sorted_lengths[int(len(sorted_lengths)*0.9)]
+    mn = 1
+    buckets = Buckets(mn, mx, bucket_size=4)
+    with open('buckets.pkl', 'wb') as f:
+        pickle.dump(buckets, f)
+
 print(relations)
 print(len(relations))
 relations.append('No relation')
@@ -103,10 +123,11 @@ for s in data_tgt:
     context_tail_text = []
     context_tail_type = []
     context_label = []
+    context_posdiffs = []
     num_context = 0
     for nn_id in nns:
         cs = data_src[nn_id]
-        head_text, head, head_type, tail_text, tail, tail_type, labels = get_relations_embeddings(cs)
+        head_text, head, head_type, tail_text, tail, tail_type, labels, posdiff = get_relations_embeddings(cs)
         if head is not None:
             num_context += 1
             context_head.append(head)
@@ -116,6 +137,7 @@ for s in data_tgt:
             context_label.append(labels)
             context_head_type.append(head_type)
             context_tail_type.append(tail_type)
+            context_posdiffs.append(posdiff)
     
     if num_context > 0:
         context_head = np.concatenate(context_head, axis=0)
@@ -123,11 +145,13 @@ for s in data_tgt:
         context_label = np.concatenate(context_label, axis = 0)
         context_head_type = np.concatenate(context_head_type, axis = 0)
         context_tail_type = np.concatenate(context_tail_type, axis = 0)
+        context_posdiffs = np.concatenate(context_posdiffs, axis = 0)
     else:
         context_head, context_head_type, context_tail, context_tail_type, \
-                context_label = None, None, None, None, None
+                context_label, context_posdiffs = None, None, None, None, None, None
 
-    query_head_text, query_head, query_head_type, query_tail_text, query_tail, query_tail_type, query_labels = get_relations_embeddings(s)
+    query_head_text, query_head, query_head_type, query_tail_text, query_tail,\
+        query_tail_type, query_labels, query_posdiff = get_relations_embeddings(s)
     if query_head is None:
         continue
     dataset.append({
@@ -140,6 +164,7 @@ for s in data_tgt:
                         'query_tail': query_tail,
                         'query_tail_text' : query_tail_text,
                         'query_tail_type': query_tail_type,
+                        'query_posdiff': query_posdiff,
                         'query_labels': query_labels,
                         'context_head' : context_head,
                         'context_head_text' : context_head_text,
@@ -147,7 +172,8 @@ for s in data_tgt:
                         'context_tail' : context_tail,
                         'context_tail_text' : context_tail_text,
                         'context_tail_type': context_tail_type,
-                        'context_labels' : context_label
+                        'context_labels' : context_label,
+                        'context_posdiff' : context_posdiffs
                     })
 
 with open(sys.argv[5], 'wb') as f:
