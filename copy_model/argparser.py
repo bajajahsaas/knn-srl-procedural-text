@@ -28,7 +28,7 @@ parser.add_argument('--test_output_path', action='store', dest='test_output_path
                     help='File to save test csv',
                     default='test_output.csv')
 parser.add_argument('--epochs', action='store', dest='epochs', type=int,
-                    help='Number of epochs', default=50)
+                    help='Number of epochs', default=200)
 parser.add_argument('--shouldcopy_hidden_dims', action='store',
                     dest='shouldcopy_hidden_dims', type=list,
                     help='hidden dimensions for mlp for copyprob', default=[256,128,64])
@@ -46,6 +46,8 @@ parser.add_argument('--pos_embedding_dim', action='store',
                     help='Embedding size of position embedding', default=128)
 parser.add_argument('--classes', action='store', dest='classes', type=int,
                     help='Number of classes', default=13)
+parser.add_argument('--downsample', action='store', dest='downsample', type=int,
+                    help='Number of classes', default=1)
 parser.add_argument('--num_entities', action='store', dest='num_entities', type=int,
                     help='Number of Entities', default=19)
 parser.add_argument('--num_buckets', action='store', dest='num_buckets', type=int,

@@ -7,25 +7,27 @@ import csv
 import re
 import pickle
 from annoy import AnnoyIndex
+import random
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
 with open('wetlabs_train.json', 'r') as f:
     data = json.load(f)
+
+    data = data[:50]
     replaced = []
     originals = []
     for k in data:
         originals.append(k["sentence"])
         replaced.append(k["replaced"])
 
-    with open('replaced_sentences.txt', 'w') as f:
+    with open('replaced_sentences_small.txt', 'w') as f:
         f.write('\n'.join(replaced))
 
-    with open('original_sentences.txt', 'w') as f:
+    with open('original_sentences_small.txt', 'w') as f:
         f.write('\n'.join(originals))
 
     print('Finished Preprocessing')
-
 
 def build_annoy_tfidf(sentences):
     print('Getting tfidf vectors')
@@ -50,14 +52,14 @@ def build_annoy_tfidf(sentences):
 print('Building annoy index for replaced sentences')
 # Representations of replaced sentences
 v_rep, ann_rep = build_annoy_tfidf([x['replaced'] for x in data])
-ann_rep.save('replaced.annoy')
-with open('replaced_tfidf.pkl', 'wb') as f:
+ann_rep.save('replaced_small.annoy')
+with open('replaced_tfidf_small.pkl', 'wb') as f:
     pickle.dump(v_rep, f)
 
 
 print('Building annoy index for original documents')
 # Representations of original sentences
 v_ori, ann_ori = build_annoy_tfidf([x['sentence'] for x in data])
-ann_ori.save('original.annoy')
-with open('original_tfidf.pkl', 'wb') as f:
+ann_ori.save('original_small.annoy')
+with open('original_tfidf_small.pkl', 'wb') as f:
     pickle.dump(v_ori, f)

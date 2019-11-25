@@ -1,5 +1,8 @@
 # Learning-to-understand-scientific-experiments
 
+## Overview
+The goal of the project is to parse scientific experiment texts (recipes) into machine readable format. Proposed methods to extract a mini knowledge graph from carefully crafted biology or chemistry “recipes”.
+
 ### Crawling
 ```
 python crawl.py
@@ -60,20 +63,20 @@ This computes nearest neighbors in the training set for each sentence in the tra
 
 ### Training using copy and generate mode
 ```python
-python copy_model/train.py --copy --generate --traindata PATH/TO/train.pkl --valdata PATH/TO/val.pkl --modelpath OUTPUTDIR/model.pt
+python copy_model/train.py --copy --generate --traindata PATH/TO/train.pkl --valdata PATH/TO/val.pkl --model_path OUTPUTDIR/model.pt
 ```
 
 ### Training using copy mode
 ```python 
-python copy_model/train.py --copy --no-generate --traindata PATH/TO/train.pkl --valdata PATH/TO/val.pkl --modelpath OUTPUTDIR/model.pt
+python copy_model/train.py --copy --no-generate --traindata PATH/TO/train.pkl --valdata PATH/TO/val.pkl --model_path OUTPUTDIR/model.pt
 ```
 
 ### Training using generate mode
 ```python 
-python copy_model/train.py --generate --no-copy --traindata PATH/TO/train.pkl --valdata PATH/TO/val.pkl --modelpath OUTPUTDIR/model.pt
+python copy_model/train.py --generate --no-copy --traindata PATH/TO/train.pkl --valdata PATH/TO/val.pkl --model_path OUTPUTDIR/model.pt
 ```
 ### Test model
 Set generate and copy arguments according to how training was done. For example:
 ```python 
-python copy_model/test.py --generate --no-copy --valdata PATH/TO/val.pkl --modelpath OUTPUTDIR/model.pt
+python copy_model/test.py --generate --no-copy --valdata PATH/TO/val.pkl --model_path OUTPUTDIR/model.pt --test_output_path OUTPUTDIR/generate
 ```
