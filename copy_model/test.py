@@ -39,53 +39,32 @@ with open(args.valdata, 'rb') as f:
 relations = open('relations.txt', 'r').read().splitlines() + ['No-Rel']
 
 
+
 def get_batches(data):
     # only batch size 1 for now
-    # no permutation
     # perm = np.random.permutation(len(data))
     for x in range(len(data)):
         datum = data[x]
         q_sent, qh_text, qt_text, ch_text, ct_text = datum['query_sent'], \
                 datum['query_head_text'], datum['query_tail_text'],\
                 datum['context_head_text'], datum['context_tail_text']
-        qh, qt, ql, ch, ct, cl = datum['query_head'], datum['query_tail'],\
-                        datum['query_labels'], datum['context_head'], \
-                        datum['context_tail'], datum['context_labels']
-        qht, qtt, cht, ctt = datum['query_head_type'], datum['query_tail_type'],\
-                datum['context_head_type'], datum['context_tail_type']
-        qh = torch.from_numpy(qh).unsqueeze(0)
-        qt = torch.from_numpy(qt).unsqueeze(0)
-        ql = torch.from_numpy(ql).unsqueeze(0)
-        qht = torch.from_numpy(qht).unsqueeze(0)
-        qtt = torch.from_numpy(qtt).unsqueeze(0)
-        if torch.isnan(torch.stack([qh,qt])).any():
-            continue
-        elif type(cl) != np.ndarray:
-            ch,ct,cl,cht,ctt,mask = None, None, None, None, None, None
-        else:
-            ch = torch.from_numpy(ch).unsqueeze(0)
-            cl = torch.from_numpy(cl).unsqueeze(0)
-            ct = torch.from_numpy(ct).unsqueeze(0)
-            ctt = torch.from_numpy(ctt).unsqueeze(0)
-            cht = torch.from_numpy(cht).unsqueeze(0)
-            if torch.isnan(torch.stack([ch,ct])).any():
-                continue
-            mask = torch.from_numpy(np.ones_like(cl))
+        qtokens, qrelations, qlabels = datum['query_tokens'], \
+            datum['query_relations'], datum['query_labels']
+        ctokens, crelations, clabels = datum['context_tokens'], \
+            datum['context_relations'], datum['context_labels']
+        qrelations = torch.from_numpy(qrelations)
+        qlabels = torch.from_numpy(qlabels)
+        crelations = [torch.from_numpy(x) for x in crelations]
+        clabels = [torch.from_numpy(x) for x in clabels]
         if args.gpu:
-            qh = qh.cuda()
-            qt = qt.cuda()
-            ql = ql.cuda()
-            qtt = qtt.cuda()
-            qht = qht.cuda()
-            if ch is not None:
-                ch = ch.cuda()
-                cl = cl.cuda()
-                ct = ct.cuda()
-                cht = cht.cuda()
-                ctt = ctt.cuda()
-                mask = mask.cuda()
+            qrelations = qrelations.cuda()
+            qlabels = qlabels.cuda()
+            for i in range(len(ctokens)):
+                crelations[i] = crelations[i].cuda()
+                clabels[i] = clabels[i].cuda()
 
-        yield q_sent, (qh_text, qt_text), (ch_text, ct_text), ((qh, qht), (qt, qtt)), ((ch, cht), (ct, ctt)), cl, ql, mask
+        yield q_sent, (qh_text, qt_text), (ch_text, ct_text), qtokens, qrelations, qlabels, ctokens, crelations, clabels
+
 
 def accuracy(data, model):
     with torch.no_grad():
@@ -99,10 +78,11 @@ def accuracy(data, model):
 
         f = open(os.path.join(args.test_output_path,'predictions.csv'), 'w')
         writer = csv.writer(f)
-        writer.writerow(['Sentence', 'Relations in context', 'Head', 'Tail',
+        writer.writerow(['Sentence', 'Relations in context', 'Head', 'Tail', \
                          'Target', 'Prediction', 'correct'])
 
-        def write_csv_row(writer, sent, qtext, qlabels, ctext, clabels, pred):
+        def write_csv_row(writer, sent, qtext, qlabels, ctext, clabels, pred, copyprob):
+            copyprob = torch.exp(copyprob.view(-1))
             qlabels = qlabels.view(-1)
             if clabels is not None:
                 clabels = clabels.view(-1)
@@ -117,15 +97,15 @@ def accuracy(data, model):
                 copyable = 'No Context found'
             for a,b,c,d in zip(qh,qt,qlabels, pred):
                 writer.writerow([sent, copyable, a, b, relations[c],
-                                 relations[d], c==d])
+                                 relations[d], bool(c==d)])
 
 
 
 
 
-        for sent, q_text, cxt_text, q, cxt, cxt_labels, q_labels, mask in get_batches(data):
-            pred = torch.argmax(model(q, cxt, cxt_labels, mask), \
-                                dim=-1).view(-1)
+        for sent, q_text, cxt_text,qt, qr, ql, ct, cr, cl  in get_batches(data):
+            logprob, copyprob = model(qt, qr, ct, cr,cl)
+            pred = torch.argmax(logprob,dim=-1).view(-1)
 
             this_target = q_labels.view(-1).data.detach().numpy().copy()
             this_pred = pred.data.detach().numpy().copy()
@@ -136,7 +116,8 @@ def accuracy(data, model):
 
             all_target.append(this_target)
             all_pred.append(this_pred)
-            write_csv_row(writer,sent, q_text, q_labels, cxt_text, cxt_labels, pred)
+            write_csv_row(writer,sent, q_text, q_labels, cxt_text, cxt_labels,
+                          pred, copyprob)
         f.close()
         all_pred = np.concatenate(all_pred, 0)
         all_target = np.concatenate(all_target, 0)

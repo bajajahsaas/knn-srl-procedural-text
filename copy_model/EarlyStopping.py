@@ -23,6 +23,7 @@ class EarlyStopping:
             return
 
         self.history = self.history[1:] + [value]
+
         if self.minmax == 'min':
             historybest = min(self.history)
             if historybest > self.best:

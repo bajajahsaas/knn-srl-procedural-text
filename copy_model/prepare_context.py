@@ -8,29 +8,44 @@ import re
 from buckets import Buckets
 
 
-def get_relations_embeddings(s):
+def get_relations_entity_spans(s):
+'''
+produces file like 
+[{
+    query_relations: N x 7 array (N relations, head span + head entity type +
+    tail span + tail entity type + pos_bucket)
+    context_relations: [N x 7] list of size K
+    query_labels : N
+    context_labels: [N]xK
+    query_tokens : list of tokens
+    context_tokens : [list of tokens for each context sentence] list of size K
+}
+...]
+    
+'''
     # Get all relations including no relation
     relset = set([(a,b) for a, b, _ in s['relations']])
     norels = []
     if len(s['entities']) <= 1:
-        return None, None, None, None, None, None, None, None
+        return None, None, None 
     for i in range(len(s['entities'])):
         for j in range(len(s['entities'])):
             if i == j or (i, j) in relset:
                 continue
             norels.append((i,j,'No relation'))
     all_rels = [(a,b,rel_dic[re.sub('\d+$','',c)]) for a,b,c in s['relations'] + norels]
-    head = np.stack([s['entities'][x[0]][2] for x in all_rels])
-    head_text = [s['entities'][x[0]][0] for x in all_rels]
-    head_type = np.stack([ent_dic[s['entities'][x[0]][1]] for x in all_rels])
-    tail = np.stack([s['entities'][x[1]][2] for x in all_rels])
-    tail_text = [s['entities'][x[1]][0] for x in all_rels]
-    tail_type = np.stack([ent_dic[s['entities'][x[1]][1]] for x in all_rels])
-    labels = np.stack([x[2] for x in all_rels])
-    posdiff = np.asarray([buckets.get_bucket(abs(s['entities'][t][3][0] -
-                                             s['entities'][h][3][0])) \
-                                for h,t,_ in all_rels])
-    return head_text, head, head_type, tail_text, tail, tail_type, labels, posdiff
+    relations_list = []
+    for h, t, label in all_rels:
+        head = [s['entities'][h][2][0], s['entities'][h][2][1], \
+                    ent_dic[s['entities'][h][1]]]
+        tail = [s['entities'][t][2][0], s['entities'][t][2][1], \
+                    ent_dic[s['entities'][t][1]]]
+        total_relation_representation = head + tail + \
+            [buckets.get_bucket(abs(s['entities'][t][3][0] - \
+                                s['entities'][h][3][0]))]
+        relations_list.append(total_relation_representation)
+    labels = [x[2] for x in all_rels]
+    return s['sent_tokens'], np.asarray(relations_list), np.asarray(labels)
 
 
 
@@ -115,65 +130,32 @@ for s in data_tgt:
                                                 # sentence
     else: # on held out data, we needn't exclude the top match
         nns = t.get_nns_by_vector(vector, K+1) 
-
-    context_head = []
-    context_head_text = []
-    context_head_type = []
-    context_tail = []
-    context_tail_text = []
-    context_tail_type = []
-    context_label = []
-    context_posdiffs = []
     num_context = 0
+    context_labels = []
+    context_relations = []
+    context_tokens = []
     for nn_id in nns:
         cs = data_src[nn_id]
-        head_text, head, head_type, tail_text, tail, tail_type, labels, posdiff = get_relations_embeddings(cs)
-        if head is not None:
+        tokens, relations, labels= get_relations_entity_spans(cs)
+        if tokens is not None:
             num_context += 1
-            context_head.append(head)
-            context_head_text.extend(head_text)
-            context_tail.append(tail)
-            context_tail_text.extend(tail_text)
-            context_label.append(labels)
-            context_head_type.append(head_type)
-            context_tail_type.append(tail_type)
-            context_posdiffs.append(posdiff)
+            context_labels.append(labels)
+            context_relations.append(relations)
+            context_tokens.append(tokens)
     
-    if num_context > 0:
-        context_head = np.concatenate(context_head, axis=0)
-        context_tail = np.concatenate(context_tail, axis=0)
-        context_label = np.concatenate(context_label, axis = 0)
-        context_head_type = np.concatenate(context_head_type, axis = 0)
-        context_tail_type = np.concatenate(context_tail_type, axis = 0)
-        context_posdiffs = np.concatenate(context_posdiffs, axis = 0)
-    else:
-        context_head, context_head_type, context_tail, context_tail_type, \
-                context_label, context_posdiffs = None, None, None, None, None, None
-
-    query_head_text, query_head, query_head_type, query_tail_text, query_tail,\
-        query_tail_type, query_labels, query_posdiff = get_relations_embeddings(s)
-    if query_head is None:
+    tokens, relations, labels = get_relations_entity_spans(s)
+    if tokens is None:
         continue
     dataset.append({
                         'query_sent' : s['sentence'],
                         'context_sents' : [data_src[x]['sentence'] for x in \
                                            nns],
-                        'query_head': query_head,
-                        'query_head_text' : query_head_text,
-                        'query_head_type': query_head_type,
-                        'query_tail': query_tail,
-                        'query_tail_text' : query_tail_text,
-                        'query_tail_type': query_tail_type,
-                        'query_posdiff': query_posdiff,
-                        'query_labels': query_labels,
-                        'context_head' : context_head,
-                        'context_head_text' : context_head_text,
-                        'context_head_type': context_head_type,
-                        'context_tail' : context_tail,
-                        'context_tail_text' : context_tail_text,
-                        'context_tail_type': context_tail_type,
-                        'context_labels' : context_label,
-                        'context_posdiff' : context_posdiffs
+                        'query_tokens' : tokens,
+                        'context_tokens': context_tokens,
+                        'query_relations' : relations,
+                        'context_relations' : context_relations,
+                        'query_labels': labels,
+                        'context_labels' : context_labels
                     })
 
 with open(sys.argv[5], 'wb') as f:

@@ -1,4 +1,5 @@
 import numpy as np
+from transformers import *
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -199,7 +200,6 @@ class CopyEditor(nn.Module):
 
         # Batch x n x dim
         query_embedding = self.rel_embedding(query_vectors)
-
         context_vec, copy_dist = None, None
         if self.generate:
             gen_dist = self.multiclass(query_embedding)
@@ -228,7 +228,7 @@ class CopyEditor(nn.Module):
 
         # if generate is enabled and copy is disabled or no cotext provided
         if self.generate and (not self.copy or copy_dist is None):
-            return gen_dist
+            return gen_dist, copy_prob
         #if copy is enabled but not generate
         elif self.copy and not self.generate:
             # If no context provided we are stuck since we do not generate
@@ -239,10 +239,10 @@ class CopyEditor(nn.Module):
                 probs[:,:,-1] = np.log(0.99)
                 if query_embedding.is_cuda:
                     probs = probs.cuda()
-                return probs
+                return probs, copy_prob
             # Else return just the copy distribution
             else:
-                return copy_dist
+                return copy_dist, copy_prob
         # if both are enabled and context is available
         else:
             copy_prob, gen_prob = self.should_copy(query_embedding, \
@@ -255,8 +255,88 @@ class CopyEditor(nn.Module):
             log_probs = torch.stack([copy_prob + copy_dist, gen_prob +
                                      gen_dist], dim = -1)
             final_probs = torch.logsumexp(log_probs, dim = -1)
-            return final_probs
+            return final_probs, copy_prob
 
 
 
+class CopyEditorBertWrapper(nn.Module):
+    def __init__(self,emb_dim, args):
+        super(CopyEditorBertWrapper, self).__init__()
+        self.emb_dim = emb_dim
+        self.copy_editor = CopyEditor(emb_dim, args)
+        self.bert_transformer = BertModel.from_pretrained('../../biobert')  
+        if args.gpu:
+            # use multiple GPUs for bert
+            self.bert_transformer = nn.DataParallel(self.bert_transformer, \
+                                                    list(range(torch._cuda_getDeviceCount())))
+        self.bert_tokenizer = BertTokenizer.from_pretrained('../../biobert')
+        self.bert_transformer.eval()
+    
+    def get_vectors(self, bert_embeddings, spans):
+        N = spans.size()[0]
+        # bert_embeddings = self.bert_transformer(tokens.unsqueeze(0))[-2].squeeze(0)
+        head_embeddings = []
+        tail_embeddings = []
+        for i in range(N):
+            hstart, hend = spans[i][0], spans[i][1]
+            tstart, tend = spans[i][3], spans[i][4]
+            head_embeddings.append(torch.mean(bert_embeddings[hstart:hend+1,:],\
+                                             dim=0))
+            tail_embeddings.append(torch.mean(bert_embeddings[tstart:tend+1,:],\
+                                             dim=0))
+        head_embeddings = torch.stack(head_embeddings, dim=0)
+        tail_embeddings = torch.stack(tail_embeddings, dim=0)
+        head_type = spans[:,2]
+        tail_type = spans[:,5]
+        pos = spans[:,6]
+        return head_embeddings.unsqueeze(0),head_type.unsqueeze(0),\
+                tail_embeddings.unsqueeze(0), tail_type.unsqueeze(0),\
+                    pos.unsqueeze(0)
+
+    def forward(self,query_tokens, query_spans, context_tokens, context_spans, context_labels):
+        cat = [query_tokens] + context_tokens
+        mxlen = max([len(x) for x in cat])
+        for x in cat:
+            x.extend([self.bert_tokenizer.pad_token_id] * (mxlen - len(x)))
+        cat_tensor = torch.tensor(cat)
+        if query_spans.is_cuda:
+            cat_tensor = cat_tensor.cuda()
+        bert_embeddings = self.bert_transformer(cat_tensor)[-2]
+        qh,qht,qt,qtt,pos = self.get_vectors(bert_embeddings[0,:], query_spans)
+        query_vectors = ((qh,qht),(qt,qtt),pos)
+        context_heads = []
+        context_tails = []
+        context_tail_type = []
+        context_head_type = []
+        context_pos = []
+        for i, spans in enumerate(context_spans):
+            ch,cht,ct,ctt,pos = self.get_vectors(bert_embeddings[i+1,:], spans)
+            context_heads.append(ch)
+            context_tails.append(ct)
+            context_tail_type.append(ctt)
+            context_head_type.append(cht)
+            context_pos.append(pos)
+        if len(context_heads) > 0:
+            context_heads = torch.cat(context_heads, dim=1)
+            context_tails = torch.cat(context_tails, dim=1)
+            context_labels = torch.cat(context_labels).unsqueeze(0)
+            context_head_type = torch.cat(context_head_type, dim=1)
+            context_tail_type = torch.cat(context_tail_type, dim=1)
+            context_pos = torch.cat(context_pos, dim=1)
+        else:
+            context_heads, context_tails, context_labels,\
+                context_pos, context_head_type, context_tail_type =\
+                    None, None,None, None, None, None
+        context_vectors = ((context_heads, context_head_type),\
+                           (context_tails, context_tail_type), context_pos)
+        if context_heads is not None:
+            mask = torch.ones(context_heads.size()[:-1])
+        else:
+            mask = None
+        if mask is not None and query_spans.is_cuda:
+            mask = mask.cuda()
+        return self.copy_editor(query_vectors, context_vectors, context_labels,\
+                                mask)
+
+        
 

@@ -6,7 +6,7 @@ import torch.optim as optim
 from sklearn.metrics import f1_score
 from torch import autograd
 from torch.utils.data import TensorDataset
-from CopyEditor import CopyEditor
+from CopyEditor import CopyEditorBertWrapper
 import pickle
 import torch.optim as optim
 import sys
@@ -43,49 +43,22 @@ def get_batches(data):
     perm = np.random.permutation(len(data))
     for x in perm:
         datum = data[x]
-        qh, qt, ql, ch, ct, cl,qpos,cpos = datum['query_head'], datum['query_tail'],\
-                        datum['query_labels'], datum['context_head'], \
-                        datum['context_tail'], datum['context_labels'],\
-                        datum['query_posdiff'], datum['context_posdiff']
-        qht, qtt, cht, ctt = datum['query_head_type'], datum['query_tail_type'],\
-                datum['context_head_type'], datum['context_tail_type']
-        qh = torch.from_numpy(qh).unsqueeze(0)
-        qt = torch.from_numpy(qt).unsqueeze(0)
-        ql = torch.from_numpy(ql).unsqueeze(0)
-        qht = torch.from_numpy(qht).unsqueeze(0)
-        qtt = torch.from_numpy(qtt).unsqueeze(0)
-        qpos = torch.from_numpy(qpos).unsqueeze(0)
-        if torch.isnan(torch.stack([qh,qt])).any():
-            continue
-        elif type(cl) != np.ndarray:
-            ch,ct,cl,cht,ctt,mask,cpos = None, None, None, None, None, None, None
-        else:
-            ch = torch.from_numpy(ch).unsqueeze(0)
-            cl = torch.from_numpy(cl).unsqueeze(0)
-            ct = torch.from_numpy(ct).unsqueeze(0)
-            ctt = torch.from_numpy(ctt).unsqueeze(0)
-            cht = torch.from_numpy(cht).unsqueeze(0)
-            cpos = torch.from_numpy(cpos).unsqueeze(0)
-            if torch.isnan(torch.stack([ch,ct])).any():
-                continue
-            mask = torch.from_numpy(np.ones_like(cl))
+        qtokens, qrelations, qlabels = datum['query_tokens'], \
+            datum['query_relations'], datum['query_labels']
+        ctokens, crelations, clabels = datum['context_tokens'], \
+            datum['context_relations'], datum['context_labels']
+        qrelations = torch.from_numpy(qrelations)
+        qlabels = torch.from_numpy(qlabels)
+        crelations = [torch.from_numpy(x) for x in crelations]
+        clabels = [torch.from_numpy(x) for x in clabels]
         if args.gpu:
-            qh = qh.cuda()
-            qt = qt.cuda()
-            ql = ql.cuda()
-            qtt = qtt.cuda()
-            qht = qht.cuda()
-            qpos = qpos.cuda()
-            if ch is not None:
-                ch = ch.cuda()
-                cl = cl.cuda()
-                ct = ct.cuda()
-                cht = cht.cuda()
-                ctt = ctt.cuda()
-                mask = mask.cuda()
-                cpos = cpos.cuda()
+            qrelations = qrelations.cuda()
+            qlabels = qlabels.cuda()
+            for i in range(len(ctokens)):
+                crelations[i] = crelations[i].cuda()
+                clabels[i] = clabels[i].cuda()
 
-        yield ((qh, qht), (qt, qtt), qpos), ((ch, cht), (ct, ctt), cpos), cl, ql, mask
+        yield qtokens, qrelations, qlabels, ctokens, crelations, clabels
 
 
 def accuracy(data, model, loss):
@@ -94,14 +67,14 @@ def accuracy(data, model, loss):
         all_pred = []
         all_target = []
         losses = []
-        for q, cxt, cxt_labels, q_labels, mask in get_batches(data):
-            model_pred = model(q, cxt, cxt_labels, mask)
+        for qt, qr,ql,ct, cr, cl  in get_batches(data):
+            model_pred, _ = model(qt, qr, ct, cr, cl)
             pred = torch.argmax(model_pred, dim=-1).view(-1)
-            all_target.append(q_labels.view(-1).data.detach().cpu().numpy().copy())
+            all_target.append(ql.view(-1).data.detach().cpu().numpy().copy())
             all_pred.append(pred.data.detach().cpu().numpy().copy())
 
             log_prob = model_pred.view(-1, num_classes + 1)
-            valloss = loss(log_prob, q_labels.view(-1))
+            valloss = loss(log_prob, ql.view(-1))
             losses.append(valloss)
 
         all_pred = np.concatenate(all_pred, 0)
@@ -162,9 +135,9 @@ def gridSearchDownSample():
                 losses = []
                 for i in range(BATCH_SIZE):
                     try:
-                        q, cxt, cxt_labels, q_labels, mask = data_gen.__next__()
-                        prediction = model(q, cxt, cxt_labels, mask).view(-1, num_classes + 1)
-                        l = loss(prediction, q_labels.view(-1))
+                        qt, qr, ql, ct, cr, cl  = data_gen.__next__()
+                        prediction,_ = model(qt, qr, ct, cr, cl)
+                        l = loss(prediction, ql.view(-1))
                         losses.append(l)
                         count += 1
                     except StopIteration:
@@ -263,8 +236,8 @@ def noGridSearch(downsample):
             losses = []
             for i in range(BATCH_SIZE):
                 try:
-                    q, cxt, cxt_labels, q_labels, mask = data_gen.__next__()
-                    prediction = model(q, cxt, cxt_labels, mask).view(-1, num_classes + 1)
+                    qt, qr, ql, ct, cr, cl  = data_gen.__next__()
+                    prediction,_ = model(qt, qr, ct, cr, cl)
                     l = loss(prediction, q_labels.view(-1))
                     losses.append(l)
                     count += 1
