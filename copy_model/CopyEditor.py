@@ -34,24 +34,51 @@ class AttentionDist(nn.Module):
         #               context sizes
 
         # output: Context vector, Probability distribution over numclasses+1 
-        #                   +1 for none class which is always 0
+        #                   +1 for none class
 
         # Batch x n x context_size
+        # Computes matrix [M_{ij}] where M_{ij} = q_i^t c_j
+
+        # TODO:
+        # [M_{ij}] = concat(q_i, c_j, cl_j)
+        # log(p(j|i)) = MLP(M_{ij}) + k
+        # inputdim = 2*rel + label_emb
+        # MLP: inputdim -> score(scalar)
+        # B x n x cs xdim -> B x n x cs x1
         dotprod = torch.sum(queries.unsqueeze(2) * context.unsqueeze(1), dim=-1) * mask.unsqueeze(1)# \
                         # +(1.0-mask.unsqueeze(1))*(-np.inf)
+        # Batch x n x context_size
         l_softmax = F.log_softmax(dotprod, dim = -1)
 
-        # Batch x n x context_size
+        # Batch x n x dim
+        # Batch x 1x cs x dim
+        # Batch x n x cs x 1
+        # Batch x n x dim
         context_vector = torch.sum(torch.exp(l_softmax.unsqueeze(-1)) * context.unsqueeze(1), dim = 2)
 
         # Batch x n x (num_classes+1)
         _, n, __ = l_softmax.size()
+
+        # Batch x 1 x cs x num_classes+1
+        # Batch x n x cs x 1
+        # Batch x n x cs x num_classes+1
+        #  c1, c2, c3
+        #  p1, p2, p3
+        #  l1, l2, l1
+        #  P_l1, P_l2
+
+        # l_softmax = [[p1, p2, p3]]
+        # cl = [l1,l2,l1]
+
+        # [[1,0],[0,1],[1,0]]  
         onehot_labels =\
             F.one_hot(context_labels, self.num_classes+1).unsqueeze(1).repeat((1,n,1,1))
+
+        #  [[[p1,0],[0,p2],[p3,0]]] //1 x 3 x 2
         onehot_logprobs = onehot_labels * l_softmax.unsqueeze(-1)
         onehot_logprobs[torch.where(onehot_labels == 0)] = -float('Inf')
 
-
+        #  [[p1+p3, p2]]
         l_softmax_classes = torch.logsumexp(onehot_logprobs, dim = 2)
         return context_vector, l_softmax_classes
 
@@ -81,13 +108,11 @@ class RelationEmbedding(nn.Module):
         self.network = MLP(total_input_dim, hidden_dims,
                            output_dim) 
             
-            
-            # experiment with mlp,
+           
                     
-                    # non linearity
 
     def forward(self, headtail):
-        # head, tail : * x input_dim
+        # (head, headtype), (tail,tailtype), posbucket : * x input_dim
         #
         # output : * x output_dim
         head_emb_type, tail_emb_type, pos = headtail
@@ -135,7 +160,6 @@ class MultiClass(nn.Module):
         super(MultiClass, self).__init__()
         self.dim = dim
         self.num_classes = num_classes
-        layers = []
         self.network = MLP(dim, hidden_dims, num_classes +1)
 
     def forward(self, rel_emb):
@@ -164,10 +188,11 @@ class CopyEditor(nn.Module):
                                      args.relation_hidden_dims)
 
     def forward(self, query_vectors, context_vectors, context_labels,  mask):
-        # query_vector: (head, tail) each of Batch x n x dim
-        # context_vectors: (head, tail) each of Batch x context_size x dim
+        # query_vector: ((head, headtype), (tail, tailtype), posbucket) head, tail of Batch x n x dim
+        #                                                               headtype,tailtype, posbucket of size Batch x n
+        # context_vectors: ((head, headtype), (tail, tailtype), posbucket) each of Batch x context_size x dim
         # Context_labels: Batch x Context_size
-        # mask : Batch x context_size
+        # mask : Batch x context_size,
         #
         # output: Batch x (Num_classes+1) log distribution
 
@@ -226,6 +251,7 @@ class CopyEditor(nn.Module):
             gen_prob = gen_prob.unsqueeze(-1)
 
             # Batch x n x num_classes+1
+            # p_final = p_copy*copy_dist + p_gen*gen_dist
             log_probs = torch.stack([copy_prob + copy_dist, gen_prob +
                                      gen_dist], dim = -1)
             final_probs = torch.logsumexp(log_probs, dim = -1)
