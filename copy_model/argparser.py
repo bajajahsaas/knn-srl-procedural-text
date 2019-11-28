@@ -11,6 +11,9 @@ parser.add_argument('--copy', dest='copy', action='store_true', help='Copy')
 parser.add_argument('--no-copy', dest='copy', action='store_false',
                     help='Don\'t copy')
 parser.set_defaults(copy=True)
+parser.add_argument('--finetune', dest='finetune', action='store_true')
+parser.add_argument('--no-finetune', dest='finetune', action='store_false')
+parser.set_defaults(finetune=True)
 parser.add_argument('--generate', dest='generate', action='store_true',
                     help='Generate')
 parser.add_argument('--no-generate', dest='generate', action='store_false',
@@ -54,7 +57,7 @@ parser.add_argument('--downsample', action='store', dest='downsample', type=int,
 parser.add_argument('--num_entities', action='store', dest='num_entities', type=int,
                     help='Number of Entities', default=19)
 parser.add_argument('--num_buckets', action='store', dest='num_buckets', type=int,
-                    help='Number of buckets', default=10)
+                    help='Number of buckets', default=19)
 parser.add_argument('--batch_size', action='store', dest='batch_size', type=int,
                     help='Batch size', default=16)
 parser.add_argument('--grad_maxnorm', action='store', dest='grad_maxnorm',

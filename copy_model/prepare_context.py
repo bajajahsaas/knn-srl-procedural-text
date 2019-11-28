@@ -7,8 +7,6 @@ import pickle
 import re
 from buckets import Buckets
 
-
-def get_relations_entity_spans(s):
 '''
 produces file like 
 [{
@@ -23,6 +21,8 @@ produces file like
 ...]
     
 '''
+
+def get_relations_entity_spans(s):
     # Get all relations including no relation
     relset = set([(a,b) for a, b, _ in s['relations']])
     norels = []
@@ -41,8 +41,8 @@ produces file like
         tail = [s['entities'][t][2][0], s['entities'][t][2][1], \
                     ent_dic[s['entities'][t][1]]]
         total_relation_representation = head + tail + \
-            [buckets.get_bucket(abs(s['entities'][t][3][0] - \
-                                s['entities'][h][3][0]))]
+            [buckets.get_bucket(abs(s['entities'][t][2][0] - \
+                                s['entities'][h][2][0]))]
         relations_list.append(total_relation_representation)
     labels = [x[2] for x in all_rels]
     return s['sent_tokens'], np.asarray(relations_list), np.asarray(labels)

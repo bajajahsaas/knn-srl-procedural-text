@@ -213,7 +213,7 @@ def noGridSearch(downsample):
     if args.gpu:
         weights = weights.cuda()
     loss = nn.NLLLoss(weights)
-    model = CopyEditor(EMBEDDING_SIZE, args)
+    model = CopyEditorBertWrapper(EMBEDDING_SIZE, args)
     if args.gpu:
         model = model.cuda()
     learning_rate = args.lr
@@ -238,7 +238,7 @@ def noGridSearch(downsample):
                 try:
                     qt, qr, ql, ct, cr, cl  = data_gen.__next__()
                     prediction,_ = model(qt, qr, ct, cr, cl)
-                    l = loss(prediction, q_labels.view(-1))
+                    l = loss(prediction.squeeze(0), ql.view(-1))
                     losses.append(l)
                     count += 1
                 except StopIteration:

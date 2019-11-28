@@ -201,6 +201,7 @@ class CopyEditor(nn.Module):
         # Batch x n x dim
         query_embedding = self.rel_embedding(query_vectors)
         context_vec, copy_dist = None, None
+        copy_prob = torch.ones_like(query_vectors[2])
         if self.generate:
             gen_dist = self.multiclass(query_embedding)
         if self.copy:
@@ -262,6 +263,7 @@ class CopyEditor(nn.Module):
 class CopyEditorBertWrapper(nn.Module):
     def __init__(self,emb_dim, args):
         super(CopyEditorBertWrapper, self).__init__()
+        self.finetune = args.finetune
         self.emb_dim = emb_dim
         self.copy_editor = CopyEditor(emb_dim, args)
         self.bert_transformer = BertModel.from_pretrained('../../biobert')  
@@ -301,7 +303,13 @@ class CopyEditorBertWrapper(nn.Module):
         cat_tensor = torch.tensor(cat)
         if query_spans.is_cuda:
             cat_tensor = cat_tensor.cuda()
-        bert_embeddings = self.bert_transformer(cat_tensor)[-2]
+
+        if self.finetune:
+            bert_embeddings = self.bert_transformer(cat_tensor)[-2]
+        else:
+            with torch.no_grad():
+                bert_embeddings = self.bert_transformer(cat_tensor)[-2]
+
         qh,qht,qt,qtt,pos = self.get_vectors(bert_embeddings[0,:], query_spans)
         query_vectors = ((qh,qht),(qt,qtt),pos)
         context_heads = []
