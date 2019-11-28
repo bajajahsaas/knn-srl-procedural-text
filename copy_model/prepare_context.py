@@ -87,7 +87,7 @@ else:
     # take 90th percentile to avoid outlier sentences
     mx = sorted_lengths[int(len(sorted_lengths)*0.9)]
     mn = 1
-    buckets = Buckets(mn, mx, bucket_size=4)
+    buckets = Buckets(mn, mx, bucket_size=2)
     with open('buckets.pkl', 'wb') as f:
         pickle.dump(buckets, f)
 
