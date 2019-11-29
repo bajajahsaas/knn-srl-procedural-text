@@ -55,7 +55,6 @@ class AttentionDist(nn.Module):
             # context_label_dims should be = dim
             concat = torch.cat((queries, context, label_emb), -1)
             attn = self.network(concat).squeeze(-1)
-            print('Output of attention', attn.size())
 
             # TODO:
             # [M_{ij}] = concat(q_i, c_j, cl_j)

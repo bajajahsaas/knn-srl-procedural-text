@@ -62,7 +62,7 @@ parser.add_argument('--downsample', action='store', dest='downsample', type=int,
 parser.add_argument('--num_entities', action='store', dest='num_entities', type=int,
                     help='Number of Entities', default=19)
 parser.add_argument('--num_buckets', action='store', dest='num_buckets', type=int,
-                    help='Number of buckets', default=10)
+                    help='Number of buckets', default=19)
 parser.add_argument('--batch_size', action='store', dest='batch_size', type=int,
                     help='Batch size', default=16)
 parser.add_argument('--grad_maxnorm', action='store', dest='grad_maxnorm',
