@@ -51,9 +51,13 @@ class AttentionDist(nn.Module):
             # torch.sum(dot_prod, dim = -1): (Batch x n x context_size)
 
         elif self.attention_method == 'mlp':
+            _,n,__ = queries.size()
+            _,cs,__ = context.size()
             label_emb = self.label_embedding(context_labels)  # Batch x context_size  x context_label_dims
             # context_label_dims should be = dim
-            concat = torch.cat((queries, context, label_emb), -1)
+            concat = torch.cat((queries.unsqueeze(2).repeat(1,1,cs,1),\
+                                context.unsqueeze(1).repeat(1,n,1,1),\
+                                label_emb.unsqueeze(1).repeat(1,n,1,1)), -1)
             attn = self.network(concat).squeeze(-1)
 
             # TODO:
