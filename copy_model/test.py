@@ -7,6 +7,7 @@ from CopyEditor import CopyEditor
 import pickle
 from sklearn.metrics import precision_score, recall_score, f1_score
 from argparser import args
+from train import get_batches
 
 copy = args.copy
 generate = args.generate
@@ -39,54 +40,6 @@ with open(args.valdata, 'rb') as f:
 relations = open('relations.txt', 'r').read().splitlines() + ['No-Rel']
 
 
-def get_batches(data):
-    # only batch size 1 for now
-    # no permutation
-    # perm = np.random.permutation(len(data))
-    for x in range(len(data)):
-        datum = data[x]
-        q_sent, qh_text, qt_text, ch_text, ct_text = datum['query_sent'], \
-                datum['query_head_text'], datum['query_tail_text'],\
-                datum['context_head_text'], datum['context_tail_text']
-        qh, qt, ql, ch, ct, cl = datum['query_head'], datum['query_tail'],\
-                        datum['query_labels'], datum['context_head'], \
-                        datum['context_tail'], datum['context_labels']
-        qht, qtt, cht, ctt = datum['query_head_type'], datum['query_tail_type'],\
-                datum['context_head_type'], datum['context_tail_type']
-        qh = torch.from_numpy(qh).unsqueeze(0)
-        qt = torch.from_numpy(qt).unsqueeze(0)
-        ql = torch.from_numpy(ql).unsqueeze(0)
-        qht = torch.from_numpy(qht).unsqueeze(0)
-        qtt = torch.from_numpy(qtt).unsqueeze(0)
-        if torch.isnan(torch.stack([qh,qt])).any():
-            continue
-        elif type(cl) != np.ndarray:
-            ch,ct,cl,cht,ctt,mask = None, None, None, None, None, None
-        else:
-            ch = torch.from_numpy(ch).unsqueeze(0)
-            cl = torch.from_numpy(cl).unsqueeze(0)
-            ct = torch.from_numpy(ct).unsqueeze(0)
-            ctt = torch.from_numpy(ctt).unsqueeze(0)
-            cht = torch.from_numpy(cht).unsqueeze(0)
-            if torch.isnan(torch.stack([ch,ct])).any():
-                continue
-            mask = torch.from_numpy(np.ones_like(cl))
-        if args.gpu:
-            qh = qh.cuda()
-            qt = qt.cuda()
-            ql = ql.cuda()
-            qtt = qtt.cuda()
-            qht = qht.cuda()
-            if ch is not None:
-                ch = ch.cuda()
-                cl = cl.cuda()
-                ct = ct.cuda()
-                cht = cht.cuda()
-                ctt = ctt.cuda()
-                mask = mask.cuda()
-
-        yield q_sent, (qh_text, qt_text), (ch_text, ct_text), ((qh, qht), (qt, qtt)), ((ch, cht), (ct, ctt)), cl, ql, mask
-
 def accuracy(data, model):
     with torch.no_grad():
         labels = [x for x in range(num_labels)]  # All possible output labels for multiclass problem
@@ -97,7 +50,7 @@ def accuracy(data, model):
         recall_sentences = []
         f1_sentences = []
 
-        f = open(os.path.join(args.test_output_path,'predictions.csv'), 'w')
+        f = open(os.path.join(args.test_output_path, 'predictions.csv'), 'w')
         writer = csv.writer(f)
         writer.writerow(['Sentence', 'Relations in context', 'Head', 'Tail',
                          'Target', 'Prediction', 'correct'])
@@ -107,21 +60,17 @@ def accuracy(data, model):
             if clabels is not None:
                 clabels = clabels.view(-1)
             pred = pred.view(-1)
-            qh,qt = qtext
-            ch,ct = ctext
+            qh, qt = qtext
+            ch, ct = ctext
             if clabels is not None:
                 # copyable = '\n'.join(['%s \t\t %s \t\t %s'%(a,relations[b], c) for
                 #                   (a,b,c) in zip(ch,clabels, ct)])
                 copyable = '|'.join(list(set([relations[x] for x in clabels])))
             else:
                 copyable = 'No Context found'
-            for a,b,c,d in zip(qh,qt,qlabels, pred):
+            for a, b, c, d in zip(qh, qt, qlabels, pred):
                 writer.writerow([sent, copyable, a, b, relations[c],
-                                 relations[d], c==d])
-
-
-
-
+                                 relations[d], c == d])
 
         for sent, q_text, cxt_text, q, cxt, cxt_labels, q_labels, mask in get_batches(data):
             pred = torch.argmax(model(q, cxt, cxt_labels, mask), \
@@ -136,7 +85,7 @@ def accuracy(data, model):
 
             all_target.append(this_target)
             all_pred.append(this_pred)
-            write_csv_row(writer,sent, q_text, q_labels, cxt_text, cxt_labels, pred)
+            write_csv_row(writer, sent, q_text, q_labels, cxt_text, cxt_labels, pred)
         f.close()
         all_pred = np.concatenate(all_pred, 0)
         all_target = np.concatenate(all_target, 0)
@@ -148,7 +97,7 @@ def accuracy(data, model):
         writer_sc = csv.writer(f)
         writer_sc.writerow(['Averaging', 'Precision', 'Recall', 'F1 Score'])
 
-        micro_prec =  str(round(precision_score(all_target, all_pred, labels=labels, average="micro"), 4) * 100)
+        micro_prec = str(round(precision_score(all_target, all_pred, labels=labels, average="micro"), 4) * 100)
         macro_prec = str(round(precision_score(all_target, all_pred, labels=labels, average="macro"), 4) * 100)
 
         precisionlist = precision_score(all_target, all_pred, labels=labels, average=None)
@@ -158,8 +107,8 @@ def accuracy(data, model):
         # for rel, precision in zip(relations, precisionlist):
         #     print(rel, precision)
 
-        micro_rec =  str(round(recall_score(all_target, all_pred, labels=labels, average="micro"),4)*100)
-        macro_rec = str(round(recall_score(all_target, all_pred, labels=labels, average="macro"),4)*100)
+        micro_rec = str(round(recall_score(all_target, all_pred, labels=labels, average="micro"), 4) * 100)
+        macro_rec = str(round(recall_score(all_target, all_pred, labels=labels, average="macro"), 4) * 100)
 
         recalllist = recall_score(all_target, all_pred, labels=labels, average=None)
         # print('Macro recall excluding no rel', np.mean(recalllist[:len(recalllist) - 1]))
@@ -168,8 +117,8 @@ def accuracy(data, model):
         # for rel, recall in zip(relations, recalllist):
         #     print(rel, recall)
 
-        micro_f1 = str(round(f1_score(all_target, all_pred, labels=labels, average="micro"), 4)*100)
-        macro_f1 = str(round(f1_score(all_target, all_pred, labels=labels, average="macro"), 4)*100)
+        micro_f1 = str(round(f1_score(all_target, all_pred, labels=labels, average="micro"), 4) * 100)
+        macro_f1 = str(round(f1_score(all_target, all_pred, labels=labels, average="macro"), 4) * 100)
 
         f1list = f1_score(all_target, all_pred, labels=labels, average=None)
         # print('Macro f1 excluding no rel', np.mean(f1list[:len(f1list) - 1]))
@@ -184,9 +133,9 @@ def accuracy(data, model):
         num_rel_correct = np.sum(existing_relations * np.equal(all_target, all_pred))
         accuracy_existing_relations = num_rel_correct / np.sum(existing_relations)
 
-        macro_sent_prec = str(round(np.mean(precision_sentences),4)*100)
-        macro_sent_rec = str(round(np.mean(recall_sentences),4)*100)
-        macro_sent_f1 = str(round(np.mean(f1_sentences),4)*100)
+        macro_sent_prec = str(round(np.mean(precision_sentences), 4) * 100)
+        macro_sent_rec = str(round(np.mean(recall_sentences), 4) * 100)
+        macro_sent_f1 = str(round(np.mean(f1_sentences), 4) * 100)
 
         writer_sc.writerow(['microaverage', micro_prec, micro_rec, micro_f1])
         writer_sc.writerow(['macroaverage', macro_prec, macro_rec, macro_f1])
@@ -194,10 +143,10 @@ def accuracy(data, model):
 
         # print('Per class F1 score is')
         writer_sc.writerow(['\t', '\t', '\t', '\t'])
-        writer_sc.writerow(['Relation', relations[:len(relations) - 1]]) #No-rel accuracy is not returned
+        writer_sc.writerow(['Relation', relations[:len(relations) - 1]])  # No-rel accuracy is not returned
         f1_class = []
         for rel, f1 in zip(relations, f1list):
-            f1_class.append(str(round(f1, 4)*100))
+            f1_class.append(str(round(f1, 4) * 100))
 
         writer_sc.writerow(['F1 score', f1_class])
 
@@ -209,4 +158,4 @@ model.load_state_dict(torch.load(MODEL_PATH, map_location=torch.device('cpu')))
 model.eval()
 
 acc1, acc2 = accuracy(valdata, model)
-print('Accuracy on val set = ', str(round(acc1, 4)*100), 'Accuracy excluding norel ', str(round(acc2, 4)*100))
+print('Accuracy on val set = ', str(round(acc1, 4) * 100), 'Accuracy excluding norel ', str(round(acc2, 4) * 100))
