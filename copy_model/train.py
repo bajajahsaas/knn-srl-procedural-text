@@ -148,7 +148,7 @@ def gridSearchDownSample():
         print(model.parameters)
         optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate, \
                                      weight_decay=weight_decay)
-        early_stopping = EarlyStopping(patience=20, model_path=this_model_path, minmax= \
+        early_stopping = EarlyStopping(patience=50, model_path=this_model_path, minmax= \
             'max')
 
         for epoch in range(NUM_EPOCHS):
@@ -249,7 +249,7 @@ def noGridSearch(downsample):
     print(model.parameters)
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate, \
                                  weight_decay=weight_decay)
-    early_stopping = EarlyStopping(patience=20, model_path=MODEL_PATH, minmax= \
+    early_stopping = EarlyStopping(patience=50, model_path=MODEL_PATH, minmax= \
         'max')
 
     for epoch in range(NUM_EPOCHS):
