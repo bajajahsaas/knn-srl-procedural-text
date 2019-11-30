@@ -6,7 +6,7 @@ import torch.optim as optim
 from sklearn.metrics import f1_score
 from torch import autograd
 from torch.utils.data import TensorDataset
-from CopyEditor import CopyEditorBertWrapper
+from CopyEditor import CopyEditorBertWrapper, CopyEditor
 import pickle
 import torch.optim as optim
 import sys
