@@ -26,7 +26,7 @@ class AttentionDist(nn.Module):
         self.dim = dim
         self.num_classes = num_classes
         self.attention_method = attnmethod
-        self.label_embedding = nn.Embedding(num_classes, context_label_dims)
+        self.label_embedding = nn.Embedding(num_classes + 1, context_label_dims)
         total_input_dim = 2 * dim + context_label_dims
         self.network = MLP(total_input_dim, hidden_dims, 1)
 
