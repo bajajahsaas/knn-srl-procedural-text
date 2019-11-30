@@ -22,10 +22,14 @@ class MLP(nn.Module):
 
 
 class AttentionDist(nn.Module):
-    def __init__(self, dim, num_classes):
+    def __init__(self, dim, num_classes, context_label_dims, attnmethod, hidden_dims=[]):
         super(AttentionDist, self).__init__()
         self.dim = dim
         self.num_classes = num_classes
+        self.attention_method = attnmethod
+        self.label_embedding = nn.Embedding(num_classes + 1, context_label_dims)
+        total_input_dim = 2 * dim + context_label_dims
+        self.network = MLP(total_input_dim, hidden_dims, 1)
 
     def forward(self, queries, context, context_labels, mask):
         # queries: Batch x n x dim
@@ -40,22 +44,39 @@ class AttentionDist(nn.Module):
         # Batch x n x context_size
         # Computes matrix [M_{ij}] where M_{ij} = q_i^t c_j
 
-        # TODO:
-        # [M_{ij}] = concat(q_i, c_j, cl_j)
-        # log(p(j|i)) = MLP(M_{ij}) + k
-        # inputdim = 2*rel + label_emb
-        # MLP: inputdim -> score(scalar)
-        # B x n x cs xdim -> B x n x cs x1
-        dotprod = torch.sum(queries.unsqueeze(2) * context.unsqueeze(1), dim=-1) * mask.unsqueeze(1)# \
-                        # +(1.0-mask.unsqueeze(1))*(-np.inf)
+        if self.attention_method == 'dotprod':
+            attn = torch.sum(queries.unsqueeze(2) * context.unsqueeze(1), dim=-1) * mask.unsqueeze(1)
+            # queries: (Batch x n x dim),  queries.unsqueeze(2): (Batch x n x 1 x dim)
+            # context: (Batch x context_size x dim),  context.unsqueeze(1): (Batch x 1 x context_size x dim)
+            # dot_prod: (Batch x n x context_size x dim)
+            # torch.sum(dot_prod, dim = -1): (Batch x n x context_size)
+
+        elif self.attention_method == 'mlp':
+            _,n,__ = queries.size()
+            _,cs,__ = context.size()
+            label_emb = self.label_embedding(context_labels)  # Batch x context_size  x context_label_dims
+            # context_label_dims should be = dim
+            concat = torch.cat((queries.unsqueeze(2).repeat(1,1,cs,1),\
+                                context.unsqueeze(1).repeat(1,n,1,1),\
+                                label_emb.unsqueeze(1).repeat(1,n,1,1)), -1)
+            attn = self.network(concat).squeeze(-1)
+
+            # TODO:
+            # [M_{ij}] = concat(q_i, c_j, cl_j)
+            # log(p(j|i)) = MLP(M_{ij}) + k
+            # inputdim = 2*rel + label_emb
+            # MLP: inputdim -> score(scalar)
+            # B x n x cs x dim -> B x n x cs x 1
+
+        # +(1.0-mask.unsqueeze(1))*(-np.inf)
         # Batch x n x context_size
-        l_softmax = F.log_softmax(dotprod, dim = -1)
+        l_softmax = F.log_softmax(attn, dim=-1)
 
         # Batch x n x dim
         # Batch x 1x cs x dim
         # Batch x n x cs x 1
         # Batch x n x dim
-        context_vector = torch.sum(torch.exp(l_softmax.unsqueeze(-1)) * context.unsqueeze(1), dim = 2)
+        context_vector = torch.sum(torch.exp(l_softmax.unsqueeze(-1)) * context.unsqueeze(1), dim=2)
 
         # Batch x n x (num_classes+1)
         _, n, __ = l_softmax.size()
@@ -95,7 +116,7 @@ class RelationEmbedding(nn.Module):
         self.output_dim = output_dim
         self.type_embedding_dim = type_embedding_dim
         self.pos_embedding_dim = pos_embedding_dim
-        layers = []     
+        layers = []
         total_input_dim = 2*emb_dim
         if use_entity:
             total_input_dim += 2*type_embedding_dim
@@ -107,10 +128,10 @@ class RelationEmbedding(nn.Module):
                                                pos_embedding_dim)
             total_input_dim += pos_embedding_dim
         self.network = MLP(total_input_dim, hidden_dims,
-                           output_dim) 
-            
-           
-                    
+                           output_dim)
+
+
+
 
     def forward(self, headtail):
         # (head, headtype), (tail,tailtype), posbucket : * x input_dim
@@ -176,12 +197,13 @@ class CopyEditor(nn.Module):
         self.generate = args.generate
         self.emb_dim = emb_dim
         self.num_classes = args.classes
-        self.attention = AttentionDist(args.relation_output_dim, args.classes)
-        self.rel_embedding = RelationEmbedding(emb_dim,args.num_entities,\
-                        args.num_buckets, args.type_dim, args.pos_dim, \
-                        args.relation_output_dim, args.relation_hidden_dims,\
-                                               args.use_entity, args.use_pos) # share
-                        # embeddings between query and context
+        self.attention = AttentionDist(args.relation_output_dim, args.classes, args.context_label_dim, args.attnmethod,
+                                       args.attention_hidden_dims)
+        self.rel_embedding = RelationEmbedding(emb_dim, args.num_entities, \
+                                               args.num_buckets, args.type_dim, args.pos_dim, \
+                                               args.relation_output_dim, args.relation_hidden_dims, \
+                                               args.use_entity, args.use_pos)  # share
+        # embeddings between query and context
         self.should_copy = ShouldCopy(args.relation_output_dim,
                                       args.shouldcopy_hidden_dims)
         self.multiclass = MultiClass(args.relation_output_dim,
