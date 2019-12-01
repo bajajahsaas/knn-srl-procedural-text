@@ -47,9 +47,9 @@ This creates files original.annoy, replaced.annoy, original_tfidf.pkl and replac
 
 ### Generate embeddings of Sentences using BERT (or bioBERT).
 ```python 
-python copy_model/prepare_data.py wetlabs_train.json biobert train_embeddings.pkl
-python copy_model/prepare_data.py wetlabs_val.json biobert val_embeddings.pkl
-python copy_model/prepare_data.py wetlabs_test.json biobert test_embeddings.pkl
+python copy_model/prepare_data.py wetlabs_train.json <scibert/biobert> train_embeddings.pkl
+python copy_model/prepare_data.py wetlabs_val.json <scibert/biobert> val_embeddings.pkl
+python copy_model/prepare_data.py wetlabs_test.json <scibert/biobert> test_embeddings.pkl
 ```
 This produces train_embeddings.pkl, val_embeddings.pkl, test_embeddings.pkl. Use argument (biobert) if want to generate embeddings from bioBERT and (bert) to use basebert. 
 
