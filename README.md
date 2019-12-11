@@ -2,6 +2,7 @@
 
 ## Overview
 The goal of the project is to parse scientific experiment texts (recipes) into machine readable format. Proposed attention-based copy-pointer and generate methods for relation extraction using k-nearest neighbors.
+
 Poster: https://drive.google.com/open?id=14SFFdDdXgjB6iRXraWw5IvQQWz09oAUp
 
 ### Crawling
