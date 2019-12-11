@@ -1,7 +1,7 @@
 # Learning-to-understand-scientific-experiments
 
 ## Overview
-The goal of the project is to parse scientific experiment texts (recipes) into machine readable format. Proposed attention-based copy-pointer and generate methods for relation extraction using k-nearest neighbors.
+The goal of the project is to parse scientific experiment texts (recipes) into machine readable format. Proposed attention-based copy-pointer and generate methods for relation extraction using k-nearest neighbors. Incorporated Sci-BERT and multi-layer perceptron models to achieve benchmarks results on wet labs corpus.
 
 Poster: https://drive.google.com/open?id=14SFFdDdXgjB6iRXraWw5IvQQWz09oAUp
 
