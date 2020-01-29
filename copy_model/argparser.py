@@ -30,6 +30,8 @@ parser.add_argument('--model_path', action='store', dest='model_path', type=str,
 parser.add_argument('--test_output_path', action='store', dest='test_output_path', type=str,
                     help='File to save test csv',
                     default='test_output.csv')
+parser.add_argument('--contextdata', action='store', dest='contextdata',
+                    type=str, help='Context data', default='context_data.pkl')
 parser.add_argument('--epochs', action='store', dest='epochs', type=int,
                     help='Number of epochs', default=200)
 parser.add_argument('--shouldcopy_hidden_dims', action='store',

@@ -1,7 +1,7 @@
 import os
 from transformers import convert_bert_original_tf_checkpoint_to_pytorch, BertModel, BertTokenizer
 
-BERT_BASE_DIR='../../biobert_v1.1_pubmed/'
+BERT_BASE_DIR='../../biobert/'
 file = BERT_BASE_DIR + 'pytorch_model.bin'
 
 if os.path.exists(file):
