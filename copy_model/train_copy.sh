@@ -4,7 +4,7 @@
 #SBATCH --output=logscopy/copy_%j.txt  # output file
 #SBATCH -e logscopy/copy_%j.err        # File to which STDERR will be written
 #SBATCH --gres=gpu:1
-#SBATCH --mem=10000
+#SBATCH --mem=100000
 #
 #SBATCH --ntasks=1
 
