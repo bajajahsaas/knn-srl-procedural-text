@@ -37,59 +37,18 @@ with open(args.traindata, 'rb') as f:
 with open(args.valdata, 'rb') as f:
     valdata = pickle.load(f)
 
-with open(args.contextdata, 'rb') as f:
-    contextdata = pickle.load(f)
 
-# Cannot precompute this for large (number of entities/sentence) datasets like Materials
-def get_context_info(context, nns):
-    subset = [context[i] for i in nns]
-    context_head = []
-    context_head_text = []
-    context_head_type = []
-    context_tail = []
-    context_tail_text = []
-    context_tail_type = []
-    context_label = []
-    context_posdiffs = []
-    num_context = 0
-    
-    for head_text, head, head_type, tail_text, tail, tail_type, labels, posdiff in subset:
-        if head is not None:
-            num_context += 1
-            context_head.append(head)
-            context_head_text.extend(head_text)
-            context_tail.append(tail)
-            context_tail_text.extend(tail_text)
-            context_label.append(labels)
-            context_head_type.append(head_type)
-            context_tail_type.append(tail_type)
-            context_posdiffs.append(posdiff)
-    
-    if num_context > 0:
-        context_head = np.concatenate(context_head, axis=0)
-        context_tail = np.concatenate(context_tail, axis=0)
-        context_label = np.concatenate(context_label, axis = 0)
-        context_head_type = np.concatenate(context_head_type, axis = 0)
-        context_tail_type = np.concatenate(context_tail_type, axis = 0)
-        context_posdiffs = np.concatenate(context_posdiffs, axis = 0)
-    else:
-        context_head, context_head_type, context_tail, context_tail_type, \
-                context_label, context_posdiffs = None, None, None, None, None, None
-    return context_head, context_tail,context_label, context_posdiffs, context_head_type, context_tail_type
-
-
-
-
-def get_batches(data, context=contextdata):
+def get_batches(data):
     # only batch size 1 for now
     perm = np.random.permutation(len(data))
     for x in perm:
         datum = data[x]
-        qh, qt, ql,qpos, nns = datum['query_head'], datum['query_tail'],\
-                        datum['query_labels'], datum['query_posdiff'],\
-                        datum['nns']
-        qht, qtt = datum['query_head_type'], datum['query_tail_type']
-        ch,ct, cl, cpos, cht, ctt = get_context_info(context, nns)
+        qh, qt, ql, ch, ct, cl,qpos,cpos = datum['query_head'], datum['query_tail'],\
+                        datum['query_labels'], datum['context_head'], \
+                        datum['context_tail'], datum['context_labels'],\
+                        datum['query_posdiff'], datum['context_posdiff']
+        qht, qtt, cht, ctt = datum['query_head_type'], datum['query_tail_type'],\
+                datum['context_head_type'], datum['context_tail_type']
         qh = torch.from_numpy(qh).unsqueeze(0)
         qt = torch.from_numpy(qt).unsqueeze(0)
         ql = torch.from_numpy(ql).unsqueeze(0)

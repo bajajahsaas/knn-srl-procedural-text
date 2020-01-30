@@ -104,13 +104,6 @@ ent_dic = {e:i for i, e in enumerate(entity_types)}
 
 dataset = []
 cnt = 0
-# save the embeddings of the context examples
-source_data = [get_relations_embeddings(cs) for cs in data_src]
-
-with open('context_data.pkl', 'wb') as f:
-    pickle.dump(source_data, f)
-
-    
 for s in data_tgt:
     print('%d / %d done'%(cnt, len(data_tgt)))
     cnt += 1
@@ -123,40 +116,39 @@ for s in data_tgt:
     else: # on held out data, we needn't exclude the top match
         nns = t.get_nns_by_vector(vector, K+1) 
 
-    # context_head = []
-    # context_head_text = []
-    # context_head_type = []
-    # context_tail = []
-    # context_tail_text = []
-    # context_tail_type = []
-    # context_label = []
-    # context_posdiffs = []
-    # num_context = 0
-    # 
-    # for nn_id in nns:
-    #     cs = data_src[nn_id]
-    #     head_text, head, head_type, tail_text, tail, tail_type, labels, posdiff = get_relations_embeddings(cs)
-    #     if head is not None:
-    #         num_context += 1
-    #         context_head.append(head)
-    #         context_head_text.extend(head_text)
-    #         context_tail.append(tail)
-    #         context_tail_text.extend(tail_text)
-    #         context_label.append(labels)
-    #         context_head_type.append(head_type)
-    #         context_tail_type.append(tail_type)
-    #         context_posdiffs.append(posdiff)
-    # 
-    # if num_context > 0:
-    #     context_head = np.concatenate(context_head, axis=0)
-    #     context_tail = np.concatenate(context_tail, axis=0)
-    #     context_label = np.concatenate(context_label, axis = 0)
-    #     context_head_type = np.concatenate(context_head_type, axis = 0)
-    #     context_tail_type = np.concatenate(context_tail_type, axis = 0)
-    #     context_posdiffs = np.concatenate(context_posdiffs, axis = 0)
-    # else:
-    #     context_head, context_head_type, context_tail, context_tail_type, \
-    #             context_label, context_posdiffs = None, None, None, None, None, None
+    context_head = []
+    context_head_text = []
+    context_head_type = []
+    context_tail = []
+    context_tail_text = []
+    context_tail_type = []
+    context_label = []
+    context_posdiffs = []
+    num_context = 0
+    for nn_id in nns:
+        cs = data_src[nn_id]
+        head_text, head, head_type, tail_text, tail, tail_type, labels, posdiff = get_relations_embeddings(cs)
+        if head is not None:
+            num_context += 1
+            context_head.append(head)
+            context_head_text.extend(head_text)
+            context_tail.append(tail)
+            context_tail_text.extend(tail_text)
+            context_label.append(labels)
+            context_head_type.append(head_type)
+            context_tail_type.append(tail_type)
+            context_posdiffs.append(posdiff)
+    
+    if num_context > 0:
+        context_head = np.concatenate(context_head, axis=0)
+        context_tail = np.concatenate(context_tail, axis=0)
+        context_label = np.concatenate(context_label, axis = 0)
+        context_head_type = np.concatenate(context_head_type, axis = 0)
+        context_tail_type = np.concatenate(context_tail_type, axis = 0)
+        context_posdiffs = np.concatenate(context_posdiffs, axis = 0)
+    else:
+        context_head, context_head_type, context_tail, context_tail_type, \
+                context_label, context_posdiffs = None, None, None, None, None, None
 
     query_head_text, query_head, query_head_type, query_tail_text, query_tail,\
         query_tail_type, query_labels, query_posdiff = get_relations_embeddings(s)
@@ -174,15 +166,14 @@ for s in data_tgt:
                         'query_tail_type': query_tail_type,
                         'query_posdiff': query_posdiff,
                         'query_labels': query_labels,
-                        'nns' : nns
-                        # 'context_head' : context_head,
-                        # 'context_head_text' : context_head_text,
-                        # 'context_head_type': context_head_type,
-                        # 'context_tail' : context_tail,
-                        # 'context_tail_text' : context_tail_text,
-                        # 'context_tail_type': context_tail_type,
-                        # 'context_labels' : context_label,
-                        # 'context_posdiff' : context_posdiffs
+                        'context_head' : context_head,
+                        'context_head_text' : context_head_text,
+                        'context_head_type': context_head_type,
+                        'context_tail' : context_tail,
+                        'context_tail_text' : context_tail_text,
+                        'context_tail_type': context_tail_type,
+                        'context_labels' : context_label,
+                        'context_posdiff' : context_posdiffs
                     })
 
 with open(sys.argv[5], 'wb') as f:
