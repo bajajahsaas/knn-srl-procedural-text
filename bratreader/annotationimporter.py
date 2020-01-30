@@ -4,6 +4,15 @@ from io import open
 from collections import OrderedDict, defaultdict
 from bratreader.annotation import Annotation
 from bratreader.sentence import Sentence
+from nltk.tokenize import sent_tokenize
+import nltk
+
+tokenizer = nltk.tokenize.punkt.PunktSentenceTokenizer()
+    
+def split_sents(fil):
+    data = fil.read()
+    return [(a, data[a:b]) for a, b in tokenizer.span_tokenize(data)]
+
 
 
 def importann(pathtofile):
@@ -21,10 +30,14 @@ def importann(pathtofile):
     sentences = []
 
     char_index = 0
-
-    for sent_index, line in enumerate(open(path + ".txt", encoding='utf-8')):
+    # Tokenization for Materials dataset
+    for sent_index, (char_index, line) in enumerate(split_sents(open(path + ".txt",\
+                                                         encoding='utf-8'))):
         sentences.append(Sentence(sent_index, line, char_index))
-        char_index += len(line)
+
+    # for sent_index, line in enumerate(open(path + ".txt", encoding='utf-8')):
+    #     sentences.append(Sentence(sent_index, line, char_index))
+    #     char_index += len(line)
 
     _join(annotations.values(), sentences)
     return sentences
