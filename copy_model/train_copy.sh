@@ -8,6 +8,6 @@
 #
 #SBATCH --ntasks=1
 
-python -u train.py --model_path models/copy.pt --plot_path logscopy --no-generate --gpu
+python -u train.py --model_path models/copy.pt --plot_path logscopy --no-generate --gpu --classes 16
 #sleep 1
 exit
