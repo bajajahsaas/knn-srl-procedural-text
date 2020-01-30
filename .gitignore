@@ -21,3 +21,6 @@ output/
 **/*.png
 **/*.ann
 Materials_data/*
+copy_model/logscopy/
+copy_model/logsgen/
+copy_model/logscopygen/
