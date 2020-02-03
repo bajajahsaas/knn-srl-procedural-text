@@ -8,7 +8,7 @@ from annoy import AnnoyIndex
 import pickle
 import re
 
-from copy_model.biobert import getscibertmodel
+from biobert import getscibertmodel
 from buckets import Buckets
 
 
