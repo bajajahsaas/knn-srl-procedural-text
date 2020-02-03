@@ -76,7 +76,7 @@ def build_annoy_bert(sentences):
     t = AnnoyIndex(num_features, "angular")  # NN with cosine distance
     print('Inserting into annoy')
     for i, sent in enumerate(X):
-        t.add_item(i, sent.toarray()[0])
+        t.add_item(i, X[sent])
         if i % 100 == 0:
             print('%d/%d done' % (i, len(sentences)))
     print('Building annoy')
