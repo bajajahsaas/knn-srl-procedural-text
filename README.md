@@ -89,5 +89,7 @@ python copy_model/train.py --generate --no-copy --traindata PATH/TO/train.pkl --
 ### Test model
 Set generate and copy arguments according to how training was done. For example:
 ```python 
-python copy_model/test.py --generate --no-copy --valdata PATH/TO/val.pkl --model_path OUTPUTDIR/model.pt --test_output_path OUTPUTDIR/generate
+python test.py --generate --no-copy --valdata val.pkl --model_path models/generate.pt --test_output_path generate
+python test.py --no-generate --copy --valdata val.pkl --model_path models/copy.pt --test_output_path copy
+python test.py --generate --copy --valdata val.pkl --model_path models/copy_generate.pt --test_output_path copy_generate
 ```
