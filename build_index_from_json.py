@@ -14,7 +14,7 @@ from annoy import AnnoyIndex
 from sklearn.feature_extraction.text import TfidfVectorizer
 from torch import nn
 
-from biobert import getscibertmodel
+from copy_model.biobert import getscibertmodel
 
 with open('wetlabs_train.json', 'r') as f:
     data = json.load(f)

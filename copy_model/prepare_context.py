@@ -8,7 +8,7 @@ from annoy import AnnoyIndex
 import pickle
 import re
 
-from biobert import getscibertmodel
+from copy_model.biobert import getscibertmodel
 from buckets import Buckets
 
 
@@ -131,7 +131,7 @@ for s in data_tgt:
     if retriever == 'tfidf':
         vector = vect.transform([s['replaced']]).toarray()[0]
     else:
-        vector = getbertemb(s['replaced'])
+        vector = getbertemb(s['sentence'])
     if bert_data == bert_data_target:  # on training data, we are bound to find
         # same sentence, so we exclude the top
         # match
