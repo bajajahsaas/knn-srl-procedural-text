@@ -1,4 +1,4 @@
-#python build_index_from_json.py scibert
+python build_index_from_json.py scibert
 
 python copy_model/prepare_data.py wetlabs_train.json scibert train_embeddings.pkl
 python copy_model/prepare_data.py wetlabs_val.json scibert val_embeddings.pkl
