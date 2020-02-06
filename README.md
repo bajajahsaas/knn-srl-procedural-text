@@ -57,17 +57,17 @@ This produces train_embeddings.pkl, val_embeddings.pkl, test_embeddings.pkl. Use
 
 ### Using pre-generated annoy, vectorizer, BERT embeddings to pre-compute nearest neighbors (for edit model)
 ```python 
-python copy_model/prepare_context.py replaced.annoy replaced_tfidf.pkl train_embeddings.pkl train_embeddings.pkl train.pkl tfidf
-python copy_model/prepare_context.py replaced.annoy replaced_tfidf.pkl train_embeddings.pkl test_embeddings.pkl test.pkl tfidf
-python copy_model/prepare_context.py replaced.annoy replaced_tfidf.pkl train_embeddings.pkl val_embeddings.pkl val.pkl tfidf
+python copy_model/prepare_context.py replaced.annoy replaced_tfidf.pkl train_embeddings.pkl train_embeddings.pkl train.pkl tfidf 4
+python copy_model/prepare_context.py replaced.annoy replaced_tfidf.pkl train_embeddings.pkl test_embeddings.pkl test.pkl tfidf 4
+python copy_model/prepare_context.py replaced.annoy replaced_tfidf.pkl train_embeddings.pkl val_embeddings.pkl val.pkl tfidf 4
 ```
 
 #### OR
 
 ```python 
-python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl train_embeddings.pkl train.pkl scibert
-python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl test_embeddings.pkl test.pkl scibert
-python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl val_embeddings.pkl val.pkl scibert
+python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl train_embeddings.pkl train.pkl scibert 4
+python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl test_embeddings.pkl test.pkl scibert 4
+python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl val_embeddings.pkl val.pkl scibert 4
 ```
 
 This computes nearest neighbors in the training set for each sentence in the train, val and test sets. This writes into train.pkl, val.pkl, test.pkl.
