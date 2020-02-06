@@ -42,6 +42,7 @@ vectorizer_file = sys.argv[2]  # not used in case of bert retriever
 bert_data = sys.argv[3]
 bert_data_target = sys.argv[4]
 retriever = sys.argv[6]
+num_buckets = sys.argv[7] # =4 for wetlabs data, =8 for materials data
 
 with open(bert_data, 'rb') as f:
     data_src = pickle.load(f)
@@ -98,7 +99,7 @@ else:
     # take 90th percentile to avoid outlier sentences
     mx = sorted_lengths[int(len(sorted_lengths) * 0.9)]
     mn = 1
-    buckets = Buckets(mn, mx, bucket_size=4)
+    buckets = Buckets(mn, mx, bucket_size=num_buckets)
     with open('buckets.pkl', 'wb') as f:
         pickle.dump(buckets, f)
 
