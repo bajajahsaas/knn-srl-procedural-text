@@ -9,17 +9,17 @@
 #
 #SBATCH --ntasks=1
 
-#python preprocess_wetlabs.py
+python -u preprocess_wetlabs.py
 
-#python build_index_from_json.py scibert
+python -u build_index_from_json.py scibert
 
-#python copy_model/prepare_data.py wetlabs_train5.json scibert train_embeddings5.pkl
-#python copy_model/prepare_data.py wetlabs_train10.json scibert train_embeddings10.pkl
-#python copy_model/prepare_data.py wetlabs_train20.json scibert train_embeddings20.pkl
-#python copy_model/prepare_data.py wetlabs_train50.json scibert train_embeddings50.pkl
-#python copy_model/prepare_data.py wetlabs_train100.json scibert train_embeddings100.pkl
-#python copy_model/prepare_data.py wetlabs_val.json scibert val_embeddings.pkl
-#python copy_model/prepare_data.py wetlabs_test.json scibert test_embeddings.pkl
+python -u copy_model/prepare_data.py wetlabs_train5.json scibert train_embeddings5.pkl
+python -u copy_model/prepare_data.py wetlabs_train10.json scibert train_embeddings10.pkl
+python -u copy_model/prepare_data.py wetlabs_train20.json scibert train_embeddings20.pkl
+python -u copy_model/prepare_data.py wetlabs_train50.json scibert train_embeddings50.pkl
+python -u copy_model/prepare_data.py wetlabs_train100.json scibert train_embeddings100.pkl
+python -u copy_model/prepare_data.py wetlabs_val.json scibert val_embeddings.pkl
+python -u copy_model/prepare_data.py wetlabs_test.json scibert test_embeddings.pkl
 
 python -u copy_model/prepare_context.py original100.annoy original_bert.pkl train_embeddings100.pkl train_embeddings100.pkl train100.pkl scibert 4
 python -u copy_model/prepare_context.py original100.annoy original_bert.pkl train_embeddings100.pkl test_embeddings.pkl test100.pkl scibert 4
