@@ -9,9 +9,10 @@ from sklearn.metrics import precision_score, recall_score, f1_score
 from argparser import args
 from biobert import *
 from bert_crf import *
-
+torch.set_default_tensor_type(torch.DoubleTensor)
 tokenizer,bert_model = getscibertmodel()
 
+bert_model.cuda()
 tagger = BERT_CRF(2*19+1).cuda()
 tagger.load_state_dict(torch.load('bert_crf.pt'))
 with open('entity_types.txt', 'r') as f:
@@ -39,14 +40,19 @@ def get_sent_labels(sent, entities):
 def get_entities(sent):
     enc = tokenizer.encode(sent, add_special_tokens = True)
     with torch.no_grad():
-        bert_embedding = bert_model(torch.tensor([enc]).cuda()).cpu().squeeze(0).numpy()
-        pred = tagger(torch.tensor([enc]).cuda()).cpu()
+        bert_embedding = \
+                bert_model(torch.tensor([enc]).cuda())[0].squeeze(0).cpu().numpy()
+        pred = tagger(torch.tensor([enc]).cuda())
+    print(tokenizer.tokenize(sent))
+    print([tagger_data['list'][pred[0][i]] for i in range(len(enc))])
     entities = []
     i = 0
     start = -1
     while(i<len(enc)):
         # O = outside in BIO
-        while(pred[0][i] == tagger_data['dict']['O'] and i<len(enc)):
+        # print(len(enc))
+        # print(len(pred[0]))
+        while(i<len(enc) and pred[0][i] == tagger_data['dict']['O']):
             i+=1
         if i >= len(enc):
             break
@@ -54,10 +60,10 @@ def get_entities(sent):
         inside_tag = tagger_data['dict']['I_'+tag]
         start = i
         i += 1
-        while(pred[0][i] == inside_tag):
+        while(i<len(enc) and pred[0][i] == inside_tag):
             i += 1
         end = i-1
-        emp = np.mean(bert_embedding[start:end+1], axis=0)
+        emb = np.mean(bert_embedding[start:end+1], axis=0)
         entities.append((start, end,emb, edic[tag]))
     return entities
     
@@ -110,10 +116,11 @@ def get_batches(data):
         
         # create qh, qt using joint prediction
         entities = get_entities(q_sent)
+        print([(x[0], x[1]) for x in datum['entities']])
         # compute ((head_start, head_end),(tail_start, tail_end),relation)
         gold_rels = {}
         for h, t, rel in datum['relations']:
-            gold_rels.append[(datum['entities'][h][3],\
+            gold_rels[(datum['entities'][h][3],\
                               datum['entities'][t][3])]=rel
         gold_entities = [x[3] for x in datum['entities']]
 
@@ -128,39 +135,39 @@ def get_batches(data):
             for j in range(len(entities)):
                 if i==j:
                     continue
-                found_pairs.append((entities[i][0], entities[i][1]),\
-                                    (entities[j][0], entities[j][1]))
+                found_pairs.append(((entities[i][0], entities[i][1]),\
+                                    (entities[j][0], entities[j][1])))
                 qh_pred.append(entities[i][2])
                 qht_pred.append(entities[i][3])
                 qt_pred.append(entities[j][2])
                 qtt_pred.append(entities[j][3])
                 qpos_pred.append(buckets.get_bucket(abs(entities[j][0] -
                                                     entities[i][0])))
-                ql_pred.append(gold_rels.get(((entities[i][0],entities[i][1]),(entities[j][0],entities[j][1])),'No relation'))
+                ql_pred.append(gold_rels.get(((entities[i][0],entities[i][1]),(entities[j][0],entities[j][1])),rel_dic['No relation']))
         found_pairs = set(found_pairs)
         labels_not_found = [gold_rels[x]  for x in gold_rels if x not in found_pairs]
-        ql_pred = [rel_dic[x] for x in ql_pred]
-        labels_not_found = [rel_dic[x] for x in labels_not_found]
+        # ql_pred = [rel_dic[x] for x in ql_pred]
+        # labels_not_found = [rel_dic[x] for x in labels_not_found]
         
-        qh_pred = torch.from_numpy(np.array(qh_pred)).unsqueeze(0)
-        qht_pred = torch.from_numpy(np.array(qht_pred)).unsqueeze(0)
-        qt_pred = torch.from_numpy(np.array(qt_pred)).unsqueeze(0)
-        qtt_pred = torch.from_numpy(np.array(qtt_pred)).unsqueeze(0)
-        ql_pred = torch.from_numpy(np.array(ql_pred)).unsqueeze(0)
-        qpos_pred = torch.from_numpy(np.array(qpos_pred)).unsqueeze(0)
+        qh_pred = torch.from_numpy(np.array(qh_pred)).double().unsqueeze(0)
+        qht_pred = torch.from_numpy(np.array(qht_pred)).long().unsqueeze(0)
+        qt_pred = torch.from_numpy(np.array(qt_pred)).double().unsqueeze(0)
+        qtt_pred = torch.from_numpy(np.array(qtt_pred)).long().unsqueeze(0)
+        ql_pred = torch.from_numpy(np.array(ql_pred)).long().unsqueeze(0)
+        qpos_pred = torch.from_numpy(np.array(qpos_pred)).long().unsqueeze(0)
 
-        if torch.isnan(torch.stack([qh,qt])).any():
+        if torch.isnan(torch.stack([qh_pred,qt_pred])).any():
             continue
 
         elif type(cl) != np.ndarray:
             ch,ct,cl,cht,ctt,mask = None, None, None, None, None, None
         else:
-            ch = torch.from_numpy(ch).unsqueeze(0)
-            cl = torch.from_numpy(cl).unsqueeze(0)
-            ct = torch.from_numpy(ct).unsqueeze(0)
-            ctt = torch.from_numpy(ctt).unsqueeze(0)
-            cht = torch.from_numpy(cht).unsqueeze(0)
-            cpos = torch.from_numpy(cpos).unsqueeze(0)
+            ch = torch.from_numpy(ch).double().unsqueeze(0)
+            cl = torch.from_numpy(cl).long().unsqueeze(0)
+            ct = torch.from_numpy(ct).double().unsqueeze(0)
+            ctt = torch.from_numpy(ctt).long().unsqueeze(0)
+            cht = torch.from_numpy(cht).long().unsqueeze(0)
+            cpos = torch.from_numpy(cpos).long().unsqueeze(0)
             if torch.isnan(torch.stack([ch,ct])).any():
                 continue
             mask = torch.from_numpy(np.ones_like(cl))
@@ -220,7 +227,12 @@ def accuracy(data, model):
 
 
         for sent, q, cxt, cxt_labels, q_labels, mask, not_found in get_batches(data):
-            pred = torch.argmax(model(q, cxt, cxt_labels, mask), \
+            print(q[0][0].size()[1])
+            print(len(not_found))
+            if q[0][0].size()[1] == 0:
+                pred = torch.tensor([]).long()
+            else:
+                pred = torch.argmax(model(q, cxt, cxt_labels, mask), \
                                 dim=-1).view(-1)
 
             this_target = q_labels.view(-1).data.detach().numpy().copy()

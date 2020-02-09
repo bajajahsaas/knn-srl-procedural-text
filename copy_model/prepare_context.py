@@ -17,7 +17,7 @@ def get_relations_embeddings(s):
     relset = set([(a, b) for a, b, _ in s['relations']])
     norels = []
     if len(s['entities']) <= 1:
-        return None, None, None, None, None, None, None, None
+        return None, None, None, None, None, None, None, None, None
     for i in range(len(s['entities'])):
         for j in range(len(s['entities'])):
             if i == j or (i, j) in relset:
@@ -34,7 +34,7 @@ def get_relations_embeddings(s):
     posdiff = np.asarray([buckets.get_bucket(abs(s['entities'][t][3][0] -
                                                  s['entities'][h][3][0])) \
                           for h, t, _ in all_rels])
-    return head_text, head, head_type, tail_text, tail, tail_type, labels, posdiff
+    return head_text, head, head_type, tail_text, tail, tail_type, labels, posdiff, all_rels
 
 
 annoy_file = sys.argv[1]
@@ -152,7 +152,8 @@ for s in data_tgt:
     num_context = 0
     for nn_id in nns:
         cs = data_src[nn_id]
-        head_text, head, head_type, tail_text, tail, tail_type, labels, posdiff = get_relations_embeddings(cs)
+        head_text, head, head_type, tail_text, tail, tail_type, labels,\
+            posdiff,_ = get_relations_embeddings(cs)
         if head is not None:
             num_context += 1
             context_head.append(head)
@@ -176,7 +177,7 @@ for s in data_tgt:
         context_label, context_posdiffs = None, None, None, None, None, None
 
     query_head_text, query_head, query_head_type, query_tail_text, query_tail, \
-    query_tail_type, query_labels, query_posdiff = get_relations_embeddings(s)
+    query_tail_type, query_labels, query_posdiff, all_rels = get_relations_embeddings(s)
     if query_head is None:
         continue
     dataset.append({
@@ -198,7 +199,9 @@ for s in data_tgt:
         'context_tail_text': context_tail_text,
         'context_tail_type': context_tail_type,
         'context_labels': context_label,
-        'context_posdiff': context_posdiffs
+        'context_posdiff': context_posdiffs,
+        'entities' : s['entities'],
+        'relations': all_rels
     })
 
 with open(sys.argv[5], 'wb') as f:

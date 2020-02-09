@@ -19,6 +19,9 @@ with open('entity_types.txt', 'r') as f:
 all_labels = ['O'] + ['I_' + x for x in entities] + ['B_'+x for x in entities]
 label_dic = {l:i for i, l in enumerate(all_labels)}
 
+with open('tagger_dict.pkl', 'wb') as f:
+    pickle.dump({'list':all_labels, 'dict':label_dic}, f)
+
 tokenizer, _ = getscibertmodel()
 
 def get_sent_labels(sent, entities):
@@ -48,8 +51,11 @@ def eval(dataset):
         pred.append(pred_labs)
     target = np.concatenate(target)
     pred = np.concatenate(pred)
-    micro_f1 = str(round(f1_score(target, pred, labels=all_labels[1:], average="micro"), 4)*100)
-    macro_f1 = str(round(f1_score(target, pred, labels=all_labels[1:], average="macro"), 4)*100)
+    print(float(np.sum(np.equal(target, pred)))/target.shape[0])
+        
+    labels = list(range(1,len(all_labels)))
+    micro_f1 = str(round(f1_score(target, pred, labels=labels, average="micro"), 4)*100)
+    macro_f1 = str(round(f1_score(target, pred, labels=labels, average="macro"), 4)*100)
     print('Micro F1 = %s \nMacro F1 = %s'%(micro_f1, macro_f1))
 
 
@@ -79,7 +85,7 @@ print([all_labels[x] for x in pred[0]])
 
 
 optimizer = torch.optim.Adam(tagger.parameters(), lr=learning_rate, \
-                                 weight_decay=0.01)
+                                 weight_decay=0.001)
 eval(val_data)
 for epoch in range(10):
     i = 1
