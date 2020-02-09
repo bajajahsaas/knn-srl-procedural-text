@@ -12,15 +12,25 @@ traindata = sys.argv[1]
 usebiobert=False
 if sys.argv[2] == 'biobert':
     usebiobert = True
+elif sys.argv[2] == 'scibert':
+    usescibert = True
 
 with open(traindata, 'r') as f:
     data = json.load(f)
 
 if usebiobert:
     tokenizer, model = getbiobertmodel()
+    print('Loaded biobert model')
+
+
+elif usescibert:
+    tokenizer, model = getscibertmodel()
+    print('Loaded scibert model')
+
 else:
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
     model = BertModel.from_pretrained('bert-base-uncased')
+    print('Loaded basebert model')
 
 # else default ones imported from biobert
 

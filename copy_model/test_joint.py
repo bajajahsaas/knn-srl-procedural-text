@@ -7,6 +7,61 @@ from CopyEditor import CopyEditor
 import pickle
 from sklearn.metrics import precision_score, recall_score, f1_score
 from argparser import args
+from biobert import *
+from bert_crf import *
+
+tokenizer,bert_model = getscibertmodel()
+
+tagger = BERT_CRF(2*19+1).cuda()
+tagger.load_state_dict(torch.load('bert_crf.pt'))
+with open('entity_types.txt', 'r') as f:
+    etypes = f.read().splitlines()
+    edic = {e:i for i, e in enumerate(etypes)}
+
+with open('tagger_dict.pkl', 'rb') as f:
+    tagger_data = pickle.load(f)
+
+with open('relations.txt', 'r') as f:
+    relations = f.read().splitlines() + ['No relation']
+    rel_dic = {r:i for i, r in enumerate(relations)}
+
+
+def get_sent_labels(sent, entities):
+    tokenized = tokenizer.tokenize(sent)
+    enc = tokenizer.encode(sent, add_special_tokens = True)
+    labels = ['O' for i in enc]
+    for ent, typ, _, span in entities:
+        for i in range(span[0]+1, span[1]+1):
+            labels[i] = 'I_' + typ
+        labels[span[0]] = 'B_' + typ
+    return tokenized,enc,labels
+
+def get_entities(sent):
+    enc = tokenizer.encode(sent, add_special_tokens = True)
+    with torch.no_grad():
+        bert_embedding = bert_model(torch.tensor([enc]).cuda()).cpu().squeeze(0).numpy()
+        pred = tagger(torch.tensor([enc]).cuda()).cpu()
+    entities = []
+    i = 0
+    start = -1
+    while(i<len(enc)):
+        # O = outside in BIO
+        while(pred[0][i] == tagger_data['dict']['O'] and i<len(enc)):
+            i+=1
+        if i >= len(enc):
+            break
+        tag = tagger_data['list'][pred[0][i]].split('_')[1]
+        inside_tag = tagger_data['dict']['I_'+tag]
+        start = i
+        i += 1
+        while(pred[0][i] == inside_tag):
+            i += 1
+        end = i-1
+        emp = np.mean(bert_embedding[start:end+1], axis=0)
+        entities.append((start, end,emb, edic[tag]))
+    return entities
+    
+
 
 copy = args.copy
 generate = args.generate
@@ -37,7 +92,8 @@ with open(args.valdata, 'rb') as f:
 #              'No-Rel']
 
 relations = open('relations.txt', 'r').read().splitlines() + ['No-Rel']
-
+with open('buckets.pkl', 'rb') as f:
+    buckets = pickle.load(f)
 
 def get_batches(data):
     # only batch size 1 for now
@@ -45,23 +101,57 @@ def get_batches(data):
     # perm = np.random.permutation(len(data))
     for x in range(len(data)):
         datum = data[x]
-        q_sent, qh_text, qt_text, ch_text, ct_text,qpos,cpos = datum['query_sent'], \
-                datum['query_head_text'], datum['query_tail_text'],\
+        q_sent, ch_text, ct_text,qpos,cpos = datum['query_sent'], \
                 datum['context_head_text'], datum['context_tail_text'],\
                 datum['query_posdiff'], datum['context_posdiff']
-        qh, qt, ql, ch, ct, cl = datum['query_head'], datum['query_tail'],\
-                        datum['query_labels'], datum['context_head'], \
+        ch, ct, cl = datum['context_head'], \
                         datum['context_tail'], datum['context_labels']
-        qht, qtt, cht, ctt = datum['query_head_type'], datum['query_tail_type'],\
-                datum['context_head_type'], datum['context_tail_type']
-        qh = torch.from_numpy(qh).unsqueeze(0)
-        qt = torch.from_numpy(qt).unsqueeze(0)
-        ql = torch.from_numpy(ql).unsqueeze(0)
-        qht = torch.from_numpy(qht).unsqueeze(0)
-        qtt = torch.from_numpy(qtt).unsqueeze(0)
-        qpos = torch.from_numpy(qpos).unsqueeze(0)
+        cht, ctt =  datum['context_head_type'], datum['context_tail_type']
+        
+        # create qh, qt using joint prediction
+        entities = get_entities(q_sent)
+        # compute ((head_start, head_end),(tail_start, tail_end),relation)
+        gold_rels = {}
+        for h, t, rel in datum['relations']:
+            gold_rels.append[(datum['entities'][h][3],\
+                              datum['entities'][t][3])]=rel
+        gold_entities = [x[3] for x in datum['entities']]
+
+        qh_pred = []
+        qht_pred = []
+        qt_pred = []
+        qtt_pred = []
+        qpos_pred = []
+        ql_pred = []
+        found_pairs = [] 
+        for i in range(len(entities)):
+            for j in range(len(entities)):
+                if i==j:
+                    continue
+                found_pairs.append((entities[i][0], entities[i][1]),\
+                                    (entities[j][0], entities[j][1]))
+                qh_pred.append(entities[i][2])
+                qht_pred.append(entities[i][3])
+                qt_pred.append(entities[j][2])
+                qtt_pred.append(entities[j][3])
+                qpos_pred.append(buckets.get_bucket(abs(entities[j][0] -
+                                                    entities[i][0])))
+                ql_pred.append(gold_rels.get(((entities[i][0],entities[i][1]),(entities[j][0],entities[j][1])),'No relation'))
+        found_pairs = set(found_pairs)
+        labels_not_found = [gold_rels[x]  for x in gold_rels if x not in found_pairs]
+        ql_pred = [rel_dic[x] for x in ql_pred]
+        labels_not_found = [rel_dic[x] for x in labels_not_found]
+        
+        qh_pred = torch.from_numpy(np.array(qh_pred)).unsqueeze(0)
+        qht_pred = torch.from_numpy(np.array(qht_pred)).unsqueeze(0)
+        qt_pred = torch.from_numpy(np.array(qt_pred)).unsqueeze(0)
+        qtt_pred = torch.from_numpy(np.array(qtt_pred)).unsqueeze(0)
+        ql_pred = torch.from_numpy(np.array(ql_pred)).unsqueeze(0)
+        qpos_pred = torch.from_numpy(np.array(qpos_pred)).unsqueeze(0)
+
         if torch.isnan(torch.stack([qh,qt])).any():
             continue
+
         elif type(cl) != np.ndarray:
             ch,ct,cl,cht,ctt,mask = None, None, None, None, None, None
         else:
@@ -75,12 +165,12 @@ def get_batches(data):
                 continue
             mask = torch.from_numpy(np.ones_like(cl))
         if args.gpu:
-            qh = qh.cuda()
-            qt = qt.cuda()
-            ql = ql.cuda()
-            qtt = qtt.cuda()
-            qht = qht.cuda()
-            qpos = qpos.cuda()
+            qh_pred = qh_pred.cuda()
+            qt_pred = qt_pred.cuda()
+            ql_pred = ql_pred.cuda()
+            qtt_pred = qtt_pred.cuda()
+            qht_pred = qht_pred.cuda()
+            qpos_pred = qpos_pred.cuda()
             if ch is not None:
                 ch = ch.cuda()
                 cl = cl.cuda()
@@ -90,8 +180,8 @@ def get_batches(data):
                 mask = mask.cuda()
                 cpos = cpos.cuda()
 
-        yield q_sent, (qh_text, qt_text), (ch_text, ct_text),\
-                ((qh, qht),(qt,qtt),qpos),((ch, cht), (ct, ctt), cpos), cl, ql, mask
+        yield q_sent, ((qh_pred, qht_pred),(qt_pred,qtt_pred),qpos_pred),\
+                ((ch, cht), (ct, ctt), cpos), cl, ql_pred, mask, labels_not_found
 
 def accuracy(data, model):
     with torch.no_grad():
@@ -129,12 +219,15 @@ def accuracy(data, model):
 
 
 
-        for sent, q_text, cxt_text, q, cxt, cxt_labels, q_labels, mask in get_batches(data):
+        for sent, q, cxt, cxt_labels, q_labels, mask, not_found in get_batches(data):
             pred = torch.argmax(model(q, cxt, cxt_labels, mask), \
                                 dim=-1).view(-1)
 
             this_target = q_labels.view(-1).data.detach().numpy().copy()
+            this_target = np.concatenate([this_target, np.array(not_found)])
+            # For entity pairs not found by NER
             this_pred = pred.data.detach().numpy().copy()
+            this_pred = np.concatenate([this_pred, np.array([rel_dic['No relation']]*len(not_found))])
 
             precision_sentences.append(precision_score(this_target, this_pred, labels=labels, average="micro"))
             recall_sentences.append(recall_score(this_target, this_pred, labels=labels, average="micro"))
@@ -142,7 +235,7 @@ def accuracy(data, model):
 
             all_target.append(this_target)
             all_pred.append(this_pred)
-            write_csv_row(writer,sent, q_text, q_labels, cxt_text, cxt_labels, pred)
+            # write_csv_row(writer,sent,q_labels, cxt_labels, pred)
         f.close()
         all_pred = np.concatenate(all_pred, 0)
         all_target = np.concatenate(all_target, 0)
