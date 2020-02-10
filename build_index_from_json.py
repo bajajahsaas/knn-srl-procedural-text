@@ -72,19 +72,19 @@ percentage = [5, 10, 20, 50, 100]
 for per in percentage:
    with open('wetlabs_train' + str(per) + '.json', 'r') as f:
        data = json.load(f)
-       replaced = []
-       originals = []
-       for k in data:
-           originals.append(k["sentence"])
-           replaced.append(k["replaced"])
-
-       with open('replaced_sentences' + str(per) + '.txt', 'w') as f:
-           f.write('\n'.join(replaced))
-
-       with open('original_sentences' + str(per) + '.txt', 'w') as f:
-           f.write('\n'.join(originals))
-
-       print('Finished Preprocessing')
+       # replaced = []
+       # originals = []
+       # for k in data:
+       #     originals.append(k["sentence"])
+       #     replaced.append(k["replaced"])
+       #
+       # with open('replaced_sentences' + str(per) + '.txt', 'w') as f:
+       #     f.write('\n'.join(replaced))
+       #
+       # with open('original_sentences' + str(per) + '.txt', 'w') as f:
+       #     f.write('\n'.join(originals))
+       #
+       # print('Finished Preprocessing')
 
    if sys.argv[1] == 'scibert':
        print('Using BERT for retriever')
