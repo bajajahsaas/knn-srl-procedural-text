@@ -37,18 +37,18 @@ parser.add_argument('--shouldcopy_hidden_dims', action='store',
                     help='hidden dimensions for mlp for copyprob', default=[256,128,64])
 parser.add_argument('--relation_hidden_dims', action='store',
                     dest='relation_hidden_dims', type=list,
-                    help='hidden dims for relation embedding', default=[512,256])
+                    help='hidden dims for relation embedding', default=[256,128])
 parser.add_argument('--attnmethod', action='store', dest='attnmethod', type=str,
                     help='Mechanism for calculating attention (dotprod, mlp)', default='mlp')
 parser.add_argument('--attention_hidden_dims', action='store',
                     dest='attention_hidden_dims', type=list,
-                    help='hidden dims for attention MLP', default=[512,256])
+                    help='hidden dims for attention MLP', default=[256,128])
 parser.add_argument('--relation_output_dim', action='store',
                     dest='relation_output_dim', type=int,
-                    help='output dim of relation embedding', default=256)
+                    help='output dim of relation embedding', default=128)
 parser.add_argument('--context_label_dim', action='store',
                     dest='context_label_dim', type=int,
-                    help='output dim of context label embedding', default=256)
+                    help='output dim of context label embedding', default=128)
 parser.add_argument('--type_embedding_dim', action='store',
                     dest='type_dim', type=int,
                     help='Embedding size of type embedding', default=128)
