@@ -9,10 +9,10 @@
 #
 #SBATCH --ntasks=1
 
-python -u train.py --traindata train5.pkl --valdata val5.pkl --model_path models/copygen5.pt --plot_path logscopygen_exp_train/5 --generate --copy --gpu --classes 16 --num_entities 21 --num_buckets 11 --batch_size 2
-#python -u train.py --traindata train10.pkl --valdata val10.pkl --model_path models/copygen10.pt --plot_path logscopygen_exp_train/10 --generate --copy --gpu --classes 16 --num_entities 21 --num_buckets 11 --batch_size 2
-#python -u train.py --traindata train20.pkl --valdata val20.pkl --model_path models/copygen20.pt --plot_path logscopygen_exp_train/20 --generate --copy --gpu --classes 16 --num_entities 21 --num_buckets 11 --batch_size 2
-#python -u train.py --traindata train50.pkl --valdata val50.pkl --model_path models/copygen50.pt --plot_path logscopygen_exp_train/50 --generate --copy --gpu --classes 16 --num_entities 21 --num_buckets 11 --batch_size 2
-#python -u train.py --traindata train100.pkl --valdata val100.pkl --model_path models/copygen100.pt --plot_path logscopygen_exp_train/100 --generate --copy --gpu --classes 16 --num_entities 21 --num_buckets 11 --batch_size 2
+#python -u train.py --traindata train5.pkl --valdata val5.pkl --model_path models/copygen5.pt --plot_path logscopygen_exp_train/5 --generate --copy --gpu --classes 16 --num_entities 21 --num_buckets 11 --batch_size 2
+python -u train.py --traindata train10.pkl --valdata val10.pkl --model_path models/copygen10.pt --plot_path logscopygen_exp_train/10 --generate --copy --gpu --classes 16 --num_entities 21 --num_buckets 11 --batch_size 2
+python -u train.py --traindata train20.pkl --valdata val20.pkl --model_path models/copygen20.pt --plot_path logscopygen_exp_train/20 --generate --copy --gpu --classes 16 --num_entities 21 --num_buckets 11 --batch_size 2
+python -u train.py --traindata train50.pkl --valdata val50.pkl --model_path models/copygen50.pt --plot_path logscopygen_exp_train/50 --generate --copy --gpu --classes 16 --num_entities 21 --num_buckets 11 --batch_size 2
+python -u train.py --traindata train100.pkl --valdata val100.pkl --model_path models/copygen100.pt --plot_path logscopygen_exp_train/100 --generate --copy --gpu --classes 16 --num_entities 21 --num_buckets 11 --batch_size 2
 #sleep 1
 exit
