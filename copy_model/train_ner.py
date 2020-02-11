@@ -16,6 +16,7 @@ from bert_crf import *
 
 with open('entity_types.txt', 'r') as f:
     entities = f.read().splitlines()
+edic = {e:i for i,e in enumerate(entities)}
 all_labels = ['O'] + ['I_' + x for x in entities] + ['B_'+x for x in entities]
 label_dic = {l:i for i, l in enumerate(all_labels)}
 
@@ -41,19 +42,53 @@ def get_batch(dataset):
         lab_ids = [label_dic[i] for i in labs]
         yield torch.tensor([enc]).cuda(), torch.tensor([lab_ids]).cuda()
 
+def get_entities_for_eval(pred):
+    entities = []
+    i = 0
+    start = -1
+    while(i<len(pred)):
+        # O = outside in BIO
+        # print(len(enc))
+        # print(len(pred[0]))
+        while(i<len(pred) and pred[i] == label_dic['O']):
+            i+=1
+        if i >= len(pred):
+            break
+        tag = all_labels[pred[i]].split('_')[1]
+        inside_tag = label_dic['I_'+tag]
+        start = i
+        i += 1
+        while(i<len(pred) and pred[i] == inside_tag):
+            i += 1
+        end = i-1
+        entities.append((start, end,edic[tag]))
+    return entities
+
+
 def eval(dataset):
     pred = []
     target = []
     for enc, lab in get_batch(dataset):
         with torch.no_grad():
             pred_labs = tagger(enc)[0]
-        target.append(lab.cpu().detach()[0,:].numpy())
-        pred.append(pred_labs)
+        # target.append(lab.cpu().detach()[0,:].numpy())
+        # pred.append(pred_labs)
+        targets = get_entities_for_eval(lab.cpu().detach()[0,:].numpy().tolist())
+        preds = get_entities_for_eval(pred_labs) 
+        target_dict = {(a,b):c for a,b,c in targets}
+        pred_dict = {(a,b):c for a,b,c in preds}
+        all_spans = list(set([(a,b) for a,b,c in targets] +[(a,b) for a,b,c in \
+                                                            preds]))
+        preds = [pred_dict.get((a,b),-1) for a,b in all_spans]
+        targets = [target_dict.get((a,b),-1) for a,b in all_spans]
+
+        target.append(targets)
+        pred.append(preds)
     target = np.concatenate(target)
     pred = np.concatenate(pred)
     print(float(np.sum(np.equal(target, pred)))/target.shape[0])
         
-    labels = list(range(1,len(all_labels)))
+    labels = list(range(len(entities)))
     micro_f1 = str(round(f1_score(target, pred, labels=labels, average="micro"), 4)*100)
     macro_f1 = str(round(f1_score(target, pred, labels=labels, average="macro"), 4)*100)
     print('Micro F1 = %s \nMacro F1 = %s'%(micro_f1, macro_f1))

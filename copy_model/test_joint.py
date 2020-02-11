@@ -43,8 +43,10 @@ def get_entities(sent):
         bert_embedding = \
                 bert_model(torch.tensor([enc]).cuda())[0].squeeze(0).cpu().numpy()
         pred = tagger(torch.tensor([enc]).cuda())
+    print(sent)
     print(tokenizer.tokenize(sent))
-    print([tagger_data['list'][pred[0][i]] for i in range(len(enc))])
+    print('Prediction:')
+    print([tagger_data['list'][pred[0][i]] for i in range(1,len(enc))])
     entities = []
     i = 0
     start = -1
@@ -116,6 +118,9 @@ def get_batches(data):
         
         # create qh, qt using joint prediction
         entities = get_entities(q_sent)
+        _,__,labels = get_sent_labels(q_sent, datum['entities'])
+        print('Ground truth:')
+        print(labels[1:])
         print([(x[0], x[1]) for x in datum['entities']])
         # compute ((head_start, head_end),(tail_start, tail_end),relation)
         gold_rels = {}
@@ -227,8 +232,8 @@ def accuracy(data, model):
 
 
         for sent, q, cxt, cxt_labels, q_labels, mask, not_found in get_batches(data):
-            print(q[0][0].size()[1])
-            print(len(not_found))
+            # print(q[0][0].size()[1])
+            # print(len(not_found))
             if q[0][0].size()[1] == 0:
                 pred = torch.tensor([]).long()
             else:
@@ -244,6 +249,10 @@ def accuracy(data, model):
             precision_sentences.append(precision_score(this_target, this_pred, labels=labels, average="micro"))
             recall_sentences.append(recall_score(this_target, this_pred, labels=labels, average="micro"))
             f1_sentences.append(f1_score(this_target, this_pred, labels=labels, average="micro"))
+            
+            print('For this sample: Precision=%f\tRecall=%f\tF1=%f\n\n'%(precision_sentences[-1],\
+                                                   recall_sentences[-1],\
+                                                   f1_sentences[-1]))
 
             all_target.append(this_target)
             all_pred.append(this_pred)
