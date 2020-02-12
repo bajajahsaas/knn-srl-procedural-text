@@ -5,7 +5,7 @@
 #SBATCH -e logsgen_exp_train/copy_%j.err        # File to which STDERR will be written
 #SBATCH --gres=gpu:1
 #SBATCH --partition=m40-long # Partition to submit to
-#SBATCH --mem=10000
+#SBATCH --mem=40G
 #
 #SBATCH --ntasks=1
 

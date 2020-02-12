@@ -4,7 +4,8 @@
 #SBATCH --output=logstest/test_%j.txt  # output file
 #SBATCH -e logstest/test_%j.err        # File to which STDERR will be written
 #SBATCH --gres=gpu:1
-#SBATCH --mem=10000
+#SBATCH --mem=40G
+#SBATCH --partition=m40-long
 #
 #SBATCH --ntasks=1
 
