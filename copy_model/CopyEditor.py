@@ -223,6 +223,7 @@ class CopyEditor(nn.Module):
         query_embedding = self.rel_embedding(query_vectors)
 
         context_vec, copy_dist = None, None
+        copy_prob = torch.ones_like(query_vectors[2])
         if self.generate:
             gen_dist = self.multiclass(query_embedding)
         if self.copy:
@@ -250,7 +251,7 @@ class CopyEditor(nn.Module):
 
         # if generate is enabled and copy is disabled or no cotext provided
         if self.generate and (not self.copy or copy_dist is None):
-            return gen_dist
+            return gen_dist, copy_prob
         #if copy is enabled but not generate
         elif self.copy and not self.generate:
             # If no context provided we are stuck since we do not generate
@@ -261,10 +262,10 @@ class CopyEditor(nn.Module):
                 probs[:,:,-1] = np.log(0.99)
                 if query_embedding.is_cuda:
                     probs = probs.cuda()
-                return probs
+                return probs, copy_prob
             # Else return just the copy distribution
             else:
-                return copy_dist
+                return copy_dist, copy_prob
         # if both are enabled and context is available
         else:
             copy_prob, gen_prob = self.should_copy(query_embedding, \
@@ -277,7 +278,7 @@ class CopyEditor(nn.Module):
             log_probs = torch.stack([copy_prob + copy_dist, gen_prob +
                                      gen_dist], dim = -1)
             final_probs = torch.logsumexp(log_probs, dim = -1)
-            return final_probs
+            return final_probs, copy_prob
 
 
 
