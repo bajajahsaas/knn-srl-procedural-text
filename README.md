@@ -65,9 +65,9 @@ python copy_model/prepare_context.py replaced.annoy replaced_tfidf.pkl train_emb
 #### OR
 
 ```python 
-python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl train_embeddings.pkl train.pkl scibert 4
-python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl test_embeddings.pkl test.pkl scibert 4
-python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl val_embeddings.pkl val.pkl scibert 4
+python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl train_embeddings.pkl train.pkl scibert 4 5
+python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl test_embeddings.pkl test.pkl scibert 4 5
+python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl val_embeddings.pkl val.pkl scibert 4 5
 ```
 
 This computes nearest neighbors in the training set for each sentence in the train, val and test sets. This writes into train.pkl, val.pkl, test.pkl.
