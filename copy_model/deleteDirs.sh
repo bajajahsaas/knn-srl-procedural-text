@@ -19,5 +19,14 @@ cd ..
 cd logscopygen
 rm *
 cd ..
+cd copy_test
+rm *
+cd ..
+cd generate_test
+rm *
+cd ..
+cd copy_generate_test
+rm *
+cd ..
 
 
