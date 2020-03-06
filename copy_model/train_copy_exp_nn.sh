@@ -5,7 +5,7 @@
 #SBATCH -e logscopy_exp_nn/copy_%j.err        # File to which STDERR will be written
 #SBATCH --gres=gpu:1
 #SBATCH --partition=m40-long # Partition to submit to
-#SBATCH --mem=10000
+#SBATCH --mem=50GB
 #
 #SBATCH --ntasks=1
 
