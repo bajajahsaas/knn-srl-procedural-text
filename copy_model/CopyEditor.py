@@ -4,6 +4,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from torch.utils.data import TensorDataset
+from transformers import *
 
 class MLP(nn.Module):
     def __init__(self, input_dims, hidden_dims, output_dims):
@@ -280,5 +281,81 @@ class CopyEditor(nn.Module):
             return final_probs
 
 
+# Compute bert embeddings in test time
+class CopyEditorBertWrapper(nn.Module):
+    def __init__(self,emb_dim, args):
+        super(CopyEditorBertWrapper, self).__init__()
+        self.emb_dim = emb_dim
+        self.copy_editor = CopyEditor(emb_dim, args)
+        self.bert_transformer, self.bert_tokenizer = getscibertmodel()
+        if args.gpu:
+            # use multiple GPUs for bert
+            self.bert_transformer = nn.DataParallel(self.bert_transformer, \
+                                                    list(range(torch.cuda.device_count())))
+        self.bert_transformer.eval()
 
+    def get_vectors(self, bert_embeddings, spans):
+        N = spans.size()[0]
+        # bert_embeddings = self.bert_transformer(tokens.unsqueeze(0))[-2].squeeze(0)
+        head_embeddings = []
+        tail_embeddings = []
+        for i in range(N):
+            hstart, hend = spans[i][0], spans[i][1]
+            tstart, tend = spans[i][3], spans[i][4]
+            head_embeddings.append(torch.mean(bert_embeddings[hstart:hend+1,:],\
+                                             dim=0))
+            tail_embeddings.append(torch.mean(bert_embeddings[tstart:tend+1,:],\
+                                             dim=0))
+        head_embeddings = torch.stack(head_embeddings, dim=0)
+        tail_embeddings = torch.stack(tail_embeddings, dim=0)
+        head_type = spans[:,2]
+        tail_type = spans[:,5]
+        pos = spans[:,6]
+        return head_embeddings.unsqueeze(0),head_type.unsqueeze(0),\
+                tail_embeddings.unsqueeze(0), tail_type.unsqueeze(0),\
+                    pos.unsqueeze(0)
 
+    def forward(self,query_tokens, query_spans, context_tokens, context_spans, context_labels):
+        cat = [query_tokens] + context_tokens
+        mxlen = max([len(x) for x in cat])
+        for x in cat:
+            x.extend([self.bert_tokenizer.pad_token_id] * (mxlen - len(x)))
+        cat_tensor = torch.tensor(cat)
+        if query_spans.is_cuda:
+            cat_tensor = cat_tensor.cuda()
+        bert_embeddings = self.bert_transformer(cat_tensor)[-2]
+        qh,qht,qt,qtt,pos = self.get_vectors(bert_embeddings[0,:], query_spans)
+        query_vectors = ((qh,qht),(qt,qtt),pos)
+        context_heads = []
+        context_tails = []
+        context_tail_type = []
+        context_head_type = []
+        context_pos = []
+        for i, spans in enumerate(context_spans):
+            ch,cht,ct,ctt,pos = self.get_vectors(bert_embeddings[i+1,:], spans)
+            context_heads.append(ch)
+            context_tails.append(ct)
+            context_tail_type.append(ctt)
+            context_head_type.append(cht)
+            context_pos.append(pos)
+        if len(context_heads) > 0:
+            context_heads = torch.cat(context_heads, dim=1)
+            context_tails = torch.cat(context_tails, dim=1)
+            context_labels = torch.cat(context_labels).unsqueeze(0)
+            context_head_type = torch.cat(context_head_type, dim=1)
+            context_tail_type = torch.cat(context_tail_type, dim=1)
+            context_pos = torch.cat(context_pos, dim=1)
+        else:
+            context_heads, context_tails, context_labels,\
+                context_pos, context_head_type, context_tail_type =\
+                    None, None,None, None, None, None
+        context_vectors = ((context_heads, context_head_type),\
+                           (context_tails, context_tail_type), context_pos)
+        if context_heads is not None:
+            mask = torch.ones(context_heads.size()[:-1])
+        else:
+            mask = None
+        if mask is not None and query_spans.is_cuda:
+            mask = mask.cuda()
+        return self.copy_editor(query_vectors, context_vectors, context_labels,\
+                                mask)
