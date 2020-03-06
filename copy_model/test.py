@@ -124,7 +124,7 @@ def accuracy(data, model):
                 copyable = 'No Context found'
             for a,b,c,d,e in zip(qh,qt,qlabels, pred, copyprob):
                 writer.writerow([sent, copyable, a, b, relations[c],
-                                 relations[d], c==d], '%.5f'%e)
+                                 relations[d], c==d, '%.5f'%e])
 
 
 
