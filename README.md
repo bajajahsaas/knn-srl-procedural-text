@@ -57,9 +57,9 @@ This produces train_embeddings.pkl, val_embeddings.pkl, test_embeddings.pkl. Use
 
 ### Using pre-generated annoy, vectorizer, BERT embeddings to pre-compute nearest neighbors (for edit model)
 ```python 
-python copy_model/prepare_context.py replaced.annoy replaced_tfidf.pkl train_embeddings.pkl train_embeddings.pkl train.pkl tfidf 4
-python copy_model/prepare_context.py replaced.annoy replaced_tfidf.pkl train_embeddings.pkl test_embeddings.pkl test.pkl tfidf 4
-python copy_model/prepare_context.py replaced.annoy replaced_tfidf.pkl train_embeddings.pkl val_embeddings.pkl val.pkl tfidf 4
+python copy_model/prepare_context.py replaced.annoy replaced_tfidf.pkl train_embeddings.pkl train_embeddings.pkl train.pkl tfidf 4 5
+python copy_model/prepare_context.py replaced.annoy replaced_tfidf.pkl train_embeddings.pkl test_embeddings.pkl test.pkl tfidf 4 5
+python copy_model/prepare_context.py replaced.annoy replaced_tfidf.pkl train_embeddings.pkl val_embeddings.pkl val.pkl tfidf 4 5
 ```
 
 #### OR
