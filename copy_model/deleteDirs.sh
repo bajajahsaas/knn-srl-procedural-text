@@ -40,3 +40,12 @@ cd ..
 cd logsgen_exp_train
 rm * -r
 cd ..
+cd logscopygen_exp_nn
+rm * -r
+cd ..
+cd logsgen_exp_nn
+rm * -r
+cd ..
+cd logscopy_exp_nn
+rm * -r
+cd ..
