@@ -43,6 +43,7 @@ bert_data = sys.argv[3]
 bert_data_target = sys.argv[4]
 retriever = sys.argv[6]
 num_buckets = sys.argv[7] # =4 for wetlabs data, =8 for materials data
+K = sys.argv[8]  # nearest neighbors
 
 with open(bert_data, 'rb') as f:
     data_src = pickle.load(f)
@@ -64,7 +65,7 @@ else:
     model = model.to(device)
 
 t.load(annoy_file)
-K = 5  # 5 nearest neighbors
+
 
 bad_relations = set(['Misc-Link'])
 
