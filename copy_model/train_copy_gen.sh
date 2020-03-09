@@ -9,6 +9,6 @@
 #
 #SBATCH --ntasks=1
 
-python -u train.py --model_path models/copy_generate.pt --plot_path logscopygen --gpu
+python -u train_finetune.py --model_path models/copy_generate.pt --plot_path logscopygen --gpu --traindata train_ft.pkl --valdata val_ft.pkl --batch_size 1
 #sleep 1
 exit

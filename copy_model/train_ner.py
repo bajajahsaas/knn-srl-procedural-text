@@ -103,7 +103,7 @@ with open('val.pkl', 'rb') as f:
 with open('train.pkl', 'rb') as f:
     train_data = pickle.load(f)
 
-tagger = BERT_CRF(2*19+1).cuda()
+tagger = BERT_CRF(2*21+1).cuda()
 print(val_data[0]['query_sent'])
 toks,enc, labs = get_sent_labels(val_data[0]['query_sent'], val_data[0]['entities'])
 print(toks)

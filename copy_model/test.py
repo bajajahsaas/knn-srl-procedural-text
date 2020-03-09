@@ -106,9 +106,10 @@ def accuracy(data, model):
         f = open(os.path.join(args.test_output_path,'predictions.csv'), 'w')
         writer = csv.writer(f)
         writer.writerow(['Sentence', 'Relations in context', 'Head', 'Tail',
-                         'Target', 'Prediction', 'correct'])
+                         'Target', 'Prediction', 'correct', 'copyprob'])
 
-        def write_csv_row(writer, sent, qtext, qlabels, ctext, clabels, pred):
+        def write_csv_row(writer, sent, qtext, qlabels, ctext, clabels, pred, copyprob):
+            copyprob = torch.exp(copyprob.view(-1))
             qlabels = qlabels.view(-1)
             if clabels is not None:
                 clabels = clabels.view(-1)
@@ -121,16 +122,17 @@ def accuracy(data, model):
                 copyable = '|'.join(list(set([relations[x] for x in clabels])))
             else:
                 copyable = 'No Context found'
-            for a,b,c,d in zip(qh,qt,qlabels, pred):
+            for a,b,c,d,e in zip(qh,qt,qlabels, pred, copyprob):
                 writer.writerow([sent, copyable, a, b, relations[c],
-                                 relations[d], c==d])
+                                 relations[d], c==d, '%.5f'%e])
 
 
 
 
 
         for sent, q_text, cxt_text, q, cxt, cxt_labels, q_labels, mask in get_batches(data):
-            pred = torch.argmax(model(q, cxt, cxt_labels, mask), \
+            logprob, copyprob = model(q, cxt, cxt_labels, mask)
+            pred = torch.argmax(logprob, \
                                 dim=-1).view(-1)
 
             this_target = q_labels.view(-1).data.detach().numpy().copy()
@@ -142,7 +144,7 @@ def accuracy(data, model):
 
             all_target.append(this_target)
             all_pred.append(this_pred)
-            write_csv_row(writer,sent, q_text, q_labels, cxt_text, cxt_labels, pred)
+            write_csv_row(writer,sent, q_text, q_labels, cxt_text, cxt_labels, pred, copyprob)
         f.close()
         all_pred = np.concatenate(all_pred, 0)
         all_target = np.concatenate(all_target, 0)

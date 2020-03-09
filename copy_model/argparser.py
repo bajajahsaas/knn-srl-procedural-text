@@ -30,8 +30,6 @@ parser.add_argument('--model_path', action='store', dest='model_path', type=str,
 parser.add_argument('--test_output_path', action='store', dest='test_output_path', type=str,
                     help='File to save test csv',
                     default='test_output.csv')
-parser.add_argument('--contextdata', action='store', dest='contextdata',
-                    type=str, help='Context data', default='context_data.pkl')
 parser.add_argument('--epochs', action='store', dest='epochs', type=int,
                     help='Number of epochs', default=200)
 parser.add_argument('--shouldcopy_hidden_dims', action='store',
@@ -39,18 +37,18 @@ parser.add_argument('--shouldcopy_hidden_dims', action='store',
                     help='hidden dimensions for mlp for copyprob', default=[256,128,64])
 parser.add_argument('--relation_hidden_dims', action='store',
                     dest='relation_hidden_dims', type=list,
-                    help='hidden dims for relation embedding', default=[512,256])
+                    help='hidden dims for relation embedding', default=[256,128])
 parser.add_argument('--attnmethod', action='store', dest='attnmethod', type=str,
                     help='Mechanism for calculating attention (dotprod, mlp)', default='mlp')
 parser.add_argument('--attention_hidden_dims', action='store',
                     dest='attention_hidden_dims', type=list,
-                    help='hidden dims for attention MLP', default=[512,256])
+                    help='hidden dims for attention MLP', default=[256,128])
 parser.add_argument('--relation_output_dim', action='store',
                     dest='relation_output_dim', type=int,
-                    help='output dim of relation embedding', default=256)
+                    help='output dim of relation embedding', default=128)
 parser.add_argument('--context_label_dim', action='store',
                     dest='context_label_dim', type=int,
-                    help='output dim of context label embedding', default=256)
+                    help='output dim of context label embedding', default=128)
 parser.add_argument('--type_embedding_dim', action='store',
                     dest='type_dim', type=int,
                     help='Embedding size of type embedding', default=128)
@@ -58,13 +56,13 @@ parser.add_argument('--pos_embedding_dim', action='store',
                     dest='pos_dim', type=int,
                     help='Embedding size of position embedding', default=128)
 parser.add_argument('--classes', action='store', dest='classes', type=int,
-                    help='Number of classes', default=13)
+                    help='Number of classes', default=16)
 parser.add_argument('--downsample', action='store', dest='downsample', type=int,
                     help='Number of classes', default=1)
 parser.add_argument('--num_entities', action='store', dest='num_entities', type=int,
-                    help='Number of Entities', default=19)
+                    help='Number of Entities', default=21)
 parser.add_argument('--num_buckets', action='store', dest='num_buckets', type=int,
-                    help='Number of buckets', default=19)
+                    help='Number of buckets', default=10)
 parser.add_argument('--batch_size', action='store', dest='batch_size', type=int,
                     help='Batch size', default=16)
 parser.add_argument('--grad_maxnorm', action='store', dest='grad_maxnorm',

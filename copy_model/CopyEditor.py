@@ -5,6 +5,8 @@ import torch.nn.functional as F
 import torch.optim as optim
 from torch.utils.data import TensorDataset
 from transformers import *
+from biobert import *
+
 
 class MLP(nn.Module):
     def __init__(self, input_dims, hidden_dims, output_dims):
@@ -224,6 +226,7 @@ class CopyEditor(nn.Module):
         query_embedding = self.rel_embedding(query_vectors)
 
         context_vec, copy_dist = None, None
+        copy_prob = torch.ones_like(query_vectors[2])
         if self.generate:
             gen_dist = self.multiclass(query_embedding)
         if self.copy:
@@ -251,7 +254,7 @@ class CopyEditor(nn.Module):
 
         # if generate is enabled and copy is disabled or no cotext provided
         if self.generate and (not self.copy or copy_dist is None):
-            return gen_dist
+            return gen_dist, copy_prob
         #if copy is enabled but not generate
         elif self.copy and not self.generate:
             # If no context provided we are stuck since we do not generate
@@ -262,10 +265,10 @@ class CopyEditor(nn.Module):
                 probs[:,:,-1] = np.log(0.99)
                 if query_embedding.is_cuda:
                     probs = probs.cuda()
-                return probs
+                return probs, copy_prob
             # Else return just the copy distribution
             else:
-                return copy_dist
+                return copy_dist, copy_prob
         # if both are enabled and context is available
         else:
             copy_prob, gen_prob = self.should_copy(query_embedding, \
@@ -278,8 +281,12 @@ class CopyEditor(nn.Module):
             log_probs = torch.stack([copy_prob + copy_dist, gen_prob +
                                      gen_dist], dim = -1)
             final_probs = torch.logsumexp(log_probs, dim = -1)
-            return final_probs
+            return final_probs, copy_prob
 
+# We use this somewhat unintuitive complicated architecture because in some
+# configurations, we precompute all the inputs to CopyEditor ( when we want to
+# keep the BERT parameters frozen ). CopyEditorBertWrapper uses a trainable BERT
+# module to compute the same for the case when we want to finetune BERT.
 
 # Compute bert embeddings in test time
 class CopyEditorBertWrapper(nn.Module):
@@ -287,7 +294,7 @@ class CopyEditorBertWrapper(nn.Module):
         super(CopyEditorBertWrapper, self).__init__()
         self.emb_dim = emb_dim
         self.copy_editor = CopyEditor(emb_dim, args)
-        self.bert_transformer, self.bert_tokenizer = getscibertmodel()
+        self.bert_tokenizer, self.bert_transformer = getscibertmodel()
         if args.gpu:
             # use multiple GPUs for bert
             self.bert_transformer = nn.DataParallel(self.bert_transformer, \
@@ -296,12 +303,18 @@ class CopyEditorBertWrapper(nn.Module):
 
     def get_vectors(self, bert_embeddings, spans):
         N = spans.size()[0]
+        if N == 0:
+            print(N)
+            return None, None, None, None, None
         # bert_embeddings = self.bert_transformer(tokens.unsqueeze(0))[-2].squeeze(0)
         head_embeddings = []
         tail_embeddings = []
         for i in range(N):
             hstart, hend = spans[i][0], spans[i][1]
             tstart, tend = spans[i][3], spans[i][4]
+            if hend < hstart:
+                print("%d\t%d\n"%(hstart, hend))
+                raise Exception
             head_embeddings.append(torch.mean(bert_embeddings[hstart:hend+1,:],\
                                              dim=0))
             tail_embeddings.append(torch.mean(bert_embeddings[tstart:tend+1,:],\

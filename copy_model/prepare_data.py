@@ -33,7 +33,7 @@ else:
     print('Loaded basebert model')
 
 # else default ones imported from biobert
-
+model.cuda()
 embedded_data = []
 
 def find_indices(lis, sublist):
@@ -68,7 +68,7 @@ for sent in data:
         entity_spans.append((start, end))
     with torch.no_grad():
         bert_embeddings = \
-            model(torch.tensor([bert_tokens_sentence]))[0].squeeze(0).numpy() 
+            model(torch.tensor([bert_tokens_sentence]).cuda())[0].cpu().squeeze(0).numpy() 
     entity_embeddings = [np.mean(bert_embeddings[start:end+1], axis=0) for \
                             start, end in entity_spans]
     relations = []
@@ -85,6 +85,7 @@ for sent in data:
                                                entity_embeddings, entity_spans)),
                           'relations' : relations, 'sentence' :
                           sent['sentence'], 'replaced' : sent['replaced'], 
+                          'sent_tokens' : bert_tokens_sentence,
                             'length': len(bert_tokens_sentence)})
 
 with open(sys.argv[3], 'wb') as f:

@@ -13,7 +13,7 @@ torch.set_default_tensor_type(torch.DoubleTensor)
 tokenizer,bert_model = getscibertmodel()
 
 bert_model.cuda()
-tagger = BERT_CRF(2*19+1).cuda()
+tagger = BERT_CRF(2*21+1).cuda()
 tagger.load_state_dict(torch.load('bert_crf.pt'))
 with open('entity_types.txt', 'r') as f:
     etypes = f.read().splitlines()

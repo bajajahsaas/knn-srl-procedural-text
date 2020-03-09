@@ -130,7 +130,7 @@ def accuracy(data, model):
 
 
         for sent, q_text, cxt_text, q, cxt, cxt_labels, q_labels, mask in get_batches(data):
-            pred = torch.argmax(model(q, cxt, cxt_labels, mask), \
+            pred = torch.argmax(model(q, cxt, cxt_labels, mask)[0], \
                                 dim=-1).view(-1)
 
             this_target = q_labels.view(-1).data.detach().numpy().copy()
