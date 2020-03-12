@@ -95,7 +95,7 @@ def accuracy(data, model, loss):
         all_target = []
         losses = []
         for q, cxt, cxt_labels, q_labels, mask in get_batches(data):
-            model_pred = model(q, cxt, cxt_labels, mask)
+            model_pred = model(q, cxt, cxt_labels, mask)[0]
             pred = torch.argmax(model_pred, dim=-1).view(-1)
             all_target.append(q_labels.view(-1).data.detach().cpu().numpy().copy())
             all_pred.append(pred.data.detach().cpu().numpy().copy())
@@ -163,7 +163,7 @@ def gridSearchDownSample():
                 for i in range(BATCH_SIZE):
                     try:
                         q, cxt, cxt_labels, q_labels, mask = data_gen.__next__()
-                        prediction = model(q, cxt, cxt_labels, mask).view(-1, num_classes + 1)
+                        prediction = model(q, cxt, cxt_labels, mask)[0].view(-1, num_classes + 1)
                         l = loss(prediction, q_labels.view(-1))
                         losses.append(l)
                         count += 1
@@ -264,7 +264,7 @@ def noGridSearch(downsample):
             for i in range(BATCH_SIZE):
                 try:
                     q, cxt, cxt_labels, q_labels, mask = data_gen.__next__()
-                    prediction = model(q, cxt, cxt_labels, mask).view(-1, num_classes + 1)
+                    prediction = model(q, cxt, cxt_labels, mask)[0].view(-1, num_classes + 1)
                     l = loss(prediction, q_labels.view(-1))
                     losses.append(l)
                     count += 1
