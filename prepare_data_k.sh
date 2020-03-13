@@ -1,3 +1,13 @@
+#!/bin/bash
+#
+#SBATCH --job-name=data_prep
+#SBATCH --output=logsprepdata/test_%j.txt  # output file
+#SBATCH -e logsprepdata/test_%j.err        # File to which STDERR will be written
+#SBATCH --gres=gpu:1
+#SBATCH --mem=10000
+#
+#SBATCH --ntasks=1
+
 #python copy_model/prepare_context_k.py original.annoy original_bert.pkl train_embeddings.pkl test_embeddings.pkl testk1.pkl scibert 4 1
 #python copy_model/prepare_context_k.py original.annoy original_bert.pkl train_embeddings.pkl test_embeddings.pkl testk2.pkl scibert 4 2
 #python copy_model/prepare_context_k.py original.annoy original_bert.pkl train_embeddings.pkl test_embeddings.pkl testk5.pkl scibert 4 5
