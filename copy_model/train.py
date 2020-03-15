@@ -264,7 +264,7 @@ def noGridSearch(downsample):
             for i in range(BATCH_SIZE):
                 try:
                     q, cxt, cxt_labels, q_labels, mask = data_gen.__next__()
-                    prediction = model(q, cxt, cxt_labels, mask)[0].view(-1, num_classes + 1)
+                    prediction = model(q, cxt, cxt_labels, mask, temp=1000)[0].view(-1, num_classes + 1)
                     l = loss(prediction, q_labels.view(-1))
                     losses.append(l)
                     count += 1

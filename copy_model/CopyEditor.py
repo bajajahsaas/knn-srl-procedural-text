@@ -167,12 +167,14 @@ class ShouldCopy(nn.Module): # MLP to get probability of copying vs generating
         self.dim = dim
         self.network = MLP(2*dim, hidden_dims, 1)
 
-    def forward(self, query, context):
+    def forward(self, query, context, temp=1):
         # query, context: Batch x n x dim
         #
         # output: Batch x n
         concat = torch.cat((query, context), -1)
         logits = self.network(concat).squeeze(-1)
+        # scale by temperature
+        logits = logits/temp
         prob = F.logsigmoid(logits)
         neg_prob = F.logsigmoid(-logits)
         return prob, neg_prob
@@ -212,7 +214,8 @@ class CopyEditor(nn.Module):
                                      self.num_classes,
                                      args.relation_hidden_dims)
 
-    def forward(self, query_vectors, context_vectors, context_labels,  mask):
+    def forward(self, query_vectors, context_vectors, context_labels,  mask,\
+                temp=1):
         # query_vector: ((head, headtype), (tail, tailtype), posbucket) head, tail of Batch x n x dim
         #                                                               headtype,tailtype, posbucket of size Batch x n
         # context_vectors: ((head, headtype), (tail, tailtype), posbucket) each of Batch x context_size x dim
@@ -272,7 +275,7 @@ class CopyEditor(nn.Module):
         # if both are enabled and context is available
         else:
             copy_prob, gen_prob = self.should_copy(query_embedding, \
-                                         context_vec)
+                                         context_vec, temp)
             copy_prob = copy_prob.unsqueeze(-1)
             gen_prob = gen_prob.unsqueeze(-1)
 
