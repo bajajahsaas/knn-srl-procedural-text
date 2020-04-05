@@ -13,7 +13,7 @@
 
 #python preprocess_wetlabs_exp_train.py
 
-# python build_index_from_json_exp_train.py scibert
+# python build_index_from_json_wetlabs_exp_train.py scibert
 
 # python copy_model/prepare_data.py wetlabs_train1.json scibert train_embeddings1.pkl
 # python copy_model/prepare_data.py wetlabs_train2.json scibert train_embeddings2.pkl
