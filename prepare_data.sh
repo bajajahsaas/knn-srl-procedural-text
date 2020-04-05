@@ -15,8 +15,10 @@ SBATCH --partition=m40-short # Partition to submit to
 #python copy_model/prepare_data.py wetlabs_val.json scibert val_embeddings.pkl
 #python copy_model/prepare_data.py wetlabs_test.json scibert test_embeddings.pkl
 
-python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl train_embeddings.pkl train_NN_10.pkl scibert 4 10
-python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl val_embeddings.pkl val_NN_10.pkl scibert 4 10
+# change num_buckets (4: wlp, 8: matsci)
 
-python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl train_embeddings.pkl train_NN_20.pkl scibert 4 20
-python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl val_embeddings.pkl val_NN_20.pkl scibert 4 20
+python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl train_embeddings.pkl train_NN_10.pkl scibert 8 10
+python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl val_embeddings.pkl val_NN_10.pkl scibert 8 10
+
+python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl train_embeddings.pkl train_NN_20.pkl scibert 8 20
+python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl val_embeddings.pkl val_NN_20.pkl scibert 8 20
