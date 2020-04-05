@@ -1,3 +1,13 @@
+#!/bin/bash
+#
+#SBATCH --job-name=data_prep
+#SBATCH --output=logsprepdata/test_%j.txt  # output file
+#SBATCH -e logsprepdata/test_%j.err        # File to which STDERR will be written
+#SBATCH --gres=gpu:1
+SBATCH --partition=m40-short # Partition to submit to
+#SBATCH --mem=50GB
+#
+#SBATCH --ntasks=1
 
 #python build_index_from_json.py scibert
 #
