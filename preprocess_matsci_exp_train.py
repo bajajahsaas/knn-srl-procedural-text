@@ -14,7 +14,7 @@ from copy_model.biobert import getscibertmodel
 from bratreader.repomodel import RepoModel
 from random import sample
 
-train = 'Materials_datat/train'
+train = 'Materials_data/train'
 test = 'Materials_data/test'
 val = 'Materials_data/dev'
 
