@@ -10,7 +10,7 @@ import pickle
 from annoy import AnnoyIndex
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-from biobert import getscibertmodel
+from copy_model.biobert import getscibertmodel
 from bratreader.repomodel import RepoModel
 from random import sample
 
