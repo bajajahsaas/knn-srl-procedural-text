@@ -226,7 +226,7 @@ class CopyEditor(nn.Module):
         query_embedding = self.rel_embedding(query_vectors)
 
         context_vec, copy_dist = None, None
-        copy_prob = torch.ones_like(query_vectors[2])
+        copy_prob = torch.zeros_like(query_vectors[2]).float()
         if self.generate:
             gen_dist = self.multiclass(query_embedding)
         if self.copy:
