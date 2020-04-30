@@ -213,7 +213,9 @@ def accuracy(data, model):
 
 
 model = CopyEditor(EMBEDDING_SIZE, args)
-model.load_state_dict(torch.load(MODEL_PATH, map_location=torch.device('gpu')))
+model.load_state_dict(torch.load(MODEL_PATH, map_location=torch.device('cpu')))
+if args.gpu:
+    model = model.cuda()
 model.eval()
 
 acc1, acc2 = accuracy(valdata, model)
