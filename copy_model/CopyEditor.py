@@ -29,6 +29,12 @@ class AttentionDist(nn.Module):
         self.dim = dim
         self.num_classes = num_classes
         self.attention_method = attnmethod
+        # TODO support CPU
+        self.prototypes = \
+             nn.Parameter(torch.tensor((num_classes+1,dim))).cuda()
+        nn.init.xavier_normal_(self.prototypes)
+        self.proto_labels = \
+                         torch.tensor(np.arange(num_classes+1)).long().cuda()
         self.label_embedding = nn.Embedding(num_classes + 1, context_label_dims)
         total_input_dim = 2 * dim + context_label_dims
         self.network = MLP(total_input_dim, hidden_dims, 1)
@@ -45,6 +51,14 @@ class AttentionDist(nn.Module):
 
         # Batch x n x context_size
         # Computes matrix [M_{ij}] where M_{ij} = q_i^t c_j
+
+
+        # Adds protypes to context
+        context = torch.cat(context, self.prototypes.unsqueeze(0), dim=1)
+        context_labels = torch.cat(context_labels,
+                                   self.proto_labels.unsqueeze(0), dim=1)
+
+
 
         if self.attention_method == 'dotprod':
             attn = torch.sum(queries.unsqueeze(2) * context.unsqueeze(1), dim=-1) * mask.unsqueeze(1)
