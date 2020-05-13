@@ -31,7 +31,8 @@ class AttentionDist(nn.Module):
         self.attention_method = attnmethod
         # TODO support CPU
         self.prototypes = \
-             nn.Parameter(torch.tensor((num_classes+1,dim))).cuda()
+             nn.Parameter(torch.zeros((num_classes+1,dim)).float().cuda(),
+                          requires_grad= True)
         nn.init.xavier_normal_(self.prototypes)
         self.proto_labels = \
                          torch.tensor(np.arange(num_classes+1)).long().cuda()
@@ -54,9 +55,9 @@ class AttentionDist(nn.Module):
 
 
         # Adds protypes to context
-        context = torch.cat(context, self.prototypes.unsqueeze(0), dim=1)
-        context_labels = torch.cat(context_labels,
-                                   self.proto_labels.unsqueeze(0), dim=1)
+        context = torch.cat((context, self.prototypes.unsqueeze(0)), dim=1)
+        context_labels = torch.cat((context_labels,
+                                   self.proto_labels.unsqueeze(0)), dim=1)
 
 
 
