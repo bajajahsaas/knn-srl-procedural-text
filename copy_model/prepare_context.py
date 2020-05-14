@@ -1,4 +1,5 @@
 import sys
+import tqdm
 import math
 import numpy as np
 import os
@@ -11,6 +12,8 @@ import re
 from biobert import getscibertmodel
 from buckets import Buckets
 
+
+# MAX_CONTEXT = 20
 
 def get_relations_embeddings(s):
     # Get all relations including no relation
@@ -38,12 +41,14 @@ def get_relations_embeddings(s):
 
 
 annoy_file = sys.argv[1]
-vectorizer_file = sys.argv[2]  # not used in case of bert retriever
-bert_data = sys.argv[3]
-bert_data_target = sys.argv[4]
-retriever = sys.argv[6]
-num_buckets = sys.argv[7] # =4 for wetlabs data, =8 for materials data
-K = int(sys.argv[8])  # nearest neighbors
+annoy_dir = sys.argv[2]
+vectorizer_file = sys.argv[3]  # not used in case of bert retriever
+bert_data = sys.argv[4]
+bert_data_target = sys.argv[5]
+retriever = sys.argv[7]
+num_buckets = sys.argv[8] # =4 for wetlabs data, =8 for materials data
+K = int(sys.argv[9])  # nearest neighbors
+label_annoys = {}
 
 with open(bert_data, 'rb') as f:
     data_src = pickle.load(f)
@@ -63,6 +68,16 @@ else:
     print('Loaded scibert model')
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = model.to(device)
+    for fil in os.listdir(annoy_dir):
+        if not fil.endswith('annoy'):
+            continue
+        label = fil.split('_')[1].split('.')[0]
+        t_l = AnnoyIndex(768, "angular")
+        t_l.load(os.path.join(annoy_dir, fil))
+        label_annoys[label] = t_l
+    with open(os.path.join(annoy_dir, 'id_map.pkl'), 'rb') as f:
+        id_map = pickle.load(f)
+
 
 t.load(annoy_file)
 
@@ -127,8 +142,27 @@ def getbertemb(sent):
         return f_emb_avg
 
 
-for s in data_tgt:
-    print('%d / %d done' % (cnt, len(data_tgt)))
+def add_relations(nns, src, vector, label_annoys, id_map, istrain):
+    seen_labels = set()
+    num_relations = len(relations)
+
+    # for nn_id in nns:
+    #     seen_labels |= set([x[2] for x in src[nn_id]['relations']])
+    for l, index in label_annoys.items():
+        # if l not in seen_labels:
+            if istrain:
+                # first sentence could be the same sentence
+                label_nn = index.get_nns_by_vector(vector, 2)[1]
+            else:
+                label_nn = index.get_nns_by_vector(vector, 1)[0]
+            sent_id = id_map[l][label_nn]
+            nns.append(sent_id)
+    return nns
+
+
+
+for s in tqdm.tqdm(data_tgt):
+    # print('%d / %d done' % (cnt, len(data_tgt)))
     cnt += 1
     if retriever == 'tfidf':
         vector = vect.transform([s['replaced']]).toarray()[0]
@@ -137,10 +171,15 @@ for s in data_tgt:
     if bert_data == bert_data_target:  # on training data, we are bound to find
         # same sentence, so we exclude the top
         # match
-        nns = t.get_nns_by_vector(vector, K + 1)[1:]  # 1st one will be the same
+        nns = t.get_nns_by_vector(vector, K+1)[1:]  # 1st one will be the same
         # sentence
     else:  # on held out data, we needn't exclude the top match
-        nns = t.get_nns_by_vector(vector, K + 1)
+        nns = t.get_nns_by_vector(vector, K)
+
+    nns = add_relations(nns, data_src,vector, label_annoys, id_map, \
+                        bert_data==bert_data_target) # add sentences for rare
+                                                     # labels
+    # print(len(nns))
 
     context_head = []
     context_head_text = []
@@ -205,5 +244,5 @@ for s in data_tgt:
         'relations': all_rels
     })
 
-with open(sys.argv[5], 'wb') as f:
+with open(sys.argv[6], 'wb') as f:
     pickle.dump(dataset, f)

@@ -55,9 +55,13 @@ class AttentionDist(nn.Module):
 
 
         # Adds protypes to context
-        context = torch.cat((context, self.prototypes.unsqueeze(0)), dim=1)
-        context_labels = torch.cat((context_labels,
+        if context is not None:
+            context = torch.cat((context, self.prototypes.unsqueeze(0)), dim=1)
+            context_labels = torch.cat((context_labels,
                                    self.proto_labels.unsqueeze(0)), dim=1)
+        else:
+            context = self.prototypes.unsqueeze(0)
+            context_labels = self.proto_labels.unsqueeze(0)
 
 
 
@@ -157,6 +161,8 @@ class RelationEmbedding(nn.Module):
         head_emb_type, tail_emb_type, pos = headtail
         head, headtype = head_emb_type
         tail, tailtype = tail_emb_type
+        if head is None:
+            return None
         init_shape = head.size()
         final_shape = tuple(list(init_shape)[:-1] + [self.output_dim])
         head = head.view(-1, self.emb_dim)
@@ -246,26 +252,26 @@ class CopyEditor(nn.Module):
             gen_dist = self.multiclass(query_embedding)
         if self.copy:
             # Batch x context_size x dim
-            if context_labels is not None: # if contex
-                context_embedding = self.rel_embedding(context_vectors)
-                #Batch x n x dim, Batch x n x num_classes+1
-                context_vec, copy_dist_unsmooth = self.attention(query_embedding, context_embedding, \
-                                                 context_labels, mask)
-                # We need to smooth since copy can assign p(relation) = 0 if it
-                # does not exist in context. This is not an issue in
-                # Copy&Generate but if Generate is turned off, this makes
-                # NLL=-log(P(y)) -> inf.
+            # if context_labels is not None: # if contex
+            context_embedding = self.rel_embedding(context_vectors)
+            #Batch x n x dim, Batch x n x num_classes+1
+            context_vec, copy_dist_unsmooth = self.attention(query_embedding, context_embedding, \
+                                             context_labels, mask)
+            # We need to smooth since copy can assign p(relation) = 0 if it
+            # does not exist in context. This is not an issue in
+            # Copy&Generate but if Generate is turned off, this makes
+            # NLL=-log(P(y)) -> inf.
 
 
-                # P_smooth = 0.99 * P_copy + 0.01 * p_uniform
-                # we stay in log space to avoid nans due to overflow
-                # log(P_smooth) = logsumexp(log(0.99)+log(p_copy),log(0.01)+log(1/N))
-                # TODO: smoothing with actual distribution of labels rather
-                # than uniform
-                copy_dist = torch.logsumexp(torch.stack((copy_dist_unsmooth +
-                                                               np.log(0.99),
-                                                               torch.ones_like(copy_dist_unsmooth)*np.log(0.01/(self.num_classes+1))),
-                                                               dim=-1), dim = -1)
+            # P_smooth = 0.99 * P_copy + 0.01 * p_uniform
+            # we stay in log space to avoid nans due to overflow
+            # log(P_smooth) = logsumexp(log(0.99)+log(p_copy),log(0.01)+log(1/N))
+            # TODO: smoothing with actual distribution of labels rather
+            # than uniform
+            copy_dist = torch.logsumexp(torch.stack((copy_dist_unsmooth +
+                                                           np.log(0.99),
+                                                           torch.ones_like(copy_dist_unsmooth)*np.log(0.01/(self.num_classes+1))),
+                                                           dim=-1), dim = -1)
 
         # if generate is enabled and copy is disabled or no cotext provided
         if self.generate and (not self.copy or copy_dist is None):

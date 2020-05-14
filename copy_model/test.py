@@ -1,4 +1,5 @@
 import os
+import tqdm
 
 import numpy as np
 import csv
@@ -43,7 +44,7 @@ def get_batches(data):
     # only batch size 1 for now
     # no permutation
     # perm = np.random.permutation(len(data))
-    for x in range(len(data)):
+    for x in tqdm.trange(len(data)):
         datum = data[x]
         q_sent, qh_text, qt_text, ch_text, ct_text,qpos,cpos = datum['query_sent'], \
                 datum['query_head_text'], datum['query_tail_text'],\
@@ -62,7 +63,8 @@ def get_batches(data):
         qpos = torch.from_numpy(qpos).unsqueeze(0)
         if torch.isnan(torch.stack([qh,qt])).any():
             continue
-        elif type(cl) != np.ndarray:
+        # elif type(cl) != np.ndarray:
+        elif True:
             ch,ct,cl,cht,ctt,mask = None, None, None, None, None, None
         else:
             ch = torch.from_numpy(ch).unsqueeze(0)
@@ -133,8 +135,8 @@ def accuracy(data, model):
             pred = torch.argmax(model(q, cxt, cxt_labels, mask)[0], \
                                 dim=-1).view(-1)
 
-            this_target = q_labels.view(-1).data.detach().numpy().copy()
-            this_pred = pred.data.detach().numpy().copy()
+            this_target = q_labels.view(-1).data.detach().cpu().numpy().copy()
+            this_pred = pred.data.detach().cpu().numpy().copy()
 
             precision_sentences.append(precision_score(this_target, this_pred, labels=labels, average="micro"))
             recall_sentences.append(recall_score(this_target, this_pred, labels=labels, average="micro"))
@@ -211,7 +213,9 @@ def accuracy(data, model):
 
 
 model = CopyEditor(EMBEDDING_SIZE, args)
-model.load_state_dict(torch.load(MODEL_PATH, map_location=torch.device('cpu')))
+if args.gpu:
+    model = model.cuda()
+model.load_state_dict(torch.load(MODEL_PATH))
 model.eval()
 
 acc1, acc2 = accuracy(valdata, model)
