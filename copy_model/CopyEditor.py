@@ -55,10 +55,28 @@ class AttentionDist(nn.Module):
 
 
         # Adds protypes to context
+        # prototypes: num_classes+1 x dim
+        # prototypes.unsqueeze(0): 1 x num_classes+1 x dim (since context always has batch_size = 1)
+
         if context is not None:
-            context = torch.cat((context, self.prototypes.unsqueeze(0)), dim=1)
-            context_labels = torch.cat((context_labels,
-                                   self.proto_labels.unsqueeze(0)), dim=1)
+            # Method 1: add all prototypes always
+            # context = torch.cat((context, self.prototypes.unsqueeze(0)), dim=1)
+            # context_labels = torch.cat((context_labels,
+            #                        self.proto_labels.unsqueeze(0)), dim=1)
+
+            # Method 2: add prototypes only for missing class
+            all_labels = np.arange(self.num_classes + 1)
+            present_labels = torch.unique(context_labels.flatten()).cpu().numpy()
+            missing_labels = np.setdiff1d(all_labels, present_labels)
+
+            # print(missing_labels)
+            select_prototypes = self.prototypes[missing_labels, :]
+            select_proto_labels = self.proto_labels[missing_labels]
+
+            # print(select_prototypes.size())
+            context = torch.cat((context, select_prototypes.unsqueeze(0)), dim=1)
+            context_labels = torch.cat((context_labels, select_proto_labels.unsqueeze(0)), dim=1)
+
         else:
             context = self.prototypes.unsqueeze(0)
             context_labels = self.proto_labels.unsqueeze(0)
