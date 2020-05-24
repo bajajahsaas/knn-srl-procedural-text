@@ -74,6 +74,22 @@ class AttentionDist(nn.Module):
         # Batch x n x context_size
         l_softmax = F.log_softmax(attn, dim=-1)
 
+         # New softmax alternative. Meeting on 21st May.
+        # Batch x n x context_size x dim
+        weighted_edge_vectors = torch.exp(l_softmax.unsqueeze(-1)) * context.unsqueeze(1)
+        arange =\
+                 torch.tensor(np.arange(self.num_classes+1)).view(1,1,1,-1).cuda().long()
+        # Batch x n x context_size x NumClasses
+        label_mask = torch.eq(arange, context_labels.unsqueeze(-1))
+        # Batch x n x NumClasses x dim
+        class_vectors = torch.sum(label_mask.unsqueeze(-1) * \
+                                  weighted_edge_vectors.unsqueeze(3), dim = 2)
+        # Batch x n x NumClasses
+        class_weights_unnormalized = torch.sum(class_vectors \
+                                               *queries.unsqueeze(2), dim = -1)
+        l_softmax_classes = F.log_softmax(class_weights_unnormalized, dim = -1)
+        
+
         # Batch x n x dim
         # Batch x 1x cs x dim
         # Batch x n x cs x 1
@@ -81,7 +97,7 @@ class AttentionDist(nn.Module):
         context_vector = torch.sum(torch.exp(l_softmax.unsqueeze(-1)) * context.unsqueeze(1), dim=2)
 
         # Batch x n x (num_classes+1)
-        _, n, __ = l_softmax.size()
+        # _, n, __ = l_softmax.size()
 
         # Batch x 1 x cs x num_classes+1
         # Batch x n x cs x 1
@@ -95,15 +111,15 @@ class AttentionDist(nn.Module):
         # cl = [l1,l2,l1]
 
         # [[1,0],[0,1],[1,0]]  
-        onehot_labels =\
-            F.one_hot(context_labels, self.num_classes+1).unsqueeze(1).repeat((1,n,1,1))
+        # onehot_labels =\
+        #     F.one_hot(context_labels, self.num_classes+1).unsqueeze(1).repeat((1,n,1,1))
 
-        #  [[[p1,0],[0,p2],[p3,0]]] //1 x 3 x 2
-        onehot_logprobs = onehot_labels * l_softmax.unsqueeze(-1)
-        onehot_logprobs[torch.where(onehot_labels == 0)] = -float('Inf')
+        # #  [[[p1,0],[0,p2],[p3,0]]] //1 x 3 x 2
+        # onehot_logprobs = onehot_labels * l_softmax.unsqueeze(-1)
+        # onehot_logprobs[torch.where(onehot_labels == 0)] = -float('Inf')
 
-        #  [[p1+p3, p2]]
-        l_softmax_classes = torch.logsumexp(onehot_logprobs, dim = 2)
+        # #  [[p1+p3, p2]]
+        # l_softmax_classes = torch.logsumexp(onehot_logprobs, dim = 2)
         return context_vector, l_softmax_classes
 
 
