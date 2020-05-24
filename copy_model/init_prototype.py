@@ -36,22 +36,22 @@ def get_batches(data):
     perm = np.random.permutation(len(data))
     for x in perm:
         datum = data[x]
-        qh, qt, ql, ch, ct, cl,qpos,cpos = datum['query_head'], datum['query_tail'],\
-                        datum['query_labels'], datum['context_head'], \
-                        datum['context_tail'], datum['context_labels'],\
-                        datum['query_posdiff'], datum['context_posdiff']
-        qht, qtt, cht, ctt = datum['query_head_type'], datum['query_tail_type'],\
-                datum['context_head_type'], datum['context_tail_type']
+        qh, qt, ql, ch, ct, cl, qpos, cpos = datum['query_head'], datum['query_tail'], \
+                                             datum['query_labels'], datum['context_head'], \
+                                             datum['context_tail'], datum['context_labels'], \
+                                             datum['query_posdiff'], datum['context_posdiff']
+        qht, qtt, cht, ctt = datum['query_head_type'], datum['query_tail_type'], \
+                             datum['context_head_type'], datum['context_tail_type']
         qh = torch.from_numpy(qh).unsqueeze(0)
         qt = torch.from_numpy(qt).unsqueeze(0)
         ql = torch.from_numpy(ql).unsqueeze(0)
         qht = torch.from_numpy(qht).unsqueeze(0)
         qtt = torch.from_numpy(qtt).unsqueeze(0)
         qpos = torch.from_numpy(qpos).unsqueeze(0)
-        if torch.isnan(torch.stack([qh,qt])).any():
+        if torch.isnan(torch.stack([qh, qt])).any():
             continue
         elif type(cl) != np.ndarray:
-            ch,ct,cl,cht,ctt,mask,cpos = None, None, None, None, None, None, None
+            ch, ct, cl, cht, ctt, mask, cpos = None, None, None, None, None, None, None
         else:
             ch = torch.from_numpy(ch).unsqueeze(0)
             cl = torch.from_numpy(cl).unsqueeze(0)
@@ -59,7 +59,7 @@ def get_batches(data):
             ctt = torch.from_numpy(ctt).unsqueeze(0)
             cht = torch.from_numpy(cht).unsqueeze(0)
             cpos = torch.from_numpy(cpos).unsqueeze(0)
-            if torch.isnan(torch.stack([ch,ct])).any():
+            if torch.isnan(torch.stack([ch, ct])).any():
                 continue
             mask = torch.from_numpy(np.ones_like(cl))
         if args.gpu:
@@ -91,12 +91,34 @@ def get_batches(data):
 
 def build_prototype(data, model):
     model.eval()
+
+    protoDict = [None] * (num_classes + 1)
     with torch.no_grad():
         for q, cxt, cxt_labels, q_labels, mask in get_batches(data):
-            # Batch x n x dim
-            print('query vectors: ', q.size())
-            query_embedding = model.rel_embedding(q)
-            print('query_embedding: ', query_embedding.size())
+            # q_labels vary from [0, num_classes] (including No_Rel)
+            # q_labels is 1-d tensor shape (1, edges)
+            query_embedding = model.rel_embedding(q)  # (Batch x edges x dim): (1, n, 256)
+            _, edges, dims = query_embedding.shape
+            q_labels = q_labels.squeeze(0).cpu().numpy()
+
+            query_embedding = query_embedding.squeeze(0)  # (edges x dim)
+            for id, l in enumerate(q_labels):
+                if protoDict[l] is None:
+                    protoDict[l] = [query_embedding[id]]
+                else:
+                    protoDict[l].append(query_embedding[id])
+
+    prototypes = {}
+    for k in range(num_classes + 1):
+        print(len(protoDict[k]), len(protoDict[k][0]))
+        result = torch.stack(protoDict[k])  # (edges vs dim)
+        prototypes[k] = torch.mean(result, dim=0)
+
+    for k in prototypes.keys():
+        print(k, len(prototypes[k]))
+
+    with open(args.test_output_path + "/init_protoypes.pkl", 'wb') as f:
+        pickle.dump(prototypes, f)
 
 
 model = CopyEditor(EMBEDDING_SIZE, args)
