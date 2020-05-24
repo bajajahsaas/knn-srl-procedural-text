@@ -1,4 +1,5 @@
 import numpy as np
+import pickle
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -24,7 +25,8 @@ class MLP(nn.Module):
 
 
 class AttentionDist(nn.Module):
-    def __init__(self, dim, num_classes, context_label_dims, attnmethod, hidden_dims=[]):
+    def __init__(self, dim, num_classes, context_label_dims, attnmethod,\
+                 hidden_dims=[],prototype_init='/mnt/nfs/work1/mccallum/abajaj/akbc/models/wlp-all-feats-bertretr/prototype/init_protoypes.pkl' ):
         super(AttentionDist, self).__init__()
         self.dim = dim
         self.num_classes = num_classes
@@ -33,7 +35,16 @@ class AttentionDist(nn.Module):
         self.prototypes = \
              nn.Parameter(torch.zeros((num_classes+1,dim)).float().cuda(),
                           requires_grad= True)
-        nn.init.xavier_normal_(self.prototypes)
+        if prototype_init is None:
+            nn.init.xavier_normal_(self.prototypes)
+        else:
+            with open(prototype_init, 'rb') as f:
+                data = pickle.load(f)
+            mat = torch.empty((self.num_classes + 1, self.dim))
+            for i in range(self.num_classes+1):
+                mat[i,:] = data[i]
+            with torch.no_grad():
+                self.prototypes.data = mat
         self.proto_labels = \
                          torch.tensor(np.arange(num_classes+1)).long().cuda()
         self.label_embedding = nn.Embedding(num_classes + 1, context_label_dims)
