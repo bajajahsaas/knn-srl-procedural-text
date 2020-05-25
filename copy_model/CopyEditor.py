@@ -116,15 +116,23 @@ class AttentionDist(nn.Module):
 
 
         # New softmax alternative. Meeting on 21st May.
+        # Batch x n x context_size
+        weights = torch.exp(attn)
         # Batch x n x context_size x dim
-        weighted_edge_vectors = torch.exp(l_softmax.unsqueeze(-1)) * context.unsqueeze(1)
+        weighted_edge_vectors = weights.unsqueeze(-1) * context.unsqueeze(1)
+        
         arange =\
                  torch.tensor(np.arange(self.num_classes+1)).view(1,1,1,-1).cuda().long()
-        # Batch x n x context_size x NumClasses
+        # Batch x 1 x context_size x NumClasses
         label_mask = torch.eq(arange, context_labels.unsqueeze(-1))
+        # Batch x 1 x Num_classes
+        class_normalization_const = torch.sum(label_mask *
+                                              weights.unsqueeze(-1), dim = 2)
         # Batch x n x NumClasses x dim
+        b, cs, d = context.size()
         class_vectors = torch.sum(label_mask.unsqueeze(-1) * \
-                                  weighted_edge_vectors.unsqueeze(3), dim = 2)
+                    context.view(b, 1, cs,1,d) ,
+                                  dim=2)/class_normalization_const.unsqueeze(-1)
         # Batch x n x NumClasses
         class_weights_unnormalized = torch.sum(class_vectors \
                                                *queries.unsqueeze(2), dim = -1)
