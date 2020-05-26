@@ -135,8 +135,8 @@ def accuracy(data, model):
             pred = torch.argmax(logprob, \
                                 dim=-1).view(-1)
 
-            this_target = q_labels.view(-1).data.detach().numpy().copy()
-            this_pred = pred.data.detach().numpy().copy()
+            this_target = q_labels.view(-1).data.detach().cpu().numpy().copy()
+            this_pred = pred.data.detach().cpu().numpy().copy()
 
             precision_sentences.append(precision_score(this_target, this_pred, labels=labels, average="micro"))
             recall_sentences.append(recall_score(this_target, this_pred, labels=labels, average="micro"))
@@ -214,6 +214,8 @@ def accuracy(data, model):
 
 model = CopyEditor(EMBEDDING_SIZE, args)
 model.load_state_dict(torch.load(MODEL_PATH, map_location=torch.device('cpu')))
+if args.gpu:
+    model = model.cuda()
 model.eval()
 
 acc1, acc2 = accuracy(valdata, model)

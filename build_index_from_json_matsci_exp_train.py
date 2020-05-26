@@ -67,7 +67,7 @@ def build_annoy_bert(sentences):
     return t
 
 
-percentage = [1, 2, 5, 10]
+percentage = [1, 2]
 
 for per in percentage:
    with open('materials_train' + str(per) + '.json', 'r') as f:
