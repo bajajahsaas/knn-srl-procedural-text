@@ -26,7 +26,8 @@ class MLP(nn.Module):
 
 class AttentionDist(nn.Module):
     def __init__(self, dim, num_classes, context_label_dims, attnmethod,\
-                 hidden_dims=[],prototype_init='/mnt/nfs/work1/mccallum/abajaj/akbc/models/wlp-all-feats-bertretr/prototype/init_protoypes.pkl' ):
+                 hidden_dims=[], prototype_init=None):
+        # prototype_init='/mnt/nfs/work1/mccallum/abajaj/akbc/models/wlp-all-feats-bertretr/prototype/init_protoypes.pkl'
         super(AttentionDist, self).__init__()
         self.dim = dim
         self.num_classes = num_classes
