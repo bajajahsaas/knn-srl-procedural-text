@@ -17,7 +17,7 @@ from random import sample
 with open('materials_train.json', 'r') as f:
     train_json = json.load(f)
 
-percentage = [1, 2, 5, 10]
+percentage = [1, 2, 5, 10, 20, 50, 100]
 total_train_size = len(train_json)
 
 for per in percentage:
