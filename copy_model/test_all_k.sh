@@ -12,47 +12,47 @@
 ## on Test split
 # Exper_train (K = 1)
 #python -u test_k.py --generate --copy --valdata testk1.pkl --model_path models/copy_generate.pt --test_output_path copy_generate_test
-python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-retriever/exp_k/testk1.pkl --model_path models/copy100.pt --test_output_path copy_test --gpu
+python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-retriever/exp_k/testk1.pkl --model_path models/copy_init_prototype.pt --test_output_path copy_test --gpu
 #python -u test_k.py --generate --no-copy --valdata testk1.pkl --model_path models/generate.pt --test_output_path generate_test
 #
 ## Exper_train (K = 2)
 #python -u test_k.py --generate --copy --valdata testk2.pkl --model_path models/copy_generate.pt --test_output_path copy_generate_test
-python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-retriever/exp_k/testk2.pkl --model_path models/copy100.pt --test_output_path copy_test --gpu
+python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-retriever/exp_k/testk2.pkl --model_path models/copy_init_prototype.pt --test_output_path copy_test --gpu
 #python -u test_k.py --generate --no-copy --valdata testk2.pkl --model_path models/generate.pt --test_output_path generate_test
 #
 ## Exper_train (K = 5)
 #python -u test_k.py --generate --copy --valdata testk5.pkl --model_path models/copy_generate.pt --test_output_path copy_generate_test
-python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-retriever/exp_k/testk5.pkl --model_path models/copy100.pt --test_output_path copy_test --gpu
+python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-retriever/exp_k/testk5.pkl --model_path models/copy_init_prototype.pt --test_output_path copy_test --gpu
 #python -u test_k.py --generate --no-copy --valdata testk5.pkl --model_path models/generate.pt --test_output_path generate_test
 #
 ## Exper_train (K = 10)
 #python -u test_k.py --generate --copy --valdata testk10.pkl --model_path models/copy_generate.pt --test_output_path copy_generate_test
-python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-retriever/exp_k/testk10.pkl --model_path models/copy100.pt --test_output_path copy_test --gpu
+python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-retriever/exp_k/testk10.pkl --model_path models/copy_init_prototype.pt --test_output_path copy_test --gpu
 #python -u test_k.py --generate --no-copy --valdata testk10.pkl --model_path models/generate.pt --test_output_path generate_test
 #
 ## Exper_train (K = 15)
 #python -u test_k.py --generate --copy --valdata testk15.pkl --model_path models/copy_generate.pt --test_output_path copy_generate_test
-python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-retriever/exp_k/testk15.pkl --model_path models/copy100.pt --test_output_path copy_test --gpu
+python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-retriever/exp_k/testk15.pkl --model_path models/copy_init_prototype.pt --test_output_path copy_test --gpu
 #python -u test_k.py --generate --no-copy --valdata testk15.pkl --model_path models/generate.pt --test_output_path generate_test
 
 # Exper_train (K = 20)
 #python -u test_k.py --generate --copy --valdata testk20.pkl --model_path models/copy_generate.pt --test_output_path copy_generate_test
-python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-retriever/exp_k/testk20.pkl --model_path models/copy100.pt --test_output_path copy_test --gpu
+python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-retriever/exp_k/testk20.pkl --model_path models/copy_init_prototype.pt --test_output_path copy_test --gpu
 #python -u test_k.py --generate --no-copy --valdata testk20.pkl --model_path models/generate.pt --test_output_path generate_test
 
 # Exper_train (K = 30)
 #python -u test_k.py --generate --copy --valdata testk30.pkl --model_path models/copy_generate.pt --test_output_path copy_generate_test
-python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-retriever/exp_k/testk30.pkl --model_path models/copy100.pt --test_output_path copy_test --gpu
+python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-retriever/exp_k/testk30.pkl --model_path models/copy_init_prototype.pt --test_output_path copy_test --gpu
 #python -u test_k.py --generate --no-copy --valdata testk30.pkl --model_path models/generate.pt --test_output_path generate_test
 
 # Exper_train (K = 40)
 #python -u test_k.py --generate --copy --valdata testk40.pkl --model_path models/copy_generate.pt --test_output_path copy_generate_test
-python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-retriever/exp_k/testk40.pkl --model_path models/copy100.pt --test_output_path copy_test --gpu
+python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-retriever/exp_k/testk40.pkl --model_path models/copy_init_prototype.pt --test_output_path copy_test --gpu
 #python -u test_k.py --generate --no-copy --valdata testk40.pkl --model_path models/generate.pt --test_output_path generate_test
 
 # Exper_train (K = 50)
 #python -u test_k.py --generate --copy --valdata testk50.pkl --model_path models/copy_generate.pt --test_output_path copy_generate_test
-python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-retriever/exp_k/testk50.pkl --model_path models/copy100.pt --test_output_path copy_test --gpu
+python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-retriever/exp_k/testk50.pkl --model_path models/copy_init_prototype.pt --test_output_path copy_test --gpu
 #python -u test_k.py --generate --no-copy --valdata testk50.pkl --model_path models/generate.pt --test_output_path generate_test
 
 
