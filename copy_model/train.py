@@ -86,14 +86,14 @@ def get_batches(data):
                 cpos = cpos.cuda()
 
         # Wet Labs data
-        yield ((qh, qht), (qt, qtt), qpos), ((ch, cht), (ct, ctt), cpos), cl, ql, mask
+        #yield ((qh, qht), (qt, qtt), qpos), ((ch, cht), (ct, ctt), cpos), cl, ql, mask
 
         # Mat Sci data
-        # MAX = 500  # MAX queries in one batch
-        # for i in range(0, qh.shape[1], MAX):
-        #     yield ((qh[:, i:i + MAX, :], qht[:, i:i + MAX]), (qt[:, i:i + MAX, :], \
-        #                                                       qtt[:, i:i + MAX]), qpos[:, i:i + MAX]), \
-        #           ((ch, cht), (ct, ctt), cpos), cl, ql[:, i:i + MAX], mask
+        MAX = 500  # MAX queries in one batch
+        for i in range(0, qh.shape[1], MAX):
+            yield ((qh[:, i:i + MAX, :], qht[:, i:i + MAX]), (qt[:, i:i + MAX, :], \
+                                                              qtt[:, i:i + MAX]), qpos[:, i:i + MAX]), \
+                  ((ch, cht), (ct, ctt), cpos), cl, ql[:, i:i + MAX], mask
 
 def accuracy(data, model, loss):
     model.eval()
