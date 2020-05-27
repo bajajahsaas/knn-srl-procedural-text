@@ -14,9 +14,14 @@
 python preprocess_matsci_exp_train.py
 
 python build_index_from_json_matsci_exp_train.py scibert
+cp materials_config/* .
 
-python copy_model/prepare_data.py materials_train1.json scibert train_embeddings1.pkl
-python copy_model/prepare_data.py materials_train2.json scibert train_embeddings2.pkl
+for per in (1 2 5 10 20 50); do
+    python copy_model/prepare_data.py materials_train${per}.json scibert train_embeddings${per}.pkl
+    python copy_model/prepare_context.py original${per}.annoy original_bert.pkl train_embeddings${per}.pkl train_embeddings${per}.pkl train${per}.pkl scibert 8 5
+    # python copy_model/prepare_context.py original1.annoy original_bert.pkl train_embeddings1.pkl test_embeddings.pkl test1.pkl scibert 8 5
+    # python copy_model/prepare_context.py original1.annoy original_bert.pkl train_embeddings1.pkl val_embeddings.pkl val1.pkl scibert 8 5
+# python copy_model/prepare_data.py materials_train2.json scibert train_embeddings2.pkl
 #python copy_model/prepare_data.py materials_train5.json scibert train_embeddings5.pkl
 #python copy_model/prepare_data.py materials_train10.json scibert train_embeddings10.pkl
 #python copy_model/prepare_data.py materials_train20.json scibert train_embeddings20.pkl
@@ -27,13 +32,13 @@ python copy_model/prepare_data.py materials_train2.json scibert train_embeddings
 #python copy_model/prepare_data.py materials_test.json scibert test_embeddings.pkl
 
 # K = 5
-python copy_model/prepare_context.py original1.annoy original_bert.pkl train_embeddings1.pkl train_embeddings1.pkl train1.pkl scibert 8 5
-python copy_model/prepare_context.py original1.annoy original_bert.pkl train_embeddings1.pkl test_embeddings.pkl test1.pkl scibert 8 5
-python copy_model/prepare_context.py original1.annoy original_bert.pkl train_embeddings1.pkl val_embeddings.pkl val1.pkl scibert 8 5
-
-python copy_model/prepare_context.py original2.annoy original_bert.pkl train_embeddings2.pkl train_embeddings2.pkl train2.pkl scibert 8 5
-python copy_model/prepare_context.py original2.annoy original_bert.pkl train_embeddings2.pkl test_embeddings.pkl test2.pkl scibert 8 5
-python copy_model/prepare_context.py original2.annoy original_bert.pkl train_embeddings2.pkl val_embeddings.pkl val2.pkl scibert 8 5
+# python copy_model/prepare_context.py original1.annoy original_bert.pkl train_embeddings1.pkl train_embeddings1.pkl train1.pkl scibert 8 5
+# python copy_model/prepare_context.py original1.annoy original_bert.pkl train_embeddings1.pkl test_embeddings.pkl test1.pkl scibert 8 5
+# python copy_model/prepare_context.py original1.annoy original_bert.pkl train_embeddings1.pkl val_embeddings.pkl val1.pkl scibert 8 5
+# 
+# python copy_model/prepare_context.py original2.annoy original_bert.pkl train_embeddings2.pkl train_embeddings2.pkl train2.pkl scibert 8 5
+# python copy_model/prepare_context.py original2.annoy original_bert.pkl train_embeddings2.pkl test_embeddings.pkl test2.pkl scibert 8 5
+# python copy_model/prepare_context.py original2.annoy original_bert.pkl train_embeddings2.pkl val_embeddings.pkl val2.pkl scibert 8 5
 
 #python copy_model/prepare_context.py original5.annoy original_bert.pkl train_embeddings5.pkl train_embeddings5.pkl train5.pkl scibert 8 5
 #python copy_model/prepare_context.py original5.annoy original_bert.pkl train_embeddings5.pkl test_embeddings.pkl test5.pkl scibert 8 5
