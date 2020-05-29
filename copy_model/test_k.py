@@ -112,7 +112,7 @@ def accuracy(data, model):
         recall_sentences = []
         f1_sentences = []
 
-        f = open(os.path.join(args.test_output_path, "predictions_" + MODEL_PATH[7:len(MODEL_PATH) -3] + "_" + args.valdata.split("/")[-1] + '.csv'), 'w')
+        f = open(os.path.join(args.test_output_path, "predictions_" + MODEL_PATH.split("/")[-1] + "_" + args.valdata.split("/")[-1] + '.csv'), 'w')
         writer = csv.writer(f)
         writer.writerow(['Sentence', 'Relations in context', 'Head', 'Tail',
                          'Target', 'Prediction', 'correct'])
@@ -159,7 +159,7 @@ def accuracy(data, model):
         print('Prediction list size = ', len(list(set(all_pred))))
         print('Target list size = ', len(list(set(all_target))))
 
-        f = open(os.path.join(args.test_output_path, "scores_" + MODEL_PATH[7:len(MODEL_PATH) -3] + "_" + args.valdata.split("/")[-1] + '.csv'), 'w')
+        f = open(os.path.join(args.test_output_path, "scores_" + MODEL_PATH.split("/")[-1] + "_" + args.valdata.split("/")[-1] + '.csv'), 'w')
         writer_sc = csv.writer(f)
         writer_sc.writerow(['Averaging', 'Precision', 'Recall', 'F1 Score'])
 
