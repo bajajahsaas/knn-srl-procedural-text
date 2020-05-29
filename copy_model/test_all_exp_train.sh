@@ -5,15 +5,15 @@
 #SBATCH -e logstest/test_%j.err        # File to which STDERR will be written
 #SBATCH --gres=gpu:1
 #SBATCH --mem=50000
-#SBATCH --partition=2080ti-long
+#SBATCH --partition=2080ti-short
 #
 #SBATCH --ntasks=1
 
 # Exper_train (percen = 1)
 # python -u test.py --generate --copy --valdata val1.pkl --model_path models/copygen1.pt --test_output_path copy_generate
 for per in 1 2 5 10 20 50 100; do
-    python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-ret-exp-train/exp-k-test/new/val${per}_k40.pkl --model_path models/copy${per}.pt --test_output_path copy --gpu
-    python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-ret-exp-train/exp-k-test/new/test${per}_k40.pkl --model_path models/copy${per}.pt --test_output_path copy --gpu
+    python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-ret-exp-train/exp-k-test/new/val${per}_k40.pkl --model_path /mnt/nfs/work1/mccallum/abajaj/akbc/models/wlp-all-feats-bertretr/prototype/exp_train/May28/wtlabs_copy${per}.pt --test_output_path copy --gpu
+    python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-ret-exp-train/exp-k-test/new/test${per}_k40.pkl --model_path /mnt/nfs/work1/mccallum/abajaj/akbc/models/wlp-all-feats-bertretr/prototype/exp_train/May28/wtlabs_copy${per}.pt --test_output_path copy --gpu
 done
 # python -u test.py --generate --no-copy --valdata val1.pkl --model_path models/generate1.pt --test_output_path generate
 

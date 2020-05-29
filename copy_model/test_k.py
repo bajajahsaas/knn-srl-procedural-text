@@ -90,16 +90,16 @@ def get_batches(data):
                 mask = mask.cuda()
                 cpos = cpos.cuda()
 
-        # yield q_sent, (qh_text, qt_text), (ch_text, ct_text),\
-        #         ((qh, qht),(qt,qtt),qpos),((ch, cht), (ct, ctt), cpos), cl, ql, mask
+        yield q_sent, (qh_text, qt_text), (ch_text, ct_text),\
+                ((qh, qht),(qt,qtt),qpos),((ch, cht), (ct, ctt), cpos), cl, ql, mask
 
         # Mat Sci data
-        MAX = 500  # MAX queries in one batch
-        for i in range(0, qh.shape[1], MAX):
-            yield q_sent,(qh_text[i:i+MAX], qt_text[i:i+MAX]),\
-                    (ch_text, ct_text) , ((qh[:, i:i + MAX, :], qht[:, i:i + MAX]), (qt[:, i:i + MAX, :], \
-                                                              qtt[:, i:i + MAX]), qpos[:, i:i + MAX]), \
-                  ((ch, cht), (ct, ctt), cpos), cl, ql[:, i:i + MAX], mask
+        # MAX = 500  # MAX queries in one batch
+        # for i in range(0, qh.shape[1], MAX):
+        #     yield q_sent,(qh_text[i:i+MAX], qt_text[i:i+MAX]),\
+        #             (ch_text, ct_text) , ((qh[:, i:i + MAX, :], qht[:, i:i + MAX]), (qt[:, i:i + MAX, :], \
+        #                                                       qtt[:, i:i + MAX]), qpos[:, i:i + MAX]), \
+        #           ((ch, cht), (ct, ctt), cpos), cl, ql[:, i:i + MAX], mask
 
 
 def accuracy(data, model):
