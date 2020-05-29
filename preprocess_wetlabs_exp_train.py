@@ -72,7 +72,7 @@ print('Testing Sentences', len(test_json))
 val_json = get_sentences(val)
 print('Validation Sentences', len(val_json))
 
-percentage = [1, 2, 5]
+percentage = [0.01, 0.03, 0.06, 0.1, 0.3, 0.6]
 total_train_size = len(train_json)
 
 for per in percentage:
@@ -82,8 +82,8 @@ for per in percentage:
    with open('wetlabs_train' + str(per) + '.json', 'w') as f:
        json.dump(train_set, f, indent = 4)
 
-# with open('wetlabs_test.json', 'w') as f:
-#    json.dump(test_json, f, indent = 4)
-#
-# with open('wetlabs_val.json', 'w') as f:
-#    json.dump(val_json, f, indent = 4)
+with open('wetlabs_test.json', 'w') as f:
+   json.dump(test_json, f, indent = 4)
+
+with open('wetlabs_val.json', 'w') as f:
+   json.dump(val_json, f, indent = 4)

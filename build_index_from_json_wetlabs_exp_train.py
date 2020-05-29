@@ -67,7 +67,7 @@ def build_annoy_bert(sentences):
     return t
 
 
-percentage = [1, 2, 5, 10]
+percentage = [0.01, 0.03, 0.06, 0.1, 0.3, 0.6]
 
 for per in percentage:
    with open('wetlabs_train' + str(per) + '.json', 'r') as f:
