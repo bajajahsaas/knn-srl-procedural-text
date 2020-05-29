@@ -11,10 +11,17 @@
 
 # Exper_train (percen = 1)
 # python -u test.py --generate --copy --valdata val1.pkl --model_path models/copygen1.pt --test_output_path copy_generate
-for per in 1 2 5 10 20 50 100; do
-    python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-ret-exp-train/exp-k-test/new/val${per}_k40.pkl --model_path /mnt/nfs/work1/mccallum/abajaj/akbc/models/wlp-all-feats-bertretr/prototype/exp_train/May28/wtlabs_copy${per}.pt --test_output_path copy --gpu
-    python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-ret-exp-train/exp-k-test/new/test${per}_k40.pkl --model_path /mnt/nfs/work1/mccallum/abajaj/akbc/models/wlp-all-feats-bertretr/prototype/exp_train/May28/wtlabs_copy${per}.pt --test_output_path copy --gpu
+
+#for per in 1 2 5 10 20 50 100; do
+#    python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-ret-exp-train/exp-k-test/new/val${per}_k40.pkl --model_path /mnt/nfs/work1/mccallum/abajaj/akbc/models/wlp-all-feats-bertretr/prototype/exp_train/May28/wtlabs_copy${per}.pt --test_output_path copy --gpu
+#    python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-ret-exp-train/exp-k-test/new/test${per}_k40.pkl --model_path /mnt/nfs/work1/mccallum/abajaj/akbc/models/wlp-all-feats-bertretr/prototype/exp_train/May28/wtlabs_copy${per}.pt --test_output_path copy --gpu
+#done
+
+for per in 1 2 5 10; do
+    python -u test_k.py --generate --no-copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-ret-exp-train/run-2/val${per}.pkl --model_path /mnt/nfs/work1/mccallum/abajaj/akbc/models/wlp-all-feats-bertretr/prototype/exp_train/May28/tem/generate${per}.pt --test_output_path generate --gpu
+    python -u test_k.py --generate --no-copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-ret-exp-train/run-2/test${per}.pkl --model_path /mnt/nfs/work1/mccallum/abajaj/akbc/models/wlp-all-feats-bertretr/prototype/exp_train/May28/tem/generate${per}.pt --test_output_path generate --gpu
 done
+
 # python -u test.py --generate --no-copy --valdata val1.pkl --model_path models/generate1.pt --test_output_path generate
 
 # # Exper_train (percen = 2)
