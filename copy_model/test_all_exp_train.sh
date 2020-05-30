@@ -17,7 +17,7 @@
 #    python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-ret-exp-train/exp-k-test/new/test${per}_k40.pkl --model_path /mnt/nfs/work1/mccallum/abajaj/akbc/models/wlp-all-feats-bertretr/prototype/exp_train/May28/wtlabs_copy${per}.pt --test_output_path copy --gpu
 #done
 
-for per in 0.01 0.03 0.06 0.1 0.3 0.6; do
+for per in 0.2 0.3 0.4 0.5; do
     python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-ret-exp-train/exp-k-test/new/small/val${per}_k40.pkl --model_path models/wtlabs_copy${per}.pt --test_output_path copy --gpu
     python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-ret-exp-train/exp-k-test/new/small/test${per}_k40.pkl --model_path models/wtlabs_copy${per}.pt --test_output_path copy --gpu
 done

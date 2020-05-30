@@ -72,7 +72,7 @@ print('Testing Sentences', len(test_json))
 val_json = get_sentences(val)
 print('Validation Sentences', len(val_json))
 
-percentage = [0.01, 0.03, 0.06, 0.1, 0.3, 0.6]
+percentage = [0.2, 0.3, 0.4, 0.5]
 total_train_size = len(train_json)
 
 for per in percentage:

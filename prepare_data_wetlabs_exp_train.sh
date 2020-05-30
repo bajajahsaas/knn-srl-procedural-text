@@ -11,16 +11,15 @@
 
 
 
-# python preprocess_wetlabs_exp_train.py
+python preprocess_wetlabs_exp_train.py
 
-# python build_index_from_json_wetlabs_exp_train.py scibert
+python build_index_from_json_wetlabs_exp_train.py scibert
 
-python copy_model/prepare_data.py wetlabs_train0.01.json scibert train_embeddings0.01.pkl
-python copy_model/prepare_data.py wetlabs_train0.03.json scibert train_embeddings0.03.pkl
-python copy_model/prepare_data.py wetlabs_train0.06.json scibert train_embeddings0.06.pkl
-python copy_model/prepare_data.py wetlabs_train0.1.json scibert train_embeddings0.1.pkl
+
+python copy_model/prepare_data.py wetlabs_train0.2.json scibert train_embeddings0.2.pkl
 python copy_model/prepare_data.py wetlabs_train0.3.json scibert train_embeddings0.3.pkl
-python copy_model/prepare_data.py wetlabs_train0.6.json scibert train_embeddings0.6.pkl
+python copy_model/prepare_data.py wetlabs_train0.4.json scibert train_embeddings0.4.pkl
+python copy_model/prepare_data.py wetlabs_train0.5.json scibert train_embeddings0.5.pkl
 
 # python copy_model/prepare_data.py wetlabs_train1.json scibert train_embeddings1.pkl
 # python copy_model/prepare_data.py wetlabs_train2.json scibert train_embeddings2.pkl
@@ -34,14 +33,14 @@ python copy_model/prepare_data.py wetlabs_val.json scibert val_embeddings.pkl
 python copy_model/prepare_data.py wetlabs_test.json scibert test_embeddings.pkl
 
 # K = 5
-for per in 0.01 0.03 0.06 0.1 0.3 0.6; do
+for per in 0.2 0.3 0.4 0.56; do
      python copy_model/prepare_context_k.py original${per}.annoy original_bert.pkl train_embeddings${per}.pkl train_embeddings${per}.pkl train${per}.pkl scibert 4 5
      python copy_model/prepare_context_k.py original${per}.annoy original_bert.pkl train_embeddings${per}.pkl test_embeddings.pkl test${per}.pkl scibert 4 5
      python copy_model/prepare_context_k.py original${per}.annoy original_bert.pkl train_embeddings${per}.pkl val_embeddings.pkl val${per}.pkl scibert 4 5
     done
 
 # K = 40
-for per in 0.01 0.03 0.06 0.1 0.3 0.6; do
+for per in 0.2 0.3 0.4 0.5; do
     #  python copy_model/prepare_context_k.py original${per}.annoy original_bert.pkl train_embeddings${per}.pkl train_embeddings${per}.pkl train${per}_k40.pkl scibert 4 40
      python copy_model/prepare_context_k.py original${per}.annoy original_bert.pkl train_embeddings${per}.pkl test_embeddings.pkl test${per}_k40.pkl scibert 4 40
      python copy_model/prepare_context_k.py original${per}.annoy original_bert.pkl train_embeddings${per}.pkl val_embeddings.pkl val${per}_k40.pkl scibert 4 40
