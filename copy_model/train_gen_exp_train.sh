@@ -17,7 +17,7 @@
 #python -u train.py --traindata train50.pkl --valdata val50.pkl --model_path models/generate50.pt --plot_path logsgen_exp_train/50 --no-copy --gpu
 #sleep 1
 
-for per in 0.01 0.03 0.06 0.1 0.3 0.6; do
+for per in 0.2 0.3 0.4 0.5; do
     python -u train.py --traindata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-ret-exp-train/exp-k-test/new/small/train${per}.pkl --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-ret-exp-train/exp-k-test/new/small/val${per}.pkl --model_path models/wtlabs_gen${per}.pt --plot_path logsgen_exp_train/${per} --generate --no-copy --gpu
 done
 
