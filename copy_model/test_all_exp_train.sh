@@ -17,9 +17,9 @@
 #    python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-ret-exp-train/exp-k-test/new/test${per}_k40.pkl --model_path /mnt/nfs/work1/mccallum/abajaj/akbc/models/wlp-all-feats-bertretr/prototype/exp_train/May28/wtlabs_copy${per}.pt --test_output_path copy --gpu
 #done
 
-for per in 1 2 5 10; do
-    python -u test_k.py --generate --no-copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-ret-exp-train/run-2/val${per}.pkl --model_path /mnt/nfs/work1/mccallum/abajaj/akbc/models/wlp-all-feats-bertretr/prototype/exp_train/May28/tem/generate${per}.pt --test_output_path generate --gpu
-    python -u test_k.py --generate --no-copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-ret-exp-train/run-2/test${per}.pkl --model_path /mnt/nfs/work1/mccallum/abajaj/akbc/models/wlp-all-feats-bertretr/prototype/exp_train/May28/tem/generate${per}.pt --test_output_path generate --gpu
+for per in 0.01 0.03 0.06 0.1 0.3 0.6; do
+    python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-ret-exp-train/exp-k-test/new/small/val${per}_k40.pkl --model_path models/wtlabs_copy${per}.pt --test_output_path copy --gpu
+    python -u test_k.py --no-generate --copy --valdata /mnt/nfs/work1/mccallum/abajaj/akbc/data/scibert-ret-exp-train/exp-k-test/new/small/test${per}_k40.pkl --model_path models/wtlabs_copy${per}.pt --test_output_path copy --gpu
 done
 
 # python -u test.py --generate --no-copy --valdata val1.pkl --model_path models/generate1.pt --test_output_path generate
