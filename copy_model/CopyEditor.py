@@ -29,8 +29,11 @@ class AttentionDist(nn.Module):
         self.dim = dim
         self.num_classes = num_classes
         self.attention_method = attnmethod
-        self.label_embedding = nn.Embedding(num_classes + 1, context_label_dims)
-        total_input_dim = 2 * dim + context_label_dims
+        if self.attention_method == 'mlp':
+            self.label_embedding = nn.Embedding(num_classes + 1, context_label_dims)
+            total_input_dim = 2 * dim + context_label_dims
+        else:
+            total_input_dim = 2*dim
         self.network = MLP(total_input_dim, hidden_dims, 1)
 
     def forward(self, queries, context, context_labels, mask):
@@ -69,6 +72,14 @@ class AttentionDist(nn.Module):
             # inputdim = 2*rel + label_emb
             # MLP: inputdim -> score(scalar)
             # B x n x cs x dim -> B x n x cs x 1
+        elif self.attention_method == 'no_label':
+            _,n,__ = queries.size()
+            _,cs,__ = context.size()
+            # context_label_dims should be = dim
+            concat = torch.cat((queries.unsqueeze(2).repeat(1,1,cs,1),\
+                                context.unsqueeze(1).repeat(1,n,1,1)), -1)
+            attn = self.network(concat).squeeze(-1)
+
 
         # +(1.0-mask.unsqueeze(1))*(-np.inf)
         # Batch x n x context_size
@@ -104,7 +115,7 @@ class AttentionDist(nn.Module):
 
         #  [[p1+p3, p2]]
         l_softmax_classes = torch.logsumexp(onehot_logprobs, dim = 2)
-        return context_vector, l_softmax_classes
+        return context_vector, l_softmax_classes, l_softmax
 
 
 class RelationEmbedding(nn.Module):
@@ -227,6 +238,7 @@ class CopyEditor(nn.Module):
 
         context_vec, copy_dist = None, None
         copy_prob = torch.zeros_like(query_vectors[2]).float()
+        l_softmax = None
         if self.generate:
             gen_dist = self.multiclass(query_embedding)
         if self.copy:
@@ -234,7 +246,7 @@ class CopyEditor(nn.Module):
             if context_labels is not None: # if contex
                 context_embedding = self.rel_embedding(context_vectors)
                 #Batch x n x dim, Batch x n x num_classes+1
-                context_vec, copy_dist_unsmooth = self.attention(query_embedding, context_embedding, \
+                context_vec, copy_dist_unsmooth, l_softmax = self.attention(query_embedding, context_embedding, \
                                                  context_labels, mask)
                 # We need to smooth since copy can assign p(relation) = 0 if it
                 # does not exist in context. This is not an issue in
@@ -265,10 +277,10 @@ class CopyEditor(nn.Module):
                 probs[:,:,-1] = np.log(0.99)
                 if query_embedding.is_cuda:
                     probs = probs.cuda()
-                return probs, copy_prob
+                return probs, copy_prob, l_softmax
             # Else return just the copy distribution
             else:
-                return copy_dist, copy_prob
+                return copy_dist, copy_prob, l_softmax
         # if both are enabled and context is available
         else:
             copy_prob, gen_prob = self.should_copy(query_embedding, \

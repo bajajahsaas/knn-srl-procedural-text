@@ -6,14 +6,41 @@ from CopyEditor import CopyEditor
 import pickle
 from sklearn.metrics import precision_score, recall_score, f1_score
 from argparser import args
+import re
+from tqdm import tqdm
 
-num_labels = 13 
+num_labels = args.classes 
 relations = open('relations.txt', 'r').read().splitlines() + ['No-Rel']
 labels = [x for x in range(num_labels)]  # All possible output labels for multiclass problem
 
+
+
+def filter(st):
+    return re.sub("\d+", "_NUM_", st).lower()
+
+def naiive_string_baseline(query_head, query_tail, context_head,\
+                           context_tail, context_labels):
+    num_classes = num_labels + 1
+    predictions = []
+    for i in range(len(query_head)):
+        labelcount = [0] * (num_classes)
+        if len(context_head) >0:
+            for j in range(len(context_head)):
+                if filter(query_head[i]) == filter(context_head[j]) \
+                   and filter(query_tail[i]) == filter(context_tail[j]):
+                    labelcount[context_labels[j]] += 1
+            predictions.append(np.argmax(labelcount))
+        else:
+            # no context
+            predictions.append(num_labels)
+    return np.asarray(predictions)
+
+
+
+# copy matching entity types
 def naiive_prediction(query_head_type, query_tail_type, context_head_type,\
                       context_tail_type, context_labels):
-    num_classes = 14
+    num_classes = num_labels + 1
     predictions = []
     for i in range(query_head_type.shape[0]):
         labelcount = [0] * (num_classes)
@@ -24,7 +51,7 @@ def naiive_prediction(query_head_type, query_tail_type, context_head_type,\
                     labelcount[context_labels[j]] += 1
             predictions.append(np.argmax(labelcount))
         else:
-            predictions.append(13)
+            predictions.append(num_labels)
     return np.asarray(predictions)
 
 def evaluate(all_pred, all_target):
@@ -92,11 +119,15 @@ with open(args.valdata, 'rb') as f:
 
 qlabels = []
 qpreds = []
-for datum in valdata:
-    qh, qt, ch, ct, ql, cl = datum['query_head_type'], datum['query_tail_type'],\
-                        datum['context_head_type'], datum['context_tail_type'],\
+for datum in tqdm(valdata):
+    # qh, qt, ch, ct, ql, cl = datum['query_head_type'], datum['query_tail_type'],\
+    #                     datum['context_head_type'], datum['context_tail_type'],\
+    #                     datum['query_labels'], datum['context_labels']
+    # qpred = naiive_prediction(qh, qt, ch, ct, cl)
+    qh, qt, ch, ct, ql, cl = datum['query_head_text'], datum['query_tail_text'],\
+                        datum['context_head_text'], datum['context_tail_text'],\
                         datum['query_labels'], datum['context_labels']
-    qpred = naiive_prediction(qh, qt, ch, ct, cl)
+    qpred = naiive_string_baseline(qh, qt, ch, ct, cl)
     qpreds.append(qpred)
     qlabels.append(ql)
 
