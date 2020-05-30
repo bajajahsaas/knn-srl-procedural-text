@@ -115,7 +115,7 @@ class AttentionDist(nn.Module):
 
         #  [[p1+p3, p2]]
         l_softmax_classes = torch.logsumexp(onehot_logprobs, dim = 2)
-        return context_vector, l_softmax_classes, l_softmax
+        return context_vector, l_softmax_classes, attn
 
 
 class RelationEmbedding(nn.Module):
