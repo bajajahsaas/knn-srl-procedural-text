@@ -7,6 +7,7 @@ from CopyEditor import CopyEditor
 import pickle
 from sklearn.metrics import precision_score, recall_score, f1_score
 from argparser import args
+import tqdm
 
 copy = args.copy
 generate = args.generate
@@ -43,8 +44,9 @@ def get_batches(data):
     # only batch size 1 for now
     # no permutation
     # perm = np.random.permutation(len(data))
-    for x in range(len(data)):
+    for x in tqdm.trange(len(data)):
         datum = data[x]
+        context_sents = datum['context_sents']
         q_sent, qh_text, qt_text, ch_text, ct_text,qpos,cpos = datum['query_sent'], \
                 datum['query_head_text'], datum['query_tail_text'],\
                 datum['context_head_text'], datum['context_tail_text'],\
@@ -90,16 +92,17 @@ def get_batches(data):
                 mask = mask.cuda()
                 cpos = cpos.cuda()
 
-        # yield q_sent, (qh_text, qt_text), (ch_text, ct_text),\
-        #        ((qh, qht),(qt,qtt),qpos),((ch, cht), (ct, ctt), cpos), cl, ql, mask
+        yield q_sent, (qh_text, qt_text), (ch_text, ct_text),\
+               ((qh, qht),(qt,qtt),qpos),((ch, cht), (ct, ctt), cpos), cl, ql,\
+                mask, context_sents
 
         # Mat Sci data
-        MAX = 100  # MAX queries in one batch
-        for i in range(0, qh.shape[1], MAX):
-            yield q_sent,(qh_text[i:i+MAX], qt_text[i:i+MAX]),\
-                    (ch_text, ct_text) , ((qh[:, i:i + MAX, :], qht[:, i:i + MAX]), (qt[:, i:i + MAX, :], \
-                                                              qtt[:, i:i + MAX]), qpos[:, i:i + MAX]), \
-                  ((ch, cht), (ct, ctt), cpos), cl, ql[:, i:i + MAX], mask
+        # MAX = 100  # MAX queries in one batch
+        # for i in range(0, qh.shape[1], MAX):
+        #     yield q_sent,(qh_text[i:i+MAX], qt_text[i:i+MAX]),\
+        #             (ch_text, ct_text) , ((qh[:, i:i + MAX, :], qht[:, i:i + MAX]), (qt[:, i:i + MAX, :], \
+        #                                                       qtt[:, i:i + MAX]), qpos[:, i:i + MAX]), \
+        #           ((ch, cht), (ct, ctt), cpos), cl, ql[:, i:i + MAX], mask, context_sents
 
 
 def accuracy(data, model):
@@ -136,10 +139,11 @@ def accuracy(data, model):
 
 
 
+        output_pkl = []
 
-
-        for sent, q_text, cxt_text, q, cxt, cxt_labels, q_labels, mask in get_batches(data):
-            pred = torch.argmax(model(q, cxt, cxt_labels, mask)[0], \
+        for sent, q_text, cxt_text, q, cxt, cxt_labels, q_labels, mask, cxt_sents in get_batches(data):
+            pred, _, attention = model(q, cxt, cxt_labels, mask)
+            pred = torch.argmax(pred, \
                                 dim=-1).view(-1)
 
             this_target = q_labels.view(-1).data.detach().cpu().numpy().copy()
@@ -151,7 +155,29 @@ def accuracy(data, model):
 
             all_target.append(this_target)
             all_pred.append(this_pred)
+
+
+
+
+            result_obj = {'sentence': sent, 'edges' : q_text, 'context_sents' :
+                          cxt_sents, 'context_edges' : cxt_text, 'context_labels':
+                          cxt_labels.cpu().numpy(), 'ground_truth':
+                          q_labels.cpu().numpy(), 'pred': pred.cpu().numpy(),\
+                          'attention':attention.cpu().numpy(),
+                          'sent_f1':f1_sentences[-1]}
+            output_pkl.append(result_obj)
+                          
+
+
+
+
+
+
             write_csv_row(writer,sent, q_text, q_labels, cxt_text, cxt_labels, pred)
+        with open(os.path.join(args.test_output_path, "output_" +\
+                               MODEL_PATH.split("/")[-1] + "_" +\
+                               args.valdata.split("/")[-1] + '.pkl'), 'wb') as f:
+            pickle.dump(output_pkl, f)
         f.close()
         all_pred = np.concatenate(all_pred, 0)
         all_target = np.concatenate(all_target, 0)
