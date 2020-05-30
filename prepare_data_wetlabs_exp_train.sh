@@ -33,7 +33,7 @@ python copy_model/prepare_data.py wetlabs_val.json scibert val_embeddings.pkl
 python copy_model/prepare_data.py wetlabs_test.json scibert test_embeddings.pkl
 
 # K = 5
-for per in 0.2 0.3 0.4 0.56; do
+for per in 0.2 0.3 0.4 0.5; do
      python copy_model/prepare_context_k.py original${per}.annoy original_bert.pkl train_embeddings${per}.pkl train_embeddings${per}.pkl train${per}.pkl scibert 4 5
      python copy_model/prepare_context_k.py original${per}.annoy original_bert.pkl train_embeddings${per}.pkl test_embeddings.pkl test${per}.pkl scibert 4 5
      python copy_model/prepare_context_k.py original${per}.annoy original_bert.pkl train_embeddings${per}.pkl val_embeddings.pkl val${per}.pkl scibert 4 5
