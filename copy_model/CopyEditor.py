@@ -26,28 +26,30 @@ class MLP(nn.Module):
 
 class AttentionDist(nn.Module):
     def __init__(self, dim, num_classes, context_label_dims, attnmethod,\
-                 hidden_dims=[], prototype_init=None):
+                 hidden_dims=[], use_prototype=True, prototype_init=None):
         # prototype_init='/mnt/nfs/work1/mccallum/abajaj/akbc/models/wlp-all-feats-bertretr/prototype/init_protoypes.pkl'
         super(AttentionDist, self).__init__()
         self.dim = dim
         self.num_classes = num_classes
         self.attention_method = attnmethod
-        # TODO support CPU
-        self.prototypes = \
-             nn.Parameter(torch.zeros((num_classes+1,dim)).float().cuda(),
-                          requires_grad= True)
-        if prototype_init is None:
-            nn.init.xavier_normal_(self.prototypes)
-        else:
-            with open(prototype_init, 'rb') as f:
-                data = pickle.load(f)
-            mat = torch.empty((self.num_classes + 1, self.dim))
-            for i in range(self.num_classes+1):
-                mat[i,:] = data[i]
-            with torch.no_grad():
-                self.prototypes.data = mat
-        self.proto_labels = \
-                         torch.tensor(np.arange(num_classes+1)).long().cuda()
+        self.use_prototype = use_prototype
+        if self.use_prototype:
+            # TODO support CPU
+            self.prototypes = \
+                 nn.Parameter(torch.zeros((num_classes+1,dim)).float().cuda(),
+                              requires_grad= True)
+            if prototype_init is None:
+                nn.init.xavier_normal_(self.prototypes)
+            else:
+                with open(prototype_init, 'rb') as f:
+                    data = pickle.load(f)
+                mat = torch.empty((self.num_classes + 1, self.dim))
+                for i in range(self.num_classes+1):
+                    mat[i,:] = data[i]
+                with torch.no_grad():
+                    self.prototypes.data = mat
+            self.proto_labels = \
+                             torch.tensor(np.arange(num_classes+1)).long().cuda()
         self.label_embedding = nn.Embedding(num_classes + 1, context_label_dims)
         total_input_dim = 2 * dim + context_label_dims
         self.network = MLP(total_input_dim, hidden_dims, 1)
@@ -69,29 +71,34 @@ class AttentionDist(nn.Module):
         # Adds protypes to context
         # prototypes: num_classes+1 x dim
         # prototypes.unsqueeze(0): 1 x num_classes+1 x dim (since context always has batch_size = 1)
+        if self.use_prototype:
 
-        if context is not None:
-            # Method 1: add all prototypes always
-            # context = torch.cat((context, self.prototypes.unsqueeze(0)), dim=1)
-            # context_labels = torch.cat((context_labels,
-            #                        self.proto_labels.unsqueeze(0)), dim=1)
+            if context is not None:
+                # Method 1: add all prototypes always
+                # context = torch.cat((context, self.prototypes.unsqueeze(0)), dim=1)
+                # context_labels = torch.cat((context_labels,
+                #                        self.proto_labels.unsqueeze(0)), dim=1)
 
-            # Method 2: add prototypes only for missing class
-            all_labels = np.arange(self.num_classes + 1)
-            present_labels = torch.unique(context_labels.flatten()).cpu().numpy()
-            missing_labels = np.setdiff1d(all_labels, present_labels)
+                # Method 2: add prototypes only for missing class
+                all_labels = np.arange(self.num_classes + 1)
+                present_labels = torch.unique(context_labels.flatten()).cpu().numpy()
+                missing_labels = np.setdiff1d(all_labels, present_labels)
 
-            # print(missing_labels)
-            select_prototypes = self.prototypes[missing_labels, :]
-            select_proto_labels = self.proto_labels[missing_labels]
+                # print(missing_labels)
+                select_prototypes = self.prototypes[missing_labels, :]
+                select_proto_labels = self.proto_labels[missing_labels]
 
-            # print(select_prototypes.size())
-            context = torch.cat((context, select_prototypes.unsqueeze(0)), dim=1)
-            context_labels = torch.cat((context_labels, select_proto_labels.unsqueeze(0)), dim=1)
+                # print(select_prototypes.size())
+                context = torch.cat((context, select_prototypes.unsqueeze(0)), dim=1)
+                context_labels = torch.cat((context_labels, select_proto_labels.unsqueeze(0)), dim=1)
 
+            else:
+                context = self.prototypes.unsqueeze(0)
+                context_labels = self.proto_labels.unsqueeze(0)
         else:
-            context = self.prototypes.unsqueeze(0)
-            context_labels = self.proto_labels.unsqueeze(0)
+            if context is None:
+                return None, None
+
 
 
 
@@ -251,7 +258,8 @@ class CopyEditor(nn.Module):
         self.emb_dim = emb_dim
         self.num_classes = args.classes
         self.attention = AttentionDist(args.relation_output_dim, args.classes, args.context_label_dim, args.attnmethod,
-                                       args.attention_hidden_dims)
+                                       args.attention_hidden_dims,
+                                       args.use_prototype)
         self.rel_embedding = RelationEmbedding(emb_dim, args.num_entities, \
                                                args.num_buckets, args.type_dim, args.pos_dim, \
                                                args.relation_output_dim, args.relation_hidden_dims, \
@@ -298,7 +306,8 @@ class CopyEditor(nn.Module):
             # log(P_smooth) = logsumexp(log(0.99)+log(p_copy),log(0.01)+log(1/N))
             # TODO: smoothing with actual distribution of labels rather
             # than uniform
-            copy_dist = torch.logsumexp(torch.stack((copy_dist_unsmooth +
+            if copy_dist_unsmooth is not None:
+                copy_dist = torch.logsumexp(torch.stack((copy_dist_unsmooth +
                                                            np.log(0.99),
                                                            torch.ones_like(copy_dist_unsmooth)*np.log(0.01/(self.num_classes+1))),
                                                            dim=-1), dim = -1)

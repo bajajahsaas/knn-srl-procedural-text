@@ -55,19 +55,20 @@ python copy_model/prepare_data.py wetlabs_test.json <scibert/biobert> test_embed
 ```
 This produces train_embeddings.pkl, val_embeddings.pkl, test_embeddings.pkl. Use argument (biobert) if want to generate embeddings from bioBERT and (bert) to use basebert.
 
-### Using pre-generated annoy, vectorizer, BERT embeddings to pre-compute nearest neighbors (for edit model)
+### Using pre-generated annoy, vectorizer, BERT embeddings to pre-compute nearest neighbors (for edit model)  
+K is the number of nearest neighbors  
 ```python
-python copy_model/prepare_context.py replaced.annoy replaced_tfidf.pkl train_embeddings.pkl train_embeddings.pkl train.pkl tfidf 4
-python copy_model/prepare_context.py replaced.annoy replaced_tfidf.pkl train_embeddings.pkl test_embeddings.pkl test.pkl tfidf 4
-python copy_model/prepare_context.py replaced.annoy replaced_tfidf.pkl train_embeddings.pkl val_embeddings.pkl val.pkl tfidf 4
+python copy_model/prepare_context.py replaced.annoy replaced_tfidf.pkl train_embeddings.pkl train_embeddings.pkl train.pkl tfidf 4 {K}
+python copy_model/prepare_context.py replaced.annoy replaced_tfidf.pkl train_embeddings.pkl test_embeddings.pkl test.pkl tfidf 4 {K}
+python copy_model/prepare_context.py replaced.annoy replaced_tfidf.pkl train_embeddings.pkl val_embeddings.pkl val.pkl tfidf 4 {K}
 ```
 
 #### OR
 
 ```python
-python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl train_embeddings.pkl train.pkl scibert 4
-python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl test_embeddings.pkl test.pkl scibert 4
-python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl val_embeddings.pkl val.pkl scibert 4
+python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl train_embeddings.pkl train.pkl scibert 4 {K}
+python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl test_embeddings.pkl test.pkl scibert 4 {K}
+python copy_model/prepare_context.py original.annoy original_bert.pkl train_embeddings.pkl val_embeddings.pkl val.pkl scibert 4 {K}
 ```
 
 This computes nearest neighbors in the training set for each sentence in the train, val and test sets. This writes into train.pkl, val.pkl, test.pkl.
@@ -86,10 +87,18 @@ python copy_model/train.py --copy --no-generate --traindata PATH/TO/train.pkl --
 ```python
 python copy_model/train.py --generate --no-copy --traindata PATH/TO/train.pkl --valdata PATH/TO/val.pkl --model_path OUTPUTDIR/model.pt
 ```
+
+### Training using Copy + prototype (Best model)
+```python
+python copy_model/train.py --no-generate ---copy --prototype --traindata PATH/TO/train.pkl --valdata PATH/TO/val.pkl --model_path OUTPUTDIR/model.pt
+```
+
+
 ### Test model
 Set generate and copy arguments according to how training was done. For example:
 ```python
 python test.py --generate --no-copy --valdata val.pkl --model_path models/generate.pt --test_output_path generate
 python test.py --no-generate --copy --valdata val.pkl --model_path models/copy.pt --test_output_path copy
 python test.py --generate --copy --valdata val.pkl --model_path models/copy_generate.pt --test_output_path copy_generate
+python test.py --no-generate ---copy --prototype --valdata val.pkl --model_path OUTPUTDIR/model.pt --test_output_path copy_prototype
 ```
