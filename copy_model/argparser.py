@@ -1,6 +1,9 @@
 import argparse
 
 parser = argparse.ArgumentParser(description='Settings for training')
+parser.add_argument('--prototype', dest='use_prototype', action='store_true')
+parser.add_argument('--no-prototype', dest='use_prototype', action='store_false')
+parser.set_defaults(use_prototype=False)
 parser.add_argument('--entity', dest='use_entity', action='store_true')
 parser.add_argument('--no-entity', dest='use_entity', action='store_false')
 parser.set_defaults(use_entity=True)

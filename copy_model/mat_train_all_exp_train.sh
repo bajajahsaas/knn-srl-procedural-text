@@ -1,3 +1,0 @@
-sbatch mat_train_copy_gen_exp_train.sh
-sbatch mat_train_copy_exp_train.sh
-#sbatch mat_train_gen_exp_train.sh

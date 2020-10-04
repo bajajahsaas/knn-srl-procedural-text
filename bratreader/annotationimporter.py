@@ -131,7 +131,7 @@ def _evaluate_annotations(annotations):
     the dictionary "T" as key "14".
 
     :return: a dictionary of Annotation objects.
-    #### Modified by Daivik to add all event links as links from action to
+    #### Modified to add all event links as links from action to
     targets rather than other way around
     """
 
